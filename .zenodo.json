@@ -1,0 +1,22 @@
+{
+  "title": "Fondements de la géométrie algébrique (FGA) — Édition française maintenue",
+  "description": "The canonical public lineage for the independent maintained French FGA edition.",
+  "creators": [
+    {
+      "name": "Grothendieck, Alexandre"
+    }
+  ],
+  "access_right": "open",
+  "license": "notspecified",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "language": "fra",
+  "version": "2026-08-30-r1",
+  "related_identifiers": [
+    {
+      "relation": "isDerivedFrom",
+      "identifier": "https://doi.org/10.5281/zenodo.22083916",
+      "resource_type": "publication-other"
+    }
+  ]
+}

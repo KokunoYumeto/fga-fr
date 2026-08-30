@@ -1,0 +1,40 @@
+{
+  "schema": "fga_fr_en_canon_errata_package_validation/v1",
+  "status": "PASS",
+  "release_root": "C:\\Users\\Floris\\Documents\\interlanguage\\03_projects\\language_management\\english_germanic\\06_publication_candidates\\fga\\canon-errata-0001-0017-20260830",
+  "languages": [
+    {
+      "language": "fr",
+      "content_manifest_status": "PASS_LOCAL_PACKAGE_UNPUBLISHED_DESTINATION_IDENTITY_ABSENT",
+      "payload_checks": 9,
+      "payload_failures": 0,
+      "sha256sum_checks": 10,
+      "sha256sum_failures": 0,
+      "archive": {
+        "entries": 44,
+        "expected_entries": 44,
+        "duplicate_entries": 0,
+        "unsafe_entries": 0,
+        "member_checks": 42,
+        "member_failures": 0
+      }
+    },
+    {
+      "language": "en",
+      "content_manifest_status": "PASS_LOCAL_PACKAGE_UNPUBLISHED_DESTINATION_IDENTITY_ABSENT",
+      "payload_checks": 9,
+      "payload_failures": 0,
+      "sha256sum_checks": 10,
+      "sha256sum_failures": 0,
+      "archive": {
+        "entries": 44,
+        "expected_entries": 44,
+        "duplicate_entries": 0,
+        "unsafe_entries": 0,
+        "member_checks": 42,
+        "member_failures": 0
+      }
+    }
+  ],
+  "total_failures": 0
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "fga_fr_en_publication_destination_audit/v1",
+  "checked_utc": "2026-08-30T01:49:51.7731772Z",
+  "status": "FAIL_CLOSED_NO_LANGUAGE_SPECIFIC_PUBLICATION_DESTINATIONS_PROVEN",
+  "scope": [
+    "maintained FGA French edition",
+    "maintained FGA English edition"
+  ],
+  "local_release_surface": {
+    "maintained_root": "03_projects/language_management/english_germanic/03_working_translations/fga_r1",
+    "release_or_publication_controls_present": false,
+    "bounded_check": "No release, receipt, Zenodo, GitHub, publication, DOI, or control file exists within two levels of the maintained root."
+  },
+  "historical_zenodo_receipt": {
+    "path": "03_projects/language_management/english_germanic/06_publication_candidates/fga/cp9/receipt.json",
+    "bytes": 4669,
+    "sha256": "3665B3D02906BFDE813FB45C64D572A852FE71057671A47A95EC01AB7A4B7E49",
+    "status": "PASS",
+    "record_id": 21802810,
+    "doi": "10.5281/zenodo.21802810",
+    "concept_doi": "10.5281/zenodo.21792434",
+    "title": "Fondements de la geometrie algebrique (FGA): French edition and English translation",
+    "files": 24,
+    "language_topology": "ONE_SHARED_FRENCH_ENGLISH_CONCEPT"
+  },
+  "live_zenodo_head": {
+    "api_url": "https://zenodo.org/api/records/22083916",
+    "record_url": "https://zenodo.org/records/22083916",
+    "record_id": 22083916,
+    "doi": "10.5281/zenodo.22083916",
+    "concept_doi": "10.5281/zenodo.21792434",
+    "title": "Fondements de la geometrie algebrique (FGA): French, English, and Simplified Chinese editions",
+    "version": "Complete French, English, and Simplified Chinese editions - 2026-08-24",
+    "files": 29,
+    "bytes": 9510744,
+    "anonymous_api_read": "PASS",
+    "language_topology": "ONE_SHARED_THREE_LANGUAGE_CONCEPT_NOT_LANGUAGE_SPECIFIC"
+  },
+  "live_github_check": {
+    "filtered_public_repository_url": "https://github.com/KokunoYumeto?tab=repositories&q=fga&type=&language=&sort=",
+    "anonymous_http_status": 200,
+    "matching_repository_names": [
+      "ega-fga-es",
+      "ega-fga-sga-pt-br",
+      "ega-fga-sga-vi",
+      "fga-zh-hans-cn",
+      "unofficial-ai-integrated-stacks-project"
+    ],
+    "french_fga_repository_found": false,
+    "english_fga_repository_found": false,
+    "plausible_exact_repository_checks": {
+      "fga": 404,
+      "fga-fr": 404,
+      "fga-en": 404,
+      "fga-french": 404,
+      "fga-english": 404,
+      "fondements-geometrie-algebrique": 404,
+      "fondements-geometrie-algebrique-fr": 404,
+      "foundations-algebraic-geometry-en": 404
+    }
+  },
+  "disposition": {
+    "publish_to_historical_combined_zenodo_concept": false,
+    "reason": "The historical concept is not language-specific and its live head combines French, English, and Simplified Chinese. Publishing there would violate the required language separation and the instruction not to touch the Chinese edition.",
+    "publish_to_github": false,
+    "github_reason": "No exact existing French or English FGA repository/release identity is established by maintained controls or anonymous public identity checks.",
+    "invented_destination": false
+  },
+  "next_executable_remedy": {
+    "action": "Establish the first canonical French FGA GitHub repository and Zenodo concept, and separately establish the first canonical English FGA GitHub repository and Zenodo concept, each explicitly related to but not merged with historical concept DOI 10.5281/zenodo.21792434; then publish the already packaged and QA-bound FGA-CANON-ERR-0001..0017 releases and perform anonymous full-file readback.",
+    "requires": "An exact coordinator-issued repository/concept naming and relation tuple, or direct authorization to create the first language-specific lineages under the established public account.",
+    "human_review_required": false
+  }
+}

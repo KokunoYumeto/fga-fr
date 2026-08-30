@@ -1,0 +1,56 @@
+{
+  "schema": "fga_language_canon_errata_release_manifest/v1",
+  "status": "PASS_LOCAL_PACKAGE_UNPUBLISHED_DESTINATION_IDENTITY_ABSENT",
+  "language": "French",
+  "canon_errata": "FGA-CANON-ERR-0001..FGA-CANON-ERR-0017",
+  "files": 9,
+  "payload": [
+    {
+      "name": "fga-fr-canon-errata-0001-0017.pdf",
+      "bytes": 792131,
+      "sha256": "150D3C6D73105116BB1BD53C89B13789E4CB08276CF5C859BEA8A418C6762EA1"
+    },
+    {
+      "name": "fga-fr-canon-errata-0001-0017-source-provenance.zip",
+      "bytes": 708343,
+      "sha256": "873464310B336CB46C7B1CBC327A335BC1BD518480C8136A0821DD76BFAF5350"
+    },
+    {
+      "name": "README.md",
+      "bytes": 809,
+      "sha256": "388E13CE78D9965705E6EACFE08F8163002117856F1BDDEEABB377C1B42FE0A0"
+    },
+    {
+      "name": "FGA_CANON_INTAKE_MASTER.jsonl",
+      "bytes": 59997,
+      "sha256": "8FB63B197D99F7CAE47E234B894CDA2B054156FF899D5DDD048BFA36AD0640D1"
+    },
+    {
+      "name": "FGA_CANON_DISPOSITIONS.jsonl",
+      "bytes": 11575,
+      "sha256": "D8B9533BB59AEC39C181878972A89510F616F479A69448AC5193B2B2C81C5309"
+    },
+    {
+      "name": "FGA_CANON_ERRATA_0001_0017_IMPLEMENTATION_QA.json",
+      "bytes": 13207,
+      "sha256": "8C5D2F4DEDBA417E39A4CA3486C7E27E27C05DB5A6A1A0E26D011C673B4DA607"
+    },
+    {
+      "name": "FGA_CANON_ERRATA_0001_0017_HANDOFF.json",
+      "bytes": 6194,
+      "sha256": "26425712BBA40B1659B209E7024D7002D0BF04F306971BB1B148FAA01510EFA9"
+    },
+    {
+      "name": "FGA_FR_EN_PUBLICATION_DESTINATION_AUDIT_20260830.json",
+      "bytes": 3793,
+      "sha256": "2542004C4B2C7FA6C3EB50B07EA4188CD30BC7E1D0142810107511A4E000C38D"
+    },
+    {
+      "name": "verify_fga_canon_errata_20260830.py",
+      "bytes": 13752,
+      "sha256": "0751FBE1F74F93E7124545975335583A88E085958ABF111F49ACF1869EEA369B"
+    }
+  ],
+  "source_archive_entries": 44,
+  "publication_destination_audit": "FGA_FR_EN_PUBLICATION_DESTINATION_AUDIT_20260830.json"
+}

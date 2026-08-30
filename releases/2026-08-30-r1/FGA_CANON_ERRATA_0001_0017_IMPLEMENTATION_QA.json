@@ -1,0 +1,375 @@
+{
+  "schema": "fga_canon_errata_implementation_qa/v1",
+  "status": "PASS",
+  "date": "2026-08-30",
+  "scope": "FGA Exposes 212 and 221; FGA-CANON-ERR-0001 through FGA-CANON-ERR-0017",
+  "intake": {
+    "master_path": "03_projects/language_management/romance/00_lane_control/FGA_CANON_INTAKE_MASTER.jsonl",
+    "provisional_records": 18,
+    "unique_provisional_ids": 18
+  },
+  "adjudication": {
+    "accepted_provisional_records": 18,
+    "stable_dispositions": 17,
+    "linked_deduplication": {
+      "stable_id": "FGA-CANON-ERR-0001",
+      "provisional_records": 2
+    },
+    "rejected": 0,
+    "authority_witness_bytes_modified": 0
+  },
+  "implementation": {
+    "french_stable_issues_with_reader_correction_or_explicit_provenance": 17,
+    "french_semantic_operations": 19,
+    "english_stable_issues_with_semantic_rewrite": 6,
+    "english_semantic_operations": 13,
+    "english_stable_issues_already_idiomatic_or_correct_with_provenance_only": 11,
+    "source_units": {
+      "fr212": {
+        "path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/fr/212.tex",
+        "baseline": {
+          "bytes": 49947,
+          "sha256": "9C868DB596A2DA534C013C377DD507B1FFFE1D7E039455B41FAA39152E47234B"
+        },
+        "live": {
+          "bytes": 50209,
+          "sha256": "BFC8784D358704109A24E7041259E364184782C0027413EFEB4A42C0A8F53102"
+        },
+        "replay": {
+          "declared_replacements": [
+            {
+              "old": "$(n+1)$-ième de $(R,p_1)$ sur $X$",
+              "new": "$n$-ième de $(R,p_1)$ sur $X$",
+              "preimage_matches": 1
+            },
+            {
+              "old": "K_0=R,qquad",
+              "new": "K_0=X,qquad",
+              "preimage_matches": 1
+            }
+          ],
+          "normalized_body_exact_after_declared_overlay": true,
+          "structural_topology_before": {
+            "src": 20,
+            "result": 18,
+            "fsection": 4,
+            "begin": 10,
+            "end": 10,
+            "display_open": 32,
+            "display_close": 32,
+            "inline_math_delimiters": 1456
+          },
+          "structural_topology_after": {
+            "src": 20,
+            "result": 18,
+            "fsection": 4,
+            "begin": 10,
+            "end": 10,
+            "display_open": 32,
+            "display_close": 32,
+            "inline_math_delimiters": 1456
+          },
+          "braces_balanced": true
+        }
+      },
+      "en212": {
+        "path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/en/212.tex",
+        "baseline": {
+          "bytes": 46385,
+          "sha256": "67E8088E8719D0915A5563E3D91E3669A635E84573254724638FEDB340A53A18"
+        },
+        "live": {
+          "bytes": 46631,
+          "sha256": "B83B5CA0A17A28FC92EF58CDBE8CACA95827A12AEA17456E0C4FE9F1C7162DC7"
+        },
+        "replay": {
+          "declared_replacements": [
+            {
+              "old": "the $(n+1)$-fold fiber power of $(R,p_1)$ over $X$",
+              "new": "the $n$-fold fiber power of $(R,p_1)$ over $X$",
+              "preimage_matches": 1
+            },
+            {
+              "old": "K_0=R,qquad",
+              "new": "K_0=X,qquad",
+              "preimage_matches": 1
+            }
+          ],
+          "normalized_body_exact_after_declared_overlay": true,
+          "structural_topology_before": {
+            "src": 20,
+            "result": 18,
+            "fsection": 4,
+            "begin": 10,
+            "end": 10,
+            "display_open": 32,
+            "display_close": 32,
+            "inline_math_delimiters": 1462
+          },
+          "structural_topology_after": {
+            "src": 20,
+            "result": 18,
+            "fsection": 4,
+            "begin": 10,
+            "end": 10,
+            "display_open": 32,
+            "display_close": 32,
+            "inline_math_delimiters": 1462
+          },
+          "braces_balanced": true
+        }
+      },
+      "fr221": {
+        "path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/fr/221.tex",
+        "baseline": {
+          "bytes": 77066,
+          "sha256": "951C461B15ED60C2CBE44338F89143E1FD7DCF6709FAD75FA7B50FA905749A1D"
+        },
+        "live": {
+          "bytes": 79161,
+          "sha256": "F3C962FE48853E7F31113AD3F1EC93005494A89ED78F1BE35F19E80332D7A94C"
+        },
+        "replay": {
+          "declared_replacements": [
+            {
+              "old": "transforment encore ensembles limités",
+              "new": "transforment encore des ensembles limités",
+              "preimage_matches": 1
+            },
+            {
+              "old": "coupe au morceaux",
+              "new": "coupe en morceaux",
+              "preimage_matches": 1
+            },
+            {
+              "old": "0\\longrightarrow\\mathcal G_{T_1}\\longrightarrow\\mathcal G'' \\longrightarrow\\mathcal G'_{T_1}\\longrightarrow0",
+              "new": "0\\longrightarrow\\mathcal G'_{T_1}\\longrightarrow\\mathcal G'' \\longrightarrow\\mathcal G_{T_1}\\longrightarrow0",
+              "preimage_matches": 1
+            },
+            {
+              "old": "famille limitée de classe de faisceaux",
+              "new": "famille limitée de classes de faisceaux",
+              "preimage_matches": 1
+            },
+            {
+              "old": "transforme Modules $S'$-plats",
+              "new": "transforme les Modules $S'$-plats",
+              "preimage_matches": 1
+            },
+            {
+              "old": "modules localisés de $N$ pour",
+              "new": "modules localisés de $N_*$ pour",
+              "preimage_matches": 1
+            },
+            {
+              "old": "remplacer $S$ par l'ouvert $U$",
+              "new": "remplacer $S$ par l'ouvert $U_\\infty$",
+              "preimage_matches": 1
+            },
+            {
+              "old": "sous-schémas fermés de $Z$, donc",
+              "new": "sous-schémas fermés de $S$, donc",
+              "preimage_matches": 1
+            },
+            {
+              "old": "(telle qu'il s'introduit",
+              "new": "(tel qu'il s'introduit",
+              "preimage_matches": 1
+            },
+            {
+              "old": "simple ([3], IV) sur $S$,",
+              "new": "simple ([3], IV) sur $S'$,",
+              "preimage_matches": 1
+            },
+            {
+              "old": "normal sur $S$ (i.e.",
+              "new": "normal sur $S'$ (i.e.",
+              "preimage_matches": 1
+            },
+            {
+              "old": "des $S$-intersections complètes",
+              "new": "des $S'$-intersections complètes",
+              "preimage_matches": 1
+            },
+            {
+              "old": "locales dans $X$ relativement",
+              "new": "locales dans $X'$ relativement",
+              "preimage_matches": 1
+            },
+            {
+              "old": "relativement à $S$ (i.e.",
+              "new": "relativement à $S'$ (i.e.",
+              "preimage_matches": 1
+            },
+            {
+              "old": "dans les $X_{s'}$",
+              "new": "dans les $X'_{s'}$",
+              "preimage_matches": 1
+            },
+            {
+              "old": "Soient $\\mathcal L$ (resp. $\\mathcal M$)",
+              "new": "Soit $\\mathcal L$ (resp. $\\mathcal M$)",
+              "preimage_matches": 1
+            }
+          ],
+          "normalized_body_exact_after_declared_overlay": true,
+          "structural_topology_before": {
+            "src": 28,
+            "result": 24,
+            "fsection": 7,
+            "begin": 3,
+            "end": 3,
+            "display_open": 57,
+            "display_close": 57,
+            "inline_math_delimiters": 2640
+          },
+          "structural_topology_after": {
+            "src": 28,
+            "result": 24,
+            "fsection": 7,
+            "begin": 3,
+            "end": 3,
+            "display_open": 57,
+            "display_close": 57,
+            "inline_math_delimiters": 2640
+          },
+          "braces_balanced": true
+        }
+      },
+      "en221": {
+        "path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/en/221.tex",
+        "baseline": {
+          "bytes": 71803,
+          "sha256": "D571D5C0DFE5B845044BAAD57D5780D6302D084673C610B8B598B0BD6D3C9037"
+        },
+        "live": {
+          "bytes": 74141,
+          "sha256": "35E156BC6768E3C9125B66E20C38B339DA059C09A78A2563BAD9714745CE119E"
+        },
+        "replay": {
+          "declared_replacements": [
+            {
+              "old": "0\\longrightarrow\\mathcal G_{T_1}\\longrightarrow\\mathcal G'' \\longrightarrow\\mathcal G'_{T_1}\\longrightarrow0",
+              "new": "0\\longrightarrow\\mathcal G'_{T_1}\\longrightarrow\\mathcal G'' \\longrightarrow\\mathcal G_{T_1}\\longrightarrow0",
+              "preimage_matches": 1
+            },
+            {
+              "old": "localizations of $N$ at",
+              "new": "localizations of $N_*$ at",
+              "preimage_matches": 1
+            },
+            {
+              "old": "replace $S$ by the open set $U$",
+              "new": "replace $S$ by the open set $U_\\infty$",
+              "preimage_matches": 1
+            },
+            {
+              "old": "closed subschemes of $Z$, and hence",
+              "new": "closed subschemes of $S$, and hence",
+              "preimage_matches": 1
+            },
+            {
+              "old": "over $S$, respectively normal",
+              "new": "over $S'$, respectively normal",
+              "preimage_matches": 1
+            },
+            {
+              "old": "normal over $S$ (that is",
+              "new": "normal over $S'$ (that is",
+              "preimage_matches": 1
+            },
+            {
+              "old": "a relative local complete intersection",
+              "new": "an $S'$-local complete intersection",
+              "preimage_matches": 1
+            },
+            {
+              "old": "in $X$ over $S$ (that is",
+              "new": "in $X'$ over $S'$ (that is",
+              "preimage_matches": 1
+            },
+            {
+              "old": "in the $X_{s'}$",
+              "new": "in the $X'_{s'}$",
+              "preimage_matches": 1
+            }
+          ],
+          "normalized_body_exact_after_declared_overlay": true,
+          "structural_topology_before": {
+            "src": 28,
+            "result": 24,
+            "fsection": 7,
+            "begin": 3,
+            "end": 3,
+            "display_open": 57,
+            "display_close": 57,
+            "inline_math_delimiters": 2628
+          },
+          "structural_topology_after": {
+            "src": 28,
+            "result": 24,
+            "fsection": 7,
+            "begin": 3,
+            "end": 3,
+            "display_open": 57,
+            "display_close": 57,
+            "inline_math_delimiters": 2630
+          },
+          "braces_balanced": true
+        }
+      }
+    }
+  },
+  "semantic_validation": {
+    "path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/ed/sem.json",
+    "bytes": 2908,
+    "sha256": "F4C246350BF3CC4D3B67F8046891E4A02E0D5DFD4C8F349BC3EB9771D642D738",
+    "status": "PASS"
+  },
+  "builds": {
+    "fr": {
+      "pdf": {
+        "path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/out/fr/main.pdf",
+        "bytes": 792131,
+        "sha256": "150D3C6D73105116BB1BD53C89B13789E4CB08276CF5C859BEA8A418C6762EA1",
+        "pages": 154
+      },
+      "log": {
+        "path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/out/fr/main.log",
+        "bytes": 248736,
+        "sha256": "768A800238ABC098BCB1A0D9F5B1F9231E625ED24698660B8F733261C26D269E",
+        "blocking_diagnostics": 0
+      },
+      "all_17_provenance_ids_extract": true
+    },
+    "en": {
+      "pdf": {
+        "path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/out/en/main.pdf",
+        "bytes": 770118,
+        "sha256": "AD7AECDFA01484DF2B98513E0C3644E20D82FF7546190A516C3A3DFAD9683C71",
+        "pages": 149
+      },
+      "log": {
+        "path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/out/en/main.log",
+        "bytes": 238457,
+        "sha256": "D6EBE2EEBA655FECDDC50FC9621A22F0E9D06CD58D8D2B7FAEA12BD2AAD6D250",
+        "blocking_diagnostics": 0
+      },
+      "all_17_provenance_ids_extract": true
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "changed_pages_rendered_and_inspected": 25,
+    "contact_sheets_inspected": 5,
+    "blocking_layout_defects": 0,
+    "root": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/qa/fga-canon-errata-0001-0017-20260830",
+    "page_tree_sha256": "00852CCA24D0A6B8369DA483189C8C01CAEAA0B5044167AB8778512AC818AFDE",
+    "contact_tree_sha256": "D0B3504943A91684068EE8CC9951A932C572DC5A775EEBDFE320D061CBCA7153"
+  },
+  "publication": {
+    "performed": false,
+    "reason": "bounded implementation/QA handoff; no complete release-lineage transaction was established in this bounded step"
+  },
+  "nonhuman_blockers": []
+}

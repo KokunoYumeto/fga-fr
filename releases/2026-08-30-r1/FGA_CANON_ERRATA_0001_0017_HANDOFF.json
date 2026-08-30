@@ -1,0 +1,109 @@
+{
+  "schema": "fga_canon_errata_implementation_handoff/v1",
+  "status": "PASS_READY_FOR_CANON_INTEGRATION",
+  "date": "2026-08-30",
+  "scope": {
+    "works": ["FGA Expose 212", "FGA Expose 221"],
+    "provisional_records_adjudicated": 18,
+    "accepted_provisional_records": 18,
+    "rejected_provisional_records": 0,
+    "stable_canon_ids": 17,
+    "stable_id_range": "FGA-CANON-ERR-0001..FGA-CANON-ERR-0017",
+    "linked_deduplication": {
+      "stable_id": "FGA-CANON-ERR-0001",
+      "provisional_ids": [
+        "FGA-CANON-PROV-212-SRC109-001",
+        "FGA-CANON-PROV-212-SRC109-002"
+      ]
+    }
+  },
+  "append_only_records": {
+    "master": {
+      "path": "03_projects/language_management/romance/00_lane_control/FGA_CANON_INTAKE_MASTER.jsonl",
+      "bytes": 59997,
+      "sha256": "8FB63B197D99F7CAE47E234B894CDA2B054156FF899D5DDD048BFA36AD0640D1",
+      "rows": 36,
+      "original_rows": 18,
+      "successor_rows": 18,
+      "original_prefix_bytes": 46012,
+      "original_prefix_sha256": "FAB0D4BED52D9A22D2DE04338CC1CC10C0B983ED76673DC55274C612654DE0C9",
+      "original_prefix_preserved": true
+    },
+    "dispositions": {
+      "path": "03_projects/language_management/romance/00_lane_control/FGA_CANON_DISPOSITIONS.jsonl",
+      "bytes": 11575,
+      "sha256": "D8B9533BB59AEC39C181878972A89510F616F479A69448AC5193B2B2C81C5309",
+      "rows": 17,
+      "stable_ids_unique_and_contiguous": true,
+      "all_18_provisional_ids_covered_once": true
+    }
+  },
+  "authority": {
+    "frozen_witness_bytes_modified": 0,
+    "maintained_source_preimages_replayed_exactly": true
+  },
+  "implementation": {
+    "french": {
+      "stable_issues_with_correction_or_explicit_provenance": 17,
+      "semantic_operations": 19
+    },
+    "english": {
+      "stable_issues_with_semantic_rewrite": 6,
+      "semantic_operations": 13,
+      "stable_issues_already_correct_or_idiomatic_with_provenance_only": 11
+    },
+    "sources": [
+      {"path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/fr/212.tex", "bytes": 50209, "sha256": "BFC8784D358704109A24E7041259E364184782C0027413EFEB4A42C0A8F53102"},
+      {"path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/en/212.tex", "bytes": 46631, "sha256": "B83B5CA0A17A28FC92EF58CDBE8CACA95827A12AEA17456E0C4FE9F1C7162DC7"},
+      {"path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/fr/221.tex", "bytes": 79161, "sha256": "F3C962FE48853E7F31113AD3F1EC93005494A89ED78F1BE35F19E80332D7A94C"},
+      {"path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/en/221.tex", "bytes": 74141, "sha256": "35E156BC6768E3C9125B66E20C38B339DA059C09A78A2563BAD9714745CE119E"}
+    ]
+  },
+  "validation": {
+    "exact_replay_script": {
+      "path": "03_projects/language_management/romance/00_lane_control/verify_fga_canon_errata_20260830.py",
+      "bytes": 13752,
+      "sha256": "0751FBE1F74F93E7124545975335583A88E085958ABF111F49ACF1869EEA369B",
+      "status": "PASS"
+    },
+    "implementation_qa": {
+      "path": "03_projects/language_management/romance/00_lane_control/FGA_CANON_ERRATA_0001_0017_IMPLEMENTATION_QA.json",
+      "bytes": 13207,
+      "sha256": "8C5D2F4DEDBA417E39A4CA3486C7E27E27C05DB5A6A1A0E26D011C673B4DA607",
+      "status": "PASS"
+    },
+    "semantic_validation": {
+      "path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/ed/sem.json",
+      "bytes": 2908,
+      "sha256": "F4C246350BF3CC4D3B67F8046891E4A02E0D5DFD4C8F349BC3EB9771D642D738",
+      "status": "PASS"
+    },
+    "changed_semantic_outputs": [
+      {"path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/ed/edges.csv", "bytes": 706286, "sha256": "7FF3943E5A9392EDF5076D7A8C9F50C8D25BDFABBEB1AB552264AB16252C78E1"},
+      {"path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/ed/graph.json", "bytes": 1997581, "sha256": "B96260AC215206FD33402977A495EA78FD8CE0AE079E3D915E86731D854E1E96"},
+      {"path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/ed/index.md", "bytes": 17015, "sha256": "C57CA832ECAE78E611CCEA1CBF77F0DE908B81D74080B26A6D0F354FC94D2855"},
+      {"path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/ed/refs.csv", "bytes": 136230, "sha256": "34D5B4B9F495D41C69FAF93168A9FC1F7D4EFEC9A0DF18F405BDB4D42D4F5A4B"},
+      {"path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/ed/resid.csv", "bytes": 47224, "sha256": "51E847CA424839A1B092048C79B1EA1A8F1C4FCF287B36D7D7BC0EE8704E0705"},
+      {"path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/ed/sem.json", "bytes": 2908, "sha256": "F4C246350BF3CC4D3B67F8046891E4A02E0D5DFD4C8F349BC3EB9771D642D738"},
+      {"path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/ed/terms.csv", "bytes": 367267, "sha256": "FCAF880F13F9EDBF3787734463400AA33DCDE411FC9F44B86F54B730EE21B37B"},
+      {"path": "03_projects/language_management/english_germanic/03_working_translations/fga_r1/ed/units.csv", "bytes": 482293, "sha256": "384BC5F040FF4686689C9D93B69E59D800D8FDCCDA5B679EA0F0305A996D17A8"}
+    ],
+    "builds": {
+      "fr": {"pdf_bytes": 792131, "pdf_sha256": "150D3C6D73105116BB1BD53C89B13789E4CB08276CF5C859BEA8A418C6762EA1", "pages": 154, "blocking_diagnostics": 0},
+      "en": {"pdf_bytes": 770118, "pdf_sha256": "AD7AECDFA01484DF2B98513E0C3644E20D82FF7546190A516C3A3DFAD9683C71", "pages": 149, "blocking_diagnostics": 0}
+    },
+    "visual_qa": {
+      "status": "PASS",
+      "changed_pages_inspected": 25,
+      "contact_sheets_inspected": 5,
+      "blocking_layout_defects": 0,
+      "page_tree_sha256": "00852CCA24D0A6B8369DA483189C8C01CAEAA0B5044167AB8778512AC818AFDE",
+      "contact_tree_sha256": "D0B3504943A91684068EE8CC9951A932C572DC5A775EEBDFE320D061CBCA7153"
+    }
+  },
+  "publication": {
+    "performed": false,
+    "reason": "No complete existing FGA release-lineage transaction was established in this bounded implementation step."
+  },
+  "nonhuman_blockers": []
+}
