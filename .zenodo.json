@@ -14,9 +14,9 @@
   "version": "2026-08-30-r1",
   "related_identifiers": [
     {
-      "identifier": "https://doi.org/10.5281/zenodo.22083916",
+      "resource_type": "publication-other",
       "relation": "isDerivedFrom",
-      "resource_type": "publication-other"
+      "identifier": "https://doi.org/10.5281/zenodo.22083916"
     }
   ]
 }
