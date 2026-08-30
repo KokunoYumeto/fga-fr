@@ -15,8 +15,8 @@
   "related_identifiers": [
     {
       "resource_type": "publication-other",
-      "relation": "isDerivedFrom",
-      "identifier": "https://doi.org/10.5281/zenodo.22083916"
+      "identifier": "https://doi.org/10.5281/zenodo.22083916",
+      "relation": "isDerivedFrom"
     }
   ]
 }
