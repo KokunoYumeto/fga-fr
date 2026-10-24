@@ -1,0 +1,1190 @@
+\unit{Exposé 236 -- Les schémas de Picard : propriétés générales}
+\sid{236}
+\src{221}
+\seminar{14\textsuperscript{e} année, 1961/62, n\textsuperscript{o} 236\\Mai 1962}
+\paperhead{TECHNIQUE DE DESCENTE ET THÉORÈMES D'EXISTENCE EN GÉOMÉTRIE ALGÉBRIQUE\\
+VI. LES SCHÉMAS DE PICARD : PROPRIÉTÉS GÉNÉRALES}%
+  {par Alexander GROTHENDIECK}
+
+\fsection{0}{Compléments à l'exposé précédent ([3], V)\textsuperscript{(1)}}
+
+Il y a eu quelques progrès concernant les questions d'existence de préschémas
+de Picard soulevées dans [3], V :
+
+\medskip
+\noindent a. (Mumford). Il n'est pas vrai en général que lorsque
+$f:X\longrightarrow S$ est un morphisme projectif et séparable (= plat à
+fibres séparables), le préschéma de Picard $\operatorname{Pic}_{X/S}$ existe,
+même si les fibres de $f$ sont de dimension 1, et si $S$ est le spectre d'un
+anneau de valuation discrète complet. Un exemple en est fourni en prenant
+$S=\operatorname{Spec}\mathbf R[[t]]$, et pour $X$ le sous-schéma de
+$\mathbf P^2_S$ défini par l'équation (où $x,y,z$ sont des variables
+homogènes)
+\[
+x^2+y^2=tz^2,
+\]
+qui représente donc une conique dégénérant en deux droites concourantes
+géométriquement, mais la fibre spéciale sur le corps $\mathbf R$ étant
+néanmoins irréductible (elle est donnée par l'équation $x^2+y^2=0$ sur
+$\mathbf R$). On voit facilement que, après extension étale
+$S'\longrightarrow S$, avec $S'=\operatorname{Spec}\mathbf C[[t]]$, le
+préschéma de Picard de $X'/S'$ existe, et on en obtient une description
+explicite comme somme de copies $\widetilde S'$, où $\widetilde S'$ est déduit de
+$S'$ en dédoublant une infinité de fois l'origine. On constate aisément que la
+donnée de descente sur $\operatorname{Pic}_{X'/S'}$ pour
+$S'\longrightarrow S$ (donnée ici par les opérations du groupe de Galois
+$\mathbf Z/2\mathbf Z$ de $S'$ sur $S$) n'est pas effective, le groupe
+échangeant entre eux certains points dédoublés (de sorte qu'il y a des orbites
+qui ne sont pas contenues dans un ouvert affine). Cependant, Mumford peut
+montrer que si $f:X\longrightarrow S$ est un morphisme projectif séparable tel
+que, pour tout $s\in S$, les composantes irréductibles de $X_s$ sont
+géométriquement irréductibles relativement à $k(s)$, alors
+$\operatorname{Pic}_{X/S}$ existe ; sa démonstration s'appuie sur un
+raffinement de son théorème de passage au quotient, cf. [7]. Noter d'autre part
+qu'il reste possible que, sans hypothèses sur les composantes irréductibles des
+fibres $X_s$, le schéma $\operatorname{Pic}^{\tau}_{X/S}$ (qui sera introduit
+plus bas) existe pourtant.
+
+\src{222}
+\noindent b. (Murre). Soit $X$ un schéma propre sur un corps, alors
+$\operatorname{Pic}_{X/k}$ existe. La démonstration reprend en partie la
+démonstration de Chevalley [1], et s'appuie à fond sur la structure de groupe
+du foncteur de Picard.
+
+Pour certains compléments concernant la théorie des schémas de Picard,
+notamment en relation avec les schémas abéliens, il y aura intérêt à consulter
+[7]. Enfin, une lacune notable du présent exposé est l'absence de « critères
+d'équivalence », permettant de comparer le schéma de Picard d'un schéma
+projectif, et de ses sections hyperplanes ; les théorèmes-clefs pour développer
+de tels critères se trouvent dans [5], auquel il faut joindre les théorèmes
+d'existence des schémas de Picard.
+
+\fsection{1}{Propriétés topologiques des préschémas en groupes commutatifs}
+
+Soient d'abord $k$ un corps, $G$ un préschéma en groupes sur $k$. Comme
+l'élément neutre $e$, étant rationnel sur $k$, est nécessairement fermé, il
+s'ensuit aussitôt que la diagonale de $G\times_kG$ est fermée, donc $G$ est
+séparé : tout préschéma en groupes sur un corps est séparé. Nous désignerons
+par $G^\circ$ la composante connexe de l'élément neutre $e$. Comme $e$ est
+rationnel sur $k$, $G^\circ$ est en fait géométriquement connexe, i.e. la
+formation de $G^\circ$ est compatible avec le changement de corps de base. Il
+s'ensuit aussi que $G^\circ$ est stable par multiplication (ensemblistement),
+et lorsque $G$ est localement noethérien, donc $G^\circ$ ouvert, on peut
+considérer $G^\circ$ comme un sous-groupe ouvert de $G$. Dans la suite, nous
+supposerons $G$ localement de type fini sur $k$ ; alors $G^\circ$ est
+géométriquement irréductible et de type fini sur $k$. En effet, on peut
+supposer $k$ algébriquement clos, donc de plus $G$ réduit (car
+$G_{\mathrm{réd}}$ sera alors un sous-groupe de $G$, compte tenu que
+$G_{\mathrm{réd}}\times_kG_{\mathrm{réd}}$ sera encore réduit), donc simple
+sur $k$ sur un ouvert non vide, donc partout comme on voit en translatant ledit
+ouvert. Mais alors $G$ est localement irréductible, donc ses composantes
+irréductibles sont identiques à ses composantes connexes, donc $G^\circ$ est
+irréductible. Soit alors $U$ un voisinage affine de $e$ dans $G^\circ$ ;
+utilisant le fait que $G^\circ$ est irréductible, on voit tout de suite que
+$U\cdot U=G^\circ$, ce qui prouve que $G^\circ$ est quasi-compact, donc de type
+fini sur $k$.
+
+Supposons pour simplifier que $G$ soit commutatif. Pour tout entier $n>0$, soit
+$G^{(n)}$ l'image inverse de $G^\circ$ par l'homomorphisme $\varphi_n$ de
+puissance $n$-ième dans $G$, donc $G^{(n)}$ est un sous-groupe ouvert de $G$.
+Nous poserons :
+\[
+G^\tau=\bigcup_nG^{(n)}.
+\]
+
+\src{223}
+\[
+G^\sigma=\bigcup_{(n,p)=1}G^{(n)},
+\qquad
+G^\rho=\bigcup_hG^{(p^h)},
+\]
+où $p$ est l'exposant caractéristique pour le corps $k$. On obtient donc autant
+de sous-groupes ouverts de $G$, satisfaisant
+\[
+G^\sigma\cap G^\rho=G^\circ,
+\qquad
+G^\sigma G^\rho=G^\tau.
+\]
+
+\result{REMARQUE}{} On peut construire le schéma en groupes quotient
+$G/G^\circ=N$ (cf. [3], IV), et définir alors $G^\tau$, $G^\sigma$, $G^\rho$
+comme les images inverses dans $G$ du sous-groupe de torsion de $N$ (resp. du complémentaire naturel de sa
+composante $p$-primaire, somme des composantes $q$-primaires pour $q$
+nombre premier $\neq p$, resp. de sa composante $p$-primaire). On
+notera à ce propos que $N$ est un schéma en groupes discret séparable sur $k$,
+donc (une fois choisi une clôture algébrique $\overline k$ de $k$, donnant lieu
+à un groupe de Galois $\pi$) s'identifie à un groupe discret ordinaire sur
+lequel $\pi$ opère par automorphismes. C'est de cette façon qu'on peut
+interpréter de façon évidente la construction du sous-groupe de torsion et la
+décomposition de ce dernier en ses composantes $q$-primaires. Lorsque $G$ est
+le schéma de Picard d'un schéma $X$ propre sur $k$, $N$ pourra s'appeler le
+\emph{schéma de Néron--Severi} (réduit) de $X$ sur $k$. Lorsque
+$G^\circ_{\mathrm{réd}}$ est un sous-schéma en groupes de $G^\circ$, ce qui a
+lieu en particulier chaque fois que $k$ est parfait ou que $G^\circ$ est
+propre sur $k$ (par exemple $X$ géométriquement normal), il y a lieu également
+d'introduire le quotient $N'=G/G^\circ_{\mathrm{réd}}$, qui a tendance à se
+comporter mieux que $N$ du point de vue spécialisation, i.e. quand $X$ varie
+dans une famille de schémas algébriques.
+
+Soient maintenant $S$ un préschéma localement noethérien, et $G$ un préschéma
+en groupes sur $S$, localement de type fini sur $S$. Nous ne supposons pas $G$
+de type fini sur $S$, ni séparé sur $S$. Nous poserons alors
+\[
+G^\circ=\bigcup_{s\in S}(G_s)^\circ,
+\]
+et lorsque $G$ est commutatif :
+\[
+G^\tau=\bigcup_{s\in S}(G_s)^\tau,
+\qquad
+G^\sigma=\bigcup_{s\in S}(G_s)^\sigma,
+\qquad
+G^\rho=\bigcup_{s\in S}(G_s)^\rho.
+\]
+
+\src{224}
+Ce sont là des parties de $G$, stables par la multiplication de $G$, ce qui
+n'implique évidemment pas qu'elles puissent être définies à l'aide de
+sous-préschémas en groupes de $G$. Notamment, il semble qu'il n'existe pas en
+général de sous-préschéma en groupes de $G$ dont l'ensemble sous-jacent soit
+$G^\circ$. Bien entendu, si l'un de ces ensembles est ouvert, alors, muni de la
+structure induite, c'est un sous-préschéma en groupes ouvert de $G$. Nous
+verrons qu'il en est toujours ainsi de $G^\tau$ ; ainsi, du point de vue des
+foncteurs représentables, en particulier du point de vue « spécialisations »,
+l'équivalence numérique se comporte de façon plus satisfaisante que
+l'équivalence algébrique. Voici les principales propriétés générales des
+ensembles qu'on vient de définir :
+
+\result{THÉORÈME}{1.1} $G^\circ$, $G^\tau$, $G^\sigma$, $G^\rho$ sont
+localement constructibles. De plus :
+
+\noindent (i) $G^\circ$ est quasi-compact sur $S$. Lorsque les $G_s^\circ$
+sont propres et $G$ séparé sur $S$, alors $G^\circ$ est propre sur $S$, donc
+fermé dans $G$.
+
+\noindent (ii) $G^\tau$ est ouvert. Si $G^\circ$ est fermé, il en est de même
+de $G^\tau$.
+
+\noindent (iii) Si $G^\circ$ est fermé, il en est de même de $G^\sigma$ pourvu
+qu'on soit en égale caractéristique, i.e. tous les corps résiduels de $S$ ont
+même caractéristique. Si $G^\circ$ est fermé et si $G\longrightarrow S$ est
+universellement ouvert en les points de $G^\sigma$ (cf. corollaire 1.5
+ci-dessous), alors $G^\sigma\longrightarrow S$ est universellement ouvert.
+
+\noindent (iv) Si $G^\circ$ est fermé, il en est de même de $G^\rho$.
+Supposons qu'on soit en égale caractéristique, et que, pour tout entier $n>0$
+tel que $(n,p)=1$, l'homomorphisme de puissance $n$-ième dans $G$ soit ouvert,
+alors $G^\rho$ est ouvert.
+
+Donnons des indications sur la démonstration. Le fait que $G^\circ$ soit
+localement constructible, et quasi-compact sur $S$, est contenu dans le lemme
+suivant :
+
+\result{LEMME}{1.2} Supposons que $S\neq\varnothing$, alors il existe un ouvert
+non vide $U$ dans $S$, et un schéma en groupes de type fini $H$ sur $U$ à
+fibres connexes, enfin un homomorphisme de schémas en groupes
+$H\longrightarrow G|U$ qui soit une immersion ouverte ayant pour image
+$G^\circ|U$.
+
+Pour prouver le lemme, on peut supposer $S$ irréductible, soit $\eta$ son point
+générique, et faisons le changement de base
+$S'=\operatorname{Spec}(\mathcal O_{S,\eta})\longrightarrow S$ ; on trouve un
+schéma en groupes $G'$ sur un anneau artinien local
+$\mathcal O_{S,\eta}=A$, dans lequel on a un sous-schéma en groupes ouvert
+$G'{}^\circ$ de type fini sur $A$, comme on a dit plus haut. Il provient donc
+d'un schéma en groupes de type fini $H$ sur un voisinage ouvert $U$ de $\eta$,
+et l'immersion canonique $G'{}^\circ\longrightarrow G'$ provient d'une
+immersion
+
+\src{225}
+ouverte $H\longrightarrow G|U$, qui sera un homomorphisme de schémas en groupes
+pour $U$ assez petit. Comme les fibres de $H$ sont connexes si on prend $U$
+assez petit, et toutes de même dimension, égale à celle des fibres de $G$ pour
+$U$ assez petit, il s'ensuit que, pour tout $s\in U$, l'image de $H_s$ dans
+$G_s$ est exactement $G_s^\circ$ ($U$ assez petit), ce qui prouve 1.2.
+
+La deuxième assertion dans (i) est contenue dans le lemme suivant (qu'on
+applique à un voisinage ouvert quasi-compact de $G^\circ$ dans $G$) :
+
+\result{LEMME}{1.3} Soient $X$ un préschéma de type fini et séparé sur $S$
+localement noethérien, $g$ une section de $X$ sur $S$, $X^\circ$ la réunion des
+composantes connexes des $g(s)$ dans les $X_s$. Soit $s\in S$, tel que
+$X_s^\circ$ soit propre sur $k(s)$, alors il existe un voisinage ouvert $U$ de
+$s$, tel que $X^\circ|U$ soit propre sur $U$, et a fortiori fermé dans $X|U$.
+
+Par descente fidèlement plate de la base, on se ramène au cas où $S$ est le
+spectre d'un anneau local complet, et $s$ son point fermé. Appliquant [2], III,
+5.5.1, on voit que $X$ se décompose en somme de deux ouverts disjoints $X'$ et
+$X''$, le premier propre sur $S$ et tel que $X'_s=X_s^\circ$. Cela nous ramène
+au cas où $X=X'$, i.e. où $X$ est propre sur $S$. Dans ce cas on s'en tire par
+une démonstration standard, utilisant le critère valuatif de propreté d'une
+partie (oublié dans [2], chap. II).
+
+Prouvons que $G^\tau$ est ouvert, ou ce qui revient au même, compte tenu que la
+formation de $G^\tau$ (comme celle de $G^\circ$, $G^\sigma$, $G^\rho$) commute
+à l'extension de la base : pour toute section $g$ de $G$ sur $S$,
+$g^{-1}(G^\tau)$ est ouvert. Cela signifie deux choses :
+
+\medskip
+\noindent a. Soit $y\in S$ tel que $g(y)\in G_y^\tau$, alors pour tout
+$y'\in\overline{\{y\}}$ voisin de $y$, on a $g(y')\in G_{y'}^\tau$.
+
+\medskip
+\noindent b. Soit $y'\in S$ tel que $g(y')\in G_{y'}^\tau$, alors, pour toute
+générisation $y$ de $y'$, on a $g(y)\in G_y^\tau$.
+
+Pour (a), on note qu'il existe un entier $n>0$ tel que
+$g^n(y)\in G_y^\circ$ ; comme $G^\circ$ est constructible,
+$(g^n)^{-1}(G^\circ)$ est constructible, il s'ensuit que l'on a
+$g^n(y')\in G_{y'}^\circ$ pour $y'\in\overline{\{y\}}$ voisin de $y$. Pour
+(b), on note que les $g(y')^n=g^n(y')$ restent dans un ouvert quasi-compact de
+$G_{y'}$ (car ils sont contenus dans un nombre fini de classes modulo
+$G_{y'}^\circ$), donc il existe un ouvert quasi-compact $U$ dans $G$ qui
+contient les $g^n(y')$, donc aussi leurs générisations $g^n(y)$, donc les
+puissances de $g(y)$ restent dans un ouvert quasi-compact de $G_y$, ce qui
+implique facilement que $g(y)\in G_y^\tau$.
+
+\src{226}
+Supposons $G^\circ$ fermé, prouvons qu'il en est de même de $G^\tau$. Comme on
+sait déjà que $G^\tau$ est ouvert, donc localement constructible, il reste à
+prouver qu'il est stable par spécialisation, ce qui provient du fait que c'est
+une réunion de fermés, à savoir les images inverses, par les homomorphismes
+$\varphi_n$ de puissance $n$-ième, du fermé $G^\circ$.
+
+Le même argument prouvera que $G^\sigma$ et $G^\rho$ sont fermés si $G^\circ$
+l'est (sous réserve dans le premier cas qu'on soit en égale caractéristique),
+une fois démontré que $G^\sigma$ et $G^\rho$ sont localement constructibles.
+Or, pour $x\in G^\tau$, soit $\nu(x)$ le plus petit entier $n>0$ tel que
+l'homomorphisme $\varphi_n$ de puissance $n$-ième envoie $x$ dans $G^\circ$.
+Donc $G^\sigma$ (resp. $G^\rho$) est formé des $x\in G$\footnote{Le texte
+imprimé porte ici « $X$ », qui n'est pas défini dans ce passage ; les quatre
+lieux considérés sont des parties de $G$.} tels que $\nu(x)$ soit premier à
+$p$ (resp. une puissance de $p$), et notre assertion de constructibilité
+résulte alors de la suivante, plus précise :
+
+\result{LEMME}{1.4} La fonction $\nu$ sur $G^\tau$ est localement
+constructible.
+
+Cela signifie en effet que, pour tout entier $n>0$, l'ensemble des
+$x\in G^\tau$ tels que $\nu(x)=n$ est localement constructible ; or c'est la
+différence de $\varphi_n^{-1}(G^\circ)$ et de la réunion des
+$\varphi_d^{-1}(G^\circ)$, où $d$ parcourt les diviseurs propres de $n$ ; comme
+$G^\circ$ est localement constructible, il en est de même des
+$\varphi_d^{-1}(G^\circ)$, donc aussi de la différence précédente.
+
+Supposons $G^\circ$ fermé et $G\longrightarrow S$ universellement ouvert en les
+points de $G^\sigma$, prouvons que $G^\sigma\longrightarrow S$ est ouverte,
+i.e. transforme un voisinage dans $G^\sigma$ d'un $x\in G^\sigma$ en un
+voisinage de $y=f(x)$. Comme $G^\sigma$ est localement constructible, on est
+ramené à prouver que, pour toute générisation $y'$ de $y$, il existe une
+générisation $x'$ de $x$ dans $G^\sigma$ au-dessus de $y'$. Cela nous ramène
+par changement de base au cas où $S$ est le spectre d'un anneau de valuation
+discrète et où $y,y'$ sont respectivement le point fermé et le point générique.
+Utilisant le fait que $G\longrightarrow S$ est ouvert en $x$ (donc qu'il existe
+une générisation $x_1$ de $x$ dans $G$ au-dessus de $y'$), on peut supposer de
+plus qu'il existe une section $g$ de $G$ sur $S$, telle que $x=g(y)$ (quitte à
+faire encore un changement de base). Si $k(y')$ est de caractéristique 0, il
+suffit de prendre n'importe quelle générisation $x'$ de $x$ dans $G$ au-dessus
+de $y'$ ; elle est dans $G^\tau$ puisque $G^\tau$ est ouvert, donc dans
+$G^\sigma$ puisque $G_{y'}^\sigma=G_{y'}^\tau$. Si la caractéristique de
+$k(y')$ est $p>0$, posons
+\[
+\nu(g(y'))=p^hm\qquad\text{avec }(m,p)=1 ;
+\]
+
+\src{227}
+soient $a$ et $b$ deux entiers tels que $ap^h+bm=1$, posons
+\[
+g_1=g^{ap^h},\qquad g_2=g^{bm},\qquad\text{d'où}\qquad g=g_1g_2 ;
+\]
+donc, par construction, on a $g_1(y')\in G^\sigma$ et
+$g_2(y')\in G^\rho$. Comme $G^\circ$ est fermé, il s'ensuit que
+$g_1(y)\in G^\sigma$ et $g_2(y)\in G^\rho$, d'où, en vertu de
+\[
+g(y)=g_1(y)g_2(y)\in G^\sigma,
+\]
+aussi $g_2(y)\in G^\sigma$, donc
+\[
+g_2(y)\in G_y^\sigma\cap G_y^\rho=G_y^\circ.
+\]
+Or, de l'hypothèse et du fait que $S$ est le spectre d'un anneau de valuation
+discrète, résulte que $G-(G_y-G_y^\circ)$ est un ouvert de $G$ sur lequel
+$G\longrightarrow S$ induit un morphisme ouvert, donc que, par tout point de
+$G_y^\circ$, passe une « quasi-section » ; par suite, quitte à faire encore une
+extension sur la base $S$, on peut supposer qu'il existe une section $g'_2$ de
+$G^\circ$ sur $S$ telle que $g'_2(y)=g_2(y)$. Posons $g'=g_1g'_2$ ; alors, par
+construction, $g'(y)=g(y)=x$, et
+\[
+g'(y')=g_1(y')g'_2(y')\in G^\sigma,
+\]
+donc $g'(y')=x'$\footnote{Le texte imprimé porte ici « $g(y')=x'$ » ; la
+section construite dans la phrase précédente et dont on calcule la fibre
+générique est $g'$.} est une générisation de $x$ dans $G^\sigma$ au-dessus de
+$y'$, ce qui prouve (iii).
+
+Prouvons enfin la dernière assertion (iv). On est ramené à prouver que, si
+$x\in G^\rho$, alors toute générisation $x'$ de $x$ est dans $G^\rho$. On peut
+supposer (quitte à prendre les images par $\varphi_{p^h}$ pour $h$
+convenable)\footnote{Le texte imprimé porte $\varphi_{n^h}$ ; pour
+$x\in G^\rho$, la définition donnée p.~223 fournit une puissance de l'exposant
+caractéristique $p$ qui envoie $x$ dans $G^\circ$.} que l'on a même
+$x\in G^\circ$. Alors, pour tout entier $n$ premier à la caractéristique, $x$
+est dans l'image de $\varphi_n$ (car la puissance $n$-ième dans un groupe de
+type fini connexe sur un corps de caractéristique première à $n$ est
+surjective). Comme $\varphi_n$ est ouverte, il s'ensuit que $x'$ est également
+dans l'image de $\varphi_n$. Plus précisément, soit $U$ un ouvert
+quasi-compact de $G^\tau$ contenant $G_y^\circ$, alors on a
+$x'\in\varphi_n(U)$ pour tout $n$ premier à $p$. Prenant pour $n$ un multiple
+commun des facteurs premiers à $p$ des $\nu(z)$, pour $z\in U$, on trouve que
+$x'\in G^\rho$.
+
+L'assertion (1.1), (iii), se complète ainsi :
+
+\result{COROLLAIRE}{1.5} Soit $n>1$ un entier tel que l'homomorphisme de
+puissance $n$-ième $\varphi_n:G\longrightarrow G$ soit universellement ouvert
+(par exemple étale), posons
+\[
+G^{(n)}=\varphi_n^{-1}(G^\circ),
+\]
+et supposons que, dans chaque fibre géométrique $G_{\bar s}$, le sous-ensemble
+
+\src{228}
+$\bigcup_{h\geq0}|{}_{n^h}G_{\bar s}|$ soit dense dans
+$\bigcup_{h\geq0}G_{\bar s}^{(n^h)}$. Alors $G\longrightarrow S$ est universellement ouvert en les
+points des $G^{(n^h)}$. En particulier, si les $G_s^\circ$ ne contiennent pas
+de composante additive et si, pour tout entier $n>1$, l'homomorphisme
+$\varphi_n$ est universellement ouvert en les points de caractéristique
+résiduelle première à $n$\footnote{Le texte imprimé porte « première à $p$ ».
+Dans cette proposition quantifiée par $n$, le critère d'étalité et l'argument
+par les noyaux ${}_nG$ exigent une caractéristique résiduelle première à $n$.},
+alors $G\longrightarrow S$ est universellement ouvert en les points de
+$G^\sigma$, donc, par (1.1), (iii), si $G^\circ$ est fermé,
+$G^\sigma\longrightarrow S$ est universellement ouvert. Dans ces cas,
+$s\longmapsto\dim G_s$ est une fonction localement constante sur $S$.
+
+En effet, de l'hypothèse résulte que le noyau ${}_nG$ de $\varphi_n$ est
+universellement ouvert sur $S$, donc $G\longrightarrow S$ est universellement
+ouvert en les points de ${}_nG$, donc (remplaçant $n$ par $n^h$) en les points
+des ${}_{n^h}G$. L'hypothèse de densité dit exactement que, fibre par fibre, les points d'ordre
+une puissance de $n$ sont denses dans la réunion des $G^{(n^h)}$. Pour
+l'assertion particulière, l'absence de composantes additives implique cette
+densité pour les entiers $n$ inversibles dans le corps résiduel ; d'où résulte facilement que
+$G\longrightarrow S$ est universellement ouvert en tous les points de cette
+réunion, en particulier le long de la section unité, d'où facilement le fait
+que $s\longmapsto\dim G_s$ est une fonction localement constante.
+
+\result{REMARQUE}{1.6} Rappelons qu'un morphisme $X\longrightarrow S$ est dit
+universellement ouvert s'il transforme tout ouvert en un ouvert, et garde cette
+propriété louable après tout changement de base $S'\longrightarrow S$. Cela
+signifie aussi (lorsque $S$ est localement noethérien et $X\longrightarrow S$
+localement de type fini) que toute composante irréductible de $X$ domine $S$,
+et que cette propriété est conservée après tout changement de base
+$S'\longrightarrow S$. Dans ces deux assertions, il suffit d'ailleurs
+(moyennant les hypothèses de finitude ci-dessus) de tester avec des changements
+de base $S'\longrightarrow S$, où $S'$ est le spectre d'un anneau de valuation
+discrète (complet à corps résiduel algébriquement clos si on y tient~...). La
+définition s'étend de façon évidente au cas d'une partie $Z$ de $X$ (telle la
+partie $G^\sigma$ de $G$). C'est un phénomène parfaitement normal, même si on
+part d'un morphisme projectif simple $X\longrightarrow S$ à fibres
+géométriques connexes (par exemple le carré fibré de la famille modulaire de
+courbes elliptiques sur $S=\operatorname{Spec}\mathbf C[j]$), que
+$\operatorname{Pic}_{X/S}$ ne soit pas universellement ouvert sur $S$, i.e.
+qu'il puisse y avoir des composantes irréductibles de
+$\operatorname{Pic}_{X/S}$ se trouvant tout entières au-dessus d'un seul point
+de $S$ : cela est lié au fait que le rang du groupe de Néron--Severi des fibres
+de $X/S$ peut faire des sauts vers le haut (phénomènes de « multiplication
+complexe »). Par contre, (1.5) nous assure que, dans les bons cas,
+$\operatorname{Pic}_{X/S}^\sigma$ (et le plus souvent même, semble-t-il,
+$\operatorname{Pic}_{X/S}^\tau$) est universellement ouvert sur $S$.
+
+\src{229}
+Enfin, voici un cas utile où, exceptionnellement, $G^\circ$ consente à être
+ouvert :
+
+\result{COROLLAIRE}{1.7} Supposons que $G\longrightarrow S$ soit
+universellement ouvert en les points de $G^\circ$ (cf. (1.5)), et que les
+fibres $G_s$ soient séparables, donc simples sur $k(s)$ (cette dernière
+condition étant automatiquement remplie en caractéristique résiduelle nulle,
+en vertu d'un résultat de Cartier). Alors $G^\circ$ est ouvert dans $G$. Si de
+plus $S$ est réduit, $G^\circ$ est simple (en particulier plat) sur $S$.
+
+La première assertion peut d'ailleurs se préciser en notant que si, pour un
+$s\in S$ donné, $G\longrightarrow S$ est universellement ouvert en les points
+de $G_s^\circ$ et si $G_s^\circ$ est séparable sur $k(s)$, alors $G^\circ$ est
+un voisinage de $G_s^\circ$ (et d'ailleurs, l'hypothèse faite en $s$ restera
+vérifiée en les points voisins). Cet énoncé, d'ailleurs indépendant de toute
+structure de groupes, se trouvera démontré dans [2], IV, paragraphe 7. La
+dernière assertion dans (1.7), également indépendante de toute structure de
+groupe et de toute question de composante connexe, est un cas particulier d'un
+critère de platitude donné dans [2], IV, paragraphe 5, qui implique, plus
+généralement :
+
+\result{COROLLAIRE}{1.8} Soit $U$ une partie ouverte d'une fibre $G_s$, telle
+que $G\longrightarrow S$ soit universellement ouvert en les points de $U$ (cf.
+(1.5)). Si $G_s$ est séparable sur $k(s)$ et $S$ réduit en $s$, alors $G$ est
+plat sur $S$ en les points de $U$ (donc en l'occurrence, simple sur $S$ en les
+points de $U$).
+
+\result{REMARQUES}{1.9} J'ignore si, lorsque $G$ est séparé sur $S$, $G^\circ$
+ou $G^\tau$ est toujours fermé dans $G$ ; cela semble peu probable. On trouve
+en tous cas des contre-exemples évidents si on laisse tomber l'hypothèse de
+séparation, par exemple en prenant la droite affine dont on dédouble une
+infinité dénombrable de fois l'origine, obtenant ainsi un schéma en groupes $G$
+sur la droite affine dont toutes les fibres sont réduites au groupe unité, sauf
+une dont la fibre est $\mathbf Z$. Ce schéma en groupes est un sous-schéma en
+groupes ouvert, savoir l'adhérence de la section unité, dans le préschéma de
+Picard du $S$-schéma $X$ correspondant à une famille de coniques dégénérant en
+deux droites concourantes.
+
+D'ailleurs, même en partant d'un schéma en groupes fini et plat $G$ sur le
+spectre $S$ d'un anneau de valuation discrète $V$, et par suite si $G^\circ$
+est réduit à la section unité, donc fermé, diverses conclusions deviennent
+fausses si on abandonne certaines hypothèses. Supposons que $V$ soit d'égale
+caractéristique $p>0$, et soit $G$ le noyau de l'homomorphisme
+$\mathbf G_a\longrightarrow\mathbf G_a$ défini par l'homomorphisme de
+foncteurs
+\[
+f\longmapsto f^p-tf,
+\]
+où $t$ est une uniformisante de $V$.
+
+\src{230}
+(Se rappeler que, par définition, le « groupe additif » $\mathbf G_a$ sur $S$
+représente le foncteur $S'\longmapsto\Gamma(S',\mathcal O_{S'})$.) Alors, en
+tant que $S$-schéma,
+\[
+G=\operatorname{Spec}V[x]/(x^p-tx)
+\]
+est réunion de $p$ « droites » concourantes, figurant un groupe
+$\mathbf Z/p\mathbf Z$ qui dégénère en un groupe infinitésimal de type additif.
+Dans cet exemple, $G^\circ=G^\sigma$ (et c'est l'une des $p$ droites), donc
+n'est pas ouvert dans $G$. Dans le cas d'inégale caractéristique, de
+caractéristique résiduelle $p>0$, partons du schéma en groupes
+$H=\boldsymbol\mu_p$, noyau de la puissance $p$-ième dans $\mathbf G_m$, donc
+\[
+H=\operatorname{Spec}V[x]/(x^p-1) ;
+\]
+c'est encore la réunion de $p$ droites concourantes, figurant un groupe
+$\mathbf Z/p\mathbf Z$ (en caractéristique 0) qui dégénère en un groupe
+infinitésimal de type multiplicatif en caractéristique $p$. Soit $H'$ le
+« schéma en groupes constant » défini par le groupe fini ordinaire
+$\mathbf Z/p\mathbf Z$, donc la somme disjointe de $\mathbf Z/p\mathbf Z$
+copies de $S$, ou encore $\operatorname{Spec}V^{\mathbf Z/p\mathbf Z}$. Alors
+$G=H\times_S H'$ décrit un groupe $(\mathbf Z/p\mathbf Z)^2$ en
+caractéristique 0, dégénérant en un groupe infinitésimal fois
+$\mathbf Z/p\mathbf Z$ en caractéristique $p$. Ici $G^\rho$ est la réunion de
+la section unité et de la fibre spéciale, donc $G^\rho$ n'est pas ouvert,
+alors que $G^\sigma$ est la réunion de la section unité et de la fibre
+générale, donc n'est pas fermé, contrairement à ce qui est affirmé dans les
+cas d'égale caractéristique dans (1.1), (iii) et (iv). Bien entendu, ce sont là
+des phénomènes liés à la caractéristique $p>0$. Les résultats qui précèdent
+donnent en effet :
+
+\result{COROLLAIRE}{1.10} Supposons les caractéristiques résiduelles de $S$
+toutes nulles, donc $G^\tau=G^\sigma$, et $G^\circ=G^\rho$. Alors
+$G^\tau=G^\sigma$ est ouvert, et même ouvert et fermé si $G$ est séparé sur
+$S$ et si les $G_s^\circ$ sont propres ; sous cette même hypothèse,
+$G^\circ=G^\rho$ est propre sur $S$, donc fermé dans $G$. Supposons enfin que,
+pour tout entier $n>1$, l'homomorphisme de puissance $n$-ième dans $G$ soit
+universellement ouvert, alors $G^\circ$ est ouvert ; et si de plus les
+$G_s^\circ$ n'ont pas de composante additive (par exemple les $G_s^\circ$
+propres, comme ci-dessus), alors $G^\tau\longrightarrow S$ est universellement
+ouvert, et même simple si $S$ est réduit.
+
+Signalons enfin le résultat facile suivant :
+
+\result{PROPOSITION}{1.11} Il existe une partie ouverte $U$ de $S$, telle que
+l'ensemble $G'$ des points de $G$ en lesquels $G$ est simple (resp. plat)
+au-dessus de $S$ soit l'ensemble sous-jacent à un sous-schéma en groupes ouvert
+induit de $G|U$. De plus, toute section de $G$ sur $U$ est une section de $G'$
+sur $U$.
+
+\src{231}
+\result{COROLLAIRE}{1.12} Si $G$ est simple (resp. plat) sur $S$ en les points
+de la section unité, elle l'est en les points de toute section de $G$ sur $S$,
+et en tous les points de $G^\circ$. Si de plus, pour tout entier $n>0$,
+l'homomorphisme de puissance $n$-ième
+$\varphi_n:G\longrightarrow G$ est étale en les points de caractéristique
+première à $n$, alors $G$ est simple (resp. plat) sur $S$ en tous les points de
+$G^\sigma$.
+
+\fsection{2}{Application aux propriétés locales des schémas de Picard}
+
+\result{THÉORÈME}{2.1}
+
+\noindent(i) Soit $f:X\longrightarrow S$ un morphisme propre et simple, et
+supposons que $\operatorname{Pic}_{X/S}$ existe (par exemple $f$ un morphisme
+projectif). Alors $\operatorname{Pic}_{X/S}$ est séparé sur $S$, et, pour toute
+partie fermée $Z$ de $\operatorname{Pic}_{X/S}$ qui est de type fini sur $S$,
+$Z$ est propre sur $S$.
+
+\noindent(ii) Soit $X$ un préschéma sur un corps $k$, propre et géométriquement
+normal. Alors $\operatorname{Pic}_{X/k}^\circ$\footnote{Le texte imprimé porte
+$\operatorname{Pic}_{X/S}^\circ$, alors que $S$ n'intervient pas dans cet
+énoncé sur le corps $k$.} est propre sur $k$.
+
+\begin{proof}
+(i) Les critères valuatifs ([2], II, paragraphe 7) nous ramènent à prouver ceci :
+si $S$ est le spectre d'un anneau de valuation discrète complet, $U$ l'ouvert
+réduit au point générique de $S$, alors toute section rationnelle de
+$\operatorname{Pic}_{X/S}$ sur $S$, i.e. toute section au-dessus de $U$, se
+prolonge de façon unique en une section au-dessus de $S$. Compte tenu de la
+définition de $\operatorname{Pic}_{X/S}$, cela équivaut à l'énoncé suivant :
+pour tout Module inversible $\mathcal L$ sur $V=f^{-1}(U)$, il existe un Module
+inversible sur $X$ qui prolonge $\mathcal L$, unique à un isomorphisme près. Or
+ceci résulte facilement de la description des Modules inversibles sur $V$,
+resp. $X$, en termes de classes de diviseurs « de Cartier », compte tenu que
+les anneaux locaux de $X$ sont réguliers ($X$ étant simple sur $S$ régulier),
+donc factoriels en vertu d'Auslander, ce qui implique que tout diviseur sur
+$X$\footnote{Le texte imprimé porte ici « sur $S$ » ; la factorialité invoquée
+est celle des anneaux locaux de $X$.} est un diviseur de Cartier. En effet,
+tout diviseur sur $V$ peut se prolonger en un diviseur sur $X$ en prenant son
+« adhérence ».
+\end{proof}
+
+\result{REMARQUE}{2.2} La démonstration reste valable en supposant seulement
+que $f$ est plat et ses fibres $X_s$ sont localement des intersections
+complètes et simples sur $k(s)$ en codimension $\leq2$, compte tenu du résultat
+suivant démontré dans [5] : un anneau local noethérien intersection complète
+qui est régulier en codimension $\leq3$ est factoriel (« conjecture de Samuel »).
+On notera que le
+
+\src{232}
+résultat devient faux si on remplace « codimension $\leq2$ » par « codimension
+$\leq1$ », i.e. par l'hypothèse « normal », comme on peut se convaincre sur
+l'exemple d'une famille de quadriques non singulières dégénérant en un cône
+quadratique.
+
+(ii) Utilisant le lemme de Chow, on est ramené au cas où $X$ est projectif,
+donc plongé dans $\mathbf P_k^n$ ; on peut supposer $X$ connexe. Si
+$\dim X=1$, alors $X$ est simple sur $k$, et on applique (i). Si $\dim X\geq2$,
+on peut utiliser une variante des « critères d'équivalence » connus, qui
+implique qu'il existe un nombre fini de courbes $Y_i$ simples sur $X$ (obtenues
+comme intersections de $X$ avec des sous-espaces linéaires convenables de
+$\mathbf P_k^n$), telles que
+\[
+\operatorname{Pic}_{X/k}^\tau\longrightarrow
+\prod_i\operatorname{Pic}_{Y_i/k}^\tau
+\]
+soit un monomorphisme, et induit a fortiori un monomorphisme pour les
+composantes connexes. Comme celle du second membre est propre sur $k$ d'après
+ce qui précède, et qu'il s'agit d'un homomorphisme de schémas en groupes, qui
+sera nécessairement une immersion fermée, il s'ensuit que
+$\operatorname{Pic}_{X/k}^\circ$ est également propre sur $k$. On peut éviter
+le recours aux délicats critères d'équivalence en utilisant la structure des
+groupes algébriques commutatifs sur un corps algébriquement clos (due à
+Chevalley--Borel) ; on est ramené à prouver que tout morphisme de la droite
+affine privée de l'origine\footnote{Le texte imprimé porte « de la droite
+affine ». L'erratum lié, p.~303, prescrit « droite affine privée de
+l'origine ».} dans $\operatorname{Pic}_{X/k}^\tau$ est constant, ce qui
+équivaut à dire que tout Module inversible sur
+$X[t,t^{-1}]$\footnote{Le texte imprimé porte $X[t]$ ; l'erratum lié, p.~303,
+prescrit $X[t,t^{-1}]$.} provient d'un Module inversible sur $X$, résultat qui
+est bien connu et fort élémentaire et n'utilise pas même le fait que $X$ soit
+propre sur $k$ (l'hypothèse $X$ normal permettant de se réduire aussitôt au cas
+$X$ régulier).
+
+\result{COROLLAIRE}{2.3} Soit $f:X\longrightarrow S$ un morphisme propre et
+normal (i.e. plat et à fibres géométriques normales), supposons que
+$\operatorname{Pic}_{X/S}$ existe, alors $\operatorname{Pic}_{X/S}^\circ$ est
+propre sur $S$, donc fermé dans $\operatorname{Pic}_{X/S}$ ; de plus
+$\operatorname{Pic}_{X/S}^\tau$ et $\operatorname{Pic}_{X/S}^\rho$ sont
+également fermés, et aussi $\operatorname{Pic}_{X/S}^\sigma$ en « égale
+caractéristique ».
+
+On applique (1.1) et (2.1), (ii).
+
+\result{COROLLAIRE}{2.4} Soit $f:X\longrightarrow S$ un morphisme propre et
+simple, tel que $\operatorname{Pic}_{X/S}$ existe et soit somme de schémas
+$P^{(i)}$ de type fini sur $S$ (cf. [3], V, 4.1). Alors chaque $P^{(i)}$ est
+propre sur $S$.
+
+Résulte de (2.1), (i). Comme on l'a signalé dans (2.2), le résultat peut se
+généraliser en faisant des hypothèses moins restrictives sur les fibres de $f$,
+mais devient faux si on se borne à supposer $f$ normal. Dans ce cas, j'ignore
+d'ailleurs si $\operatorname{Pic}_{X/S}^\tau$ est néanmoins propre sur $S$,
+même en admettant qu'il soit de type fini sur $S$.
+
+\src{233}
+\result{THÉORÈME}{2.5} Soit $f:X\longrightarrow S$ un morphisme propre et
+plat, tel que $\operatorname{Pic}_{X/S}$ existe, et pour tout entier $n$, soit
+$\varphi_n$ l'homomorphisme puissance $n$-ième dans ce préschéma en groupes.
+Alors $\varphi_n$ est étale en tous les points
+$x\in\operatorname{Pic}_{X/S}$\footnote{Le texte imprimé porte « $x\in X$ » ;
+$\varphi_n$ est l'endomorphisme de puissance du préschéma de Picard.} à
+caractéristique résiduelle première à $n$.
+
+Par la caractérisation infinitésimale des morphismes étales, cette assertion
+équivaut à la suivante :
+
+\result{LEMME}{2.6} Supposons que $S$ soit le spectre d'un anneau local
+artinien $A$ dont l'idéal maximal $\mathfrak m$ soit de puissance
+$(\nu+1)$-ième nulle, soit
+\[
+A_{\nu-1}=A/\mathfrak m^\nu,
+\qquad X_{\nu-1}=X\otimes_A A_{\nu-1},
+\]
+$\mathcal L$ un Module inversible sur $X$, enfin $\mathcal L'_{\nu-1}$ un
+Module inversible sur $X_{\nu-1}$ dont la puissance tensorielle $n$-ième soit
+isomorphe à
+\[
+\mathcal L_{\nu-1}=\mathcal L\otimes_A A_{\nu-1}.
+\]
+Alors il existe un Module inversible $\mathcal L'$ sur $X$ dont la puissance
+tensorielle $n$-ième est isomorphe à $\mathcal L$ (si $n$ est premier à la
+caractéristique résiduelle de $k=k(A)$).
+
+Prouvons le lemme. On pose
+\[
+V=\mathfrak m^\nu=\mathfrak m^\nu/\mathfrak m^{\nu+1} ;
+\]
+c'est un espace vectoriel sur $k=k(A)$. On commence à prolonger
+$\mathcal L'_{\nu-1}$ en un Module inversible quelconque $\mathcal L'$ sur $X$.
+L'obstruction à ce faire se trouve dans
+\[
+H^2(X_0,\mathcal O_{X_0})\otimes_k V,
+\]
+mais, en vertu de l'hypothèse faite sur $\mathcal L'_{\nu-1}$ et du fait que
+$\mathcal L_{\nu-1}$ peut se prolonger, on voit que le produit de cette
+obstruction par $n$ est nul, donc elle-même est nulle puisque $n$ est premier
+à la caractéristique. D'ailleurs, l'arbitraire dans le prolongement effectué
+se trouve dans
+\[
+H^1(X_0,\mathcal O_{X_0})\otimes_k V,
+\]
+et la déviation $\xi$ de $\mathcal L'^{\otimes n}$ avec $\mathcal L$ se trouve
+dans le même Module ; si on essaye de corriger $\mathcal L'$ de façon à rendre
+cette déviation nulle, on est ramené à trouver un $\eta$ dans ledit Module,
+tel que $n\eta=\xi$. Or c'est possible encore grâce au fait que $n$ est
+premier à la caractéristique.
+
+\result{COROLLAIRE}{} Sous les conditions de (2.5), supposons de plus que les
+schémas de Picard des fibres $X_s$ ne contiennent pas de composante additive
+(par exemple les $X_s$ géométriquement normaux, cf. (2.1), (ii)). Alors
+$\operatorname{Pic}_{X/S}\longrightarrow S$ est universellement ouvert en les
+points de $\operatorname{Pic}_{X/S}^\circ$. Si
+$\operatorname{Pic}_{X/S}^\circ$ est fermé (par exemple les $X_s$
+géométriquement normaux, cf. (2.3)), alors
+$\operatorname{Pic}_{X/S}^\sigma$ est lui-même universellement ouvert sur $S$.
+Enfin, dans le cas d'égale caractéristique,
+$\operatorname{Pic}_{X/S}^\rho\longrightarrow S$ est universellement ouvert.
+
+On applique (1.5) et (1.1).
+
+\src{234}
+\result{COROLLAIRE}{2.7} Soit $f:X\longrightarrow S$\footnote{Le texte
+imprimé porte « $f:X\longrightarrow Y$ », alors que le préschéma de Picard et
+la fonction qui suivent ont tous deux pour base $S$.} un morphisme propre et
+plat, tel que $\operatorname{Pic}_{X/S}$ existe. Alors la fonction
+\[
+s\longmapsto\dim\operatorname{Pic}_{X_s/k(s)}
+\]
+sur $S$ est semi-continue supérieurement (i.e. elle peut faire des sauts vers
+le haut, mais pas vers le bas), et elle est même continue (i.e. localement
+constante) si les $\operatorname{Pic}_{X_s/k(s)}$ ne contiennent pas de
+composante additive.
+
+La première assertion est vraie trivialement ou presque pour tout préschéma en
+groupes localement de type fini sur une base localement noethérienne, puisqu'il
+suffit de regarder le long de la section unité. La deuxième assertion résulte
+de (2.5).
+
+\result{REMARQUE}{2.8} Soient $s,s'\in S$ tels que $s$ soit une spécialisation
+de $s'$, alors (2.7) équivaut à une inégalité (resp. égalité) entre les
+dimensions des schémas de Picard de $X_{s'}$ et de sa « spécialisée » $X_s$.
+D'ailleurs, Serre avait fait observer, dès avant la construction des schémas de
+Picard, que l'invariance de la dimension des Picards des $X_s$ dans le cas d'un
+morphisme simple $f:X\longrightarrow S$ était une conséquence formelle de la
+théorie de la spécialisation du groupe fondamental ([4], X), et des relations
+classiques à la Kummer entre les points d'ordre fini sur la variété de Picard,
+et le groupe fondamental rendu abélien ([4], XI). Si on désigne de façon
+générale par $\alpha,\mu,\lambda$ les dimensions de la partie abélienne,
+multiplicative, additive de $\operatorname{Pic}_{X_s/k(s)}^\circ$, et qu'on
+définit de même $\alpha',\mu',\lambda'$, les relations connues s'expriment par
+les inégalités suivantes :
+\[
+\tag{*}\alpha+\mu+\lambda\geq\alpha'+\mu'+\lambda'
+\]
+(valable pourvu que $\operatorname{Pic}_{X/S}$ existe, donc probablement en
+tous cas), inégalité qui, pour $\lambda=\lambda'=0$, se réduit à une égalité,
+valable sous les mêmes hypothèses d'existence :
+\[
+\alpha+\mu=\alpha'+\mu' ;
+\]
+d'autre part on a
+\[
+\tag{**}2\alpha+\mu\leq2\alpha'+\mu'
+\]
+
+\src{235}
+par l'argument de Serre, si les $X_s$ sont séparables (sans même supposer
+l'existence de $\operatorname{Pic}_{X/S}^\tau$), ou si les
+${}_n\operatorname{Pic}_{X/S}$ (noyaux de $\varphi_n$ dans le foncteur de
+Picard) sont séparés sur l'ouvert de $S$ où $n$ est inversible (compte tenu
+qu'ils sont étales sur cet ouvert grâce à (2.5)). On aurait tendance à conjecturer que (*) est une égalité en tous cas,
+ou du moins si les $X_s$ sont séparables, et qu'on a des inégalités
+\[
+\tag{***}\alpha\leq\alpha',\qquad\lambda\geq\lambda',
+\]
+qui devraient être valables chaque fois qu'on a un préschéma en groupes,
+localement de type fini sur $S$ localement noethérien, dans lequel la dimension
+des fibres est constante (voir (1.3) pour un résultat positif dans cette
+direction).
+
+\result{REMARQUE}{2.9} Dans tous les cas connus,
+$\operatorname{Pic}_{X/S}^\tau$ est universellement ouvert sur $S$, mais il ne
+faut sans doute pas s'en autoriser pour des illusions excessives, même si
+$f:X\longrightarrow S$ est simple ; en tous cas, Mumford a construit un
+exemple (il est vrai avec $S$ non réduit, en fait $S$ spectre d'un anneau
+artinien) où $\operatorname{Pic}_{X/S}^\tau$ n'est pas plat sur $S$, en faisant
+varier infinitésimalement la surface de Igusa. Le point envisagé par Mumford se
+trouve d'ailleurs dans $\operatorname{Pic}_{X/S}^\rho$, et il reste possible
+(pour $f:X\longrightarrow S$ simple) que $\operatorname{Pic}_{X/S}^\tau$ soit
+plat sur $S$ aux points de $\operatorname{Pic}_{X/S}^\sigma$ ; le conférencier
+doute cependant qu'il en soit toujours ainsi, même en se restreignant aux
+points de $\operatorname{Pic}_{X/S}^\circ$ et en supposant que $S$ est le
+spectre d'un anneau de valuation discrète. La question est d'ailleurs liée à
+l'étude des points fixes d'un schéma abélien sous un groupe fini
+d'automorphismes, situation pour laquelle on semble manquer d'exemples.
+
+Il semblerait que, même en se bornant à $f:X\longrightarrow S$ simple et
+projectif, les résultats de régularité locale sur $\operatorname{Pic}_{X/S}$
+énoncés dans le présent numéro, et les conjectures signalées dans (2.8),
+épuisent à peu près ce qu'on peut dire à ce sujet sans hypothèses plus
+particulières sur la nature des fibres de $f$. Rappelons cependant que, si les
+fibres géométriques de $\operatorname{Pic}_{X/S}$ sont réduites et sans
+composante additive, alors il résulte de (1.8) et de (2.5) que
+$\operatorname{Pic}_{X/S}$ est simple sur $S$ en les points de
+$\operatorname{Pic}_{X/S}^\sigma$ lorsque $S$ est réduit ; ce résultat vaut
+même, si $f:X\longrightarrow S$ est normal, sans hypothèse sur $S$, comme nous
+verrons dans (3.5). Signalons à ce propos :
+
+\result{PROPOSITION}{2.10}
+
+\noindent(i) Si $\operatorname{Pic}_{X/S}$ est simple (resp. plat) sur $S$ en
+les points de la section unité, il l'est en tous les points de
+$\operatorname{Pic}_{X/S}^\sigma$, et en les points de toute section de
+$\operatorname{Pic}_{X/S}$ sur $S$.
+
+\src{236}
+\noindent(ii) Soit $s\in S$ tel que
+\[
+H^2(X_s,\mathcal O_{X_s})=0,
+\]
+alors il existe un voisinage ouvert $U$ de $s$ tel que
+$\operatorname{Pic}_{X/S}|U$ soit simple sur $U$.
+
+\noindent(iii) Soit $X$ un schéma propre sur un corps, alors on a
+\[
+\dim\operatorname{Pic}_{X/k}\leq\dim H^1(X,\mathcal O_X),
+\]
+l'égalité ayant lieu si et seulement si $\operatorname{Pic}_{X/k}$ est simple
+sur $k$ ; c'est toujours le cas si $k$ est de caractéristique nulle.
+
+(i) résulte de (2.5) et (1.12), (ii) du critère infinitésimal pour les
+morphismes simples et d'un calcul d'obstructions bien connu, compte tenu que
+(par le « théorème de semi-continuité ») l'hypothèse faite en $s$ sera encore
+vérifiée aux points voisins. Enfin (iii) résulte du fait que
+$H^1(X,\mathcal O_X)$ est isomorphe à l'espace tangent de Zariski en l'élément
+neutre de $\operatorname{Pic}_{X/k}$ ; la dernière assertion est un cas
+particulier d'un théorème de Cartier, disant qu'un « groupe formel » en
+caractéristique 0 est formellement simple sur $k$.
+
+\fsection{3}{Le sous-schéma abélien canonique de
+$\operatorname{Pic}_{X/S}$, et schéma d'Albanese}
+
+\result{PROPOSITION}{3.1} Soient $k$ un corps, $G$ un schéma en groupes de
+type fini sur $k$, commutatif et « sans composante additive ». Alors
+$G_{\mathrm{réd}}^\circ$ est séparable sur $k$, et par suite c'est un
+sous-schéma en groupes simple sur $k$.
+
+La chose étant triviale si $k$ est parfait, en particulier pour $G_{\bar k}$,
+où $\bar k$ est la clôture algébrique de $k$, il suffit de voir que
+$(G_{\bar k}^\circ)_{\mathrm{réd}}$ provient d'un sous-schéma de $G$. Or, de
+l'hypothèse sur $G_{\bar k}$ (pas de composante additive)\footnote{Le texte
+imprimé porte « Or l'hypothèse ... » ; l'erratum lié, p.~303, prescrit « Or,
+de l'hypothèse ... ».} résulte facilement
+qu'il existe un entier $m$ tel que $(G_{\bar k}^\circ)_{\mathrm{réd}}$ soit
+l'image « schématique » de l'homomorphisme de puissance $m$-ième dans
+$G_{\bar k}$. Comme ce dernier homomorphisme provient de l'homomorphisme
+analogue pour $G$, l'image schématique de ce dernier répond à la question.
+
+\result{COROLLAIRE}{3.2} Soit $X$ un schéma géométriquement normal et propre sur $k$ tel que
+$\operatorname{Pic}_{X/k}$ existe, alors il existe un sous-schéma abélien $A$
+de $\operatorname{Pic}_{X/k}$ dont l'ensemble sous-jacent est
+$\operatorname{Pic}_{X/k}^\circ$.
+
+En effet, en vertu de (2.1), (ii), $\operatorname{Pic}_{X/k}^\circ$ étant
+propre sur $k$ satisfait à la condition de (3.1).
+
+\src{237}
+Le résultat précédent montre donc que, dans certains cas, la classique
+« variété de Picard » (qui serait notée
+$(\operatorname{Pic}_{X/k})_{\mathrm{réd}}^\circ$ dans la théorie actuelle)
+« est définie sur $k$ », sans supposer le corps $k$ parfait.
+
+Soit maintenant $f:X\longrightarrow S$ un schéma relatif propre et plat, avec
+\[
+\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)
+\]
+pour simplifier, tel que $\operatorname{Pic}_{X/S}$ existe et que
+$\operatorname{Pic}_{X/S}^\circ$ soit propre sur $S$. Nous supposerons de plus
+pour (3.3), (ii), qu'il existe un ouvert de $\operatorname{Pic}_{X/S}$
+contenant $\operatorname{Pic}_{X/S}^\circ$ qui soit quasi-projectif sur $S$ ;
+cette condition est vérifiée, on l'a vu, si $f$ est projectif et à fibres
+géométriques séparables et irréductibles. Rappelons qu'on appelle schéma
+abélien sur $S$ un schéma en groupes sur $S$, propre et simple sur $S$, à
+fibres géométriques connexes. Nous nous proposons d'examiner s'il existe un
+sous-schéma en groupes $A$ de $\operatorname{Pic}_{X/S}$ qui soit un schéma
+abélien et dont l'ensemble sous-jacent soit $\operatorname{Pic}_{X/S}^\circ$.
+On vient de voir qu'il en existe toujours si $S$ est le spectre d'un corps.
+Voici ce qu'on sait dire dans le cas général envisagé ici :
+
+\result{THÉORÈME}{3.3} Sous les conditions précédentes :
+
+\noindent(i) S'il existe un sous-schéma abélien de
+$\operatorname{Pic}_{X/S}$ dont l'ensemble sous-jacent soit
+$\operatorname{Pic}_{X/S}^\circ$, il est unique. Sa formation est par suite
+compatible avec les changements de base.
+
+\noindent(ii) Pour qu'il existe un tel sous-schéma abélien, il suffit qu'il en
+existe après tout changement de base $S'\longrightarrow S$, où $S'$ est
+artinien local ; si $S$ est le spectre d'un anneau local, il suffit même de
+tester avec les $S'=\operatorname{Spec}(A_n)$, où
+$A_n=A/\mathfrak m^{n+1}$. Si $S$ est réduit, il suffit également de tester
+avec les changements de base $S'\longrightarrow S$, où $S'$ est le spectre
+d'un anneau de valuation discrète (complet à corps résiduel algébriquement clos
+si on y tient).
+
+\noindent(iii) Supposons que $A$ existe, et soit
+$B=\operatorname{Alb}^0(X/S)$ le schéma abélien dual (i.e.
+$B=\operatorname{Pic}_{A/S}^\circ$ [7]). Alors on peut construire
+canoniquement un espace principal homogène $P=\operatorname{Alb}^1(X/S)$ sous
+$B$, et un $S$-morphisme $X\longrightarrow P$ qui soit universel pour les
+$S$-morphismes de $X$ dans des schémas para-abéliens (i.e. des espaces
+principaux homogènes sous des schémas abéliens). La formation de
+$\operatorname{Alb}^0(X/S)$, $\operatorname{Alb}^1(X/S)$ et
+$X\longrightarrow\operatorname{Alb}^1(X/S)$ commute au changement de base.
+
+Esquissons la démonstration :
+
+(i) est une propriété de rigidité générale pour les sous-schémas abéliens des
+schémas en groupes commutatifs : si deux tels sous-schémas coïncident
+ensemblistement en un point $s\in S$, ils coïncident au-dessus de toute la
+composante
+
+\src{238}
+connexe de $s$ [7]. (Ce résultat généralise un classique théorème de Chow.)
+
+(ii) Utilisant les schémas de Hilbert, on voit que le foncteur qui, à tout
+$S'$ sur $S$, associe l'ensemble (réduit à 1 ou 0 éléments) des sous-schémas
+abéliens canoniques de $(\operatorname{Pic}_{X/S})\times_S S'$ est
+représentable par un schéma de type fini $T$ sur $S$. En vertu de (i),
+$T\longrightarrow S$ est un monomorphisme, et en vertu de (3.2) il est
+surjectif. Dire qu'il existe un sous-schéma abélien canonique de
+$\operatorname{Pic}_{X/S}$ signifie que $T$ a une section sur $S$, ou encore
+que $T\longrightarrow S$ est un isomorphisme. Ceci équivaut aussi à dire que
+$T\longrightarrow S$ est étale, ou, dans le cas où $S$ est réduit, que
+$T\longrightarrow S$ est propre. D'où aussitôt (ii).
+
+(iii) Utilisant simplement la définition de $\operatorname{Pic}_{X/S}$, on
+constate que, pour tout schéma abélien $C$ sur $S$, la donnée d'un
+$S$-morphisme de $X$ dans un espace principal homogène sous $C$ équivaut à la
+donnée d'un homomorphisme de groupes
+$C'\longrightarrow\operatorname{Pic}_{X/S}$, où $C'$ est le schéma abélien
+dual de $C$. Or, si le sous-schéma abélien canonique $A$ de
+$\operatorname{Pic}_{X/S}$ existe, ces homomorphismes se factorisent
+nécessairement par $A$ (comme on peut voir encore en utilisant les points
+d'ordre fini). D'où aussitôt (iii).
+
+\result{REMARQUES}{3.4} Nous noterons
+$\operatorname{Pic}_{X/S}^{\circ\circ}$ le sous-schéma abélien canonique de
+$\operatorname{Pic}_{X/S}$, s'il existe. Ce n'est malheureusement pas toujours
+le cas, comme on peut voir en faisant varier infinitésimalement la surface de
+Igusa (par la déformation modulaire du premier ordre). Il est cependant
+possible que $\operatorname{Pic}_{X/S}^{\circ\circ}$ existe du moins si $S$
+est réduit, ou, ce qui revient au même d'après (ii), si $S$ est le spectre d'un
+anneau de valuation discrète. Soient alors $X_0,X_1$ les fibres spéciale et
+générique de $X$, et soit
+\[
+A_1=\operatorname{Pic}_{X_1/K}^\circ,
+\]
+où $K$ est le corps des fractions de l'anneau de valuation $V$. En vertu de
+Koizumi, il existe un schéma abélien $A$ sur $S$, essentiellement unique, dont
+la fibre générale est $A_1$, et on voit aisément comme dans (2.1), (i)
+(supposant désormais $X$ simple sur $S$), que le morphisme identique de $A_1$
+se prolonge en un morphisme
+\[
+A\longrightarrow\operatorname{Pic}_{X/S}.
+\]
+D'où un homomorphisme
+\[
+\tag{*}A_0\longrightarrow\operatorname{Pic}_{X_0/k}^{\circ\circ},
+\]
+dont on montre facilement que c'est un homomorphisme surjectif à noyau un
+$p$-groupe fini, où $p$ est l'exposant caractéristique du corps résiduel $k$
+
+\src{239}
+(toujours par utilisation des points d'ordre fini). Ceci posé, les conditions
+suivantes sur $X/S$ sont équivalentes :
+
+\medskip
+\noindent a. L'homomorphisme précédent (*) est un isomorphisme (ce que Shimura
+exprimerait en disant que la formation de la « variété de Picard » est
+« compatible avec spécialisations »).
+
+\noindent b. $\operatorname{Pic}_{X/S}^{\circ\circ}$ existe (alors il ne sera
+autre que $A$).
+
+\noindent c. (Pour mémoire) Les
+$\operatorname{Pic}_{X_n/S}^{\circ\circ}$ existent.
+
+D'après la remarque qu'on a faite sur le noyau de (*), la condition (a) est
+satisfaite si la caractéristique résiduelle est nulle, mais ce résultat sera
+généralisé notablement (3.5).
+
+Bien entendu, si $\operatorname{Pic}_{X/S}$ est simple sur $S$ aux points de
+$\operatorname{Pic}_{X/S}^\circ$, alors ce dernier est ouvert dans
+$\operatorname{Pic}_{X/S}$ (cf. (1.7)) et, par suite, muni de la structure
+induite, c'est un sous-schéma abélien de $\operatorname{Pic}_{X/S}$, donc égal
+à $\operatorname{Pic}_{X/S}^{\circ\circ}$ qui existe dans ce cas. Mais on a
+bien mieux :
+
+\result{THÉORÈME}{3.5} Sous les conditions de (3.3), soit $s\in S$ tel que
+$\operatorname{Pic}_{X_s/k(s)}$ soit simple sur $k(s)$ (ou, ce qui revient au
+même,
+\[
+\dim\operatorname{Pic}_{X_s/k(s)}=\dim H^1(X_s,\mathcal O_{X_s})).
+\]
+Alors il existe un voisinage ouvert $U$ de $s$ tel que
+$\operatorname{Pic}_{X/S}$ soit simple sur $S$ aux points de
+$\operatorname{Pic}_{X/S}^\circ|U$, qui est donc un sous-schéma abélien ouvert
+dans $\operatorname{Pic}_{X/S}|U$. A fortiori,
+$\operatorname{Pic}_{X|U/U}^{\circ\circ}$ existe.
+
+Indiquons le principe de la démonstration. Ce qui précède nous ramène au cas où
+$S$ est le spectre d'un anneau artinien local $A$, et on raisonne par récurrence
+sur l'ordre infinitésimal de $A$. On peut donc supposer
+$\operatorname{Pic}_{X_n/A_n}^\circ$ simple sur $A_n$, et se borner à prouver
+que $\operatorname{Pic}_{X_{n+1}/A_{n+1}}^\circ$ est simple sur $A_{n+1}$. On
+constate qu'il suffit pour ceci de construire un schéma abélien $P_{n+1}$ sur
+$A_{n+1}$ qui prolonge
+\[
+P_n=\operatorname{Pic}_{X_n/A_n}^\circ,
+\]
+et en même temps un Module inversible $\mathcal L_{n+1}$ sur
+$X_{n+1}\times_{A_{n+1}}P_{n+1}$ qui prolonge le Module inversible
+$\mathcal L_n$ sur $X_n\times_{A_n}P_n$ qui intervient dans la définition du
+schéma de Picard $\operatorname{Pic}_{X_n/A_n}$ comme solution d'un problème
+universel. (N.B. --- Nous pouvons supposer que $X$ est muni d'une section sur
+$S$~...) Pour faire la construction, on doit utiliser le résultat-clef suivant :
+tout schéma abélien défini sur un quotient d'anneau local artinien peut se
+prolonger (en d'autres termes, le « schéma formel des Modules » absolu ([3],
+II) pour un schéma abélien sur un corps algébriquement clos est simple sur
+l'anneau des
+
+\src{240}
+vecteurs de Witt sur $k$) ; ce résultat lui-même s'obtient en utilisant les
+propriétés formelles générales de l'obstruction à relever, et les opérations du
+groupe. Ce résultat admis, on commence par prolonger $P_n$ n'importe comment en
+$P_{n+1}$ ; on rencontre alors une obstruction à relever $\mathcal L_n$,
+obstruction qui se trouve dans
+\[
+H^2(X_0\times P_0,\mathcal O_{X_0\times P_0})\otimes_k V
+\qquad(\text{où }V=\mathfrak m^{n+1}/\mathfrak m^{n+2}),
+\]
+et même dans le sous-espace
+\[
+H^1(X_0,\mathcal O_{X_0})\otimes
+H^1(P_0,\mathcal O_{P_0})\otimes_k V
+\]
+(compte tenu que la restriction de $\mathcal L_n$ aux deux facteurs $X_n$ et
+$P_n$ est triviale). Or ce dernier espace n'est autre que
+\[
+H^1(P_0,\mathcal T_{P_0/k})\otimes V,
+\]
+où $\mathcal T_{P_0/k}$ est le faisceau tangent à $P_0/k$, donc c'est aussi
+l'espace qui exprime l'indétermination qu'il y avait dans le relèvement de
+$P_n$ à $P_{n+1}$ ([3], II). Par suite, on peut corriger ce relèvement (d'une
+et d'une seule façon comme il se doit) de façon à tuer l'obstruction à relever
+$\mathcal L_n$.
+
+\result{COROLLAIRE}{3.6} Sous les conditions de (3.5),
+$R^1f_*(\mathcal O_X)$ est un Module localement libre sur $S$ au voisinage de
+$s$, et sa formation commute au changement de base.
+
+Ce Module n'est autre en effet que le Module tangent à
+$\operatorname{Pic}_{X/S}$ le long de la section unité.
+
+\result{REMARQUE}{3.7} Utilisant le même argument que pour (3.5), on peut
+montrer que si $S'$ est un sous-schéma de $S$ défini par un Idéal cohérent
+nilpotent, et si on suppose seulement que
+$\operatorname{Pic}_{X'/S'}^\circ$ existe et est à fibres simples, alors
+$\operatorname{Pic}_{X/S}^\circ$ existe nécessairement et est un schéma
+abélien sur $S$. Cela permet de construire des schémas de Picard dans certains
+cas malgré l'absence d'hypothèse projective ; par exemple le schéma abélien
+dual d'un schéma abélien sur un anneau artinien existe toujours. D'autre part,
+utilisant (3.6) dans le cas où $X$ est un schéma abélien sur $S$, et utilisant
+la structure connue de $H^*(X_s,\mathcal O_{X_s})$ comme algèbre extérieure
+sur $H^1(X_s,\mathcal O_{X_s})$ (Rosenlicht--Serre), on trouve que pour tout
+$i$, $R^if_*(\mathcal O_X)$ est localement libre, et de façon précise isomorphe
+à la puissance extérieure $i$-ième de $R^1f_*(\mathcal O_X)$.
+
+\result{REMARQUE}{3.8} Dans le cas d'un morphisme projectif simple
+$f:X\longrightarrow S$, $S$ réduit et à caractéristiques résiduelles nulles,
+le résultat (3.6) était connu par voie transcendante, comme conséquence de la
+théorie de Hodge. En fait, tous les $R^pf_*(\Omega^q_{X/S})$ sont alors
+localement libres. On a des contre-exemples par contre
+
+\src{241}
+dans le cas d'inégales caractéristiques pour « $R^1f_*(\mathcal O_X)$
+localement libre », à l'aide des variétés de Serre ([8], p.~50). Il semble
+qu'on n'ait aucun contre-exemple en égale caractéristique.
+
+\result{COROLLAIRE}{3.8} Sous les conditions de (3.5),
+$\operatorname{Pic}_{X/S}|U$ est simple sur $U$ en tous les points de
+$\operatorname{Pic}_{X/S}^\sigma|U$.
+
+On applique (2.10), (i). En particulier, tenant compte de (2.10), (iii) :
+
+\result{COROLLAIRE}{3.9} Supposons $S$ à caractéristiques résiduelles nulles.
+Alors $\operatorname{Pic}_{X/S}^\tau$ est simple sur $S$.
+
+\result{REMARQUE}{3.10} On en déduit par exemple, si $\operatorname{Pic}_{X/S}^\tau$ est propre sur $S$, que le groupe de torsion
+de Néron--Severi des fibres géométriques de $f$ reste constant sur toute
+composante connexe de $S$ (ce qui est d'ailleurs évident par voie transcendante
+lorsque $f$ est simple projectif). Signalons que l'utilisation directe de (2.5) permet de montrer, plus généralement, que, si $\operatorname{Pic}_{X/S}^\tau$ est propre sur $S$ (par exemple si $f:X\longrightarrow S$ est simple et projectif) et si $q$ est un nombre premier
+distinct des caractéristiques résiduelles de $S$, alors la composante
+$q$-primaire des groupes de torsion de Néron--Severi des fibres géométriques de
+$X/S$ reste constante sur toute composante connexe de $S$. Il n'en est
+cependant plus de même en caractéristique $p>0$ pour la composante $p$-primaire
+de la torsion. Il reste cependant possible que le rang sur $k(s)$ de
+\[
+\operatorname{Pic}_{X_s/k(s)}^\tau/
+\operatorname{Pic}_{X_s/k(s)}^{\circ\circ}=T_{X_s/k(s)}
+\]
+reste localement constant ; lorsque $S$ est réduit, on peut montrer qu'il
+revient au même que $\operatorname{Pic}_{X/S}^{\circ\circ}$ existe, et que
+$\operatorname{Pic}_{X/S}^\tau$ est plat sur $S$, et il suffit de tester la
+question pour $S$ spectre d'un anneau de valuation discrète. C'est ce que j'ai
+vérifié dans les quelques exemples que j'ai regardés ; mais comme l'énoncé
+correspondant avec $S$ artinien est faux (cf. remarque (2.9) et (3.4)), il ne
+faut sans doute pas se faire des illusions excessives.
+
+\fsection{4}{Le théorème de finitude pour le schéma de Picard}
+
+Soit $f:X\longrightarrow S$ un morphisme projectif et plat tel que
+$\operatorname{Pic}_{X/S}$ existe, alors la considération des « polynômes de
+Hilbert » $Q\in\mathbf Q[t]$ permet de décomposer
+$\operatorname{Pic}_{X/S}$ en somme d'ouverts
+$\operatorname{Pic}_{X/S}^Q$. Lorsqu'on ne fait pas des hypothèses
+supplémentaires, assurant par exemple que $\operatorname{Pic}_{X/S}$ est séparé
+sur $S$, il ne sera pas vrai en général que ces ouverts soient de type fini sur
+$S$ ; on obtient un contre-exemple lorsque $X$ est « une conique dégénérant en
+deux droites ». Il est
+
+\src{242}
+possible qu'il en soit cependant ainsi si $f$ est séparable et à fibres
+géométriques irréductibles. La question est liée à celle de savoir si
+$\operatorname{Pic}_{X/S}^\tau$ est de type fini sur $S$, ce qui est peut-être
+vrai sans aucune hypothèse sur les fibres de $X/S$. Lorsque
+$f:X\longrightarrow S$ est simple, on note que
+$\operatorname{Pic}_{X/S}^\tau$ est contenu dans un des
+$\operatorname{Pic}_{X/S}^Q$ (grâce au fait que, sur une variété projective
+non singulière, l'équivalence « de torsion » est plus fine que (en fait
+« identique à », d'après Matsusaka) l'équivalence numérique pour les
+diviseurs), donc est de type fini sur $S$ si les
+$\operatorname{Pic}_{X/S}^Q$ le sont. Noter que les questions de finitude qu'on
+vient de soulever gardent un sens évident sans supposer même l'existence de
+$\operatorname{Pic}_{X/S}$, car elles s'expriment en disant que certaines
+familles de Modules inversibles sont « limitées » au sens de [3], IV :
+considérons, pour tout corps algébriquement clos $k$, les sous-schémas intègres
+de $\mathbf P_k^r$, de dimension $n$ et de degré $d$, et les Modules
+inversibles sur de tels préschémas, ayant un polynôme de Hilbert $Q$ (où
+$r,n,d,Q$ sont donnés) ; montrer que la famille de ces Modules (considérés
+comme des Modules cohérents sur les $\mathbf P_k^r$) est limitée, i.e. peut se
+paramétrer par un schéma de type fini sur $\mathbf Z$.
+
+Utilisant la méthode de Matsusaka [6], une démonstration assez technique
+(faisant appel aux « critères d'équivalence » sous une forme convenable) permet
+de répondre par l'affirmative lorsque l'on se borne aux sous-variétés non
+singulières de $\mathbf P_k^r$. De façon plus précise, on obtient le résultat
+suivant :
+
+\result{THÉORÈME}{4.1} Soit $f:X\longrightarrow S$\footnote{Le texte imprimé
+porte « Soient : $X\longrightarrow S$ » ; le morphisme utilisé dans la suite
+est $f$.} un morphisme simple projectif à fibres géométriques connexes, avec
+$S$ noethérien, $\mathcal O_X(1)$ un Module très ample sur $X$ relatif à $S$,
+$E$ une partie de $\operatorname{Pic}_{X/S}$, correspondant à une famille
+$(\mathcal L_i)$ de Modules inversibles sur les fibres géométriques
+$\overline X_{s_i}$ de $X/S$, $D_i$ un diviseur (pas nécessairement positif)
+sur $\overline X_{s_i}$ définissant $\mathcal L_i$,
+\[
+a_n^{(i)}t^n+\cdots+a_0^{(i)}
+\]
+le polynôme de Hilbert de $\mathcal L_i$, $\xi=\xi_i$ un diviseur définissant
+$\mathcal O_X(1)$, i.e. une section hyperplane. Les conditions sont
+équivalentes :
+
+\noindent a. $E$\footnote{Le texte imprimé porte ici « $Q$ » ; la partie
+introduite dans l'énoncé et dont la quasi-compacité exprime que la famille est
+limitée est $E$.} est quasi-compact, i.e. contenu dans un ouvert de type fini
+sur $S$, i.e. la famille des $(\mathcal L_i)$ est limitée.
+
+\noindent b. $E$ est contenu dans la réunion d'un nombre fini des ensembles
+$\operatorname{Pic}_{X/S}^Q$, $Q\in\mathbf Q[t]$, i.e. l'ensemble des
+polynômes de Hilbert des $\mathcal L_i$ est fini.
+
+\noindent b'. (Si les fibres de $X/S$ ont toutes même dimension $n$.) Les deux
+coefficients $a_{n-1}^{(i)}$ et $a_{n-2}^{(i)}$ des polynômes de Hilbert des
+$\mathcal L_i$ restent dans un ensemble fini.
+
+\src{243}
+
+\result{COROLLAIRE}{4.2} Soit $f:X\longrightarrow S$ un morphisme simple
+projectif à fibres géométriques connexes, alors les schémas
+$\operatorname{Pic}_{X/S}^Q$ et $\operatorname{Pic}_{X/S}^\tau$
+($Q\in\mathbf Q[t]$) sont projectifs sur $S$.
+
+Comme ils sont de type fini sur $S$ d'après (4.1), on peut appliquer (2.4).
+
+\section*{BIBLIOGRAPHIE}
+\addcontentsline{toc}{section}{Bibliographie}
+
+\begin{description}
+\item[{[1]}] CHEVALLEY (Claude). -- Sur la théorie de Picard,
+\emph{Amer. J. of Math.}, t. 82, 1960, p. 435--490.
+
+\item[{[2]}] GROTHENDIECK (A.) et DIEUDONNÉ (J.). -- Éléments de géométrie
+algébrique, Chapitre I et suivants. -- Paris, Presses universitaires de France,
+1960--1961 (Institut des Hautes Études Scientifiques, 4, 8, 11, \ldots).
+
+\item[{[3]}] GROTHENDIECK (Alexander). -- Technique de descente et théorèmes
+d'existence en géométrie algébrique, I--V, \emph{Séminaire Bourbaki}, t. 12,
+1959/60, n\textsuperscript{o} 190, 29 p. et n\textsuperscript{o} 195, 22 p. ;
+t. 13, 1960/61, n\textsuperscript{o} 212, 20 p. et
+n\textsuperscript{o} 221, 28 p. ; t. 14, 1961/62,
+n\textsuperscript{o} 232, 19 p.
+
+\item[{[4]}] GROTHENDIECK (Alexander). -- Séminaire de géométrie algébrique,
+1960/61. -- Paris, Institut des Hautes Études Scientifiques, 1961.
+
+\item[{[5]}] GROTHENDIECK (Alexander). -- Séminaire de géométrie algébrique,
+1961/62, rédigé par un groupe d'auditeurs. -- Paris, Institut des Hautes Études
+Scientifiques (à paraître).
+
+\item[{[6]}] MATSUSAKA (T.). -- The criteria for algebraic equivalence and the
+torsion group, \emph{Amer. J. Math.}, t. 79, 1957, p. 53--66.
+
+\item[{[7]}] MUMFORD (D.) and TATE (J.). -- Séminaire de géométrie algébrique,
+Harvard University, Spring Term 1962 (à paraître).
+
+\item[{[8]}] SERRE (Jean-Pierre). -- Sur la topologie des variétés algébriques
+en caractéristique $p$, \emph{Symposium internacional de topología algebraica}
+[1956, Mexico], p. 24--53. -- Mexico, Universidad nacional autónoma, 1958.
+\end{description}
+
+\par\smallskip
+\begingroup\footnotesize
+\noindent\textit{La clause b'' imprimée reste consignée dans C086; l'exclut de la liste d'équivalences du texte courant à cause du contre-exemple Stacks D000571.}\par
+\noindent\textit{à 0058. En 3.2, la lecture imprimée suppose $X$ normal et propre sur $k$, sans normalité géométrique (C122). En 3.10, les deux hypothèses imprimées de propreté portent sur le schéma de Picard entier, et non sur $\operatorname{Pic}_{X/S}^{\tau}$ (C124). C123 rétablit le $\sigma$ imprimé en 2.10(i) et 3.8 : le cercle et $\tau$ étaient des erreurs de transcription, non des lectures imprimées.}\par
+\endgroup

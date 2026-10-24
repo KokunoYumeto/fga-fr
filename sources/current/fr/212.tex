@@ -1,0 +1,961 @@
+\unit{Exposé 212 -- Préschémas quotients}
+\sid{212}
+\src{99}
+\seminar{13\textsuperscript{e} année, 1960/61, n\textsuperscript{o} 212\\Février 1961}
+\paperhead{TECHNIQUES DE CONSTRUCTION ET THÉORÈMES D'EXISTENCE EN GÉOMÉTRIE ALGÉBRIQUE\\
+III. PRÉSCHÉMAS QUOTIENTS}%
+  {par Alexander GROTHENDIECK}
+
+\subsection*{Introduction}
+\addcontentsline{toc}{subsection}{Introduction}
+
+Les problèmes traités dans le présent exposé diffèrent de ceux envisagés dans
+les deux précédents, en ce qu'on essaye de représenter certains foncteurs
+covariants, et non plus contravariants, de schémas variables. Le procédé de
+passage au quotient est cependant essentiel dans beaucoup de questions de
+construction en géométrie algébrique, y compris celles des exposés I et II
+([1], [2]). Ainsi, la question de \emph{l'effectivité d'une donnée de descente}
+sur un $T$-préschéma $X$, relativement à un morphisme fidèlement plat et
+quasi-compact $T\longrightarrow S$, équivaut à la question de l'existence d'un
+quotient de $X$ (satisfaisant les propriétés raisonnables examinées plus bas),
+pour la relation d'équivalence plate dans $X$ définie par la donnée de descente;
+les questions soulevées dans [1], A, \S~2 c se résoudront sans doute en même
+temps que les questions posées dans le paragraphe numéro 2 du présent exposé.
+De même, le \emph{schéma de Picard} (pour la définition, cf. [2], C, \S~3)
+d'un $S$-schéma $X$ peut se définir de diverses manières comme quotient de
+certains autres schémas (de diviseurs positifs, ou d'immersions dans un
+projectif) par des relations d'équivalence plates, la définition et la
+construction de ces schémas auxiliaires étant d'ailleurs techniquement plus
+simple: ce sont en effet des schémas du type
+$\underline{\operatorname{Hom}}_S(X,Y)$ et variantes définis dans [2], C,
+\S~2, et dont la construction sera l'objet de l'exposé suivant (sous des
+hypothèses de projectivité convenables). Combinant donc les résultats du
+présent exposé et du suivant, on arrive à la construction des schémas de
+Picard, sous des hypothèses convenables.
+
+Le problème du passage au quotient dans les préschémas offre encore plusieurs
+questions non résolues. La plus importante est mentionnée dans le paragraphe
+8. Elle reste actuellement le seul obstacle à la construction des
+\emph{schémas de modules sur les entiers pour les courbes de genre arbitraire,
+les variétés abéliennes polarisées}, etc. C'est dire que sa solution mérite les
+efforts des spécialistes des groupes algébriques.
+
+\src{100}
+\subsection*{1. Relations d'équivalence, relations d'équivalence effectives}
+\addcontentsline{toc}{subsection}{1. Relations d'équivalence, relations d'équivalence effectives}
+
+Soient $\mathcal C$ une catégorie, et $X$ un objet de $\mathcal C$. Un couple
+de morphismes
+\[
+  p_1,p_2:R\rightrightarrows X
+\]
+est dit \emph{couple d'équivalence} dans $\mathcal C$, de \emph{but} $X$ et
+de \emph{source} $R$, si pour tout objet $T$ de $\mathcal C$, les deux
+applications correspondantes
+\[
+  p_1(T),p_2(T):R(T)\rightrightarrows X(T)
+\]
+(où pour tout objet $Y$ de $\mathcal C$, on pose
+$Y(T)=\operatorname{Hom}(T,Y)$) définissent une application
+\[
+  R(T)\longrightarrow X(T)\times X(T)
+\]
+induisant une bijection de $R(T)$ sur le graphe d'une relation d'équivalence
+dans l'ensemble $X(T)$. On introduit entre les couples d'équivalence de but
+$X$ une relation d'équivalence évidente; une classe d'équivalence pour cette
+dernière est appelée une \emph{$\mathcal C$-relation d'équivalence dans $X$},
+ou simplement une relation d'équivalence si aucune confusion n'en résulte.
+
+Si $X\times X$ existe, la donnée d'une relation d'équivalence dans $X$
+équivaut à la donnée d'un sous-objet $R$ de $X\times X$, tel que, pour tout
+objet $T$ de $\mathcal C$, le sous-ensemble de
+\[
+  (X\times X)(T)=X(T)\times X(T)
+\]
+qui correspond à $R(T)$ soit le graphe d'une relation d'équivalence dans
+$X(T)$. Désignant par $p_1$ et $p_2$ les morphismes de $R$ dans $X$ induits
+par les projections $\operatorname{pr}_1$ et $\operatorname{pr}_2$, la
+condition précédente exprime que $(p_1,p_2)$ est un couple d'équivalence. On
+peut aussi exprimer diagrammatiquement dans $\mathcal C$ (sous réserve de
+l'existence de $X\times X$ et du produit fibré
+$(R,p_2)\times_X(R,p_1)$) les axiomes d'une relation d'équivalence au sens
+ensembliste pour les $R(T)$ dans les $X(T)$, conformément au principe général
+expliqué dans [2], A, \S~1. Nous n'en aurons pas besoin.
+
+Chaque fois qu'on a un couple de morphismes $(p_1,p_2)$ de même source $R$ et
+de même but $X$, on peut définir le \emph{conoyau} du couple comme l'objet $Y$
+de $\mathcal C$ qui représente le foncteur covariant en $Z$
+\[
+  \operatorname{Hom}_{p_1,p_2}(X,Z),
+\]
+ensemble des morphismes $u$ de $X$ dans $Z$ tels que $up_1=up_2$. Si $Y$
+existe, il est déterminé à un isomorphisme unique près. On le notera
+$X/(p_1,p_2)$ ou, par abus de notation, $X/R$, cette dernière notation étant
+surtout employée lorsque
+\src{101}$(p_1,p_2)$ est un couple d'équivalence: il est d'usage alors
+d'identifier dans les notations la relation d'équivalence définie par le
+couple, et $R$. Noter que si on considère $Y$ comme un quotient de $X$, il ne
+dépend en effet que de la relation d'équivalence définie par le couple
+$(p_1,p_2)$.
+
+Partons maintenant d'un morphisme
+\[
+  f:X\longrightarrow Y
+\]
+qui permet donc de considérer $X$ comme un « objet au-dessus de $Y$ », et
+supposons que le produit fibré
+\[
+  R(f)=X\times_Y X
+\]
+existe. Soient $p_1$ et $p_2$ ses deux projections. Alors $(p_1,p_2)$ est un
+couple d'équivalence, dit \emph{associé} au morphisme $f$. Il définit donc une
+relation d'équivalence, dite associée à $f$.
+
+On dit qu'un couple de morphismes $(p_1,p_2)$ de but $X$, de même source $R$,
+est un \emph{couple d'équivalence effectif}, si
+\begin{enumerate}
+  \item[(i)] le conoyau $X/(p_1,p_2)=Y$ existe;
+  \item[(ii)] le produit fibré $X\times_Y X$ existe;
+  \item[(iii)] le morphisme $R\longrightarrow X\times_Y X$ de composantes $p_1$ et
+  $p_2$ est un isomorphisme.
+\end{enumerate}
+Alors le couple $(p_1,p_2)$ est bien un couple d'équivalence. On dit aussi que
+la relation d'équivalence qu'il définit est une \emph{relation d'équivalence
+effective}.
+
+On dit qu'un morphisme $f:X\longrightarrow Y$ est un \emph{épimorphisme
+effectif} si
+\begin{enumerate}
+  \item[(i)] le produit fibré $X\times_Y X=R$ existe;
+  \item[(ii)] le quotient $X/(p_1,p_2)$ existe, où $p_1$ et $p_2$ sont les deux
+  projections de $R$ dans $X$;
+  \item[(iii)] le morphisme $X/(p_1,p_2)\longrightarrow Y$ induit par $f$ est un
+  isomorphisme.
+\end{enumerate}
+Alors $f$ est bien un épimorphisme, et même un épimorphisme strict (cf. [1],
+A, \S~2.3), la réciproque étant vraie si le produit fibré $X\times_Y X$
+existe. On dit aussi que l'objet quotient de $X$ défini par l'épimorphisme $f$
+est un \emph{quotient effectif} de $X$.
+
+Les définitions précédentes impliquent la « correspondance galoisienne »
+suivante:
+
+\src{102}
+\result{PROPOSITION}{1.1} Il y a correspondance biunivoque, respectant les
+ordres naturels, entre l'ensemble des relations d'équivalence effectives $R$
+dans $X$, et l'ensemble des quotients effectifs $Y$ de $X$, à $R$
+correspondant le quotient effectif $X/R$, et à $Y$ correspondant la relation
+d'équivalence effective définie par la projection canonique
+$X\longrightarrow Y$ (qui est définie par le produit fibré $X\times_Y X$
+muni de ses deux projections).
+
+Dans les très bonnes catégories (ensembles, faisceaux d'ensembles, etc.) tout
+quotient est effectif, et toute relation d'équivalence est effective. Il n'en
+est plus de même dans les catégories telles que la catégorie des préschémas
+au-dessus d'un préschéma $S$ donné, même lorsque $S$ est le spectre d'un corps,
+et même en se bornant aux schémas finis sur $S$. Les questions d'effectivité,
+et même (dans le cas de préschémas non finis sur $S$) les questions d'existence
+de quotients, s'avèrent le plus souvent délicates.
+
+\subsection*{2. Exemple: préschémas finis sur $S$}
+\addcontentsline{toc}{subsection}{2. Exemple: préschémas finis sur S}
+
+Soit $\mathcal C$ la catégorie des préschémas finis sur $S$, supposé
+localement noethérien. Elle est équivalente à la catégorie opposée de la
+catégorie des faisceaux cohérents d'algèbres commutatives sur $S$, ou encore,
+si $S$ est affine d'anneau $A$, à la catégorie opposée de la catégorie des
+$A$-algèbres finies sur $A$ (i.e. qui sont des modules de type fini sur $A$).
+On en conclut tout de suite que dans $\mathcal C$ les limites projectives
+finies et les limites inductives finies existent. C'est bien connu (sans
+aucune hypothèse de finitude\ldots) pour les premières. Ainsi le produit fibré
+de préschémas $X,Y$ sur $S$ correspond au produit tensoriel $B\otimes_A C$
+des algèbres correspondantes, le noyau de deux morphismes
+$X\rightrightarrows Y$, défini par deux homomorphismes de $A$-algèbres
+$u,v:C\rightrightarrows B$, correspond au quotient de $B$ par l'idéal engendré
+par les $u(c)-v(c)$, etc. Pour les limites inductives finies, il suffit de
+considérer d'une part les sommes finies, qui correspondent au produit ordinaire
+de $A$-algèbres, et d'autre part les conoyaux de couples de morphismes
+$X\rightrightarrows Y$, qui correspondent en effet (comme on constate
+aussitôt) au sous-anneau de $C$ formé par l'ensemble des éléments où les homomorphismes
+$u,v:C\rightrightarrows B$ coïncident (ce dernier est fini sur $A$ grâce à
+l'hypothèse noethérienne). Notons d'ailleurs qu'on peut montrer, utilisant
+l'hypothèse noethérienne, que les limites inductives finies, et en particulier
+les quotients, ainsi construits dans la catégorie $\mathcal C$ des préschémas
+finis sur $S$, sont en réalité des quotients dans la catégorie de \emph{tous}
+les préschémas.
+
+\src{103}
+Comme nous avons dit dans [1], il y a dans $\mathcal C$ des épimorphismes non
+effectifs (ou non stricts\footnote{Le texte imprimé omet « non » devant
+« stricts ». Dans la catégorie considérée, les produits fibrés existent, et
+le paragraphe précédent établit précisément l'équivalence entre effectivité et
+stricte épimorphie.}, cela revient au même puisque les produits fibrés
+existent). \emph{J'ignore si les relations d'équivalence sont toujours
+effectives}, lorsqu'on ne fait pas d'hypothèse de platitude. Je n'ai obtenu,
+dans cette direction, que des résultats très partiels, positifs,
+indispensables pour la démonstration du théorème fondamental en théorie
+formelle des modules (cf. [2], B, th. 1). Signalons qu'il est facile dans le
+problème posé de se ramener au cas où $S$ est le spectre d'un anneau $A$
+artinien local, de corps résiduel algébriquement clos. Mais même si $A$ est un
+corps, la réponse n'est pas connue.
+
+On peut aussi considérer le cas d'un préschéma $X$ sur $S$ qui n'est plus
+supposé fini sur $S$, mais en considérant une relation d'équivalence $R$ dans
+$X$ telle que $p_1:R\longrightarrow X$ soit un morphisme fini. On dit alors
+que $R$ est une relation d'équivalence finie. Supposant pour simplifier $S$ et
+$X$ affines (donc $R$ affine, de sorte que la situation est ramenée à une
+situation de pure algèbre commutative), \emph{on ignore même dans ce cas s'il
+existe un quotient $X/R=Y$ et si le morphisme canonique
+$X\longrightarrow Y$ est fini}. (Le cas le plus simple est celui où on
+suppose que $S$ est le spectre d'un corps $k$, et où $X$ est le spectre de
+$k[t]$, i.e. la droite affine.) Bien entendu, si les deux problèmes précédents
+se résolvent par l'affirmative, on peut conclure dans la situation présente que
+$R$ est effective. Notons que le problème de \emph{l'existence} d'un quotient
+$Y$ et de la finitude de $f:X\longrightarrow Y$ se pose dans exactement les
+mêmes termes si, au lieu d'un graphe d'équivalence dans $X$, on a seulement un
+prégraphe d'équivalence dans $X$, au sens du paragraphe 4.
+
+La question du passage au quotient par une relation d'équivalence finie plus
+ou moins arbitraire se pose dans la construction des préschémas par
+« recollement » de préschémas donnés $X_i$ suivant certains sous-préschémas
+fermés; la loi du recollement s'exprime précisément par une relation
+d'équivalence finie dans le préschéma somme $X$ des $X_i$. Il faut s'attendre
+aussi que la solution des problèmes posés ici et de diverses variantes sera
+une condition préliminaire à la mise au point d'une technique générale de
+constructions non projectives, dans la direction inaugurée dans [2].
+
+Le seul fait général positif connu du rédacteur est le suivant:
+
+\result{PROPOSITION}{2.1} Soient $S$ un préschéma localement noethérien, $s$
+un point de $S$, et $\Omega$ une extension algébriquement close de $k(s)$.
+Considérons le
+\src{104}« foncteur-fibre » correspondant $F$, associant à tout $S$-schéma
+$X$ fini sur $S$ l'ensemble des points de $X_s$ à valeurs dans $\Omega$. Ce
+foncteur (trivialement exact à gauche) est \emph{exact à droite}, i.e. commute
+aux limites inductives finies, et en particulier aux conoyaux de couples de
+morphismes.
+
+En utilisant ce résultat pour tous les « points géométriques » de $S$, on en
+déduit que la catégorie $\mathcal C'$ « quotient » de $\mathcal C$, obtenue en
+raisonnant « modulo morphismes surjectifs radiciels » (i.e. obtenue en
+adjoignant formellement des inverses pour les morphismes en question), est une
+catégorie « géométrique », i.e. satisfait les mêmes propriétés « de nature
+finie » que la catégorie des ensembles. En particulier, toute relation
+d'équivalence y est effective. Cela implique que si $R$ est une relation
+d'équivalence dans un $X$ fini sur $S$, alors le morphisme canonique
+\[
+  R\longrightarrow X\times_Y X\qquad (\text{où }Y=X/R)
+\]
+est \emph{radiciel et surjectif} (en fait une immersion fermée surjective,
+puisque c'est un monomorphisme).
+
+\subsection*{3. Cas d'un groupe d'opérateurs}
+\addcontentsline{toc}{subsection}{3. Cas d'un groupe d'opérateurs}
+
+On suppose de nouveau que $\mathcal C$ est une catégorie quelconque. Soient
+$G,X$ des objets de $\mathcal C$, et supposons que $G$ est un
+$\mathcal C$-groupe d'opérateurs sur l'objet $X$ de $\mathcal C$. Cela
+signifie (cf. [2], A, \S~1) que pour tout objet $T$ de $\mathcal C$, on s'est
+donné une structure de groupe sur $G(T)$ et une structure d'ensemble à groupe
+d'opérateurs $G(T)$ sur $X(T)$, de telle façon que pour $T$ variable, les
+structures en question « varient fonctoriellement » avec $T$. Si dans
+$\mathcal C$ les produits $G\times G$ et $G\times X$ existent, une telle
+structure peut encore se définir comme un couple de morphismes
+\[
+  G\times G\longrightarrow G,
+  \qquad \pi:G\times X\longrightarrow X,
+\]
+soumis à la condition que pour tout objet $T$ de $\mathcal C$, les lois de
+composition correspondantes pour les ensembles $G(T)$ et $X(T)$ fassent de
+$G(T)$ un groupe opérant sur $X(T)$. La traduction de cet axiome par la
+commutativité de certains diagrammes dans $\mathcal C$ est facile, mais
+fastidieuse, et en fait parfaitement inutile dans tous les cas à ma
+connaissance.
+
+Supposons que $G\times X$ existe, et considérons les deux morphismes
+\[
+  p_1,p_2:G\times X\rightrightarrows X
+\]
+avec
+\src{105}
+\[
+  p_1=\operatorname{pr}_2,\qquad p_2=\pi.
+\]
+On constate aussitôt que le couple $(p_1,p_2)$ est un couple d'équivalence si,
+et seulement si, pour tout objet $T$ de $\mathcal C$, l'application
+\[
+  G(T)\times X(T)\simeq(G\times X)(T)
+  \longrightarrow X(T)\times X(T),
+\]
+définie par ce couple, est injective, i.e. si le groupe $G(T)$ opère
+\emph{librement} sur l'ensemble $X(T)$, i.e. si $g\in G(T)$, $x\in X(T)$,
+$g\cdot x=x$ implique que $g$ est l'élément unité du groupe $G(T)$. On dit
+alors que $G$ \emph{opère librement sur $X$} (ou que $X$ est un
+\emph{$\mathcal C$-espace principal sous $G$}). La relation d'équivalence
+associée au couple $(p_1,p_2)$ est alors appelée la \emph{relation
+d'équivalence définie par le groupe $G$ opérant librement sur $X$}. Lorsque
+$X\times X$ existe également et qu'on considère le morphisme
+\[
+  p:G\times X\longrightarrow X\times X
+\]
+défini par le couple $(p_1,p_2)$, la condition que $G$ opère librement signifie
+que $p$ est un \emph{monomorphisme}.
+
+Bien entendu, même lorsque $G$ n'opère pas librement sur $X$, on désire avoir
+des critères d'existence d'un quotient de $X$ par $G$, i.e. du conoyau du
+couple $(p_1,p_2)$ précédent.
+
+Le conoyau en question sera souvent noté $X/G$, ou de préférence $G\backslash
+X$ si $G$ opère à gauche (la notation précédente étant réservée au cas où $G$
+opère à droite). On notera que même lorsque « l'image » de $G\times X$ par $p$
+existe (cette image étant définie par exemple comme le plus petit sous-objet de
+$X\times X$ par lequel on peut factoriser $p$), soit $R$, cette dernière n'est
+pas le plus souvent une relation d'équivalence dans $X$. Si on essaye alors de
+passer directement au quotient par $R$ (ou plus précisément par le couple des
+morphismes de $R$ dans $X$ induits par les deux projections
+$\operatorname{pr}_i$), on perd sans espoir les caractères particuliers du
+couple de départ $(p_1,p_2)$. Il importe donc de trouver une généralisation de
+la notion de relation d'équivalence, s'appliquant directement au couple défini
+par un $\mathcal C$-groupe d'opérateurs.
+
+\subsection*{4. Pré-relations d'équivalence}
+\addcontentsline{toc}{subsection}{4. Pré-relations d'équivalence}
+
+Rappelons qu'on appelle \emph{groupoïde} une catégorie où tous les morphismes
+sont des isomorphismes. D'autre part, une catégorie doit être définie comme
+formée de deux ensembles de base $(X,R)$, l'ensemble des \emph{objets} et
+l'ensemble des \emph{flèches}, munis des structures suivantes:
+\src{106}
+\begin{enumerate}
+\item[(i)] Un couple d'applications
+\[
+  p_1,p_2:R\rightrightarrows X
+\]
+appelées \emph{application-source} et \emph{application-but},
+
+\item[(ii)] Une application
+\[
+  \pi:(R,p_2)\times_X(R,p_1)\longrightarrow R
+\]
+appelée \emph{application-composition}.
+\end{enumerate}
+Ces données doivent satisfaire à des axiomes bien connus, que nous ne
+répéterons pas ici, et qui pourraient s'expliciter par la commutativité de
+certains diagrammes, et l'existence d'une application $D:X\to R$
+(nécessairement unique) rendant commutatifs deux autres diagrammes. $D$
+correspond au passage d'un objet à la flèche identique correspondante, et
+satisfait à
+\[
+  p_1D=p_2D=\operatorname{id}_X.
+\]
+Dire que la catégorie est un groupoïde signifie alors qu'il existe une
+application
+\[
+  s:R\longrightarrow R
+\]
+(nécessairement unique), appelée la \emph{symétrie} de $R$, transformant
+chaque flèche en une flèche inverse, ce qui pourrait s'expliciter par la
+commutativité de quatre autres diagrammes, formés au moyen de $s$, $\Delta$
+et des données précédentes, et dont les deux premiers s'écrivent:
+\[
+  p_1s=p_2,\qquad p_2s=p_1.
+\]
+
+Ces points étant rappelés, les définitions générales dans ([2], A,
+\S~1) montrent en particulier ce qu'il faut entendre par une structure de
+$\mathcal C$-\emph{catégorie}, resp. de $\mathcal C$-\emph{groupoïde}, sur un
+couple d'objets $X,R$ d'une catégorie quelconque $\mathcal C$: c'est, par
+définition, la donnée, pour tout objet $T$ de $\mathcal C$, d'une structure
+de catégorie resp. de groupoïde au sens ensembliste, dont l'ensemble des
+objets soit $X(T)$, et l'ensemble des flèches $R(T)$, ces structures
+\guillemotleft variant fonctoriellement\guillemotright{} avec $T$ variable.
+Cela implique donc la définition de deux morphismes
+\[
+  p_1,p_2:R\rightrightarrows X
+\]
+appelés \emph{morphisme-source} et \emph{morphisme-but}, et lorsque le produit
+fibré voulu existe d'un morphisme
+\src{107}
+\[
+  \pi:(R,p_2)\times_X(R,p_1)\longrightarrow R
+\]
+appelé \emph{morphisme composition}, ces trois données suffisant alors à
+déterminer la structure de catégorie sur $X,R$, l'axiome à mettre sur ces
+données étant le suivant: pour tout $T$, les trois données correspondantes
+pour $X(T),R(T)$ définissent sur ce couple d'ensembles une structure de
+catégorie (resp. de groupoïde). Le cas échéant, cela peut s'exprimer par la
+commutativité de certains diagrammes, impliquant un morphisme bien déterminé
+\[
+  D:X\longrightarrow R
+\]
+et dans le cas des groupoïdes, un morphisme bien déterminé
+\[
+  s:R\longrightarrow R,
+\]
+diagrammes qui s'explicitent comme dans le cas « ensembliste ». Cette
+interprétation fastidieuse des axiomes est heureusement inutile pour la
+pratique, le seul intérêt théorique de la possibilité d'exprimer les données
+et axiomes à partir de morphismes et égalités de morphismes entre certains
+produits fibrés étant le suivant: si on a un foncteur
+$F:\mathcal C\to\mathcal C'$ exact à gauche (i.e. commutant aux produits
+finis et aux produits fibrés), il transforme une $\mathcal C$-catégorie
+(resp. un $\mathcal C$-groupoïde) en une $\mathcal C'$-catégorie (resp. en un
+$\mathcal C'$-groupoïde) (sous réserve de l'existence des produits finis et
+produits fibrés dans $\mathcal C$).
+
+Il est important en pratique de savoir interpréter les morphismes
+$p_1,p_2,\pi,D,s$ comme des \emph{opérations simpliciales} dans un objet
+semi-simplicial ou simplicial convenable de $\mathcal C$, du moins lorsque
+dans $\mathcal C$ les produits fibrés existent. Pour fixer la terminologie,
+introduisons la \emph{catégorie $\mathcal S$ des simplexes-types} comme la
+catégorie dont les objets sont les ensembles finis de la forme
+\[
+  \Delta_n=[0,n],\qquad\text{où }n\geq 0
+\]
+(intervalle des entiers de $0$ à $n$), et dont les morphismes ou flèches sont
+les \emph{applications quelconques} entre ces ensembles finis. On notera que
+la catégorie $\mathcal S$ est équivalente à la catégorie des ensembles finis
+\emph{non vides}, où on prend comme morphismes les applications entre ensembles
+finis. Dans $\mathcal S$, la somme d'une famille finie \emph{non vide} d'objets
+existe évidemment, ainsi que la somme amalgamée de deux objets sous un
+troisième (opération duale du produit fibré). On désigne par $\mathcal S'$ la
+sous-catégorie de $\mathcal S$ ayant mêmes objets, mais où les morphismes sont
+les \emph{applications croissantes} entre les $\Delta_n$. Cette catégorie est
+équivalente à la catégorie des ensembles finis totalement ordonnés non
+vides. Dans cette catégorie la
+\src{108}
+somme de deux objets n'existe jamais, et la somme amalgamée de deux objets
+$A,B$ sous un troisième $C$ n'existe pas en général (prendre par exemple
+$C=\Delta_0$, $A=B=\Delta_1$, les deux applications structurales
+$u:C\to A$ et $v:C\to B$ égales). Elle existe cependant dans certains cas,
+par exemple
+\[
+  C=\Delta_0,\qquad A=\Delta_m,\qquad B=\Delta_n,\qquad
+  u(0)=m,\qquad v(0)=0,
+\]
+et dans ce cas, on a
+\[
+  \Delta_m\amalg_{\Delta_0}\Delta_n=\Delta_{m+n}.
+\]
+
+Un \emph{objet simplicial} (resp. un objet \emph{semi-simplicial}) dans une
+catégorie $\mathcal C$ est par définition un foncteur contravariant $K$ de
+$\mathcal S$ (resp. de $\mathcal S'$) dans $\mathcal C$. Un objet simplicial
+définit donc un objet semi-simplicial par restriction, mais la première
+notion diffère de la seconde essentiellement par la présence d'\emph{opérations
+de symétrie} dans les $K_n=K(\Delta_n)$, qui correspondent aux transformés
+par le foncteur $K$ des éléments du groupe symétrique à $n+1$ lettres
+(considéré comme le groupe des automorphismes de $\Delta_n$ dans
+$\mathcal S$).
+
+Ceci dit, pour tout $n$, soit $\Delta'_n$ (resp. $\Delta''_n$) la catégorie
+finie, dont l'ensemble des objets est $\Delta_n$, définie par la relation
+d'ordre chaotique (resp. d'ordre total naturel) sur $\Delta_n$ (l'ensemble
+des flèches étant le graphe de la dite relation d'ordre). Il est évident que
+$\Delta'_n$ (resp. $\Delta''_n$) dépend fonctoriellement de l'objet $\Delta_n$
+de $\mathcal S$ (resp. $\mathcal S'$). Si alors $Z$ est une catégorie,
+$\operatorname{Hom}(\Delta'_n,Z)$ (resp.
+$\operatorname{Hom}(\Delta''_n,Z)$) est, pour $\Delta_n$ variable, un foncteur
+de la catégorie $\mathcal S$ (resp. $\mathcal S'$) dans la catégorie des
+ensembles, i.e. un ensemble simplicial (resp. semi-simplicial), dit
+\emph{associé à la catégorie $Z$}: soient $Z'$ et $Z''$. On a d'ailleurs un
+homomorphisme naturel évident de l'ensemble semi-simplicial associé à $Z'$
+dans $Z''$, et ce dernier est un isomorphisme si et seulement si $Z$ est un
+groupoïde. Ceci posé:
+
+\result{PROPOSITION}{4.1} Le foncteur $Z\longmapsto Z''$ de la catégorie des
+catégories dans la catégorie des ensembles semi-simpliciaux est pleinement
+fidèle, et définit une équivalence de la catégorie des \emph{catégories} avec
+la catégorie des ensembles semi-simpliciaux, i.e. des foncteurs contravariants
+$K$ de $\mathcal S'$ dans $(\mathrm{Ens})$, qui transforment les sommes
+amalgamées $A\amalg_C B$ du type précisé plus haut, en produits fibrés
+d'ensembles. De même, le foncteur $Z\longmapsto Z'$ de la catégorie des
+groupoïdes dans la catégorie des ensembles simpliciaux est pleinement fidèle,
+et définit une équivalence de la catégorie des \emph{groupoïdes} avec la
+catégorie des
+\src{109}
+ensembles simpliciaux, i.e. des foncteurs contravariants $K$ de $\mathcal S$
+dans $(\mathrm{Ens})$, qui transforment des sommes amalgamées en produits
+fibrés.
+
+On peut donc considérer les catégories comme des ensembles semi-simpliciaux
+particuliers, et les groupoïdes comme des ensembles simpliciaux particuliers,
+à condition bien entendu de raisonner « à un isomorphisme près » comme il est
+de rigueur quand on interprète certaines structures en termes d'autres. Le
+procédé habituel de réduction au cas ensembliste implique alors:
+
+\result{COROLLAIRE}{4.2} L'énoncé précédent reste valable quand on remplace
+les catégories, groupoïdes, ensembles simpliciaux, par des
+$\mathcal C$-catégories, $\mathcal C$-groupoïdes, $\mathcal C$-objets
+simpliciaux, pourvu que dans $\mathcal C$ les produits fibrés existent.
+
+L'objet semi-simplicial $K$ dans $\mathcal C$ associé à une catégorie
+$(X,R,\ldots)$ dans $\mathcal C$ peut s'expliciter, en interprétant la
+composante $K_n=K(\Delta_n)$ de $K$ comme étant la puissance fibrée
+$n$-ième de $(R,p_1)$ sur $X$\footnote{Le texte imprimé
+porte « puissance fibrée $(n+1)$-ième » et, dans la formule suivante,
+$K_0=R$. Le nerf a pour composante des objets $K_0=X$ et pour composante des
+flèches $K_1=R$ ; les deux corrections d'indice sont donc liées.}, ou mieux,
+par la formule de récurrence,
+\[
+  K_0=X,\qquad
+  K_n=(K_{n-1},p_{n-1}^{(n-1)})\times_X(R,p_1),
+\]
+où les $p_i^{(n-1)}$ ($0\leq i\leq n-1$) sont les projections naturelles de
+$K_{n-1}$ dans $X$ (qui se définissent également par récurrence). De cette
+façon, $p_1,p_2,\pi,D,s$ s'interprètent comme les opérations simpliciales qui
+correspondent respectivement aux morphismes dans $\mathcal S$: face $0$ de
+$\Delta_1$, face $1$ de $\Delta_1$, face $(0,2)$ de $\Delta_2$,
+dégénérescence $\Delta_1\to\Delta_0$, symétrie de $\Delta_1$. Toutes les
+autres opérations semi-simpliciales (resp. simpliciales) se déduisent
+formellement des quatre (resp. cinq) précédentes par composition et produits
+fibrés.
+
+On appelle maintenant \emph{pré-relation d'équivalence} dans un objet $X$
+d'une catégorie, la donnée d'un groupoïde dont l'objet des objets (si on peut
+dire) est $X$. Une telle donnée comporte donc entre autres un objet $R$ et
+deux morphismes
+\[
+  p_1,p_2:R\rightrightarrows X.
+\]
+Mais on notera que ces seules données ne déterminent pas la structure
+envisagée, contrairement à ce qui a lieu pour les couples d'équivalence. Dans
+cet exposé, nous nous intéressons à cette notion dans le but d'obtenir des
+critères de possibilité de passage au quotient, i.e. de formation du conoyau
+du couple $(p_1,p_2)$. L'énoncé du problème ne fait donc pas appel aux données
+supplémentaires inhérentes à un groupoïde. Dans la démonstration des résultats
+qui vont suivre, on se
+\src{110}
+sert cependant de ces données supplémentaires, et en particulier des
+opérations simpliciales (y inclus des opérations de symétrie) jusqu'en
+dimension $3$ (faisant intervenir la puissance fibrée quadruple de $R$ sur
+$X$).
+
+Une relation d'équivalence dans un objet $X$ de $\mathcal C$ définit une
+pré-relation d'équivalence: il suffit de le voir dans le cas ensembliste, et
+on associe alors à une relation d'équivalence, dans un ensemble $X$, le
+groupoïde dont l'ensemble d'objets est $X$, et l'ensemble des flèches est
+l'ensemble graphe de la relation d'équivalence.
+
+Un $\mathcal C$-monoïde $G$ opérant sur un objet $X$ de $\mathcal C$ définit
+une $\mathcal C$-catégorie dont les objets de base sont $R=G\times X$ et $X$
+(sous réserve que $G\times X$ existe), et qui est un $\mathcal C$-groupoïde
+si et seulement si $G$ est un groupe. Il suffit encore d'en faire la
+vérification dans le cas ensembliste. On définit alors la composition des
+flèches $(g,a)$ et $(g',g\cdot a)$ comme étant
+\[
+  (g',g\cdot a)(g,a)=(g'g,a),
+\]
+i.e. si $a,b\in X$, alors $\operatorname{Hom}(a,b)$ est par définition le
+transporteur de $a$ dans $b$, et les morphismes se composent grâce à la
+composition des éléments de $G$.
+
+\medskip
+\noindent\textbf{REMARQUE. ---} On peut éviter les difficultés logiques que
+soulève un énoncé tel que (4.1) en y sous-entendant que tous les objets
+envisagés se trouvent dans un « Univers » fixé, (qui lui-même est un
+ensemble).
+
+\fsection{5}{Quotient par une relation d'équivalence finie et plate}
+
+\result{THÉORÈME}{5.1} Soient $X=\operatorname{Spec}(B)$ un schéma affine,
+$R$ une pré-relation d'équivalence dans $X$, dont la composante $R_1$ est
+affine, soit $R_1=\operatorname{Spec}(C)$. On suppose que la première
+projection $p_1:R_1\to X$ est un morphisme fini et localement libre, en
+d'autres termes que l'homomorphisme d'anneaux correspondant
+$p_1^*:B\to C$ fait de $C$ un $B$-module projectif de type fini. Soit $A$ le
+sous-anneau de $B$ noyau du couple d'homomorphismes
+\[
+  p_1^*,p_2^*:B\rightrightarrows C
+\]
+(= ensemble des éléments $b$ tels que $p_1^*(b)=p_2^*(b)$). Soit
+$Y=\operatorname{Spec}(A)$, et $f:X\to Y$ le morphisme défini par l'immersion
+de $A$ dans $B$. Sous ces conditions:
+\begin{enumerate}
+\item[(i)] $B$ est entier sur $A$, i.e. $f$ est un morphisme entier.
+
+\item[(ii)] Le morphisme $f$ est surjectif, ses fibres sont les classes
+d'équivalence
+\src{111}
+ensemblistes $p_2\allowbreak(p_1^{-1}(x))$ dans $X$ modulo $R$, et la topologie de $Y$
+est quotient de celle de $X$.
+
+\item[(iii)] $Y$ est le quotient de $X$ par $R$ dans la catégorie des
+préschémas.
+
+\item[(iv)] Si $R$ provient d'une \emph{relation d'équivalence}, alors le
+morphisme $f:X\to Y$ est fini localement libre (i.e. $B$ est un $A$-module
+projectif de type fini), et la relation d'équivalence est effective, i.e.
+$R_1\to X\times_Y X$ est un isomorphisme.
+\end{enumerate}
+
+Ce théorème généralise le théorème bien connu relatif au cas d'un groupe
+fini $G$ opérant par automorphismes sur l'anneau $B$, et à l'anneau $A$ des
+invariants, et la démonstration est analogue à la démonstration connue. On
+peut préciser (iii) ainsi:
+
+\result{COROLLAIRE}{5.2} Le morphisme canonique
+$R_1\to X\times_Y X$ est \emph{surjectif}.
+
+Soit toujours $R$ une pré-relation d'équivalence « finie et localement
+libre » dans $X$, mais $X$ étant un préschéma quelconque. Supposons qu'on
+puisse trouver un préschéma $Y$ et un morphisme $f:X\to Y$ tel que
+$fp_1=fp_2$, et tel en plus que la suite d'homomorphismes de faisceaux
+d'anneaux sur $Y$:
+\[
+  \mathcal O_Y\longrightarrow f_*(\mathcal O_X)
+  \rightrightarrows g_*(\mathcal O_R)
+\]
+soit exacte (où $g=fp_i$). Il résulte alors du théorème qu'on a des
+conclusions (i) à (iv) analogues à celles du théorème, en particulier, par
+(iii), $Y$ est le quotient de $X$ par $R$, et par suite déterminé à un
+isomorphisme unique près. On dira sous ces conditions que la pré-relation
+d'équivalence $R$ dans $X$ est \emph{admissible}. Avec cette définition:
+
+\result{THÉORÈME}{5.3} Soient $X$ un préschéma, $R$ une pré-relation
+d'équivalence dans $X$, telle que $p_1:R_1\to X$ soit un morphisme fini et
+localement libre. Pour que $R$ soit admissible, il faut et il suffit que toute
+classe d'équivalence ensembliste $p_2(p_1^{-1}(x))$ dans $X$ modulo $R$ soit
+contenue dans un ouvert affine (condition toujours vérifiée si toute partie
+finie de $X$ est contenue dans un ouvert affine, par exemple si $X$ est
+quasi-projectif sur un schéma affine).
+
+On montre en effet sans difficulté que toute classe d'équivalence mod $R$
+dans $X$ est alors contenue dans un ouvert affine \emph{stable par $R$}, et on
+construit le quotient $Y$ par recollement des morceaux obtenus à l'aide du
+théorème 5.1.
+\src{112}
+
+\result{COROLLAIRE}{5.4} Supposons cette condition réalisée et que de plus
+$R$ provient d'une relation d'équivalence. Alors cette dernière est effective,
+i.e. $R_1\to X\times_Y X$ est un isomorphisme, et $f:X\to Y$ est un morphisme
+fini localement libre.
+
+On en conclut aussitôt, par « descente »:
+
+\result{COROLLAIRE}{5.5} Sous les conditions de (5.4), pour que $X$ soit
+partout de rang $n$ au-dessus de $Y$, il faut et il suffit que $(R_1,p_1)$ soit
+partout de rang $n$ au-dessus de $X$. Si $X,R_1$ sont des $Z$-préschémas et
+$p_1,p_2$ des $Z$-morphismes, donc $Y$ un $Z$-préschéma, alors $X$ est plat
+sur $Z$ si et seulement si $Y$ l'est.
+
+En résumé:
+
+\result{SCHOLIE}{} La donnée d'un morphisme fini, localement libre et
+surjectif $f:X\to Y$ de préschémas, est équivalente à la donnée d'un
+préschéma $X$ muni d'une relation d'équivalence $R$ telle que $p_1:R\to X$
+soit fini et localement libre, et que toute classe $p_2(p_1^{-1}(x))$ soit
+contenue dans un ouvert affine.
+
+\medskip
+\noindent\textbf{REMARQUES 5.6.}
+
+\smallskip
+\noindent $1^\circ$ On n'a pas eu à faire d'hypothèse noethérienne.
+
+\smallskip
+\noindent $2^\circ$ Cette notion de passage au quotient comprend comme cas
+particulier la « descente inséparable » de CARTIER, qui correspond à la
+détermination des morphismes finis localement libres $f:X\to Y$ tels que
+$f_*(\mathcal O_X)$ admette une $p$-base par rapport à $\mathcal O_Y$ ($X$
+étant un préschéma donné dont le faisceau $\mathcal O_X$ est annulé par le
+nombre premier $p>0$). On notera que le résultat s'exprime aisément sans
+hypothèse de régularité sur les anneaux locaux et sans supposer que $X$ est un
+schéma algébrique sur un corps. La théorie de JACOBSON--BOURBAKI est obtenue
+en prenant pour $X$ le spectre d'un corps de caractéristique $p$.
+
+\smallskip
+\noindent $3^\circ$ GABRIEL avait auparavant obtenu un cas particulier du
+théorème (5.3) dans la théorie du passage au quotient pour les groupes
+commutatifs finis au-dessus d'un corps $k$. [Comparer (7.4)].
+
+\fsection{6}{Quotient par une relation d'équivalence propre et plate}
+
+\result{THÉORÈME}{6.1} Soient $S$ un préschéma localement noethérien, $X$
+un $S$-schéma quasi-projectif, $R$ une pré-relation d'équivalence dans $X$,
+telle que:
+\src{113}
+\begin{enumerate}
+\item[(a)] $p_1:R_1\to X$ est propre et plat;
+\item[(b)] $R_1\to X\times_S X$ est un morphisme fini, ou ce qui revient au
+même en vertu de (a), à fibres finies (condition automatiquement vérifiée si
+$R$ provient d'une relation d'équivalence).
+\end{enumerate}
+Sous ces conditions:
+\begin{enumerate}
+\item[(i)] $X/R=Y$ existe, et (si $S$ est noethérien et si $R$ provient d'une
+relation d'équivalence) est quasi-projectif sur $S$.\footnote{Le texte imprimé
+ne contient pas la seconde hypothèse. L'erratum lié à l'exposé 212 précise
+que la quasi-projectivité ne semble alors prouvée que lorsque $R$ provient
+d'une relation d'équivalence.}
+
+\item[(ii)] Le morphisme canonique $f:X\to Y$ est surjectif, propre, ouvert,
+ses fibres sont les classes d'équivalence $p_2(p_1^{-1}(x))$ dans $X$ mod $R$,
+donc $Y$ s'identifie à l'espace topologique quotient de $X$ par la relation
+d'équivalence ensembliste définie par $R$. Enfin,
+$R_1\to X\times_Y X$ est surjectif.
+
+\item[(iii)] Si $R$ provient d'une relation d'équivalence, cette dernière est
+effective, i.e. $R_1\to X\times_Y X$ est un isomorphisme, et de plus
+$f:X\to Y$ est plat (donc fidèlement plat).
+\end{enumerate}
+
+Pour la démonstration, on se ramène à (5.1) grâce à des quasi-sections
+convenables de $X$ pour $R$, la démonstration étant analogue à la construction
+des groupes algébriques quotients dans le Séminaire Chevalley.
+
+En résumé:
+
+\result{SCHOLIE}{} Soit $X$ quasi-projectif sur $S$ localement noethérien. La
+donnée d'un morphisme propre, fidèlement plat, et surjectif $f:X\to Y$ de $X$
+dans un $S$-préschéma $Y$, est équivalente à la donnée d'une relation
+d'équivalence $R$ sur $X$, telle que $p_1:R\to X$ soit propre et plat.
+
+La même méthode donne le résultat suivant:
+
+\result{THÉORÈME}{6.2} Soient $S$ un préschéma noethérien, $X$ un
+préschéma de type fini sur $S$, $R$ une pré-relation d'équivalence dans le
+$S$-préschéma $X$, on suppose que:
+\begin{enumerate}
+\item[(a)] $p_1:R_1\to X$ est plat et de type fini;
+\item[(b)] le morphisme $R_1\to X\times_S X$ est quasi-fini (i.e. à fibres
+finies).
+\end{enumerate}
+Alors il existe un ouvert $U$ dense dans $X$ \emph{saturé} pour $R$, tel que:
+\begin{enumerate}
+\item[(i)] Si $R_U$ est la pré-relation d'équivalence induite par $R$ dans
+$U$, alors $U/R_U$ existe, et est de type fini sur $S$.
+
+\item[(ii)] Le morphisme canonique $U\to U/R_U$ est surjectif et ouvert, ses
+fibres sont les classes d'équivalence ensembliste pour $R_U$ (donc $U/R_U$ est
+un espace topologique quotient de $U$ par la relation d'équivalence ensembliste
+définie par $R_U$), enfin le morphisme
+\[
+  (R_U)_1\longrightarrow U\times_{U/R_U}U
+\]
+est surjectif.
+\src{114}
+
+\item[(iii)] Si $R$ provient d'une relation d'équivalence, on peut supposer
+$U\to U/R_U$ fidèlement plat et $R_U$ effectif.
+\end{enumerate}
+
+C'est là un résultat de nature essentiellement « birationnelle ».
+
+\medskip
+\noindent\textbf{REMARQUES 6.3.}
+
+\smallskip
+\noindent $1^\circ$ J'ignore si dans (6.1) et (6.2) l'hypothèse (b) est
+inutile. Elle nous oblige pratiquement dans le passage au quotient par des
+groupes de nous borner au cas où les stabilisateurs sont tous des groupes
+finis.
+
+\smallskip
+\noindent $2^\circ$ On peut se demander s'il n'y a pas des résultats analogues
+à (6.1) et (6.2) sans hypothèse de platitude. Je n'ai aucun contre-exemple
+dans cette direction. Par contre, même en gardant l'hypothèse de platitude, et
+en se bornant à des relations d'équivalence telles que $p_1:R\to X$ soit plat
+et quasi-fini (mais non fini), $X$ étant affine, il peut arriver que $R$ ne
+soit pas effective: prendre les relations d'équivalence induites sur des
+ouverts affines recouvrant la variété de Nagata (où un groupe à deux éléments
+opère de façon « non admissible »).
+
+\fsection{7}{Applications}
+
+Comme nous l'avons dit dans l'introduction, l'application la plus importante
+de (6.1) est la construction de schémas de Picard, ainsi que de solutions pour
+divers autres problèmes de « modules », sur lesquels nous reviendrons
+ultérieurement.
+
+On obtient une démonstration simple du résultat suivant de SHIMURA:
+
+\result{PROPOSITION}{7.1} Soit $A$ un schéma abélien défini sur un anneau de
+valuation discrète $V$ de corps des fractions $K$. Alors tout schéma abélien
+$B'$ sur $K$ isogène à un quotient de $A\otimes_V K$ « se réduit bien pour
+$V$ », i.e. est isomorphe à un $B\otimes_V K$,\footnote{Le texte imprimé a
+$B\otimes_V A$. Comme $B$ est un $V$-schéma et que l'assertion porte sur sa
+fibre générique, le facteur de base est nécessairement $K$.} où $B$ est un
+schéma abélien sur $V$ (essentiellement unique, rappelons-le).
+
+On peut supposer que $B'$ est le quotient de $A_K$ par un sous-schéma en
+groupes $C'$. (N.B.: $C'$ ne sera en général pas « réduit », i.e. ses anneaux
+locaux auront des éléments nilpotents). Considérons le sous-schéma fermé $C$
+de $A$ « adhérence » de $C'$, i.e. le plus petit sous-schéma fermé de $A$ tel
+que $C_K$ majore $C'$. On aura $C_K=C'$, et du fait que $V$ est un anneau de
+valuation discrète, on tire facilement que $C$ est un sous-schéma en groupes
+de $A$ sur $V$. Comme $A$ est propre sur $\operatorname{Spec}(V)=S$, il en est
+de même de $C$, d'autre part $A$ est même projectif sur $S$. On peut alors
+appliquer (6.1) pour construire $A/C=B$,
+\src{115}
+c'est le $B$ cherché.
+
+Enfin, des raisonnements essentiellement connus permettent de tirer de (6.2)
+le résultat suivant:
+
+\result{THÉORÈME}{7.2} Soient $S$ le spectre d'un anneau artinien, $F$ et
+$G$ des schémas en groupes de type fini sur $S$, $u:F\to G$ un homomorphisme
+de schémas en groupes sur $S$. On suppose:
+\begin{enumerate}
+\item[(i)] $F$ est plat sur $S$;
+\item[(ii)] le noyau de $u$ est fini.
+\end{enumerate}
+Sous ces conditions, le schéma quotient $G/F$ existe, le morphisme canonique
+$G\to G/F$ est surjectif et ouvert, ses fibres sont les classes d'équivalence
+ensemblistes définies par les opérations à droite de $F$ sur $G$. Enfin, si
+$u$ est un monomorphisme, alors le morphisme $G\to G/F$ est plat et le
+morphisme
+\[
+  G\times F\longrightarrow G\times_{G/F}G
+\]
+est un isomorphisme, en d'autres termes $G$ est un espace principal homogène
+sur $G/F$, de groupe structural (opérant à droite) $F$, ou plutôt
+$F\times_S(G/F)$ considéré comme schéma en groupes sur $G/F$ (cf. [1], B,
+\S~6).
+
+\result{COROLLAIRE}{7.3} Sous ces conditions, pour que $G$ soit plat sur $S$,
+il faut et il suffit que $G/F$ le soit. Si cette condition est vérifiée, alors
+le passage au quotient par $F$ commute à toute extension de la base $S$, et
+si $F$ est un sous-groupe invariant de $G$, $G/F$ peut être muni d'une
+structure de \emph{groupe quotient} de $G$ par $F$.
+
+La situation est particulièrement simple si $S$ est le spectre d'un corps, car
+alors tout $S$-préschéma est automatiquement plat sur $S$. On trouve:
+
+\result{COROLLAIRE}{7.4} Soient $F,G$ des schémas en groupes de type fini sur
+un corps $k$, et soit $u:F\to G$ un homomorphisme de $k$-groupes. Alors $u$ se
+factorise en $F\to F'\to G$, où $F\to F'$ est un homomorphisme de passage au
+quotient par le sous-groupe fermé $\operatorname{Ker}u$ de $F$, et où
+$F'\to G$ est un homomorphisme de groupes qui est une immersion fermée. Le
+quotient $G/F=G/F'$ existe. Le formalisme habituel (genre théorèmes de Noether)
+est valable parmi les groupes algébriques sur $k$.
+
+Ce résultat permet de traiter de manière uniforme le passage au quotient dans
+les groupes algébriques au sens classique (i.e. qui sont irréductibles sur $k$
+et simples sur $k$), et le passage au quotient par des sous-groupes
+« infinitésimaux »
+\src{116}
+considérés par CARTIER. Il y a avantage à considérer les « hyperalgèbres »
+introduites par CARTIER, à la suite des travaux de DIEUDONNÉ sur les groupes
+formels, comme des groupes dans la catégorie des schémas formels au-dessus de
+$k$, et le cas échéant (s'ils correspondent à des hyperalgèbres de rang fini
+sur $k$) comme des groupes algébriques finis sur $k$.
+
+\fsection{8}{Une conjecture}
+
+Elle répond au besoin de savoir passer au quotient par le groupe projectif
+opérant sur certains sous-schémas des « schémas de Hilbert » (ces derniers
+remplaçant, en théorie des schémas, les variétés de Chow).
+
+Soient $S$ un préschéma, et $n$ un entier. À tout préschéma $S'$ sur $S$,
+faisons correspondre le groupe
+$\operatorname{Gl}(n,\Gamma(S',\mathcal O_{S'}))$ des matrices inversibles à
+$n$ lignes et $n$ colonnes à valeurs dans l'anneau des sections de
+$\mathcal O_{S'}$. On obtient ainsi un foncteur contravariant en $S'$, dont on
+montre aisément qu'il est représentable, il correspond donc à un schéma en
+groupes sur $S$, d'ailleurs affine sur $S$, noté $\operatorname{Gl}(n)_S$. Sa
+formation est compatible avec le changement de base, de sorte qu'en réalité
+tout provient d'un schéma en groupes sur $\mathbf Z$, noté
+$\operatorname{Gl}(n)$. Le groupe $\operatorname{Gl}(1)$, appelé groupe
+multiplicatif et souvent noté $\mathbf G_m$, correspond au foncteur
+$S\longmapsto\Gamma(S,\mathcal O_S)^*$, groupe des « unités » sur $S$. On a
+un homomorphisme évident $\operatorname{Gl}(1)\to\operatorname{Gl}(n)$, et on
+construit facilement le groupe quotient, noté $\operatorname{GP}(n-1)$ et
+appelé le \emph{groupe projectif de degré $n-1$ sur $\mathbf Z$}. Il représente
+le foncteur qui, à $S$, associe le groupe des sections du faisceau
+$\widetilde{\operatorname{Gl}(n)}_S/
+\widetilde{\operatorname{Gl}(1)}_S$, où
+$\widetilde{\operatorname{Gl}(n)}_S$ désigne le faisceau des germes de sections
+de $\operatorname{Gl}(n)_S$ sur $S$. (On fera attention que les sections de
+$\operatorname{GP}(n-1)_S$ sur $S$ ne proviennent pas en général de sections
+de $\operatorname{Gl}(n)_S$ sur $S$!). Notons que l'on peut prouver que
+$\operatorname{GP}(n-1)$ représente également le foncteur
+$S\longmapsto\operatorname{Aut}_S(\mathbf P_S^{n-1})$, (où
+$\mathbf P_S^{n-1}$ est le schéma projectif-type de dimension relative $n-1$
+sur $S$), du moins pour $S$ noethérien. C'est de cette façon qu'il s'introduit
+en théorie des modules.
+
+Soit $S$ un schéma noethérien, qu'on peut si on veut supposer affine, et soit
+$X$ un $S$-préschéma quasi-projectif, muni d'un faisceau inversible $\mathcal L$
+très ample relativement à $S$. On suppose que le groupe
+$G=\operatorname{GP}(n)_S$ opère sur $X$ et en même temps sur $\mathcal L$ (de
+façon compatible avec ses opérations sur $X$), et qu'il opère \emph{librement}
+sur $X$.\footnote{Le texte imprimé porte « sur $S$ ». L'action considérée et
+la condition de quotient portent sur $X$.}
+\src{117}
+
+\result{CONJECTURE}{8.1}\footnote{L'erratum lié à l'exposé 212 signale que
+cette conjecture est « décidément fausse ». Il indique aussi que le fait
+positif de la remarque 8.1 a depuis été démontré et renvoie aux travaux de
+Mumford et à leurs raffinements.} Sous les conditions précédentes:
+
+\smallskip
+\noindent $1^\circ$ \emph{La relation d'équivalence définie par $G$ est
+effective, le quotient $Y=X/G$ est de type fini sur $S$ et le morphisme
+canonique $f:X\to Y$ est plat et surjectif} (donc $X$ devient un fibré
+principal homogène sur $Y$, de groupe $G\times_S Y=\operatorname{GP}(n)_Y$).
+
+\smallskip
+\noindent $2^\circ$ Soit $\mathcal L'$ le faisceau inversible sur $Y$ déduit
+de $\mathcal L$ par « descente fidèlement plate » par $f$ (cf. [1], B,
+\S~th. 1). Alors $\mathcal L'$ est \emph{préample sur $Y$ par rapport à $S$},
+i.e. il existe un entier $m$ et un morphisme quasi-fini de $Y$ dans un schéma
+projectif-type convenable $\mathbf P_S^N$, tels que $(\mathcal L')^{\otimes m}$
+soit isomorphe à l'image inverse de $\mathcal O_{\mathbf P_S^N}(1)$.
+
+On notera que même si $X$ est séparé sur $S$, il pourra arriver que $Y$ ne soit
+pas séparé sur $S$ (situation qui se rencontre dans des situations de
+« problèmes de modules » pas du tout pathologiques). Si $1^\circ$ est vérifié,
+alors $Y$ est séparé si et seulement si la relation d'équivalence définie par
+$G$ a un graphe fermé, i.e. si $G\times X\to X\times X$ a une image fermée
+(c'est alors une immersion fermée). Si $Y$ est séparé, alors $\mathcal L'$ est
+préample sur $Y$ par rapport à $S$ si et seulement s'il est ample, i.e. si
+une puissance tensorielle convenable définit une immersion projective. Dans
+les problèmes de modules mentionnés dans l'introduction, on peut montrer que la
+relation d'équivalence à laquelle on parvient a bien un graphe fermé.
+
+\medskip
+\noindent\textbf{REMARQUES 8.1. ---} Nous avons supposé
+$G=\operatorname{GP}(n)_S$ pour fixer les idées et parce que c'est le cas le
+plus important en pratique, à l'heure actuelle. L'hypothèse raisonnable à
+faire sur $G$ semblerait plutôt que $G$ soit une des « formes » sur $S$ d'un
+des groupes de Tohokû (dont la construction sur les entiers a été faite
+également par CHEVALLEY). Le seul fait positif qui me soit connu dans la
+direction de la conjecture précédente est le suivant: soit $X$ \emph{un schéma
+affine sur un corps $k$ de caractéristique $0$, où le groupe
+$\operatorname{Gl}(n)_k$ ou $\operatorname{GP}(n-1)_k$ opère librement. Alors
+la relation d'équivalence définie par $G$ est effective, le quotient $X/G$ est
+également affine, et le morphisme $X\to X/G$ est plat et surjectif}. La
+démonstration utilise le fait suivant (qui pour l'instant n'est démontré qu'en
+caractéristique $0$): lorsque l'on fait opérer $G$ sur l'anneau affine $A$ de
+$G$, considéré comme espace vectoriel sur $k$, la représentation triviale de
+$G$ n'intervient qu'une fois (dans une suite de composition d'un sous-espace
+vectoriel de dimension finie sur $k$ stable sous $G$). Il semble possible
+qu'une utilisation systématique de la
+\src{118}
+théorie des représentations linéaires de $G$ finira par donner une
+démonstration de la conjecture, du moins lorsque l'on est sur un corps de base.
+Lorsque l'on n'est plus sur un corps de base, le conférencier ignore tout.
+
+\section*{BIBLIOGRAPHIE}
+\addcontentsline{toc}{section}{Bibliographie}
+
+\begin{description}
+\item[{[1]}] GROTHENDIECK (Alexander). --- Techniques de descente et théorèmes
+d'existence en géométrie algébrique, I: Généralités, Séminaire Bourbaki,
+1959/60, n\textsuperscript{o} 190, 29 p.
+
+\item[{[2]}] GROTHENDIECK (Alexander). --- Techniques de descente et théorèmes
+d'existence en géométrie algébrique, II: Le théorème d'existence en théorie
+formelle des modules, Séminaire Bourbaki, 1959/60,
+n\textsuperscript{o} 195, 22 p.
+
+\item[{[3]}] GROTHENDIECK (A.) et DIEUDONNÉ (J.). --- Éléments de géométrie
+algébrique, I: Le langage des schémas. --- Paris, Presses universitaires de
+France, 1960 (Institut des hautes Études scientifiques, Publications
+mathématiques, 4).
+\end{description}
+
+\par\smallskip
+\begingroup\footnotesize
+\endgroup

@@ -1,0 +1,221 @@
+\clearpage
+\chapter*{Erratum et complément à l'exposé n\textsuperscript{o} 236}
+\addcontentsline{toc}{chapter}{Erratum et complément à l'exposé
+n\textsuperscript{o} 236}
+\src{303}
+
+\noindent\textbf{8. TDTE VI : Les schémas de Picard. Propriétés générales.}
+
+\begin{center}
+[Séminaire Bourbaki, t. 14, 1961/62, n\textsuperscript{o} 236, 23 p.]
+\end{center}
+
+\noindent\textbf{Page 12, ligne 16.} --- Au lieu de « droite affine », lire
+« droite affine privée de l'origine ».
+
+\noindent\textbf{Ligne 18.} --- Au lieu de « $X[t]$ », lire
+« $X[t,t^{-1}]$ ».
+
+\noindent\textbf{Page 16, proposition 3.1, 6\textsuperscript{e} ligne.} ---
+Au lieu de « Or l'hypothèse ... », lire « Or, de l'hypothèse ... ».
+
+\noindent\textbf{Page 21, § 4 : Le théorème de finitude pour le schéma de
+Picard.} --- Les questions de finitude du genre de celles soulevées dans ce
+paragraphe ont été à peu près totalement résolues depuis la rédaction du
+présent exposé. Indiquons les faits principaux connus maintenant dans cette
+direction. Pour simplifier les énoncés, nous supposons implicitement que tous
+les préschémas de Picard intervenant dans les énoncés existent, bien qu'une
+modification évidente de ces énoncés permette de se débarrasser de toute
+hypothèse d'existence. $S$ désigne par la suite un schéma noethérien, $X,Y$ des
+schémas propres sur $S$.
+
+\medskip
+\noindent(i) Soit $f:X\longrightarrow Y$ un morphisme surjectif, alors
+\[
+f^*: \operatorname{Pic}_{Y/S}\longrightarrow\operatorname{Pic}_{X/S}
+\]
+est un morphisme de type fini.
+
+\src{304}
+\noindent(ii) Supposons $Y$ projectif sur $S$, muni d'un Module inversible
+ample relativement à $S$, et soit $X$ le schéma des zéros d'une section
+quelconque de ce Module, $f:X\longrightarrow Y$ l'immersion canonique.
+Supposons enfin que les composantes irréductibles des fibres de $Y/S$ soient de
+dimension $\geq3$. Alors
+\[
+f^*: \operatorname{Pic}_{Y/S}\longrightarrow\operatorname{Pic}_{X/S}
+\]
+est de type fini.
+
+\noindent(iii) Supposons que $X$ soit projectif sur $S$, et que toutes ses
+fibres géométriques soient intègres et de dimension $n$. Soit
+$\mathcal O_X(1)$ un Module inversible ample sur $X$, permettant de définir
+des polynômes de Hilbert. Soit $M$ une partie de
+$\operatorname{Pic}_{X/S}$ ; alors $M$ est quasi-compacte si et seulement si,
+dans les polynômes de Hilbert
+\[
+a_0x^n+a_1x^{n-1}+a_2x^{n-2}+\cdots
+\]
+des éléments de $M$, les coefficients $a_1$ et $a_2$ restent bornés, en omettant tout coefficient dont le monôme aurait un degré négatif ; ainsi seul $a_1$ intervient si $n=1$, et aucun des deux si $n=0$.
+
+\noindent(iv) Pour tout entier $n\neq0$, l'homomorphisme de puissance
+$n$-ième dans le préschéma en groupes $\operatorname{Pic}_{X/S}$ est un
+morphisme de type fini.
+
+Notons que (i) et (ii) signifient aussi que (sous les hypothèses envisagées
+dans ces énoncés (i) et (ii)) une partie $M$ de
+$\operatorname{Pic}_{Y/S}$ est quasi-compacte si et seulement si son image
+dans $\operatorname{Pic}_{X/S}$ l'est. On en conclut qu'un Module inversible
+$\mathcal L$ sur $Y$ est $\tau$-équivalent à zéro si et seulement si son image
+inverse sur $X$ l'est ; en d'autres termes
+$\operatorname{Pic}_{Y/S}^\tau$ est l'image inverse de
+$\operatorname{Pic}_{X/S}^\tau$. En particulier, pour montrer que le premier
+préschéma est de type fini sur $S$, il suffit de le prouver pour le second
+puisque $\operatorname{Pic}_{Y/S}\longrightarrow
+\operatorname{Pic}_{X/S}$ est de type fini. Utilisant alors (i), le lemme de
+Chow et (iii), on trouve :
+
+\medskip
+\noindent(v) $\operatorname{Pic}_{X/S}^\tau$ est de type fini sur $S$.
+
+De façon générale, la conjonction de (i) pour un morphisme fini et de (ii)
+permet de se ramener, pour la plupart des questions de finitude, au cas où
+$X/S$ est à fibres géométriques intègres normales de dimension $\leq2$ ;
+souvent même, appliquant (i) pour un morphisme surjectif non nécessairement
+fini, et la résolution des singularités des surfaces algébriques (due en
+caractéristique quelconque à Abhyankar), on se ramène au cas où $X/S$ est même
+simple, donc à fibres géométriques non singulières de dimension 2. Cela permet
+par exemple, compte tenu de (v), et de l'inégalité de Picard--Igusa majorant le
+rang du groupe de Néron--Severi d'une surface projective non singulière, de
+prouver la généralisation suivante du théorème de finitude de Néron :
+
+\medskip
+\noindent(vi) Soit $X/S$ propre sur $S$ et par ailleurs quelconque, alors les
+groupes de Néron--Severi
+\[
+\operatorname{Pic}_{X_i/k_i}/\operatorname{Pic}_{X_i/k_i}^\circ
+\]
+des fibres géométriques $X_i/k_i$ de $X/S$
+
+\src{305}
+sont de type fini, et leur rang et l'ordre de leur sous-groupe de torsion
+restent majorés.
+
+La même méthode de réduction au cas des surfaces non singulières, et des
+théorèmes connus pour ce cas (savoir le théorème de finitude de Néron, et le
+fait que la forme intersection sur le groupe de Néron--Severi est non
+dégénérée) impliquent :
+
+\medskip
+\noindent(vii) Soit $X$ un schéma propre sur un corps algébriquement clos.
+Alors il existe un nombre fini de courbes fermées intègres $C_i$
+($1\leq i\leq r$) dans $X$, ayant la propriété suivante : pour toute partie
+$M$ de $\operatorname{Pic}_{X/k}$, $M$ est quasi-compacte si et seulement si
+les entiers
+\[
+\deg_{C_i'}\mathcal L\qquad(\mathcal L\in M)
+\]
+restent bornés (où $C_i'$ désigne la normalisée de $C_i$).
+
+On peut prendre ici pour $r$ le rang du groupe de Néron--Severi. Une fois connu
+que ce dernier est de type fini, (vii) se réduit au fait que les formes
+linéaires sur le groupe de Néron--Severi définies par des courbes $C$ dans $X$
+ne s'annulent simultanément que sur les éléments de torsion du groupe de
+Néron--Severi. Dans le cas $X$ projectif non singulier, ce résultat, ainsi que
+(v), était dû à Matsusaka. Utilisant (vii), on obtient facilement la
+caractérisation suivante des Modules inversibles $\tau$-équivalents à 0 sur
+$X$ :
+
+\medskip
+\noindent(viii) Soient $X/k$ un schéma propre sur un corps, $\mathcal L$ un
+Module inversible sur $X$. Conditions équivalentes :
+
+\noindent a. $\mathcal L$ est $\tau$-équivalent à 0 ;
+
+\noindent b. Pour tout Module cohérent $F$, on a
+\[
+\chi(F\otimes\mathcal L)=\chi(F),
+\]
+où $\chi$ désigne la caractéristique d'Euler--Poincaré ;
+
+\noindent b'. Comme (b), mais avec $F=\mathcal O_Y$, $Y$ étant un
+sous-schéma fermé intègre de dimension 1 dans $X$ ;
+
+\noindent c. Pour tout $Y$ comme ci-dessus, désignant par $Y'$ la courbe
+normalisée, on a
+\[
+\deg\mathcal L_{Y'}=0.
+\]
+
+Si $X/k$ est projectif et muni d'un Module inversible ample
+$\mathcal O_X(1)$, les conditions précédentes sont aussi équivalentes aux
+suivantes :
+
+\noindent d. Pour tout entier $m$, $\mathcal L^{\otimes m}(1)$ est ample.
+
+\noindent e. (Si $X$ est intègre.) Pour tout couple d'entiers $m,n$, on a
+\[
+\chi(\mathcal L^{\otimes m}(n))=\chi(\mathcal O_X(n))
+\]
+
+\src{306}
+(i.e. (b) est vrai en faisant $F=\mathcal L^{\otimes m}(n)$).
+
+Pour la suffisance de cette dernière condition, on notera qu'elle signifie que
+les polynômes de Hilbert des $\mathcal L^{\otimes m}$ sont tous égaux, donc,
+en vertu du critère de Mumford (iii), les $\mathcal L^{\otimes m}$ restent
+dans un ensemble quasi-compact de $\operatorname{Pic}_{X/k}$, i.e. on a (a).
+Les conditions (b), (b'), (c) doivent être considérées comme des variantes
+(sur un schéma propre quelconque) de la notion d'équivalence numérique, définie
+habituellement sur des variétés projectives non singulières. Pour ces
+dernières, l'équivalence de (a) et (c) était évidemment bien connue
+(Matsusaka).
+
+Le critère (e) implique aussi le résultat suivant :
+
+\medskip
+\noindent(ix) Soit $f:X\longrightarrow S$ un morphisme projectif et plat dont
+les fibres géométriques sont intègres. Alors
+$\operatorname{Pic}_{X/S}^\tau$ est ouvert et fermé dans
+$\operatorname{Pic}_{X/S}$.
+
+Nous nous bornerons à quelques commentaires sur la démonstration des
+résultats-clefs (i), (ii), (iii) (le résultat (iv) est un peu à part des
+autres, et se prouve en utilisant seulement (i) pour les morphismes finis
+surjectifs radiciels, de façon précise, pour un morphisme de Frobenius). Pour
+(i), on utilise de façon essentielle les idées de la descente non plate (voir
+notamment TDTE I, page 9). Il se trouve que (n'ayant en vue que des résultats
+de finitude), le manque de critères d'effectivité pour des données de descente
+est inoffensif. D'autre part, Mumford a démontré récemment une forme un peu
+moins forte de (iii), savoir le critère faisant intervenir tous les
+coefficients du polynôme de Hilbert. Son argument est extrêmement simple, et
+inspiré par la démonstration d'un critère d'amplitude de Nakai (énoncé par ce
+dernier pour les surfaces non singulières, et généralisé par Mumford aux
+morphismes projectifs quelconques). Il me semble d'ailleurs que cet argument
+n'est valable que moyennant une légère restriction supplémentaire sur les
+fibres de $X/S$, la propriété $(S_2)$ de Serre, vérifiée si les fibres
+géométriques sont normales. On utilise alors ce critère restreint dans la
+démonstration de (ii) : le critère (i) permet en effet de se ramener au cas où
+$Y/S$ est plat à fibres géométriques intègres et normales, et appliquant le
+critère de Mumford, on se ramène aisément au cas où $X/S$ satisfait aux mêmes
+conditions. De l'hypothèse de dimension résulte alors que les fibres
+géométriques de $Y$ et de $X$ sont de profondeur $\geq2$ en leurs points
+fermés, ce qui permet d'appliquer les « critères d'équivalence » sous la forme
+qui leur est donnée dans SGA 1962 (exposé XII), et d'achever la démonstration de
+(ii). Une fois qu'on dispose de (i) et (ii), il n'est pas difficile dans le
+critère de Mumford de se débarrasser de toute hypothèse de normalité sur les
+fibres, et de le démontrer également sous la forme plus forte donnée dans
+(iii).
+
+\src{307}
+Notons enfin que la démonstration de (i) et (ii) montre également que dans le
+cas où $S$ est le spectre d'un corps $k$, le morphisme
+\[
+\operatorname{Pic}_{Y/k}\longrightarrow\operatorname{Pic}_{X/k}
+\]
+est affine (et non seulement de type fini).
+
+\par\smallskip
+\begingroup\footnotesize
+\noindent\textit{La lecture imprimée demande que les coefficients $a_1$ et $a_2$ restent bornés, sans préciser le cas $n<2$. La lecture courante explicite seulement la convention des coefficients absents en basse dimension. Il ne s'agit pas d'une assertion imprimée démontrée fausse.}\par
+\endgroup

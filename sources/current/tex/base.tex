@@ -1,0 +1,78 @@
+\usepackage[a4paper,inner=31mm,outer=27mm,top=28mm,bottom=31mm,marginparwidth=17mm]{geometry}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{TeX Gyre Cursor}
+\usepackage{polyglossia}
+\setdefaultlanguage{\FgaLang}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
+\usepackage{bookmark}
+\usepackage{hyperref}
+\hypersetup{hidelinks,unicode=true}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\numberwithin{equation}{section}
+
+\newcommand{\src}[1]{%
+  \phantomsection\hypertarget{src:#1}{}%
+  \marginpar{\raggedleft\footnotesize\sffamily #1}%
+}
+\newcommand{\sid}[1]{\phantomsection\hypertarget{fga:#1}{}}
+\newcommand{\Osh}{\underline{O}}
+\newcommand{\Zsh}{\underline{\mathbf Z}}
+\newcommand{\Ccat}{\mathcal C}
+\newcommand{\Homsh}{\underline{\operatorname{Hom}}}
+\newcommand{\Extsh}{\underline{\operatorname{Ext}}}
+\newcommand{\hsh}{\underline{h}}
+\newcommand{\fquote}[1]{\textquotedbl#1\textquotedbl}
+\newcommand{\seminar}[1]{%
+  \begin{flushleft}\sffamily Séminaire BOURBAKI\\#1\end{flushleft}%
+}
+\newcommand{\seminaren}[1]{%
+  \begin{flushleft}\sffamily BOURBAKI SEMINAR\\#1\end{flushleft}%
+}
+\newcommand{\paperhead}[2]{%
+  \begin{center}
+    {\Large\bfseries #1\par}
+    \vspace{0.6\baselineskip}
+    #2
+  \end{center}
+  \vspace{0.8\baselineskip}
+}
+
+\theoremstyle{plain}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{theoreme}[proposition]{Théorème}
+\newtheorem{theorem}[proposition]{Theorem}
+\newtheorem{corollaire}[proposition]{Corollaire}
+\newtheorem{corollary}[proposition]{Corollary}
+\newtheorem{lemme}[proposition]{Lemme}
+\newtheorem{lemma}[proposition]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}[proposition]{Définition}
+\newtheorem{definitionen}[proposition]{Definition}
+
+\theoremstyle{remark}
+\newtheorem*{remarque}{Remarque}
+\newtheorem*{remark}{Remark}
+
+\newcommand{\unit}[1]{%
+  \chapter{#1}%
+  \markboth{#1}{#1}%
+}
+\newcommand{\fsection}[2]{%
+  \section*{#1. #2}%
+  \addcontentsline{toc}{section}{#1. #2}%
+}
+\newcommand{\result}[2]{%
+  \par\medskip\noindent\textbf{#1%
+  \if\relax\detokenize{#2}\relax\else\space#2\fi. ---}\enspace
+}

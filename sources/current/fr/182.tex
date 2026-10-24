@@ -1,0 +1,1429 @@
+\unit{Exposé 182 — Géométrie formelle et géométrie algébrique}
+\sid{182}
+\src{193}
+\seminar{(Mai 1959)}
+\paperhead{GÉOMÉTRIE FORMELLE ET GÉOMÉTRIE ALGÉBRIQUE}%
+  {par Alexander GROTHENDIECK}
+
+\fsection{1}{Schémas}
+
+On sait qu'un espace algébrique affine défini sur un corps $k$ est
+essentiellement déterminé par son algèbre affine $A$ (anneau des fonctions
+régulières définies sur $k$), les morphismes d'espaces algébriques
+$X\longrightarrow Y$ correspondant biunivoquement aux homomorphismes de
+$k$-algèbres $A(Y)\longrightarrow A(X)$. L'algèbre affine correspondant à un
+espace algébrique est une $k$-algèbre de type fini et, dans le point de vue
+« classique », elle n'a pas d'éléments nilpotents ; inversement, toute algèbre
+de ce type est obtenue comme algèbre affine d'un espace algébrique défini sur
+$k$. Il y a alors un dictionnaire connu permettant d'interpréter les situations
+concernant des espaces algébriques affines en termes d'algèbre commutative. On
+a constaté depuis longtemps qu'on obtenait alors des énoncés plus généraux, car
+il n'était généralement plus besoin de supposer que les anneaux en jeu étaient
+du type juste envisagé, l'hypothèse noethérienne étant le plus souvent
+suffisante. En particulier, qu'il y ait ou non un corps de base donné, il n'y
+avait pas lieu d'exclure le cas où ces anneaux contiennent des éléments
+nilpotents. Jusqu'à présent, les géomètres s'étaient refusés à tenir compte de
+ces indications et se sont obstinés à se restreindre à la considération
+d'algèbres affines sans éléments nilpotents, i.e. d'espaces algébriques dans les
+faisceaux structuraux desquels il n'y a pas d'éléments nilpotents (et même le
+plus souvent, des espaces algébriques « absolument irréductibles »). Le
+conférencier pense que cet état d'esprit a été un obstacle sérieux au
+développement des méthodes vraiment naturelles en Géométrie algébrique.
+
+Soit $A$ un anneau commutatif. Il est bien connu que l'ensemble
+$X=\operatorname{Spec}(A)$ des idéaux premiers de $A$ est muni d'une topologie
+naturelle, la « topologie de Zariski » ou topologie spectrale. D'autre part, il
+y a un faisceau d'anneaux commutatifs $\Osh_X$ sur $X$, dont la fibre en
+$\mathfrak p\in X$ est l'anneau localisé $A_{\mathfrak p}$, et dont l'anneau des
+sections s'identifie à $A$. Ainsi, $X$ devient un \emph{espace annelé}, appelé
+\emph{spectre premier} de $A$. Un homomorphisme d'anneaux
+$f:A\longrightarrow B$ définit un morphisme d'espaces annelés
+$f':\operatorname{Spec}(B)\longrightarrow\operatorname{Spec}(A)$,
+l'application ensembliste sous-jacente n'étant autre que
+$\mathfrak p\longmapsto f^{-1}(\mathfrak p)$. Les homomorphismes
+
+\src{194}
+d'espaces annelés de $\operatorname{Spec}(B)$ dans
+$\operatorname{Spec}(A)$ obtenus de cette façon sont exactement ceux pour
+lesquels les homomorphismes $\Osh_x\longrightarrow\Osh_y$ ($x=f'(y)$) sont
+locaux (i.e. l'image inverse de l'idéal maximal est l'idéal maximal).
+
+On appelle \emph{schéma affine} un espace annelé isomorphe à un
+$\operatorname{Spec}(A)$, et \emph{préschéma} un espace annelé localement
+affine, i.e. dont tout point a un voisinage ouvert qui est un schéma affine pour
+la structure induite. On définit de façon évidente les \emph{morphismes} des
+préschémas ; localement ils correspondent à des homomorphismes d'anneaux.
+
+Quand on se fixe un préschéma $S$, et qu'on regarde des morphismes de préschémas
+$X\longrightarrow S$, alors $S$ joue le rôle d'un corps ou d'un anneau de base
+(ou mieux, d'un espace de base dans une fibration). On dit alors que $X$ est un
+$S$-préschéma ; si $S=\operatorname{Spec}(A)$, cela signifie aussi que $\Osh_X$
+est un faisceau de $A$-algèbres. Ainsi, tout préschéma peut être regardé de
+façon unique comme un $\mathbf Z$-préschéma. Bien entendu, les $S$-préschémas
+forment une catégorie ; de plus on montre que dans cette catégorie le produit
+de deux objets $X,Y$ existe toujours, il est noté $X\times_S Y$. Cette notion
+de produit permet de définir le changement de base dans un $S$-préschéma,
+correspondant à un morphisme $S'\longrightarrow S$ : en effet,
+$X\times_S S'$ pourra être considéré comme un $S'$-préschéma.
+
+On dit que $X$ est \emph{séparé} au-dessus de $S$ si la diagonale de
+$X\times_S X$ est fermée. On appelle \emph{schéma} un préschéma séparé
+au-dessus de $\mathbf Z$ ; il est alors séparé au-dessus de n'importe quoi.
+Pour simplifier, nous ne parlerons plus que de schémas, que de plus nous
+supposerons \emph{noethériens}, i.e. réunions finies d'ouverts affines, spectres
+d'anneaux noethériens. $X$ est dit \emph{de type fini sur} $S$ si, pour tout
+ouvert affine $U$ de $S$, son image inverse dans $X$ est réunion finie d'ouverts
+affines dont les anneaux sont des algèbres de type fini sur l'anneau de $U$. Ce
+sont de tels $S$-schémas qui se prêtent à une étude proprement géométrique. En
+particulier, pour tout $s\in S$, la fibre $f^{-1}(s)$ de $X$ au-dessus de $s$
+est un schéma algébrique sur le corps résiduel $\kappa(s)$ de l'anneau local
+$\Osh_s$ de $s$ dans $S$. Ainsi, $X$ peut dans une certaine mesure être
+considéré comme une famille d'« espaces algébriques » $f^{-1}(s)$, le paramètre
+$s$ parcourant $S$ (i.e., du point de vue local, l'ensemble des idéaux premiers
+d'un anneau donné). Bien entendu, les $\kappa(s)$ peuvent avoir des
+caractéristiques différentes. Si $S=\operatorname{Spec}(k)$, où $k$ est un
+corps, on retrouve essentiellement la notion usuelle d'« espace algébrique »,
+avec la seule différence que maintenant le faisceau structural peut avoir des
+éléments nilpotents.
+
+\src{195}
+En s'inspirant de notions bien connues, on définit la notion de
+\emph{morphisme projectif}, et plus généralement de \emph{morphisme propre}. Un
+tel morphisme est de type fini ; de plus il transforme parties fermées en
+parties fermées, et garde cette propriété par changement de base quelconque.
+
+$X$ étant un schéma (noethérien, comme toujours), le faisceau $\Osh_X$ est un
+\emph{faisceau cohérent d'anneaux} au sens de [2]. Les faisceaux cohérents de
+modules sur $X$ sont donc aussi les faisceaux qui localement sont isomorphes à
+un conoyau d'un homomorphisme $\Osh_X^{m}\longrightarrow\Osh_X^{n}$.
+
+\fsection{2}{Schémas formels}
+
+Soient $X$ un schéma, et $X'$ une partie fermée de $X$. Alors il existe un
+sous-faisceau cohérent $J$ de $\Osh_X$ tel que
+$X'=\operatorname{Supp}(\Osh_X/J)$ (et il en existe même un plus grand). Muni
+de $\Osh_X/J$, $X'$ devient un schéma, noté $X_0$ ; un tel schéma est appelé
+« sous-schéma fermé de $X$ ». On peut aussi pour tout $n$ considérer $X'$ muni
+de $\Osh_X/J^{n+1}$, noté $X_n$ ; c'est un sous-préschéma fermé de $X$ dont
+l'ensemble sous-jacent est encore $X'$, mais ayant un autre faisceau
+structural, soit $\Osh_{X_n}=\Osh_X/J^{n+1}$. Évidemment les $\Osh_{X_n}$
+forment un système projectif de faisceaux d'anneaux sur $X'$, dont la limite
+projective $\overline{\Osh}_X$ est appelée \emph{complété formel de $\Osh_X$ le
+long de $X'$}. Muni de ce faisceau d'anneaux, $X'$ est appelé
+\emph{complété formel de $X$ le long de $X'$}, c'est donc un espace annelé,
+mais pas un schéma en général. Pour tout faisceau cohérent $F$ sur $X$, on peut
+considérer de même le complété formel
+$\overline F=\varprojlim_n F_n$ de $F$ le long de $X'$ (où
+$F_n=F\otimes_{\Osh_X}\Osh_X/J^{n+1}$) ; c'est un faisceau de modules sur
+$\overline X$. Ses sections s'appellent les « sections formelles de $F$ le long
+de $X'$ » et s'identifient aux éléments de
+$\varprojlim_n\Gamma(X',F_n)$. Pour $F=\Osh_X$, on trouve les « fonctions
+holomorphes » de $X$ le long de $X'$ au sens de Zariski (dont nous ne suivrons
+pas la terminologie à cause de ses interférences avec la terminologie
+classique).
+
+On appelle \emph{schéma formel} (sous-entendu : noethérien) un espace
+topologique $\mathfrak X$, muni d'un faisceau d'anneaux topologiques
+$\Osh_{\mathfrak X}$ satisfaisant à la condition suivante : on a un
+isomorphisme de faisceaux d'anneaux topologiques
+$\Osh_{\mathfrak X}=\varprojlim_n\Osh_n$, où les $\Osh_n$ forment un système
+projectif de faisceaux d'anneaux sur $\mathfrak X$, faisant chacun de
+$\mathfrak X$ un schéma $\mathfrak X_n$, et tel que pour $m\geq n$,
+l'homomorphisme $\Osh_m\longrightarrow\Osh_n$ soit surjectif et ait pour noyau
+$J_m^{n+1}$, où $J_m$ est
+
+\src{196}
+le noyau de $\Osh_m\longrightarrow\Osh_0$. On montre alors que
+$\Osh_{\mathfrak X}$ est un \emph{faisceau cohérent d'anneaux locaux
+noethériens}.
+
+En vertu des définitions, un complété formel $\overline X$ comme plus haut est
+un schéma formel, et inversement, tout schéma formel est \emph{localement} de ce
+type. En fait, la donnée d'un schéma formel \emph{affine} (i.e. tel que
+$\mathfrak X_0$ soit affine, ce qui implique que tous les $\mathfrak X_n$ le
+sont) est équivalente à la donnée d'un anneau topologique noethérien,
+$J$-adique séparé et complet.
+
+Les définitions habituelles : morphisme, morphisme de type fini, morphisme
+propre, etc., pour les schémas ordinaires, s'étendent sans difficulté aux
+schémas formels.
+
+\fsection{3}{Les trois théorèmes fondamentaux}
+
+Soit $f:X\longrightarrow Y$ un morphisme propre de schémas (noethériens comme
+toujours), soit $Y'$ une partie fermée de $Y$, $X'$ son image inverse dans $X$ ;
+considérons les complétés formels $\overline Y$, $\overline X$ correspondants.
+Alors $f$ induit un morphisme
+$\overline f:\overline X\longrightarrow\overline Y$ de schémas formels, qui est
+d'ailleurs propre. Soit $F$ un faisceau cohérent sur $X$, alors $\overline F$
+est un faisceau cohérent sur $\overline X$. Dans le théorème 1, on oublie
+$X,Y,F$ et on ne regarde que le morphisme propre $\overline f$ de schémas
+formels, et le faisceau cohérent $\overline F$ sur $\overline X$. (Cependant,
+le conférencier n'a écrit de démonstration complète que dans le cas où on part
+de $X,Y,f,F$.)
+
+\result{THÉORÈME}{1 (théorème de finitude)}
+\begin{enumerate}
+  \item[\textit{i.}] Les $R^{q}\overline f_{*}(\overline F)$ sont des faisceaux
+    cohérents sur $\overline Y$.
+  \item[\textit{ii.}] Les homomorphismes naturels
+    \[
+      R^{q}\overline f_{*}(\overline F)
+      \longrightarrow \varprojlim_n R^{q}f_{n*}(F_n)
+    \]
+    sont des isomorphismes.
+\end{enumerate}
+
+Dans cet énoncé, on suppose choisi un sous-faisceau cohérent $J$ de $\Osh_Y$
+définissant $Y'$, d'où par image réciproque un sous-faisceau cohérent de
+$\Osh_X$ définissant $X'$, d'où par suite la définition des $F_n,X_n,Y_n$ et
+$f_n:X_n\longrightarrow Y_n$ comme au n\textsuperscript{o} 2. Les changements
+mineurs à faire dans l'explicitation de ces notations sont évidents, si on
+partait d'un morphisme propre quelconque de deux schémas formels.
+
+Le théorème 1 ne concernait que la « cohomologie formelle ». Le théorème suivant
+
+\src{197}
+la met en rapport avec la « cohomologie algébrique », et s'apparente à un
+théorème bien connu de Serre [4] sur la comparaison entre cohomologie algébrique
+et cohomologie analytique.
+
+\result{THÉORÈME}{2 (Premier théorème de comparaison)} Les
+$R^{q}f_{*}(F)$ sont des faisceaux cohérents sur $Y$ (ce qui est un cas
+particulier du théorème 1), et les homomorphismes naturels
+\[
+  \overline{R^{q}f_{*}(F)}
+  \longrightarrow \varprojlim_n R^{q}f_{n*}(F_n)
+\]
+sont des isomorphismes.
+
+\result{COROLLAIRE}{1} On a des isomorphismes canoniques :
+\[
+  \overline{R^{q}f_{*}(F)}=R^{q}\overline f_{*}(\overline F).
+\]
+
+Ce corollaire est, pour $q=0$, une généralisation du « théorème fondamental des
+fonctions holomorphes » de Zariski, dont nous déduirons une généralisation du
+« théorème de connexion » de Zariski. Notons d'ailleurs que, alors que le
+théorème 1 (\textit{ii}) est trivial pour $q=0$, il n'en est plus du tout de
+même pour le théorème 2 ou pour sa formulation équivalente (corollaire 1). En
+fait, la démonstration procède par récurrence descendante sur $q$ (étant
+triviale pour $q$ grand, car alors les deux membres sont nuls), et le cas $q=0$
+apparaît donc comme le dernier pas de la récurrence, donc si on peut dire le cas
+« le plus difficile ».
+
+\result{COROLLAIRE}{2} Supposons $Y=\operatorname{Spec}(A)$, $Y'$ étant défini
+par l'idéal $J$ de $A$. Alors, pour tout faisceau cohérent $F$ sur $X$, les
+$H^{q}(X,F)$ sont des $A$-modules de type fini, dont les complétés $J$-adiques
+sont les $H^{q}(\overline X,\overline F)$.
+
+Appliquant enfin ce corollaire à
+$H=\Homsh_{\Osh_X}(F,G)$, on trouve :
+
+\result{COROLLAIRE}{3} Supposons $Y=\operatorname{Spec}(A)$, $Y'$ étant défini
+par l'idéal $J$ de $A$. Soient $F,G$ deux faisceaux cohérents sur $X$, alors
+$\operatorname{Hom}(F,G)$ est un module de type fini sur $A$, dont le complété
+$J$-adique s'identifie à
+$\operatorname{Hom}(\overline F,\overline G)$.
+
+Bien entendu, l'application naturelle
+$\operatorname{Hom}(F,G)\longrightarrow
+\operatorname{Hom}(\overline F,\overline G)$ est celle qui associe à un
+homomorphisme $u:F\longrightarrow G$ son prolongement « par continuité »
+$\overline u:\overline F\longrightarrow\overline G$ (moyennant quoi
+$\overline F$ devient un foncteur en $F$).
+
+Supposons maintenant que $A$ soit séparé et complet pour sa topologie
+$J$-adique, alors les corollaires 2 et 3 précédents donnent :
+\[
+  H^{q}(X,F)=H^{q}(\overline X,\overline F),
+  \qquad
+  \operatorname{Hom}(F,G)
+  =\operatorname{Hom}(\overline F,\overline G).
+\]
+
+\src{198}
+Cette dernière identité montre que la catégorie des faisceaux cohérents sur
+$X$ s'identifie à une \emph{sous-catégorie} (avec comme morphismes les
+morphismes induits) de la catégorie des faisceaux cohérents sur $\overline X$.
+En fait, on a même :
+
+\result{THÉORÈME}{3} Pour qu'un faisceau de modules sur $\overline X$ soit
+cohérent, il faut et il suffit qu'il soit isomorphe à un faisceau de la forme
+$\overline F$, où $F$ est un faisceau cohérent sur $X$ (déterminé à un
+isomorphisme canonique près en vertu du théorème 2, corollaire 3). [On rappelle
+que maintenant $Y=\operatorname{Spec}(A)$, $A$ étant un anneau topologique
+noethérien $J$-adique séparé et complet.]
+
+\result{COROLLAIRE}{1} Les sous-schémas fermés de $X$ correspondent
+biunivoquement aux sous-schémas formels fermés de $\overline X$.
+
+En effet, ils correspondent aux sous-faisceaux cohérents de $\Osh_X$, resp. de
+$\overline{\Osh}_X$. Regardant les graphes de morphismes comme des sous-schémas
+fermés, on déduit du corollaire 1 :
+
+\result{COROLLAIRE}{2} Soient $X,Z$ deux schémas propres au-dessus de $A$
+(anneau noethérien $J$-adique, séparé et complet). Alors l'application
+$g\longmapsto\overline g$ définit une correspondance biunivoque entre les
+$Y$-morphismes de $X$ dans $Z$, et les $\overline Y$-morphismes de
+$\overline X$ dans $\overline Z$.
+
+En d'autres termes, les schémas algébriques propres sur $A$ apparaissent comme
+une \emph{sous-catégorie} (avec comme morphismes les morphismes induits) de la
+catégorie des schémas formels propres sur $\overline Y$. On fera attention
+cependant qu'il existe des schémas formels propres sur $\overline Y$ qui ne
+sont pas « algébrisables », i.e. isomorphes à un $\overline X$, avec $X$ propre
+sur $A$ (tout comme il existe des variétés analytiques complexes compactes qui
+ne proviennent pas de variétés algébriques définies sur le corps des complexes).
+De tels schémas formels s'introduisent de façon naturelle en « théorie des
+modules ». Notons cependant un cas particulier intéressant où un schéma formel
+est algébrisable :
+
+\result{THÉORÈME}{4} Soit $A$ un anneau noethérien local complet de corps
+résiduel $k$, et soit $\mathfrak X$ un schéma formel propre sur $A$ (muni de sa
+topologie $\mathfrak m(A)$-adique). On suppose :
+\begin{enumerate}
+  \item[\textit{i.}] que les anneaux locaux de $\Osh_{\mathfrak X}$ sont des
+    modules plats sur $A$, ou ce qui revient au même, si on munit
+    $\Osh_{\mathfrak X}$ et $A$ de la filtration définie par les puissances de
+    l'idéal maximal de $A$, on a pour les gradués associés la relation
+    \[
+      \operatorname{gr}(\Osh_{\mathfrak X})
+      \simeq
+      \operatorname{gr}^{0}(\Osh_{\mathfrak X})
+      \otimes_k\operatorname{gr}(A).
+    \]
+  \item[\textit{ii.}] Considérant
+    $\mathfrak X_0=\mathfrak X\otimes_A k$ comme un schéma algébrique sur $k$,
+    on a
+    \[
+      H^2(\mathfrak X_0,\Osh_{\mathfrak X_0})=0.
+    \]
+  \item[\textit{iii.}] $\mathfrak X_0$ est projectif.
+\end{enumerate}
+Sous ces conditions, $\mathfrak X$ est algébrisable, et de façon précise est
+isomorphe à $\overline X$, où $X$ est un $A$-schéma projectif.
+
+Les conditions \textit{(ii)} et \textit{(iii)} seront vérifiées en particulier
+si $\mathfrak X_0$ est une courbe simple sur $k$, et le théorème 4 pourra
+s'appliquer en particulier dans la « théorie des modules » pour les courbes de
+genre donné\ldots{} Indiquons comment on démontre le théorème 4 : on montre
+(cf. proposition 3 plus bas) que \textit{(i)} et \textit{(ii)} impliquent que
+tout faisceau cohérent sur $\mathfrak X_0$, localement isomorphe au faisceau
+fondamental, s'obtient par réduction à partir d'un faisceau de même nature sur
+$\mathfrak X$. Partant alors d'un faisceau « ample » sur $\mathfrak X_0$ (il
+en existe d'après \textit{(iii)}) on le remonte en un faisceau inversible sur
+$\mathfrak X$, et utilisant le théorème 1 on prouve qu'un multiple de ce
+dernier définit une immersion de $\mathfrak X$ dans le complété formel d'un
+schéma $\mathbf P_A^r$ (« projectif type » de dimension $r$ au-dessus de
+$A$).
+
+Pour la démonstration des théorèmes 1 à 3, on se reportera à [1].
+
+\src{199}
+\fsection{4}{Application au théorème de connexion et au « Main theorem » de
+Zariski}
+
+Soit $f:X\longrightarrow Y$ un morphisme propre de schémas, alors d'après le
+théorème de finitude $f_*(\Osh_X)=\mathcal A$ est un faisceau cohérent sur
+$Y$, c'est d'ailleurs un faisceau d'algèbres commutatives, donc il correspond
+à un $Y$-schéma $g:Y'\longrightarrow Y$ fini au-dessus de $Y$ (défini par la
+condition d'être affine au-dessus de $Y$, i.e. l'image inverse d'un ouvert
+affine est affine, et que $g_*(\Osh_{Y'})=\mathcal A$). Il est immédiat que
+$f$ se factorise alors canoniquement en $f=gf'$, où
+$f':X\longrightarrow Y'$ est un morphisme de $X$ dans $Y'$ qui cette fois-ci
+est tel que $f'_*(\Osh_X)=\Osh_{Y'}$. Cette factorisation de $f$ est appelée
+la \emph{factorisation de Stein} de $f$. Appliquant le premier théorème de
+comparaison, corollaire 1, à $f'$ et à la partie de $Y'$ réduite à un point
+$y'$, on trouve que $f'^{-1}(y')=X'$ est connexe (autrement, les sections
+formelles de $X$ le long de $X'$ ne formeraient pas un anneau local, or le
+complété de $f'_*(\Osh_X)_{y'}=\Osh_{Y',y'}$ est local !). On a prouvé :
+
+\result{THÉORÈME}{5 (« Théorème de connexion » de Zariski)} Soit
+$f:X\longrightarrow Y$ un morphisme propre, alors $f$ se factorise de façon
+unique (à un isomorphisme près) en $f=gf'$, où
+$g:Y'\longrightarrow Y$ est fini et $f':X\longrightarrow Y'$ est tel que
+$f'_*(\Osh_X)=\Osh_{Y'}$ (d'où
+$g_*(\Osh_{Y'})=f_*(\Osh_X)$). Les fibres de $f'$ sont connexes, i.e.
+l'ensemble des composantes connexes d'une fibre $f^{-1}(y)$ de $f$ est en
+correspondance biunivoque avec l'ensemble des points de $Y'$ au-dessus de $y$,
+i.e. l'ensemble des idéaux maximaux dans $f_*(\Osh_X)_y$.
+
+On en déduit immédiatement les variantes habituelles du théorème de connexion.
+Notons ici seulement le
+
+\src{200}
+\result{COROLLAIRE}{1} Pour qu'un point $x$ de $X$ soit isolé dans sa fibre
+$f^{-1}(y)$ il faut et il suffit que la fibre $f'^{-1}(y')$ (où
+$y'=f'(x)$) soit réduite à $x$, ou encore que $f'$ induise un isomorphisme
+d'un voisinage de $x$ sur un voisinage de $y'$. L'ensemble de ces points est
+un ouvert $U$, et $f'$ induit un isomorphisme de $U$ sur un ouvert de $Y'$.
+
+Pour montrer que $f'$ est un isomorphisme local en $x$, on note que $f'$ induit
+un isomorphisme $\Osh_{y'}\longrightarrow\Osh_x$, comme on voit grâce à
+$f'_*(\Osh_X)=\Osh_{Y'}$, et au fait que ($f'$ étant une application fermée
+dont la fibre en $y'$ est réduite à $x$) les $f'^{-1}(V)$ parcourent un
+système fondamental de voisinages de $x$ quand $V$ parcourt un système
+fondamental de voisinages de $y'$. On en déduit aussitôt le résultat suivant,
+dû à Chevalley dans le cas « géométrique ».
+
+\result{COROLLAIRE}{2} Pour que $f$ soit un morphisme fini, il faut et il
+suffit qu'il soit propre et que ses fibres soient finies.
+
+S'il en est ainsi, $f'$ est en effet un isomorphisme d'après ce qui précède.
+
+Soit $f:X\longrightarrow Y$ un morphisme non nécessairement propre, mais
+supposons que $X$ soit contenu comme ouvert dans un $Y$-schéma propre
+$\widetilde f:\widetilde X\longrightarrow Y$ (ce qui sera le cas en
+particulier si $f$ est quasi-projectif). Appliquant le corollaire 1, on voit que
+$\widetilde f'$ induit un isomorphisme de l'ensemble $U$ des points de $X$
+isolés dans leur fibre sur un ouvert de $Y'$ (et que $U$ est bien ouvert). On
+en déduit la variante globale suivante du « Main Theorem » de Zariski.
+
+\result{THÉORÈME}{6 (« Main Theorem » de Zariski)} Soit
+$f:X\longrightarrow Y$ un morphisme de type fini. Alors l'ensemble $U$ des
+points de $X$ qui sont isolés dans leur fibre est ouvert, et si $f$ est
+séparé,\footnote{L'erratum de 1962 remplace ici l'hypothèse imprimée « $f$
+quasi-projectif » par l'hypothèse plus faible « $f$ séparé », en vertu de SGA
+VIII, 6.2 : tout morphisme quasi-fini et séparé est quasi-projectif.} $U$ est
+$Y$-isomorphe à une partie ouverte d'un schéma $Y'$ fini au-dessus de $Y$.
+
+Comme un morphisme de type fini est localement affine, et
+\textit{a fortiori} localement quasi-projectif, on déduit aussitôt du théorème
+6 les variantes usuelles locales du Main Theorem.
+
+\fsection{5}{Application à l'étude cohomologique des morphismes propres et
+plats}
+
+Soit $f:X\longrightarrow Y$ un morphisme propre, soit $F$ un faisceau cohérent
+sur $X$, $F$ étant supposé $Y$-plat, i.e. les $F_x$ sont des modules plats
+sur les anneaux $\Osh_y$ ($y=f(x)$). Cela signifie aussi que pour tout
+$y\in Y$, si nous filtrons $F$ le long de la fibre $f^{-1}(y)$ par les
+$\mathfrak m_y^nF$ ($\mathfrak m_y$ étant l'idéal maximal de $\Osh_y$) le
+gradué associé est isomorphe à
+$(F/\mathfrak m_yF)\otimes_{\kappa(y)}\operatorname{gr}(\Osh_y)$, en d'autres
+termes on a
+\[
+  \mathfrak m_y^nF/\mathfrak m_y^{n+1}F
+  =F_y\otimes_{\kappa(y)}
+  (\mathfrak m_y^n/\mathfrak m_y^{n+1})
+\]
+pour tout entier $n$, où $X_y$ désigne la fibre $f^{-1}(y)$ considérée comme
+schéma propre au-dessus du corps résiduel $\kappa(y)$ de $y$, et $F_y$ le
+faisceau $F/\mathfrak m_yF$ induit par $F$ sur $X_y$. Tenant compte de cet
+isomorphisme et du théorème 2, on arrive à des majorations et parfois des
+computations des $R^qf_*(F)$ au voisinage de $y$, connaissant la cohomologie de
+$X_y$ à coefficients dans $F_y$. Le théorème 2 prend ici la forme
+\[
+  \widehat{R^qf_*(F)_y}
+  =\varprojlim_n H^q(X_y,F/\mathfrak m_y^nF).
+\]
+Nous allons en signaler seulement la conséquence suivante :
+
+\src{201}
+\result{PROPOSITION}{1} Soient $f:X\longrightarrow Y$ un morphisme propre,
+$F$ un faisceau sur $X$ cohérent et $Y$-plat. Soit $y\in Y$, soit $q$ un
+entier, et supposons que $H^q(X_y,F_y)=0$. Alors $R^qf_*(F)$ est nul au
+voisinage de $y$, et pour tout $n$, l'homomorphisme naturel
+\[
+  R^{q-1}f_*(F)_y\longrightarrow
+  H^{q-1}(X_y,F/\mathfrak m_y^nF)
+\]
+est surjectif.
+
+En particulier, si $f$ est un morphisme plat (i.e. $\Osh_X$ est $Y$-plat)
+alors tout faisceau cohérent localement libre $F$ sur $X$ est $Y$-plat. Soient
+$F,G$ deux tels faisceaux, appliquons la proposition 1 à
+$\Homsh_{\Osh_X}(F,G)$ et à $q=1$, on trouve :
+
+\result{THÉORÈME}{7} Soit $f$ un morphisme propre et plat, soient $F,G$ deux
+faisceaux cohérents localement libres sur $X$, soit $y\in Y$ et supposons que
+\[
+  H^1\bigl(X_y,\Homsh_{\Osh_{X_y}}(F_y,G_y)\bigr)=0,
+\]
+alors tout homomorphisme $u_0:F_y\longrightarrow G_y$ est induit par un
+homomorphisme
+\[
+  u:F|V\longrightarrow G|V,
+  \qquad V=f^{-1}(U),
+\]
+où $U$ est un voisinage de $y$.
+
+\result{COROLLAIRE}{} Si $u_0$ est un isomorphisme (resp. un monomorphisme, un
+épimorphisme) alors il en est de même de $u$, pour $U$ assez petit.
+
+En particulier :
+
+\src{202}
+\result{COROLLAIRE}{2} Soit $E_0$ un faisceau cohérent localement libre sur
+$X_y$ tel que
+\[
+  H^1\bigl(X_y;\Homsh_{\Osh_{X_y}}(E_0,E_0)\bigr)=0,
+\]
+alors deux faisceaux localement libres dont des restrictions à $X_y$ sont
+isomorphes à $E_0$, sont isomorphes dans un voisinage de $X_y$.
+
+Ainsi :
+
+\result{COROLLAIRE}{3} Supposons $H^1(X_y,\Osh_{X_y})=0$. Alors deux faisceaux
+inversibles sur $X$ (i.e. localement isomorphes à $\Osh_X$) dont les
+restrictions à $X_y$ sont isomorphes, sont isomorphes dans un voisinage de $X_y$.\footnote{Le texte imprimé ne précise pas le voisinage. On rétablit ici la portée locale du corollaire 2, également utilisée dans la preuve de la proposition 2.}
+
+On en déduit :
+
+\result{PROPOSITION}{2} Soient $Y$ un schéma connexe, $E$ un faisceau cohérent localement libre de rang au moins $2$ sur $Y$, considérons le fibré en espaces projectifs
+$X=\mathbf P(E)$ associé à $E$, muni de son faisceau inversible bien connu
+$\Osh_X(1)$. Alors tout faisceau inversible $L$ sur $X$ est isomorphe à un
+faisceau de la forme
+\[
+  f^*(L')\otimes\Osh_X(n),
+\]
+où $L'$ est un faisceau inversible sur $Y$ et $n$ un entier. Ce dernier est
+déterminé de façon unique, et $L'$ est déterminé à un isomorphisme près.
+
+Le corollaire 3 précédent prouve que $L$ est isomorphe à un $\Osh_X(n)$ au
+voisinage de chaque fibre. Le reste est à peu près formel.
+
+La proposition 2 permet de déterminer les $Y$-morphismes de $X=\mathbf P(E)$
+dans un autre fibré projectif. On trouve en particulier :
+
+\result{COROLLAIRE}{} Soit $u$ un automorphisme de $X=\mathbf P(E)$. Alors il
+existe un faisceau inversible $L'$ sur $Y$ et un isomorphisme $v$ de $E$ sur
+$E\otimes L'$ tel que $u$ soit l'isomorphisme correspondant
+\[
+  \mathbf P(E)\xrightarrow{\sim}\mathbf P(E\otimes L')=\mathbf P(E);
+\]
+le couple $(v,L')$ est déterminé à un isomorphisme près.
+
+Soit $\Gamma$ l'ensemble des classes de fibrés inversibles $L'$ sur $Y$ tels
+que $E\otimes L'$ soit isomorphe à $E$. Les éléments sont de torsion, car si
+$n$ est le rang de $E$, on voit (en prenant les puissances extérieures
+$n$-ièmes) que l'on doit avoir $L'^{\otimes n}\simeq\Osh_Y$. Le corollaire peut
+alors s'exprimer en disant qu'on a une suite exacte de groupes
+\[
+  e\longrightarrow
+  \operatorname{Aut}(E)/\Gamma(Y,\Osh_Y^*)
+  \longrightarrow \operatorname{Aut}_Y(X)
+  \longrightarrow \Gamma\longrightarrow e
+\]
+(d'ailleurs déduite de la suite exacte de cohomologie déduite de la suite
+exacte suivante de faisceaux de groupes
+\[
+  e\longrightarrow \Osh_Y^*
+  \longrightarrow \underline{\operatorname{Aut}}(E)
+  \longrightarrow \underline{\operatorname{Aut}}_Y(X)
+  \longrightarrow e,
+\]
+où $\Osh_Y^*$ est le faisceau des « unités » de $\Osh_Y$, identifié au centre
+de $\underline{\operatorname{Aut}}(E)$).
+
+\src{203}
+\fsection{6}{Application à des théorèmes d'existence et d'unicité pour des
+faisceaux et schémas sur un anneau $J$-adique complet}
+
+Le théorème 7 donnait un résultat d'unicité sur des faisceaux cohérents
+localement libres, en utilisant les théorèmes 1 et 2. Utilisant le théorème 3,
+nous déduisons maintenant des théorèmes d'existence de faisceaux, de morphismes
+de schémas, ou de schémas. Dans la suite, $A$ désigne un anneau noethérien
+local, séparé et complet. La méthode générale consiste toujours à faire des
+constructions formelles, ce qui consiste essentiellement à faire de la
+géométrie algébrique sur un anneau artinien, et à en tirer des conclusions de
+nature « algébrique » en utilisant les trois théorèmes fondamentaux.
+
+\result{PROPOSITION}{3} Soit $\mathfrak X$ un schéma formel propre et plat
+au-dessus de $A$, soit $F_0$ un faisceau localement libre sur $X_0$ tel que
+\[
+  H^2\bigl(X_0,\Homsh_{\Osh_{X_0}}(F_0,F_0)\bigr)=0.
+\]
+Alors il existe un faisceau localement libre $F$ sur $\mathfrak X$ qui induit
+sur $X_0$ un faisceau isomorphe à $F_0$. (Cet $F$ est d'ailleurs unique à un
+isomorphisme près si
+$H^1(X_0,\Homsh_{\Osh_{X_0}}(F_0,F_0))=0$.)
+
+On construit de proche en proche des faisceaux localement libres $F_n$ sur les
+$X_n$, s'induisant l'un l'autre. La construction de $F_n$ rencontre une
+obstruction dans
+\[
+  H^2\bigl(X_0,\Homsh_{\Osh_{X_0}}(F_0,F_0)\bigr)
+  \otimes_{A/J}(J^n/J^{n+1}),
+\]
+qui est donc nulle par hypothèse. Utilisant maintenant le théorème 3, on
+trouve :
+
+\result{COROLLAIRE}{1} Soit $X$ un schéma propre et plat au-dessus de $A$, et
+soit $F_0$ comme ci-dessus. Alors il existe un faisceau localement libre $F$
+sur $X$ induisant sur $X_0$ un faisceau isomorphe à $F_0$. Cet $F$ est
+d'ailleurs unique à un isomorphisme près si
+$H^1(X_0,\Homsh_{\Osh_{X_0}}(F_0,F_0))=0$.
+
+Soit $X_0$ un schéma de type fini sur le corps $k$, on suppose $X_0$ simple
+(par quoi nous entendons absolument simple) sur $k$, mais pas nécessairement
+propre sur $k$. Soit $A$ un anneau artinien local de corps résiduel $k$. Nous
+nous intéressons à trouver les schémas $X$ plats sur $A$, tels que
+$X\otimes_A k=X_0$ (c'est le point de départ de la « théorie des modules » ou
+des « variations de structure » de $X_0$). Il revient au même de se donner un
+tel $X$, ou sur l'espace topologique $X_0$ un faisceau $\Osh_X$ muni des
+structures suivantes :
+\begin{enumerate}
+  \item[\textit{i.}] C'est un faisceau de $A$-algèbres.
+  \item[\textit{ii.}] Il est muni d'un homomorphisme d'augmentation
+    $\Osh_X\longrightarrow\Osh_{X_0}$ (compatible avec les structures de
+    $A$-algèbres) ; ces données étant assujetties aux conditions suivantes :
+    l'augmentation induit un isomorphisme
+    $\Osh_X\otimes_A k\xrightarrow{\sim}\Osh_{X_0}$ ; $\Osh_X$ est plat sur
+    $A$, i.e. le gradué associé à $\Osh_X$ filtré par les puissances de l'idéal
+    maximal $\mathfrak m$ de $A$ est isomorphe à
+    $\operatorname{gr}^0(\Osh_X)\otimes_k\operatorname{gr}(A)$, i.e. on a des
+    isomorphismes
+    \[
+      \mathfrak m^n\Osh_X/\mathfrak m^{n+1}\Osh_X
+      =\Osh_{X_0}\otimes_k(\mathfrak m^n/\mathfrak m^{n+1}).
+    \]
+\end{enumerate}
+Le fait fondamental est le suivant :
+
+\src{204}
+\result{THÉORÈME}{8} Soit $X_0$ un schéma de type fini et simple sur le corps
+$k$, supposons $X_0$ affine. Soit $A$ un anneau local artinien de corps
+résiduel $k$, alors il existe un $A$-schéma $X$ plat sur $A$ tel que
+$X\otimes_A k=X_0$, et deux tels schémas sont nécessairement isomorphes.
+
+Notons que l'isomorphisme en question n'est pas canonique, car $X$ aura en
+général des $A$-automorphismes non triviaux induisant l'identité sur $X_0$.
+D'autre part, il n'y a pas en général de choix « canonique » d'un $X$
+satisfaisant les conditions données, sauf dans le cas où $A$ est une
+$k$-algèbre (cas d'égales caractéristiques) où on peut prendre
+$X=X_0\otimes_k A$, i.e. $\Osh_X=\Osh_{X_0}\otimes_k A$ (que $X_0$ soit affine
+ou non d'ailleurs). Dans le cas d'inégales caractéristiques, j'ignore en
+général, quand $X_0$ n'est pas affine, si on peut « remonter » $X_0$ en un $X$
+défini sur $A$. Cependant, soit $n$ un entier $>0$, posons
+$A_{n-1}=A/\mathfrak m^n$, et supposons qu'on ait remonté $X_0$ en un
+$A_{n-1}$-schéma plat $X_{n-1}$ ; on se propose de remonter $X_{n-1}$ en un
+$A_n$-schéma plat $X_n$. On sait déjà en vertu du théorème 8 que c'est possible
+localement ; d'autre part on vérifie facilement que, si $U_n$ remonte un ouvert
+$U_{n-1}$ de $X_{n-1}$, alors le faisceau des groupes d'automorphismes de $U_n$
+(induisant l'identité sur $U_{n-1}$) est canoniquement isomorphe à
+\[
+  \Theta_{X_0/k}\otimes_k(\mathfrak m^n/\mathfrak m^{n+1})
+\]
+restreint à $U_{n-1}$, et en particulier est commutatif
+($\Theta_{X_0/k}$ désignant le faisceau des germes de $k$-dérivations sur
+$X_0$). Il s'ensuit facilement que l'on a une obstruction à construire $X_n$
+remontant $X_{n-1}$, qui se trouve dans
+\[
+  H^2(X_0,\Theta_{X_0/k})\otimes_k
+  \mathfrak m^n/\mathfrak m^{n+1}.
+\]
+Par suite :
+
+\result{COROLLAIRE}{1} Soit $X_0$ un schéma de type fini simple sur $k$,
+supposons $H^2(X_0,\Theta_{X_0/k})=0$. Alors pour tout anneau local artinien
+$A$ de corps résiduel $k$ il existe un $A$-schéma plat $X$ tel que
+$X\otimes_A k=X_0$.
+
+D'ailleurs, si on a pu trouver un $X$ plat sur $A$ remontant $X_0$, alors en
+vertu du théorème 8, l'ensemble des classes (à un isomorphisme près) de
+$A$-schémas plats qui remontent $X_0$ s'identifie à
+\[
+  H^1\bigl(X_0,\underline{\operatorname{Aut}}(X)\bigr),
+\]
+où bien entendu $\underline{\operatorname{Aut}}(X)$ désigne le faisceau des
+germes d'automorphismes du faisceau de $A$-algèbres $\Osh_X$ compatibles avec
+l'augmentation. La filtration de $\Osh_X$ définit une filtration de
+$\underline{\operatorname{Aut}}(X)$, le quotient de ce faisceau par le
+$n$-ième sous-groupe de la filtration étant
+$\underline{\operatorname{Aut}}(X_n)$ ; le gradué associé à cette filtration
+est commutatif, et s'identifie à
+$\Theta_{X_0/k}\otimes_k\operatorname{gr}(A)$. En particulier, si
+$\mathfrak m^{n+1}$ est la première puissance de $\mathfrak m$ qui est nulle,
+alors $F^n(\underline{\operatorname{Aut}}(X))$ (le dernier cran de la
+filtration) est dans le centre de $\underline{\operatorname{Aut}}(X)$ et est
+isomorphe à $\Theta_{X_0/k}\otimes_k\mathfrak m^n$ ; c'est aussi le faisceau
+des germes d'automorphismes de $X$ qui induisent l'identité sur
+$X_{n-1}=X\otimes_A A/\mathfrak m^n$. Utilisant ces résultats, on obtient
+aussitôt les énoncés suivants :
+
+\src{205}
+\result{COROLLAIRE}{2} Soit $X_0$ un schéma de type fini simple sur $k$, soit
+$A$ un anneau local artinien de corps résiduel $k$ et d'idéal maximal
+$\mathfrak m$, on suppose $\mathfrak m^{n+1}=0$, soit
+$A_{n-1}=A/\mathfrak m^n$, et enfin soit $X_{n-1}$ un $A_{n-1}$-schéma plat
+tel que $X_{n-1}\otimes_A k=X_0$. Alors l'ensemble des classes (à un
+isomorphisme près induisant l'identité sur $X_{n-1}$) de $A$-schémas plats
+$X_n$ tels que $X_n\otimes_A A_{n-1}=X_{n-1}$ est vide, ou est un espace
+principal homogène sous
+\[
+  H^1(X_0,\Theta_{X_0/k})\otimes_k\mathfrak m^n.
+\]
+
+(Noter que, en général, il n'y a pas d'élément origine privilégié dans ce
+dernier espace, car il n'y a pas de façon privilégiée de remonter $X_{n-1}$ en
+$X_n$).
+
+\result{COROLLAIRE}{3} Soit $X_0$ un schéma de type fini simple sur $k$, et
+supposons $H^1(X_0,\Theta_{X_0/k})=0$. Alors pour tout anneau local artinien
+$A$ de corps résiduel $k$, il existe au plus (à un isomorphisme près) un
+$A$-schéma plat $X$ tel que $X\otimes_A k=X_0$.
+
+Les corollaires 1 et 3 impliquent immédiatement les énoncés, en apparence plus
+généraux, obtenus en y supposant seulement que $A$ est un anneau local
+noethérien complet de corps résiduel $k$, pourvu qu'on y introduise $X$ comme
+un schéma formel sur $A$ :
+
+\result{THÉORÈME}{9} Soient $k$ un corps, $X_0$ un schéma de type fini simple
+sur $k$. Pour tout anneau local noethérien complet $A$ de corps résiduel $k$,
+soit $F(A)$ l'ensemble des classes (à un isomorphisme près induisant l'identité
+sur $X_0$) de schémas formels $\mathfrak X$ sur $A$, de type fini et plats sur
+$A$, tels que $\mathfrak X\otimes_A k=X_0$. Avec ces notations :
+\begin{enumerate}
+  \item[\textit{i.}] Si $H^1(X_0,\Theta_{X_0/k})=0$, alors pour tout $A$,
+    $F(A)$ a au plus un élément.
+  \item[\textit{ii.}] Si $H^2(X_0,\Theta_{X_0/k})=0$, alors pour tout $A$,
+    $F(A)$ a au moins un élément.
+\end{enumerate}
+
+\src{206}
+\result{COROLLAIRE}{1} Supposons $X_0$ propre sur $k$. Sous la condition
+\textit{(i)}, pour tout $A$, il existe au plus (à un isomorphisme près
+induisant l'identité sur $X_0$) un schéma $X$ propre et plat sur $A$, tel que
+$X\otimes_A k=X_0$.
+
+On utilise le théorème 3, corollaire 2. Par exemple :
+
+\result{COROLLAIRE}{2} Si $X$ est un schéma propre et plat sur $A$ tel que
+$X\otimes_A k$ soit isomorphe au schéma projectif type $\mathbf P_k^r$ de
+dimension $r$ sur $k$, alors $X$ est isomorphe à $\mathbf P_A^r$.
+
+(On peut aussi déduire ce résultat de la proposition 3, corollaire 1).
+
+\result{COROLLAIRE}{3} Soit $X_0$ un schéma simple et projectif sur $k$,
+supposons que l'on ait
+\[
+  H^2(X_0,\Osh_{X_0})=H^2(X_0,\Theta_{X_0/k})=0.
+\]
+Alors pour tout $A$, il existe un schéma projectif et plat $X$ sur $A$, tel que
+$X\otimes_A k=X_0$.
+
+On conjugue le théorème 9\textit{(ii)} et le théorème 4. En particulier :
+
+\result{COROLLAIRE}{4} Soit $X_0$ le schéma d'une courbe algébrique complète
+et simple sur $k$. Alors pour tout anneau local noethérien complet $A$ de corps
+résiduel $k$, il existe un « schéma de courbe simple » $X$ sur $A$, tel que
+$X\otimes_A k=X_0$.
+
+\result{REMARQUES}{}
+
+1) Les corollaires 3 et 4 sont surtout intéressants si $k$ est de
+caractéristique $p\ne0$, en prenant pour $A$ un anneau de valuation discrète de
+caractéristique $0$, de corps résiduel $k$ ; par exemple le « plus petit $A$
+possible », savoir celui pour lequel $p$ engendre l'idéal maximal. (En fait, à
+cause des théorèmes de Cohen, il suffit de connaître les corollaires 3 et 4
+pour un tel anneau $A$). Signalons à ce propos que, selon les spécialistes, on
+ne sait pas s'il existe des schémas sur un corps $k$ qui ne sont pas réduction
+mod $p$ d'un schéma plat défini sur un tel anneau $A$. Du moins les résultats
+de ce numéro donnent-ils un moyen d'investigation systématique de cette
+question. Il faudrait commencer
+par regarder si la première obstruction qu'on a dans
+$H^2(X_0,\Theta_{X_0/k})$ est nécessairement nulle.
+
+\emph{Complément de 1962.} --- J.-P. Serre a construit une variété projective
+non singulière, de dimension 3, sur un corps algébriquement clos $k$ de
+caractéristique $p>0$, qui ne provient pas par réduction d'un schéma propre sur
+un anneau local intègre de corps résiduel $k$ et de corps des fractions de
+caractéristique nulle. Mumford aurait trouvé un exemple analogue avec une
+surface projective non singulière.
+
+2) On notera que le théorème 3, et la technique correspondante, n'est valable
+que pour un anneau de base (local pour fixer les idées) complet.
+
+Pour passer de résultats connus pour le complété d'un anneau local à des
+résultats correspondants pour cet anneau local lui-même, il faudrait un
+quatrième « théorème fondamental », dont l'énoncé définitif reste à trouver.
+
+\src{207}
+3) On comparera les résultats de ce numéro (notamment les corollaires 1 et 2
+précédents) et du suivant, avec les résultats de Kodaira--Spencer sur la
+variation des structures complexes. Utilisant le théorème conjectural auquel
+il vient d'être fait allusion, on devrait pouvoir conclure, sous les conditions
+du corollaire 1, mais où $A$ ne serait plus supposé complet, qu'il existe un
+anneau $A'$ contenant $A$, fini et non ramifié sur $A$, tel que
+$X\otimes_A A'$ et $X'\otimes_A A'$ soient $A'$-isomorphes ($X,X'$ étant deux
+$A$-schémas propres et plats donnés, tels que
+$X\otimes_A k=X'\otimes_A k=X_0$). C'est ce qu'on peut prouver du moins quand
+$X_0=\mathbf P_k^r$, en utilisant le corollaire à la proposition 2. En tout
+cas, lorsque $H^1(X_0,\Theta_{X_0/k})=0$, on peut prouver que les fibres de
+$X,X'$ au-dessus de tout point $y$ de $Y=\operatorname{Spec}(A)$ sont
+isomorphes, du moins quand on passe à la clôture algébrique du corps résiduel
+$\kappa(y)$. (On a un résultat local, plus fort en apparence, en ne supposant
+plus nécessairement $A$ local). En ce qui concerne les « variations de
+structure » pour l'espace projectif, signalons encore la question suivante,
+suggérée par un problème correspondant de Kodaira--Spencer. Soit $X$ un schéma
+propre et plat au-dessus de l'anneau local intègre $A$ de corps des fractions
+$K$, de corps résiduel $k$, supposons que $X\otimes_A K$ soit isomorphe à
+$\mathbf P_K^r$, est-il vrai que $X\otimes_A k=X_0$ est isomorphe à
+$\mathbf P_k^r$ (du moins sur la clôture algébrique de $k$) ? Dans ce problème,
+on peut supposer que $A$ est un anneau de valuation discrète complet. On a un
+problème analogue quand $X_0$ est une variété abélienne.
+
+\emph{Complément de 1962.} --- Le conférencier est alors moins optimiste sur
+les résultats conjecturés ci-dessus. Le problème relatif aux variations de
+structure de l'espace projectif a toutefois été résolu affirmativement par
+Hironaka, et le problème analogue pour les variétés abéliennes par Koizumi.
+
+\fsection{7}{Application à la « Théorie des modules »}
+
+Le conférencier venant seulement lui-même d'aborder cette théorie, nous serons
+obligés de nous limiter à quelques indications. Pour simplifier, nous nous
+plaçons sur un corps $k$, i.e. nous travaillons en égale caractéristique, bien
+que le théorème 8 permette aussi de traiter le cas général, sans changement
+essentiel, semble-t-il. Nous n'avons pas dépassé actuellement le stade
+« formel », cependant le conférencier espère pouvoir construire à partir de là
+des schémas de modules véritables dans certains cas, et en particulier
+construire pour tout entier $g$ un schéma sur les entiers, jouant le rôle d'un
+schéma des modules universel pour les courbes simples de genre $g$.
+
+\emph{Complément de 1962.} --- Mumford a construit les schémas des modules
+pour les courbes de genre $g$ (cf. SHMI). Le théorème 10 prouve en outre que
+les « schémas de Jacobi d'échelon $n$ » de la théorie des Modules sont non
+singuliers, et même simples sur $\mathbf Z$.
+
+\src{208}
+Reprenons la situation et les notations du théorème 9, en supposant maintenant
+que $A$ est une algèbre locale de rang fini sur $k$, supposé algébriquement
+clos pour simplifier. Alors $F(A)$ peut être regardé comme un foncteur
+covariant de $A$, à valeurs dans la catégorie des ensembles, un homomorphisme
+de $k$-algèbres $A\longrightarrow B$ définissant une application
+$F(A)\longrightarrow F(B)$, puisque tout $A$-schéma plat $X$ tel que
+$X\otimes_A k=X_0$ donne naissance à un $B$-schéma $X\otimes_A B$ ayant les
+mêmes propriétés. Supposons qu'on puisse trouver une $k$-algèbre locale
+complète noethérienne $\mathcal O$, et un isomorphisme fonctoriel
+\begin{equation}
+  \tag{*}
+  \operatorname{Hom}(\mathcal O,A)\xrightarrow{\sim}F(A)
+\end{equation}
+(où le premier membre désigne les homomorphismes de $k$-algèbres). On voit
+facilement qu'un tel $\mathcal O$ est déterminé à un isomorphisme canonique
+près, on appelle alors le spectre formel $\mathfrak Y$ de $\mathcal O$ (i.e.
+l'espace topologique réduit à un point muni d'un faisceau d'anneaux
+topologiques réduit à $\mathcal O$) le \emph{schéma formel des modules} pour
+$X_0$. (Notons qu'il n'existe pas nécessairement). Soit $\mathfrak r$ l'idéal
+maximal de $\mathcal O$, pour tout $n$ soit
+$\mathcal O_n=\mathcal O/\mathfrak r^{n+1}$ (donc $\mathcal O_0=k$), alors
+l'homomorphisme canonique $\mathcal O\longrightarrow\mathcal O_n$ est un
+élément de $\operatorname{Hom}(\mathcal O,\mathcal O_n)$, donc définit un
+élément de $F(\mathcal O_n)$, i.e. un $\mathcal O_n$-schéma plat $X_n$ dont la
+réduction mod $\mathfrak r$ est $X_0$. Ces $X_n$ se déduisent les uns des
+autres par extension des scalaires (i.e. ici par réductions), d'où résulte
+qu'ils proviennent d'un schéma formel $\mathfrak X$ bien déterminé sur le
+schéma formel des modules $\mathfrak Y$ ; $\mathfrak X$ est plat sur
+$\mathfrak Y$ et $\mathfrak X_0=X_0$. L'isomorphisme (*) est alors donné,
+comme on voit aussitôt, en associant à tout homomorphisme de $k$-algèbres
+$\mathcal O\longrightarrow A$ la classe du $A$-schéma
+$\mathfrak X\otimes_{\mathcal O}A$ (i.e. à tout morphisme de $k$-schémas
+$Y'=\operatorname{Spec}(A)\longrightarrow\mathfrak Y$, on associe le
+$Y'$-schéma $\mathfrak X\otimes_{\mathfrak Y}Y'$ obtenu par changement de
+base). De plus, on voit que l'isomorphisme (*) et sa description précédente
+seront valables encore si on suppose seulement que $A$ est une $k$-algèbre
+locale noethérienne et complète (pas nécessairement artinienne). Bien entendu,
+comme d'habitude, $\mathcal O$ peut fort bien \textit{a priori} avoir des
+éléments nilpotents, et il semble probable qu'il doive exister des cas où
+$\mathcal O$ est lui-même artinien, sans être identique à $k$. C'est dire à
+quel point le point de vue de Kodaira--Spencer (se bornant à prendre des $A$
+qui sont des anneaux réguliers) est inadéquat \textit{a priori} dans le cas
+général.
+
+\src{209}
+Il reste à donner des conditions suffisantes pour qu'il existe un schéma formel
+des modules pour $X_0$, supposé propre sur $k$. De façon générale, il est
+facile de donner des conditions nécessaires et suffisantes simples sur un
+foncteur $A\longmapsto F(A)$ (de $k$-algèbres locales de rang fini, à valeurs
+dans les ensembles) pour qu'il puisse se mettre sous la forme
+$\operatorname{Hom}(\mathcal O,A)$ pour $\mathcal O$ convenable. Nous ne les
+détaillerons pas ici. Signalons seulement que dans le cas qui nous occupe, ces
+conditions imposent des conditions non triviales de nature cohomologique sur
+$X_0$, et il semble peu probable qu'elles soient toujours vérifiées, bien que
+le conférencier n'ait pas construit de contre-exemple. Il semble plausible par
+contre que la condition $H^0(X_0,\Theta_{X_0/k})=0$ soit une condition
+suffisante (bien que nullement nécessaire) pour l'existence d'un schéma formel
+de modules. Nous nous bornons à énoncer ici un théorème dans un cas
+particulièrement simple (dont l'analogue en théorie des espaces analytiques est
+bien connu, cf. Kodaira--Spencer), qui s'établit sans difficulté à l'aide des
+résultats du numéro précédent :
+
+\result{THÉORÈME}{10} Soit $X_0$ un schéma propre et simple sur le corps $k$,
+tel que
+\[
+  H^0(X_0,\Theta_{X_0/k})=H^2(X_0,\Theta_{X_0/k})=0.
+\]
+Alors il existe un schéma formel des modules pour $X_0$, correspondant à un
+anneau local régulier $\mathcal O$ (i.e. une algèbre de séries formelles sur
+$k$).
+
+Comme nous l'avons déjà signalé, il n'est pas vrai en général que le schéma
+formel $\mathfrak X$ sur $\mathcal O$ soit algébrisable ; mais on sait que c'est
+vrai cependant quand $X_0$ est projectif et $H^2(X_0,\Osh_{X_0})=0$
+(théorème 4), par exemple quand $X_0$ est de dimension 1. C'est ce qui donne
+quelque support à l'espoir de construire un schéma de modules sur les entiers
+pour les courbes de genre donné\ldots{}
+
+Remarquons aussi que des méthodes comme celles exposées dans ce numéro peuvent
+s'appliquer dans la construction et l'étude des variétés de Picard, et bien
+d'autres constructions encore. Nous y reviendrons prochainement.
+
+\fsection{8}{Application au groupe fondamental}
+
+Les techniques exposées permettent d'aborder l'étude systématique du groupe
+fondamental, sur le modèle de la théorie topologique. Les deux premiers
+théorèmes énoncés dans ce numéro sont des généralisations de résultats d'un
+travail récent de Lang--Serre.
+
+Soit $X$ un schéma, alors un $X$-schéma $X'$ est appelé un revêtement non
+ramifié de $X$ si
+\begin{enumerate}
+  \item[\textit{i.}] $X'$ est fini sur $X$, i.e. est défini par un faisceau
+    cohérent d'algèbres $\mathcal A=\mathcal A(X')$ sur $X$ ;
+  \item[\textit{ii.}] $\mathcal A$ est un faisceau localement libre sur $X$ ;
+  \item[\textit{iii.}] Pour tout $x\in X$, le quotient
+    \[
+      \mathcal A_x/\mathfrak m_x\mathcal A_x
+      =\mathcal A_x\otimes_{\Osh_x}\kappa(x)
+    \]
+    est une algèbre séparable sur $\kappa(x)$.
+\end{enumerate}
+
+\src{210}
+Cette notion de revêtement non ramifié (due à Serre et au conférencier) possède
+toutes les propriétés élémentaires auxquelles on peut s'attendre
+raisonnablement, et dont nous ne dresserons pas la liste. Bornons-nous à dire
+qu'elle donne lieu à une théorie de Galois calquée sur la théorie de Galois
+classique (et la contenant ; les démonstrations étant plutôt plus simples que
+les démonstrations généralement reçues pour cette dernière) et la théorie
+galoisienne des revêtements topologiques. De façon précise, appelons
+\emph{point géométrique} d'un schéma $X$ un morphisme $a$ du spectre $\xi$
+d'un corps algébriquement clos $\Omega$ dans $X$, i.e. la donnée d'une
+extension algébriquement close du corps résiduel $\kappa(x)$ d'un point
+$x=|a|$ de $X$ (appelé \emph{localité} du point géométrique $a$). Si alors
+$X'$ est un revêtement non ramifié de $X$, on peut lui associer l'ensemble
+$E_a(X')$ des « points géométriques de $X'$ au-dessus de $a$ », i.e.
+l'ensemble des couples formés d'un $x'\in X'$ au-dessus de $x$ et d'un
+$\kappa(x)$-homomorphisme $\kappa(x')\longrightarrow\Omega$. On obtient ainsi
+(pour $(X,a)$ fixés) un foncteur $F(X,a)$ de la catégorie $R(X)$ des
+revêtements non ramifiés $X'$ de $X$ dans la catégorie des ensembles finis. Si
+$X$ est connexe, le couple formé par $R(X)$ et $F(X,a)$ possède les propriétés
+formelles qu'il faut pour être isomorphe au couple analogue défini par un
+groupe topologique compact totalement discontinu $\pi$ (i.e. limite projective
+de groupes finis) convenable : on prend la catégorie $C(\pi)$ des ensembles
+finis $E$ sur lesquels $\pi$ opère continûment, et le foncteur identique
+$F(\pi)(E)=E$ de cette catégorie dans la catégorie des ensembles finis.
+D'ailleurs, le groupe $\pi$ est déterminé à un isomorphisme canonique près par
+la condition que $(C(\pi),F(\pi))$ soit isomorphe à un couple donné. En
+l'occurrence, $\pi$ s'appelle le \emph{groupe fondamental} du schéma connexe
+$X$ en le point géométrique $a$, et se désigne par $\pi_1(X,a)$. Si $X$ n'est
+pas connexe, on le remplace par la composante connexe de $x=|a|$. Si cependant
+$X$ est connexe, alors les groupes $\pi_1(X,a)$ pour deux points géométriques
+$a',a''$ de $X$ sont isomorphes (l'isomorphisme étant déterminé à des
+automorphismes intérieurs près), de sorte que comme d'habitude on peut choisir
+$a$ au mieux de son intérêt, par exemple au point générique de
+$X$ supposé irréductible. Bien entendu, $\pi_1(X,a)$ est un foncteur covariant
+en le schéma pointé $(X,a)$. Tout énoncé concernant la classification de
+revêtements non ramifiés\footnote{Le texte imprimé porte « revêtements
+inséparables » ; le paragraphe traite la catégorie $R(X)$ des revêtements non
+ramifiés et son équivalence avec les ensembles finis à action continue de
+$\pi_1(X,a)$.} peut se traduire alors en langage de théorie des groupes,
+suivant le dictionnaire bien connu (à cela près qu'il faut tenir compte du fait
+qu'ici on a des groupes topologiques).
+
+\src{211}
+Notre but est de développer l'analogue de la suite exacte d'homotopie des
+espaces fibrés, relativement à un morphisme propre $f:X\longrightarrow Y$.
+Évidemment, faute de savoir ce que sont les groupes d'homotopie supérieurs, on
+n'aura que des résultats nécessairement incomplets. Pour pouvoir appliquer les
+théorèmes fondamentaux du n\textsuperscript{o} 3, nous devons d'abord expliciter
+quelques lemmes élémentaires concernant les schémas sur des corps ou des
+anneaux d'Artin (conformément au procédé général !).
+
+\result{LEMME}{1} Soit $(X',a')$ un revêtement non ramifié ponctué associé à
+une représentation ponctuée de $\pi_1(X,a)$ dans un ensemble fini $E$ (muni du
+point marqué $e$). Alors le morphisme canonique
+$\pi_1(X',a')\longrightarrow\pi_1(X,a)$ identifie le premier groupe au
+stabilisateur de $e$ dans $\pi_1(X,a)$ (et est par suite injectif).
+
+\result{LEMME}{2} Soit $X$ un schéma algébrique sur le corps $k$, $k'$ une
+extension radicielle de $k$, alors tout revêtement non ramifié de
+$X\otimes_k k'$ provient par image réciproque (i.e. extension des scalaires)
+d'un revêtement non ramifié de $X$, déterminé à un isomorphisme canonique près.
+
+Il résulte en particulier de ces deux lemmes que pour toute extension
+algébrique $K$ de $k$, et tout point géométrique $a'$ de
+$X'=X\otimes_k K$ se projetant sur le point géométrique $a$ de $X$,
+l'homomorphisme fonctoriel
+$\pi_1(X',a')\longrightarrow\pi_1(X,a)$ est injectif.
+
+\result{LEMME}{3} Soit $X$ un schéma complet au-dessus d'un anneau local
+artinien $A$, tel que $H^0(X,\Osh_X)=A$, soit $X'$ un revêtement non ramifié de
+$X$ et soit $A'=H^0(X',\Osh_{X'})$, qui est donc un anneau fini sur $A$
+(pouvant \textit{a priori} être ramifié sur $A$). Soient $X_0,X'_0$ les
+sous-schémas réduits associés à $X,X'$ (obtenus en divisant par les faisceaux
+des éléments nilpotents dans $\Osh_X,\Osh_{X'}$), soit $k$ un sous-corps de
+$A/\mathfrak r(A)$ sur lequel $A/\mathfrak r(A)$ soit fini (ainsi $X_0$ est un
+schéma algébrique complet sur $k$, et $X'_0$ en est un revêtement non ramifié).
+Soit enfin $\Omega$ une extension algébriquement close de $k$, et considérons
+le revêtement non ramifié $X'_0\otimes_k\Omega$ de
+$X_0\otimes_k\Omega$. Alors les deux conditions suivantes sont équivalentes :
+\begin{enumerate}
+  \item[\textit{i.}] $X'_0\otimes_k\Omega$ est complètement décomposé sur
+    $X_0\otimes_k\Omega$.
+  \item[\textit{ii.}] Le morphisme naturel
+    $X'\longrightarrow X\otimes_A A'$ est un isomorphisme.
+\end{enumerate}
+Sous ces conditions, $A'$ est une extension non ramifiée de $A$. Enfin, si
+$X'$ est connexe, la condition \textit{(i)} équivaut à la condition suivante
+plus faible en apparence :
+\begin{enumerate}
+  \item[\textit{i bis.}] $X'_0\otimes_k\Omega$ admet une section régulière
+    au-dessus de $X_0\otimes_k\Omega$.
+\end{enumerate}
+Lorsque la condition \textit{(ii)} est vérifiée, nous dirons que le revêtement
+non ramifié $X'$ de $X$ est \emph{géométriquement trivial}.
+
+\src{212}
+\result{LEMME}{4} Soit $f:X\longrightarrow Y$ un morphisme propre tel que
+$f_*(\Osh_X)=\Osh_Y$. Soient $a$ un point géométrique de $X$, $b$ sa
+projection sur $Y$. Alors
+$\pi_1(X,a)\longrightarrow\pi_1(Y,b)$ est surjectif.
+
+Il faut montrer en effet ceci : si un revêtement non ramifié $Y'$ de $Y$
+(correspondant à un faisceau d'algèbres localement libre $\mathcal A$) est tel
+que $X\otimes_Y Y'$ est disconnexe, alors $Y'$ l'est aussi. En effet,
+$f^*(\mathcal A)$ sera somme directe de deux faisceaux d'anneaux non nuls, donc
+son image directe aussi, or cette dernière n'est autre que
+$\mathcal A\otimes f_*(\Osh_X)=\mathcal A$.
+
+\result{LEMME}{5} Soit $X$ un schéma complet au-dessus d'un corps $k$, on
+suppose que $H^0(X,\Osh_X)$ est un anneau local $A$ et que
+$A/\mathfrak r(A)$ est radiciel sur $k$. Soit $\Omega$ une clôture algébrique
+de $k$, et soit $\overline X=X\otimes_k\Omega$ (il est connexe). Choisissons un
+point géométrique $\overline a$ de $\overline X$, se projetant sur le point
+géométrique $a$ de $X$, alors on a une suite exacte
+\[
+  e\longrightarrow\pi_1(\overline X,\overline a)
+  \longrightarrow\pi_1(X,a)
+  \longrightarrow\pi_1(k,b)\longrightarrow e
+\]
+(où $\pi_1(k,b)$ est le groupe de Galois de $\Omega$ sur $k$).
+
+Le fait que le premier homomorphisme est injectif a été vu avec les lemmes 1 et
+2, l'exactitude au milieu résulte du lemme 3, enfin la surjectivité du dernier
+homomorphisme (qui seul fait appel au fait que $A/\mathfrak r(A)$ soit
+radiciel) résulte du lemme 4.
+
+\result{PROPOSITION}{4} Soit $f:X\longrightarrow Y$ un morphisme propre et
+plat tel que pour tout $y\in Y$,
+$H^0(f^{-1}(y),\Osh_{f^{-1}(y)})$ soit une algèbre séparable sur le corps
+résiduel $\kappa(y)$ (ce qui est le cas par exemple si $f^{-1}(y)$ est un
+schéma séparable sur $\kappa(y)$, i.e. réduit et tel que les corps correspondant
+à ces composantes irréductibles soient des extensions séparables de
+$\kappa(y)$). Alors le revêtement
+$Y'$ de $Y$ associé à $f_*(\Osh_X)$ est non ramifié.
+
+La démonstration est facile grâce au théorème 2.
+
+\src{213}
+Cette proposition, jointe au lemme 1, ramène pratiquement l'étude homotopique
+des morphismes propres et plats (à fibres séparables) au cas où on a
+$f_*(\Osh_X)=\Osh_Y$ (car utilisant la factorisation de Stein, on remplacera
+$Y$ par $Y'$).
+
+\result{REMARQUE}{} Un morphisme plat de type fini dont les fibres sont des
+schémas séparables (resp. simples) est appelé \emph{séparable} (resp.
+\emph{simple}). On montre que si $f$ est plat et si $f^{-1}(y)$ est séparable
+(resp. simple) alors il existe un voisinage de $f^{-1}(y)$ sur lequel $f$ est
+séparable (resp. simple). Le même résultat est valable pour « absolument
+normal » (« théorème de Bertini »).
+
+Soit $f:X\longrightarrow Y$ un morphisme propre tel que
+\begin{equation}
+  \tag{i}
+  f_*(\Osh_X)=\Osh_Y,
+\end{equation}
+et soit $X'$ un schéma fini sur $X$. Soit $Y'$ le revêtement de $Y$
+correspondant à la factorisation de Stein de $X'\longrightarrow Y$
+(cf. théorème 5). Soit $y\in Y$, donc l'ensemble des composantes connexes de la
+fibre $F'$ de $X'$ sur $y$ s'identifie à l'ensemble des points $y'$ de $Y'$
+au-dessus de $y$ (théorème 5). Considérons le morphisme évident
+\begin{equation}
+  \tag{*}
+  X'\longrightarrow X\times_Y Y'
+\end{equation}
+déduit des morphismes naturels $X'\longrightarrow X$ et
+$X'\longrightarrow Y'$\footnote{Le texte imprimé omet le prime sur le second
+$X'$ ; le morphisme vers $Y'$ est celui de la factorisation de Stein de
+$X'\to Y$.} ; ce sera un isomorphisme chaque fois que $X'$ est de
+la forme $X\times_Y Y''$, où $Y''$ est un revêtement non ramifié de $Y$, et
+alors $Y'$ ne sera autre que $Y''$ et (*) sera l'identité. Nous voulons
+précisément donner des conditions moyennant lesquelles $X'$ est de la forme
+qu'on vient d'indiquer, i.e. que $Y'$ est non ramifié et (*) un isomorphisme.
+Pour ceci, introduisons la fibre $F$ de $X$ en $y$, c'est un schéma propre sur
+$\kappa(y)$ dont $F'$ est un revêtement (non ramifié si $X'$ l'est). Soit
+$F'_1$ une composante connexe de $F'$ correspondant à un point $y'_1$ de $Y'$
+au-dessus de $y$. Supposons de plus
+\begin{enumerate}
+  \item[\textit{(ii)}] $X'$ est non ramifié sur $X$ aux points de $F'_1$ (par
+    suite $F'_1$ est un revêtement non ramifié de $F$), et
+  \item[\textit{(iii)}] $F'_1$ est un revêtement géométriquement trivial de
+    $F$ (cf. lemme 3).
+\end{enumerate}
+
+\result{THÉORÈME}{11} Sous ces conditions, il existe un voisinage ouvert $U'$
+de $y'_1$ dans $Y'$, tel que (*) soit un isomorphisme au-dessus de $U'$. De
+plus $Y'$ est non ramifié en $y'_1$ au-dessus de $Y$ (mais peut être ramifié
+aux autres points $y'$ de $Y'$ au-dessus de $y$).
+
+Bien entendu, les conditions \textit{(ii)} et \textit{(iii)} sont aussi
+nécessaires pour la validité de la conclusion du théorème. La démonstration du
+théorème est facile, à l'aide du lemme 3 et du théorème 2.
+
+\src{214}
+\result{COROLLAIRE}{1} Supposons toujours \textit{(i)} satisfait. Pour qu'un
+revêtement non ramifié sur $X$ soit isomorphe à l'image réciproque d'un
+revêtement non ramifié $Y'$ de $Y$, il faut et il suffit que $X'$ induise sur
+chaque fibre $f^{-1}(y)$ un revêtement géométriquement trivial.
+
+Comme d'après le théorème 11, l'ensemble des points de $Y$ pour lesquels cette
+condition est remplie est ouvert, il suffit de la vérifier sur les points $y$
+qui sont fermés\ldots{} Notons l'énoncé suivant équivalent au corollaire 1 : le
+noyau de l'homomorphisme (surjectif d'après le lemme 4)
+$\pi_1(X)\longrightarrow\pi_1(Y)$ est le sous-groupe invariant fermé engendré
+par les images dans $\pi_1(X)$ des $\pi_1(\overline{f^{-1}(y)})$, où
+\[
+  \overline{f^{-1}(y)}
+  =f^{-1}(y)\otimes_{\kappa(y)}\overline{\kappa(y)},
+\]
+$\overline{\kappa(y)}$ désignant une clôture algébrique de $\kappa(y)$. On
+notera que, faute de pouvoir choisir le même point base pour toutes les fibres,
+les homomorphismes $\pi_1(\overline{f^{-1}(y)})\longrightarrow\pi_1(X)$ ne sont
+de toutes façons déterminés (une fois choisi un point base pour $X$, et par
+suite pour $Y$) que modulo composition par un automorphisme intérieur dans
+$\pi_1(X)$.
+
+\result{COROLLAIRE}{2} Sous les conditions générales du théorème 11, supposons
+de plus $Y,X,X'$ intègres, et soient $K,L,L'$ leurs corps. Alors il existe une
+sous-extension séparable $K'$ de $K$ dans $L'$, linéairement disjointe de $L$,
+telle que $L'=LK'$ (d'où $L'=L\otimes_K K'$).
+
+(On applique la dernière partie du lemme 3 à la fibre géométrique de $X$). Le
+cas d'application le plus intéressant du théorème 11 est obtenu quand $f$ est
+un morphisme séparable. Alors $X'$ est aussi séparable sur $Y$, donc en vertu
+de la proposition 4, $Y'$ est non ramifié sur $Y$, donc le deuxième membre
+$X\times_Y Y'$ dans (*) est non ramifié sur $X$. On en conclut facilement :
+
+\result{COROLLAIRE}{3} Supposons, en plus de \textit{(i)}, que $f$ soit
+séparable. Soit $X'$ un revêtement non ramifié et connexe de $X$ ; pour que
+$X'$\footnote{Le texte imprimé porte ici « $X$ » ; le sujet du critère est le
+revêtement $X'$ introduit dans la phrase précédente.} soit image inverse d'un
+revêtement non ramifié $Y'$ de $Y$, il faut et il suffit que le revêtement
+$\overline F'$ induit sur une fibre géométrique
+$\overline F=f^{-1}(y)$ admette une section régulière.
+
+On notera qu'il n'était pas nécessaire de supposer que $\overline F'$ soit
+géométriquement trivial sur $\overline F$ (ce qui sera vrai \textit{a
+posteriori}, bien que \textit{a priori} cette condition soit beaucoup plus
+forte). Le corollaire 3 est en fait équivalent à l'énoncé suivant :
+
+\src{215}
+\result{COROLLAIRE}{4} Soit $f:X\longrightarrow Y$ un morphisme propre et
+séparable tel que $f_*(\Osh_X)=\Osh_Y$, soit $\overline F$ la fibre géométrique
+d'un point $y\in Y$, et choisissons un point géométrique dans $\overline F$,
+d'où par les morphismes $\overline F\longrightarrow X\longrightarrow Y$ des
+points géométriques dans $X,Y$, qui seront pris comme points bases pour les
+groupes fondamentaux de $\overline F,X,Y$. Sous ces conditions on a la suite
+exacte
+\[
+  \boxed{
+    \pi_1(\overline F)\longrightarrow\pi_1(X)
+    \longrightarrow\pi_1(Y)\longrightarrow e
+  }.
+\]
+
+On en déduit facilement les deux énoncés suivants de Serre--Lang, débarrassés
+ici de toute hypothèse de normalité :
+
+\result{COROLLAIRE}{5} Soient $X,Y$ des schémas connexes sur un corps $k$, on
+suppose que le schéma réduit $X_{\mathrm{réd}}$ est séparable sur $k$ (ce qui
+est automatiquement vrai si $k$ est parfait), et que $X$ ou $Y$ est propre sur
+$k$.\footnote{Condition ajoutée dans l'erratum de 1962.} Choisissons un point
+géométrique $a$ (resp. $b$) dans $X$ (resp. $Y$) d'où un point géométrique
+$c=(a,b)$ dans $X\times_kY$ et un morphisme naturel
+\[
+  \pi_1(X\times_kY,c)\longrightarrow
+  \pi_1(X,a)\times\pi_1(Y,b)
+\]
+(déduit des morphismes fonctoriels de $\pi_1(X\times Y,c)$ dans $\pi_1(X,a)$
+et $\pi_1(Y,b)$). Ce morphisme est injectif, et même bijectif si $k$ est
+algébriquement clos.
+
+(La surjectivité dans ce dernier cas étant à peu près triviale). On en déduit,
+avec Serre--Lang :
+
+\result{COROLLAIRE}{6} Soit $X$ un schéma algébrique connexe et propre sur un corps
+algébriquement clos $k$, soit $K$ une extension algébriquement close de $k$,
+alors les groupes fondamentaux de $X$ et $X\otimes_kK$ sont les mêmes, i.e.
+tout revêtement non ramifié de ce dernier schéma provient par extension des
+scalaires d'un revêtement non ramifié (unique à un isomorphisme près) de $X$.
+
+\result{REMARQUES}{}
+
+1) Utilisant la proposition 4, on voit que l'hypothèse
+$f_*(\Osh_X)=\Osh_Y$ dans le corollaire 4 n'est pas essentielle. Dans le cas
+général, il faut, au lieu de mettre le groupe unité $e$ après $\pi_1(Y)$,
+continuer par
+\[
+  \pi_0(\overline F)\longrightarrow\pi_0(X)
+  \longrightarrow\pi_0(Y)\longrightarrow e.
+\]
+comme en Topologie algébrique.
+
+\src{216}
+2) En général, on ne peut rien dire pour l'instant sur le noyau de
+$\pi_1(\overline F)\longrightarrow\pi_1(X)$, qui devrait faire intervenir un
+$\pi_2(Y)$. Il semble cependant qu'on doive pouvoir démontrer que
+$\pi_1(\overline F)\longrightarrow\pi_1(X)$ est injectif si $Y$ est le spectre
+d'un anneau local $A$, en s'appuyant sur le théorème 12 plus bas (qui affirme
+qu'il en est ainsi si $A$ est complet).
+
+Le théorème 11 n'utilisait que les théorèmes 1 et 2. Nous allons appliquer
+maintenant le théorème 3, en nous appuyant sur le lemme élémentaire suivant :
+
+\result{LEMME}{6} Soit $X$ un schéma, $X_0$ le schéma réduit correspondant
+(i.e. où on a tué les éléments nilpotents). Alors tout revêtement non ramifié
+$X'_0$ de $X_0$ est induit par un revêtement non ramifié $X'$ de $X$,
+déterminé à un isomorphisme canonique près.
+
+Ce lemme, de nature purement locale, joue ici un rôle analogue à celui du
+théorème 8, en théorie des modules. Le conjuguant avec le théorème d'existence
+(théorème 3), on en déduit ici :
+
+\result{THÉORÈME}{12} Soit $A$ un anneau local noethérien et complet de corps
+résiduel $k$. Soit $X$ un schéma propre sur $A$. Alors tout revêtement non
+ramifié $X'_0$ de $X_0=X\otimes_A k$ est induit par un revêtement non ramifié
+$X'$ de $X$, unique à un isomorphisme près.
+
+En d'autres termes :
+
+\result{COROLLAIRE}{1} Choisissons un point géométrique dans $X_0$ comme point
+base pour les groupes fondamentaux de $X_0$ et $X$. Alors l'homomorphisme
+canonique $\pi_1(X_0)\longrightarrow\pi_1(X)$ est un isomorphisme.
+
+Appliquons maintenant à $X_0$ le lemme 5 (en supposant que
+$H^0(X_0,\Osh_{X_0})=k$ pour simplifier), et remarquons que $A$ étant complet,
+ses extensions non ramifiées correspondent aux extensions non ramifiées de son
+corps résiduel, i.e. on a $\pi_1(Y)=\pi_1(k)$ (où
+$Y=\operatorname{Spec}(A)$). On trouve la suite exacte :
+\[
+  e\longrightarrow\pi_1(\overline X_0)
+  \longrightarrow\pi_1(X)\longrightarrow\pi_1(Y)\longrightarrow e.
+\]
+
+\result{COROLLAIRE}{2} Soit $f:X\longrightarrow Y$ un morphisme propre et
+plat, soient $y_1$ un point de $Y$ et $y_0$ une spécialisation de $y_1$,
+considérons les fibres « géométriques » correspondantes
+$\overline X_1$ et $\overline X_0$, on suppose $\overline X_0$ séparable et
+connexe (ce qui implique que $\overline X_1$ satisfait aux mêmes conditions).
+On peut alors trouver un homomorphisme de groupes
+$\pi_1(\overline X_1)\longrightarrow\pi_1(\overline X_0)$, défini à un
+automorphisme intérieur près, et cet homomorphisme est surjectif.
+
+\src{217}
+On pourrait espérer que cet homomorphisme est toujours bijectif,
+malheureusement il n'en est rien en général si $\kappa(y_0)$ est de
+caractéristique $>0$. Nous allons obtenir cependant plus bas une majoration du
+noyau de cet homomorphisme (du moins si $\overline X_0$ est simple), impliquant
+que si $\kappa(y_0)$ est de caractéristique $0$, alors l'homomorphisme
+ci-dessus est bijectif (résultat qu'on pourrait aussi prouver par voie
+transcendante). Du moins obtenons-nous déjà, en tous cas, une majoration du
+$\pi_1$ d'une fibre spéciale à l'aide de celui d'une fibre générique. Utilisant
+par exemple le fait qu'une courbe algébrique en caractéristique $p$ se remonte
+en une courbe en caractéristique $0$ (théorème 9, corollaire 4), on trouve par
+voie transcendante :
+
+\result{COROLLAIRE}{3} Soit $X_0$ le schéma d'une courbe complète simple sur
+un corps algébriquement clos de caractéristique quelconque, soit $g$ le genre
+de $X_0$, alors $\pi_1(X_0)$ admet $2g$ générateurs topologiques, liés par la
+relation bien connue.
+
+On en déduit, par une technique bien connue de sections hyperplanes :
+
+\result{COROLLAIRE}{4} Soit $X$ un schéma projectif simple sur un corps
+algébriquement clos de caractéristique quelconque, alors $\pi_1(X)$ admet un
+nombre fini de générateurs topologiques.
+
+Cherchons le noyau de l'homomorphisme
+$\pi_1(\overline X_1)\longrightarrow\pi_1(\overline X_0)$. Pour ceci, on peut
+supposer que $Y$ est le spectre d'un anneau de valuation discrète complet
+$V=\Osh_y$ ($y=y_0$). La question est équivalente à la suivante : étant donné
+un revêtement non ramifié $\overline X'_1$ de $\overline X_1$ (qu'on peut si on
+veut supposer galoisien), déterminer sous quelles conditions il provient d'un
+revêtement non ramifié de $X_0$. \textit{A priori}, le revêtement donné
+provient, par extension des scalaires, d'un revêtement non ramifié $X'_1$ de
+$X_1\otimes_K K'$, où $K'$ est une sous-extension finie de la clôture
+algébrique $\overline K$ du corps des fractions $K$ de $V$ ; si
+$\overline X'_1$ était galoisienne de groupe $G$, on peut choisir $X'_1$
+galoisienne de groupe $G$. On a alors : pour que
+$X'_1\otimes_{K'}\overline K=\overline X'_1$ provienne d'un revêtement non
+ramifié de $X_0$, il faut et il suffit que l'on puisse trouver une extension
+finie $K''$ de $K'$ dans $\overline K$ telle que
+$X''_1=X'_1\otimes_{K'}K''$ soit de la forme $X''\otimes_{V''}K''$, où $V''$
+est la clôture normale de $V$ dans $K''$, et où $X''$ est un revêtement non
+ramifié de $X\otimes_VV''$. Supposons par exemple $X_0$ absolument normale,
+d'où résulte que $X\otimes_VV''$ est normale (car plat sur $V''$ et à fibre
+spéciale normale), dont le corps des fonctions est identique à celui
+$K''(X_1)$ de
+\[
+  X_1\otimes_KK''
+  =(X\otimes_VK)\otimes_KK''
+  =X\otimes_VK''
+  =(X\otimes_VV'')\otimes_{V''}K''.
+\]
+Soit $L''=K''(X'_1)$ le corps des fonctions de $X'_1\otimes_{K'}K''$, c'est
+une extension finie séparable de $K''(X_1)$, et la condition ci-dessus signifie
+aussi que $L''$ est une extension non ramifiée du corps des fonctions de
+$X\otimes_VV''$ (i.e. le normalisé de $X\otimes_VV''$ dans $L''$ est non
+ramifié sur $X\otimes_VV''$). Il suffit d'ailleurs de vérifier que $L''$ est
+non ramifié aux points de la fibre spéciale de $X\otimes_VV''$ (puisqu'il est
+non ramifié au-dessus de la fibre générique $X_1\otimes_KK''$). Si maintenant
+$X_0$ est simple, il résulte du « théorème de pureté » de Nagata--Zariski qu'il
+suffit même de vérifier que $L''$ est non ramifié au-dessus de l'anneau local
+$O''$ du point générique de la fibre spéciale de $X\otimes_VV''$, qui est un
+anneau de valuation discrète, normalisé dans $K''(X_1)$ de l'anneau local
+$O\subset K(X_1)$ du point générique de la fibre spéciale de $X$. Donc on a
+obtenu :
+
+\src{218}
+\result{COROLLAIRE}{5} Sous les conditions et avec les notations précédentes,
+pour que le revêtement non ramifié
+$X'_1\otimes_{K'}\overline K$ de
+$\overline X_1=X_1\otimes_K\overline K$ provienne d'un revêtement non ramifié
+de $\overline X_0$, il faut et il suffit qu'il existe une sous-extension finie
+$K''$ de $\overline K/K'$ telle que $K''(X'_1)$ soit non ramifié au-dessus de
+l'anneau de valuation discrète $O''\subset K''(X_1)$.
+
+Notons maintenant que $O''$ est normalisé dans $K''(X_1)$ de l'anneau de
+valuation discrète $O'\subset K'(X_1)$ (normalisé de $O$ dans $K'(X_1)$), et
+que $O'$ contient le normalisé $V'$ de $V$ dans $K'$, une uniformisante $u$ de
+$V'$ étant aussi une uniformisante de $O'$. Supposons maintenant $X'_1$
+galoisien de groupe de Galois $G$ d'ordre $n$ premier à la caractéristique $p$
+de $\kappa(y_0)$ (qui est aussi la caractéristique du corps résiduel de $O'$).
+Donc $K'(X'_1)$ est « tamely ramified » au-dessus de $O'$, d'où il résulte
+facilement (« lemme de Abhyankar ») que si on lui adjoint une racine $n$-ième
+$v$ d'une uniformisante de $O'$, il devient non ramifié au-dessus du normalisé
+de $O'$ dans $K'(X_1)(v)$. Or on peut prendre pour $v$ une racine $n$-ième
+d'une uniformisante de $V'$, ce qui prouve que la condition du corollaire 5 est
+satisfaite. (Cette possibilité d'utiliser le lemme de Abhyankar et le théorème
+de pureté m'a été vendue par Serre). Pour exprimer le résultat obtenu,
+introduisons pour tout groupe compact totalement discontinu $\pi$ le groupe
+quotient $\widetilde\pi$ de $\pi$ par le sous-groupe fermé engendré par ses
+$p$-sous-groupes de Sylow, i.e. la limite projective des groupes quotients
+discrets de $\pi$ qui sont d'ordre premier à $p$. Avec cette notation, on
+obtient :
+
+\result{THÉORÈME}{13} Soit $f:X\longrightarrow Y$ un morphisme propre et plat,
+soient $y_1$ un point de $Y$ et $y_0$ une spécialisation de $y_1$, on suppose
+$\overline X_0$ connexe et simple. Alors l'homomorphisme
+$\widetilde\pi_1(\overline X_1)\longrightarrow
+\widetilde\pi_1(\overline X_0)$ déduit de l'homomorphisme surjectif du
+théorème 12, corollaire 2, est un isomorphisme.
+
+En d'autres termes :
+
+\src{219}
+\result{COROLLAIRE}{1} La classification des revêtements galoisiens non
+ramifiés, de groupe de Galois d'ordre premier à la caractéristique $p$ de
+$\kappa(y_0)$ est la même pour $\overline X_0$ et pour $\overline X_1$.
+
+En particulier, si $\kappa(y_0)$ est de caractéristique nulle, on obtient par
+voie algébrique le fait que
+$\pi_1(\overline X_1)\longrightarrow\pi_1(\overline X_0)$ est bijectif.
+
+Signalons enfin que les techniques utilisées donnent aussi le résultat
+suivant, plus général que le théorème 13 :
+
+\result{THÉORÈME}{14} Soit $f:X\longrightarrow Y$ un morphisme propre et
+simple, soit $D$ un sous-schéma fermé de $X$, simple au-dessus de $Y$, de
+codimension 1 en tous ses points. Pour une fibre $Z=f^{-1}(z)$ de $f$, soit
+$Z'=Z-Z\cap D$ et soit $\pi_1^t(Z')$ le quotient du groupe fondamental
+$\pi_1(Z')$ qui classifie les revêtements non ramifiés de $Z'$ qui sont
+« tamely ramified » au-dessus de $\overline{Z\cap D}$. Soient $y_0,y_1$ comme
+dans le théorème 13. Alors on a un homomorphisme surjectif (défini à un
+automorphisme intérieur près)
+\[
+  \pi_1^t(\overline X'_1)\longrightarrow\pi_1^t(\overline X'_0),
+\]
+et l'homomorphisme correspondant
+\[
+  \widetilde\pi_1^t(\overline X'_1)
+  \longrightarrow\widetilde\pi_1^t(\overline X'_0)
+\]
+est un isomorphisme.
+
+On en déduit des variantes correspondantes des corollaires au théorème 13, et
+du corollaire 4 au théorème 12. De même, utilisant le théorème 9, corollaire 3,
+on trouve par voie transcendante :
+
+\result{COROLLAIRE}{} Soit $X_0$ le schéma d'une courbe complète simple sur un
+corps algébriquement clos de caractéristique quelconque, soit
+$S=(s_i)_{1\le i\le n}$ une partie finie à $n$ éléments de $X_0$. Alors
+$\pi_1^t(X_0-S)$ admet $2g+n$ générateurs topologiques
+$x_i,y_i$ ($1\le i\le g$) et $\sigma_j$ ($1\le j\le n$) liés par la relation
+\[
+  \left(\prod_i x_i y_i x_i^{-1}y_i^{-1}\right)
+  \sigma_1\cdots\sigma_n=1,
+\]
+où les $\sigma_j$ sont des générateurs des groupes d'inertie correspondants
+aux $s_j$. Pour tout groupe fini $G$ d'ordre premier à la caractéristique,
+engendré par des éléments $x_i,y_i,\sigma_j$ satisfaisant la relation
+précédente, il existe un revêtement galoisien non ramifié de $X_0-S$, de groupe
+$G$, ayant des groupes d'inertie aux points $s_j$ engendrés par les
+$\sigma_j$.
+
+Lorsque $X_0$ est de genre 0 et que $n=3$, on a une solution du « Problème
+des trois points », du moins pour les revêtements galoisiens d'ordre premier à
+la caractéristique. (Ici, le théorème 9 est d'ailleurs inutile, et il semble
+d'autre part qu'on puisse déduire le corollaire précédent du cas particulier
+envisagé dans le problème des trois points).
+
+\src{220}
+\result{REMARQUES}{}
+
+1) Une étude plus complète, faisant sans doute intervenir des revêtements
+galoisiens généralisés de $X,X_0,X_1$ (à groupe de Galois éventuellement
+infinitésimal), devrait permettre de récupérer le noyau dans le théorème 12,
+corollaire 2. Par contre, une étude des revêtements admettant de la ramification
+pas « tame » semble devoir être beaucoup plus difficile.
+
+2) Le lemme 6, joint à un résultat de Grauert concernant le complété formel
+d'un schéma projectif non singulier le long d'une section hyperplane (ou au
+théorème, non prouvé pour l'instant, mentionné dans la remarque 2 après le
+théorème 11), permet aussi de démontrer en géométrie algébrique « abstraite » le
+classique théorème de Lefschetz sur le groupe fondamental.
+
+\begin{center}
+  \textbf{BIBLIOGRAPHIE}
+\end{center}
+
+\begin{description}
+  \item[{[1]}] Dieudonné (J.) et Grothendieck (A.). --- \emph{Éléments de
+    géométrie algébrique}, Publications mathématiques de l'Institut des Hautes
+    Études Scientifiques (à paraître).
+  \item[{[2]}] Grothendieck (Alexander). --- \emph{The cohomology theory of
+    abstract algebraic varieties}. International Congress of Mathematicians
+    [1958. Edinburgh] (à paraître).
+  \item[{[3]}] Serre (Jean-Pierre). --- \emph{Faisceaux algébriques
+    cohérents}, Annals of Math., Series 2, t. 61, 1955, p. 197--278.
+  \item[{[4]}] Serre (Jean-Pierre). --- \emph{Géométrie algébrique et
+    géométrie analytique}, Ann. Institut Fourier Grenoble, t. 6, 1955--1956,
+    p. 1--42.
+\end{description}
+
+\par\smallskip
+\begingroup\footnotesize
+\endgroup

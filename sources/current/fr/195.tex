@@ -1,0 +1,1154 @@
+\unit{Exposé 195 -- Technique de descente II}
+\sid{195}
+\src{369}
+\seminar{12\textsuperscript{e} année, 1959/60, n\textsuperscript{o} 195\\Février 1960}
+\paperhead{TECHNIQUE DE DESCENTE ET THÉORÈMES D'EXISTENCE EN GÉOMÉTRIE ALGÉBRIQUES\\
+II. LE THÉORÈME D'EXISTENCE EN THÉORIE FORMELLE DES MODULES}%
+  {par Alexander GROTHENDIECK}
+
+\fsection{A}{Foncteurs représentables et pro-représentables}
+
+\subsection*{1. Foncteurs représentables}
+\addcontentsline{toc}{subsection}{1. Foncteurs représentables}
+
+Soit $\mathcal C$ une catégorie. Pour tout $X\in\mathcal C$, soit $h_X$ le
+foncteur contravariant de $\mathcal C$ dans la catégorie $(\operatorname{Ens})$
+des ensembles,
+\[
+  h_X:\mathcal C\longrightarrow(\operatorname{Ens}),
+\]
+défini par la formule
+\[
+  h_X(Y)=\operatorname{Hom}(Y,X).
+\]
+Si on a un morphisme $X\longrightarrow X'$ dans $\mathcal C$, on en déduit de
+façon évidente un homomorphisme $h_X\longrightarrow h_{X'}$ de foncteurs :
+$h_X$ est un foncteur covariant en $X$, i.e. on a défini un foncteur covariant
+canonique
+\[
+  h:\mathcal C\longrightarrow
+  \operatorname{Hom}\bigl(\mathcal C^o,(\operatorname{Ens})\bigr)
+\]
+de $\mathcal C$ dans la catégorie des foncteurs covariants de la duale
+$\mathcal C^o$ de $\mathcal C$ dans la catégorie des ensembles. Rappelons
+alors :
+
+\result{PROPOSITION}{1.1} Ce foncteur $h$ est \emph{pleinement fidèle}, en
+d'autres termes, pour tout couple $X,X'$ d'objets de $\mathcal C$,
+l'application naturelle
+\[
+  \operatorname{Hom}(X,X')\longrightarrow
+  \operatorname{Hom}(h_X,h_{X'})
+\]
+est bijective.
+
+En particulier, si un foncteur
+$F\in\operatorname{Hom}(\mathcal C^o,(\operatorname{Ens}))$ est isomorphe à
+un foncteur de la forme $h_X$, $X$ est déterminé à un isomorphisme unique près.
+On dit alors que le foncteur $F$ est \emph{représentable}. La proposition
+précédente signifie alors que le foncteur canonique $h$ définit une équivalence
+de la catégorie $\mathcal C$ avec la sous-catégorie pleine de
+$\operatorname{Hom}(\mathcal C^o,(\operatorname{Ens}))$ formée par les
+foncteurs représentables. Ce fait est à la base de la notion de « solution
+d'un Problème Universel », un tel problème consistant toujours à examiner si
+un foncteur donné (contravariant comme ici, ou covariant dans le cas dual) de
+$\mathcal C$ dans $(\operatorname{Ens})$ est représentable.
+
+\src{370}
+Notons de plus que, par définition même de la notion de produit dans une
+catégorie [1], le foncteur $h:X\longmapsto h_X$ commute aux produits chaque
+fois qu'ils existent (et plus généralement aux limites projectives finies ou
+infinies, en particulier aux produits fibrés, à la formation de « noyaux » [2],
+etc., chaque fois qu'ils existent) : on a un isomorphisme de foncteurs
+\[
+  h_{X\times X'}\xrightarrow{\sim}h_X\times h_{X'}
+\]
+chaque fois que $X\times X'$ existe, i.e. on a des bijections fonctorielles en
+$Y$
+\[
+  h_{X\times X'}(Y)\xrightarrow{\sim}h_X(Y)\times h_{X'}(Y).
+\]
+En particulier, la donnée d'un morphisme
+\[
+  X\times X'\longrightarrow X''
+\]
+dans $\mathcal C$ (i.e. d'une « loi de composition » dans $\mathcal C$ entre
+$X,X',X''$) est équivalente à la donnée d'un morphisme
+\[
+  h_{X\times X'}=h_X\times h_{X'}\longrightarrow h_{X''},
+\]
+i.e. à la donnée pour tout $Y\in\mathcal C$ d'une loi de composition
+d'ensembles
+\[
+  h_X(Y)\times h_{X'}(Y)\longrightarrow h_{X''}(Y)
+\]
+de telle façon que, pour tout morphisme $Y\longrightarrow Y'$ dans
+$\mathcal C$, le système des applications ensemblistes
+\[
+  h_{X^{(i)}}(Y)\longleftarrow h_{X^{(i)}}(Y')
+  \qquad(\text{pour }i=0,1,2)
+\]
+soit un morphisme pour les deux lois de composition, relatives à $Y$ et $Y'$.
+On voit de cette façon que la notion de structure de « $\mathcal C$-groupe »,
+« $\mathcal C$-anneau », etc. sur un objet $X$ de $\mathcal C$ s'exprime de la
+façon la plus commode (en théorie comme en pratique) en disant que pour tout
+$Y\in\mathcal C$, on a une loi de groupes (resp. anneau, etc.) au sens usuel
+sur l'ensemble $h_X(Y)$, les applications
+$h_X(Y)\longleftarrow h_X(Y')$ correspondant à des morphismes
+$Y\longrightarrow Y'$ devant être des homomorphismes de groupes (resp.
+anneaux, etc.). C'est la façon la plus intuitive et la plus commode, par
+exemple, pour définir les divers groupes classiques $G_a$, $G_m$,
+$\operatorname{Gl}(n)$, etc. sur un pré-schéma $S$ de base quelconque et pour
+écrire les relations classiques entre ces groupes, pour mettre sur le schéma
+affine $V(\mathcal F)$ au-dessus de $S$, défini par un faisceau quasi-cohérent
+$\mathcal F$, une structure de « fibré vectoriel », pour définir et étudier les
+diverses variétés de drapeaux (grassmanniennes, fibrés projectifs) associés,
+etc. ; le yoga général étant d'identifier purement et simplement, à l'aide du
+foncteur canonique $h$, les objets de $\mathcal C$ à des foncteurs
+contravariants particuliers, les foncteurs représentables,
+
+\src{371}
+de $\mathcal C$ dans la catégorie des ensembles.
+
+Le procédé habituel de renversement de flèches, qui s'impose par exemple, dans
+le cas des schémas affines pour passer du langage géométrique au langage de
+l'algèbre commutative, conduit à dualiser les considérations précédentes et en
+particulier, à introduire aussi les foncteurs covariants
+$\mathcal C\longrightarrow(\operatorname{Ens})$ représentables, i.e. de la
+forme
+\[
+  Y\longmapsto\operatorname{Hom}(X,Y)=h'_X(Y).
+\]
+
+\subsection*{2. Foncteurs pro-représentables, pro-objets}
+\addcontentsline{toc}{subsection}{2. Foncteurs pro-représentables, pro-objets}
+
+Soit $\widetilde X=(X_i)_{i\in I}$ un système projectif d'objets de
+$\mathcal C$ ; il lui correspond un foncteur covariant
+\[
+  h'_{\widetilde X}=\varinjlim_i h'_{X_i},
+\]
+de façon plus explicite
+\[
+  h'_{\widetilde X}(Y)=\varinjlim_i h'_{X_i}(Y)
+  =\varinjlim_i\operatorname{Hom}(X_i,Y),
+\]
+de $\mathcal C$ dans $(\operatorname{Ens})$. Un foncteur de $\mathcal C$ dans
+$(\operatorname{Ens})$ qui est isomorphe à un foncteur de ce type avec $I$
+filtrant est dit \emph{pro-représentable}. D'après le numéro précédent, ce
+sont exactement les foncteurs isomorphes à des limites inductives filtrantes
+de foncteurs représentables. Soit
+$\widetilde X'=(X'_j)_{j\in J}$ un deuxième système projectif filtrant dans
+$\mathcal C$ (construit sur un deuxième ensemble d'indices préordonné filtrant
+$J$) ; on vérifie aisément qu'on a une bijection canonique (généralisant la
+proposition 1.1)
+\[
+  \operatorname{Hom}(h'_{\widetilde X'},h'_{\widetilde X})
+  =\varprojlim_j\varinjlim_i\operatorname{Hom}(X_i,X'_j).
+\]
+Cela amène à introduire la catégorie $\operatorname{Pro}(\mathcal C)$ des
+pro-objets de $\mathcal C$ ; ses objets sont les systèmes projectifs d'objets
+de $\mathcal C$ (sur des ensembles d'indices préordonnés filtrants variables),
+et si $\widetilde X=(X_i)_{i\in I}$ et
+$\widetilde X'=(X'_j)_{j\in J}$ sont deux tels objets, on pose
+\[
+  \operatorname{ProHom}(\widetilde X,\widetilde X')
+  =\varprojlim_j\varinjlim_i\operatorname{Hom}(X_i,X'_j),
+\]
+la composition des pro-homomorphismes étant évidente. Par construction même,
+$\widetilde X\longmapsto h'_{\widetilde X}$ peut être considéré comme un
+foncteur contravariant en $\widetilde X$, établissant une équivalence de la
+catégorie duale de la catégorie $\operatorname{Pro}(\mathcal C)$ des
+pro-objets de $\mathcal C$, avec la catégorie des foncteurs covariants
+pro-représentables de $\mathcal C$ dans $(\operatorname{Ens})$. Bien entendu,
+un objet $X$ de $\mathcal C$ définit canoniquement un pro-objet, dénoté
+
+\src{372}
+encore par $X$, de sorte que $\mathcal C$ est équivalente à une sous-catégorie
+pleine de $\operatorname{Pro}(\mathcal C)$. Si alors
+$\widetilde X=(X_i)_{i\in I}$ est un pro-objet quelconque de $\mathcal C$, on
+aura (avec l'identification précédente)
+\[
+  \widetilde X=\varprojlim_i X_i,
+\]
+la limite projective étant prise dans $\operatorname{Pro}(\mathcal C)$
+(puisque $h'_{\widetilde X}=\varinjlim_i h'_{X_i}$). On fera attention que,
+lors même que la limite projective des $X_i$ existe dans $\mathcal C$, elle
+sera généralement non isomorphe à la limite projective $\widetilde X$ dans
+$\operatorname{Pro}(\mathcal C)$, comme il est déjà évident dans le cas où
+$\mathcal C$ est la catégorie des ensembles. On notera que par définition
+même, $\varprojlim_{\mathcal C}X_i=L$ est défini par la condition que le
+foncteur en $Y\in\mathcal C$
+\[
+  \varprojlim_i\operatorname{Hom}_{\mathcal C}(Y,X_i)
+  =\operatorname{Hom}_{\operatorname{Pro}(\mathcal C)}(Y,\widetilde X)
+\]
+et à valeurs dans $(\operatorname{Ens})$ soit représentable à l'aide de $L$,
+i.e. soit isomorphe à $\operatorname{Hom}_{\mathcal C}(Y,L)$ ; par suite,
+$\varprojlim_{\mathcal C}X_i$ est défini déjà en termes du pro-objet
+$\widetilde X$, et de façon précise dépend fonctoriellement du pro-objet
+$\widetilde X$ chaque fois qu'elle est définie ; il n'y a donc pas
+d'inconvénient à la dénoter par $\varprojlim_{\mathcal C}(\widetilde X)$. Si
+les limites projectives dans $\mathcal C$ existent toujours,
+$\varprojlim_{\mathcal C}(\widetilde X)$ est un foncteur de
+$\operatorname{Pro}(\mathcal C)$ dans $\mathcal C$, et il y a un
+homomorphisme canonique de foncteurs
+$\varprojlim_{\mathcal C}(\widetilde X)\longrightarrow\widetilde X$.
+
+Comme tout foncteur, covariant pour fixer les idées,
+\[
+  F:\mathcal C\longrightarrow\mathcal C'
+\]
+se prolonge de façon évidente en un foncteur
+\[
+  \operatorname{Pro}(F):\operatorname{Pro}(\mathcal C)
+  \longrightarrow\operatorname{Pro}(\mathcal C'),
+\]
+il s'ensuit que, si dans $\mathcal C'$ les limites projectives existent
+toujours, $F$ définit aussi canoniquement un foncteur composé
+\[
+  \overline F:\operatorname{Pro}(\mathcal C)\longrightarrow\mathcal C',
+  \qquad
+  \overline F=\varprojlim_{\mathcal C'}\circ\operatorname{Pro}(F),
+\]
+transformant $\widetilde X=(X_i)_{i\in I}$ en
+$\varprojlim_{\mathcal C'}F(X_i)$.
+
+Un pro-objet $\widetilde X$ est dit \emph{pro-objet strict} s'il est isomorphe
+à un pro-objet $(X_i)_{i\in I}$ où les morphismes de transition
+$X_i\longrightarrow X_j$ sont des épimorphismes ; un foncteur défini par un
+tel objet est dit \emph{strictement pro-représentable}. On peut alors exiger de
+plus que $I$ soit ordonné filtrant, et que tout épimorphisme
+$X_i\longrightarrow X'$ soit équivalent à un épimorphisme
+
+\src{373}
+$X_i\longrightarrow X_j$ pour $j\in I$ convenable (déterminé de façon unique
+par cette condition). Sous ces conditions, le système projectif
+$(X_i)_{i\in I}$ est déterminé à un isomorphisme unique près (au sens usuel
+d'isomorphismes de systèmes projectifs). Il en résulte que dans
+$\operatorname{Pro}(\mathcal C)$ la limite projective d'un système projectif de
+pro-objets stricts $\widetilde X^{(\alpha)}$ existe toujours et qu'avec les
+notations ci-dessus pour $F$, $\overline F$, on aura
+\[
+  \overline F\left(\varprojlim_\alpha\widetilde X^{(\alpha)}\right)
+  =\varprojlim_{\alpha,\mathcal C'}
+  \overline F\left(\widetilde X^{(\alpha)}\right).
+\]
+En particulier, si tout pro-objet de $\mathcal C$ est strict (cf. le numéro
+suivant), le foncteur prolongé $\overline F$ commute aux limites projectives.
+
+\subsection*{3. Caractérisation des foncteurs pro-représentables}
+\addcontentsline{toc}{subsection}{3. Caractérisation des foncteurs pro-représentables}
+
+Soient $\mathcal C$, $\mathcal C'$ deux catégories où les limites projectives
+finies (i.e. relatives à des ensembles préordonnés finis, non nécessairement
+filtrants) existent, ou ce qui revient au même, où les produits finis et les
+produits fibrés finis existent (ce qui implique en particulier l'existence
+d'un « objet unité à droite » $e$, tel que $\operatorname{Hom}(X,e)$ soit
+réduit à un élément pour tout $X$). Soit $F$ un foncteur covariant de
+$\mathcal C$ dans $\mathcal C'$. Les conditions suivantes sont équivalentes :
+
+\begin{enumerate}
+\item[(i)] $F$ permute aux limites projectives finies ;
+\item[(ii)] $F$ permute aux produits finis et aux produits fibrés finis ;
+\item[(iii)] $F$ permute aux produits finis, et pour tout diagramme exact
+\[
+  X\longrightarrow X'\rightrightarrows X''
+\]
+dans $\mathcal C$ ([3], A, définition 2.1), le diagramme transformé par $F$
+\[
+  F(X)\longrightarrow F(X')\rightrightarrows F(X'')
+\]
+est exact.
+\end{enumerate}
+
+On dit alors que $F$ est \emph{exact à gauche}.
+
+Par la suite, on suppose que dans $\mathcal C$ les limites projectives finies
+existent. Il est alors immédiat sur les définitions qu'un foncteur
+représentable est exact à gauche, et par passage à la limite qu'un foncteur
+pro-représentable est exact à gauche.
+
+Pour obtenir une réciproque, soit
+\[
+  F:\mathcal C\longrightarrow(\operatorname{Ens})
+\]
+un foncteur covariant, soient $X\in\mathcal C$ et $\xi\in F(X)$. On dit que
+$\xi$ (ou le couple \src{374}$(X,\xi)$) est \emph{minimal} si pour tout
+$X'\in\mathcal C$ et $\xi'\in F(X')$, et tout monomorphisme strict ([3], A, 2)
+$u:X'\longrightarrow X$ tel que $\xi=F(u)(\xi')$, $u$ est un isomorphisme. On
+dit d'autre part qu'un couple $(X,\xi)$ \emph{domine} $(X'',\xi'')$
+($\xi\in F(X)$, $\xi''\in F(X'')$) s'il existe un morphisme
+$v:X\longrightarrow X''$ tel que $\xi''=F(v)(\xi)$ ; si $\xi$ est minimal et
+si $F$ est exact à gauche, ce morphisme $v$ est alors unique ; si $\xi''$ est
+minimal, $v$ est surjectif. On en déduit facilement la proposition suivante :
+
+\result{PROPOSITION}{3.1} Pour que $F$ soit strictement pro-représentable, il
+faut et il suffit qu'il satisfasse aux deux conditions :
+\begin{enumerate}
+\item[(i)] $F$ est exact à gauche ;
+\item[(ii)] tout couple $(X,\xi)$, avec $\xi\in F(X)$, est dominé par un couple
+minimal.
+\end{enumerate}
+
+Cette dernière condition est vide si tout objet de $\mathcal C$ est artinien
+(en prenant un sous-objet $X'$ de $X$ minimal parmi ceux pour lesquels il
+existe $\xi'\in F(X')$ tel que $\xi$ soit l'image de $\xi'$). D'où :
+
+\result{COROLLAIRE}{} Soit $\mathcal C$ une catégorie dont les objets sont
+artiniens et où les limites projectives finies existent. Alors les foncteurs
+pro-représentables de $\mathcal C$ dans $(\operatorname{Ens})$ sont exactement
+les foncteurs exacts à gauche, et ils sont même strictement
+pro-représentables.
+
+Ce dernier fait signifie aussi que \emph{tout pro-objet de $\mathcal C$ est
+strict}.
+
+\subsection*{4. Exemple : groupes du type galoisien, groupes pro-algébriques}
+\addcontentsline{toc}{subsection}{4. Groupes du type galoisien, groupes pro-algébriques}
+
+Si $\mathcal C$ est la catégorie des groupes finis ordinaires,
+$\operatorname{Pro}(\mathcal C)$ est équivalente à la catégorie des groupes
+topologiques compacts totalement discontinus. Ce sont des groupes de ce type
+et leurs généralisations, obtenues en remplaçant les groupes finis ordinaires
+par des schémas en groupes finis au-dessus d'un pré-schéma de base donné (par
+exemple, les groupes algébriques finis sur un corps $k$), qui tiendront lieu de
+groupes fondamentaux, d'homotopie, d'homologie absolus et relatifs pour les
+pré-schémas. Dans tous ces exemples, le corollaire à la proposition 3.1
+s'applique, et c'est bien par le foncteur associé que le $\pi_1$ doit se
+définir [2]. Il en est de même en partant de la catégorie des groupes
+algébriques ou quasi-algébriques sur un corps (ou plus généralement sur un
+pré-schéma noethérien) : on trouve les « groupes pro-algébriques » de Serre
+[4].
+
+\subsection*{5. Exemple : « variétés formelles »}
+\addcontentsline{toc}{subsection}{5. Exemple : variétés formelles}
+
+Soient $\Lambda$ un anneau noethérien, $\mathcal C$ la catégorie des
+$\Lambda$-algèbres $A$ qui sont des modules de type fini artiniens sur
+$\Lambda$ (ou plus brièvement,
+
+\src{375}
+des $\Lambda$-algèbres artiniennes). On est sous les conditions du corollaire
+à la proposition 3.1. La catégorie $\operatorname{Pro}(\mathcal C)$ est ici
+équivalente à la catégorie des algèbres topologiques $O$ sur $\Lambda$
+isomorphes à des limites projectives topologiques
+\[
+  O=\varprojlim_i O_i
+\]
+d'algèbres $O_i\in\mathcal C$, i.e. dont la topologie est linéaire, séparée et
+complète, et telle que pour tout idéal ouvert $J_i$ de $O$, $O/J_i$ soit une
+algèbre artinienne sur $\Lambda$. Le foncteur
+$\mathcal C\longrightarrow(\operatorname{Ens})$ associé à une telle algèbre
+n'est autre que
+\begin{align*}
+  F(A)=h'_O(A)
+  &=\{\text{homomorphismes continus de $\Lambda$-algèbres topologiques }
+       O\longrightarrow A\}\\
+  &=\varinjlim_i
+    \operatorname{Hom}_{\Lambda\text{-algèbres}}(O_i,A).
+\end{align*}
+
+On notera d'ailleurs que la catégorie $\mathcal C$ est essentiellement le
+produit des catégories analogues, correspondant aux anneaux locaux complétés
+des $\Lambda_{\mathfrak m}$ pour les idéaux maximaux $\mathfrak m$ de
+$\Lambda$ ; on peut donc si on le désire se limiter au cas où $\Lambda$ est un
+tel anneau local complet. En tous cas, $O$ se décompose canoniquement en le
+produit topologique de composants locaux, correspondant aux « points » du
+schéma formel [2] défini par $O$. Un tel point est défini par un objet $\xi$
+d'un $F(K)$, où $K\in\mathcal C$ est un corps (par exemple, le corps résiduel
+du composant local envisagé), deux couples $(\xi,K)$ et $(\xi',K')$
+définissant le même point si et seulement s'ils sont dominés par un même
+$(\xi'',K'')$, ou encore s'ils dominent un même $(\xi''',K''')$. (Si les
+$\Lambda/\mathfrak m$ sont algébriquement clos, il suffit de prendre l'ensemble
+somme des $F(\Lambda/\mathfrak m)$.)
+
+Il importe de donner des conditions pour que le composant local $O_\xi$ de
+$O$ correspondant à un $\xi\in F(K)$ soit un anneau noethérien. Lorsque
+$\Lambda$ est un anneau local complet (noethérien, on le rappelle), il revient
+au même de dire que $O_\xi$ est isomorphe à un anneau quotient d'un anneau de
+séries formelles $\Lambda[[t_1,\ldots,t_n]]$ sur $\Lambda$. Pour donner un tel
+critère, introduisons (pour tout anneau $A$) la $A$-algèbre $I_A$ des « nombres
+duaux » de $A$ par
+\[
+  I_A=A[t]/t^2A[t].
+\]
+Soit $\varepsilon:I_A\longrightarrow A$ l'homomorphisme d'augmentation ; il
+définit (si $A\in\mathcal C$) une application
+\[
+  F(\varepsilon):F(I_A)\longrightarrow F(A),
+\]
+
+\src{376}
+et utilisant le fait que $F$ est exact à gauche, on définit de façon
+intrinsèque une structure de $A$-module dans la partie
+\[
+  F(I_A,\xi)=F(\varepsilon)^{-1}(\xi)
+\]
+de $F(I_A)$ formée des $\xi'\in F(I_A)$ qui « se réduisent suivant $\xi$ » ;
+utilisant la forme explicite de $F$ en termes de $O$, on trouve que ce
+$A$-module s'identifie à
+\[
+  \operatorname{Hom}_{\Lambda}(\mathfrak m_\xi/\mathfrak m_\xi^2,A),
+\]
+où $\mathfrak m_\xi$ est le noyau de l'homomorphisme
+$\xi:O\longrightarrow A$, i.e. si $A$ est un corps, l'idéal maximal du
+composant local $O_\xi$ de $O$. On en déduit aussitôt la proposition suivante :
+
+\result{PROPOSITION}{5.1} Soit $\xi\in F(K)$, où $K\in\mathcal C$ est un
+corps. Pour que le composant local $O_\xi$ correspondant de $O$ soit un anneau
+noethérien, il faut et il suffit que l'ensemble $F(I_K,\xi)$ des éléments de
+$F(I_K)$ se réduisant suivant $\xi$ soit un espace vectoriel de dimension
+finie sur $K$. Sous ces conditions, on a un isomorphisme canonique
+\[
+  F(I_K,\xi)=
+  \operatorname{Hom}\!\left(
+    \frac{\mathfrak m_\xi/\mathfrak m_\xi^2}
+         {\operatorname{im}(\mathfrak n_\xi/\mathfrak n_\xi^2)},K
+  \right),
+\]
+où $\mathfrak n_\xi$ est l'idéal maximal de $\Lambda$, noyau de
+l'homomorphisme $\Lambda\longrightarrow K$.
+\footnote{Le texte imprimé donne ici une formule qui n'est correcte que
+lorsque $\Lambda$ est un corps. L'erratum de 1962 prescrit, dans le cas
+général, le quotient de $\mathfrak m_\xi/\mathfrak m_\xi^2$ par l'image de
+$\mathfrak n_\xi/\mathfrak n_\xi^2$.}
+En particulier, la dimension du $K$-espace vectoriel $F(I_K,\xi)$ est égale à
+la dimension de l'espace vectoriel ainsi corrigé sur le corps
+$O_\xi/\mathfrak m_\xi=K(\xi)$.
+
+Supposons que $O_\xi$ soit noethérien, et supposons pour simplifier l'écriture
+que $\Lambda$ soit local complet, et $O=O_\xi$. On dit que $O$ est
+\emph{simple sur $\Lambda$} si $O$ est une algèbre finie et étale sur
+l'algèbre complétée du localisé de $\Lambda[t_1,\ldots,t_n]$ en un idéal
+maximal de cet anneau, induisant l'idéal maximal de $\Lambda$ ; lorsque
+l'extension résiduelle de $O$ sur $\Lambda$ est triviale (par exemple, le
+corps résiduel de $\Lambda$ est algébriquement clos), cela équivaut à dire que
+$O$ lui-même est isomorphe à une telle algèbre de séries formelles.
+\footnote{L'erratum de 1962 précise que cette définition de « simple sur
+$\Lambda$ » n'est correcte que lorsque l'extension résiduelle $k'/k$ est
+séparable ; dans le cas général, il renvoie à SGA III, 1.1.}
+Enfin, si on ne suppose plus nécessairement $O$ noethérien, on dira encore que
+$O$ est simple sur $\Lambda$ si $O$ est isomorphe à une limite projective
+topologique de $\Lambda$-algèbres quotients qui sont noethériennes et
+$\Lambda$-simples au sens précédent. On généralise aussitôt au cas où
+$\Lambda$, $O$ ne sont plus supposés locaux. Ceci dit, on a la proposition
+suivante :
+
+\result{PROPOSITION}{5.2} Pour que $O$ soit simple sur $\Lambda$, il faut et il
+suffit que le foncteur $F$ associé transforme épimorphismes en épimorphismes.
+
+Cela signifie donc que pour tout homomorphisme surjectif
+$A\longrightarrow A'$ dans $\mathcal C$,
+$F(A)\longrightarrow F(A')$ est surjectif. Bien entendu, il suffit de vérifier
+cette condition quand $A$ est local, et (en procédant de proche en proche)
+quand l'idéal de $A$ noyau de $A\longrightarrow A'$ est annulé par l'idéal
+maximal de $A$. Cela ramène, en pratique, à vérifier qu'une certaine
+obstruction, liée à des invariants infinitésimaux
+
+\src{377}
+de la situation donnant naissance au foncteur $F$, est nulle, problème qui est
+de nature cohomologique.
+
+Pour finir, disons quelques mots, dans le contexte précédent, des \emph{anneaux
+de définition}. Soit toujours $F$ un foncteur de $\mathcal C$ dans
+$(\operatorname{Ens})$, pro-représentable à l'aide d'une $\Lambda$-algèbre
+topologique $O$. Alors pour tout $A\in\mathcal C$ et tout $\xi\in F(A)$, il
+existe un plus petit sous-anneau $A'$ de $A$ tel que $\xi$ soit image d'un
+élément $\xi'$ de $F(A')$ (lequel est alors uniquement déterminé) : en effet,
+il suffit d'interpréter $\xi$ au moyen d'un homomorphisme de $O$ dans $A$, et
+de prendre pour $A'$ l'image de $O$ par ce dernier. On dit alors que $A'$ est
+l'anneau de définition de l'objet $\xi\in F(A)$. Si
+$u:A\longrightarrow B$ est un homomorphisme d'algèbres et si
+$\eta=F(u)(\xi)$, alors l'anneau de définition de $\eta$ est l'image par $u$ de
+l'anneau de définition de $\xi$. Lorsqu'on part d'un foncteur $F$ de
+$\mathcal C$ dans $(\operatorname{Ens})$, l'existence des anneaux de définition
+et les propriétés qu'on vient d'en donner sont à peu de choses près
+équivalentes au fait que $F$ soit pro-représentable ; c'est dire qu'elles sont
+le plus souvent loin d'être triviales.
+
+\fsection{B}{Les deux théorèmes d'existence}
+
+Gardons les notations de A, paragraphe 5, et partons d'un foncteur covariant
+\[
+  F:\mathcal C\longrightarrow(\operatorname{Ens}) ;
+\]
+on cherche des critères maniables pour que $F$ soit pro-représentable, i.e.
+exprimable à l'aide d'une $\Lambda$-algèbre $O$ comme plus haut. En vertu du
+corollaire de A, proposition 3.1, il faut et il suffit pour cela que $F$ soit
+exact à gauche. Dans l'état actuel de la technique de descente (cf. questions
+posées dans [3], p. 9), ce critère n'est pas directement vérifiable sous cette
+forme dans les cas les plus importants, et on a besoin de critères en apparence
+moins exigeants.
+
+\result{THÉORÈME}{1} Pour que le foncteur $F$ soit pro-représentable, il faut
+et il suffit qu'il satisfasse les deux conditions suivantes :
+\begin{enumerate}
+\item[(i)] $F$ permute aux produits finis ;
+\item[(ii)] pour toute algèbre $A\in\mathcal C$ et tout homomorphisme
+$A\longrightarrow A'$ dans $\mathcal C$ tel que le diagramme
+\[
+  A\longrightarrow A'\rightrightarrows A'\otimes_A A'
+\]
+soit exact ([3], A, définition 1.2), le diagramme transformé
+\[
+  F(A)\longrightarrow F(A')\rightrightarrows F(A'\otimes_A A')
+\]
+
+\src{378}
+est exact.
+\end{enumerate}
+De plus, il suffit de vérifier (ii) quand $A$ est local et quand de plus on est
+dans l'un des deux cas suivants :
+\begin{enumerate}
+\item[(a)] $A'$ est un module libre sur $A$ ;
+\item[(b)] le module quotient $A'/A$ est un $A$-module de longueur 1.
+\end{enumerate}
+
+La démonstration de ce théorème est assez délicate et ne peut être esquissée
+ici. Bornons-nous à signaler qu'elle repose essentiellement sur une étude des
+relations d'équivalence (au sens des catégories) dans le spectre d'une algèbre
+artinienne (étude qui pose encore plusieurs problèmes, dont la solution semble
+indispensable pour le développement ultérieur de la théorie).
+
+Dans les applications, la vérification de la condition (i) est toujours
+triviale. Celle de (ii) se décompose en deux : le cas où $A'$ est un
+$A$-module libre relève de la technique de descente par morphismes plats ([3],
+théorèmes 1, 2 et 3) et n'offre pas de difficulté. Pour traiter le cas (b), on
+utilisera le résultat suivant :
+
+\result{THÉORÈME}{2} Soient $A$ un anneau local artinien d'idéal maximal
+$\mathfrak m$, $A'$ une $A$-algèbre contenant $A$ telle que
+$\mathfrak mA'\subset A$ et que
+\[
+  A\longrightarrow A'\rightrightarrows A'\otimes_A A'
+\]
+soit exact (ce qui est le cas en particulier si $A'/A$ est un $A$-module de
+longueur 1). Soit $\mathcal F$ la catégorie fibrée ([3], A, définition 1.1)
+des faisceaux quasi-cohérents et plats sur des pré-schémas variables. Alors le
+morphisme $\operatorname{Spec}(A')\longrightarrow\operatorname{Spec}(A)$ est
+un morphisme de $\mathcal F$-descente strict ([3], A, définition 1.7).
+
+En d'autres termes, la donnée d'un $A$-module plat $M$ est complètement
+équivalente à la donnée d'un $A'$-module plat $M'$, muni d'un
+$A'\otimes_AA'$-isomorphisme de $M'\otimes_AA'$ sur $A'\otimes_AM'$
+satisfaisant la condition de transitivité habituelle pour une donnée de
+descente (loco citato).
+
+Le théorème 2 se démontre en prouvant d'abord que
+\[
+  H^i(A'/A,G_a)=0\qquad\text{pour }i\geq 1
+\]
+([3], A, 4(e)), l'hypothèse $\mathfrak mA'\subset A$ permettant de se ramener
+aisément au cas où $A$ est un corps $k$ (savoir $A/\mathfrak m$). On applique
+alors les équivalences signalées dans [3], page 16.
+
+\fsection{C}{Applications à quelques cas particuliers}
+
+\subsection*{1. Remarques générales sur les foncteurs représentés par des pré-schémas}
+\addcontentsline{toc}{subsection}{1. Remarques générales sur les foncteurs représentés par des pré-schémas}
+
+Soit $S$ un pré-schéma localement noethérien. Un pré-schéma $X$ sur $S$ est dit
+\src{379}localement de type fini sur $S$ si, pour tout $x\in X$ se projetant en
+$y\in S$,\footnote{Le texte imprimé porte ici « $y\in Y$ » et emploie de
+nouveau $Y$ à la fin du paragraphe. Le morphisme considéré étant
+$X\longrightarrow S$, on lit $S$ dans les deux occurrences.} il existe un
+voisinage affine de $y$, d'anneau $A$, et un voisinage affine de $x$ au-dessus
+de ce dernier, d'anneau $B$, tels que $B$ soit une $A$-algèbre de type fini.
+On trouve de nombreux exemples importants de pré-schémas localement de type
+fini sur $S$, qui ne sont pas de type fini sur $S$, comme solutions de
+problèmes universels classiques ; ainsi il importe de pouvoir considérer le
+schéma de Picard d'une courbe comme réunion d'une infinité de composantes
+connexes (qu'il faut se garder de confondre avec la composante connexe de
+l'élément neutre, i.e. la « variété de Picard »). Il est alors parfois commode
+de se placer dans la catégorie $\mathcal C$ des pré-schémas localement de type
+fini sur $S$, pour y examiner la question de la représentabilité d'un foncteur
+contravariant $F$. Le but principal de ces exposés est de développer une
+technique générale permettant de reconnaître si un tel foncteur $F$ est
+représentable, et d'étudier les propriétés du $S$-pré-schéma $X$ correspondant
+à l'aide de celles de $F$. Signalons en passant que, dans cette étude, on
+trouve des exemples non pathologiques de pré-schémas sur $S$ non séparés sur
+$S$, notamment comme « pré-schémas de Picard » d'excellents $S$-schémas ; il
+faut donc se garder de bannir de la géométrie algébrique les pré-schémas qui ne
+sont pas des schémas.
+
+Soit $X$ un pré-schéma localement de type fini sur $S$, et soit
+\[
+  F(Y)=\operatorname{Hom}_S(Y,X)
+\]
+le foncteur contravariant associé. On peut considérer la restriction $F_0$ de
+$F$ à la sous-catégorie $\mathcal C_0$ de $\mathcal C$ formée des
+pré-schémas $Y$ sur $S$ qui sont artiniens et finis sur $S$ : lorsque
+$S=\operatorname{Spec}(\Lambda)$, $\mathcal C_0$ est donc la catégorie duale
+de la catégorie des $\Lambda$-algèbres artiniennes considérée dans B. Si
+$Y=\operatorname{Spec}(A)$, où $A$ est un anneau local artinien, $Y$ est
+réduit à un seul point $y$ placé au-dessus d'un point fermé $s$ de $S$, et un
+$S$-homomorphisme de $Y$ dans $X$ (i.e. un élément de $F(Y)$) est défini par
+la donnée d'un point $x\in X$ au-dessus de $s$, et d'un
+$\mathcal O_{s,S}$-homomorphisme de $\mathcal O_{x,X}$ dans $A$. S'il existe
+un tel homomorphisme, alors $x$ est nécessairement un point fermé de $X$ (son
+corps résiduel étant algébrique sur celui de $s$). Cela montre donc que la
+restriction $F_0$ de $F$ aux « $\Lambda$-algèbres artiniennes » est
+pro-représentable, et est représentée par la $\Lambda$-algèbre topologique
+dont les composants locaux sont les complétés
+$\widehat{\mathcal O}_{x,X}$ des anneaux locaux de $X$ aux points $x$ de $X$
+qui sont fermés et se trouvent au-dessus de points fermés de $S$. Cela montre
+que la seule connaissance de $F_0$ donne des renseignements précis sur la
+structure de $X$ (savoir la structure des complétés de ses anneaux locaux aux
+points indiqués). On notera que, même dans le cas où $S$
+
+\src{380}
+est le spectre d'un corps algébriquement clos, ce n'est que grâce à la
+considération systématique de « variétés » $Y$ telles que
+$\mathcal O_Y$ peut admettre des éléments nilpotents, en particulier en
+travaillant avec les spectres d'anneaux artiniens locaux, qu'on peut arriver à
+la « bonne formulation » des problèmes universels classiques, et à en saisir
+l'aspect « infinitésimal ».
+
+Quand on part d'un foncteur $F$ donné à l'avance, dont on veut décider s'il est
+représentable, l'étude du foncteur $F_0$ (à l'aide des théorèmes 1 et 2)
+donnera des indications quasi complètes ; soit, comme il arrive fréquemment
+(en testant simplement, par exemple, la nature des ensembles
+$F(I_K,\xi)$ et leur comportement fonctoriel, cf. A), qu'on constate que
+$F_0$ déjà n'est pas pro-représentable (ce qui explique l'échec des tentatives
+faites jusqu'à présent pour définir de façon plus ou moins naturelle des
+variétés de modules pour la classification des fibrés vectoriels de rang
+$>1$) ; soit qu'on arrive à vérifier que $F_0$ est bien représentable, mais
+que les espaces vectoriels $F(I_K,\xi)$ ne sont pas de dimension finie,
+auquel cas il faut se contenter de la solution « formelle » ; soit enfin que
+$F_0$ est bien représentable par un produit d'anneaux locaux complets
+noethériens, ce qui donne de très fortes présomptions pour que $F$ soit
+lui-même représentable et, joint à des propriétés analogues mais de nature
+plus globale que nous pensons développer par la suite, suffira sans doute à
+entraîner qu'il en est effectivement ainsi. Enfin, on rencontre des problèmes
+géométriques intéressants (voir paragraphes 4 et 5 ci-dessous) où on ne dispose
+que du foncteur $F_0$ (ne provenant d'aucun foncteur « global » $F$), et où on
+s'estimera heureux quand on aura pu lui associer un « schéma formel de
+modules ».
+
+Pour terminer ces généralités, indiquons comment la théorie des schémas
+explique des anomalies apparentes, telle la surface de Igusa $V$ dont la
+« variété de Picard » $P$ est réduite à un point, et pour laquelle pourtant
+on a
+\[
+  H^1(V,\mathcal O_V)\ne 0 ;
+\]
+dans ce cas, $P$ est un groupe « purement infinitésimal » non réduit au groupe
+unité, i.e. défini par une algèbre locale $O$ de rang fini sur le corps de base
+$k$ et muni d'une application diagonale correspondant à la structure
+multiplicative de $P$ ; si $\mathfrak m$ est l'idéal maximal de $O$, le dual
+de $\mathfrak m/\mathfrak m^2$ est canoniquement isomorphe à
+$H^1(V,\mathcal O_V)$ (cf. le paragraphe 3 ci-dessous). Ce n'est que lorsque le
+groupe de Picard est un groupe algébrique au sens classique, i.e. simple sur le
+corps de base $k$, que la dimension de $H^1(V,\mathcal O_V)$ (toujours égale à
+celle de $\mathfrak m/\mathfrak m^2$) est égale à celle du groupe de Picard.
+
+\subsection*{2. Schémas $\underline{\operatorname{Hom}}_S(X,Y)$,
+$\Pi_{X/S}Z$, $\underline{\operatorname{Aut}}_S(X)$, etc.}
+\addcontentsline{toc}{subsection}{2. Schémas Hom, Pi et Aut}
+
+Soient $X,Y$ deux pré-schémas sur $S$ ; pour tout pré-schéma $T$ sur $S$,
+
+\src{381}
+soient $X_T=X\times_ST$, $Y_T=Y\times_ST$, et considérons l'ensemble
+\[
+  F(T)=\operatorname{Hom}_T(X_T,Y_T)
+      =\operatorname{Hom}_S(X_T,Y)
+      =\operatorname{Hom}_S(X\times_ST,Y)
+\]
+comme un foncteur contravariant en $T$. S'il est représentable, on dénote par
+$\underline{\operatorname{Hom}}_S(X,Y)$ le pré-schéma sur $S$ qui le
+représente, donc on a un isomorphisme fonctoriel
+\[
+  \operatorname{Hom}_S
+  \bigl(T,\underline{\operatorname{Hom}}_S(X,Y)\bigr)
+  \xrightarrow{\sim}
+  \operatorname{Hom}_S(T\times_SX,Y).
+\]
+Il y a bien des variantes de ce problème universel, dont la solution s'y
+ramène : pré-schéma des $S$-automorphismes d'un $S$-pré-schéma $X$ (ce sera un
+pré-schéma en groupes), pré-schéma des $S$-homomorphismes d'un $S$-pré-schéma
+en groupes dans un autre (ce sera un pré-schéma en groupes commutatifs si le
+deuxième schéma en groupes est commutatif), etc. On peut aussi généraliser la
+définition de $\underline{\operatorname{Hom}}_S(X,Y)$ en considérant un
+pré-schéma $Z$ sur le pré-schéma $X$ sur $S$, et le foncteur
+\[
+  F(T)=\operatorname{Hom}_{X_T}(X_T,Z_T)
+\]
+(ensemble des « sections » de $Z_T$ sur $X_T$) ; si ce foncteur est
+représentable, le $S$-pré-schéma qui le représente sera noté $\Pi_{X/S}Z$, on
+aura donc par définition un isomorphisme fonctoriel
+\[
+  \operatorname{Hom}_S(T,\Pi_{X/S}Z)
+  =\operatorname{Hom}_{X_T}(X_T,Z_T).
+\]
+Faisant $Z=Y\times_SX$, on retrouve
+$\underline{\operatorname{Hom}}_S(X,Y)$. De ces définitions résulte pour les
+nouveaux pré-schémas ainsi introduits un formulaire aussi trivial qu'utile,
+que nous ne donnerons pas ici (vu qu'il vaut dans toute catégorie où les
+produits et produits fibrés existent). Plus sérieuse est la question de
+l'existence des schémas du type $\underline{\operatorname{Hom}}_S(X,Y)$. On
+constate d'abord que, pour $X$ fixé,
+$\underline{\operatorname{Hom}}_S(X,Y)$ ne peut exister pour tout $Y$ sur $S$
+(ou $\Pi_{X/S}Z$ pour tout $Z$ sur $X$) que si $X$ est plat sur $S$. De plus,
+on se convainc qu'il n'est raisonnable de s'attendre à l'existence d'une
+solution, pour des $Y$ assez généraux, que si $X$ est de plus propre sur $S$.
+Il semble par ailleurs que ces conditions soient suffisantes pour l'existence
+de $\underline{\operatorname{Hom}}_S(X,Y)$ et $\Pi_{X/S}Z$, à condition, le
+cas échéant, de faire une hypothèse genre « quasi projective » sur $Y/S$, resp.
+sur $Z/X$ ; c'est ce qu'on peut vérifier en tous cas dans des cas assez
+nombreux (par exemple, lorsque $Y$ est affine sur $S$ ; ou, par constructions
+directes élémentaires, lorsque $X$ est fini sur $S$). Voici ce que donnent les
+théorèmes 1 et 2 :
+
+\src{382}
+\result{PROPOSITION}{2.1} Soient $\Lambda$ un anneau noethérien, $X$ et $Y$
+deux pré-schémas quelconques sur $\Lambda$, considérons le foncteur
+\[
+  F(A)=\operatorname{Hom}_A(X_A,Y_A)
+\]
+sur la catégorie $\mathcal C_0$ des $\Lambda$-algèbres artiniennes. Si $X$ est
+plat sur $\Lambda$, ce foncteur est pro-représentable.
+
+De plus, on vérifie que pour tout $A\in\mathcal C_0$ et $\xi\in F(A)$, on a un
+isomorphisme canonique
+\[
+  F(I_A,\xi)=H^0\!\left(
+    X_A,
+    \underline{\operatorname{Hom}}_{\mathcal O_{X_A}}
+    \bigl(\xi^*(\Omega^1_{Y_A/A}),\mathcal O_{X_A}\bigr)
+  \right),
+\]
+où $\Omega^1_{Y_A/A}$ est le faisceau des $1$-différentielles de Kähler de
+$Y_A$ par rapport à $A$. Prenant pour $A$ un corps, on trouve, utilisant
+A.5.1 et le théorème de finitude de [2], le corollaire suivant :
+
+\result{COROLLAIRE}{} Supposons $X$ plat et propre sur $S$, $Y$ localement de
+type fini sur $S$. Alors $F$ est pro-représentable et les composants locaux de
+la $\Lambda$-algèbre topologique correspondante sont des anneaux noethériens.
+
+\result{REMARQUES}{} Les problèmes envisagés dans ce numéro, et de nombreux
+autres, étaient étudiés communément, dans le cadre de la géométrie algébrique
+classique, à l'aide des « coordonnées de Chow » des cycles dans l'espace
+projectif, permettant de considérer ces cycles comme des points de variétés
+projectives convenables. Ce procédé, et de façon générale l'utilisation des
+coordonnées de Chow, semble irrémédiablement insuffisant dans le point de vue
+des schémas, car il détruit les éléments nilpotents dans les variétés de
+paramètres, et en particulier ne se prête pas à une étude satisfaisante des
+variations infinitésimales de cycles (sans compter sa nature non intrinsèque,
+liée à l'espace projectif). Le langage des coordonnées de Chow était
+malheureusement le seul utilisé par de nombreux géomètres algébristes pour
+l'étude des familles de variétés ou des familles de cycles, ce qui semble
+avoir été un obstacle sérieux à la clarification de ces notions, malgré son
+intérêt technique certain (probablement provisoire). Si on veut obtenir
+l'analogue des variétés de Chow en théorie des schémas, on est conduit au
+problème universel suivant : soit $X$ un pré-schéma sur $S$, pour tout
+pré-schéma $T$ sur $S$, on considère l'ensemble $F(T)$ des sous-pré-schémas
+fermés de $X_T=X\times_ST$ qui sont plats sur $T$. On essaie de représenter ce
+foncteur en $T$ à l'aide d'un pré-schéma sur $S$. Plus généralement, on peut se
+donner un faisceau quasi cohérent $G$ sur $X$, et prendre pour $F(T)$
+l'ensemble des faisceaux
+
+\src{383}
+quotients de $G_T$ qui sont plats sur $T$. Il semble qu'il existe une solution
+du problème, avec un schéma $C$ localement de type fini sur $S$, lorsque $X$
+est propre sur $S$ localement noethérien et lorsque $G$ est de plus cohérent.
+En tous cas, supposant seulement $S$ localement noethérien, la restriction de
+$F$ aux « $S$-algèbres artiniennes » est pro-représentable, et si de plus $X$
+est propre sur $S$ et $G$ cohérent, les composants locaux de l'anneau
+topologique $O$ correspondant sont noethériens. Bien entendu, même une fois
+prouvée l'existence du « schéma de Chow » de $X$ sur $S$, il restera à en
+trouver une décomposition en ouverts disjoints $C_i$ (correspondants à la
+fixation d'invariants continus tels que degré et dimension des cycles qu'on
+fait varier), qui soient de type fini (et non seulement localement de type
+fini) sur $S$, à préciser les relations de ce schéma avec les classiques
+variétés de Chow et à préciser quand un $C_i$ est même projectif ou du moins
+quasi projectif sur $S$.\footnote{L'erratum de 1962 précise que le cas
+projectif est entièrement résolu par les schémas de Hilbert (TDTE IV), tandis
+que des exemples de Nagata et Hironaka montrent que, sans hypothèse
+projective, ces foncteurs peuvent ne pas être représentables, même pour les
+sous-variétés de dimension zéro d'une variété complète non singulière de
+dimension trois ; ce phénomène est lié à la possible inexistence du carré
+symétrique.}
+
+\subsection*{3. Schémas de Picard}
+\addcontentsline{toc}{subsection}{3. Schémas de Picard}
+
+Soit $f:X\longrightarrow S$ un $S$-pré-schéma,\footnote{Pour une étude plus
+complète, l'erratum de 1962 renvoie à TDTE V.} considérons le faisceau
+multiplicatif $\mathcal O_X^*$ des unités du faisceau structural de $X$, et le
+groupe
+\[
+  P(X/S)=H^0\bigl(S,R^1f_*(\mathcal O_X^*)\bigr),
+\]
+appelé groupe de Picard relatif de $X/S$. Un élément de ce groupe est donc
+défini en se donnant un recouvrement ouvert $(U_i)$ de $S$, et un faisceau
+inversible $L_i$ sur chaque $f^{-1}(U_i)$, de telle façon que, pour tout couple
+$(i,j)$, $L_i|f^{-1}(U_i\cap U_j)$ soit isomorphe à
+$L_j|f^{-1}(U_i\cap U_j)$, du moins localement au-dessus de $U_i\cap U_j$
+(i.e. ces deux faisceaux sont « équivalents » au sens de [3], B, 4). Si $X/S$
+admet une section, alors $P(X/S)$ n'est autre que l'ensemble des classes de
+faisceaux inversibles sur $X/S$ à « équivalence » près (loco citato). Posons
+maintenant, pour tout $T$ sur $S$,
+\[
+  F(T)=P(X_T/T) ;
+\]
+on obtient un foncteur contravariant en $T$, qu'on pourra appeler le foncteur de
+Picard de $X/S$ ; si ce foncteur est représentable, le pré-schéma sur $S$ qui
+le représente sera appelé le pré-schéma de Picard de $X/S$ et noté
+$\underline P(X/S)$. On aura donc un isomorphisme de foncteurs
+\[
+  \operatorname{Hom}_S\bigl(T,\underline P(X/S)\bigr)
+  \xrightarrow{\sim}P(X_T/T).
+\]
+La formation de pré-schémas de Picard est compatible avec l'extension de la
+base, en particulier les pré-schémas de Picard des fibres de $X$ sur $S$ (qui
+sont des pré-schémas sur les corps résiduels $K(s)$ des $s\in S$) sont les
+fibres de $\underline P(X/S)$. Bien entendu, comme $P(X_T/T)=F(T)$ est un
+groupe commutatif, les pré-schémas de Picard sont des pré-schémas en groupes.
+Notons aussi que les jacobiennes généralisées de Rosenlicht ne sont autres que
+les composantes connexes de l'unité dans les schémas de Picard de courbes
+complètes pouvant avoir des singularités, ce qui devrait rendre évidentes la
+plupart de leurs propriétés (une fois démontrée l'existence).
+
+\result{REMARQUE}{} La définition adoptée ici n'est raisonnable que lorsque
+tout point de $S$\footnote{Le texte imprimé porte « $Y$ » ; aucune base $Y$
+n'est définie ici, et la condition porte sur la base $S$.} admet un voisinage
+ouvert $U$ sur lequel $X$ admette une section. Dans le cas général, il faut
+modifier un peu la définition du foncteur de Picard, pour pouvoir obtenir
+encore un théorème d'existence.
+
+Ici, les conditions plausibles d'existence d'un pré-schéma de Picard sont les
+suivantes : $X$ est propre et plat sur $S$, $f_*(\mathcal O_X)=\mathcal O_S$,
+et $X$ admet localement une section sur $S$. Cette condition s'introduit de
+façon naturelle dans l'application de la technique de descente, pour éliminer
+les automorphismes d'un faisceau inversible $L$ sur $X$ en le munissant d'une
+section marquée au-dessus de la section $s$ ([3], B, 4). On trouve notamment :
+
+\src{384}
+\result{PROPOSITION}{3.1} Supposons $X$ plat sur
+$S=\operatorname{Spec}(\Lambda)$, $\Lambda$ noethérien, et que, pour tout $T$
+de type fini sur $S$, on ait
+\[
+  f_{T*}(\mathcal O_{X_T})=\mathcal O_T
+\]
+(si $f$ est propre et séparable,\footnote{L'erratum de 1962 prescrit
+explicitement l'hypothèse « $f$ propre et séparable ».} ou si $S$ est le
+spectre d'un corps, il résulte de Künneth que la dernière condition équivaut à
+$f_*(\mathcal O_X)=\mathcal O_S$). Alors le foncteur de Picard de $X/S$ sur la
+catégorie des $\Lambda$-algèbres artiniennes est pro-représentable.
+
+De plus, on aura ici
+\[
+  F(I_A,\xi)=H^1(X_A,\mathcal O_{X_A}),
+\]
+en particulier :
+
+\result{COROLLAIRE}{} Si $X$ est propre sur $S$, alors les composants locaux
+de la $\Lambda$-algèbre topologique $O$ correspondant au foncteur de Picard
+sont noethériens.
+
+\result{REMARQUES}{} On peut généraliser les définitions et résultats de ce
+numéro à la classification des fibrés principaux sur $X$, à groupe structural
+un schéma en groupes $G$ sur $S$ qui est affine et plat sur $S$, et
+commutatif. Dans le cas où $G$ ne serait pas commutatif, donc le fibré en
+groupes adjoint d'un fibré principal (dont les sections sont les
+automorphismes du fibré principal) n'est plus trivial, la proposition 3.1 ne
+reste plus valable telle quelle. On peut cependant modifier le problème
+universel de façon à obtenir encore une solution (du moins, pour l'instant, en
+géométrie formelle). La règle d'or à retenir, dans le contexte du présent
+\src{385}numéro et des suivants, et chaque fois qu'on cherche des « schémas de modules »
+pour des classes d'objets qui ne sont définis qu'à un isomorphisme près, reste
+toujours la suivante : éliminer les automorphismes éventuels des objets qu'on
+veut classifier, par l'introduction, si besoin est, de structures auxiliaires
+(points ou éléments de sections marquées, fixation de formes différentielles,
+etc.), qu'on prendra assez anodines pour ne pas modifier de façon substantielle
+le problème initial.
+
+\subsection*{4. Modules formels d'une variété}
+\addcontentsline{toc}{subsection}{4. Modules formels d'une variété}
+
+Soit $\Lambda$ un anneau local noethérien de corps résiduel $k$ (le plus
+souvent, $\Lambda$ sera égal à $k$, ou à un $p$-anneau de Cohen), $X_0$ un
+pré-schéma sur $k$. Pour toute $\Lambda$-algèbre artinienne locale $A$, on
+considère l'ensemble $F(A)$ des classes, à un isomorphisme près, de
+$A$-pré-schémas $X$ plats sur $A$, munis d'un isomorphisme
+\[
+  (*)\qquad
+  X\otimes_A\kappa(A)\xleftarrow{\sim}
+  X_0\otimes_k\kappa(A),
+\]
+où $\kappa(A)$ est le corps résiduel de $A$ ; bien entendu, les isomorphismes
+entre tels $A$-pré-schémas plats doivent respecter l'isomorphisme précédent
+donné dans la structure. Si $A$ est une $\Lambda$-algèbre artinienne non
+nécessairement locale, de composantes locales $A_i$, on prend pour $F(A)$ le
+produit des $F(A_i)$. Ainsi $F$ devient un foncteur multiplicatif en $A$, qu'on
+pourra appeler le foncteur des modules pour $X_0$ (et $\Lambda$). Si ce
+foncteur est représentable, il lui correspond une $\Lambda$-algèbre
+topologique $O$ locale, de corps résiduel $k$, et le spectre formel de $O$ sera
+appelé schéma formel des modules pour $X_0$ (et $\Lambda$), cf. [2] pour
+quelques détails sur cette notion.
+
+Ici, pour appliquer la technique de descente, les automorphismes « finis » de
+$X_0$ sont inoffensifs, car ils sont sans influence sur l'existence
+d'automorphismes (au sens précisé plus haut) des $A$-pré-schémas $X$ ; la
+condition nécessaire et suffisante, lorsque $A$ n'est pas réduit à un corps,
+pour que $X$ n'ait pas de $A$-automorphisme non trivial, est qu'on ait
+\[
+  H^0(X_0,\Theta_{X_0/k})=0,
+\]
+où $\Theta_{X_0/k}$ désigne le faisceau des $k$-dérivations (= faisceau
+tangent) de $X_0$. On trouve d'ailleurs facilement (du moins si $X_0$ est
+simple sur $k$)
+\[
+  F(I_A,\xi)=H^1(X_A,\Theta_{X_A/A}).
+\]
+On en conclut alors, comme d'habitude :
+
+\src{386}
+\result{PROPOSITION}{4.1} Supposons que
+$H^0(X_0,\Theta_{X_0/k})=0$. Alors le schéma formel des modules pour $X_0$
+existe. Si de plus $X_0$ est propre sur $k$, le schéma formel des modules est
+noethérien.
+
+\result{REMARQUES}{} 1\textsuperscript{o} Lorsque $X_0$ n'est pas supposé
+simple sur $k$, $F(I_A,\xi)$ s'identifie à un sous-$A$-module de
+\[
+  \operatorname{Ext}^1_{\mathcal O_{P_A}}
+  \bigl(P_A;\mathcal I_{X_A},\mathcal O_{X_A}\bigr),
+\]
+où on pose $P_A=X_A\times_\Lambda X_A$, où $\mathcal O_{X_A}$ est regardé
+comme un faisceau cohérent sur $P_A$ grâce au morphisme diagonal
+$X_A\longrightarrow P_A$, et où $\mathcal I_{X_A}$ désigne le faisceau
+cohérent d'idéaux sur $P_A$ défini par le morphisme diagonal. De façon précise,
+une globalisation facile de la théorie de Hochschild montre que le
+$\operatorname{Ext}^1$ ci-dessus s'identifie à l'ensemble des classes, à un
+isomorphisme près, de faisceaux de $I_A$-algèbres plates $\mathcal O$ sur
+$X_A$, munies d'un isomorphisme d'augmentation
+\[
+  \mathcal O\otimes_{I_A}A\longrightarrow\mathcal O_{X_A}
+\]
+(on rappelle que l'on pose $I_A=A[t]/(t^2)$). Le sous-module $F(I_A,\xi)$ est
+celui qui correspond aux faisceaux d'algèbres commutatives. Les hypothèses de
+simplicité ne sont donc pas essentielles en théorie des modules, comme [2] le
+laissait entendre.
+
+2\textsuperscript{o} Rappelons (loco citato) qu'en particulier toute courbe
+algébrique $X_0$ simple et propre sur $k$ admet un schéma formel des modules,
+simple sur $\Lambda$, de dimension relative $3g-3$ si le genre $g$ est
+$\geq2$, $g$ si $g=0$ ou $1$. Ces deux derniers cas ne rentrent plus
+directement dans la proposition 4.1. On pourrait cependant s'y ramener, dans
+le cas des courbes elliptiques ($g=1$), grâce aux considérations qui vont
+suivre.
+
+On peut, bien entendu, varier ad libitum la proposition 4.1 en considérant des
+systèmes de schémas sur $k$, munis de structures diverses. Supposons, par
+exemple, que $X_0$ soit un schéma abélien sur $k$, à point origine marqué
+(i.e. $X_0$ est considéré comme un schéma en groupes sur $k$), et soit $F(A)$
+l'ensemble des classes, à un isomorphisme près, de schémas abéliens sur $A$
+(i.e. de schémas en groupes propres et simples sur $A$) munis d'un
+isomorphisme de schémas abéliens $(*)$. On vérifie que l'imposition d'une
+structure multiplicative (et même seulement d'une « section unité ») élimine
+les automorphismes infinitésimaux, et qu'il existe par suite un schéma formel
+de modules, correspondant à un anneau local complet noethérien $O$. On peut
+d'ailleurs montrer que, si $X$ est un schéma propre et simple à fibres
+« absolument connexes » au-dessus d'un pré-schéma localement noethérien $S$,
+toute structure multiplicative sur $X$ admettant une section unité est
+nécessairement associative et commutative (pourvu du moins qu'elle le soit sur
+une fibre et que $S$ soit connexe) et est de plus uniquement déterminée par la
+connaissance
+
+\src{387}
+de la section unité. De plus, supposant que $S$ est le spectre d'un anneau
+local artinien $A$ de corps résiduel $k$, $X$ propre sur $A$ et muni d'une
+section $s$, et enfin $X\otimes_Ak$ muni d'une structure de schéma abélien sur
+$k$, admettant pour élément neutre le point de $X\otimes_Ak$ correspondant à
+$s$, un calcul facile d'obstructions joint à un raisonnement dû à Serre permet
+de prouver qu'il existe effectivement sur $X$ une structure multiplicative
+admettant la section $s$ comme section unité. (À partir de là, utilisant le
+« théorème d'existence » de [2] pour passer au cas où $A$ est noethérien local
+complet, puis la technique de descente de [3] pour le cas général, on peut
+prouver l'énoncé analogue pour tout $S$ localement noethérien connexe.) Cela
+prouve que le foncteur $F(A)$ considéré ici est isomorphe au foncteur analogue
+défini au début de ce numéro en faisant abstraction de la structure
+multiplicative sur $X_0$. Il s'ensuit en particulier que, si $\mathfrak m$ est
+l'idéal maximal de $O$, $\mathfrak m/\mathfrak m^2$ est canoniquement
+isomorphe au dual de $H^1(X_0,\Theta_{X_0/k})$ et est donc de dimension $n^2$,
+où $n=\dim X_0$. Il serait fort intéressant de déterminer si $O$ est bien
+simple sur $\Lambda$, i.e. isomorphe à une algèbre de séries formelles à $n^2$
+indéterminées sur $\Lambda$. Le paragraphe 1, proposition 5.2, permet de donner
+une formulation équivalente de ce problème comme un problème d'existence de
+schémas abéliens se réduisant suivant un schéma abélien donné. On voit en tous
+cas, par voie transcendante, que la réponse est affirmative si $k$ est de
+caractéristique zéro. En caractéristique $p\ne0$, il suffit évidemment de se
+borner au cas où $\Lambda$ est l'anneau des vecteurs de Witt construit sur un
+corps algébriquement clos $k$. Ce serait peut-être le moment pour le « foncteur
+de Greenberg » de faire ses preuves\ldots\footnote{L'erratum de 1962 annonce
+que le schéma formel des modules d'une variété abélienne sur un corps est
+simple sur l'anneau de Witt : tout schéma abélien sur un quotient artinien
+local se relève à l'anneau dont il est quotient. La démonstration utilise la
+variance de la classe d'obstruction au relèvement introduite dans l'exposé 182,
+p. 12. Il rappelle aussi les constructions de Mumford pour les courbes de
+genre $g$ et les schémas abéliens polarisés (cf. SHMT).}
+
+\subsection*{5. Extension des revêtements}
+\addcontentsline{toc}{subsection}{5. Extension des revêtements}
+
+Soient $\mathfrak X$ un pré-schéma formel noethérien [2], $U$ une partie
+ouverte de $\mathfrak X$, définie localement par la « non-annulation » d'une
+section de $\mathcal O_{\mathfrak X}$ qui est non-diviseur de zéro non
+seulement sur $\mathfrak X$, mais sur tout
+$X_n$,\footnote{Précision imposée par l'erratum de 1962.} donc assez gros pour
+que toute section de $\mathcal O_{\mathfrak X}$ sur un ouvert $V$, nulle sur
+$U\cap V$, soit nulle. Soit $\mathcal J$ un « idéal de définition » pour
+$\mathfrak X$, et soit
+\[
+  X_n=(\mathfrak X,\mathcal O_{\mathfrak X}/\mathcal J^{n+1}),
+\]
+qui est donc un pré-schéma noethérien ordinaire. Si alors
+$\mathfrak X',\mathfrak X''$ sont deux revêtements plats de $\mathfrak X$
+(i.e. deux pré-schémas sur $\mathfrak X$ définis par des faisceaux d'algèbres
+qui sont cohérents et localement libres comme faisceaux de modules), non
+ramifiés sur $U$, l'application évidente
+\[
+  \operatorname{Hom}_{\mathfrak X}(\mathfrak X',\mathfrak X'')
+  \longrightarrow
+  \operatorname{Hom}_{X_0}(X'_0,X''_0)
+\]
+est injective ; en particulier, un automorphisme de $\mathfrak X'$ qui induit
+l'identité sur $X'_0$ est l'identité. Cela permet d'appliquer à la situation la
+technique de descente. Partons, en particulier, d'un revêtement plat $X'_0$ de
+$X_0$, non ramifié
+
+\src{388}
+au-dessus de $U_0$, soit $G(\mathfrak X)$ l'ensemble des classes, à un
+isomorphisme près (induisant l'identité sur $X'_0$), de revêtements plats
+$\mathfrak X'$ de $\mathfrak X$ qui induisent $X'_0$ sur $X_0$ (et sont donc
+nécessairement non ramifiés sur $U$). On définit de même $G(V)$ pour toute
+partie ouverte $V$ de $\mathfrak X$, et plus généralement $G(\mathfrak Y)$
+pour tout pré-schéma formel $\mathfrak Y$ au-dessus de $\mathfrak X$. Cela dit,
+les résultats de [2] et [3] impliquent d'abord les résultats suivants :
+
+\noindent a. Lorsque $V$ est un ouvert variable de $\mathfrak X$, les $G(V)$
+forment un faisceau sur $\mathfrak X$, soit $G_{\mathfrak X}=G$. La
+restriction de ce faisceau à $U$ est le faisceau constant dont les fibres sont
+réduites à un élément.
+
+De façon plus générale, la détermination des fibres de $G_{\mathfrak X}$ est
+une question d'anneaux locaux complets, de façon précise :
+
+\noindent b. Pour tout $x\in\mathfrak X$, on a
+\[
+  G_x=G\bigl(\operatorname{Spec}(\mathcal O_{\mathfrak X,x})\bigr)
+  \subset
+  G\bigl(\operatorname{Spec}(\widehat{\mathcal O}_{\mathfrak X,x})\bigr),
+\]
+(= classes à un isomorphisme près d'algèbres finies et libres $B$ sur
+$\widehat{\mathcal O}_{\mathfrak X,x}$ munies d'un isomorphisme de
+$B\otimes_{\widehat{\mathcal O}_{\mathfrak X,x}}\mathcal O_{X_0,x}$ avec
+$\widehat{\mathcal O}'_{0x}$, où $\mathcal O'_0$ est le faisceau d'algèbres sur
+$X_0$ qui définit $X'_0$).\footnote{La formule imprimée identifie directement
+$G_x$ au terme complété et omet le chapeau sur $\mathcal O'_{0x}$. L'inclusion
+et le complété sont ceux prescrits par l'erratum de 1962.}
+
+\noindent c. On a un isomorphisme canonique
+\[
+  G_{\mathfrak X}=\varprojlim_nG_{X_n} ;
+\]
+en d'autres termes, pour tout ouvert $V$ de $\mathfrak X$, on a
+\[
+  G(V)=\varprojlim_nG(V_n).
+\]
+
+\noindent d. Supposons que $\mathfrak X$ se déduise d'un schéma ordinaire
+propre $X$ sur un anneau local noethérien complet $\Lambda$ ayant un idéal de
+définition $\mathfrak m$, en prenant le complété $\mathcal J$-adique de
+$\mathcal O_X$, où $\mathcal J=\mathfrak m\mathcal O_X$. Alors
+$G(\mathfrak X)$ est canoniquement isomorphe à l'ensemble des classes de
+revêtements plats du schéma ordinaire $X$ qui « se réduisent suivant $X'_0$ ».
+
+De façon imagée, on peut dire que (a) et (b) établissent les relations
+fondamentales entre l'aspect local et l'aspect global du problème, (c) donne
+les relations entre l'aspect « fini » et l'aspect « infinitésimal », enfin (d)
+rappelle (sous les conditions précisées) l'identité entre l'aspect « formel »
+et l'aspect « algébrique ».
+
+Supposons maintenant que $\mathfrak X$ soit défini sur un anneau local
+noethérien complet $\Lambda$, avec
+$\mathcal J=\mathfrak m\mathcal O_{\mathfrak X}$ (donc $X_0$ est un
+pré-schéma sur $\Lambda/\mathfrak m$). Pour toute algèbre $A$ finie sur
+$\Lambda$, posons
+\[
+  F(A)=G(\mathfrak X\times_\Lambda A),
+\]
+où le marquage est pris après changement de base à l'algèbre réduite $A_{\mathrm{red}}$, et non littéralement à $A/\mathfrak mA$. C'est un foncteur covariant en $A$, à valeurs dans la catégorie des ensembles,
+et d'après (c) ce foncteur est complètement connu si on le connaît pour $A$
+artinien ; et il revient au même de dire que ce foncteur est pro-représentable,
+i.e. de la forme
+\[
+  F(A)=\operatorname{Hom}_{\Lambda\text{-algèbres top.}}(O,A),
+\]
+
+\src{389}
+où $O$ est une $\Lambda$-algèbre topologique du type envisagé dans A,
+paragraphe 5, ou de dire qu'il en est de même quand on se restreint aux $A$
+artiniens. La conjonction des théorèmes 1 et 2 implique alors effectivement :
+
+\result{PROPOSITION}{5.1} Pourvu que toute famille artinienne classifiée par le foncteur soit plate sur son algèbre de coefficients et que l'ouvert choisi reste schématiquement dense après les changements de base pertinents, le foncteur précédent est pro-représentable.
+
+Bien entendu, d'après (a), si $U=\mathfrak X$, $G(\mathfrak Y)$ est réduit à
+un seul élément pour tout $\mathfrak Y$ sur $\mathfrak X$, et le foncteur $F$
+est alors sans grand intérêt (on aura $O=\Lambda$). Il semble que, dans
+pratiquement tout autre cas, l'anneau local topologique $O$ n'est pas
+noethérien. Son existence met néanmoins en évidence, de façon frappante, la
+nature « continue » de l'ensemble $G(\mathfrak X)$ des solutions
+(correspondant intuitivement au fait qu'il y a un choix « continu » dans la
+façon dont la ramification se propage quand on fait une extension de $X'_0$).
+On comparera ce résultat avec le point de vue de J.-P. Serre [4] en théorie du
+corps de classes local, mettant lui aussi en évidence le caractère continu du
+groupe de Galois topologique de l'extension abélienne maximale d'un corps local
+« géométrique », le groupe dual (au sens de Pontrjagin) y apparaissant comme
+une limite inductive de groupes algébriques (ou du moins quasi algébriques) ;
+ici aussi, la classification des extensions est donnée par des « variétés » de
+dimension infinie. D'ailleurs, on peut prendre dans ce qui précède pour
+$\mathfrak X$ le spectre formel d'un anneau local complet (dont $\Lambda$ sera,
+par exemple, un sous-anneau de Cohen), et on peut espérer que les résultats de
+ce numéro puissent être utilisés dans l'étude des extensions d'un anneau local
+complet de dimension $>1$. Aussi bien dans le cas local que global, ils
+permettront peut-être de formuler des relations précises entre les phénomènes
+de ramification supérieure et des phénomènes en caractéristique zéro
+(abordables par voie transcendante). En tous cas, c'est l'analyse préliminaire
+à la proposition 5.1 qui permet d'étendre au cas « tamely ramified » les
+méthodes exposées dans [2] pour l'étude du groupe fondamental, et de résoudre
+par voie transcendante le « problème des trois points ».
+
+Pour finir, signalons que la situation se simplifie lorsque $X_0$ est de dimension 1 : alors, en vertu de (a), complété par le recollement formel sur les schémas locaux complétés épointés,
+\[
+  G(\mathfrak X)\simeq
+  \prod_iG\bigl(\operatorname{Spec}(\widehat{\mathcal O}_{\mathfrak X,x_i})\bigr),
+\]
+où les $x_i$ sont les points de $X_0-U$ : on peut se donner arbitrairement les
+extensions « locales » aux points de ramification. La normalité de $X_0$ ne suffit pas à rendre simple sur $\operatorname{Spec}(\Lambda)$ le schéma formel des modules de 5.1 ; la dernière assertion imprimée est fausse en général.
+
+\src{390}
+\begin{center}
+  \textbf{BIBLIOGRAPHIE}
+\end{center}
+
+\begin{description}
+  \item[{[1]}] Grothendieck (Alexander). --- \emph{Sur quelques points
+    d'algèbre homologique}, Tohoku Math. J., t. 9, 1957, p. 119--221.
+  \item[{[2]}] Grothendieck (Alexander). --- \emph{Géométrie formelle et
+    géométrie algébrique}, Séminaire Bourbaki, t. 11, 1958/59, fasc. 3,
+    n\textsuperscript{o} 182.
+  \item[{[3]}] Grothendieck (Alexander). --- \emph{Technique de descente et
+    théorèmes d'existence en géométrie algébrique, I : Généralités, Descente
+    par morphismes fidèlement plats}, Séminaire Bourbaki, t. 12, 1959/60,
+    fasc. 1, n\textsuperscript{o} 190.
+  \item[{[4]}] Serre (Jean-Pierre). --- \emph{Corps locaux et isogénies},
+    Séminaire Bourbaki, t. 11, 1958/59, fasc. 3, n\textsuperscript{o} 185.
+\end{description}
+
+\par\smallskip
+\begingroup\footnotesize
+\endgroup
