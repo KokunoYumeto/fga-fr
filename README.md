@@ -10,7 +10,7 @@ La transcription moderne, les corrections, l’édition et la composition sont p
 
 ## Rights and availability
 
-Les droits sur les œuvres originales et sur toute contribution protégée à ces traductions et transcriptions dérivées restent ceux de leurs titulaires respectifs. Ce projet ne place pas ces œuvres ou contributions dans le domaine public et n'accorde aucune licence sur elles. Les mentions de droits de tiers et les autorisations déjà accordées restent applicables.
+Les droits sur les œuvres originales et sur toute contribution protégée à ces traductions et transcriptions dérivées restent ceux de leurs titulaires respectifs. Dans la mesure où l'éditeur détient des droits sur la traduction, la transcription, les corrections et la composition produites par IA, il les dédie au domaine public sous CC0 1.0 Universel (https://creativecommons.org/publicdomain/zero/1.0/deed.fr) ; cela n'affecte pas les droits sur les œuvres originales et n'accorde aucune autorisation de les utiliser. Les mentions de droits de tiers et les autorisations déjà accordées restent applicables.
 
 Ces éditions sont mises à disposition gratuitement, à des fins non commerciales et exclusivement pédagogiques, dans la présomption que les titulaires de droits ne s'opposeraient pas à la libre disponibilité de ces traductions et transcriptions aux côtés des originaux français sur [NUMDAM](https://www.numdam.org/journals/PMIHES/). Cette présomption ne signifie pas qu'une autorisation a été obtenue ; le libre accès aux originaux n'autorise pas, à lui seul, leur traduction, leur adaptation ou leur republication.
 
