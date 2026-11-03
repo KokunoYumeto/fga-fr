@@ -1,3 +1,3 @@
-# Rights and provenance
+# Droits et provenance
 
-No new blanket licence is asserted for the underlying FGA text. Authority witnesses are identified in the included provenance records and are not redistributed as scans. This independent maintained edition is unofficial and not endorsed. Historical provenance: https://doi.org/10.5281/zenodo.22083916
+Aucune licence nouvelle n’est accordée sur le texte original de FGA. Les exemplaires de référence sont identifiés dans les fichiers de provenance et ne sont pas redistribués sous forme de numérisations. Cette édition est indépendante ; elle n’est approuvée ni par l’auteur ni par ses ayants droit.

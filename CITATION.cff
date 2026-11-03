@@ -1,12 +1,11 @@
 cff-version: 1.2.0
 title: Fondements de la géométrie algébrique (FGA) — Édition française maintenue
-message: Please cite the language-specific Zenodo record.
+message: Citer l’œuvre originale et cette édition avec sa version.
 authors: &id001
 - family-names: Grothendieck
   given-names: Alexandre
 version: 2026-08-30-r1
 date-released: '2026-08-30'
-doi: 10.5281/zenodo.22167987
 url: https://github.com/KokunoYumeto/fga-fr
 references:
 - type: software
@@ -23,5 +22,4 @@ preferred-citation:
   authors: *id001
   version: 2026-08-30-r1
   date-released: '2026-08-30'
-  doi: 10.5281/zenodo.22167987
   url: https://github.com/KokunoYumeto/fga-fr

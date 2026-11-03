@@ -1,4 +1,4 @@
-# Rights and availability
+# Droits et disponibilité
 
 Les droits sur les œuvres originales et sur toute contribution protégée à ces traductions et transcriptions dérivées restent ceux de leurs titulaires respectifs. Tout ce sur quoi l'éditeur détient des droits dans ces éditions est dédié au domaine public sous CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/deed.fr). Les mentions de droits de tiers et les autorisations déjà accordées restent applicables.
 
