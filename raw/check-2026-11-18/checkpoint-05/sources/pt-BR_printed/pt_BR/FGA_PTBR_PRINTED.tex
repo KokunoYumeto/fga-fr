@@ -1,0 +1,64 @@
+\documentclass[11pt,twoside,openany]{book}
+\input{../tex/base.tex}
+% As páginas impressas reiniciam em diferentes exposições e erratas.
+% A chave apenas distingue os destinos invisíveis; não altera os textos.
+\newcommand{\FgaUnitKey}{frontmatter}
+\renewcommand{\src}[1]{%
+  \phantomsection\hypertarget{src:\FgaUnitKey:#1}{}%
+  \marginpar{\raggedleft\footnotesize\sffamily #1}%
+}
+\setlength{\emergencystretch}{3em}
+\renewcommand{\boldsymbol}[1]{\symbfit{#1}}
+\hypersetup{pdftitle={Fundamentos da geometria algébrica -- Tradução com leituras do impresso},pdfauthor={Alexandre Grothendieck},pdfsubject={Oito exposições, suas erratas e os comentários de 1962}}
+\begin{document}
+\frontmatter
+\begin{titlepage}
+\centering
+\vspace*{0.13\textheight}
+{\Huge\bfseries Fundamentos da\par geometria algébrica\par}
+\vspace{1.5\baselineskip}
+{\Large Alexandre Grothendieck\par}
+\vfill
+{\Large Tradução com leituras do impresso\par}
+\vspace{\baselineskip}
+{\large Oito exposições, suas erratas e os comentários de 1962\par}
+\vspace{1.5\baselineskip}
+{\normalsize Edição de 24 de outubro de 2026\par}
+\end{titlepage}
+\chapter*{Nota sobre esta edição}
+\addcontentsline{toc}{chapter}{Nota sobre esta edição}
+Este volume contém as exposições 149, 182, 190, 195, 212, 221, 232 e 236, suas erratas e os comentários de 1962. O conjunto não constitui uma edição diplomática estrita: algumas leituras herdadas diferem da reprodução digital do NUMDAM. A edição corrigida é apresentada separadamente.
+
+Os números marginais remetem às páginas das exposições originais.
+
+A obra original, Fondements de la géométrie algébrique, é de Alexandre Grothendieck. A tradução humana para o inglês de \href{https://github.com/thosgood/fga/tree/9976dd5f8e2ddcb388f0a07f3aa334f120d1019f}{Tim Hosgood} constitui uma fonte de referência desta edição. Seu projeto reconhece as correções de Steve Hnizdur e o apoio técnico de Jon Sterling. A versão 9976dd5f8e2ddcb388f0a07f3aa334f120d1019f identifica o texto inglês usado na comparação de procedência; não estabelece a versão histórica exata incorporada inicialmente. A tradução brasileira e as correções e composição posteriores foram produzidas por IA. A autoria da tradução inglesa permanece com seu tradutor; não se lhe atribui a tradução brasileira. Esta atribuição não constitui autorização nem endosso.
+
+A tradução para o português é produzida por IA. As correções, a edição e a composição também são produzidas por IA. O responsável pela publicação não traduziu o texto. A autoria e as atribuições das obras originais e das contribuições herdadas são preservadas; não são atribuídas à IA. As correções documentadas desta edição incluem OpenAI Codex, GPT-6 Astra, esforço Ultra.
+
+Os direitos sobre as obras originais e sobre as contribuições protegidas a estas traduções e transcrições derivadas permanecem com seus respectivos titulares. Tudo aquilo sobre o qual o editor detenha direitos nestas edições é dedicado ao domínio público sob CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/deed.pt-br). Os avisos de direitos de terceiros e as autorizações já concedidas continuam aplicáveis.
+
+Estas edições são disponibilizadas gratuitamente, para fins não comerciais e exclusivamente educativos, sob a presunção de que os respectivos titulares dos direitos não se oporiam à disponibilidade gratuita destas traduções e transcrições, ao lado dos originais franceses no \href{https://www.numdam.org/}{NUMDAM}. Essa presunção não significa que uma autorização tenha sido obtida; o acesso gratuito aos originais não autoriza, por si só, sua tradução, adaptação ou republicação.
+
+Se você detém direitos sobre algum material apresentado aqui e se opõe à sua disponibilidade, poderá \href{https://github.com/KokunoYumeto/ega-fga-sga-pt-br/issues}{abrir uma questão no GitHub}. O responsável pela publicação retirará o material afetado a pedido do titular dos direitos.
+
+
+\tableofcontents
+\mainmatter
+\def\FgaUnitKey{149}\input{diplomatic/149.tex}
+\def\FgaUnitKey{e149}\input{diplomatic/e149.tex}
+\def\FgaUnitKey{182}\input{diplomatic/182.tex}
+\def\FgaUnitKey{e182}\input{diplomatic/e182.tex}
+\def\FgaUnitKey{190}\input{diplomatic/190.tex}
+\def\FgaUnitKey{e190}\input{diplomatic/e190.tex}
+\def\FgaUnitKey{195}\input{diplomatic/195.tex}
+\def\FgaUnitKey{e195}\input{diplomatic/e195.tex}
+\def\FgaUnitKey{212}\input{diplomatic/212.tex}
+\def\FgaUnitKey{e212}\input{diplomatic/e212.tex}
+\def\FgaUnitKey{221}\input{diplomatic/221.tex}
+\def\FgaUnitKey{e221}\input{diplomatic/e221.tex}
+\def\FgaUnitKey{232}\input{diplomatic/232.tex}
+\def\FgaUnitKey{e232}\input{diplomatic/e232.tex}
+\def\FgaUnitKey{236}\input{diplomatic/236.tex}
+\def\FgaUnitKey{e236}\input{diplomatic/e236.tex}
+\def\FgaUnitKey{com}\input{diplomatic/com.tex}
+\end{document}

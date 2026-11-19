@@ -1,0 +1,1415 @@
+\unit{Exposé 149 — Duality Theorems for Coherent Algebraic Sheaves}
+\sid{149}
+\src{169}
+\seminaren{(May 1957)}
+\paperhead{DUALITY THEOREMS FOR COHERENT ALGEBRAIC SHEAVES}%
+  {by Alexandre GROTHENDIECK}
+
+The results that follow, inspired by Serre's \fquote{algebraic duality theorem},
+were found in the winter of 1955 and the winter of 1956. They are established
+very simply with the aid of fairly elementary results on the cohomology of
+projective spaces [3], and through intensive use of the homological algebra of
+Cartan--Eilenberg, in the form given in [2].
+
+\fsection{1}{The Ext's of sheaves of modules ({[2]}, Chapters 3 and 4)}
+
+Let $X$ be a topological space equipped with a sheaf $\Osh$ of rings with
+identity (not necessarily commutative). We consider the abelian category
+$\Ccat^{\Osh}$ of sheaves of $\Osh$-modules, also called $\Osh$-Modules. Every
+object of this category is known to admit an injective resolution, which makes
+it possible to define in it the $\operatorname{Ext}$ functors having the familiar
+formal properties. More precisely, to avoid confusion, we denote by
+$\operatorname{Hom}_{\Osh}(X;A,B)$, or simply $\operatorname{Hom}(X;A,B)$, the
+abelian group of $\Osh$-homomorphisms from $A$ to $B$, whereas
+$\Homsh_{\Osh}(A,B)$ will denote the sheaf of germs of homomorphisms from $A$ to
+$B$ ($A,B\in\Ccat^{\Osh}$). For fixed $A\in\Ccat^{\Osh}$, we define functors
+$h_A$ and $\hsh_A$, taking values respectively in the category $\Ccat$ of
+abelian groups and the category $\Ccat^{\Zsh}$ of sheaves of abelian groups on
+$X$, by the formulas
+\begin{equation}\tag{1.1}
+  h_A(B)=\operatorname{Hom}_{\Osh}(X;A,B),
+  \qquad
+  \hsh_A(B)=\Homsh_{\Osh}(A,B).
+\end{equation}
+
+The functors $h_A$ and $\hsh_A$ are covariant left-exact functors. We consider
+their right derived functors, denoted respectively by
+$\operatorname{Ext}_{\Osh}^{p}(X;A,B)$ and $\Extsh_{\Osh}^{p}(A,B)$. Thus, by
+definition,
+\begin{equation}\tag{1.2}
+\left\{
+\begin{aligned}
+\operatorname{Ext}_{\Osh}^{p}(X;A,B)
+  &= (R^{p}h_A)(B)
+   = H^{p}\bigl(\operatorname{Hom}_{\Osh}(X;A,C(B))\bigr),\\
+\Extsh_{\Osh}^{p}(A,B)
+  &= (R^{p}\hsh_A)(B)
+   = H^{p}\bigl(\Homsh_{\Osh}(A,C(B))\bigr),
+\end{aligned}
+\right.
+\end{equation}
+
+where the symbol $R^{p}$ denotes passage to right derived functors, and where
+$C(B)$ denotes an arbitrary injective resolution of $B$ in $\Ccat^{\Osh}$. Let
+\[
+  \Gamma:\Ccat^{\Zsh}\longrightarrow\Ccat
+\]
+denote the \fquote{sections} functor. Recall that its right derived functors are
+denoted by
+\[
+  B\longmapsto H^{p}(X,B).
+\]
+
+\src{170}
+\begin{equation}\tag{1.3}
+  H^{p}(X,B)=(R^{p}\Gamma)(B)=H^{p}\bigl(\Gamma(C(B))\bigr).
+\end{equation}
+Clearly $h_A=\Gamma\hsh_A$; on the other hand, one verifies that $\hsh_A$
+takes injective objects to $\Gamma$-acyclic objects. The familiar conclusion is
+the following.
+
+\result{PROPOSITION}{1} For every $\Osh$-Module $A$, there exists a
+cohomological spectral functor on $\Ccat^{\Osh}$ converging to the graded functor
+$\bigl(\operatorname{Ext}_{\Osh}^{*}(X;A,B)\bigr)$, whose initial term is
+\begin{equation}\tag{1.4}
+  E_{2}^{p,q}(A,B)=H^{p}\bigl(X,\Extsh_{\Osh}^{q}(A,B)\bigr).
+\end{equation}
+From it one obtains edge homomorphisms and a five-term exact sequence, which we
+shall not write down.
+
+\result{COROLLARY}{1} If $A$ is locally isomorphic to $\Osh^{n}$, then there are
+canonical isomorphisms
+\begin{equation}\tag{1.5}
+  \operatorname{Ext}_{\Osh}^{p}(X;A,B)
+  \overset{\sim}{\longleftarrow}
+  H^{p}\bigl(X,\Homsh_{\Osh}(A,B)\bigr)
+\end{equation}
+(given by edge homomorphisms of the spectral sequence). In particular, there is
+a canonical isomorphism
+\begin{equation}\tag{1.6}
+  \operatorname{Ext}_{\Osh}^{p}(X;\Osh,B)=H^{p}(X,B).
+\end{equation}
+
+To use these results, one must be able to describe the
+$\Extsh_{\Osh}^{p}(A,B)$. These functors are computed locally: if $U$ is an open
+subset of $X$, then
+\[
+  \Extsh_{\Osh}^{p}(A,B)|U
+  =\Extsh_{\Osh|U}^{p}(A|U,B|U),
+\]
+as follows from the fact that the restriction to $U$ of an injective
+$\Osh$-Module is an injective $(\Osh|U)$-Module. Furthermore, for fixed
+$x\in X$, there are functorial homomorphisms
+\begin{equation}\tag{1.7}
+  \Homsh_{\Osh}(A,B)_x
+  \longrightarrow
+  \operatorname{Hom}_{\Osh_x}(A_x,B_x),
+\end{equation}
+which extend uniquely to a homomorphism of cohomological functors in $B$:
+\begin{equation}\tag{1.8}
+  \Extsh_{\Osh}^{p}(A,B)_x
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_x}^{p}(A_x,B_x).
+\end{equation}
+
+\result{PROPOSITION}{2} If, in a neighborhood of $x$, $A$ is isomorphic to the
+cokernel of a homomorphism $\Osh^{m}\longrightarrow\Osh^{n}$, then (1.8) is an isomorphism in degree $p$ when $A$ admits locally a finite free partial resolution through degree $p+1$; it is an isomorphism for every $p$ when $A$ is pseudo-coherent. A single finite presentation alone gives only the degree-zero comparison.\footnote{The printed text reads “(1.7)”; the presence
+of $p$ and the preceding sentence require “(1.8).”} This holds in particular if
+$A$ is a coherent $\Osh$-Module [3].
+
+\src{171}
+\result{PROPOSITION}{3} Let $L_{*}=(L_i)$ be a left resolution of the
+$\Osh$-Module $A$ by $\Osh$-Modules, each locally isomorphic to some $\Osh^{n}$.
+Then $\Extsh_{\Osh}^{*}(A,B)$ identifies with
+$H^{*}\bigl(\Homsh_{\Osh}(L_{*},B)\bigr)$, and
+$\operatorname{Ext}_{\Osh}^{*}(X;A,B)$ identifies with the hypercohomology of
+$X$ with respect to the complex $\Homsh_{\Osh}(L_{*},B)$.
+
+The proof is standard: consider the bicomplex $\Homsh_{\Osh}(L_{*},C(B))$,
+where $C(B)$ is an injective resolution of $B$, and the natural homomorphisms
+from $\Homsh_{\Osh}(L_{*},B)$ and $\Homsh_{\Osh}(A,C(B))$ into this bicomplex.
+
+Finally, let us point out that the two $\operatorname{Ext}$ functors introduced
+in (1.2) are not only cohomological functors in $B$, but cohomological
+bifunctors, covariant in $B$ and contravariant in $A$.
+
+\fsection{2}{Composition law in Ext}
+
+The results of this section are due independently to CARTIER and YONEDA; see an
+exposé by CARTIER [1] for details. Let $\Ccat$ be an abelian category, and let
+$K$ and $L$ be two graded objects in $\Ccat$. We denote by
+$\operatorname{Hom}(K,L)$ the graded abelian group whose component of degree
+$n$ consists of the homogeneous homomorphisms of degree $n$ from $K$ to $L$
+(that is, systems $(u_i)$ of homomorphisms
+$K^{i}\longrightarrow L^{i+n}$).
+
+If $K$ and $L$ are complexes (with differential operators of degree $+1$, to
+fix ideas), we equip $\operatorname{Hom}(K,L)$ with the differential operator
+given by
+\begin{equation}\tag{2.1}
+  \delta(u)=du+(-1)^{n+1}ud,\qquad\text{where }n=\deg(u),
+\end{equation}
+making it a complex with differential of degree $+1$. The cycles of degree $n$
+are the operators of degree $n$ that anticommute with $d$ (as homogeneous
+operators).\footnote{The printed text reads “with $u$”; equation (2.1) requires
+“with $d$.”} We may therefore consider
+$H^{*}\bigl(\operatorname{Hom}(K,L)\bigr)$; it is an invariant of the homotopy
+types of $K$ and $L$, and may be denoted by $H^{*}(K,L)$.
+
+Given a third complex $M$, composition of homomorphisms defines a pairing
+\[
+  \operatorname{Hom}(K,L)\times\operatorname{Hom}(L,M)
+  \longrightarrow\operatorname{Hom}(K,M)
+\]
+compatible with the differentials, hence, after passing to cohomology, pairings
+\begin{equation}\tag{2.2}
+  H^{*}(K,L)\times H^{*}(L,M)\longrightarrow H^{*}(K,M),
+\end{equation}
+denoted $(u,v)\longmapsto vu$. These pairings satisfy the evident associativity
+property. In particular, $H^{*}(K,K)$ is an associative graded ring with
+identity, and $H^{*}(K,L)$ (respectively $H^{*}(L,K)$) is a graded right
+(respectively left) module over this ring, and so on. In degree $0$, (2.2)
+reduces to composition of morphisms of complexes. Finally, an exact sequence of
+complexes
+\[
+  0\longrightarrow K'\longrightarrow K\longrightarrow K''\longrightarrow 0,
+\]
+\src{172}
+such that $K'^{i}$ is a direct summand of $K^{i}$ for every $i$, gives rise to an
+exact sequence of complexes of groups $\operatorname{Hom}(K'',L)$, and so on,
+and hence to a connecting operator
+\[
+  H^{i}(K',L)\longrightarrow H^{i+1}(K'',L).
+\]
+The connecting operators associated with an exact sequence in $L$ are defined
+similarly. The pairings (2.2) are compatible, in the usual sense, with these
+connecting operators.
+
+Now suppose that $\Ccat$ is a category in which every object $A$ admits an
+injective resolution $C(A)$. One then finds, using one of the many variants of
+the bicomplex theorem, that
+\[
+  H^{*}\bigl(C(A),C(B)\bigr)
+  =H^{*}\bigl(\operatorname{Hom}(C(A),C(B))\bigr)
+\]
+is canonically isomorphic to
+\[
+  H^{*}\bigl(\operatorname{Hom}(A,C(B))\bigr)
+  =\operatorname{Ext}^{*}(A,B).
+\]
+The connecting operators considered above give the connecting homomorphisms for
+$\operatorname{Ext}$. Moreover, the pairings (2.2) here give associative
+pairings compatible with the connecting homomorphisms:
+\begin{equation}\tag{2.3}
+  \operatorname{Ext}^{*}(A,B)\times\operatorname{Ext}^{*}(B,C)
+  \longrightarrow\operatorname{Ext}^{*}(A,C).
+\end{equation}
+In particular, $\operatorname{Ext}^{*}(A,A)$ is an associative graded ring with
+identity, and so on. (One proves similarly that the $\operatorname{Ext}$
+functors operate on the derived functors of an arbitrary functor; we shall not
+use this fact here.)
+
+When the category in question is the category $\Ccat^{\Osh}$ of
+$\Osh$-Modules on $X$, one therefore obtains pairings
+\begin{equation}\tag{2.4}
+  \operatorname{Ext}_{\Osh}^{p}(X;A,B)
+  \times\operatorname{Ext}_{\Osh}^{q}(X;B,C)
+  \longrightarrow\operatorname{Ext}_{\Osh}^{p+q}(X;A,C),
+\end{equation}
+which may be made explicit as indicated above. Moreover, the same developments,
+with the category of abelian groups replaced by the category of sheaves of
+abelian groups on $X$ and the functors $\operatorname{Hom}$ replaced by the
+functors $\Homsh$, also define pairings having the same formal properties and,
+this time, of a \fquote{local nature}:
+\begin{equation}\tag{2.5}
+  \Extsh_{\Osh}^{p}(A,B)\times\Extsh_{\Osh}^{q}(B,C)
+  \longrightarrow\Extsh_{\Osh}^{p+q}(A,C).
+\end{equation}
+These are sharpened by observing that the homomorphisms (1.8) are compatible
+with the pairings between the $\operatorname{Ext}$ groups.
+
+\src{173}
+Finally, recall that there is also a multiplicative structure among the functors
+$H^{p}(X,A)$ (the cup product). One then finds that the spectral sequences of
+Proposition 1 are compatible with the multiplicative structures. More
+precisely, there is a pairing of the spectral sequences $E(A,B)$ and $E(B,C)$
+into the spectral sequence $E(A,C)$. At the abutment it reduces to the pairing
+between global $\operatorname{Ext}$ groups, while on the initial term it is the
+pairing deduced, in the right-hand side of (1.4), from the cup product and the
+pairings of local $\operatorname{Ext}$ groups. In particular, it follows that
+the edge homomorphisms
+\begin{equation}\tag{2.6}
+  \operatorname{Ext}_{\Osh}^{n}(X;A,B)
+  \longrightarrow H^{0}\bigl(X,\Extsh_{\Osh}^{n}(A,B)\bigr)
+\end{equation}
+and
+\begin{equation}\tag{2.7}
+  H^{n}\bigl(X,\Homsh_{\Osh}(A,B)\bigr)
+  \longrightarrow\operatorname{Ext}_{\Osh}^{n}(X;A,B)
+\end{equation}
+are compatible with the multiplicative structures. Thus, if one restricts to
+sheaves locally isomorphic to some $\Osh^{m}$, this completely describes
+composition between global $\operatorname{Ext}$ groups in terms of the cup
+product, in view of the isomorphism (1.5).
+
+\fsection{3}{Results in local cohomology}
+
+Let $A$ be a commutative ring with identity, equipped with an ideal $J$. For a
+varying $A$-module $M$, we shall define functorial homomorphisms
+\begin{equation}\tag{3.1}
+\left\{
+\begin{aligned}
+\operatorname{Ext}_{A}^{p}(A/J,M)
+  &\longrightarrow
+  \operatorname{Hom}_{A}\!\left(\bigwedge^{p}J/J^{2},M\otimes A/J\right),\\
+\operatorname{Tor}_{p}^{A}(A/J,M)
+  &\longleftarrow
+  \left(\bigwedge^{p}J/J^{2}\right)
+  \otimes\operatorname{Hom}_{A}(A/J,M),
+\end{aligned}
+\right.
+\end{equation}
+where the tensor and exterior products are taken over the ring $A$. Notice also
+that $J/J^{2}$ is in fact an $A/J$-module, and that its exterior powers as an
+$A$-module or as an $A/J$-module are the same. Defining the homomorphisms (3.1)
+amounts to defining, for every system
+$\underline{x}=(x_1,\ldots,x_p)$ of elements of $J$, homomorphisms
+$\varphi_{\underline{x}}$:
+\begin{equation}\tag{3.2}
+\left\{
+\begin{aligned}
+\varphi_{\underline{x}}:
+  \operatorname{Ext}_{A}^{p}(A/J,M)&\longrightarrow M\otimes A/J,\\
+\varphi_{\underline{x}}:
+  \operatorname{Hom}_{A}(A/J,M)&\longrightarrow
+  \operatorname{Tor}_{p}^{A}(A/J,M),
+\end{aligned}
+\right.
+\end{equation}
+in such a way that the following conditions are satisfied:
+
+\src{174}
+\begin{enumerate}
+\item[\textup{i.}] $\varphi_{x_1,\ldots,x_p}$ depends in an alternating
+$A$-multilinear fashion on the system of $x_i\in J$.
+\item[\textup{ii.}] $\varphi_{x_1,\ldots,x_p}$ is zero whenever one of the
+$x_i$ lies in $J^{2}$.
+\end{enumerate}
+In fact, ii follows from i, since $a\varphi_{\underline{x}}=0$ for $a\in J$, as
+is seen by observing that all the modules in (3.2) are annihilated by $J$.
+
+To define $\varphi_{\underline{x}}$, consider the complex
+$K_{\underline{x}}$ whose underlying $A$-module is $\bigwedge A^{p}$ and whose
+differential is contraction $i_{\underline{x}}$ by $\underline{x}$, regarded
+as the linear form on $A^{p}$ with components $x_1,\ldots,x_p$. The differential
+has degree $-1$, the degrees are nonnegative, and the homology of this complex
+in dimension $0$ is $A/(x_1A+\cdots+x_pA)$. Since the $x_i$ belong to $J$, this
+gives an augmentation $K_{\underline{x},0}\longrightarrow A/J$. Thus
+$K_{\underline{x}}$ appears as an augmented free complex with augmentation
+module $A/J$. In the familiar way, one obtains homomorphisms
+\[
+\operatorname{Ext}_{A}^{*}\bigl(H_0(K_{\underline{x}}),M\bigr)
+\longrightarrow
+H^{*}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr)
+\]
+and
+\[
+\operatorname{Tor}_{*}^{A}\bigl(H_0(K_{\underline{x}}),M\bigr)
+\longleftarrow
+H_{*}\bigl(K_{\underline{x}}\otimes_A M\bigr).
+\]
+Composing these with the homomorphisms on $\operatorname{Ext}$ and
+$\operatorname{Tor}$ induced by the augmentation homomorphism
+$H_0(K_{\underline{x}})\longrightarrow A/J$ gives homomorphisms
+\begin{equation}\tag{3.3}
+\left\{
+\begin{aligned}
+\psi_{\underline{x}}:
+\operatorname{Ext}_{A}^{*}(A/J,M)
+&\longrightarrow H^{*}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr),\\
+\psi_{\underline{x}}:
+\operatorname{Tor}_{*}^{A}(A/J,M)
+&\longleftarrow H_{*}\bigl(K_{\underline{x}}\otimes_A M\bigr).
+\end{aligned}
+\right.
+\end{equation}
+One sees immediately that in the top dimension $p$, the homology of the
+right-hand sides is $M/(x_1M+\cdots+x_pM)$ (respectively, the set of elements of
+$M$ annihilated by every $x_i$). Since the $x_i$ lie in $J$, one obtains
+homomorphisms
+\begin{equation}\tag{3.4}
+\left\{
+\begin{aligned}
+H^{p}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr)
+&\longrightarrow M\otimes A/J,\\
+H_{p}\bigl(K_{\underline{x}}\otimes_A M\bigr)
+&\longleftarrow\operatorname{Hom}_{A}(A/J,M).
+\end{aligned}
+\right.
+\end{equation}
+Composing the homomorphisms (3.3) and (3.4) gives the homomorphisms (3.2) that we
+wished to define. Verifying i is tedious but presents no difficulty.
+
+\src{175}
+\result{PROPOSITION}{4} Let $A$ be a commutative ring with identity, and let
+$(x_1,\ldots,x_p)$ be a sequence of elements of $A$ such that, for
+$1\leq i\leq p$, the image of $x_i$ in the quotient of $A$ by the ideal
+generated by $(x_1,\ldots,x_{i-1})$ is not a zero divisor. Let $J$ be the ideal
+generated by the $x_i$. Then $J/J^{2}$ is a free $(A/J)$-module with basis the
+canonical images of the $x_i$, the complex $K_{\underline{x}}$ is a free
+resolution of $A/J$, and for every $A$-module $M$, the homomorphisms (3.1) in
+degree $p$ are bijective. The same is true of the analogous homomorphisms
+defined in arbitrary degrees $i$, provided that $J M=0$.
+
+(The essential point, from which all the others follow, is the acyclicity of
+$K_{\underline{x}}$, a well-known fact under the stated hypotheses.)
+
+\result{COROLLARY}{1} With $A$ and $J$ as above, suppose in addition that $A$
+is a regular affine algebra of dimension $n$ over a perfect field $k$, and that
+$A/J$ is a regular affine algebra. Denote by $\Omega^{1}(A)$ and
+$\Omega^{1}(A/J)$ the modules of Kähler differentials. Then there is a canonical
+isomorphism compatible with localization,
+\begin{equation}\tag{3.5}
+  \operatorname{Ext}_{A}^{p}\bigl(\Omega^{n-p}(A/J),\Omega^{n}(A)\bigr)=A/J.
+\end{equation}
+Indeed, $\Omega^{n-p}(A/J)$ is a projective $(A/J)$-module of rank $1$, and likewise
+$\Omega^{n}(A)$ is a projective $A$-module of rank $1$.\footnote{The printed text says
+“rank $n$.” Both modules of top-degree forms have rank $1$, as is also required
+by the identification with $\bigwedge^{p}(J/J^{2})$ below.} Thus the left-hand
+side equals
+\[
+  \operatorname{Ext}_{A}^{p}(A/J,A)
+  \otimes\Omega^{n-p}(A/J)'\otimes\Omega^{n}(A)
+\]
+(where the prime denotes the dual $(A/J)$-module). The tensor product of the
+last two factors identifies with $\bigwedge^{p}(J/J^{2})$, so the whole expression
+identifies with
+\[
+  \operatorname{Ext}_{A}^{p}\!\left(A/J,\bigwedge^{p}(J/J^{2})\right),
+\]
+and therefore, by the proposition, with
+\[
+  \operatorname{Hom}_{A}\!\left(\bigwedge^{p}J/J^{2},
+  \bigwedge^{p}J/J^{2}\right),
+\]
+that is, with $A/J$. In particular,
+$\operatorname{Ext}_{A}^{p}\bigl(\Omega^{n-p}(A/J),\Omega^{n}(A)\bigr)$ contains
+a distinguished element corresponding to the identity element of $A/J$, called
+the \emph{fundamental class of the ideal $J$ in $A$}. (It can in fact be defined
+under considerably broader hypotheses.) Corollary 1 can be put in a more
+geometric and more global form:
+
+\result{COROLLARY}{2} Let $X$ be a nonsingular variety over an algebraically
+closed field $k$, let $Y$ be a closed nonsingular subvariety of $X$, let
+$\Osh_X$ be the sheaf of local rings of $X$, and let $\Osh_Y$ be the sheaf of
+local rings of $Y$, regarded as a quotient sheaf of $\Osh_X$. Let $n$ be the
+dimension of $X$ and $n-p$ that of $Y$.
+
+\src{176}
+Let $\Omega_X$ (respectively $\Omega_Y$) be the sheaf of germs of regular
+differential forms on $X$ (respectively $Y$). Then there are canonical
+isomorphisms
+\begin{equation}\tag{3.6}
+  \Extsh_{\Osh_X}^{p}\bigl(\Omega_Y^{n-p},\Omega_X^{n}\bigr)=\Osh_Y,
+\end{equation}
+or equivalently
+\begin{equation}\tag{3.6 bis}
+  \Extsh_{\Osh_X}^{p}\bigl(\Osh_Y,\Omega_X^{n}\bigr)=\Omega_Y^{n-p}.
+\end{equation}
+Formula (3.6 bis) can serve as the definition of $\Omega_Y^{n-p}$ when $Y$ is a
+singular variety. More precisely:
+
+\result{PROPOSITION}{5} Let $Y$ be an algebraic subset of dimension $q=n-p$ in
+a nonsingular algebraic variety $X$ of dimension $n$. Let $F$ be a coherent
+algebraic sheaf on $X$ whose support is contained in $Y$, and let $L$ be a
+locally free algebraic sheaf on $X$. Then the sheaves
+$\Extsh_{\Osh_X}^{i}(F,L)$ vanish for $i<p$, while for $i=p$ there is a canonical
+isomorphism
+\begin{equation}\tag{3.7}
+  \Extsh_{\Osh_X}^{p}(F,L)
+  =\Homsh_{\Osh_X}\!\left(F,
+  \Extsh_{\Osh_X}^{p}(\Osh_X/J,L)\right),
+\end{equation}
+where $J$ denotes an arbitrary sheaf of ideals on $X$ that annihilates $F$ and
+whose zero set is $Y$. In particular, if $F$ is a coherent algebraic sheaf on
+$Y$, then
+\begin{equation}\tag{3.7 bis}
+  \Extsh_{\Osh_X}^{p}(F,L)
+  =\Homsh_{\Osh_Y}\!\left(F,\Extsh_{\Osh_X}^{p}(\Osh_Y,L)\right).
+\end{equation}
+Finally, still taking $F$ to be a coherent algebraic sheaf on $Y$, the sheaves
+\[
+  E^{i}(F)=\Extsh_{\Osh_X}^{p+i}(F,\Omega_X^{n})
+\]
+do not depend on the choice of embedding of the algebraic space $Y$ into a
+nonsingular variety $X$.
+
+Since the question is local, we may suppose that $X$ is affine and
+$L=\Osh_X$. This reduces matters to a question in commutative algebra, indeed in
+local algebra: if $A$ is a regular local ring and $M$ an $A$-module whose
+support has dimension $\leq q=n-p$, one must prove that
+$\operatorname{Ext}_{A}^{i}(M,A)=0$ for $i<p$, and that
+\[
+  \operatorname{Ext}_{A}^{p}(M,A)
+  =\operatorname{Hom}_{A}\!\left(M,\operatorname{Ext}_{A}^{p}(A/J,A)\right),
+\]
+where $J$ is any ideal of “dimension” $\leq q$ that annihilates $M$. For the
+first assertion, argue by induction on $q$: an immediate dévissage reduces to
+the case $M=A/J$; replacing $J$ by a smaller ideal, using the induction
+hypothesis and the exact sequence of $\operatorname{Ext}$ groups, then reduces
+to the case where $J$ is generated by a “system of parameters,” as in
+Proposition 4, where the result is immediate. The preceding result implies that
+if $J$ is an ideal
+
+\src{177}
+fixed of “dimension” $\leq q$, then the contravariant functor
+$E(M)=\operatorname{Ext}_{A}^{p}(M,A)$ on the category of $A/J$-modules is left
+exact; moreover, it takes direct sums to direct products, from which it follows
+readily that
+\[
+  E(M)=\operatorname{Hom}_{A}\bigl(M,E(A/J)\bigr).
+\]
+\footnote{The printed text has $E(A)$. In the category under consideration the
+representing object is $A/J$, and the equality needed for (3.7) is $E(A/J)$.}
+Finally, the last assertion of Proposition 5 is subtler and follows from an
+intrinsic characterization of the $E^{i}(F)$ by means of a local duality theorem
+that cannot be given here.
+
+\result{COROLLARY}{} Denote by $\omega_Y^{q}$ the sheaf
+$\Extsh_{\Osh_X}^{p}(\Osh_Y,\Omega_X^{n})$. Then, for coherent algebraic sheaves
+$F$ on $Y$, there is a functorial isomorphism
+\begin{equation}\tag{3.8}
+  \Extsh_{\Osh_X}^{p}(F,\Omega_X^{n})
+  =\Homsh_{\Osh_X}(F,\omega_Y^{q}).
+\end{equation}
+
+\fsection{4}{Cohomology class associated with a subvariety}
+
+Throughout what follows, $X$ denotes an algebraic set of dimension $n$, defined
+over a field $k$, which we suppose algebraically closed for simplicity. Except
+in Section 6, $X$ is assumed nonsingular. We denote by $\Osh_X$ the sheaf of
+local rings on $X$, and by
+\[
+  \Omega_X^{*}=\bigoplus_p\Omega_X^{p}
+\]
+the sheaf of germs of differential forms on $X$.\footnote{The printed text uses
+a union sign; the graded structure is the direct sum of the sheaves
+$\Omega_X^p$.} If $Y$ is a closed subset of $X$, coherent algebraic sheaves on
+$Y$ are identified with coherent sheaves on $X$ that vanish off $Y$; this
+applies in particular to $\Osh_Y$ and $\Omega_Y$.
+
+\result{LEMMA}{1} Let $F$ be a coherent algebraic sheaf on $X$ whose support
+has dimension $\leq n-p$, and let $L$ be a locally free coherent algebraic sheaf
+on $X$. Then $\operatorname{Ext}_{\Osh_X}^{i}(X;F,L)$ vanishes for $i<p$, and
+there is a canonical isomorphism
+\begin{equation}\tag{4.1}
+  \operatorname{Ext}_{\Osh_X}^{p}(X;F,L)
+  =H^{0}\bigl(X,\Extsh_{\Osh_X}^{p}(F,L)\bigr).
+\end{equation}
+If $F$ is a coherent algebraic sheaf on a closed subset $Y$ of $X$ of dimension
+$\leq n-p$, there is a canonical isomorphism
+\begin{equation}\tag{4.1 bis}
+  \Extsh_{\Osh_X}^{p}(F,L)
+  =\Homsh_{\Osh_X}\!\left(
+    F\otimes L'\otimes\Omega_X^{n},\omega_Y^{n-p}
+  \right),
+\end{equation}
+where $\omega_Y^{n-p}$ is the sheaf on $Y$ defined in the corollary to
+Proposition 5 (and identifies with $\Omega_Y^{n-p}$ if $Y$ is nonsingular).
+
+Formula (4.1) is an immediate consequence of the spectral sequence of
+Proposition 1 and Proposition 5; by formula (3.8), one may write
+
+\src{178}
+\begin{align*}
+\Extsh_{\Osh_X}^{p}(F,L)
+&=L\otimes(\Omega_X^{n})'\otimes
+  \Extsh_{\Osh_X}^{p}(F,\Omega_X^{n})\\
+&=L\otimes(\Omega_X^{n})'\otimes
+  \Homsh_{\Osh_X}(F,\omega_Y^{q})\\
+&=\Homsh_{\Osh_X}\!\left(
+  F\otimes L'\otimes\Omega_X^{n},\omega_Y^{q}\right),
+\end{align*}
+where $q=n-p$, which gives formula (4.1 bis).
+
+In particular, take $F=\Osh_Y$ and $L=\Omega_X^{p}$. Since
+$\Omega_X^{n}\otimes(\Omega_X^{p})'=\Omega_X^{n-p}$, one obtains a canonical
+isomorphism
+\begin{equation}\tag{4.2}
+  \operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\Omega_X^{p})
+  =\operatorname{Hom}_{\Osh_X}
+  (X;\Omega_X^{n-p},\omega_Y^{n-p}).
+\end{equation}
+Now suppose for simplicity that $Y$ is nonsingular, so that
+$\omega_Y^{n-p}=\Omega_Y^{n-p}$. There is a natural homomorphism from
+$\Omega_X^{n-p}$ to $\Omega_Y^{n-p}$, hence a canonical section $s_Y$ of the
+sheaf $\Extsh_{\Osh_X}^{p}(\Osh_Y,\Omega_X^{p})$. If all components of $Y$ have
+dimension $n-p$, we call it the \emph{fundamental section} of the sheaf
+$\Extsh_{\Osh_X}^{p}(\Osh_Y,\Omega_X^{p})$. By (4.1), this section defines an
+element of $\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\Omega_X^{p})$. The natural
+homomorphism $\Osh_X\longrightarrow\Osh_Y$ in turn defines a homomorphism
+\[
+  \operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\Omega_X^{p})
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_X,\Omega_X^{p})
+  =H^{p}(X,\Omega_X^{p}).
+\]
+Thus one obtains an element of $H^{p}(X,\Omega_X^{p})$, denoted $P_X(Y)$ and
+called the \emph{cohomology class of $Y$ in $X$}. It is therefore obtained from
+the section $s_Y$ of $\Extsh_{\Osh_X}^{p}(\Osh_Y,\Omega_X^{p})$ through the
+following diagram of homomorphisms:
+\begin{equation}\tag{4.3}
+\begin{aligned}
+H^{p}(X,\Omega_X^{p})
+&=\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_X,\Omega_X^{p})\\
+&\longleftarrow\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\Omega_X^{p})
+\xrightarrow{\ \sim\ }
+H^{0}\!\left(X,\Extsh_{\Osh_X}^{p}(\Osh_Y,\Omega_X^{p})\right).
+\end{aligned}
+\end{equation}
+
+Call a \emph{nonsingular cycle of dimension $n-p$} an element of the free
+abelian group generated by the irreducible nonsingular subvarieties of dimension
+$n-p$ in $X$. Then the function $Y\longmapsto P(Y)$ extends to a homomorphism
+from the group of nonsingular cycles of dimension $n-p$ on $X$ to the group
+$H^{p}(X,\Omega_X^{p})$.
+
+Let $Z^{n-p}$ and $Z'^{n-p'}$ be nonsingular cycles of dimensions $n-p$ and
+$n-p'$. They are said to \emph{intersect transversely} if every component of
+$Z$ intersects every component of $Z'$ transversely. The cycle $Z.Z'$ is then
+defined; it is a nonsingular cycle of dimension $n-p-p'$. With this understood,
+we have the
+
+\src{179}
+\result{THEOREM}{1} If $Z^{n-p}$ and $Z'^{n-p'}$ are nonsingular cycles that
+intersect transversely, then
+\begin{equation}\tag{4.4}
+  P_X(Z.Z')=P_X(Z).P_X(Z'),
+\end{equation}
+where the product on the right is the cup product
+\[
+  H^{p}(X,\Omega_X^{p})\times H^{p'}(X,\Omega_X^{p'})
+  \longrightarrow H^{p+p'}(X,\Omega_X^{p+p'}).
+\]
+(We assume that $X$ is isomorphic to a locally closed subset of a projective
+space.)
+
+This last hypothesis is used only to conclude that every coherent algebraic
+sheaf on $X$ is a quotient of a locally free coherent algebraic sheaf (SERRE),
+and hence admits a left resolution by locally free sheaves. To prove Theorem 1,
+we may suppose that $Z$ and $Z'$ are irreducible nonsingular subvarieties $Y$
+and $Y'$ meeting transversely. Let $L_{*}$ be a left resolution of $\Osh_Y$ by
+locally free sheaves. By Proposition 3, the diagram of homomorphisms (4.3) then
+identifies with
+\[
+R^{p}\Gamma(\Omega_X^{p})
+\xleftarrow{\alpha}
+\mathbb R^{p}\Gamma\!\left(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\right)
+\xrightarrow[\sim]{\beta}
+\Gamma\!\left(H^{p}\bigl(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\bigr)\right).
+\]
+Here $\Gamma$ is the “group of sections” functor on the category of sheaves of
+abelian groups on $X$, $\mathbb R^{p}\Gamma$ denotes its hypercohomology in
+dimension $p$, and $R^{p}\Gamma$ its $p$-th derived functor. For simplicity, we
+may suppose that $L_0=\Osh_X$ and that the augmentation
+$L_0\longrightarrow\Osh_Y$ is the natural homomorphism (which is permissible).
+Then $\alpha$ is induced by the homomorphism of complexes
+$\Osh_X\longrightarrow L_{*}$ (with $\Osh_X$ regarded as a complex concentrated
+in degree $0$), taking account of the equality
+$\mathbb R^{p}\Gamma(K)=R^{p}\Gamma(K_0)$ when $K$ is a complex of sheaves
+concentrated in degree $0$. The homomorphism $\beta$ is the familiar edge
+homomorphism. Consider the analogous diagram for a locally free resolution
+$L'_{*}$ of $\Osh_{Y'}$, and then the following commutative diagram of pairings:
+\begin{equation}\tag{4.5}
+\resizebox{\textwidth}{!}{$
+\begin{array}{ccc}
+R^{p}\Gamma(\Omega_X^{p})
+&\longleftarrow
+\mathbb R^{p}\Gamma\!\left(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\right)
+&\xrightarrow{\sim}
+\Gamma H^{p}\!\left(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\right)
+\\[3pt]
+\times&\times&\times\\[3pt]
+R^{p'}\Gamma(\Omega_X^{p'})
+&\longleftarrow
+\mathbb R^{p'}\Gamma\!\left(\Homsh_{\Osh_X}(L'_{*},\Omega_X^{p'})\right)
+&\xrightarrow{\sim}
+\Gamma H^{p'}\!\left(\Homsh_{\Osh_X}(L'_{*},\Omega_X^{p'})\right)
+\\[3pt]
+\downarrow&\downarrow&\downarrow\\[3pt]
+R^{p+p'}\Gamma(\Omega_X^{p+p'})
+&\longleftarrow
+\mathbb R^{p+p'}\Gamma\!\left(
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\Omega_X^{p+p'})\right)
+&\xrightarrow{\sim}
+\Gamma H^{p+p'}\!\left(
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\Omega_X^{p+p'})\right).
+\end{array}
+$}
+\end{equation}
+
+\src{180}
+The pairings in the two right-hand columns are induced by the pairing of
+complexes of sheaves
+\[
+\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})
+\times\Homsh_{\Osh_X}(L'_{*},\Omega_X^{p'})
+\longrightarrow
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\Omega_X^{p+p'}),
+\]
+defined using the exterior product
+$\Omega_X^{p}\times\Omega_X^{p'}\longrightarrow\Omega_X^{p+p'}$.
+The pairing in the first column is the cup product (relative to the exterior
+product). I claim that the last row of (4.5) identifies with the diagram of
+isomorphisms analogous to (4.3), with $Y$ replaced by $Y\cap Y'$ and $p$ by
+$p+p'$. For this it suffices to show that $L\otimes L'$ is an (evidently locally
+free) resolution of $\Osh_{Y\cap Y'}$. Indeed,
+\[
+  H_0(L\otimes L')=\Osh_Y\otimes\Osh_{Y'}=\Osh_{Y\cap Y'}
+\]
+and
+\[
+  H_i(L\otimes L')=\operatorname{Tor}_{i}^{\Osh_X}(\Osh_Y,\Osh_{Y'})=0
+  \qquad(i>0),
+\]
+because $Y$ and $Y'$ meet transversely. Theorem 1 now follows from the formula
+\begin{equation}\tag{4.6}
+  s_Y.s_{Y'}=s_{Y.Y'}
+\end{equation}
+(where the product on the left is that of the last column of (4.5)). Formula
+(4.6), being purely local, is verified without difficulty by taking for $L_{*}$
+and $L'_{*}$ the resolutions considered in Proposition 4. One proves similarly
+(and more easily) that $Z\longmapsto P_X(Z)$ is compatible with Cartesian
+products:
+\begin{equation}\tag{4.7}
+  P_{X\times X'}(Z\times Z')=P_X(Z)\otimes P_{X'}(Z')
+\end{equation}
+(this formula is valid when $Z$, respectively $Z'$, is a nonsingular cycle on
+the nonsingular variety $X$, respectively $X'$, with $Z\times Z'$ regarded as a
+nonsingular cycle on $X\times X'$). From (4.4) and (4.7), it follows that
+$P_X(Z)$ is also compatible with inverse image under a morphism of nonsingular
+varieties $f:X\longrightarrow X'$:
+\begin{equation}\tag{4.8}
+  P_X\bigl(f^{-1}(Z')\bigr)=f^{*}\bigl(P_{X'}(Z')\bigr),
+\end{equation}
+provided $Z'$ is a nonsingular cycle on $X'$ to which $f$ is “transverse,” that
+is, the graph of $f$ is transverse to the cycle $X\times Z'$ in $X\times X'$.
+
+\src{181}
+\result{COROLLARY}{1} Let $X$ and $X'$ be two nonsingular locally closed
+varieties in a projective space, with $X'$ complete. Let $U$ be a nonsingular
+cycle on $X\times X'$, and let $a$ and $b$ be two points of $X'$ such that $U$
+meets the cycles $X\times(a)$ and $X\times(b)$ transversely. Let $Z$ and $Z'$ be
+the nonsingular cycles on $X$ such that
+\[
+  Z\times(a)=(X\times(a)).U,
+  \qquad
+  Z'\times(b)=(X\times(b)).U.
+\]
+Then
+\[
+  P_X(Z)=P_X(Z').
+\]
+
+Indeed, let $f_a:X\longrightarrow X\times X'$ be defined by
+$f_a(x)=(x,a)$. Formula (4.8) gives $P(Z)=f_a^{*}(P(U))$, and similarly
+$P(Z')=f_b^{*}(P(U))$. Using the Künneth formula
+\[
+  H^{*}(X\times X',\Omega_{X\times X'}^{*})
+  =H^{*}(X,\Omega_X^{*})\otimes H^{*}(X',\Omega_{X'}^{*})
+\]
+and the fact that $H^{0}(X',\Osh_{X'})$ consists only of scalars, one readily
+obtains $f_a^{*}=f_b^{*}$, proving the assertion.
+
+For every $x\in X$, the point $(x)$ is a nonsingular subvariety of $X$ of
+codimension $n$, and therefore defines an element $\varepsilon_x$ of
+$H^{n}(X,\Omega_X^{n})$. If $X$ is a nonsingular projective variety, Corollary 1
+shows that $\varepsilon_x$ does not depend on the chosen point $x$; it is denoted
+$\varepsilon_X$ and called the \emph{fundamental class} of
+$H^{n}(X,\Omega_X^{n})$.
+
+\result{REMARK}{} To obtain a satisfactory theory, one would have to define
+$P_X(Z)$ for arbitrary cycles $Z$ and prove Theorem 1 for a proper intersection
+of cycles. (At the time this exposé was written, this had not yet been done in
+full generality.) Assuming this has been done, Corollary 1 becomes: if $Z$ and
+$Z'$ are two algebraically equivalent cycles, then $P_X(Z)=P_X(Z')$ (a statement
+that does not seem to follow from the preceding results, even when $Z$ and $Z'$
+are nonsingular).
+
+\fsection{5}{The duality theorem}
+
+In this section, $X$ denotes a nonsingular projective variety of dimension $n$.
+
+\result{THEOREM}{2} The fundamental class $\varepsilon_X$ of
+$H^{n}(X,\Omega_X^{n})$ is a basis of this vector space.
+
+(The proof will be given below.) By the preceding theorem, we may therefore
+identify $H^{n}(X,\Omega_X^{n})$ with the field $k$. Now consider the pairings
+introduced in Section 2, which in particular give a pairing
+
+\src{182}
+\[
+\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_X,F)
+\times\operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+\longrightarrow
+\operatorname{Ext}_{\Osh_X}^{n}(X;\Osh_X,\Omega_X^{n}),
+\]
+that is,
+\begin{equation}\tag{5.1}
+  H^{p}(X,F)
+  \times\operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+  \longrightarrow H^{n}(X,\Omega_X^{n}).
+\end{equation}
+In view of Theorem 2, this pairing defines a homomorphism
+\begin{equation}\tag{5.2}
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+  \longrightarrow\bigl(H^{p}(X,F)\bigr)'.
+\end{equation}
+This homomorphism is functorial in $F$ and commutes with the connecting
+homomorphisms associated with exact sequences
+$0\longrightarrow F'\longrightarrow F\longrightarrow F''\longrightarrow0$.
+
+\result{THEOREM}{3} The homomorphism (5.2) is an isomorphism.
+
+In particular, this recovers Serre's result:
+
+\result{COROLLARY}{} Let $E$ be an algebraic vector bundle on $X$, and let
+$\Osh_X(E)$ be the sheaf of germs of regular sections of $E$. Then there are
+canonical isomorphisms
+\begin{equation}\tag{5.3}
+  \bigl(H^{p}(X,\Osh_X(E))\bigr)'
+  =H^{n-p}\bigl(X,\Omega_X^{n}\otimes\Osh_X(E')\bigr).
+\end{equation}
+It suffices to apply Theorem 3 and Corollary 1 to Proposition 1.
+
+Theorems 2 and 3 will follow from the following assertion:
+
+\noindent\textbf{(D) The following homomorphism}
+\begin{equation}\tag{5.2 bis}
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+  \longrightarrow\bigl(H^{p}(X,F)\bigr)'\otimes L,
+  \qquad L=H^{n}(X,\Omega_X^{n}),
+\end{equation}
+induced by the pairing (5.1), is an isomorphism.
+
+Let us first show that (D) implies Theorem 2. Let $k_x=\Osh_{(x)}$ be the sheaf
+of local rings of the variety reduced to the point $x\in X$. Consider the
+canonical homomorphism $\Osh_X\longrightarrow k_x$ and the associated
+homomorphism
+\begin{equation}\tag{5.3 bis}
+  H^{0}(X,\Osh_X)\longrightarrow H^{0}(X,k_x).
+\end{equation}
+Its transpose identifies with the homomorphism
+\begin{equation}\tag{5.4}
+  \operatorname{Ext}_{\Osh_X}^{n}(X;k_x,\Omega_X^{n})\otimes L'
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_X}^{n}(X;\Osh_X,\Omega_X^{n})\otimes L'
+\end{equation}
+induced by the homomorphism on $\operatorname{Ext}^{n}$ associated with
+$\Osh_X\longrightarrow k_x$:
+\begin{equation}\tag{5.5}
+  \operatorname{Ext}_{\Osh_X}^{n}(X;k_x,\Omega_X^{n})
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_X}^{n}(X;\Osh_X,\Omega_X^{n})
+  =H^{n}(X,\Omega_X^{n}).
+\end{equation}
+
+\src{183}
+Since (5.3 bis) is an isomorphism,\footnote{The printed text gives a second
+formula ``(5.3)'' on page 182 and refers to it here; the identifier
+``(5.3 bis)'' distinguishes this formula from the first (5.3).} so is (5.4),
+and hence so is (5.5). Since $s_{(x)}$ is a basis of
+$\operatorname{Ext}_{\Osh_X}^{n}(X;k_x,\Omega_X^{n})$ by (4.2), it follows that
+its image $\varepsilon_X$ is a basis of $H^{n}(X,\Omega_X^{n})$.
+
+It remains to prove assertion (D), which will follow in a purely formal way
+from the elementary facts summarized in the following lemmas. Here $X$ is
+assumed to be a closed subset (singular or not) of projective space $P$ of
+dimension $r$. We use $\Osh_P(m)$ for the sheaf on $P$ denoted $\Osh(m)$ in
+[3], and $\Osh_X(m)$ for the analogous sheaf on $X$.
+
+\result{LEMMA}{2} Assertion (D) is true if $X=P$ and $F=\Osh_P(m)$.
+
+This lemma is verified by a direct calculation. The explicit calculation of
+$H^{i}(P,\Osh_P(m))$ is given in [3], but it can be carried out more
+elementarily. The computation of the cup product
+\[
+  H^{i}(P,\Osh_P(m))\times H^{j}(P,\Osh_P(m'))
+  \longrightarrow H^{i+j}(P,\Osh_P(m+m'))
+\]
+needed to make the pairing (5.1) explicit presents no
+difficulty.\footnote{The printed text has $\Osh_P(r+r')$; the two factors
+$\Osh_P(m)$ and $\Osh_P(m')$ require $\Osh_P(m+m')$.}
+
+\result{LEMMA}{3} Every coherent algebraic sheaf $F$ on $X$ is isomorphic to a
+quotient sheaf of a sheaf $\Osh_X(-m)^{k}$, where $m$ may be taken as large as
+desired.
+
+This follows from the fact that $F\otimes\Osh_X(m)$ is ``generated by its
+sections'' for $m$ large; cf. [3].
+
+\result{LEMMA}{4} Let $i>0$. Then
+$H^{r-i}(P,\Osh_P(-m))=0$ for $m$ large; and for every coherent algebraic sheaf
+$B$ on $X$, one has
+\[
+  \operatorname{Ext}_{\Osh_X}^{i}(X;\Osh_X(-m),B)=0
+\]
+for $m$ large.
+
+The first assertion follows from the explicit calculations mentioned above.
+For the second, note that there is an isomorphism
+\[
+  \operatorname{Ext}_{\Osh_X}^{i}(X;\Osh_X(-m),B)
+  =H^{i}(X,B\otimes\Osh_X(m))
+\]
+(Proposition 1, Corollary 1), whence the conclusion by a well-known result of
+[3]. Combining the two preceding lemmas, we obtain the
+
+\result{COROLLARY}{} Let $i>0$. Then the functor
+$F\longmapsto H^{r-i}(P,F)$ on the category of coherent algebraic sheaves on
+$P$ is coeffaceable, and so is the functor
+$\operatorname{Ext}_{\Osh_X}^{i}(X;F,B)$ on the category of coherent algebraic
+sheaves on $X$.
+
+\src{184}
+\result{LEMMA}{5} Let $A$ and $B$ be two coherent algebraic sheaves on $X$, and
+set $A(m)=A\otimes\Osh_X(m)$. Then, for $m$ sufficiently large, the canonical
+homomorphism
+\[
+  \operatorname{Ext}_{\Osh_X}^{1}(X;A(-m),B)
+  \longrightarrow H^{0}\bigl(X,\Extsh_{\Osh_X}^{1}(A(-m),B)\bigr)
+  =H^{0}\bigl(X,\Extsh_{\Osh_X}^{1}(A,B)(m)\bigr)
+\]
+is an isomorphism.
+
+This follows at once from the spectral sequence of Proposition 1 applied to
+$A(-m)$ and $B$, since one then has
+\[
+  E_{2}^{p,q}(A(-m),B)
+  =H^{p}\bigl(X,\Extsh_{\Osh_X}^{q}(A(-m),B)\bigr)
+  =H^{p}\bigl(X,\Extsh_{\Osh_X}^{q}(A,B)(m)\bigr),
+\]
+which vanishes for $p>0$ and $m$ large.
+
+We now prove (D) in the case $X=P$. First we prove that (5.2 bis) is an
+isomorphism for $p=n$. Both sides are then left-exact functors (since
+$H^{r+1}(P,F)=0$), so Lemma 3 shows that it suffices to prove the assertion for
+$F=\Osh_P(-m)$; in that case it is contained in Lemma 2. The homomorphisms
+(5.2 bis) are functorial and compatible with the connecting homomorphisms, and
+for $p<n$ its two sides are coeffaceable functors of $F$ (Corollary to Lemma 4).
+A standard argument therefore shows that (5.2 bis) is an isomorphism for every
+$p$. This proves the duality theorem for projective space. Now let $X$ be
+arbitrary but nonsingular. By the duality theorem for $P$, there is an
+isomorphism
+\[
+  H^{n}(X,F)'=H^{n}(P,F)'
+  =\operatorname{Ext}_{\Osh_P}^{r-n}(P;F,\Omega_P^{r}).
+\]
+By Lemma 1 (no. 4), the last term identifies with
+\[
+  \operatorname{Hom}_{\Osh_P}(P;F,\omega_X^{n})
+  =\operatorname{Hom}_{\Osh_X}(X;F,\Omega_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\Omega_X^{n}),
+\]
+and hence there is an isomorphism
+\begin{equation}\tag{5.6}
+  H^{n}(X,F)'=\operatorname{Hom}_{\Osh_X}(X;F,\Omega_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\Omega_X^{n}).
+\end{equation}
+Taking $F=\Omega_X^{n}$ gives an isomorphism
+\begin{equation}\tag{5.7}
+  \gamma:H^{n}(X,\Omega_X^{n})\xrightarrow{\sim}k.
+\end{equation}
+
+\src{185}
+One checks that the isomorphism (5.6) is precisely (5.2 bis) for $p=n$ after
+setting $L=k$ by means of (5.7). Consequently, (5.2 bis) is an isomorphism for
+$p=n$. To prove that it is an isomorphism for every $p$, it again suffices to
+prove that, for $p<n$, the two sides of (5.2 bis) are coeffaceable functors of
+$F$, and a fortiori (in view of Lemma 3) that both sides vanish when
+$F=\Osh_X(-m)$ with $m$ large. For the first side this follows from Lemma 4; for
+the second, using the duality theorem on $P$, we write
+\[
+  H^{p}(X,\Osh_X(-m))'
+  =\operatorname{Ext}_{\Osh_P}^{r-p}
+    (P;\Osh_X(-m),\Omega_P^{r}).
+\]
+The second side vanishes for $p<n$ and $m$ large, as follows from Lemma 5 (with
+$X=P$ there) and from the fact that, as a coherent algebraic sheaf on $P$,
+$\Osh_X$ has cohomological dimension $\leq r-n$ (since $X$ is nonsingular),
+whence
+\[
+  \Extsh_{\Osh_P}^{r-p}(\Osh_X,\Omega_P^{r})=0
+  \qquad\text{for }p<n.
+\]
+
+\fsection{6}{The duality theorem for singular varieties}
+
+Let $X$ be a closed subset of dimension $n$ of projective space $P$ of
+dimension $r$. Formula (5.6) must here be written
+\begin{equation}\tag{6.1}
+  H^{n}(X,F)'
+  \simeq\operatorname{Hom}_{\Osh_X}(X;F,\omega_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\omega_X^{n}),
+\end{equation}
+where we have set
+\begin{equation}\tag{6.2}
+  \omega_X^{n}=E^{0}(\Osh_X)
+  =\Extsh_{\Osh_P}^{r-n}(\Osh_X,\Omega_P^{r}).
+\end{equation}
+As stated in Proposition 5, the sheaf so introduced does not in fact depend on
+the chosen embedding of $X$ into a nonsingular variety $P$. Taking
+$F=\omega_X^{n}$ in (6.1), we obtain
+\begin{equation}\tag{6.2 bis}
+  H^{n}(X,\omega_X^{n})'
+  \simeq\operatorname{Hom}_{\Osh_X}(X;\omega_X^{n},\omega_X^{n}),
+\end{equation}
+\footnote{The printed text also numbers this formula ``(6.2)''; the suffix
+``bis'' distinguishes the two occurrences.} and hence a distinguished element
+of $H^{n}(X,\omega_X^{n})'$ corresponding to the identity homomorphism of
+$\omega_X^{n}$:
+\begin{equation}\tag{6.3}
+  \gamma:H^{n}(X,\omega_X^{n})\longrightarrow k.
+\end{equation}
+
+\src{186}
+Now consider the pairings defined by composition of $\operatorname{Ext}$:
+\begin{equation}\tag{6.4}
+  H^{p}(X,F)\times
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\omega_X^{n})
+  \longrightarrow H^{n}(X,\omega_X^{n}),
+\end{equation}
+and compose them with the homomorphism $\gamma$ of (6.3). This gives functorial
+homomorphisms, compatible with the boundary operators,
+\begin{equation}\tag{6.5}
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\omega_X^{n})
+  \longrightarrow H^{p}(X,F)'
+\end{equation}
+(generalizing (5.2)). One checks that for $p=n$ this gives the isomorphism
+(6.1). With this understood, we have the following result.
+
+\result{THEOREM}{3 bis} The following four conditions on $X$ are equivalent for
+a given integer $k\geq0$:
+\begin{enumerate}
+  \item[\textit{i.}] The functorial homomorphism (6.5) is an isomorphism for
+    $n-k\leq p\leq n$.
+  \item[\textit{ii.}] One has $H^{p}(X,\Osh_X(-m))=0$ for $m$ large and
+    $n-k\leq p<n$.
+  \item[\textit{iii.}] The functor $H^{p}(X,F)$ on the category of coherent
+    algebraic sheaves on $X$ is coeffaceable for $n-k\leq p<n$.
+  \item[\textit{iv.}] One has
+    $E^{i}(\Osh_X)=\Extsh_{\Osh_P}^{r-n+i}(\Osh_X,\Omega_P^{r})=0$
+    for $0<i\leq k$.
+\end{enumerate}
+
+\noindent\textbf{PROOF.} --- \textit{i.}$\Rightarrow$\textit{ii.} follows
+from Lemma 4, \textit{ii.}$\Rightarrow$\textit{iii.} from Lemma 3, and
+\textit{iii.}$\Rightarrow$\textit{i.} by a well-known standard argument, since
+the two sides of (6.5) are then coeffaceable functors for $n-k\leq p<n$ (the
+first by Lemma 4). Finally, let us prove
+\textit{ii.}$\Leftrightarrow$\textit{iv.} This follows from the corollary to the
+next proposition.
+
+\result{PROPOSITION}{6} Let $F$ be a coherent algebraic sheaf on $X$, and let
+$i$ be an integer. Then, for $m$ sufficiently large, there is an isomorphism
+\begin{equation}\tag{6.6}
+  H^{i}(X,F(-m))'
+  \simeq H^{0}\bigl(X,E^{n-i}(F)(m)\bigr),
+\end{equation}
+where we set (compare no. 3, Proposition 5)
+\begin{equation}\tag{6.7}
+  E^{j}(F)=\Extsh_{\Osh_P}^{r-n+j}(F,\Omega_P^{r}).
+\end{equation}
+Indeed, by the duality theorem on $P$, the first side of (6.6) is isomorphic to
+$\operatorname{Ext}_{\Osh_P}^{r-i}(P;F(-m),\Omega_P^{r})$, so (6.6) follows
+from Lemma 5.
+
+\src{187}
+\result{COROLLARY}{} One has $H^{i}(X,F(-m))=0$ for $m$ large if and only if
+$E^{n-i}(F)=0$.
+
+Recall that the $E^{j}(F)$ do not in fact depend on the projective embedding
+under consideration. The condition in the corollary is purely local.
+Consequently, if it holds for $F$, it holds for every sheaf locally isomorphic
+to a sheaf $F^{n}$. In particular, if this condition holds for $\Osh_X$, it
+holds for every locally free coherent algebraic sheaf. This is the case, for
+example, for every $i<n$ if $X$ is nonsingular; for $i=0$ if no component of
+$X$ is reduced to a single point; and for $i=0,1$ if $X$ is normal and all its
+components have dimension $>1$ (cf. [3]).\footnote{The printed text says here
+``$S$ is normal''; the paragraph involves only the variety $X$.} For this to
+hold for every $i<k$, it is necessary and sufficient, by definition, that the
+local rings $\Osh_x$ ($x\in X$) have ``homological codimension'' $\geq k$ (see
+[4] for this notion). If $k=n$, Theorem 3 bis says that this means the duality
+theorem is true for $X$, i.e. that (6.5) is an isomorphism for every $p$ and
+every $F$. Many equivalent conditions on the local rings $\Osh_x$ can be given
+for this to hold (Nagata), for example that they satisfy the Cohen--Macaulay
+equidimensionality theorem. It holds, for example, if $X$ is locally a
+``complete intersection'' in a nonsingular ambient variety.
+
+\fsection{7}{Poincaré duality}
+
+Let $X$ be a nonsingular projective variety of dimension $n$. Then
+\[
+  H^{**}(X)=H^{*}(X,\Omega_X^{*})
+\]
+is a finite-dimensional anticommutative bigraded algebra, which we grade by
+total degree, so that $H^{p,q}(X)=H^{p}(X,\Omega_X^{q})$ has degree $p+q$. The
+degrees of $H^{*}(X)$ range from $0$ to $2n$. By Theorem 2 and the corollary to
+Theorem 3, $H^{*}(X)$ is a ``Poincaré algebra'' of dimension $2n$: that is,
+$H^{2n}(X)$ is equipped with an isomorphism to the base field $k$, and the
+product
+\[
+  H^{m}(X)\times H^{2n-m}(X)\longrightarrow H^{2n}(X)=k
+\]
+is a duality between $H^{m}(X)$ and $H^{2n-m}(X)$. Moreover, if $Y$ is another
+nonsingular projective variety, the Künneth formula for coherent algebraic
+sheaves gives
+\begin{equation}\tag{7.1}
+  H^{*}(X\times Y)=H^{*}(X)\otimes H^{*}(Y),
+\end{equation}
+an isomorphism compatible with the Poincaré-algebra structures. Furthermore,
+as a commutative algebra, $H^{*}(X)$ is a contravariant functor of $X$: a
+morphism $f:Y\longrightarrow X$ defines in the evident way a homomorphism of
+graded algebras
+
+\src{188}
+\begin{equation}\tag{7.2}
+  f^{*}:H^{*}(X)\longrightarrow H^{*}(Y).
+\end{equation}
+Since these are Poincaré algebras, transposition gives a homomorphism of vector
+spaces
+\begin{equation}\tag{7.3}
+  f_{*}:H^{*}(Y)\longrightarrow H^{*}(X).
+\end{equation}
+We saw in Section 4 that the effect of $f^{*}$ on the cohomology classes
+corresponding to nonsingular cycles has the geometric interpretation of taking
+the cohomology classes corresponding to their inverse images. In the present
+setting it is important to show that (7.3) similarly corresponds to the
+``direct image'' operation on cycles. Under suitable nonsingularity conditions,
+at least, this follows from the following special case.
+
+\result{THEOREM}{4} If $f$ is the inclusion of a nonsingular subvariety $Y^{m}$
+of $X^{n}$ into $X^{n}$, then, writing $1_Y$ for the unit element of $H(Y)$,
+one has
+\begin{equation}\tag{7.4}
+  f_{*}(1_Y)=P_X(Y),
+\end{equation}
+where the right-hand side is the cohomology class in $X$ associated with $Y$.
+
+This formula is equivalent to
+\begin{equation}\tag{7.4 bis}
+  \bigl\langle\xi^{m,m},P_X(Y)\bigr\rangle\varepsilon_Y
+  =f^{*}(\xi^{m,m})
+  \qquad
+  \bigl(\xi^{m,m}\in H^{m}(X,\Omega_X^{m})\bigr),
+\end{equation}
+\footnote{The printed text has $f_{*}(\xi^{m,m})$. Since
+$\xi^{m,m}\in H^{m}(X,\Omega_X^{m})$ and both sides belong to
+$H^{m}(Y,\Omega_Y^{m})$, the required map is $f^{*}$.} where $\varepsilon_Y$ is
+the fundamental element in $H^{m}(Y,\Omega_Y^{m})$. For nonsingular projective
+varieties this gives a new definition of the cohomology class associated with
+$Y$. To prove Theorem 4, Theorem 3 lets us interpret the transpose of the
+homomorphism
+\[
+  H^{m}(X,\Omega_X^{m})
+  \longrightarrow H^{m}(Y,\Omega_Y^{m})
+  =H^{m}(X,\Omega_Y^{m})
+\]
+as the homomorphism
+\begin{equation}\tag{7.5}
+\begin{split}
+  H^{n-m}(X,\Omega_X^{n-m})
+  &\simeq
+  \operatorname{Ext}_{\Osh_X}^{n-m}(X;\Omega_X^{m},\Omega_X^{n})\\
+  &\longleftarrow
+  \operatorname{Ext}_{\Osh_X}^{n-m}(X;\Omega_Y^{m},\Omega_X^{n})
+  \simeq
+  \operatorname{Hom}_{\Osh_X}(X;\Omega_Y^{m},\Omega_Y^{m}).
+\end{split}
+\end{equation}
+One checks that the element $1_Y$ of the dual of
+$H^{m}(Y,\Omega_Y^{m})$ identifies with the element of the right-hand side
+corresponding to the identity endomorphism of $\Omega_Y^{m}$, and also that the
+image of this element in $H^{n-m}(X,\Omega_X^{n-m})$ is indeed $P_X(Y)$. These
+compatibilities, which could have been stated already in Section 4, can be
+formulated---and in fact hold---for arbitrary nonsingular varieties, the second
+
+\src{189}
+following, for example, from the commutativity of the following diagram of
+canonical endomorphisms:
+\begin{equation}\tag{7.6}
+\resizebox{\textwidth}{!}{$
+\left\{
+\begin{array}{ccccc}
+\operatorname{Ext}_{\Osh_X}^{n-m}(X;\Omega_X^{m},\Omega_X^{n})
+&\longleftarrow&
+\operatorname{Ext}_{\Osh_X}^{n-m}(X;\Omega_Y^{m},\Omega_X^{n})
+&\simeq&
+\operatorname{Hom}_{\Osh_X}(X;\Omega_Y^{m},\Omega_Y^{m})\\[3pt]
+\Big\downarrow&&&&\Big\downarrow\\[3pt]
+\operatorname{Ext}_{\Osh_X}^{n-m}(X;\Osh_X,\Omega_X^{n-m})
+&\longleftarrow&
+\operatorname{Ext}_{\Osh_X}^{n-m}(X;\Osh_Y,\Omega_X^{n-m})
+&\simeq&
+\operatorname{Hom}_{\Osh_X}(X;\Omega_X^{m},\Omega_Y^{m})
+\end{array}
+\right.
+$}
+\end{equation}
+
+This gives an exact analogue of the formalism of Poincaré duality on compact
+oriented varieties. In particular, Theorem 4 determines the cohomology class
+associated with the diagonal of $X\times X$. A well-known argument then gives,
+for example, a Lefschetz formula.
+
+\result{THEOREM}{5} Let $f$ be an endomorphism of a nonsingular projective
+variety $X$ whose fixed points all have multiplicity 1. Then the number of
+these fixed points is congruent, modulo the characteristic of $k$, to the
+alternating sum of the traces of the endomorphisms of the $H^{i}(X)$ induced by
+$f$.
+
+The restriction imposed on $f$ is due to the difficulties mentioned in the
+remark in Section 4. Note, however, that the Lefschetz formula remains true if
+$f$ is ``homotopic'' to an endomorphism all of whose fixed points have
+multiplicity 1.
+
+\fsection{8}{Generalization of the duality theorem}
+
+Let $X$ be a nonsingular algebraic variety such that every coherent algebraic
+sheaf $F$ on $X$ is isomorphic to a quotient of a locally free coherent
+algebraic sheaf (as is the case if $X$ is locally closed in projective space).
+Then every coherent algebraic sheaf $F$ on $X$ admits a finite resolution $L$
+by locally free sheaves; for any two such resolutions one can always find a
+third and a homomorphism from it to each of the first two compatible with the
+augmentations. Likewise, if $L$ is a finite locally free resolution of $F$ and
+a homomorphism $F'\longrightarrow F$ is given, there exists a finite locally
+free resolution $L'$ of $F'$ and a homomorphism $L'\longrightarrow L$
+compatible with $F'\longrightarrow F$, which may be assumed surjective if
+$F'\longrightarrow F$ is surjective. Given two integers $r,s\geq0$, this makes
+it possible to define two cohomological multifunctors in the arguments
+$A_1,\ldots,A_r$; $B_1,\ldots,B_s$,
+
+\src{190}
+which range over the category of coherent algebraic sheaves on $X$ and take
+values, respectively, in the category of coherent algebraic sheaves on $X$ and
+in the category of modules over $H^{0}(X,\Osh_X)$, by the formulas
+\begin{equation}\tag{8.1}
+\resizebox{\textwidth}{!}{$
+\left\{
+\begin{aligned}
+\underline{T}_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+  &={}H^{*}\!\left(
+    \Homsh_{\Osh_X}\!\left(
+      L(A_1)\otimes\cdots\otimes L(A_r),
+      L(B_1)\otimes\cdots\otimes L(B_s)
+    \right)\right),\\[3pt]
+T_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+  &={}\mathbf R^{*}\Gamma\!\left(
+    \Homsh_{\Osh_X}\!\left(
+      L(A_1)\otimes\cdots\otimes L(A_r),
+      L(B_1)\otimes\cdots\otimes L(B_s)
+    \right)\right).
+\end{aligned}
+\right.
+$}
+\end{equation}
+Here $L(F)$ denotes a finite locally free resolution of the coherent algebraic
+sheaf $F$, and $\mathbf R^{*}\Gamma(K)$ denotes the hypercohomology of $X$ with
+respect to the complex of sheaves $K$. If $r$ or $s$ is zero, the tensor product
+of the $L(A_i)$, respectively of the $L(B_j)$, is replaced by $\Osh_X$. In
+particular, $\underline{T}_{0}^{0}$ and $T_{0}^{0}$ are graded functors with no
+arguments: $\underline{T}_{0}^{0}$ is concentrated in degree 0, where it is the
+sheaf $\Osh_X$, while $T_{0}^{0}$ is identified with $H^{*}(X,\Osh_X)$. The
+independence of the right-hand sides of (8.1) from the chosen resolutions is in
+any event evident for the first line (the question then being local), and for
+the second follows from the preceding general remarks, taking into account the
+hypercohomology spectral sequence of the complex of sheaves
+\[
+  K=\Homsh_{\Osh_X}\bigl(L(A_1)\otimes\cdots,
+      L(B_1)\otimes\cdots\bigr),
+\]
+which abuts to the hypercohomology of $X$ with respect to $K$. Its initial term
+is $H^{p}(X,H^{q}(K))$, i.e.
+\begin{equation}\tag{8.2}
+  E_{2}^{p,q}
+  =H^{p}\!\left(X,
+    (\underline{T}_{r}^{s})^{(q)}
+      (A_1,\ldots,A_r;B_1,\ldots,B_s)\right).
+\end{equation}
+It follows that this spectral sequence itself is independent of the chosen
+resolutions, and its abutment is the first member of (8.1). The connecting
+operators in the various arguments $A_i,B_j$ are readily defined, since every
+exact sequence
+$0\longrightarrow F'\longrightarrow F\longrightarrow F''\longrightarrow0$
+can be resolved by an exact sequence of finite locally free complexes.
+
+On the system of functors $\underline{T}_{r}^{s*}$, respectively $T_{r}^{s*}$,
+one defines operations analogous to those of tensor calculus, whose definitions
+follow immediately from (8.1). Thus there is a composition (generalizing the
+one considered in Section 2)
+\begin{equation}\tag{8.3}
+\resizebox{\textwidth}{!}{$
+\begin{aligned}
+&T_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+\times T_{r'}^{s'*}(A'_1,\ldots,A'_{r'};B'_1,\ldots,B'_{s'})\\
+&\qquad\longrightarrow
+T_{r+r'}^{s+s'*}
+(A_1,\ldots,A_r,A'_1,\ldots,A'_{r'};
+ B_1,\ldots,B_s,B'_1,\ldots,B'_{s'}),
+\end{aligned}
+$}
+\end{equation}
+satisfying the evident associativity and compatibility properties with respect
+to functorial homomorphisms, connecting homomorphisms, and spectral sequences.
+There are likewise symmetry operations, whose explicit description is left to
+the reader. In addition, there is a contraction operation whenever one of the
+arguments $A_i$
+
+\src{191}
+is equal to one of the arguments $B_j$:
+\begin{equation}\tag{8.4}
+\resizebox{\textwidth}{!}{$
+\begin{aligned}
+&T_{r}^{s*}(A_1,\ldots,A_{i-1},C,A_{i+1},\ldots,A_r;
+ B_1,\ldots,B_{j-1},C,B_{j+1},\ldots,B_s)\\
+&\qquad\longrightarrow
+T_{r-1}^{s-1*}(A_1,\ldots,\widehat{A_i},\ldots,A_r;
+ B_1,\ldots,\widehat{B_j},\ldots,B_s).
+\end{aligned}
+$}
+\end{equation}
+Furthermore, if an argument $A_i$ is a locally free sheaf, it may be removed
+provided that one of the $A_j$ ($j\neq i$) is replaced by $A_j\otimes A_i$, or
+one of the $B_k$ by $B_k\otimes A_i'$ (where
+$A_i'=\Homsh_{\Osh_X}(A_i,\Osh_X)$); there is an analogous calculation rule
+when one of the arguments $B_i$ is locally free. In particular, an argument
+equal to $\Osh_X$ may always be removed. If all the arguments are locally free
+except for at most one of the $B_i$, the rule just stated gives a functorial
+isomorphism
+\begin{equation}\tag{8.5}
+  T_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+  =H^{*}\bigl(X,A_1'\otimes\cdots\otimes A_r'
+    \otimes B_1\otimes\cdots\otimes B_s\bigr)
+\end{equation}
+(since this reduces to the case $r=0$, $s=1$, where it is immediate; one may
+also use directly the spectral sequence with initial term (8.2)). Operations
+corresponding to the preceding ones are defined for the
+$\underline{T}_{r}^{s}$. The relations among the various operations so
+introduced are the same as for the analogous operations in tensor calculus.
+
+Let $n$ be the dimension of $X$. Successively applying a tensor composition
+(8.3) and contractions (8.4) to the repeated arguments gives a pairing
+\begin{equation}\tag{8.6}
+\resizebox{\textwidth}{!}{$
+  (T_{r}^{s})^{p}(A_1,\ldots;B_1,\ldots)
+  \times
+  (T_{s}^{r})^{n-p}(B_1,\ldots;A_1,\ldots,A_r\otimes\Omega_X^{n})
+  \longrightarrow H^{n}(X,\Omega_X^{n}).
+$}
+\end{equation}
+
+\result{THEOREM}{6} If $X$ is a nonsingular projective variety, then the
+pairings (8.6) are dualities.
+
+This follows in a purely formal way from the corollary to Theorem 3. Indeed, it
+follows readily from that corollary that if $K$ is a complex of locally free
+coherent algebraic sheaves, then the hypercohomology of $X$ with respect to
+$K$ is in duality with the hypercohomology of $X$ with respect to
+$K'\otimes\Omega_X^{n}$ through the natural pairings
+\begin{equation}\tag{8.7}
+  \mathbf R^{p}\Gamma(K)
+  \times\mathbf R^{n-p}\Gamma(K'\otimes\Omega_X^{n})
+  \longrightarrow\mathbf R^{n}\Gamma(\Omega_X^{n})
+  =H^{n}(X,\Omega_X^{n}).
+\end{equation}
+This is seen by using the spectral sequence with initial term
+$H^{p}(X,H^{q}(K))$\footnote{The printed text has
+$H^{p}(H^{q}(X,K))$; the initial term is that of the spectral sequence (8.2),
+namely $H^{p}(X,H^{q}(K))$.} and the analogous spectral sequence for
+$K'\otimes\Omega_X^{n}$. Theorem 6 follows from the preceding result by using
+definition (8.1).
+
+\src{192}
+\subsection*{REMARKS}
+
+\noindent 1. For the definitions preceding Theorem 6, it was not necessary for
+$X$ to be nonsingular, since it was not essential to work only with finite
+resolutions. But if $X$ is singular, one can no longer assert a priori that the
+$(\underline{T}_{r}^{s})^{p}(A_1,\ldots;B_1,\ldots)$ are coherent sheaves,
+because the complex of sheaves
+\[
+  \Homsh_{\Osh_X}\bigl(L(A_1)\otimes\cdots,L(B_1)\otimes\cdots\bigr)
+\]
+will have infinitely many components of any given total degree.
+
+\medskip
+\noindent 2. It is readily checked that in the formulas (8.1), one of the
+$L(B_i)$ may be replaced by $B_i$. In view of Proposition 3, this shows that
+\begin{equation}\tag{8.8}
+\left\{
+\begin{aligned}
+  \underline{T}_{1}^{1*}(A;B)&=\Extsh_{\Osh_X}^{*}(A,B),\\
+  T_{1}^{1*}(A;B)&=\operatorname{Ext}_{\Osh_X}^{*}(X;A,B).
+\end{aligned}
+\right.
+\end{equation}
+In particular, taking $r=s=1$ and $A_1=\Osh_X$ in (8.6) recovers Theorem 3.
+Formula (8.8) also implies
+\[
+  T_{0}^{1*}(B)=H^{*}(X,B),
+  \qquad
+  T_{1}^{0*}(A)=\operatorname{Ext}_{\Osh_X}^{*}(X;A,\Osh_X).
+\]
+
+\medskip
+\noindent 3. Formula (8.1) shows that in general the functors
+$\underline{T}_{r}^{s*}$ and $T_{r}^{s*}$ have components in both positive and
+negative degrees. Using Remark 2, one sees that if $X$ has dimension $n$, then
+the nonzero components of $\underline{T}_{r}^{s*}$ lie between $-(s-1)n$ and
+$rn$ if $s>0$, and between $0$ and $rn$ if $s=0$; the nonzero components of
+$T_{r}^{s*}$ lie between $-(s-1)n$ and $(r+1)n$ if $s>0$, and between $0$ and
+$(r+1)n$ if $s=0$ (and, unless I am mistaken, if $r>0$, even between
+$-(s-1)n$ and $rn$, respectively between $0$ and $rn$).
+
+\section*{BIBLIOGRAPHY}
+
+\noindent[1] Cartier (Pierre). --- Les groupes
+$\operatorname{Ext}^{s}(A,B)$, Séminaire A. Grothendieck : Algèbre homologique,
+t. 1, 1957, no. 3.
+
+\noindent[2] Grothendieck (Alexandre). --- Sur quelques points d'algèbre
+homologique, \emph{Tohoku Math. J.}, vol. 9, 1957, pp. 119--183.
+
+\noindent[3] Serre (Jean-Pierre). --- Faisceaux algébriques cohérents,
+\emph{Annals of Math.}, vol. 61, 1955, pp. 197--278.
+
+\noindent[4] Serre (Jean-Pierre). --- Sur la dimension homologique des anneaux
+et des modules noethériens, \emph{Proc. Intern. Symp. on Alg. Number Theory}
+[1955, Tokyo and Nikko]. --- Tokyo, Science Council of Japan, 1956,
+pp. 175--189.
+
+\clearpage
+\src{193}
+\section*{ADDENDUM}
+
+The difficulties noted in the remark on page 13 have now been completely
+resolved, through an extension of the duality theorems to arbitrary varieties
+(with arbitrary singularities). For this theory, which can be formulated in
+the general framework of the “theory of schemes,” we refer to the
+“Éléments de Géométrie algébrique” of J. Dieudonné and A. Grothendieck,
+currently in preparation. Some indications may be found in:
+
+\begin{quote}
+Grothendieck (A.). --- Cohomology theory of algebraic varieties,
+\emph{International Congress of Mathematicians}, 1958, Edinburgh (to appear).
+\end{quote}
+
+\begin{flushright}
+[April 1959]
+\end{flushright}
+
+\begin{center}\rule{36mm}{0.5pt}\end{center}
+
+\par\smallskip
+\begingroup\footnotesize
+\endgroup

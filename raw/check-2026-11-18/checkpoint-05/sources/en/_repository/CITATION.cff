@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: Foundations of Algebraic Geometry (FGA) — Maintained English Edition
+message: Cite the original work and this edition with its version.
+authors: &id001
+- family-names: Grothendieck
+  given-names: Alexandre
+version: 2026-08-30-r1
+date-released: '2026-08-30'
+url: https://github.com/KokunoYumeto/fga-en
+references:
+- type: software
+  title: FGA — human English translation used as a reference
+  authors:
+  - family-names: Hosgood
+    given-names: Tim
+  repository-code: https://github.com/thosgood/fga
+  url: https://github.com/thosgood/fga/tree/9976dd5f8e2ddcb388f0a07f3aa334f120d1019f
+  commit: 9976dd5f8e2ddcb388f0a07f3aa334f120d1019f
+preferred-citation:
+  type: book
+  title: Foundations of Algebraic Geometry (FGA) — Maintained English Edition
+  authors: *id001
+  version: 2026-08-30-r1
+  date-released: '2026-08-30'
+  url: https://github.com/KokunoYumeto/fga-en

@@ -1,0 +1,1407 @@
+\unit{강연 221 — 힐베르트 스킴}
+\sid{221}
+\src{249}
+\seminar{제13년차, 1960/61, 제221호\\1961년 5월}
+\paperhead{대수기하학에서의 구성 기법과 존재 정리\\
+IV. 힐베르트 스킴}%
+  {알렉상드르 그로텐디크 지음}
+
+\subsection*{서론}
+\addcontentsline{toc}{subsection}{서론}
+
+[2]의 I 및 II에서 제시한 기법들은 본질적으로 고려하는 스킴에 관한
+어떠한 사영성 가정에도 무관하였다. 유감스럽게도 현재로서는 이 기법들로
+[2]의 강연 II에서 제기한 존재 문제들을 해결할 수 없다. 이번 강연과
+다음 강연에서는 사영성 가정 아래 이 문제들을 해결하겠다. 사용하는
+기법들은 전형적으로 사영적이며, [2]의 I 및 II의 결과들은 사실상 사용하지
+않는다. 여기서는 [2]의 II, 제2절에서 말한 바와 같이 저우 좌표의 사용을
+대신할 ``힐베르트 스킴''을 구성하겠다. 다음 강연에서는 III에서 전개한
+스킴에서 몫을 취하는 이론과 힐베르트 스킴 이론을 함께 써서, 예컨대
+상당히 일반적인 조건 아래 피카르 스킴([2]의 II, 제3절에서 정의하였다)을
+구성할 수 있게 된다.
+
+요약하면, 이제 사영적 구성을 위한 기법은 대체로 만족스러운 수준에
+이르렀다고 할 수 있다. 다만 사영군과 같은 군이 ``고정점 없이'' 작용할 때
+그 군에 의한 몫으로 이행하는 정리가 아직\footnote{강연 끝의 부록을 보라.}
+빠져 있다([2]의 III, 제8절 참조). 해석기하학에서는 상황이 오히려 조금 더
+나아 보인다(주어진 해석공간 위에서 ``사영적인'' 해석공간만 연구할 때).
+해석공간의 경우에는 좋은 방식으로 작용하는 군에 의한 몫으로 이행할 때의
+어려움이 사라지기 때문이다. 한편 대수기하학에서와 마찬가지로 해석기하학에서도
+사영성 가정 없이 쓸 수 있는 구성 기법은 여전히 확립해야 한다.
+
+\fsection{1}{층의 유계인 족: 안정성}
+
+$k$를 체, $X$를 $k$-준스킴이라 하자. 간단히 하기 위해 $X$는 유한형이라고
+가정한다. 모든 확대체 $K/k$에 대하여 $K$-준스킴
+$X_K=X\otimes_k K$를 얻는다. $\mathcal F$가 $X_K$ 위의 연접층이고
+$K'$이 $K$의 확대체이면,
+$\mathcal F\otimes_K K'=\mathcal F_{K'}$은
+$X_K\otimes_K K'=X_{K'}$ 위의 준연접층이다. 이제 $K$와 $K'$을 $k$의
+임의의 두 확대체, $\mathcal F$를 $X_K$ 위의 준연접층, $\mathcal F'$을
+\src{250}
+$X_{K'}$ 위의 준연접층이라 하자. $K$와 $K'$에서 $k$의 한 공통 확대체
+$K''$로 가는 $k$-준동형들이 존재하고 $X_{K''}$ 위에서
+$\mathcal F_{K''}$과 $\mathcal F'_{K''}$이 동형이면, $\mathcal F$와
+$\mathcal F'$은 \emph{동치}라고 한다. 이는 동치관계이며, 이하에서는 이
+관계에 관한 층의 동치류와 그러한 동치류들의 집합을 다룬다. $X$가 $k$
+위의 유한형이면,
+\footnote{인쇄본에는 여기서 $X_0$라고 되어 있으나, 이 문단에서 정의된 것은
+$X$뿐이다.} 연접층의 모든 동치류는 $k$의 어떤 유한형 확대체 $K$에 대한
+$X_K$ 위의 한 연접층으로 정의될 수 있음에 유의하자. 따라서 연접층의
+동치류를 정의할 때 $k$의 대수적으로 닫힌 확대체들만으로 한정할 수 있다.
+또 초월차수가 무한인 $k$의 고정된 대수적으로 닫힌 확대체 $\Omega$ 하나로
+한정할 수도 있다. 이 경우 $X_\Omega$ 위의 두 연접층 $\mathcal F$와
+$\mathcal F'$이 동치일 필요충분조건은 $\Omega$의 $k$-자동동형
+$\sigma$가 존재하여 $\mathcal F\otimes_\Omega(\Omega,\sigma)$가
+$\mathcal F'$과 동형인 것이다. 두 정의에서 얻는 연접층의 동치류들은
+서로 일대일로 대응한다.
+
+$E$, $E'$을 $X$ 위의 연접층의 동치류들로 이루어진 두 집합이라 하자.
+같은 $X_K$ 위의 연접층 $\mathcal F$, $\mathcal F'$ 가운데
+$\mathcal F$의 동치류가 $E$에 속하고 $\mathcal F'$의 동치류가 $E'$에
+속하는 것들에 대하여, $\mathcal F\otimes\mathcal F'$ 꼴인 모든 층의
+동치류를 생각하자. 이렇게 얻는 연접층의 동치류들의 집합을
+$E\otimes E'$으로 나타낸다. $\operatorname{Tor}_i(E,E')$ 등도 같은
+방식으로 정의한다. 더 일반적으로, 같은 $X_K$ 위의 $n$개 연접층으로
+이루어진 모든 열 $\mathcal F_1,\ldots,\mathcal F_n$에 $X_K$ 위의
+연접층들의 집합 $U(\mathcal F_1,\ldots,\mathcal F_n)$을 대응시키며,
+층의 동형 및 밑변환에 의한 역상과 자명한 방식으로 양립하는 함수 $U$가
+주어졌다고 하자. 그러면 같은 기호 $U$로 나타내는 함수를 얻는다. 이 함수는
+연접층의 동치류들로 이루어진 $n$개 집합의 모든 열
+$E_1,\ldots,E_n$에 연접층의 동치류들의 집합
+$U(E_1,\ldots,E_n)$을 대응시킨다.
+
+이 절의 목적은 층의 동치류들의 어떤 집합들을 \emph{유계}라고 정의하고,
+가장 흔히 쓰는 연산 $U$를 유계인 집합들에 적용하면 다시 유계인 집합을
+얻음을 보이는 데 있다.
+
+$X$를 뇌터 준스킴 $S$ 위의 유한형 준스킴이라 하자. 모든 $s\in S$에
+대하여 섬유 $X_s$는 $k(s)$ 위의 유한형 준스킴이고, 앞의 의미에서
+$X_s$ 위의 연접층의 동치류들을 생각한다. 이로써 ``$X/S$의 한 섬유 위의
+연접층의 동치류''라는 표현과 그와 비슷한 표현들이 의미를 갖는다. 마찬가지로
+각 섬유에서 따로 진행하면, $X/S$의 섬유들 위의 연접층의 동치류들의
+집합들로 이루어진 계에 연산 $E\otimes E'$ 등을 적용하여 다른
+\src{251}
+$X/S$의 섬유들 위의 연접층의 동치류들의 집합을 얻을 수 있다.
+
+\result{정의}{1.1} $E$를 $X/S$의 섬유들 위의 연접층의 동치류들로
+이루어진 집합이라 하자. $S$ 위의 유한형 준스킴 $S'$과
+$X'=X\times_S S'$ 위의 연접층 $\mathcal F'$이 존재하여, $E$가
+$\mathcal F'$으로 정의되는 $X/S$의 섬유들 위의 층의 동치류들의 집합에
+포함되면 $E$를 \emph{유계}라고 한다.
+
+마지막 집합은 정의에 따라 각 $s\in S$에 다음 층들의 동치류를 대응시킨다:
+$s$ 위에 놓인 $S'$의 점 $s'$이 움직일 때의
+$\mathcal F'\otimes_{S'}k(s')$. 여기서 $k(s')$은 $k(s)$의 확대체이고,
+$X_s\otimes_{k(s)}k(s')$은 $s'$에서의 $X'$의 섬유
+$X'\otimes_{S'}k(s')=X'_{s'}$과 동일시된다. 따라서 유계인 족이란
+$S$ 위의 유한형 준스킴 $S'$으로 매개되는 연접층의 한 \emph{대수적 족}에
+포함되는 족이라고 말할 수 있다.
+
+유계인 족들의 유한 합집합은 유계이다(그 족들을 포함하는 대수적 족들을
+정의하는 매개변수 준스킴 $S_i$들의 서로소 합인 준스킴을 취한다).
+밑변환 $T\longrightarrow S$는 $X/S$에 상대적인 유계인 족을
+$X_T/T$에 상대적인 유계인 족으로 바꾼다. $T\longrightarrow S$가
+전사이면 그 역도 성립한다(더 일반적으로는, 그 상이 $X/S$에 대하여 주어진
+족 $E$에 실제로 나타나는 $s$들을 포함하면 된다). 이로써 유계인 족을
+결정하는 문제는 이론상 $S$가 정수환 $\mathbf Z$ 위의 유한형 대수의
+스펙트럼인 경우로 환원된다.
+
+$E$와 $E'$이 $X/S$에 상대적인 층의 동치류들의 유계인 족이면
+$E\otimes E'$도 유계이다. 실제로 $E$와 $E'$을 각각 포함하는 대수적
+족들이 $T\longrightarrow S$와 $X_T$ 위의 $\mathcal F$, 그리고
+$T'\longrightarrow S$와 $X_{T'}$ 위의 $\mathcal F'$으로 정의된다고
+하자. 그러면 $E\otimes E'$은 $T''=T\times_S T'\longrightarrow S$와
+$X_{T''}$ 위의 층 $\mathcal F''$으로 정의되는 대수적 족에 포함된다.
+여기서 $\mathcal F''$은 $X_{T''}$ 위에서 $\mathcal F$와 $\mathcal F'$의
+역상들을 텐서곱한 층이다. 이 논증이 옳은 것은 $\mathcal F$, $\mathcal F'$에
+관한 함자 $\mathcal F\otimes\mathcal F'$이 오른쪽 완전하여 밑변환과
+가환하기 때문이다(특히 섬유로의 이행과 가환한다). 이 논증을
+$\operatorname{Tor}_i(E,E')$, $\operatorname{Hom}(E,E')$,
+$\operatorname{Ext}^i(E,E')$ 같은 국소 연산에 그대로 적용할 수는 없다.
+그러나 $E\otimes E'$의 경우와 같이 진행하면서 다음 유형의 결과들을
+(모두 [3]의 IV, 6.11에 들어 있다) 더 사용하면, 이 연산들도 유계인
+집합들을\footnote{인쇄본에는 한정사 ``des''가
+빠져 있다.} 다시 유계인 집합들로 바꿈을 보일 수 있다. 즉 유계인 족 $E$는
+항상 $X_T$ 위의 연접층 $\mathcal F$로 정의되는 대수적 족에 포함되도록
+할 수 있고($T$는 $S$ 위의 유한형이다), 이때 $\mathcal F$는 $T$에
+상대적으로 평탄하다. (처음의 매개변수 공간을 ``조각으로
+나눈다''.
+\footnote{인쇄본에는 잘못된 구절 ``coupe au
+morceaux''가 쓰여 있다.}) 알맞은 층들에 관한 이러한
+\src{252}
+평탄성은 $\operatorname{Tor}_i(\mathcal F,\mathcal F')$ 같은 연산이
+임의의 밑변환과 가환하도록 보장한다. 같은 방법은 전역적인 성질의 연산에도
+적용된다. 고유 사상에 의한 연접층의 직상과 유도 직상, 고유 사상에 상대적인
+전역 $\operatorname{Ext}$([5]의 III, \S~6 참조) 등이 그 예이다. 이 모든
+연산은 층의 유계인 족들을 층의 유계인 족들로 바꾼다. (주의 --- 여기서
+여러 층을 취하는 준스킴들은 고려하는 유형의 연산을 거치면서 달라질 수 있다.)
+
+다음 두 명제는 본질적으로 같은 평탄성 기법으로 증명한다. 유한형 사상의
+섬유들 위에서의 준소분해에 관해서는 특히 [5]의 IV를 보라.
+
+\result{명제}{1.2} $E$, $E'$을 $X/S$의 섬유들 위의 층의 동치류들로
+이루어진 유계인 집합이라 하고, $X$는 $S$ 위에서 고유라고 가정하자. 그러면
+다음이 성립한다.
+
+\medskip
+\noindent (i) $\mathcal F$의 동치류가 $E$에 속하고 $\mathcal F'$의
+동치류가 $E'$에 속할 때, 준동형
+$\mathcal F\longrightarrow\mathcal F'$들의 핵, 여핵, 상으로 이루어진
+족은 유계이다.
+
+\smallskip
+\noindent (ii) $\mathcal F$의 동치류가 $E$에 속하고 $\mathcal F'$의
+동치류가 $E'$에 속할 때, $\mathcal F'$에 의한 $\mathcal F$의 확장인
+층 $\mathcal F''$들로 이루어진 족은 유계이다.
+
+알맞은 밑변환을 한 뒤, $E$와 $E'$이 각각 $X_T/T$ 위의 연접층
+$\mathcal G$와 $\mathcal G'$으로 정의된다고 가정할 수 있다. 여기서
+$T$는 $S$ 위의 유한형이다. 더 나아가 어떤 평탄성 가정들이 성립한다고
+할 수 있다. 이 가정들에 따라 층
+$f_{T*}(\operatorname{Hom}_{X_T}(\mathcal G,\mathcal G'))$과
+$\operatorname{Ext}^{1}_{f_T}(\mathcal G,\mathcal G')$의 형성은
+임의의 사상 $T'\longrightarrow T$에 의한 밑변환과 가환한다. 또한 $T$
+위의 앞의 연접층들이 국소 자유라고 가정할 수 있다. $T_0$와 $T_1$을
+단면의 싹들의 층이 각각 앞의 두 층인 $T$ 위의 벡터 다발이라 하자. 그러면
+$X_{T_0}$ 위의 연접층들의 준동형
+$\mathcal G_{T_0}\longrightarrow\mathcal G'_{T_0}$와, $X_{T_1}$ 위의
+연접층들의 확장\footnote{인쇄본은 보편 확장의 두
+끝 항을 서로 뒤바꾸어 놓았다. 고려하는 류는
+$\operatorname{Ext}^1(\mathcal G,\mathcal G')$에 속한다.}
+\[
+0\longrightarrow\mathcal G'_{T_1}\longrightarrow\mathcal G''
+\longrightarrow\mathcal G_{T_1}\longrightarrow0
+\]
+을 표준적으로 정의할 수 있고, 후자는 자명한 보편 성질을 갖는다. 이 두 번째
+층은 (ii)에서 고려한 족을 포함하는 대수적 족을 정의한다. 앞의 준동형의
+\src{253}
+핵, 여핵, 상도 마찬가지이며, 이들을 생각하면 (i)가 증명된다(다만 여핵이
+$T_0$에 상대적으로 평탄하다고 가정한다. 이 경우에도 $T_0$를 조각으로
+나누어 환원한다\ldots).
+
+\result{명제}{1.3} $E$를 $X/S$의 섬유들 위의 층의
+동치류들로\footnote{인쇄본에는 단수 ``classe''가
+쓰여 있다.} 이루어진 유계인 족이라 하자. $K$가 대수적으로 닫혀 있고
+$\mathcal F$가 $X_K$ 위의 연접층이며 그 동치류가 $E$에 속할 때,
+$(\operatorname{supp}\mathcal F)_{\mathrm{réd}}$의 구조층들의 동치류는
+유계인 족을 이룬다.
+
+여기서 $(\operatorname{supp}\mathcal F)_{\mathrm{réd}}$은
+$\mathcal F$의 지지집합에 유도된 축소 구조를 준 것이다. 즉 그 구조층은
+$\operatorname{supp}\mathcal F$를 정의하는 가장 큰 아이디얼층으로
+$\mathcal O_{X_K}$를 나눈 몫이다. 준소분해 이론으로 $\mathcal F$에서
+표준적으로 얻는 층들에 대해서도 (1.3)과 같은 결과를 증명할 수 있다. 예를
+들어 $\mathcal F_i$들이 $\mathcal F$의 지지집합의 성분들에 대한 준소
+부분층이고 이 성질에 관하여 극소일 때의 $\mathcal F/\mathcal F_i$들,
+$\mathfrak p$가 $\mathcal F$에 연관된 소 아이디얼층일 때의
+$\mathcal O_{X_K}/\mathfrak p$들, 또는 $\mathfrak q$가 $\mathcal F$의
+지지집합의 한 성분에 연관된 준소 아이디얼층일 때의
+$\mathcal O_{X_K}/\mathfrak q$들이 그러하다(기초체는 대수적으로 닫혀 있다고
+한다).
+
+\fsection{2}{유계인 족과 힐베르트 다항식}
+
+이하에서는 $X$가 $S$ 위에서 사영이고 $\mathcal O_X(1)$로 나타내는 매우
+풍부한 층이 주어졌다고 가정한다. $S$의 점 $s$의 잉여체 $k(s)$의 모든
+확대체 $K$에 대하여, $X_K$ 위에서 이에 대응하는 층
+$\mathcal O_{X_K}(1)$을 생각한다. 이 층도 매우 풍부하다.
+
+$X_K$ 위의 모든 연접층 $\mathcal F$에 함수
+\[
+P_{\mathcal F}(n)=\text{$X_K$ 위의 $\mathcal F(n)$의
+오일러--푸앵카레 특성}
+\]
+을 대응시킨다. 이는 정수 $n$에 관한 다항식이며 $\mathcal F$의
+\emph{힐베르트 다항식}이라고 한다. $n$이 충분히 크면 $i>0$에 대하여
+$H^i(X_K,\mathcal F(n))$이 영이므로, $P(n)$은 바로
+$H^0(X_K,\mathcal F(n))$의 $K$ 위의 차원이다.
+
+이제 $\mathcal F$가 $X$ 위의 연접층이고 $S$에 상대적으로 평탄하다고 하자.
+그러면 $S$의 같은 연결 성분에 속하는 섬유 $X_s$들 위에 유도된 층
+$\mathcal F_s$들의 힐베르트 다항식은 모두 같다([5]의 III, \S~7).
+따라서 평탄성 가정 없이도, $X$ 위의 모든 연접층 $\mathcal F$에 대하여
+$s\in S$일 때의 층 $\mathcal F_s$들의 힐베르트 다항식들로 이루어진
+집합은 유한하다.
+\src{254}
+한편 $\mathcal F$가 $X$ 위의 연접층이면, 충분히 큰 $n$, $N$에 대하여
+$\mathcal F$는 $\mathcal O_X(-n)^N$의 한 몫층과 동형임을 상기하자.
+따라서 섬유들 위에 유도된 층 $\mathcal F_s$들도 그 섬유 위의 층
+$\mathcal O(-n)^N$의 몫이다.
+
+이 두 비고로부터 다음 정리의 ``필요조건'' 부분을 얻는다.
+\result{정리}{2.1} $X$를 뇌터 준스킴 $S$ 위에서 사영인 준스킴이라 하고,
+$\mathcal O_X(1)$이 $S$에 관해 $X$ 위에서 매우 풍부하다고 하자. $E$를
+$X/S$의 섬유들 위의 층들의 동형류로 이루어진 집합이라 하자. $E$가
+유계일 필요충분조건은\footnote{인쇄본에는 ``필요하다''만 적혀 있다.
+Exposé 221에 대한 1962년의 정오표는 ``필요충분하다''로 고치도록 한다.}
+다음 조건들을 만족하는 것이다.
+
+\medskip
+\noindent (a) $X$ 위의 연접층 $\mathcal L$이 존재하여($\mathcal
+O_X(-n)^N$ 꼴이라고 가정해도 된다), $E$가 $\mathcal L_K$ 꼴의 층들의
+연접 몫층의 동형류로 이루어진 족에 포함된다.
+
+\smallskip
+\noindent (b) 동형류가 $E$에 속하는 층 $\mathcal F$들의 힐베르트 다항식
+$P_{\mathcal F}$들이 하나의 같은 유한한 다항식 집합에 속한다.
+
+이제 ``충분하다''는 부분만 증명하면 되며, 이는 더 정밀한 결과의 특수한
+경우가 될 것이다. 체 $K$ 위의 유한형 준스킴 위의 임의의 연접 가군
+$\mathcal F$와 임의의 정수 $r$에 대하여, 열린집합 위의 단면들이 그
+열린집합 위에서 지지집합의 차원이 $<r$인 $\mathcal F$의 단면들인
+$\mathcal F$의 부분가군을 $N_r$이라 하자. 그러면
+$r>\dim\operatorname{supp}\mathcal F$이면 $N_r=\mathcal F$이고,
+$r\leq0$이면 $N_r=0$이다. 따라서 $\mathcal F$의 유한한 증가 여과를
+얻으며, 그 인자 $N_{r+1}/N_r$\footnote{인쇄본은 몫을
+$N_r/N_{r+1}$로 뒤집어 적었는데, 이는 방금 정의한 증가 여과와 양립하지
+않는다.}의 연관 소순환은 정확히 $\mathcal F$의 연관 소순환 가운데
+차원이 $r$인 것들이다. 다음과 같이 놓겠다.
+\[
+\mathcal F_{(r)}=\mathcal F/N_r.
+\]
+그러면 $\mathcal F_{(r)}$의 연관 소순환은 정확히 $\mathcal F$의 연관
+소순환 가운데 차원이 $\geq r$인 것들이다. 특히 $\mathcal F_{(r)}$가
+$\mathcal F$와 같을 필요충분조건은 $\mathcal F$의 연관 소순환들의
+차원이 $\geq r$인 것이다. 이제 다음이 성립한다.
+
+\result{정리}{2.2} (2.1)의 조건 아래에서 $s$를 정수라 하고, $E$가 조건
+(a)와 다음과 같이 약화한 (b)를 만족한다고 가정하자.
+
+\medskip
+\noindent $(b_s)$ 동형류가 $E$에 속하는 층 $\mathcal F$들의 푸앵카레
+다항식 $P_{\mathcal F}$에서 차수가 $\geq s-1$인 계수들이 유계이다.
+
+이 조건들 아래에서 $\mathcal F$의 동형류가 $E$를 달릴 때 층
+$\mathcal F_{(s)}$들은 유계인 족을 이룬다. 더 나아가
+$P_{\mathcal F}$의 $s-2$차 계수들은 아래로 유계이다.
+\src{255}
+따라서 다음을 얻는다.
+
+\result{따름정리}{2.3} 동형류가 $E$에 속하는 층 $\mathcal F$들의 모든
+연관 소순환의 차원 $d$가 $s\leq d\leq r$을 만족한다고 가정하자. 그러면
+(2.1)의 (b)에서는 $P_{\mathcal F}$의 $s-1$차부터 $r$차까지의 계수들만
+고려하면 된다.
+
+이 번호의 나머지 부분에서는 (2.2)의 증명을 개략적으로 설명한다. 핵심은
+다음 두 보조정리이며, 첫째 것은 잘 알려져 있다(그리고 Chow 좌표의 유용한
+수학적 내용을 요약한다).
+
+\result{보조정리 2.4 (CHOW)}{} $S$의 잉여체들의 대수적으로 닫힌 확대체
+$K$에 대한 섬유 $X_K$의 부분스킴 $Y$들의 구조층을 생각하자. 여기서
+$Y$는 축소되어 있고 그 모든 성분의 차원이 같은 $r$이며
+($\mathcal O_Y$는 $\mathcal O_X$의 몫층으로 본다), $Y$들의 차수가
+유계이면 $Y$들은 유계인 족을 이룬다.
+
+여기서 $Y$의 차수 $a$는 다음 식의 최고차항의 계수로 정의하는 것이 가장
+편리하다.
+\[
+P_{\mathcal O_Y}=a\frac{n^r}{r!}+\cdots.
+\]
+
+\result{보조정리}{2.5} $\mathcal L$을 $X$ 위의 연접층, $E$를
+$\mathcal L_K$ 꼴의 층($K$는 $S$의 잉여체의 확대체)의 몫층
+$\mathcal F$들의 동형류로 이루어진 집합이라 하자. $S$ 위의 $X$의
+섬유들의 차원이 $\leq r$이라고 가정하고 다음과 같이 놓자.
+\[
+P_{\mathcal F}(n)=a_{\mathcal F}\frac{n^r}{r!}
++b_{\mathcal F}\frac{n^{r-1}}{(r-1)!}
++\text{차수가 $<r-1$인 항들}.
+\]
+그러면 계수 $a_{\mathcal F}$는 유계이고 $b_{\mathcal F}$는 아래로
+유계이다. $b_{\mathcal F}$가 유계이면 $\mathcal F_{(r)}$들의 족은
+유계이다.
+
+\emph{증명.} -- $S$를 덮는 $S$의 부분스킴들의 합집합으로 $S$를
+바꾸어도 무방하므로, 유한 사상
+$f:X\longrightarrow\mathbf P^r_S$가 존재하고 $\mathcal O_X(1)$이
+$\mathcal O_{\mathbf P^r_S}(1)$의 역상과 동형이라고 가정할 수 있다.
+따라서 $X$ 위의 모든 연접층 $\mathcal F$에 대하여
+$P_{\mathcal F}=P_{f_*(\mathcal F)}$이다. 한편 (앞 번호의 방법으로)
+$X$ 위의 층 $\mathcal F$들로 이루어진 집합이 유계일 필요충분조건은
+$f_*(\mathcal F)$들로 이루어진 집합이 유계인 것임을 쉽게 확인할 수
+있다. 끝으로
+\[
+f_*(\mathcal F)_{(r)}=f_*(\mathcal F_{(r)})
+\]
+이다.
+\src{256}
+따라서 $X=\mathbf P^r_S$인 경우로 환원된다. 더 나아가 적당한 $k,s$에
+대하여 $\mathcal L=\mathcal O_{\mathbf P^r_S}(k)^s$라고 가정할 수 있다.
+계수 $a_{\mathcal F}$는
+\[
+0\leq a_{\mathcal F}\leq s
+\]
+를 만족하므로 유계이다. 이제 $P_{\mathcal F}(n)$의 $n^{r-1}$의
+계수가 아래로 유계(각각 유계)라고 말하는 것과
+$P_{\mathcal F}(n-k)=P_{\mathcal F(-k)}(n)$에 대하여 그렇게 말하는 것은
+같은 뜻이다. 따라서 다음 경우로 환원된다.
+\[
+\mathcal L=\mathcal O_{\mathbf P^r_S}^{s}.
+\]
+
+완전열
+\[
+0\longrightarrow N_r\longrightarrow\mathcal F
+\longrightarrow\mathcal F_{(r)}\longrightarrow0
+\]
+을 생각하자. 이로부터
+\[
+P_{\mathcal F}=P_{\mathcal F_{(r)}}+P_{N_r}
+\]
+이고, $P_{N_r}$에서 $n^{r-1}$의 계수는 양수이므로
+($\dim\operatorname{supp}N_r\leq r-1$이기 때문이다),
+\[
+b_{\mathcal F_{(r)}}\leq b_{\mathcal F}
+\]
+이다. 따라서 보조정리의 주장들을 증명할 때 $\mathcal F$를
+$\mathcal F_{(r)}$로 바꾸어도 된다. 즉, 고려하는 $\mathcal L$의 몫층
+$\mathcal F$들이 꼬임이 없다고 가정할 수 있다.
+
+$\mathbf P^r_K$가 정규이므로 $\mathcal F$는
+$U=\mathbf P^r_K-Y$ 위에서 계수(階數) $a=a_{\mathcal F}$인 국소
+자유층이며, 여기서 $Y$의 여차원은 $\geq2$이다. 그러므로
+$\bigwedge^a\mathcal F$는 $\mathbf P^r_K$ 위의 층으로서 $U$로의 제한이
+가역이다. 따라서 ($\mathbf P^r_K$가 정칙이고 $Y$의 여차원이
+$\geq2$이므로) 이는 $\mathbf P^r_K$ 위의 어떤 가역층의 제한과
+동형이고, 그 가역층은 동형을 제외하고 결정된다. 이 가역층은 잘 결정된
+어떤 정수 $d$에 대하여 $\mathcal O_{\mathbf P^r_K}(d)$ 꼴이다.
+$\bigwedge^a\mathcal F$는
+$\bigwedge^a\mathcal O_{\mathbf P^r_K}^{s}\simeq
+\mathcal O_{\mathbf P^r_K}^{N}$\footnote{인쇄본은 여기서 지수 $s$를
+정의되지 않은 $n$으로 바꾸어 적었다. $s$는 $\mathcal F$로 전사하는
+자유층의 계수(階數)이다.}의 몫이고 $N=\binom{s}{a}$이므로, 이 층은
+$N$개의 표준 단면을 갖는다. 따라서 이 단면들은 $U$ 위의
+\src{257}
+$\mathcal O_{\mathbf P^r_K}(d)$의 단면들을 정의하고, 이들은
+$\mathcal O_{\mathbf P^r_K}(d)$의 단면 $s_i$ ($1\leq i\leq N$)들의
+제한이다($\mathbf P^r_K$가 정규이고 $Y$의 여차원이 $\geq2$이기
+때문이다). 이 단면들은 $U$의 점들에서
+$\mathcal O_{\mathbf P^r_K}(d)$를 생성하므로 모두 영일 수 없고, 따라서
+$d\geq0$이다. 한편 간단한 계산으로
+\[
+b_{\mathcal F}=a_{\mathcal F}(r+1)/2+d
+\]
+를 얻는다. 특히 이로부터 $b_{\mathcal F}>0$임을 알 수 있으므로
+$b_{\mathcal F}$는 아래로 유계이다. 이것이 유계일 필요충분조건은 $d$가
+유계인 것이며, 이때 $\mathcal F$가 유계인 족에 속함을 보이자.
+$a_{\mathcal F}$와 $b_{\mathcal F}$가 각각 고정된 $a,b$라고 가정할 수
+있고, 따라서 $d$도 고정되어 있다.
+$\mathcal O_{\mathbf P^r_K}(d)$의 $N$개 단면 $s_i$, 즉 준동형
+\[
+s:\bigwedge^a\mathcal L_K\longrightarrow\mathcal O_{\mathbf P^r_K}(d)
+\]
+를 알면, 이에 대응하는 합성 준동형
+\[
+\mathcal L_K\longrightarrow
+\operatorname{Hom}\!\left(\bigwedge^{a-1}\mathcal L_K,
+\bigwedge^a\mathcal L_K\right)\longrightarrow
+\operatorname{Hom}\!\left(\bigwedge^{a-1}\mathcal L_K,
+\mathcal O_{\mathbf P^r_K}(d)\right)
+\]
+의 여상으로 $\mathcal F$를 복원할 수 있다. 여기서 첫째 준동형은
+외승곱에서 나오는 표준 준동형이고, 둘째 준동형은 $s$로부터 얻어진다.
+이제 (1.2) (i)에 따라 결론이 나온다.
+
+앞의 두 보조정리를 결합하면 다음을 증명할 수 있다.
+
+\result{보조정리}{2.6} (2.1)의 예비 조건 아래에서 모든 $\mathcal F$에
+대하여
+\[
+P_{\mathcal F}(n)=a_{\mathcal F}\frac{n^r}{r!}
++b_{\mathcal F}\frac{n^{r-1}}{(r-1)!}
++\text{차수가 $<r-1$인 항들}
+\]
+이고 계수 $a_{\mathcal F}$들이 유계라고 가정하자. 그러면 계수
+$b_{\mathcal F}$들은 아래로 유계이다. $b_{\mathcal F}$들이 유계이면
+$\mathcal F_{(r)}$들은 유계인 족을 이룬다.
+
+층 $\mathcal F$들의 밑체 $K$는 대수적으로 닫혀 있다고 가정할 수 있다.
+각 $\operatorname{supp}\mathcal F_{(r)}$, 즉
+$\operatorname{supp}\mathcal F$의 $r$차원 성분들의 합집합에 유도된
+축소 구조를 주자. 그러면 $\operatorname{supp}\mathcal F_{(r)}$들의
+차수는 $a$를 위에서 유계로 가지므로 (2.4)에 따라
+$\operatorname{supp}\mathcal F_{(r)}$들은 유계인 집합을 이룬다. 더
+나아가 $\operatorname{supp}\mathcal F_{(r)}$의 각 성분에 대한
+$\mathcal F_{(r)}$의 길이는 $\leq a$이다. 따라서
+$\mathcal J_{\mathcal F}$가 $\operatorname{supp}\mathcal F_{(r)}$를
+정의하는 아이디얼이면 $\mathcal F_{(r)}$는
+\src{258}
+$\mathcal J_{\mathcal F}^{a}$로 정의되는 $X$의 부분스킴
+$Y_{\mathcal F}$ 위의 가군으로 볼 수 있다. 앞 보조정리에서와 같이
+$\mathcal F=\mathcal F_{(r)}$인 경우로도 환원할 수 있으므로,
+$\mathcal F$는 $Y_{\mathcal F}$ 위의 가군으로부터 온다.
+$Y_{\mathcal F}$들은 $\mathcal O_{X_K}$의 몫가군들의 유계인 족에
+대응하므로, 어떤 스킴 $X\times_S T$의 닫힌 부분스킴 $Y$로부터 온다.
+이제 $Y/T$와 $\mathcal L\otimes_XY$에 (2.5)를 적용하면 결론을 얻는다.
+
+이제 $\dim\operatorname{supp}\mathcal F$의 상계 $r$에 대한 귀납법으로
+(2.2)를 증명할 수 있다. $r<0$이면 주장은 자명하다. 따라서 $r\geq0$이고
+$r'<r$에 대해서는 주장이 증명되었다고 가정하자. (2.6)에 따라
+$\mathcal F_{(r)}$들은 유계인 집합을 이루므로, (1.2) (i)에 따라
+준동형 $\mathcal L_K\longrightarrow\mathcal F_{(r)}$들의 핵들도
+유계인 집합을 이룬다. 따라서 문제의 핵들, 그러므로 또한
+\[
+N_r(\mathcal F)=\operatorname{Ker}(\mathcal F\longrightarrow\mathcal F_{(r)})
+\]
+이 $\mathcal L'_K$들의 몫이 되게 하는 $X$ 위의 연접 가군
+$\mathcal L'$이 존재한다. $\mathcal F_{(r)}$들이 유계이므로
+$P_{\mathcal F_{(r)}}$들도 유계이고, 공식
+\[
+P_{\mathcal F}=P_{\mathcal F_{(r)}}+P_{N_r}
+\]
+에 따라 $P_{N_r}$들은 $P_{\mathcal F}$들과 같은 조건 $(b_s)$를
+만족한다. 그러므로 $N_r$들은 조건 (a)와 $(b_s)$를 만족하고, 귀납
+가정에 따라 $(N_r)_{(s)}$들은 유계이다. 그런데 $\mathcal F_{(s)}$는
+$(N_r)_{(s)}$에 의한 $\mathcal F_{(r)}$의 확대이므로 (1.2) (ii)에 따라
+$\mathcal F_{(s)}$들은 유계이다. (2.2)의 마지막 주장에 대해서는
+유계성과 그 다음 계수의 아래로 유계임을 동시에 귀납한다. 고정된
+원천에서 $\mathcal F_{(s)}$로 가는 사상들의 유계인 핵들은 각 $N_s$로
+전사하는 하나의 같은 연접층을 제공하지만, (1.2) (i)만으로는 이
+몫들의 족이 유계임을 얻기에 충분하지 않다. 이 몫들에 계수에 대한
+주장을 귀납적으로 다시 적용하면, 힐베르트 다항식의 가법성과 보조정리
+2.6에 따라 원하는 다음 계수의 하계를 얻는다.
+이것으로 증명이 끝난다.
+
+\fsection{3}{힐베르트 스킴: 정의와 존재 정리}
+
+$X$를 다른 준스킴 $S$ 위의 준스킴이라 하고, $\mathcal F$를 $X$ 위의
+준연접 가군이라 하자. 다음 기호로
+\[
+\operatorname{Quot}(\mathcal F/X/S)
+\]
+$\mathcal F$의 준연접 몫가군 가운데 $S$ 위에서 평탄인 것들의 집합을
+나타내자. 이제 $S'\longrightarrow S$를 밑준스킴의 변경 사상이라 하고,
+$X'=X\times_S S'$ 및
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$로 놓자.
+그러면 $X'$은 준연접 가군
+\src{259}
+$\mathcal F'$이 주어진 $S'$ 위의 준스킴이고,
+$\operatorname{Quot}(\mathcal F'/X'/S')$를 생각할 수 있다. 다음과 같이
+놓는다.
+\[
+\underline{\operatorname{Quot}}_{\mathcal F/X/S}(S')
+=\operatorname{Quot}(\mathcal F'/X'/S')
+\qquad\text{(여기서 $X'=X\times_SS'$)}.
+\]
+이제 $S''\longrightarrow S'$가 $S$-사상이면
+$X''=X\times_SS''$은 $X'\times_{S'}S''$과 동형이고, $\mathcal F''$은
+$\mathcal F'\otimes_{\mathcal O_{S'}}\mathcal O_{S''}$과 동형이다. 또한
+$X'$ 위의 준연접 가군의 범주에서 $X''$ 위의 준연접 가군의 범주로 가는
+역상 함자
+\[
+\mathcal G'\longmapsto
+\mathcal G'\otimes_{\mathcal O_{S'}}\mathcal O_{S''}
+\]
+는 오른쪽 완전이고 $S'$-평탄 가군들을\footnote{인쇄된 프랑스어 본문은 여기서 직접목적어 앞의 관사 ``les''를
+빠뜨렸다.} $S''$-평탄 가군들로 보내므로, 자연스러운 사상
+\[
+\operatorname{Quot}(\mathcal F'/X'/S')\longrightarrow
+\operatorname{Quot}(\mathcal F''/X''/S'')
+\]
+을 얻는다. 따라서 $\underline{\operatorname{Quot}}_{\mathcal F/X/S}(S')$는
+$S$ 위의 준스킴 $S'$에 대한 반변 함자로서 집합의 범주에 값을 갖는다.
+이하에서는 $X$가 뇌터 준스킴 $S$ 위에서 사영이고 $\mathcal F$가
+연접이라고 가정하며, 단순화를 위해 $S$ 위의 $S'$ 가운데 국소 뇌터인
+것들로 한정하겠다.
+
+\result{정리}{3.1} 이 조건들 아래에서 국소 뇌터 $S$-준스킴들의 범주
+위의 반변 함자 $\underline{\operatorname{Quot}}_{\mathcal F/X/S}$는
+$S$-준스킴 $\operatorname{Quot}_{\mathcal F/X/S}$에 의해 표현 가능하며,
+이 준스킴은 사영 $S$-스킴들의 한 열의 합이다(따라서
+$\operatorname{Quot}_{\mathcal F/X/S}$는 $S$ 위에서 국소 유한형이다).
+
+이러한 분해는 다음과 같이 얻는다. $\mathcal O_X(1)$을 $X$ 위의
+가역층으로서 $S$에 관해 매우 풍부한 것이라 하자. 유리수 계수를 갖는
+각 다항식 $P(n)$에 대하여 $\operatorname{Quot}^P(\mathcal F/X/S)$를
+$\operatorname{Quot}(\mathcal F/X/S)$ 가운데 $\mathcal F$의 연접
+몫가군 $\mathcal G$로서 $S$ 위에서 평탄하고 모든 $s\in S$에서의
+힐베르트 다항식이 $P$와 같은 것들로 이루어진 부분이라 하자. 그러면
+다음과 같이 놓는다.
+\[
+\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}(S')
+=\operatorname{Quot}^P(\mathcal F'/X'/S')
+\]
+이로써 $\underline{\operatorname{Quot}}_{\mathcal F/X/S}$의 부분함자를
+얻는다. 2절에서 상기한 힐베르트 다항식의 불변성으로부터 다음이
+따른다. $\underline{\operatorname{Quot}}_{\mathcal F/X/S}$가 표현
+가능할 필요충분조건은 모든
+$\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$가 표현 가능한
+것이다. 이때 전자를 표현하는 $S$-준스킴
+$\operatorname{Quot}_{\mathcal F/X/S}$는 후자의 함자들을 표현하는
+$\operatorname{Quot}^P_{\mathcal F/X/S}$들의 합인 준스킴과 동형이다.
+따라서 (3.1)은 다음 정리의 귀결이다.
+\src{260}
+\result{정리}{3.2} 앞의 표기를 사용하면, 함자
+$\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$는 사영
+$S$-준스킴 $\operatorname{Quot}^P_{\mathcal F/X/S}$에 의해 표현
+가능하다.
+
+이 절의 나머지 부분에서는 (3.2)를 증명한다.
+
+$\nu$를 정수라 하자. $S$ 위의 각 $S'$에 대하여 $A_\nu(S')$로
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$의
+몫 $\mathcal G=\mathcal F'/\mathcal K$ 가운데 연접이고 $S'$ 위에서
+평탄하며 다음 조건들을 만족하는 것들의 집합을 나타내자.
+\begin{align*}
+\text{a.}\quad &R^if'_*(\mathcal G(n))=0 &&\text{$i>0$, $n\geq\nu$일 때},\\
+\text{b.}\quad &R^if'_*(\mathcal K(n))=0 &&\text{$i>0$, $n\geq\nu$일 때},\\
+\text{c.}\quad &f'_*(\mathcal K(\nu+k))
+=\mathcal S'_k f'_*(\mathcal K(\nu)) &&\text{$k\geq0$일 때}.
+\end{align*}
+마지막 관계에서는 $X$가 $S$ 위의 준연접 등급 대수 $\mathcal S_*$의
+동차 소 스펙트럼으로 주어져 있고, 이 대수는 양의 차수로 등급이 주어져
+$\mathcal S_1$에 의해 생성된다고 가정한다. 또한
+\[
+\mathcal S'_* =\mathcal S_*\otimes_{\mathcal O_S}\mathcal O_{S'}
+\]
+로 놓아서 $X'$이 $\mathcal S'_*$의 동차 소 스펙트럼이 되게 한다.
+그런데 (3.2)를 증명할 때에는 $X=\mathbf P^r_S$인 경우로 쉽게
+귀착된다. 실제로 $S$는 $X|U$가 $\mathbf P^r_U$의 닫힌 부분스킴이고
+$\mathcal O_X(1)$이 $\mathcal O_{\mathbf P^r_U}(1)$에서 유도되는
+열린집합 $U$들의 합이다. 또한 $\mathcal F$가
+$\mathcal O_{\mathbf P^r_S}^{N}$ 꼴인 경우로 귀착되므로 $\mathcal F$는
+$S$ 위에서 평탄하다. 그러면 앞에서의 층 $\mathcal K$들도 $S'$ 위에서
+평탄하다. 이제 퀸네트 관계식([5], III, \S~7)에 따라 조건 (a), (b)는
+밑준스킴의 변경에 대해 안정하며, $n\geq\nu$일 때
+$f'_*(\mathcal G(n))$과 $f'_*(\mathcal K(n))$의 형성이 밑준스킴의
+확장과 가환함을 함의한다(같은 곳). 따라서 (c)도 밑준스킴의 확장에
+대해 안정하다.
+
+다시 말해 $A_\nu(S')$는 $S'$에 관한 반변 함자이며, 더 정확히는
+$A(S')=\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}(S')$의
+부분함자이다. $\nu$가 변할 때 이렇게 $A(S')$의 부분집합들로 이루어진
+증가열 $A_\nu(S')$를 얻으며, 세르의 잘 알려진 정리 [5], III, \S~2에
+따르면 그 합집합은 $A(S')$이다. 이제 $\mathcal G$가 $\mathcal F'$의
+연접 몫으로서 $S'$ 위에서 평탄하고, $s$가 $S'$의 점이며, 밑준스킴의
+변경 $\operatorname{Spec}(k(s))\longrightarrow S'$으로부터 조건 (a),
+(b), (c)를 만족하는 $\mathcal F_s$의 몫 $\mathcal G_s$, 즉
+$A_\nu(\operatorname{Spec}(k(s)))$의 원소가 얻어진다고 하자. 그러면
+$s$의 열린 근방 $U$가 존재하여 $\mathcal G|f'^{-1}(U)$에 대해서도
+같은 조건들이 성립한다. 즉 이 몫은 $A_\nu(U)$에 속한다. (a), (b)에
+대해서는 이는 실제로 「정칙 함수」 정리 [5], III, \S~7에서 따르고,
+(c)는 나카야마 보조정리와, 어쨌든 $n$이 충분히 크고 $k\geq0$일 때
+\[
+f'_*(\mathcal K(n+k))=\mathcal S'_k f'_*(\mathcal K(n))
+\]
+\src{261}
+임을 알고 있다는 사실([5], III, \S~2 참조)에서 따른다. 이 고찰들로부터
+다음과 같은 결론을 얻는다([4], IV와 비교하라). 함자 $A$가 표현 가능할
+필요충분조건은 모든 함자 $A_\nu$가 표현 가능한 것이다. 이때 $A$를
+표현하는 $S$-준스킴 $Q$는 $A_\nu$들을 표현하는 열린 부분스킴
+$Q_\nu$들의 증가하는 합집합이다.
+
+다음과 같이 놓자.
+\[
+M_* =\bigoplus_{n\geq0}f_*(\mathcal F(n))=\mathcal S_*^{N},
+\]
+그러면
+\[
+M'_* =M_*\otimes_{\mathcal O_S}\mathcal O_{S'}
+=\bigoplus_{n\geq0}f'_*(\mathcal F'(n))=\mathcal S'_*{}^{N}.
+\]
+(a)에서 다음이 따른다.
+
+\noindent (a') $n\geq\nu$일 때 $f'_*(\mathcal G(n))$은 계수 $P(n)$인
+국소 자유 가군이다([5], III, \S~7). 또한 $i=1$에 대해 (b)를 적용하면
+다음이 따른다.
+
+\noindent (a'') $f'_*(\mathcal G(n))$은 $M'_n$의 몫가군이다.
+
+더구나 $n=\nu$일 때 이 몫가군을 알면, (c)에 따라 $n\geq\nu$인
+$M'_n$의 부분가군 $f'_*(\mathcal K(n))$들을 알 수 있고, 따라서
+$\mathcal K$와 이어서 $\mathcal G$를 알 수 있다. 이로써 단사 사상
+\[
+A_\nu(S')\longrightarrow\operatorname{Grass}_{P(\nu)}(M'_\nu)
+\]
+을 얻는데, 이는 $A_\nu(S')$에서 $M'_\nu$의 계수 $P(\nu)$인 국소 자유
+몫가군들의 집합으로 가는 사상이다. 따라서 함자 준동형
+\[
+i_\nu:A_\nu(S')\longrightarrow
+\underline{\operatorname{Grass}}_{P(\nu)}(M_\nu)(S')
+\]
+을 얻는다. 오른쪽의 함자는 $S$ 위에서 사영적인 그라스만 스킴
+$\operatorname{Grass}_{P(\nu)}(M_\nu)$에 의해 표현 가능하다
+([4], V와 비교하라). 이제 다음을 주장한다.
+
+\result{보조정리}{3.3} $A_\nu(S')$는 표현 가능한 함자이고, 준동형
+$i_\nu$를 표현하는 사상
+$Q_\nu\longrightarrow\operatorname{Grass}_{P(\nu)}(M_\nu)$는
+몰입 사상이다(따라서 $Q_\nu$는 $S$ 위에서 준사영적이다).
+
+이 주장은 다음 진술과 동치이다([4], IV와 비교하라). $M'_\nu$의
+몫가군 $N$으로서 계수 $P(\nu)$인 국소 자유 가군이 주어졌다고 하자.
+그러면 $S'$의 부분준스킴 $Z$가 존재하여, $S'$ 위의 모든 국소 뇌터
+준스킴 $T'$에 대하여
+\src{262}
+$T'$ 위에서 $N$의 역상이 $\operatorname{Im}A_\nu(T')$에 속할
+필요충분조건은 $T'\longrightarrow S'$가 부분준스킴 $Z$의 포함 사상을
+통하여 인수분해되는 것이다. 표기를 바꾸어 $S'=S$라고 가정할 수 있다.
+즉 부분가군 $R_\nu$에 의한 $M_\nu$의 몫 $N_\nu$가 주어졌다고 하자.
+이것이 $A_\nu(S)$의 한 원소에서 유도될 필요충분조건은 다음 두 조건을
+만족하는 것이다.
+
+\medskip
+\noindent (i) 모든 $k\geq0$에 대하여
+$M_{\nu+k}/\mathcal S_kR_\nu$는 계수 $P(\nu+k)$인 국소 자유 가군이다.
+
+\smallskip
+\noindent (ii) $M_*$의 등급 부분가군
+\[
+R_* =\sum_{k\geq0}\mathcal S_kR_\nu
+\]
+([5], II, \S~3)에 의해 정의되는 $\mathcal F$의 부분층 $\mathcal K$와
+몫 $\mathcal G=\mathcal F/\mathcal K$는 위의 조건 (a), (b)를 만족한다.
+
+이 조건들이 필요함은 명백하다. 역으로 이 조건들이 성립한다고 하자.
+그러면 (ii)에서 정의한 층 $\mathcal G$는
+$M_{\nu+k}/\mathcal S_kR_\nu$들의 합인 등급 $\mathcal S_*$-가군
+$N_*$에 대응하는 층과 동형이므로 $S$ 위에서 평탄하다. 실제로 그
+섬유들은 $\mathcal S_*$의 동차 소아이디얼들에 관한 $N_*$의 국소화들의
+직접인자이다\footnote{인쇄본에는 $N$이라고 되어
+있다. 동차 국소화가 적용되는 것은 등급 $\mathcal S_*$-가군 $N_*$이다.}.
+또한 (i)에 따라 $\mathcal G$의 힐베르트 다항식은 $P$이다. (ii)를
+고려하면 (a'), (a'')도 성립한다. 따라서 $n\geq\nu$일 때 자연스러운
+준동형
+\[
+N_n\longrightarrow f_*(\mathcal G(n))
+\]
+은 같은 계수의 국소 자유 가군들 사이의 전사 준동형이고, 그러므로
+동형이다. 따라서
+\[
+f_*(\mathcal K(\nu+k))=\mathcal S_kR_\nu
+\quad\text{모든 $k\geq0$에 대하여},
+\]
+이며, 이는 $\mathcal G\in A_\nu(S)$이고 $R_\nu$가 $\mathcal G$에 의해
+정의되는 $\operatorname{Grass}_{P(\nu)}(M_\nu)$의 원소임을 증명한다.
+
+이 판정법 (i), (ii)는 밑준스킴의 변경 $S'\longrightarrow S$ 뒤에 얻는
+상황에도 적용된다. 먼저 밑준스킴의 변경 $S'\longrightarrow S$ 뒤에
+조건 (i)가 성립한다는 사실을, $S'\longrightarrow S$가 $S$의 어떤
+부분준스킴 $Z$의 포함 사상을 통하여 인수분해된다는 조건으로 나타낼 수
+있음을 증명하겠다. 이 결과를 얻으면 $S$를 $Z$로 바꾸어 조건 (i)가 이미
+$S$ 위에서 성립하는 경우로 귀착된다. 이 조건은 밑준스킴의 변경에 대해
+안정하므로 조건 (ii)를 나타내는 일만 남는다. 이제 $U$를 다음과 같은
+$s\in S$들의 집합이라 하자. $n\geq\nu$일 때 $\mathcal G(n)$과
+$\mathcal K(n)$이 섬유 $X_s$ 위에 유도하는 층들의 양의 차수 코호몰로지가
+소멸한다. $U$가 열려 있음은 이미 지적하였다. 또한 밑준스킴의 변경
+$S'\longrightarrow S$ 뒤에 조건 (ii)가 성립할 필요충분조건은 이 사상이
+$U$의 포함 사상을 통하여 인수분해되는 것이다. 이로써 보조정리 3.3을
+증명하였다. 이제 다음 보조정리만 증명하면 된다.
+
+\result{보조정리}{3.4} $S$를 국소 뇌터 준스킴이라 하고, $S$ 위에 양의
+차수로 등급이 주어지고 $\mathcal S_1$에 의해 생성되는 준연접 등급 대수
+$\mathcal S_*$가 주어졌다고 하자. $M_*$를 유한형인 준연접 등급
+$\mathcal S_*$-가군, $P$를 유리수 계수의 다항식, $\nu$를 정수라 하자.
+그러면 $S$의 부분준스킴 $Z$로서 다음 성질을 갖는 것이 존재하며 분명
+유일하다.
+\src{263}
+$S$ 위의 모든 준스킴 $S'$에 대하여, 모든 $n\geq\nu$에 대해
+$M_n\otimes_{\mathcal O_S}\mathcal O_{S'}$가 계수 $P(n)$인 국소 자유
+가군일 필요충분조건은 $S'\longrightarrow S$가 $Z$의 포함 사상을 통하여
+인수분해되는 것이다.
+
+$S$가 아핀이고 따라서 뇌터라고 분명 가정할 수 있다. 이제 다음이
+성립한다.
+
+\result{보조정리}{3.5} 각 정수 $N\geq\nu$에 대하여 $U_N$을 다음을
+만족하는 $s\in S$들로 이루어진 $S$의 열린집합이라 하자.
+\[
+\operatorname{rang}_{k(s)}
+M_{ns}\otimes_{\mathcal O_{S,s}}k(s)\leq P(n)
+\quad\text{모든 $\nu\leq n\leq N$에 대하여}.
+\]
+그러면 열린집합들의 감소열 $(U_N)$은 어느 항부터 일정하다.
+
+[3], IV에 따르면 $S$에는 축소 부분스킴 $S_i$들로 이루어진 유한 분할이
+존재하여, 각 $M\otimes_{\mathcal O_S}\mathcal O_{S_i}$는 $S_i$ 위에서
+평탄하다. 따라서 $M$이 평탄하고, 그러므로 $M_n$들이 평탄하다고 가정할
+수 있다. 끝으로 $S$가 연결이라고 분명 가정할 수 있다. 그러면 정수
+$n_0$와 다항식 $Q$가 존재하여
+\[
+\operatorname{rang}_{k(s)}
+M_{ns}\otimes_{\mathcal O_{S,s}}k(s)=Q(n)
+\quad\text{$n\geq n_0$일 때},
+\]
+이다([5], III, \S~7). 먼저 $P<Q$라고 가정하자\footnote{인쇄본에는
+$P\neq Q$라고 되어 있다. 1962년 정오표는 이를 $P<Q$로 고치고,
+``$P=Q$''인 경우를 그 반대인 $n$이 클 때 $P(n)\geq Q(n)$인 경우로
+바꾸며, (*)의 엄격한 부등식을 넓은 부등식으로 바꾸도록 한다.}. 그러면
+$n$이 클 때 $P(n)<Q(n)$이므로, $N$이 크면 분명
+$U_N=\varnothing$이다. 따라서 $(U_N)$은 어느 항부터 일정하다. 반대
+경우에는 $n$이 클 때 $P(n)\geq Q(n)$이고, 따라서 $N\geq n_0$일 때
+$U_N=U_{n_0}$이다. 그러므로 이 경우에도 $(U_N)$은 어느 항부터 일정하다.
+
+특히 다음을 만족하는 $s\in S$들의 집합 $U_\infty$를 생각하자.
+\[
+\tag{*}
+\operatorname{rang}_{k(s)}
+M_{ns}\otimes_{\mathcal O_{S,s}}k(s)\leq P(n)
+\quad\text{모든 $n\geq\nu$에 대하여}.
+\]
+이 집합은 $U_N$들의 교집합이므로 열린집합이다. 따라서 (3.4)를 증명할
+때 $S$를 열린집합 $U_\infty$로 바꿀 수 있다\footnote{인쇄본에는 $U$라고 되어 있다. 방금 정의한 열린집합은 $U_\infty$이다.}.
+이로써 모든 $s\in S$에서 부등식 (*)이 성립하는 경우로 귀착된다. 또한
+다음이 성립한다.
+
+\result{보조정리}{3.6} $M$을 국소 뇌터 준스킴 $S$ 위의 가군, $r$을
+정수라 하자. 그러면 $S$의 부분준스킴 $Z$로서 다음 성질을 갖는 것이
+존재하며 분명 유일하다. $S$ 위의 모든 $S'$에 대하여
+$M\otimes_{\mathcal O_S}\mathcal O_{S'}$가 계수 $r$인 국소 자유 가군일
+필요충분조건은 $S'\longrightarrow S$가 $Z$의 포함 사상을 통하여
+인수분해되는 것이다. 만일
+\[
+\operatorname{rang}_{k(s)}
+M_s\otimes_{\mathcal O_{S,s}}k(s)\leq r
+\quad\text{모든 $s$에 대하여},
+\]
+이면 $Z$는 $S$의 닫힌 부분준스킴이다(여기서 $M$은 연접이라고
+가정한다).
+\src{264}
+실제로 앞의 논증에서, 필요하면 $S$를 이 부등식이 성립하는 $s$들로
+이루어진 열린 부분으로 바꿈으로써, 모든 $s\in S$에 대해 부등식 (*)이
+성립하는 경우로 귀착된다. 이제 $M$이 완전열
+\[
+\mathcal O_S^q\longrightarrow\mathcal O_S^r\longrightarrow M\longrightarrow0
+\]
+에 들어간다고 가정할 수 있다. $S$ 위의 $S'$들에 관해 생각하는 조건은,
+이에 대응하는 완전열
+$\mathcal O_{S'}^q\longrightarrow\mathcal O_{S'}^r
+\longrightarrow M'\longrightarrow0$에서 두 번째 화살표가 동형이라는 것,
+즉 첫 번째 화살표가 영이라는 것이기도 하다. 따라서 준동형
+$\mathcal O_S^q\longrightarrow\mathcal O_S^r$을 정의하는 행렬의 성분들이
+생성하는 아이디얼로 정의되는 $S$의 닫힌 부분준스킴 $Z$가 요구되는
+조건을 만족함을 알 수 있다.
+
+이제 (3.4)의 증명을 멈춘 곳으로 돌아가자. $Z_n$을 (3.6)에 따라 가군
+$M_n$과 정수 $r=P(n)$에 대응하는 $S$의 닫힌 부분스킴이라 하고,
+$Z'_N$을 $\nu\leq n\leq N$인 $Z_n$들의 하한이라 하자. 그러면
+$Z'_N$들은 $S$의 닫힌 부분스킴들로 이루어진 감소열을 이룬다\footnote{인쇄본에는 $Z$라고 되어 있으나, $Z$는 다음 문장에서야 정의된다.
+$Z'_N$들은 $S$의 닫힌 부분스킴으로 구성된다.}. 따라서 이 열은 반드시
+어느 항부터 일정하다. $N$이 클 때 $Z'_N$이 갖는 일정한 값을 $Z$라 하자.
+이것이 (3.4)에서 요구한 $Z$이다. 이로써 (3.4)의 증명이 끝나고, 따라서
+(3.3)의 증명도 끝난다.
+
+따라서 $\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$가
+$S$-준스킴 $Q$에 의해 표현 가능하고, $Q$는 $S$ 위에서 준사영적인 열린
+부분스킴 $Q_\nu$들의 증가하는 합집합임을 증명하였다. 더 나아가려면
+정리 2.1을 적용해야 한다. 이로부터 $Q$가 준콤팩트임이 쉽게 따라온다.
+실제로 $Q$는 힐베르트 다항식 $P$를 갖는 $\mathcal F_K$의 몫층들의 족을
+매개하는, $S$ 위에서 유한형인 준스킴 $S'$의 상이다. 따라서 $Q$는
+$Q_\nu$들 가운데 하나와 같고, 그러므로 $S$ 위에서 준사영적이다. $Q$가
+$S$ 위에서 사영적임을 증명하려면 이제 $S$ 위에서 고유임을 증명하면
+된다. 이를 위해서는 [5], II, 7.3.8의 형태로 고유성의 값매김 판정법을
+적용하면 충분하다. 즉 다음을 확인하면 충분하다.
+
+\result{보조정리}{3.7} $S$를 이산 값매김환의 스펙트럼, $s$를 그 일반점,
+$X$를 $S$ 위의 준스킴, $\mathcal F$를 $X$ 위의 준연접 가군층이라 하고,
+$\mathcal G_s$를 $X_s$ 위에서
+$\mathcal F_s=\mathcal F\otimes_{\mathcal O_S}k(s)$의 준연접 몫가군층이라 하자.
+그러면 $\mathcal F$의 준연접 몫가군층 $\mathcal G$로서 $S$ 위에서 평탄하고
+$X_s$로 제한한 것이 $\mathcal G_s$인 것은 유일하게 존재한다.
+\src{265}
+실제로 $\mathcal G_s=\mathcal F_s/\mathcal K_s$라면, $\mathcal K_s$를
+유도하는 $\mathcal F$의 가장 큰 부분층 $\mathcal K$를 생각하고 [5], I,
+9.4.2,
+\[
+\mathcal G=\mathcal F/\mathcal K
+\]
+로 두면 충분하다. 이 층이 요구한 조건을 만족함은 쉽게 확인된다.
+
+이로써 정리 3.2와, 따라서 (3.1)이 완전히 증명되었다.
+
+그 증명은 동시에 다음을 증명한다.
+
+\result{명제}{3.8} (3.2)의 조건 아래에서
+$Q=\operatorname{Quot}^P_{\mathcal F/X/S}$,
+$X_Q=X\times_SQ$,
+$\mathcal F_Q=\mathcal F\otimes_{\mathcal O_S}\mathcal O_Q$라 하고,
+$(Q,\mathcal G)$가 함자
+$\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$를 표현하도록 하는,
+$Q$ 위에서 평탄하고 상대 힐베르트 다항식이 $P$인 $\mathcal F_Q$의
+연접 몫 $\mathcal G$를 생각하자. 그러면 정수 $\nu$가 존재하여,
+$n\geq\nu$이면 $(f_Q)_*(\mathcal G(n))$은 $Q$ 위의 계수 $P(n)$인
+국소 자유 가군층이고 $S$에 대해 매우 풍부하다. 즉, $Q$에서 $S$ 위의
+그라스만 스킴 $\operatorname{Grass}_{P(n)}(M)$으로 가는 몰입 사상을
+정의한다. 특히 $n\geq\nu$이면 $Q$ 위의 층
+\[
+\bigwedge^{P(n)}(f_Q)_*(\mathcal G(n))
+\]
+은 가역이고 $S$에 대해 매우 풍부하다.
+
+(3.2)에서와 같이 $\mathcal F$가 $S$ 위에서 평탄한 경우로 환원할 수
+있으며, 그때에는 앞의 표기에서 $A_\nu=A$가 되는 정수 $\nu$를 택하면
+충분하다.
+
+(3.2)가 적용되는 가장 중요한 경우는 $\mathcal F=\mathcal O_X$인
+경우이다. 이때
+\[
+\operatorname{Quot}_{\mathcal O_X/X/S}=\operatorname{Hilb}_{X/S},
+\qquad
+\operatorname{Quot}^P_{\mathcal O_X/X/S}=\operatorname{Hilb}^P_{X/S}
+\]
+라고 쓰므로, 다음과 같은 분해를 얻는다.
+\[
+\operatorname{Hilb}_{X/S}=\coprod_P\operatorname{Hilb}^P_{X/S}.
+\]
+정의에 따라 $\operatorname{Hilb}_{X/S}$는 함자
+$\underline{\operatorname{Hilb}}_{X/S}$를 표현한다. 여기서
+$\underline{\operatorname{Hilb}}_{X/S}(S')$는
+$X'=X\times_SS'$의 닫힌 부분준스킴 가운데 $S'$ 위에서 평탄한 것들의
+집합이다. 또한 $\operatorname{Hilb}^P_{X/S}$는 주어진 힐베르트
+다항식 $P$를 갖는 닫힌 부분준스킴들에 대응하는 부분함자를 표현한다.
+이 준스킴들은 각각 $S$ 위의 $X$의 \emph{힐베르트 준스킴},
+\emph{지표 $P$인 힐베르트 준스킴}이라고도 한다. 이 용어는 이 이론에서
+힐베르트 다항식이 하는 역할로 정당화된다. 이것들과 고전적인 차우
+다양체들(다양체가 아니라 순환을 매개하기 위한 것)의 본성상의 차이는,
+\src{266}
+한 다양체의 순환류들로 이루어진 차우 환과 그 다양체 위의 층들의 류로
+이루어진 환(리만--로흐 정리 [1]에서 도입되는 것과
+같다\footnote{인쇄본에는 여성형 « telle »라고 되어
+있으나, 그 선행사인 « l'anneau »는 남성명사이다.}) 사이의 차이와 같은
+정도이다. 실제로 $X=\mathbf P^r_S$이고 $S$가 어떤 체의 스펙트럼일 때,
+$X$ 위의 연접 가군층 $\mathcal F$의 힐베르트 다항식을 아는 것은
+$\mathcal F$의 천 특성류들을 아는 것과도 동치이고, 또는 $X$ 위의 연접층들의
+류환에서 $\mathcal F$의 류를 아는 것과도 동치임에 유의하자.
+
+\result{주의}{3.9} 또한 $\operatorname{Quot}_{\mathcal F/X/S}$와
+$\operatorname{Quot}^P_{\mathcal F/X/S}$의 구성을
+$X=\mathbf P^r_S$, $\mathcal F=\mathcal O_X^N$이고
+$\mathcal O_X(1)$이 통상적인 매우 풍부한 층인 경우로 환원했음에
+유의하자. 더 정확히 말해, 일반적인
+$\operatorname{Quot}_{\mathcal F/X/S}$는 앞의 것들의 닫힌
+부분준스킴으로 실현된다. $\operatorname{Quot}^P_{\mathcal F/X/S}$의
+형성은 기저변환 $S'\longrightarrow S$와 분명히 양립하므로, 나아가
+$S=\operatorname{Spec}(\mathbf Z)$인 경우로 환원된다. 결국에는
+$\mathbf Z$ 위의 다음 사영 스킴들을 연구하는 것으로 환원되는 셈이다.
+\[
+\mathfrak Q^P_{r,N}=
+\operatorname{Quot}^{P}_{(\mathcal O_{\mathbf P^r_{\mathbf Z}})^N/
+\mathbf P^r_{\mathbf Z}/\operatorname{Spec}(\mathbf Z)},
+\]
+그리고 특히 다음 절대 힐베르트 스킴들을 연구하는 것으로 환원된다.
+\[
+\operatorname{Hilb}^P_r=\mathfrak Q^P_{r,1}.
+\]
+이 스킴들의 연결 성분들(과연 연결인가?)을 결정하는 것부터
+시작하여,\footnote{1962년 정오표는 Hartshorne이 대수적으로 닫힌 체 위의
+$\operatorname{Hilb}^P_r$가 연결임을 증명하고
+$\operatorname{Hilb}^P_r\neq\varnothing$인 순서쌍 $(r,P)$를 결정했다고
+밝힌다.} 이들의 기약 성분들을 결정하는 것까지 더 자세히 연구한다면 매우
+흥미로울 것이다(Serre [7]에 따르면 영이 아닌 소수 $p$ 위에 전부 놓이는
+기약 성분이 있을 수 있다). $\operatorname{Spec}(\mathbf Z)$의
+$s$ 위에서 $\operatorname{Hilb}^P_r$의 섬유가 갖는 기약 성분들이
+소체의 ``정칙'' 확대들에 대응하는지, 즉 이들이 ``상대적으로 연결''인지
+묻는 Weil의 문제를 상기하자. 이러한 문제들은 ``차우 다양체''보다
+힐베르트 스킴에 대해서 더 다루기 쉬울 가능성이 있다.
+
+\fsection{4}{변형}
+
+\noindent a. (3.1)의 조건 아래에서 $U$를 $X$의 열린집합이라 하고,
+$A=\underline{\operatorname{Quot}}_{\mathcal F/X/S}$의 부분함자 $A'$를
+다음과 같이 정하자. $A'(S')$는 $\mathcal F'$의 몫가군층 $\mathcal G$
+가운데 $S'$ 위에서 평탄하고 그 지지집합이 $U'$에 포함되는 것들의
+집합이다. 곧바로 $A'$는 $A$를 표현하는 준스킴
+$\operatorname{Quot}_{\mathcal F/X/S}$의 열린 부분집합으로 표현됨을
+알 수 있다. 따라서 정리 (3.1)과 (3.2)는
+\src{267}
+$X$가 $S$ 위에서 사영이라는 가정을 준사영이라는 가정으로 바꾸어도
+여전히 성립한다. 다만 결론에서도 ``사영''을 ``준사영''으로 바꾸고,
+이제 $\underline{\operatorname{Quot}}_{\mathcal F/X/S}(S')$로
+$\mathcal F'$의 연접 몫 $\mathcal G$ 가운데 $S'$ 위에서 평탄하고
+그 지지집합이 $S'$ 위에서 고유인 것들의 집합을 뜻하도록 한다.
+
+\medskip
+\noindent b. 일반적으로는
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$의
+$S'$-평탄 몫 $\mathcal G$들에, 기저변환 아래에서 안정적인 여러 가지
+자연스러운 추가 조건을 부과할 수 있다. 이로써
+$\underline{\operatorname{Quot}}_{\mathcal F/X/S}$의 여러 부분함자를
+얻고, 이들을 표현하고자 하는 문제를 생각하게 된다. 통상적인 판정법으로
+많은 경우 이 함자들 역시 $\operatorname{Quot}_{\mathcal F/X/S}$의
+열린 부분집합들로 표현됨을 증명할 수 있다. 특히 다음 추가 성질 가운데
+하나를 부과하는 경우가 그러하다.
+
+\smallskip
+\noindent $1^\circ$ 섬유 $X'_{s'}$ 위에 유도되는 가군층
+$\mathcal G_{s'}$ ($s'\in S'$)에 결부된 소순환들의 차원이 주어진
+정수 집합에 속한다.\footnote{인쇄본에는
+$\mathcal G_s$라고 되어 있으나, 양화된 점은 $s'$이다.}
+
+\smallskip
+\noindent $2^\circ$ ($\mathcal F=\mathcal O_X$여서 $\mathcal G$가
+$X'$의 닫힌 부분준스킴 $Y$에 대응하는 경우) $Y$는 $S'$ 위의 매끄러운
+준스킴이고\footnote{기저변환 뒤에 나오는 이 조건의
+여섯 곳에서 인쇄본은 잘못하여 $S$ 또는 $X$를 그대로 두었지만, 그 족은
+$X'=X\times_SS'$ 위에서 $S'$에 대하여 놓인다.}, 각각 $S'$ 위에서
+정규이거나(즉, 섬유 $Y_{s'}$가 ``$k(s')$ 위에서''
+정규이다\footnote{인쇄본에는 $k(s)$라고 되어 있으나,
+점 $s'$의 잉여체는 $k(s')$이다.}; 다시 말해 기초체를 어떻게 확대해도
+정규이다), 또는 ($X$가 $S$ 위에서 평탄한 경우) $S'$에 대해 $X'$ 안의
+국소 완전 교차이다.\footnote{인쇄본에는
+``$k$-intersections''라고 되어 있다. 이 조건은 기저에 관한 것이므로 여기서는 기저변환된 $S'$를 써야 한다.}
+마지막 조건은 섬유 $Y_{s'}$가 $X'_{s'}$ 안의 국소 완전 교차라는 뜻이다.
+
+다른 조건들은 $X'_{s'}$ 위에 유도되는 가군층 $\mathcal G_{s'}$의
+코호몰로지적 성질 등을 사용하게 될 것이다. 물론, 각각이
+$\operatorname{Quot}_{\mathcal F/X/S}$의 열린집합 $U_i$로 표현되는
+조건들의 논리곱은 그 열린집합들의 교집합으로 표현된다. 예를 들어,
+$S$ 위의 각 $S'$에 $X'=X\times_SS'$의 닫힌 부분준스킴 $Y$ 가운데
+$S'$의 주어진 계수 $r$인 에탈 피복([3], I)인 것들의 집합을 대응시키면,
+$S'$에 관한 표현 가능한 반변 함자를 얻는다.
+
+\medskip
+\noindent c. [2], II, C, n\textsuperscript{o} 2에서 정의한 준스킴
+$\operatorname{Hom}_S(X,Y)$, $\Pi_{X/S}(Z/X)$,
+$\operatorname{Isom}_S(X,Y)$는 적절한 사영성 가정 아래에서 존재하며,
+적절한 힐베르트 준스킴들의 열린 부분집합으로 실현된다. 등식
+\[
+\operatorname{Hom}_S(X,Y)=\Pi_{X/S}((X\times_SY)/X)
+\]
+이 성립하므로, $\operatorname{Hom}_S(X,Y)$의
+경우는\footnote{인쇄본에는 여기에서
+$\operatorname{Hom}_S(X,X)$라고 되어 있으나, 이는 바로 앞의 표시된
+등식과 양립하지 않는다.} $\Pi_{X/S}(Z/X)$의 경우로 환원된다.
+$S$ 위의 각 $S'$에 대해, $X'=X\times_SS'$ 위의
+$Z'=Z\times_SS'$의 절단들의 집합은, $Z'$에서 $X'$로 가는 사상으로부터
+유도되는 사상 $\Gamma\longrightarrow X'$가 동형사상인 $Z'$의
+부분준스킴 $\Gamma$들의 집합과 일대일로 대응한다.\footnote{
+인쇄본에는 $Z$라고 되어 있으나, 여기서 생각하는
+그래프들은 $Z'=Z\times_SS'$의 절단들의 그래프이다.} 이 부분준스킴들은
+$Z$가 $X$ 위에서 분리되어 있으면 반드시 닫혀 있다. 따라서
+\src{268}
+$X$가 $S$ 위에서 평탄하고 고유이며 $Z$가 $S$ 위에서 준사영이면
+$\Pi_{X/S}(Z/X)$가 존재하고 $\operatorname{Hilb}_{Z/S}$의 열린
+부분준스킴으로 실현된다. 그러므로 $X$가 $S$ 위에서 사영이고 평탄하며
+$Y$가 $S$ 위에서 준사영이면 $\operatorname{Hom}_S(X,Y)$가 존재하고
+$\operatorname{Hilb}_{(X\times_SY)/S}$의 열린 부분준스킴으로 실현된다.
+$X$와 $Y$가 모두 $S$ 위에서 사영이면, 곧바로
+$\operatorname{Isom}_S(X,Y)$도 존재하고
+$\operatorname{Hom}_S(X,Y)$의 열린 부분집합으로 표현된다. 마찬가지로
+$X$가 $S$ 위에서 평탄하고 사영이며 $Y$가 $S$ 위에서 준사영이면,
+$S'$-사상 $X'\longrightarrow Y'$ 가운데 몰입 사상인 것들에 대응하는
+$\operatorname{Hom}_S(X,Y)$의 부분함자를 나타내는 $S$-준스킴
+$\operatorname{Imm}_S(X/Y)$도 $\operatorname{Hom}_S(X,Y)$의 열린
+부분집합으로 표현된다.
+
+$\mathcal L$을 $X$ 위의, $\mathcal M$을 $Y$ 위의 가역층이라 하고,
+각각 $S$에 대해 매우 풍부하다고 하자.\footnote{인쇄본에는 괄호 안의 대응 대상을 동반한 단수 주어 앞에 복수형
+« Soient »가 쓰였다.} 그러면
+$\mathcal L\otimes_{\mathcal O_S}\mathcal M$은 $X\times_SY$ 위에서
+$S$에 대해 매우 풍부한 층이다. 따라서 유리수 계수의 각 다항식 $P$에
+대해 $\operatorname{Hilb}^P_{(X\times_SY)/S}$가 정의되며, 이는 $S$
+위의 준사영 준스킴이다. 따라서 이 준스킴은
+$\operatorname{Hom}_S(X,Y)$ 위에 $S$ 위에서 준사영인 동시에 열리고
+닫힌 부분집합을 유도하며, 이를 $\operatorname{Hom}_S(X,Y)^P$라고
+쓰겠다. 그러므로 $S$ 위에서 $\operatorname{Hom}_S(X,Y)^P$의 절단들은,
+모든 정수 $n$에 대해
+\[
+\chi\!\left(\left(\mathcal L\otimes_{\mathcal O_X}g^*(\mathcal M)\right)^{
+\otimes n}\right)=P(n)
+\]
+을 만족하는 $S$-사상 $g:X\longrightarrow Y$이다.
+
+이 방법으로, ``편극된'' 사영다양체의 자기동형들이 대수군을 이룬다는
+마쓰사카 정리의 일반화들을 얻는다. 여기에서는 이 군을 어떤 보편 문제의
+해로 정의할 수 있으므로, 이 명제가 분명히 더 정확한 의미를 갖는다.
+또한 대수적으로 닫힌 체 위에서 예전에 생각하던 자기동형군은 여기서
+정의한 ``참된'' 자기동형군에서 멱영원들을 제거하여 얻는 것임에 유의하자.
+기초체를 확대하고 나서 나타나는 멱영원들의 아이디얼이 반드시 ``$k$ 위에서
+정의''되는 것은 아니므로, 이는 더 오래된 구성들이 비완전 기초체 위에서
+이루어질 가능성이 거의 없는 까닭을 설명한다. 같은 지적은 옛 방식의
+구성들 대부분에도 적용된다.
+
+\fsection{5}{힐베르트 스킴의 미분적 연구}
+
+이는 다음 결과에서 따른다.
+
+\src{269}
+\result{명제}{5.1} $S$를 준스킴, $S_0$를 제곱이 영인 준연접
+아이디얼 $\mathcal J$로 정의된 부분준스킴, $X$를 $S$-준스킴,
+$\mathcal F$를 $X$ 위의 준연접 가군이라 하자. 또한
+$X_0=X\times_SS_0$,
+$\mathcal F_0=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S_0}$라 하고,
+$\mathcal G_0=\mathcal F_0/\mathcal K_0$를 $S_0$ 위에서 평탄인
+$\mathcal F_0$의 준연접 몫가군이라 하자. $X$의 각 열린집합 $U$에
+대하여 $\mathcal E(U)$를 다음 조건을 만족하는 $\mathcal F|U$의 준연접
+몫가군 $\mathcal G$들의 집합이라 하자. 즉 $\mathcal G$는 $S$ 위에서
+평탄이고
+\[
+\mathcal G\otimes_{\mathcal O_S}\mathcal O_{S_0}=\mathcal G_0
+\]
+이다. 그러면 $U$가 변할 때 $\mathcal E(U)$들은 $X$ 위의 한 층
+$\mathcal E$의 단면들을 이룬다. 이제 군층
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X_0}}
+(\mathcal K_0,\mathcal G_0\otimes_{\mathcal O_{S_0}}\mathcal J)
+\]
+은 $\mathcal E$에 자연스럽게 작용하며, 이로써 $\mathcal E$는
+``$\mathcal A$ 아래에서 형식적으로 주동차적인 층''이 된다. 즉 $X$의
+모든 열린집합 $U$에 대하여 $\mathcal E(U)$는 공집합이거나
+$\mathcal A(U)$ 아래의 주동차 집합이다.
+
+이로부터 다음을 얻는다.
+
+\result{따름정리}{5.2} $X$ 위에서 국소적으로 $\mathcal G_0$를
+$\mathcal F$의 $S$-평탄 몫 $\mathcal G$로 연장할 수 있다고 가정하자.
+즉 층 $\mathcal E$의 섬유들이 공집합이 아니라고 가정하자. 그러면 표준
+장애류
+\[
+c(\mathcal G_0)\in H^1(X,\mathcal A)
+\]
+가 존재하며, 이 류가 영일 필요충분조건은 $\mathcal G_0$를
+$\mathcal F$의 $S$-평탄 몫인 전역 가군 $\mathcal G$로 연장할 수 있는
+것이다. 이 류가 영이면 가능한 모든 연장들의 집합 $\mathcal E(X)$는
+\[
+\mathcal A(X)=\operatorname{Hom}_{\mathcal O_{X_0}}
+(\mathcal K_0,\mathcal G_0\otimes_{\mathcal O_{S_0}}\mathcal J)
+\]
+아래의 주동차 집합이다.
+\footnote{이 마지막 공식에서 인쇄본은 바로 앞의 $\mathcal A$ 정의에
+고정되어 있는 $\mathcal O_{X_0}$ 대신 $\mathcal O_X$를 쓴다.}
+특히 $H^1(X,\mathcal A)=0$이면 전역 연장이 존재한다.
+
+\result{따름정리}{5.3}
+$Q=\operatorname{Quot}_{\mathcal F/X/S}$가 존재한다고 가정하자
+(4 (a) 참조). 예를 들어 $S$가 국소 뇌터이고 $X$가 $S$ 위에서
+준사영이며 $\mathcal F$가 연접이면 그러하다. $x\in Q$가 어떤
+$s\in S$에 대하여 $k(s)$의 잉여 확대 $K=k(x)$에 대응한다고 하자.
+\src{270}
+따라서 $x$는 $K$-준스킴 $X_K$ 위의 가군
+$\mathcal F_0=\mathcal F_K$의 연접 몫가군
+$\mathcal G_0=\mathcal F_0/\mathcal K_0$에 의해 정의된다. $\mathcal A$를
+다음과 같이 정의되는 $X_K$ 위의 연접층이라 하자.
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X_0}}(\mathcal K_0,\mathcal G_0).
+\]
+그러면 점 $x$에서 섬유 $Q_s$의 자리스키 접공간, 곧
+$\mathcal O_{Q_K,x}$의 극대 아이디얼을 $\mathfrak m$이라 할 때
+$\mathfrak m/\mathfrak m^2$의 $K$-쌍대는 $H^0(X_K,\mathcal A)$와
+표준적으로 동형이다.
+
+자리스키 접공간을 주는 이 결과는 다음과 같이 일반화할 수 있다. 주어진
+$S$-사상 $g:S'\longrightarrow Q$, 즉 $S'$ 위의
+$Q'=Q\times_SS'$의 단면 $g'$에 대하여 가군
+\[
+\Omega=g^*(\Omega^1_{Q/S})=g'^*(\mathcal J/\mathcal J^2)
+\]
+을 생각하자. 여기서 $\mathcal J$는 $S'$ 위의 $Q'$의 단면 $g'$가
+정의하는 $Q'$ 위의 아이디얼이다. 이때 $\Omega$는 $S'$ 위의 연접 가군
+$\mathcal M$에 관하여 함자적인 다음 공식으로 특징지어진다.
+\[
+\operatorname{Hom}_{\mathcal O_{S'}}(\Omega,\mathcal M)
+\simeq H^0(X',\mathcal A),
+\]
+여기서 $X'=X\times_SS'$이고 $\mathcal A$는 $X'$ 위의 다음 가군이다.
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X'}}
+(\mathcal K,\mathcal G\otimes_{\mathcal O_{S'}}\mathcal M).
+\]
+\footnote{인쇄본은 이 텐서곱에 $\mathcal O_S$를 쓴다. 그러나 여기서
+$\mathcal G$와 $\mathcal M$은 $S'$ 위의 가군들이며, 제곱영 변형의
+구성에는 $\mathcal O_{S'}$ 위의 텐서곱이 필요하다.}
+여기서 $\mathcal G=\mathcal F'/\mathcal K$는 $g$에 대응하는
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$의
+몫가군이다. 실제로 (5.1)에서 $S_0$를 $S'$으로 바꾸고 $S$를 준스킴
+$D(\mathcal M)=(S',\mathcal O_{S'}+\mathcal M)$으로 바꾸면 된다. 이때
+$\mathcal M$은 제곱이 영인 아이디얼로 본다.
+
+(5.1)에서 $\mathcal F=\mathcal O_X$인 경우, $\mathcal G_0$를 주는 것은
+아이디얼 $\mathcal J_0=\mathcal K_0$로 정의되고 $S_0$ 위에서 평탄인
+$X_0$의 닫힌 부분준스킴 $Y_0$를 주는 것과 같다. 이때 (*)는
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X_0}}
+(\mathcal J_0/\mathcal J_0^2,
+\mathcal O_{Y_0}\otimes_{\mathcal O_{S_0}}\mathcal J)
+\]
+를 준다. 여기서 $\mathcal J_0/\mathcal J_0^2$는 $Y_0$의 $X_0$ 안에서의
+코노멀층으로 해석하며, 이를
+\src{271}
+$\check{\mathcal N}_{Y_0/X_0}$라고도 쓴다. 이 경우에는 $\mathcal A$를
+$Y_0$ 위의 가군으로 보고 $H^0$와 $H^1$을 $Y_0$ 위에서 계산하는 것이
+유용하다. 더구나 $X$가 $S$ 위에서 평탄이고 $Y_0$가 $X_0$ 안에서
+국소 완전교차이면, (5.1)의 국소 연장이 존재한다. 또한
+$\mathcal J_0/\mathcal J_0^2$는 $Y_0$ 위에서 국소 자유이고 다음과 같이
+쓸 수 있다.
+\[
+\mathcal A=\mathcal N_{Y_0/X_0}\otimes_{\mathcal O_{S_0}}\mathcal J,
+\]
+여기서 오른쪽의 첫째 인자는 $Y_0$의 $X_0$ 안에서의 법층이다.
+매끄러움의 기본 판정법([3], III, 3.1)을 사용하면 예를 들어 다음을
+얻는다.
+
+\result{따름정리}{5.4} (5.3)의 조건 아래에서
+$\mathcal F=\mathcal O_X$이고 $X$가 $S$ 위에서 평탄이며,
+$\mathcal G_0$에 대응하는 $X_0$의 닫힌 부분준스킴 $Y_0$가 국소
+완전교차라고 가정하자. 그러면 점 $x$에서 $Q_s$의 자리스키 접공간은
+$H^0(Y_0,\mathcal N_{Y_0/X_0})$와 표준적으로 동형이다. 만일
+$H^1(Y_0,\mathcal N_{Y_0/X_0})=0$이면 힐베르트 준스킴
+$\operatorname{Hilb}_{X/S}$은 점 $x$에서 $S$ 위로 매끄럽다.
+($\mathcal N_{Y_0/X_0}$는 $Y_0$의 $X_0$ 안에서의 법층이다.)
+
+\result{비고}{5.5} 이 명제는 특히 $Y_0$가 한 방정식으로 정의되는
+$X_0$ 안의 완전교차, 즉 양의 ``카르티에 인자''인 경우에 적용된다.
+그러면 $\mathcal N_{Y_0/X_0}$는 인자 $Y_0$가 정의하는 $X_0$ 위의
+가역층 $\mathcal J_0^{-1}$에서 유도되는 $Y_0$ 위의 층과 동형이다. 특히
+비특이 사영 다양체 $X_0$ 위의 양의 인자들의 족을 연구할 때 이러한
+상황이 나타난다. $Q$의 점 $x$에서의 자리스키 접공간과
+$H^0(Y_0,\mathcal N_{Y_0/X_0})$ 사이의 동형은, 원한다면 인자들에
+대응하는 $Q$의 열린부분집합 $D$의 점 $x$에서의 자리스키 접공간과의
+동형으로 보아도 되는데, 고전 대수기하학에서는 첫째 공간에서 둘째
+공간으로 가는 ``특성 준동형''이라는 이름으로 알려져 있었다. 이
+준동형은 인자들의 ``완전 연속족''의 매개변수 다양체 $T$에서 $x$가
+매끄러운 점일 때에만 정의되었다. 우리의 관점에서 $T$는 유도된 축소
+구조를 갖춘 스킴 $D$의 한 기약 성분이다. 이때 $x$에서 $T$의 접공간은
+$x$에서 $D$의 접공간의 부분공간이므로, 고전적인 특성 준동형은 실제로
+단사이다. 그러나 이는 추가 조건 아래에서만 전사이며, 예를 들어
+$\mathcal O_{D,x}$가 정역이면 전사이다. 실제로 Zappa [8]는
+\src{272}
+복소수체 위의 비특이 사영 곡면 $X$에 대하여 $T$의 일반점에서조차
+특성 준동형이 전사가 아닌 예를 구성하였다. 따라서 고려 중인 기약
+성분의 일반점에서 $D$의 국소환조차 정역이 아니다. 이는 가장 고전적인
+곡면론의 현상들을 이해하는 데 멱영원을 지닌 다양체들이 얼마나
+필수적인지를 특히 인상적으로 보여 준다.\footnote{1962년의 정오표는
+Mumford가 $\mathbf P^3_{\mathbf C}$의 힐베르트 스킴에서, 일반점들이 차수
+14이고 종수가 24인 비특이 곡선들을 나타내며 그 일반점에서 비축소인 한
+기약 성분을 막 구성했다고 덧붙인다. 그러한 곡선 가운데 하나를
+블로업하면 그 형식적 모듈라이 스킴이 일반점에서 비축소인 3차원 정칙
+사영 스킴도 얻어진다.}
+
+\subsection*{5.6}
+
+(5.4)에서 특히 약수 스킴들에 적용되는 매끄러움 판정법을 제시하였다.
+고다이라는 [6]에서 다른 판정법, 즉 $\mathcal L=\mathcal J_0^{-1}$이
+약수 $Y_0$가 정하는 $X_0$ 위의 가역층일 때
+$H^1(X_0,\mathcal L)$이 0이라는 판정법을 제시하였다. 이 판정법은 $S$가
+표수 0인 체의 스펙트럼일 때 성립하며, 기초체가 $\mathbf C$인 경우에는
+[6]에서 초월적 방법으로 증명되었다. 여기서 일반적으로 $S$를 다시 임의로
+두면, 고다이라의 조건은 표준 사상
+\[
+D\longrightarrow\operatorname{Pic}_{X/S}
+\]
+이, 즉 $X/S$의 약수 준스킴에서 피카르 준스킴으로 가는 사상이 문제의 점
+$x$에서 매끄럽기 위한 충분조건임을 지적해 두자
+($\operatorname{Pic}_{X/S}$의 존재가 확보되면 통상적인 매끄러움 판정법으로
+쉽게 확인된다). 따라서 더 나아가 $\operatorname{Pic}_{X/S}$가 $x$의 상인
+점에서 $S$ 위로 매끄럽다면(예를 들어 $\operatorname{Pic}_{X/S}$가 $S$ 위로
+매끄럽다면), $D$는 $x$에서 $S$ 위로 매끄럽다. 한편 카르티에는 표수 0인
+체 $k$ 위에서 국소 유한형인 모든 군 준스킴이 $k$ 위로 매끄럽다는 것을
+증명하였다. 이 두 결과를 결합하면 고다이라의 결과를 다시 얻는다. 이
+논의로부터, 표수가 $p>0$인 체 $K$ 위에서
+$\operatorname{Pic}_{X/S}$가 $k$ 위로 매끄럽지 않을 때($X$가 이구사
+곡면이면 그러하다), $H^1(X_0,\mathcal L)=0$이라는 조건은 오히려 $D$가
+$x$에서 매끄럽지 않음을 뜻하며, $K$가 대수적으로 닫혀 있으면 $x$에서
+축소되지 않기까지 함을 알 수 있다.
+
+끝으로 섬유공간의 미분론적 연구에서 중요한 역할을 하는 다음 결과를
+기록해 두자.
+
+\result{명제}{5.7} $X$를 국소 뇌터 준스킴 $S$ 위에서 유한하고 평탄한
+준스킴이라 하고, $Z$를 $X$ 위의 준스킴이라 하자.
+$\Pi_{X/S}(Z/X)$가 존재한다고 가정한다($Z$가 $X$ 위에서 준사영이면
+그러하다). 이때 $Z$가 $X$ 위로 매끄러우면 $\Pi_{X/S}(Z/X)$는 $S$ 위로
+매끄럽다.
+
+이는 정의와 통상적인 매끄러움 판정법([3], III, 3.1)에서 곧바로 따른다.
+$X$가 $S$ 위에서 유한하고 평탄할 때에는
+$\Pi_{X/S}(Z/X)$의 존재 문제\footnote{인쇄본에는 여기서 $Z/K$라고 되어
+있다. $K$는 정의되어 있지 않고, (5.7)부터 고찰한 단면 함자는
+$\Pi_{X/S}(Z/X)$이다.}를 힐베르트 스킴 이론을 사용하지 않고도 매우
+초등적으로 다룰 수 있음에 유의하자.
+\src{273}
+예를 들어 $X$가 $S$ 위에서 라디시엘이면 $Z$에 아무런 제한을 두지 않아도
+$\Pi_{X/S}(Z/X)$가 존재한다. 또 다른 예로, $T$를 $S$-준스킴이라 하고
+$T_n$을 $T\times_ST$ 안에서 그 대각선의 ``$n$차 무한소 근방''이라 하자.
+두 사영이 유도하는 사상
+$p_1,p_2:T_n\longrightarrow T$를 갖추어 둔다. $p_1$을 통해 $T_n$을 $T$
+위의 유한 준스킴으로 보고, 더 나아가 $T$ 위에서 평탄하다고 가정하자
+($T$가 $S$ 위로 매끄러우면 그러하다). $T$ 위의 모든 준스킴 $X$에 대하여
+\[
+(X/T/S)^{(n)}=
+\Pi_{T_n/T}\bigl(p_2^*(X/T)/T_n\bigr)
+\]
+로 놓는다.
+\footnote{인쇄본에서는 $\Pi$ 기호 아래에 $T_n/S$를 둔다. 여기서는 유한
+평탄 사상 $p_1:T_n\to T$에 명제 5.7을 적용하며, 그 결과는 명시적으로
+$T$ 위의 준스킴이다. 따라서 분모는 $T_n/T$이다.}
+이는 $T$ 위의 준스킴으로서 ($S$에 대한) \emph{$T$ 위의 $X$의 $n$차
+단면 싹 다발}이라 한다. 이 준스킴은 $X$에 함자적으로 의존하며, $X$가
+매끄러우면 $T$ 위로 매끄럽다.
+
+\fsection{6}{노름과 대칭곱 사이의 관계}
+
+$S$를 준스킴, $X$와 $Y$를 $S$-준스킴이라 하고,
+\[
+u:(X/S)^n\longrightarrow Y
+\]
+를 $X/S$의 $n$중 데카르트곱에서 $Y$로 가는 대칭인 $S$-사상이라 하자.
+단순하게 하기 위해 $S$는 국소 뇌터이고 $X$와 $Y$는 $S$ 위에서
+유한형이라고 가정하자. 이때 $X$ 위의 연접 가군층 $\mathcal F$로서 그
+지지집합이 $S$ 위에서 유한하고, $S$ 위에서 평탄하며, $S$ 위의 상대 계수가
+$n$인 것(즉 $f_*(\mathcal F)$가 $S$ 위의 계수 $n$인 국소 자유 가군층인
+것)에 자연스럽게 $S$ 위의 $Y$의 한 단면을 대응시킬 수 있다.
+\[
+\pi^u_{X/S}(\mathcal F)\in\Gamma(Y/S).
+\]
+여기서는 엄밀한 정의를 제시하지 않고, 이렇게 얻는 형식체계가 통상적인
+노름과 대각합의 형식체계를 자연스럽게 일반화한 것임만 지적하겠다. 임의의
+분리 사상 $X/S$에 대해 노름 법칙의 표준 표적은 분할 거듭제곱 공간
+$\Gamma^n_S(X)$이다. $X$가 $S$ 위에서 평탄하고 $n$차 대칭곱이 존재하면
+(예를 들어 $(X/S)^n$에서 $\mathfrak S_n$의 궤도들이 아핀 열린집합들에
+포함될 때), 표준 사상
+$\operatorname{Symm}^n_S(X)\to\Gamma^n_S(X)$은 동형사상이고, 다음 표준
+원소를 얻는다.
+\[
+\pi_{X/S}(\mathcal F)\in\Gamma(\operatorname{Symm}^n_S(X)/S).
+\]
+\src{274}
+이 원소로부터 $\pi^u_{X/S}(\mathcal F)$들을 다시 얻을 수 있다. 또 하나의
+중요한 경우는 $X$가 $S$ 위의 가환 모노이드이고 $X=Y$이며 $u$가 $X$의
+합성 법칙에서 오는 경우이다. 이때에는 $X$ 위의 가군층 $\mathcal F$에
+대응하는 $S$ 위의 $X$의 단면을 간단히 $\pi(\mathcal F)$로 쓴다.
+
+이제 $X$ 위의 연접 가군층 $\mathcal F$가 주어져서
+$\operatorname{Quot}_{\mathcal F/X/S}$가 존재한다고 하자. 또는 적어도
+$S$ 위의 각 $S'$에 $\mathcal F'=\mathcal F\otimes_{\mathcal O_S}
+\mathcal O_{S'}$의 연접 몫층 $\mathcal M$들 가운데 $S'$ 위에서 평탄하고
+상대 계수가 $n$인 것들의 집합을 대응시키는 함자
+$\underline{\operatorname{Quot}}^n_{\mathcal F/X/S}$가 $S$-준스킴
+$\operatorname{Quot}^n_{\mathcal F/X/S}$로 표현된다고 하자. ($X$가 $S$
+위에서 준사영이면 $\operatorname{Quot}^n_{\mathcal F/X/S}$는 실제로
+존재하며, 제3절의 표기로는 $P$가 상수항 $n$뿐인 다항식일 때의
+$\operatorname{Quot}^P_{\mathcal F/X/S}$와 다르지 않다.)
+$\pi^u_{X/S}(\mathcal M)$의 구성이 밑변경과 양립하므로 다음 표준 사상을
+얻는다.
+\[
+\pi^u_{X/S}:\operatorname{Quot}^n_{\mathcal F/X/S}\longrightarrow Y,
+\]
+그리고 일반적으로
+\[ \pi_{X/S}:\operatorname{Quot}^n_{\mathcal F/X/S}
+\longrightarrow\Gamma^n_S(X). \]
+$X$가 $S$ 위에서 평탄하면 이 표적을 $\operatorname{Symm}^n_S(X)$와
+동일시한다. 앞의 동일시와 무관하게, $X$가 $S$ 위에서 분리되어 있으면
+$\mathcal F=\mathcal O_X$인 경우의 유한 평탄 족을 통한 구성은 다음 사상을
+준다.
+\[
+\pi_{X/S}:\operatorname{Hilb}^n_{X/S}
+\longrightarrow\operatorname{Symm}^n_S(X).
+\]
+이는 $n=0$ 또는 $n=1$이면 분명히 동형사상이다. 그러나
+$n>1$이면\footnote{인쇄본은 방금 $n=1$에 대해 단언한 동형사상과
+모순되게 $n\geq1$을 되풀이한다.}, $S$가 체 $k$의 스펙트럼이고 $X$가
+$S$ 위로 매끄러운 경우에도 일반적으로 동형사상이 아니며 단사인 사상조차
+아니다. 실제로 $X$의 0차원 부분스킴(예를 들어 $X$의 닫힌점 $x$에 대해
+국소환 $\mathcal O_{X,x}$의 극대 아이디얼에 대한 준소 아이디얼
+$\mathfrak i$에 대응하는 것)은 그것이 정하는 순환을 알아도 정해지지
+않는다(이 경우에는 $\mathcal O_{X,x}$ 안에서 $\mathfrak i$의 $k$-여차원을
+알아도 정해지지 않는다). $S$를 다시 임의로 두면 다음 사실만을 말할 수
+있다.
+
+\medskip
+\noindent a. $X$가 $S$ 위로 매끄러우면, 노름 사상은 $X$에 포함된 계수
+$n$의 에탈 피복들을 분류하는 $\operatorname{Hilb}^n_{X/S}$의 열린집합
+(제4절 (b) 참조)과, 중복 성분이 없는 $n$-순환들에 대응하는
+$\operatorname{Symm}^n_S(X)$의 열린집합 사이의 동형사상을 정한다.
+\src{275}
+
+\medskip
+\noindent b. 더 나아가 $X$의 $S$ 위의 상대 차원이 1이면, 노름 사상은
+$\operatorname{Hilb}^n_{X/S}$와 $\operatorname{Symm}^n_{X/S}$ 사이의
+동형사상을 정한다.
+
+마지막 사실은 비특이 대수곡선의 0차원 부분스킴은 그에 대응하는 순환을
+알면 정해지기 때문이다. 같은 논의는 더 일반적으로 비특이 대수 스킴 위의
+유효 카르티에 약수에도 적용된다(그리고 이 매우 특별한 경우에는 차우
+다양체가 힐베르트 스킴과 같은 것을 줄 가능성도 배제되지 않는다).
+
+\fsection{7}{보충과 문제}
+
+J.-P.~세르가 지적했듯이, 나가타의 잘 알려진 예로부터 다음과 같은 것들을
+찾을 수 있다. 즉 체 $k$의 스펙트럼인 스킴 $S$, $k$의 이차 확대체 $k'$의
+스펙트럼인 $S$-스킴 $S'$, 그리고 차원이 3이고 고유하고 매끄럽지만
+사영이지 않은 $S'$-스킴 $X$로서 $\Pi_{S'/S}(X/S')$가 존재하지 않는 것을
+찾을 수 있다. 따라서 더구나 힐베르트 스킴
+$\operatorname{Hilb}^2_{X/S}$도 존재하지 않는다($X$에 포함된 계수 2의
+$S$의 에탈 피복들을 표현하는 $k$-스킴조차 존재하지 않으며, 더구나 $X$의
+2차 대칭곱도 존재하지 않는다. 앞 절을 참조하라). 이는 대수기하학에서
+비사영적 구성을 할 가능성에 심각한 제한을 부과한다. (그러나 형식기하학에서
+그러한 제한이 나타나지 않는 것처럼([2], II 참조), 해석기하학에서도 그러한
+제한이 나타나지 않으리라고 보는 것이 타당하다.) 한편 $X$가 체 $k$의
+스펙트럼 $S$ 위의 고유 스킴이고 $Z$가 $X$ 위에서 준사영이면
+$\Pi_{X/S}(Z/X)$가 존재하며, 이는 $S$ 위에서 준사영인 일련의 스킴들의
+서로소 합인 스킴이다(사영인 경우 (3.1)과 같다). 실제로 $X$를 사영
+$S$-스킴 $X'$로 지배하여 $X$ 자체가 사영인 경우로 환원한다. 유한 사상의
+인수분해에 관한 [2], I, A, 제2절 (b)의 결과도 사용하는 이 증명의 자세한
+내용은 여기서 제시하지 않겠다. 이 방법이 성공하는 까닭은 $S$가 체의
+스펙트럼일 때 차우 보조정리에 등장하는 $X'$이 자동으로 $S$ 위에서
+평탄하기 때문이다.
+
+$S$에 아무 가정도 두지 않고 $X$가 $S$ 위에서 고유하고 평탄하며 $Z$가
+$X$ 위에서 준사영이라고만 가정할 때에도 이 결과가 성립하는지는 알지
+못한다. 응용에서 중요한 한 경우는 $Z$가 $X$의 닫힌 부분스킴인 경우이다.
+이때 $\Pi_{X/S}(Z/X)$가 존재하면 이는 반드시 $S$의 닫힌 부분스킴이다.
+그리고 $X$가 $S$ 위에서 사영이면 힐베르트 스킴 이론을 사용하지 않고도
+이를 상당히 간단하게 직접 구성할 수 있다.
+\src{276}
+그 방법은 더 일반적으로 $Z$가 $X$ 위에서 아핀이면
+$\Pi_{X/S}(Z/X)$가 존재하고 $S$ 위에서 아핀임을 보인다. 또한 $X$가 $S$
+위에서 고유하고 평탄하면($S$ 위에서 사영일 필요는 없다), $X$ 위의 모든
+국소 자명 벡터 다발 $Z$에 대하여 $\Pi_{X/S}(Z/X)$가 존재하고 $S$ 위의
+벡터 다발임도 보인다. 이 결과들을 다시 다루어 통일하는 것이 바람직하다.
+
+\section*{참고문헌}
+\addcontentsline{toc}{section}{참고문헌}
+
+\begin{description}
+\item[{[1]}] BOREL (A.) et SERRE (J.-P.). -- Le théorème de Riemann--Roch,
+\emph{Bull. Soc. math. France}, 제86권, 1958, 97--136쪽.
+
+\item[{[2]}] GROTHENDIECK (Alexander). -- Technique de construction et
+théorèmes d'existence en géométrie algébrique, I, II, III, \emph{Séminaire
+Bourbaki}, 제13권, 1959/60, 제190호, 29쪽, 제195호, 22쪽; 그리고 제14권,
+1960/61, 제212호, 20쪽.
+
+\item[{[3]}] GROTHENDIECK (Alexander). -- Séminaire de Géométrie algébrique,
+I, II, III, IV. -- Paris, Institut des hautes Études scientifiques, 1960/61
+(등사판).
+
+\item[{[4]}] GROTHENDIECK (Alexander). -- Technique de construction en
+géométrie analytique, IV, V, \emph{Séminaire Cartan}, 제13권, 1960/61,
+제11호 및 제12호.
+
+\item[{[5]}] GROTHENDIECK (A.) et DIEUDONNÉ (J.). -- \emph{Éléments de
+géométrie algébrique}, I : Le langage des schémas. -- Paris, Presses
+universitaires de France, 1960 (Institut des hautes Études scientifiques,
+Publications mathématiques, 4); II, III, IV (출간 예정).
+
+\item[{[6]}] KODAIRA (K.). -- Characteristic linear systems of complete
+continuous systems, \emph{Amer. J. of Math.}, 제78권, 1956, 716--744쪽.
+
+\item[{[7]}] SERRE (Jean-Pierre). -- Exemples de variétés projectives en
+caractéristique $p$ non relevables en caractéristique 0, \emph{Proc. Nat. Acad.
+Sc. U.S.A.}, 제47권, 1961, 108--109쪽.
+
+\item[{[8]}] ZAPPA (G.). -- Sull'esistenza, sopra le superficie algebriche, di
+sistemi continui completi infiniti, la cui curva è a serie caratteristica
+incompleta, \emph{Pont. Acad. Sc. Acta}, 제9권, 1945, 91--93쪽.
+\end{description}
+
+\section*{추기}
+\addcontentsline{toc}{section}{추기}
+\begin{center}
+{\small [교정쇄를 교정하면서 추가함]}
+\end{center}
+
+이제 [2], III, 제8절의 추측들은 몫의 존재와 준사영성 양쪽에 관하여 표수
+0인 체 위의 비특이 다양체에 대해서도 거짓이며, $G$가 닫힌 그래프를 갖고
+작용하는 경우에도 거짓임이 드러났다.
+
+\par\smallskip
+\begingroup\footnotesize
+
+
+
+
+\noindent\textit{5.7의 인쇄본은 $Z$를 $S$ 위의 준스킴이라고 부른다. 그러나 $\Pi_{X/S}(Z/X)$와 $X$ 위의 매끄러움 가정을 정의하려면 $Z\to X$가 주어져야 한다.}\par
+\noindent\textit{2.2의 마지막 주장에서는 유계성과 다음 계수의 하계를 동시에 귀납해야 한다. 하나의 연접층의 몫이라는 사실만으로 그 몫들의 족이 유계인 것은 아니다. 제6절에서 일반적인 분리 사상 $X/S$에 대한 노름의 표적은 $\Gamma^n_S(X)$이며, $X/S$가 평탄할 때 대칭곱과 동일시된다. 힐베르트 스킴의 사상은 유한 평탄 족에서 별도로 구성된다.}\par
+\endgroup

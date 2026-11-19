@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[a4paper]{geometry}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{TeX Gyre Cursor}
+\usepackage[brazilian]{babel}
+\usepackage{xeCJK}
+\setCJKmainfont{Noto Serif CJK SC}
+\usepackage{microtype,graphicx,mathtools,amsthm,unicode-math,bookmark,hyperref}
+\setmathfont{Latin Modern Math}
+\usepackage[normalem]{ulem}
+\begin{document}
+\setbox0=\hbox{\uline{abc} Português 中文 \(X+\symup{x}+\mathcal F+\mathfrak G\)}
+\typeout{FGA-ZERO-PAGE-XETEX-SMOKE-PASS}
+\end{document}

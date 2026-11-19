@@ -1,0 +1,14 @@
+from audit_utils import replace,read,write,event,utc
+for folder,layer in [('fr_printed','French as printed'),('fr','French corrected')]:
+    rel=f'sources/{folder}/fr/149.tex'
+    replace(rel,r'\src{169}', '\\unimathsetup{math-style=upright}\n\\makeatletter\\tagsleft@true\\makeatother\n\\src{169}',layer,'149-169','mathematical typography, whole page','','The 400-dpi scan and enlarged crops show upright typed Latin letters and left-hand equation tags. Explicit calligraphic and underlined alphabets remain explicit. The default settings are restored at the end of this source page.',kind='typesetting')
+    old=r'notés par $B\longrightarrow H^{p}(X,B)$ :'
+    replace(rel,old,old+'\n\\unimathsetup{math-style=TeX}\n\\makeatletter\\tagsleft@false\\makeatother',layer,'149-169','end of source page','','Restore the supplied default mathematics and tag placement after the page-specific printed typography setting.',kind='typesetting')
+s=read('CHECK_RECORD.md')
+s=s.replace('Completed page comparisons: 0.','Completed source-page comparisons: 1 (both French layers).')
+s=s.replace('Eleven replacement operations in each layer: nine reading operations (one covers the two occurrences of the same Z notation) and two structure operations.','Thirteen replacement operations in each layer: nine reading operations (one covers the two occurrences of the same Z notation), two structure operations and two typography controls.')
+s=s.replace('The typography of the modern book wrappers and mathematical font policy still needs resolution and PDF inspection. In particular, printed equation tags are on the left, and the supplied common macros and fonts are modern reconstructions. This page is therefore **not counted as fully completed** under the requested typography standard. The required final second reading is also pending.', 'The page-specific controls set typed mathematical variables upright and put equation labels on the left; explicit script and underlined alphabets remain distinct. They explicitly restore the supplied default settings after this page because unicode-math style options use global assignments. Modern typeface design and editorial book navigation are not a facsimile of the printed typewriter sheet. Source comparison is complete; rendering/build verification and the required final second reading remain pending. Construction reversals of the 17 later release dispositions have been made provisionally and are not counted as scan-confirmed corrections.')
+write('CHECK_RECORD.md',s)
+with ( __import__('audit_utils').ROOT/'progress.log').open('a') as f: f.write('page 149-169 done '+utc()+'\n')
+for sid in ['149-eq1.1','149-eq1.2']:
+    event(sid,'carried as background without fault found','Read the printed definitions and supplied formulae; restored punctuation and typography only. No independent proof claimed.','Exposé 149, printed p. 169, formula '+sid.split('eq')[1])

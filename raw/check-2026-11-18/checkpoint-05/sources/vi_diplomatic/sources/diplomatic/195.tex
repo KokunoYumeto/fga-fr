@@ -1,0 +1,1066 @@
+\unit{Bài trình bày 195 -- Kỹ thuật hạ xuống II}
+\sid{195}
+\markboth{Thuyết trình 195}{Thuyết trình 195}
+\src{369}
+\seminar{Năm thứ 12, 1959/60, số 195\\Tháng 2 năm 1960}
+\paperhead{KỸ THUẬT HẠ XUỐNG VÀ CÁC ĐỊNH LÝ TỒN TẠI TRONG HÌNH HỌC ĐẠI SỐ\\
+II. ĐỊNH LÝ TỒN TẠI TRONG LÝ THUYẾT HÌNH THỨC VỀ MÔĐUN}%
+  {do Alexander GROTHENDIECK}
+
+\fsection{A}{Các hàm tử biểu diễn được và pro-biểu diễn được}
+
+\subsection*{1. Các hàm tử biểu diễn được}
+\addcontentsline{toc}{subsection}{1. Các hàm tử biểu diễn được}
+
+Cho $\mathcal C$ là một phạm trù. Với mọi $X\in\mathcal C$, ký hiệu $h_X$ là
+hàm tử phản biến từ $\mathcal C$ đến phạm trù $(\operatorname{Ens})$ của các
+tập hợp,
+\[
+  h_X:\mathcal C\longrightarrow(\operatorname{Ens}),
+\]
+được xác định bởi công thức
+\[
+  h_X(Y)=\operatorname{Hom}(Y,X).
+\]
+Một cấu xạ $X\longrightarrow X'$ trong $\mathcal C$ hiển nhiên cảm sinh một
+đồng cấu hàm tử $h_X\longrightarrow h_{X'}$: $h_X$ là một hàm tử hiệp biến
+theo $X$; nói cách khác, ta đã xác định một hàm tử hiệp biến chính tắc
+\[
+  h:\mathcal C\longrightarrow
+  \operatorname{Hom}\bigl(\mathcal C^o,(\operatorname{Ens})\bigr)
+\]
+từ $\mathcal C$ đến phạm trù các hàm tử hiệp biến từ phạm trù đối ngẫu
+$\mathcal C^o$ của $\mathcal C$ đến phạm trù các tập hợp. Ta nhắc lại:
+
+\result{MỆNH ĐỀ}{1.1} Hàm tử $h$ này \emph{đầy đủ và trung thành}; nói cách
+khác, với mọi cặp đối tượng $X,X'$ của $\mathcal C$, ánh xạ tự nhiên
+\[
+  \operatorname{Hom}(X,X')\longrightarrow
+  \operatorname{Hom}(h_X,h_{X'})
+\]
+là song ánh.
+
+Đặc biệt, nếu một hàm tử
+$F\in\operatorname{Hom}(\mathcal C^o,(\operatorname{Ens}))$ đẳng cấu với một
+hàm tử dạng $h_X$, thì $X$ được xác định sai khác một đẳng cấu duy nhất.
+Trong trường hợp đó ta nói hàm tử $F$ là \emph{biểu diễn được}. Mệnh đề trên
+có nghĩa rằng hàm tử chính tắc $h$ xác lập một tương đương giữa phạm trù
+$\mathcal C$ và phạm trù con đầy đủ của
+$\operatorname{Hom}(\mathcal C^o,(\operatorname{Ens}))$ gồm các hàm tử biểu
+diễn được. Sự kiện này là nền tảng của khái niệm «nghiệm của một bài toán phổ
+quát»: một bài toán như vậy luôn quy về việc xét xem một hàm tử đã cho
+(phản biến như ở đây, hoặc hiệp biến trong trường hợp đối ngẫu) từ
+$\mathcal C$ đến $(\operatorname{Ens})$ có biểu diễn được hay không.
+
+\src{370}
+Ngoài ra, theo chính định nghĩa của tích trong một phạm trù [1], hàm tử
+$h:X\longmapsto h_X$ giao hoán với các tích mỗi khi chúng tồn tại (và tổng
+quát hơn, với các giới hạn xạ ảnh hữu hạn hoặc vô hạn; đặc biệt với các tích
+thớ, với phép lập «hạt nhân» [2], v.v., mỗi khi chúng tồn tại): ta có một
+đẳng cấu hàm tử
+\[
+  h_{X\times X'}\xrightarrow{\sim}h_X\times h_{X'}
+\]
+mỗi khi $X\times X'$ tồn tại; nghĩa là ta có các song ánh hàm tử theo $Y$
+\[
+  h_{X\times X'}(Y)\xrightarrow{\sim}h_X(Y)\times h_{X'}(Y).
+\]
+Đặc biệt, việc cho một cấu xạ
+\[
+  X\times X'\longrightarrow X''
+\]
+trong $\mathcal C$ (tức một «luật hợp thành» trong $\mathcal C$ giữa
+$X,X',X''$) tương đương với việc cho một cấu xạ
+\[
+  h_{X\times X'}=h_X\times h_{X'}\longrightarrow h_{X''},
+\]
+tức là, với mọi $Y\in\mathcal C$, cho một luật hợp thành các tập hợp
+\[
+  h_X(Y)\times h_{X'}(Y)\longrightarrow h_{X''}(Y)
+\]
+sao cho, với mọi cấu xạ $Y\longrightarrow Y'$ trong $\mathcal C$, hệ các ánh
+xạ giữa các tập hợp
+\[
+  h_{X^{(i)}}(Y)\longleftarrow h_{X^{(i)}}(Y')
+  \qquad(\text{với }i=0,1,2)
+\]
+là một đồng cấu đối với hai luật hợp thành tương ứng với $Y$ và $Y'$. Do đó,
+khái niệm cấu trúc «$\mathcal C$-nhóm», «$\mathcal C$-vành», v.v. trên một
+đối tượng $X$ của $\mathcal C$ được diễn đạt thuận tiện nhất (cả trong lý
+thuyết lẫn thực hành) bằng cách nói rằng, với mọi $Y\in\mathcal C$, tập
+$h_X(Y)$ được trang bị một luật nhóm (tương ứng, luật vành, v.v.) theo nghĩa
+thông thường, và các ánh xạ
+$h_X(Y)\longleftarrow h_X(Y')$ tương ứng với các cấu xạ
+$Y\longrightarrow Y'$ là các đồng cấu nhóm (tương ứng, đồng cấu vành, v.v.).
+Chẳng hạn, đây là cách trực quan và thuận tiện nhất để xác định các nhóm cổ
+điển khác nhau $G_a$, $G_m$, $\operatorname{Gl}(n)$, v.v. trên một tiền lược
+đồ cơ sở tùy ý $S$ và viết các quan hệ cổ điển giữa chúng; để trang bị cho
+lược đồ afin $V(\mathcal F)$ trên $S$, được xác định bởi một bó tựa kết hợp
+$\mathcal F$, một cấu trúc «phân thớ vectơ»; và để xác định rồi nghiên cứu
+các đa tạp cờ liên hệ khác nhau (các grassmannian, các phân thớ xạ ảnh),
+v.v. Nguyên lý chung chỉ đơn giản là đồng nhất, thông qua hàm tử chính tắc
+$h$, các đối tượng của $\mathcal C$ với một số hàm tử phản biến: các hàm tử
+biểu diễn được,
+
+\src{371}
+từ $\mathcal C$ đến phạm trù các tập hợp.
+
+Thủ tục quen thuộc đảo chiều các mũi tên, cần thiết chẳng hạn trong trường hợp
+các lược đồ afin để chuyển từ ngôn ngữ hình học sang ngôn ngữ đại số giao
+hoán, dẫn đến việc đối ngẫu hóa các xét đoán trên và, đặc biệt, cũng đưa vào
+các hàm tử hiệp biến biểu diễn được
+$\mathcal C\longrightarrow(\operatorname{Ens})$, tức là các hàm tử dạng
+\[
+  Y\longmapsto\operatorname{Hom}(X,Y)=h'_X(Y).
+\]
+
+\subsection*{2. Các hàm tử pro-biểu diễn được, các pro-đối tượng}
+\addcontentsline{toc}{subsection}{2. Các hàm tử pro-biểu diễn được, các pro-đối tượng}
+
+Cho $\widetilde X=(X_i)_{i\in I}$ là một hệ xạ ảnh các đối tượng của
+$\mathcal C$; hệ này tương ứng với một hàm tử hiệp biến
+\[
+  h'_{\widetilde X}=\varinjlim_i h'_{X_i},
+\]
+hay tường minh hơn,
+\[
+  h'_{\widetilde X}(Y)=\varinjlim_i h'_{X_i}(Y)
+  =\varinjlim_i\operatorname{Hom}(X_i,Y),
+\]
+từ $\mathcal C$ đến $(\operatorname{Ens})$. Một hàm tử từ $\mathcal C$ đến
+$(\operatorname{Ens})$ đẳng cấu với một hàm tử loại này, với $I$ lọc, được
+gọi là \emph{pro-biểu diễn được}. Theo mục trước, đó chính là các hàm tử đẳng
+cấu với giới hạn quy nạp lọc của các hàm tử biểu diễn được. Cho
+$\widetilde X'=(X'_j)_{j\in J}$ là một hệ xạ ảnh lọc thứ hai trong
+$\mathcal C$ (được xây dựng trên một tập chỉ số tiền thứ tự lọc thứ hai
+$J$); dễ kiểm tra rằng có một song ánh chính tắc (tổng quát hóa Mệnh đề 1.1)
+\[
+  \operatorname{Hom}(h'_{\widetilde X'},h'_{\widetilde X})
+  =\varprojlim_j\varinjlim_i\operatorname{Hom}(X_i,X'_j).
+\]
+Điều này dẫn ta đến phạm trù $\operatorname{Pro}(\mathcal C)$ của các
+pro-đối tượng của $\mathcal C$; các đối tượng của nó là các hệ xạ ảnh các đối
+tượng của $\mathcal C$ (trên các tập chỉ số tiền thứ tự lọc thay đổi), và nếu
+$\widetilde X=(X_i)_{i\in I}$ cùng
+$\widetilde X'=(X'_j)_{j\in J}$ là hai đối tượng thuộc lớp này, ta đặt
+\[
+  \operatorname{ProHom}(\widetilde X,\widetilde X')
+  =\varprojlim_j\varinjlim_i\operatorname{Hom}(X_i,X'_j),
+\]
+với phép hợp thành hiển nhiên của các pro-đồng cấu. Theo chính cách xây dựng,
+$\widetilde X\longmapsto h'_{\widetilde X}$ có thể được xem như một hàm tử
+phản biến theo $\widetilde X$, xác lập một tương đương giữa phạm trù đối ngẫu
+của phạm trù $\operatorname{Pro}(\mathcal C)$ các pro-đối tượng của
+$\mathcal C$ và phạm trù các hàm tử hiệp biến pro-biểu diễn được từ
+$\mathcal C$ đến $(\operatorname{Ens})$. Dĩ nhiên, một đối tượng $X$ của
+$\mathcal C$ xác định chính tắc một pro-đối tượng, cũng được ký hiệu là $X$,
+
+\src{372}
+sao cho $\mathcal C$ tương đương với một phạm trù con đầy đủ của
+$\operatorname{Pro}(\mathcal C)$. Khi đó, nếu
+$\widetilde X=(X_i)_{i\in I}$ là một pro-đối tượng tùy ý của $\mathcal C$, ta
+có (với sự đồng nhất trên)
+\[
+  \widetilde X=\varprojlim_i X_i,
+\]
+trong đó giới hạn xạ ảnh được lấy trong $\operatorname{Pro}(\mathcal C)$
+(vì $h'_{\widetilde X}=\varinjlim_i h'_{X_i}$). Cần lưu ý rằng, ngay cả khi
+giới hạn xạ ảnh của các $X_i$ tồn tại trong $\mathcal C$, nói chung nó không
+đẳng cấu với giới hạn xạ ảnh $\widetilde X$ trong
+$\operatorname{Pro}(\mathcal C)$, như đã hiển nhiên khi $\mathcal C$ là phạm
+trù các tập hợp. Theo định nghĩa,
+$\varprojlim_{\mathcal C}X_i=L$ được xác định bởi điều kiện rằng hàm tử theo
+$Y\in\mathcal C$
+\[
+  \varprojlim_i\operatorname{Hom}_{\mathcal C}(Y,X_i)
+  =\operatorname{Hom}_{\operatorname{Pro}(\mathcal C)}(Y,\widetilde X)
+\]
+có giá trị trong $(\operatorname{Ens})$ được biểu diễn bởi $L$, tức là đẳng
+cấu với $\operatorname{Hom}_{\mathcal C}(Y,L)$; do đó,
+$\varprojlim_{\mathcal C}X_i$ đã được xác định theo pro-đối tượng
+$\widetilde X$, và chính xác hơn, phụ thuộc hàm tử vào pro-đối tượng
+$\widetilde X$ mỗi khi nó được xác định; vì vậy không có trở ngại gì khi ký
+hiệu nó là $\varprojlim_{\mathcal C}(\widetilde X)$. Nếu các giới hạn xạ ảnh
+luôn tồn tại trong $\mathcal C$,
+$\varprojlim_{\mathcal C}(\widetilde X)$ là một hàm tử từ
+$\operatorname{Pro}(\mathcal C)$ đến $\mathcal C$, và có một đồng cấu hàm tử
+chính tắc
+$\varprojlim_{\mathcal C}(\widetilde X)\longrightarrow\widetilde X$.
+
+Mọi hàm tử, mà để định ý ta giả sử là hiệp biến,
+\[
+  F:\mathcal C\longrightarrow\mathcal C'
+\]
+đều được mở rộng một cách hiển nhiên thành hàm tử
+\[
+  \operatorname{Pro}(F):\operatorname{Pro}(\mathcal C)
+  \longrightarrow\operatorname{Pro}(\mathcal C'),
+\]
+nên nếu các giới hạn xạ ảnh luôn tồn tại trong $\mathcal C'$, thì $F$ cũng
+xác định chính tắc một hàm tử hợp thành
+\[
+  \overline F:\operatorname{Pro}(\mathcal C)\longrightarrow\mathcal C',
+  \qquad
+  \overline F=\varprojlim_{\mathcal C'}\circ\operatorname{Pro}(F),
+\]
+biến $\widetilde X=(X_i)_{i\in I}$ thành
+$\varprojlim_{\mathcal C'}F(X_i)$.
+
+Một pro-đối tượng $\widetilde X$ được gọi là \emph{pro-đối tượng nghiêm ngặt}
+nếu nó đẳng cấu với một pro-đối tượng $(X_i)_{i\in I}$ mà các cấu xạ chuyển
+$X_i\longrightarrow X_j$ đều là toàn cấu; một hàm tử được xác định bởi một
+đối tượng như vậy được gọi là \emph{pro-biểu diễn được nghiêm ngặt}. Ngoài
+ra, có thể đòi hỏi $I$ là tập có thứ tự lọc và mọi toàn cấu
+$X_i\longrightarrow X'$ tương đương với một toàn cấu
+
+\src{373}
+$X_i\longrightarrow X_j$ với một $j\in I$ thích hợp (được điều kiện này xác
+định duy nhất). Dưới các điều kiện ấy, hệ xạ ảnh $(X_i)_{i\in I}$ được xác
+định sai khác một đẳng cấu duy nhất (theo nghĩa thông thường của đẳng cấu các
+hệ xạ ảnh). Suy ra rằng trong $\operatorname{Pro}(\mathcal C)$ luôn tồn tại
+giới hạn xạ ảnh của một hệ xạ ảnh các pro-đối tượng nghiêm ngặt
+$\widetilde X^{(\alpha)}$, và với các ký hiệu trên cho $F$, $\overline F$, ta
+có
+\[
+  \overline F\left(\varprojlim_\alpha\widetilde X^{(\alpha)}\right)
+  =\varprojlim_{\alpha,\mathcal C'}
+  \overline F\left(\widetilde X^{(\alpha)}\right).
+\]
+Đặc biệt, nếu mọi pro-đối tượng của $\mathcal C$ đều nghiêm ngặt (xem mục
+sau), thì hàm tử mở rộng $\overline F$ giao hoán với các giới hạn xạ ảnh.
+
+\subsection*{3. Đặc trưng các hàm tử pro-biểu diễn được}
+\addcontentsline{toc}{subsection}{3. Đặc trưng các hàm tử pro-biểu diễn được}
+
+Cho $\mathcal C$, $\mathcal C'$ là hai phạm trù trong đó các giới hạn xạ ảnh
+hữu hạn tồn tại (tức là các giới hạn tương ứng với các tập tiền thứ tự hữu
+hạn, không nhất thiết lọc), hay tương đương, trong đó các tích hữu hạn và các
+tích thớ hữu hạn tồn tại (điều này đặc biệt kéo theo sự tồn tại của một «đối
+tượng cuối» $e$, sao cho $\operatorname{Hom}(X,e)$ chỉ gồm một phần tử với
+mọi $X$). Cho $F$ là một hàm tử hiệp biến từ $\mathcal C$ đến
+$\mathcal C'$. Các điều kiện sau tương đương:
+
+\begin{enumerate}
+\item[(i)] $F$ giao hoán với các giới hạn xạ ảnh hữu hạn;
+\item[(ii)] $F$ giao hoán với các tích hữu hạn và các tích thớ hữu hạn;
+\item[(iii)] $F$ giao hoán với các tích hữu hạn và, với mọi biểu đồ khớp
+\[
+  X\longrightarrow X'\rightrightarrows X''
+\]
+trong $\mathcal C$ ([3], A, Định nghĩa 2.1), biểu đồ được biến đổi bởi $F$
+\[
+  F(X)\longrightarrow F(X')\rightrightarrows F(X'')
+\]
+là khớp.
+\end{enumerate}
+
+Khi đó ta nói $F$ \emph{khớp trái}.
+
+Từ đây trở đi, ta giả sử các giới hạn xạ ảnh hữu hạn tồn tại trong
+$\mathcal C$. Từ các định nghĩa, lập tức suy ra rằng một hàm tử biểu diễn
+được là khớp trái và, khi chuyển sang giới hạn, một hàm tử pro-biểu diễn được
+là khớp trái.
+
+Để có một mệnh đề đảo, xét
+\[
+  F:\mathcal C\longrightarrow(\operatorname{Ens})
+\]
+là một hàm tử hiệp biến, và cho $X\in\mathcal C$, $\xi\in F(X)$. Ta nói
+$\xi$ (hay cặp \src{374}$(X,\xi)$) là \emph{tối tiểu} nếu, với mọi
+$X'\in\mathcal C$, $\xi'\in F(X')$ và mọi đơn cấu nghiêm ngặt ([3], A, 2)
+$u:X'\longrightarrow X$ sao cho $\xi=F(u)(\xi')$, thì $u$ là một đẳng cấu.
+Mặt khác, ta nói một cặp $(X,\xi)$ \emph{trội} $(X'',\xi'')$
+($\xi\in F(X)$, $\xi''\in F(X'')$) nếu tồn tại một cấu xạ
+$v:X\longrightarrow X''$ sao cho $\xi''=F(v)(\xi)$; nếu $\xi$ tối tiểu và
+$F$ khớp trái, thì cấu xạ $v$ là duy nhất; nếu $\xi''$ tối tiểu, thì $v$ là
+toàn ánh. Dễ dàng suy ra mệnh đề sau:
+
+\result{MỆNH ĐỀ}{3.1} Để $F$ pro-biểu diễn được nghiêm ngặt, điều kiện cần và
+đủ là nó thỏa mãn hai điều kiện:
+\begin{enumerate}
+\item[(i)] $F$ khớp trái;
+\item[(ii)] mọi cặp $(X,\xi)$, với $\xi\in F(X)$, đều bị trội bởi một cặp
+tối tiểu.
+\end{enumerate}
+
+Điều kiện cuối là trống nếu mọi đối tượng của $\mathcal C$ đều là Artin (lấy
+một đối tượng con $X'$ của $X$ tối tiểu trong số những đối tượng mà với chúng
+tồn tại $\xi'\in F(X')$ sao cho $\xi$ là ảnh của $\xi'$). Do đó:
+
+\result{HỆ QUẢ}{} Cho $\mathcal C$ là một phạm trù mà các đối tượng đều là
+Artin và trong đó các giới hạn xạ ảnh hữu hạn tồn tại. Khi đó, các hàm tử
+pro-biểu diễn được từ $\mathcal C$ đến $(\operatorname{Ens})$ chính là các
+hàm tử khớp trái, và thậm chí đều pro-biểu diễn được nghiêm ngặt.
+
+Sự kiện cuối này cũng có nghĩa rằng \emph{mọi pro-đối tượng của $\mathcal C$
+đều nghiêm ngặt}.
+
+\subsection*{4. Ví dụ: các nhóm kiểu Galois, các nhóm pro-đại số}
+\addcontentsline{toc}{subsection}{4. Các nhóm kiểu Galois, các nhóm pro-đại số}
+
+Nếu $\mathcal C$ là phạm trù các nhóm hữu hạn thông thường, thì
+$\operatorname{Pro}(\mathcal C)$ tương đương với phạm trù các nhóm tôpô
+compact hoàn toàn không liên thông. Các nhóm loại này và các tổng quát hóa
+của chúng, thu được bằng cách thay các nhóm hữu hạn thông thường bởi các lược
+đồ nhóm hữu hạn trên một tiền lược đồ cơ sở đã cho (chẳng hạn, các nhóm đại
+số hữu hạn trên một trường $k$), sẽ đóng vai trò các nhóm cơ bản, đồng luân
+và đồng điều tuyệt đối và tương đối của các tiền lược đồ. Trong tất cả các
+ví dụ này, Hệ quả của Mệnh đề 3.1 được áp dụng, và chính thông qua hàm tử liên
+hệ mà ta phải xác định $\pi_1$ [2]. Điều tương tự xảy ra khi bắt đầu từ phạm
+trù các nhóm đại số hoặc tựa đại số trên một trường (hay tổng quát hơn, trên
+một tiền lược đồ Noether): ta thu được các «nhóm pro-đại số» của Serre [4].
+
+\subsection*{5. Ví dụ: «các đa tạp hình thức»}
+\addcontentsline{toc}{subsection}{5. Ví dụ: các đa tạp hình thức}
+
+Cho $\Lambda$ là một vành Noether và $\mathcal C$ là phạm trù các
+$\Lambda$-đại số $A$ là những môđun Artin kiểu hữu hạn trên $\Lambda$ (hay
+gọi tắt là
+
+\src{375}
+các $\Lambda$-đại số Artin). Các điều kiện của Hệ quả thuộc Mệnh đề 3.1 được
+thỏa mãn. Phạm trù $\operatorname{Pro}(\mathcal C)$ ở đây tương đương với
+phạm trù các đại số tôpô $O$ trên $\Lambda$ đẳng cấu với các giới hạn xạ ảnh
+tôpô
+\[
+  O=\varprojlim_i O_i
+\]
+của các đại số $O_i\in\mathcal C$, tức là tôpô của chúng tuyến tính, tách và
+đầy đủ, đồng thời với mọi iđêan mở $J_i$ của $O$, $O/J_i$ là một đại số Artin
+trên $\Lambda$. Hàm tử
+$\mathcal C\longrightarrow(\operatorname{Ens})$ liên hệ với một đại số như
+vậy chính là
+\begin{align*}
+  F(A)=h'_O(A)
+  &=\{\text{các đồng cấu liên tục của các $\Lambda$-đại số tôpô }
+       O\longrightarrow A\}\\
+  &=\varinjlim_i
+    \operatorname{Hom}_{\Lambda\text{-đại số}}(O_i,A).
+\end{align*}
+
+Ngoài ra, lưu ý rằng phạm trù $\mathcal C$ về cơ bản là tích của các phạm trù
+tương tự ứng với các phép đầy đủ hóa của những vành địa phương
+$\Lambda_{\mathfrak m}$, với $\mathfrak m$ chạy qua các iđêan tối đại của
+$\Lambda$; do đó, nếu muốn, có thể giới hạn vào trường hợp $\Lambda$ là một
+vành địa phương đầy đủ thuộc lớp này. Trong mọi trường hợp, $O$ phân rã chính
+tắc thành tích tôpô của các thành phần địa phương, tương ứng với các «điểm»
+của lược đồ hình thức [2] được xác định bởi $O$. Một điểm thuộc lớp này được
+xác định bởi một phần tử $\xi$ của một $F(K)$ nào đó, trong đó
+$K\in\mathcal C$ là một trường (chẳng hạn trường thặng dư của thành phần địa
+phương đang xét); hai cặp $(\xi,K)$ và $(\xi',K')$ xác định cùng một điểm khi
+và chỉ khi chúng bị trội bởi cùng một $(\xi'',K'')$, hoặc cùng trội một
+$(\xi''',K''')$. (Nếu các trường $\Lambda/\mathfrak m$ đóng đại số, chỉ cần
+lấy hợp rời của các $F(\Lambda/\mathfrak m)$.)
+
+Điều quan trọng là cho các điều kiện để thành phần địa phương $O_\xi$ của
+$O$ ứng với $\xi\in F(K)$ là một vành Noether. Khi $\Lambda$ là một vành địa
+phương đầy đủ (nhắc lại là Noether), điều này tương đương với việc $O_\xi$
+đẳng cấu với một vành thương của vành chuỗi lũy thừa hình thức
+$\Lambda[[t_1,\ldots,t_n]]$ trên $\Lambda$. Để nêu một tiêu chuẩn như vậy,
+với mỗi vành $A$ ta đưa vào $A$-đại số $I_A$ các «số đối ngẫu» của $A$ bằng
+công thức
+\[
+  I_A=A[t]/t^2A[t].
+\]
+Cho $\varepsilon:I_A\longrightarrow A$ là đồng cấu tăng cường; đồng cấu này
+xác định (nếu $A\in\mathcal C$) một ánh xạ
+\[
+  F(\varepsilon):F(I_A)\longrightarrow F(A),
+\]
+
+\src{376}
+và, bằng cách sử dụng tính khớp trái của $F$, ta xác định một cách nội tại
+một cấu trúc $K$-môđun trên phần
+\[
+  F(I_A,\xi)=F(\varepsilon)^{-1}(\xi)
+\]
+của $F(I_A)$ gồm các $\xi'\in F(I_A)$ «rút gọn thành $\xi$»; từ dạng tường
+minh của $F$ theo $O$, ta kiểm tra được rằng $A$-môđun này đồng nhất với
+\[
+  \operatorname{Hom}_{\Lambda}(\mathfrak m_\xi/\mathfrak m_\xi^2,A),
+\]
+trong đó $\mathfrak m_\xi$ là hạt nhân của đồng cấu
+$\xi:O\longrightarrow A$, tức là, nếu $A$ là một trường, iđêan tối đại của
+thành phần địa phương $O_\xi$ của $O$. Ta lập tức suy ra mệnh đề sau:
+
+\result{MỆNH ĐỀ}{5.1} Cho $\xi\in F(K)$, trong đó $K\in\mathcal C$ là một
+trường. Để thành phần địa phương tương ứng $O_\xi$ của $O$ là một vành
+Noether, điều kiện cần và đủ là tập $F(I_K,\xi)$ các phần tử của $F(I_K)$ rút
+gọn thành $\xi$ là một không gian vectơ hữu hạn chiều trên $K$. Khi đó, ta có
+một đẳng cấu chính tắc
+\[
+  F(I_K,\xi)=
+  \operatorname{Hom}\!\left(
+    \mathfrak m_\xi/\mathfrak m_\xi^2+\mathfrak n_\xi O_\xi,K
+  \right),
+\]
+trong đó $\mathfrak n_\xi$ là iđêan tối đại của $\Lambda$, tức hạt nhân của
+đồng cấu $\Lambda\longrightarrow K$.
+Đặc biệt, chiều của $K$-không gian vectơ $F(I_K,\xi)$ bằng chiều của không
+gian vectơ $\mathfrak m_\xi/\mathfrak m_\xi^2$ trên trường
+$O_\xi/\mathfrak m_\xi=K(\xi)$.
+
+Giả sử $O_\xi$ là Noether và, để đơn giản ký hiệu, $\Lambda$ là địa phương
+đầy đủ và $O=O_\xi$. Ta nói $O$ \emph{trơn trên $\Lambda$} nếu $O$ là một
+đại số hữu hạn và étale trên đại số đầy đủ hóa của phép địa phương hóa
+$\Lambda[t_1,\ldots,t_n]$ tại một iđêan tối đại của vành này, iđêan ấy cảm
+sinh iđêan tối đại của $\Lambda$; khi mở rộng thặng dư của $O$ trên
+$\Lambda$ là tầm thường (chẳng hạn, nếu trường thặng dư của $\Lambda$ đóng
+đại số), điều này tương đương với việc chính $O$ đẳng cấu với một đại số
+chuỗi lũy thừa hình thức loại đó.
+Cuối cùng, nếu không còn giả sử $O$ nhất thiết Noether, ta cũng nói $O$ trơn
+trên $\Lambda$ nếu $O$ đẳng cấu với một giới hạn xạ ảnh tôpô của các
+$\Lambda$-đại số thương Noether và trơn trên $\Lambda$ theo nghĩa trên. Điều
+này lập tức tổng quát hóa cho trường hợp không giả sử $\Lambda$ và $O$ địa
+phương. Khi đó ta có mệnh đề sau:
+
+\result{MỆNH ĐỀ}{5.2} Để $O$ trơn trên $\Lambda$, điều kiện cần và đủ là hàm
+tử liên hệ $F$ biến các toàn cấu thành các toàn cấu.
+
+Điều này có nghĩa rằng với mọi đồng cấu toàn ánh
+$A\longrightarrow A'$ trong $\mathcal C$, ánh xạ
+$F(A)\longrightarrow F(A')$ là toàn ánh. Dĩ nhiên, chỉ cần kiểm tra điều kiện
+này khi $A$ địa phương và, tiến hành từng bước, khi iđêan của $A$ là hạt nhân
+của $A\longrightarrow A'$ bị triệt tiêu bởi iđêan tối đại của $A$. Trong
+thực hành, điều này quy bài toán về việc kiểm tra rằng một cản trở nào đó,
+gắn với các bất biến vô cùng bé
+
+\src{377}
+của tình huống sinh ra hàm tử $F$, bằng không; đây là một bài toán có bản
+chất đối đồng điều.
+
+Để kết thúc, ta nói đôi lời trong bối cảnh trên về các \emph{vành xác định}.
+Vẫn cho $F$ là một hàm tử từ $\mathcal C$ đến $(\operatorname{Ens})$,
+pro-biểu diễn được bởi một $\Lambda$-đại số tôpô $O$. Khi đó, với mọi
+$A\in\mathcal C$ và mọi $\xi\in F(A)$, tồn tại một vành con nhỏ nhất $A'$ của
+$A$ sao cho $\xi$ là ảnh của một phần tử $\xi'$ của $F(A')$ (khi đó phần tử
+này được xác định duy nhất): thật vậy, chỉ cần diễn giải $\xi$ bằng một đồng
+cấu từ $O$ đến $A$ rồi lấy $A'$ là ảnh của $O$ qua đồng cấu ấy. Khi đó ta
+gọi $A'$ là vành xác định của đối tượng $\xi\in F(A)$. Nếu
+$u:A\longrightarrow B$ là một đồng cấu đại số và $\eta=F(u)(\xi)$, thì vành
+xác định của $\eta$ là ảnh qua $u$ của vành xác định của $\xi$. Khi bắt đầu
+từ một hàm tử $F$ từ $\mathcal C$ đến $(\operatorname{Ens})$, sự tồn tại của
+các vành xác định cùng các tính chất vừa nêu, với một vài dè dặt nhỏ, tương
+đương với việc $F$ pro-biểu diễn được; nghĩa là, nói chung chúng còn lâu mới
+tầm thường.
+
+\fsection{B}{Hai định lý tồn tại}
+
+Giữ các ký hiệu của A, mục 5, và xuất phát từ một hàm tử hiệp biến
+\[
+  F:\mathcal C\longrightarrow(\operatorname{Ens});
+\]
+ta tìm các tiêu chuẩn dễ sử dụng để $F$ pro-biểu diễn được, tức là có thể
+diễn đạt bằng một $\Lambda$-đại số $O$ như trên. Theo Hệ quả của A, Mệnh đề
+3.1, điều kiện cần và đủ là $F$ khớp trái. Ở tình trạng hiện nay của kỹ thuật
+hạ xuống (xem các câu hỏi nêu trong [3], tr. 9), trong những trường hợp quan
+trọng nhất không thể kiểm tra trực tiếp tiêu chuẩn này dưới dạng đó, và cần
+các tiêu chuẩn có vẻ ít đòi hỏi hơn.
+
+\result{ĐỊNH LÝ}{1} Để hàm tử $F$ pro-biểu diễn được, điều kiện cần và đủ là
+nó thỏa mãn hai điều kiện sau:
+\begin{enumerate}
+\item[(i)] $F$ giao hoán với các tích hữu hạn;
+\item[(ii)] với mọi đại số $A\in\mathcal C$ và mọi đồng cấu
+$A\longrightarrow A'$ trong $\mathcal C$ sao cho biểu đồ
+\[
+  A\longrightarrow A'\rightrightarrows A'\otimes_A A'
+\]
+là khớp ([3], A, Định nghĩa 1.2), biểu đồ biến đổi
+\[
+  F(A)\longrightarrow F(A')\rightrightarrows F(A'\otimes_A A')
+\]
+
+\src{378}
+là khớp.
+\end{enumerate}
+Hơn nữa, chỉ cần kiểm tra (ii) khi $A$ địa phương và thêm vào đó thuộc một
+trong hai trường hợp sau:
+\begin{enumerate}
+\item[(a)] $A'$ là một môđun tự do trên $A$;
+\item[(b)] môđun thương $A'/A$ là một $A$-môđun có độ dài 1.
+\end{enumerate}
+
+Chứng minh định lý này khá tinh tế và không thể phác thảo ở đây. Ta chỉ nêu
+rằng nó chủ yếu dựa trên việc nghiên cứu các quan hệ tương đương (theo nghĩa
+phạm trù) trên phổ của một đại số Artin; nghiên cứu này vẫn còn đặt ra nhiều
+bài toán mà lời giải dường như thiết yếu cho sự phát triển tiếp theo của lý
+thuyết.
+
+Trong các ứng dụng, việc kiểm tra điều kiện (i) luôn tầm thường. Việc kiểm tra
+(ii) tách thành hai phần: trường hợp $A'$ là một $A$-môđun tự do tương ứng
+với kỹ thuật hạ xuống theo các cấu xạ phẳng ([3], các Định lý 1, 2 và 3) và
+không gây khó khăn. Để xử lý trường hợp (b), ta sẽ dùng kết quả sau:
+
+\result{ĐỊNH LÝ}{2} Cho $A$ là một vành địa phương Artin có iđêan tối đại
+$\mathfrak m$, và $A'$ là một $A$-đại số chứa $A$, sao cho
+$\mathfrak mA'\subset A$ và
+\[
+  A\longrightarrow A'\rightrightarrows A'\otimes_A A'
+\]
+là khớp (điều này đặc biệt xảy ra nếu $A'/A$ là một $A$-môđun có độ dài 1).
+Cho $\mathcal F$ là phạm trù sợi ([3], A, Định nghĩa 1.1) của các bó tựa kết
+hợp và phẳng trên các tiền lược đồ thay đổi. Khi đó cấu xạ
+$\operatorname{Spec}(A')\longrightarrow\operatorname{Spec}(A)$ là một cấu
+xạ $\mathcal F$-hạ xuống nghiêm ngặt ([3], A, Định nghĩa 1.7).
+
+Nói cách khác, dữ liệu của một $A$-môđun phẳng $M$ hoàn toàn tương đương với
+dữ liệu của một $A'$-môđun phẳng $M'$, được trang bị một
+$A'\otimes_AA'$-đẳng cấu từ $M'\otimes_AA'$ lên $A'\otimes_AM'$ thỏa mãn
+điều kiện bắc cầu thông thường của dữ liệu hạ xuống (loco citato).
+
+Định lý 2 được chứng minh bằng cách trước hết chứng minh
+\[
+  H^i(A'/A,G_a)=0\qquad\text{với }i\geq 1
+\]
+([3], A, 4(e)), vì giả thiết $\mathfrak mA'\subset A$ cho phép dễ dàng quy về
+trường hợp $A$ là một trường $k$ (cụ thể là $A/\mathfrak m$). Khi đó áp dụng
+các tương đương được nêu trong [3], trang 16.
+
+\fsection{C}{Ứng dụng vào một số trường hợp riêng}
+
+\subsection*{1. Những nhận xét tổng quát về các hàm tử được biểu diễn bởi các tiền lược đồ}
+\addcontentsline{toc}{subsection}{1. Những nhận xét tổng quát về các hàm tử được biểu diễn bởi các tiền lược đồ}
+
+Cho $S$ là một tiền lược đồ Noether địa phương. Một tiền lược đồ $X$ trên
+$S$ được gọi là \src{379}kiểu hữu hạn địa phương trên $S$ nếu, với mọi
+$x\in X$ chiếu xuống $y\in Y$, tồn tại một lân cận afin của $y$, có vành $A$,
+và một lân cận afin của $x$ nằm trên lân cận ấy, có vành $B$, sao cho $B$ là
+một $A$-đại số kiểu hữu hạn. Có nhiều ví dụ quan trọng về các tiền lược đồ kiểu
+hữu hạn địa phương trên $S$ nhưng không phải kiểu hữu hạn trên $S$, xuất hiện
+như nghiệm của các bài toán phổ quát cổ điển; vì vậy cần có khả năng xem lược
+đồ Picard của một đường cong như hợp của vô hạn thành phần liên thông (không
+được nhầm chúng với thành phần liên thông của phần tử đơn vị, tức ``đa tạp
+Picard''). Do đó đôi khi thuận tiện khi làm việc trong phạm trù $\mathcal C$
+các tiền lược đồ kiểu hữu hạn địa phương trên $S$, để xét trong đó vấn đề biểu
+diễn được của một hàm tử phản biến $F$. Mục tiêu chính của các bài trình bày
+này là phát triển một kỹ thuật tổng quát cho phép nhận biết một hàm tử $F$ như
+vậy có biểu diễn được hay không và nghiên cứu các tính chất của $S$-tiền lược
+đồ $X$ tương ứng từ các tính chất của $F$. Nhân đây, trong nghiên cứu ấy xuất
+hiện những ví dụ không bệnh lý về các tiền lược đồ trên $S$ không tách trên
+$S$, đặc biệt dưới dạng các ``tiền lược đồ Picard'' của những $S$-lược đồ rất
+tốt; vì thế không nên loại khỏi hình học đại số các tiền lược đồ không phải là
+lược đồ.
+
+Cho $X$ là một tiền lược đồ kiểu hữu hạn địa phương trên $S$, và đặt
+\[
+  F(Y)=\operatorname{Hom}_S(Y,X)
+\]
+là hàm tử phản biến liên kết. Ta có thể xét hạn chế $F_0$ của $F$ lên phạm trù
+con $\mathcal C_0$ của $\mathcal C$ gồm các tiền lược đồ $Y$ trên $S$ vừa
+Artin vừa hữu hạn trên $S$: khi $S=\operatorname{Spec}(\Lambda)$,
+$\mathcal C_0$ chính là phạm trù đối ngẫu của phạm trù các $\Lambda$-đại số
+Artin đã xét trong B. Nếu $Y=\operatorname{Spec}(A)$, với $A$ là một vành
+Artin địa phương, thì $Y$ rút về một điểm duy nhất $y$ nằm trên một điểm đóng
+$s$ của $S$, và một $S$-đồng cấu từ $Y$ đến $X$ (tức một phần tử của $F(Y)$)
+được xác định bởi dữ liệu một điểm $x\in X$ nằm trên $s$ và một
+$\mathcal O_{s,S}$-đồng cấu từ $\mathcal O_{x,X}$ đến $A$. Nếu tồn tại một
+đồng cấu như vậy thì $x$ tất yếu là một điểm đóng của $X$ (vì trường thặng dư
+của nó là đại số trên trường thặng dư của $s$). Điều này cho thấy hạn chế
+$F_0$ của $F$ lên các ``$Y$-đại số Artin'' là pro-biểu diễn được, và được biểu
+diễn bởi đại số tôpô trên $Y$ mà các thành phần địa phương là các đầy đủ hóa
+$\widehat{\mathcal O}_{x,X}$ của các vành địa phương của $X$ tại những điểm
+$x$ của $X$ vừa đóng vừa nằm trên các điểm đóng của $Y$. Vì thế, chỉ riêng
+việc biết $F_0$ đã cung cấp thông tin chính xác về cấu trúc của $X$ (cụ thể là
+cấu trúc các đầy đủ hóa của các vành địa phương tại các điểm vừa nêu). Cần lưu
+ý rằng, ngay cả khi $S$
+
+\src{380}
+là phổ của một trường đóng đại số, chỉ bằng cách xét có hệ thống các ``đa
+tạp'' $Y$ mà $\mathcal O_Y$ có thể chứa phần tử lũy linh, đặc biệt bằng cách
+làm việc với phổ của các vành Artin địa phương, ta mới đạt được ``phát biểu
+đúng'' của các bài toán phổ quát cổ điển và nắm bắt được phương diện ``vô cùng
+bé'' của chúng.
+
+Khi xuất phát từ một hàm tử $F$ cho trước và muốn quyết định nó có biểu diễn
+được hay không, việc nghiên cứu hàm tử $F_0$ (nhờ các Định lý 1 và 2) sẽ cho
+những chỉ dẫn gần như đầy đủ: hoặc, như thường xảy ra (chẳng hạn chỉ cần kiểm
+tra bản chất của các tập $F(I_K,\xi)$ và cách chúng ứng xử theo hàm tử, xem A),
+ta nhận thấy ngay $F_0$ không pro-biểu diễn được (điều này giải thích sự thất
+bại của các cố gắng cho đến nay nhằm định nghĩa một cách ít nhiều tự nhiên
+các đa tạp môđuli để phân loại các phân thớ vectơ hạng $>1$); hoặc ta kiểm tra
+được $F_0$ biểu diễn được nhưng các không gian vectơ $F(I_K,\xi)$ không hữu
+hạn chiều, khi đó phải bằng lòng với nghiệm ``hình thức''; hoặc cuối cùng,
+$F_0$ được biểu diễn bởi một tích các vành địa phương đầy đủ Noether, điều này
+cho những chỉ dấu rất mạnh rằng chính $F$ biểu diễn được và, kết hợp với các
+tính chất tương tự nhưng mang tính toàn cục hơn mà chúng tôi dự định phát
+triển sau này, chắc hẳn sẽ đủ để kéo theo điều đó. Cuối cùng, còn có những bài
+toán hình học thú vị (xem các mục 4 và 5 dưới đây) trong đó ta chỉ có hàm tử
+$F_0$ (không phát sinh từ một hàm tử ``toàn cục'' $F$ nào), và ta có lý do để
+hài lòng nếu gắn được cho nó một ``lược đồ hình thức môđuli''.
+
+Để kết thúc các nhận xét tổng quát này, hãy chỉ ra cách lý thuyết lược đồ giải
+thích những hiện tượng có vẻ dị thường, chẳng hạn mặt Igusa $V$, có ``đa tạp
+Picard'' $P$ rút về một điểm nhưng vẫn thỏa
+\[
+  H^1(V,\mathcal O_V)\ne 0 ;
+\]
+trong trường hợp này, $P$ là một nhóm ``thuần túy vô cùng bé'' không rút về
+nhóm đơn vị, tức là nó được xác định bởi một đại số địa phương $O$ có hạng hữu
+hạn trên trường cơ sở $k$ và được trang bị một ánh xạ đường chéo tương ứng với
+cấu trúc nhân của $P$; nếu $\mathfrak m$ là iđêan cực đại của $O$, đối ngẫu của
+$\mathfrak m/\mathfrak m^2$ đẳng cấu chính tắc với
+$H^1(V,\mathcal O_V)$ (xem mục 3 dưới đây). Chỉ khi nhóm Picard là một nhóm
+đại số theo nghĩa cổ điển, tức là trơn trên trường cơ sở $k$, thì chiều của
+$H^1(V,\mathcal O_V)$ (luôn bằng chiều của $\mathfrak m/\mathfrak m^2$) mới
+bằng chiều của nhóm Picard.
+
+\subsection*{2. Các lược đồ $\underline{\operatorname{Hom}}_S(X,Y)$,
+$\Pi_{X/S}Z$, $\underline{\operatorname{Aut}}_S(X)$, v.v.}
+\addcontentsline{toc}{subsection}{2. Các lược đồ Hom, Pi và Aut}
+
+Cho $X,Y$ là hai tiền lược đồ trên $S$; với mọi tiền lược đồ $T$ trên $S$,
+
+\src{381}
+đặt $X_T=X\times_ST$, $Y_T=Y\times_ST$, và xét tập
+\[
+  F(T)=\operatorname{Hom}_T(X_T,Y_T)
+      =\operatorname{Hom}_S(X_T,Y)
+      =\operatorname{Hom}_S(X\times_ST,Y)
+\]
+như một hàm tử phản biến theo $T$. Nếu hàm tử này biểu diễn được, ta ký hiệu
+bởi $\underline{\operatorname{Hom}}_S(X,Y)$ tiền lược đồ trên $S$ biểu diễn
+nó; do đó có một đẳng cấu hàm tử
+\[
+  \operatorname{Hom}_S
+  \bigl(T,\underline{\operatorname{Hom}}_S(X,Y)\bigr)
+  \xrightarrow{\sim}
+  \operatorname{Hom}_S(T\times_SX,Y).
+\]
+Có nhiều biến thể của bài toán phổ quát này mà nghiệm quy về bài toán trên:
+tiền lược đồ các $S$-tự đẳng cấu của một $S$-tiền lược đồ $X$ (đó sẽ là một
+tiền lược đồ nhóm), tiền lược đồ các $S$-đồng cấu từ một $S$-tiền lược đồ nhóm
+đến một tiền lược đồ nhóm khác (đó sẽ là một tiền lược đồ nhóm giao hoán nếu
+lược đồ nhóm thứ hai giao hoán), v.v. Ta cũng có thể tổng quát hóa định nghĩa
+của $\underline{\operatorname{Hom}}_S(X,Y)$ bằng cách xét một tiền lược đồ $Z$
+trên tiền lược đồ $X$ trên $S$, cùng hàm tử
+\[
+  F(T)=\operatorname{Hom}_{X_T}(X_T,Z_T)
+\]
+(tập các ``tiết diện'' của $Z_T$ trên $X_T$); nếu hàm tử này biểu diễn được,
+$S$-tiền lược đồ biểu diễn nó sẽ được ký hiệu $\Pi_{X/S}Z$; theo định nghĩa ta
+có một đẳng cấu hàm tử
+\[
+  \operatorname{Hom}_S(T,\Pi_{X/S}Z)
+  =\operatorname{Hom}_{X_T}(X_T,Z_T).
+\]
+Lấy $Z=Y\times_SX$, ta thu lại
+$\underline{\operatorname{Hom}}_S(X,Y)$. Từ các định nghĩa này suy ra một bảng
+công thức vừa hiển nhiên vừa hữu ích cho các tiền lược đồ mới đưa vào, mà ta
+không trình bày ở đây (vì nó đúng trong mọi phạm trù có các tích và tích thớ).
+Nghiêm túc hơn là câu hỏi về sự tồn tại của các lược đồ dạng
+$\underline{\operatorname{Hom}}_S(X,Y)$. Trước hết, ta thấy rằng, với $X$ cố
+định, $\underline{\operatorname{Hom}}_S(X,Y)$ chỉ có thể tồn tại với mọi $Y$
+trên $S$ (hoặc $\Pi_{X/S}Z$ với mọi $Z$ trên $X$) nếu $X$ phẳng trên $S$.
+Hơn nữa, chỉ hợp lý khi kỳ vọng có nghiệm với $Y$ đủ tổng quát nếu $X$ còn
+riêng trên $S$. Mặt khác, dường như các điều kiện này đủ cho sự tồn tại của
+$\underline{\operatorname{Hom}}_S(X,Y)$ và $\Pi_{X/S}Z$, miễn là áp đặt, khi
+cần, một giả thiết kiểu ``tựa xạ ảnh'' lên $Y/S$, tương ứng lên $Z/X$; ít nhất
+điều này có thể kiểm tra trong khá nhiều tình huống (chẳng hạn khi $Y$ afin
+trên $S$; hoặc, bằng các phép dựng trực tiếp sơ cấp, khi $X$ hữu hạn trên $S$).
+Sau đây là hệ quả của các Định lý 1 và 2:
+
+\src{382}
+\result{MỆNH ĐỀ}{2.1} Cho $\Lambda$ là một vành Noether, $X$ và $Y$ là hai
+tiền lược đồ tùy ý trên $\Lambda$, và xét hàm tử
+\[
+  F(A)=\operatorname{Hom}_A(X_A,Y_A)
+\]
+trên phạm trù $\mathcal C_0$ các $\Lambda$-đại số Artin. Nếu $X$ phẳng trên
+$\Lambda$, hàm tử này pro-biểu diễn được.
+
+Hơn nữa, ta kiểm tra được rằng với mọi $A\in\mathcal C_0$ và $\xi\in F(A)$ có
+một đẳng cấu chính tắc
+\[
+  F(I_A,\xi)=H^0\!\left(
+    X_A,
+    \underline{\operatorname{Hom}}_{\mathcal O_{X_A}}
+    \bigl(\xi^*(\Omega^1_{Y_A/A}),\mathcal O_{X_A}\bigr)
+  \right),
+\]
+trong đó $\Omega^1_{Y_A/A}$ là bó các $1$-vi phân Kähler của $Y_A$ đối với
+$A$. Lấy $A$ là một trường rồi dùng A.5.1 và định lý hữu hạn của [2], ta được
+hệ quả sau:
+
+\result{HỆ QUẢ}{} Giả sử $X$ phẳng và riêng trên $S$, còn $Y$ kiểu hữu hạn địa
+phương trên $S$. Khi đó $F$ pro-biểu diễn được và các thành phần địa phương của
+đại số tôpô tương ứng trên $\Lambda$ là các vành Noether.
+
+\result{NHẬN XÉT}{} Các bài toán được xét trong mục này, cùng nhiều bài toán
+khác, theo truyền thống được nghiên cứu trong khuôn khổ hình học đại số cổ điển
+bằng ``tọa độ Chow'' của các chu trình trong không gian xạ ảnh, nhờ đó có thể
+xem các chu trình ấy như những điểm của các đa tạp xạ ảnh thích hợp. Thủ tục
+này, và nói chung việc dùng tọa độ Chow, dường như không thể tránh khỏi sự bất
+đầy đủ theo quan điểm lược đồ, vì nó tiêu hủy các phần tử lũy linh trong các đa
+tạp tham số và đặc biệt không thích hợp cho việc nghiên cứu thỏa đáng các biến
+phân vô cùng bé của chu trình (chưa kể tính không nội tại do phụ thuộc vào
+không gian xạ ảnh). Đáng tiếc, ngôn ngữ tọa độ Chow từng là ngôn ngữ duy nhất
+được nhiều nhà hình học đại số dùng để nghiên cứu các họ đa tạp hoặc các họ
+chu trình, và điều đó dường như đã tạo ra một trở ngại nghiêm trọng cho việc
+làm sáng tỏ những khái niệm này, bất chấp lợi ích kỹ thuật không thể phủ nhận
+(có lẽ chỉ tạm thời) của chúng. Nếu muốn có cái tương tự các đa tạp Chow trong
+lý thuyết lược đồ, ta đi đến bài toán phổ quát sau: cho $X$ là một tiền lược đồ
+trên $S$; với mọi tiền lược đồ $T$ trên $S$, xét tập $F(T)$ các tiền lược đồ
+con đóng của $X_T=X\times_ST$ phẳng trên $T$. Ta tìm cách biểu diễn hàm tử theo
+$T$ này bằng một tiền lược đồ trên $S$. Tổng quát hơn, có thể cho một bó tựa
+kết hợp $G$ trên $X$ và lấy $F(T)$ là tập các bó
+
+\src{383}
+thương của $G_T$ phẳng trên $T$. Dường như bài toán có nghiệm bằng một lược đồ
+$C$ kiểu hữu hạn địa phương trên $S$ khi $X$ riêng trên tiền lược đồ Noether
+địa phương $S$ và $G$ còn coherent. Dù sao, chỉ cần giả sử $S$ Noether địa
+phương thì hạn chế của $F$ lên các ``$S$-đại số Artin'' là pro-biểu diễn được;
+và nếu thêm rằng $X$ riêng trên $S$ và $G$ coherent thì các thành phần địa
+phương của vành tôpô tương ứng $O$ là Noether. Dĩ nhiên, ngay cả sau khi chứng
+minh sự tồn tại của ``lược đồ Chow'' của $X$ trên $S$, vẫn còn phải tìm một
+phân tích thành các tập mở rời nhau $C_i$ (tương ứng với việc cố định các bất
+biến liên tục như bậc và chiều của các chu trình đang biến thiên) kiểu hữu hạn
+(chứ không chỉ kiểu hữu hạn địa phương) trên $S$, làm rõ quan hệ giữa lược đồ
+này với các đa tạp Chow cổ điển, và xác định khi nào một $C_i$ thậm chí xạ ảnh,
+hoặc ít nhất tựa xạ ảnh, trên $S$.
+
+\subsection*{3. Các lược đồ Picard}
+\addcontentsline{toc}{subsection}{3. Các lược đồ Picard}
+
+Cho $f:X\longrightarrow S$ là một $S$-tiền lược đồ, xét bó nhân
+$\mathcal O_X^*$ các đơn vị của bó cấu trúc của $X$, và nhóm
+\[
+  P(X/S)=H^0\bigl(S,R^1f_*(\mathcal O_X^*)\bigr),
+\]
+gọi là nhóm Picard tương đối của $X/S$. Như vậy, một phần tử của nhóm này được
+xác định bằng cách cho một phủ mở $(U_i)$ của $S$ và một bó khả nghịch $L_i$
+trên mỗi $f^{-1}(U_i)$, sao cho với mọi cặp $(i,j)$,
+$L_i|f^{-1}(U_i\cap U_j)$ đẳng cấu với
+$L_j|f^{-1}(U_i\cap U_j)$, ít nhất là địa phương trên $U_i\cap U_j$ (tức hai bó
+này ``tương đương'' theo nghĩa của [3], B, 4). Nếu $X/S$ có một tiết diện thì
+$P(X/S)$ không gì khác hơn tập các lớp bó khả nghịch trên $X/S$ modulo
+``tương đương'' (loco citato). Bây giờ, với mọi $T$ trên $S$, đặt
+\[
+  F(T)=P(X_T/T) ;
+\]
+ta được một hàm tử hiệp biến theo $T$, có thể gọi là hàm tử Picard của $X/S$;
+nếu hàm tử này biểu diễn được thì tiền lược đồ trên $S$ biểu diễn nó được gọi
+là tiền lược đồ Picard của $X/S$ và ký hiệu $\underline P(X/S)$. Do đó có một
+đẳng cấu hàm tử
+\[
+  \operatorname{Hom}_S\bigl(T,\underline P(X/S)\bigr)
+  \xrightarrow{\sim}P(X_T/T).
+\]
+Phép lập tiền lược đồ Picard tương thích với mở rộng cơ sở; đặc biệt, các tiền
+lược đồ Picard của các thớ của $X$ trên $S$ (là các tiền lược đồ trên các
+trường thặng dư $K(s)$ của $s\in S$) chính là các thớ của
+$\underline P(X/S)$. Dĩ nhiên, vì $P(X_T/T)=F(T)$ là một nhóm giao hoán, các
+tiền lược đồ Picard là các tiền lược đồ nhóm. Cũng cần lưu ý rằng các Jacobian
+tổng quát của Rosenlicht không gì khác hơn các thành phần liên thông của đơn
+vị trong các lược đồ Picard của những đường cong đầy đủ có thể có kỳ dị; điều
+này hẳn làm hiển nhiên phần lớn các tính chất của chúng (một khi đã chứng minh
+sự tồn tại).
+
+\result{NHẬN XÉT}{} Định nghĩa được chọn ở đây chỉ hợp lý khi mọi điểm của
+$Y$ có một lân cận mở $U$ mà trên đó $X$ có một tiết diện. Trong trường hợp
+tổng quát, phải sửa nhẹ định nghĩa hàm tử Picard để vẫn có thể thu được một
+định lý tồn tại.
+
+Ở đây, các điều kiện hợp lý cho sự tồn tại của một tiền lược đồ Picard là:
+$X$ riêng và phẳng trên $S$, $f_*(\mathcal O_X)=\mathcal O_S$, và $X$ có địa
+phương một tiết diện trên $S$. Điều kiện này xuất hiện tự nhiên khi áp dụng kỹ
+thuật hạ xuống: để loại bỏ các tự đẳng cấu của một bó khả nghịch $L$ trên $X$,
+ta trang bị cho nó một tiết diện được đánh dấu trên tiết diện $s$ ([3], B, 4).
+Đặc biệt, ta thu được:
+
+\src{384}
+\result{MỆNH ĐỀ}{3.1} Giả sử $X$ phẳng trên
+$S=\operatorname{Spec}(\Lambda)$, với $\Lambda$ Noether, và với mọi $T$ kiểu
+hữu hạn trên $S$ ta có
+\[
+  f_{T*}(\mathcal O_{X_T})=\mathcal O_T
+\]
+(nếu $f$ riêng và có các thớ khả tách, hoặc nếu $S$ là phổ của một trường,
+thì theo Künneth điều kiện cuối tương đương với
+$f_*(\mathcal O_X)=\mathcal O_S$). Khi đó hàm tử Picard của $X/S$ trên phạm
+trù các $\Lambda$-đại số Artin là pro-biểu diễn được.
+
+Hơn nữa, ở đây ta có
+\[
+  F(I_A,\xi)=H^1(X_A,\mathcal O_{X_A}),
+\]
+đặc biệt:
+
+\result{HỆ QUẢ}{} Nếu $X$ riêng trên $S$, thì các thành phần địa phương của
+$\Lambda$-đại số tôpô $O$ tương ứng với hàm tử Picard là Noether.
+
+\result{NHẬN XÉT}{} Ta có thể tổng quát hóa các định nghĩa và kết quả của mục
+này cho việc phân loại các phân thớ chính trên $X$, với nhóm cấu trúc là một
+lược đồ nhóm $G$ trên $S$ vừa afin, vừa phẳng trên $S$, vừa giao hoán. Khi $G$
+không giao hoán, phân thớ nhóm liên hợp của một phân thớ chính (mà các tiết
+diện là các tự đẳng cấu của phân thớ chính) không còn tầm thường, nên Mệnh đề
+3.1 không còn đúng nguyên dạng. Tuy nhiên, ta có thể sửa bài toán phổ quát sao
+cho nó vẫn có nghiệm (ít nhất, hiện tại, trong hình học hình thức). Quy tắc
+vàng cần ghi nhớ, trong bối cảnh của \src{385}mục này và các mục sau, mỗi khi
+ta tìm các ``lược đồ môđuli'' cho những lớp đối tượng chỉ được xác định sai
+khác đẳng cấu, luôn là: loại bỏ các tự đẳng cấu khả dĩ của các đối tượng cần
+phân loại bằng cách đưa vào, nếu cần, những cấu trúc phụ (các điểm hay phần tử
+của tiết diện được đánh dấu, cố định các dạng vi phân, v.v.), được chọn đủ vô
+hại để không làm thay đổi đáng kể bài toán ban đầu.
+
+\subsection*{4. Môđuli hình thức của một đa tạp}
+\addcontentsline{toc}{subsection}{4. Môđuli hình thức của một đa tạp}
+
+Cho $\Lambda$ là một vành Noether địa phương có trường thặng dư $k$ (thông
+thường nhất, $\Lambda$ bằng $k$, hoặc bằng một $p$-vành Cohen), và cho $X_0$
+là một tiền lược đồ trên $k$. Với mọi $\Lambda$-đại số Artin địa phương $A$,
+xét tập $F(A)$ các lớp, sai khác đẳng cấu, của các $A$-tiền lược đồ $X$ phẳng
+trên $A$, được trang bị một đẳng cấu
+\[
+  (*)\qquad
+  X\otimes_A\kappa(A)\xleftarrow{\sim}
+  X_0\otimes_k\kappa(A),
+\]
+trong đó $\kappa(A)$ là trường thặng dư của $A$; dĩ nhiên, các đẳng cấu giữa
+những $A$-tiền lược đồ phẳng như vậy phải tôn trọng đẳng cấu vừa nêu, vốn là
+một phần của cấu trúc. Nếu $A$ là một $\Lambda$-đại số Artin không nhất thiết
+địa phương, có các thành phần địa phương $A_i$, ta lấy $F(A)$ là tích các
+$F(A_i)$. Như vậy, $F$ trở thành một hàm tử nhân tính theo $A$, có thể gọi là
+hàm tử môđuli của $X_0$ (và $\Lambda$). Nếu hàm tử này biểu diễn được, nó tương
+ứng với một $\Lambda$-đại số tôpô địa phương $O$ có trường thặng dư $k$, và
+phổ hình thức của $O$ được gọi là lược đồ hình thức môđuli của $X_0$ (và
+$\Lambda$); xem [2] để biết một số chi tiết về khái niệm này.
+
+Ở đây, để áp dụng kỹ thuật hạ xuống, các tự đẳng cấu ``hữu hạn'' của $X_0$ là
+vô hại, vì chúng không ảnh hưởng đến sự tồn tại của các tự đẳng cấu (theo
+nghĩa đã nêu trên) của các $A$-tiền lược đồ $X$; khi $A$ không rút về một
+trường, điều kiện cần và đủ để $X$ không có tự đẳng cấu $A$ không tầm thường
+nào là
+\[
+  H^0(X_0,\Theta_{X_0/k})=0,
+\]
+trong đó $\Theta_{X_0/k}$ ký hiệu bó các $k$-đạo hàm (= bó tiếp tuyến) của
+$X_0$. Mặt khác, ta dễ dàng thu được (ít nhất nếu $X_0$ trơn trên $k$)
+\[
+  F(I_A,\xi)=H^1(X_A,\Theta_{X_A/A}).
+\]
+Như thường lệ, suy ra:
+
+\src{386}
+\result{MỆNH ĐỀ}{4.1} Giả sử
+$H^0(X_0,\Theta_{X_0/k})=0$. Khi đó tồn tại lược đồ hình thức môđuli của
+$X_0$. Nếu thêm rằng $X_0$ riêng trên $k$, lược đồ hình thức môđuli là
+Noether.
+
+\result{NHẬN XÉT}{} 1\textsuperscript{o} Khi không giả sử $X_0$ trơn trên
+$k$, $F(I_A,\xi)$ được đồng nhất với một $A$-môđun con của
+\[
+  \operatorname{Ext}^1_{\mathcal O_{P_A}}
+  \bigl(P_A;\mathcal I_{X_A},\mathcal O_{X_A}\bigr),
+\]
+trong đó đặt $P_A=X_A\times_\Lambda X_A$, xem $\mathcal O_{X_A}$ như một bó
+coherent trên $P_A$ thông qua cấu xạ đường chéo
+$X_A\longrightarrow P_A$, và $\mathcal I_{X_A}$ ký hiệu bó iđêan coherent
+trên $P_A$ được xác định bởi cấu xạ đường chéo. Chính xác hơn, một phép toàn
+cục hóa đơn giản của lý thuyết Hochschild cho thấy nhóm
+$\operatorname{Ext}^1$ trên đồng nhất với tập các lớp, sai khác đẳng cấu, của
+các bó $I_A$-đại số phẳng $\mathcal O$ trên $X_A$, được trang bị một đẳng cấu
+tăng cường
+\[
+  \mathcal O\otimes_{I_A}A\longrightarrow\mathcal O_{X_A}
+\]
+(nhắc lại rằng $I_A=A[t]/(t^2)$). Môđun con $F(I_A,\xi)$ là môđun tương ứng
+với các bó đại số giao hoán. Vì vậy, trái với điều [2] gợi ra, các giả thiết
+trơn không thiết yếu trong lý thuyết môđuli.
+
+2\textsuperscript{o} Nhắc lại (loco citato) rằng, đặc biệt, mọi đường cong đại
+số $X_0$ trơn và riêng trên $k$ đều có một lược đồ hình thức môđuli trơn trên
+$\Lambda$, có chiều tương đối $3g-3$ nếu giống $g$ là $\geq2$, và bằng $g$ nếu
+$g=0$ hoặc $1$. Hai trường hợp sau không còn trực tiếp thuộc Mệnh đề 4.1. Tuy
+nhiên, trong trường hợp các đường cong elliptic ($g=1$), có thể quy chúng về
+mệnh đề ấy bằng các xét đoán sau đây.
+
+Dĩ nhiên, ta có thể biến đổi Mệnh đề 4.1 tùy ý bằng cách xét các hệ lược đồ
+trên $k$ được trang bị nhiều cấu trúc khác nhau. Chẳng hạn, giả sử $X_0$ là
+một lược đồ Abel trên $k$, có điểm gốc được đánh dấu (tức là xem $X_0$ như một
+lược đồ nhóm trên $k$), và cho $F(A)$ là tập các lớp, sai khác đẳng cấu, của
+các lược đồ Abel trên $A$ (tức các lược đồ nhóm riêng và trơn trên $A$) được
+trang bị một đẳng cấu lược đồ Abel $(*)$. Ta kiểm tra được rằng việc áp đặt một
+cấu trúc nhân (thậm chí chỉ một ``tiết diện đơn vị'') loại bỏ các tự đẳng cấu
+vô cùng bé, và do đó tồn tại một lược đồ hình thức môđuli tương ứng với một
+vành địa phương đầy đủ Noether $O$. Mặt khác, có thể chứng minh rằng nếu $X$
+là một lược đồ riêng và trơn, có các thớ ``liên thông tuyệt đối'' trên một tiền
+lược đồ Noether địa phương $S$, thì mọi cấu trúc nhân trên $X$ có một tiết
+diện đơn vị đều tất yếu kết hợp và giao hoán (miễn là nó như vậy trên ít nhất
+một thớ và $S$ liên thông), và hơn nữa được xác định duy nhất bởi việc biết
+
+\src{387}
+tiết diện đơn vị. Ngoài ra, giả sử $S$ là phổ của một vành Artin địa phương
+$A$ có trường thặng dư $k$, $X$ riêng trên $A$ và được trang bị một tiết diện
+$s$, và cuối cùng $X\otimes_Ak$ được trang bị cấu trúc lược đồ Abel trên $k$
+mà phần tử trung hòa là điểm của $X\otimes_Ak$ tương ứng với $s$; một phép
+tính cản trở đơn giản, kết hợp với một lập luận của Serre, cho phép chứng minh
+rằng thực sự tồn tại trên $X$ một cấu trúc nhân nhận $s$ làm tiết diện đơn vị.
+(Từ đó, dùng ``định lý tồn tại'' của [2] để chuyển sang trường hợp $A$ Noether
+địa phương đầy đủ, rồi dùng kỹ thuật hạ xuống của [3] cho trường hợp tổng quát,
+ta có thể chứng minh phát biểu tương tự với mọi $S$ Noether địa phương liên
+thông.) Điều này chứng minh rằng hàm tử $F(A)$ đang xét ở đây đẳng cấu với hàm
+tử tương tự được định nghĩa ở đầu mục này khi bỏ qua cấu trúc nhân trên $X_0$.
+Đặc biệt, suy ra rằng nếu $\mathfrak m$ là iđêan cực đại của $O$ thì
+$\mathfrak m/\mathfrak m^2$ đẳng cấu chính tắc với đối ngẫu của
+$H^1(X_0,\Theta_{X_0/k})$, và do đó có chiều $n^2$, trong đó
+$n=\dim X_0$. Sẽ rất thú vị nếu xác định được $O$ có trơn trên $\Lambda$ hay
+không, tức có đẳng cấu với một đại số chuỗi hình thức theo $n^2$ biến trên
+$\Lambda$ hay không. Mục 1, Mệnh đề 5.2, cho phép phát biểu tương đương bài
+toán này như một bài toán tồn tại các lược đồ Abel rút về một lược đồ Abel cho
+trước. Dù sao, các phương pháp siêu việt cho thấy câu trả lời là khẳng định nếu
+$k$ có đặc số không. Trong đặc số $p\ne0$, hiển nhiên chỉ cần xét trường hợp
+$\Lambda$ là vành vectơ Witt xây dựng trên một trường đóng đại số $k$. Có lẽ
+đã đến lúc ``hàm tử Greenberg'' chứng tỏ giá trị của mình\ldots
+
+\subsection*{5. Mở rộng các phủ}
+\addcontentsline{toc}{subsection}{5. Mở rộng các phủ}
+
+Cho $\mathfrak X$ là một tiền lược đồ hình thức Noether [2] và $U$ là một
+phần mở của $\mathfrak X$, được xác định địa phương bởi sự ``không triệt tiêu''
+của một tiết diện của $\mathcal O_{\mathfrak X}$ không là ước của không trên
+$\mathfrak X$, và vì thế đủ lớn để mọi tiết diện của
+$\mathcal O_{\mathfrak X}$ trên một tập mở $V$ triệt tiêu trên $U\cap V$ đều
+triệt tiêu. Cho $\mathcal J$ là một ``iđêan xác định'' của $\mathfrak X$, và
+đặt
+\[
+  X_n=(\mathfrak X,\mathcal O_{\mathfrak X}/\mathcal J^{n+1}),
+\]
+đây là một tiền lược đồ Noether thông thường. Nếu
+$\mathfrak X',\mathfrak X''$ là hai phủ phẳng của $\mathfrak X$ (tức hai tiền
+lược đồ trên $\mathfrak X$ được xác định bởi các bó đại số coherent và tự do
+địa phương khi xem như các bó môđun), không phân nhánh trên $U$, thì ánh xạ
+hiển nhiên
+\[
+  \operatorname{Hom}_{\mathfrak X}(\mathfrak X',\mathfrak X'')
+  \longrightarrow
+  \operatorname{Hom}_{X_0}(X'_0,X''_0)
+\]
+là đơn ánh; đặc biệt, một tự đẳng cấu của $\mathfrak X'$ cảm sinh đồng nhất
+trên $X'_0$ chính là đồng nhất. Điều này cho phép áp dụng kỹ thuật hạ xuống vào
+tình huống này. Đặc biệt, hãy xuất phát từ một phủ phẳng $X'_0$ của $X_0$,
+không phân nhánh
+
+\src{388}
+trên $U_0$; ký hiệu $G(\mathfrak X)$ là tập các lớp, sai khác đẳng cấu (các
+đẳng cấu cảm sinh đồng nhất trên $X'_0$), của các phủ phẳng $\mathfrak X'$ của
+$\mathfrak X$ cảm sinh $X'_0$ trên $X_0$ (và do đó tất yếu không phân nhánh
+trên $U$). Định nghĩa tương tự $G(V)$ với mọi phần mở $V$ của $\mathfrak X$,
+và tổng quát hơn $G(\mathfrak Y)$ với mọi tiền lược đồ hình thức
+$\mathfrak Y$ trên $\mathfrak X$. Khi ấy, các kết quả của [2] và [3] trước hết
+kéo theo những kết quả sau:
+
+\noindent a. Khi $V$ chạy qua các tập mở của $\mathfrak X$, các $G(V)$ lập
+thành một bó trên $\mathfrak X$, ký hiệu $G_{\mathfrak X}=G$. Hạn chế của bó
+này lên $U$ là bó hằng có các thớ rút về một phần tử.
+
+Tổng quát hơn, việc xác định các thớ của $G_{\mathfrak X}$ là một vấn đề về
+các vành địa phương đầy đủ; chính xác hơn:
+
+\noindent b. Với mọi $x\in\mathfrak X$, ta có
+\[
+  G_x=G\bigl(\operatorname{Spec}(\widehat{\mathcal O}_{\mathfrak X,x})\bigr),
+\]
+(= các lớp, sai khác đẳng cấu, của các đại số $B$ hữu hạn và tự do trên
+$\widehat{\mathcal O}_{\mathfrak X,x}$, được trang bị một đẳng cấu của
+$B\otimes_{\widehat{\mathcal O}_{\mathfrak X,x}}\mathcal O_{X_0,x}$ với
+$\mathcal O'_{0x}$, trong đó $\mathcal O'_0$ là bó đại số trên $X_0$ xác định
+$X'_0$).
+
+\noindent c. Có một đẳng cấu chính tắc
+\[
+  G_{\mathfrak X}=\varprojlim_nG_{X_n} ;
+\]
+nói cách khác, với mọi tập mở $V$ của $\mathfrak X$, ta có
+\[
+  G(V)=\varprojlim_nG(V_n).
+\]
+
+\noindent d. Giả sử $\mathfrak X$ thu được từ một lược đồ thông thường $X$
+riêng trên một vành Noether địa phương đầy đủ $\Lambda$ có iđêan xác định
+$\mathfrak m$, bằng cách lấy đầy đủ hóa $\mathcal J$-adic của $\mathcal O_X$,
+trong đó $\mathcal J=\mathfrak m\mathcal O_X$. Khi đó $G(\mathfrak X)$ đẳng
+cấu chính tắc với tập các lớp phủ phẳng của lược đồ thông thường $X$ ``rút về
+$X'_0$''.
+
+Nói một cách hình tượng, có thể nói rằng (a) và (b) thiết lập các quan hệ cơ
+bản giữa phương diện địa phương và phương diện toàn cục của bài toán, (c) cho
+các quan hệ giữa phương diện ``hữu hạn'' và phương diện ``vô cùng bé'', còn
+(d) nhắc lại (dưới các điều kiện đã nêu) sự đồng nhất giữa phương diện ``hình
+thức'' và phương diện ``đại số''.
+
+Bây giờ giả sử $\mathfrak X$ được xác định trên một vành Noether địa phương
+đầy đủ $\Lambda$, với $\mathcal J=\mathfrak m\mathcal O_{\mathfrak X}$ (do đó
+$X_0$ là một tiền lược đồ trên $\Lambda/\mathfrak m$). Với mọi đại số $A$ hữu
+hạn trên $\Lambda$, đặt
+\[
+  F(A)=G(\mathfrak X\times_\Lambda A).
+\]
+Đây là một hàm tử hiệp biến theo $A$, nhận giá trị trong phạm trù các tập hợp,
+và theo (c) hàm tử này được xác định hoàn toàn khi biết nó trên các $A$ Artin;
+nói rằng hàm tử này pro-biểu diễn được, tức có dạng
+\[
+  F(A)=\operatorname{Hom}_{\Lambda\text{-algèbres top.}}(O,A),
+\]
+
+\src{389}
+trong đó $O$ là một đại số tôpô trên $\Lambda$ thuộc loại đã xét ở A, mục 5,
+tương đương với việc điều ấy đúng khi hạn chế vào các $A$ Artin. Khi đó, sự kết
+hợp của các Định lý 1 và 2 thực sự kéo theo:
+
+\result{MỆNH ĐỀ}{5.1} Hàm tử trên pro-biểu diễn được.
+
+Dĩ nhiên, theo (a), nếu $U=\mathfrak X$, $G(\mathfrak Y)$ rút về một phần tử
+duy nhất với mọi $\mathfrak Y$ trên $\mathfrak X$, và khi đó hàm tử $F$ ít
+đáng quan tâm (ta có $O=\Lambda$). Dường như trong hầu hết mọi trường hợp khác,
+vành địa phương tôpô $O$ không Noether. Tuy nhiên, sự tồn tại của nó làm nổi
+bật một cách đáng ngạc nhiên bản chất ``liên tục'' của tập nghiệm
+$G(\mathfrak X)$ (tương ứng trực giác với việc có một lựa chọn ``liên tục''
+trong cách sự phân nhánh lan truyền khi mở rộng $X'_0$). Hãy so sánh kết quả
+này với quan điểm của J.-P. Serre [4] trong lý thuyết trường lớp địa phương,
+vốn cũng làm nổi bật tính liên tục của nhóm Galois tôpô của mở rộng Abel cực
+đại của một trường địa phương ``hình học''; ở đó nhóm đối ngẫu (theo nghĩa
+Pontryagin) xuất hiện như một giới hạn quy nạp của các nhóm đại số (hoặc ít
+nhất tựa đại số); ở đây cũng vậy, việc phân loại các mở rộng được cho bởi các
+``đa tạp'' vô hạn chiều. Mặt khác, trong phần trên ta có thể lấy
+$\mathfrak X$ là phổ hình thức của một vành địa phương đầy đủ (mà $\Lambda$
+chẳng hạn là một vành con Cohen), và có thể hy vọng các kết quả của mục này
+được dùng để nghiên cứu các mở rộng của một vành địa phương đầy đủ có chiều
+$>1$. Cả trong trường hợp địa phương lẫn toàn cục, có lẽ chúng cho phép phát
+biểu các quan hệ chính xác giữa những hiện tượng phân nhánh cao và những hiện
+tượng ở đặc số không (có thể tiếp cận bằng phương pháp siêu việt). Dù sao,
+chính phân tích sơ bộ của Mệnh đề 5.1 cho phép mở rộng các phương pháp trình
+bày trong [2] để nghiên cứu nhóm cơ bản sang trường hợp ``phân nhánh vừa'' và
+giải ``bài toán ba điểm'' bằng phương pháp siêu việt.
+
+Để kết thúc, hãy lưu ý rằng tình huống trở nên đơn giản khi $X_0$ có chiều 1:
+khi ấy, theo (a) và (b),
+\[
+  G(\mathfrak X)\simeq
+  \prod_iG\bigl(\operatorname{Spec}(\widehat{\mathcal O}_{\mathfrak X,x_i})\bigr),
+\]
+trong đó $x_i$ là các điểm của $X_0-U$: ta có thể cho tùy ý các mở rộng ``địa
+phương'' tại những điểm phân nhánh. Ngoài ra, khi $X_0$ chuẩn tắc, ta nhận thấy
+lược đồ hình thức môđuli được bảo đảm bởi 5.1 là trơn trên
+$\operatorname{Spec}(\Lambda)$.
+
+\src{390}
+\begin{center}
+  \textbf{TÀI LIỆU THAM KHẢO}
+\end{center}
+
+\begin{description}
+  \item[{[1]}] Grothendieck (Alexander). --- \emph{Sur quelques points
+    d'algèbre homologique}, Tohoku Math. J., t. 9, 1957, tr. 119--221.
+  \item[{[2]}] Grothendieck (Alexander). --- \emph{Géométrie formelle et
+    géométrie algébrique}, Séminaire Bourbaki, t. 11, 1958/59, fasc. 3,
+    số 182.
+  \item[{[3]}] Grothendieck (Alexander). --- \emph{Technique de descente et
+    théorèmes d'existence en géométrie algébrique, I : Généralités, Descente
+    par morphismes fidèlement plats}, Séminaire Bourbaki, t. 12, 1959/60,
+    fasc. 1, số 190.
+  \item[{[4]}] Serre (Jean-Pierre). --- \emph{Corps locaux et isogénies},
+    Séminaire Bourbaki, t. 11, 1958/59, fasc. 3, số 185.
+\end{description}
+
+\par

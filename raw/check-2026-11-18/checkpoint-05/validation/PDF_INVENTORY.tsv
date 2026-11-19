@@ -1,0 +1,12 @@
+layer	file	status	pages	sha256	inspection
+fr	pdf/FGA_fr.pdf	missing			page-tree metadata only; visual inspection not performed
+fr_printed	pdf/FGA_fr_printed.pdf	missing			page-tree metadata only; visual inspection not performed
+en	pdf/FGA_en.pdf	missing			page-tree metadata only; visual inspection not performed
+es	pdf/FGA_es.pdf	missing			page-tree metadata only; visual inspection not performed
+es_149_printed	pdf/FGA_es_149_printed.pdf	missing			page-tree metadata only; visual inspection not performed
+pt-BR	pdf/FGA_pt-BR.pdf	missing			page-tree metadata only; visual inspection not performed
+pt-BR_printed	pdf/FGA_pt-BR_printed.pdf	missing			page-tree metadata only; visual inspection not performed
+vi	pdf/FGA_vi.pdf	missing			page-tree metadata only; visual inspection not performed
+vi_diplomatic	pdf/FGA_vi_diplomatic.pdf	missing			page-tree metadata only; visual inspection not performed
+ko	pdf/FGA_ko.pdf	missing			page-tree metadata only; visual inspection not performed
+zh-Hans	pdf/FGA_zh-Hans.pdf	missing			page-tree metadata only; visual inspection not performed

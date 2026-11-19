@@ -1,0 +1,897 @@
+\unit{Thuyết trình 212 -- Các tiền lược đồ thương}
+\sid{212}
+\markboth{Thuyết trình 212}{Thuyết trình 212}
+\src{99}
+\seminar{Năm thứ 13, 1960/61, số 212\\Tháng 2 năm 1961}
+\paperhead{CÁC KỸ THUẬT XÂY DỰNG VÀ CÁC ĐỊNH LÝ TỒN TẠI TRONG HÌNH HỌC ĐẠI SỐ\\
+III. CÁC TIỀN LƯỢC ĐỒ THƯƠNG}%
+  {Alexander GROTHENDIECK}
+
+\subsection*{Mở đầu}
+\addcontentsline{toc}{subsection}{Mở đầu}
+
+Các vấn đề được xét trong exposé này khác với các vấn đề của hai exposé trước
+ở chỗ ta tìm cách biểu diễn một số hàm tử hiệp biến, chứ không còn là phản
+biến, theo các lược đồ biến thiên. Tuy nhiên, phép lấy thương là thiết yếu
+trong nhiều bài toán xây dựng của hình học đại số, kể cả các bài toán trong
+Exposé I và II ([1], [2]). Chẳng hạn, câu hỏi về \emph{tính hữu hiệu của một
+dữ liệu hạ xuống} trên một $T$-tiền lược đồ $X$, đối với một cấu xạ phẳng
+trung thành và quasi-compact $T\longrightarrow S$, tương đương với câu hỏi về
+sự tồn tại của một thương của $X$ (thỏa các tính chất hợp lý được xét dưới
+đây) theo quan hệ tương đương phẳng trên $X$ do dữ liệu hạ xuống xác định; các
+câu hỏi nêu trong [1], A, \S~2 c chắc chắn sẽ được giải quyết đồng thời với
+các câu hỏi đặt ra trong đoạn 2 của exposé này. Tương tự, \emph{lược đồ
+Picard} của một $S$-lược đồ $X$ (xem định nghĩa trong [2], C, \S~3) có thể
+được định nghĩa theo nhiều cách như thương của một số lược đồ khác (các lược
+đồ của ước hiệu dụng, hoặc của các phép nhúng vào một lược đồ xạ ảnh) theo
+các quan hệ tương đương phẳng; trong khi đó, việc định nghĩa và xây dựng các
+lược đồ phụ trợ này đơn giản hơn về mặt kỹ thuật: thật vậy, chúng là các lược
+đồ dạng $\underline{\operatorname{Hom}}_S(X,Y)$ và các biến thể được định
+nghĩa trong [2], C, \S~2, và việc xây dựng chúng sẽ là nội dung của exposé
+tiếp theo (dưới các giả thiết thích hợp về tính xạ ảnh). Vì thế, bằng cách kết
+hợp các kết quả của exposé này và exposé tiếp theo, ta thu được phép xây dựng
+các lược đồ Picard dưới những giả thiết thích hợp.
+
+Bài toán lấy thương trong phạm trù các tiền lược đồ vẫn còn đặt ra một số câu
+hỏi chưa được giải quyết. Câu hỏi quan trọng nhất được nêu trong đoạn 8. Hiện
+nay nó là trở ngại duy nhất đối với việc xây dựng \emph{các lược đồ moduli
+trên các số nguyên cho các đường cong có giống tùy ý, các đa tạp abel phân
+cực}, v.v. Điều đó cho thấy lời giải của nó xứng đáng với nỗ lực của các
+chuyên gia về nhóm đại số.
+\src{100}
+\subsection*{1. Quan hệ tương đương, quan hệ tương đương hữu hiệu}
+\addcontentsline{toc}{subsection}{1. Quan hệ tương đương, quan hệ tương đương hữu hiệu}
+
+Cho $\mathcal C$ là một phạm trù và $X$ là một vật của $\mathcal C$. Một cặp
+cấu xạ
+\[
+  p_1,p_2:R\rightrightarrows X
+\]
+được gọi là một \emph{cặp tương đương} trong $\mathcal C$, có \emph{đích}
+$X$ và \emph{nguồn} $R$, nếu với mọi vật $T$ của $\mathcal C$, hai ánh xạ
+tương ứng
+\[
+  p_1(T),p_2(T):R(T)\rightrightarrows X(T)
+\]
+(trong đó, với mỗi vật $Y$ của $\mathcal C$, ta đặt
+$Y(T)=\operatorname{Hom}(T,Y)$) xác định một ánh xạ
+\[
+  R(T)\longrightarrow X(T)\times X(T)
+\]
+cảm sinh một song ánh từ $R(T)$ lên đồ thị của một quan hệ tương đương trên
+tập $X(T)$. Ta đưa vào một quan hệ tương đương hiển nhiên giữa các cặp tương
+đương có đích $X$; một lớp tương đương đối với quan hệ sau này được gọi là
+một \emph{quan hệ tương đương của $\mathcal C$ trên $X$}, hoặc đơn giản là
+một quan hệ tương đương nếu không thể gây nhầm lẫn.
+
+Nếu $X\times X$ tồn tại, việc cho một quan hệ tương đương trên $X$ tương
+đương với việc cho một vật con $R$ của $X\times X$ sao cho, với mọi vật $T$
+của $\mathcal C$, tập con của
+\[
+  (X\times X)(T)=X(T)\times X(T)
+\]
+tương ứng với $R(T)$ là đồ thị của một quan hệ tương đương trên $X(T)$. Ký
+hiệu $p_1$ và $p_2$ là các cấu xạ từ $R$ đến $X$ cảm sinh bởi các phép chiếu
+$\operatorname{pr}_1$ và $\operatorname{pr}_2$, điều kiện trên nói rằng
+$(p_1,p_2)$ là một cặp tương đương. Ta cũng có thể biểu diễn bằng biểu đồ
+trong $\mathcal C$ (với điều kiện tồn tại $X\times X$ và tích thớ
+$(R,p_2)\times_X(R,p_1)$) các tiên đề theo nghĩa tập hợp của một quan hệ
+tương đương đối với các $R(T)$ trong các $X(T)$, phù hợp với nguyên lý tổng
+quát được giải thích trong [2], A, \S~1. Ta sẽ không cần đến điều này.
+
+Mỗi khi có một cặp cấu xạ $(p_1,p_2)$ cùng nguồn $R$ và cùng đích $X$, ta có
+thể định nghĩa \emph{đối hạt nhân} của cặp ấy là vật $Y$ của $\mathcal C$
+biểu diễn hàm tử hiệp biến theo $Z$
+\[
+  \operatorname{Hom}_{p_1,p_2}(X,Z),
+\]
+tức tập các cấu xạ $u$ từ $X$ đến $Z$ sao cho $up_1=up_2$. Nếu $Y$ tồn tại,
+nó được xác định duy nhất đến một đẳng cấu duy nhất. Ta ký hiệu nó là
+$X/(p_1,p_2)$ hoặc, theo lạm dụng ký hiệu, là $X/R$; ký hiệu sau chủ yếu được
+dùng khi
+\src{101}$(p_1,p_2)$ là một cặp tương đương: khi đó, theo thông lệ, ta đồng
+nhất trong ký hiệu quan hệ tương đương do cặp ấy xác định với $R$. Lưu ý rằng
+nếu xem $Y$ là một thương của $X$, thì quả thật nó chỉ phụ thuộc vào quan hệ
+tương đương do cặp $(p_1,p_2)$ xác định.
+
+Bây giờ, xét một cấu xạ
+\[
+  f:X\longrightarrow Y
+\]
+cho phép xem $X$ như một «vật trên $Y$», và giả sử tích thớ
+\[
+  R(f)=X\times_Y X
+\]
+tồn tại. Gọi $p_1$ và $p_2$ là hai phép chiếu của nó. Khi đó $(p_1,p_2)$ là
+một cặp tương đương, gọi là cặp \emph{liên kết} với cấu xạ $f$. Do đó, cặp
+này xác định một quan hệ tương đương, gọi là quan hệ liên kết với $f$.
+
+Ta nói một cặp cấu xạ $(p_1,p_2)$ có đích $X$ và cùng nguồn $R$ là một
+\emph{cặp tương đương hữu hiệu} nếu
+\begin{enumerate}
+  \item[(i)] đối hạt nhân $X/(p_1,p_2)=Y$ tồn tại;
+  \item[(ii)] tích thớ $X\times_Y X$ tồn tại;
+  \item[(iii)] cấu xạ $R\longrightarrow X\times_Y X$ có các thành phần $p_1$ và
+  $p_2$ là một đẳng cấu.
+\end{enumerate}
+Khi đó, $(p_1,p_2)$ quả là một cặp tương đương. Ta cũng nói quan hệ tương
+đương do nó xác định là một \emph{quan hệ tương đương hữu hiệu}.
+
+Ta nói một cấu xạ $f:X\longrightarrow Y$ là một \emph{toàn cấu hữu hiệu}
+nếu
+\begin{enumerate}
+  \item[(i)] tích thớ $X\times_Y X=R$ tồn tại;
+  \item[(ii)] thương $X/(p_1,p_2)$ tồn tại, trong đó $p_1$ và $p_2$ là hai phép
+  chiếu từ $R$ đến $X$;
+  \item[(iii)] cấu xạ $X/(p_1,p_2)\longrightarrow Y$ do $f$ cảm sinh là một
+  đẳng cấu.
+\end{enumerate}
+Khi đó, $f$ quả là một toàn cấu, và thậm chí là một toàn cấu chặt (xem [1],
+A, \S~2.3); điều đảo lại đúng nếu tích thớ $X\times_Y X$ tồn tại. Ta cũng
+gọi vật thương của $X$ do toàn cấu $f$ xác định là một \emph{thương hữu hiệu}
+của $X$.
+
+Các định nghĩa trên dẫn đến «tương ứng Galois» sau đây:
+
+\src{102}
+\result{MỆNH ĐỀ}{1.1} Có một tương ứng song ánh, bảo toàn các thứ tự tự
+nhiên, giữa tập các quan hệ tương đương hữu hiệu $R$ trên $X$ và tập các
+thương hữu hiệu $Y$ của $X$: quan hệ $R$ ứng với thương hữu hiệu $X/R$, còn
+thương $Y$ ứng với quan hệ tương đương hữu hiệu do phép chiếu chính tắc
+$X\longrightarrow Y$ xác định (quan hệ này được cho bởi tích thớ $X\times_Y X$
+cùng với hai phép chiếu của nó).
+
+Trong các phạm trù rất tốt (các tập hợp, các bó tập hợp, v.v.), mọi thương đều
+hữu hiệu và mọi quan hệ tương đương đều hữu hiệu. Điều này không còn đúng
+trong những phạm trù như phạm trù các tiền lược đồ trên một tiền lược đồ $S$
+cho trước, ngay cả khi $S$ là phổ của một trường, và ngay cả khi chỉ xét các
+lược đồ hữu hạn trên $S$. Những vấn đề về tính hữu hiệu, và thậm chí (đối với
+các tiền lược đồ không hữu hạn trên $S$) những vấn đề về sự tồn tại của các
+thương, thường tỏ ra tế nhị.
+
+\subsection*{2. Ví dụ: các tiền lược đồ hữu hạn trên $S$}
+\addcontentsline{toc}{subsection}{2. Ví dụ: các tiền lược đồ hữu hạn trên S}
+
+Cho $\mathcal C$ là phạm trù các tiền lược đồ hữu hạn trên $S$, với giả thiết
+cơ sở ấy là Noether địa phương. Phạm trù này tương đương với phạm trù đối của phạm
+trù các bó đại số giao hoán coherent trên $S$, hoặc, nếu $S$ là affine có
+vành $A$, với phạm trù đối của phạm trù các $A$-đại số hữu hạn trên $A$ (tức
+là các môđun hữu hạn sinh trên $A$). Từ đó suy ra ngay rằng trong $\mathcal C$
+tồn tại các giới hạn xạ ảnh hữu hạn và các giới hạn quy nạp hữu hạn. Đối với
+loại thứ nhất, điều này đã được biết rõ (không cần bất kỳ giả thiết hữu hạn
+nào\ldots). Như vậy, tích thớ của các tiền lược đồ $X,Y$ trên $S$ tương ứng
+với tích tensor $B\otimes_A C$ của các đại số tương ứng; hạt nhân của hai cấu
+xạ $X\rightrightarrows Y$, được xác định bởi hai đồng cấu $A$-đại số
+$u,v:C\rightrightarrows B$, tương ứng với thương của $B$ theo iđêan sinh bởi
+các phần tử $u(c)-v(c)$, v.v. Đối với các giới hạn quy nạp hữu hạn, chỉ cần
+xét, một mặt, các tổng hữu hạn, tương ứng với tích thông thường của các
+$A$-đại số, và mặt khác, các đối hạt nhân của các cặp cấu xạ
+$X\rightrightarrows Y$; quả thật, chúng tương ứng (như thấy ngay) với vành con
+của $C$ gồm những phần tử mà trên đó các đồng cấu
+$u,v:C\rightrightarrows B$ trùng nhau (vành con này hữu hạn trên $A$ nhờ giả
+thiết Noether). Hơn nữa, lưu ý rằng nhờ giả thiết Noether, ta có thể chứng
+minh rằng các giới hạn quy nạp hữu hạn, và đặc biệt là các thương, được xây
+dựng như trên trong phạm trù $\mathcal C$ các tiền lược đồ hữu hạn trên $S$,
+thực ra là các thương trong phạm trù của \emph{tất cả} các tiền lược đồ.
+\src{103}
+Như đã nói trong [1], trong $\mathcal C$ có những toàn cấu không hữu hiệu
+(hoặc chặt; hai điều này là như nhau vì
+các tích thớ tồn tại). \emph{Tôi không biết liệu các quan hệ tương đương có
+luôn hữu hiệu hay không} khi không đặt giả thiết nào về tính phẳng. Theo hướng
+này, tôi chỉ thu được những kết quả khẳng định rất bộ phận, nhưng không thể
+thiếu cho việc chứng minh định lý cơ bản trong lý thuyết hình thức về moduli
+(xem [2], B, đl. 1). Lưu ý rằng trong bài toán đã nêu, ta dễ dàng quy về
+trường hợp $S$ là phổ của một vành Artin địa phương $A$ có trường thặng dư
+đóng đại số. Nhưng ngay cả khi $A$ là một trường, câu trả lời vẫn chưa được
+biết.
+
+Ta cũng có thể xét trường hợp một tiền lược đồ $X$ trên $S$ không còn được
+giả sử là hữu hạn trên $S$, nhưng được trang bị một quan hệ tương đương $R$
+trên $X$ sao cho $p_1:R\longrightarrow X$ là một cấu xạ hữu hạn. Khi đó, ta
+nói $R$ là một quan hệ tương đương hữu hạn. Để đơn giản, giả sử $S$ và $X$
+đều affine (do đó $R$ affine, nên tình huống được quy về một tình huống đại số
+giao hoán thuần túy); \emph{ngay cả trong trường hợp này, ta cũng chưa biết có
+tồn tại thương $X/R=Y$ hay không và cấu xạ chính tắc
+$X\longrightarrow Y$ có hữu hạn hay không}. (Trường hợp đơn giản nhất là khi
+$S$ là phổ của một trường $k$, còn $X$ là phổ của $k[t]$, tức đường thẳng
+affine.) Dĩ nhiên, nếu hai bài toán trên đều có lời giải khẳng định, thì trong
+tình huống hiện tại ta có thể kết luận rằng $R$ là hữu hiệu. Lưu ý rằng bài
+toán về \emph{sự tồn tại} của một thương $Y$ và tính hữu hạn của
+$f:X\longrightarrow Y$ được đặt ra hoàn toàn theo cùng một cách nếu, thay cho
+đồ thị của một quan hệ tương đương trên $X$, ta chỉ có một tiền đồ thị tương
+đương trên $X$, theo nghĩa của đoạn 4.
+
+Vấn đề lấy thương theo một quan hệ tương đương hữu hạn ít nhiều tùy ý xuất
+hiện khi dựng các tiền lược đồ bằng cách «dán» những tiền lược đồ $X_i$ đã cho
+dọc theo một số tiền lược đồ con đóng; luật dán được biểu thị chính xác bởi
+một quan hệ tương đương hữu hạn trên tiền lược đồ tổng $X$ của các $X_i$. Ta
+cũng nên chờ đợi rằng lời giải cho các bài toán đặt ra ở đây và cho những biến
+thể khác nhau sẽ là một điều kiện sơ bộ để xây dựng một kỹ thuật tổng quát về
+các phép dựng không xạ ảnh, theo hướng được mở ra trong [2].
+
+Kết quả tổng quát theo chiều khẳng định duy nhất mà người biên soạn biết là
+kết quả sau:
+
+\result{MỆNH ĐỀ}{2.1} Cho $S$ là một tiền lược đồ Noether địa phương, $s$ là
+một điểm của $S$, và $\Omega$ là một mở rộng trường đóng đại số của $k(s)$.
+Xét
+\src{104}«hàm tử thớ» tương ứng $F$, gán cho mọi $S$-lược đồ $X$ hữu hạn
+trên $S$ tập các điểm của $X_s$ nhận giá trị trong $\Omega$. Hàm tử này (hiển
+nhiên khớp trái) là \emph{khớp phải}, tức giao hoán với các giới hạn quy nạp
+hữu hạn, và đặc biệt với các đối hạt nhân của những cặp cấu xạ.
+
+Áp dụng kết quả này cho mọi «điểm hình học» của $S$, ta suy ra rằng phạm trù
+«thương» $\mathcal C'$ của $\mathcal C$, thu được bằng cách lập luận «modulo
+các cấu xạ radiciel toàn ánh» (tức là ghép thêm một cách hình thức các nghịch
+đảo của những cấu xạ đang xét), là một phạm trù «hình học», nghĩa là thỏa mãn
+cùng những tính chất «có bản chất hữu hạn» như phạm trù các tập hợp. Đặc biệt,
+mọi quan hệ tương đương trong đó đều hữu hiệu. Điều này kéo theo rằng nếu $R$
+là một quan hệ tương đương trên một $X$ hữu hạn trên $S$, thì cấu xạ chính tắc
+\[
+  R\longrightarrow X\times_Y X\qquad (\text{trong đó }Y=X/R)
+\]
+là \emph{radiciel và toàn ánh} (thực ra là một phép nhúng đóng toàn ánh, vì nó
+là một đơn cấu).
+
+\subsection*{3. Trường hợp một nhóm tác tử}
+\addcontentsline{toc}{subsection}{3. Trường hợp một nhóm tác tử}
+
+Lại giả sử $\mathcal C$ là một phạm trù tùy ý. Cho $G,X$ là các vật của
+$\mathcal C$, và giả sử $G$ là một $\mathcal C$-nhóm tác tử trên vật $X$ của
+$\mathcal C$. Điều này có nghĩa (xem [2], A, \S~1) rằng với mọi vật $T$ của
+$\mathcal C$, ta đã cho một cấu trúc nhóm trên $G(T)$ và một cấu trúc tập hợp
+có nhóm tác tử $G(T)$ trên $X(T)$, sao cho khi $T$ biến thiên, những cấu trúc
+đang xét «biến thiên theo hàm tử» theo $T$. Nếu trong $\mathcal C$ tồn tại các
+tích $G\times G$ và $G\times X$, thì một cấu trúc như vậy cũng có thể được
+xác định bởi một cặp cấu xạ
+\[
+  G\times G\longrightarrow G,
+  \qquad \pi:G\times X\longrightarrow X,
+\]
+thỏa điều kiện rằng với mọi vật $T$ của $\mathcal C$, các luật hợp thành tương
+ứng trên các tập $G(T)$ và $X(T)$ làm cho $G(T)$ thành một nhóm tác động trên
+$X(T)$. Việc diễn đạt tiên đề này bằng tính giao hoán của một số biểu đồ trong
+$\mathcal C$ là dễ nhưng dài dòng, và thực ra hoàn toàn vô ích trong mọi
+trường hợp mà tôi biết.
+
+Giả sử $G\times X$ tồn tại, và xét hai cấu xạ
+\[
+  p_1,p_2:G\times X\rightrightarrows X
+\]
+được cho bởi
+
+\src{105}
+\[
+  p_1=\operatorname{pr}_1,\qquad p_2=\pi.
+\]
+Ta thấy ngay rằng $(p_1,p_2)$ là một cặp tương đương khi và chỉ khi, với mọi
+vật $T$ của $\mathcal C$, ánh xạ
+\[
+  G(T)\times X(T)\simeq(G\times X)(T)
+  \longrightarrow X(T)\times X(T),
+\]
+do cặp này xác định là đơn ánh, tức là khi nhóm $G(T)$ tác động
+\emph{tự do} trên tập $X(T)$, nghĩa là khi $g\in G(T)$, $x\in X(T)$ và
+$g\cdot x=x$ kéo theo $g$ là phần tử đơn vị của nhóm $G(T)$. Khi đó, ta nói
+rằng $G$ \emph{tác động tự do trên $X$} (hoặc $X$ là một
+\emph{$\mathcal C$-không gian chính dưới $G$}). Quan hệ tương đương liên kết
+với cặp $(p_1,p_2)$ khi ấy được gọi là \emph{quan hệ tương đương do nhóm $G$
+tác động tự do trên $X$ xác định}. Khi $X\times X$ cũng tồn tại và ta xét cấu
+xạ
+\[
+  p:G\times X\longrightarrow X\times X
+\]
+do cặp $(p_1,p_2)$ xác định, điều kiện $G$ tác động tự do có nghĩa là $p$ là
+một \emph{đơn cấu}.
+
+Dĩ nhiên, ngay cả khi $G$ không tác động tự do trên $X$, ta vẫn muốn có các
+tiêu chuẩn về sự tồn tại của một thương của $X$ theo $G$, tức đối hạt nhân của
+cặp $(p_1,p_2)$ trên.
+
+Đối hạt nhân đang xét thường được ký hiệu là $X/G$, hoặc tốt hơn là
+$G\backslash X$ nếu $G$ tác động bên trái (ký hiệu trước được dành cho trường
+hợp $G$ tác động bên phải). Lưu ý rằng ngay cả khi «ảnh» của $G\times X$ qua
+$p$ tồn tại (chẳng hạn ảnh này được định nghĩa là vật con nhỏ nhất của
+$X\times X$ mà qua đó $p$ phân tích được), ký hiệu là $R$, thì nói chung nó
+không phải là một quan hệ tương đương trên $X$. Nếu khi ấy ta cố lấy trực tiếp
+thương theo $R$ (hay chính xác hơn, theo cặp cấu xạ từ $R$ đến $X$ cảm sinh bởi
+hai phép chiếu $\operatorname{pr}_i$), thì ta làm mất không thể khôi phục
+những đặc trưng riêng của cặp ban đầu $(p_1,p_2)$. Vì vậy, điều quan trọng là
+tìm một sự khái quát hóa của khái niệm quan hệ tương đương, áp dụng trực tiếp
+cho cặp được xác định bởi một $\mathcal C$-nhóm tác tử.
+
+\subsection*{4. Tiền quan hệ tương đương}
+\addcontentsline{toc}{subsection}{4. Tiền quan hệ tương đương}
+
+Nhắc lại rằng một phạm trù trong đó mọi cấu xạ đều là đẳng cấu được gọi là một
+\emph{groupoid}. Mặt khác, một phạm trù phải được định nghĩa là gồm hai tập nền
+$(X,R)$, tập các \emph{vật} và tập các \emph{mũi tên}, được trang bị những cấu
+trúc sau đây:
+\src{106}
+\begin{enumerate}
+\item[(i)] Một cặp ánh xạ
+\[
+  p_1,p_2:R\rightrightarrows X
+\]
+được gọi là \emph{ánh xạ nguồn} và \emph{ánh xạ đích},
+
+\item[(ii)] Một ánh xạ
+\[
+  \pi:(R,p_2)\times_X(R,p_1)\longrightarrow R
+\]
+được gọi là \emph{ánh xạ hợp thành}.
+\end{enumerate}
+Các dữ liệu này phải thỏa mãn những tiên đề quen thuộc, mà ta sẽ không nhắc
+lại ở đây, và có thể được diễn đạt bằng tính giao hoán của một số biểu đồ,
+cùng với sự tồn tại của một ánh xạ $D:X\to R$ (nhất thiết duy nhất) làm cho
+hai biểu đồ khác giao hoán. Ánh xạ $D$ gửi một vật tới mũi tên đồng nhất tương ứng
+và thỏa mãn
+\[
+  p_1D=p_2D=\operatorname{id}_X.
+\]
+Việc nói phạm trù là một groupoid khi đó có nghĩa là tồn tại một ánh xạ
+\[
+  s:R\longrightarrow R
+\]
+(nhất thiết duy nhất), gọi là \emph{phép lấy nghịch đảo} của $R$, biến mỗi
+mũi tên thành một mũi tên nghịch đảo. Điều này có thể được diễn đạt bằng tính
+giao hoán của bốn biểu đồ khác được tạo từ $s$, $\Delta$ và các dữ liệu trước
+đó; hai biểu đồ đầu là
+\[
+  p_1s=p_2,\qquad p_2s=p_1.
+\]
+
+Nhắc lại các điểm này, các định nghĩa tổng quát trong ([2], A, \S~1) đặc biệt
+cho thấy thế nào là một cấu trúc $\mathcal C$-\emph{phạm trù}, tương ứng một
+cấu trúc $\mathcal C$-\emph{groupoid}, trên một cặp vật $X,R$ của một phạm trù
+tùy ý $\mathcal C$: theo định nghĩa, đó là dữ liệu, với mỗi vật $T$ của
+$\mathcal C$, của một cấu trúc phạm trù, tương ứng một cấu trúc groupoid, theo
+nghĩa tập hợp, có tập các vật là $X(T)$ và tập các mũi tên là $R(T)$, các cấu
+trúc này \guillemotleft biến thiên theo hàm tử\guillemotright{} khi $T$ biến
+thiên. Do đó, điều này xác định hai cấu xạ
+\[
+  p_1,p_2:R\rightrightarrows X
+\]
+được gọi là \emph{cấu xạ nguồn} và \emph{cấu xạ đích}, và khi tích thớ cần
+thiết tồn tại, một cấu xạ
+\src{107}
+\[
+  \pi:(R,p_2)\times_X(R,p_1)\longrightarrow R
+\]
+được gọi là \emph{cấu xạ hợp thành}. Ba dữ liệu này đủ để xác định cấu trúc
+phạm trù trên $X,R$; tiên đề đặt lên các dữ liệu ấy là như sau: với mọi $T$,
+ba dữ liệu tương ứng cho $X(T),R(T)$ xác định trên cặp tập hợp này một cấu
+trúc phạm trù (tương ứng, một cấu trúc groupoid). Khi thích hợp, điều này có
+thể được diễn đạt bằng tính giao hoán của một số biểu đồ có chứa một cấu xạ
+được xác định duy nhất
+\[
+  D:X\longrightarrow R
+\]
+và, trong trường hợp các groupoid, một cấu xạ được xác định duy nhất
+\[
+  s:R\longrightarrow R;
+\]
+các biểu đồ được viết tường minh đúng như trong trường hợp «theo nghĩa tập
+hợp». May thay, cách diễn giải dài dòng này của các tiên đề là vô ích trong
+thực hành. Lợi ích lý thuyết duy nhất của khả năng biểu diễn dữ liệu và tiên
+đề bằng các cấu xạ giữa một số tích thớ và các đẳng thức giữa những cấu xạ ấy
+là như sau: nếu $F:\mathcal C\to\mathcal C'$ là một hàm tử khớp trái (tức giao
+hoán với các tích hữu hạn và các tích thớ), thì nó biến một
+$\mathcal C$-phạm trù (tương ứng, một $\mathcal C$-groupoid) thành một
+$\mathcal C'$-phạm trù (tương ứng, một $\mathcal C'$-groupoid), với điều kiện
+các tích hữu hạn và các tích thớ tồn tại trong $\mathcal C$.
+
+Trong thực hành, điều quan trọng là biết diễn giải các cấu xạ
+$p_1,p_2,\pi,D,s$ như những \emph{phép toán đơn hình} trong một vật bán đơn
+hình hoặc đơn hình thích hợp của $\mathcal C$, ít nhất khi các tích thớ tồn
+tại trong $\mathcal C$. Để cố định thuật ngữ, ta đưa vào \emph{phạm trù
+$\mathcal S$ các đơn hình chuẩn} là phạm trù mà các vật là những tập hữu hạn
+có dạng
+\[
+  \Delta_n=[0,n],\qquad\text{trong đó }n\geq 0
+\]
+(khoảng các số nguyên từ $0$ đến $n$), và các cấu xạ hay mũi tên là
+\emph{các ánh xạ tùy ý} giữa những tập hữu hạn ấy. Lưu ý rằng phạm trù
+$\mathcal S$ tương đương với phạm trù các tập hữu hạn \emph{khác rỗng}, trong
+đó các cấu xạ là những ánh xạ giữa các tập hữu hạn. Trong $\mathcal S$, đối
+tích của một họ hữu hạn \emph{khác rỗng} các vật hiển nhiên tồn tại, cũng như
+phép đẩy ra của hai vật dưới một vật thứ ba (phép toán đối ngẫu với tích thớ).
+Ký hiệu $\mathcal S'$ là phạm trù con của $\mathcal S$ có cùng các vật, nhưng
+trong đó các cấu xạ là \emph{các ánh xạ tăng} giữa các $\Delta_n$. Phạm trù
+này tương đương với phạm trù các tập hữu hạn khác rỗng được sắp thứ tự toàn
+phần. Trong phạm trù này,
+\src{108}
+đối tích của hai vật không bao giờ tồn tại, và phép đẩy ra của hai vật $A,B$
+dưới một vật thứ ba $C$ nói chung không tồn tại (chẳng hạn, lấy
+$C=\Delta_0$, $A=B=\Delta_1$, với hai ánh xạ cấu trúc $u:C\to A$ và
+$v:C\to B$ bằng nhau). Tuy nhiên, nó tồn tại trong một số trường hợp; chẳng
+hạn
+\[
+  C=\Delta_0,\qquad A=\Delta_m,\qquad B=\Delta_n,\qquad
+  u(0)=m,\qquad v(0)=0,
+\]
+và trong trường hợp này
+\[
+  \Delta_m\amalg_{\Delta_0}\Delta_n=\Delta_{m+n}.
+\]
+
+Một \emph{vật đơn hình} (tương ứng, một \emph{vật bán đơn hình}) trong một
+phạm trù $\mathcal C$ theo định nghĩa là một hàm tử phản biến $K$ từ
+$\mathcal S$ (tương ứng từ $\mathcal S'$) vào $\mathcal C$. Do đó, một vật
+đơn hình xác định một vật bán đơn hình bằng phép hạn chế, nhưng khái niệm thứ
+nhất khác khái niệm thứ hai về căn bản bởi sự hiện diện của \emph{các phép
+toán đối xứng} trên các $K_n=K(\Delta_n)$, tương ứng với ảnh qua hàm tử $K$
+của các phần tử thuộc nhóm đối xứng trên $n+1$ phần tử (được xem là nhóm các
+tự đẳng cấu của $\Delta_n$ trong $\mathcal S$).
+
+Với mọi $n$, gọi $\Delta'_n$ (tương ứng $\Delta''_n$) là phạm trù hữu hạn có
+tập các vật là $\Delta_n$, được xác định bởi quan hệ thứ tự hỗn loạn (tương
+ứng, thứ tự toàn phần tự nhiên) trên $\Delta_n$ (tập các mũi tên là đồ thị của
+quan hệ thứ tự ấy). Hiển nhiên $\Delta'_n$ (tương ứng $\Delta''_n$) phụ thuộc
+theo hàm tử vào vật $\Delta_n$ của $\mathcal S$ (tương ứng $\mathcal S'$).
+Nếu $Z$ là một phạm trù, thì $\operatorname{Hom}(\Delta'_n,Z)$ (tương ứng
+$\operatorname{Hom}(\Delta''_n,Z)$), khi $\Delta_n$ biến thiên, là một hàm tử
+từ phạm trù $\mathcal S$ (tương ứng $\mathcal S'$) vào phạm trù các tập hợp,
+tức một tập đơn hình (tương ứng, một tập bán đơn hình), được gọi là
+\emph{liên kết với phạm trù $Z$}; ký hiệu chúng lần lượt là $Z'$ và $Z''$.
+Hơn nữa, có một đồng cấu tự nhiên hiển nhiên từ tập bán đơn hình liên kết
+với $Z'$ vào
+$Z''$, và đồng cấu này là một đẳng cấu khi và chỉ khi $Z$ là một groupoid. Với
+các quy ước này:
+
+\result{MỆNH ĐỀ}{4.1} Hàm tử $Z\longmapsto Z''$ từ phạm trù các phạm trù vào
+phạm trù các tập bán đơn hình là đầy và trung thành, và xác định một tương
+đương giữa phạm trù các \emph{phạm trù} với phạm trù các tập bán đơn hình,
+tức các hàm tử phản biến $K$ từ $\mathcal S'$ vào $(\mathrm{Set})$, biến các
+phép đẩy ra $A\amalg_C B$ thuộc kiểu được chỉ ra ở trên thành các tích thớ của
+các tập hợp. Tương tự, hàm tử $Z\longmapsto Z'$ từ phạm trù các groupoid vào
+phạm trù các tập đơn hình là đầy và trung thành, và xác định một tương
+đương giữa phạm trù các \emph{groupoid} với phạm trù các
+\src{109}
+các tập đơn hình, tức các hàm tử phản biến $K$ từ $\mathcal S$ vào
+$(\mathrm{Ens})$, biến các phép đẩy ra thành các tích thớ.
+
+Do đó, có thể xem các phạm trù như những tập bán đơn hình đặc biệt, và các
+groupoid như những tập đơn hình đặc biệt, dĩ nhiên với điều kiện phải lập luận
+«sai khác một đẳng cấu», như bắt buộc khi diễn giải một số cấu trúc bằng những
+cấu trúc khác. Phương pháp thông thường quy về trường hợp lý thuyết tập hợp
+khi đó kéo theo:
+
+\result{HỆ QUẢ}{4.2} Mệnh đề trên vẫn đúng khi thay các phạm trù, các
+groupoid và các tập đơn hình bằng các $\mathcal C$-phạm trù,
+$\mathcal C$-groupoid và các $\mathcal C$-vật đơn hình, với điều kiện các tích
+thớ tồn tại trong $\mathcal C$.
+
+Vật bán đơn hình $K$ trong $\mathcal C$ liên kết với một phạm trù
+$(X,R,\ldots)$ trong $\mathcal C$ có thể được viết tường minh bằng cách diễn
+giải thành phần $K_n=K(\Delta_n)$ của $K$ là tích thớ lặp $(n+1)$ lần của
+$(R,p_1)$ trên $X$, hoặc tốt hơn, bằng công thức truy hồi
+\[
+  K_0=R,\qquad
+  K_n=(K_{n-1},p_n^{(n-1)})\times_X(R,p_1),
+\]
+trong đó các $p_i^{(n-1)}$ ($0\leq i\leq n-1$) là các phép chiếu tự nhiên từ
+$K_{n-1}$ xuống $X$ (cũng được định nghĩa bằng truy hồi). Theo cách này,
+$p_1,p_2,\pi,D,s$ được diễn giải là các phép toán đơn hình lần lượt tương ứng
+với các cấu xạ sau trong $\mathcal S$: mặt $0$ của $\Delta_1$, mặt $1$ của
+$\Delta_1$, mặt $(0,2)$ của $\Delta_2$, phép suy biến
+$\Delta_1\to\Delta_0$, và phép đối xứng của $\Delta_1$. Mọi phép toán bán đơn
+hình khác (tương ứng, đơn hình) đều được suy ra một cách hình thức từ bốn
+phép toán trước (tương ứng, năm phép toán) bằng phép hợp thành và các tích thớ.
+
+Nay gọi \emph{tiền quan hệ tương đương} trên một vật $X$ của một phạm trù là
+việc cho một groupoid mà vật của các vật (nếu có thể nói vậy) là $X$. Vì thế,
+dữ liệu ấy bao gồm, ngoài những thứ khác, một vật $R$ và hai cấu xạ
+\[
+  p_1,p_2:R\rightrightarrows X.
+\]
+Tuy nhiên, lưu ý rằng riêng các dữ liệu này không xác định cấu trúc đang xét,
+khác với trường hợp các cặp tương đương. Trong exposé này, ta quan tâm đến
+khái niệm ấy nhằm thu được các tiêu chuẩn để có thể lấy thương, tức là lập đối
+hạt nhân của cặp $(p_1,p_2)$. Vì vậy, phát biểu của bài toán không dùng đến
+các dữ liệu bổ sung vốn có trong một groupoid. Trong việc chứng minh các kết
+quả sẽ nêu, ta sẽ
+\src{110}
+vẫn sử dụng các dữ liệu bổ sung ấy, và đặc biệt là các phép toán đơn hình
+(kể cả các phép toán đối xứng) cho đến chiều $3$ (có liên quan đến tích thớ
+lặp bốn lần của $R$ trên $X$).
+
+Một quan hệ tương đương trên một vật $X$ của $\mathcal C$ xác định một tiền
+quan hệ tương đương: chỉ cần xét điều này trong trường hợp tập hợp, và khi ấy,
+với một quan hệ tương đương trên một tập $X$, ta liên kết groupoid có tập vật
+là $X$, còn tập mũi tên là đồ thị của quan hệ tương đương.
+
+Một $\mathcal C$-monoid $G$ tác động lên một vật $X$ của $\mathcal C$ xác định
+một $\mathcal C$-phạm trù có các vật cơ sở là $R=G\times X$ và $X$ (với điều
+kiện $G\times X$ tồn tại), và là một $\mathcal C$-groupoid khi và chỉ khi $G$
+là một nhóm. Một lần nữa, chỉ cần kiểm tra điều này trong trường hợp tập hợp.
+Khi đó, phép hợp thành các mũi tên $(g,a)$ và $(g',g\cdot a)$ được định nghĩa
+bởi
+\[
+  (g',g\cdot a)(g,a)=(g'g,a),
+\]
+tức là, nếu $a,b\in X$, thì theo định nghĩa $\operatorname{Hom}(a,b)$ là tập
+chuyển từ $a$ đến $b$, và các cấu xạ được hợp thành nhờ phép hợp thành các phần
+tử của $G$.
+
+\medskip
+\noindent\textbf{NHẬN XÉT. ---} Có thể tránh các khó khăn logic do một phát
+biểu như (4.1) gây ra bằng cách hiểu ngầm rằng mọi vật đang xét đều nằm trong
+một «Vũ trụ» cố định (bản thân nó là một tập hợp).
+
+\fsection{5}{Thương theo một quan hệ tương đương hữu hạn và phẳng}
+
+\result{ĐỊNH LÝ}{5.1} Cho $X=\operatorname{Spec}(B)$ là một lược đồ affine và
+$R$ là một tiền quan hệ tương đương trên $X$, mà thành phần $R_1$ là affine,
+đặt $R_1=\operatorname{Spec}(C)$. Giả sử phép chiếu thứ nhất
+$p_1:R_1\to X$ là một cấu xạ hữu hạn và tự do địa phương; nói cách khác, giả
+sử đồng cấu vành tương ứng $p_1^*:B\to C$ làm cho $C$ trở thành một
+$B$-môđun xạ ảnh hữu hạn sinh. Gọi $A$ là vành con của $B$, là hạt nhân của
+cặp đồng cấu
+\[
+  p_1^*,p_2^*:B\rightrightarrows C
+\]
+(= tập hợp các phần tử $b$ sao cho $p_1^*(b)=p_2^*(b)$). Đặt
+$Y=\operatorname{Spec}(A)$, và gọi $f:X\to Y$ là cấu xạ được xác định bởi phép
+nhúng $A$ vào $B$. Trong các điều kiện này:
+\begin{enumerate}
+\item[(i)] $B$ nguyên trên $A$, tức là $f$ là một cấu xạ nguyên.
+
+\item[(ii)] Cấu xạ $f$ là toàn ánh, và các thớ của nó là các lớp tương đương
+\src{111}
+theo nghĩa tập hợp $p_2\allowbreak(p_1^{-1}(x))$ trong $X$ modulo $R$, và
+tôpô của $Y$ là tôpô thương của tôpô trên $X$.
+
+\item[(iii)] $Y$ là thương của $X$ theo $R$ trong phạm trù các tiền lược đồ.
+
+\item[(iv)] Nếu $R$ xuất phát từ một \emph{quan hệ tương đương}, thì cấu xạ
+$f:X\to Y$ là hữu hạn và tự do địa phương (nghĩa là $B$ là một $A$-môđun xạ
+ảnh hữu hạn sinh), và quan hệ tương đương là hữu hiệu, nghĩa là
+$R_1\to X\times_Y X$ là một đẳng cấu.
+\end{enumerate}
+
+Định lý này tổng quát hóa định lý quen thuộc về trường hợp một nhóm hữu hạn
+$G$ tác động bằng các tự đẳng cấu lên vành $B$ và về vành bất biến $A$; chứng
+minh của nó tương tự chứng minh quen thuộc. Có thể phát biểu chính xác hơn
+(iii) như sau:
+
+\result{HỆ QUẢ}{5.2} Cấu xạ chính tắc
+$R_1\to X\times_Y X$ là \emph{toàn ánh}.
+
+Vẫn cho $R$ là một tiền quan hệ tương đương «hữu hạn và tự do địa phương»
+trên $X$, nhưng bây giờ $X$ là một tiền lược đồ tùy ý. Giả sử có thể tìm được
+một tiền lược đồ $Y$ và một cấu xạ $f:X\to Y$ sao cho $fp_1=fp_2$, đồng thời
+dãy các đồng cấu giữa các bó vành trên $Y$
+\[
+  \mathcal O_Y\longrightarrow f_*(\mathcal O_X)
+  \rightrightarrows g_*(\mathcal O_R)
+\]
+là khớp (trong đó $g=fp_i$). Khi đó, từ định lý suy ra các kết luận tương tự
+(i) đến (iv) của định lý; đặc biệt, theo (iii), $Y$ là thương của $X$ theo
+$R$, và do đó được xác định sai khác một đẳng cấu duy nhất. Trong các điều
+kiện ấy, tiền quan hệ tương đương $R$ trên $X$ được gọi là \emph{khả chấp}.
+Với định nghĩa này:
+
+\result{ĐỊNH LÝ}{5.3} Cho $X$ là một tiền lược đồ và $R$ là một tiền quan hệ
+tương đương trên $X$ sao cho $p_1:R_1\to X$ là một cấu xạ hữu hạn và tự do địa
+phương. Khi đó, $R$ khả chấp khi và chỉ khi mọi lớp tương đương theo nghĩa tập
+hợp $p_2(p_1^{-1}(x))$ trong $X$ modulo $R$ đều nằm trong một tập mở affine
+(điều kiện này luôn được thỏa mãn nếu mọi tập con hữu hạn của $X$ đều nằm
+trong một tập mở affine, chẳng hạn nếu $X$ là tựa xạ ảnh trên một lược đồ
+affine).
+
+Thật vậy, không khó để chứng minh rằng khi ấy mọi lớp tương đương modulo $R$
+trong $X$ đều nằm trong một tập mở affine \emph{ổn định theo $R$}, và thương
+$Y$ được dựng bằng cách dán các mảnh thu được nhờ Định lý 5.1.
+\src{112}
+
+\result{HỆ QUẢ}{5.4} Giả sử điều kiện ấy được thỏa mãn và ngoài ra $R$ xuất
+phát từ một quan hệ tương đương. Khi đó, quan hệ này là hữu hiệu, nghĩa là
+$R_1\to X\times_Y X$ là một đẳng cấu, và $f:X\to Y$ là một cấu xạ hữu hạn và
+tự do địa phương.
+
+Từ đó, bằng «hạ xuống», ta suy ra ngay:
+
+\result{HỆ QUẢ}{5.5} Dưới các điều kiện của (5.4), $X$ có hạng $n$ tại mọi
+điểm trên $Y$ khi và chỉ khi $(R_1,p_1)$ có hạng $n$ tại mọi điểm trên $X$.
+Nếu $X,R_1$ là các $Z$-tiền lược đồ và $p_1,p_2$ là các $Z$-cấu xạ, nên $Y$
+là một $Z$-tiền lược đồ, thì $X$ phẳng trên $Z$ khi và chỉ khi $Y$ cũng vậy.
+
+Tóm lại:
+
+\result{CHÚ GIẢI}{} Việc cho một cấu xạ hữu hạn, tự do địa phương và toàn ánh
+$f:X\to Y$ giữa các tiền lược đồ tương đương với việc cho một tiền lược đồ
+$X$ được trang bị một quan hệ tương đương $R$ sao cho $p_1:R\to X$ là hữu hạn
+và tự do địa phương, và mọi lớp $p_2(p_1^{-1}(x))$ đều nằm trong một tập mở
+affine.
+
+\medskip
+\noindent\textbf{CÁC NHẬN XÉT 5.6.}
+
+\smallskip
+\noindent $1^\circ$ Không cần đặt giả thiết Noether nào.
+
+\smallskip
+\noindent $2^\circ$ Khái niệm lấy thương này bao gồm, như một trường hợp đặc
+biệt, «hạ xuống không khả phân» của CARTIER, tương ứng với việc xác định các
+cấu xạ hữu hạn và tự do địa phương $f:X\to Y$ sao cho
+$f_*(\mathcal O_X)$ có một $p$-cơ sở đối với $\mathcal O_Y$ ($X$ là một tiền
+lược đồ đã cho mà bó $\mathcal O_X$ bị số nguyên tố $p>0$ triệt tiêu). Lưu ý
+rằng kết quả được phát biểu dễ dàng mà không cần giả thiết chính quy nào về
+các vành địa phương và không cần giả sử $X$ là một lược đồ đại số trên một
+trường. Lý thuyết JACOBSON--BOURBAKI thu được bằng cách lấy $X$ là phổ của
+một trường có đặc số $p$.
+
+\smallskip
+\noindent $3^\circ$ Trước đó, GABRIEL đã thu được một trường hợp riêng của
+Định lý (5.3) trong lý thuyết lấy thương đối với các nhóm giao hoán hữu hạn
+trên một trường $k$. [So sánh (7.4)].
+
+\fsection{6}{Thương theo một quan hệ tương đương riêng và phẳng}
+
+\result{ĐỊNH LÝ}{6.1} Cho $S$ là một tiền lược đồ Noether địa phương, $X$ là
+một $S$-lược đồ tựa xạ ảnh, và $R$ là một tiền quan hệ tương đương trên $X$
+sao cho:
+\src{113}
+\begin{enumerate}
+\item[(a)] $p_1:R_1\to X$ là riêng và phẳng;
+\item[(b)] $R_1\to X\times_S X$ là một cấu xạ hữu hạn, hoặc tương đương theo
+(a), có các thớ hữu hạn (điều kiện tự động được thỏa mãn nếu $R$ xuất phát từ
+một quan hệ tương đương).
+\end{enumerate}
+Dưới các điều kiện này:
+\begin{enumerate}
+\item[(i)] $X/R=Y$ tồn tại và (nếu $S$ là Noether) là tựa xạ ảnh trên $S$.
+
+\item[(ii)] Cấu xạ chính tắc $f:X\to Y$ là toàn ánh, riêng và mở; các thớ của
+nó là các lớp tương đương $p_2(p_1^{-1}(x))$ trong $X$ modulo $R$. Do đó,
+$Y$ đồng nhất với không gian tôpô thương của $X$ theo quan hệ tương đương theo
+nghĩa tập hợp do $R$ xác định. Cuối cùng,
+$R_1\to X\times_Y X$ là toàn ánh.
+
+\item[(iii)] Nếu $R$ xuất phát từ một quan hệ tương đương, thì quan hệ ấy là
+hữu hiệu, nghĩa là $R_1\to X\times_Y X$ là một đẳng cấu, và hơn nữa
+$f:X\to Y$ là phẳng (do đó phẳng trung thành).
+\end{enumerate}
+
+Để chứng minh, ta quy về (5.1) nhờ các tựa tiết diện thích hợp của $X$ đối với
+$R$; chứng minh tương tự việc dựng các nhóm đại số thương trong Séminaire
+Chevalley.
+
+Tóm lại:
+
+\result{CHÚ GIẢI}{} Cho $X$ tựa xạ ảnh trên $S$ Noether địa phương. Việc cho
+một cấu xạ riêng, phẳng trung thành và toàn ánh $f:X\to Y$ từ $X$ vào một
+$S$-tiền lược đồ $Y$ tương đương với việc cho một quan hệ tương đương $R$ trên
+$X$ sao cho $p_1:R\to X$ là riêng và phẳng.
+
+Phương pháp ấy cũng cho kết quả sau:
+
+\result{ĐỊNH LÝ}{6.2} Cho $S$ là một tiền lược đồ Noether, $X$ là một tiền
+lược đồ thuộc kiểu hữu hạn trên $S$, và $R$ là một tiền quan hệ tương đương trên
+$S$-tiền lược đồ $X$; giả sử rằng:
+\begin{enumerate}
+\item[(a)] $p_1:R_1\to X$ là phẳng và thuộc kiểu hữu hạn;
+\item[(b)] cấu xạ $R_1\to X\times_S X$ là tựa hữu hạn (nghĩa là có các thớ
+hữu hạn).
+\end{enumerate}
+Khi đó, tồn tại một tập mở $U$ trù mật trong $X$, \emph{bão hòa} đối với $R$,
+sao cho:
+\begin{enumerate}
+\item[(i)] Nếu $R_U$ là tiền quan hệ tương đương do $R$ cảm sinh trên $U$,
+thì $U/R_U$ tồn tại và thuộc kiểu hữu hạn trên $S$.
+
+\item[(ii)] Cấu xạ chính tắc $U\to U/R_U$ là toàn ánh và mở; các thớ của nó
+là các lớp tương đương theo nghĩa tập hợp đối với $R_U$ (do đó $U/R_U$ là
+không gian tôpô thương của $U$ theo quan hệ tương đương theo nghĩa tập hợp do
+$R_U$ xác định). Cuối cùng, cấu xạ
+\[
+  (R_U)_1\longrightarrow U\times_{U/R_U}U
+\]
+là toàn ánh.
+\src{114}
+
+\item[(iii)] Nếu $R$ xuất phát từ một quan hệ tương đương, thì có thể giả sử
+$U\to U/R_U$ phẳng trung thành và $R_U$ hữu hiệu.
+\end{enumerate}
+
+Đây là một kết quả có bản chất chủ yếu là «song hữu tỉ».
+
+\medskip
+\noindent\textbf{CÁC NHẬN XÉT 6.3.}
+
+\smallskip
+\noindent $1^\circ$ Tôi không biết liệu trong (6.1) và (6.2), giả thiết (b) có
+thừa hay không. Khi lấy thương theo các nhóm, giả thiết ấy thực tế buộc ta
+giới hạn vào trường hợp mọi nhóm ổn định đều là nhóm hữu hạn.
+
+\smallskip
+\noindent $2^\circ$ Có thể hỏi liệu có những kết quả tương tự (6.1) và (6.2)
+mà không cần giả thiết phẳng hay không. Tôi không biết phản ví dụ nào theo
+hướng này. Mặt khác, ngay cả khi vẫn giữ giả thiết phẳng và chỉ xét các quan
+hệ tương đương sao cho $p_1:R\to X$ phẳng và tựa hữu hạn (nhưng không hữu
+hạn), với $X$ affine, vẫn có thể xảy ra việc $R$ không hữu hiệu: hãy lấy các
+quan hệ tương đương cảm sinh trên các tập mở affine phủ đa tạp Nagata (trên đó
+một nhóm gồm hai phần tử tác động theo cách «không khả chấp»).
+
+\fsection{7}{Ứng dụng}
+
+Như đã nói trong phần mở đầu, ứng dụng quan trọng nhất của (6.1) là việc dựng
+các lược đồ Picard, cũng như việc tìm nghiệm cho nhiều bài toán moduli khác;
+chúng ta sẽ trở lại các bài toán này sau.
+
+Ta thu được một chứng minh đơn giản cho kết quả sau đây của SHIMURA:
+
+\result{MỆNH ĐỀ}{7.1} Cho $A$ là một lược đồ abel được xác định trên một vành
+định giá rời rạc $V$ có trường phân thức $K$. Khi đó, mọi lược đồ abel $B'$
+trên $K$ đẳng giống với một thương của $A\otimes_V K$ đều «có giảm tốt trên
+$V$», tức là đẳng cấu với một $B\otimes_V A$, trong đó $B$ là
+một lược đồ abel trên $V$ (về căn bản là duy nhất, như ta đã nhắc).
+
+Có thể giả sử $B'$ là thương của $A_K$ theo một lược đồ con nhóm $C'$.
+(LƯU Ý: nói chung, $C'$ sẽ không «rút gọn», tức là các vành địa phương của nó
+sẽ có những phần tử lũy linh.) Xét lược đồ con đóng $C$ của $A$ là «bao đóng»
+của $C'$, tức là lược đồ con đóng nhỏ nhất của $A$ sao cho $C_K$ chứa $C'$.
+Ta có $C_K=C'$, và từ việc $V$ là một vành định giá rời rạc, dễ dàng suy ra
+rằng $C$ là một lược đồ con nhóm của $A$ trên $V$. Vì $A$ riêng trên
+$\operatorname{Spec}(V)=S$, nên $C$ cũng vậy; mặt khác, $A$ thậm chí còn xạ
+ảnh trên $S$. Do đó, ta có thể áp dụng (6.1) để dựng $A/C=B$,
+\src{115}
+đó là $B$ cần tìm.
+
+Sau cùng, các lập luận về cơ bản đã biết cho phép suy ra từ (6.2) kết quả sau:
+
+\result{ĐỊNH LÝ}{7.2} Cho $S$ là phổ của một vành Artin, $F$ và $G$ là các
+lược đồ nhóm thuộc kiểu hữu hạn trên $S$, và $u:F\to G$ là một đồng cấu lược
+đồ nhóm trên $S$. Giả sử:
+\begin{enumerate}
+\item[(i)] $F$ phẳng trên $S$;
+\item[(ii)] hạt nhân của $u$ là hữu hạn.
+\end{enumerate}
+Trong những điều kiện này, lược đồ thương $G/F$ tồn tại; cấu xạ chính tắc
+$G\to G/F$ là toàn ánh và mở, và các thớ của nó là các lớp tương đương theo
+nghĩa tập hợp được xác định bởi các tác động bên phải của $F$ lên $G$. Sau
+cùng, nếu $u$ là một đơn cấu, thì $G\to G/F$ là phẳng và cấu xạ
+\[
+  G\times F\longrightarrow G\times_{G/F}G
+\]
+là một đẳng cấu; nói cách khác, $G$ là một không gian thuần nhất chính trên
+$G/F$, có nhóm cấu trúc (tác động bên phải) là $F$, hay đúng hơn là
+$F\times_S(G/F)$ được xem như một lược đồ nhóm trên $G/F$ (xem [1], B,
+\S~6).
+
+\result{HỆ QUẢ}{7.3} Trong những điều kiện này, $G$ phẳng trên $S$ khi và chỉ
+khi $G/F$ cũng vậy. Nếu điều kiện này được thỏa mãn, thì việc lấy thương
+theo $F$ giao hoán với mọi phép mở rộng cơ sở của $S$; và nếu $F$ là một nhóm
+con chuẩn tắc của $G$, thì $G/F$ có thể được trang bị một cấu trúc
+\emph{nhóm thương} của $G$ theo $F$.
+
+Tình hình đặc biệt đơn giản khi $S$ là phổ của một trường, vì khi đó mọi
+$S$-tiền lược đồ đều đương nhiên phẳng trên $S$. Ta thu được:
+
+\result{HỆ QUẢ}{7.4} Cho $F,G$ là các lược đồ nhóm thuộc kiểu hữu hạn trên một
+trường $k$, và cho $u:F\to G$ là một đồng cấu $k$-nhóm. Khi đó $u$ phân tích
+thành $F\to F'\to G$, trong đó $F\to F'$ là đồng cấu lấy thương theo nhóm con
+đóng $\operatorname{Ker}u$ của $F$, còn $F'\to G$ là một đồng cấu nhóm và đồng
+thời là một phép nhúng đóng. Lược đồ thương $G/F=G/F'$ tồn tại. Hình thức luận
+thông thường (kiểu các định lý Noether) áp dụng được cho các nhóm đại số trên
+$k$.
+
+Kết quả này cho phép xử lý một cách thống nhất việc lấy thương trong các nhóm
+đại số theo nghĩa cổ điển (tức là những nhóm bất khả quy trên $k$ và trơn trên
+$k$), và việc lấy thương theo các nhóm con «vô cùng bé»
+\src{116}
+được CARTIER xét. Có lợi khi xem các «hyperalgebra» do CARTIER đưa ra, tiếp nối
+các công trình của DIEUDONNÉ về các nhóm hình thức, như những nhóm trong phạm
+trù các lược đồ hình thức trên $k$, và khi thích hợp (nếu chúng tương ứng với
+các hyperalgebra có hạng hữu hạn trên $k$), như các nhóm đại số hữu hạn trên
+$k$.
+
+\fsection{8}{Một giả thuyết}
+
+Nó đáp ứng nhu cầu lấy thương theo nhóm xạ ảnh tác động trên một số lược đồ con
+của các «lược đồ Hilbert» (trong lý thuyết lược đồ, các lược đồ sau thay thế
+các đa tạp Chow).
+
+Cho $S$ là một tiền lược đồ và $n$ là một số nguyên. Với mỗi tiền lược đồ $S'$
+trên $S$, ta cho tương ứng nhóm
+$\operatorname{Gl}(n,\Gamma(S',\mathcal O_{S'}))$ gồm các ma trận khả nghịch có
+$n$ hàng và $n$ cột, với các hệ số trong vành các tiết diện của
+$\mathcal O_{S'}$. Ta thu được một hàm tử phản biến theo $S'$; dễ chứng minh
+rằng nó biểu diễn được, nên tương ứng với một lược đồ nhóm trên $S$, hơn nữa
+affine trên $S$, ký hiệu $\operatorname{Gl}(n)_S$. Phép dựng này tương thích
+với đổi cơ sở, vì vậy trên thực tế tất cả xuất phát từ một lược đồ nhóm trên
+$\mathbf Z$, ký hiệu $\operatorname{Gl}(n)$. Nhóm $\operatorname{Gl}(1)$, gọi
+là nhóm nhân và thường ký hiệu $\mathbf G_m$, tương ứng với hàm tử
+$S\longmapsto\Gamma(S,\mathcal O_S)^*$, nhóm các «đơn vị» trên $S$. Có một
+đồng cấu hiển nhiên $\operatorname{Gl}(1)\to\operatorname{Gl}(n)$, và dễ dàng
+dựng được nhóm thương, ký hiệu $\operatorname{GP}(n-1)$ và gọi là
+\emph{nhóm xạ ảnh bậc $n-1$ trên $\mathbf Z$}. Nó biểu diễn hàm tử gán cho
+$S$ nhóm các tiết diện của bó
+$\widetilde{\operatorname{Gl}(n)}_S/
+\widetilde{\operatorname{Gl}(1)}_S$, trong đó
+$\widetilde{\operatorname{Gl}(n)}_S$ ký hiệu bó các mầm tiết diện của
+$\operatorname{Gl}(n)_S$ trên $S$. (Cần lưu ý rằng các tiết diện của
+$\operatorname{GP}(n-1)_S$ trên $S$ nói chung không xuất phát từ các tiết diện
+của $\operatorname{Gl}(n)_S$ trên $S$!) Lưu ý rằng có thể chứng minh
+$\operatorname{GP}(n-1)$ cũng biểu diễn hàm tử
+$S\longmapsto\operatorname{Aut}_S(\mathbf P_S^{n-1})$, trong đó
+$\mathbf P_S^{n-1}$ là không gian xạ ảnh chuẩn có chiều tương đối $n-1$ trên
+$S$, ít nhất khi $S$ là Noether. Chính theo cách này mà nó xuất hiện trong lý
+thuyết moduli.
+
+Cho $S$ là một lược đồ Noether, nếu muốn có thể giả sử affine, và cho $X$ là
+một $S$-tiền lược đồ tựa xạ ảnh, được trang bị một bó khả nghịch $\mathcal L$
+rất rộng tương đối với $S$. Giả sử nhóm $G=\operatorname{GP}(n)_S$ tác động
+trên $X$ và đồng thời trên $\mathcal L$ (tương thích với tác động của nó trên
+$X$), và tác động \emph{tự do} trên $S$.
+\src{117}
+
+\result{GIẢ THUYẾT}{8.1} Trong các điều kiện trên:
+
+\smallskip
+\noindent $1^\circ$ \emph{Quan hệ tương đương do $G$ xác định là hữu hiệu,
+thương $Y=X/G$ thuộc kiểu hữu hạn trên $S$, và cấu xạ chính tắc $f:X\to Y$ là
+phẳng và toàn ánh} (do đó $X$ trở thành một không gian thuần nhất chính trên
+$Y$, với nhóm $G\times_S Y=\operatorname{GP}(n)_Y$).
+
+\smallskip
+\noindent $2^\circ$ Cho $\mathcal L'$ là bó khả nghịch trên $Y$ được suy ra
+từ $\mathcal L$ bằng «hạ xuống phẳng trung thành» theo $f$ (xem [1], B,
+\S~th. 1). Khi đó $\mathcal L'$ là \emph{tiền rộng trên $Y$ tương đối với
+$S$}, nghĩa là tồn tại một số nguyên $m$ và một cấu xạ tựa hữu hạn từ $Y$ vào
+một không gian xạ ảnh chuẩn thích hợp $\mathbf P_S^N$, sao cho
+$(\mathcal L')^{\otimes m}$ đẳng cấu với ảnh ngược của
+$\mathcal O_{\mathbf P_S^N}(1)$.
+
+Lưu ý rằng ngay cả khi $X$ tách trên $S$, vẫn có thể xảy ra việc $Y$ không
+tách trên $S$ (một tình huống gặp trong những bài toán moduli hoàn toàn không
+bệnh lý). Nếu $1^\circ$ đúng, thì $Y$ tách khi và chỉ khi quan hệ tương đương
+do $G$ xác định có đồ thị đóng, nghĩa là khi $G\times X\to X\times X$ có ảnh
+đóng (khi ấy nó là một phép nhúng đóng). Nếu $Y$ tách, thì $\mathcal L'$ tiền
+rộng trên $Y$ tương đối với $S$ khi và chỉ khi nó rộng, nghĩa là khi một lũy
+thừa tensor thích hợp xác định một phép nhúng xạ ảnh. Trong các bài toán moduli
+được nhắc đến ở phần mở đầu, có thể chứng minh rằng quan hệ tương đương thu
+được quả thật có đồ thị đóng.
+
+\medskip
+\noindent\textbf{NHẬN XÉT 8.1. ---} Ta đã giả sử
+$G=\operatorname{GP}(n)_S$ để cố định ý tưởng và vì hiện nay đây là trường hợp
+quan trọng nhất trong thực hành. Giả thiết hợp lý hơn đối với $G$ dường như là
+$G$ thuộc một trong các «dạng» trên $S$ của một trong các nhóm Tohokû (phép
+dựng các nhóm này trên các số nguyên cũng do CHEVALLEY thực hiện). Kết quả tích
+cực duy nhất mà tôi biết theo hướng của giả thuyết trên là như sau: cho $X$ là
+\emph{một lược đồ affine trên một trường $k$ có đặc trưng $0$, trên đó nhóm
+$\operatorname{Gl}(n)_k$ hoặc $\operatorname{GP}(n-1)_k$ tác động tự do. Khi
+đó quan hệ tương đương do $G$ xác định là hữu hiệu, thương $X/G$ cũng affine,
+và cấu xạ $X\to X/G$ là phẳng và toàn ánh}. Chứng minh sử dụng sự kiện sau
+(hiện chỉ được chứng minh trong đặc trưng $0$): khi cho $G$ tác động trên vành
+tọa độ affine $A$ của $G$, xem như một không gian vectơ trên $k$, biểu diễn tầm
+thường của $G$ chỉ xuất hiện một lần (trong một dãy hợp thành của một không
+gian vectơ con hữu hạn chiều trên $k$, ổn định dưới $G$). Có vẻ như việc sử
+dụng có hệ thống
+\src{118}
+lý thuyết biểu diễn tuyến tính của $G$ rốt cuộc sẽ cho một chứng minh của
+giả thuyết, ít nhất khi cơ sở là một trường. Khi cơ sở không còn là một trường,
+diễn giả không biết gì cả.
+
+\section*{TÀI LIỆU THAM KHẢO}
+\addcontentsline{toc}{section}{Tài liệu tham khảo}
+
+\begin{description}
+\item[{[1]}] GROTHENDIECK (Alexander). --- Techniques de descente et théorèmes
+d'existence en géométrie algébrique, I: Généralités, Séminaire Bourbaki,
+1959/60, n\textsuperscript{o} 190, 29 p.
+
+\item[{[2]}] GROTHENDIECK (Alexander). --- Techniques de descente et théorèmes
+d'existence en géométrie algébrique, II: Le théorème d'existence en théorie
+formelle des modules, Séminaire Bourbaki, 1959/60,
+n\textsuperscript{o} 195, 22 p.
+
+\item[{[3]}] GROTHENDIECK (A.) và DIEUDONNÉ (J.). --- Éléments de géométrie
+algébrique, I: Le langage des schémas. --- Paris, Presses universitaires de
+France, 1960 (Institut des hautes Études scientifiques, Publications
+mathématiques, 4).
+\end{description}
+
+\par

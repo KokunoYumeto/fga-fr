@@ -1,0 +1,1507 @@
+\unit{강연 190 — 하강 기법 I}
+\sid{190}
+\src{299}
+\seminar{제12년차, 1959/60, 제190호\\1959년 12월}
+\paperhead{대수기하학에서의 하강 기법과 존재 정리\\
+I. 일반론. 충실 평탄 사상에 의한 하강}%
+  {알렉상드르 그로텐디크 지음}
+
+기술적 관점에서 보면, 이 강연과 그 뒤를 이을 강연들은
+힐베르트의 유명한 ``정리 90''을 변주한 것으로 여길 수 있다.
+대수기하학에 하강 방법을 도입한 것은 ``기초체의 하강''이라는 이름 아래
+A. 베유가 한 것으로 보인다. 다만 베유는 체의 유한 분리 확대인 경우로
+한정한다. 높이 1인 라디시엘 확대의 경우는 뒤에 P. 카르티에가 다루었다. 스킴의
+언어가 없었고, 특히 고려가 허용된 환들에 멱영원이 없었기 때문에,
+이 두 경우 사이의 본질적인 동일성을 카르티에는 정식화할 수
+없었다.
+
+현재로서는, 여기서 설명할 일반적인 하강 기법은 (필요한 경우 ``형식기하학''의
+기본 정리들, [3] 참조, 과 결합하면) 대수기하학의 존재 정리 대부분의
+기초를 이룬다고 생각된다.\footnote{1962년의 정오표는 이 서술이
+지나치다고 판단한다. 이 서술은 TDTE I--VI 계열의 처음 두 강연에서 다룬
+비사영적 기법들에는 상당한 정도로 타당하지만, 사영적 기법들
+(TDTE IV, V, VI)에는 그렇지 않다.} 더 나아가 이 기법은 확실히
+``해석기하학''으로 옮길 수 있음에 유의해야 한다. 가까운 장래에
+전문가들이 강연 II에서 제시할 형식기하학의 존재 정리들의
+``해석적'' 대응물들을 증명할 수 있으리라 기대할 수 있다. 어쨌든
+코다이라--스펜서의 최근 연구에서 쓰인 방법들은 특이점 근방에서
+``모듈라이 다양체''를 정의하고 연구하기에는 부적합해 보인다. 이는 스킴
+이론에 더 가까운 방법들(물론 초월적 기법들이 이를 보완해야 한다)이
+필요함을 아주 분명히 보여 준다.
+
+이 강연 I에서는 (제목에 명시한) 가장 초보적인 하강의 경우를
+다루겠다. 그럼에도 아래 정리 1, 2, 3의 응용은 이미 매우 많다.
+여기서는 가능한 최대의 일반성을 부여하려 하지 않고, 그 가운데 몇 가지만
+예로 드는 데 그쳤다.
+
+스킴의 언어는 자유롭게 사용하겠다. 이에 관해서는 앞서 인용한 강연과
+[2]를 참조한다. 다만 이 강연에서 고려하는 준스킴은 반드시
+뇌터일 필요가 없고, 사상도
+
+\src{300}
+반드시 유한형일 필요가 없음을 명시해 둔다. 따라서 $A$가 국소 뇌터환이고
+그 완비화가 $\widehat A$이면, 비뇌터환 $\widehat A\otimes_A\widehat A$와
+고려하는 환들 사이의 포함관계에 대응하는 아핀 스킴의 사상들을
+고려해야 한다.
+
+\fsection{A}{범주에 관한 예비사항}
+
+\subsection*{1. 섬유화 범주, 하강 데이터, $\mathcal F$-하강
+사상}
+\addcontentsline{toc}{subsection}{1. 섬유화 범주와 하강 데이터}
+
+\result{a. 정의}{1.1} 밑범주가 $\mathcal C$인 \emph{섬유화 범주}
+$\mathcal F$는 범주 $\mathcal C$, 각
+$X\in\mathcal C$에 대한 범주 $\mathcal F_X$, 각
+$\mathcal C$-사상 $f:X\longrightarrow Y$에 대한 함자
+$f^*:\mathcal F_Y\longrightarrow\mathcal F_X$로 이루어진다. 이 함자는
+\[
+  f^*(\xi)=\xi\times_Y X
+\]
+로도 쓴다. 여기서 $\xi\in\mathcal F_Y$이고, $X$는 ``$Y$ 위의
+$\mathcal C$의 대상'', 즉 사상 $f$가 주어진 대상으로 여긴다. 끝으로
+합성할 수 있는 두 사상
+$X\xrightarrow{f}Y\xrightarrow{g}Z$에 대하여 함자의 동형사상
+\[
+  c_{f,g}:(gf)^*\longrightarrow f^*g^*,
+\]
+이 주어지며, 이 데이터는 다음 조건들을 만족한다.
+
+\begin{enumerate}
+\item[(i)] $\operatorname{id}_X^*=\operatorname{id}$ ;
+\item[(ii)] $f$ 또는 $g$가 항등 동형사상이면 $c_{f,g}$는
+항등 동형사상이다 ;
+\item[(iii)] 합성할 수 있는 세 사상
+$X\xrightarrow{f}Y\xrightarrow{g}Z\xrightarrow{h}T$가 주어지면,
+$c_{u,v}$ 꼴의 동형사상들로 이루어진 다음 동형사상의 도식은
+가환이다.
+\[
+\begin{array}{ccc}
+  (h(gf))^*=((hg)f)^* & \longrightarrow & f^*(hg)^* \\
+  \big\downarrow && \big\downarrow \\
+  (gf)^*h^* & \longrightarrow & (f^*g^*)h^*=f^*(g^*h^*).
+\end{array}
+\]
+\end{enumerate}
+
+\result{예}{1} 섬유곱이 존재하는 범주 $\mathcal C$를 생각하자.
+그러면 밑범주가 $\mathcal C$인 섬유화 범주 $\mathcal F$를 다음과 같이
+정의한다. $\mathcal F_X$는 $X$ 위의 $\mathcal C$-대상들의 범주이고,
+사상 $f:X\longrightarrow Y$에 대응하는 함자
+$f^*:\mathcal F_Y\longrightarrow\mathcal F_X$는 섬유곱
+$Z\longmapsto Z\times_YX$로 정의한다.
+
+\result{예}{2} $\mathcal C$를 준스킴의 범주라 하고, 각
+$X\in\mathcal C$에 대하여 $\mathcal F_X$를 $X$ 위의 준연접
+가군층들의 범주라 하자. $f:X\longrightarrow Y$가 준스킴의 사상이면
+$f^*:\mathcal F_Y\longrightarrow\mathcal F_X$는 가군층의
+역상 함자이다.
+
+\src{301}
+이로써 밑범주가 $\mathcal C$인 섬유화 범주를 얻는다.
+
+\result{b. 정의}{1.2} 집합의 사상들로 이루어진 도식
+\[
+  E\xrightarrow{u}E'
+  \overset{v_1}{\underset{v_2}{\rightrightarrows}}E''
+\]
+이 \emph{완전}하다고 함은, $u$가 $E$에서 $E'$의 원소 $x'$ 가운데
+$v_1(x')=v_2(x')$를 만족하는 것들로 이루어진 부분집합 위로의
+전단사임을 뜻한다.
+
+\result{정의}{1.3} $\mathcal F$를 밑범주가 $\mathcal C$인 섬유화 범주라
+하고, $\mathcal C$ 안의 사상들로 이루어진 도식
+\[
+  \tag{+}
+  S\xleftarrow{\alpha}S'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}S''
+\]
+을 생각하자. $\alpha\beta_1=\alpha\beta_2$라 하자. 이 도식이
+$\mathcal F$-\emph{완전}하다고 함은, $\mathcal F_S$의 임의의 두 대상
+$\xi,\eta$에 대하여 다음 집합의 사상들의 도식
+\[
+  \tag{+'}
+  \operatorname{Hom}(\xi,\eta)
+  \xrightarrow{\alpha^*}
+  \operatorname{Hom}(\alpha^*\xi,\alpha^*\eta)
+  \overset{\beta_1^*}{\underset{\beta_2^*}{\rightrightarrows}}
+  \operatorname{Hom}(\gamma^*\xi,\gamma^*\eta),
+\]
+이 완전함을 뜻한다. 여기서 $\gamma=\alpha\beta_1=\alpha\beta_2$이다.
+마지막 도식에서는 간단히 하기 위해 $c_{\beta_i,\alpha}$를 써서
+$\beta_i^*\alpha^*$를 $(\alpha\beta_i)^*=\gamma^*$와 동일시하였다.
+
+\result{정의}{1.4} $\mathcal F$를 밑범주가 $\mathcal C$인 섬유화 범주라
+하고, $\mathcal C$ 안에서 $S''$에서 $S'$로 가는 두 사상
+$\beta_1,\beta_2$를 생각하자. 또한
+$\xi'\in\mathcal F_{S'}$라 하자. $\xi'$ 위의 \emph{붙이기 데이터}
+(쌍 $(\beta_1,\beta_2)$에 관한)란 $\beta_1^*(\xi')$에서
+$\beta_2^*(\xi')$로 가는 동형사상이다. $\xi',\eta'\in\mathcal F_{S'}$에
+각각 붙이기 데이터가 주어졌다고 하자. $\mathcal F_{S'}$의 사상
+$u:\xi'\longrightarrow\eta'$가 \emph{붙이기 데이터들과 양립한다}고 함은
+다음 도식이 가환임을 뜻한다.
+\[
+\begin{array}{ccc}
+  \beta_1^*(\xi') & \longrightarrow & \beta_2^*(\xi') \\
+  \big\downarrow && \big\downarrow \\
+  \beta_1^*(\eta') & \longrightarrow & \beta_2^*(\eta').
+\end{array}
+\]
+이와 같이 붙이기 데이터가 주어진 $\mathcal F_{S'}$의 대상들은
+(쌍 $(\beta_1,\beta_2)$에 관하여) 하나의 범주를 이룬다. 만일
+$\alpha:S'\longrightarrow S$가 $\alpha\beta_1=\alpha\beta_2$를 만족하는
+사상이면, 모든 $\xi\in\mathcal F_S$에 대하여 대상 $\xi'=\alpha^*(\xi)$에는
+
+\src{302}
+표준 붙이기 데이터가 주어진다. 실제로
+\[
+  \beta_i^*\alpha^*(\xi)\simeq(\alpha\beta_i)^*(\xi)=\gamma^*(\xi),
+\]
+이고, 여기서 다시 $\gamma=\alpha\beta_1=\alpha\beta_2$로 놓았다. 더 나아가
+$u:\xi\longrightarrow\eta$가 $\mathcal F_S$의 사상이면
+\[
+  \alpha^*(u):\alpha^*(\xi)\longrightarrow\alpha^*(\eta)
+\]
+는 $\mathcal F_{S'}$ 안에서 표준 붙이기 데이터들과 양립하는
+사상이다. 따라서 $\mathcal F_S$에서 쌍 $(\beta_1,\beta_2)$에 관한
+붙이기 데이터가 주어진 $\mathcal F_{S'}$의 대상들의 범주로 가는
+표준 함자를 얻는다. 이제 정의 1.3은 다음과 같이 바꾸어 말할 수도 있다.
+그 정의의 도식 (+)가 $\mathcal F$-완전하다는 것은 앞의 함자가 ``충만하고
+충실하다'', 즉 $\mathcal F_S$와 쌍 $(\beta_1,\beta_2)$에 관한 붙이기
+데이터가 주어진 $\mathcal F_{S'}$의 대상들의 범주의 한 부분범주 사이의
+동치를 정의한다는 뜻이다.
+
+\result{정의}{1.5} $\xi'\in\mathcal F_{S'}$ 위의 붙이기 데이터가
+($\alpha$에 관하여) \emph{유효}하다고 함은, 이 데이터가 주어진 $\xi'$이
+어떤 $\xi\in\mathcal F_S$에 대한 $\alpha^*(\xi)$와 동형임을
+뜻한다.
+
+도식 (+)가 $\mathcal F$-완전한 경우, 앞의 정의에 나오는 대상 $\xi$는
+유일한 동형사상을 제외하고 결정되고, 범주 $\mathcal F_S$는
+유효한 붙이기 데이터가 주어진 $\mathcal F_{S'}$의 대상들의 범주와
+동치이다.
+
+\medskip\noindent
+c. 가장 중요한 경우는
+\[
+  S''=S'\times_S S',
+\]
+이고 $\beta_i$들이 $S'\times_S S'$에서 그 두 인자로 가는 두 사영
+$p_1,p_2$인 경우이다(이제 $\mathcal C$에 섬유곱이 존재한다고 가정한다).
+그러면 $\xi'\in\mathcal F_{S'}$ 위의 붙이기 데이터
+$\varphi:p_1^*(\xi')\longrightarrow p_2^*(\xi')$가 유효하기 위한
+두 가지 즉각적인 필요조건이 있다. 먼저
+\[
+  \tag{i}
+  \Delta^*(\varphi)=\operatorname{id}_{\xi'},
+\]
+이다. 여기서 $\Delta:S'\longrightarrow S'\times_S S'$는 대각 사상이고,
+$\Delta^*p_i^*(\xi')$는 $(p_i\Delta)^*(\xi')=\xi'$와
+동일시하였다. 또한
+\[
+  \tag{ii}
+  p_{31}^*(\varphi)=p_{32}^*(\varphi)\,p_{21}^*(\varphi),
+\]
+
+\src{303}
+여기서 $p_{ij}$는 $S'\times_S S'\times_S S'$에서 그 $i$번째와
+$j$번째 인자의 부분곱으로 가는 표준 사영을 나타낸다.
+
+\result{정의}{1.6} 사상 $\alpha:S'\longrightarrow S$에 관하여
+$\xi'\in\mathcal F_{S'}$ 위의 \emph{하강 데이터}란, 표준 사영의 쌍
+$(p_1,p_2):S'\times_S S'\longrightarrow S'$에 관한 $\xi'$ 위의
+붙이기 데이터로서 위의 조건 (i), (ii)를 만족하는 것을 말한다.
+
+\result{정의}{1.7} 사상 $\alpha:S'\longrightarrow S$를
+\emph{$\mathcal F$-하강 사상}이라 함은 사상들의 도식
+\[
+  S\xleftarrow{\alpha}S'
+  \overset{p_1}{\underset{p_2}{\rightrightarrows}}S'\times_S S'
+\]
+이 $\mathcal F$-완전임을 뜻한다(정의 1.3). 더 나아가
+$\mathcal F_{S'}$의 대상 위의 모든 하강 데이터(정의 1.6)가 유효하면
+$\alpha$를 \emph{엄밀 $\mathcal F$-하강 사상}이라 한다.
+
+마지막 조건은 좀 더 그림을 그리듯 다음과 같이 말할 수도 있다.
+$\mathcal F_S$의 대상을 주는 일과, 하강 데이터가 주어진
+$\mathcal F_{S'}$의 대상을 주는 일은 \fquote{동일한 일이다}.
+
+사상 $\alpha:S'\longrightarrow S$가 \fquote{단면}
+$s:S\longrightarrow S'$, 즉 $\alpha s=\operatorname{id}_S$를 만족하는
+사상 $s$를 가지면, $\alpha$는 엄밀 $\mathcal F$-하강 사상임에
+유의하자.\footnote{1962년 정오표는 $\alpha$가 미리
+$\mathcal F$-하강 사상이라고 가정할 필요가 없다고 명시한다.}
+실제로 $\xi'\in\mathcal F_{S'}$에 $\alpha$에 관한 하강 데이터가 주어지면,
+그것은 $\xi=s^*(\xi')$에서 \fquote{온다}.
+
+\medskip\noindent
+d. 앞의 개념들은 $S$ 위의 $\mathcal C$의 매개변수 대상 $T$에 대하여
+집합
+\[
+  \operatorname{Hom}_S(T,S')=S'(T)
+\]
+을 도입하면 더 직관적으로 제시할 수 있다. 그 원소들은 $t,t'$ 등으로
+나타내겠다. 대상 $\xi'\in\mathcal F_{S'}$가 주어졌을 때 각
+$t\in S'(T)$에는 $\mathcal F_T$의 대상 $t^*(\xi')$가 대응하며, 이를
+$\xi'_t$로도 나타내겠다. 그러면 $\xi'$ 위의 붙이기 데이터
+($p_1,p_2$에 관한 것)는 $S$ 위의 모든 $T$와 모든 점의 쌍
+$t,t'\in S'(T)$에 대하여 동형사상
+\[
+  \varphi_{t',t}:\xi'_t\longrightarrow\xi'_{t'}
+\]
+을 주는 것으로 정의된다($T$가 변할 때의 자명한 함자성 조건들을
+만족해야 한다). 1.c의 조건 (i), (ii)는 이제 각각
+\[
+  \tag{i bis}
+  \varphi_{t,t}=\operatorname{id}_{\xi'_t}
+  \qquad\text{모든 $T$와 모든 $t\in S'(T)$에 대하여},
+\]
+
+\src{304}
+\[
+  \tag{ii bis}
+  \varphi_{t,t''}=\varphi_{t,t'}\varphi_{t',t''}
+  \qquad\text{모든 $T$와 모든 $t,t',t''\in S'(T)$에 대하여}
+\]
+로 쓰인다. 실제로 (ii bis)에서 $t=t'=t''$로 놓으면
+$\varphi_{t,t}=\varphi_{t,t}^2$을 얻는다. 가정에 따라
+$\varphi_{t,t}$가 동형사상이므로 여기서 (i bis)가 따라온다. 따라서
+(i bis)는 사실 (ii bis)의 결과이다(그러므로 (i)는 (ii)의 결과이다).
+그러나 $\varphi_{t,t'}$들이 동형사상이라고, 즉
+$\varphi:p_1^*(\xi')\longrightarrow p_2^*(\xi')$가 동형사상이라고 더는
+미리 가정하지 않으면, (ii bis)가 반드시 (i bis)를 함의하지는 않는다.
+그럼에도 (ii bis)와 (i bis)를 함께 가정하면 $\varphi_{t,t'}$들은
+동형사상이다. 실제로
+$\varphi_{t,t'}\varphi_{t',t}=\varphi_{t,t}
+=\operatorname{id}_{\xi'_t}$이기 때문이다.
+
+\subsection*{2. 완전 도식과 엄밀 에피사상, 하강 사상. 예}
+\addcontentsline{toc}{subsection}{2. 완전 도식과 엄밀 에피사상}
+
+\result{a. 정의}{2.1} $\mathcal C$를 범주라 하자. $\mathcal C$ 안의
+사상들로 이루어진 도식
+\[
+  T\xrightarrow{\alpha}T'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}T''
+\]
+이 \emph{완전}이라 함은 모든 $Z\in\mathcal C$에 대하여 이에 대응하는
+집합 사상들의 도식
+\[
+  \operatorname{Hom}(Z,T)\longrightarrow
+  \operatorname{Hom}(Z,T')
+  \rightrightarrows\operatorname{Hom}(Z,T'')
+\]
+이 완전임을 뜻한다(정의 1.2). 이때 $(T,\alpha)$를, 또는 말을
+남용하여 $T$를 사상의 쌍 $(\beta_1,\beta_2)$의 \emph{핵}이라 한다.
+
+이 핵은 유일한 동형을 제외하면 명백히 결정된다. $\mathcal C$가
+집합의 범주이면 앞의 정의는 정의 1.2와 양립한다. 쌍대적으로
+$\mathcal C$ 안의 사상들로 이루어진 도식
+\[
+  S\xleftarrow{\alpha}S'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}S''
+\]
+의 완전성을 정의한다. 이때 $(S,\alpha)$를 사상의 쌍
+$(\beta_1,\beta_2)$의 \emph{여핵}이라 한다.
+
+\result{정의}{2.2} 사상 $\alpha:S'\longrightarrow S$를
+\emph{엄밀 에피사상}이라 함은, 그것이 에피사상이고 모든 사상
+$u:S'\longrightarrow Z$에 대하여 $u$가
+$S'\longrightarrow S\longrightarrow Z$로 인수분해되기 위한 다음
+필요조건이 충분조건이기도 함을 뜻한다. 모든 $S''\in\mathcal C$와
+$\alpha\beta_1=\alpha\beta_2$를 만족하는 모든 사상의 쌍
+$\beta_1,\beta_2:S''\longrightarrow S'$에 대하여
+$u\beta_1=u\beta_2$이다.
+
+섬유곱 $S'\times_S S'$이 존재하면, 이는 도식
+\[
+  S\xleftarrow{\alpha}S'
+  \overset{p_1}{\underset{p_2}{\rightrightarrows}}S'\times_S S'
+\]
+
+\src{305}
+이 완전이라고, 즉 $S$가 쌍 $(p_1,p_2)$의 여핵이라고 말하는 것과
+같다. 어떤 경우든 여핵 사상은 엄밀 에피사상이다. 또한 단사사상이기도
+한 엄밀 에피사상은 동형사상임에 유의하자. 쌍대 개념인
+\emph{엄밀 단사사상}을 전개하는 일은 독자에게 맡긴다.
+
+$\mathcal F$-하강 사상의 개념과 엄밀 에피사상의 개념 사이의 관계를
+정확히 밝히기 위해 다음 정의들을 더 도입한다.
+
+\result{정의}{2.3} 사상 $\alpha:S'\longrightarrow S$를
+\emph{보편 에피사상}(각각 \emph{보편 엄밀 에피사상})이라 함은,
+$S$ 위의 모든 $T$에 대하여 섬유곱 $T'=S'\times_ST$가 존재하고
+사영 $T'\longrightarrow T$가 에피사상(각각 엄밀 에피사상)임을 뜻한다.
+
+매우 좋은 범주들, 이를테면 집합의 범주, 위상공간 위 집합층의 범주,
+아벨 범주 등에서는 이렇게 도입한 에피성에 관한 네 개념이 일치한다.
+반면 준스킴의 범주나 주어진 공집합이 아닌 준스킴 $S$ 위의 준스킴의
+범주 같은 범주에서는, $S$ 위에서 유한인 $S$-스킴들만 생각하더라도
+네 개념이 모두 서로 다르다.
+
+\result{정의}{2.4} 사상 $\alpha:S'\longrightarrow S$를
+\emph{하강 사상}(각각 \emph{엄밀 하강 사상})이라 함은, 그것이
+$\mathcal F$-하강 사상(각각 엄밀 $\mathcal F$-하강 사상)임을 뜻한다
+(정의 1.7 참조). 여기서 $\mathcal F$는 $\mathcal C$를 밑범주로 하는
+섬유화 범주로서, 그 대상은 $\mathcal C$의 대상 위에 놓인
+$\mathcal C$의 대상들이다(1번, 예 1).
+
+\result{명제}{2.1} $\mathcal C$에 유한곱과 (유한) 섬유곱이 존재하면,
+$\mathcal C$에서 하강 사상과 보편 엄밀 에피사상은 일치한다.
+
+\result{b. 예}{} $\mathcal C$를 준스킴의 범주라 하자.
+$S\in\mathcal C$라 하고, $S'$과 $S''$을 $S$ 위에서 유한인 두
+준스킴이라 하자. 즉 이들은 $S$ 위의 대수층 $\mathcal A'$,
+$\mathcal A''$에 대응하며, 이 층들은 가군층으로서 준연접이고
+유한 생성이다($S$가 국소 뇌터이면 연접이다).
+$\alpha:S'\longrightarrow S$를 $S'$의 구조 사상이라 하고,
+$\beta_1,\beta_2$를 $S''$에서 $S'$으로 가는 두 $S$-사상이라 하자.
+이들은 대수 준동형 $\mathcal A'\longrightarrow\mathcal A''$으로
+정의되며, 이 준동형들도 $\beta_1,\beta_2$로 나타내겠다. 유한 사상은
+닫힌 사상이라는 사실(첫 번째 코언--자이덴베르크 정리)을 이용하면,
+$\mathcal C$ 안의 도식
+\[
+  \tag{+}
+  S\xleftarrow{\alpha}S'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}S''
+\]
+이 완전일 필요충분조건은 $S$ 위의 층들의 도식
+
+\src{306}
+\[
+  \mathcal O_S=\mathcal A\longrightarrow\mathcal A'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}\mathcal A''
+\]
+이 완전인 것임을 쉽게 증명할 수 있다. 특히
+$\alpha:S'\longrightarrow S$가 $S$ 위의 대수층 $\mathcal A'$에
+대응하는 유한 사상이면, $\alpha$가 엄밀 에피사상일 필요충분조건은
+층들의 도식
+\[
+  \mathcal O_S=\mathcal A\longrightarrow\mathcal A'
+  \overset{p_1}{\underset{p_2}{\rightrightarrows}}
+  \mathcal A'\otimes_{\mathcal A}\mathcal A'
+\]
+이 완전인 것이다($\mathcal A\longrightarrow\mathcal A'$가 단사일
+필요충분조건은 $\alpha$가 에피사상인 것이다). $S$가 환 $A$를 갖는
+아핀 준스킴이면 $S'$도 $A$ 위에서 유한인 환 $A'$를 갖는 아핀
+준스킴이다. 이때 $S'\longrightarrow S$가 엄밀 에피사상일
+필요충분조건은 $A\longrightarrow A'$가 $A$를 다음 조건을 만족하는
+$x'\in A'$들로 이루어진 $A'$의 부분환 위로 보내는 동형사상인 것이다:
+\[
+  1_{A'}\otimes_Ax'-x'\otimes_A1_{A'}=0.
+\]
+($A\longrightarrow A'$가 단사일 필요충분조건은 이 사상이
+에피사상인 것이다.) 이미 지적했듯이, $S$가 아르틴 국소환의
+스킴이더라도 에피사상인 유한 사상 $S'\longrightarrow S$가 반드시
+엄밀 에피사상인 것은 아니다. 그러나 $S$가 뇌터 준스킴이면,
+에피사상인 모든 유한 사상 $S'\longrightarrow S$는 유한 개의
+(역시 유한인) 엄밀 에피사상의 합성임을 증명할 수 있다. 이는 두
+엄밀 에피사상의 합성이 반드시 엄밀 에피사상인 것은 아님도 보여 준다.
+
+\result{c}{} $(+)$가 유한 사상들의 완전 도식이면, 준스킴의 모든 평탄
+사상 $T\longrightarrow S$에 의한 $(+)$의 역상 도식도 여전히 완전이다.
+따라서 $X,Y$가 두 $S$-준스킴이고 $X$가 $S$ 위에서 평탄하면 다음
+집합 사상들의 도식이 완전이다. 여기서 $X',Y'$은 $S'$ 위의 $X,Y$의
+역상이고 $X'',Y''$은 $S''$ 위의 그 역상이다:
+\[
+  \operatorname{Hom}_S(X,Y)\longrightarrow
+  \operatorname{Hom}_{S'}(X',Y')
+  \rightrightarrows
+  \operatorname{Hom}_{S''}(X'',Y'').
+\]
+특히 $\mathcal F$가 준스킴의 범주 $\mathcal C$를 밑범주로 하는
+섬유화 범주이고, 각 $X\in\mathcal C$에 대하여 $\mathcal F_X$가
+$X$ 위에서 평탄한 $X$-준스킴들의 범주이면, 도식 $(+)$는
+$\mathcal F$-완전이다. (평탄성 가정을 하지 않으면 이 결과는 거짓이
+된다. 특히 유한 엄밀 에피사상이 반드시 하강 사상인 것은 아니다.)
+마찬가지로, $\mathcal F_X$가 준스킴 $X$ 위의 준연접 평탄 가군층들의
+범주인 섬유화 범주를 $\mathcal F$라 해도 $(+)$는
+$\mathcal F$-완전이다(여기에서도 평탄성 가정은
+
+\src{307}
+여기서도 평탄성 가정은 본질적이다). 어느 경우에든 $S'$ 위에서 평탄한
+대상에 주어진 붙이기 자료(특히 $S''=S'\times_SS'$일 때의 강하 자료)가
+유효한가 하는 문제는 미묘하며(여러 특수한 경우에서 이에 답하는 것이 이
+강연들의 주요 목적 가운데 하나이다), 강연자는 모든 유한 엄밀 에피사상
+$S'\longrightarrow S$에 대하여 $S'$ 위의 평탄 준연접층에 주어진 모든 강하
+자료가 유효한지 알지 못한다($S$가 아르틴 국소환의 스펙트럼이라고 가정하고
+랭크 1의 국소 자유층만을 생각하더라도 그러하다). 더 일반적으로 $A$를 환,
+$A'$을 $A$-대수(모든 환은 가환이다)라 하고, 사상들의 도식
+\[
+  A\longrightarrow A'\rightrightarrows A'\otimes_AA'
+\]
+이 완전하다고 하자. 이는 $A,A'$의 스펙트럼에 대응하는 사상
+$S'\longrightarrow S$가 $\mathcal F$-강하 사상이라는 것과도 동치이다.
+여기서 $\mathcal F$는 평탄 준연접층들의 섬유화된 범주이다. $M'$을 $A$로의
+강하 자료, 즉 1.c의 조건 (i), (ii)를 만족하는 $A'\otimes_AA'$-가군의 동형
+\[
+  \varphi:M'\otimes_AA'\xrightarrow{\sim}A'\otimes_AM'
+\]
+을 갖춘 평탄 $A'$-가군이라 하자(이 조건들을 가군의 말로 명시하는 일은
+독자에게 맡긴다). 이 자료는 (평탄 준연접층들의 섬유화된 범주에 관하여)
+유효한가? $M'$의 원소 $x'$ 가운데
+\[
+  \varphi(x'\otimes_A1_{A'})=1_{A'}\otimes_Ax'
+\]
+을 만족하는 것들의 부분집합을 $M$이라 하자. 이는 $M'$의 부분
+$A$-가군이다. 표준 단사사상 $M\longrightarrow M'$은 $A'$-가군의 준동형
+$M\otimes_AA'\longrightarrow M'$을 정의한다. 그러면 $\varphi$가
+유효하다는 것은 다음을 뜻한다. 즉 $M$은 평탄 $A$-가군이고, 앞의
+준동형은 동형이다.
+
+\result{비고}{} 앞의 고찰에서는 도식 $(+)$의 사상들에 아무런 평탄성
+가정도 두지 않았다. 따라서 강하 기법을 얻기 위해서는 우리가 다루는
+$S,S'$ 위의 대상들에 평탄성 가정을 두어야 했다. 제2절에서는
+$\alpha:S'\longrightarrow S$에 평탄성 가정을 둘 것이며, 그러면 더 이상
+아무 평탄성 조건도 부과되지 않은 $S,S'$ 위의 대상들에 대해서도 강하
+기법을 사용할 수 있다. 어느 경우든 평탄성 가정이 개입한다. 이것이
+평탄성 개념이 대수기하학에서 중요한 주요 이유 가운데 하나이다(기초체
+위에서는 실제로 무엇이든 평탄하므로, 기초체에만 한정하는 동안에는 그
+역할이 드러날 수 없었다!).
+
+\src{308}
+\subsection*{3. 에탈 사상에 대한 응용}
+\addcontentsline{toc}{subsection}{3. 에탈 사상에 대한 응용}
+
+$A$를 국소환이라 하고 $B$를 $A$ 위의 국소대수로서, 그 극대 아이디얼이
+$A$의 극대 아이디얼을 유도한다고 하자. 다음 조건들을 만족할 때 $B$가
+$A$ 위에서 \emph{에탈}이라고 하겠다(다른 곳에서 쓰이는 ``비분기''라는
+말 대신 이 말을 쓴다).
+\begin{enumerate}
+\item[(i)] $B$는 $A$ 위에서 평탄하다.
+\item[(ii)] $B/\mathfrak mB$는 $A/\mathfrak m=k$의 유한 분리 확대체이다
+  (여기서 $\mathfrak m$은 $A$의 극대 아이디얼이다).
+\end{enumerate}
+$A,B$가 뇌터이고 $k$가 대수적으로 닫혀 있을 때, 이는
+$A\longrightarrow B$를 연장하는 완비화 사이의 준동형
+$\widehat A\longrightarrow\widehat B$가 동형이라는 뜻이다. 유한형 사상
+$f:T\longrightarrow S$에 대하여 $\mathcal O_x$가
+$\mathcal O_{f(x)}$ 위에서 에탈이면 $f$가 \emph{$x\in T$에서 에탈}이라고,
+또는 $T$가 \emph{$x$에서 $S$ 위에 에탈}이라고 한다. 모든 $x\in T$에서
+$f$가 에탈이면 $f$가 \emph{에탈}이라고 하거나 $f$를 \emph{에탈 사상}이라
+하거나, 또는 $T$가 \emph{$S$ 위에 에탈}이라고 한다. 또한 $S$가 국소
+뇌터이면 $f$가 에탈인 $T$의 점들의 집합은 열려 있고, 자리스키의
+``주정리''를 쓰면 그러한 점의 근방에서 $T/S$의 구조를 (잘 알려진 꼴의
+방정식으로) 더 구체적으로 기술할 수 있다.
+
+$S$가 복소수체 위의 유한형 스킴이면 세르 [5]의 의미에서 이에 대응하는
+해석공간 $\overline S$가 있다. 다만 $\overline S$의 구조층에는 멱영원이
+있을 수 있으나, 이는 [5]에서 본질적인 것을 바꾸지 않는다. 이때 $f$가
+에탈 사상일 필요충분조건은
+$\overline f:\overline T\longrightarrow\overline S$가 에탈 사상인 것이다.
+즉 $\overline T$의 모든 점이, 그 위에서 $\overline f$가 $\overline S$의 한
+열린집합 위의 동형을 유도하는 근방을 가져야 한다. 특히 $S$의 모든
+\emph{에탈 덮개} $T$(즉 유한 에탈 사상 $f:T\longrightarrow S$)에는
+$\overline S$의 에탈 덮개 $\overline T$가 대응하며, 이것이 연결일
+필요충분조건은 $T$가 연결인 것이다 [5]. 또한 $T,T'$이 $S$ 위에 에탈인
+두 스킴이면 자연스러운 사상
+\[
+  \operatorname{Hom}_S(T,T')\longrightarrow
+  \operatorname{Hom}_{\overline S}(\overline T,\overline{T'})
+\]
+이 전단사임을 쉽게 알 수 있다. 다시 말해 $S$ 위에 에탈인 스킴들의
+범주에서 $\overline S$ 위에 에탈인 해석공간들의 범주로 가는 함자
+$T\longmapsto\overline T$는 ``충실충만''하며, 따라서 첫째 범주와 둘째
+범주의 한 부분범주 사이의 범주 동치를 정의한다. 그라우어트--렘메르의
+정리 [2]에 따르면 $S$가 정규이면, 이 방법으로 $S$의 \emph{에탈 덮개}들의
+범주와 $\overline S$의 (유한) 에탈 덮개들의 범주 사이의 범주 동치를
+얻는다. 즉 $\overline S$의 모든 에탈 덮개는 $S$의 어떤 에탈 덮개 $T$에
+대하여 $\overline T$와 $\overline S$-동형이다. 이제 \emph{그라우어트--렘메르
+정리가 $S$의 정규성 가정 없이도 성립함}을 보이자. 먼저
+$S'\longrightarrow S$를 유한 엄밀 에피사상이라 하고, 이 정리가 $S'$에
+대하여 증명되었다고 가정하여 $S$에 대해서도 참임을 보이자.
+
+\src{309}
+$\mathfrak T$를 $\overline S$의 에탈 덮개라 하고, 그
+$\overline{S'}$ 위의 역상 $\mathfrak T'$을 생각하자. 이는
+$\mathfrak T$를 정의하는 $\overline S$ 위의 대수층 $\mathcal A$의
+역상인, $\overline{S'}$ 위의 연접 해석적 대수층 $\mathcal A'$에
+대응한다. 가정에 따라 $\overline{S'}$ 위의 $\mathfrak T'$은 $S'$의
+에탈 덮개 $T'$에서 온다. 즉 $\mathcal A'$은 $S'$ 위의 연접 대수층
+$A'$에서 온다. 한편 $\mathcal A'$에는
+$\overline{S'}\longrightarrow\overline S$에 관한 표준 강하 자료, 즉
+\[
+  \overline{S'}\times_{\overline S}\overline{S'}
+  =\overline{(S'\times_SS')}
+\]
+위의 두 역상 사이의 동형이 주어져 있다(조건 (i), (ii)를 만족한다).
+앞에서 말한 바에 따라 이 동형은 대응하는 대수적 층들 사이의 동형에서
+온다. 즉 $S'\longrightarrow S$에 관한 $A'$ 위의 강하 자료에서 온다.
+이 마지막 자료가 유효함은 쉽게 확인된다($\mathcal A'$ 위의 자료가
+유효하고, 앞 절에서 명시한 것과 같은 강하 자료의 유효성은 관여하는
+가군들의 \emph{완비화}에서 국소적으로 판별할 수 있기 때문이다). 따라서
+$S$ 위의 연접 대수층 $A$가 얻어지고, 이는 찾고 있던 $S$의 덮개 $T$를
+정의한다. 앞의 결과는 $S'\longrightarrow S$가 유한 엄밀 에피사상들의
+유한 합성일 때, 다시 말해 (제2절에서 언급한 분해정리에 따라) 임의의
+유한 에피사상일 때에도 명백히 성립한다. 따라서 그라우어트--렘메르 정리는
+$S$가 \emph{축소} 스킴일 때에도 성립한다. 즉 $\mathcal O_S$에 멱영원이
+없다면, 그 정규화 $S'$을 도입하여 이를 알 수 있다. 여기서 일반적인
+경우로 넘어가는 것은 쉽다.
+
+유한 엄밀 에피사상에 관한 분해정리와 강하 자료 유효성의 ``형식적'' 성격을
+다시 사용하는 전적으로 비슷한 증명으로 다음 결과를 보일 수 있다.
+$S$를 국소 뇌터 준스킴이라 하고 $S'\longrightarrow S$를 \emph{유한이고
+전사이며 라디시엘인} 사상이라 하자(이는 다음 조건과 같다. 즉 유한형
+사상으로서, $S$ 위의 모든 $T$에 대하여
+$T'=S'\times_ST\longrightarrow T$가 위상동형사상이어야 한다. 이는
+$S'\longrightarrow S$가 \emph{보편 위상동형사상}이라고 말하는 것과도
+같다). $S$ 위에 에탈인 모든 $T$에 대하여 그 역상
+$T'=T\times_SS'$을 생각하자. 이는 $S'$ 위에 에탈이다. 그러면 함자
+$T\longmapsto T'$은 \emph{$S$ 위에 에탈인 준스킴 $T$들의 범주에서
+$S'$ 위에 에탈인 준스킴 $T'$들의 범주로 가는 범주 동치}이다. (이를
+위해 $S$ 위에 에탈인 두 준스킴 $T_1,T_2$에 대한 사상
+\[
+  \operatorname{Hom}_S(T_1,T_2)\longrightarrow
+  \operatorname{Hom}_{S'}(T'_1,T'_2)
+\]
+이 전단사라는 쉽게 직접 확인되는 사실과, $S'=(S,\mathcal O_S/\mathcal J)$인
+경우에 앞의 정리가 참이라는 사실을 사용한다.
+
+\src{310}
+여기서 $\mathcal J$는 $\mathcal O_S$의 멱영 연접 아이디얼층이다
+([4], 보조정리 6). 또한 여기서 생각하는 $T$가 $S$ 위에서 유한이라고는
+가정하지 않음에 유의하자. 특히 이 결과로부터 사상
+$S'\longrightarrow S$가 $S'$의 기본군 $[\,]$에서 $S$의 기본군으로 가는
+동형을 유도함을 얻는다(``\emph{준스킴 기본군의 위상적 불변성}'').
+
+\subsection*{4. 1차 코호몰로지와의 관계}
+\addcontentsline{toc}{subsection}{4. 1차 코호몰로지와의 관계}
+
+\medskip\noindent
+a. 두 대상의 곱이 언제나 존재하는 범주를 $\mathcal C$라 하고
+$T\in\mathcal C$라 하자. 공집합이 아닌 모든 유한집합 $I$에 대하여
+$T^I$를 생각할 수 있다. $I$를 움직이면 공집합이 아닌 유한집합들의
+범주에서 $\mathcal C$로 가는 공변 함자를 얻는다. 즉 $\mathcal C$의
+\emph{단체 대상}이라 부를 수 있는 것을 얻으며, 이를 $K_T$로 나타낸다.
+이는 $T$에 공변적으로 의존한다. 또한 $u,v$가 $T\longrightarrow T'$인 두
+사상이면 이에 대응하는 사상들 $K_T\longrightarrow K_{T'}$은 서로
+호모토픽이다. $\operatorname{Hom}(T,T')\ne\varnothing$일 때 $T$가 $T'$을
+\emph{지배한다}고 하자. 이는 $\mathcal C$에서 상향 여과적인 준순서
+관계이다. 앞에서 $T$가 $T'$을 지배하면 단체 대상의 사상
+$K_T\longrightarrow K_{T'}$들의 표준적인 호모토피류가 존재함을 얻는다.
+특히 $K_T$와 $K_{T'}$이 각각 서로를 지배하면 $K_T$와 $K_{T'}$은
+호모토피 동치이다. 이제 $F$를 $\mathcal C$에서 아벨 범주
+$\mathcal C'$로 가는 함자(구체적으로 반변 함자라 하자)라고 하면
+\[
+  C^*(T,F)=F(K_T)
+\]
+는 $\mathcal C'$의 코심플리시얼 대상이고, 따라서 잘 알려진 방식으로
+$\mathcal C'$ 안의 (공사슬) 복합체를 정의한다. 그 코호몰로지는
+\[
+  H^*(T,F)=H^*(C^*(T,F))=H^*(F(K_T))
+\]
+이다(혼동의 염려가 있으면 $H^*$에 $\mathcal C$를 아래첨자로 붙일 수
+있다). 이는 $F$에 관한 코호몰로지 함자이며, $T$를 움직일 때의 공변성은
+$K_T$에 관하여 말한 것으로부터 따른다. 더 정확히 말해 $F$를 고정하고
+$T$를 $\mathcal C$에서 움직이면(지배 관계로 준순서를 주었을 때)
+$H^*(T,F)$들은 $\mathcal C'$의 등급 대상들의 귀납계를 이룬다. 특히
+$T,T'$이 각각 서로를 지배하면 $H^*(T,F)$와 $H^*(T',F)$는 표준적으로
+동형이다.
+
+$\mathcal C$에 섬유곱이 존재한다고 하자. 그러면 고정된
+$S\in\mathcal C$에 대하여 위의 것을 $S$ 위의 $\mathcal C$의 대상들의
+범주 $\mathcal C_S$에 적용할 수 있다. $\mathcal C_S$에서 생각함을
+명시하려면 $C^*(T,F)$와 $H^*(T,F)$ 대신 $C^*(T/S,F)$와
+$H^*(T/S,F)$라고 쓴다. 따라서
+
+\src{311}
+$C^*(T/S,F)$는 $\mathcal C'$ 안의 공사슬 복합체이고, 그 $n$차 항은
+\[
+  F(T\times_ST\times_S\cdots\times_ST)
+\]
+이다(괄호 안에는 $n+1$개의 인자가 있다).
+
+통상과 같이 $\mathcal C'$이 아벨 범주라고 가정하지 않고도
+$H^0(T/S,F)$를 정의할 수 있음에 유의하자. 이것은 두 사영
+$p_1,p_2:T\times_ST\rightrightarrows T$에 대응하는 두 사상
+$F(p_i)$ ($i=1,2$)
+\[
+  F(T)\rightrightarrows F(T\times_ST)
+\]
+의 핵(정의 2.1)이 존재할 때 그 핵이다. 특히 자연스러운 사상(\emph{증대}
+사상이라 한다)
+\[
+  F(S)\longrightarrow H^0(T/S,F)
+\]
+이 있으며, 이는 좋은 경우(특히 $T\longrightarrow S$가 엄밀
+에피사상이고 $F$가 ``왼쪽 완전''일 때) 동형이다. 마찬가지로 $F$가 어떤
+범주 $\mathcal C''$ 안의 군들의 범주에 값을 가지면 $H^1(T/S,F)$도 정의할
+수 있다. $\mathcal C''$이 집합들의 범주인 경우(즉 $F$가 반드시 가환일
+필요는 없는 보통 군들의 범주에 값을 갖는 경우), $H^1(T/S,F)$는
+$C^1(T/S,F)=F(T\times_ST)$의 원소 $g$ 가운데
+\[
+  F(p_{31})(g)=F(p_{32})(g)\,F(p_{21})(g)
+\]
+을 만족하는 것들로 이루어진 부분군 $Z^1(T/S,F)$을 작용자군 $F(T)$으로
+나눈 몫이다. 여기서 $F(T)$는 $C^1(T/S,F)$에, 특히 부분집합
+$Z^1(T/S,F)$에 다음과 같이 작용한다.
+\[
+  \rho(g')\cdot g=F(p_2)(g')\,g\,F(p_1)(g')^{-1}.
+\]
+
+\medskip\noindent
+b. 예를 들어 $\mathcal F$를 $\mathcal C$를 밑으로 하는 섬유화된 범주라
+하자. $\xi,\eta\in\mathcal F_S$라 하고, $S$ 위의 모든 $S'$에 대하여
+\[
+  F_{\xi,\eta}(S')=
+  \operatorname{Hom}(\xi\times_SS',\eta\times_SS')
+\]
+라 하자. 그러면 $F_{\xi,\eta}$는 $\mathcal C_S$에서 집합들의 범주로
+가는 반변 함자이다. 이때 \emph{모든 두 원소
+$\xi,\eta\in\mathcal F_S$에 대하여 증대사상}
+\[
+  F_{\xi,\eta}(S)\longrightarrow H^0(S'/S,F_{\xi,\eta})
+\]
+\emph{이 동형이라는 것은 $\alpha:S'\longrightarrow S$가
+$\mathcal F$-강하 사상이라는 뜻이다}(정의 1.7).
+
+\medskip\noindent
+c. 마찬가지로 $\xi\in\mathcal F_S$와 $S$ 위의 $\mathcal C$의 모든 대상
+$S'$에 대하여
+\[
+  G_\xi(S')=\operatorname{Aut}(\xi\times_SS')
+\]
+라 두자. 이로써 $\mathcal C_S$에서 군들의 범주로 가는 반변 함자
+$G_\xi$를 정의했다.
+
+\src{312}
+그러면 $Z^1(S'/S,G_\xi)$는 \emph{$S'\longrightarrow S$에 관하여
+$\xi'=\xi\times_SS'$ 위에 주어진 강하 자료들의 집합과 표준적으로
+동일시}되고(정의 1.6), $H^1(S'/S,G_\xi)$는 \emph{$\alpha:S'\longrightarrow S$에
+관한 강하 자료를 갖춘 $\mathcal F_{S'}$의 대상 가운데,
+$\mathcal F_{S'}$의 대상으로서는 $\xi'=\xi\times_SS'$와 동형인 것들의
+동형류 집합과 동일시}된다. 따라서 $\alpha:S'\longrightarrow S$가
+$\mathcal F$-강하 사상이면 ((b) 참조), $H^1(S'/S,G_\xi)$는
+\emph{$\eta\times_SS'$이 $\mathcal F_{S'}$에서 $\xi\times_SS'$와 동형인
+$\mathcal F_S$의 대상 $\eta$들의 동형류 집합을 부분집합으로 포함한다.
+그리고 이 포함이 항등일 필요충분조건은 $\alpha:S'\longrightarrow S$에
+관하여 $\xi'=\xi\times_SS'$ 위에 주어진 모든 강하 자료가 유효한 것이다}.
+(특히 $\alpha:S'\longrightarrow S$가 엄밀한 $\mathcal F$-강하 사상이면
+그러하다.)
+
+\result{비고}{} $C^*(T/S,F)$ 꼴의 공사슬 복합체들은 잘 알려진 표준
+복합체들 대부분(체흐 코호몰로지, 군 코호몰로지 등)을 특수한 경우로
+포함하며, 대수기하학에서, 특히 준스킴의 ``베유 코호몰로지''에서 중요한
+역할을 한다.
+
+\medskip\noindent
+d. \result{예}{1} $S\in\mathcal C$ 위의 대상을 $S'$이라 하고,
+$\Gamma$를 $S'$의 자기동형들의 군으로서, $S'$이 ``군 $\Gamma$에 관하여
+$S$ 위에서 형식적으로 주동차적''이라고 하자. 즉 자연스러운 사상
+\[
+  \Gamma\times S'\longrightarrow S'\times_SS'
+\]
+이 동형이라고 하자. 여기서 $\Gamma\times S'$은 $S'$의 $\Gamma$개
+복사본의 직합을 뜻한다. (여기서 관여하는 직합들이 $\mathcal C$에
+존재한다고 가정한다.) $F$를 $\mathcal C$에서 아벨군들의 범주로 가는
+반변 함자라 하자. 그러면 $C^*(S'/S,F)$는 표준 동차 공사슬들의 단체군
+$C^*(\Gamma,F(S'))$과 표준적으로 동형이고, 따라서 $H^*(S'/S,F)$는
+$H^*(\Gamma,F(S'))$과 표준적으로 동형이다.
+
+\medskip\noindent
+e. \result{예}{2} $\mathcal C$를 준스킴들의 범주라 하자. $G_a$(``가법군'')로
+다음과 같이 정의되는, $\mathcal C$에서 아벨군들의 범주로 가는 반변 함자를
+나타낸다.
+\[
+  G_a(X)=H^0(X,\mathcal O_X).
+\]
+마찬가지로 $G_m$(``곱셈군'')을
+\[
+  G_m(X)=H^0(X,\mathcal O_X)^*
+\]
+로 정의한다(환 $H^0(X,\mathcal O_X)$의 가역원들의 군). 더 일반적으로
+$\operatorname{Gl}(n)$(``$n$차 일반선형군'')을 다음과 같이 정의한다.
+
+\src{313}
+\[
+  \operatorname{Gl}(n)(X)=
+  \operatorname{Gl}\bigl(n,H^0(X,\mathcal O_X)\bigr),
+\]
+이며, 이는 $\mathcal C$에서 군의 범주로 가는 함자이다($n>1$이면
+반드시 가환일 필요는 없고, $n=1$이면 $G_m$을 다시 얻는다). 한편
+$\operatorname{Gl}(n)$은 자기동형사상 함자로도 해석할 수 있다((c) 참조).
+실제로 $\mathcal C$를 밑으로 하는 섬유화 범주 $\mathcal F$를, 각
+$X\in\mathcal C$에 대하여 $\mathcal F_X$가 $X$ 위의 국소 자유층들의
+범주가 되도록 잡으면
+\[
+  \operatorname{Gl}(n)(X)=
+  \operatorname{Aut}_{\mathcal F_X}(\mathcal O_X^n)
+\]
+이다.
+(b)에 따르면, $\alpha:S'\longrightarrow S$가 $\mathcal F$-강하 사상이면
+(2.c절 참조), $H^1(S'/S,\operatorname{Gl}(n))$은 $S'$ 위에서의 역상이
+$\mathcal O_{S'}^n$과 동형인 $S$ 위의 국소 자유층들의 동형류의 집합을
+포함한다. 이 포함이 등식일 필요충분조건은
+$\mathcal O_{S'}^n$ 위의 모든 강하 자료($\alpha:S'\longrightarrow S$에
+관한)가 유효한 것이다. $S$가 국소환의 스펙트럼이면 $S$ 위의 모든
+국소 자유층이 자명하므로, 이는
+$H^1(S'/S,\operatorname{Gl}(n))=(e)$라는 뜻이다.
+
+사상 $\alpha:S'\longrightarrow S$에 대한 다음 조건들은 서로 동치이다.
+\begin{enumerate}
+\item[(i)] 증대 준동형
+\[
+  H^0(S,\mathcal O_S)=G_a(S)\longrightarrow H^0(S'/S,G_a)
+\]
+은 동형사상이다.
+\item[(ii)] $S'\longrightarrow S$는 $\mathcal F$-강하 사상이다
+($\mathcal F$는 위에서 살펴본, $\mathcal C$를 밑으로 하는 섬유화
+범주이다).
+\end{enumerate}
+$S'\longrightarrow S$가 유한 사상이면 이 조건들은 다음 조건과도
+동치이다.
+\begin{enumerate}
+\item[(iii)] $S'\longrightarrow S$는 엄밀 에피사상이다(2.c절 참조).
+\end{enumerate}
+
+이제 $S=\operatorname{Spec}(A)$,
+$S'=\operatorname{Spec}(A')$라고 하자. 그러면
+\[
+  C^n(S'/S,G_a)=C^n(A'/A,G_a)=\bigotimes_A^{n+1}A'
+\]
+이고, 공경계 연산자
+$C^n(A'/A,G_a)\longrightarrow C^{n+1}(A'/A,G_a)$는 면 연산자
+\[
+  \partial_i(x_0\otimes x_1\otimes\cdots\otimes x_n)
+  =x_0\otimes\cdots\otimes x_{i-1}\otimes1_{A'}\otimes
+   x_i\otimes\cdots\otimes x_n
+\]
+들의 교대합이다. 마찬가지로
+\[
+  C^n(S'/S,G_m)=C^n(A'/A,G_m)
+  \simeq\left(\bigotimes_A^{n+1}A'\right)^*
+\]
+이고, $C^*(A'/A,G_m)$의 단체 연산들은
+$C^*(S'/S,G_a)$의 단체 연산들로부터 유도된다.
+\linebreak $C^*(A'/A,\operatorname{Gl}(n))$의 단체 연산들도 같은 방식으로
+구체적으로 적을 수 있다. \emph{강연자가 아는 모든 경우에는}
+\[
+  H^i(A'/A,G_a)=0\qquad\text{($i>0$)}
+\]
+\emph{이고, $A$가 국소환이면}
+\[
+  H^1(A'/A,G_m)=0
+  \quad\text{이고 더 일반적으로}\quad
+  H^1(A'/A,\operatorname{Gl}(n))=(e)
+\]
+이다($S'\longrightarrow S$가 $\mathcal F$-강하 사상인 경우, 즉
+$A\longrightarrow A'\rightrightarrows A'\otimes_AA'$가 완전 도식인
+경우이며, 2.c절과 비교하라). 또한 \emph{힐베르트의 “정리 90”은 바로
+관계식}
+\src{314}
+\[
+  H^1(S'/S,G_m)=0
+\]
+\emph{이다. 여기서 $A$는 체이고 $A'$은 그 체의 유한 갈루아 확대체이다
+(예 1 참조). 이는 위의 경우에 $S'\longrightarrow S$가 계수 1인
+국소 자유층들의 섬유화 범주에 대한 엄밀 강하 사상이라고 말하는 것으로도
+표현할 수 있다.} 바로 이 마지막 형태로 힐베르트의 정리를 일반화해야 하며,
+그때에는 $S'\longrightarrow S$라는 사상에 대한 가정과 고려하는
+준연접층에 대한 가정을 모두 바꾸어야 한다.
+
+마지막으로, $A$가 극대 아이디얼 $\mathfrak m$을 갖는 아르틴 국소환이고
+$A'$이 $A$-대수일 때 다음 성질들은 서로 동치이다(모든 정수 $k>0$에
+대하여 $A_k$와 $A'_k$는 각각
+$A/\mathfrak m^{k+1}$과 $A'/\mathfrak m^{k+1}A'$을 나타낸다).
+\begin{enumerate}
+\item[(i)] 모든 $k$에 대하여 $H^1(A'_k/A_k,G_a)=0$이다.
+\item[(ii)] 모든 $k$에 대하여 $H^1(A'_k/A_k,G_m)=0$이다.
+\item[(iii)] 모든 $k$와 모든 $n$에 대하여
+$H^1(A'_k/A_k,\operatorname{Gl}(n))=(e)$이다.
+\end{enumerate}
+$S'\longrightarrow S$가 엄밀 에피사상이면, 앞의 조건들은 더 나아가 이
+사상이 $A'$ 위의 자유 가군들(유한 생성이든 아니든)에 대한 엄밀 강하
+사상임을 함의한다.
+
+\result{주의}{} $S,S'$가 각각 체 $A,A'$의 스킴인 경우의 군
+$H^i(S'/S,G_m)$의 정의는 아미츠르에게서 비롯되었다. 군
+$H^2(S'/S,G_m)$은 브라우어 군의 “전역적” 변형으로서 특히 흥미롭고,
+이 변형에 관해서는 [1] 제VII장을 참조할 수 있다.
+
+\fsection{B}{충실 평탄 사상에 의한 강하}
+
+\subsection*{1. 강하 정리들의 진술}
+\addcontentsline{toc}{subsection}{1. 강하 정리들의 진술}
+
+\result{정의}{1.1} 준스킴의 사상
+$\alpha:S'\longrightarrow S$가 \emph{평탄}하다는 것은 모든
+$x'\in S'$에 대하여 $\mathcal O_{x'}$가
+$\mathcal O_{\alpha(x')}$-환 위의 평탄 가군이라는 뜻이다(즉
+$\mathcal O_{x'}\otimes_{\mathcal O_{\alpha(x')}}M$이
+$\mathcal O_{\alpha(x')}$-가군 $M$에 관한 완전 함자라는 뜻이다).
+사상이 \emph{충실 평탄}하다는 것은 그것이 평탄하고 전사라는 뜻이다.
+
+예를 들어 $S=\operatorname{Spec}(A)$,
+$S'=\operatorname{Spec}(A')$이면, $S'$가 $S$ 위에서 평탄일
+필요충분조건은 $A'$이 평탄 $A$-가군인 것이고, $S'$가 $S$ 위에서
+충실 평탄일 필요충분조건은 $A'$이 충실 평탄 $A$-가군인 것이다(즉
+$A'\otimes_A M$이 $A$-가군 $M$에 관한 완전하고 충실한 함자인 것이다).
+이는 세르 [5]의 용어로 쌍 $(A,A')$가 평탄하다는 뜻이기도 하다.
+$S'$가 $S$ 위에서 충실 평탄이면 $S$ 위의 준연접층에 대한 역상 함자는
+완전하고 충실하다. 다시 말해, $S$ 위의 층들의 준동형들로 이루어진 열이
+
+\src{315}
+준연접층들의 열일 때, 그 열이 완전일 필요충분조건은 $S'$ 위에서 그
+역상이 완전인 것이다
+(특히 $S$ 위의 준연접층들의 준동형이 단사사상, 각각 에피사상, 각각
+동형사상일 필요충분조건은 $S'$ 위에서 그 역상이 그러한 것이다). 이
+성질은 $S$의 임의의 열린집합 위로 제한해도 성립하며, 이 형태로
+충실 평탄 사상을 특징짓는다.
+
+\result{정의}{1.2} 사상 $\alpha:S'\longrightarrow S$가
+\emph{준콤팩트}하다는 것은 $S$의 모든 준콤팩트 열린 부분집합 $U$의
+역상이 준콤팩트하다는 뜻이다(즉 유한개의 아핀 열린집합의 합집합이라는
+뜻이다).
+
+이 성질은 $S$의 아핀 열린집합들에 대해서만 확인하면 충분함이 자명하다.
+예를 들어 아핀 사상(즉 아핀 열린집합의 역상이 아핀이 되는 사상)은
+준콤팩트하다.
+
+평탄 사상, 각각 충실 평탄 사상, 각각 준콤팩트 사상의 부류는 합성 및
+“밑준스킴의 확장”에 대하여 안정하고, 물론 동형사상들을 포함한다.
+
+\result{정리}{1} $\alpha:S'\longrightarrow S$를 충실 평탄이고
+준콤팩트인 준스킴의 사상이라 하자. 그러면 $\alpha$는 준연접층들의
+섬유화 범주 $\mathcal F$에 대한 \emph{엄밀 강하 사상}이다
+(A, 정의 1.7 및 A, 1절, 예 2).
+
+이 진술은 두 가지를 뜻한다.
+\begin{enumerate}
+\item[(i)] $F,G$가 $S$ 위의 두 준연접층이고 $F',G'$이 $S'$ 위에서의
+각각의 역상이면, 자연스러운 준동형
+\[
+  \operatorname{Hom}(F,G)\longrightarrow\operatorname{Hom}(F',G')
+\]
+은 왼쪽 항에서 오른쪽 항의 다음 부분군으로 가는 전단사이다. 이 부분군은
+이 층들 위의 표준 강하 자료와 양립하는 준동형
+$F'\longrightarrow G'$들, 즉 $S''=S'\times_SS'$에서 $S'$로 가는 두
+사영에 의한 역상들이 같은 준동형 $F''\longrightarrow G''$을 주는
+준동형들로 이루어진다.
+\item[(ii)] $S'$ 위의 준연접층 $F'$에 사상
+$\alpha:S'\longrightarrow S$에 관한 강하 자료가 주어지면
+(A, 정의 1.6), $F'$은 그 강하 자료까지 포함하여 $S$ 위의 어떤
+준연접층 $F$의 역상과 동형이다.
+\end{enumerate}
+(i)에서 $F=\mathcal O_S$로 두면 다음을 얻는다.
+
+\result{따름정리}{1} $G$를 $S$ 위의 준연접층이라 하고, $G'$과 $G''$을
+각각 $S'$과 $S''=S'\times_SS'$ 위에서의 역상이라 하며, $p_1,p_2$를
+$S''$에서 $S'$로 가는 두 사영이라 하자. 그러면 다음 집합 사상들의
+도식
+
+\src{316}
+\[
+  \Gamma(G)\xrightarrow{\alpha^*}\Gamma(G')
+  \underset{p_2^*}{\overset{p_1^*}{\rightrightarrows}}\Gamma(G'')
+\]
+은 완전이다(A, 정의 1.(a)).
+
+한편 (i), (ii)와 정의 1.1을 함께 적용하면 다음을 얻는다.
+
+\result{따름정리}{2} $G$를 따름정리 1에서와 같이 잡자. 그러면 $G$의
+준연접 부분층들과, 두 사영 $p_1,p_2$에 의한 $S''$ 위의 역상들이
+$G''$의 같은 부분층을 주는 $G'$의 준연접 부분층들 사이에는
+일대일 대응이 있다.
+
+물론 몫층의 용어로도 이와 동치인 진술이 성립한다. 앞에서 본 바와 같이
+(A, 4절, (e)), 정리 1은 힐베르트의 “정리 90”의 일반화로 보아야 하며,
+1차 코호몰로지로 표현되는 여러 진술을 특수한 경우로 포함한다. 증명을
+위해서는 $S=\operatorname{Spec}(A)$,
+$S'=\operatorname{Spec}(A')$인 경우로 쉽게 환원된다. (i)에 대해서는
+다시 따름정리 1, 즉 모든 $A$-가군 $M$에 대하여 도식
+\[
+  M=A\otimes_A M\longrightarrow A'\otimes_A M
+  \rightrightarrows A'\otimes_AA'\otimes_A M
+\]
+이 완전임을 증명하는 것으로 쉽게 환원된다. 이는 다음의 더 일반적인
+보조정리에서 따른다.
+
+\result{보조정리}{1.1} $A'$을 충실 평탄 $A$-대수라 하자. 그러면 모든
+$A$-가군 $M$에 대하여 $M$로 증대된 복합체
+$C^*(A'/A,G_a)\otimes_A M$(A, 4절, (e) 참조)는 $M$의
+\emph{분해}이다.
+
+앞의 복합체에 $A$에서 $A'$로 스칼라를 확장하여 얻은 증대 복합체가
+같은 결론을 만족함을 보이면 충분하다. 이는 $A$를 $A'$으로, $A'$을
+$A'\otimes_AA'$으로 바꾸었을 때의 진술을 확인하는 일이므로,
+$A$-대수의 준동형 $A'\longrightarrow A$가 존재하는 경우(기하학적
+용어로는 $S'$이 $S$ 위에서 단면을 갖는 경우)로 환원된다. 이 경우의
+주장은 A, 4절, (a)의 일반론에서 따른다. 그 과정에서 갈루아
+코호몰로지의 잘 알려진 진술을 일반화하는 다음 따름정리를 함께 적어 둔다
+(A, 4절, (e)와 비교하라).
+
+\result{따름정리}{} $A'$이 $A$ 위에서 충실 평탄이면
+$H^0(A'/A,G_a)=A$이고
+\[
+  H^i(A'/A,G_a)=0\qquad\text{($i\geq1$)}
+\]
+이다.
+
+정리 1의 (ii)를 증명할 때에도 (i)에서와 같이 진행하여, $S'$이 $S$
+위에서 단면을 갖는 경우로 환원한다. 그 경우에는 (i)에서 결론이 따른다
+(A, 1절, (c) 참조).
+
+고려하는 준연접층(또는 층들의 계)에 여러 추가 구조를 도입함으로써
+정리 1과 그 따름정리들을 여러 방식으로 자유롭게 변형할 수 있음은
+자명하다. 예를 들어 $S$ 위에서 하나의 층을 주는 것은
+\src{317}
+가환 대수의 준연접층을 주는 것은 $S'$ 위에서 그러한 층과
+$\alpha:S'\longrightarrow S$에 관한 하강 자료를 함께 주는 것과
+“동치”이다. $S$ 위의 그러한 준연접층과 $S$ 위에서 아핀인
+준스킴 사이의 함자적 대응을 고려하면, 다음 정리의 두 번째 명제를
+얻는다.
+
+\result{정리}{2} $\alpha:S'\longrightarrow S$가 정리 1에서와 같다고
+하자. 그러면 $\alpha$는 (일반적으로 엄밀하지는 않은)
+\emph{하강 사상}이고(A, 정의 2.4), 준스킴 위에서 아핀인 스킴들의
+섬유화 범주에 대해서는 \emph{엄밀 하강 사상}이다(A, 정의 1.7).
+
+정리의 첫 번째 명제는 다음을 뜻한다. $X,Y$를 $S$ 위의 두 준스킴,
+$X',Y'$을 $S'$ 위에서의 그 역상, $X'',Y''$을
+$S''=S'\times_SS'$ 위에서의 그 역상이라 하자. 그러면 자연스러운
+사상들의 다음 그림은
+\[
+  \operatorname{Hom}_S(X,Y)\xrightarrow{\alpha^*}
+  \operatorname{Hom}_{S'}(X',Y')
+  \underset{p_2^*}{\overset{p_1^*}{\rightrightarrows}}
+  \operatorname{Hom}_{S''}(X'',Y'')
+\]
+완전하다. 즉 $\alpha^*$는 $\operatorname{Hom}_S(X,Y)$에서
+$X',Y'$ 위의 표준 하강 자료와 양립하는 사상들(다시 말해 $S''$에서
+$S'$로 가는 두 사영에 의한 그 역상들이 서로 같은 사상들)로 이루어진
+$\operatorname{Hom}_{S'}(X',Y')$의 부분집합으로 가는 전단사이다.
+$Y$를 $S$ 위에서 아핀인 경우로 한정하면 이는 정리 1의 따름정리 1에서
+쉽게 따른다. 일반적인 경우에는 정리 1을 다음 결과와 함께 써야 한다.
+
+\result{보조정리}{1.2} $\alpha:S'\longrightarrow S$를 충실 평탄이고
+준콤팩트인 사상이라 하자. 그러면 $S$는 $S'$의 \emph{몫 위상공간}과
+동일시된다. 즉 $\alpha^{-1}(U)$가 열리도록 하는 $S$의 모든 부분집합
+$U$는 열린집합이다.
+
+정리 2를 완결하려면 $S'$-준스킴 $X'$ 위의 하강 자료에 대한 유효성
+판정법을 주어야 한다($X'$이 $S'$ 위에서 아핀이라고 가정하지 않는
+경우이다). 먼저 \emph{그러한 하강 자료가 반드시 유효한 것은
+아니다}. 이는 $S$가 체 $k$의 스펙트럼이고, $S'$이 그 이차 확대체
+$k'$의 스펙트럼이며, $X'$이 $S'$ 위의 2차원 고유 대수적 스킴인
+경우에도 마찬가지이다(세르를 따라 나가타의 비사영 곡면을 이용하면
+이를 알 수 있다). 충실 평탄이고 준콤팩트인
+$\alpha:S'\longrightarrow S$에 관한 $X'/S'$ 위의 하강 자료가
+유효하기 위한 필요충분조건은 $X'$이 $S'$ 위에서 아핀이고 $X'$의
+하강 자료에 관하여 “안정”인 열린집합 $X'_i$들의 합집합인
+것이다. $\alpha:S'\longrightarrow S$가 \emph{라디시엘}인 경우,
+즉 단사이고 잉여체 확대들이
+
+\src{318}
+순수 비분리인 경우에는 $X'/S'$와 $X'$ 위의 하강 자료가 무엇이든
+이 조건이 성립한다. 또한 $\alpha:S'\longrightarrow S$가
+\emph{유한}이고, $S$ 위의 $X'$의 한 섬유에 들어 있는 $X'$의 모든
+유한 부분집합이 $S$ 위에서 아핀인 $X'$의 한 열린집합에 들어 있으면
+여전히 이 조건이 성립함을 보일 수 있다(이것이 \emph{베유 판정법}이다).
+특히 $X'/S'$이 준사영이면 이 조건이 성립하며, 이 경우 “하강된”
+준스킴 $X/S$도 준사영임을 보일 수 있다($X'/S'$이 사영이면 $X/S$도
+사영이다). 요약하면 다음과 같다.
+
+\result{정리}{3} $\alpha:S'\longrightarrow S$를 준스킴의 충실 평탄
+준콤팩트 사상이라 하자. $\alpha$가 \emph{라디시엘}이면 이는
+\emph{엄밀 하강 사상}이다. $\alpha$가 유한이면, 준스킴 위의 준사영
+(또는 사영) 준스킴들로 이루어진 섬유화 범주에 관하여 엄밀 하강
+사상이다.
+
+\result{비고}{} 위의 두 번째 명제에서 $\alpha$가 \emph{유한} 사상이라는
+가정이 정말 필요한지는 알지 못한다. 어쨌든 “형식적으로” 확인하면,
+이를 겉보기에는 더 약한 다음 가정으로 바꿀 수 있다. \emph{$S$의 모든
+점에 대하여 열린 근방 $U$, $U$ 위에서 유한이고 충실 평탄인 $U'$,
+그리고 $U'$에서 $S'$으로 가는 $S$-사상이 존재한다.} 앞의 경우에
+들어맞지 않는 전형적인 예는
+$S=\operatorname{Spec}(A)$,
+$S'=\operatorname{Spec}(\widehat A)$이고, $A$가 뇌터 국소환이며
+$\widehat A$가 그 완비화인 경우이다. 또 다른 예는 $S'$이 $S$ 위에서
+준유한이지만(즉 국소적으로 어떤 유한 $S$-스킴의 열린집합과
+동형이지만) 유한이지는 않은 경우이다. 이 두 경우에 발표자는 다음
+질문의 답도 알지 못한다. $X$가 $S$-스킴이고
+$X'=X\times_SS'$이 $S'$ 위에서 사영이면, $X$도 $S$ 위에서
+사영인가?\footnote{1962년의 정오표는 부정적인 답을 준다.
+준유한이고 에탈이며 전사인 사상 $S'\longrightarrow S$, 또는
+$\operatorname{Spec}(\widehat A)\longrightarrow\operatorname{Spec}(A)$
+꼴의 사상은 언제나 엄밀 하강 사상인 것은 아니다. 이는 $A$가
+대수적으로 닫힌 체 $k$ 위의 대수곡선의 국소환이고
+$S=\operatorname{Spec}(A)$인 경우에도 마찬가지이다. 따라서
+$X$를 밑이 $S$이고 타원곡선 $E$를 구조군으로 하는 주다발로 만드는 고유하고
+매끄러운 사상 $f:X\longrightarrow S$로서,
+$f':X'\longrightarrow S'$은 사영이지만 $f$는 사영이 아닌 것을
+찾을 수 있다. 그러므로 이는 아벨 스킴을 구조군으로 하는 등상적이지
+않은 동차 주다발의 예이기도 하다.}
+
+\subsection*{2. 일부 사상 성질의 하강에 대한 응용}
+\addcontentsline{toc}{subsection}{2. 일부 사상 성질의 하강에 대한 응용}
+
+$P$를 준스킴 사상들의 한 부류라 하자.
+$\alpha:S'\longrightarrow S$를 준스킴의 사상,
+$f:X\longrightarrow Y$를 $S$-준스킴의 사상이라 하고,
+$f':X'\longrightarrow Y'$을 $\alpha$에 의한 $f$의 역상이라 하자.
+그러면 “$f'\in P$”가 “$f\in P$”를 함의하는지 물을 수 있다.
+$\alpha$가 \emph{충실 평탄이고 준콤팩트}라고 가정하면 많은 중요한
+경우에 답이 긍정적임을 알 수 있다(뒤의 가정은 때로 불필요하다).
+$P$가 전사 사상, 라디시엘 사상(이 두 경우는 $\alpha$의 전사성에서
+따른다), 평탄 사상, 충실 평탄 사상, 매끄러운 사상(이 세 경우는
+$\alpha$의 충실 평탄성에서 따른다), 또는 유한형 사상의 부류인
+경우에는 이를 어려움 없이 직접 알 수 있다. 정리 1, 정리 2와
+보조정리 1.2를 이용하면, $P$가 다음 부류 가운데 하나인 경우에도
+마찬가지임을 알 수 있다. 즉 동형사상, 열린 몰입 사상, 닫힌 몰입
+사상, 몰입 사상($f$가 유한형이고 $Y$가 국소 뇌터인 경우), 아핀
+사상, 유한 사상, 준유한 사상, 열린 사상, 닫힌 사상, 위상동형사상,
+분리 사상,
+
+\src{319}
+고유 사상의 부류이다. 해명되지 않은 유일한 중요한 경우는
+제1절의 비고에서 이미 지적한 사영 사상과 준사영 사상의 경우이다.
+
+\subsection*{3. 유한 충실 평탄 사상에 의한 하강}
+\addcontentsline{toc}{subsection}{3. 유한 충실 평탄 사상에 의한 하강}
+
+$\alpha:S'\longrightarrow S$를 유한 사상이라 하자. 이는 $S$ 위의
+대수의 층 $\mathcal A'$에 대응하며, $\mathcal A'$은 가군의 층으로서
+유한 계수로 국소 자유이고 모든 점에서 $0$이 아니다. 그러면
+$\alpha$는 충실 평탄이고 준콤팩트인 사상이므로 앞의 결과들을 적용할
+수 있다. $S'$ 위의 준연접층 $F'$을 주는 것은 $S$ 위의 준연접층
+$\alpha_*(F')$과 그 $\mathcal A'$-가군 구조를 주는 것과 동치이다
+($\mathcal A'=\alpha_*(\mathcal O_{S'})$임에 유의하자). 간단히 하기
+위해 $S$ 위의 이 층도 $F'$으로 나타내겠다. $S'\times_SS'$ 위의
+$F'$의 두 역상 $p_i^*(F')$도 마찬가지로 다음
+$(\mathcal A'\otimes_{\mathcal O_S}\mathcal A')$-가군의 준연접층들에
+대응한다.
+\[
+  F'\otimes_{\mathcal O_S}\mathcal A'
+  \quad\text{및}\quad
+  \mathcal A'\otimes_{\mathcal O_S}F'.
+\]
+첫 번째 것에서 두 번째 것으로 가는
+$(S'\times_SS')$-준동형을 주는 것은
+$(\mathcal A'\otimes_{\mathcal O_S}\mathcal A')$-가군의 준동형을
+주는 것과 동치이다. 또한 $\mathcal A'$이 국소 자유라는 점을
+고려하면, 이는 다음 $(\mathcal A'\otimes\mathcal A')$-가군의
+준동형을 주는 것과 동치이다.
+\[
+  \mathcal U=
+  \operatorname{Hom}_{\mathcal O_S}(\mathcal A',\mathcal A')
+  =\mathcal A'\otimes\check{\mathcal A}'
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal O_S}(F',F').
+\]
+즉 열린집합 $V$ 위의 $\mathcal U$의 모든 단면 $\xi$마다 다음
+조건들을 만족하는 $\mathcal O_S$-가군의 준동형
+$T_\xi:F'|_V\longrightarrow F'|_V$를 주는 것과 동치이다.
+\begin{equation}
+  T_{f\xi}(x)=fT_\xi(x),
+  \qquad T_{\xi f}(x)=T_\xi(fx),
+  \tag{3.1}
+\end{equation}
+여기서 $f,x$는 각각 $V$에 들어 있는 $S$의 한 열린집합 위의
+$\mathcal A',F'$의 단면이다. 하강 자료의 조건 (i), (ii)
+(A, 제1절, (c))는 각각 다음과 같이 쓰인다.
+\begin{equation}
+  T_{1_{\mathcal U}}x=x,
+  \qquad\text{즉}\qquad
+  T_{1_{\mathcal U}}=\operatorname{id}_{F'},
+  \tag{3.2}
+\end{equation}
+\begin{equation}
+  T_{\xi\eta}=T_\xi T_\eta.
+  \tag{3.3}
+\end{equation}
+다시 말해, \emph{$F'$ 위의 하강 자료를 주는 것은
+$\mathcal O_S$-대수의 층
+$\mathcal U=\operatorname{Hom}_{\mathcal O_S}(\mathcal A',\mathcal A')$
+에서 $\mathcal O_S$-대수의 층
+$\operatorname{Hom}_{\mathcal O_S}(F',F')$로 가는, 두 선형성 조건
+(3.1)을 만족하는 표현을 주는 것과 동치이다.} $S'$ 위의 준연접층들
+사이에 짝지음
+\[
+  F'_1\times F'_2\longrightarrow F'_3
+\]
+이 주어졌다고 하자(이는 $S$ 위의 $\mathcal A'$-가군의 층들 사이의
+짝지음으로 해석할 수 있다).
+
+\src{320}
+또한 $F'_i$ 위에 다음 준동형들로 정의되는 붙이기 자료가 주어졌다고
+하자.
+\[
+  T_i:\mathcal U\longrightarrow
+  \operatorname{Hom}_{\mathcal O_S}(F'_i,F'_i)
+  \qquad (i=1,2,3).
+\]
+그러면 이 자료들이 명백한 의미에서 주어진 짝지음과 양립할
+필요충분조건은 다음 조건이 성립하는 것이다.
+
+한 열린집합 위의 $\mathcal U$의 모든 단면 $\xi$에 대하여
+\[
+  \Delta\xi=\sum_i\xi'_i\otimes_{\mathcal A'}\xi''_i
+\]
+로 쓰자. 이는 $\mathcal U\otimes_{\mathcal A'}\mathcal U$의
+단면인데($\mathcal U$는 그 왼쪽 구조에 의하여 $\mathcal A'$-가군으로
+본다), 다음 식으로 정의된다.
+\[
+  \xi\mathbin{\cdot}(fg)=\sum_i\xi'_i(f)\xi''_i(g)
+\]
+(여기서 $f,g$는 더 작은 열린집합 위의 $\mathcal A'$의 두 단면이다).
+그러면 더 작은 열린집합 위의 $F'_1,F'_2$의 단면 $x,y$의 모든
+쌍에 대하여 다음 식이 성립한다.
+\begin{equation}
+  T^{(3)}_\xi(x\mathbin{\cdot}y)
+  =\sum_iT^{(1)}_{\xi'_i}x\mathbin{\cdot}T^{(2)}_{\xi''_i}y
+  \tag{3.4}
+\end{equation}
+\footnote{인쇄본에는 “$\mathcal A'$의”라고 되어 있다.
+$T^{(1)}$과 $T^{(2)}$의 정의역 및 짝지음
+$F'_1\times F'_2\longrightarrow F'_3$에 따르면, $x,y$는 각각
+$F'_1,F'_2$의 단면이어야 한다.} (이 성질은 준동형 $T^{(i)}$들이
+주어진 짝지음에 관하여 $\mathcal U$의 대각 사상과 양립한다고
+표현할 수 있다.) 특히 식 (3.1)--(3.4)를 쓰면 $S'$ 위의 대수의
+준연접층에 대한 하강 자료를 대각 사상이 주어진 대수의 표현으로
+해석할 수 있다. 따라서 가환대수로 한정하면 아핀 $S'$-스킴에 대한
+하강 자료도 그렇게 해석할 수 있다.
+
+이로부터 임의의 $S'$-준스킴 $X'$ 위의 하강 자료에 대한 비슷한
+해석으로 넘어간다. 그러한 $X'$을 주는 것은 $S$ 위의 준스킴
+$X'$과 $\mathcal O_S$-대수의 준동형
+\[
+  \mathcal A'\longrightarrow\mathcal O_{X'}
+\]
+을 함께 주는 것과 동치이며, $X'$ 위의 하강 자료를 주는 것은
+다음 층의 준동형($h:X'\longrightarrow S'$과 양립하는 것)을
+주는 것과 동치이다.
+\[
+  \mathcal U\longrightarrow
+  \operatorname{Hom}_{h^{-1}(\mathcal O_S)}
+  (\mathcal O_{X'},\mathcal O_{X'}).
+\]
+이 준동형은 위의 조건 (3.1)--(3.4)와 비슷한 조건들을 만족한다.
+
+\textbf{예 1 (“베유”).} -- $S'/S$가 갈루아 군 $\Gamma$를 갖는
+갈루아 에탈 피복이라고 하자(A의 제3절과 제4절 d 참조). 그러면
+$S'$ 위의 준연접층 $F'$ 위의 하강 자료(각각 $S'$-준스킴 $X'$ 위의
+하강 자료)를 주는 것은 $S'$ 위의 $\Gamma$의 작용과 양립하는
+$(S',F')$(각각 $(S',X')$)의 자기동형들에 의한 $\Gamma$의 표현을
+주는 것과 동치이다. 이 결과는
+
+\src{321}
+는 “형식적”이다. 즉, 범주의 언어로 증명할 수 있다. 그러나 이 절의
+관점에서도 이 결과는 다음 결과 덕분에 완전히 알려진 $\mathcal U$의 명시적
+구조($\mathcal U$의 환 구조, 환 준동형
+$\mathcal A'\longrightarrow\mathcal U$, 그리고 대각 사상이 주어진 구조)로부터
+따라 나온다. 즉, $\mathcal U$는 왼쪽 $\mathcal A'$-가군으로서
+$\Gamma$의 원소들에 대응하는 $\mathcal U$의 단면들로 이루어진 기저를 갖는다.
+
+\textbf{예 2(“카르티에”).} -- $p$를 소수라 하고,
+$p\mathcal O_S=0$(즉, $\mathcal O_S$의 표수가 $p$이다),
+$(\mathcal A')^p\subset\mathcal O_S=\mathcal A$(즉, $S'/S$는 높이 1의
+라디시엘 사상이다)라고 가정하자. 또한 $\mathcal A$ 위의 대수층
+$\mathcal A'$가 국소적으로 $p$-기저를 갖는다고 가정하자. 즉, 단면들의
+족 $(x_i)$가 있어서 $\mathcal A'$는 $x_i$들에 의해 대수로서 생성되고,
+이들이 만족하는 관계는 $x_i^p=0$뿐이다. 지표 $i$들의 집합은 유한하며
+그 크기가 $n$이라고 가정한다. $\mathfrak g$를 $\mathcal A'$의
+$\mathcal A$-미분들의 층이라 하자. 이는 계수(階數) $n$인 국소 자유
+$\mathcal A'$-가군층이고, 더 나아가 $\mathcal A$ 위의 $p$-리 대수의
+층이지만 $\mathcal A'$ 위의 것은 아니며, 다음 조건을 만족한다.
+\begin{equation}
+  [X,fY]=X(f)Y+f[X,Y].
+  \tag{3.5}
+\end{equation}
+
+\textbf{보조정리.} -- $\mathcal U=
+\operatorname{Hom}_{\mathcal O_S}(\mathcal A',\mathcal A')$는 대수 준동형
+$\mathcal A'\longrightarrow\mathcal U$가 주어진 $\mathcal O_S$-대수로서,
+왼쪽 $\mathcal A'$-부분가군 $\mathfrak g$에 의해 생성되며 다음 관계들이
+추가로 성립한다.
+\begin{equation}
+  \left\{
+  \begin{aligned}
+    Xf-fX&=X(f),\\
+    XY-YX&=[X,Y],\\
+    X^p&=X^{(p)}.
+  \end{aligned}
+  \right.
+  \tag{3.6}
+\end{equation}
+
+앞의 보조정리에 따라 $S'$ 위의 준연접층 $F'$에 강하 자료를 주는 것은
+각 $X\in\mathfrak g$에 대하여 다음 조건들을 만족하는 $F'$의
+$\mathcal O_S$-자기준동형 $\overline X$를 주는 것과 동치이다.
+\begin{align}
+  \overline{fX}&=f\overline X, \tag{3.7}\\
+  \overline X(fx)&=X(f)x+f\overline X(x), \tag{3.8}\\
+  \overline{[X,Y]}&=[\overline X,\overline Y], \tag{3.9}\\
+  \overline{X^{(p)}}&=\overline X^p. \tag{3.10}
+\end{align}
+(이를 곡률이 없고 $p$제곱과 양립하는 $F'$ 위의 선형 접속이라고 부를 수
+있다.) $S'$-준스킴 $X'$ 위의 강하 자료라는 개념도 같은 방식으로 명시할 수
+있다. 여기서는 관계 (3.4)를 $\overline X$들이 $\mathcal O_{X'}$의
+미분이라는 조건으로 바꾼다. 사상 $S'\longrightarrow S$가 라디시엘이므로,
+정리 3에 따라 이러한 모든 강하 자료는
+
+\src{322}
+유효하며, 따라서 어떤 $S$-준스킴 $X$를 정의한다.
+
+$F'$ 또는 $X'$에 평탄성, 비특이성, 또는 어떠한 유한성 가정도 둘 필요가
+없었다는 점에 유의하자.
+
+\subsection*{4. 유리성 판정법에 대한 응용}
+\addcontentsline{toc}{subsection}{4. 유리성 판정법에 대한 응용}
+
+$X$를 $\mathcal O_X$의 $S$로의 직상이 $\mathcal O_S$인
+$S$-준스킴이라 하자. 이 성질은 밑 $S$의 임의의 평탄 확대
+$S'\longrightarrow S$에 의해서도 그대로 유지된다. $F$가 $X$ 위의
+가역층(즉, 계수(階數) 1인 국소 자유층)이면, $F$의 자기동형사상들은
+$\mathcal O_X$의 가역 단면들과 동일시되므로 $\mathcal O_S$의 가역
+단면들과 전단사 대응한다. 이제 $s$를 $S$ 위의 $X$의 단면이라 하자.
+비유적으로, $s$ 위의 $F$의 단면이란 $S$ 위의 가역층 $s^*(F)$의 단면을
+뜻한다고 하겠다. 앞의 사실에 따라 $F_i$($i=1,2$)가 $X$ 위의 두
+가역층이고 각각 $s$ 위의 단면을 갖추고 있으며 $F_1$과 $F_2$가
+동형이면, 문제의 단면들과 양립하는(즉, 첫째 단면을 둘째 단면으로 보내는)
+$F_1$에서 $F_2$로의 동형사상이 유일하게 존재한다. 한편 단면 $s$와
+무관하게, $S$의 모든 점이 다음 성질을 갖는 열린 근방 $U$를 가질 때
+$X$ 위의 두 가역층 $F_1$과 $F_2$를 동치라고 약속하자. 그 성질이란
+$F_1$과 $F_2$를 $X|U$에 제한한 층들이 동형이라는 것이다. 그러면
+$X$ 위의 모든 가역층 $F$는 $s$ 위의 지정 단면을 갖춘 가역층 $F_1$과
+동치이고($F_1=F\,s^*(F)^{-1}$로 잡는다), $F_1$은 동형까지 결정된다.
+다시 말해, $X$ 위의 가역층들을 동치까지 분류하는 것은 지정 단면을 갖춘
+가역층들을 동형까지 분류하는 것과 같다.
+
+이 성질들은 밑의 평탄 확대 $\alpha:S'\longrightarrow S$에 의해서도
+그대로 유지되므로(단면 $s$는 $\alpha$에 의한 그 역상 $s'$로 바꾼다),
+정리 1을 고려하면 다음 결론을 얻는다.
+
+\emph{$X/S$가 위와 같은 준스킴이고 단면 $s$를 갖는다고 하자.
+$\alpha:S'\longrightarrow S$를 충실 평탄 준콤팩트 사상이라 하고,
+$F'$을 $X'=X\times_SS'$ 위의 가역층이라 하자. $F'$이 $X$ 위의 어떤
+가역층 $F$의 $X'$로의 역상과 동치이기 위한 필요충분조건은
+$X'\times_XX'=X\times_S(S'\times_SS')$ 위의 두 역상
+$p_1^*(F')$와 $p_2^*(F')$가 동치인 것이다. 이 조건이 성립하면 $F$는
+동치까지 결정된다.} (이때 $F'$을 $S$ 위에서 유리적이라고 한다.)
+
+앞 절의 예 1 또는 예 2에서와 같은 $\alpha:S'\longrightarrow S$의
+경우에 이 원리를 적용하면 베유 또는 카르티에의 유리성 판정법을 얻는다.
+(이 저자들은 $S$와 $S'$가 체들의 스펙트럼인 경우만 다룬다는 점에
+유의하자. 더구나 이때 $S$는 국소환의 스펙트럼이므로, 위에서 도입한
+
+\src{323}
+동치관계는 다름 아닌 동형관계이다.) 첫째 경우에 $F'$이 $S$ 위에서
+유리적이기 위한 필요충분조건은 $\Gamma$에 의한 그 변환들이 $F'$과
+동치인 것이다. 둘째 경우의 유리성 판정법을 나타내기 위하여, 일반적으로
+$X'/X$의 대각 사상
+\[
+  X'\longrightarrow X''=X'\times_XX'
+\]
+과 이에 대응하는 $X'\times_XX'$ 위의 아이디얼층 $\mathcal I$, 그리고
+그 역상인 $X'$ 위의 $\Omega^1_{X'/X}$와 동일시되는 층
+$\mathcal I/\mathcal I^2$을 생각하자. $F''_i=p_i^*(F')$($i=1,2$)의
+대각선으로의 제한들은 동형이므로(각각 $F'$과 동형이므로), 즉
+$F''_1(F''_2)^{-1}=F''$의 대각선으로의 제한은 자명하므로, $F''$을
+$(X'',\mathcal O_{X''}/\mathcal I^2)$에 제한한 층은 동형까지 다음 군의
+잘 결정된 원소 $\xi$로 주어진다.
+\[
+  H^1(X'',\mathcal I/\mathcal I^2)
+  =H^1(X',\Omega^1_{X'/X}).
+\]
+한편 이 경우에는
+\[
+  \Omega^1_{X'/X}
+  =\Omega^1_{S'/S}\otimes_{\mathcal O_S}\mathcal O_X
+\]
+이고, 따라서 $\Omega^1_{S'/S}$가 $S$ 위에서 국소 자유이면(카르티에의
+경우처럼), $\xi$는 $S'$ 위의
+\[
+  R^1f'_*(\mathcal O_{X'})\otimes\Omega^1_{S'/S}
+\]
+의 단면을 정의한다. 이를 $X'/S$ 위의 가역층 $F'$의
+아티야--카르티에 류라고 부른다. 이 류가 영인 것은
+\[
+  (X'',\mathcal O_{X''}/\mathcal I^2)
+  =X\times_S(S'',\mathcal O_{S''}/\mathcal J^2)
+\]
+의 두 사영에 의한 $F'$의 $X'$ 위로의 역상들이 동치이기 위한
+필요충분조건이다. 여기서 $\mathcal J$는 대각 사상
+$S'\longrightarrow S'\times_SS'$가 $S''=S'\times_SS'$ 위에 정의하는
+아이디얼층이다. 따라서 이 류가 영인 것은 $X''=X\times_SS''$ 자체 위의
+$F'$의 역상들이 동치이기 위하여 명백히 필요하고, 따라서 $F'$이 $X$ 위의
+어떤 가역층 $F$의 역상과 동치이기 위하여도 필요하다. 한편
+아티야--카르티에 류는 $S'$ 위에서 국소적으로, $X'/X$의 미분들에
+상대적인 $F'$의 접속이 존재하는 데 대한 장애로도 해석할 수 있다. 더
+나아가 그러한 접속은 $S'/S$의 미분들을 $X'$로 자연스럽게 연장한 것들에
+대응하는 $F'$의 미분들을 알면 결정된다. 이 사실과 앞 절의 전개들로부터,
+그 절의 예 2의 경우이고 $X/S$가 단면을 가지면 아티야--카르티에 류가
+영이라는 것은 $F'$이 $S$ 위에서 유리적이기 위하여 충분하기도 하다는
+결론을 쉽게 얻는다.
+
+\subsection*{5. 아벨 스킴에서 기저 스킴의 제한에 대한 응용}
+\addcontentsline{toc}{subsection}{5. 아벨 스킴에서 기저 스킴의 제한}
+
+$S$를 준스킴이라 하자. $S$ 위의 아벨 스킴이란 $S$ 위에서 매끄럽고
+고유하며
+
+\src{324}
+$S$의 각 점 $x\in S$에서의 섬유가 $\kappa(x)$ 위의 아벨 다양체인
+스킴 $X$를 말한다. $S$가 뇌터이고 정칙(즉 그 국소환들이 정칙)이라고
+가정하자. 그러면 Murre의 연결성 정리 [4]를 써서(적어도 인용한 정리가
+현재 증명되어 있는 ``동표수''의 경우에는) $S$ 위의 $X$의 모든 유리
+절단이 모든 곳에서 정의됨(즉 절단임)을 보일 수 있다. 이는 Weil의
+고전적 정리를 일반화한다. 더 일반적으로, $X'$이 $S$ 위에서 매끄러운
+스킴이면 $X'$에서 $X$로 가는 모든 유리 $S$-사상이 모든 곳에서
+정의된다는 것이 따라온다. 따라서 Chow--Iang의 결과를 일반화하는 다음
+사실을 얻는다.\footnote{인쇄본에는 ``Igusa--Lang''이라고 되어 있으나,
+1962년 정오표는 ``Chow--Iang''으로 고치도록 한다.} $S$가 뇌터이고
+정칙이며, $K$가 그 유리함수환(체들의 직접곱)이라고 하자. $X$를 $K$
+위의 아벨 스킴이라 하자. $X$가 어떤 $S$ 위의 아벨 스킴 $X_0$에 대해
+$X_0\times_S\operatorname{Spec}(K)$ 꼴의 $K$-스킴과 동형이면, $X_0$는
+유일한 동형사상까지 결정된다.
+
+앞의 유일성 결과를 쓰면 $X$에서 기저를 제한하는 문제는 $S$ 위에서
+국소적임을 알 수 있다. 따라서 각 $x\in S$에 대해
+$\operatorname{Spec}(\mathcal O_x)$로 제한할 수 있음만 알면 충분하다.
+같은 방법으로, $\alpha:S'\longrightarrow S$가 유한형 매끄러운 사상이고,
+$K'$이 $S'$의 유리함수환이며, $X\otimes_KK'$이
+$X'_0\times_{S'}\operatorname{Spec}(K')$ 꼴이면, $X'_0$에는
+$\alpha$에 관한 표준 하강 데이터가 주어진다. 정리 3을 고려하면 다음이
+따라온다.
+
+\result{명제}{5.1} $S$를 유리함수체가 $K$인 기약 뇌터 정칙 준스킴이라
+하고, $K'$을 $S$ 위에서 비분기인 $K$의 유한 확대라 하며, $S'$을
+$K'$ 안에서의 $S$의 정규화라 하자(따라서 $S'$은 $S$의 에탈 피복이다).
+$X$를 $K$ 위의 아벨 스킴이라 하고, $X\otimes_KK'$이 어떤 $S'$ 위의
+사영 아벨 스킴 $X'_0$에 대해
+$X'_0\times_{S'}\operatorname{Spec}(K')$ 꼴이라고 하자. 그러면 $X$은
+어떤 $S$ 위의 사영 아벨 스킴 $X_0$에 대해
+$X_0\times_S\operatorname{Spec}(K)$ 꼴이다.
+
+\result{비고}{} 강연자는 $S'\longrightarrow S$가 전사 에탈 피복이라는
+가정(이 가정으로 정리 3을 쓸 수 있다)을 전사 유한형 매끄러운 사상이라는
+가정으로 바꿀 수 있는지(심지어 그것이 에탈 사상이라고 가정하더라도),
+또는 $X'_0$가 $S'$ 위에서 사영이라고 가정하지 않아도 이 명제가
+성립하는지 알지 못한다. 후자의 조건은 어쩌면 자동으로 성립할지도 모른다.
+
+\subsection*{6. 국소 자명성과 등자명성 판정기준에 대한 응용}
+\addcontentsline{toc}{subsection}{6. 국소 자명성과 등자명성 판정기준}
+
+$S$를 준스킴이라 하고, $G$를 $S$ 위의 ``군 준스킴'', $P$를 $G$가
+오른쪽에서 ``작용하는'' $S$ 위의 준스킴이라 하자. $G$의 $P$ 위 작용에서
+유도되는 익숙한 사상
+\[
+  G\times_SP\longrightarrow P\times_SP
+\]
+
+\src{325}
+이 동형이면 $P$가 $G$ 아래에서 \emph{형식적으로 주동차적}이라고 한다.
+이제부터 $G$가 $S$ 위에서 평탄(따라서 충실 평탄)이라고 가정하며,
+$G$ 아래의 \emph{동차 주다발}이라는 이름은 충실 평탄이고 준콤팩트인
+형식적 주동차 다발 $P$에만 쓰겠다. 이는 어떤 충실 평탄 준콤팩트 기저
+확대 $S'\longrightarrow S$가 존재하여 $G'=G\times_SS'$ 아래의 형식적
+주동차 다발
+\[
+  P'=P\times_SS'
+\]
+이 자명해지는 것, 즉 $G'$과 동형인 것(즉 절단을 갖는 것)과 동치이다.
+특히 $S'=P$로 잡을 수 있다. 또한 $S$가 국소 뇌터이면, $P$의 충실
+평탄성은 모든 $s\in S$에 대해
+\[
+  \widehat P_s=P\times_S\operatorname{Spec}(\widehat{\mathcal O}_s)
+\]
+가 $\widehat{\mathcal O}_s$ 위에서 충실 평탄하다는 조건과 동치임을
+유의하라. 여기서 $\widehat{\mathcal O}_s$는 국소환 $\mathcal O_s$의
+완비화이다. 이는 $\widehat{\mathcal O}_s$가 $\mathcal O_s$ 위에서 충실
+평탄하다는 사실에서 따라온다. 더 나아가 $P$가 국소 뇌터 $S$ 위에서
+유한형이면 위 조건을 만족하는 점 $s$들의 집합은 구성가능이다. 따라서
+$S$가 ``야콥슨 준스킴''이면(예를 들어 체 위의 유한형 스킴이거나, 더
+일반적으로 야콥슨 환의 스펙트럼이면), 문제의 조건을 $S$의 닫힌점들에서만
+확인하면 충분하다. 이로써 기저가 완비 국소환 $A$의 스펙트럼인 경우로
+환원된다. $S=\operatorname{Spec}(A)$이고($A$는 완비 뇌터 국소환), $P$가
+$S$ 위에서 유한형이면, $P/S$의 충실 평탄성은 $S$ 위에서 유한이고
+평탄인 어떤 $S'$이 존재하여 $P'$이 자명해지는 것과도 동치이다. 더욱이
+$G$가 $S$ 위에서 매끄러우면 $S'$을 $S$ 위의 에탈 사상으로 잡을 수
+있다. 따라서 $A$의 잉여체가 대수적으로 닫혀 있기까지 하면(``기하학적
+경우''), $P$가 $A$ 위에서 충실 평탄일 필요충분조건은 $P$가 자명한
+것이다. 그러므로 $S$가 대수적으로 닫힌 체 위의 대수적 준스킴이고
+$G$가 $S$ 위에서 매끄러운 유한형 스킴이면, $S$ 위의 충실 평탄성 조건은
+Serre의 해석적 자명성 조건(SLF)과 동치이다([6], 1--12쪽).
+
+$P$에 대해 ``국소 자명성''의 성격을 지닌 더 강한 다른 조건들도 도입할
+수 있다. 특히 모든 $s\in S$에 대해 $s$의 열린 근방 $U$와 유한 충실
+평탄 사상(각각 전사 에탈 피복) $U'\longrightarrow U$가 존재하여
+$P'=P\times_SU'$이 자명하면, $P$가 \emph{등자명}(각각 \emph{엄밀
+등자명})이라고 하겠다. (Serre [6]가 국소 등자명이라고 부르는 것을
+여기서는 엄밀 등자명이라고 부르므로, 우리는 Serre의 용어법과 다르다.)
+엄밀 등자명성은 $G$가 $S$ 위에서 매끄러울 때 특히 유용하지만, 다른
+경우에는 오히려 부적절한 개념이다.
+
+$G$가 $S$ 위에서 아핀이면, 2절에 따라 $G$ 아래의 모든 동차 주다발
+$P$는 아핀이다. 따라서 정리 2를 써서 충실 평탄 준콤팩트 사상에 의해
+그러한 다발들을 ``하강''시킬 수 있다.
+
+\src{326}
+특히 $G=\operatorname{Gl}(n)_S$로 잡자. 이는 $S$-준스킴의 함자
+\[
+  S'\longmapsto\operatorname{Hom}_S(S',G)
+\]
+(군들의 범주에 값을 갖는다)가 A의 4.e절의 함자
+\[
+  \operatorname{Gl}(n)(S')
+  =\operatorname{Gl}\bigl(n,H^0(S',\mathcal O_{S'})\bigr)
+\]
+와 동일시된다는 조건으로 정의된다. 다음 사실들을 사용하자. (i) $G$
+아래의 모든 동차 주다발(각각 $S$ 위의 계수 $n$인 모든 국소 자유층)은
+$S$의 적당한 충실 평탄 준콤팩트 확대 뒤에 ``자명한'' 대상 $G$(각각
+$\mathcal O_S^n$)와 동형이 된다. (ii) 여기서 다루는 유형의 대상들,
+즉 $G$ 아래의 동차 주다발(각각 계수 $n$인 국소 자유층)은 그러한
+사상에 의해 하강시킬 수 있다. (iii) $S'/S$ 위의 자명한 다발의
+자기동형군은 $S'$ 위의 계수 $n$인 자명한 국소 자유층의 자기동형군과
+함자적으로 동형이다. 이로부터 $S$ 위에(또는 $S'/S$ 위에) 군이 $G$인
+동차 주다발을 주는 것과 그 위에 계수 $n$인 국소 자유층을 주는 것이
+``같은 것''임이 ``형식적으로'' 따라온다. (더 정확히는 섬유화 범주들의
+동치가 있다.) 특히 다음을 얻는다.
+
+\result{명제}{6.1} 군이 $\operatorname{Gl}(n)_S$인 모든 동차 주다발은
+국소 자명하다.
+
+잘 알려진 논법으로부터 $\operatorname{Sl}(n)_S$,
+$\operatorname{Sp}(n)_S$ 및 그러한 군들의 곱과 같은 구조군들에 대해서도
+같은 결과가 따라온다. 또한 $F$가 $G=\operatorname{Gl}(n)_S$의 닫힌
+부분군이고 $S$ 위에서 평탄하며 몫 $G/F$가 존재한다고 하자. $G$가
+$G/F$ 위에서, 군이 $F\times_S(G/F)$인 등자명(각각 엄밀 등자명) 동차
+주다발이면, 군이 $F$인 모든 동차 주다발은 등자명(각각 엄밀 등자명)이다.
+이는 지금까지 사용된 $S$ 위의 모든 ``선형군''에 적용된다. 특히 $S$가
+체 $k$ 위의 준스킴이고 $\Gamma$가 $k$ 위의 고전적 의미의 선형군,
+특히 매끄러운 군일 때의 $G=S\times_k\Gamma$에 적용된다. 따라서 이러한
+군들에 대해서는 Serre의 질문 하나가 해결된다(앞에서 인용한 곳).
+
+또한 알려진 $S$ 위의 매끄러운 군들 가운데 대부분(선형이든 아니든)에
+대해, 그리고 어쨌든 위와 같은 $S\times_k\Gamma$ 꼴의 군들에 대해,
+모든 등자명 동차 주다발이 엄밀 등자명임을 보일 수 있음을 언급해 둔다.
+특히 카르티에 방식의 하강으로 얻은 동차 주다발(3절 예 2 참조)은 명백히
+등자명이므로, 이를 고려하면 Serre의 또 다른 질문(앞에서 인용한 곳,
+1--14쪽)이 해결된다.
+
+\result{비고}{} 이 문제들에서 본질적인 난점 가운데 하나는(몫스킴
+$G/F$의 존재 문제는 별도로 하고) 유한이 아닌 충실 평탄 사상에 관한
+하강 데이터의 유효성 판정기준이 부족하다는 것이다.
+
+\src{327}
+\begin{center}
+  \textbf{참고문헌}
+\end{center}
+
+\begin{description}
+  \item[{[1]}] Dieudonn\'e (J.) 및 Grothendieck (Alexander). --- \emph{Éléments
+    de géométrie algébrique}, Publications mathématiques de l'Institut des
+    Hautes Études Scientifiques에 게재 예정.
+  \item[{[2]}] Grauert (H.) und Remmert (R.). --- \emph{Komplexe Räume}, Math.
+    Annalen, t. 136, 1958, p. 245--318.
+  \item[{[3]}] Grothendieck (Alexander). --- \emph{Géométrie formelle et
+    géométrie algébrique}. Séminaire Bourbaki, t. 11, 1958/59, no 182.
+  \item[{[4]}] Murre (J. P.). --- \emph{On a connectedness theorem for a
+    birational transformation at a simple point}, Amer. J. Math., t. 80, 1958,
+    p. 3--15.
+  \item[{[5]}] Serre (Jean-Pierre). --- \emph{Géométrie algébrique et géométrie
+    analytique}, Ann. Inst. Fourier Grenoble, t. 6, 1955--56, p. 1--42.
+  \item[{[6]}] Serre (Jean-Pierre). --- \emph{Espaces fibrés algébriques},
+    Séminaire Chevalley, t. 2, 1958 : Anneaux de Chow et applications, no 1.
+\end{description}
+

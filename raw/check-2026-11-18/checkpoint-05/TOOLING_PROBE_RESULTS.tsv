@@ -1,0 +1,8 @@
+probe	date_utc	command	exit_code	result
+lua-fonts.tex	2026-11-18T15:49:43.372844+00:00	lualatex -interaction=nonstopmode -halt-on-error -no-shell-escape lua-fonts.tex	0	PASS; zero pages generated; zero-byte PDF placeholder
+xe-fonts.tex	2026-11-18T15:50:10.339623+00:00	xelatex -interaction=nonstopmode -halt-on-error -no-shell-escape xe-fonts.tex	0	PASS; zero pages generated
+math-probe.tex	2026-11-18T15:50:29.828547+00:00	lualatex -interaction=nonstopmode -halt-on-error -no-shell-escape math-probe.tex	0	PASS; zero pages generated
+FGA-MATH-normal	2026-11-18T15:50:29.828547+00:00	glyph traversal of an unshipped math box	0	U+1D44B U+002B U+1D465 U+002B U+2131 U+002B U+1D50A
+FGA-MATH-symup	2026-11-18T15:50:29.828547+00:00	glyph traversal of an unshipped math box	0	U+0058 U+002B U+0078 U+002B U+2131 U+002B U+1D50A
+FGA-MATH-unimath-inside	2026-11-18T15:50:29.828547+00:00	glyph traversal of an unshipped math box	0	U+1D44B U+002B U+1D465 U+002B U+2131 U+002B U+1D50A
+FGA-MATH-after-group	2026-11-18T15:50:29.828547+00:00	glyph traversal of an unshipped math box	0	U+1D44B U+002B U+1D465 U+002B U+2131 U+002B U+1D50A

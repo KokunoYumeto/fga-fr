@@ -1,0 +1,1599 @@
+\unit{Exposé 190 -- Técnica de descenso I}
+\sid{190}
+\src{299}
+\seminar{12\textsuperscript{o} año, 1959/60, n\textsuperscript{o} 190\\Diciembre de 1959}
+\paperhead{TÉCNICA DE DESCENSO Y TEOREMAS DE EXISTENCIA EN GEOMETRÍA ALGEBRAICA\\
+I. GENERALIDADES. DESCENSO POR MORFISMOS FIELMENTE PLANOS}%
+  {por Alexander GROTHENDIECK}
+
+Desde un punto de vista técnico, el presente exposé y los que le seguirán
+pueden considerarse variaciones sobre el célebre «teorema 90» de Hilbert.
+Parece que A. Weil introdujo el método de descenso en geometría algebraica con
+el nombre de «descenso del cuerpo base». Weil se restringe, por lo demás, al
+caso de extensiones finitas separables de cuerpos. P. Cartier trató después el
+caso de extensiones radiciales de altura 1. Por falta del lenguaje de los
+esquemas y, más concretamente, por falta de elementos nilpotentes en los
+anillos que se permitía considerar, Cartier no había podido formular la
+identidad esencial entre estos dos casos.
+
+En la actualidad, parece que la técnica general de descenso que se expondrá
+(unida, cuando proceda, a los teoremas fundamentales de la «geometría formal»,
+cf. [3]) está en la base de la mayoría de los teoremas de existencia en
+geometría algebraica.\footnote{La fe de erratas de 1962 considera excesiva esta
+formulación: es válida en gran medida para las técnicas no proyectivas de los
+dos primeros exposés de la serie TDTE I a VI, pero no para las técnicas
+proyectivas (TDTE IV, V y VI).} Conviene señalar, además, que esta técnica puede
+sin duda trasladarse a la «geometría analítica», y cabe esperar que en un
+futuro próximo los especialistas sepan demostrar los análogos «analíticos» de
+los teoremas de existencia en geometría formal que se darán en el exposé II.
+En cualquier caso, los trabajos recientes de Kodaira--Spencer, cuyos métodos
+parecen inadecuados para definir y estudiar «variedades de módulos» en un
+entorno de sus puntos singulares, muestran con bastante claridad la necesidad
+de métodos más próximos a la teoría de esquemas (que deberán completar, por
+supuesto, las técnicas trascendentes).
+
+En el presente exposé I trataremos el caso de descenso más elemental (indicado
+en el título). Sin embargo, las aplicaciones de los teoremas 1, 2 y 3 que
+siguen son ya muy numerosas. Nos hemos limitado a dar algunas a modo de
+ejemplo, sin intentar conferirles aquí la máxima generalidad posible.
+
+Utilizaremos libremente el lenguaje de los esquemas, para el cual remitimos al
+exposé ya citado, así como a [2]. Señalemos, no obstante, expresamente que los
+preesquemas considerados en el presente exposé no son necesariamente
+noetherianos, y los
+
+\src{300}
+morfismos no son necesariamente de tipo finito. Así, si $A$ es un anillo local
+noetheriano, con completado $\widehat A$, habrá que considerar el anillo no
+noetheriano $\widehat A\otimes_A\widehat A$, y los morfismos de esquemas afines
+correspondientes a las inclusiones entre los anillos considerados.
+
+\fsection{A}{Preliminares sobre las categorías}
+
+\subsection*{1. Categorías fibradas, datos de descenso, morfismos de
+$\mathcal F$-descenso}
+\addcontentsline{toc}{subsection}{1. Categorías fibradas y datos de descenso}
+
+\result{a. DEFINICIÓN}{1.1} Una \emph{categoría fibrada} $\mathcal F$ de base
+$\mathcal C$ consta de una categoría $\mathcal C$; para cada
+$X\in\mathcal C$, de una categoría $\mathcal F_X$; para cada
+$\mathcal C$-morfismo $f:X\longrightarrow Y$, de un funtor
+$f^*:\mathcal F_Y\longrightarrow\mathcal F_X$, denotado también por
+\[
+  f^*(\xi)=\xi\times_Y X
+\]
+para $\xi\in\mathcal F_Y$ (considerando $X$ como un «objeto de
+$\mathcal C$ sobre $Y$», es decir, provisto del morfismo $f$); y, por último,
+para dos morfismos componibles
+$X\xrightarrow{f}Y\xrightarrow{g}Z$, de un isomorfismo de funtores
+\[
+  c_{f,g}:(gf)^*\longrightarrow f^*g^*,
+\]
+sujetos estos datos a las condiciones siguientes:
+
+\begin{enumerate}
+\item[(i)] $\operatorname{id}_X^*=\operatorname{id}$;
+\item[(ii)] $c_{f,g}$ es el isomorfismo identidad si $f$ o $g$ es un
+isomorfismo identidad;
+\item[(iii)] dados tres morfismos componibles
+$X\xrightarrow{f}Y\xrightarrow{g}Z\xrightarrow{h}T$, el siguiente diagrama de
+isomorfismos, formado mediante isomorfismos de la forma $c_{u,v}$, es
+conmutativo:
+\[
+\begin{array}{ccc}
+  (h(gf))^*=((hg)f)^* & \longrightarrow & f^*(hg)^* \\
+  \big\downarrow && \big\downarrow \\
+  (gf)^*h^* & \longrightarrow & (f^*g^*)h^*=f^*(g^*h^*).
+\end{array}
+\]
+\end{enumerate}
+
+\result{EJEMPLO}{1} Sea $\mathcal C$ una categoría en la que existen los
+productos fibrados. Se define entonces una categoría fibrada $\mathcal F$ de
+base $\mathcal C$ tomando $\mathcal F_X=$ categoría de los objetos de
+$\mathcal C$ sobre $X$; el funtor
+$f^*:\mathcal F_Y\longrightarrow\mathcal F_X$ correspondiente a un morfismo
+$f:X\longrightarrow Y$ se define mediante el producto fibrado
+$Z\longmapsto Z\times_YX$.
+
+\result{EJEMPLO}{2} Sea $\mathcal C$ la categoría de los preesquemas y, para
+$X\in\mathcal C$, sea $\mathcal F_X$ la categoría de los haces
+cuasi-coherentes de módulos sobre $X$. Si $f:X\longrightarrow Y$ es un morfismo
+de preesquemas, $f^*:\mathcal F_Y\longrightarrow\mathcal F_X$ es el funtor
+imagen inversa
+
+\src{301}
+de haces de módulos. Se obtiene así una categoría fibrada de base
+$\mathcal C$.
+
+\result{b. DEFINICIÓN}{1.2} Un diagrama
+\[
+  E\xrightarrow{u}E'
+  \overset{v_1}{\underset{v_2}{\rightrightarrows}}E''
+\]
+de aplicaciones de conjuntos se llama \emph{exacto} si $u$ es una biyección de
+$E$ sobre la parte de $E'$ formada por los $x'\in E'$ tales que
+$v_1(x')=v_2(x')$.
+
+\result{DEFINICIÓN}{1.3} Sea $\mathcal F$ una categoría fibrada de base
+$\mathcal C$; consideremos un diagrama
+\[
+  \tag{+}
+  S\xleftarrow{\alpha}S'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}S''
+\]
+de morfismos en $\mathcal C$ tales que
+$\alpha\beta_1=\alpha\beta_2$; este diagrama se llama
+$\mathcal F$-\emph{exacto} si, para cada par $\xi,\eta$ de elementos de
+$\mathcal F_S$, el siguiente diagrama de aplicaciones de conjuntos
+\[
+  \tag{+'}
+  \operatorname{Hom}(\xi,\eta)
+  \xrightarrow{\alpha^*}
+  \operatorname{Hom}(\alpha^*\xi,\alpha^*\eta)
+  \overset{\beta_1^*}{\underset{\beta_2^*}{\rightrightarrows}}
+  \operatorname{Hom}(\gamma^*\xi,\gamma^*\eta),
+\]
+donde $\gamma=\alpha\beta_1=\alpha\beta_2$, es exacto. En este último diagrama
+hemos identificado $\beta_i^*\alpha^*$ con
+$(\alpha\beta_i)^*=\gamma^*$ mediante $c_{\beta_i,\alpha}$, para simplificar.
+
+\result{DEFINICIÓN}{1.4} Sea $\mathcal F$ una categoría fibrada de base
+$\mathcal C$; consideremos dos morfismos $\beta_1,\beta_2$ de $S''$ en $S'$,
+en $\mathcal C$. Sea
+$\xi'\in\mathcal F_{S'}$. Se llama \emph{dato de pegado} sobre $\xi'$
+(relativo al par $(\beta_1,\beta_2)$) a un isomorfismo de
+$\beta_1^*(\xi')$ sobre $\beta_2^*(\xi')$. Si $\xi',\eta'\in\mathcal F_{S'}$
+están provistos cada uno de un dato de pegado, un morfismo
+$u:\xi'\longrightarrow\eta'$ en $\mathcal F_{S'}$ se dice
+\emph{compatible con los datos de pegado} si el diagrama siguiente es
+conmutativo:
+\[
+\begin{array}{ccc}
+  \beta_1^*(\xi') & \longrightarrow & \beta_2^*(\xi') \\
+  \big\downarrow && \big\downarrow \\
+  \beta_1^*(\eta') & \longrightarrow & \beta_2^*(\eta').
+\end{array}
+\]
+De este modo, los objetos de $\mathcal F_{S'}$ provistos de un dato de pegado
+(relativo a $\beta_1,\beta_2$) forman una categoría. Si
+$\alpha:S'\longrightarrow S$ es un morfismo tal que
+$\alpha\beta_1=\alpha\beta_2$, entonces, para todo $\xi\in\mathcal F_S$, el
+objeto $\xi'=\alpha^*(\xi)$
+
+\src{302}
+de $\mathcal F_{S'}$ está provisto de un dato de pegado canónico, puesto que
+\[
+  \beta_i^*\alpha^*(\xi)\simeq(\alpha\beta_i)^*(\xi)=\gamma^*(\xi),
+\]
+tomando de nuevo $\gamma=\alpha\beta_1=\alpha\beta_2$; además, si
+$u:\xi\longrightarrow\eta$ es un morfismo en $\mathcal F_S$, entonces
+\[
+  \alpha^*(u):\alpha^*(\xi)\longrightarrow\alpha^*(\eta)
+\]
+es un morfismo en $\mathcal F_{S'}$ compatible con los datos de pegado
+canónicos. Se obtiene así un funtor canónico de la categoría $\mathcal F_S$ a
+la categoría de los objetos de $\mathcal F_{S'}$ provistos de un dato de pegado
+relativo al par $(\beta_1,\beta_2)$. Dicho esto, la definición 1.3 también
+puede expresarse diciendo que el diagrama (+) de dicha definición es
+$\mathcal F$-exacto si el funtor anterior es «plenamente fiel», es decir, si
+define una equivalencia de la categoría $\mathcal F_S$ con una subcategoría de
+la categoría de los objetos de $\mathcal F_{S'}$ provistos de un dato de pegado
+relativo a $(\beta_1,\beta_2)$.
+
+\result{DEFINICIÓN}{1.5} Se dice que un dato de pegado sobre
+$\xi'\in\mathcal F_{S'}$ es \emph{efectivo} (respecto de $\alpha$) si
+$\xi'$, provisto de este dato, es isomorfo a un $\alpha^*(\xi)$, con
+$\xi\in\mathcal F_S$.
+
+Cuando el diagrama (+) es $\mathcal F$-exacto, el objeto $\xi$ de la definición
+anterior queda, por tanto, determinado salvo isomorfismo único, y la categoría
+$\mathcal F_S$ es equivalente a la categoría de los objetos de
+$\mathcal F_{S'}$ provistos de un dato de pegado efectivo.
+
+\medskip\noindent
+c. El caso más importante es aquel en que
+\[
+  S''=S'\times_S S',
+\]
+siendo las $\beta_i$ las dos proyecciones $p_1$ y $p_2$ de
+$S'\times_S S'$ sobre sus dos factores (suponemos ahora que en
+$\mathcal C$ existen los productos fibrados). Se tienen entonces dos
+condiciones necesarias inmediatas para que sea efectivo un dato de pegado
+$\varphi:p_1^*(\xi')\longrightarrow p_2^*(\xi')$ sobre un
+$\xi'\in\mathcal F_{S'}$. Se tiene
+\[
+  \tag{i}
+  \Delta^*(\varphi)=\operatorname{id}_{\xi'},
+\]
+donde $\Delta:S'\longrightarrow S'\times_S S'$ designa el morfismo diagonal,
+y donde se ha identificado $\Delta^*p_i^*(\xi')$ con
+$(p_i\Delta)^*(\xi')=\xi'$. Se tiene
+\[
+  \tag{ii}
+  p_{31}^*(\varphi)=p_{32}^*(\varphi)\,p_{21}^*(\varphi),
+\]
+
+\src{303}
+donde $p_{ij}$ designa la proyección canónica de
+$S'\times_S S'\times_S S'$ sobre el producto parcial de sus factores
+$i$-ésimo y $j$-ésimo.
+
+\result{DEFINICIÓN}{1.6} Se llama \emph{dato de descenso} sobre
+$\xi'\in\mathcal F_{S'}$, relativo al morfismo
+$\alpha:S'\longrightarrow S$, a un dato de pegado sobre $\xi'$ relativo al par
+$(p_1,p_2)$ de proyecciones canónicas
+$S'\times_S S'\longrightarrow S'$ que satisface las condiciones (i) y (ii)
+anteriores.
+
+\result{DEFINICIÓN}{1.7} Un morfismo $\alpha:S'\longrightarrow S$ se llama
+\emph{morfismo de $\mathcal F$-descenso} si el diagrama de morfismos
+\[
+  S\xleftarrow{\alpha}S'
+  \overset{p_1}{\underset{p_2}{\rightrightarrows}}S'\times_S S'
+\]
+es $\mathcal F$-exacto (definición 1.3); se dice que $\alpha$ es un
+\emph{morfismo de $\mathcal F$-descenso estricto} si, además, todo dato de
+descenso (definición 1.6) sobre un objeto de $\mathcal F_{S'}$ es efectivo.
+
+Esta última condición también puede enunciarse, de modo más gráfico, así:
+«Da lo mismo» dar un objeto de $\mathcal F_S$ o un objeto de
+$\mathcal F_{S'}$ provisto de un dato de descenso.
+
+Obsérvese que si un morfismo $\alpha:S'\longrightarrow S$ admite una «sección»
+$s:S\longrightarrow S'$ (es decir, un morfismo $s$ tal que
+$\alpha s=\operatorname{id}_S$), entonces es un morfismo de
+$\mathcal F$-descenso estricto.\footnote{La fe de erratas de 1962 precisa que
+no es necesario suponer previamente que $\alpha$ sea un morfismo de
+$\mathcal F$-descenso.} En efecto, si $\xi'\in\mathcal F_{S'}$ está provisto de
+un dato de descenso relativo a $\alpha$, «proviene» de
+$\xi=s^*(\xi')$.
+
+\medskip\noindent
+d. Las nociones anteriores pueden presentarse de manera más intuitiva
+introduciendo, para un objeto parámetro $T$ de $\mathcal C$ sobre $S$, el
+conjunto
+\[
+  \operatorname{Hom}_S(T,S')=S'(T),
+\]
+cuyos elementos se denotarán por $t,t'$, etc. Dado un objeto
+$\xi'\in\mathcal F_{S'}$, a cada $t\in S'(T)$ le corresponde entonces un objeto
+$t^*(\xi')$ de $\mathcal F_T$, que también se denotará por $\xi'_t$. Un dato de
+pegado sobre $\xi'$ (relativo a $p_1,p_2$) queda definido entonces dando, para
+todo $T$ sobre $S$ y todo par de puntos $t,t'\in S'(T)$, un isomorfismo
+\[
+  \varphi_{t',t}:\xi'_t\longrightarrow\xi'_{t'}
+\]
+(que satisface condiciones evidentes de funtorialidad al variar $T$). Las
+condiciones (i) y (ii) de 1.c se escriben entonces
+\[
+  \tag{i bis}
+  \varphi_{t,t}=\operatorname{id}_{\xi'_t}
+  \qquad\text{para todo $T$ y todo $t\in S'(T)$},
+\]
+
+\src{304}
+\[
+  \tag{ii bis}
+  \varphi_{t,t''}=\varphi_{t,t'}\varphi_{t',t''}
+  \qquad\text{para todo $T$ y todos $t,t',t''\in S'(T)$}.
+\]
+Se ve, además, que (ii bis), tomando $t=t'=t''$, implica
+$\varphi_{t,t}=\varphi_{t,t}^2$; puesto que $\varphi_{t,t}$ es un isomorfismo
+por hipótesis, de aquí se obtiene la relación (i bis), que es de hecho una
+consecuencia de (ii bis) (por tanto, (i) es consecuencia de (ii)). Pero si ya
+no se supone a priori que los $\varphi_{t,t'}$ sean isomorfismos (es decir, que
+$\varphi:p_1^*(\xi')\longrightarrow p_2^*(\xi')$ sea un isomorfismo), entonces
+(ii bis) no implica necesariamente (i bis); sin embargo, la conjunción de
+(ii bis) y (i bis) implica que los $\varphi_{t,t'}$ son isomorfismos (pues se
+tendrá
+$\varphi_{t,t'}\varphi_{t',t}=\varphi_{t,t}=\operatorname{id}_{\xi'_t}$).
+
+\subsection*{2. Diagramas exactos y epimorfismos estrictos, morfismos de
+descenso. Ejemplos}
+\addcontentsline{toc}{subsection}{2. Diagramas exactos y epimorfismos estrictos}
+
+\result{a. DEFINICIÓN}{2.1} Sea $\mathcal C$ una categoría. Un diagrama
+\[
+  T\xrightarrow{\alpha}T'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}T''
+\]
+de morfismos en $\mathcal C$ se llama \emph{exacto} si, para todo
+$Z\in\mathcal C$, el diagrama correspondiente de aplicaciones de conjuntos
+\[
+  \operatorname{Hom}(Z,T)\longrightarrow
+  \operatorname{Hom}(Z,T')
+  \rightrightarrows\operatorname{Hom}(Z,T'')
+\]
+es exacto (definición 1.2). Se dice entonces que $(T,\alpha)$ (o, por abuso de
+lenguaje, que $T$) es un \emph{núcleo} del par de morfismos
+$(\beta_1,\beta_2)$.
+
+Evidentemente, este núcleo está determinado salvo isomorfismo único. Si
+$\mathcal C$ es la categoría de los conjuntos, la definición anterior es
+compatible con la definición 1.2. Se define de manera dual la exactitud de un
+diagrama
+\[
+  S\xleftarrow{\alpha}S'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}S''
+\]
+de morfismos en $\mathcal C$; se dice entonces que $(S,\alpha)$ es un
+\emph{conúcleo} del par de morfismos $(\beta_1,\beta_2)$.
+
+\result{DEFINICIÓN}{2.2} Un morfismo $\alpha:S'\longrightarrow S$ se llama
+\emph{epimorfismo estricto} si es un epimorfismo y si, para todo morfismo
+$u:S'\longrightarrow Z$, la siguiente condición necesaria es también
+suficiente para que $u$ se factorice como
+$S'\longrightarrow S\longrightarrow Z$: para todo $S''\in\mathcal C$ y todo
+par de morfismos $\beta_1,\beta_2:S''\longrightarrow S'$ tal que
+$\alpha\beta_1=\alpha\beta_2$, se tiene también $u\beta_1=u\beta_2$.
+
+Si existe el producto fibrado $S'\times_S S'$, equivale a decir que el diagrama
+\[
+  S\xleftarrow{\alpha}S'
+  \overset{p_1}{\underset{p_2}{\rightrightarrows}}S'\times_S S'
+\]
+
+\src{305}
+es exacto, es decir, que $S$ es un conúcleo del par $(p_1,p_2)$. En cualquier
+caso, un morfismo conúcleo es un epimorfismo estricto. Señalemos también que un
+epimorfismo estricto que sea un monomorfismo es un isomorfismo. Dejamos al
+lector desarrollar la noción dual de \emph{monomorfismo estricto}.
+
+Para precisar las relaciones entre la noción de morfismo de
+$\mathcal F$-descenso y la de epimorfismo estricto, introducimos además las
+definiciones siguientes:
+
+\result{DEFINICIÓN}{2.3} Un morfismo $\alpha:S'\longrightarrow S$ se llama
+\emph{epimorfismo universal} (resp. \emph{epimorfismo estricto universal}) si,
+para todo $T$ sobre $S$, existe el producto fibrado $T'=S'\times_ST$ y la
+proyección $T'\longrightarrow T$ es un epimorfismo (resp. un epimorfismo
+estricto).
+
+En las categorías muy buenas (como la categoría de los conjuntos, la
+categoría de los haces de conjuntos sobre un espacio topológico, las categorías
+abelianas, etc.), las cuatro nociones de epiyectividad así introducidas
+coinciden; por el contrario, todas ellas son distintas en una categoría como
+la de los preesquemas, o la de los preesquemas sobre un preesquema no vacío
+dado $S$, incluso si nos limitamos a $S$-esquemas finitos sobre $S$.
+
+\result{DEFINICIÓN}{2.4} Un morfismo $\alpha:S'\longrightarrow S$ se llama
+\emph{morfismo de descenso} (resp. \emph{morfismo de descenso estricto}) si es
+un morfismo de $\mathcal F$-descenso (resp. un morfismo de
+$\mathcal F$-descenso estricto) (cf. definición 1.7), donde $\mathcal F$ denota
+la categoría fibrada de base $\mathcal C$ de los objetos de $\mathcal C$ sobre
+objetos de $\mathcal C$ (n\textsuperscript{o} 1, ejemplo 1).
+
+\result{PROPOSICIÓN}{2.1} Si en $\mathcal C$ existen los productos finitos y
+los productos fibrados (finitos), entonces, en $\mathcal C$, los morfismos de
+descenso coinciden con los epimorfismos estrictos universales.
+
+\result{b. EJEMPLOS}{} Sea $\mathcal C$ la categoría de los preesquemas. Sea
+$S\in\mathcal C$, y sean $S'$ y $S''$ dos preesquemas finitos sobre $S$, es
+decir, correspondientes a haces de álgebras $\mathcal A'$, $\mathcal A''$
+sobre $S$ que, como haces de módulos, son cuasi-coherentes y de tipo finito (es
+decir, coherentes si $S$ es localmente noetheriano). Sea
+$\alpha:S'\longrightarrow S$ el morfismo estructural de $S'$, y sean
+$\beta_1,\beta_2$ dos $S$-morfismos de $S''$ en $S'$, definidos por
+homomorfismos de álgebras $\mathcal A'\longrightarrow\mathcal A''$, denotados
+también por $\beta_1,\beta_2$. Utilizando el hecho de que un morfismo finito es
+cerrado (primer teorema de Cohen--Seidenberg), se demuestra fácilmente que el
+diagrama
+\[
+  \tag{+}
+  S\xleftarrow{\alpha}S'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}S''
+\]
+en $\mathcal C$ es exacto si y solo si lo es el diagrama de haces
+
+\src{306}
+\[
+  \mathcal O_S=\mathcal A\longrightarrow\mathcal A'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}\mathcal A''
+\]
+sobre $S$. En particular, si $\alpha:S'\longrightarrow S$ es un morfismo
+finito correspondiente a un haz $\mathcal A'$ de álgebras sobre $S$, entonces
+$\alpha$ es un epimorfismo estricto si y solo si el diagrama de haces
+\[
+  \mathcal O_S=\mathcal A\longrightarrow\mathcal A'
+  \overset{p_1}{\underset{p_2}{\rightrightarrows}}
+  \mathcal A'\otimes_{\mathcal A}\mathcal A'
+\]
+es exacto (es un epimorfismo si y solo si
+$\mathcal A\longrightarrow\mathcal A'$ es inyectivo). Si $S$ es afín de anillo
+$A$, y por tanto $S'$ es afín de anillo $A'$ finito sobre $A$, entonces
+$S'\longrightarrow S$ es un epimorfismo estricto si y solo si
+$A\longrightarrow A'$ es un isomorfismo de $A$ sobre el subanillo de $A'$
+formado por los $x'\in A'$ tales que
+\[
+  1_{A'}\otimes_Ax'-x'\otimes_A1_{A'}=0
+\]
+(es un epimorfismo si y solo si $A\longrightarrow A'$ es inyectivo). Como ya
+hemos señalado, incluso si $S$ es el esquema de un anillo local artiniano, un
+morfismo finito $S'\longrightarrow S$ que sea un epimorfismo no es
+necesariamente un epimorfismo estricto. Sin embargo, puede demostrarse que, si
+$S$ es un preesquema noetheriano, todo morfismo finito
+$S'\longrightarrow S$ que sea un epimorfismo es la composición de una sucesión
+finita de epimorfismos estrictos (también finitos). Esto muestra, además, que
+la composición de dos epimorfismos estrictos no es necesariamente un
+epimorfismo estricto.
+
+\result{c}{} Si $(+)$ es un diagrama exacto de morfismos finitos, entonces,
+para todo morfismo plano $T\longrightarrow S$ de preesquemas, el diagrama
+obtenido de $(+)$ mediante el cambio de base $T\longrightarrow S$ sigue siendo
+exacto. De ello se deduce que, si $X,Y$ son dos $S$-preesquemas, siendo $X$
+plano sobre $S$, entonces el siguiente diagrama de aplicaciones de conjuntos
+(donde $X',Y'$ son las imágenes inversas de $X,Y$ sobre $S'$, y $X'',Y''$ sus
+imágenes inversas sobre $S''$)
+\[
+  \operatorname{Hom}_S(X,Y)\longrightarrow
+  \operatorname{Hom}_{S'}(X',Y')
+  \rightrightarrows
+  \operatorname{Hom}_{S''}(X'',Y'')
+\]
+es exacto. En particular, si $\mathcal F$ denota la categoría fibrada cuya base
+es la categoría $\mathcal C$ de los preesquemas y tal que, para
+$X\in\mathcal C$, $\mathcal F_X$ es la categoría de los $X$-preesquemas
+planos, entonces el diagrama $(+)$ es $\mathcal F$-exacto. (Este resultado deja
+de ser cierto si no se impone la hipótesis de planitud; en particular, un
+epimorfismo estricto finito no es necesariamente un morfismo de descenso.) Se
+ve asimismo que $(+)$ es $\mathcal F$-exacto si $\mathcal F$ denota la
+categoría fibrada para la cual $\mathcal F_X$ es la categoría de los haces
+cuasi-coherentes y planos sobre el preesquema $X$ (también aquí la hipótesis
+
+\src{307}
+de planitud es esencial). En uno y otro caso, la cuestión de la efectividad de
+un dato de pegado (y, más concretamente, de un dato de descenso cuando
+$S''=S'\times_SS'$) sobre un objeto plano sobre $S'$ es delicada (y su
+respuesta en diversos casos particulares es uno de los objetos principales de
+los presentes exposés). El conferenciante ignora si, para todo epimorfismo
+estricto finito $S'\longrightarrow S$, todo dato de descenso sobre un haz
+cuasi-coherente plano sobre $S'$ es efectivo (incluso suponiendo que $S$ es el
+espectro de un anillo local artiniano y limitándose a los haces localmente
+libres de rango 1). Más generalmente, sean $A$ un anillo y $A'$ una
+$A$-álgebra (todo es conmutativo) tal que el diagrama de aplicaciones
+\[
+  A\longrightarrow A'\rightrightarrows A'\otimes_AA'
+\]
+sea exacto, lo que equivale también a que el morfismo
+$S'\longrightarrow S$ correspondiente entre los espectros de $A,A'$ sea un
+morfismo de $\mathcal F$-descenso, donde $\mathcal F$ es la categoría fibrada
+de los haces cuasi-coherentes planos. Sea $M'$ un $A'$-módulo plano provisto de
+un dato de descenso a $A$, es decir, de un isomorfismo
+\[
+  \varphi:M'\otimes_AA'\xrightarrow{\sim}A'\otimes_AM'
+\]
+de $A'\otimes_AA'$-módulos que satisface las condiciones (i) y (ii) de 1.c
+(cuya explicitación en términos de módulos dejamos al lector). ¿Es efectivo
+este dato (respecto de la categoría fibrada de los haces cuasi-coherentes
+planos)? Sea $M$ el subconjunto de $M'$ formado por los $x'\in M'$ tales que
+\[
+  \varphi(x'\otimes_A1_{A'})=1_{A'}\otimes_Ax',
+\]
+que es un sub-$A$-módulo de $M'$. La inyección canónica
+$M\longrightarrow M'$ define un homomorfismo de $A'$-módulos
+$M\otimes_AA'\longrightarrow M'$. La efectividad de $\varphi$ significa
+entonces lo siguiente: $M$ es un $A$-módulo plano y el homomorfismo anterior es
+un isomorfismo.
+
+\result{OBSERVACIÓN}{} En las consideraciones anteriores no habíamos impuesto
+ninguna hipótesis de planitud a los morfismos del diagrama $(+)$, lo que nos
+obligaba, para disponer de una técnica de descenso, a imponer hipótesis de
+planitud a los objetos sobre $S,S'$ considerados. En el parágrafo 2 impondremos
+una hipótesis de planitud a $\alpha:S'\longrightarrow S$, lo que nos permitirá
+disponer de una técnica de descenso para objetos sobre $S,S'$ que ya no están
+sometidos a condición alguna de planitud. En todos los casos interviene una
+hipótesis de planitud. Esta es una de las principales razones de la importancia
+de la noción de planitud en geometría algebraica (¡cuyo papel no podía
+manifestarse mientras uno se limitara a cuerpos base, sobre los cuales, en
+efecto, todo es plano!).
+
+\src{308}
+\subsection*{3. Aplicación a los morfismos étale}
+\addcontentsline{toc}{subsection}{3. Aplicación a los morfismos étale}
+
+Sean $A$ un anillo local y $B$ un álgebra local sobre $A$ cuyo ideal maximal
+induce el de $A$. Diremos que $B$ es \emph{étale} sobre $A$ (en lugar de
+«no ramificada», expresión usada en otros lugares) si satisface las condiciones
+siguientes:
+\begin{enumerate}
+\item[(i)] $B$ es plana sobre $A$;
+\item[(ii)] $B/\mathfrak mB$ es una extensión finita separable de
+$A/\mathfrak m=k$ (donde $\mathfrak m$ denota el ideal maximal de $A$).
+\end{enumerate}
+Cuando $A$ y $B$ son noetherianos y $k$ es algebraicamente cerrado, esto
+significa que el homomorfismo $\widehat A\longrightarrow\widehat B$ entre los
+completados que prolonga $A\longrightarrow B$ es un isomorfismo. Un morfismo de
+tipo finito $f:T\longrightarrow S$ se dice \emph{étale en $x\in T$}, o también
+que $T$ es \emph{étale sobre $S$ en $x$}, si $\mathcal O_x$ es étale sobre
+$\mathcal O_{f(x)}$; se dice que $f$ es \emph{étale}, o se llama a $f$ un
+\emph{morfismo étale}, o se dice que $T$ es \emph{étale sobre $S$}, si $f$ es
+étale en todo $x\in T$. Señalemos, además, que si $S$ es localmente
+noetheriano, el conjunto de puntos de $T$ en los que $f$ es étale es abierto, y
+el uso del «main theorem» de Zariski permite precisar la estructura de $T/S$
+en un entorno de tal punto (mediante una ecuación de tipo bien conocido).
+
+Cuando $S$ es un esquema de tipo finito sobre el cuerpo de los números
+complejos, le corresponde un espacio analítico $\overline S$ en el sentido de
+Serre [5], salvo que $\overline S$ puede tener elementos nilpotentes en su haz
+estructural, lo que no cambia nada esencial en [5]. Se ve entonces fácilmente
+que $f$ es étale si y solo si
+$\overline f:\overline T\longrightarrow\overline S$ lo es, es decir, si todo
+punto de $\overline T$ admite un entorno en el que $\overline f$ induce un
+isomorfismo sobre un abierto de $\overline S$. En particular, a todo
+\emph{recubrimiento étale} $T$ de $S$ (es decir, un morfismo finito étale
+$f:T\longrightarrow S$) le corresponde un recubrimiento étale $\overline T$ de
+$\overline S$, que es conexo si y solo si $T$ lo es [5]. Se ve además
+fácilmente que, si $T,T'$ son dos esquemas étale sobre $S$, entonces la
+aplicación natural
+\[
+  \operatorname{Hom}_S(T,T')\longrightarrow
+  \operatorname{Hom}_{\overline S}(\overline T,\overline{T'})
+\]
+es biyectiva, es decir, el funtor $T\longmapsto\overline T$ de la categoría de
+los esquemas étale sobre $S$ a la categoría de los espacios analíticos étale
+sobre $\overline S$ es «plenamente fiel» y, por tanto, define una equivalencia
+de la primera categoría con una subcategoría de la segunda. Un teorema de
+Grauert--Remmert [2] implica que, si $S$ es normal, se obtiene así una
+equivalencia entre la categoría de los \emph{recubrimientos étale} de $S$ y la
+categoría de los recubrimientos étale (finitos) de $\overline S$, es decir, que
+todo recubrimiento étale de $\overline S$ es $\overline S$-isomorfo a un
+$\overline T$, donde $T$ es un recubrimiento étale de $S$. Demostremos que el
+\emph{teorema de Grauert--Remmert sigue siendo válido sin hipótesis de
+normalidad sobre $S$}. Sea, en efecto, primero $S'\longrightarrow S$ un
+epimorfismo estricto finito; supongamos demostrado el
+
+\src{309}
+teorema para $S'$ y demostremos que será cierto para $S$. Sea
+$\mathfrak T$ un recubrimiento étale de $\overline S$ y consideremos su imagen
+inversa $\mathfrak T'$ sobre $\overline{S'}$, que corresponde a un haz
+analítico coherente $\mathcal A'$ de álgebras sobre $\overline{S'}$, imagen
+inversa del haz de álgebras $\mathcal A$ sobre $\overline S$ que define
+$\mathfrak T$. Por hipótesis, sobre $\overline{S'}$, $\mathfrak T'$ proviene de
+un recubrimiento étale $T'$ de $S'$, es decir, $\mathcal A'$ proviene de un haz
+coherente de álgebras $A'$ sobre $S'$. Por otra parte, $\mathcal A'$ está
+provisto de un dato de descenso canónico relativo a
+$\overline{S'}\longrightarrow\overline S$, es decir, de un isomorfismo entre
+sus dos imágenes inversas sobre
+\[
+  \overline{S'}\times_{\overline S}\overline{S'}
+  =\overline{(S'\times_SS')},
+\]
+(que satisface las condiciones (i), (ii)), y este isomorfismo proviene, según
+lo dicho, de un isomorfismo entre los haces algebraicos correspondientes, es
+decir, de un dato de descenso sobre $A'$ relativo a
+$S'\longrightarrow S$. Se comprueba fácilmente que este último es efectivo
+(pues el de $\mathcal A'$ lo es, y la efectividad de un dato de descenso, tal
+como se explicitó en el número anterior, se reconoce localmente en los
+\emph{completados} de los módulos que intervienen). Se obtiene así un haz
+coherente de álgebras $A$ sobre $S$, que define un recubrimiento $T$ de $S$,
+el recubrimiento buscado. El resultado anterior sigue siendo entonces
+manifiestamente válido si $S'\longrightarrow S$ es solo una composición de un
+número finito de epimorfismos estrictos finitos, es decir, si es un
+epimorfismo finito cualquiera (por el resultado de factorización señalado en
+el parágrafo 2). Se sigue que el teorema de Grauert--Remmert continúa siendo
+válido si $S$ es un esquema \emph{reducido}, es decir, si $\mathcal O_S$ no
+tiene elementos nilpotentes, como se ve introduciendo su normalización $S'$.
+De aquí se pasa fácilmente al caso general.
+
+Una demostración enteramente análoga, que utiliza de nuevo el resultado de
+factorización para los epimorfismos estrictos finitos y la naturaleza «formal»
+de la efectividad de los datos de descenso, permite demostrar el resultado
+siguiente: sea $S$ un preesquema localmente noetheriano y sea
+$S'\longrightarrow S$ un morfismo \emph{finito, sobreyectivo y radicial} (o,
+lo que equivale a lo mismo, un morfismo de tipo finito tal que, para todo $T$
+sobre $S$, el morfismo $T'=S'\times_ST\longrightarrow T$ sea un homeomorfismo,
+lo cual también se expresa diciendo que $S'\longrightarrow S$ es un
+\emph{homeomorfismo universal}). Para todo $T$ étale sobre $S$, consideremos
+su imagen inversa $T'=T\times_SS'$, que es étale sobre $S'$. Entonces el
+funtor $T\longmapsto T'$ es una \emph{equivalencia de categorías entre la
+categoría de los preesquemas $T$ étale sobre $S$ y la categoría de los
+preesquemas $T'$ étale sobre $S'$}. (Se utiliza la biyectividad de
+\[
+  \operatorname{Hom}_S(T_1,T_2)\longrightarrow
+  \operatorname{Hom}_{S'}(T'_1,T'_2)
+\]
+para dos preesquemas $T_1,T_2$ étale sobre $S$, hecho cuya comprobación directa
+es fácil, y el hecho de que el teorema enunciado es cierto si
+$S'=(S,\mathcal O_S/\mathcal J)$,
+
+\src{310}
+donde $\mathcal J$ es un haz coherente nilpotente de ideales de $\mathcal O_S$
+([4], lema 6)). Obsérvese, además, que no suponemos aquí que los $T$
+considerados sean finitos sobre $S$. Este resultado implica, en particular,
+que el morfismo $S'\longrightarrow S$ induce un isomorfismo del grupo
+fundamental $[\,]$ de $S'$ sobre el de $S$ («\emph{invariancia topológica del
+grupo fundamental de un preesquema}»).
+
+\subsection*{4. Relaciones con la 1-cohomología}
+\addcontentsline{toc}{subsection}{4. Relaciones con la 1-cohomología}
+
+\medskip\noindent
+a. Sea $\mathcal C$ una categoría en la que siempre existe el producto de dos
+objetos, y sea $T\in\mathcal C$. Para todo conjunto finito
+$I\ne\varnothing$, se puede considerar $T^I$; al variar $I$, se obtiene así un
+funtor covariante de la categoría de los conjuntos finitos no vacíos a
+$\mathcal C$, es decir, lo que puede llamarse un \emph{objeto simplicial} de
+$\mathcal C$, denotado por $K_T$. Este último depende covariantemente de $T$;
+además, si $u,v$ son dos morfismos $T\longrightarrow T'$, los morfismos
+correspondientes $K_T\longrightarrow K_{T'}$ son homotópicos. Diremos que $T$
+\emph{domina} a $T'$ si $\operatorname{Hom}(T,T')\ne\varnothing$; esta es una
+relación de preorden filtrante creciente en $\mathcal C$. De lo anterior se
+deduce que, si $T$ domina a $T'$, existe una clase canónica (salvo homotopía)
+de homomorfismos de objetos simpliciales $K_T\longrightarrow K_{T'}$; en
+particular, si $K_T$ y $K_{T'}$ son tales que cada uno domina al otro, entonces
+$K_T$ y $K_{T'}$ son homotópicamente equivalentes. Sea ahora $F$ un funtor
+(contravariante, para fijar ideas) de $\mathcal C$ a una categoría abeliana
+$\mathcal C'$; entonces
+\[
+  C^*(T,F)=F(K_T)
+\]
+es un objeto cosimplicial de $\mathcal C'$ y, por tanto, define de la manera
+habitual un complejo (de cocadenas) en $\mathcal C'$, del cual puede tomarse la
+cohomología
+\[
+  H^*(T,F)=H^*(C^*(T,F))=H^*(F(K_T))
+\]
+(se podrá poner una $\mathcal C$ como subíndice de $H^*$ si existe posibilidad
+de confusión). Este es un funtor cohomológico en $F$, cuya varianza al variar
+$T$ se deduce de lo dicho sobre los $K_T$; más precisamente, para $F$ fijo y
+$T$ variable en $\mathcal C$ (preordenada por la relación de dominación), los
+$H^*(T,F)$ forman un sistema inductivo de objetos graduados de $\mathcal C'$;
+en particular, si $T$ y $T'$ son tales que cada uno domina al otro, entonces
+$H^*(T,F)$ y $H^*(T',F)$ son canónicamente isomorfos.
+
+Supongamos que en $\mathcal C$ existen los productos fibrados. Para
+$S\in\mathcal C$ fijo, se puede aplicar lo anterior a la categoría
+$\mathcal C_S$ de los objetos de $\mathcal C$ sobre $S$; escribiremos
+$C^*(T/S,F)$ y $H^*(T/S,F)$ en lugar de $C^*(T,F)$ y $H^*(T,F)$ cuando
+queramos precisar que trabajamos en la categoría $\mathcal C_S$; así,
+
+\src{311}
+$C^*(T/S,F)$ es un complejo de cocadenas en $\mathcal C'$ que, en dimensión
+$n$, es igual a
+\[
+  F(T\times_ST\times_S\cdots\times_ST)
+\]
+(donde el paréntesis contiene $n+1$ factores).
+
+Obsérvese que, como de costumbre, puede definirse $H^0(T/S,F)$ sin suponer
+abeliana la categoría $\mathcal C'$: es el núcleo (definición 2.1), si existe,
+del par de morfismos $F(p_i)$ ($i=1,2$)
+\[
+  F(T)\rightrightarrows F(T\times_ST)
+\]
+correspondientes a las dos proyecciones
+$p_1,p_2:T\times_ST\rightrightarrows T$. En particular, se tendrá un morfismo
+natural (llamado de \emph{aumento})
+\[
+  F(S)\longrightarrow H^0(T/S,F)
+\]
+que será un isomorfismo en los casos favorables (en particular, si
+$T\longrightarrow S$ es un epimorfismo estricto y $F$ es «exacto por la
+izquierda»). De igual modo, cuando $F$ toma valores en la categoría de los
+grupos en una categoría $\mathcal C''$, también puede definirse $H^1(T/S,F)$;
+cuando $\mathcal C''$ es la categoría de los conjuntos (es decir, $F$ toma
+valores en la categoría de los grupos ordinarios, no necesariamente
+conmutativos), $H^1(T/S,F)$ es el cociente del subgrupo $Z^1(T/S,F)$ de
+$C^1(T/S,F)=F(T\times_ST)$ formado por los $g$ tales que
+\[
+  F(p_{31})(g)=F(p_{32})(g)\,F(p_{21})(g)
+\]
+por el grupo de operadores $F(T)$, que actúa sobre $C^1(T/S,F)$ y, en
+particular, sobre el subconjunto $Z^1(T/S,F)$ mediante
+\[
+  \rho(g')\cdot g=F(p_2)(g')\,g\,F(p_1)(g')^{-1}.
+\]
+
+\medskip\noindent
+b. Sea, por ejemplo, $\mathcal F$ una categoría fibrada de base $\mathcal C$.
+Sean $\xi,\eta\in\mathcal F_S$ y, para todo $S'$ sobre $S$, sea
+\[
+  F_{\xi,\eta}(S')=
+  \operatorname{Hom}(\xi\times_SS',\eta\times_SS').
+\]
+Así, $F_{\xi,\eta}$ es un funtor contravariante de $\mathcal C_S$ a la
+categoría de los conjuntos. Dicho esto, \emph{afirmar que el morfismo de
+aumento}
+\[
+  F_{\xi,\eta}(S)\longrightarrow H^0(S'/S,F_{\xi,\eta})
+\]
+\emph{es un isomorfismo para todo par de elementos
+$\xi,\eta\in\mathcal F_S$ significa que
+$\alpha:S'\longrightarrow S$ es un morfismo de $\mathcal F$-descenso}
+(definición 1.7).
+
+\medskip\noindent
+c. Pongamos asimismo, para $\xi\in\mathcal F_S$ y todo objeto $S'$ de
+$\mathcal C$ sobre $S$,
+\[
+  G_\xi(S')=\operatorname{Aut}(\xi\times_SS') ;
+\]
+se ha definido así un funtor contravariante $G_\xi$ de $\mathcal C_S$ a la
+categoría de los
+
+\src{312}
+grupos. Dicho esto, se constata que $Z^1(S'/S,G_\xi)$ \emph{se identifica
+canónicamente con el conjunto de los datos de descenso sobre
+$\xi'=\xi\times_SS'$ relativos a $S'\longrightarrow S$} (definición 1.6), y
+$H^1(S'/S,G_\xi)$ \emph{se identifica con el conjunto de las clases (salvo
+isomorfismo) de objetos de $\mathcal F_{S'}$ provistos de un dato de descenso
+relativo a $\alpha:S'\longrightarrow S$ que, como objetos de
+$\mathcal F_{S'}$, son isomorfos a $\xi'=\xi\times_SS'$}. Por tanto, si
+$\alpha:S'\longrightarrow S$ es un morfismo de $\mathcal F$-descenso
+(cf. (b)), entonces $H^1(S'/S,G_\xi)$ \emph{contiene como subconjunto el
+conjunto de las clases (salvo isomorfismo) de objetos $\eta$ de
+$\mathcal F_S$ tales que $\eta\times_SS'$ sea isomorfo en
+$\mathcal F_{S'}$ a $\xi\times_SS'$; y esta inclusión es una identidad si y
+solo si todo dato de descenso sobre $\xi'=\xi\times_SS'$ relativo a
+$\alpha:S'\longrightarrow S$ es efectivo}. (Este será el caso, en particular,
+si $\alpha:S'\longrightarrow S$ es un morfismo de $\mathcal F$-descenso
+estricto.)
+
+\result{OBSERVACIÓN}{} Los complejos de cocadenas del tipo $C^*(T/S,F)$
+contienen como casos particulares la mayoría de los complejos estándar
+conocidos (cohomología de Čech, cohomología de grupos, etc.) y desempeñan un
+papel importante en geometría algebraica, en particular en la «cohomología de
+Weil» de los preesquemas.
+
+\medskip\noindent
+d. \result{EJEMPLO}{1} Sea $S'$ un objeto sobre $S\in\mathcal C$, y sea
+$\Gamma$ un grupo de automorfismos de $S'$ tal que $S'$ sea «formalmente
+principal sobre $S$, de grupo $\Gamma$», es decir, tal que el morfismo natural
+\[
+  \Gamma\times S'\longrightarrow S'\times_SS',
+\]
+donde $\Gamma\times S'$ denota la suma directa de $\Gamma$ copias de $S'$, sea
+un isomorfismo. (Se supone que en $\mathcal C$ existen las sumas directas que
+intervienen aquí.) Sea $F$ un funtor contravariante de $\mathcal C$ a la
+categoría de los grupos abelianos. Entonces $C^*(S'/S,F)$ es canónicamente
+isomorfo al grupo simplicial estándar de cocadenas homogéneas
+$C^*(\Gamma,F(S'))$ y, por tanto, $H^*(S'/S,F)$ es canónicamente isomorfo a
+$H^*(\Gamma,F(S'))$.
+
+\medskip\noindent
+e. \result{EJEMPLO}{2} Sea $\mathcal C$ la categoría de los preesquemas. Se
+denota por $G_a$ («grupo aditivo») el funtor contravariante de $\mathcal C$ a
+la categoría de los grupos abelianos definido por
+\[
+  G_a(X)=H^0(X,\mathcal O_X).
+\]
+Se define de igual modo el funtor $G_m$ («grupo multiplicativo») mediante
+\[
+  G_m(X)=H^0(X,\mathcal O_X)^*
+\]
+(grupo de los elementos invertibles del anillo $H^0(X,\mathcal O_X)$), y, más
+generalmente, el funtor $\operatorname{Gl}(n)$ («grupo lineal de orden $n$»)
+mediante
+
+\src{313}
+\[
+  \operatorname{Gl}(n)(X)=
+  \operatorname{Gl}\bigl(n,H^0(X,\mathcal O_X)\bigr),
+\]
+que es un funtor de $\mathcal C$ a la categoría de los grupos (no
+necesariamente conmutativos si $n>1$; para $n=1$ se recupera $G_m$). Además,
+puede interpretarse $\operatorname{Gl}(n)$ como un funtor de automorfismos
+(cf. (c)) considerando la categoría fibrada $\mathcal F$ de base $\mathcal C$
+tal que, para $X\in\mathcal C$, $\mathcal F_X$ sea la categoría de los haces
+localmente libres sobre $X$: en efecto, se tiene
+\[
+  \operatorname{Gl}(n)(X)=
+  \operatorname{Aut}_{\mathcal F_X}(\mathcal O_X^n).
+\]
+De (b) se sigue que, si $\alpha:S'\longrightarrow S$ es un morfismo de
+$\mathcal F$-descenso (cf. parágrafo 2.c),
+$H^1(S'/S,\operatorname{Gl}(n))$ contiene el conjunto de las clases (salvo
+isomorfismo) de haces localmente libres sobre $S$ cuya imagen inversa sobre
+$S'$ es isomorfa a $\mathcal O_{S'}^n$, y esta inclusión es una igualdad si y
+solo si todo dato de descenso sobre $\mathcal O_{S'}^n$ (relativo a
+$\alpha:S'\longrightarrow S$) es efectivo. Cuando $S$ es el espectro de un
+anillo local, esto significa, por tanto,
+$H^1(S'/S,\operatorname{Gl}(n))=(e)$, pues todo haz localmente libre sobre $S$
+es entonces trivial.
+
+Señalemos la equivalencia de las condiciones siguientes para un morfismo
+$\alpha:S'\longrightarrow S$:
+\begin{enumerate}
+\item[(i)] el homomorfismo de aumento
+\[
+  H^0(S,\mathcal O_S)=G_a(S)\longrightarrow H^0(S'/S,G_a)
+\]
+es un isomorfismo;
+\item[(ii)] $S'\longrightarrow S$ es un morfismo de $\mathcal F$-descenso
+(siendo $\mathcal F$ la categoría fibrada de base $\mathcal C$ considerada
+arriba).
+\end{enumerate}
+Si $S'\longrightarrow S$ es finito, estas condiciones equivalen también a:
+\begin{enumerate}
+\item[(iii)] $S'\longrightarrow S$ es un epimorfismo estricto
+(cf. parágrafo 2.c).
+\end{enumerate}
+
+Supongamos ahora que $S=\operatorname{Spec}(A)$,
+$S'=\operatorname{Spec}(A')$; entonces
+\[
+  C^n(S'/S,G_a)=C^n(A'/A,G_a)=\bigotimes_A^{n+1}A',
+\]
+siendo el operador coborde
+$C^n(A'/A,G_a)\longrightarrow C^{n+1}(A'/A,G_a)$ la suma alternada de los
+operadores de cara
+\[
+  \partial_i(x_0\otimes x_1\otimes\cdots\otimes x_n)
+  =x_0\otimes\cdots\otimes x_{i-1}\otimes1_{A'}\otimes
+   x_i\otimes\cdots\otimes x_n.
+\]
+Del mismo modo,
+\[
+  C^n(S'/S,G_m)=C^n(A'/A,G_m)
+  \simeq\left(\bigotimes_A^{n+1}A'\right)^*,
+\]
+y las operaciones simpliciales en $C^*(A'/A,G_m)$ están inducidas por las de
+$C^*(S'/S,G_a)$. Se explicitan análogamente las operaciones simpliciales en
+$C^*(A'/A,\operatorname{Gl}(n))$. \emph{En todos los casos que conoce el
+conferenciante, se tiene}
+\[
+  H^i(A'/A,G_a)=0\qquad\text{para $i>0$},
+\]
+\emph{y si $A$ es local, se tiene}
+\[
+  H^1(A'/A,G_m)=0
+  \quad\text{y, más generalmente,}\quad
+  H^1(A'/A,\operatorname{Gl}(n))=(e)
+\]
+(cuando $S'\longrightarrow S$ es un morfismo de $\mathcal F$-descenso, es
+decir, cuando el diagrama
+$A\longrightarrow A'\rightrightarrows A'\otimes_AA'$ es exacto; compárese con
+el parágrafo 2.c). Obsérvese que \emph{el «teorema 90» de Hilbert no es sino
+la relación}
+\src{314}
+\[
+  H^1(S'/S,G_m)=0
+\]
+\emph{cuando $A$ es un cuerpo y $A'$ una extensión de Galois finita de este
+(cf. ejemplo 1), y también puede expresarse diciendo que, en el caso
+considerado, $S'\longrightarrow S$ es un morfismo de descenso estricto para la
+categoría fibrada de los haces localmente libres de rango 1.} Es bajo esta
+última forma como conviene generalizar el teorema de Hilbert, variando tanto
+las hipótesis sobre el morfismo $S'\longrightarrow S$ como las relativas a los
+haces cuasi-coherentes considerados.
+
+Señalemos, por último, la equivalencia de las propiedades siguientes cuando
+$A$ es un anillo local artiniano de ideal maximal $\mathfrak m$ y $A'$ una
+$A$-álgebra (denotando, para todo entero $k>0$, por $A_k$ (resp. $A'_k$) los
+anillos $A/\mathfrak m^{k+1}$ (resp. $A'/\mathfrak m^{k+1}A'$)):
+\begin{enumerate}
+\item[(i)] $H^1(A'_k/A_k,G_a)=0$ para todo $k$.
+\item[(ii)] $H^1(A'_k/A_k,G_m)=0$ para todo $k$.
+\item[(iii)] $H^1(A'_k/A_k,\operatorname{Gl}(n))=(e)$ para todo $k$ y todo
+$n$.
+\end{enumerate}
+Si $S'\longrightarrow S$ es un epimorfismo estricto, las condiciones
+anteriores implican incluso que es un morfismo de descenso estricto para los
+módulos libres (de tipo finito o no) sobre $A'$.
+
+\result{OBSERVACIÓN}{} La definición de los grupos $H^i(S'/S,G_m)$, cuando
+$S,S'$ son esquemas de cuerpos $A,A'$, se debe a Amitsur. El grupo
+$H^2(S'/S,G_m)$ es particularmente interesante como variante «global» del
+grupo de Brauer; para esta variante se podrá consultar [1], capítulo VII.
+
+\fsection{B}{Descenso por morfismos fielmente planos}
+
+\subsection*{1. Enunciado de los teoremas de descenso}
+\addcontentsline{toc}{subsection}{1. Enunciado de los teoremas de descenso}
+
+\result{DEFINICIÓN}{1.1} Un morfismo
+$\alpha:S'\longrightarrow S$ de preesquemas se dice \emph{plano} si, para todo
+$x'\in S'$, $\mathcal O_{x'}$ es un módulo plano sobre el anillo
+$\mathcal O_{\alpha(x')}$ (es decir, si
+$\mathcal O_{x'}\otimes_{\mathcal O_{\alpha(x')}}M$ es un funtor exacto en el
+$\mathcal O_{\alpha(x')}$-módulo $M$). Un morfismo se dice
+\emph{fielmente plano} si es plano y sobreyectivo.
+
+Por ejemplo, si $S=\operatorname{Spec}(A)$ y
+$S'=\operatorname{Spec}(A')$, entonces $S'$ es plano sobre $S$ si y solo si
+$A'$ es un $A$-módulo plano, y $S'$ es fielmente plano sobre $S$ si y solo si
+$A'$ es un $A$-módulo fielmente plano (es decir, el funtor
+$A'\otimes_A M$ en el $A$-módulo $M$ es exacto y fiel); esto significa también,
+en la terminología de Serre [5], que el par $(A,A')$ es plano. Si $S'$ es
+fielmente plano sobre $S$, entonces el funtor imagen inversa de haces
+cuasi-coherentes sobre $S$ es exacto y fiel; en otras palabras, para que una
+sucesión de homomorfismos de haces
+
+\src{315}
+cuasi-coherentes sobre $S$ sea exacta, es necesario y suficiente que lo sea su
+imagen inversa sobre $S'$ (en particular, para que un homomorfismo de haces
+cuasi-coherentes sobre $S$ sea un monomorfismo, resp. un epimorfismo, resp. un
+isomorfismo, es necesario y suficiente que lo sea su imagen inversa sobre
+$S'$). Esta propiedad sigue siendo cierta si nos restringimos sobre un abierto
+cualquiera de $S$ y, bajo esta forma, caracteriza a los morfismos fielmente
+planos.
+
+\result{DEFINICIÓN}{1.2} Un morfismo $\alpha:S'\longrightarrow S$ se dice
+\emph{cuasicompacto} si la imagen inversa de toda parte abierta cuasicompacta
+$U$ de $S$ es cuasicompacta (es decir, unión finita de abiertos afines).
+
+Evidentemente, basta comprobar esta propiedad para los abiertos afines de $S$.
+Por ejemplo, un morfismo afín (es decir, tal que la imagen inversa de un abierto
+afín sea afín) es cuasicompacto.
+
+La clase de los morfismos planos, resp. fielmente planos, resp. cuasicompactos,
+es estable por composición y por «cambio de base», y contiene, por supuesto,
+los isomorfismos.
+
+\result{TEOREMA}{1} Sea $\alpha:S'\longrightarrow S$ un morfismo de
+preesquemas, fielmente plano y cuasicompacto. Entonces $\alpha$ es un
+\emph{morfismo de descenso estricto} (A, definición 1.7) para la categoría
+fibrada $\mathcal F$ de los haces cuasi-coherentes (A, parágrafo 1, ejemplo 2).
+
+Este enunciado significa dos cosas:
+\begin{enumerate}
+\item[(i)] Si $F$ y $G$ son dos haces cuasi-coherentes sobre $S$, y $F'$ y
+$G'$ sus imágenes inversas sobre $S'$, entonces el homomorfismo natural
+\[
+  \operatorname{Hom}(F,G)\longrightarrow\operatorname{Hom}(F',G')
+\]
+es una biyección del primer miembro sobre el subgrupo del segundo formado por
+los homomorfismos $F'\longrightarrow G'$ compatibles con los datos de descenso
+canónicos sobre estos haces, es decir, aquellos cuyas imágenes inversas por
+las dos proyecciones de $S''=S'\times_SS'$ sobre $S'$ dan un mismo
+homomorfismo $F''\longrightarrow G''$.
+\item[(ii)] Todo haz cuasi-coherente $F'$ sobre $S'$, provisto de un dato de
+descenso relativo al morfismo $\alpha:S'\longrightarrow S$
+(A, definición 1.6), es isomorfo (provisto de este dato) a la imagen inversa de
+un haz cuasi-coherente $F$ sobre $S$.
+\end{enumerate}
+Tomando $F=\mathcal O_S$ en (i), se obtiene:
+
+\result{COROLARIO}{1} Sea $G$ un haz cuasi-coherente sobre $S$; sean
+$G'$ y $G''$ sus imágenes inversas sobre $S'$ y sobre
+$S''=S'\times_SS'$, y sean $p_1,p_2$ las dos proyecciones de $S''$ sobre
+$S'$. Entonces el siguiente diagrama de aplicaciones de conjuntos
+
+\src{316}
+\[
+  \Gamma(G)\xrightarrow{\alpha^*}\Gamma(G')
+  \underset{p_2^*}{\overset{p_1^*}{\rightrightarrows}}\Gamma(G'')
+\]
+es exacto (A, definición 1.(a)).
+
+Por otra parte, la conjunción de (i), (ii) y de la definición 1.1 da el
+
+\result{COROLARIO}{2} Sea $G$ como en el corolario 1. Entonces existe una
+correspondencia biunívoca entre los subhaces cuasi-coherentes de $G$ y los
+subhaces cuasi-coherentes de $G'$ cuyas imágenes inversas sobre $S''$, por las
+dos proyecciones $p_1,p_2$, dan el mismo subhaz de $G''$.
+
+Por supuesto, se tiene un enunciado equivalente en términos de haces
+cociente. Como se ha visto (A, parágrafo 4, (e)), el teorema 1 debe considerarse
+una generalización del «teorema 90» de Hilbert, e implica como casos
+particulares diversas formulaciones en términos de 1-cohomología. Para la
+demostración, se reduce fácilmente al caso en que $S=\operatorname{Spec}(A)$,
+$S'=\operatorname{Spec}(A')$, y para (i) se reduce fácilmente a demostrar el
+corolario 1, es decir, la exactitud del diagrama
+\[
+  M=A\otimes_A M\longrightarrow A'\otimes_A M
+  \rightrightarrows A'\otimes_AA'\otimes_A M
+\]
+para todo $A$-módulo $M$, lo cual se deduce del lema más general:
+
+\result{LEMA}{1.1} Sea $A'$ una $A$-álgebra fielmente plana. Entonces, para
+todo $A$-módulo $M$, el complejo aumentado por $M$
+$C^*(A'/A,G_a)\otimes_A M$ (cf. A, parágrafo 4, (e)) es una
+\emph{resolución} de $M$.
+
+Basta demostrar que el complejo aumentado deducido del anterior mediante el
+cambio de base de $A$ a $A'$ satisface las mismas conclusiones. Esto conduce a
+comprobar el enunciado cuando se reemplazan $A$ por $A'$ y $A'$ por
+$A'\otimes_AA'$, por lo que nos reduce a un caso en el que existe un
+homomorfismo de $A$-álgebras $A'\longrightarrow A$ (o, en términos
+geométricos, al caso en que $S'$ sobre $S$ admite una sección). En este caso,
+esto se deduce de las generalidades de A, parágrafo 4, (a). Señalemos de paso
+el siguiente corolario, que generaliza un enunciado bien conocido en
+cohomología de Galois (compárese con A, parágrafo 4, (e)):
+
+\result{COROLARIO}{} Si $A'$ es fielmente plana sobre $A$, se tiene
+$H^0(A'/A,G_a)=A$ y
+\[
+  H^i(A'/A,G_a)=0\qquad\text{para $i\geq1$}.
+\]
+
+Para demostrar la parte (ii) del teorema 1, se procede como para (i),
+reduciéndose al caso en que $S'$ sobre $S$ admite una sección, donde se deduce
+de (i) (cf. A, parágrafo 1, (c)).
+
+Evidentemente, se puede variar ad libitum el teorema 1 y sus corolarios
+introduciendo diversas estructuras adicionales en los haces (o sistemas de
+haces) cuasi-coherentes considerados. Por ejemplo, dar sobre $S$ un haz
+\src{317}
+cuasi-coherente de álgebras conmutativas «equivale» a dar sobre $S'$ un haz de
+este tipo provisto de un dato de descenso relativo a
+$\alpha:S'\longrightarrow S$. Teniendo en cuenta la correspondencia funtorial
+entre tales haces cuasi-coherentes sobre $S$ y los preesquemas afines sobre
+$S$, se obtiene la segunda afirmación del teorema siguiente:
+
+\result{TEOREMA}{2} Sea $\alpha:S'\longrightarrow S$ como en el teorema 1.
+Entonces $\alpha$ es un \emph{morfismo de descenso} (no estricto en general)
+(A, definición 2.4), y es un \emph{morfismo de descenso estricto} para la
+categoría fibrada de los esquemas afines sobre preesquemas
+(A, definición 1.7).
+
+La primera afirmación del teorema significa lo siguiente: sean $X,Y$ dos
+preesquemas sobre $S$; sean $X',Y'$ sus imágenes inversas sobre $S'$, y
+$X'',Y''$ sus imágenes inversas sobre $S''=S'\times_SS'$. Entonces el siguiente
+diagrama de aplicaciones naturales
+\[
+  \operatorname{Hom}_S(X,Y)\xrightarrow{\alpha^*}
+  \operatorname{Hom}_{S'}(X',Y')
+  \underset{p_2^*}{\overset{p_1^*}{\rightrightarrows}}
+  \operatorname{Hom}_{S''}(X'',Y'')
+\]
+es exacto; es decir, $\alpha^*$ es una biyección de
+$\operatorname{Hom}_S(X,Y)$ sobre la parte de
+$\operatorname{Hom}_{S'}(X',Y')$ formada por los homomorfismos compatibles con
+los datos de descenso canónicos sobre $X',Y'$ (es decir, aquellos cuyas
+imágenes inversas por las dos proyecciones de $S''$ sobre $S'$ son iguales).
+Esto se deduce fácilmente del teorema 1, corolario 1, cuando uno se restringe
+a $Y$ afín sobre $S$; en el caso general, hay que combinar el teorema 1 con el
+resultado siguiente:
+
+\result{LEMA}{1.2} Sea $\alpha:S'\longrightarrow S$ un morfismo fielmente plano
+y cuasicompacto. Entonces $S$ se identifica con un \emph{espacio topológico
+cociente} de $S'$; es decir, toda parte $U$ de $S$ tal que
+$\alpha^{-1}(U)$ sea abierta es abierta.
+
+Para completar el teorema 2, hay que dar criterios de efectividad para un dato
+de descenso sobre un $S'$-preesquema $X'$ (cuando no se supone que $X'$ sea
+afín sobre $S'$). Señalemos primero que \emph{tal dato de descenso no es
+necesariamente efectivo}, incluso si $S$ es el espectro de un cuerpo $k$, $S'$
+el espectro de una extensión cuadrática $k'$ de este y $X'$ un esquema
+algebraico propio de dimensión 2 sobre $S'$ (como puede verse, según Serre,
+utilizando la superficie no proyectiva de Nagata). \emph{Para que un dato de
+descenso sobre $X'/S'$ relativo a $\alpha:S'\longrightarrow S$ (fielmente
+plano y cuasicompacto) sea efectivo, es necesario y suficiente que $X'$ sea
+unión de abiertos $X'_i$, afines sobre $S'$, que sean «estables» por el dato de
+descenso sobre $X'$.} Esto se cumple con certeza (cualesquiera que sean $X'/S'$
+y el dato de descenso sobre $X'$) si el morfismo
+$\alpha:S'\longrightarrow S$ es \emph{radicial} (es decir, inyectivo y con
+extensiones residuales que
+
+\src{318}
+son radiciales). Puede demostrarse también que sigue cumpliéndose si
+$\alpha:S'\longrightarrow S$ es \emph{finito} y toda parte finita de $X'$,
+contenida en una fibra de $X'$ sobre $S$, está contenida en un abierto de $X'$
+afín sobre $S$ (este es el \emph{criterio de Weil}). En particular, esto se
+cumple si $X'/S'$ es cuasiproyectivo, y en ese caso puede demostrarse que el
+preesquema «descendido» $X/S$ también es cuasiproyectivo (y proyectivo si
+$X'/S'$ lo es). En resumen:
+
+\result{TEOREMA}{3} Sea $\alpha:S'\longrightarrow S$ un morfismo de
+preesquemas, fielmente plano y cuasicompacto. Si $\alpha$ es \emph{radicial},
+es un \emph{morfismo de descenso estricto}. Si $\alpha$ es finito, es un
+morfismo de descenso estricto respecto de la categoría fibrada de los
+preesquemas cuasiproyectivos (o proyectivos) sobre preesquemas.
+
+\result{OBSERVACIONES}{} Ignoro si, en la segunda afirmación anterior, la
+hipótesis de que $\alpha$ sea un morfismo \emph{finito} es realmente necesaria;
+en cualquier caso, se comprueba de manera «formal» que puede sustituirse por la
+siguiente hipótesis, aparentemente más débil: \emph{para todo punto de $S$
+existe un entorno abierto $U$, un $U'$ finito y fielmente plano sobre $U$, y un
+$S$-morfismo de $U'$ en $S'$.} Un caso típico que no entra en el anterior es
+aquel en que $S=\operatorname{Spec}(A)$,
+$S'=\operatorname{Spec}(\widehat A)$, donde $A$ es un anillo local noetheriano
+y $\widehat A$ su completado; o también aquel en que $S'$ es cuasifinito sobre
+$S$ (es decir, localmente isomorfo a un abierto de un $S$-esquema finito) y no
+finito. En estos dos casos, el conferenciante también ignora la respuesta a la
+pregunta siguiente: sea $X$ un $S$-esquema tal que $X'=X\times_SS'$ sea
+proyectivo sobre $S'$; ¿es cierto que $X$ es proyectivo sobre
+$S$?\footnote{La fe de erratas de 1962 responde negativamente: un morfismo
+$S'\longrightarrow S$ cuasifinito, étale y sobreyectivo, o un morfismo
+$\operatorname{Spec}(\widehat A)\longrightarrow\operatorname{Spec}(A)$, no es
+siempre un morfismo de descenso estricto, incluso si $A$ es el anillo local de
+una curva algebraica sobre un cuerpo algebraicamente cerrado $k$ y
+$S=\operatorname{Spec}(A)$. Se puede encontrar así un morfismo propio y liso
+$f:X\longrightarrow S$, que hace de $X$ un fibrado principal de base $S$ bajo
+una curva elíptica $E$, tal que $f':X'\longrightarrow S'$ sea proyectivo, pero
+$f$ no lo sea. Por tanto, también es un ejemplo de fibrado principal homogéneo
+no isotrivial bajo un esquema abeliano.}
+
+\subsection*{2. Aplicación al descenso de ciertas propiedades de los morfismos}
+\addcontentsline{toc}{subsection}{2. Descenso de propiedades de los morfismos}
+
+Sea $P$ una clase de morfismos de preesquemas. Sea
+$\alpha:S'\longrightarrow S$ un morfismo de preesquemas, sea
+$f:X\longrightarrow Y$ un morfismo de $S$-preesquemas y sea
+$f':X'\longrightarrow Y'$ la imagen inversa de $f$ por $\alpha$. Cabe
+preguntarse entonces si la relación «$f'\in P$» implica «$f\in P$». Resulta que
+la respuesta es afirmativa en muchos casos importantes cuando se supone que
+$\alpha$ es \emph{fielmente plano y cuasicompacto} (siendo a veces superflua
+esta última hipótesis). Esto se ve directamente y sin dificultad si $P$ es la
+clase de los morfismos sobreyectivos, resp. radiciales (estos casos se deducen
+de la sobreyectividad de $\alpha$), resp. planos, resp. fielmente planos, resp.
+lisos (estos casos se deducen de la planitud fiel de $\alpha$), resp. de tipo
+finito. Utilizando los teoremas 1 y 2 y el lema 1.2, se ve también que ocurre
+lo mismo si $P$ es una de las clases siguientes: isomorfismos, inmersiones
+abiertas, inmersiones cerradas, inmersiones (si $f$ es de tipo finito e $Y$
+localmente noetheriano), morfismos afines, morfismos finitos, morfismos
+cuasifinitos, morfismos abiertos, morfismos cerrados, homeomorfismos, morfismos
+separados,
+
+\src{319}
+morfismos propios. El único caso importante no dilucidado es el de los
+morfismos proyectivos y cuasiproyectivos, ya señalado en la observación del
+parágrafo 1.
+
+\subsection*{3. Descenso por morfismos finitos fielmente planos}
+\addcontentsline{toc}{subsection}{3. Descenso por morfismos finitos fielmente planos}
+
+Sea $\alpha:S'\longrightarrow S$ un morfismo finito correspondiente a un haz de
+álgebras $\mathcal A'$ sobre $S$ que, como haz de módulos, es localmente libre
+de tipo finito y es $\ne0$ en todas partes; entonces $\alpha$ es un morfismo
+fielmente plano y cuasicompacto, al que pueden aplicarse los resultados
+anteriores. Dar un haz cuasi-coherente $F'$ sobre $S'$ equivale a dar el haz
+cuasi-coherente $\alpha_*(F')$ sobre $S$, provisto de su estructura de
+$\mathcal A'$-módulo (observando que
+$\mathcal A'=\alpha_*(\mathcal O_{S'})$). Para simplificar, este haz sobre $S$
+también se denotará por $F'$. Las dos imágenes inversas $p_i^*(F')$ de $F'$
+sobre $S'\times_SS'$ corresponden asimismo a los haces cuasi-coherentes de
+$(\mathcal A'\otimes_{\mathcal O_S}\mathcal A')$-módulos
+\[
+  F'\otimes_{\mathcal O_S}\mathcal A'
+  \quad\text{y}\quad
+  \mathcal A'\otimes_{\mathcal O_S}F'.
+\]
+Dar un $(S'\times_SS')$-homomorfismo del primero al segundo equivale a dar un
+homomorfismo de $(\mathcal A'\otimes_{\mathcal O_S}\mathcal A')$-módulos y,
+teniendo en cuenta que $\mathcal A'$ es localmente libre, esto equivale a dar
+un homomorfismo de $(\mathcal A'\otimes\mathcal A')$-módulos:
+\[
+  \mathcal U=
+  \operatorname{Hom}_{\mathcal O_S}(\mathcal A',\mathcal A')
+  =\mathcal A'\otimes\check{\mathcal A}'
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal O_S}(F',F'),
+\]
+es decir, a dar, para cada sección $\xi$ de $\mathcal U$ sobre un abierto $V$,
+un homomorfismo de $\mathcal O_S$-módulos
+$T_\xi:F'|_V\longrightarrow F'|_V$ que satisface las condiciones
+\begin{equation}
+  T_{f\xi}(x)=fT_\xi(x),
+  \qquad T_{\xi f}(x)=T_\xi(fx),
+  \tag{3.1}
+\end{equation}
+donde $f,x$ son, respectivamente, secciones de $\mathcal A',F'$ sobre un
+abierto de $S$ contenido en $V$. Las condiciones (i) y (ii) de un dato de
+descenso (A, parágrafo 1, (c)) se escriben entonces, respectivamente:
+\begin{equation}
+  T_{1_{\mathcal U}}x=x,
+  \qquad\text{es decir,}\qquad
+  T_{1_{\mathcal U}}=\operatorname{id}_{F'},
+  \tag{3.2}
+\end{equation}
+\begin{equation}
+  T_{\xi\eta}=T_\xi T_\eta.
+  \tag{3.3}
+\end{equation}
+En otras palabras, \emph{un dato de descenso sobre $F'$ equivale a una
+representación del haz de $\mathcal O_S$-álgebras
+$\mathcal U=\operatorname{Hom}_{\mathcal O_S}(\mathcal A',\mathcal A')$ en el
+haz de $\mathcal O_S$-álgebras
+$\operatorname{Hom}_{\mathcal O_S}(F',F')$ que satisface las dos condiciones de
+linealidad (3.1).} Si se tiene un apareamiento de haces cuasi-coherentes sobre
+$S'$:
+\[
+  F'_1\times F'_2\longrightarrow F'_3
+\]
+(que puede interpretarse como un apareamiento de haces de
+$\mathcal A'$-módulos sobre $S$),
+
+\src{320}
+y datos de pegado sobre los $F'_i$, definidos por homomorfismos
+\[
+  T_i:\mathcal U\longrightarrow
+  \operatorname{Hom}_{\mathcal O_S}(F'_i,F'_i)
+  \qquad (i=1,2,3),
+\]
+entonces estos datos son compatibles con el apareamiento dado, en el sentido
+evidente del término, si y solo si se verifica la condición siguiente.
+
+Para toda sección $\xi$ de $\mathcal U$ sobre un abierto, denotando por
+\[
+  \Delta\xi=\sum_i\xi'_i\otimes_{\mathcal A'}\xi''_i
+\]
+la sección de $\mathcal U\otimes_{\mathcal A'}\mathcal U$ (considerando
+$\mathcal U$ como $\mathcal A'$-módulo mediante su estructura izquierda)
+definida por la fórmula
+\[
+  \xi\mathbin{\cdot}(fg)=\sum_i\xi'_i(f)\xi''_i(g)
+\]
+(donde $f$ y $g$ son dos secciones de $\mathcal A'$ sobre un abierto más
+pequeño), se tiene la fórmula
+\begin{equation}
+  T^{(3)}_\xi(x\mathbin{\cdot}y)
+  =\sum_iT^{(1)}_{\xi'_i}x\mathbin{\cdot}T^{(2)}_{\xi''_i}y
+  \tag{3.4}
+\end{equation}
+para todo par de secciones $x,y$ de $F'_1,F'_2$, respectivamente, sobre un
+abierto más pequeño.\footnote{El texto impreso dice «de $\mathcal A'$». Los
+dominios de $T^{(1)}$ y $T^{(2)}$, así como el apareamiento
+$F'_1\times F'_2\longrightarrow F'_3$, obligan a que $x$ e $y$ sean secciones
+de $F'_1$ y $F'_2$, respectivamente.} (Esta propiedad podrá expresarse
+diciendo que los homomorfismos $T^{(i)}$ son compatibles con la aplicación
+diagonal de $\mathcal U$ respecto del apareamiento dado.) En particular, las
+fórmulas (3.1) a (3.4) permiten interpretar, en términos de representaciones de
+álgebras con aplicaciones diagonales, los datos de descenso sobre un haz
+cuasi-coherente de álgebras sobre $S'$ y, por tanto, también (restringiéndose a
+las álgebras conmutativas) los datos de descenso sobre un $S'$-esquema afín.
+
+De aquí se pasa a una interpretación análoga de los datos de descenso sobre un
+$S'$-preesquema $X'$ cualquiera: dar tal $X'$ equivale a dar un preesquema
+$X'$ sobre $S$, provisto de un homomorfismo de $\mathcal O_S$-álgebras
+\[
+  \mathcal A'\longrightarrow\mathcal O_{X'},
+\]
+y un dato de descenso sobre $X'$ equivale a dar un homomorfismo de haces
+(compatible con el morfismo $h:X'\longrightarrow S'$)
+\[
+  \mathcal U\longrightarrow
+  \operatorname{Hom}_{h^{-1}(\mathcal O_S)}
+  (\mathcal O_{X'},\mathcal O_{X'}),
+\]
+que satisface condiciones análogas a las condiciones (3.1) a (3.4) anteriores.
+
+\textsc{Ejemplo 1 («Weil»).} -- Supongamos que $S'/S$ es un recubrimiento étale
+de Galois de grupo de Galois $\Gamma$ (cf. A, parágrafos 3 y 4.d). Entonces, un
+dato de descenso sobre un haz cuasi-coherente $F'$ sobre $S'$ (resp. sobre un
+$S'$-preesquema $X'$) equivale a dar una representación de $\Gamma$ por
+automorfismos de $(S',F')$ (resp. de $(S',X')$) compatible con las operaciones
+de $\Gamma$ sobre $S'$. Este resultado
+
+\src{321}
+es «formal», es decir, se demuestra en términos de categorías, pero desde el
+punto de vista de este número se deduce también de la estructura explícita de
+$\mathcal U$ (provisto de su estructura de anillo, del homomorfismo de anillos
+$\mathcal A'\longrightarrow\mathcal U$ y de la aplicación diagonal), conocida
+por completo gracias al resultado siguiente: $\mathcal U$ admite, como
+$\mathcal A'$-módulo izquierdo, una base formada por las secciones de
+$\mathcal U$ que corresponden a los elementos de $\Gamma$.
+
+\textsc{Ejemplo 2 («Cartier»).} -- Sea $p$ un número primo; supongamos que
+$p\mathcal O_S=0$ (es decir, $\mathcal O_S$ es de característica $p$),
+$(\mathcal A')^p\subset\mathcal O_S=\mathcal A$ (es decir, $S'/S$ es radicial
+de altura 1) y que el haz de álgebras $\mathcal A'$ sobre $\mathcal A$ admite
+localmente una $p$-base, es decir, una familia $(x_i)$ de secciones tal que
+$\mathcal A'$ está generada como álgebra por los $x_i$, sometidos a las únicas
+condiciones $x_i^p=0$. Suponemos que el conjunto de los $i$ es finito, de
+cardinal $n$. Sea $\mathfrak g$ el haz de las $\mathcal A$-derivaciones de
+$\mathcal A'$; es un haz de $\mathcal A'$-módulos localmente libre de rango
+$n$ y, además, un haz de $p$-álgebras de Lie sobre $\mathcal A$ (pero no sobre
+$\mathcal A'$) que satisface la condición
+\begin{equation}
+  [X,fY]=X(f)Y+f[X,Y].
+  \tag{3.5}
+\end{equation}
+
+\textsc{Lema.} -- $\mathcal U=
+\operatorname{Hom}_{\mathcal O_S}(\mathcal A',\mathcal A')$ está generada,
+como $\mathcal O_S$-álgebra provista de un homomorfismo de álgebras
+$\mathcal A'\longrightarrow\mathcal U$, por el sub-$\mathcal A'$-módulo
+izquierdo $\mathfrak g$, con las relaciones adicionales
+\begin{equation}
+  \left\{
+  \begin{aligned}
+    Xf-fX&=X(f),\\
+    XY-YX&=[X,Y],\\
+    X^p&=X^{(p)}.
+  \end{aligned}
+  \right.
+  \tag{3.6}
+\end{equation}
+
+Del lema anterior se deduce que un dato de descenso sobre el haz
+cuasi-coherente $F'$ sobre $S'$ equivale a dar, para todo $X\in\mathfrak g$, un
+$\mathcal O_S$-endomorfismo $\overline X$ de $F'$ que satisface las condiciones
+\begin{align}
+  \overline{fX}&=f\overline X, \tag{3.7}\\
+  \overline X(fx)&=X(f)x+f\overline X(x), \tag{3.8}\\
+  \overline{[X,Y]}&=[\overline X,\overline Y], \tag{3.9}\\
+  \overline{X^{(p)}}&=\overline X^p. \tag{3.10}
+\end{align}
+(Esto es lo que podría llamarse una conexión lineal sobre $F'$, sin curvatura
+y compatible con la potencia $p$-ésima.) Se explicita de igual modo la noción
+de dato de descenso sobre un $S'$-preesquema $X'$; la relación (3.4) se
+sustituye aquí por la condición de que los $\overline X$ sean derivaciones de
+$\mathcal O_{X'}$. Como el morfismo $S'\longrightarrow S$ es radicial, el
+teorema 3 garantiza que todo dato de descenso de este tipo es
+
+\src{322}
+efectivo y, por tanto, define un $S$-preesquema $X$.
+
+Obsérvese que no ha sido necesario imponer ninguna hipótesis de planitud, de no
+singularidad ni de finitud de ningún tipo sobre $F'$ resp. $X'$.
+
+\subsection*{4. Aplicación a criterios de racionalidad}
+\addcontentsline{toc}{subsection}{4. Aplicación a criterios de racionalidad}
+
+Sea $X$ un $S$-preesquema tal que la imagen directa de $\mathcal O_X$ sobre
+$S$ sea $\mathcal O_S$; esta propiedad seguirá siendo cierta tras todo cambio
+plano $S'\longrightarrow S$ de la base $S$. Si $F$ es un haz invertible (es
+decir, localmente libre de rango 1) sobre $X$, los automorfismos de $F$, que se
+identifican con las secciones invertibles de $\mathcal O_X$, corresponden
+biunívocamente a las secciones invertibles de $\mathcal O_S$. Sea entonces $s$
+una sección de $X$ sobre $S$; llamaremos, de manera gráfica, sección de $F$
+sobre $s$ a una sección del haz invertible $s^*(F)$ sobre $S$. De lo anterior
+se deduce que, si $F_i$ ($i=1,2$) son dos haces invertibles sobre $X$, cada uno
+provisto de una sección sobre $s$, y si $F_1$ y $F_2$ son isomorfos, existe un
+único isomorfismo de $F_1$ sobre $F_2$ compatible con las secciones en cuestión
+(es decir, que transforma la primera en la segunda). Por otra parte, e
+independientemente de la sección $s$, convengamos en considerar equivalentes
+dos haces invertibles $F_1$ y $F_2$ sobre $X$ tales que todo punto de $S$ tenga
+un entorno abierto $U$ para el cual las restricciones de $F_1$ y $F_2$ a
+$X|U$ sean isomorfas. Entonces todo haz invertible $F$ sobre $X$ es equivalente
+a un haz invertible $F_1$ provisto de una sección distinguida sobre $s$ (se
+toma $F_1=F\,s^*(F)^{-1}$), y $F_1$ está determinado salvo isomorfismo. En
+otras palabras, la clasificación de los haces invertibles sobre $X$ salvo
+equivalencia es la misma que la clasificación, salvo isomorfismo, de los haces
+invertibles provistos de una sección distinguida.
+
+Como estas propiedades siguen siendo ciertas tras un cambio plano
+$\alpha:S'\longrightarrow S$ de la base (reemplazando la sección $s$ por su
+imagen inversa $s'$ por $\alpha$), se concluye, teniendo en cuenta el teorema 1:
+
+\emph{Sea el preesquema $X/S$ como arriba y supongamos que admite una sección
+$s$; sea $\alpha:S'\longrightarrow S$ un morfismo fielmente plano y
+cuasicompacto; sea $F'$ un haz invertible sobre $X'=X\times_SS'$. Para que $F'$
+sea equivalente a la imagen inversa sobre $X'$ de un haz invertible $F$ sobre
+$X$, es necesario y suficiente que sus imágenes inversas $p_1^*(F')$ y
+$p_2^*(F')$ sobre $X'\times_XX'=X\times_S(S'\times_SS')$ sean equivalentes. Si
+es así, $F$ está determinado salvo equivalencia.} (Se dirá entonces que $F'$
+es racional sobre $S$.)
+
+Inspirándose en este principio cuando $\alpha:S'\longrightarrow S$ es como en
+el ejemplo 1 o el ejemplo 2 del número anterior, se obtienen los criterios de
+racionalidad de Weil o de Cartier. (Obsérvese que estos autores se limitan al
+caso en que $S$ y $S'$
+
+\src{323}
+son espectros de cuerpos; a fortiori, $S$ es entonces el espectro de un anillo
+local, y la relación de equivalencia introducida arriba no es sino la relación
+de isomorfía.) En el primer caso, $F'$ es racional sobre $S$ si y solo si sus
+transformados por $\Gamma$ son equivalentes a $F'$. Para expresar el criterio
+de racionalidad en el segundo caso, se consideran, en general, el morfismo
+diagonal
+\[
+  X'\longrightarrow X''=X'\times_XX'
+\]
+de $X'/X$, el haz de ideales $\mathcal I$ correspondiente sobre
+$X'\times_XX'$ y el haz $\mathcal I/\mathcal I^2$, que se identifica con su
+imagen inversa $\Omega^1_{X'/X}$ sobre $X'$. Como las restricciones de los
+$F''_i=p_i^*(F')$ ($i=1,2$) a la diagonal son isomorfas (pues son isomorfas a
+$F'$), es decir, $F''_1(F''_2)^{-1}=F''$ tiene una restricción a la diagonal
+que es trivial, se sigue que la restricción de $F''$ a
+$(X'',\mathcal O_{X''}/\mathcal I^2)$ viene dada, salvo isomorfismo, por un
+elemento bien determinado $\xi$ de
+\[
+  H^1(X'',\mathcal I/\mathcal I^2)
+  =H^1(X',\Omega^1_{X'/X}).
+\]
+Además, en este caso se tiene
+\[
+  \Omega^1_{X'/X}
+  =\Omega^1_{S'/S}\otimes_{\mathcal O_S}\mathcal O_X,
+\]
+y, por tanto, si $\Omega^1_{S'/S}$ es localmente libre sobre $S$ (como en el
+caso de Cartier), $\xi$ define una sección de
+\[
+  R^1f'_*(\mathcal O_{X'})\otimes\Omega^1_{S'/S}
+\]
+sobre $S'$ (llamada clase de Atiyah--Cartier del haz invertible $F'$ sobre
+$X'/S$), cuya anulación es necesaria y suficiente para que sean equivalentes
+las imágenes inversas de $F'$ por las dos proyecciones de
+\[
+  (X'',\mathcal O_{X''}/\mathcal I^2)
+  =X\times_S(S'',\mathcal O_{S''}/\mathcal J^2)
+\]
+sobre $X'$ (donde $\mathcal J$ es el haz de ideales sobre
+$S''=S'\times_SS'$ definido por el morfismo diagonal
+$S'\longrightarrow S'\times_SS'$). Esta anulación es, pues, trivialmente
+necesaria para que sean equivalentes las imágenes inversas de $F'$ sobre el
+propio $X''=X\times_SS''$ y, por tanto, también para que $F'$ sea equivalente
+a la imagen inversa de un haz invertible $F$ sobre $X$. Además, la clase de
+Atiyah--Cartier puede interpretarse también como la obstrucción a la existencia,
+localmente sobre $S'$, de una conexión de $F'$ relativa a las derivaciones de
+$X'/X$; tal conexión queda, además, determinada cuando se conocen las
+derivaciones de $F'$ correspondientes a las prolongaciones naturales a $X'$ de
+las derivaciones de $S'/S$. De esto y de los desarrollos del número anterior se
+concluye fácilmente que, en el caso del ejemplo 2 de dicho número y cuando
+$X/S$ admite una sección, la anulación de la clase de Atiyah--Cartier es también
+suficiente para que $F'$ sea racional sobre $S$.
+
+\subsection*{5. Aplicación a la restricción de la base en un esquema abeliano}
+\addcontentsline{toc}{subsection}{5. Restricción de la base en un esquema abeliano}
+
+Sea $S$ un preesquema. Se llama esquema abeliano sobre $S$ a un esquema $X$
+liso y propio
+
+\src{324}
+sobre $S$ cuyas fibras en los puntos $x\in S$ son esquemas de variedades
+abelianas sobre los $\kappa(x)$. Supongamos que $S$ es noetheriano y regular
+(es decir, que sus anillos locales son regulares); entonces, utilizando el
+teorema de conexidad de Murre [4] (al menos en el caso de «características
+iguales», en el que el teorema citado está demostrado actualmente), puede
+demostrarse que toda sección racional de $X$ sobre $S$ está definida en todas
+partes (es decir, es una sección), lo que generaliza un teorema clásico de
+Weil. Se deduce, más generalmente, que si $X'$ es un esquema liso sobre $S$,
+entonces toda $S$-aplicación racional de $X'$ en $X$ está definida en todas
+partes. De ello se obtiene lo siguiente, que generaliza un resultado de
+Chow--Iang:\footnote{El texto impreso dice «Igusa--Lang»; la fe de erratas de
+1962 prescribe «Chow--Iang».} Sea $S$ noetheriano y regular, y denote $K$ su
+anillo de funciones racionales (producto directo de cuerpos); sea $X$ un
+esquema abeliano sobre $K$. Si $X$ es isomorfo a un $K$-esquema de la forma
+$X_0\times_S\operatorname{Spec}(K)$, donde $X_0$ es un esquema abeliano sobre
+$S$, entonces $X_0$ está determinado salvo isomorfismo único.
+
+Utilizando el resultado de unicidad anterior, se ve que la cuestión de la
+restricción de la base en $X$ es local sobre $S$ (y, por tanto, que basta saber
+efectuar la restricción a los $\operatorname{Spec}(\mathcal O_x)$, con
+$x\in S$). Se ve de igual manera que si
+$\alpha:S'\longrightarrow S$ es un morfismo liso de tipo finito, si $K'$ es el
+anillo de funciones racionales de $S'$, y si $X\otimes_KK'$ es de la forma
+$X'_0\times_{S'}\operatorname{Spec}(K')$, entonces $X'_0$ está provisto de un
+dato de descenso canónico relativo a $\alpha$. Teniendo en cuenta el teorema 3,
+se concluye:
+
+\result{PROPOSICIÓN}{5.1} Sea $S$ un preesquema noetheriano, regular e
+irreducible, de cuerpo de funciones racionales $K$; sea $K'$ una extensión
+finita de $K$, no ramificada sobre $S$; sea $S'$ la normalización de $S$ en
+$K'$ (que es, por tanto, un recubrimiento étale de $S$); y sea $X$ un esquema
+abeliano sobre $K$ tal que $X\otimes_KK'$ sea de la forma
+$X'_0\times_{S'}\operatorname{Spec}(K')$, donde $X'_0$ es un esquema abeliano
+proyectivo sobre $S'$. Entonces $X$ es de la forma
+$X_0\times_S\operatorname{Spec}(K)$, donde $X_0$ es un esquema abeliano
+proyectivo sobre $S$.
+
+\result{OBSERVACIONES}{} El conferenciante ignora si puede sustituirse la
+hipótesis de que $S'\longrightarrow S$ sea un recubrimiento étale sobreyectivo
+(que permite utilizar el teorema 3) por la hipótesis de que sea un morfismo
+liso, sobreyectivo y de tipo finito (incluso si se supone que es un morfismo
+étale), o si la proposición sigue siendo válida sin suponer que $X'_0$ sea
+proyectivo sobre $S'$ (condición que tal vez se cumpla automáticamente).
+
+\subsection*{6. Aplicación a criterios de trivialidad local e isotrivialidad}
+\addcontentsline{toc}{subsection}{6. Criterios de trivialidad local e isotrivialidad}
+
+Sean $S$ un preesquema, $G$ un «preesquema en grupos» sobre $S$, y $P$ un
+preesquema sobre $S$ sobre el que «actúa $G$» (por la derecha). Se dice que $P$
+es formalmente principal homogéneo bajo $G$ si el morfismo bien conocido
+\[
+  G\times_SP\longrightarrow P\times_SP
+\]
+
+\src{325}
+inducido por la acción de $G$ sobre $P$ es un isomorfismo. En lo sucesivo,
+supondremos que $G$ es plano sobre $S$ (y, por tanto, fielmente plano sobre
+$S$), y reservaremos el nombre de fibrado principal homogéneo bajo $G$ para un
+fibrado formalmente principal homogéneo $P$ que sea fielmente plano y
+cuasicompacto sobre $S$. Es inmediato que esto equivale a decir que puede
+encontrarse un cambio fielmente plano y cuasicompacto
+$S'\longrightarrow S$ de la base $S$, tal que el fibrado formalmente principal
+homogéneo
+\[
+  P'=P\times_SS'
+\]
+bajo $G'=G\times_SS'$ sea trivial, es decir, isomorfo a $G'$ (es decir, que
+admita una sección); en particular, se podrá tomar $S'=P$. Obsérvese además
+que, si $S$ es localmente noetheriano, la hipótesis de planitud fiel sobre $P$
+equivale a la hipótesis de que
+\[
+  \widehat P_s=P\times_S\operatorname{Spec}(\widehat{\mathcal O}_s)
+\]
+sea fielmente plano sobre $\widehat{\mathcal O}_s$ para todo $s\in S$ (donde
+$\widehat{\mathcal O}_s$ denota el completado del anillo local
+$\mathcal O_s$), como se deduce del hecho de que $\widehat{\mathcal O}_s$ es
+fielmente plano sobre $\mathcal O_s$. Además, si $P$ es de tipo finito sobre
+$S$ localmente noetheriano, el conjunto de los puntos $s$ que satisfacen la
+condición anterior es constructible; por tanto, si $S$ es un «preesquema de
+Jacobson» (por ejemplo, un esquema de tipo finito sobre un cuerpo o, más
+generalmente, el espectro de un anillo de Jacobson), basta comprobar la
+condición en cuestión en los puntos cerrados de $S$. Esto nos reduce al caso en
+que la base es el espectro de un anillo local completo $A$. Cuando
+$S=\operatorname{Spec}(A)$ ($A$ un anillo local noetheriano completo) y $P$ es
+de tipo finito sobre $S$, la planitud fiel de $P/S$ equivale también a la
+existencia de un $S'$ finito y plano sobre $S$ tal que $P'$ sea trivial; y, si
+además $G$ es liso sobre $S$, puede suponerse que $S'$ es étale sobre $S$. Por
+consiguiente, si además el cuerpo residual de $A$ es algebraicamente cerrado
+(«caso geométrico»), $P$ es fielmente plano sobre $A$ si y solo si es trivial.
+Así pues, si $S$ es un preesquema algebraico sobre un cuerpo algebraicamente
+cerrado y $G$ es liso y de tipo finito sobre $S$, se ve que la condición de
+planitud fiel sobre $S$ equivale a la condición de trivialidad analítica (SLF)
+de Serre ([6], pp. 1--12).
+
+Pueden introducirse otros tipos, más fuertes, de condiciones sobre $P$ que
+tengan la naturaleza de una «trivialidad local». Diremos, en particular, que
+$P$ es isotrivial (resp. estrictamente isotrivial) si, para todo $s\in S$,
+existen un entorno abierto $U$ de $s$ y un morfismo finito y fielmente plano
+(resp. un recubrimiento étale sobreyectivo) $U'\longrightarrow U$ tales que
+$P'=P\times_SU'$ sea trivial. (Nuestra terminología difiere de la de Serre [6],
+quien llama localmente isotrivial a lo que nosotros llamamos estrictamente
+isotrivial.) La isotrivialidad estricta es especialmente útil si $G$ es liso
+sobre $S$, pero, en cambio, es una noción inadecuada en los demás casos.
+
+Si $G$ es afín sobre $S$, todo fibrado principal homogéneo $P$ bajo $G$ es afín
+por el parágrafo 2, de donde, gracias al teorema 2, resulta la posibilidad de
+«descender»
+
+\src{326}
+tales fibrados por morfismos fielmente planos y cuasicompactos. Tomemos, en
+particular, $G=\operatorname{Gl}(n)_S$, definido por la condición de que el
+funtor de $S$-preesquemas
+\[
+  S'\longmapsto\operatorname{Hom}_S(S',G)
+\]
+(con valores en la categoría de los grupos) se identifique con el funtor
+\[
+  \operatorname{Gl}(n)(S')
+  =\operatorname{Gl}\bigl(n,H^0(S',\mathcal O_{S'})\bigr)
+\]
+de A, parágrafo 4.e. Utilizando los hechos (i) de que todo fibrado principal
+homogéneo bajo $G$ (resp. todo haz localmente libre de rango $n$ sobre $S$) se
+vuelve isomorfo al objeto «trivial» $G$ (resp. $\mathcal O_S^n$) tras un cambio
+fielmente plano y cuasicompacto adecuado de $S$; (ii) de que pueden descenderse
+los objetos del tipo considerado (fibrados principales homogéneos bajo $G$,
+resp. haces localmente libres de rango $n$) por tales morfismos; y, por último,
+(iii) de que el grupo de automorfismos del fibrado trivial sobre un $S'/S$ es
+funtorialmente isomorfo al grupo de automorfismos del haz localmente libre
+trivial de rango $n$ sobre $S'$, se concluye «formalmente» que «da lo mismo»
+dar sobre $S$ (o sobre un $S'/S$) un fibrado principal homogéneo de grupo $G$
+que dar allí un haz localmente libre de rango $n$. (Más precisamente, se tiene
+una equivalencia de categorías fibradas.) Se concluye, en particular:
+
+\result{PROPOSICIÓN}{6.1} Todo fibrado principal homogéneo de grupo
+$\operatorname{Gl}(n)_S$ es localmente trivial.
+
+Mediante argumentos conocidos se obtiene el mismo resultado para grupos
+estructurales tales como $\operatorname{Sl}(n)_S$, $\operatorname{Sp}(n)_S$ y
+productos de tales grupos. Se deduce también que, si $F$ es un subgrupo cerrado
+de $G=\operatorname{Gl}(n)_S$, plano sobre $S$, tal que existe el cociente
+$G/F$, y si $G$ es un fibrado principal homogéneo isotrivial (resp.
+estrictamente isotrivial) sobre $G/F$, de grupo $F\times_S(G/F)$, entonces todo
+fibrado principal homogéneo de grupo $F$ es isotrivial (resp. estrictamente
+isotrivial). Esto se aplica a todos los «grupos lineales» sobre $S$ utilizados
+hasta ahora y, en particular, cuando $G=S\times_k\Gamma$, donde $S$ es un
+preesquema sobre el cuerpo $k$ y $\Gamma$ un grupo lineal en el sentido clásico
+y, en particular, liso, sobre $k$. Esto resuelve, pues, para tales grupos, una
+cuestión de Serre (loc. cit.).
+
+Señalemos asimismo que, para la mayoría de los grupos lisos sobre $S$ conocidos,
+sean lineales o no, y en cualquier caso para los de la forma
+$S\times_k\Gamma$ anterior, puede demostrarse que todo fibrado principal
+homogéneo isotrivial es estrictamente isotrivial. Esto resuelve, en particular,
+otra cuestión de Serre (loc. cit., pp. 1--14), dado que un fibrado principal
+homogéneo obtenido por un descenso a la Cartier (cf. parágrafo 3, ejemplo 2) es
+manifiestamente isotrivial.
+
+\result{OBSERVACIÓN}{} Una de las dificultades esenciales en estas cuestiones
+(aparte de la cuestión de la existencia de los esquemas cociente $G/F$) es la
+falta de criterios de efectividad para un dato de descenso por un morfismo
+fielmente plano no finito.
+
+\src{327}
+\begin{center}
+  \textbf{BIBLIOGRAFÍA}
+\end{center}
+
+\begin{description}
+  \item[{[1]}] Dieudonné (J.) y Grothendieck (Alexander). --- \emph{Éléments
+    de géométrie algébrique}, de próxima aparición en las Publications
+    mathématiques de l'Institut des Hautes Études Scientifiques.
+  \item[{[2]}] Grauert (H.) und Remmert (R.). --- \emph{Komplexe Räume}, Math.
+    Annalen, t. 136, 1958, pp. 245--318.
+  \item[{[3]}] Grothendieck (Alexander). --- \emph{Géométrie formelle et
+    géométrie algébrique}. Séminaire Bourbaki, t. 11, 1958/59, no 182.
+  \item[{[4]}] Murre (J. P.). --- \emph{On a connectedness theorem for a
+    birational transformation at a simple point}, Amer. J. Math., t. 80, 1958,
+    pp. 3--15.
+  \item[{[5]}] Serre (Jean-Pierre). --- \emph{Géométrie algébrique et géométrie
+    analytique}, Ann. Inst. Fourier Grenoble, t. 6, 1955--56, pp. 1--42.
+  \item[{[6]}] Serre (Jean-Pierre). --- \emph{Espaces fibrés algébriques},
+    Séminaire Chevalley, t. 2, 1958: Anneaux de Chow et applications, no 1.
+\end{description}

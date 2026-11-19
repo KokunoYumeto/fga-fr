@@ -1,0 +1,44 @@
+\documentclass[11pt,twoside,openany]{book}
+\pdfvariable suppressoptionalinfo 767
+\usepackage{graphicx}
+\input{controls/vi_base.tex}
+\newcommand{\result}[2]{\par\medskip\noindent\textbf{#1\if\relax\detokenize{#2}\relax\else\ #2\fi.}\quad}
+\setlength{\emergencystretch}{3em}
+\hypersetup{
+  pdftitle={Nền tảng hình học đại số -- Bản hiệu đính tiếng Việt},
+  pdfauthor={Alexander Grothendieck}
+}
+\newcommand{\editiondescription}{Bản hiệu đính trình bày các phát biểu cùng giả thiết toán học; những chú thích cần thiết phân biệt cách đọc của nguồn với cách đọc của bản hiệu đính.}
+\begin{document}
+\frontmatter
+\begin{titlepage}
+\centering\vspace*{2cm}
+{\Large Alexandre Grothendieck\par}\vspace{1.5cm}
+{\Huge\bfseries Nền tảng hình học đại số\par}\vspace{1.2cm}
+{\Large Bản hiệu đính tiếng Việt\par}
+\vfill
+{Bourbaki 149, 182, 190, 195, 212, 221, 232, 236\par}
+{Đính chính, bổ sung và bình luận năm 1962\par}
+\end{titlepage}
+\input{NOTICE_vi.tex}
+\tableofcontents
+\mainmatter
+\input{sources/current/149.tex}
+\input{sources/current/e149.tex}
+\input{sources/current/182.tex}
+\input{sources/current/e182.tex}
+\input{sources/current/190.tex}
+\input{sources/current/e190.tex}
+\input{sources/current/195.tex}
+\input{sources/current/e195.tex}
+\input{sources/current/212.tex}
+\input{sources/current/e212.tex}
+\input{sources/current/221.tex}
+\input{sources/current/e221.tex}
+\input{sources/current/232.tex}
+\input{sources/current/e232.tex}
+\input{sources/current/236.tex}
+\input{sources/current/e236.tex}
+\input{sources/current/com.tex}
+
+\end{document}

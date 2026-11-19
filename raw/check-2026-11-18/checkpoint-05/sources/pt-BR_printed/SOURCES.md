@@ -1,0 +1,5 @@
+# Fontes e autoria
+
+A obra original, Fondements de la géométrie algébrique, é de Alexandre Grothendieck. A tradução humana para o inglês de [Tim Hosgood](https://github.com/thosgood/fga/tree/9976dd5f8e2ddcb388f0a07f3aa334f120d1019f) constitui uma fonte de referência desta edição. Seu projeto reconhece as correções de Steve Hnizdur e o apoio técnico de Jon Sterling. A versão 9976dd5f8e2ddcb388f0a07f3aa334f120d1019f identifica o texto inglês usado na comparação de procedência; não estabelece a versão histórica exata incorporada inicialmente. A tradução brasileira e as correções e composição posteriores foram produzidas por IA. A autoria da tradução inglesa permanece com seu tradutor; não se lhe atribui a tradução brasileira. Esta atribuição não constitui autorização nem endosso.
+
+Obra original: [Séminaire Bourbaki, NUMDAM](https://www.numdam.org/journals/SB/).

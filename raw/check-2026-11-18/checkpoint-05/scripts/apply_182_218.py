@@ -1,0 +1,36 @@
+from audit_utils import *
+for tree,layer in [('fr_printed','French as printed'),('fr','French corrected')]:
+ rel=f'sources/{tree}/fr/182.tex'
+ def r(a,b,line,statement='',kind='reading',why='',count=1,full=False):
+  replace(rel,a,b,layer,'182-218',line,statement,'400-dpi full scan, all three enlarged bands and tight ring/quotient crops. '+why,kind,count=count,full=full)
+ s=read(rel);a=s.index('surjectif du\nthéorème 12, corollaire 2');b=s.index('\\src{219}')+len('\\src{219}');old=s[a:b];new='\\src{219}\n'+old.replace('\\src{219}','').rstrip()+'\n'
+ r(old,new,'page boundary in Theorem 13','8-thm13',kind='structure',why='The page ends after déduit de l’homomorphisme; surjectif begins the next page.',full=True)
+ r('est une extension non ramifiée du corps des fonctions de',r'\uline{est une extension non ramifiée du corps des fonctions de}','first paragraph','8-thm12-cor5',why='This prose phrase is underlined.')
+ r('$X_0$ est simple,',r'$X_0$ est \uline{simple},','purity hypothesis','8-thm12-cor5',why='Simple is underlined.')
+ r('« théorème de pureté »',r'\fquote{\uline{théorème de pureté}}','purity reference','8-thm12-cor5',why='Ordinary quotation marks and underlined theorem name.')
+ r('Nagata--Zariski','NAGATA-ZARISKI','purity reference','8-thm12-cor5',why='Uppercase names separated by a single short hyphen.')
+ txt,_,_=page_text(rel,218)
+ for expr in list(dict.fromkeys(re.findall(r'(?<!\\)\$([^$]+)\$',txt))):
+  new=re.sub(r'(?<![A-Za-z\\])O(?![A-Za-z])',r'\\mathfrak o',expr)
+  if new!=expr:r('$'+expr+'$','$'+new+'$','valuation-ring occurrences','8-thm12-cor5',why='The handwritten angular diamond-shaped ring letter is Gothic lowercase o, distinct from the typed O_y on the preceding page.',count=txt.count('$'+expr+'$'))
+ r(r'\kappa',r'\varkappa','prime-to-characteristic hypothesis','8-thm13',why='Crossed kappa residue-field symbol.')
+ r("d'ordre $n$ premier à la caractéristique",r"\uline{d'ordre} $n$ \uline{premier à la caractéristique}",'prime-to-characteristic hypothesis','8-thm13',why='Both selected prose spans are underlined.')
+ r(r'\varkappa(y_0)$ (qui',r'\varkappa(y_0)$, (qui','prime-to-characteristic hypothesis','8-thm13',why='A comma precedes the parenthesis.')
+ r('« tamely ramified »',r'\fquote{tamely ramified}','tame ramification','8-thm13',why='Ordinary double quotation marks, plain text.')
+ r('« lemme de Abhyankar »',r'\fquote{\uline{lemme de Abhyankar}}','tame ramification','8-thm13',why='Ordinary double quotation marks and underlined lemma name.')
+ r('par Serre).','par SERRE).','acknowledgment','8-thm13',why='SERRE is uppercase.')
+ r(r'\widetilde\pi',r'\overline\pi','prime-to-p quotient definition and Theorem 13','8-thm13',why='The extra accent above the handwritten pi is an overbar, not a tilde; confirmed in the tight quotient crop.',count=3)
+ txt,_,_=page_text(rel,218);marker=r'\result{COROLLAIRE}{5} ';a=txt.index(marker)+len(marker);b=txt.index('\n\n',a);old=txt[a:b];new=underline_prose(old)
+ new=new.replace(r'$ \uline{de}'+ '\n'+r'$\overline X_1',r'$ de'+ '\n'+r'$\overline X_1')
+ r(old,new,'Corollary 5 statement','8-thm12-cor5',why='Restore statement underlining; the de between its first two formulas is plain.')
+ txt,_,_=page_text(rel,218);marker=r'\result{THÉORÈME}{13} ';a=txt.index(marker)+len(marker);old=txt[a:].rstrip();r(old,underline_prose(old),'Theorem 13 opening','8-thm13',why='All prose in the statement is underlined; mathematical symbols are plain.')
+ upright_page(rel,layer,'182-218')
+event('182-8-thm12-cor5','targeted proof check','Checked the conditional deduction from the finite-extension criterion of page 217: normalize the regular total space after finite base extension in the finite separable covering function field. The cover is already étale over the generic fiber. Purity reduces étaleness to the codimension-one points in the special fiber, and the geometrically connected smooth special fiber has one generic point in the integral reduction. The sole remaining condition is therefore unramifiedness over the indicated DVR. Purity, finiteness of normalization and the trait reduction are background inputs, not reproved here.','182, p. 218, opening paragraph and Corollary 5')
+event('182-8-thm13-tame-step','targeted proof check','For a Galois cover of degree n prime to the residue characteristic, the ramification index at the vertical DVR divides n. The tame form of Abhyankar’s lemma removes this ramification after adjoining an n-th root of its uniformizer. Geometric reducedness of the special fiber makes a uniformizer of V-prime also one of the vertical local ring, so this extension is induced by a finite extension of the base field. Corollary 5 then supplies extension over the trait. The bookkeeping of the field and uniformizer extensions was checked; the tame ramification lemma is carried as background.','182, p. 218, paragraph after Corollary 5')
+event('182-8-prime-to-p-quotient','targeted proof check','Let N be the closed subgroup generated by all pro-p Sylow subgroups. Conjugation permutes these subgroups, so N is normal. Every finite quotient of the profinite group by N has trivial p-Sylow subgroup and thus order prime to p; conversely every finite quotient of prime-to-p order kills each pro-p subgroup. This verifies the equivalence of the two printed definitions of the barred quotient. The profinite Sylow lifting fact and inverse-limit description of a profinite group are background inputs.','182, p. 218, definition immediately before Theorem 13')
+record_page('182',218,r'''Compared sources/fr_printed/fr/182.tex and sources/fr/fr/182.tex entry lines 1215–1264 with scan leaf 27 at 400 dpi, all three enlarged bands, and tighter crops of the valuation-ring letter and quotient accent. Read the purity reduction, Corollary 5, the tame ramification argument, the prime-to-p quotient and the opening of Theorem 13. Moved the next-page marker before surjectif in Theorem 13.
+
+Restored Gothic lowercase o for the handwritten valuation rings, the overbar on pi in the quotient notation, crossed kappa, underlining, ordinary quotation marks, uppercase NAGATA-ZARISKI and SERRE, and the comma before the residue-characteristic aside. The typed O_y on page 217 remains plain. The small mark above the a in la condition and the mark above Sylow remain unresolved ink/diacritic questions for the second reading; no lexical change has been imposed from them. The initial pi/la tight crops were mislocated and superseded; the final quotient crop was read, and the final la crop shows a small detached mark without securely determining a grave accent. Events distinguish the checked deductions from purity and Abhyankar’s lemma from those background inputs themselves.''')
+p='CHECK_RECORD.md';t=read(p).replace('## Open reading questions','- 182-218: valuation rings use Gothic lowercase o (`\\mathfrak o`), while page 217 types O_y in plain roman; the prime-to-p quotient uses an overbar on pi (`\\overline\\pi`), not a tilde.\n\n## Open reading questions');write(p,t)
+from update_record_counts import update
+update()

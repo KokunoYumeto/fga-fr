@@ -1,0 +1,1414 @@
+\unit{Exposición 221 -- Los esquemas de Hilbert}
+\sid{221}
+\src{249}
+\seminares{13.er año, 1960/61, n.º 221\\Mayo de 1961}
+\paperhead{TÉCNICAS DE CONSTRUCCIÓN Y TEOREMAS DE EXISTENCIA EN GEOMETRÍA ALGEBRAICA\\
+IV. LOS ESQUEMAS DE HILBERT}%
+  {por Alexander GROTHENDIECK}
+
+\subsection*{Introducción}
+\addcontentsline{toc}{subsection}{Introducción}
+
+Las técnicas expuestas en [2], I y II, eran en lo esencial independientes de
+toda hipótesis de proyectividad sobre los esquemas considerados.
+Desafortunadamente, en la actualidad no permiten resolver los problemas de
+existencia planteados en la Exposición II de [2]. En la presente exposición y
+en la siguiente resolveremos estos problemas bajo hipótesis de proyectividad.
+Las técnicas empleadas son típicamente proyectivas y prácticamente no hacen
+uso de los resultados de I y II de [2]. Aquí construiremos los «esquemas de
+Hilbert», destinados a sustituir el uso de las coordenadas de Chow, como se
+indicó en [2], II, n.º 2. En la exposición siguiente, la teoría del paso al
+cociente en esquemas desarrollada en III, unida a la teoría de los esquemas de
+Hilbert, nos permitirá, por ejemplo, construir los esquemas de Picard
+(definidos en [2], II, n.º 3) bajo condiciones bastante generales.
+
+En resumen, puede decirse que ahora se dispone de una técnica de construcciones
+proyectivas bastante satisfactoria, salvo que todavía
+falta\footnote{Véase el aditivo al final de la exposición.} un teorema de paso
+al cociente por grupos tales como el grupo proyectivo, que actúan «sin puntos
+fijos» (cf. [2], III, n.º 8). La situación parece incluso algo mejor en
+geometría analítica (cuando uno se limita al estudio de espacios analíticos
+«proyectivos» sobre un espacio analítico dado), pues para los espacios
+analíticos desaparece la dificultad del paso al cociente por un grupo que
+actúa convenientemente. Por otra parte, tanto en geometría algebraica como en
+geometría analítica quedaría por desarrollar una técnica de construcción
+válida sin hipótesis de proyectividad.
+
+\fsection{1}{Familias acotadas de haces: propiedades de permanencia}
+
+Sean $k$ un cuerpo y $X$ un $k$-preesquema, de tipo finito para simplificar.
+Para toda extensión $K/k$ se obtiene, pues, un $K$-preesquema
+$X_K=X\otimes_k K$. Si $\mathcal F$ es un haz coherente sobre $X_K$ y $K'$ es
+una extensión de $K$, entonces $\mathcal F\otimes_K K'=\mathcal F_{K'}$ es un
+haz cuasicoherente sobre $X_K\otimes_K K'=X_{K'}$. Dicho esto, si $K$ y $K'$
+son dos extensiones cualesquiera de $k$, $\mathcal F$ es un haz cuasicoherente
+sobre $X_K$ y $\mathcal F'$
+\src{250}
+es un haz cuasicoherente sobre $X_{K'}$, diremos que $\mathcal F$ y
+$\mathcal F'$ son \emph{equivalentes} si existen $k$-homomorfismos de $K$ y
+$K'$ en una misma extensión $K''$ de $k$ tales que $\mathcal F_{K''}$ y
+$\mathcal F'_{K''}$ sean isomorfos sobre $X_{K''}$. Esta es una relación de
+equivalencia, y nos interesaremos por las clases de equivalencia de haces para
+esta relación y por los conjuntos de clases de equivalencia. Obsérvese que, si
+$X$ es de tipo finito sobre $k$,\footnote{El texto impreso lleva aquí $X_0$;
+solo $X$ está definido en este pasaje.} toda clase de haces coherentes puede
+definirse por un haz coherente sobre algún $X_K$, donde $K$ es una extensión
+de tipo finito de $k$. Por consiguiente, en la definición de las clases de
+haces coherentes puede uno limitarse a las extensiones algebraicamente cerradas
+de $k$; también puede limitarse a una extensión algebraicamente cerrada fija
+$\Omega$ de $k$, de grado de trascendencia infinito. Dos haces coherentes
+$\mathcal F$ y $\mathcal F'$ sobre $X_\Omega$ son entonces equivalentes si y
+solo si existe un $k$-automorfismo $\sigma$ de $\Omega$ tal que
+$\mathcal F\otimes_\Omega(\Omega,\sigma)$ sea isomorfo a $\mathcal F'$.
+Se comprueba así que hay una correspondencia biyectiva entre las clases de
+haces coherentes para una u otra definición.
+
+Sean $E$ y $E'$ dos conjuntos de clases de haces coherentes sobre $X$.
+Consideremos las clases de todos los haces de la forma
+$\mathcal F\otimes\mathcal F'$, donde $\mathcal F$ y $\mathcal F'$ son haces
+coherentes sobre un mismo $X_K$, la clase de $\mathcal F$ pertenece a $E$ y la
+de $\mathcal F'$ pertenece a $E'$. Se obtiene así un conjunto de clases de
+haces coherentes, que denotaremos por $E\otimes E'$. Se definen del mismo modo
+los $\operatorname{Tor}_i(E,E')$, etc. En general, a toda función $U$ que
+asocia a cada sucesión $\mathcal F_1,\ldots,\mathcal F_n$ de $n$ haces
+coherentes sobre un mismo $X_K$ un conjunto
+$U(\mathcal F_1,\ldots,\mathcal F_n)$ de haces coherentes sobre $X_K$, y que
+posee la evidente propiedad de compatibilidad con los isomorfismos de haces y
+las imágenes inversas por cambio de base, se le asocia una función, denotada
+por el mismo símbolo $U$, que asigna a cada sucesión de $n$ conjuntos
+$E_1,\ldots,E_n$ de clases de haces coherentes un conjunto
+$U(E_1,\ldots,E_n)$ de clases de haces coherentes.
+
+Nuestro propósito en este apartado es dar una definición de ciertos conjuntos
+de clases de haces, llamados \emph{acotados}, y demostrar que las operaciones
+$U$ más usuales, aplicadas a conjuntos acotados, vuelven a dar conjuntos
+acotados.
+
+Sea $X$ un preesquema de tipo finito sobre un $S$ noetheriano. Para todo
+$s\in S$, la fibra $X_s$ es un preesquema de tipo finito sobre $k(s)$, y
+consideraremos clases de haces coherentes sobre $X_s$ en el sentido anterior.
+Esto da sentido a la expresión «clase de haces coherentes sobre una fibra de
+$X/S$» y a las expresiones análogas. Del mismo modo, procediendo por separado
+sobre cada fibra, pueden seguir considerándose operaciones como
+$E\otimes E'$, etc., que hacen corresponder a sistemas de conjuntos de
+\src{251}
+clases de haces coherentes sobre las fibras de $X/S$ otro conjunto de clases
+de haces coherentes sobre las fibras de $X/S$.
+
+\result{DEFINICIÓN}{1.1} Sea $E$ un conjunto de clases de haces coherentes
+sobre las fibras de $X/S$. Se dice que $E$ está \emph{acotado} si existen un
+preesquema $S'$ de tipo finito sobre $S$ y un haz coherente $\mathcal F'$ sobre
+$X'=X\times_S S'$ tales que $E$ esté contenido en el conjunto de clases de
+haces sobre las fibras de $X/S$ definido por $\mathcal F'$.
+
+Por definición, este último hace corresponder a un $s\in S$ las clases de los
+haces $\mathcal F'\otimes_{S'}k(s')$, donde $s'$ recorre los puntos de $S'$
+situados sobre $s$ (de modo que $k(s')$ es una extensión de $k(s)$ y
+$X_s\otimes_{k(s)}k(s')$ se identifica con la fibra
+$X'\otimes_{S'}k(s')=X'_{s'}$ de $X'$ en $s'$). Puede decirse que las familias
+acotadas son aquellas contenidas en una \emph{familia algebraica} de haces
+coherentes parametrizada por un $S'$ de tipo finito sobre $S$.
+
+Una unión finita de familias acotadas es acotada (tómese el preesquema suma de
+los preesquemas de parámetros $S_i$ que definen las familias algebraicas
+mayorantes). Un cambio de base $T\longrightarrow S$ transforma una familia
+acotada relativa a $X/S$ en una familia acotada relativa a $X_T/T$, y el
+recíproco es cierto si $T\longrightarrow S$ es sobreyectivo (o, más
+generalmente, si su imagen contiene los $s$ que intervienen efectivamente en la
+familia dada $E$ para $X/S$). Esto reduce, en principio, la determinación de
+las familias acotadas al caso en que $S$ es el espectro de un álgebra de tipo
+finito sobre el anillo de los enteros $\mathbf Z$.
+
+Si $E$ y $E'$ son familias acotadas de clases de haces relativas a $X/S$,
+entonces $E\otimes E'$ también está acotada. En efecto, supongamos que $E$ y
+$E'$ están mayoradas, respectivamente, por las familias algebraicas definidas
+por $T\longrightarrow S$ y $\mathcal F$ sobre $X_T$, y por
+$T'\longrightarrow S$ y $\mathcal F'$ sobre $X_{T'}$. Se ve entonces que
+$E\otimes E'$ está mayorada por la familia algebraica definida por
+$T''=T\times_S T'\longrightarrow S$ y el haz $\mathcal F''$ sobre
+$X_{T''}$, producto tensorial de las imágenes inversas de $\mathcal F$ y
+$\mathcal F'$ sobre $X_{T''}$. Este razonamiento solo es válido porque el
+funtor $\mathcal F\otimes\mathcal F'$ en $\mathcal F,\mathcal F'$ es exacto a
+derecha y, por tanto, conmuta con la extensión de la base (y, en particular,
+con el paso a las fibras). No es aplicable directamente a operaciones locales
+tales como $\operatorname{Tor}_i(E,E')$, $\operatorname{Hom}(E,E')$ y
+$\operatorname{Ext}^i(E,E')$. No obstante, puede demostrarse que estas
+operaciones siguen transformando conjuntos acotados en conjuntos acotados,
+procediendo como para $E\otimes E'$ pero utilizando además resultados del tipo
+siguiente (todos ellos contenidos en [3], IV, 6.11): una familia acotada $E$
+está siempre mayorada por una familia algebraica definida por un haz coherente
+$\mathcal F$ sobre un $X_T$ ($T$ de tipo finito sobre $S$) que es plano
+relativamente a $T$. (Se «corta en trozos» el espacio de parámetros inicial.)
+Tales
+\src{252}
+propiedades de planitud de haces adecuados aseguran, en efecto, que operaciones
+como $\operatorname{Tor}_i(\mathcal F,\mathcal F')$ conmuten con cualquier
+cambio de base. El mismo método se aplica a operaciones de naturaleza global:
+imágenes directas e imágenes directas derivadas de haces coherentes por
+morfismos propios, $\operatorname{Ext}$ globales relativos a morfismos propios
+(cf. [5], III, \S~6), etc. Todas estas operaciones transforman familias
+acotadas de haces en familias acotadas de haces. (N. B. -- Aquí los
+preesquemas sobre los que se toman los diversos haces pueden cambiar por las
+operaciones del tipo considerado.)
+
+Los dos enunciados siguientes se demuestran esencialmente mediante la misma
+técnica de planitud; para la descomposición primaria sobre las fibras de un
+morfismo de tipo finito, véase en particular [5], IV.
+
+\result{PROPOSICIÓN}{1.2} Sean $E$ y $E'$ conjuntos acotados de clases de
+haces sobre las fibras de $X/S$, donde se supone que $X$ es propio sobre $S$.
+Entonces:
+
+\medskip
+\noindent (i) La familia de núcleos, conúcleos e imágenes de homomorfismos
+$\mathcal F\longrightarrow\mathcal F'$, donde la clase de $\mathcal F$
+pertenece a $E$ y la de $\mathcal F'$ pertenece a $E'$, está acotada.
+
+\smallskip
+\noindent (ii) La familia de haces $\mathcal F''$ que son extensiones de un
+$\mathcal F$ por un $\mathcal F'$, donde la clase de $\mathcal F$ pertenece a
+$E$ y la de $\mathcal F'$ pertenece a $E'$, está acotada.
+
+Mediante un cambio de base conveniente puede suponerse que $E$ y $E'$ están
+definidos, respectivamente, por haces coherentes $\mathcal G$ y $\mathcal G'$
+sobre un $X_T/T$, donde $T$ es de tipo finito sobre $S$. Además, puede
+suponerse que se satisfacen ciertas hipótesis de planitud que implican que la
+formación de los haces
+$f_{T*}(\operatorname{Hom}_{X_T}(\mathcal G,\mathcal G'))$ y
+$\operatorname{Ext}^{1}_{f_T}(\mathcal G,\mathcal G')$ conmuta con el cambio
+de base para un morfismo arbitrario $T'\longrightarrow T$. Asimismo, puede
+suponerse que estos haces coherentes sobre $T$ son localmente libres. Sean
+$T_0$ y $T_1$ los fibrados vectoriales sobre $T$ cuyos haces de gérmenes de
+secciones son, respectivamente, los haces precedentes. Se define entonces
+canónicamente un homomorfismo
+$\mathcal G_{T_0}\longrightarrow\mathcal G'_{T_0}$ de haces coherentes sobre
+$X_{T_0}$ y una extensión
+\[
+0\longrightarrow\mathcal G'_{T_1}\longrightarrow\mathcal G''
+\longrightarrow\mathcal G_{T_1}\longrightarrow0
+\]
+de haces coherentes sobre $X_{T_1}$ que posee una propiedad universal
+evidente.\footnote{El texto impreso invierte los términos extremos de esta sucesión. Se trata de extensiones de $\mathcal G$ por $\mathcal G'$, como indica $\operatorname{Ext}^1(\mathcal G,\mathcal G')$.} El segundo haz define una familia algebraica que mayora la familia
+considerada en (ii). Lo mismo vale para el núcleo, el conúcleo y la imagen del
+homomorfismo
+\src{253}
+precedente, cuya consideración demuestra (i) (siempre que se suponga que el
+conúcleo es plano relativamente a $T_0$, caso al que se reduce de nuevo
+cortando $T_0$ en trozos\ldots).
+
+\result{PROPOSICIÓN}{1.3} Sea $E$ una familia acotada de clases de haces sobre
+las fibras de $X/S$. Entonces las clases de los haces estructurales de los
+$(\operatorname{supp}\mathcal F)_{\mathrm{red}}$, donde $\mathcal F$ es un
+haz coherente sobre un $X_K$, con $K$ algebraicamente cerrado, cuya clase
+pertenece a $E$, forman una familia acotada.
+
+Aquí $(\operatorname{supp}\mathcal F)_{\mathrm{red}}$ denota el soporte de
+$\mathcal F$ provisto de la estructura reducida inducida; es decir, su haz
+estructural es el cociente de $\mathcal O_{X_K}$ por el mayor haz de ideales
+que define $\operatorname{supp}\mathcal F$. Puede demostrarse el resultado
+análogo a (1.3) para los haces deducidos canónicamente de $\mathcal F$ por la
+teoría de la descomposición primaria; por ejemplo, los
+$\mathcal F/\mathcal F_i$, donde los $\mathcal F_i$ son los subhaces de
+$\mathcal F$ primarios para las componentes del soporte de $\mathcal F$ y
+mínimos con esta propiedad; o los $\mathcal O_{X_K}/\mathfrak p$, donde
+$\mathfrak p$ es un haz de ideales primos asociado a $\mathcal F$; o los
+$\mathcal O_{X_K}/\mathfrak q$, donde $\mathfrak q$ es un haz de ideales
+primarios asociado a una componente del soporte de $\mathcal F$ (siendo el
+cuerpo de referencia algebraicamente cerrado).
+
+\fsection{2}{Familias acotadas y polinomio de Hilbert}
+
+En lo que sigue suponemos que $X$ es proyectivo sobre $S$ y está provisto de
+un haz muy amplio, denotado $\mathcal O_X(1)$. Para toda extensión $K$ de una
+extensión residual $k(s)$ de un punto $s$ de $S$, se considera sobre $X_K$ el
+haz correspondiente $\mathcal O_{X_K}(1)$, que sigue siendo muy amplio.
+
+A todo haz coherente $\mathcal F$ sobre $X_K$ se le asocia la función
+\[
+P_{\mathcal F}(n)=\text{característica de Euler--Poincaré de $\mathcal F(n)$
+sobre $X_K$},
+\]
+que es un polinomio en el entero $n$, llamado \emph{polinomio de Hilbert} de
+$\mathcal F$. Para valores grandes de $n$, $P(n)$ no es sino la dimensión de
+$H^0(X_K,\mathcal F(n))$ sobre $K$, puesto que los
+$H^i(X_K,\mathcal F(n))$ se anulan para $i>0$ y $n$ grande.
+
+Supongamos ahora que $\mathcal F$ es un haz coherente sobre $X$, plano sobre
+$S$. Entonces los polinomios de Hilbert de los haces $\mathcal F_s$ inducidos
+sobre fibras $X_s$ pertenecientes a una misma componente conexa de $S$ son
+todos iguales [5], III, \S~7. De ello se sigue (sin hipótesis de planitud) que
+el conjunto de polinomios de Hilbert de los haces $\mathcal F_s$, $s\in S$,
+es finito para todo haz coherente $\mathcal F$ sobre $X$.
+\src{254}
+Recordemos además que, si $\mathcal F$ es un haz coherente sobre $X$, es
+isomorfo a un haz cociente de un haz $\mathcal O_X(-n)^N$, para $n$ y $N$
+suficientemente grandes. Por tanto, los haces $\mathcal F_s$ inducidos sobre
+las fibras también son cocientes del haz $\mathcal O(-n)^N$ sobre la fibra.\footnote{El texto impreso omite aquí el exponente $N$; la restricción a la fibra conserva la potencia directa de rango $N$ del haz precedente.}
+
+De estas dos observaciones se deduce la parte «solo si» del teorema siguiente:
+
+\result{TEOREMA}{2.1} Sea $X$ proyectivo sobre un $S$ noetheriano y sea
+$\mathcal O_X(1)$ muy amplio sobre $X$ relativamente a $S$. Sea $E$ un
+conjunto de clases de haces sobre las fibras de $X/S$. Para que $E$ esté
+acotado, es necesario y suficiente\footnote{La exposición impresa dice
+solamente «es necesario»; la fe de erratas de 1962 de la Exposición 221 prescribe «es
+necesario y suficiente».} que satisfaga las condiciones siguientes:
+
+\medskip
+\noindent (a) Existe un haz coherente $\mathcal L$ sobre $X$ (que puede
+suponerse de la forma $\mathcal O_X(-n)^N$) tal que $E$ esté contenido en la
+familia de clases de haces coherentes cocientes de haces de la forma
+$\mathcal L_K$.
+
+\smallskip
+\noindent (b) Los polinomios de Hilbert $P_{\mathcal F}$ de los haces
+$\mathcal F$ cuya clase pertenece a $E$ son elementos de un mismo conjunto
+finito de polinomios.
+
+Queda por demostrar la parte «si», que será un caso particular de un resultado
+más preciso. Para todo Módulo coherente $\mathcal F$ sobre un preesquema de
+tipo finito sobre un cuerpo $K$, y todo entero $r$, sea $N_r$ el sub-Módulo de
+$\mathcal F$ cuyas secciones sobre un abierto son las secciones de $\mathcal F$
+sobre dicho abierto cuyo soporte tiene dimensión $<r$. Se tiene, pues,
+$N_r=\mathcal F$ para $r>\dim\operatorname{supp}\mathcal F$, mientras que
+$N_r=0$ para $r\leq0$, y se obtiene una filtración creciente finita de
+$\mathcal F$ cuyos factores $N_{r+1}/N_r$\footnote{El texto impreso invierte
+el cociente, escribiendo $N_r/N_{r+1}$, lo que es incompatible con la
+filtración creciente que acaba de definirse.} tienen como ciclos primos
+asociados exactamente los ciclos primos asociados a $\mathcal F$ que tienen
+dimensión $r$. Pondremos
+\[
+\mathcal F_{(r)}=\mathcal F/N_r.
+\]
+Entonces los ciclos primos asociados a $\mathcal F_{(r)}$ son exactamente los
+ciclos primos asociados a $\mathcal F$ que tienen dimensión $\geq r$; en
+particular, es igual a $\mathcal F$ si y solo si los ciclos primos asociados a
+$\mathcal F$ tienen dimensión $\geq r$. Con esta notación:
+
+\result{TEOREMA}{2.2} Bajo las hipótesis de (2.1), sea $s$ un entero y
+supongamos que $E$ satisface la condición (a) y la siguiente forma debilitada
+de (b):
+
+\medskip
+\noindent $(b_s)$ Los polinomios de Poincaré $P_{\mathcal F}$ de los haces
+$\mathcal F$ cuya clase pertenece a $E$ tienen acotados sus coeficientes en
+grados $\geq s-1$.
+
+En estas condiciones, los haces $\mathcal F_{(s)}$ (cuando la clase de
+$\mathcal F$ recorre $E$) forman una familia acotada. Además, los coeficientes
+de grado $s-2$ de los $P_{\mathcal F}$ están minorados.
+\src{255}
+Así pues:
+
+\result{COROLARIO}{2.3} Supongamos que los haces $\mathcal F$ cuya clase
+pertenece a $E$ son tales que todos sus ciclos primos asociados tienen
+dimensión $d$ con $s\leq d\leq r$. Entonces, en (2.1) (b), basta considerar los
+coeficientes de los $P_{\mathcal F}$ en grados comprendidos entre $s-1$ y $r$.
+
+El resto de este apartado está dedicado a esbozar la demostración de (2.2).
+Los lemas clave son los dos lemas siguientes, el primero de los cuales es bien
+conocido (y resume el contenido matemático útil de las coordenadas de Chow):
+
+\result{LEMA 2.4 (CHOW)}{} Consideremos los haces estructurales de subesquemas
+$Y$ de fibras $X_K$ ($K$ recorre las extensiones algebraicamente cerradas de
+cuerpos residuales de $S$), donde $Y$ es reducido y todas sus componentes
+tienen la misma dimensión $r$ (considerándose $\mathcal O_Y$ como un haz
+cociente de $\mathcal O_X$). Si los grados de los $Y$ están acotados, los $Y$
+forman una familia acotada.
+
+Aquí, el grado $a$ de $Y$ puede definirse del modo más cómodo mediante el
+coeficiente del término principal de
+\[
+P_{\mathcal O_Y}=a\frac{n^r}{r!}+\cdots.
+\]
+
+\result{LEMA}{2.5} Sea $\mathcal L$ un haz coherente sobre $X$, y sea $E$ un
+conjunto de clases de haces cocientes $\mathcal F$ de haces $\mathcal L_K$
+($K$ una extensión residual de $S$). Supongamos que las fibras de $X$ sobre
+$S$ tienen dimensión $\leq r$, y escribamos
+\[
+P_{\mathcal F}(n)=a_{\mathcal F}\frac{n^r}{r!}
++b_{\mathcal F}\frac{n^{r-1}}{(r-1)!}
++\text{términos de grado $<r-1$}.
+\]
+Entonces el coeficiente $a_{\mathcal F}$ está acotado, mientras que
+$b_{\mathcal F}$ está minorado. Si $b_{\mathcal F}$ está acotado, la familia
+de los $\mathcal F_{(r)}$ está acotada.
+
+\emph{Demostración.} -- Tras sustituir $S$ por una unión de subesquemas de
+$S$ que recubren $S$, puede suponerse que existe un morfismo finito
+$f:X\longrightarrow\mathbf P^r_S$ tal que $\mathcal O_X(1)$ es isomorfo a la
+imagen inversa de $\mathcal O_{\mathbf P^r_S}(1)$. Por tanto, para todo haz
+coherente $\mathcal F$ sobre $X$ se tiene
+$P_{\mathcal F}=P_{f_*(\mathcal F)}$. Por otra parte, se comprueba fácilmente
+(mediante la técnica del apartado anterior) que un conjunto de haces
+$\mathcal F$ sobre $X$ está acotado si y solo si lo está el conjunto de los
+$f_*(\mathcal F)$. Finalmente,
+\[
+f_*(\mathcal F)_{(r)}=f_*(\mathcal F_{(r)}).
+\]
+\src{256}
+Esto nos reduce al caso $X=\mathbf P^r_S$. Además, puede suponerse que
+$\mathcal L=\mathcal O_{\mathbf P^r_S}(k)^s$ para ciertos $k$ y $s$. El
+coeficiente $a_{\mathcal F}$ satisface
+\[
+0\leq a_{\mathcal F}\leq s
+\]
+y, por tanto, está acotado. Es equivalente decir que el coeficiente de
+$n^{r-1}$ en los $P_{\mathcal F}(n)$ está minorado (respectivamente, acotado),
+o decir lo mismo de
+$P_{\mathcal F}(n-k)=P_{\mathcal F(-k)}(n)$. Nos reducimos así al caso
+\[
+\mathcal L=\mathcal O_{\mathbf P^r_S}^{s}.
+\]
+
+Consideremos la sucesión exacta
+\[
+0\longrightarrow N_r\longrightarrow\mathcal F
+\longrightarrow\mathcal F_{(r)}\longrightarrow0,
+\]
+de donde
+\[
+P_{\mathcal F}=P_{\mathcal F_{(r)}}+P_{N_r}.
+\]
+Como el coeficiente de $n^{r-1}$ en $P_{N_r}$ es positivo (pues
+$\dim\operatorname{supp}N_r\leq r-1$), se tiene
+\[
+b_{\mathcal F_{(r)}}\leq b_{\mathcal F}.
+\]
+Así pues, para demostrar las afirmaciones del lema podemos sustituir
+$\mathcal F$ por $\mathcal F_{(r)}$; es decir, podemos suponer que los haces
+cocientes $\mathcal F$ de $\mathcal L$ considerados son libres de torsión.
+
+Como $\mathbf P^r_K$ es normal, se sigue que $\mathcal F$ es localmente libre
+de rango $a=a_{\mathcal F}$ sobre un abierto $U=\mathbf P^r_K-Y$, donde $Y$
+tiene codimensión $\geq2$. Por tanto, $\bigwedge^a\mathcal F$ es un haz sobre
+$\mathbf P^r_K$ cuya restricción a $U$ es invertible; luego (como
+$\mathbf P^r_K$ es regular y $Y$ tiene codimensión $\geq2$) es isomorfo a la
+restricción de un haz invertible sobre $\mathbf P^r_K$, determinado salvo
+isomorfismo. Este último es de la forma $\mathcal O_{\mathbf P^r_K}(d)$ para
+un entero $d$ bien determinado. Como $\bigwedge^a\mathcal F$ es un cociente
+de $\bigwedge^a\mathcal O_{\mathbf P^r_K}^{s}\simeq
+\mathcal O_{\mathbf P^r_K}^{N}$\footnote{El texto impreso sustituye aquí el
+exponente $s$ por un $n$ no definido; $s$ es el rango del haz libre que se
+proyecta sobre $\mathcal F$.}, donde $N=\binom{s}{a}$, posee $N$ secciones
+canónicas, y estas definen, por tanto, secciones de
+\src{257}
+$\mathcal O_{\mathbf P^r_K}(d)$ sobre $U$ que son restricciones de secciones
+$s_i$ ($1\leq i\leq N$) de $\mathcal O_{\mathbf P^r_K}(d)$ (pues
+$\mathbf P^r_K$ es normal y $Y$ tiene codimensión $\geq2$). Estas secciones
+generan $\mathcal O_{\mathbf P^r_K}(d)$ en los puntos de $U$, de modo que no
+son todas nulas; esto implica $d\geq0$. Por otra parte, un cálculo sencillo da
+\[
+b_{\mathcal F}=a_{\mathcal F}(r+1)/2+d.
+\]
+En particular, esto demuestra que $b_{\mathcal F}>0$, por lo que
+$b_{\mathcal F}$ está minorado. Está acotado si y solo si $d$ lo está;
+demostremos que, en tal caso, $\mathcal F$ pertenece a una familia acotada.
+Podemos suponer que $a_{\mathcal F}$ y $b_{\mathcal F}$ son fijos, digamos
+iguales a $a$ y $b$, de modo que $d$ es fijo. El conocimiento de las $N$
+secciones $s_i$ de $\mathcal O_{\mathbf P^r_K}(d)$, es decir, de un
+homomorfismo
+\[
+s:\bigwedge^a\mathcal L_K\longrightarrow\mathcal O_{\mathbf P^r_K}(d),
+\]
+permite recuperar $\mathcal F$ como la coimagen del homomorfismo compuesto
+correspondiente
+\[
+\mathcal L_K\longrightarrow
+\operatorname{Hom}\!\left(\bigwedge^{a-1}\mathcal L_K,
+\bigwedge^a\mathcal L_K\right)\longrightarrow
+\operatorname{Hom}\!\left(\bigwedge^{a-1}\mathcal L_K,
+\mathcal O_{\mathbf P^r_K}(d)\right),
+\]
+donde el primero es el homomorfismo canónico procedente del producto exterior
+y el segundo se deduce de $s$. La conclusión se sigue ahora de (1.2) (i).
+
+Combinando los dos lemas precedentes se obtiene:
+
+\result{LEMA}{2.6} Bajo las hipótesis preliminares de (2.1), supongamos que,
+para todo $\mathcal F$, se tiene
+\[
+P_{\mathcal F}(n)=a_{\mathcal F}\frac{n^r}{r!}
++b_{\mathcal F}\frac{n^{r-1}}{(r-1)!}
++\text{términos de grado $<r-1$},
+\]
+y que los coeficientes $a_{\mathcal F}$ están acotados. Entonces los
+coeficientes $b_{\mathcal F}$ están minorados. Si los $b_{\mathcal F}$ están
+acotados, los $\mathcal F_{(r)}$ forman una familia acotada.
+
+Podemos suponer que los cuerpos base $K$ de los haces $\mathcal F$ son
+algebraicamente cerrados. Dótese cada
+$\operatorname{supp}\mathcal F_{(r)}$, unión de las componentes de
+$\operatorname{supp}\mathcal F$ de dimensión $r$, de la estructura reducida
+inducida. Entonces los grados de los $\operatorname{supp}\mathcal F_{(r)}$
+están acotados superiormente por $a$, por lo que, en virtud de (2.4), los
+$\operatorname{supp}\mathcal F_{(r)}$ forman un conjunto acotado. Además, para
+cada componente de $\operatorname{supp}\mathcal F_{(r)}$, la longitud de
+$\mathcal F_{(r)}$ a lo largo de dicha componente es $\leq a$. Por tanto, si
+$\mathcal J_{\mathcal F}$ es el ideal que define
+$\operatorname{supp}\mathcal F_{(r)}$, entonces $\mathcal F_{(r)}$
+\src{258}
+puede considerarse como un Módulo sobre el subesquema $Y_{\mathcal F}$ de $X$
+definido por $\mathcal J_{\mathcal F}^{a}$. Como en el lema anterior, también
+podemos reducirnos al caso $\mathcal F=\mathcal F_{(r)}$, de modo que
+$\mathcal F$ proviene de un Módulo sobre $Y_{\mathcal F}$. Los
+$Y_{\mathcal F}$ corresponden a una familia acotada de Módulos cocientes de
+los $\mathcal O_{X_K}$ y, por consiguiente, provienen de un subesquema cerrado
+$Y$ de un esquema $X\times_S T$. Podemos entonces aplicar (2.5) a $Y/T$ y
+$\mathcal L\otimes_XY$, lo que da la conclusión.
+
+Ya podemos demostrar (2.2) por inducción sobre la cota superior $r$ de
+$\dim\operatorname{supp}\mathcal F$. El enunciado es trivial para $r<0$;
+supongamos, pues, que $r\geq0$ y que el enunciado ha sido demostrado para
+$r'<r$. Por (2.6), los $\mathcal F_{(r)}$ forman un conjunto acotado; por
+tanto, en virtud de (1.2) (i), también lo forman los núcleos de los
+homomorfismos $\mathcal L_K\longrightarrow\mathcal F_{(r)}$. Existe, pues, un
+Módulo coherente $\mathcal L'$ sobre $X$ tal que los núcleos en cuestión y,
+por consiguiente, también los
+\[
+N_r(\mathcal F)=\operatorname{Ker}(\mathcal F\longrightarrow\mathcal F_{(r)}),
+\]
+son cocientes de los Módulos $\mathcal L'_K$. Como los
+$\mathcal F_{(r)}$ están acotados, los $P_{\mathcal F_{(r)}}$ permanecen
+acotados, y la fórmula
+\[
+P_{\mathcal F}=P_{\mathcal F_{(r)}}+P_{N_r}
+\]
+demuestra que los $P_{N_r}$ satisfacen la misma condición $(b_s)$ que los
+$P_{\mathcal F}$. Por tanto, los $N_r$ satisfacen las condiciones (a) y
+$(b_s)$, y por la hipótesis de inducción los $(N_r)_{(s)}$ permanecen acotados.
+Ahora bien, $\mathcal F_{(s)}$ es una extensión de $\mathcal F_{(r)}$ por
+$(N_r)_{(s)}$; luego, por (1.2) (ii), los $\mathcal F_{(s)}$ permanecen
+acotados. Para la última afirmación de (2.2), llevamos simultáneamente la inducción sobre el acotamiento y sobre la cota inferior del coeficiente siguiente. Los núcleos acotados de los morfismos de fuente fija hacia $\mathcal F_{(s)}$ proporcionan un mismo haz coherente que se aplica sobreyectivamente sobre cada $N_s$, pero (1.2) (i) por sí solo no hace acotada la familia de estos cocientes. Reaplicamos por inducción la afirmación sobre los coeficientes a estos cocientes; la aditividad del polinomio de Hilbert y el Lema 2.6 dan entonces la cota inferior requerida para el coeficiente siguiente. Esto termina la demostración.
+
+\fsection{3}{Esquemas de Hilbert: definición y teorema de existencia}
+
+Sea $X$ un preesquema sobre otro preesquema $S$, y sea $\mathcal F$ un Módulo
+cuasicoherente sobre $X$. Denotemos por
+\[
+\operatorname{Quot}(\mathcal F/X/S)
+\]
+el conjunto de Módulos cuasicoherentes cocientes de $\mathcal F$ que son
+planos sobre $S$. Sea ahora $S'\longrightarrow S$ un morfismo de cambio de
+base, y pongamos $X'=X\times_S S'$ y
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$. Así, $X'$ es
+un preesquema sobre $S'$ provisto de un Módulo
+\src{259}
+$\mathcal F'$, y podemos considerar
+$\operatorname{Quot}(\mathcal F'/X'/S')$. Pongamos
+\[
+\underline{\operatorname{Quot}}_{\mathcal F/X/S}(S')
+=\operatorname{Quot}(\mathcal F'/X'/S')
+\qquad\text{(donde $X'=X\times_SS'$)}.
+\]
+Si ahora $S''\longrightarrow S'$ es un $S$-morfismo, entonces
+$X''=X\times_SS''$ es isomorfo a $X'\times_{S'}S''$, y $\mathcal F''$ es
+isomorfo a $\mathcal F'\otimes_{\mathcal O_{S'}}\mathcal O_{S''}$. Como el
+funtor de imagen inversa
+\[
+\mathcal G'\longmapsto
+\mathcal G'\otimes_{\mathcal O_{S'}}\mathcal O_{S''}
+\]
+de la categoría de Módulos cuasicoherentes sobre $X'$ a la categoría de
+Módulos cuasicoherentes sobre $X''$ es exacto a derecha y transforma Módulos
+planos sobre $S'$ en Módulos planos sobre $S''$, hay una aplicación natural
+\[
+\operatorname{Quot}(\mathcal F'/X'/S')\longrightarrow
+\operatorname{Quot}(\mathcal F''/X''/S''),
+\]
+por lo que $\underline{\operatorname{Quot}}_{\mathcal F/X/S}(S')$ es un
+funtor contravariante de $S'$ (preesquema sobre $S$), con valores en la
+categoría de conjuntos. En adelante supondremos que $X$ es proyectivo sobre un
+$S$ noetheriano y que $\mathcal F$ es coherente; para simplificar, nos
+limitaremos a los $S'$ sobre $S$ que sean localmente noetherianos.
+
+\result{TEOREMA}{3.1} Bajo estas hipótesis, el funtor contravariante
+$\underline{\operatorname{Quot}}_{\mathcal F/X/S}$ sobre la categoría de los
+$S$-preesquemas localmente noetherianos es representable por un $S$-preesquema
+$\operatorname{Quot}_{\mathcal F/X/S}$ que es unión disjunta de una sucesión
+de $S$-esquemas proyectivos (en particular,
+$\operatorname{Quot}_{\mathcal F/X/S}$ es localmente de tipo finito sobre
+$S$).
+
+Obtendremos tal descomposición como sigue. Sea $\mathcal O_X(1)$ un haz
+invertible sobre $X$, muy amplio relativamente a $S$. Para todo polinomio
+$P(n)$ con coeficientes racionales, sea
+$\operatorname{Quot}^P(\mathcal F/X/S)$ el subconjunto de
+$\operatorname{Quot}(\mathcal F/X/S)$ formado por los cocientes coherentes
+$\mathcal G$ de $\mathcal F$ que son planos sobre $S$ y cuyo polinomio de
+Hilbert en todo $s\in S$ es igual a $P$. Pongamos
+\[
+\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}(S')
+=\operatorname{Quot}^P(\mathcal F'/X'/S').
+\]
+Esto da un subfuntor de
+$\underline{\operatorname{Quot}}_{\mathcal F/X/S}$. La propiedad de
+invariancia de los polinomios de Hilbert recordada en el Apartado 2 implica lo
+siguiente: el funtor $\underline{\operatorname{Quot}}_{\mathcal F/X/S}$ es
+representable si y solo si lo son los
+$\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$; en tal caso, el
+$S$-preesquema representante $\operatorname{Quot}_{\mathcal F/X/S}$ es
+isomorfo a la unión disjunta de los
+$\operatorname{Quot}^P_{\mathcal F/X/S}$ que representan los funtores
+$\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$. Así, (3.1) se deduce
+del teorema siguiente:
+\src{260}
+\result{TEOREMA}{3.2} Con las notaciones anteriores, el funtor
+$\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$ está representado por un
+$S$-preesquema proyectivo $\operatorname{Quot}^P_{\mathcal F/X/S}$.
+
+El resto de este apartado está dedicado a la demostración de (3.2).
+
+Sea $\nu$ un entero. Para todo $S'$ sobre $S$, denotemos por $A_\nu(S')$ el
+conjunto de cocientes $\mathcal G=\mathcal F'/\mathcal K$ de
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$ que son
+coherentes y planos sobre $S'$, y que satisfacen las condiciones siguientes:
+\begin{align*}
+\text{a.}\quad &R^if'_*(\mathcal G(n))=0 &&\text{para $i>0$ y $n\geq\nu$},\\
+\text{b.}\quad &R^if'_*(\mathcal K(n))=0 &&\text{para $i>0$ y $n\geq\nu$},\\
+\text{c.}\quad &f'_*(\mathcal K(\nu+k))
+=\mathcal S'_k f'_*(\mathcal K(\nu)) &&\text{para $k\geq0$}.
+\end{align*}
+Para la última relación, se supone que $X$ está escrito como el espectro primo
+homogéneo de un álgebra graduada cuasicoherente $\mathcal S_*$ sobre $S$,
+graduada positivamente y generada por $\mathcal S_1$, y se pone
+$\mathcal S'_* =\mathcal S_*\otimes_{\mathcal O_S}\mathcal O_{S'}$, de modo
+que $X'$ es el espectro primo homogéneo de $\mathcal S'_*$. Para demostrar
+(3.2), se reduce fácilmente al caso $X=\mathbf P^r_S$ (pues $S$ es una unión
+de abiertos $U$ tales que $X|U$ es un subesquema cerrado de $\mathbf P^r_U$ y
+$\mathcal O_X(1)$ está inducido por $\mathcal O_{\mathbf P^r_U}(1)$), y al
+caso en que $\mathcal F$ es de la forma
+$\mathcal O_{\mathbf P^r_S}^{N}$ y es, por tanto, plano sobre $S$. En la
+discusión precedente, los haces $\mathcal K$ son entonces también planos sobre
+$S'$. Las relaciones de Künneth ([5], III, \S~7) demuestran que las condiciones
+(a) y (b) son estables por cambio de base e implican que, para $n\geq\nu$, la
+formación de $f'_*(\mathcal G(n))$ y $f'_*(\mathcal K(n))$ conmuta con la
+extensión de la base (loc. cit.); por tanto, (c) también es estable por
+extensión de la base.
+
+En otras palabras, $A_\nu(S')$ es un funtor contravariante de $S'$, más
+precisamente un subfuntor de
+$A(S')=\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}(S')$. Al variar
+$\nu$, se obtiene una sucesión creciente de subconjuntos $A_\nu(S')$ de
+$A(S')$ cuya unión es $A(S')$, por un teorema bien conocido de Serre [5], III,
+\S~2. Supongamos ahora que $\mathcal G$ es un cociente coherente de
+$\mathcal F'$, plano sobre $S'$, y que $s$ es un punto de $S'$ tal que el
+cambio de base $\operatorname{Spec}(k(s))\longrightarrow S'$ da un cociente
+$\mathcal G_s$ de $\mathcal F_s$ que satisface las condiciones (a), (b) y (c),
+es decir, que pertenece a $A_\nu(\operatorname{Spec}(k(s)))$. Existe entonces
+un entorno abierto $U$ de $s$ sobre el cual se satisfacen las mismas
+condiciones para $\mathcal G|f'^{-1}(U)$; es decir, este cociente pertenece a
+$A_\nu(U)$. Para (a) y (b), esto resulta del «teorema de las funciones
+holomorfas» [5], III, \S~7; la condición (c) resulta del lema de Nakayama y del
+hecho de que, en cualquier caso, se sabe que
+$f'_*(\mathcal K(n+k))=\mathcal S'_k f'_*(\mathcal K(n))$
+\src{261}
+para $n$ suficientemente grande y $k\geq0$ (cf. [5], III, \S~2). De estas
+observaciones se deduce lo siguiente (compárese [4], IV): el funtor $A$ es
+representable si y solo si los funtores $A_\nu$ son representables; en tal
+caso, el $S$-preesquema $Q$ que representa $A$ es unión creciente de
+subesquemas abiertos $Q_\nu$ que representan los $A_\nu$.
+
+Sea
+\[
+M_* =\bigoplus_{n\geq0}f_*(\mathcal F(n))=\mathcal S_*^{N},
+\]
+de modo que
+\[
+M'_* =M_*\otimes_{\mathcal O_S}\mathcal O_{S'}
+=\bigoplus_{n\geq0}f'_*(\mathcal F'(n))=\mathcal S'_*{}^{N}.
+\]
+De (a) se sigue que
+
+\noindent (a') $f'_*(\mathcal G(n))$ es localmente libre de rango $P(n)$ para
+$n\geq\nu$, [5], III, \S~7; y de (b), con $i=1$, que
+
+\noindent (a'') $f'_*(\mathcal G(n))$ es un Módulo cociente de $M'_n$.
+
+Además, el conocimiento de este Módulo cociente para $n=\nu$ determina, por
+(c), los sub-Módulos $f'_*(\mathcal K(n))$ de $M'_n$ para $n\geq\nu$ y, por
+tanto, determina $\mathcal K$ y luego $\mathcal G$. Se obtiene así una
+aplicación inyectiva
+\[
+A_\nu(S')\longrightarrow\operatorname{Grass}_{P(\nu)}(M'_\nu)
+\]
+de $A_\nu(S')$ en el conjunto de Módulos cocientes localmente libres de
+$M'_\nu$ de rango $P(\nu)$ y, por tanto, un homomorfismo funtorial
+\[
+i_\nu:A_\nu(S')\longrightarrow
+\underline{\operatorname{Grass}}_{P(\nu)}(M_\nu)(S'),
+\]
+donde el funtor de la derecha está representado por el esquema de Grassmann
+$\operatorname{Grass}_{P(\nu)}(M_\nu)$ (compárese [4], V), que es proyectivo
+sobre $S$. Afirmo:
+
+\result{LEMA}{3.3} El funtor $A_\nu(S')$ es representable, y el morfismo
+$Q_\nu\longrightarrow\operatorname{Grass}_{P(\nu)}(M_\nu)$ que representa el
+homomorfismo $i_\nu$ es una inmersión (lo que implica que $Q_\nu$ es
+cuasiproyectivo sobre $S$).
+
+Esta afirmación equivale a la siguiente (compárese [4], IV). Supongamos dado
+un Módulo cociente $N$ de $M'_\nu$, localmente libre de rango $P(\nu)$. Existe
+entonces un subpreesquema $Z$ de $S'$ tal que, para todo preesquema localmente
+noetheriano $T'$
+\src{262}
+sobre $S'$, la imagen inversa de $N$ sobre $T'$ pertenece a
+$\operatorname{Im}A_\nu(T')$ si y solo si $T'\longrightarrow S'$ se factoriza
+a través del subpreesquema $Z$. Cambiando las notaciones, podemos suponer que
+$S'=S$; es decir, se nos da un cociente $N_\nu$ de $M_\nu$ por un sub-Módulo
+$R_\nu$. Este proviene de un elemento de $A_\nu(S)$ si y solo si satisface las
+dos condiciones siguientes:
+
+\medskip
+\noindent (i) $M_{\nu+k}/\mathcal S_kR_\nu$ es localmente libre de rango
+$P(\nu+k)$ para $k\geq0$.
+
+\smallskip
+\noindent (ii) El subhaz $\mathcal K$ de $\mathcal F$ definido por el
+sub-Módulo graduado
+\[
+R_* =\sum_{k\geq0}\mathcal S_kR_\nu
+\]
+de $M_*$ ([5], II, \S~3), y el cociente
+$\mathcal G=\mathcal F/\mathcal K$, satisfacen las condiciones (a) y (b)
+anteriores.
+
+Estas condiciones son manifiestamente necesarias. Recíprocamente, si se
+satisfacen, el haz $\mathcal G$ definido en (ii), al ser isomorfo al haz
+asociado al $\mathcal S_*$-Módulo graduado $N_*$ que es la suma de los
+$M_{\nu+k}/\mathcal S_kR_\nu$, es plano sobre $S$ (pues sus fibras son
+sumandos directos de localizaciones de $N_*$\footnote{El texto impreso lleva $N$; aquí se localiza el Módulo graduado $N_*$ que acaba de definirse.} en ideales primos homogéneos de
+$\mathcal S_*$), y tiene polinomio de Hilbert $P$ por (i). En virtud de (ii),
+se satisfacen (a') y (a''), de modo que, para $n\geq\nu$, el homomorfismo
+natural $N_n\longrightarrow f_*(\mathcal G(n))$ es un homomorfismo
+sobreyectivo entre Módulos localmente libres del mismo rango y, por tanto, un
+isomorfismo. Así,
+\[
+f_*(\mathcal K(\nu+k))=\mathcal S_kR_\nu
+\quad\text{para todo $k\geq0$}.
+\]
+Esto demuestra que $\mathcal G\in A_\nu(S)$ y que $R_\nu$ es el elemento de
+$\operatorname{Grass}_{P(\nu)}(M_\nu)$ definido por $\mathcal G$.
+
+El criterio (i)--(ii) también se aplica después de un cambio de base
+$S'\longrightarrow S$. Demostraremos primero que la condición (i) después del
+cambio de base $S'\longrightarrow S$ puede expresarse exigiendo que
+$S'\longrightarrow S$ se factorice a través de cierto subpreesquema $Z$ de
+$S$. Una vez hecho esto, sustituir $S$ por $Z$ nos reduce al caso en que (i) ya
+se satisface sobre $S$; puesto que es estable por cambio de base, queda por
+expresar la condición (ii). Sea $U$ el conjunto de los $s\in S$ tales que la
+cohomología en dimensión $>0$ de los haces inducidos sobre la fibra $X_s$ por
+$\mathcal G(n)$ y $\mathcal K(n)$ se anula para $n\geq\nu$. Ya hemos observado
+que $U$ es abierto, y la condición (ii) se satisface tras un cambio de base
+$S'\longrightarrow S$ si y solo si $S'\longrightarrow S$ se factoriza a
+través de $U$. Esto demuestra el Lema 3.3. Queda por demostrar el lema
+siguiente:
+
+\result{LEMA}{3.4} Sea $S$ un preesquema localmente noetheriano provisto de un
+álgebra cuasicoherente graduada positivamente $\mathcal S_*$, generada por
+$\mathcal S_1$; sea $M_*$ un $\mathcal S_*$-Módulo graduado cuasicoherente de
+tipo finito, $P$ un polinomio con coeficientes racionales y $\nu$ un entero.
+Existe entonces un subpreesquema manifiestamente único $Z$ de $S$
+\src{263}
+con la propiedad siguiente: para todo preesquema $S'$ sobre $S$, el Módulo
+$M_n\otimes_{\mathcal O_S}\mathcal O_{S'}$ es localmente libre de rango $P(n)$
+para todo $n\geq\nu$ si y solo si $S'\longrightarrow S$ se factoriza a través
+de $Z$.
+
+Podemos suponer claramente que $S$ es afín y, por tanto, noetheriano. Entonces:
+
+\result{LEMA}{3.5} Para todo entero $N\geq\nu$, sea $U_N$ el subconjunto
+abierto de $S$ formado por los $s\in S$ tales que
+\[
+\operatorname{rank}_{k(s)}
+M_{ns}\otimes_{\mathcal O_{S,s}}k(s)\leq P(n)
+\quad\text{para todo $\nu\leq n\leq N$}.
+\]
+Entonces la sucesión decreciente de abiertos $U_N$ es estacionaria.
+
+Se sabe [3], IV, que $S$ posee una partición finita en subesquemas reducidos
+$S_i$ tales que cada $M\otimes_{\mathcal O_S}\mathcal O_{S_i}$ es plano sobre
+$S_i$. Podemos, pues, suponer que $M$ es plano y, por tanto, que los $M_n$ son
+planos. Finalmente, podemos suponer claramente que $S$ es conexo. Existen
+entonces un entero $n_0$ y un polinomio $Q$ tales que
+\[
+\operatorname{rank}_{k(s)}
+M_{ns}\otimes_{\mathcal O_{S,s}}k(s)=Q(n)
+\quad\text{para $n\geq n_0$},
+\]
+[5], III, \S~7. Supongamos primero que $P<Q$\footnote{El texto impreso lleva
+$P\neq Q$; la fe de erratas de 1962 prescribe $P<Q$, sustituye el caso «$P=Q$» por
+el caso complementario $P(n)\geq Q(n)$ para $n$ grande, y sustituye las
+desigualdades estrictas de (*) por desigualdades no estrictas.}, de modo que
+$P(n)<Q(n)$ para $n$ grande. Entonces, evidentemente, $U_N=\varnothing$ para
+$N$ grande, y la sucesión $U_N$ es estacionaria. En el caso complementario,
+$P(n)\geq Q(n)$ para $n$ grande, de modo que $U_N=U_{n_0}$ para $N\geq n_0$,
+y la sucesión $U_N$ vuelve a ser estacionaria.
+
+En particular, el conjunto $U_\infty$ de los $s\in S$ tales que
+\[
+\tag{*}
+\operatorname{rank}_{k(s)}
+M_{ns}\otimes_{\mathcal O_{S,s}}k(s)\leq P(n)
+\quad\text{para todo $n\geq\nu$}
+\]
+es abierto, pues es la intersección de los $U_N$. Para demostrar (3.4),
+podemos, por tanto, sustituir $S$ por el abierto $U_\infty$\footnote{El texto impreso lleva $U$; el abierto considerado aquí es $U_\infty$, la intersección de los $U_N$.}, reduciéndonos al caso en
+que la desigualdad (*) se satisface en todo $s\in S$. Además:
+
+\result{LEMA}{3.6} Sea $M$ un Módulo sobre un preesquema localmente
+noetheriano $S$, y sea $r$ un entero. Existe entonces un subpreesquema
+manifiestamente único $Z$ de $S$ con la propiedad siguiente: para todo $S'$
+sobre $S$, el Módulo $M\otimes_{\mathcal O_S}\mathcal O_{S'}$ es localmente
+libre de rango $r$ si y solo si $S'\longrightarrow S$ se factoriza a través de
+$Z$. Si
+\[
+\operatorname{rank}_{k(s)}
+M_s\otimes_{\mathcal O_{S,s}}k(s)\leq r
+\quad\text{para todo $s$},
+\]
+entonces $Z$ es un subpreesquema cerrado de $S$ (suponiéndose $M$ coherente).
+\src{264}
+En efecto, el razonamiento anterior nos reduce al caso en que la desigualdad
+(*) se satisface para todo $s\in S$ (sustituyendo $S$, si es necesario, por el
+subconjunto abierto de los puntos donde se satisface). Podemos entonces suponer
+que $M$ interviene en una sucesión exacta
+\[
+\mathcal O_S^q\longrightarrow\mathcal O_S^r\longrightarrow M\longrightarrow0.
+\]
+La condición considerada para $S'$ sobre $S$ significa también que, en la
+sucesión exacta correspondiente
+$\mathcal O_{S'}^q\longrightarrow\mathcal O_{S'}^r
+\longrightarrow M'\longrightarrow0$, la segunda flecha es un isomorfismo; es
+decir, que la primera es nula. Por consiguiente, el subpreesquema cerrado $Z$
+de $S$ definido por el ideal generado por las entradas de la matriz que define
+$\mathcal O_S^q\longrightarrow\mathcal O_S^r$ posee la propiedad requerida.
+
+Volvamos ahora a la demostración de (3.4). Sea $Z_n$ el subesquema cerrado de
+$S$ asociado por (3.6) al Módulo $M_n$ y al entero $r=P(n)$, y sea $Z'_N$ el
+ínfimo de los $Z_n$ para $\nu\leq n\leq N$. Los $Z'_N$ forman una sucesión
+decreciente de subesquemas cerrados de $S$\footnote{El texto impreso lleva $Z$; todos los $Z_n$ y sus ínfimos $Z'_N$ son subesquemas cerrados de $S$.} y, por tanto, es necesariamente
+estacionaria. Sea $Z$ su valor constante para $N$ grande. Este es el $Z$
+buscado en (3.4). Esto termina la demostración de (3.4) y, por consiguiente,
+también la de (3.3).
+
+Hemos demostrado, pues, que
+$\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$ está representado por un
+$S$-preesquema $Q$ que es unión creciente de subesquemas abiertos $Q_\nu$
+cuasiproyectivos sobre $S$. Para ir más lejos, invoquemos el Teorema 2.1, del
+cual se deduce fácilmente que $Q$ es cuasicompacto (pues es la imagen del
+preesquema $S'$ de tipo finito sobre $S$ que parametriza la familia de haces
+cocientes de los $\mathcal F_K$ con polinomio de Hilbert $P$). Así, $Q$ es
+igual a uno de los $Q_\nu$ y, por tanto, es cuasiproyectivo sobre $S$. Para
+demostrar que es proyectivo sobre $S$, queda por demostrar que es propio sobre
+$S$. Para ello basta invocar el criterio valuativo de la propiedad de ser
+propio en la forma
+[5], II, 7.3.8. Solo hay que verificar:
+
+\result{LEMA}{3.7} Sea $S$ el espectro de un anillo de valoración discreta,
+sea $s$ su punto genérico, sea $X$ un preesquema sobre $S$, sea $\mathcal F$
+un Módulo cuasicoherente sobre $X$, y sea $\mathcal G_s$ un Módulo
+cuasicoherente cociente de
+$\mathcal F_s=\mathcal F\otimes_{\mathcal O_S}k(s)$ sobre $X_s$. Existe
+entonces un único Módulo cuasicoherente cociente $\mathcal G$ de $\mathcal F$,
+plano sobre $S$, cuya restricción a $X_s$ es $\mathcal G_s$.
+\src{265}
+En efecto, si $\mathcal G_s=\mathcal F_s/\mathcal K_s$, basta tomar el mayor
+subhaz $\mathcal K$ de $\mathcal F$ que induce $\mathcal K_s$, [5], I, 9.4.2,
+y poner $\mathcal G=\mathcal F/\mathcal K$. Se comprueba fácilmente que este
+haz posee las propiedades requeridas.
+
+El Teorema 3.2 y, por consiguiente, (3.1), quedan ahora completamente
+demostrados.
+
+La demostración establece al mismo tiempo:
+
+\result{PROPOSICIÓN}{3.8} Bajo las hipótesis de (3.2), sean
+$Q=\operatorname{Quot}^P_{\mathcal F/X/S}$, $X_Q=X\times_SQ$ y
+$\mathcal F_Q=\mathcal F\otimes_{\mathcal O_S}\mathcal O_Q$; y sea
+$\mathcal G$ el cociente coherente de $\mathcal F_Q$, plano sobre $Q$, con
+polinomio de Hilbert relativo $P$, tal que $(Q,\mathcal G)$ representa el
+funtor $\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$. Existe un entero
+$\nu$ tal que, para $n\geq\nu$, $(f_Q)_*(\mathcal G(n))$ es un Módulo sobre
+$Q$, localmente libre de rango $P(n)$ y muy amplio relativamente a $S$; es
+decir, define una inmersión de $Q$ en un esquema de Grassmann
+$\operatorname{Grass}_{P(n)}(M)$ sobre $S$. En particular, para $n\geq\nu$,
+el haz
+\[
+\bigwedge^{P(n)}(f_Q)_*(\mathcal G(n))
+\]
+sobre $Q$ es invertible y muy amplio relativamente a $S$.
+
+Como en (3.2), podemos reducirnos al caso en que $\mathcal F$ es plano sobre
+$S$; entonces basta elegir un entero $\nu$ tal que $A_\nu=A$ (con las
+notaciones anteriores).
+
+La aplicación más importante de (3.2) es el caso
+$\mathcal F=\mathcal O_X$. Escribimos entonces
+\[
+\operatorname{Quot}_{\mathcal O_X/X/S}=\operatorname{Hilb}_{X/S},
+\qquad
+\operatorname{Quot}^P_{\mathcal O_X/X/S}=\operatorname{Hilb}^P_{X/S},
+\]
+y obtenemos una descomposición
+\[
+\operatorname{Hilb}_{X/S}=\coprod_P\operatorname{Hilb}^P_{X/S}.
+\]
+Por definición, $\operatorname{Hilb}_{X/S}$ representa el funtor
+$\underline{\operatorname{Hilb}}_{X/S}(S')$, conjunto de los subesquemas
+cerrados de $X'=X\times_SS'$ que son planos sobre $S'$; y
+$\operatorname{Hilb}^P_{X/S}$ representa el subfuntor correspondiente de
+subesquemas cerrados con polinomio de Hilbert dado $P$. Estos preesquemas se
+llaman también, respectivamente, \emph{preesquema de Hilbert} de $X$ sobre
+$S$ y \emph{preesquema de Hilbert de índice $P$}. La terminología se justifica
+por el papel desempeñado en la teoría por los polinomios de Hilbert. Su
+diferencia de naturaleza respecto de las variedades de Chow clásicas (que
+parametrizan ciclos y no variedades) es del mismo orden que la existente entre
+\src{266}
+el anillo de Chow de las clases de ciclos sobre una variedad y el anillo de
+clases de haces sobre la variedad (tal como aparece en el teorema de
+Riemann--Roch [1]). En efecto, cuando $X=\mathbf P^r_S$ y $S$ es el espectro
+de un cuerpo, conocer el polinomio de Hilbert de un Módulo coherente
+$\mathcal F$ sobre $X$ equivale también a conocer las clases de Chern de
+$\mathcal F$, o la clase de $\mathcal F$ en el anillo de clases de haces
+coherentes sobre $X$.
+
+\result{OBSERVACIONES}{3.9} Obsérvese asimismo que la construcción de
+$\operatorname{Quot}_{\mathcal F/X/S}$ y
+$\operatorname{Quot}^P_{\mathcal F/X/S}$ se redujo al caso
+$X=\mathbf P^r_S$, $\mathcal F=\mathcal O_X^N$, con $\mathcal O_X(1)$ el haz
+muy amplio usual; más precisamente, los
+$\operatorname{Quot}_{\mathcal F/X/S}$ generales aparecen como subesquemas
+cerrados de estos. Como la formación de los
+$\operatorname{Quot}^P_{\mathcal F/X/S}$ es manifiestamente compatible con
+los cambios de base $S'\longrightarrow S$, nos reducimos además a
+$S=\operatorname{Spec}(\mathbf Z)$. En definitiva, pues, se reduce al estudio
+de los esquemas proyectivos siguientes sobre $\mathbf Z$:
+\[
+\mathfrak Q^P_{r,N}=
+\operatorname{Quot}^{P}_{(\mathcal O_{\mathbf P^r_{\mathbf Z}})^N/
+\mathbf P^r_{\mathbf Z}/\operatorname{Spec}(\mathbf Z)},
+\]
+y, más particularmente, de los esquemas de Hilbert absolutos
+\[
+\operatorname{Hilb}^P_r=\mathfrak Q^P_{r,1}.
+\]
+Sería muy interesante un estudio más detallado de estos esquemas, comenzando
+por la determinación de sus componentes conexas (¿son conexos?),\footnote{La
+fe de erratas de 1962 señala que Hartshorne demostró la conexidad de los
+$\operatorname{Hilb}^P_r$ sobre un cuerpo algebraicamente cerrado y determinó
+los pares $(r,P)$ para los cuales
+$\operatorname{Hilb}^P_r\neq\varnothing$.} y de sus componentes irreducibles
+(por Serre [7], puede haber componentes irreducibles situadas enteramente sobre
+un primo no nulo $p$). Recordemos la pregunta de Weil de si las componentes
+irreducibles de las fibras de $\operatorname{Hilb}^P_r$ sobre
+$s\in\operatorname{Spec}(\mathbf Z)$ corresponden a extensiones «regulares»
+del cuerpo primo, es decir, si son «relativamente conexas». Estas cuestiones
+quizá sean más abordables para los esquemas de Hilbert que para las
+«variedades de Chow».
+
+\fsection{4}{Variantes}
+
+\noindent a. Bajo las hipótesis de (3.1), sea $U$ un subconjunto abierto de
+$X$, y sea $A'$ el subfuntor de
+$A=\underline{\operatorname{Quot}}_{\mathcal F/X/S}$ tal que $A'(S')$ es el
+conjunto de Módulos cocientes $\mathcal G$ de $\mathcal F'$, planos sobre
+$S'$, cuyo soporte está contenido en $U'$. Manifiestamente, $A'$ está
+representado por un subconjunto abierto del preesquema
+$\operatorname{Quot}_{\mathcal F/X/S}$ que representa $A$. De ello resulta
+que los Teoremas (3.1) y (3.2)
+\src{267}
+siguen siendo válidos cuando se supone que $X$ es cuasiproyectivo sobre $S$ en
+lugar de proyectivo sobre $S$, siempre que en las conclusiones también se
+sustituya «proyectivo» por «cuasiproyectivo» y que
+$\underline{\operatorname{Quot}}_{\mathcal F/X/S}(S')$ denote ahora el
+conjunto de cocientes coherentes $\mathcal G$ de $\mathcal F'$, planos sobre
+$S'$, cuyo soporte es propio sobre $S'$.
+
+\medskip
+\noindent b. Más generalmente, pueden imponerse a los cocientes $\mathcal G$
+de $\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$, planos
+sobre $S'$, toda clase de condiciones naturales adicionales estables por
+cambio de base, obteniéndose así subfuntores de
+$\underline{\operatorname{Quot}}_{\mathcal F/X/S}$ cuya representabilidad
+puede buscarse. En muchos casos, el criterio usual demuestra que estos
+funtores vuelven a estar representados por subconjuntos abiertos de
+$\operatorname{Quot}_{\mathcal F/X/S}$. Esto ocurre, en particular, cuando se
+impone una de las propiedades adicionales siguientes:
+
+\smallskip
+\noindent $1^\circ$ Las dimensiones de los ciclos primos asociados a los
+Módulos $\mathcal G_{s'}$ ($s'\in S'$) inducidos sobre las fibras $X'_{s'}$
+pertenecen a un conjunto dado de enteros.
+
+\smallskip
+\noindent $2^\circ$ (Cuando $\mathcal F=\mathcal O_X$, de modo que
+$\mathcal G$ corresponde a un subpreesquema cerrado $Y$ de $X'$): $Y$ es un
+preesquema liso ([3], IV) sobre $S'$, respectivamente normal sobre $S'$ (es
+decir, las fibras $Y_{s'}$ son normales «sobre $k(s')$», lo que significa
+normales después de toda extensión del cuerpo base), respectivamente (cuando
+$X$ es plano sobre $S$) una intersección completa local relativa en $X'$ sobre
+$S'$ (es decir, las fibras $Y_{s'}$ son intersecciones completas locales en los
+$X'_{s'}$).\footnote{El texto impreso omite las primas en estas propiedades de $Y$ sobre la base variable $S'$ y dentro de $X'$. La hipótesis relativa al $X$ original plano sobre $S$ permanece sin primas.}
+
+Otras condiciones harían intervenir propiedades cohomológicas de los Módulos
+$\mathcal G_{s'}$ inducidos sobre los $X'_{s'}$, etc. Por supuesto, una
+conjunción de condiciones, cada una de ellas representada por un subconjunto
+abierto $U_i$ de $\operatorname{Quot}_{\mathcal F/X/S}$, está representada por
+la intersección de estos subconjuntos abiertos. Por ejemplo, asignar a todo
+$S'$ sobre $S$ el conjunto de subesquemas cerrados $Y$ de
+$X'=X\times_SS'$ que son recubrimientos étale ([3], I) de $S'$ de rango dado
+$r$ da un funtor contravariante representable de $S'$.
+
+\medskip
+\noindent c. Los preesquemas $\operatorname{Hom}_S(X,Y)$,
+$\Pi_{X/S}(Z/X)$ y $\operatorname{Isom}_S(X,Y)$ definidos en [2], II, C,
+n.º 2 existen bajo hipótesis de proyectividad convenientes y aparecen como
+subconjuntos abiertos de preesquemas de Hilbert adecuados. Puesto que
+\[
+\operatorname{Hom}_S(X,Y)=\Pi_{X/S}((X\times_SY)/X),
+\]
+el caso de $\operatorname{Hom}_S(X,Y)$ se reduce al de
+$\Pi_{X/S}(Z/X)$. Para todo $S'$ sobre $S$, el conjunto de secciones de
+$Z'=Z\times_SS'$ sobre $X'=X\times_SS'$ está en correspondencia biyectiva con
+el conjunto de subpreesquemas $\Gamma$ de $Z'$ (necesariamente cerrados si $Z$
+es separado sobre $X$) tales que el morfismo $\Gamma\longrightarrow X'$
+inducido por $Z'\longrightarrow X'$ sea un isomorfismo. De este modo,
+\src{268}
+cuando $X$ es plano y propio sobre $S$ y $Z$ es cuasiproyectivo sobre $S$,
+$\Pi_{X/S}(Z/X)$ existe y aparece como subpreesquema abierto de
+$\operatorname{Hilb}_{Z/S}$. Por consiguiente, cuando $X$ es proyectivo y
+plano sobre $S$ e $Y$ es cuasiproyectivo sobre $S$,
+$\operatorname{Hom}_S(X,Y)$ existe y aparece como subpreesquema abierto de
+$\operatorname{Hilb}_{(X\times_SY)/S}$. Cuando $X$ e $Y$ son ambos
+proyectivos sobre $S$, se sigue inmediatamente que
+$\operatorname{Isom}_S(X,Y)$ también existe y está representado por un
+subconjunto abierto de $\operatorname{Hom}_S(X,Y)$. Análogamente, cuando $X$
+es plano y proyectivo sobre $S$ e $Y$ es cuasiproyectivo sobre $S$, el
+$S$-preesquema $\operatorname{Imm}_S(X/Y)$ correspondiente al subfuntor de
+$\operatorname{Hom}_S(X,Y)$ cuyos elementos son los $S'$-homomorfismos
+$X'\longrightarrow Y'$ que son inmersiones también está representado por un
+subconjunto abierto de $\operatorname{Hom}_S(X,Y)$.
+
+Sea $\mathcal L$ (respectivamente, $\mathcal M$) un haz invertible sobre $X$
+(respectivamente, $Y$), muy amplio relativamente a $S$. Entonces
+$\mathcal L\otimes_{\mathcal O_S}\mathcal M$ es un haz muy amplio sobre
+$X\times_SY$ relativamente a $S$. Por consiguiente, para todo polinomio $P$
+con coeficientes racionales, $\operatorname{Hilb}^P_{(X\times_SY)/S}$ está
+definido y es un preesquema cuasiproyectivo sobre $S$. Induce, por tanto,
+sobre $\operatorname{Hom}_S(X,Y)$ un subconjunto abierto y cerrado,
+cuasiproyectivo sobre $S$, que denotaremos por
+$\operatorname{Hom}_S(X,Y)^P$. Así, las secciones de
+$\operatorname{Hom}_S(X,Y)^P$ sobre $S$ son los $S$-morfismos
+$g:X\longrightarrow Y$ tales que, para todo entero $n$,
+\[
+\chi\!\left(\left(\mathcal L\otimes_{\mathcal O_X}g^*(\mathcal M)\right)^{
+\otimes n}\right)=P(n).
+\]
+
+De este modo se obtienen generalizaciones del teorema de Matsusaka que afirma
+que los automorfismos de una variedad proyectiva «polarizada» forman un grupo
+algebraico. Aquí la afirmación tiene un sentido manifiestamente más preciso,
+pues este grupo se define como solución de un problema universal. Obsérvese
+también que, sobre un cuerpo algebraicamente cerrado, el grupo de
+automorfismos considerado anteriormente se obtiene del «verdadero» grupo
+definido aquí pasando al cociente por los elementos nilpotentes. Esto explica
+por qué las construcciones antiguas tienen pocas posibilidades de funcionar
+sobre un cuerpo base no perfecto: el ideal de elementos nilpotentes que
+aparece después de una extensión del cuerpo base no tiene por qué estar
+«definido sobre $k$». La misma observación se aplica a la mayoría de las
+construcciones de estilo antiguo.
+
+\fsection{5}{Estudio infinitesimal de los esquemas de Hilbert}
+
+Se deduce del resultado siguiente:
+
+\src{269}
+\result{PROPOSICIÓN}{5.1} Sea $S$ un preesquema, sea $S_0$ un subpreesquema
+definido por un ideal cuasicoherente $\mathcal J$ de cuadrado nulo, sea $X$ un
+$S$-preesquema y sea $\mathcal F$ un Módulo cuasicoherente sobre $X$. Pongamos
+$X_0=X\times_SS_0$ y
+$\mathcal F_0=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S_0}$, y sea
+$\mathcal G_0=\mathcal F_0/\mathcal K_0$ un Módulo cuasicoherente cociente de
+$\mathcal F_0$, plano sobre $S_0$. Para todo subconjunto abierto $U$ de $X$,
+sea $\mathcal E(U)$ el conjunto de Módulos cuasicoherentes cocientes
+$\mathcal G$ de $\mathcal F|U$, planos sobre $S$, tales que
+$\mathcal G\otimes_{\mathcal O_S}\mathcal O_{S_0}=\mathcal G_0$. Al variar
+$U$, los $\mathcal E(U)$ son, pues, las secciones de un haz $\mathcal E$ sobre
+$X$.\footnote{El texto impreso lleva $U$; al variar los abiertos $U$ de $X$, los conjuntos $\mathcal E(U)$ definen un haz sobre $X$.} El haz de grupos
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X_0}}
+(\mathcal K_0,\mathcal G_0\otimes_{\mathcal O_{S_0}}\mathcal J)
+\]
+actúa naturalmente sobre $\mathcal E$, que se convierte así en un haz
+«formalmente homogéneo principal bajo $\mathcal A$» (es decir, para todo
+abierto $U$ de $X$, $\mathcal E(U)$ es vacío o es un conjunto homogéneo
+principal bajo $\mathcal A(U)$).
+
+De ello se sigue que:
+
+\result{COROLARIO}{5.2} Supongamos que localmente sobre $X$ existe una
+extensión $\mathcal G$ de $\mathcal G_0$ a un cociente de $\mathcal F$ plano
+sobre $S$ (es decir, que las fibras del haz $\mathcal E$ no son vacías).
+Existe entonces una clase de obstrucción canónica
+\[
+c(\mathcal G_0)\in H^1(X,\mathcal A)
+\]
+cuya anulación es necesaria y suficiente para que exista una extensión global
+$\mathcal G$ de $\mathcal G_0$ a un cociente de $\mathcal F$ plano sobre $S$.
+Si esta clase se anula, el conjunto $\mathcal E(X)$ de todas las extensiones
+posibles es un conjunto homogéneo principal bajo
+\[
+\mathcal A(X)=\operatorname{Hom}_{\mathcal O_{X_0}}
+(\mathcal K_0,\mathcal G_0\otimes_{\mathcal O_{S_0}}\mathcal J).
+\]
+\footnote{En esta última fórmula, el texto impreso lleva $\mathcal O_X$ en
+lugar de $\mathcal O_{X_0}$, aunque la definición inmediatamente anterior de
+$\mathcal A$ fija $\mathcal O_{X_0}$.}
+En particular, existe una extensión global si $H^1(X,\mathcal A)=0$.
+
+\result{COROLARIO}{5.3} Supongamos que
+$Q=\operatorname{Quot}_{\mathcal F/X/S}$ existe (cf. 4 (a)); por ejemplo, que
+$X$ es cuasiproyectivo sobre un $S$ localmente noetheriano y que $\mathcal F$
+es coherente. Sea $x\in Q$ correspondiente a una extensión residual
+$K=k(x)$ de $k(s)$ ($s\in S$):
+\src{270}
+así, $x$ está definido por un Módulo coherente cociente
+$\mathcal G_0=\mathcal F_0/\mathcal K_0$ del Módulo
+$\mathcal F_0=\mathcal F_K$ sobre el $K$-preesquema $X_K$. Sea $\mathcal A$
+el haz coherente sobre $X_K$ definido por
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X_0}}(\mathcal K_0,\mathcal G_0).
+\]
+Entonces el espacio tangente de Zariski a la fibra $Q_s$ en $x$ (el dual
+sobre $K$ de $\mathfrak m/\mathfrak m^2$, donde $\mathfrak m$ es el ideal
+maximal de $\mathcal O_{Q_K,x}$) es canónicamente isomorfo a
+$H^0(X_K,\mathcal A)$.
+
+La descripción del espacio tangente de Zariski admite la generalización
+siguiente. Dado un $S$-morfismo $g:S'\longrightarrow Q$, es decir, una sección
+$g'$ de $Q'=Q\times_SS'$ sobre $S'$, el Módulo
+\[
+\Omega=g^*(\Omega^1_{Q/S})=g'^*(\mathcal J/\mathcal J^2)
+\]
+(donde $\mathcal J$ es el ideal sobre $Q'$ definido por la sección $g'$ de
+$Q'$ sobre $S'$) está caracterizado por la fórmula siguiente, funtorial en el
+Módulo coherente $\mathcal M$ sobre $S'$:
+\[
+\operatorname{Hom}_{\mathcal O_{S'}}(\Omega,\mathcal M)
+\simeq H^0(X',\mathcal A),
+\]
+donde $\mathcal A$ es el Módulo sobre $X'=X\times_SS'$ definido por
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X'}}
+(\mathcal K,\mathcal G\otimes_{\mathcal O_{S'}}\mathcal M).
+\]
+\footnote{El texto impreso pone $\mathcal O_S$ en este producto tensorial;
+aquí $\mathcal G$ y $\mathcal M$ son Módulos sobre $S'$, y la construcción de
+deformación de cuadrado nulo exige el producto tensorial sobre
+$\mathcal O_{S'}$.}
+Aquí $\mathcal G=\mathcal F'/\mathcal K$ es el Módulo cociente de
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$ que corresponde
+a $g$. En efecto, aplíquese (5.1) sustituyendo $S_0$ por $S'$ y $S$ por el
+preesquema $D(\mathcal M)=(S',\mathcal O_{S'}+\mathcal M)$, donde
+$\mathcal M$ se considera como un ideal de cuadrado nulo.
+
+Cuando $\mathcal F=\mathcal O_X$ en (5.1), el dato de $\mathcal G_0$
+corresponde a un subpreesquema cerrado $Y_0$ de $X_0$, plano sobre $S_0$,
+definido por el ideal $\mathcal J_0=\mathcal K_0$. La fórmula (*) da entonces
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X_0}}
+(\mathcal J_0/\mathcal J_0^2,
+\mathcal O_{Y_0}\otimes_{\mathcal O_{S_0}}\mathcal J),
+\]
+donde $\mathcal J_0/\mathcal J_0^2$\footnote{El texto impreso omite el subíndice $0$ en las dos menciones del haz conormal y en $\mathcal J_0^{-1}$ más abajo. El Ideal de $Y_0$ en $X_0$ es $\mathcal J_0$; el Ideal $\mathcal J$ de la base es distinto.} se interpreta como el haz conormal de $Y_0$
+en $X_0$, denotado también por
+\src{271}
+$\check{\mathcal N}_{Y_0/X_0}$. Conviene entonces considerar $\mathcal A$
+como un Módulo sobre $Y_0$ y calcular $H^0$ y $H^1$ sobre $Y_0$. Además, si
+$Y_0$ es localmente una intersección completa en $X_0$, con $X$ plano sobre
+$S$, queda garantizada la existencia de extensiones locales en (5.1); asimismo,
+$\mathcal J_0/\mathcal J_0^2$ es localmente libre sobre $Y_0$, y puede escribirse
+\[
+\mathcal A=\mathcal N_{Y_0/X_0}\otimes_{\mathcal O_{S_0}}\mathcal J,
+\]
+donde el primer factor de la derecha es el haz normal de $Y_0$ en $X_0$.
+Utilizando el criterio fundamental de lisura ([3], III, 3.1), se obtiene, por
+ejemplo:
+
+\result{COROLARIO}{5.4} Bajo las hipótesis de (5.3), supongamos que
+$\mathcal F=\mathcal O_X$, que $X$ es plano sobre $S$ y que el subpreesquema
+cerrado $Y_0$ de $X_0$ correspondiente a $\mathcal G_0$ es localmente una
+intersección completa. Entonces el espacio tangente de Zariski a $Q_s$ en $x$
+es canónicamente isomorfo a $H^0(Y_0,\mathcal N_{Y_0/X_0})$. Si
+$H^1(Y_0,\mathcal N_{Y_0/X_0})=0$, entonces el preesquema de Hilbert
+$\operatorname{Hilb}_{X/S}$ es liso sobre $S$ en $x$.
+($\mathcal N_{Y_0/X_0}$ es el haz normal de $Y_0$ en $X_0$.)
+
+\result{OBSERVACIÓN}{5.5} Este enunciado se aplica, en particular, cuando
+$Y_0$ es una intersección completa en $X_0$ definida por una ecuación, es
+decir, un «divisor de Cartier» positivo. Entonces $\mathcal N_{Y_0/X_0}$ es
+isomorfo al haz sobre $Y_0$ inducido por el haz invertible
+$\mathcal J_0^{-1}$ sobre $X_0$ definido por el divisor $Y_0$. Esta situación
+se presenta especialmente en el estudio de familias de divisores positivos
+sobre una variedad proyectiva no singular $X_0$. El isomorfismo entre el
+espacio tangente de Zariski en el punto $x$ de $Q$ (o, equivalentemente, del
+subconjunto abierto $D$ de $Q$ correspondiente a los divisores) y
+$H^0(Y_0,\mathcal N_{Y_0/X_0})$ era conocido en geometría algebraica clásica
+como el «homomorfismo característico» del primero al segundo. Solo estaba
+definido cuando $x$ era un punto liso de la variedad de parámetros $T$ de una
+«familia continua completa» de divisores, es decir, desde nuestro punto de
+vista, de una componente irreducible del esquema $D$ provisto de su estructura
+reducida inducida. El
+espacio tangente a $T$ en $x$ es entonces un subespacio del espacio tangente a
+$D$ en $x$, por lo que el homomorfismo característico clásico es, en efecto,
+inyectivo, pero solo es sobreyectivo bajo condiciones adicionales; por ejemplo,
+cuando $D$ es íntegro en $x$. De hecho, Zappa [8] construyó un ejemplo
+\src{272}
+(con $X$ una superficie proyectiva no singular sobre los números complejos) en
+el que el homomorfismo característico no es sobreyectivo ni siquiera en el
+punto genérico de $T$. Así, $D$ no es íntegro ni siquiera en el punto genérico
+de la componente irreducible considerada. Esto demuestra de manera
+especialmente llamativa hasta qué punto las variedades con elementos
+nilpotentes son necesarias para comprender fenómenos de la teoría más clásica
+de superficies.\footnote{La fe de erratas de 1962 añade que Mumford acababa de
+construir una componente irreducible del esquema de Hilbert de
+$\mathbf P^3_{\mathbf C}$ cuyos puntos generales representan curvas no
+singulares de grado 14 y género 24, que es no reducida en su punto genérico;
+al hacer explotar una de estas curvas se obtiene también una variedad triple
+proyectiva regular cuyo esquema formal de módulos es genéricamente no
+reducido.}
+
+\subsection*{5.6}
+
+En (5.4) dimos un criterio de lisura aplicable, en particular, a esquemas de
+divisores. Kodaira dio en [6] un criterio diferente, a saber, la anulación de
+$H^1(X_0,\mathcal L)$, donde $\mathcal L=\mathcal J_0^{-1}$ es el haz
+invertible sobre $X_0$ definido por el divisor $Y_0$. Este criterio es válido
+cuando $S$ es el espectro de un cuerpo de característica cero, y fue demostrado
+en [6] por métodos trascendentes cuando el cuerpo base es $\mathbf C$. Más
+generalmente, siendo de nuevo $S$ arbitrario, la condición de Kodaira basta
+para que el morfismo canónico
+\[
+D\longrightarrow\operatorname{Pic}_{X/S}
+\]
+del preesquema de divisores al preesquema de Picard de $X/S$ sea liso en el
+punto $x$ considerado (como se deduce fácilmente del criterio usual de lisura
+una vez conocida la existencia de $\operatorname{Pic}_{X/S}$). Si, además,
+$\operatorname{Pic}_{X/S}$ es liso sobre $S$ en la imagen de $x$ (por ejemplo,
+si $\operatorname{Pic}_{X/S}$ es liso sobre $S$), entonces $D$ es liso sobre
+$S$ en $x$. Por otra parte, Cartier demostró que todo preesquema en grupos
+localmente de tipo finito sobre un cuerpo $k$ de característica cero es liso
+sobre $k$. Combinando estos dos resultados se recupera el resultado de
+Kodaira. Estas observaciones demuestran también que, sobre un cuerpo $K$ de
+característica $p>0$, cuando $\operatorname{Pic}_{X/S}$ no es liso sobre $K$\footnote{El texto impreso lleva $k$; el cuerpo base de esta frase en característica positiva es $K$.}
+(como cuando $X$ es la superficie de Igusa), la condición
+$H^1(X_0,\mathcal L)=0$ implica, por el contrario, que $D$ no es liso en $x$,
+y que incluso es no reducido en $x$ si $K$ es algebraicamente cerrado.
+
+Finalmente, registremos el resultado siguiente, que desempeña un papel
+importante en el estudio infinitesimal de los espacios fibrados:
+
+\result{PROPOSICIÓN}{5.7} Sea $X$ un preesquema finito y plano sobre un $S$
+localmente noetheriano, y sea $Z$ un preesquema sobre $X$ tal que
+$\Pi_{X/S}(Z/X)$ exista (como ocurre si $Z$ es cuasiproyectivo sobre $X$). Si
+$Z$ es liso sobre $X$, entonces $\Pi_{X/S}(Z/X)$ es liso sobre $S$.
+
+Esto resulta inmediatamente de la definición y del criterio usual de lisura
+([3], III, 3.1). Obsérvese que, cuando $X$ es finito y plano sobre $S$, la
+existencia de $\Pi_{X/S}(Z/X)$\footnote{El texto impreso lleva aquí $Z/K$; no
+se ha definido ningún $K$, y el funtor de secciones considerado desde (5.7) es
+$\Pi_{X/S}(Z/X)$.} puede tratarse de manera muy elemental, sin
+\src{273}
+utilizar la teoría de los esquemas de Hilbert. Por ejemplo, si $X$ es radicial
+sobre $S$, entonces $\Pi_{X/S}(Z/X)$ existe sin ninguna restricción sobre $Z$.
+Como otro ejemplo, sea $T$ un $S$-preesquema y sea $T_n$ el «entorno
+infinitesimal de orden $n$» de la diagonal de $T\times_ST$ en $T\times_ST$,
+provisto de los morfismos $p_1,p_2:T_n\longrightarrow T$ inducidos por las dos
+proyecciones. Consideremos $T_n$ como un preesquema finito sobre $T$ por medio
+de $p_1$, y supongamos además que es plano sobre $T$ (como ocurre cuando $T$
+es liso sobre $S$). Para todo preesquema $X$ sobre $T$, pongamos
+\[
+(X/T/S)^{(n)}=
+\Pi_{T_n/T}\bigl(p_2^*(X/T)/T_n\bigr).
+\]
+\footnote{El texto impreso coloca $T_n/S$ bajo el símbolo $\Pi$. La
+Proposición 5.7 se aplica aquí al morfismo finito y plano
+$p_1:T_n\to T$, y el resultado es explícitamente un preesquema sobre $T$; por
+tanto, el denominador es $T_n/T$.}
+Este es un preesquema sobre $T$ llamado \emph{fibrado de gérmenes de secciones
+de orden $n$ de $X$ sobre $T$} (relativo a $S$). Depende funtorialmente de $X$
+y es liso sobre $T$ si $X$ lo es.
+
+\fsection{6}{Relaciones con la norma y los productos simétricos}
+
+Sea $S$ un preesquema, sean $X$ e $Y$ $S$-preesquemas, y sea
+\[
+u:(X/S)^n\longrightarrow Y
+\]
+un $S$-morfismo simétrico de la $n$-ésima potencia cartesiana de $X/S$ en
+$Y$. Para simplificar, supongamos que $S$ es localmente noetheriano y que $X$
+e $Y$ son de tipo finito sobre $S$. A todo Módulo coherente $\mathcal F$ sobre
+$X$ cuyo soporte es finito sobre $S$, que es plano sobre $S$ y tiene rango
+relativo $n$ sobre $S$ (es decir, $f_*(\mathcal F)$ es un Módulo localmente
+libre de rango $n$ sobre $S$), puede asociársele entonces de manera natural una
+sección de $Y$ sobre $S$:
+\[
+\pi^u_{X/S}(\mathcal F)\in\Gamma(Y/S).
+\]
+No daremos aquí la definición formal, sino que nos limitaremos a observar que
+el formalismo resultante es una generalización natural del formalismo usual de
+normas y trazas. Para todo $X/S$ separado, la ley de norma tiene como blanco canónico el espacio de potencias divididas $\Gamma^n_S(X)$. Si $X$ es plano sobre $S$ y existe la $n$-ésima potencia simétrica (por ejemplo, cuando las órbitas de $\mathfrak S_n$ en $(X/S)^n$ están contenidas en abiertos afines), el morfismo canónico $\operatorname{Symm}^n_S(X)\to\Gamma^n_S(X)$ es un isomorfismo, y se obtiene un elemento canónico
+\[
+\pi_{X/S}(\mathcal F)\in\Gamma(\operatorname{Symm}^n_S(X)/S),
+\]
+\src{274}
+del cual pueden recuperarse los $\pi^u_{X/S}(\mathcal F)$. Otro caso
+importante es aquel en que $X$ es un monoide conmutativo sobre $S$, $X=Y$, y
+$u$ procede de la ley de composición de $X$. Escribimos entonces simplemente
+$\pi(\mathcal F)$ para la sección de $X$ sobre $S$ asociada al Módulo
+$\mathcal F$ sobre $X$.
+
+Supongamos ahora que $\mathcal F$ es un Módulo coherente sobre $X$ tal que
+$\operatorname{Quot}_{\mathcal F/X/S}$ existe, o al menos tal que el funtor
+$\underline{\operatorname{Quot}}^n_{\mathcal F/X/S}$ que asigna a todo $S'$
+sobre $S$ el conjunto de haces cocientes coherentes $\mathcal M$ de
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$ que son planos
+sobre $S'$ y tienen rango relativo $n$ está representado por un $S$-preesquema
+$\operatorname{Quot}^n_{\mathcal F/X/S}$. (Cuando $X$ es cuasiproyectivo
+sobre $S$, $\operatorname{Quot}^n_{\mathcal F/X/S}$ existe y, con las
+notaciones del Apartado 3, es $\operatorname{Quot}^P_{\mathcal F/X/S}$, donde
+$P$ es el polinomio constante $n$.) Como la formación de
+$\pi^u_{X/S}(\mathcal M)$ es compatible con el cambio de base, se obtiene un
+morfismo canónico
+\[
+\pi^u_{X/S}:\operatorname{Quot}^n_{\mathcal F/X/S}\longrightarrow Y,
+\]
+y, en general,
+\[
+\pi_{X/S}:\operatorname{Quot}^n_{\mathcal F/X/S}
+\longrightarrow\Gamma^n_S(X).
+\]
+Cuando $X$ es plano sobre $S$, identificamos este blanco con $\operatorname{Symm}^n_S(X)$.
+Independientemente de la identificación precedente, cuando $X$ es separado sobre $S$, la construcción mediante la familia finita y plana para $\mathcal F=\mathcal O_X$ da un morfismo
+\[
+\pi_{X/S}:\operatorname{Hilb}^n_{X/S}
+\longrightarrow\operatorname{Symm}^n_S(X).
+\]
+Este es manifiestamente un isomorfismo para $n=0$ o $n=1$. Pero para
+$n>1$\footnote{El texto impreso repite $n\geq1$, contradiciendo el
+isomorfismo que acaba de afirmarse para $n=1$.}, incluso cuando $S$ es el
+espectro de un cuerpo $k$ y $X$ es liso sobre $S$, no es en general un
+isomorfismo, ni siquiera un morfismo inyectivo: un subesquema de dimensión cero
+de $X$ (correspondiente, por ejemplo, a un ideal $\mathfrak i$ primario para el
+ideal maximal en un anillo local $\mathcal O_{X,x}$, para un punto cerrado $x$
+de $X$) no está determinado por el ciclo que define (en este caso, por la
+codimensión sobre $k$ de $\mathfrak i$ en $\mathcal O_{X,x}$). Solo puede
+afirmarse lo siguiente, siendo de nuevo $S$ arbitrario:
+
+\medskip
+\noindent a. Si $X$ es liso sobre $S$, el morfismo norma induce un isomorfismo
+del subconjunto abierto de $\operatorname{Hilb}^n_{X/S}$ que clasifica los
+recubrimientos étale de rango $n$ contenidos en $X$ (cf. n.º 4, (b)) sobre el
+subconjunto abierto de $\operatorname{Symm}^n_S(X)$ correspondiente a los
+$n$-ciclos sin componentes múltiples.
+\src{275}
+
+\medskip
+\noindent b. Si, además, $X$ tiene dimensión relativa 1 sobre $S$, entonces el
+morfismo norma es un isomorfismo de $\operatorname{Hilb}^n_{X/S}$ sobre
+$\operatorname{Symm}^n_{X/S}$.
+
+Esto se debe a que un subesquema de dimensión cero de una curva algebraica no
+singular está determinado por su ciclo correspondiente. La misma observación
+se aplica, más generalmente, a los divisores de Cartier positivos sobre un
+esquema algebraico no singular (y es posible que, en este caso tan especial,
+la variedad de Chow dé el mismo objeto que el esquema de Hilbert).
+
+\fsection{7}{Complementos y cuestiones}
+
+Como observó J.-P. Serre, un ejemplo bien conocido de Nagata demuestra que
+pueden encontrarse un esquema $S$, espectro de un cuerpo $k$; un $S$-esquema
+$S'$, espectro de una extensión cuadrática $k'$ de $k$; y un $S'$-esquema
+propio y liso (pero no proyectivo) $X$ de dimensión 3 tal que
+$\Pi_{S'/S}(X/S')$ no existe. Se sigue, a fortiori, que el esquema de
+Hilbert $\operatorname{Hilb}^2_{X/S}$ no existe (ni siquiera el $k$-esquema
+que representaría los recubrimientos étale de $S$ de rango 2 contenidos en
+$X$, y a fortiori tampoco el cuadrado simétrico de $X$; cf. el apartado
+anterior). Esto impone serias limitaciones a la posibilidad de realizar
+construcciones no proyectivas en geometría algebraica. (Sin embargo, es
+plausible que tales limitaciones no aparezcan en geometría analítica, como
+tampoco aparecen en geometría formal (cf. [2], II).) Por otra parte, si $X$ es
+un esquema propio sobre $S=\operatorname{Spec}k$ y $Z$ es cuasiproyectivo
+sobre $X$, entonces $\Pi_{X/S}(Z/X)$ existe y es un esquema que es unión
+disjunta de una sucesión de esquemas cuasiproyectivos sobre $S$ (como en el
+caso proyectivo (3.1)). En efecto, se reduce al caso en que el propio $X$ es
+proyectivo dominando $X$ por un $S$-esquema proyectivo $X'$. No daremos los
+detalles de la demostración, que utiliza también el resultado de factorización
+para un morfismo finito recogido en [2], I, A, n.º 2 (b). El método funciona
+porque, siendo $S$ el espectro de un cuerpo, el $X'$ que interviene en el lema
+de Chow es automáticamente plano sobre $S$.
+
+No sé si el resultado sigue siendo cierto sin hipótesis sobre $S$, suponiendo
+únicamente que $X$ es propio y plano sobre $S$ y que $Z$ es cuasiproyectivo
+sobre $X$. Un caso importante en las aplicaciones es aquel en que $Z$ es un
+subesquema cerrado de $X$; si $\Pi_{X/S}(Z/X)$ existe, es necesariamente un
+subesquema cerrado de $S$. Puede
+\src{276}
+construirse directa y muy sencillamente cuando $X$ es proyectivo sobre $S$,
+sin utilizar la teoría de los esquemas de Hilbert. Más generalmente, el mismo
+método demuestra que, si $Z$ es afín sobre $X$, entonces $\Pi_{X/S}(Z/X)$
+existe y es afín sobre $S$. También demuestra que, si $X$ es propio y plano
+sobre $S$ (no necesariamente proyectivo sobre $S$), entonces, para todo
+fibrado vectorial localmente trivial $Z$ sobre $X$, $\Pi_{X/S}(Z/X)$ existe y
+es un fibrado vectorial sobre $S$. Sería deseable retomar y unificar estos
+resultados.
+
+\section*{BIBLIOGRAFÍA}
+\addcontentsline{toc}{section}{Bibliografía}
+
+\begin{description}
+\item[{[1]}] BOREL (A.) y SERRE (J.-P.). -- Le théorème de Riemann--Roch,
+\emph{Bull. Soc. math. France}, vol. 86, 1958, pp. 97--136.
+
+\item[{[2]}] GROTHENDIECK (Alexander). -- Technique de construction et
+théorèmes d'existence en géométrie algébrique, I, II, III, \emph{Séminaire
+Bourbaki}, vol. 13, 1959/60, n.º 190, 29 pp., n.º 195, 22 pp.; y vol. 14,
+1960/61, n.º 212, 20 pp.
+
+\item[{[3]}] GROTHENDIECK (Alexander). -- Séminaire de Géométrie algébrique,
+I, II, III, IV. -- París, Institut des hautes Études scientifiques, 1960/61
+(mimeografiado).
+
+\item[{[4]}] GROTHENDIECK (Alexander). -- Technique de construction en
+géométrie analytique, IV, V, \emph{Séminaire Cartan}, vol. 13, 1960/61, n.os 11
+y 12.
+
+\item[{[5]}] GROTHENDIECK (A.) y DIEUDONNÉ (J.). -- \emph{Éléments de
+géométrie algébrique}, I: Le langage des schémas. -- París, Presses
+universitaires de France, 1960 (Institut des hautes Études scientifiques,
+Publications mathématiques, 4); II, III, IV (de próxima aparición).
+
+\item[{[6]}] KODAIRA (K.). -- Characteristic linear systems of complete
+continuous systems, \emph{Amer. J. of Math.}, vol. 78, 1956, pp. 716--744.
+
+\item[{[7]}] SERRE (Jean-Pierre). -- Exemples de variétés projectives en
+caractéristique $p$ non relevables en caractéristique 0, \emph{Proc. Nat. Acad.
+Sc. U.S.A.}, vol. 47, 1961, pp. 108--109.
+
+\item[{[8]}] ZAPPA (G.). -- Sull'esistenza, sopra le superficie algebriche, di
+sistemi continui completi infiniti, la cui curva è a serie caratteristica
+incompleta, \emph{Pont. Acad. Sc. Acta}, vol. 9, 1945, pp. 91--93.
+\end{description}
+
+\section*{ADITIVO}
+\addcontentsline{toc}{section}{Aditivo}
+\begin{center}
+{\small [añadido durante la corrección de pruebas]}
+\end{center}
+
+Parece ahora que las conjeturas de [2], III, n.º 8 son falsas, incluso para
+variedades no singulares sobre un cuerpo de característica cero, tanto en lo
+que respecta a la existencia como a la cuasiproyectividad del cociente, e
+incluso cuando $G$ actúa con grafo cerrado.

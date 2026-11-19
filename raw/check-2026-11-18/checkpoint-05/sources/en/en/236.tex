@@ -1,0 +1,1141 @@
+\unit{Exposé 236 -- Picard schemes: general properties}
+\sid{236}
+\src{221}
+\seminar{14th year, 1961/62, no. 236\\May 1962}
+\paperhead{DESCENT TECHNIQUE AND EXISTENCE THEOREMS IN ALGEBRAIC GEOMETRY\\
+VI. PICARD SCHEMES: GENERAL PROPERTIES}%
+  {by Alexander GROTHENDIECK}
+
+\fsection{0}{Complements to the preceding exposé ([3], V)\textsuperscript{(1)}}
+
+There has been some progress on the existence questions for Picard preschemes
+raised in [3], V:
+
+\medskip
+\noindent a. (Mumford). It is not true in general that when
+$f:X\longrightarrow S$ is a projective separable morphism (= flat with
+separable fibers), the Picard prescheme $\operatorname{Pic}_{X/S}$ exists,
+even if the fibers of $f$ have dimension 1 and $S$ is the spectrum of a
+complete discrete valuation ring. An example is obtained by taking
+$S=\operatorname{Spec}\mathbf R[[t]]$ and $X$ to be the subscheme of
+$\mathbf P^2_S$ defined by the equation (where $x,y,z$ are homogeneous
+variables)
+\[
+x^2+y^2=tz^2.
+\]
+This is a conic degenerating geometrically into two intersecting lines, while
+the special fiber over $\mathbf R$ is nevertheless irreducible (it is given by
+$x^2+y^2=0$ over $\mathbf R$). One sees readily that after the étale extension
+$S'\longrightarrow S$, with $S'=\operatorname{Spec}\mathbf C[[t]]$, the Picard
+prescheme of $X'/S'$ exists and has an explicit description as a disjoint union
+of copies of $\widetilde S'$, where $\widetilde S'$ is obtained from $S'$ by
+doubling the origin infinitely many times. The descent datum on
+$\operatorname{Pic}_{X'/S'}$ for $S'\longrightarrow S$ (given here by the
+action of the Galois group $\mathbf Z/2\mathbf Z$ of $S'$ over $S$) is readily
+seen not to be effective: the group interchanges certain doubled points, so
+that some orbits are not contained in an affine open subset. Mumford can,
+however, show that if $f:X\longrightarrow S$ is a projective separable
+morphism such that, for every $s\in S$, the irreducible components of $X_s$
+are geometrically irreducible over $k(s)$, then
+$\operatorname{Pic}_{X/S}$ exists. His proof relies on a refinement of his
+quotient theorem; cf. [7]. Notice, on the other hand, that without any
+hypothesis on the irreducible components of the fibers $X_s$, it remains
+possible that the scheme $\operatorname{Pic}^{\tau}_{X/S}$ (to be introduced
+below) nevertheless exists.
+
+\src{222}
+\noindent b. (Murre). Let $X$ be a proper scheme over a field. Then
+$\operatorname{Pic}_{X/k}$ exists. The proof partly follows Chevalley's proof
+[1] and makes essential use of the group structure of the Picard functor.
+
+For some complements concerning the theory of Picard schemes, especially in
+relation to abelian schemes, it will be useful to consult [7]. Finally, a
+notable gap in the present exposé is the absence of “equivalence criteria”
+permitting comparison of the Picard scheme of a projective scheme with those
+of its hyperplane sections. The key theorems for developing such criteria are
+in [5], to which the existence theorems for Picard schemes must be added.
+
+\fsection{1}{Topological properties of commutative group preschemes}
+
+Let first $k$ be a field and $G$ a group prescheme over $k$. Since the identity
+element $e$, being rational over $k$, is necessarily closed, it follows at once
+that the diagonal of $G\times_kG$ is closed, and hence $G$ is separated: every
+group prescheme over a field is separated. Denote by $G^\circ$ the connected
+component of the identity element $e$. Since $e$ is rational over $k$,
+$G^\circ$ is in fact geometrically connected; that is, formation of $G^\circ$
+is compatible with extension of the base field. It also follows that
+$G^\circ$ is stable under multiplication as a set, and when $G$ is locally
+noetherian, so that $G^\circ$ is open, it may be regarded as an open subgroup
+of $G$. Henceforth suppose that $G$ is locally of finite type over $k$. Then
+$G^\circ$ is geometrically irreducible and of finite type over $k$. Indeed,
+one may suppose $k$ algebraically closed, and then also $G$ reduced (for
+$G_{\mathrm{red}}$ is then a subgroup of $G$, since
+$G_{\mathrm{red}}\times_kG_{\mathrm{red}}$ is again reduced), hence smooth
+over $k$ on a nonempty open subset and therefore everywhere, by translating
+that open subset. Thus $G$ is locally irreducible, so its irreducible
+components coincide with its connected components, and $G^\circ$ is
+irreducible. Let $U$ be an affine neighborhood of $e$ in $G^\circ$. Using the
+irreducibility of $G^\circ$, one sees at once that $U\cdot U=G^\circ$, proving
+that $G^\circ$ is quasi-compact and hence of finite type over $k$.
+
+For simplicity suppose that $G$ is commutative. For every integer $n>0$, let
+$G^{(n)}$ be the inverse image of $G^\circ$ under the $n$th-power
+homomorphism $\varphi_n$ in $G$; thus $G^{(n)}$ is an open subgroup of $G$.
+Put
+\[
+G^\tau=\bigcup_nG^{(n)}.
+\]
+
+\src{223}
+\[
+G^\sigma=\bigcup_{(n,p)=1}G^{(n)},
+\qquad
+G^\rho=\bigcup_hG^{(p^h)},
+\]
+where $p$ is the characteristic exponent of the field $k$. These are open
+subgroups of $G$, satisfying
+\[
+G^\sigma\cap G^\rho=G^\circ,
+\qquad
+G^\sigma G^\rho=G^\tau.
+\]
+
+\result{REMARK}{} One may construct the quotient group scheme
+$G/G^\circ=N$ (cf. [3], IV), and then define $G^\tau$, $G^\sigma$, and
+$G^\rho$ as the inverse images in $G$ of the torsion subgroup of $N$
+(respectively the natural complement of its $p$-primary component, the sum of
+the $q$-primary components for primes $q\neq p$, respectively its $p$-primary
+component).
+Notice in this connection that $N$ is a discrete separable group scheme over
+$k$. Thus, after choosing an algebraic closure $\overline k$ of $k$, with
+Galois group $\pi$, it is identified with an ordinary discrete group on which
+$\pi$ acts by automorphisms. This gives the evident interpretation of the
+construction of the torsion subgroup and of its decomposition into
+$q$-primary components. When $G$ is the Picard scheme of a proper scheme $X$
+over $k$, $N$ may be called the (reduced) \emph{Néron--Severi scheme} of $X$
+over $k$. When $G^\circ_{\mathrm{red}}$ is a group subscheme of $G^\circ$,
+which occurs in particular whenever $k$ is perfect or $G^\circ$ is proper over
+$k$ (for example, when $X$ is geometrically normal), one should also introduce
+the quotient $N'=G/G^\circ_{\mathrm{red}}$, which tends to behave better than
+$N$ under specialization, that is, when $X$ varies in a family of algebraic
+schemes.
+
+Now let $S$ be a locally noetherian prescheme, and let $G$ be a group
+prescheme over $S$, locally of finite type over $S$. We do not assume $G$ to
+be of finite type over $S$, or separated over $S$. Put
+\[
+G^\circ=\bigcup_{s\in S}(G_s)^\circ,
+\]
+and, when $G$ is commutative,
+\[
+G^\tau=\bigcup_{s\in S}(G_s)^\tau,
+\qquad
+G^\sigma=\bigcup_{s\in S}(G_s)^\sigma,
+\qquad
+G^\rho=\bigcup_{s\in S}(G_s)^\rho.
+\]
+
+\src{224}
+These are subsets of $G$ stable under multiplication in $G$, which plainly
+does not imply that they can be defined by group subpreschemes of $G$. In
+particular, it seems that in general there is no group subprescheme of $G$
+whose underlying set is $G^\circ$. Of course, if one of these sets is open,
+then with its induced structure it is an open group subprescheme of $G$. We
+shall see that this is always so for $G^\tau$. Thus, from the standpoint of
+representable functors, and especially from the standpoint of specialization,
+numerical equivalence behaves more satisfactorily than algebraic equivalence.
+Here are the main general properties of the sets just defined:
+
+\result{THEOREM}{1.1} The sets $G^\circ$, $G^\tau$, $G^\sigma$, and $G^\rho$
+are locally constructible. Moreover:
+
+\noindent (i) $G^\circ$ is quasi-compact over $S$. When the $G_s^\circ$ are
+proper and $G$ is separated over $S$, $G^\circ$ is proper over $S$ and hence
+closed in $G$.
+
+\noindent (ii) $G^\tau$ is open. If $G^\circ$ is closed, then so is $G^\tau$.
+
+\noindent (iii) If $G^\circ$ is closed, then so is $G^\sigma$, provided one is
+in equal characteristic, that is, all residue fields of $S$ have the same
+characteristic. If $G^\circ$ is closed and $G\longrightarrow S$ is universally
+open at the points of $G^\sigma$ (cf. Corollary 1.5 below), then
+$G^\sigma\longrightarrow S$ is universally open.
+
+\noindent (iv) If $G^\circ$ is closed, then so is $G^\rho$. Suppose one is in
+equal characteristic and, for every integer $n>0$ with $(n,p)=1$, the
+$n$th-power homomorphism in $G$ is open. Then $G^\rho$ is open.
+
+We give indications for the proof. The local constructibility of $G^\circ$ and
+its quasi-compactness over $S$ are contained in the following lemma:
+
+\result{LEMMA}{1.2} Suppose $S\neq\varnothing$. Then there are a nonempty open
+subset $U$ of $S$, a finite-type group scheme $H$ over $U$ with connected
+fibers, and a homomorphism of group schemes $H\longrightarrow G|U$ that is an
+open immersion with image $G^\circ|U$.
+
+To prove the lemma, one may suppose $S$ irreducible and let $\eta$ be its
+generic point. After the base change
+$S'=\operatorname{Spec}(\mathcal O_{S,\eta})\longrightarrow S$, one obtains a
+group scheme $G'$ over the local artinian ring $\mathcal O_{S,\eta}=A$ with an
+open finite-type group subscheme $G'{}^\circ$ over $A$, as stated above. It
+therefore comes from a finite-type group scheme $H$ over an open neighborhood
+$U$ of $\eta$, and the canonical immersion
+$G'{}^\circ\longrightarrow G'$ comes from an
+
+\src{225}
+open immersion $H\longrightarrow G|U$, which is a group-scheme homomorphism
+after $U$ is made sufficiently small. If $U$ is sufficiently small, the fibers
+of $H$ are connected and all have the same dimension, equal to that of the
+fibers of $G$. It follows that for every $s\in U$ the image of $H_s$ in $G_s$
+is exactly $G_s^\circ$ (after again shrinking $U$), proving 1.2.
+
+The second assertion of (i) is contained in the following lemma, applied to a
+quasi-compact open neighborhood of $G^\circ$ in $G$:
+
+\result{LEMMA}{1.3} Let $X$ be a finite-type separated prescheme over a locally
+noetherian $S$, let $g$ be a section of $X$ over $S$, and let $X^\circ$ be the
+union, in the $X_s$, of the connected components containing $g(s)$. If
+$s\in S$ and $X_s^\circ$ is proper over $k(s)$, then there is an open
+neighborhood $U$ of $s$ such that $X^\circ|U$ is proper over $U$, and hence
+closed in $X|U$.
+
+By faithfully flat descent on the base, one reduces to the case in which $S$
+is the spectrum of a complete local ring and $s$ is its closed point. Applying
+[2], III, 5.5.1, one sees that $X$ is the disjoint union of two open subsets
+$X'$ and $X''$, the first proper over $S$ and satisfying
+$X'_s=X_s^\circ$. This reduces to the case $X=X'$, that is, $X$ proper over
+$S$. One then uses a standard argument based on the valuative criterion for
+properness of a subset (omitted from [2], Chapter II).
+
+We now prove that $G^\tau$ is open. Equivalently, since formation of $G^\tau$
+(as well as of $G^\circ$, $G^\sigma$, and $G^\rho$) commutes with extension of
+the base, for every section $g$ of $G$ over $S$, the set $g^{-1}(G^\tau)$ is
+open. This means two things:
+
+\medskip
+\noindent a. If $y\in S$ and $g(y)\in G_y^\tau$, then
+$g(y')\in G_{y'}^\tau$ for every $y'\in\overline{\{y\}}$ sufficiently near
+$y$.
+
+\medskip
+\noindent b. If $y'\in S$ and $g(y')\in G_{y'}^\tau$, then
+$g(y)\in G_y^\tau$ for every generalization $y$ of $y'$.
+
+For (a), some integer $n>0$ satisfies $g^n(y)\in G_y^\circ$. Since $G^\circ$
+is constructible, $(g^n)^{-1}(G^\circ)$ is constructible, and hence
+$g^n(y')\in G_{y'}^\circ$ for $y'\in\overline{\{y\}}$ sufficiently near $y$.
+For (b), the powers $g(y')^n=g^n(y')$ remain in a quasi-compact open subset of
+$G_{y'}$, since they lie in finitely many classes modulo $G_{y'}^\circ$.
+Consequently there is a quasi-compact open subset $U$ of $G$ containing the
+$g^n(y')$ and therefore also their generalizations $g^n(y)$. Thus the powers
+of $g(y)$ remain in a quasi-compact open subset of $G_y$, which readily implies
+$g(y)\in G_y^\tau$.
+
+\src{226}
+Suppose $G^\circ$ is closed; we prove the same for $G^\tau$. Since $G^\tau$ is
+already known to be open and hence locally constructible, it remains to prove
+that it is stable under specialization. This follows because it is a union of
+closed sets, namely the inverse images of the closed set $G^\circ$ under the
+$n$th-power homomorphisms $\varphi_n$.
+
+The same argument proves that $G^\sigma$ and $G^\rho$ are closed if $G^\circ$
+is closed (in the first case subject to equal characteristic), once it is shown
+that $G^\sigma$ and $G^\rho$ are locally constructible. For $x\in G^\tau$, let
+$\nu(x)$ be the smallest integer $n>0$ such that the $n$th-power homomorphism
+$\varphi_n$ sends $x$ into $G^\circ$. Then $G^\sigma$ (respectively $G^\rho$)
+consists of those $x\in G$\footnote{The printed text reads “$X$,” which is not
+defined in this passage; all four loci under consideration are subsets of
+$G$.} for which $\nu(x)$ is prime to $p$ (respectively a power of $p$). The
+constructibility assertion now follows from the more precise statement:
+
+\result{LEMMA}{1.4} The function $\nu$ on $G^\tau$ is locally constructible.
+
+Indeed, for every integer $n>0$, the set of $x\in G^\tau$ such that
+$\nu(x)=n$ is locally constructible: it is the difference between
+$\varphi_n^{-1}(G^\circ)$ and the union of the
+$\varphi_d^{-1}(G^\circ)$, where $d$ ranges over the proper divisors of $n$.
+Since $G^\circ$ is locally constructible, so are the
+$\varphi_d^{-1}(G^\circ)$, and therefore so is the preceding difference.
+
+Suppose now that $G^\circ$ is closed and $G\longrightarrow S$ is universally
+open at the points of $G^\sigma$. We prove that
+$G^\sigma\longrightarrow S$ is open, that is, it maps a neighborhood in
+$G^\sigma$ of $x\in G^\sigma$ onto a neighborhood of $y=f(x)$. Since
+$G^\sigma$ is locally constructible, it suffices to prove that for every
+generalization $y'$ of $y$ there is a generalization $x'$ of $x$ in
+$G^\sigma$ lying over $y'$. Base change reduces this to the case in which $S$
+is the spectrum of a discrete valuation ring and $y,y'$ are respectively its
+closed and generic points. Since $G\longrightarrow S$ is open at $x$, there is
+a generalization $x_1$ of $x$ in $G$ above $y'$. After a further base change,
+one may also suppose that there is a section $g$ of $G$ over $S$ with
+$x=g(y)$. If $k(y')$ has characteristic zero, take any generalization $x'$ of
+$x$ in $G$ above $y'$. It belongs to $G^\tau$ because $G^\tau$ is open, hence
+to $G^\sigma$ because $G_{y'}^\sigma=G_{y'}^\tau$. If $k(y')$ has
+characteristic $p>0$, write
+\[
+\nu(g(y'))=p^hm\qquad\text{with }(m,p)=1;
+\]
+
+\src{227}
+choose integers $a$ and $b$ such that $ap^h+bm=1$, and set
+\[
+g_1=g^{ap^h},\qquad g_2=g^{bm},\qquad\text{so that}\qquad g=g_1g_2.
+\]
+By construction, $g_1(y')\in G^\sigma$ and $g_2(y')\in G^\rho$. Since
+$G^\circ$ is closed, it follows that $g_1(y)\in G^\sigma$ and
+$g_2(y)\in G^\rho$. But
+\[
+g(y)=g_1(y)g_2(y)\in G^\sigma,
+\]
+so $g_2(y)\in G^\sigma$, and therefore
+\[
+g_2(y)\in G_y^\sigma\cap G_y^\rho=G_y^\circ.
+\]
+The hypothesis, together with the fact that $S$ is the spectrum of a discrete
+valuation ring, implies that $G-(G_y-G_y^\circ)$ is an open subset of $G$ on
+which $G\longrightarrow S$ induces an open morphism. Thus a “quasi-section”
+passes through every point of $G_y^\circ$. After making a further extension of
+the base $S$, one may consequently suppose that there is a section $g'_2$ of
+$G^\circ$ over $S$ such that $g'_2(y)=g_2(y)$. Set $g'=g_1g'_2$. Then, by
+construction, $g'(y)=g(y)=x$, and
+\[
+g'(y')=g_1(y')g'_2(y')\in G^\sigma.
+\]
+Hence $g'(y')=x'$\footnote{The printed text reads “$g(y')=x'$.” The section
+constructed in the preceding sentence, whose generic fiber is being computed,
+is $g'$.} is a generalization of $x$ in $G^\sigma$ lying above $y'$. This
+proves (iii).
+
+It remains to prove the last assertion, (iv). We must show that if
+$x\in G^\rho$, then every generalization $x'$ of $x$ belongs to $G^\rho$. By
+taking images under $\varphi_{p^h}$ for a suitable $h$\footnote{The printed
+text reads $\varphi_{n^h}$. For $x\in G^\rho$, the definition on p.~223 gives
+a power of the characteristic exponent $p$ that sends $x$ into $G^\circ$.},
+we may suppose that in fact $x\in G^\circ$. For every integer $n$ prime to the
+characteristic, $x$ then lies in the image of $\varphi_n$ (because the
+$n$th-power map in a connected group of finite type over a field of
+characteristic prime to $n$ is surjective). Since $\varphi_n$ is open, $x'$
+also lies in the image of $\varphi_n$. More precisely, let $U$ be a
+quasi-compact open subset of $G^\tau$ containing $G_y^\circ$. Then
+$x'\in\varphi_n(U)$ for every $n$ prime to $p$. Taking $n$ to be a common
+multiple of the factors prime to $p$ of the $\nu(z)$, for $z\in U$, gives
+$x'\in G^\rho$.
+
+Assertion (1.1), (iii), is completed by the following:
+
+\result{COROLLARY}{1.5} Let $n>1$ be an integer such that the $n$th-power
+homomorphism $\varphi_n:G\longrightarrow G$ is universally open (for example,
+étale), put
+\[
+G^{(n)}=\varphi_n^{-1}(G^\circ),
+\]
+and suppose that, in every geometric fiber $G_{\bar s}$, the subset
+
+\src{228}
+$\bigcup_{h\geq0}|{}_{n^h}G_{\bar s}|$ is dense in
+$\bigcup_{h\geq0}G_{\bar s}^{(n^h)}$. Then
+$G\longrightarrow S$ is universally open at the points of the
+$G^{(n^h)}$. In particular, if the $G_s^\circ$ contain no additive component
+and if, for every integer $n>1$, the homomorphism $\varphi_n$ is universally
+open at the points of residue characteristic prime to $n$\footnote{The printed
+text reads “prime to $p$.” In this statement quantified by $n$, the étaleness
+criterion and the argument using the kernels ${}_nG$ require residue
+characteristic prime to $n$.}, then $G\longrightarrow S$ is universally open
+at the points of $G^\sigma$. Hence, by (1.1), (iii), if $G^\circ$ is closed,
+$G^\sigma\longrightarrow S$ is universally open. In these cases,
+$s\longmapsto\dim G_s$ is locally constant on $S$.
+
+Indeed, the hypothesis implies that the kernel ${}_nG$ of $\varphi_n$ is
+universally open over $S$. Hence $G\longrightarrow S$ is universally open at
+the points of ${}_nG$, and therefore, on replacing $n$ by $n^h$, at the points
+of ${}_{n^h}G$. The density hypothesis says exactly that, fiber by fiber, the points of order
+a power of $n$ are dense in the union of the $G^{(n^h)}$. For the particular
+assertion, absence of additive components implies this density for integers
+$n$ invertible in the residue field. It follows readily that $G\longrightarrow S$ is universally open
+at every point of this union, in particular along the identity section, and
+hence that $s\longmapsto\dim G_s$ is locally constant.
+
+\result{REMARK}{1.6} Recall that a morphism $X\longrightarrow S$ is called
+universally open if it maps every open subset to an open subset and retains
+this admirable property after every base change $S'\longrightarrow S$. This
+also means (when $S$ is locally noetherian and $X\longrightarrow S$ is locally
+of finite type) that every irreducible component of $X$ dominates $S$, and
+that this property is preserved after every base change
+$S'\longrightarrow S$. In both assertions it is enough (under the finiteness
+hypotheses above) to test base changes $S'\longrightarrow S$ in which $S'$ is
+the spectrum of a discrete valuation ring (complete with algebraically closed
+residue field, if desired~...). The definition extends in the evident way to a
+subset $Z$ of $X$ (such as the subset $G^\sigma$ of $G$). It is a perfectly
+normal phenomenon, even for a projective smooth morphism
+$X\longrightarrow S$ with geometrically connected fibers (for example, the
+fiber square of the modular family of elliptic curves over
+$S=\operatorname{Spec}\mathbf C[j]$), that $\operatorname{Pic}_{X/S}$ is not
+universally open over $S$: an irreducible component of
+$\operatorname{Pic}_{X/S}$ may lie entirely above a single point of $S$. This
+is connected with the fact that the rank of the Néron--Severi group of the
+fibers of $X/S$ can jump upward (“complex multiplication” phenomena). On the
+other hand, (1.5) assures us that in favorable cases
+$\operatorname{Pic}_{X/S}^\sigma$ (and most often even
+$\operatorname{Pic}_{X/S}^\tau$, it seems) is universally open over $S$.
+
+\src{229}
+Finally, here is a useful case in which, exceptionally, $G^\circ$ consents to
+be open:
+
+\result{COROLLARY}{1.7} Suppose that $G\longrightarrow S$ is universally open
+at the points of $G^\circ$ (cf. (1.5)), and that the fibers $G_s$ are separable
+and hence smooth over $k(s)$ (the latter condition is automatically satisfied
+in residue characteristic zero, by a theorem of Cartier). Then $G^\circ$ is
+open in $G$. If, in addition, $S$ is reduced, then $G^\circ$ is smooth (in
+particular, flat) over $S$.
+
+The first assertion can be sharpened as follows. If, for a given $s\in S$,
+$G\longrightarrow S$ is universally open at the points of $G_s^\circ$ and
+$G_s^\circ$ is separable over $k(s)$, then $G^\circ$ is a neighborhood of
+$G_s^\circ$ (and the hypothesis made at $s$ will moreover remain valid at
+neighboring points). This statement, which is independent of any group
+structure, will be proved in [2], IV, §7. The last assertion in (1.7), also
+independent of any group structure or any question about a connected
+component, is a special case of a flatness criterion given in [2], IV, §5, which
+more generally implies:
+
+\result{COROLLARY}{1.8} Let $U$ be an open subset of a fiber $G_s$ such that
+$G\longrightarrow S$ is universally open at the points of $U$ (cf. (1.5)). If
+$G_s$ is separable over $k(s)$ and $S$ is reduced at $s$, then $G$ is flat over
+$S$ at the points of $U$ (and thus, in this case, smooth over $S$ at the points
+of $U$).
+
+\result{REMARKS}{1.9} I do not know whether, when $G$ is separated over $S$,
+$G^\circ$ or $G^\tau$ is always closed in $G$; this seems unlikely. There are,
+at any rate, obvious counterexamples if the separatedness hypothesis is
+dropped. For example, take the affine line with its origin doubled countably
+infinitely many times. This gives a group scheme $G$ over the affine line all
+of whose fibers are reduced to the identity group except for one, whose fiber
+is $\mathbf Z$. This group scheme is an open subgroup scheme, namely the
+closure of the identity section, in the Picard prescheme of the $S$-scheme $X$
+corresponding to a family of conics degenerating into two intersecting lines.
+
+Moreover, even starting with a finite flat group scheme $G$ over the spectrum
+$S$ of a discrete valuation ring $V$, so that $G^\circ$ is reduced to the
+identity section and hence closed, various conclusions become false if some
+hypotheses are dropped. Suppose that $V$ has equal characteristic $p>0$, and
+let $G$ be the kernel of the homomorphism
+$\mathbf G_a\longrightarrow\mathbf G_a$ defined by the homomorphism of
+functors
+\[
+f\longmapsto f^p-tf,
+\]
+where $t$ is a uniformizer of $V$.
+
+\src{230}
+(Recall that, by definition, the “additive group” $\mathbf G_a$ over $S$
+represents the functor $S'\longmapsto\Gamma(S',\mathcal O_{S'})$.) Thus, as an
+$S$-scheme,
+\[
+G=\operatorname{Spec}V[x]/(x^p-tx)
+\]
+is the union of $p$ intersecting “lines,” representing a group
+$\mathbf Z/p\mathbf Z$ that degenerates into an infinitesimal group of additive
+type. In this example, $G^\circ=G^\sigma$ (and it is one of the $p$ lines), so
+it is not open in $G$. In mixed characteristic with residue characteristic
+$p>0$, start with the group scheme $H=\boldsymbol\mu_p$, the kernel of the
+$p$th-power map in $\mathbf G_m$. Thus
+\[
+H=\operatorname{Spec}V[x]/(x^p-1);
+\]
+this is again the union of $p$ intersecting lines, representing a group
+$\mathbf Z/p\mathbf Z$ (in characteristic zero) that degenerates into an
+infinitesimal group of multiplicative type in characteristic $p$. Let $H'$ be
+the “constant group scheme” defined by the ordinary finite group
+$\mathbf Z/p\mathbf Z$, that is, the disjoint union of $\mathbf Z/p\mathbf Z$
+copies of $S$, or equivalently $\operatorname{Spec}V^{\mathbf Z/p\mathbf Z}$.
+Then $G=H\times_S H'$ describes a group $(\mathbf Z/p\mathbf Z)^2$ in
+characteristic zero, degenerating in characteristic $p$ into an infinitesimal
+group times $\mathbf Z/p\mathbf Z$. Here $G^\rho$ is the union of the identity
+section and the special fiber, so $G^\rho$ is not open, whereas $G^\sigma$ is
+the union of the identity section and the generic fiber, so it is not closed,
+contrary to what is asserted in the equal-characteristic cases in (1.1), (iii)
+and (iv). These are, of course, phenomena connected with characteristic $p>0$.
+The preceding results give:
+
+\result{COROLLARY}{1.10} Suppose that all residue characteristics of $S$ are
+zero, so that $G^\tau=G^\sigma$ and $G^\circ=G^\rho$. Then
+$G^\tau=G^\sigma$ is open; it is even open and closed if $G$ is separated over
+$S$ and the $G_s^\circ$ are proper. Under the same hypothesis,
+$G^\circ=G^\rho$ is proper over $S$ and hence closed in $G$. Finally, suppose
+that for every integer $n>1$ the $n$th-power homomorphism in $G$ is universally
+open. Then $G^\circ$ is open; and if, moreover, the $G_s^\circ$ have no
+additive component (for example, if the $G_s^\circ$ are proper, as above),
+then $G^\tau\longrightarrow S$ is universally open, and is even smooth if $S$
+is reduced.
+
+We finally record the following easy result:
+
+\result{PROPOSITION}{1.11} There is an open subset $U$ of $S$ such that the
+set $G'$ of points of $G$ at which $G$ is smooth (respectively flat) over $S$
+is the underlying set of an open subgroup scheme induced from $G|U$.
+Furthermore, every section of $G$ over $U$ is a section of $G'$ over $U$.
+
+\src{231}
+\result{COROLLARY}{1.12} If $G$ is smooth (respectively flat) over $S$ at the
+points of the identity section, then it is so at the points of every section
+of $G$ over $S$ and at every point of $G^\circ$. If, moreover, for every
+integer $n>0$ the $n$th-power homomorphism
+$\varphi_n:G\longrightarrow G$ is étale at the points of characteristic prime
+to $n$, then $G$ is smooth (respectively flat) over $S$ at every point of
+$G^\sigma$.
+
+\fsection{2}{Application to local properties of Picard schemes}
+
+\result{THEOREM}{2.1}
+
+\noindent(i) Let $f:X\longrightarrow S$ be a proper smooth morphism, and
+suppose that $\operatorname{Pic}_{X/S}$ exists (for example, suppose $f$ is
+projective). Then $\operatorname{Pic}_{X/S}$ is separated over $S$, and every
+closed subset $Z$ of $\operatorname{Pic}_{X/S}$ that is of finite type over
+$S$ is proper over $S$.
+
+\noindent(ii) Let $X$ be a proper geometrically normal prescheme over a field
+$k$. Then $\operatorname{Pic}_{X/k}^\circ$\footnote{The printed text reads
+$\operatorname{Pic}_{X/S}^\circ$, although $S$ does not occur in this
+statement over the field $k$.} is proper over $k$.
+
+\begin{proof}
+(i) The valuative criteria ([2], II, §7) reduce us to proving the following. Let
+$S$ be the spectrum of a complete discrete valuation ring and $U$ the open
+subset consisting of the generic point of $S$. Every rational section of
+$\operatorname{Pic}_{X/S}$ over $S$, that is, every section over $U$, extends
+uniquely to a section over $S$. By the definition of
+$\operatorname{Pic}_{X/S}$, this is equivalent to the following statement: for
+every invertible Module $\mathcal L$ on $V=f^{-1}(U)$ there is an invertible
+Module on $X$ extending $\mathcal L$, unique up to isomorphism. This follows
+readily from the description of invertible Modules on $V$, respectively on
+$X$, in terms of classes of Cartier divisors. Indeed, the local rings of $X$
+are regular ($X$ being smooth over the regular scheme $S$), hence factorial by
+Auslander's theorem; thus every divisor on $X$\footnote{The printed text reads
+“on $S$.” The factoriality invoked is that of the local rings of $X$.} is a
+Cartier divisor. Every divisor on $V$ extends to a divisor on $X$ by taking its
+closure.
+\end{proof}
+
+\result{REMARK}{2.2} The proof remains valid if one assumes only that $f$ is
+flat and that its fibers $X_s$ are locally complete intersections and smooth
+over $k(s)$ in codimension $\leq2$. This follows from the theorem proved in
+[5]: a noetherian local complete-intersection ring that is regular in
+codimension $\leq3$ is factorial (“Samuel's conjecture”). Notice that the
+
+\src{232}
+result becomes false if “codimension $\leq2$” is replaced by “codimension
+$\leq1$,” that is, by the hypothesis “normal,” as is seen from a family of
+nonsingular quadrics degenerating into a quadratic cone.
+
+(ii) Chow's lemma reduces us to the case in which $X$ is projective and hence
+embedded in $\mathbf P_k^n$; we may suppose that $X$ is connected. If
+$\dim X=1$, then $X$ is smooth over $k$, and (i) applies. If $\dim X\geq2$, a
+variant of the known “equivalence criteria” shows that there are finitely many
+curves $Y_i$, smooth on $X$ (obtained as intersections of $X$ with suitable
+linear subspaces of $\mathbf P_k^n$), such that
+\[
+\operatorname{Pic}_{X/k}^\tau\longrightarrow
+\prod_i\operatorname{Pic}_{Y_i/k}^\tau
+\]
+is a monomorphism, and hence induces a monomorphism on connected components.
+The connected component of the right-hand side is proper over $k$ by the
+preceding result, and the homomorphism of group schemes in question is
+necessarily a closed immersion. It follows that
+$\operatorname{Pic}_{X/k}^\circ$ is also proper over $k$. The delicate
+equivalence criteria can be avoided by using the structure of commutative
+algebraic groups over an algebraically closed field (due to Chevalley--Borel).
+One is reduced to proving that every morphism from the affine line with the
+origin removed\footnote{The printed text reads “from the affine line.” The
+linked erratum, p.~303, prescribes “affine line with the origin removed.”} into
+$\operatorname{Pic}_{X/k}^\tau$ is constant. This is equivalent to saying that
+every invertible Module on $X[t,t^{-1}]$\footnote{The printed text reads
+$X[t]$; the linked erratum, p.~303, prescribes $X[t,t^{-1}]$.} comes from an
+invertible Module on $X$. This well-known elementary result does not even use
+the properness of $X$ over $k$ (the normality of $X$ immediately reduces one
+to the case in which $X$ is regular).
+
+\result{COROLLARY}{2.3} Let $f:X\longrightarrow S$ be a proper normal morphism
+(that is, flat with geometrically normal fibers), and suppose that
+$\operatorname{Pic}_{X/S}$ exists. Then $\operatorname{Pic}_{X/S}^\circ$ is
+proper over $S$ and hence closed in $\operatorname{Pic}_{X/S}$. Moreover,
+$\operatorname{Pic}_{X/S}^\tau$ and $\operatorname{Pic}_{X/S}^\rho$ are also
+closed, as is $\operatorname{Pic}_{X/S}^\sigma$ in “equal characteristic.”
+
+Apply (1.1) and (2.1), (ii).
+
+\result{COROLLARY}{2.4} Let $f:X\longrightarrow S$ be a proper smooth morphism
+such that $\operatorname{Pic}_{X/S}$ exists and is a disjoint union of schemes
+$P^{(i)}$ of finite type over $S$ (cf. [3], V, 4.1). Then each $P^{(i)}$ is
+proper over $S$.
+
+This follows from (2.1), (i). As noted in (2.2), the result can be generalized
+by making less restrictive hypotheses on the fibers of $f$, but it becomes
+false if one merely assumes that $f$ is normal. In that case, I do not know
+whether $\operatorname{Pic}_{X/S}^\tau$ is nevertheless proper over $S$, even
+assuming it to be of finite type over $S$.
+
+\src{233}
+\result{THEOREM}{2.5} Let $f:X\longrightarrow S$ be a proper flat morphism
+such that $\operatorname{Pic}_{X/S}$ exists, and for every integer $n$ let
+$\varphi_n$ be the $n$th-power homomorphism in this group prescheme. Then
+$\varphi_n$ is étale at every point
+$x\in\operatorname{Pic}_{X/S}$\footnote{The printed text reads “$x\in X$.”
+The map $\varphi_n$ is the power endomorphism of the Picard prescheme.} whose
+residue characteristic is prime to $n$.
+
+By the infinitesimal characterization of étale morphisms, this assertion is
+equivalent to the following:
+
+\result{LEMMA}{2.6} Suppose that $S$ is the spectrum of a local Artinian ring
+$A$ whose maximal ideal $\mathfrak m$ has zero $(\nu+1)$st power, and put
+\[
+A_{\nu-1}=A/\mathfrak m^\nu,
+\qquad X_{\nu-1}=X\otimes_A A_{\nu-1}.
+\]
+Let $\mathcal L$ be an invertible Module on $X$, and let
+$\mathcal L'_{\nu-1}$ be an invertible Module on $X_{\nu-1}$ whose $n$th
+tensor power is isomorphic to
+\[
+\mathcal L_{\nu-1}=\mathcal L\otimes_A A_{\nu-1}.
+\]
+Then there is an invertible Module $\mathcal L'$ on $X$ whose $n$th tensor
+power is isomorphic to $\mathcal L$, provided that $n$ is prime to the residue
+characteristic of $k=k(A)$.
+
+We prove the lemma. Put
+\[
+V=\mathfrak m^\nu=\mathfrak m^\nu/\mathfrak m^{\nu+1};
+\]
+this is a vector space over $k=k(A)$. First try to extend
+$\mathcal L'_{\nu-1}$ to an arbitrary invertible Module $\mathcal L'$ on $X$.
+The obstruction lies in
+\[
+H^2(X_0,\mathcal O_{X_0})\otimes_k V.
+\]
+The hypothesis on $\mathcal L'_{\nu-1}$ and the extendability of
+$\mathcal L_{\nu-1}$ show that $n$ times this obstruction is zero; the
+obstruction itself is therefore zero because $n$ is prime to the
+characteristic. The ambiguity in the chosen extension lies in
+\[
+H^1(X_0,\mathcal O_{X_0})\otimes_k V,
+\]
+and the discrepancy $\xi$ between $\mathcal L'^{\otimes n}$ and $\mathcal L$
+lies in the same Module. Correcting $\mathcal L'$ to make this discrepancy zero
+amounts to finding an $\eta$ in that Module such that $n\eta=\xi$. This is
+again possible because $n$ is prime to the characteristic.
+
+\result{COROLLARY}{} Under the hypotheses of (2.5), suppose in addition that
+the Picard schemes of the fibers $X_s$ contain no additive component (for
+example, that the $X_s$ are geometrically normal; cf. (2.1), (ii)). Then
+$\operatorname{Pic}_{X/S}\longrightarrow S$ is universally open at the points
+of $\operatorname{Pic}_{X/S}^\circ$. If
+$\operatorname{Pic}_{X/S}^\circ$ is closed (for example, if the $X_s$ are
+geometrically normal; cf. (2.3)), then $\operatorname{Pic}_{X/S}^\sigma$ is
+itself universally open over $S$. Finally, in equal characteristic,
+$\operatorname{Pic}_{X/S}^\rho\longrightarrow S$ is universally open.
+
+Apply (1.5) and (1.1).
+
+\src{234}
+\result{COROLLARY}{2.7} Let $f:X\longrightarrow S$\footnote{The printed text
+reads “$f:X\longrightarrow Y$,” although both the Picard prescheme and the
+following function have base $S$.} be a proper flat morphism such that
+$\operatorname{Pic}_{X/S}$ exists. Then the function
+\[
+s\longmapsto\dim\operatorname{Pic}_{X_s/k(s)}
+\]
+on $S$ is upper semicontinuous (that is, it can jump upward but not downward),
+and is even continuous (that is, locally constant) if the
+$\operatorname{Pic}_{X_s/k(s)}$ contain no additive component.
+
+The first assertion is trivial, or nearly so, for every group prescheme
+locally of finite type over a locally noetherian base, since it is enough to
+look along the identity section. The second assertion follows from (2.5).
+
+\result{REMARK}{2.8} Let $s,s'\in S$, with $s$ a specialization of $s'$. Then
+(2.7) amounts to an inequality (respectively an equality) between the
+dimensions of the Picard schemes of $X_{s'}$ and of its “specialization” $X_s$.
+Even before Picard schemes were constructed, Serre had observed that, for a
+smooth morphism $f:X\longrightarrow S$, invariance of the dimension of the
+Picards of the $X_s$ is a formal consequence of the specialization theory of
+the fundamental group ([4], X) and the classical Kummer relations between the
+points of finite order on the Picard variety and the abelianized fundamental
+group ([4], XI). In general, let $\alpha,\mu,\lambda$ denote the dimensions of
+the abelian, multiplicative, and additive parts of
+$\operatorname{Pic}_{X_s/k(s)}^\circ$, and define
+$\alpha',\mu',\lambda'$ similarly. The known relations are expressed by the
+following inequalities:
+\[
+\tag{*}\alpha+\mu+\lambda\geq\alpha'+\mu'+\lambda'
+\]
+(valid provided that $\operatorname{Pic}_{X/S}$ exists, and therefore probably
+in all cases). When $\lambda=\lambda'=0$, this inequality becomes an equality,
+valid under the same existence hypotheses:
+\[
+\alpha+\mu=\alpha'+\mu';
+\]
+on the other hand,
+\[
+\tag{**}2\alpha+\mu\leq2\alpha'+\mu'
+\]
+
+\src{235}
+by Serre's argument if the $X_s$ are separable (without even assuming the
+existence of $\operatorname{Pic}_{X/S}^\tau$), or if the
+${}_n\operatorname{Pic}_{X/S}$ (the kernels of $\varphi_n$ in the Picard
+functor) are separated over the open of $S$ where $n$ is invertible (since
+they are étale over that open by (2.5)). One
+is inclined to conjecture that (*) is always an equality, or at least when the
+$X_s$ are separable, and that
+\[
+\tag{***}\alpha\leq\alpha',\qquad\lambda\geq\lambda'
+\]
+holds whenever there is a group prescheme, locally of finite type over a
+locally noetherian $S$, whose fibers have constant dimension (see (1.3) for a
+positive result in this direction).
+
+\result{REMARK}{2.9} In every known case,
+$\operatorname{Pic}_{X/S}^\tau$ is universally open over $S$, but one should
+probably not let this encourage excessive illusions, even when
+$f:X\longrightarrow S$ is smooth. In any event, Mumford has constructed an
+example (admittedly with $S$ nonreduced, in fact the spectrum of an Artinian
+ring) in which $\operatorname{Pic}_{X/S}^\tau$ is not flat over $S$, by varying
+the Igusa surface infinitesimally. The point considered by Mumford lies in
+$\operatorname{Pic}_{X/S}^\rho$, and it remains possible, for a smooth
+$f:X\longrightarrow S$, that $\operatorname{Pic}_{X/S}^\tau$ is flat over $S$
+at the points of $\operatorname{Pic}_{X/S}^\sigma$. The speaker nevertheless
+doubts that this is always so, even if one restricts to the points of
+$\operatorname{Pic}_{X/S}^\circ$ and assumes that $S$ is the spectrum of a
+discrete valuation ring. The question is also connected with the study of
+fixed points of an abelian scheme under a finite group of automorphisms, a
+situation for which examples seem to be lacking.
+
+It would seem that even when one restricts to a smooth projective morphism
+$f:X\longrightarrow S$, the local regularity results for
+$\operatorname{Pic}_{X/S}$ stated in this section, together with the
+conjectures in (2.8), nearly exhaust what can be said without more specific
+hypotheses on the nature of the fibers of $f$. Recall, however, that if the
+geometric fibers of $\operatorname{Pic}_{X/S}$ are reduced and have no
+additive component, then (1.8) and (2.5) imply that
+$\operatorname{Pic}_{X/S}$ is smooth over $S$ at the points of
+$\operatorname{Pic}_{X/S}^\sigma$ when $S$ is reduced. The same result holds,
+without any hypothesis on $S$, if $f:X\longrightarrow S$ is normal, as we
+shall see in (3.5). We record in this connection:
+
+\result{PROPOSITION}{2.10}
+
+\noindent(i) If $\operatorname{Pic}_{X/S}$ is smooth (respectively flat) over
+$S$ at the points of the identity section, then it is so at every point of
+$\operatorname{Pic}_{X/S}^\sigma$ and at the points of every section of
+$\operatorname{Pic}_{X/S}$ over $S$.
+
+\src{236}
+\noindent(ii) Let $s\in S$ satisfy
+\[
+H^2(X_s,\mathcal O_{X_s})=0.
+\]
+Then there is an open neighborhood $U$ of $s$ such that
+$\operatorname{Pic}_{X/S}|U$ is smooth over $U$.
+
+\noindent(iii) If $X$ is a proper scheme over a field, then
+\[
+\dim\operatorname{Pic}_{X/k}\leq\dim H^1(X,\mathcal O_X),
+\]
+with equality if and only if $\operatorname{Pic}_{X/k}$ is smooth over $k$;
+this is always the case when $k$ has characteristic zero.
+
+Part (i) follows from (2.5) and (1.12), and (ii) follows from the infinitesimal
+criterion for smooth morphisms and a familiar obstruction calculation, since
+the “semicontinuity theorem” shows that the hypothesis at $s$ remains valid at
+neighboring points. Finally, (iii) follows from the fact that
+$H^1(X,\mathcal O_X)$ is isomorphic to the Zariski tangent space of
+$\operatorname{Pic}_{X/k}$ at the identity. The last assertion is a special
+case of a theorem of Cartier saying that a “formal group” in characteristic
+zero is formally smooth over $k$.
+
+\fsection{3}{The canonical abelian subscheme of
+$\operatorname{Pic}_{X/S}$, and the Albanese scheme}
+
+\result{PROPOSITION}{3.1} Let $k$ be a field and $G$ a commutative group
+scheme of finite type over $k$ with no additive component. Then
+$G_{\mathrm{red}}^\circ$ is separable over $k$, and consequently is a smooth
+subgroup scheme over $k$.
+
+This is trivial when $k$ is perfect, in particular for $G_{\bar k}$, where
+$\bar k$ is an algebraic closure of $k$. It therefore suffices to see that
+$(G_{\bar k}^\circ)_{\mathrm{red}}$ descends from a subscheme of $G$. The
+hypothesis on $G_{\bar k}$ (no additive component)\footnote{The printed text
+has a malformed construction equivalent to “The hypothesis ... results.” The
+linked erratum, p.~303, inserts the preposition needed for “It follows from the
+hypothesis ...”.} readily implies that there
+is an integer $m$ such that $(G_{\bar k}^\circ)_{\mathrm{red}}$ is the
+scheme-theoretic image of the $m$th-power homomorphism in $G_{\bar k}$. Since
+this homomorphism comes from the analogous homomorphism for $G$, the
+scheme-theoretic image of the latter gives the required subscheme.
+
+\result{COROLLARY}{3.2} Let $X$ be a geometrically normal proper scheme over $k$ such that
+$\operatorname{Pic}_{X/k}$ exists. Then there is an abelian subscheme $A$ of
+$\operatorname{Pic}_{X/k}$ whose underlying set is
+$\operatorname{Pic}_{X/k}^\circ$.
+
+Indeed, by (2.1), (ii), $\operatorname{Pic}_{X/k}^\circ$ is proper over $k$ and
+therefore satisfies the condition of (3.1).
+
+\src{237}
+Thus the preceding result shows that in certain cases the classical “Picard
+variety” (which in the present theory would be denoted
+$(\operatorname{Pic}_{X/k})_{\mathrm{red}}^\circ$) “is defined over $k$,”
+without assuming that $k$ is perfect.
+
+Now let $f:X\longrightarrow S$ be a proper flat relative scheme, with
+\[
+\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)
+\]
+for simplicity, such that $\operatorname{Pic}_{X/S}$ exists and
+$\operatorname{Pic}_{X/S}^\circ$ is proper over $S$. For (3.3), (ii), we also
+assume that there is an open subset of $\operatorname{Pic}_{X/S}$ containing
+$\operatorname{Pic}_{X/S}^\circ$ that is quasi-projective over $S$. As seen
+earlier, this condition holds when $f$ is projective with geometrically
+separable irreducible fibers. Recall that an abelian scheme over $S$ is a group
+scheme over $S$ that is proper and smooth over $S$ and has geometrically
+connected fibers. We ask whether there is a subgroup scheme $A$ of
+$\operatorname{Pic}_{X/S}$ which is an abelian scheme and whose underlying set
+is $\operatorname{Pic}_{X/S}^\circ$. We have just seen that one always exists
+when $S$ is the spectrum of a field. Here is what can be said in the general
+case under consideration:
+
+\result{THEOREM}{3.3} Under the preceding hypotheses:
+
+\noindent(i) If there is an abelian subscheme of
+$\operatorname{Pic}_{X/S}$ whose underlying set is
+$\operatorname{Pic}_{X/S}^\circ$, it is unique. Its formation is consequently
+compatible with base change.
+
+\noindent(ii) For such an abelian subscheme to exist, it is enough that one
+exist after every base change $S'\longrightarrow S$ with $S'$ local Artinian.
+If $S$ is the spectrum of a local ring, it is enough to test the
+$S'=\operatorname{Spec}(A_n)$, where $A_n=A/\mathfrak m^{n+1}$. If $S$ is
+reduced, it is likewise enough to test the base changes
+$S'\longrightarrow S$ in which $S'$ is the spectrum of a discrete valuation
+ring (complete with algebraically closed residue field, if desired).
+
+\noindent(iii) Suppose that $A$ exists, and let
+$B=\operatorname{Alb}^0(X/S)$ be the dual abelian scheme (that is,
+$B=\operatorname{Pic}_{A/S}^\circ$ [7]). Then one can canonically construct a
+principal homogeneous space $P=\operatorname{Alb}^1(X/S)$ under $B$, together
+with an $S$-morphism $X\longrightarrow P$ universal for $S$-morphisms from $X$
+to para-abelian schemes (that is, principal homogeneous spaces under abelian
+schemes). The formation of $\operatorname{Alb}^0(X/S)$,
+$\operatorname{Alb}^1(X/S)$, and $X\longrightarrow\operatorname{Alb}^1(X/S)$
+commutes with base change.
+
+We sketch the proof.
+
+Part (i) is a general rigidity property of abelian subschemes of commutative
+group schemes: if two such subschemes coincide set-theoretically at a point
+$s\in S$, they coincide over the entire connected component
+
+\src{238}
+of $s$ [7]. (This result generalizes a classical theorem of Chow.)
+
+(ii) Hilbert schemes show that the functor associating to every $S'$ over $S$
+the set (having either one or zero elements) of canonical abelian subschemes of
+$(\operatorname{Pic}_{X/S})\times_S S'$ is represented by a scheme $T$ of
+finite type over $S$. By (i), $T\longrightarrow S$ is a monomorphism, and by
+(3.2) it is surjective. The existence of a canonical abelian subscheme of
+$\operatorname{Pic}_{X/S}$ means that $T$ has a section over $S$, equivalently
+that $T\longrightarrow S$ is an isomorphism. This is also equivalent to
+$T\longrightarrow S$ being étale, or, when $S$ is reduced, to
+$T\longrightarrow S$ being proper. This proves (ii).
+
+(iii) Directly from the definition of $\operatorname{Pic}_{X/S}$, for every
+abelian scheme $C$ over $S$, giving an $S$-morphism from $X$ to a principal
+homogeneous space under $C$ is equivalent to giving a group homomorphism
+$C'\longrightarrow\operatorname{Pic}_{X/S}$, where $C'$ is the dual abelian
+scheme of $C$. If the canonical abelian subscheme $A$ of
+$\operatorname{Pic}_{X/S}$ exists, these homomorphisms necessarily factor
+through $A$ (as can also be seen by using points of finite order). This proves
+(iii).
+
+\result{REMARKS}{3.4} We shall denote by
+$\operatorname{Pic}_{X/S}^{\circ\circ}$ the canonical abelian subscheme of
+$\operatorname{Pic}_{X/S}$, when it exists. Unfortunately it does not always
+exist, as is seen by varying the Igusa surface infinitesimally (through the
+first-order modular deformation). It may nevertheless be that
+$\operatorname{Pic}_{X/S}^{\circ\circ}$ exists at least when $S$ is reduced,
+or equivalently, by (ii), when $S$ is the spectrum of a discrete valuation
+ring. Let $X_0,X_1$ be the special and generic fibers of $X$, and put
+\[
+A_1=\operatorname{Pic}_{X_1/K}^\circ,
+\]
+where $K$ is the fraction field of the valuation ring $V$. By Koizumi's
+theorem there is an essentially unique abelian scheme $A$ over $S$ whose
+generic fiber is $A_1$. As in (2.1), (i), one sees readily (now assuming that
+$X$ is smooth over $S$) that the identity morphism of $A_1$ extends to a
+morphism
+\[
+A\longrightarrow\operatorname{Pic}_{X/S}.
+\]
+Hence there is a homomorphism
+\[
+\tag{*}A_0\longrightarrow\operatorname{Pic}_{X_0/k}^{\circ\circ},
+\]
+which is readily shown to be surjective with kernel a finite $p$-group, where
+$p$ is the characteristic exponent of the residue field $k$
+
+\src{239}
+(again by using points of finite order). With this understood, the following
+conditions on $X/S$ are equivalent:
+
+\medskip
+\noindent a. The preceding homomorphism (*) is an isomorphism (which Shimura
+would express by saying that formation of the “Picard variety” is “compatible
+with specialization”).
+
+\noindent b. $\operatorname{Pic}_{X/S}^{\circ\circ}$ exists (in which case it
+is none other than $A$).
+
+\noindent c. (For reference) The
+$\operatorname{Pic}_{X_n/S}^{\circ\circ}$ exist.
+
+By the observation about the kernel of (*), condition (a) holds when the
+residue characteristic is zero, but this result will be considerably
+generalized in (3.5).
+
+Of course, if $\operatorname{Pic}_{X/S}$ is smooth over $S$ at the points of
+$\operatorname{Pic}_{X/S}^\circ$, then the latter is open in
+$\operatorname{Pic}_{X/S}$ (cf. (1.7)). With the induced structure it is
+therefore an abelian subscheme of $\operatorname{Pic}_{X/S}$, hence equal to
+$\operatorname{Pic}_{X/S}^{\circ\circ}$, which exists in this case. But much
+more is true:
+
+\result{THEOREM}{3.5} Under the hypotheses of (3.3), let $s\in S$ be such that
+$\operatorname{Pic}_{X_s/k(s)}$ is smooth over $k(s)$ (or, equivalently,
+\[
+\dim\operatorname{Pic}_{X_s/k(s)}=\dim H^1(X_s,\mathcal O_{X_s})).
+\]
+Then there is an open neighborhood $U$ of $s$ such that
+$\operatorname{Pic}_{X/S}$ is smooth over $S$ at the points of
+$\operatorname{Pic}_{X/S}^\circ|U$, which is consequently an open abelian
+subscheme of $\operatorname{Pic}_{X/S}|U$. A fortiori,
+$\operatorname{Pic}_{X|U/U}^{\circ\circ}$ exists.
+
+We indicate the principle of the proof. The preceding discussion reduces us
+to the case in which $S$ is the spectrum of a local Artinian ring $A$, and we
+argue by induction on the infinitesimal order of $A$. We may therefore suppose
+that $\operatorname{Pic}_{X_n/A_n}^\circ$ is smooth over $A_n$ and need only
+prove that $\operatorname{Pic}_{X_{n+1}/A_{n+1}}^\circ$ is smooth over
+$A_{n+1}$. For this it is enough to construct an abelian scheme $P_{n+1}$ over
+$A_{n+1}$ extending
+\[
+P_n=\operatorname{Pic}_{X_n/A_n}^\circ,
+\]
+together with an invertible Module $\mathcal L_{n+1}$ on
+$X_{n+1}\times_{A_{n+1}}P_{n+1}$ extending the invertible Module
+$\mathcal L_n$ on $X_n\times_{A_n}P_n$ that occurs in the definition of the
+Picard scheme $\operatorname{Pic}_{X_n/A_n}$ as the solution of a universal
+problem. (N.B. --- We may suppose that $X$ has a section over $S$~...) The
+construction uses the following key result: every abelian scheme defined over
+a quotient of a local Artinian ring can be extended (in other words, the
+absolute “formal moduli scheme” ([3], II) of an abelian scheme over an
+algebraically closed field is smooth over the ring of
+
+\src{240}
+Witt vectors of $k$). This result itself follows from the general formal
+properties of the obstruction to lifting and from the group operations.
+Assuming it, first extend $P_n$ arbitrarily to $P_{n+1}$. One then encounters
+an obstruction to lifting $\mathcal L_n$, lying in
+\[
+H^2(X_0\times P_0,\mathcal O_{X_0\times P_0})\otimes_k V
+\qquad(\text{where }V=\mathfrak m^{n+1}/\mathfrak m^{n+2}),
+\]
+and in fact in the subspace
+\[
+H^1(X_0,\mathcal O_{X_0})\otimes
+H^1(P_0,\mathcal O_{P_0})\otimes_k V
+\]
+(because the restriction of $\mathcal L_n$ to each of the two factors $X_n$
+and $P_n$ is trivial). This last space is precisely
+\[
+H^1(P_0,\mathcal T_{P_0/k})\otimes V,
+\]
+where $\mathcal T_{P_0/k}$ is the tangent sheaf of $P_0/k$, and it is therefore
+also the space measuring the indeterminacy in lifting $P_n$ to $P_{n+1}$ ([3],
+II). Consequently this lift can be corrected (in one and only one way, as it
+should be) so as to kill the obstruction to lifting $\mathcal L_n$.
+
+\result{COROLLARY}{3.6} Under the hypotheses of (3.5),
+$R^1f_*(\mathcal O_X)$ is a locally free Module on $S$ near $s$, and its
+formation commutes with base change.
+
+Indeed, this Module is the tangent Module of $\operatorname{Pic}_{X/S}$ along
+the identity section.
+
+\result{REMARK}{3.7} The same argument as in (3.5) shows that if $S'$ is a
+subscheme of $S$ defined by a coherent nilpotent Ideal, and if one assumes only
+that $\operatorname{Pic}_{X'/S'}^\circ$ exists and has smooth fibers, then
+$\operatorname{Pic}_{X/S}^\circ$ necessarily exists and is an abelian scheme
+over $S$. This permits Picard schemes to be constructed in some cases despite
+the absence of a projectivity hypothesis; for example, the dual abelian scheme
+of an abelian scheme over an Artinian ring always exists. On the other hand,
+applying (3.6) when $X$ is an abelian scheme over $S$, and using the known
+exterior-algebra structure of $H^*(X_s,\mathcal O_{X_s})$ over
+$H^1(X_s,\mathcal O_{X_s})$ (Rosenlicht--Serre), one finds that for every $i$,
+$R^if_*(\mathcal O_X)$ is locally free and, more precisely, isomorphic to the
+$i$th exterior power of $R^1f_*(\mathcal O_X)$.
+
+\result{REMARK}{3.8} For a projective smooth morphism
+$f:X\longrightarrow S$, with $S$ reduced and all residue characteristics zero,
+(3.6) was known by transcendental methods as a consequence of Hodge theory. In
+fact, all the $R^pf_*(\Omega^q_{X/S})$ are then locally free. There are, on the
+other hand, counterexamples
+
+\src{241}
+in mixed characteristic to the local freeness of $R^1f_*(\mathcal O_X)$,
+obtained from Serre varieties ([8], p.~50). There seems to be no counterexample
+in equal characteristic.
+
+\result{COROLLARY}{3.8} Under the hypotheses of (3.5),
+$\operatorname{Pic}_{X/S}|U$ is smooth over $U$ at every point of
+$\operatorname{Pic}_{X/S}^\sigma|U$.
+
+Apply (2.10), (i). In particular, taking (2.10), (iii), into account:
+
+\result{COROLLARY}{3.9} Suppose that all residue characteristics of $S$ are
+zero. Then $\operatorname{Pic}_{X/S}^\tau$ is smooth over $S$.
+
+\result{REMARK}{3.10} If $\operatorname{Pic}_{X/S}^\tau$ is proper over $S$,
+it follows, for example, that the torsion subgroup of the Néron--Severi groups
+of the geometric fibers of $f$ is constant on each connected component of $S$
+(as is also clear by transcendental methods when $f$ is smooth and projective).
+A direct application of (2.5) shows more generally that if $\operatorname{Pic}_{X/S}^\tau$ is proper over $S$ (for example, if $f:X\longrightarrow S$ is smooth and projective) and $q$ is a prime distinct
+from all residue characteristics of $S$, then the $q$-primary component of the
+torsion subgroups of the Néron--Severi groups of the geometric fibers of $X/S$
+is constant on each connected component of $S$. In characteristic $p>0$ this
+is no longer true for the $p$-primary component of the torsion. It remains
+possible, however, that the rank over $k(s)$ of
+\[
+\operatorname{Pic}_{X_s/k(s)}^\tau/
+\operatorname{Pic}_{X_s/k(s)}^{\circ\circ}=T_{X_s/k(s)}
+\]
+is locally constant. When $S$ is reduced, one can show that this is equivalent
+to the existence of $\operatorname{Pic}_{X/S}^{\circ\circ}$ together with
+the flatness of $\operatorname{Pic}_{X/S}^\tau$ over $S$, and it is enough to
+test the question when $S$ is the spectrum of a discrete valuation ring. This
+is what I have verified in the few examples I have examined; but since the
+corresponding assertion with $S$ Artinian is false (cf. Remarks (2.9) and
+(3.4)), one should probably not indulge in excessive optimism.
+
+\fsection{4}{The finiteness theorem for the Picard scheme}
+
+Let $f:X\longrightarrow S$ be a projective flat morphism such that
+$\operatorname{Pic}_{X/S}$ exists. Consideration of the “Hilbert polynomials”
+$Q\in\mathbf Q[t]$ decomposes $\operatorname{Pic}_{X/S}$ into a disjoint union
+of open subsets $\operatorname{Pic}_{X/S}^Q$. Without further hypotheses, for
+example ones ensuring that $\operatorname{Pic}_{X/S}$ is separated over $S$,
+these open subsets need not be of finite type over $S$; a counterexample is
+obtained when $X$ is “a conic degenerating into two lines.” It is
+
+\src{242}
+possible, however, that they are of finite type when $f$ is separable with
+geometrically irreducible fibers. The question is connected with whether
+$\operatorname{Pic}_{X/S}^\tau$ is of finite type over $S$, which may be true
+without any hypothesis on the fibers of $X/S$. When
+$f:X\longrightarrow S$ is smooth, note that
+$\operatorname{Pic}_{X/S}^\tau$ is contained in one of the
+$\operatorname{Pic}_{X/S}^Q$ (because on a nonsingular projective variety
+torsion equivalence is finer than—in fact, by Matsusaka, identical to—numerical
+equivalence for divisors), and is therefore of finite type over $S$ if the
+$\operatorname{Pic}_{X/S}^Q$ are. The finiteness questions just raised retain
+an evident meaning even without assuming the existence of
+$\operatorname{Pic}_{X/S}$: they say that certain families of invertible
+Modules are “bounded” in the sense of [3], IV. For every algebraically closed
+field $k$, consider the integral subschemes of $\mathbf P_k^r$ of dimension
+$n$ and degree $d$, and the invertible Modules on such preschemes with Hilbert
+polynomial $Q$, where $r,n,d,Q$ are fixed. The problem is to show that the
+family of these Modules (viewed as coherent Modules on the $\mathbf P_k^r$) is
+bounded, that is, can be parametrized by a scheme of finite type over
+$\mathbf Z$.
+
+Using Matsusaka's method [6], a rather technical proof (using the “equivalence
+criteria” in a suitable form) gives an affirmative answer when one restricts
+to nonsingular subvarieties of $\mathbf P_k^r$. More precisely:
+
+\result{THEOREM}{4.1} Let $f:X\longrightarrow S$\footnote{The printed text
+reads “Let: $X\longrightarrow S$”; the morphism used below is $f$.} be a smooth
+projective morphism with geometrically connected fibers, with $S$ noetherian.
+Let $\mathcal O_X(1)$ be a relatively very ample Module on $X$, and let $E$ be
+a subset of $\operatorname{Pic}_{X/S}$ corresponding to a family
+$(\mathcal L_i)$ of invertible Modules on the geometric fibers
+$\overline X_{s_i}$ of $X/S$. Let $D_i$ be a divisor (not necessarily
+effective) on $\overline X_{s_i}$ defining $\mathcal L_i$, let
+\[
+a_n^{(i)}t^n+\cdots+a_0^{(i)}
+\]
+be the Hilbert polynomial of $\mathcal L_i$, and let $\xi=\xi_i$ be a divisor
+defining $\mathcal O_X(1)$, that is, a hyperplane section. The following
+conditions are equivalent:
+
+\noindent a. $E$\footnote{The printed text reads “$Q$.” The subset introduced
+in the statement, whose quasi-compactness expresses boundedness of the family,
+is $E$.} is quasi-compact, that is, contained in an open subset of finite type
+over $S$; equivalently, the family $(\mathcal L_i)$ is bounded.
+
+\noindent b. $E$ is contained in the union of finitely many of the sets
+$\operatorname{Pic}_{X/S}^Q$, $Q\in\mathbf Q[t]$; equivalently, only finitely
+many Hilbert polynomials occur among the $\mathcal L_i$.
+
+\noindent b'. (If all fibers of $X/S$ have the same dimension $n$.) The two
+coefficients $a_{n-1}^{(i)}$ and $a_{n-2}^{(i)}$ of the Hilbert polynomials of
+the $\mathcal L_i$ range over finite sets.
+
+\src{243}
+
+\result{COROLLARY}{4.2} Let $f:X\longrightarrow S$ be a smooth projective
+morphism with geometrically connected fibers. Then the schemes
+$\operatorname{Pic}_{X/S}^Q$ and $\operatorname{Pic}_{X/S}^\tau$
+($Q\in\mathbf Q[t]$) are projective over $S$.
+
+They are of finite type over $S$ by (4.1), so (2.4) applies.
+
+\section*{BIBLIOGRAPHY}
+\addcontentsline{toc}{section}{Bibliography}
+
+\begin{description}
+\item[{[1]}] CHEVALLEY (Claude). -- Sur la théorie de Picard,
+\emph{Amer. J. of Math.}, vol. 82, 1960, pp. 435--490.
+
+\item[{[2]}] GROTHENDIECK (A.) and DIEUDONNÉ (J.). -- Éléments de géométrie
+algébrique, Chapter I and following. -- Paris, Presses universitaires de
+France, 1960--1961 (Institut des Hautes Études Scientifiques, 4, 8, 11,
+\ldots).
+
+\item[{[3]}] GROTHENDIECK (Alexander). -- Technique de descente et théorèmes
+d'existence en géométrie algébrique, I--V, \emph{Séminaire Bourbaki}, vol. 12,
+1959/60, no. 190, 29 pp. and no. 195, 22 pp.; vol. 13, 1960/61, no. 212,
+20 pp. and no. 221, 28 pp.; vol. 14, 1961/62, no. 232, 19 pp.
+
+\item[{[4]}] GROTHENDIECK (Alexander). -- Séminaire de géométrie algébrique,
+1960/61. -- Paris, Institut des Hautes Études Scientifiques, 1961.
+
+\item[{[5]}] GROTHENDIECK (Alexander). -- Séminaire de géométrie algébrique,
+1961/62, edited by a group of auditors. -- Paris, Institut des Hautes Études
+Scientifiques (forthcoming).
+
+\item[{[6]}] MATSUSAKA (T.). -- The criteria for algebraic equivalence and the
+torsion group, \emph{Amer. J. Math.}, vol. 79, 1957, pp. 53--66.
+
+\item[{[7]}] MUMFORD (D.) and TATE (J.). -- Séminaire de géométrie algébrique,
+Harvard University, Spring Term 1962 (forthcoming).
+
+\item[{[8]}] SERRE (Jean-Pierre). -- Sur la topologie des variétés algébriques
+en caractéristique $p$, \emph{Symposium internacional de topología algebraica}
+[1956, Mexico], pp. 24--53. -- Mexico, Universidad nacional autónoma, 1958.
+\end{description}
+
+\par\smallskip
+\begingroup\footnotesize
+\noindent\textit{through 0058. In 3.2 the print assumes $X$ normal and proper over $k$, without geometric normality (C122). In 3.10 both printed properness premises concern the whole Picard scheme, not $\operatorname{Pic}_{X/S}^{\tau}$ (C124). C123 restores the printed $\sigma$ in 2.10(i) and 3.8: the circle and $\tau$ were transcription errors, not printed readings.}\par
+\endgroup

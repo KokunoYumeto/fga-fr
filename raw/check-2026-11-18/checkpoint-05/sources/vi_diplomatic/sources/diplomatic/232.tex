@@ -1,0 +1,917 @@
+\unit{Thuyết trình 232 -- Các lược đồ Picard: các định lý tồn tại}
+\sid{232}
+\markboth{Thuyết trình 232}{Thuyết trình 232}
+\src{143}
+\seminar{Năm thứ 14\textsuperscript{}, 1961/62, số 232\textsuperscript{}\\Tháng Hai 1962}
+\paperhead{KỸ THUẬT HẠ XUỐNG VÀ CÁC ĐỊNH LÝ TỒN TẠI TRONG HÌNH HỌC ĐẠI SỐ\\
+V. CÁC LƯỢC ĐỒ PICARD: CÁC ĐỊNH LÝ TỒN TẠI}%
+  {do Alexander GROTHENDIECK}
+
+\fsection{1}{Các nhóm và hàm tử Picard tương đối}
+
+Với mọi tiền lược đồ (tổng quát hơn, mọi không gian có vành) $X$, ta gọi
+\emph{nhóm Picard} (tuyệt đối) của $X$, và ký hiệu là
+$\operatorname{Pic}(X)$, nhóm các lớp đẳng cấu của các Môđun khả nghịch
+(nghĩa là đẳng cấu địa phương với $\mathcal O_X$) trên $X$. Do đó ta có một
+đẳng cấu chính tắc
+\begin{equation}
+\operatorname{Pic}(X)\xrightarrow{\sim}H^1(X,\mathcal O_X^*),
+\tag{1.1}
+\end{equation}
+trong đó $\mathcal O_X^*$ chỉ bó các đơn vị của $\mathcal O_X$ (quả thật bó
+này đồng nhất với bó các tự đẳng cấu của Môđun khả nghịch chuẩn
+$\mathcal O_X$). Lưu ý rằng $X\longmapsto\operatorname{Pic}(X)$ hiển nhiên là
+một hàm tử phản biến theo $X$, và đẳng cấu (1.1) có tính hàm tử.
+
+Nếu $X$ là một tiền lược đồ trên một tiền lược đồ khác $S$, thì khi $S'$ biến
+thiên trong phạm trù $(\mathrm{Sch})/S$ các tiền lược đồ trên $S$, từ điều trên
+ta có hàm tử phản biến
+$S'\longmapsto\operatorname{Pic}(X\times_S S')$. Hàm tử này hoàn toàn không
+thể «biểu diễn được» ([4], II, A), vì do tồn tại những tự đẳng cấu không tầm
+thường của các Môđun khả nghịch cần phân loại, hàm tử này không «có bản chất
+địa phương» ([5], IV, 5.4). Vì vậy cần «làm cho nó thành địa phương» bằng cách,
+nói chung, với mọi tiền lược đồ tương đối $X/S$, đưa vào một nhóm có bản chất
+tương đối,
+\begin{equation}
+\operatorname{Pic}'(X/S)=H^0\bigl(S,R^1f_*(\mathcal O_X^*)\bigr),
+\tag{1.2}
+\end{equation}
+(trong đó $f:X\longrightarrow S$ là cấu xạ cấu trúc) (so sánh [4], II,
+C 3). Ở chỗ đã dẫn, nhóm này được gọi là nhóm Picard tương đối; ở đây nên gọi
+nó là \emph{nhóm Picard tương đối hạn chế} của $X/S$, vì những lý do sẽ xuất
+hiện sau đây. Khi $S'$ biến thiên trong $(\mathrm{Sch})/S$,
+$S'\longmapsto\operatorname{Pic}'(X\times_S S'/S')$ là một hàm tử phản biến
+theo $S'$, cũng được ký hiệu là $\operatorname{Pic}'_{X/S}$, do đó về cơ bản
+được định nghĩa bởi công thức
+\begin{equation}
+\operatorname{Pic}'_{X/S}(S')=
+\operatorname{Pic}'(X\times_S S'/S').
+\tag{1.3}
+\end{equation}
+\src{144}
+Hàm tử này nay «có bản chất địa phương», vì ta đã làm điều cần thiết cho mục
+đích ấy. Một cách trực giác, vế phải của (1.3) được hiểu là tập các «họ đại số»
+của những lớp bó khả nghịch trên (các thớ của) $X/S$, được đánh chỉ số bởi tiền
+lược đồ tham số $S'/S$. Khi hàm tử $\operatorname{Pic}'$ biểu diễn được, tiền
+lược đồ trên $S$ biểu diễn nó được ký hiệu là $\operatorname{Pic}'_{X/S}$ và
+được gọi là \emph{tiền lược đồ Picard} của $X$ trên $S$; do đó khi ấy ta có
+\begin{equation}
+\operatorname{Hom}_S(S',\operatorname{Pic}'_{X/S})
+\simeq\operatorname{Pic}'_{X/S}(S')
+=\operatorname{Pic}'(X\times_S S'/S').
+\tag{1.4}
+\end{equation}
+
+Tuy nhiên, có những trường hợp quan trọng trong đó
+$\operatorname{Pic}'_{X/S}$ không biểu diễn được (ví dụ: một đa tạp
+«Brauer--Severi» trên một trường $k$, không có điểm hữu tỉ trên $k$), nhưng vẫn
+có một định nghĩa tự nhiên cho tiền lược đồ Picard tương đối. Điều này là do
+trong định nghĩa hàm tử $\operatorname{Pic}'$ từ các nhóm Picard tuyệt đối
+$\operatorname{Pic}(X\times_S S'/S')$, ta vẫn chưa địa phương hóa đủ; chính
+xác hơn, nói chung $\operatorname{Pic}'$ không «tương thích với hạ phẳng trung
+thành». Ta làm rõ điều này.
+
+Gọi $\mathfrak M$ là lớp các cấu xạ tiền lược đồ \emph{phẳng trung thành và tựa
+compact}; lớp này ổn định qua đổi cơ sở và qua hợp thành. Cho $P$ là một hàm tử
+phản biến từ $(\mathrm{Sch})/S$ đến phạm trù các tập hợp, và với mọi
+$S$-cấu xạ $u:T'\longrightarrow T$, $u\in\mathfrak M$, xét biểu đồ
+\begin{equation}
+P(T)\longrightarrow P(T')\rightrightarrows P(T'\times_TT')
+\tag{1.5}
+\end{equation}
+là ảnh qua $P$ của biểu đồ
+\[
+T\longleftarrow T'\mathrel{\substack{\xleftarrow{\,\mathrm{pr}_1\,}\\[-0.35ex]
+\xleftarrow[\,\mathrm{pr}_2\,]{}}}T'\times_TT'.
+\]
+Nếu $P$ biểu diễn được, thì từ lý thuyết hạ xuống ([4], I, B, định lý 2) suy ra
+biểu đồ (1.5) là khớp với mọi $u\in\mathfrak M$. Ta diễn đạt sự kiện này bằng
+cách nói $P$ tương thích với $\mathfrak M$, trong trường hợp này là $P$
+«tương thích với hạ phẳng trung thành», hay «tiền bó» $P$ trên
+$(\mathrm{Sch})/S$ là một «bó» đối với khái niệm địa phương hóa do lớp
+$\mathfrak M$ cung cấp. Khi $P$ tùy ý, một quy trình chuẩn, quen thuộc trong
+trường hợp địa phương hóa tôpô thông thường, cho phép liên kết với nó một «bó»
+$\mathcal P$ và một đồng cấu hàm tử $P\longrightarrow\mathcal P$, phổ dụng
+theo nghĩa hiển nhiên. Có thể tính $\mathcal P$ một cách tường minh như sau:
+để định nghĩa $\mathcal P(T)$, với mọi $T'$ trên $T$ sao cho cấu xạ
+$u:T'\longrightarrow T$ thuộc $\mathfrak M$, ta ký hiệu bởi
+\src{145}
+$\overline H^0(T'/T,P)$ tập con của $P(T')$ gồm các phần tử $\xi$ sao cho hai
+ảnh $\xi_1,\xi_2$ của chúng trong $P(T'\times_TT')$ thỏa điều kiện: tồn tại
+một cấu xạ $v:T''\longrightarrow T'\times_TT'$, $v\in\mathfrak M$, sao cho
+$\xi_1$ và $\xi_2$ có cùng ảnh trong $P(T'')$. [Ghi chú. -- Tập
+$\overline H^0$ được định nghĩa như vậy lớn hơn tập $H^0(T'/T,P)$ đã đưa vào
+trong [4], I, A, 4(a).] Khi $T'$ biến thiên trên $T$ cố định (vẫn với
+$u\in\mathfrak M$), các $\overline H^0(T'/T,P)$ tạo thành một hệ quy nạp (khi
+tập các $T'$ được trang bị tiền thứ tự xác định bởi quan hệ trội), và ta đặt
+\begin{equation}
+\mathcal P(T)=\varinjlim_{T'}\overline H^0(T'/T,P).
+\tag{1.6}
+\end{equation}
+Quy luật hàm tử theo $T$ của biểu thức này được tường minh hóa một cách hiển
+nhiên.
+
+Khi
+\[
+P(T)=\operatorname{Pic}(X\times_ST),
+\]
+hàm tử phản biến trên $(\mathrm{Sch})/S$ được định nghĩa bởi (1.6) được gọi là
+\emph{hàm tử Picard tương đối} của $X$ trên $S$, và được ký hiệu là
+$\operatorname{Pic}_{X/S}$; ta gọi \emph{nhóm Picard tương đối} của $X$ trên
+$S$, và ký hiệu là $\operatorname{Pic}(X/S)$, nhóm
+$\operatorname{Pic}_{X/S}(S)$. Khi đó ta có song ánh hiển nhiên
+\begin{equation}
+\operatorname{Pic}_{X/S}(T)\simeq\operatorname{Pic}(X\times_ST/T).
+\tag{1.7}
+\end{equation}
+
+Do đó một phần tử của $\operatorname{Pic}(X/S)$ được định nghĩa nhờ một phần tử
+$\xi'$ của một nhóm $\operatorname{Pic}(X\times_SS')$ (trong đó
+$S'\longrightarrow S$ phẳng trung thành và tựa compact), sao cho có thể tìm
+được một cấu xạ phẳng trung thành và tựa compact
+$S''\longrightarrow S'\times_SS'$ sao cho hai ảnh ngược của $\xi'$ trong
+$\operatorname{Pic}(X\times_SS'')$ bằng nhau. Một phần tử $\xi'$ của
+$\operatorname{Pic}(X\times_SS')$ và $\xi_1$ của
+$\operatorname{Pic}(X\times_SS_1)$ (thỏa các điều kiện vừa nêu) xác định cùng
+một phần tử của $\operatorname{Pic}(X/S)$ khi và chỉ khi tồn tại một cấu xạ
+phẳng trung thành và tựa compact $S'_1\longrightarrow S'\times_SS_1$ sao cho
+ảnh của hai phần tử đang xét trong $\operatorname{Pic}(X\times_SS'_1)$ bằng
+nhau. Thường vẫn tiện khi làm việc với hàm tử
+$P'=\operatorname{Pic}'_{X/S}$ đã đưa vào ở trên; ta thấy ngay rằng cấu xạ
+chính tắc $P\longrightarrow P'$ xác định một đẳng cấu
+\begin{equation}
+\mathcal P\xrightarrow{\sim}\mathcal P',
+\tag{1.8}
+\end{equation}
+điều này cho một mô tả của $\operatorname{Pic}_{X/S}$ theo
+$\operatorname{Pic}'_{X/S}=P'$, thường tiện hơn. Theo 2.3 dưới đây, khi trong
+mô tả vừa nêu của $\operatorname{Pic}(X/S)$ ta thay $P$ bởi $P'$, ta thực ra
+có thể
+\src{146}
+lấy $S''=S'\times_SS'$, $S'_1=S'\times_SS_1$, ít nhất dưới các điều kiện được
+nêu rõ ở chỗ đã dẫn.
+
+Khi hàm tử $\operatorname{Pic}_{X/S}$ biểu diễn được, ta nói $X/S$ có một tiền
+lược đồ Picard, và tiền lược đồ trên $S$ biểu diễn hàm tử được gọi là
+\emph{tiền lược đồ Picard} của $X$ trên $S$, vẫn được ký hiệu là
+$\operatorname{Pic}_{X/S}$. Hiển nhiên, chỉ cần
+$P'=\operatorname{Pic}'_{X/S}$ biểu diễn được, vì khi ấy $P'$ đã là một «bó»,
+và công thức (1.8) chứng tỏ cấu xạ $P'\longrightarrow\mathcal P'$ đồng nhất
+với cấu xạ chính tắc
+\begin{equation}
+\operatorname{Pic}'_{X/S}\longrightarrow\operatorname{Pic}_{X/S},
+\tag{1.9}
+\end{equation}
+mà khi ấy là một đẳng cấu. Do đó thuật ngữ của ta tương thích với thuật ngữ đã
+đưa vào ở trên cùng với (1.4). Nói chung, khi $\operatorname{Pic}_{X/S}$ tồn
+tại, nó được định nghĩa bởi đẳng cấu có tính hàm tử
+\begin{equation}
+\operatorname{Hom}_S(S',\operatorname{Pic}_{X/S})\xrightarrow{\sim}
+\operatorname{Pic}(X\times_SS'/S').
+\tag{1.10}
+\end{equation}
+
+\fsection{2}{Quan hệ giữa các nhóm Picard tương đối và tuyệt đối khác nhau}
+
+\result{MỆNH ĐỀ}{2.1} Cho $f:X\longrightarrow S$ là một cấu xạ sao cho
+$\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$. Khi đó ta có một dãy khớp
+\[
+0\longrightarrow\operatorname{Pic}(S)\longrightarrow\operatorname{Pic}(X)
+\longrightarrow\operatorname{Pic}'(X/S).
+\]
+Khi $X$ có một tiết diện trên $S$, cấu xạ cuối là toàn ánh, nghĩa là ta có một
+đẳng cấu
+\[
+\operatorname{Pic}'(X/S)\xrightarrow{\sim}
+\operatorname{Pic}(X)/\operatorname{Pic}(S).
+\]
+
+Dãy khớp này có thể được xem là dãy khớp ở các bậc thấp tương ứng với dãy phổ
+Leray cho $f$ và $\mathcal O_X^*$. Khẳng định thứ hai cũng có tính hình thức.
+
+\result{MỆNH ĐỀ}{2.2} Cho $f:X\longrightarrow S$ là một cấu xạ tựa compact và
+tách sao cho $\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$, và cho
+$S'\longrightarrow S$ là một cấu xạ phẳng trung thành và tựa compact. Khi đó:
+
+\noindent (i) $\operatorname{Pic}'(X/S)\longrightarrow
+\operatorname{Pic}'(X\times_SS'/S')$ là đơn ánh;
+
+\noindent (ii) nếu $X$ có một tiết diện địa phương trên $S$ (nghĩa là mỗi
+$s\in S$ có một lân cận mở $U$ sao cho $X|U$ có một tiết diện trên $U$), thì
+biểu đồ
+\[
+\operatorname{Pic}'(X/S)\longrightarrow
+\operatorname{Pic}'(X\times_SS'/S')\rightrightarrows
+\operatorname{Pic}'(X\times_SS''/S'')
+\]
+\src{147}
+(trong đó $S''=S'\times_SS'$) là khớp.
+
+Khẳng định thứ nhất suy ra, nhờ các tính chất sơ cấp của hạ phẳng trung thành,
+từ nhận xét tổng quát sau đây. Nếu $f:X\longrightarrow S$ là một cấu xạ sao cho
+$\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$, thì hàm tử
+$\mathcal F\longmapsto f^*(\mathcal F)$, từ phạm trù các Môđun tự do địa
+phương kiểu hữu hạn trên $S$ đến phạm trù các Môđun tự do địa phương kiểu hữu
+hạn trên $X$, là đầy đủ và trung thành, và ảnh cốt yếu gồm các Môđun
+$\mathcal G$ trên $X$ sao cho $f_*(\mathcal G)$ tự do địa phương và đồng cấu
+chính tắc
+\[
+f^*\bigl(f_*(\mathcal G)\bigr)\longrightarrow\mathcal G
+\]
+là một đẳng cấu. Khẳng định thứ hai đã được chứng minh bằng lý thuyết hạ xuống
+trong [4], I, B, 4.
+
+Các kết quả của 2.2 cũng có thể được phát biểu như sau:
+
+\result{HỆ QUẢ}{2.3} Dưới các điều kiện của 2.2, đồng cấu chính tắc
+(1.9) $\operatorname{Pic}'_{X/S}\longrightarrow\operatorname{Pic}_{X/S}$ là
+đơn ánh, và thậm chí song ánh nếu $X$ có một tiết diện địa phương trên $S$.
+(Do đó, trong trường hợp sau, nhóm Picard tương đối
+$\operatorname{Pic}(X/S)$ và nhóm Picard tương đối hạn chế
+$\operatorname{Pic}'(X/S)$ đồng nhất với nhau.)
+
+Kết hợp với 2.1, ta thu được:
+
+\result{HỆ QUẢ}{2.4} Dưới các điều kiện của 2.2, ta có một dãy khớp
+\[
+0\longrightarrow\operatorname{Pic}(S)\longrightarrow\operatorname{Pic}(X)
+\longrightarrow\operatorname{Pic}(X/S).
+\]
+Khi $X$ có một tiết diện trên $S$, đồng cấu cuối là toàn ánh, nghĩa là khi ấy
+ta có một đẳng cấu
+\[
+\operatorname{Pic}(X/S)\xrightarrow{\sim}
+\operatorname{Pic}(X)/\operatorname{Pic}(S).
+\]
+
+\result{NHẬN XÉT}{2.5} Cho $f:X\longrightarrow S$ là một cấu xạ sao cho
+$\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$, và cho $g$ là một tiết
+diện của $X$ trên $S$. Cho $\mathcal L$ là một Môđun khả nghịch trên $X$; gọi
+$g$-rigid hóa của $\mathcal L$ một đẳng cấu
+$\mathcal O_S\xrightarrow{\sim}g^*(\mathcal L)$, và gọi
+\emph{Môđun khả nghịch được $g$-rigid hóa} một Môđun khả nghịch $\mathcal L$
+trên $X$ được trang bị một phép $g$-rigid hóa. Mọi tự đẳng cấu của một cấu
+trúc như vậy đều tầm thường, và
+$\operatorname{Pic}'(X/S)$ đồng nhất với tập các lớp đẳng cấu của những Môđun
+khả nghịch được $g$-rigid hóa trên $S$. (Chính sự kiện này đã cho phép dùng lý thuyết hạ
+xuống để chứng minh 2.2(ii).) Điều này cho một cách hiểu mới về
+$\operatorname{Pic}(X/S)$, ít nhất khi $f$ còn tựa compact và tách, do đó
+$\operatorname{Pic}(X/S)\simeq\operatorname{Pic}'(X/S)$ theo 2.3.
+\src{148}
+\result{NHẬN XÉT}{2.6} Cho $f:X\longrightarrow S$ là một cấu xạ như trong
+2.2, và cho $S'\longrightarrow S$ là một cấu xạ phẳng trung thành và tựa
+compact sao cho tồn tại một $S$-cấu xạ $S'\longrightarrow X$, nghĩa là sao cho
+tồn tại một tiết diện của $X'=X\times_SS'$ trên $S'$. Đặt
+$S''=S'\times_SS'$, $X''=X\times_SS''$, và xét dãy khớp
+\[
+\operatorname{Pic}(X/S)\longrightarrow\operatorname{Pic}(X'/S')
+\rightrightarrows\operatorname{Pic}(X''/S'').
+\]
+Áp dụng 2.4, ta thu được một dãy khớp
+\[
+\operatorname{Pic}(X/S)\longrightarrow
+\operatorname{Pic}(X')/\operatorname{Pic}(S')
+\rightrightarrows
+\operatorname{Pic}(X'')/\operatorname{Pic}(S''),
+\]
+đặc biệt, mọi phần tử của nhóm Picard tương đối đã «đến từ» một phần tử của
+$\operatorname{Pic}(X')$. Như vậy điều này đơn giản hóa đáng kể mô tả nhóm
+Picard tương đối đã cho trong mục trước, và tương tự đối với hàm tử Picard của
+$X$ trên $S$, vì với mọi $T$ trên $S$, ta có thể áp dụng điều trên cho
+$X\times_ST/T$ và cấu xạ $T'=S'\times_ST\longrightarrow T$. Chẳng hạn, nếu
+chính $f$ phẳng trung thành, ta có thể lấy $S'=X$; điều này cho phép, khi $f$
+còn thuộc kiểu hữu hạn (tương ứng trơn, v.v.), trong mô tả hàm tử Picard tương
+đối $T\longmapsto\operatorname{Pic}(X\times_ST/T)$, chỉ cần xét các phép đổi
+cơ sở $T'\longrightarrow T$ thuộc kiểu hữu hạn (tương ứng trơn, v.v.). Khi
+$f$ xạ ảnh và phẳng, $S$ Noether địa phương, ta chứng minh được rằng có thể
+chọn $S'\longrightarrow S$ ở trên sao cho $S'$ là hợp rời của các phủ phẳng
+$S'_i$ của các tập mở $S_i$ của $S$ phủ $S$; nếu $f$ còn khả phân, có thể lấy $S'_i$
+étale trên $S_i$.
+
+\fsection{3}{Định lý tồn tại chính: phát biểu}
+
+Ta chưa có, ngay cả dưới dạng phỏng đoán, một phát biểu về sự tồn tại của các
+tiền lược đồ Picard bao quát mọi trường hợp đã biết. Một điều kiện «hầu như
+cần thiết», nếu có thể nói như vậy, là $f:X\longrightarrow S$ phải riêng (bảo
+đảm các tính chất hữu hạn thiết yếu) và phẳng. Các điều kiện này không đủ,
+ngay cả khi $S$ là phổ của đại số các số đối ngẫu $k[t]/(t^2)$ trên một trường
+$k$ (chẳng hạn trường các số phức $\mathbf C$), và $X$ có chiều 1. Vào thời
+điểm viết thuyết trình này, các định lý tồn tại quan trọng nhất cho tiền lược
+đồ Picard được suy ra từ định lý sau:
+
+\result{ĐỊNH LÝ}{3.1} Cho $f:X\longrightarrow S$ là một cấu xạ giữa các tiền
+lược đồ Noether địa phương. Giả sử:
+
+\noindent (i) $f$ xạ ảnh;
+\src{149}
+\noindent (ii) $f$ phẳng;
+
+\noindent (iii) các thớ hình học của $f$ là nguyên.
+
+Dưới các điều kiện này, $\operatorname{Pic}_{X/S}$ tồn tại.
+
+Chứng minh, sẽ được phác thảo trong hai mục tiếp theo, đồng thời sẽ chỉ ra điều
+sau: cho $\xi$ là tiết diện của $\operatorname{Pic}_{X/S}$ tương ứng với một
+bó rất rộng $\mathcal O_X(1)$ trên $X/S$ (nghĩa là được cảm sinh bởi một phép
+nhúng xạ ảnh $X\longrightarrow\mathbf P(\mathcal E)$); khi đó tồn tại một tập
+con mở $U$ của $\operatorname{Pic}_{X/S}$, là hợp rời của các tập con mở tựa
+xạ ảnh trên $S$, sao cho $U$ ổn định dưới phép tịnh tiến bởi $\xi$, và
+$\operatorname{Pic}_{X/S}$ là hợp tăng của các tập con mở $U-n\xi$ (tất cả
+đều đẳng cấu với $U$). Đặc biệt suy ra rằng dưới các điều kiện của 3.1,
+$\operatorname{Pic}_{X/S}$ tách trên $S$.
+
+\result{NHẬN XÉT}{3.2} Các ví dụ cho thấy (chẳng hạn với $S$ là phổ của một
+vành định giá rời rạc, và $X$ có chiều tương đối 1 trên $S$) rằng nếu trong
+3.1 ta bỏ giả thiết (iii), thay nó bằng giả thiết yếu hơn rằng với mọi
+$s\in S$, đồng cấu
+\[
+k(s)\longrightarrow H^0(X_s,\mathcal O_{X_s})
+\]
+là một đẳng cấu, thì $\operatorname{Pic}_{X/S}$ không nhất thiết tách trên
+$S$; điều này xảy ra cả trong trường hợp các thớ hình học của $f$ rút gọn,
+nhưng một thớ tổng quát hình học nguyên «vỡ» do chuyên biệt hóa thành hai thành
+phần bất khả quy, lẫn trong trường hợp các thớ hình học của $f$ bất khả quy,
+nhưng một thớ tổng quát hình học nguyên chuyên biệt hóa thành một «thớ bội».
+Trường hợp thứ nhất xảy ra chẳng hạn với một đường conic suy biến thành hai
+đường thẳng cắt nhau; một ví dụ của trường hợp thứ hai do D. Mumford cung cấp,
+với một đường cong elliptic suy biến thành một đường cong elliptic kép. Các ví
+dụ này đúng trong mọi đặc số.
+
+\result{NHẬN XÉT}{3.3} Dưới các điều kiện của 3.1, tôi không biết
+$\operatorname{Pic}_{X/S}$ có phải là một hợp rời của các tập con mở thuộc
+kiểu hữu hạn, do đó tựa xạ ảnh, trên $S$ hay không. Lưu ý rằng việc xét các
+đa thức Hilbert $Q\in\mathbf Q[t]$ cho phép, như trong trường hợp các lược đồ
+Hilbert ([4], IV), phân tích $\operatorname{Pic}_{X/S}$ thành một hợp rời của
+các tập con mở $\operatorname{Pic}^{Q}_{X/S}$, và có vẻ hợp lý rằng các tập
+sau là tựa xạ ảnh trên $S$; ít nhất ta sẽ thấy điều đó trong thuyết trình kế
+tiếp khi $f$ là một cấu xạ trơn. Cần lưu ý rằng nếu thay giả thiết (i) bằng
+giả thiết: $X$ xạ ảnh địa phương trên $S$ (điều này đủ để 3.1 đúng, vì bài toán
+tồn tại của $\operatorname{Pic}_{X/S}$ hiển nhiên có tính địa phương trên
+$S$), thì ngược lại, dễ dàng
+\src{150}
+đưa ra những ví dụ trong đó $\operatorname{Pic}_{X/S}$ chứa các thành phần
+liên thông không thuộc kiểu hữu hạn trên $S$. Chẳng hạn, cho $X_0$ là một đa
+tạp đại số xạ ảnh không kỳ dị trên một trường đóng đại số $k$, được trang bị
+một tự đẳng cấu $u$ và một phần tử $\xi$ trong nhóm Néron--Severi của $X_0$,
+sao cho các $u^n(\xi)$ đôi một khác nhau. Chẳng hạn có thể lấy $X_0$ là tích
+của một đường cong elliptic $E$ với chính nó, và lấy $u$ là tự đẳng cấu
+\[
+(x,y)\longmapsto(x,y+x)
+\]
+của $E\times E$. Cho $S$ là hợp của hai đường cong bất khả quy không kỳ dị,
+cắt nhau tại hai điểm $a$ và $b$. Trên $S$ có một phủ chính liên thông $P$ với
+nhóm $\mathbf Z$; dùng các tác động của $\mathbf Z$ trên $X_0$ được xác định
+bởi $u$, ta suy ra một phân thớ liên kết trên $S$ với thớ $X_0$ (tầm thường
+trên $S-a$ và $S-b$), và trong trường hợp riêng đang xét, thực ra là một lược
+đồ Abel trên $S$. Dễ thấy rằng $\operatorname{Pic}_{X/S}$, cũng là phân thớ
+liên kết với $P$ và với các tác động của $\mathbf Z$ trên
+$\operatorname{Pic}_{X_0/k}$ qua $u$, chứa một thành phần liên thông đẳng cấu
+với
+\[
+P\times\operatorname{Pic}^{0}_{X_0/k},
+\]
+(trong đó $\operatorname{Pic}^{0}$ chỉ thành phần liên thông của phần tử đơn
+vị trong $\operatorname{Pic}$), và thành phần này không thuộc kiểu hữu hạn
+trên $S$. [Những hiện tượng tương tự cũng xảy ra trong nhiều trường hợp tiền
+lược đồ Picard không tách trên $S$, như đã xét trong 3.3.]
+
+\fsection{4}{Các ước Cartier tương đối và các phân thớ xạ ảnh}
+
+Ta sẽ chỉ cần dùng các ước dương, và trong phần còn lại của mục này sẽ bỏ qua
+tính từ bổ sung ấy.
+
+Cho $X$ là một tiền lược đồ. Một \emph{ước Cartier} trên $X$, hay để đơn giản
+chỉ gọi là ước trên $X$, là một tiền lược đồ con đóng $D$ của $X$, được xác
+định bởi một Iđêan $\mathcal J$ là một Môđun khả nghịch, nghĩa là được sinh địa
+phương bởi một tiết diện không là ước của không của $\mathcal O_X$. Với $D$,
+ta liên kết một Môđun khả nghịch, cụ thể là
+\[
+\mathcal L(D)=\mathcal J^{-1},
+\]
+và đơn ánh chính tắc $\mathcal J\longrightarrow\mathcal O_X$ cho một đồng cấu
+chính tắc
+\[
+s_D:\mathcal O_X\longrightarrow\mathcal J^{-1}=\mathcal L(D),
+\qquad\text{nghĩa là}\quad s_D\in\Gamma(X,\mathcal L(D)).
+\]
+Hơn nữa, dữ liệu của một ước về cơ bản tương đương với dữ liệu của một Môđun
+khả nghịch $\mathcal L$ trên $X$, được trang bị một tiết diện $s$ không là ước
+của không ở mọi nơi; ngược lại, với một cặp như vậy $(\mathcal L,s)$, ta liên
+kết «ước» của $s$, ký hiệu là $\operatorname{div}(s)$. Với một
+$\mathcal L$ khả nghịch đã cho trên $X$, tập các
+\src{151}
+ước $D$ xác định $\mathcal L$ tương ứng song ánh với tập thương
+\[
+\Gamma(X,\mathcal L)^*/\Gamma(X,\mathcal O_X^*),
+\]
+trong đó $\Gamma(X,\mathcal L)^*$ chỉ bộ phận của
+$\Gamma(X,\mathcal L)$ gồm các tiết diện không là ước của không ở mọi nơi.
+
+Bây giờ giả sử ta có một cấu xạ thuộc kiểu hữu hạn địa phương
+$f:X\longrightarrow S$, và để đơn giản giả sử $S$ Noether địa phương. Cho
+$\mathcal J$ là một Iđêan coherent trên $X$, $D$ là lược đồ con của $X$ do nó
+xác định, $x\in X$, và $s=f(x)$. Ta chứng minh được rằng các điều kiện sau
+tương đương:
+
+\noindent (i) $\mathcal J$ khả nghịch tại $x$ (nghĩa là $\mathcal J_x$ được
+sinh bởi một phần tử chính quy của $\mathcal O_{X,x}$) và $D$ phẳng trên $S$
+tại $x$;
+
+\noindent (ii) $X$ và $D$ phẳng trên $S$ tại $x$, và $D_s$ là một ước Cartier
+trên thớ $X_s$ tại điểm $x$;
+
+\noindent (iii) $X$ phẳng trên $S$ tại $x$, và $\mathcal J_x$ được sinh bởi
+một phần tử $f_x$ cảm sinh trên $X_s$ một mầm không là ước của không.
+
+Khi đó ta nói $D$ là một \emph{ước Cartier tương đối} trên $X/S$ (hay chỉ là
+ước tương đối trên $X/S$) tại điểm đang xét. Từ (i), lưu ý rằng khi đó $D$
+cũng là một ước tương đối tại các điểm lân cận của $x$; do đó nếu $X$ và $D$
+phẳng trên $S$, còn $D$ riêng trên $S$, thì tập các $s\in S$ sao cho $D_s$ là
+một ước Cartier trong $X_s$ (nghĩa là sao cho $D$ là một ước Cartier tương đối
+tại các điểm của $X_s$) là một bộ phận mở của $S$. Mặt khác, định nghĩa trên
+đã được đặt ra chính xác để khái niệm ước Cartier tương đối ổn định qua một
+phép đổi cơ sở tùy ý $S'\longrightarrow S$. Bây giờ xét tập
+$\operatorname{Div}(X/S)$ các ước tương đối trên $X/S$, rồi hàm tử phản biến
+theo $S'$ biến thiên trên $S$ được định nghĩa bởi
+\[
+\operatorname{Div}_{X/S}(S')=
+\operatorname{Div}(X\times_SS'/S').
+\]
+
+Giả sử $X$ phẳng và riêng trên $S$. Khi đó, theo đặc trưng (ii) của các ước
+Cartier tương đối, $\operatorname{Div}_{X/S}$ có thể được xem là một hàm tử
+con của hàm tử $\operatorname{Hilb}_{X/S}$ được định nghĩa trong [4], IV, và
+cấu xạ bao hàm
+\[
+\operatorname{Div}_{X/S}\longrightarrow\operatorname{Hilb}_{X/S}
+\]
+«biểu diễn được bởi các phép nhúng mở» (xem [5], IV, 3.13) theo các nhận xét
+trên. Dùng định lý tồn tại chính của [4], IV, ta thu được:
+\src{152}
+\result{MỆNH ĐỀ}{4.1} Giả sử $f:X\longrightarrow S$ xạ ảnh và phẳng. Khi đó
+hàm tử $\operatorname{Div}_{X/S}$ biểu diễn được, và chính xác hơn, được biểu
+diễn bởi một tập mở của $\operatorname{Hilb}_{X/S}$.
+
+Dùng (đối với một bó $\mathcal O_X(1)$ rất rộng đã cho trên $X/S$) phân tích
+chính tắc của $\operatorname{Hilb}_{X/S}$ thành tổng các tập mở
+$\operatorname{Hilb}^{Q}_{X/S}$ tương ứng với các đa thức Hilbert
+$Q\in\mathbf Q[t]$, ta cũng suy ra một phân tích tương tự
+\[
+\operatorname{Div}_{X/S}=
+\coprod_{Q\in\mathbf Q[t]}\operatorname{Div}^{Q}_{X/S}
+\]
+thành tổng các tập mở rời nhau, tựa xạ ảnh trên $S$.
+
+Mặt khác, dùng ánh xạ $D\longmapsto\mathcal L(D)$, ta thu được một đồng cấu có
+tính hàm tử
+\begin{equation}
+\operatorname{Div}_{X/S}\longrightarrow\operatorname{Pic}_{X/S}
+\tag{+}
+\end{equation}
+mà ta sẽ nghiên cứu; dưới những điều kiện khá tổng quát, nó sẽ tỏ ra biểu diễn
+được tương đối ([5], IV, 3). Vì vậy, hãy xuất phát với một phần tử $\xi$ của
+$\operatorname{Pic}_{X/S}(S')$, để đơn giản ký hiệu giả sử $S'=S$, và chứng
+minh rằng hàm tử con tương ứng của $\operatorname{Div}_{X/S}$ biểu diễn được.
+Trước hết, xét trường hợp $\xi$ được xác định bởi một Môđun khả nghịch
+$\mathcal L$ trên $X$. Ta sẽ giả sử $X$ riêng và phẳng trên $S$, và các thớ
+hình học của $X$ trên $S$ là nguyên; điều này cũng kéo theo ([2], III, đoạn 7)
+rằng ta có $\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$ và quan hệ này
+vẫn đúng sau mọi phép đổi cơ sở $S'\longrightarrow S$. Khi đó, các ước Cartier
+tương đối $D$ trên $X/S$ sao cho $\mathcal L(D)$ và $\mathcal L$ xác định cùng
+một phần tử của $\operatorname{Pic}(X/S)=\operatorname{Pic}_{X/S}(S)$, nghĩa
+là theo 2.4, sao cho $\mathcal L(D)$ và $\mathcal L$ đẳng cấu địa phương trên
+$S$, tương ứng song ánh với các tiết diện của bó thương
+$f_*(\mathcal L)^*/\mathcal O_S^*$. Sự tương ứng này tương thích với các phép
+đổi cơ sở. Mặt khác, các xét đoán tổng quát kiểu «Künneth» ở chỗ đã dẫn (xem
+thêm [6]) cho thấy tính riêng của $X/S$ và tính phẳng của $\mathcal L$ trên
+$S$ kéo theo sự tồn tại của một Môđun coherent $\mathcal Q$ trên $S$, được
+xác định sai khác một đẳng cấu duy nhất, và một đẳng cấu các bó
+\[
+f_*(\mathcal L)\xrightarrow{\sim}
+\operatorname{Hom}_{\mathcal O_X}(\mathcal Q,\mathcal O_S),
+\]
+ hơn nữa, việc tạo thành $\mathcal Q$ tương
+thích với các phép đổi cơ sở. Ở đây $f_*(\mathcal L)^*$ chỉ bó con các tập hợp
+của $f_*(\mathcal L)$ mà các tiết diện trên $U$ là những tiết diện của
+$\mathcal L$ trên $f^{-1}(U)$ xác định các ước Cartier tương đối trên
+\src{153}
+$f^{-1}(U)/U$, nghĩa là cảm sinh các tiết diện không là ước của không trên các
+$X_s$ ($s\in U$). Dùng giả thiết rằng các thớ $X_s$ là nguyên, điều này đơn
+giản có nghĩa là các tiết diện cảm sinh trên các thớ $X_s$ không đồng nhất
+bằng không, hay nói theo các đồng cấu địa phương
+$\mathcal Q\longrightarrow\mathcal O_S$, rằng các đồng cấu ấy là toàn ánh
+(Nakayama). Điều này chứng tỏ tập các tiết diện của
+$f_*(\mathcal L)^*/\mathcal O_S^*$ tương ứng song ánh với tập các Môđun thương
+khả nghịch của $\mathcal Q$, hay cũng vậy, theo định nghĩa của phân thớ xạ ảnh
+$\mathbf P(\mathcal Q)$ liên kết với Môđun coherent $\mathcal Q$ (xem [5], V,
+2), với tập các tiết diện của $\mathbf P(\mathcal Q)$ trên $S$. Mô tả này
+tương thích với việc tạo thành các ảnh ngược, và do đó ta thu được định lý sau.
+
+\result{ĐỊNH LÝ}{4.3} Cho $f:X\longrightarrow S$ là một cấu xạ riêng và phẳng
+có các thớ hình học nguyên, với $S$ Noether địa phương, và cho $\mathcal L$ là
+một Môđun khả nghịch trên $X$. Với mọi $S'$ trên $S$, gọi $T(S')$ là tập các
+ước tương đối $D$ trên $X\times_SS'/S'$ sao cho $\mathcal L(D)$ đẳng cấu với
+$\mathcal L\otimes_{\mathcal O_S}\mathcal O_{S'}$ địa phương trên $S'$ (nghĩa
+là sao cho $\mathcal L(D)$ và
+$\mathcal L\otimes_{\mathcal O_S}\mathcal O_{S'}$ xác định cùng một phần tử
+của $\operatorname{Pic}(X\times_SS'/S')$). Khi đó tồn tại một Môđun coherent
+$\mathcal Q$ trên $S$, được xác định sai khác một đẳng cấu duy nhất, sao cho
+hàm tử $T$ được biểu diễn bởi phân thớ xạ ảnh $\mathbf P(\mathcal Q)$.
+
+\result{HỆ QUẢ}{4.4} Nếu còn giả sử $f$ xạ ảnh, thì đồng cấu có tính hàm tử
+$\operatorname{Div}_{X/S}\longrightarrow\operatorname{Pic}_{X/S}$ biểu diễn
+được bởi các cấu xạ xạ ảnh.
+
+Thật vậy, khi $X$ có một tiết diện (tương ứng, có một tiết diện địa phương)
+trên $S$, thì đồng cấu trên được biểu diễn bởi các phân thớ xạ ảnh (tương ứng,
+bởi các phân thớ xạ ảnh địa phương), nhờ 4.3 và 2.1. Trong trường hợp $f$ tựa
+xạ ảnh, ta dễ dàng quy về trường hợp trên bằng một phương pháp hạ xuống, dùng
+các tựa tiết diện hữu hạn và phẳng của $X$ địa phương trên $S$.
+
+\result{NHẬN XÉT}{4.5} Dưới các điều kiện của 4.3, Môđun $\mathcal Q$ trên
+$S$ nói chung không tự do địa phương; điều này được biểu thị bởi sự kiện rằng
+chiều của các thớ rút gọn của $\mathcal Q$, nghĩa là chiều của
+$H^0(X_s,\mathcal L_s)$ khi $s\in S$ biến thiên, có thể nhảy. Cho một Môđun
+coherent $\mathcal Q$ trên tiền lược đồ Noether địa phương $S$, dễ kiểm tra
+rằng với một $s\in S$ đã cho, $\mathcal Q$ tự do tại $s$ khi và chỉ khi
+$\mathbf P(\mathcal Q)$ phẳng trên $S$ tại các điểm nằm trên $s$ (trong trường
+hợp đó, nó thậm chí trơn trên $S$ tại các điểm nằm trên $s$); trong tình huống
+đang xét, vì $\mathcal Q$ được định nghĩa theo $\mathcal L$ như trên, điều này
+cũng có nghĩa là việc tạo thành ảnh trực tiếp $f_*(\mathcal L)$ «giao hoán với
+phép đổi cơ sở trong
+\src{154}
+một lân cận của $s$», hay cũng vậy,
+$f_*(\mathcal L)_s\longrightarrow H^0(X_s,\mathcal L_s)$ là toàn ánh. Chẳng
+hạn điều này xảy ra nếu $H^1(X_s,\mathcal L_s)=0$. Với điều kiện các tiền lược
+đồ đang xét tồn tại, các tiêu chuẩn này đặc biệt áp dụng cho tình huống phổ
+dụng $\operatorname{Div}_{X/S}\longrightarrow\operatorname{Pic}_{X/S}$, và
+cho một điều kiện cần và đủ, tương ứng một điều kiện đủ, để cấu xạ này trơn tại
+một điểm đã cho của $\operatorname{Div}_{X/S}$.
+
+\fsection{5}{Chứng minh định lý tồn tại chính}
+
+Dưới các điều kiện của 3.1, chọn một Môđun $\mathcal O_X(1)$ rất rộng trên
+$X/S$, và gọi $\xi$ là phần tử tương ứng của $\operatorname{Pic}(X/S)$. Để
+viết gọn, đặt
+\[
+P(S')=\operatorname{Pic}(X\times_SS'/S'),
+\]
+và trước hết, để đơn giản, giả sử $X/S$ có một tiết diện. Gọi $P^+(S')$ là bộ
+phận của $P(S')$ gồm các lớp của những $\mathcal L$ khả nghịch trên
+$X\times_SS'$ sao cho
+\[
+R^if'_*(\mathcal L(n))=0\quad\text{với $i>0$ và mọi $n\geq0$},
+\qquad
+f'_*(\mathcal L(n))\neq0\quad\text{với mọi $n\geq0$}.
+\]
+Đó là những điều kiện ổn định qua đổi cơ sở, nên xác định một hàm tử con
+$P^+$ của $P$, hiển nhiên ổn định dưới phép tịnh tiến bởi $\xi$. Dùng «các
+định lý A và B» của Serre ([2], III, 2) và các kết quả tổng quát ([5], IV, 5),
+dễ thấy rằng $P$ biểu diễn được khi và chỉ khi $P^+$ biểu diễn được, và khi ấy
+$P^+$ sẽ được biểu diễn bởi một tập mở $U$ của tiền lược đồ
+$\operatorname{Pic}_{X/S}$ biểu diễn $P$, còn tiền lược đồ này sẽ là hợp tăng
+của các tập mở $U-n\xi$.
+
+Để viết gọn, đặt $D=\operatorname{Div}_{X/S}$, và gọi $D^+$ là ảnh ngược của
+$P^+$ qua cấu xạ chính tắc $D\longrightarrow P$. Do đó ta có một cấu xạ
+\begin{equation}
+D^+\longrightarrow P^+,
+\tag{+}
+\end{equation}
+và ta đã biết $D^+$ được biểu diễn bởi một tập mở $D^+$ của tiền lược đồ
+$D=\operatorname{Div}_{X/S}$ (sự tồn tại của nó được bảo đảm bởi 4.1). Từ 4.3
+dễ suy ra cấu xạ (+) được biểu diễn bởi các cấu xạ trơn, xạ ảnh và toàn ánh
+(chính xác hơn, bởi các phân thớ xạ ảnh liên kết với các Môđun tự do địa
+phương không triệt tiêu ở mọi nơi): điều này là do khi $\mathcal L$ trên
+$X\times_SS'$ như ở đầu mục này, thì $f'_*(\mathcal L)$ là một Môđun tự do
+địa phương $\neq0$, mà việc tạo thành nó giao hoán với đổi cơ sở; với các ký
+hiệu của 4.3, khi đó $\mathcal Q$ đẳng cấu với đối ngẫu của
+$f'_*(\mathcal L)$. Dùng tiêu chuẩn tổng quát ([5], IV, 4.7), ta sẽ suy ra
+tính biểu diễn được của $P^+$. Ở chỗ đã dẫn, ta sẽ lấy $\mathfrak C$ là lớp
+các cấu xạ tiền lược đồ phẳng trung thành
+\src{155}
+và tựa compact (quả thật là các toàn cấu hiệu dụng theo [4], I B). Điều kiện
+(a) ở chỗ đã dẫn, tức là (+) biểu diễn được bởi các cấu xạ là phần tử của
+$\mathfrak C$, đã được kiểm chứng như vừa thấy; điều kiện (b) cũng vậy, nó có
+nghĩa là hàm tử $P^+$ tương thích với hạ phẳng trung thành tựa compact, điều
+này là hiển nhiên. Còn phải chứng minh điều kiện (c) ở chỗ đã dẫn, tức là quan
+hệ tương đương $R$ trong tiền lược đồ $D^+$ suy ra từ cấu xạ (+) biểu diễn được
+bởi $\mathfrak C$ là $\mathfrak C$-hiệu dụng, nghĩa là hiệu dụng và sao cho
+$D^+\longrightarrow D^+/R$ thuộc $\mathfrak C$. Để làm điều này, trước hết
+lưu ý rằng các tập mở $D^{+Q}$ của $D^+$ tương ứng với các đa thức Hilbert ảo
+khác nhau $Q\in\mathbf Q[t]$ ổn định dưới $R$ (vì các thớ của $R$ liên thông);
+điều này quy ta về việc chứng minh rằng với mọi $Q$, quan hệ tương đương $R^Q$
+cảm sinh trong $D^{+Q}$ là $\mathfrak C$-hiệu dụng. Nhưng giờ đây $D^{+Q}$ tựa
+xạ ảnh, còn quan hệ tương đương $R^Q$ xạ ảnh và phẳng. Do đó ta ở trong các
+điều kiện áp dụng của [4], III, 6.1, và kết quả cần chứng minh suy ra.
+
+Trong trường hợp tổng quát, khi $X/S$ không nhất thiết có một tiết diện, ta dễ
+dàng quy về trường hợp trên bằng kỹ thuật hạ xuống, hoặc lặp lại chứng minh
+trên với sửa đổi cần thiết trong định nghĩa của $P^+$.
+
+\result{CÁC NHẬN XÉT}{5.1} Phương pháp được dùng về cơ bản là phương pháp của
+Matsusaka để xây dựng xạ ảnh các đa tạp Picard. Kết quả được viện dẫn từ [4],
+III về khả năng chuyển sang thương hiệu dụng cũng có thể dễ dàng suy ra từ
+định lý tồn tại các lược đồ Hilbert (xem chẳng hạn [6]) (theo cách cổ điển, các
+thương này được xây dựng bằng cách dùng các tọa độ Chow). Lưu ý rằng việc tạo
+thành tập mở $\operatorname{Pic}^{+}_{X/S}$ của
+$\operatorname{Pic}_{X/S}$ và sự phân tích nó thành các tập mở
+$\operatorname{Pic}^{+Q}_{X/S}$ tựa xạ ảnh trên $S$, theo các đa thức Hilbert
+của các ước xác định những Môđun khả nghịch đang xét, tương thích với đổi cơ
+sở (điều này cho phép áp dụng kỹ thuật hạ xuống).
+
+\result{CÁC NHẬN XÉT}{5.2} Không loại trừ khả năng
+$\operatorname{Pic}_{X/S}$ tồn tại mỗi khi $f:X\longrightarrow S$ riêng và
+phẳng, và các đồng cấu
+\[
+k(s)\longrightarrow H^0(X_s,\mathcal O_{X_s})\qquad(s\in S)
+\]
+là những đẳng cấu (điều kiện cuối này khi đó cũng có nghĩa là
+$\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$ và quan hệ này vẫn đúng sau
+mọi phép đổi cơ sở $S'\longrightarrow S$). Ít nhất đây là điều ta chứng minh
+được trong khuôn khổ các không gian giải tích khi $f$ còn xạ ảnh, bằng một
+phương pháp khác (phương pháp của Chow, nếu không nhầm) được giải thích trong
+[5], IX, 3.1. Trong phương pháp này, việc chuyển sang
+\src{156}
+thương theo một quan hệ tương đương riêng và phẳng trong một tập mở của lược
+đồ các ước được thay bằng việc lấy thương theo nhóm xạ ảnh trong lược đồ các
+phép nhúng của $X$ vào $\mathbf P^r_S$. Phương pháp này có lẽ có thể thích nghi
+với trường hợp các lược đồ, bằng cách dùng các kết quả của Mumford về việc lấy
+thương theo nhóm xạ ảnh [8]; hiện nay chỉ có chứng minh thành văn khi $X$ có
+«nhiều tiết diện địa phương» trên $S$, chẳng hạn khi $X$ khả ly trên một vành
+địa phương đầy đủ. Về nguyên tắc, phương pháp đang xét
+có phạm vi tổng quát hơn, vì nó cũng cho sự tồn tại của các tiền lược đồ Picard
+trong những trường hợp chúng không tách, và do đó phương pháp thứ nhất tất yếu
+thất bại. (Về mặt kỹ thuật, khó khăn xuất phát từ sự kiện rằng khi các thớ hình
+học của $f$ không còn nguyên, thì hàm tử được xét trong 4.3 không còn được biểu
+diễn bởi chính phân thớ xạ ảnh $\mathbf P(\mathcal Q)$, mà bởi một tập mở của
+nó; điều này dẫn đến bài toán tế nhị về việc lấy thương theo một quan hệ tương
+đương phẳng nhưng không riêng.)
+
+\result{NHẬN XÉT}{5.3} Lưu ý rằng chứng minh được đưa ra ở đây không viện đến
+phép dựng trước các đa tạp Jacobi của các đường cong hay các họ đường cong,
+cũng không viện đến lý thuyết các đa tạp Abel hay các lược đồ Abel, và do đó
+khác về bản chất với những trình bày truyền thống như trong sách của Lang [7]
+hay thuyết trình của Chevalley [1], vốn đi theo con đường do A. Weil phác thảo.
+Ngay cả trong trường hợp các đa tạp Jacobi của những đường cong không kỳ dị
+trên một trường đóng đại số (chẳng hạn trường các số phức), phép dựng đa tạp
+Jacobi được đưa ra ở đây là phép dựng duy nhất đã biết cho những tính chất rất
+mạnh mà ta đã lấy làm định nghĩa ở mục 1 (về cơ bản là các tính chất của
+Chevalley, nhưng có tính đến các «đa tạp tham số» với phần tử lũy linh). Việc
+phép dựng các lược đồ Picard phải đi trước chứ không đi sau lý thuyết các đa
+tạp Abel là rõ ràng a priori, vì nói chung các lược đồ Picard không phải là các
+lược đồ Abel cũng không quy được về chúng; điều này đã thấy trong trường hợp
+các đường cong kỳ dị trên một trường đóng đại số, nơi xuất hiện các «đa tạp
+Jacobi suy rộng» của Rosenlicht, vốn không phải là các đa tạp Abel. Hơn nữa, lý
+thuyết các đa tạp Abel, và tổng quát hơn lý thuyết các lược đồ Abel, trở nên
+đơn giản hơn nhiều khi đã có một lý thuyết tổng quát về các lược đồ Picard. Đặc
+biệt, lý thuyết đối ngẫu cho các lược đồ Abel, nhất là các kết quả kiểu Cartier,
+khi đó trở nên gần như hình thức (xem chẳng hạn [10]).
+\src{157}
+\result{CÁC NHẬN XÉT}{5.4} «Nguyên lý tương thích» của Igusa đối với đa tạp
+Jacobi của một đường cong suy biến thành một đường cong kỳ dị chỉ có thể được
+hiểu đúng như một định lý tồn tại của lược đồ Picard của một lược đồ đường cong
+tương đối $X/S$, không nhất thiết trơn trên $S$. Vì vậy, đó là một trường hợp
+riêng của định lý tồn tại chính 3.1 khi đường cong chuyên biệt là nguyên (nghĩa
+là, theo ngôn ngữ cổ điển, bất khả quy với bội 1). Lưu ý rằng hiện nay trường
+hợp một đường cong đặc biệt khả quy (ngay cả khi các thành phần có bội 1, nghĩa
+là khi đường cong đặc biệt khả ly trên trường thặng dư) vẫn nằm ngoài các định
+lý tồn tại đã biết, trừ trường hợp ta ở trên một vành định giá rời rạc đầy đủ
+có trường thặng dư đóng đại số; so sánh 5.2. Bài toán tồn tại này chắc chắn sẽ
+đặt ra khi xây dựng bằng hình học, trong lý thuyết lược đồ, các «phép compact
+hóa» Baily--Satake của các lược đồ môđuli đường cong giống $g$. (Hiện nay phép
+compact hóa này chỉ được biết với $g=1$, nhờ công trình của Igusa.)
+
+\fsection{6}{Các định lý tồn tại tương đối}
+
+Ở đây ta sẽ phác thảo một số trường hợp hữu ích trong đó sự tồn tại của một số
+lược đồ Picard kéo theo sự tồn tại của một số lược đồ khác, nhờ đó có thể suy
+ra từ định lý chính 3.1 nhiều định lý tồn tại khác.
+
+\result{MỆNH ĐỀ}{6.1} Cho $f:X\longrightarrow S$ là một cấu xạ phẳng và xạ ảnh
+sao cho trong phân tích Stein $f=f''f'$, cấu xạ
+$f':X\longrightarrow S'$ phẳng và có các thớ hình học nguyên (do đó thỏa các
+giả thiết của 3.1), còn cấu xạ hữu hạn $f'':S'\longrightarrow S$ phẳng. Khi đó
+$\operatorname{Pic}_{X/S}$ tồn tại và (với các ký hiệu được đưa vào trong [4],
+II, C 2) ta có một đẳng cấu chính tắc
+\[
+\operatorname{Pic}_{X/S}\xrightarrow{\sim}
+\Pi_{S'/S}\operatorname{Pic}_{X/S'}.
+\]
+
+Để chứng minh, trước hết ta thiết lập một đẳng cấu các hàm tử
+\[
+\operatorname{Pic}_{X/S}\xrightarrow{\sim}
+\Pi_{S'/S}\operatorname{Pic}_{X/S'},
+\]
+rồi dùng 3.1, vốn kéo theo rằng $\operatorname{Pic}_{X/S'}$ biểu diễn được, và
+dùng cấu trúc đã nêu ở mục số\textsuperscript{} 3 của
+$\operatorname{Pic}_{X/S'}$ (kéo theo rằng mọi bộ phận hữu hạn của một thớ của
+$\operatorname{Pic}_{X/S'}$ trên $S$ đều nằm trong một tập mở afin) để có sự
+tồn tại của $\Pi_{S'/S}\operatorname{Pic}_{X/S'}$.
+\src{158}
+Chẳng hạn, khi $X$ là một lược đồ tổng của các lược đồ $X_i$ trên $S$ thỏa các
+điều kiện của 3.1, phát biểu 6.1 quy về phát biểu hiển nhiên
+\[
+\operatorname{Pic}_{X/S}\xrightarrow{\sim}
+\prod_i\operatorname{Pic}_{X_i/S}.
+\]
+
+\result{HỆ QUẢ}{6.2} Cho $f:X\longrightarrow S$ là một cấu xạ xạ ảnh và phẳng
+có các thớ hình học nguyên địa phương (chẳng hạn một cấu xạ xạ ảnh và chuẩn),
+thì $\operatorname{Pic}_{X/S}$ tồn tại.
+
+Hơn nữa, trong trường hợp này $S'$ là một phủ étale của $S$ (đúng mỗi khi $f$
+khả ly, nghĩa là phẳng với các thớ hình học rút gọn), và ta kiểm tra được rằng
+định lý cấu trúc phát biểu ở mục số\textsuperscript{} 3 cho
+$\operatorname{Pic}_{X/S}$ vẫn đúng, nhờ cấu trúc tương tự của
+$\operatorname{Pic}_{X/S'}$.
+
+Mặt khác, một thủ tục hạ xuống cho một định lý tồn tại tương đối, mà phạm vi
+của nó phụ thuộc vào lời giải cho các bài toán hạ không phẳng được nêu trong
+[4], I, A (c), và ở đây ta chỉ trình bày tường minh một trường hợp riêng:
+
+\result{MỆNH ĐỀ}{6.3} Cho $f:X\longrightarrow S$ là một cấu xạ riêng, và cho
+$X_1$, $X_2$ là hai tiền lược đồ con của $X$ phẳng trên $S$, được xác định bởi
+hai Iđêan coherent $\mathcal I_1$ và $\mathcal I_2$ sao cho
+$\mathcal I_1\cap\mathcal I_2=(0)$ và
+$\mathcal O_X/(\mathcal I_1+\mathcal I_2)$ phẳng trên $S$ (nghĩa là tiền lược
+đồ con của $X$ vốn là hợp của $X_1$ và $X_2$ thì bằng $X$, còn giao $X$ của chúng
+phẳng trên $S$). Giả sử thêm rằng với mọi $s\in S$,
+các đồng cấu
+\[
+k(s)\longrightarrow H^0(X_{i,s},\mathcal O_{X_{i,s}}),\qquad i=1,2,
+\]
+là song ánh. Khi đó đồng cấu tự nhiên của các hàm tử
+\[
+\operatorname{Pic}_{X/S}\longrightarrow
+\operatorname{Pic}_{X_1/S}\times\operatorname{Pic}_{X_2/S}
+\]
+biểu diễn được bởi các cấu xạ afin; do đó, nếu
+$\operatorname{Pic}_{X_1/S}$ và $\operatorname{Pic}_{X_2/S}$ tồn tại, thì
+$\operatorname{Pic}_{X/S}$ cũng tồn tại, và cấu xạ chính tắc
+\[
+\operatorname{Pic}_{X/S}\longrightarrow
+\operatorname{Pic}_{X_1/S}\times\operatorname{Pic}_{X_2/S}
+\]
+là afin.
+
+Bằng hạ phẳng trung thành, ta quy về trường hợp $Z$ có một tiết diện trên $S$,
+do đó xác định các tiết diện của $X$, $X_1$, $X_2$ trên $S$, cho phép loại bỏ
+các tự đẳng cấu trong những cấu trúc đang xét như đã giải thích trong 2.5.
+Chứng minh khi đó chỉ cần lưu ý rằng dữ liệu của một Môđun khả nghịch
+\src{159}
+«được rigid hóa» $\mathcal L$ trên $X$ tương đương với dữ liệu của một bộ ba
+$(\mathcal L_1,\mathcal L_2,u)$, trong đó $\mathcal L_i$ là một Môđun khả
+nghịch «được rigid hóa» trên $X_i$, còn $u$ là một đẳng cấu từ
+$\mathcal L_1|Z$ đến $\mathcal L_2|Z$, tương thích với các phép rigid hóa. Chỉ
+cần kiểm tra rằng với $\mathcal L_1$, $\mathcal L_2$ cố định, dữ liệu của $u$
+được biểu thị bởi một tiết diện của một lược đồ thích hợp trên $S$, afin trên
+$S$, điều này là dễ. Từ 6.3, ta dễ dàng suy ra:
+
+\result{HỆ QUẢ}{6.4} Cho $X$ là một lược đồ riêng và khả ly trên một trường
+$k$, và cho $X_i$ là các thành phần bất khả quy của $X$. Nếu các
+$\operatorname{Pic}_{X_i/k}$ tồn tại, thì $\operatorname{Pic}_{X/k}$ cũng tồn
+tại, và cấu xạ chính tắc
+\[
+\operatorname{Pic}_{X/k}\longrightarrow\prod_i\operatorname{Pic}_{X_i/k}
+\]
+là afin.
+
+Kết hợp với 6.2, điều này chẳng hạn chứng tỏ sự tồn tại của
+$\operatorname{Pic}_{X/k}$ mỗi khi $X$ là một lược đồ xạ ảnh và khả ly trên
+một trường $k$. Khi $X$ không còn khả ly trên $k$, ta cũng có một kết quả quy
+giản, dùng một lập luận của Oort [11]. Phương pháp cũng áp dụng trên một lược đồ
+cơ sở tùy ý (trường hợp hữu ích chẳng hạn để chứng minh trong thuyết trình tiếp
+theo kết quả hữu hạn đã thông báo ở 3.3). Để tránh một phát biểu quá kỹ thuật,
+ta chỉ xét trường hợp cơ sở là một trường:
+
+\result{MỆNH ĐỀ}{6.5} Cho $X$ là một lược đồ riêng trên một trường $k$, và cho
+$X_0$ là một lược đồ con có cùng tập hợp nền (do đó được xác định bởi một Iđêan
+lũy linh trên $X$). Khi đó cấu xạ có tính hàm tử
+\[
+\operatorname{Pic}_{X/k}\longrightarrow\operatorname{Pic}_{X_0/k}
+\]
+biểu diễn được bởi các cấu xạ afin. Đặc biệt, nếu
+$\operatorname{Pic}_{X_0/k}$ tồn tại, thì $\operatorname{Pic}_{X/k}$ cũng tồn
+tại, và cấu xạ
+$\operatorname{Pic}_{X/k}\longrightarrow\operatorname{Pic}_{X_0/k}$ là afin.
+
+Kết hợp với 6.4, ta dễ dàng kết luận:
+
+\result{HỆ QUẢ}{6.6} Cho $X$ là một tiền lược đồ xạ ảnh trên một trường $k$,
+thì $\operatorname{Pic}_{X/k}$ tồn tại.
+
+\result{NHẬN XÉT}{6.6} Rất có cơ sở để tin rằng với mọi lược đồ $X$ riêng trên
+một trường $k$, $\operatorname{Pic}_{X/k}$ tồn tại. Các kết quả trên
+quy bài toán này về trường hợp $k$ đóng đại số và $X$ nguyên. Khi đó ta biết
+tồn tại một lược đồ nguyên $X'$ xạ ảnh trên $k$ và một cấu xạ trội
+$g:X'\longrightarrow X$ (bổ đề Chow). Do đó chỉ cần chứng minh rằng
+\src{160}
+cấu xạ có tính hàm tử tương ứng
+\[
+\operatorname{Pic}_{X/k}\longrightarrow\operatorname{Pic}_{X'/k}
+\]
+biểu diễn được (và hẳn là biểu diễn được bởi các cấu xạ afin), vì mặt khác ta
+biết $\operatorname{Pic}_{X'/k}$ biểu diễn được. Điều này đặt ra những bài toán
+hạ không phẳng hiện còn chưa giải quyết. Lưu ý rằng khi ta chỉ xét hạn chế của
+hàm tử $\operatorname{Pic}_{X/k}$ lên các tiền lược đồ rút gọn (với $X$ riêng
+và nguyên trên $k$ đóng đại số), ta quả thực thu được một hàm tử biểu diễn
+được, như Chevalley [1] đã chứng minh khi $X$ chuẩn, và Seshadri [12] chứng minh
+bằng một phương pháp hạ xuống trong trường hợp tổng quát. Nhưng với các ký hiệu
+của ta, lược đồ do các tác giả ấy dựng không phải là
+$\operatorname{Pic}_{X/k}$, mà là
+$(\operatorname{Pic}_{X/k})_{\mathrm{réd}}$, lược đồ rút gọn tương ứng với
+$\operatorname{Pic}_{X/k}$.
+
+\result{NHẬN XÉT}{6.7} Tổng quát hơn, cho $f:X'\longrightarrow X$ là một cấu
+xạ toàn ánh của các tiền lược đồ riêng trên $k$. Khi đó, các xét đoán về hạ
+không phẳng dẫn đến phỏng đoán rằng
+\[
+\operatorname{Pic}_{X/k}\longrightarrow\operatorname{Pic}_{X'/k}
+\]
+là một cấu xạ afin, điều này đặc biệt kéo theo (sau khi chia cho các thành phần liên
+thông của các phần tử đơn vị) rằng đồng cấu tương ứng trên các nhóm
+Néron--Severi là đơn ánh modulo xoắn. Đây là điều có thể kiểm tra bằng lý thuyết
+giao khi $X$ và $X'$ không kỳ dị. Câu trả lời dường như chưa được biết trong
+bất kỳ trường hợp nào khác.
+
+\result{NHẬN XÉT}{6.8} Trái với điều người ta có thể nghĩ, việc xét các lược đồ
+Picard của những lược đồ đại số có phần tử lũy linh là hữu ích, thậm chí không
+thể thiếu, trong nhiều bài toán. Chẳng hạn, khi $X$ là một lược đồ xạ ảnh, giả
+sử chính quy, và $Y$ là một tiết diện siêu phẳng, cần xét các «lân cận vô cùng
+bé» mọi cấp $X_n$ của $Y$, và các lược đồ Picard
+$\operatorname{Pic}_{X_n/k}$; khi $X$ bất khả quy có chiều $\geq4$ (tương ứng
+$\geq3$), cấu xạ chính tắc
+\[
+\operatorname{Pic}_{X/k}\longrightarrow\operatorname{Pic}_{X_n/k}
+\qquad(n\text{ lớn})
+\]
+là một đẳng cấu (tương ứng, cảm sinh một đẳng cấu trên các ảnh ngược của những
+nhóm con xoắn của Néron--Severi), một kết quả sẽ hữu ích cho ta trong nghiên
+cứu định tính các lược đồ Picard ở thuyết trình tiếp theo. Tương tự, việc xét
+các lược đồ Picard của một số đường cong có phần tử lũy linh và các định lý nền
+tảng của hình học hình thức [3] cho phép kiểm chứng, trong trường hợp đồng đặc
+trưng, một phỏng đoán của Mumford, cụ thể là với mọi vành địa phương Noether
+chuẩn đầy đủ $A$ có chiều 2, nhóm các lớp ước của $A$ có thể được xem là tập
+các điểm hữu tỉ trên $k$ của một
+\src{161}
+nhóm đại số $G$ trên trường thặng dư $k$ (hơn nữa, $G$ được xác định chính tắc
+khi ta chọn một trường hệ số trong $A$). Khi $A$ có chiều tùy ý, rất có cơ sở
+để tin rằng tồn tại một nhóm pro-đại số trên $k$ đóng vai trò như $G$ ở trên;
+trong trường hợp có thể «giải kỳ dị» $\operatorname{Spec}(A)$, nhóm này được
+dựng như một giới hạn xạ ảnh của các lược đồ Picard của những lược đồ xạ ảnh
+thích hợp (có phần tử lũy linh) trên $k$.
+
+\section*{TÀI LIỆU THAM KHẢO}
+\addcontentsline{toc}{section}{Tài liệu tham khảo}
+
+\begin{description}
+\item[{[1]}] CHEVALLEY (Claude). -- Sur la théorie de Picard,
+\emph{Amer. J. of Math.}, tập 82, 1960, tr. 435--490.
+
+\item[{[2]}] GROTHENDIECK (A.) và DIEUDONNÉ (J.). -- Éléments de géométrie
+algébrique, Chapitre I et suivants. -- Paris, Presses universitaires de France,
+1960--1961 (Institut des Hautes Études Scientifiques, Publications
+mathématiques 4, 8, \ldots).
+
+\item[{[3]}] GROTHENDIECK (Alexander). -- Géométrie formelle et géométrie
+algébrique, \emph{Séminaire Bourbaki}, tập 11, 1958/59,
+số\textsuperscript{} 182, 28 tr.
+
+\item[{[4]}] GROTHENDIECK (Alexander). -- Techniques de descente et théorèmes
+d'existence en géométrie algébrique, I--IV, \emph{Séminaire Bourbaki}, tập 12,
+1959/60, số\textsuperscript{} 190, 29 tr. và số\textsuperscript{} 195, 22 tr.;
+tập 13, 1960/61, số\textsuperscript{} 212, 20 tr. và
+số\textsuperscript{} 221, 28 tr.
+
+\item[{[5]}] GROTHENDIECK (Alexander). -- Techniques de construction en
+géométrie analytique, I--X, \emph{Séminaire Cartan}, tập 13, 1960/61:
+Déformation des structures analytiques complexes, số\textsuperscript{} 7--17.
+
+\item[{[6]}] GROTHENDIECK (Alexander). -- Séminaire de géométrie algébrique,
+do Lichtenbaum biên soạn, Harvard University, 1961 (sắp xuất bản).
+
+\item[{[7]}] LANG (Serge). -- \emph{Abelian varieties}. -- New York,
+Interscience Publishers, 1959 (Interscience Tracts in pure and applied
+Mathematics, 7).
+
+\item[{[8]}] MUMFORD (D.). -- An elementary theorem in geometric invariant
+theory, \emph{Bull. Amer. math. Soc.}, tập 67, 1961, tr. 483--486.
+
+\item[{[9]}] MUMFORD (D.). -- The topology of normal singularities of an
+algebraic surface and a criterion for simplicity. -- Paris, Presses
+universitaires de France, 1961 (Institut des Hautes Études Scientifiques,
+Publications mathématiques, 9).
+
+\item[{[10]}] MUMFORD (D.) và TATE (J.). -- Séminaire de géométrie algébrique,
+Harvard University, học kỳ Xuân 1962 (sắp xuất bản).
+
+\item[{[11]}] OORT (F.). -- Sur le schéma de Picard,
+\emph{Bull. Soc. math. France}, tập 90, 1962 (sắp xuất bản).
+
+\item[{[12]}] SESHADRI (C. S.). -- Luận án sắp xuất bản trong
+\emph{Annali di Matematica}.
+\end{description}
+
+\par

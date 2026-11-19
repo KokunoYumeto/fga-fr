@@ -1,0 +1,32 @@
+from audit_utils import *
+for tree,layer in [('fr_printed','French as printed'),('fr','French corrected')]:
+ rel=f'sources/{tree}/fr/182.tex'
+ def r(a,b,line,statement='',kind='reading',why='',count=1):
+  replace(rel,a,b,layer,'182-216',line,statement,'400-dpi full scan and all three enlarged bands. '+why,kind,count=count)
+ r('est injectif si $Y$',r'est \uline{injectif} si $Y$','Remark 2','8-rem2',why='Only injectif is underlined here.')
+ r('si $A$ est complet).',r'si $A$ est \uline{complet}).','Remark 2 ending','8-rem2',why='Complet is underlined.')
+ r(r'\Osh','O','application of Lemma 5','8-thm12-cor1',why='Plain structure-sheaf O.')
+ r('le lemme 5 (en supposant','le lemme 5, (en supposant','application of Lemma 5','8-thm12-cor1',why='The comma is printed before the parenthesis.')
+ r(r'\longrightarrow\pi_1(Y)\longrightarrow e.'+ '\n'+r'\]',r'\longrightarrow\pi_1(Y)\longrightarrow e'+ '\n'+r'\]','exact sequence after Corollary 1','8-thm12-cor1',why='No period follows the displayed exact sequence.')
+ r('« géométriques »',r'\fquote{géométriques}','Corollary 2','8-thm12-cor2',why='Ordinary double quotation marks.')
+ if tree=='fr_printed':
+  r(r'$\pi_1(\overline X_1)\longrightarrow\pi_1(\overline X_0)$',r'$\pi_1(X_1)\longrightarrow\pi_1(X_0)$','Corollary 2 homomorphism','8-thm12-cor2',why='Both overbars are absent in this printed formula. The preceding hypotheses name the geometric fibers X-bar_1 and X-bar_0; corrected French retains their bars in the specialization map.')
+ for label,n in [('LEMME',6),('THÉORÈME',12),('COROLLAIRE',1),('COROLLAIRE',2)]:
+  txt,_,_=page_text(rel,216);marker='\\result{'+label+'}{'+str(n)+'} ';a=txt.index(marker)+len(marker);b=txt.find('\n\n',a);old=txt[a:b]
+  parts=re.split(r'(\(i\.e\..*?\)|\(ce qui.*?\))',old,flags=re.S)
+  new=''.join(x if i%2 else underline_prose(x) for i,x in enumerate(parts))
+  if label=='COROLLAIRE' and n==1:new=new.replace(r'\uline{est un isomorphisme}',r'\uline{est un} isomorphisme')
+  if label=='COROLLAIRE' and n==2:new=new.replace('homomorphisme est surjectif}',r'homomorphisme est} surjectif')
+  r(old,new,label+' '+str(n)+' prose','8-'+label.lower()+str(n),why='Restore selective underlining; the explanatory parentheses are plain. Corollary 1 leaves isomorphisme plain, Corollary 2 leaves surjectif plain.')
+ upright_page(rel,layer,'182-216')
+event('182-8-rem2','carried as background without fault found','Read the suggestion that the kernel should involve pi_2(Y), and the proposed injectivity over a local base. These are explicitly prospective assertions, not theorems proved on this page. Completeness gives the closed-fiber case from Theorem 12 and the arithmetic sequence; the general local-base suggestion requires additional analysis and is not certified here.','182, p. 216, Remark 2')
+event('182-8-lem6','targeted proof check','The finite étale category is unchanged by reduction: locally a standard étale presentation lifts its equations across a nilpotent ideal and its invertible Jacobian remains invertible; formal étaleness gives unique lifts of maps, hence unique overlap identifications and gluing. Finiteness across a nilpotent thickening uses affineness and finite-module lifting. For a merely nil ideal, finite presentation reduces each finite amount of data to a finitely generated nilpotent ideal. These standard algebraic lifting and finiteness facts are the background inputs; the categorical compatibility and gluing were checked.','182, p. 216, Lemma 6')
+event('182-8-thm12','targeted proof check','Apply Lemma 6 successively to X_n to get a compatible system of finite étale algebra sheaves. Theorem 3 algebraizes the coherent module and, by full faithfulness, its multiplication and unit; the algebra identities hold because they hold formally. The resulting finite X-scheme is étale along the closed fiber. Its non-étale locus is closed; properness over the complete local base forces any nonempty such locus to meet the closed fiber, a contradiction. Full faithfulness and unique infinitesimal lifting give the uniqueness of the covering and of morphisms with specified reduction. This is a deduction from Lemma 6 and Theorem 3, not a new proof of formal existence.','182, p. 216, Theorem 12')
+event('182-8-thm12-cor1','targeted proof check','Theorem 12 with its morphism-level uniqueness gives an equivalence of finite étale covering categories compatible with the chosen geometric fiber functors, so the induced fundamental-group homomorphism is an isomorphism. Combining this with Lemma 5 for X_0 and the henselian equivalence between finite étale A-algebras and finite separable k-algebras gives the displayed short exact sequence under H^0(X_0,O_X0)=k. Henselian lifting is used as background.','182, p. 216, Corollary 1 and following sequence')
+event('182-8-thm12-cor2-bars','targeted proof check','The statement introduces geometric fibers X-bar_1 and X-bar_0, and its specialization homomorphism must use these groups. The printed final formula drops both bars; corrected French retains them. The direction is generic/specializing fiber to special fiber. The construction and surjectivity proof continue on page 217 and are not certified by this notation check alone.','182, p. 216, Corollary 2')
+record_page('182',216,r'''Compared sources/fr_printed/fr/182.tex and sources/fr/fr/182.tex entry lines 1112–1163 with scan leaf 25, rendered at 400 dpi, and all three enlarged bands. Read Remark 2, Lemma 6, Theorem 12, Corollary 1 and the arithmetic exact sequence, and the statement of Corollary 2. The existing next-page marker is correct.
+
+Restored selective underlining, plain O, the comma before the Lemma 5 aside, ordinary quotation marks and the unpunctuated exact sequence. Printed French drops both bars in the Corollary 2 specialization map; corrected French retains the geometric-fiber bars, matching the objects named in the statement. The check events give the nilpotent-lifting/gluing argument with its algebraic background, the deduction of Theorem 12 from formal existence, and the fiber-functor proof of Corollary 1. The speculative general-local-base remark remains background, and Corollary 2's construction awaits its continuation.''')
+p='CHECK_RECORD.md';t=read(p).replace('## Open reading questions','- 182-216, Theorem 12 Corollary 2: confirmed the two geometric-fiber overbars in the specialization map; the printed formula omits both.\n\n## Open reading questions');write(p,t)
+from update_record_counts import update
+update()

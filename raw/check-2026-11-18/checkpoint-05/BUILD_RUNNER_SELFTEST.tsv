@@ -1,0 +1,4 @@
+test	date_utc	result	scope
+source context and physical page mapping	2026-11-18T16:31:04.736610+00:00	PASS	Two synthetic rule-only pages; no edition build, rendering, or visual inspection
+first.tex	2026-11-18T16:31:04.736635+00:00	PDF page 1; SyncTeX nodes in diagnostic line range; visual confirmation required	synthetic fixture only
+second.tex	2026-11-18T16:31:04.736646+00:00	PDF page 2; SyncTeX nodes in diagnostic line range; visual confirmation required	synthetic fixture only

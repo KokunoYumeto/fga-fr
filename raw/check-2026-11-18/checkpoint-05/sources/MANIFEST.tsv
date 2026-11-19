@@ -1,0 +1,246 @@
+# FGA: the editions' LaTeX sources, source of record (repository main branches of 18 Nov 2026). Generated 18 Nov 2026.
+path_in_zip	source	bytes	sha256	role
+fr/fr/149.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/149.tex	66030	fc1b92544020a924bf0efdd750f1504995fadf24539263fae973716f58de040d	edition source
+fr/fr/182.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/182.tex	78402	8e037bafa0c710c7c45177c0184029f1a20552c9d37f3c7423004961c959ffd8	edition source
+fr/fr/190.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/190.tex	83632	f11301218123c418f730e7062015f95a110f29368cac77945f91d805af8156c6	edition source
+fr/fr/195.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/195.tex	62627	3ad1bf8322114cc8f823c7106e0784ce37a316d20c39353b7f53faa2b02de8c8	edition source
+fr/fr/212.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/212.tex	51223	cbc5f84a7de207fb57521eb3a3d2d9ef94a035247ac4fd252ed05484bfe44042	edition source
+fr/fr/221.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/221.tex	80731	d39a4729439d14e1cd9a903bebf87c5b0bde9b8bd801807320db52b12c85847c	edition source
+fr/fr/232.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/232.tex	54433	23970db9856cd58870ccc5751663f6fb9a85c9d42a04bef2362572b33911d517	edition source
+fr/fr/236.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/236.tex	65891	9eb64c33feafce0542b3d58c67c9660b0c1801cdc492e88769e97c0d46cbdd4c	edition source
+fr/fr/com.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/com.tex	3096	01ae97a941b88a5010a3eab00cf35f36c1850873e27a3b621125bcc1b53bee41	edition source
+fr/fr/e149.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/e149.tex	1200	5918a16690464ce56d243b4b37f61c0866ab050ada98f7a8e8c4e8eb6c6e5bc5	edition source
+fr/fr/e182.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/e182.tex	3503	34681c33c273aac113adbeac0f677bf1250b366c7889a8be61163bbf55675382	edition source
+fr/fr/e190.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/e190.tex	1971	047b194f7dd8402bb8775552e0119a9cec59d585fa82e943e130b7eb50f471a2	edition source
+fr/fr/e195.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/e195.tex	3032	acd53e9717ea97a27c748034da5b8ffcc65d96e6ba639010e9336273341b1615	edition source
+fr/fr/e212.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/e212.tex	1707	dd1ed5dea490a79f0b5fc3337a66482ea907d588c0c4ae064e62f095348d7d6f	edition source
+fr/fr/e221.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/e221.tex	2282	c79a111baef4c8efea3f22a54b318e31bee262dc8d091b3cf73009d0d7909692	edition source
+fr/fr/e232.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/e232.tex	1524	9b63c43c0dcaf255fdbdf7bcc5d374bbf97b32fdb4a789903467619879909774	edition source
+fr/fr/e236.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/e236.tex	10819	0651df27a6713b6af2a2df7b64e78e925635e3f370e50f0af4c9c256553d8679	edition source
+fr/fr/main.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/fr/main.tex	1082	bb7a451f82e104b1e0784d30d336c9c3e5587d055918bafe3cd03ee09f61a085	edition source
+fr/NOTICE.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/NOTICE.tex	1920	98b39e40cc26a48ebbdd13dc1ac05aa2ce217d16f9c03d00ddb35b6d95cccf35	edition source
+fr/README.md	github KokunoYumeto/fga-fr main b433cc6, sources/current/README.md	528	6cadcc07ac462ee10edcfee21e6b8a5860ba023b448bf5e43a7603e1f4cd56ee	edition source
+fr/RIGHTS_NOTICE.md	github KokunoYumeto/fga-fr main b433cc6, sources/current/RIGHTS_NOTICE.md	1287	6c9767e7b9c1a00f1788233da78593181ec13240cf2353e78708dc2c1b345026	edition source
+fr/SOURCES.md	github KokunoYumeto/fga-fr main b433cc6, sources/current/SOURCES.md	625	7b7f47759d8d15565fc48428f7e0bce2e411a6e1b17cad79eeb123206ccc68ab	edition source
+fr/tex/base.tex	github KokunoYumeto/fga-fr main b433cc6, sources/current/tex/base.tex	2365	e73a88ba4bff1b3f85d5912e94b7eee8306b6c00d7815a33e47893cbae63f5c4	edition source
+en/en/149.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/149.tex	62243	42fdb8ee8a7db0b65e39facd6e3ebc9e6a74e655b048d9dd4a7fa1b261ad5b9c	edition source
+en/en/182.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/182.tex	73069	36feb52785502d482aa55e426d81b194a38b15bbbfe253a242b7c9bf985a0fec	edition source
+en/en/190.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/190.tex	78549	03a7b7294999b586d9d5dce97cdefc1a8a4c67470b83f8a9e5652249bb1367ce	edition source
+en/en/195.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/195.tex	58040	fd53677d9b9d5e0ad3974296e26417667b56ec83768659e7de3d1720e18cc46b	edition source
+en/en/212.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/212.tex	47601	77b19aaaa862ca46500e1d2068a8d4848958174e3b1527616329dd3af1288a27	edition source
+en/en/221.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/221.tex	75600	bef2e1570654ebab4477d7d9002a2a05e33ced2ee3b89e2049992f58c987542c	edition source
+en/en/232.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/232.tex	49892	40be73d5b11cc01b1752c194531a3ab5371f1459217ad770f55e45f6094344a5	edition source
+en/en/236.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/236.tex	60784	34cb23bcdaa56d7305c872c6256ac27a71a3efa12b72ac14922369fa595efbb4	edition source
+en/en/com.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/com.tex	2751	3244105f82c358a2bf2e0728f37f95a19f4ea750eb9a8c6a873c6ba6fcccf0c9	edition source
+en/en/e149.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/e149.tex	1051	8ba26b4f8799231f6d37ff39ff516ad999fce2fff038c611431a1cdbf57533f4	edition source
+en/en/e182.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/e182.tex	3125	d5efece5aa74c234ae985fa219a9cf8950231d4af7f11f5d7efc8ad59d75e17b	edition source
+en/en/e190.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/e190.tex	1775	d6b5b7b5339bc04f36d64d79c6930a84c7247cfb709e675758ee1ed9ccf98571	edition source
+en/en/e195.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/e195.tex	2712	4c5931b8b52c8e3d5029a19587625afe5c919675032c3b52eb04779fca98562b	edition source
+en/en/e212.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/e212.tex	1579	b9c1615d75a3f399001dfa94d1cbfda8a12af1c67132f7ce2f17ef96d0880529	edition source
+en/en/e221.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/e221.tex	2085	9cc0995d39667473bf3568cef7fa968c3cb6b56253821788a81d8cf296ca86a1	edition source
+en/en/e232.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/e232.tex	1321	ed260349ff7c0b20698d565df6d3f9d653f9975e193fd4edc2ca42a03f9f19d1	edition source
+en/en/e236.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/e236.tex	9711	bd5f4f608d269a2435bb48c07b32e94da38aad73377d545ac97683b73263e54b	edition source
+en/en/main.tex	github KokunoYumeto/fga-en main 951f773, sources/current/en/main.tex	1052	b2d5cd8d177c080f5605347e26f6a5b8dd07aa5d0e4cc537eb12ba1f8df7f3d8	edition source
+en/NOTICE.tex	github KokunoYumeto/fga-en main 951f773, sources/current/NOTICE.tex	2434	8e6ec7698c399e764989b1b4dd63640d9380ee69709daf01980c131123fa5a7d	edition source
+en/README.md	github KokunoYumeto/fga-en main 951f773, sources/current/README.md	462	40d22ee273d4b9926c3054343ef2e6d46f78c3591c5fbd0f2cd2a0fefe5d71e1	edition source
+en/RIGHTS_NOTICE.md	github KokunoYumeto/fga-en main 951f773, sources/current/RIGHTS_NOTICE.md	1177	db73478d2e9131aaea6a60adc210ca0d6382f94c1286c7176039f9fc22cd4a4a	edition source
+en/SOURCES.md	github KokunoYumeto/fga-en main 951f773, sources/current/SOURCES.md	1239	5d711058c57926fef0c1e74d7db0491f15c892ba823889a1c2e4ddf0fc32d5a7	edition source
+en/tex/base.tex	github KokunoYumeto/fga-en main 951f773, sources/current/tex/base.tex	2365	e73a88ba4bff1b3f85d5912e94b7eee8306b6c00d7815a33e47893cbae63f5c4	edition source
+es/es/149.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/149.tex	64413	6e3747420d3c0199ab971e6ae254dd0838314e42e8c3bc2021d3e3b34d299b4c	edition source
+es/es/182.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/182.tex	76179	36cfddd80e6325788de704e7c4f4d697355cc7cdab105e3e3c9546d13d99e224	edition source
+es/es/190.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/190.tex	80961	2bdfd1b54a6f18c4b259c3656daedb85265b26ade3114b644994135d66cd641f	edition source
+es/es/195.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/195.tex	61054	ea9fef71bc4eeee6ebb43ac8070a7727288c81bbb6ce733ee9b6de2df112755c	edition source
+es/es/212.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/212.tex	49709	820c1bb79ac6bc761c752cc50411b91c2c8185bf6e173dcf1d0b1d18cf63d057	edition source
+es/es/221.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/221.tex	77449	94b7dda9d798e7bd18ffb14f8348a6656fc3c96ae48ed068d2ea8baf07066350	edition source
+es/es/232.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/232.tex	51913	aff85a233a5b3b3377409f18c803fc96a6988545ee5c609fb2a1a660046d405e	edition source
+es/es/236.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/236.tex	63337	c0444b336532dcb7175454c812f5105a1f8ed86d77e08ab104ff9b76f567a067	edition source
+es/es/com.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/com.tex	2915	dbd2115b8f1b73ca0949523fc4d7a77b74a22a343adda10a4a744b0ef65f6a25	edition source
+es/es/e149.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/e149.tex	1177	8f436046738a55028f4122bf52250dcb05337cd6d2e972d38f361a19a0ce5ce1	edition source
+es/es/e182.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/e182.tex	3466	ef7c4993678c4abd64f3cb294efaed869566f5f45e034e94f1fa0ceb12956c56	edition source
+es/es/e190.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/e190.tex	1877	04d88b4a1d04491d242922cc555db724f49966cfe712a5ae07c8c09ace5f3c6f	edition source
+es/es/e195.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/e195.tex	3053	805b3fb197f24fce520b8cedcaf22be8f6d7742240fafb59bc9c6b4538c5b4ef	edition source
+es/es/e212.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/e212.tex	1642	f6174513fe17ad162016e94329f0c7828a21d1620804f01211eb063f41b3bbbb	edition source
+es/es/e221.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/e221.tex	2180	95855a980ff3ca7e194518b3f2d5c2d4837aeef9605af345582cdaf6e68819ad	edition source
+es/es/e232.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/e232.tex	1511	e51aab39022e6057e02904d982d412570002d8a8f27180dce2dd8957a5d38aef	edition source
+es/es/e236.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/e236.tex	10233	f47e9c62003bb3f2a5416df532e95aba0fb376eaaf4c325047999e0309e91190	edition source
+es/es/FGA_ES_CURRENT.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/es/FGA_ES_CURRENT.tex	5742	893701880f05d514e8513a279c40c68cb77c7ef7ed24e74543ac4852fe3f2ff9	edition source
+es/FUENTES.md	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/FUENTES.md	842	4cd5d6b8b4c39183fbfec9f52d9d55c3522fdb880ca38ae809adce3a52aa9ea4	edition source
+es/README.md	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/README.md	460	01dfd38f1b9c7821c12d97b4caedf230175b1b59696288041ac764eaaff4b07d	edition source
+es/RIGHTS_NOTICE.md	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/RIGHTS_NOTICE.md	1675	3d6e33eb246e1ab8d0057a053aab28b597d423a43bb2bc94b42f7e547de23612	edition source
+es/tex/base.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_CURRENT/tex/base.tex	2286	892edfc3af87588a8129fef919943ce2b0a40b41204c956fae406485678565f7	edition source
+es_149_printed/es/149_diplomatic.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_149_DIPLOMATIC/es/149_diplomatic.tex	64343	434ff789b1e41c7244f60f5f6719d355f7c19cb59bea50551e39a7bd1dca41bc	edition source
+es_149_printed/es/FGA_ES_149_PRINTED.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_149_DIPLOMATIC/es/FGA_ES_149_PRINTED.tex	5102	0b77c0385f0cae0758cf473fe27ad0b5bcce6d0d43b595168f076dca9ebb695c	edition source
+es_149_printed/FUENTES.md	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_149_DIPLOMATIC/FUENTES.md	842	4cd5d6b8b4c39183fbfec9f52d9d55c3522fdb880ca38ae809adce3a52aa9ea4	edition source
+es_149_printed/README.md	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_149_DIPLOMATIC/README.md	462	affd7d39216ad5ae2a197084bfea0a93d02bce9fe099a9d8cdf82ed1afe1be60	edition source
+es_149_printed/RIGHTS_NOTICE.md	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_149_DIPLOMATIC/RIGHTS_NOTICE.md	1675	3d6e33eb246e1ab8d0057a053aab28b597d423a43bb2bc94b42f7e547de23612	edition source
+es_149_printed/tex/base.tex	github KokunoYumeto/ega-fga-es main 2584473, editions/FGA_149_DIPLOMATIC/tex/base.tex	2286	892edfc3af87588a8129fef919943ce2b0a40b41204c956fae406485678565f7	edition source
+pt-BR/BUILD.md	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/BUILD.md	579	8fab89f1833fe61ed4932cd34f05c2ff88f8c287cdfeaaeb12b937b5e4a30a21	edition source
+pt-BR/CITATION.cff	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/CITATION.cff	1157	be845a7c6c1bf0366e29147a8f2a28847bcac086b3d2e6bb0bca1127abe8f398	edition source
+pt-BR/pt_BR/current/149.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/149.tex	63379	874696e798d239b7ec523c764dd4ea71f2abc711cc9c0334f27ed5591559bce6	edition source
+pt-BR/pt_BR/current/182.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/182.tex	74863	556a5343913d7cc7672d972eed560dbab37273c35747db0eb4f340f4cc0ad2d7	edition source
+pt-BR/pt_BR/current/190.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/190.tex	79663	152cd79abe0d4e1bce9418c118daf2f8c4fb95c48c7286fc8f219896e6e638f3	edition source
+pt-BR/pt_BR/current/195.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/195.tex	60075	39af254bc1501972d96ae4e63b00cae1f74cd91524530afb90959f23380f150c	edition source
+pt-BR/pt_BR/current/212.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/212.tex	49066	51f3b31bc6c5a18345b422508345c9998b566150d951bca38de02621c6e4367c	edition source
+pt-BR/pt_BR/current/221.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/221.tex	76753	919657d145259157766d883a7f0ea403ad4472865b4f2c5595a17826c197c876	edition source
+pt-BR/pt_BR/current/232.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/232.tex	52676	d45c1f951f7b8bb1f1deec9e8a00fe82acbaae88e4ef54d08a5d3160a6e966af	edition source
+pt-BR/pt_BR/current/236.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/236.tex	64135	1ffdbd27292db9484f6e2266ff1b64f04633d2f56b5474ffd1b85c919ba89633	edition source
+pt-BR/pt_BR/current/com.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/com.tex	2941	cdd388e5e427924204a07bb84d6215a63b2fdc002331460bcec89e29790bd037	edition source
+pt-BR/pt_BR/current/e149.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/e149.tex	1292	c99dbbea2bc6f522b103725222fdbbb721cff2258f19ecad9474c33411d249f5	edition source
+pt-BR/pt_BR/current/e182.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/e182.tex	3474	e1e5c9a1d412933f8edf7ed846a2e3970fbb470ab908ae974428c55eed42744b	edition source
+pt-BR/pt_BR/current/e190.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/e190.tex	1910	cd8da069f33258b14ddb376370e0f9a50f0b9b9257b108b669f7b5ba6311fa3e	edition source
+pt-BR/pt_BR/current/e195.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/e195.tex	3074	150d2697fce36196277d1bbcc6ec53b0e6e31e7651edee1d9f2db253d27c915a	edition source
+pt-BR/pt_BR/current/e212.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/e212.tex	1686	99658f84fe2b0f5aa83deca9277e63770e7d3dfe2087d6bda597a2631d1ef964	edition source
+pt-BR/pt_BR/current/e221.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/e221.tex	2322	983befbd98c4a67981718cf28879be4ac1191170c54a9e71278fb2492abd4fd7	edition source
+pt-BR/pt_BR/current/e232.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/e232.tex	1558	6c380aa98c7f4194786f208fadd6dacc1d1e24653c8532518293ab079a562e88	edition source
+pt-BR/pt_BR/current/e236.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/current/e236.tex	10109	fc1bdb09b0213ff2fad4238c6452105d39a02bc68c44668d193cbbde025fef05	edition source
+pt-BR/pt_BR/FGA_PTBR_CURRENT.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/pt_BR/FGA_PTBR_CURRENT.tex	4668	70b1a8a8fab027338e2d18e5622b50fd23b23274248fa24c8e0725497f5cc352	edition source
+pt-BR/README.md	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/README.md	379	37d55bff03ccef806fc7ebb4eadcb3d820acdfcb89ff5fdf3eed59f296f6e4c2	edition source
+pt-BR/RIGHTS_NOTICE.md	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/RIGHTS_NOTICE.md	1667	f09c67d3987ef344bf27b7ad306ef4ad8acc4c446ba1df03f8486828ed9df0db	edition source
+pt-BR/SOURCES.md	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/SOURCES.md	909	fb7453547ecb6d6601c0fb2c2ac6df70fe252fb503fe10888137bdb1d97eef40	edition source
+pt-BR/tex/base.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_CURRENT/tex/base.tex	2052	9be52495885cfeadb0ee9612405569d74cd2eebf04a6f9025ee7c75dbfad6369	edition source
+pt-BR_printed/BUILD.md	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/BUILD.md	579	d401cdeaabe2bfa3cdebe4006a9cd4b578580479675c46a2c53f184cd0dead96	edition source
+pt-BR_printed/CITATION.cff	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/CITATION.cff	1174	f0601f1d7f321ea4a431c6cf243d22e1528cb137f5e079ad37199086b99e543e	edition source
+pt-BR_printed/pt_BR/diplomatic/149.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/149.tex	61673	a206ca111662dcb5eeacb77805fc582a45a2980093ed7d92616b82fb798e5e12	edition source
+pt-BR_printed/pt_BR/diplomatic/182.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/182.tex	73849	2d1f89ab39e8ed7f786bc5f9f3a4ba1b92cf679bbf851804622100f813e1f95a	edition source
+pt-BR_printed/pt_BR/diplomatic/190.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/190.tex	78245	b1d12fa5b7e22c26fd7ef99dda179010caf5809a1aee26e3ad0e5cad668e97d6	edition source
+pt-BR_printed/pt_BR/diplomatic/195.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/195.tex	57333	f04de237b7ad9f70a58a9a0d71cde08315a30d70d7c4c87625fae6c4c33976a9	edition source
+pt-BR_printed/pt_BR/diplomatic/212.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/212.tex	47874	f5f9c1b468fe40184eca191a573fd1ec2a07c154a74cdb39fa69b33cf0bd3cbc	edition source
+pt-BR_printed/pt_BR/diplomatic/221.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/221.tex	73773	ef52e78c09df5959d0a740b65b1b02e4670dff867998205b76abc924c07139c5	edition source
+pt-BR_printed/pt_BR/diplomatic/232.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/232.tex	51245	17244b364aa12b8d85980aa06cf3e7826c90f65921f32b415cba13a8ef1a057f	edition source
+pt-BR_printed/pt_BR/diplomatic/236.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/236.tex	62123	02e9fd66714aed0437e3abb115cbfe94c0f637f5e14413721302df0aba230209	edition source
+pt-BR_printed/pt_BR/diplomatic/com.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/com.tex	2941	cdd388e5e427924204a07bb84d6215a63b2fdc002331460bcec89e29790bd037	edition source
+pt-BR_printed/pt_BR/diplomatic/e149.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/e149.tex	1292	c99dbbea2bc6f522b103725222fdbbb721cff2258f19ecad9474c33411d249f5	edition source
+pt-BR_printed/pt_BR/diplomatic/e182.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/e182.tex	3474	e1e5c9a1d412933f8edf7ed846a2e3970fbb470ab908ae974428c55eed42744b	edition source
+pt-BR_printed/pt_BR/diplomatic/e190.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/e190.tex	1910	5a035af791999209db7f5caa57303b5eac9b953efded383208f26cf7894fd072	edition source
+pt-BR_printed/pt_BR/diplomatic/e195.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/e195.tex	3074	150d2697fce36196277d1bbcc6ec53b0e6e31e7651edee1d9f2db253d27c915a	edition source
+pt-BR_printed/pt_BR/diplomatic/e212.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/e212.tex	1686	99658f84fe2b0f5aa83deca9277e63770e7d3dfe2087d6bda597a2631d1ef964	edition source
+pt-BR_printed/pt_BR/diplomatic/e221.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/e221.tex	2322	983befbd98c4a67981718cf28879be4ac1191170c54a9e71278fb2492abd4fd7	edition source
+pt-BR_printed/pt_BR/diplomatic/e232.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/e232.tex	1558	6c380aa98c7f4194786f208fadd6dacc1d1e24653c8532518293ab079a562e88	edition source
+pt-BR_printed/pt_BR/diplomatic/e236.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/diplomatic/e236.tex	9977	d99725fb09706dfe3fab507fdf6eafcd2965ad8a71a66ab19ea875f632fc273a	edition source
+pt-BR_printed/pt_BR/FGA_PTBR_PRINTED.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/pt_BR/FGA_PTBR_PRINTED.tex	4902	f7b1e95023ef84bd20bafa96624dc39726dd1e3db7301cbc54bca47c78e7851c	edition source
+pt-BR_printed/README.md	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/README.md	578	9a94652173c60c51034d027f70befd803120e4222884ae4b24e897552e56db64	edition source
+pt-BR_printed/RIGHTS_NOTICE.md	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/RIGHTS_NOTICE.md	1667	f09c67d3987ef344bf27b7ad306ef4ad8acc4c446ba1df03f8486828ed9df0db	edition source
+pt-BR_printed/SOURCES.md	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/SOURCES.md	909	fb7453547ecb6d6601c0fb2c2ac6df70fe252fb503fe10888137bdb1d97eef40	edition source
+pt-BR_printed/tex/base.tex	github KokunoYumeto/ega-fga-sga-pt-br main 421369c, editions/FGA_PTBR_PRINTED/tex/base.tex	2052	9be52495885cfeadb0ee9612405569d74cd2eebf04a6f9025ee7c75dbfad6369	edition source
+vi/ATTRIBUTION.md	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/ATTRIBUTION.md	1072	a431071e537bb4c592fad20d6f20c364b4d55ad81d29dc860c9e0c29305bf5dd	edition source
+vi/BUILD.md	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/BUILD.md	551	d6cd168231ab7c1aa59bd899558a0391c8707a56c8e867cfe7a02e7a5e7e663a	edition source
+vi/CITATION.cff	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/CITATION.cff	703	4fd857d432b014701a2e98b48eeda26eec53ad06dd8357aee10dbf1cda8b292e	edition source
+vi/controls/vi_base.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/controls/vi_base.tex	1586	812bdefe534dc545a91241f3616f98d20b197db8af5755bec558c826c566889f	edition source
+vi/FGA_vi_current.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/FGA_vi_current.tex	1647	d9b28560ed0de1885e81467fc14309f9c0fcbfa7afff137278e850f48bd3673e	edition source
+vi/NOTICE_vi.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/NOTICE_vi.tex	2660	a6898e433350c740aa38b4996ea118b7de545b36e0d8c4aee80a4636afd2e6d0	edition source
+vi/README.md	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/README.md	567	ea9b609b16825a3e2fa471e4c47add2fe45c79d6f6856f2465956b0423ee1aa9	edition source
+vi/RIGHTS_NOTICE.md	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/RIGHTS_NOTICE.md	1815	f69d8be062267f92621d33221de346240b86dd590ab133779dcc93457995a35d	edition source
+vi/sources/current/149.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/149.tex	71173	86cb1e48c9e6d8c827f10e2f907d2f435ef665a7e33377610a63977b86cd2609	edition source
+vi/sources/current/182.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/182.tex	87385	c621e237594259a12164f7db846251645830dfdfd78e3c67ab7855c4ac8d281a	edition source
+vi/sources/current/190.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/190.tex	93313	774e553d65f6b6e9456675513147a32370f691f827634410859f2d362c6743e7	edition source
+vi/sources/current/195.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/195.tex	69178	ae54fa64721f696f9e371ae05e1856308f8a024da15630cdeda30f302fe59498	edition source
+vi/sources/current/212.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/212.tex	57289	c4e6a631bbdbf08fd63fc283451cb5567efd59d695d40790e62809958546ec39	edition source
+vi/sources/current/221.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/221.tex	86939	ec07259d18d1e83f356dd6f0df4b4fe0e9f55d44993c20da57f6f7048f7594aa	edition source
+vi/sources/current/232.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/232.tex	59661	31d2d668e301113c3fdf600b9aeeac6a46d57d5103d20b47c75765da29fec3d2	edition source
+vi/sources/current/236.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/236.tex	72664	7cbb4b8b6056b4827a82c7f577a89abaea4d74463c5f3c22b024571df8accf9e	edition source
+vi/sources/current/com.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/com.tex	3442	0c30f46303404e7c075357db1142df6e9de2f80c5057eae6b6bbf885521e7f74	edition source
+vi/sources/current/e149.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/e149.tex	1290	2e76e53816ae002e531a3b0e8cae077efd1b22b482c7a659df1df40f55a66302	edition source
+vi/sources/current/e182.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/e182.tex	3786	4f7b2192c766cb5c1a13cd54728c44fdb12f312a048806b04aeee33a681e7b48	edition source
+vi/sources/current/e190.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/e190.tex	2323	8fea6770815947234e81430752f176c3ae57ab7fc258ed57c319a88fbc77398c	edition source
+vi/sources/current/e195.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/e195.tex	3313	a22d8361883e63f670fb1489767483da3aa06adb96e5554460c9dbe8ee52c0af	edition source
+vi/sources/current/e212.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/e212.tex	1912	722389bc888512d3a496eec2f64ce595b39ac24b983d5c88e2e313013343bff3	edition source
+vi/sources/current/e221.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/e221.tex	2518	7a93d278164d1d3e9be47f4cb9bceccdafbb4402597b2656888b76365350e3c4	edition source
+vi/sources/current/e232.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/e232.tex	1562	93a59e2c8d8af95e59e5f5c577a79ce0efbbc6eee24a66779b260ba36f5a4ca9	edition source
+vi/sources/current/e236.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_CURRENT/sources/current/e236.tex	11397	19d887e1ec62991f3550a106230486db040f1be02ea7d9fe1fdef79db8c232db	edition source
+vi_diplomatic/ATTRIBUTION.md	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/ATTRIBUTION.md	1072	a431071e537bb4c592fad20d6f20c364b4d55ad81d29dc860c9e0c29305bf5dd	edition source
+vi_diplomatic/BUILD.md	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/BUILD.md	557	f11912f7a31f7ea84bc76eea9129f83b0fa9aedea404af559f574e22e33e4746	edition source
+vi_diplomatic/CITATION.cff	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/CITATION.cff	713	ef60bf8cc4150ea1f1594804c9e26c52a377398422c9fedd02bc7ac409ebd64f	edition source
+vi_diplomatic/controls/vi_base.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/controls/vi_base.tex	1586	812bdefe534dc545a91241f3616f98d20b197db8af5755bec558c826c566889f	edition source
+vi_diplomatic/FGA_vi_diplomatic.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/FGA_vi_diplomatic.tex	1618	b4bc23924677f8efae35b7be62bb353c2f1c38fbd9d318a63844688bbb973a22	edition source
+vi_diplomatic/NOTICE_vi.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/NOTICE_vi.tex	2660	a6898e433350c740aa38b4996ea118b7de545b36e0d8c4aee80a4636afd2e6d0	edition source
+vi_diplomatic/README.md	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/README.md	580	4c312d479e985154e824f20456dce32cf9b294d3d837909dec1ec3a5cf445391	edition source
+vi_diplomatic/RIGHTS_NOTICE.md	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/RIGHTS_NOTICE.md	1815	f69d8be062267f92621d33221de346240b86dd590ab133779dcc93457995a35d	edition source
+vi_diplomatic/sources/diplomatic/149.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/149.tex	69066	1a360d608de8cbb5f685ec5e8fc689df38b9bff58f4709ea2b7bb5e3dedb93fa	edition source
+vi_diplomatic/sources/diplomatic/182.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/182.tex	85702	b5ae590d4169afa217a04e45ae2b02776a44a935a756b6bafbaad677cb2284d0	edition source
+vi_diplomatic/sources/diplomatic/190.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/190.tex	91607	091cc7bd50be8836921914a986dcc925d8a96303f099bf6021b9f97bcf22ce01	edition source
+vi_diplomatic/sources/diplomatic/195.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/195.tex	65806	9022a43d012ba6610a67ffffe6235993258d5c7c03787031e395d104591d3593	edition source
+vi_diplomatic/sources/diplomatic/212.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/212.tex	55895	737f6ce4e6f2226d0a301bea9e8186562845a3059a448354fc0cda5063a3311b	edition source
+vi_diplomatic/sources/diplomatic/221.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/221.tex	83457	6b1795860e8b5b4be80aa4834f2edaf5ad2aeaec0f8294b34792365dc00fcef2	edition source
+vi_diplomatic/sources/diplomatic/232.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/232.tex	57990	a7f685d5d3001b18729f518fa91eb8efcab1c885fd7cc69d6574ca2c8ab5f6ec	edition source
+vi_diplomatic/sources/diplomatic/236.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/236.tex	70454	71c8bec68938a979039e811b90152ae6737f69f29c9ebd884281dfcd23499ed6	edition source
+vi_diplomatic/sources/diplomatic/com.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/com.tex	3442	0c30f46303404e7c075357db1142df6e9de2f80c5057eae6b6bbf885521e7f74	edition source
+vi_diplomatic/sources/diplomatic/e149.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/e149.tex	1290	2e76e53816ae002e531a3b0e8cae077efd1b22b482c7a659df1df40f55a66302	edition source
+vi_diplomatic/sources/diplomatic/e182.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/e182.tex	3786	4f7b2192c766cb5c1a13cd54728c44fdb12f312a048806b04aeee33a681e7b48	edition source
+vi_diplomatic/sources/diplomatic/e190.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/e190.tex	2194	0b424b678ff216f91d022531cc10add1b358521cb0c4e64cf5ff3b8d171cb7cb	edition source
+vi_diplomatic/sources/diplomatic/e195.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/e195.tex	3313	a22d8361883e63f670fb1489767483da3aa06adb96e5554460c9dbe8ee52c0af	edition source
+vi_diplomatic/sources/diplomatic/e212.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/e212.tex	1912	722389bc888512d3a496eec2f64ce595b39ac24b983d5c88e2e313013343bff3	edition source
+vi_diplomatic/sources/diplomatic/e221.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/e221.tex	2518	7a93d278164d1d3e9be47f4cb9bceccdafbb4402597b2656888b76365350e3c4	edition source
+vi_diplomatic/sources/diplomatic/e232.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/e232.tex	1562	246687b34a8bca7198f4f660bbfd27232e25402192c3b6510f85225cd39b6cec	edition source
+vi_diplomatic/sources/diplomatic/e236.tex	github KokunoYumeto/ega-fga-sga-vi main 0c5b111, editions/FGA_CUMULATIVE_DIPLOMATIC/sources/diplomatic/e236.tex	11232	2b2a4fa35e521187218292532a81130cea8792fb87a670630050f24d05a9b72d	edition source
+ko/149.tex	github KokunoYumeto/fga-ko main c077cba, source/149.tex	66025	a35a15337650e77b65dadd9c06bec5a8929712e38caf7fb95dc22bd8c6724866	edition source
+ko/182.tex	github KokunoYumeto/fga-ko main c077cba, source/182.tex	78020	45c7f9b389aa924eb62469f684888942ce652d98cea94d1fcc63063253e6f262	edition source
+ko/190.tex	github KokunoYumeto/fga-ko main c077cba, source/190.tex	81201	2a250583beb22811b905c35b73a1cdfc0948c7d46d519e524b3ac764160213f5	edition source
+ko/195.tex	github KokunoYumeto/fga-ko main c077cba, source/195.tex	61454	b44ed4ff1e737d782aa03bf9f7d1dd5b6c5954bf59a35134ae3ca03107202e1e	edition source
+ko/212.tex	github KokunoYumeto/fga-ko main c077cba, source/212.tex	48884	8c21df761cc622a51f343d3f0f3540e3b29527e41b394044f789c8e33e4320a0	edition source
+ko/221.tex	github KokunoYumeto/fga-ko main c077cba, source/221.tex	81788	6ed2255ba1a2b93f39e7040c9e880049d73bb64a34c8b7850451ad79766935da	edition source
+ko/232.tex	github KokunoYumeto/fga-ko main c077cba, source/232.tex	53664	94b4f58556d6726fe693d6d07e4a9b75120f18b0e1cbc97ae88d8a704dab508b	edition source
+ko/236.tex	github KokunoYumeto/fga-ko main c077cba, source/236.tex	67503	4050de63fd3f8765670a064db9fb0a8478b5ad3eb680b34ca45c3dce064bc23a	edition source
+ko/base-ko.tex	github KokunoYumeto/fga-ko main c077cba, source/base-ko.tex	2715	129e1893c3941fdeecfd70841ecc252321d4af6e4c8efa09135f3a6c4373c6bc	edition source
+ko/com.tex	github KokunoYumeto/fga-ko main c077cba, source/com.tex	2873	07762f0133c7ab14a8c725e800d7c59c81d9d3b517371e6658b2b8d47b594c94	edition source
+ko/e149.tex	github KokunoYumeto/fga-ko main c077cba, source/e149.tex	1031	f72e80d17f5ac10d82038fb4c9146023440e6d05dd3f0a892a137443045409e0	edition source
+ko/e182.tex	github KokunoYumeto/fga-ko main c077cba, source/e182.tex	3160	41ba4d34d4fed14d2434ac77c66d64684edfb95752b12bfce5a9e1507a2b4269	edition source
+ko/e190.tex	github KokunoYumeto/fga-ko main c077cba, source/e190.tex	1800	a9fc5c0844be2356b0c5d1d6a7a439e2d94ebb43eff64c26c6e1166d9543ca55	edition source
+ko/e195.tex	github KokunoYumeto/fga-ko main c077cba, source/e195.tex	2850	dc42380909065a188971d9026ea506f1eee577aeb225584a6a8b1c974b54891f	edition source
+ko/e212.tex	github KokunoYumeto/fga-ko main c077cba, source/e212.tex	1601	89afd169f8f0cd3dd2caa09afab7c2f741eb7ee3f3296c5bc882fcade18fe94f	edition source
+ko/e221.tex	github KokunoYumeto/fga-ko main c077cba, source/e221.tex	2222	2663e020626a1067896542ece1f6b0c1ded33c08142160dae7fafd9287caf8d5	edition source
+ko/e232.tex	github KokunoYumeto/fga-ko main c077cba, source/e232.tex	1508	2fc9ba3d944d3ae6aea0b23f1dac33f7fd80f29b838bab0db8c692287b69bb1f	edition source
+ko/e236.tex	github KokunoYumeto/fga-ko main c077cba, source/e236.tex	10428	da6857f27c79867b57b4006206558e2a81c696b33ffb763f4673891ece1cab0f	edition source
+ko/front-ko.tex	github KokunoYumeto/fga-ko main c077cba, source/front-ko.tex	1077	f4c1fff36bdf8b66b2db526b2b55d160a69e57ba0e519b09da474262906d0cb3	edition source
+ko/main.tex	github KokunoYumeto/fga-ko main c077cba, source/main.tex	1390	8ed4aec02510fb39f0b30f910b8ae2d20df2d72cd8491b227a251602a18b4bfb	edition source
+ko/notice.tex	github KokunoYumeto/fga-ko main c077cba, source/notice.tex	2312	f328e4348052c01be3f2440a7274e759202d82f4f7c6544c227a17502c5668ae	edition source
+ko/PUBLIC_COVERAGE_MANIFEST.json	github KokunoYumeto/fga-ko main c077cba, source/PUBLIC_COVERAGE_MANIFEST.json	44518	8da15ebdfd9c9e9be374f14a143fb3c377de555346b08e1c937168348783f1b2	edition source
+zh-Hans/ATTRIBUTION.md	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/ATTRIBUTION.md	1226	c22947e52390a5552c429acf27165410d5ee0ed7bab3161cc7648a3832040172	edition source
+zh-Hans/BUILD.md	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/BUILD.md	616	df7e131f6e1eceb914a79254e6f9b4c3de81fdc289d9995346baba223660922b	edition source
+zh-Hans/CITATION.cff	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/CITATION.cff	1577	ab51d247906bc636e2140fd5e0d996201ef48ecbc66b8fce3f05bd6949fced9e	edition source
+zh-Hans/README.md	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/README.md	676	04fc3a4fbeece1de2a03ddd595ad1d75d297b1fde1f58bf9de05c393ac6c0b91	edition source
+zh-Hans/RIGHTS_NOTICE.md	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/RIGHTS_NOTICE.md	1185	9525d50079c9bdad350c870e4ec054c8bc4665649324b8dbf6eaa448d0fdb2c4	edition source
+zh-Hans/source/NOTICE.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/NOTICE.tex	2298	de7ec752acb4e944cce7820fa6b8d28ed3ffc808ffd6bc6b591c996098f0edde	edition source
+zh-Hans/source/tex/zh.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/tex/zh.tex	2767	3b57a2b41224750d70a4c5708f8f728dad8c33793a069e15cc747088c92a1d85	edition source
+zh-Hans/source/zh/149.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/149.tex	54410	e73286474d40aa33e402713296588da9cab2505fc4d361564c6d00598c782a97	edition source
+zh-Hans/source/zh/182.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/182.tex	63961	00f4c67c217cb0735428986bcffa709a3dc9f4a22da190499bc163b6b8b0d0ea	edition source
+zh-Hans/source/zh/190.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/190.tex	68918	1da0f6d6c8aad2d198ed9f1cc4006695c75d4281b390c81cc2ec314fa5941114	edition source
+zh-Hans/source/zh/195.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/195.tex	50668	6c6d24043f016c31c3d5212dcb84dcb4361db462f8913e0a712b6e390ecc8f87	edition source
+zh-Hans/source/zh/212.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/212.tex	41551	2d6906fc25ed276400bc08294ad3403601171a95e2b3a2c699bfe5d4fc1f3075	edition source
+zh-Hans/source/zh/221.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/221.tex	67956	f2d06d355dd269f33ffd2cd9416b967e50499ce6c5daba94f1bc6c1f68a63e69	edition source
+zh-Hans/source/zh/232.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/232.tex	44965	26384018ba9f98d09ff65df4eaba8967b35e97b2fbe85ec8071824c9786e913e	edition source
+zh-Hans/source/zh/236.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/236.tex	55057	ad03deb07671c4d2306c385aa64ca0f90efb72b7f0a1332d908be9c1165f5e75	edition source
+zh-Hans/source/zh/com.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/com.tex	2597	e243c3cca246bad8c7a8ca34e432900326a5f07c3dbcb80e0e2ff7bcb00f1c59	edition source
+zh-Hans/source/zh/e149.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/e149.tex	1035	6aaac4f0e98fed45dce020d2aaaca04ec1d7a14d51be533b692e05b1bf9f2369	edition source
+zh-Hans/source/zh/e182.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/e182.tex	2716	52c7cc46cbf5454cbaa38cf255611323f9c289e62046d951ffbb65f131d0ec61	edition source
+zh-Hans/source/zh/e190.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/e190.tex	1665	0e880a2eeca98283fd84a108e4483203e6ee400617a0b5353d2e960c8b4edef1	edition source
+zh-Hans/source/zh/e195.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/e195.tex	2509	999e348bc95d5996c24379cd7b8a2b8b2539ca223391196728683f90f2c3fc09	edition source
+zh-Hans/source/zh/e212.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/e212.tex	1436	4428ed5c6df96060b0f4f0d172a4503e8e1cea7dfffb5dd5f17c8eb5409dab0f	edition source
+zh-Hans/source/zh/e221.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/e221.tex	2018	4d750168ae966e11d01e84c0cafec91e651d6d1f6717acfe757e564ee353beed	edition source
+zh-Hans/source/zh/e232.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/e232.tex	1270	ac0c1a0c8681d822e97f224fefb821db90aacaf9c062e1274618259fe0e5d7bc	edition source
+zh-Hans/source/zh/e236.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/e236.tex	8574	a3d757dcc89688a6ac97183fe7ae670fa9ec78756bc17a58b57f001815648027	edition source
+zh-Hans/source/zh/main.tex	github KokunoYumeto/fga-zh-hans-cn main 4935a1e, editions/FGA_ZH_CURRENT/source/zh/main.tex	1201	dc5081796c69340f750c185d373ce7bee8b5012d2d8b3a4ec1f964b977e83b77	edition source
+fr/_repository/README.md	github KokunoYumeto/fga-fr main/README.md	3568	6077afd5d462605b47e5c942205b504f76d14a6433290d3dea92adeaae5593e1	repository record
+fr/_repository/ATTRIBUTION.md	github KokunoYumeto/fga-fr main/ATTRIBUTION.md	771	562ba3338727828108b277b5cc974234e2cddfac881988f19f7c81cc2112a486	repository record
+fr/_repository/RIGHTS_NOTICE.md	github KokunoYumeto/fga-fr main/RIGHTS_NOTICE.md	1288	48256f601552b2258b48a9a75e1c26e996f418e5d2d4b6a47c6a74d5ed349166	repository record
+fr/_repository/RIGHTS.md	github KokunoYumeto/fga-fr main/RIGHTS.md	337	4fb8e638b68139bef64429f075759cb3f9c501e5903638954b52e86a38896fe1	repository record
+fr/_repository/PURPOSE.md	github KokunoYumeto/fga-fr main/PURPOSE.md	369	54fc0cf96487d8867b0550184cbcac2f496772c9e099be2360b90be4c38c543e	repository record
+fr/_repository/CITATION.cff	github KokunoYumeto/fga-fr main/CITATION.cff	947	f6a522d8ab3e59e202439f2c024358432c6e5837fb53cba1813727dddaa97ab6	repository record
+en/_repository/README.md	github KokunoYumeto/fga-en main/README.md	3772	548a814c620ca29bd7a12e8f428cf2f6defe0d3557f2b2632db7ded662ec7376	repository record
+en/_repository/ATTRIBUTION.md	github KokunoYumeto/fga-en main/ATTRIBUTION.md	1197	7adff218b8863a0f0f3ff2e6cfd36f7dbfecaf0c08b6eafcc15a78ff359c647e	repository record
+en/_repository/RIGHTS_NOTICE.md	github KokunoYumeto/fga-en main/RIGHTS_NOTICE.md	1177	db73478d2e9131aaea6a60adc210ca0d6382f94c1286c7176039f9fc22cd4a4a	repository record
+en/_repository/RIGHTS.md	github KokunoYumeto/fga-en main/RIGHTS.md	263	f39499aee1eecfa07c4340b9c590512468781a6184dcaea38b7d5be3606c8b1e	repository record
+en/_repository/PURPOSE.md	github KokunoYumeto/fga-en main/PURPOSE.md	301	c15fec9c2f9b7ec1badce9b3222abd8baeb122d39ada6a45c8a1b00db9283654	repository record
+en/_repository/CITATION.cff	github KokunoYumeto/fga-en main/CITATION.cff	923	06e02930f6fa046f3084a13eea8f33dc96e98bdd1046a4bc98ae89b97ddca9ca	repository record
+ko/_repository/README.md	github KokunoYumeto/fga-ko main/README.md	3893	753446da50ae64599c3c9cd00fdc5e573fadd09d5332a37c144808e0ce31f9c3	repository record
+ko/_repository/ATTRIBUTION.md	github KokunoYumeto/fga-ko main/ATTRIBUTION.md	1297	8c887ced0d4d7d63abeaec1443ab4d3e42b16e1575119fc5425bbc040a85bb4d	repository record
+ko/_repository/RIGHTS_NOTICE.md	github KokunoYumeto/fga-ko main/RIGHTS_NOTICE.md	1010	b0e891794bdc739fb8a9fb5408ca0127060cd7d44ec6a889f730ab997ec6c34a	repository record
+ko/_repository/PURPOSE.md	github KokunoYumeto/fga-ko main/PURPOSE.md	285	4ceaf6dc5b787981eae89e1a034712fd3b597720c25bbeb06f954fd667469103	repository record
+ko/_repository/CITATION.cff	github KokunoYumeto/fga-ko main/CITATION.cff	1411	9857e04db82995db6ca7306dd1de0894fc03efcdbeeffa99503e8dbb99943431	repository record
+zh-Hans/_repository/README.md	github KokunoYumeto/fga-zh-hans-cn main/README.md	3552	90adfb3f24e852d6189e56a99cd047785cf6b1e5972dc77bffd6ccb15b7df1ec	repository record
+zh-Hans/_repository/ATTRIBUTION.md	github KokunoYumeto/fga-zh-hans-cn main/ATTRIBUTION.md	901	8519ba01ed595a7b49207ad05a31feba77aa8b516b959f2b4ebbef277e37a71c	repository record
+zh-Hans/_repository/RIGHTS_NOTICE.md	github KokunoYumeto/fga-zh-hans-cn main/RIGHTS_NOTICE.md	770	1ba98335318fd4d4930283b8dc51920e389594fef61ff0af40fa470e488dce45	repository record
+zh-Hans/_repository/PURPOSE.md	github KokunoYumeto/fga-zh-hans-cn main/PURPOSE.md	214	32c68ebe7a0cab47c6fae0afde6650cd30d9c08ac328ab529323030eeb67aa16	repository record
+zh-Hans/_repository/CITATION.cff	github KokunoYumeto/fga-zh-hans-cn main/CITATION.cff	1251	cdc68dee2db8cd985f4905a8e0249785c3d35024b00d98cf09f20e85839a6329	repository record
+ko/BUILD.md	Documents/french_school_pro_checks_20261117_work/dl/x_tar_fga-ko/KokunoYumeto-fga-ko-c077cba/BUILD.md	765	3e3abaa81c23bdbec0d8cc5dda2e83366d82c7667d94638b1df6054907a4c5bc	edition source
+ko/BUILD.ps1	Documents/french_school_pro_checks_20261117_work/dl/x_tar_fga-ko/KokunoYumeto-fga-ko-c077cba/BUILD.ps1	1272	afd8bb7828747153a9da7570063af64fca28662eab9f2887e5d94cc3b364cf76	edition source
+pt-BR/_repository/ATTRIBUTION_FGA.md	Documents/french_school_pro_checks_20261117_work/dl/x_tar_ega-fga-sga-pt-br/KokunoYumeto-ega-fga-sga-pt-br-421369c/ATTRIBUTION_FGA.md	830	8082705fa9e36a8974a196edb05994a5cd9ee797e40f25df4fd56ef5e2a97df7	edition source

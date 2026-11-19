@@ -1,0 +1,12 @@
+path	comparison
+sources/en/en/main.tex	front-matter block byte-for-byte identical
+sources/es/es/FGA_ES_CURRENT.tex	front-matter block byte-for-byte identical
+sources/es_149_printed/es/FGA_ES_149_PRINTED.tex	front-matter block byte-for-byte identical
+sources/fr/fr/main.tex	front-matter block byte-for-byte identical
+sources/fr_printed/fr/main.tex	front-matter block byte-for-byte identical
+sources/ko/main.tex	front-matter block byte-for-byte identical
+sources/pt-BR/pt_BR/FGA_PTBR_CURRENT.tex	front-matter block byte-for-byte identical
+sources/pt-BR_printed/pt_BR/FGA_PTBR_PRINTED.tex	front-matter block byte-for-byte identical
+sources/vi/FGA_vi_current.tex	front-matter block byte-for-byte identical
+sources/vi_diplomatic/FGA_vi_diplomatic.tex	front-matter block byte-for-byte identical
+sources/zh-Hans/source/zh/main.tex	front-matter block byte-for-byte identical

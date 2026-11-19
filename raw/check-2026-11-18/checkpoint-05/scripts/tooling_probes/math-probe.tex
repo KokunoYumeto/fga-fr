@@ -1,0 +1,12 @@
+\documentclass{article}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
+\begin{document}
+\directlua{dofile('math-probe.lua')}
+\setbox0=\hbox{\(X+x+\mathcal F+\mathfrak G\)}\directlua{dumpglyphs('normal')}
+\setbox0=\hbox{\(\symup{X+x+\mathcal F+\mathfrak G}\)}\directlua{dumpglyphs('symup')}
+\begingroup\unimathsetup{math-style=upright}
+\setbox0=\hbox{\(X+x+\mathcal F+\mathfrak G\)}\directlua{dumpglyphs('unimath-inside')}
+\endgroup
+\setbox0=\hbox{\(X+x+\mathcal F+\mathfrak G\)}\directlua{dumpglyphs('after-group')}
+\end{document}

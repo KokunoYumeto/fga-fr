@@ -1,0 +1,1425 @@
+\unit{Exposição 149 — Teoremas de dualidade para os feixes algébricos coerentes}
+\sid{149}
+\markboth{Exposição 149}{Exposição 149}
+\src{169}
+\seminar{(Maio de 1957)}
+\paperhead{TEOREMAS DE DUALIDADE PARA OS FEIXES ALGÉBRICOS COHERENTES}%
+  {por Alexandre GROTHENDIECK}
+
+Os resultados que seguem, inspirados no \fquote{teorema de dualidade algébrica}
+de Serre, foram obtidos nos invernos de 1955 e 1956. Demonstram-se muito
+simplesmente com o auxílio de resultados bastante elementares sobre a cohomologia dos espaços
+projetivos [3] e mediante o uso intensivo da álgebra homológica de
+Cartan--Eilenberg, na forma de [2].
+
+\fsection{1}{Os Ext de feixes de módulos ({[2]}, caps. 3 e 4)}
+
+Seja $X$ um espaço topológico provido de um feixe $\Osh$ de anéis com unidade
+(não necessariamente comutativos). Consideramos a categoria abeliana
+$\Ccat^{\Osh}$ dos feixes de $\Osh$-módulos, chamados também $\Osh$-Módulos.
+Sabe-se que todo objeto desta categoria admite uma resolução injetiva, o que
+permite definir nela os funtores $\operatorname{Ext}$ com as propriedades
+formais bem conhecidas. Mais precisamente, para evitar confusões,
+denotamos por $\operatorname{Hom}_{\Osh}(X;A,B)$, ou simplesmente por
+$\operatorname{Hom}(X;A,B)$, o grupo abeliano dos $\Osh$-homomorfismos de $A$
+em $B$, enquanto que $\Homsh_{\Osh}(A,B)$ denotará o feixe de germes
+de homomorfismos de $A$ em $B$ ($A,B\in\Ccat^{\Osh}$). Para
+$A\in\Ccat^{\Osh}$ fixo, definem-se funtores $h_A$ e $\hsh_A$ com valores, respectivamente,
+na categoria $\Ccat$ dos grupos abelianos e na categoria
+$\Ccat^{\Zsh}$ dos feixes abelianos sobre $X$, mediante as fórmulas:
+\begin{equation}\tag{1.1}
+  h_A(B)=\operatorname{Hom}_{\Osh}(X;A,B),
+  \qquad
+  \hsh_A(B)=\Homsh_{\Osh}(A,B).
+\end{equation}
+
+Os funtores $h_A$ e $\hsh_A$ são funtores covariantes exatos pela esquerda,
+dos quais consideramos os funtores derivados à direita, denotados respectivamente por
+$\operatorname{Ext}_{\Osh}^{p}(X;A,B)$ e $\Extsh_{\Osh}^{p}(A,B)$. Portanto,
+por definição,
+\begin{equation}\tag{1.2}
+\left\{
+\begin{aligned}
+\operatorname{Ext}_{\Osh}^{p}(X;A,B)
+  &= (R^{p}h_A)(B)
+   = H^{p}\bigl(\operatorname{Hom}_{\Osh}(X;A,C(B))\bigr),\\
+\Extsh_{\Osh}^{p}(A,B)
+  &= (R^{p}\hsh_A)(B)
+   = H^{p}\bigl(\Homsh_{\Osh}(A,C(B))\bigr),
+\end{aligned}
+\right.
+\end{equation}
+
+onde o símbolo $R^{p}$ designa a passagem aos funtores derivados à direita, e onde
+$C(B)$ designa uma resolução injetiva arbitrária de $B$ em $\Ccat^{\Osh}$.
+Denotemos por
+\[
+  \Gamma:\Ccat^{\Zsh}\longrightarrow\Ccat
+\]
+o funtor \fquote{seções}. Lembremos que seus funtores derivados à direita são
+denotados por
+\[
+  B\longmapsto H^{p}(X,B).
+\]
+
+\src{170}
+\begin{equation}\tag{1.3}
+  H^{p}(X,B)=(R^{p}\Gamma)(B)=H^{p}\bigl(\Gamma(C(B))\bigr).
+\end{equation}
+Evidentemente, tem-se $h_A=\Gamma\hsh_A$; por outro lado, verifica-se que $\hsh_A$
+transforma objetos injetivos em objetos acíclicos para $\Gamma$. Conclui-se do
+modo habitual:
+
+\result{PROPOSIÇÃO}{1} Para todo $\Osh$-Módulo $A$ existe um funtor
+espectral cohomológico sobre $\Ccat^{\Osh}$, que converge ao funtor graduado
+$\bigl(\operatorname{Ext}_{\Osh}^{*}(X;A,B)\bigr)$ e cujo termo inicial é
+\begin{equation}\tag{1.4}
+  E_{2}^{p,q}(A,B)=H^{p}\bigl(X,\Extsh_{\Osh}^{q}(A,B)\bigr).
+\end{equation}
+Dela se deduzem \fquote{homomorfismos de bordo} e uma sequência exata de cinco termos
+que não escreveremos.
+
+\result{COROLÁRIO}{1} Se $A$ é localmente isomorfo a $\Osh^{n}$, então têm-se
+isomorfismos canônicos
+\begin{equation}\tag{1.5}
+  \operatorname{Ext}_{\Osh}^{p}(X;A,B)
+  \overset{\sim}{\longleftarrow}
+  H^{p}\bigl(X,\Homsh_{\Osh}(A,B)\bigr)
+\end{equation}
+(dados por homomorfismos de bordo da sequência espectral). Em particular, tem-se
+um isomorfismo canônico
+\begin{equation}\tag{1.6}
+  \operatorname{Ext}_{\Osh}^{p}(X;\Osh,B)=H^{p}(X,B).
+\end{equation}
+
+Para utilizar estes resultados, é preciso determinar explicitamente os
+$\Extsh_{\Osh}^{p}(A,B)$. São funtores que se calculam localmente,
+isto é, se $U$ é um aberto de $X$, tem-se
+\[
+  \Extsh_{\Osh}^{p}(A,B)|U
+  =\Extsh_{\Osh|U}^{p}(A|U,B|U),
+\]
+como resulta do fato de que a restrição a $U$ de um $\Osh$-Módulo injetivo
+é um $(\Osh|U)$-Módulo injetivo. Além disso, para $x\in X$ fixo, há homomorfismos funtoriais
+\begin{equation}\tag{1.7}
+  \Homsh_{\Osh}(A,B)_x
+  \longrightarrow
+  \operatorname{Hom}_{\Osh_x}(A_x,B_x),
+\end{equation}
+que se prolongam de maneira única a um homomorfismo de funtores cohomológicos
+em $B$:
+\begin{equation}\tag{1.8}
+  \Extsh_{\Osh}^{p}(A,B)_x
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_x}^{p}(A_x,B_x).
+\end{equation}
+
+\result{PROPOSIÇÃO}{2} Se $A$ é, em uma vizinhança de $x$, isomorfo ao
+conúcleo de um homomorfismo $\Osh^{m}\longrightarrow\Osh^{n}$, então (1.7) é um
+isomorfismo para todo $p$. Isto ocorre, em
+particular, se $A$ é um $\Osh$-módulo coerente [3].
+
+\src{171}
+\result{PROPOSIÇÃO}{3} Seja $L_{*}=(L_i)$ uma resolução pela esquerda do
+$\Osh$-Módulo $A$ por $\Osh$-Módulos cada um dos quais é localmente isomorfo a
+um $\Osh^{n}$. Então $\Extsh_{\Osh}^{*}(A,B)$ identifica-se com
+$H^{*}\bigl(\Homsh_{\Osh}(L_{*},B)\bigr)$, e
+$\operatorname{Ext}_{\Osh}^{*}(X;A,B)$ identifica-se com a hipercohomologia de $X$
+com respeito ao complexo $\Homsh_{\Osh}(L_{*},B)$.
+
+A demonstração é padrão: considera-se o bicomplexo
+$\Homsh_{\Osh}(L_{*},C(B))$, onde $C(B)$ é uma resolução injetiva de $B$, e os
+homomorfismos naturais de $\Homsh_{\Osh}(L_{*},B)$ e de
+$\Homsh_{\Osh}(A,C(B))$ neste último.
+
+Para terminar, assinalemos que os dois funtores $\operatorname{Ext}$ introduzidos
+em (1.2) não são apenas funtores cohomológicos em $B$, mas também
+bifuntores cohomológicos, covariantes em $B$ e contravariantes em $A$.
+
+\fsection{2}{Lei de composição nos Ext}
+
+Os resultados deste número devem-se, independentemente, a CARTIER e a YONEDA; veja-se
+uma exposição de CARTIER [1] para mais detalhes. Seja $\Ccat$ uma categoria abeliana.
+Sejam $K$ e $L$ dois objetos graduados de $\Ccat$. Denotamos por
+$\operatorname{Hom}(K,L)$ o grupo abeliano graduado cuja componente de grau
+$n$ é formada pelos homomorfismos homogêneos de grau $n$ de $K$ em $L$ (isto é,
+os sistemas $(u_i)$ de homomorfismos $K^{i}\longrightarrow L^{i+n}$).
+
+Se $K$ e $L$ são complexos (com operadores diferenciais de grau $+1$, para
+fixar as ideias), introduz-se em $\operatorname{Hom}(K,L)$ o operador
+diferencial dado por
+\begin{equation}\tag{2.1}
+  \delta(u)=du+(-1)^{n+1}ud,\qquad\text{onde }n=\deg(u),
+\end{equation}
+que o converte em um complexo com operador diferencial de grau $+1$. Os ciclos de
+grau $n$ são os operadores de grau $n$ que anticomutam com $u$ (como
+operadores homogêneos). Pode-se então considerar
+$H^{*}\bigl(\operatorname{Hom}(K,L)\bigr)$; este é um invariante dos tipos
+de homotopia de $K$ e de $L$, que poderemos denotar por $H^{*}(K,L)$.
+
+Dado um terceiro complexo $M$, a composição dos homomorfismos
+define um acoplamento
+\[
+  \operatorname{Hom}(K,L)\times\operatorname{Hom}(L,M)
+  \longrightarrow\operatorname{Hom}(K,M)
+\]
+compatível com os operadores diferenciais, de onde, ao passar à cohomologia,
+obtêm-se acoplamentos
+\begin{equation}\tag{2.2}
+  H^{*}(K,L)\times H^{*}(L,M)\longrightarrow H^{*}(K,M),
+\end{equation}
+denotados por $(u,v)\longmapsto vu$. Estes acoplamentos satisfazem a evidente propriedade
+de associatividade. Em particular, $H^{*}(K,K)$ é um anel graduado associativo
+com unidade, e $H^{*}(K,L)$ (resp. $H^{*}(L,K)$) é um módulo graduado pela direita
+(resp. pela esquerda) sobre este anel, etc. Em grau $0$, (2.2) reduz-se à
+composição dos morfismos de complexos. Finalmente, uma sequência exata de
+complexos
+\[
+  0\longrightarrow K'\longrightarrow K\longrightarrow K''\longrightarrow 0,
+\]
+\src{172}
+tal que $K'^{i}$ se identifica com um somando direto de $K^{i}$ para todo $i$,
+dá lugar a uma sequência exata de complexos de grupos
+$\operatorname{Hom}(K'',L)$, etc., e daí a um operador de conexão
+\[
+  H^{i}(K',L)\longrightarrow H^{i+1}(K'',L).
+\]
+Definem-se de maneira análoga os operadores de conexão relativos a uma sequência exata em $L$. Os
+acoplamentos (2.2) são compatíveis, no sentido usual, com estes operadores de conexão.
+
+Suponhamos agora que $\Ccat$ é uma categoria tal que todo objeto $A$
+de $\Ccat$ admite uma resolução injetiva $C(A)$. Verifica-se então, utilizando
+uma das numerosas variantes do teorema do bicomplexo, que
+\[
+  H^{*}\bigl(C(A),C(B)\bigr)
+  =H^{*}\bigl(\operatorname{Hom}(C(A),C(B))\bigr)
+\]
+é canonicamente isomorfo a
+\[
+  H^{*}\bigl(\operatorname{Hom}(A,C(B))\bigr)
+  =\operatorname{Ext}^{*}(A,B).
+\]
+Os operadores de conexão considerados anteriormente dão os homomorfismos de conexão dos
+$\operatorname{Ext}$. Além disso, os acoplamentos (2.2) dão aqui
+acoplamentos associativos, compatíveis com os homomorfismos de conexão:
+\begin{equation}\tag{2.3}
+  \operatorname{Ext}^{*}(A,B)\times\operatorname{Ext}^{*}(B,C)
+  \longrightarrow\operatorname{Ext}^{*}(A,C).
+\end{equation}
+Em particular, $\operatorname{Ext}^{*}(A,A)$ é um anel graduado associativo
+com unidade, etc. (Demonstra-se de maneira análoga que os funtores
+$\operatorname{Ext}$ operam nos funtores derivados de um funtor
+qualquer; não utilizaremos aqui este fato.)
+
+No caso em que a categoria considerada seja a categoria $\Ccat^{\Osh}$ dos
+$\Osh$-Módulos sobre $X$, obtêm-se, portanto, acoplamentos
+\begin{equation}\tag{2.4}
+  \operatorname{Ext}_{\Osh}^{p}(X;A,B)
+  \times\operatorname{Ext}_{\Osh}^{q}(X;B,C)
+  \longrightarrow\operatorname{Ext}_{\Osh}^{p+q}(X;A,C),
+\end{equation}
+que podem ser explicitados como foi indicado. De resto, os mesmos
+desenvolvimentos, substituindo a categoria dos grupos abelianos pela
+categoria dos feixes abelianos sobre $X$, e os funtores $\operatorname{Hom}$
+pelos funtores $\Homsh$, definem também acoplamentos com as mesmas
+propriedades formais e, desta vez, de \fquote{natureza local}:
+\begin{equation}\tag{2.5}
+  \Extsh_{\Osh}^{p}(A,B)\times\Extsh_{\Osh}^{q}(B,C)
+  \longrightarrow\Extsh_{\Osh}^{p+q}(A,C).
+\end{equation}
+Estes últimos são determinados observando-se que os homomorfismos (1.8) são
+compatíveis com os acoplamentos entre os $\operatorname{Ext}$.
+
+\src{173}
+Lembremos, por fim, que existe também uma estrutura multiplicativa entre os funtores
+$H^{p}(X,A)$ (produto cup). Verifica-se então que as sequências espectrais da
+proposição 1 são compatíveis com as estruturas multiplicativas; mais
+precisamente, tem-se um acoplamento da sequência espectral $E(A,B)$ e da sequência
+espectral $E(B,C)$ para a sequência espectral $E(A,C)$ que, no limite,
+se reduz ao acoplamento entre os $\operatorname{Ext}$ globais e, no
+termo inicial, ao acoplamento deduzido, no segundo membro de (1.4), do
+produto cup e dos acoplamentos dos $\operatorname{Ext}$ locais. Disso resulta,
+em particular, que os \fquote{homomorfismos de bordo}
+\begin{equation}\tag{2.6}
+  \operatorname{Ext}_{\Osh}^{n}(X;A,B)
+  \longrightarrow H^{0}\bigl(X,\Extsh_{\Osh}^{n}(A,B)\bigr)
+\end{equation}
+e
+\begin{equation}\tag{2.7}
+  H^{n}\bigl(X,\Homsh_{\Osh}(A,B)\bigr)
+  \longrightarrow\operatorname{Ext}_{\Osh}^{n}(X;A,B)
+\end{equation}
+são compatíveis com as estruturas multiplicativas. Portanto, se nos restringirmos aos
+feixes localmente isomorfos a um $\Osh^{m}$, isto explicita por completo a
+composição entre os $\operatorname{Ext}$ globais mediante o produto cup, levando
+em conta o isomorfismo (1.5).
+
+\fsection{3}{Resultados de cohomologia local}
+
+Seja $A$ um anel comutativo com unidade provido de um ideal $J$. Vamos
+definir, para um $A$-módulo variável $M$, homomorfismos funtoriais
+\begin{equation}\tag{3.1}
+\left\{
+\begin{aligned}
+\operatorname{Ext}_{A}^{p}(A/J,M)
+  &\longrightarrow
+  \operatorname{Hom}_{A}\!\left(\bigwedge^{p}J/J^{2},M\otimes A/J\right),\\
+\operatorname{Tor}_{p}^{A}(A/J,M)
+  &\longleftarrow
+  \left(\bigwedge^{p}J/J^{2}\right)
+  \otimes\operatorname{Hom}_{A}(A/J,M),
+\end{aligned}
+\right.
+\end{equation}
+onde os produtos tensoriais e exteriores são tomados sobre o anel $A$; note-se,
+por outro lado, que $J/J^{2}$ é, na realidade, um $A/J$-módulo, e que suas potências
+exteriores como $A$-módulo ou como $A/J$-módulo são as mesmas.
+Definir os homomorfismos (3.1) equivale a definir, para todo
+sistema $\underline{x}=(x_1,\ldots,x_p)$ de elementos de $J$, homomorfismos
+$\varphi_{\underline{x}}$:
+\begin{equation}\tag{3.2}
+\left\{
+\begin{aligned}
+\varphi_{\underline{x}}:
+  \operatorname{Ext}_{A}^{p}(A/J,M)&\longrightarrow M\otimes A/J,\\
+\varphi_{\underline{x}}:
+  \operatorname{Hom}_{A}(A/J,M)&\longrightarrow
+  \operatorname{Tor}_{p}^{A}(A/J,M),
+\end{aligned}
+\right.
+\end{equation}
+de tal maneira que sejam satisfeitas as condições seguintes:
+
+\src{174}
+\begin{enumerate}
+\item[\textup{i.}] $\varphi_{x_1,\ldots,x_p}$ depende de maneira
+$A$-multilinear alternada do sistema dos $x_i\in J$.
+\item[\textup{ii.}] $\varphi_{x_1,\ldots,x_p}$ é nulo quando algum dos $x_i$ está
+em $J^{2}$.
+\end{enumerate}
+Na realidade, ii. resulta de i., pois $a\varphi_{\underline{x}}=0$ para $a\in J$,
+como se vê observando que todos os módulos de (3.2) são anulados por
+$J$.
+
+Para definir $\varphi_{\underline{x}}$, consideremos o complexo
+$K_{\underline{x}}$ cujo $A$-módulo subjacente é $\bigwedge A^{p}$, e
+cujo operador diferencial é o produto interior $i_{\underline{x}}$ por
+$\underline{x}$ considerado como forma linear sobre $A^{p}$ de componentes
+$x_1,\ldots,x_p$. O operador diferencial é de grau $-1$, os graus são
+positivos, e a cohomologia deste complexo em grau $0$ é
+$A/(x_1A+\cdots+x_pA)$. Como os $x_i$ estão em $J$, deduz-se uma
+aumentação $K_{\underline{x},0}\longrightarrow A/J$. Assim,
+$K_{\underline{x}}$ aparece como um complexo livre aumentado, com módulo
+de aumentação $A/J$. Disso se deduzem, do modo habitual, homomorfismos
+\[
+\operatorname{Ext}_{A}^{*}\bigl(H_0(K_{\underline{x}}),M\bigr)
+\longrightarrow
+H^{*}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr)
+\]
+e
+\[
+\operatorname{Tor}_{*}^{A}\bigl(H_0(K_{\underline{x}}),M\bigr)
+\longleftarrow
+H_{*}\bigl(K_{\underline{x}}\otimes_A M\bigr),
+\]
+de onde, compondo com os homomorfismos sobre os $\operatorname{Ext}$ e os
+$\operatorname{Tor}$ deduzidos do homomorfismo de aumentação
+$H_0(K_{\underline{x}})\longrightarrow A/J$, obtêm-se homomorfismos
+\begin{equation}\tag{3.3}
+\left\{
+\begin{aligned}
+\psi_{\underline{x}}:
+\operatorname{Ext}_{A}^{*}(A/J,M)
+&\longrightarrow H^{*}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr),\\
+\psi_{\underline{x}}:
+\operatorname{Tor}_{*}^{A}(A/J,M)
+&\longleftarrow H_{*}\bigl(K_{\underline{x}}\otimes_A M\bigr).
+\end{aligned}
+\right.
+\end{equation}
+Ora, verifica-se imediatamente que, em grau máximo $p$, a cohomologia dos segundos
+membros é $M/(x_1M+\cdots+x_pM)$ (resp. é o conjunto dos elementos de $M$
+anulados por cada um dos $x_i$). Como os $x_i$ estão em $J$, deduzem-se
+homomorfismos
+\begin{equation}\tag{3.4}
+\left\{
+\begin{aligned}
+H^{p}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr)
+&\longrightarrow M\otimes A/J,\\
+H_{p}\bigl(K_{\underline{x}}\otimes_A M\bigr)
+&\longleftarrow\operatorname{Hom}_{A}(A/J,M).
+\end{aligned}
+\right.
+\end{equation}
+Compondo os homomorfismos (3.3) e (3.4), obtêm-se os homomorfismos (3.2)
+que queríamos definir. A verificação de i. é laboriosa, mas não
+apresenta dificuldades.
+
+\src{175}
+\result{PROPOSIÇÃO}{4} Seja $A$ um anel comutativo com unidade, e seja
+$(x_1,\ldots,x_p)$ uma sequência de elementos de $A$ tal que, para $1\leq i\leq p$,
+a imagem de $x_i$ no quociente de $A$ pelo ideal gerado por
+$(x_1,\ldots,x_{i-1})$ não seja divisor de $0$. Seja $J$ o ideal gerado
+pelos $x_i$. Então $J/J^{2}$ é um $(A/J)$-módulo livre que tem por base as
+imagens canônicas dos $x_i$, o complexo $K_{\underline{x}}$ é uma resolução
+livre de $A/J$, e para todo $A$-módulo $M$, os homomorfismos (3.1) em
+grau $p$ são bijetivos. O mesmo ocorre com os homomorfismos análogos
+definidos para graus $i$ quaisquer, sempre que $J.M=0$.
+
+(O ponto essencial, do qual resultam todos os demais, é a aciclicidade de
+$K_{\underline{x}}$, que é um fato bem conhecido sob as condições indicadas.)
+
+\result{COROLÁRIO}{1} Sejam $A$ e $J$ como acima, e suponhamos além disso que
+$A$ é uma álgebra afim regular de $\dim n$ sobre um corpo perfeito $k$, e
+que $A/J$ é uma álgebra afim regular. Denotemos por $\Omega^{1}(A)$,
+$\Omega^{1}(A/J)$ os módulos de diferenciais de Kähler. Então tem-se um
+isomorfismo canônico compatível com a localização,
+\begin{equation}\tag{3.5}
+  \operatorname{Ext}_{A}^{p}\bigl(\Omega^{n-p}(A/J),\Omega^{n}(A)\bigr)=A/J.
+\end{equation}
+Com efeito, $\Omega^{n-p}(A/J)$ é um $(A/J)$-módulo livre de posto $1$, e igualmente
+$\Omega^{n}(A)$ é um $A$-módulo livre de posto $n$,
+pelo que o primeiro membro é igual a
+\[
+  \operatorname{Ext}_{A}^{p}(A/J,A)
+  \otimes\Omega^{n-p}(A/J)'\otimes\Omega^{n}(A)
+\]
+(onde o símbolo « $'$ » designa o $(A/J)$-módulo dual). O produto tensorial dos
+dois últimos fatores identifica-se com $\bigwedge^{p}(J/J^{2})$, pelo que o conjunto
+identifica-se com
+\[
+  \operatorname{Ext}_{A}^{p}\!\left(A/J,\bigwedge^{p}(J/J^{2})\right),
+\]
+e, pela proposição, com
+\[
+  \operatorname{Hom}_{A}\!\left(\bigwedge^{p}J/J^{2},
+  \bigwedge^{p}J/J^{2}\right),
+\]
+isto é, com $A/J$. Em particular, em
+$\operatorname{Ext}_{A}^{p}\bigl(\Omega^{n-p}(A/J),\Omega^{n}(A)\bigr)$ há um
+elemento distinguido, correspondente ao elemento unidade de $A/J$, chamado
+\emph{classe fundamental do ideal $J$ em $A$}. (Na realidade, pode
+ser definida sob condições sensivelmente mais gerais.) O
+corolário 1 pode ser apresentado em uma forma mais geométrica e mais global:
+
+\result{COROLÁRIO}{2} Sejam $X$ uma variedade não singular sobre um corpo
+algebricamente fechado $k$, $Y$ uma subvariedade fechada não singular de $X$,
+$\Osh_X$ o feixe de anéis locais de $X$, e $\Osh_Y$ o feixe de anéis
+locais de $Y$ considerado como feixe quociente de $\Osh_X$. Sejam $n$ a
+dimensão de $X$ e $n-p$ a de $Y$.
+
+\src{176}
+Seja $\Omega_X$ (resp. $\Omega_Y$) o feixe de germes de formas
+diferenciais regulares sobre $X$ (resp. $Y$). Então têm-se isomorfismos
+canônicos:
+\begin{equation}\tag{3.6}
+  \Extsh_{\Osh_X}^{p}\bigl(\Omega_Y^{n-p},\Omega_X^{n}\bigr)=\Osh_Y,
+\end{equation}
+ou também
+\begin{equation}\tag{3.6 bis}
+  \Extsh_{\Osh_X}^{p}\bigl(\Osh_Y,\Omega_X^{n}\bigr)=\Omega_Y^{n-p}.
+\end{equation}
+A fórmula (3.6 bis) pode servir como definição de $\Omega_Y^{n-p}$ quando $Y$
+é uma variedade singular. Mais precisamente:
+
+\result{PROPOSIÇÃO}{5} Seja $Y$ um subconjunto algébrico de dimensão
+$q=n-p$ em uma variedade algébrica não singular $X$ de dimensão $n$. Sejam
+$F$ um feixe algébrico coerente sobre $X$ cujo suporte está contido em $Y$, e $L$
+um feixe algébrico localmente livre sobre $X$. Então os feixes
+$\Extsh_{\Osh_X}^{i}(F,L)$ são nulos para $i<p$, enquanto que para $i=p$ tem-se um
+isomorfismo canônico
+\begin{equation}\tag{3.7}
+  \Extsh_{\Osh_X}^{p}(F,L)
+  =\Homsh_{\Osh_X}\!\left(F,
+  \Extsh_{\Osh_X}^{p}(\Osh_X/J,L)\right),
+\end{equation}
+onde $J$ designa um feixe de ideais arbitrário sobre $X$ que anula $F$ e cujo
+conjunto de zeros é $Y$. Em particular, se $F$ é um feixe algébrico
+coerente sobre $Y$, tem-se
+\begin{equation}\tag{3.7 bis}
+  \Extsh_{\Osh_X}^{p}(F,L)
+  =\Homsh_{\Osh_Y}\!\left(F,\Extsh_{\Osh_X}^{p}(\Osh_Y,L)\right).
+\end{equation}
+Por fim, sendo ainda $F$ um feixe algébrico coerente sobre $Y$, os feixes
+\[
+  E^{i}(F)=\Extsh_{\Osh_X}^{p+i}(F,\Omega_X^{n})
+\]
+não dependem da maneira de mergulhar o espaço algébrico $Y$ em uma variedade
+não singular $X$.
+
+Como a questão é local, pode-se supor que $X$ é afim e $L=\Osh_X$. Isto reduz
+o problema a uma questão de álgebra comutativa, e até de álgebra local: se $A$ é um
+anel local regular e $M$ um $A$-módulo cujo suporte tem dimensão
+$\leq q=n-p$, é preciso demonstrar que $\operatorname{Ext}_{A}^{i}(M,A)=0$ para $i<p$, e
+\[
+  \operatorname{Ext}_{A}^{p}(M,A)
+  =\operatorname{Hom}_{A}\!\left(M,\operatorname{Ext}_{A}^{p}(A/J,A)\right),
+\]
+onde $J$ é um ideal qualquer de « dimensão » $\leq q$ que anula $M$. Para o
+primeiro ponto, procede-se por indução sobre $q$: um dévissage imediato reduz
+ao caso em que $M$ é da forma $A/J$ e, em seguida, substituindo $J$ por um ideal menor
+e utilizando a hipótese de indução e a sequência exata dos
+$\operatorname{Ext}$, ao caso em que $J$ é gerado por um « sistema de parâmetros »
+como na proposição 4, onde o resultado é imediato. O resultado
+anterior implica que, se $J$ é um ideal
+
+\src{177}
+fixo de « dimensão » $\leq q$, então o funtor contravariante
+$E(M)=\operatorname{Ext}_{A}^{p}(M,A)$ sobre a categoria dos $A/J$-módulos é
+exato pela esquerda; além disso, transforma somas diretas em produtos diretos,
+de onde resulta facilmente que
+\[
+  E(M)=\operatorname{Hom}_{A}\bigl(M,E(A)\bigr).
+\]
+ Por fim, a
+última afirmação da proposição 5 é mais sutil e resulta de uma
+caracterização intrínseca dos $E^{i}(F)$ mediante um teorema de dualidade
+local que não pode ser exposto aqui.
+
+\result{COROLÁRIO}{} Denotemos por $\omega_Y^{q}$ o feixe
+$\Extsh_{\Osh_X}^{p}(\Osh_Y,\Omega_X^{n})$. Então tem-se um isomorfismo
+funtorial para os feixes algébricos coerentes $F$ sobre $Y$:
+\begin{equation}\tag{3.8}
+  \Extsh_{\Osh_X}^{p}(F,\Omega_X^{n})
+  =\Homsh_{\Osh_X}(F,\omega_Y^{q}).
+\end{equation}
+
+\fsection{4}{Classe de cohomologia associada a uma subvariedade}
+
+Em tudo o que segue, $X$ designa um conjunto algébrico de dimensão $n$, definido
+sobre um corpo $k$, que suporemos algebricamente fechado para simplificar. Salvo
+no n\textsuperscript{o} 6, supõe-se que $X$ é não singular. Denotamos por
+$\Osh_X$ o feixe de anéis locais sobre $X$, e por
+\[
+  \Omega_X^{*}=\bigcup_p\Omega_X^{p}
+\]
+o feixe de germes de formas diferenciais sobre $X$.
+Se $Y$ é uma parte fechada de $X$, identificamos
+os feixes algébricos coerentes sobre $Y$ com feixes coerentes sobre $X$
+nulos fora de $Y$; em particular, assim ocorre com $\Osh_Y$ e $\Omega_Y$.
+
+\result{LEMA}{1} Seja $F$ um feixe algébrico coerente sobre $X$ cujo
+suporte tem dimensão $\leq n-p$, e $L$ um feixe algébrico coerente
+localmente livre sobre $X$. Então $\operatorname{Ext}_{\Osh_X}^{i}(X;F,L)$ é nulo
+para $i<p$, e tem-se um isomorfismo canônico
+\begin{equation}\tag{4.1}
+  \operatorname{Ext}_{\Osh_X}^{p}(X;F,L)
+  =H^{0}\bigl(X,\Extsh_{\Osh_X}^{p}(F,L)\bigr).
+\end{equation}
+Se $F$ é um feixe algébrico coerente sobre uma parte fechada $Y$ de $X$ de
+dimensão $\leq n-p$, tem-se um isomorfismo canônico
+\begin{equation}\tag{4.1 bis}
+  \Extsh_{\Osh_X}^{p}(F,L)
+  =\Homsh_{\Osh_X}\!\left(
+    F\otimes L'\otimes\Omega_X^{n},\omega_Y^{n-p}
+  \right),
+\end{equation}
+onde $\omega_Y^{n-p}$ é o feixe sobre $Y$ definido no corolário da
+proposição 5 (que se identifica com $\Omega_Y^{n-p}$ se $Y$ é não singular).
+
+A fórmula (4.1) é uma consequência imediata da sequência espectral da
+proposição 1 e da proposição 5; em virtude da fórmula (3.8), pode-se
+escrever
+
+\src{178}
+\begin{align*}
+\Extsh_{\Osh_X}^{p}(F,L)
+&=L\otimes(\Omega_X^{n})'\otimes
+  \Extsh_{\Osh_X}^{p}(F,\Omega_X^{n})\\
+&=L\otimes(\Omega_X^{n})'\otimes
+  \Homsh_{\Osh_X}(F,\omega_Y^{q})\\
+&=\Homsh_{\Osh_X}\!\left(
+  F\otimes L'\otimes\Omega_X^{n},\omega_Y^{q}\right),
+\end{align*}
+onde $q=n-p$, de onde resulta a fórmula (4.1 bis).
+
+Tomando, em particular, $F=\Osh_Y$, $L=\Omega_X^{p}$, obtém-se, tendo em conta
+que $\Omega_X^{n}\otimes(\Omega_X^{p})'=\Omega_X^{n-p}$, um isomorfismo
+canônico
+\begin{equation}\tag{4.2}
+  \operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\Omega_X^{p})
+  =\operatorname{Hom}_{\Osh_X}
+  (X;\Omega_X^{n-p},\omega_Y^{n-p}).
+\end{equation}
+Suponhamos agora que $Y$ é não singular, para simplificar, de modo que
+$\omega_Y^{n-p}=\Omega_Y^{n-p}$. Tem-se um homomorfismo natural de
+$\Omega_X^{n-p}$ em $\Omega_Y^{n-p}$, de onde resulta uma seção canônica $s_Y$ do
+feixe $\Extsh_{\Osh_X}^{p}(\Osh_Y,\Omega_X^{p})$, que chamaremos, se
+todas as componentes de $Y$ têm dimensão $n-p$, \emph{seção
+fundamental} do feixe $\Extsh_{\Osh_X}^{p}(\Osh_Y,\Omega_X^{p})$. Esta
+seção define, em virtude de (4.1), um elemento de
+$\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\Omega_X^{p})$. Ora, o homomorfismo
+natural $\Osh_X\longrightarrow\Osh_Y$ define um homomorfismo
+\[
+  \operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\Omega_X^{p})
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_X,\Omega_X^{p})
+  =H^{p}(X,\Omega_X^{p}).
+\]
+Obtém-se assim um elemento de $H^{p}(X,\Omega_X^{p})$, denotado por $P_X(Y)$ e chamado
+\emph{classe de cohomologia de $Y$ em $X$}. Deduz-se, portanto, da seção
+$s_Y$ de $\Extsh_{\Osh_X}^{p}(\Osh_Y,\Omega_X^{p})$ mediante o diagrama
+de homomorfismos seguinte:
+\begin{equation}\tag{4.3}
+\begin{aligned}
+H^{p}(X,\Omega_X^{p})
+&=\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_X,\Omega_X^{p})\\
+&\longleftarrow\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\Omega_X^{p})
+\xrightarrow{\ \sim\ }
+H^{0}\!\left(X,\Extsh_{\Osh_X}^{p}(\Osh_Y,\Omega_X^{p})\right).
+\end{aligned}
+\end{equation}
+
+Chamemos \emph{ciclo não singular de dimensão $n-p$} a um elemento do grupo
+abeliano livre gerado pelas subvariedades irredutíveis não singulares de
+dimensão $n-p$ em $X$. Então a função $Y\longmapsto P(Y)$ se prolonga a
+um homomorfismo do grupo de ciclos não singulares de dimensão $n-p$ sobre $X$
+no grupo $H^{p}(X,\Omega_X^{p})$.
+
+Sejam $Z^{n-p}$ e $Z'^{n-p'}$ ciclos não singulares de dimensões $n-p$ e
+$n-p'$; diz-se que se \emph{intersectam transversalmente} se toda componente
+de $Z$ interseca transversalmente toda componente de $Z'$. Então o ciclo $Z.Z'$ está
+definido e é um ciclo não singular de dimensão $n-p-p'$. Dito isto, tem-se o
+
+\src{179}
+\result{TEOREMA}{1} Se $Z^{n-p}$ e $Z'^{n-p'}$ são ciclos não singulares
+que se intersectam transversalmente, então tem-se
+\begin{equation}\tag{4.4}
+  P_X(Z.Z')=P_X(Z).P_X(Z'),
+\end{equation}
+onde o produto do segundo membro é o produto cup
+\[
+  H^{p}(X,\Omega_X^{p})\times H^{p'}(X,\Omega_X^{p'})
+  \longrightarrow H^{p+p'}(X,\Omega_X^{p+p'}).
+\]
+(Supõe-se que $X$ é isomorfo a uma parte localmente fechada de um espaço
+projetivo.)
+
+Esta última hipótese serve apenas para poder concluir que todo
+feixe algébrico coerente sobre $X$ é quociente de um feixe algébrico
+coerente localmente livre (SERRE) e, portanto, admite uma resolução pela esquerda mediante
+feixes localmente livres. Para demonstrar o teorema 1, pode-se supor que
+$Z$ e $Z'$ são subvariedades irredutíveis não singulares $Y$ e $Y'$ que se
+intersectam transversalmente. Seja $L_{*}$ uma resolução pela esquerda de $\Osh_Y$ mediante
+feixes localmente livres; então, em virtude da proposição 3, o diagrama
+de homomorfismos (4.3) identifica-se com o diagrama
+\[
+R^{p}\Gamma(\Omega_X^{p})
+\xleftarrow{\alpha}
+\mathbb R^{p}\Gamma\!\left(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\right)
+\xrightarrow[\sim]{\beta}
+\Gamma\!\left(H^{p}\bigl(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\bigr)\right),
+\]
+onde $\Gamma$ é o funtor « grupo de seções » sobre a categoria dos
+feixes abelianos sobre $X$, e $\mathbb R^{p}\Gamma$ designa
+a hipercohomologia de grau $p$ desse funtor, e $R^{p}\Gamma$ seu
+$p$-ésimo funtor derivado. Suporemos, para simplificar, que $L_0=\Osh_X$ e que
+a aumentação $L_0\longrightarrow\Osh_Y$ é o homomorfismo natural (o que
+é lícito); então $\alpha$ se deduz do homomorfismo de complexos
+$\Osh_X\longrightarrow L_{*}$ (considerando $\Osh_X$ como um complexo concentrado
+em grau $0$), tendo em conta que $\mathbb R^{p}\Gamma(K)=R^{p}\Gamma(K_0)$ se $K$
+é um complexo de feixes concentrado em grau $0$. O homomorfismo $\beta$ é um
+« homomorfismo de bordo » bem conhecido. Consideremos um diagrama análogo, relativo a
+uma resolução localmente livre $L'_{*}$ de $\Osh_{Y'}$, e consideremos o
+diagrama comutativo de acoplamentos:
+\begin{equation}\tag{4.5}
+\resizebox{\textwidth}{!}{$
+\begin{array}{ccc}
+R^{p}\Gamma(\Omega_X^{p})
+&\longleftarrow
+\mathbb R^{p}\Gamma\!\left(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\right)
+&\xrightarrow{\sim}
+\Gamma H^{p}\!\left(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\right)
+\\[3pt]
+\times&\times&\times\\[3pt]
+R^{p'}\Gamma(\Omega_X^{p'})
+&\longleftarrow
+\mathbb R^{p'}\Gamma\!\left(\Homsh_{\Osh_X}(L'_{*},\Omega_X^{p'})\right)
+&\xrightarrow{\sim}
+\Gamma H^{p'}\!\left(\Homsh_{\Osh_X}(L'_{*},\Omega_X^{p'})\right)
+\\[3pt]
+\downarrow&\downarrow&\downarrow\\[3pt]
+R^{p+p'}\Gamma(\Omega_X^{p+p'})
+&\longleftarrow
+\mathbb R^{p+p'}\Gamma\!\left(
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\Omega_X^{p+p'})\right)
+&\xrightarrow{\sim}
+\Gamma H^{p+p'}\!\left(
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\Omega_X^{p+p'})\right).
+\end{array}
+$}
+\end{equation}
+
+\src{180}
+Os acoplamentos das duas colunas da direita se deduzem do acoplamento de
+complexos de feixes
+\[
+\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})
+\times\Homsh_{\Osh_X}(L'_{*},\Omega_X^{p'})
+\longrightarrow
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\Omega_X^{p+p'}),
+\]
+que se define mediante o produto exterior
+$\Omega_X^{p}\times\Omega_X^{p'}\longrightarrow\Omega_X^{p+p'}$.
+O acoplamento da primeira coluna é o produto cup (relativo ao produto
+exterior). Afirmo que a última linha de (4.5) identifica-se com o diagrama
+de isomorfismos análogo a (4.3), onde $Y$ é substituído por $Y\cap Y'$ e $p$ por
+$p+p'$. Para isso basta demonstrar que $L\otimes L'$ é uma resolução
+(evidentemente localmente livre) de $\Osh_{Y\cap Y'}$. Com efeito, tem-se
+\[
+  H_0(L\otimes L')=\Osh_Y\otimes\Osh_{Y'}=\Osh_{Y\cap Y'}
+\]
+e
+\[
+  H_i(L\otimes L')=\operatorname{Tor}_{i}^{\Osh_X}(\Osh_Y,\Osh_{Y'})=0
+  \qquad(i>0),
+\]
+pelo fato de que $Y$ e $Y'$ se intersectam transversalmente. O teorema 1 resulta
+agora da fórmula:
+\begin{equation}\tag{4.6}
+  s_Y.s_{Y'}=s_{Y.Y'}
+\end{equation}
+(onde o produto do primeiro membro é o da última coluna de (4.5)).
+Esta fórmula (4.6), de natureza puramente local, verifica-se sem dificuldade
+tomando para $L_{*}$ e $L'_{*}$ as resoluções consideradas na proposição
+4. Demonstra-se igualmente (mediante uma demonstração mais simples) que
+$Z\longmapsto P_X(Z)$ é compatível com o produto cartesiano:
+\begin{equation}\tag{4.7}
+  P_{X\times X'}(Z\times Z')=P_X(Z)\otimes P_{X'}(Z')
+\end{equation}
+(fórmula válida se $Z$, resp. $Z'$, é um ciclo não singular sobre a variedade
+não singular $X$, resp. $X'$, considerando $Z\times Z'$ como um ciclo não
+singular sobre $X\times X'$). De (4.4) e (4.7) deduz-se que $P_X(Z)$ é também
+compatível com a operação « imagem inversa » por um morfismo de variedades não
+singulares $f:X\longrightarrow X'$:
+\begin{equation}\tag{4.8}
+  P_X\bigl(f^{-1}(Z)\bigr)=f^{*}\bigl(P_{X'}(Z')\bigr),
+\end{equation}
+fórmula válida se $Z'$ é um ciclo não singular sobre $X'$ tal que $f$ seja
+« transversal » a $Z'$, isto é, tal que a gráfica de $f$ seja transversal ao ciclo
+$X\times Z'$ em $X\times X'$.
+
+\src{181}
+\result{COROLÁRIO}{1} Sejam $X$, $X'$ duas variedades não singulares
+localmente fechadas em um espaço projetivo, e suponhamos que $X'$ é completa. Sejam $U$
+um ciclo não singular sobre $X\times X'$, $a$ e $b$ dois pontos de $X'$ tais que
+$U$ interseca transversalmente os ciclos $X\times(a)$ e $X\times(b)$, e sejam $Z$
+e $Z'$ os ciclos não singulares sobre $X$ tais que
+\[
+  Z\times(a)=(X\times(a)).U,
+  \qquad
+  Z'\times(b)=(X\times(b)).u.
+\]
+Então tem-se
+\[
+  P_X(Z)=P_X(Z').
+\]
+
+Com efeito, seja $f_a:X\longrightarrow X\times X'$ definido por
+$f_a(x)=(x,a)$; então, em virtude de (4.8), tem-se a fórmula
+$P(Z)=f_a^{*}(P(U))$, e analogamente $P(Z')=f_b^{*}(P(U))$. Ora, utilizando a fórmula de
+Künneth
+\[
+  H^{*}(X\times X',\Omega_{X\times X'}^{*})
+  =H^{*}(X,\Omega_X^{*})\otimes H^{*}(X',\Omega_{X'}^{*})
+\]
+e o fato de que $H^{0}(X',\Osh_{X'})$ se reduz aos escalares, obtém-se
+facilmente $f_a^{*}=f_b^{*}$, de onde se segue a conclusão.
+
+Para todo $x\in X$, $(x)$ é uma subvariedade não singular de $X$ de
+codimensão $n$, e define portanto um elemento $\varepsilon_x$ de
+$H^{n}(X,\Omega_X^{n})$. Se $X$ é uma variedade projetiva não singular, do
+corolário 1 resulta que $\varepsilon_x$ não depende do ponto $x$ escolhido; denota-se
+por $\varepsilon_X$ e chama-se \emph{classe fundamental} de
+$H^{n}(X,\Omega_X^{n})$.
+
+\result{OBSERVAÇÃO}{} Para dispor de uma teoria satisfatória, seria preciso definir
+$P_X(Z)$ para ciclos $Z$ quaisquer e demonstrar o teorema 1 para uma
+interseção própria de ciclos. (No momento de escrever esta exposição, isso ainda não foi
+feito com toda generalidade). Admitindo que tenha sido feito, o corolário 1
+passa a ser: se $Z$ e $Z'$ são dois ciclos algebricamente equivalentes, então
+$P_X(Z)=P_X(Z')$ (afirmação que não parece resultar do que precede, mesmo que
+$Z$ e $Z'$ sejam não singulares).
+
+\fsection{5}{O teorema de dualidade}
+
+Neste número, $X$ designa uma variedade projetiva não singular de dimensão
+$n$.
+
+\result{TEOREMA}{2} A classe fundamental $\varepsilon_X$ de
+$H^{n}(X,\Omega_X^{n})$ é uma base deste espaço vetorial.
+
+(A demonstração será dada mais adiante). Em virtude do teorema anterior, pode-se
+identificar $H^{n}(X,\Omega_X^{n})$ com o corpo $k$. Consideremos agora os
+acoplamentos considerados no n\textsuperscript{o} 2, que dão, em particular, um
+acoplamento
+
+\src{182}
+\[
+\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_X,F)
+\times\operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+\longrightarrow
+\operatorname{Ext}_{\Osh_X}^{n}(X;\Osh_X,\Omega_X^{n}),
+\]
+isto é,
+\begin{equation}\tag{5.1}
+  H^{p}(X,F)
+  \times\operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+  \longrightarrow H^{n}(X,\Omega_X^{n})
+\end{equation}
+Tendo em conta o teorema 2, este acoplamento define um homomorfismo
+\begin{equation}\tag{5.2}
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+  \longrightarrow\bigl(H^{p}(X,F)\bigr)'
+\end{equation}
+Este homomorfismo é funtorial em $F$ e comuta com os homomorfismos de conexão
+relativos às sequências exatas $0\longrightarrow F'\longrightarrow F
+\longrightarrow F''\longrightarrow0$.
+
+\result{TEOREMA}{3} O homomorfismo (5.2) é um isomorfismo.
+
+Recupera-se, em particular, o resultado de Serre:
+
+\result{COROLÁRIO}{} Seja $E$ um fibrado vetorial algébrico sobre $X$ e
+$\Osh_X(E)$ o feixe de germes de seções regulares de $E$; então têm-se
+isomorfismos canônicos:
+\begin{equation}\tag{5.3}
+  \bigl(H^{p}(X,\Osh_X(E))\bigr)'
+  =H^{n-p}\bigl(X,\Omega_X^{n}\otimes\Osh_X(E')\bigr)
+\end{equation}
+Basta aplicar o teorema 3 e o corolário 1 à proposição 1.
+
+Os teoremas 2 e 3 resultarão do enunciado seguinte:
+
+\noindent\textbf{(D) O homomorfismo seguinte}
+\begin{equation}\tag{5.2 bis}
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+  \longrightarrow\bigl(H^{p}(X,F)\bigr)'\otimes L,
+  \qquad L=H^{n}(X,\Omega_X^{n}),
+\end{equation}
+deduzido do acoplamento (5.1) é um isomorfismo.
+
+Demonstremos, com efeito, que (D) implica o teorema 2. Seja
+$k_x=\Osh_{(x)}$ o feixe de anéis locais da variedade reduzida ao ponto
+$x\in X$; consideremos o homomorfismo canônico
+$\Osh_X\longrightarrow k_x$ e o homomorfismo associado
+\begin{equation}\tag{5.3}
+  H^{0}(X,\Osh_X)\longrightarrow H^{0}(X,k_x),
+\end{equation}
+seu transposto identifica-se com o homomorfismo
+\begin{equation}\tag{5.4}
+  \operatorname{Ext}_{\Osh_X}^{n}(X;k_x,\Omega_X^{n})\otimes L'
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_X}^{n}(X;\Osh_X,\Omega_X^{n})\otimes L'
+\end{equation}
+deduzido do homomorfismo sobre os $\operatorname{Ext}^{n}$ associado a
+$\Osh_X\longrightarrow k_x$:
+\begin{equation}\tag{5.5}
+  \operatorname{Ext}_{\Osh_X}^{n}(X;k_x,\Omega_X^{n})
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_X}^{n}(X;\Osh_X,\Omega_X^{n})
+  =H^{n}(X,\Omega_X^{n})
+\end{equation}
+
+\src{183}
+Como (5.3) é um isomorfismo, o mesmo ocorre
+com (5.4), e portanto também com (5.5). Como $s_{(x)}$ é uma base de
+$\operatorname{Ext}_{\Osh_X}^{n}(X;k_x,\Omega_X^{n})$ em virtude de (4.2), se
+segue-se que sua imagem $\varepsilon_X$ é uma base de
+$H^{n}(X,\Omega_X^{n})$.
+
+Fica por demonstrar o enunciado (D), que resultará de maneira puramente formal dos fatos
+elementares resumidos nos lemas seguintes. Neles se supõe que $X$ é uma
+parte fechada (singular ou não) do espaço projetivo $P$ de dimensão $r$.
+Utiliza-se a notação $\Osh_P(m)$ para o feixe sobre $P$ denotado por $\Osh(m)$ em
+[3], e a notação $\Osh_X(m)$ para o feixe análogo sobre $X$.
+
+\result{LEMA}{2} O enunciado (D) é verdadeiro se $X=P$ e $F=\Osh_P(m)$.
+
+Este lema verifica-se mediante um cálculo direto. O cálculo explícito dos
+$H^{i}(P,\Osh_P(m))$ encontra-se em [3], mas pode ser feito de maneira mais
+elementar. O cálculo do produto cup
+\[
+  H^{i}(P,\Osh_P(m))\times H^{j}(P,\Osh_P(m'))
+  \longrightarrow H^{i+j}(P,\Osh_P(r+r'))
+\]
+necessário para explicitar o acoplamento (5.1) não apresenta
+dificuldades.
+
+\result{LEMA}{3} Todo feixe algébrico coerente $F$ sobre $X$ é isomorfo a
+um feixe quociente de um feixe $\Osh_X(-m)^{k}$, onde se pode supor que $m$ é
+tão grande quanto se queira.
+
+Resulta do fato de que $F\otimes\Osh_X(m)$ está « gerado por suas seções » para
+$m$ grande, cf. [3].
+
+\result{LEMA}{4} Seja $i>0$. Então
+$H^{r-i}(P,\Osh_P(-m))=0$ para $m$ grande; e para todo feixe algébrico
+coerente $B$ sobre $X$, tem-se
+\[
+  \operatorname{Ext}_{\Osh_X}^{i}(X;\Osh_X(-m),B)=0
+\]
+para $m$ grande.
+
+O primeiro enunciado resulta dos cálculos explícitos mencionados anteriormente; para o
+segundo, observa-se que se tem um isomorfismo
+\[
+  \operatorname{Ext}_{\Osh_X}^{i}(X;\Osh_X(-m),B)
+  =H^{i}(X,B\otimes\Osh_X(m))
+\]
+(proposição 1, corolário 1), de onde se segue a conclusão em virtude de um resultado bem
+conhecido de [3]. Combinando os dois lemas anteriores, obtém-se o
+
+\result{COROLÁRIO}{} Seja $i>0$. Então o funtor
+$F\longmapsto H^{r-i}(P,F)$ sobre a categoria dos feixes algébricos coerentes
+sobre $P$ é apagável, e o mesmo ocorre com o funtor
+$\operatorname{Ext}_{\Osh_X}^{i}(X;F,B)$ sobre a categoria dos feixes
+algébricos coerentes sobre $X$.
+
+\src{184}
+\result{LEMA}{5} Sejam $A$ e $B$ dois feixes algébricos coerentes sobre
+$X$, e ponhamos $A(m)=A\otimes\Osh_X(m)$. Então, para $m$ suficientemente grande,
+o homomorfismo canônico
+\[
+  \operatorname{Ext}_{\Osh_X}^{1}(X;A(-m),B)
+  \longrightarrow H^{0}\bigl(X,\Extsh_{\Osh_X}^{1}(A(-m),B)\bigr)
+  =H^{0}\bigl(X,\Extsh_{\Osh_X}^{1}(A,B)(m)\bigr)
+\]
+é um isomorfismo.
+
+Isto resulta imediatamente da sequência espectral da proposição 1 aplicada a
+$A(-m)$ e $B$, pois se terá
+\[
+  E_{2}^{p,q}(A(-m),B)
+  =H^{p}\bigl(X,\Extsh_{\Osh_X}^{q}(A(-m),B)\bigr)
+  =H^{p}\bigl(X,\Extsh_{\Osh_X}^{q}(A,B)(m)\bigr),
+\]
+que é nulo para $p>0$ e $m$ grande.
+
+Demonstremos agora (D) no caso em que $X=P$. Provemos primeiro que (5.2 bis)
+é um isomorfismo para $p=n$; como os dois membros são então
+funtores exatos pela esquerda (pois $H^{r+1}(P,F)=0$), do lema 3 resulta
+que basta demonstrar a afirmação para $F=\Osh_P(-m)$, mas esta se encontra
+contida no lema 2. Como os homomorfismos (5.2 bis) são funtoriais e
+compatíveis com os operadores de conexão, e como para $p<n$ os dois membros de
+(5.2 bis) são funtores apagáveis em $F$ (corolário do lema 4), segue-se
+então, mediante um raciocínio padrão, que (5.2 bis) é um isomorfismo
+para todo $p$. Isto demonstra o teorema de dualidade para o espaço projetivo.
+Suponhamos agora que $X$ é qualquer, mas não singular. Pelo teorema de
+dualidade para $P$, tem-se um isomorfismo
+\[
+  H^{n}(X,F)'=H^{n}(P,F)'
+  =\operatorname{Ext}_{\Osh_P}^{r-n}(P;F,\Omega_P^{r}).
+\]
+Em virtude do lema 1 (n\textsuperscript{o} 4), o último membro identifica-se com
+\[
+  \operatorname{Hom}_{\Osh_P}(P;F,\omega_X^{n})
+  =\operatorname{Hom}_{\Osh_X}(X;F,\Omega_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\Omega_X^{n}),
+\]
+de onde se obtém um isomorfismo
+\begin{equation}\tag{5.6}
+  H^{n}(X,F)'=\operatorname{Hom}_{\Osh_X}(X;F,\Omega_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\Omega_X^{n}).
+\end{equation}
+Tomando $F=\Omega_X^{n}$, obtém-se um isomorfismo
+\begin{equation}\tag{5.7}
+  \gamma:H^{n}(X,\Omega_X^{n})\xrightarrow{\sim}k.
+\end{equation}
+
+\src{185}
+Verifica-se que o isomorfismo (5.6) não é outro senão (5.2 bis) para $p=n$, quando
+se toma $L=k$ graças a (5.7). Por conseguinte, (5.2 bis) é um isomorfismo para
+$p=n$. Para demonstrar que é um isomorfismo para todo $p$, basta novamente
+demonstrar que, para $p<n$, os dois membros de (5.2 bis) são funtores
+apagáveis em $F$, e a fortiori (tendo em conta o lema 3) que ambos os membros
+são nulos quando se toma $F=\Osh_X(-m)$ com $m$ grande. Ora, para o primeiro
+membro, isto é verdadeiro em virtude do lema 4, e para o segundo membro escreve-se,
+utilizando o teorema de dualidade sobre $P$:
+\[
+  H^{p}(X,\Osh_X(-m))'
+  =\operatorname{Ext}_{\Osh_P}^{r-p}
+    (P;\Osh_X(-m),\Omega_P^{r}).
+\]
+O segundo membro é nulo para $p<n$ e $m$ grande, como resulta do lema 5
+(onde se toma $X=P$) e do fato de que $\Osh_X$, como feixe algébrico
+coerente sobre $P$, tem dimensão cohomológica $\leq r-n$ (pois $X$ é não
+singular), de onde
+\[
+  \Extsh_{\Osh_P}^{r-p}(\Osh_X,\Omega_P^{r})=0
+  \qquad\text{para }p<n.
+\]
+
+\fsection{6}{O teorema de dualidade para as variedades singulares}
+
+Seja $X$ uma parte fechada de dimensão $n$ do espaço projetivo $P$ de
+dimensão $r$. A fórmula (5.6) deve ser escrita aqui
+\begin{equation}\tag{6.1}
+  H^{n}(X,F)'
+  \simeq\operatorname{Hom}_{\Osh_X}(X;F,\omega_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\omega_X^{n}),
+\end{equation}
+onde se pôs
+\begin{equation}\tag{6.2}
+  \omega_X^{n}=E^{0}(\Osh_X)
+  =\Extsh_{\Osh_P}^{r-n}(\Osh_X,\Omega_P^{r}).
+\end{equation}
+Como foi dito na proposição 5, o feixe assim introduzido não depende,
+na realidade, da imersão escolhida de $X$ em uma variedade não singular $P$.
+Tomando, em (6.1), $F=\omega_X^{n}$, obtém-se
+\begin{equation}\tag{6.2}
+  H^{n}(X,\omega_X^{n})'
+  \simeq\operatorname{Hom}_{\Osh_X}(X;\omega_X^{n},\omega_X^{n}),
+\end{equation}
+ de onde
+resulta a existência de um elemento
+distinguido em $H^{n}(X,\omega_X^{n})'$, correspondente ao homomorfismo
+identidade de $\omega_X^{n}$ em si mesmo:
+\begin{equation}\tag{6.3}
+  \gamma:H^{n}(X,\omega_X^{n})\longrightarrow k.
+\end{equation}
+
+\src{186}
+Consideremos então os acoplamentos definidos pela composição dos $\operatorname{Ext}$:
+\begin{equation}\tag{6.4}
+  H^{p}(X,F)\times
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\omega_X^{n})
+  \longrightarrow H^{n}(X,\omega_X^{n}),
+\end{equation}
+e componhamo-los com o homomorfismo $\gamma$ de (6.3); obtêm-se
+homomorfismos funtoriais, compatíveis com os operadores de bordo:
+\begin{equation}\tag{6.5}
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\omega_X^{n})
+  \longrightarrow H^{p}(X,F)'
+\end{equation}
+(que generalizam (5.2)). Verifica-se que para $p=n$ se obtém assim
+o isomorfismo (6.1). Posto isto, tem-se o
+
+\result{TEOREMA}{3 bis} As quatro condições seguintes sobre $X$ são
+equivalentes para um inteiro dado $k\geq0$:
+\begin{enumerate}
+  \item[\textit{i.}] O homomorfismo funtorial (6.5) é um isomorfismo para
+    $n-k\leq p\leq n$.
+  \item[\textit{ii.}] Tem-se $H^{p}(X,\Osh_X(-m))=0$ para $m$ grande e para
+    $n-k\leq p<n$.
+  \item[\textit{iii.}] O funtor $H^{p}(X,F)$ sobre a categoria dos feixes
+    algébricos coerentes sobre $X$ é apagável para $n-k\leq p<n$.
+  \item[\textit{iv.}] Tem-se
+    $E^{i}(\Osh_X)=\Extsh_{\Osh_P}^{r-n+i}(\Osh_X,\Omega_P^{r})=0$
+    para $0<i\leq k$.
+\end{enumerate}
+
+\noindent\textbf{DEMONSTRAÇÃO.} --- \textit{i.}$\Rightarrow$\textit{ii.} Em
+virtude do lema 4, \textit{ii.}$\Rightarrow$\textit{iii.} em virtude do lema 3,
+\textit{iii.}$\Rightarrow$\textit{i.} mediante um raciocínio padrão bem conhecido,
+tendo em conta que os dois membros de (6.5) são então funtores apagáveis
+para $n-k\leq p<n$ (o primeiro o é em virtude do lema 4). Por fim, demonstremos
+\textit{ii.}$\Leftrightarrow$\textit{iv.} Isto resulta do corolário da
+proposição seguinte:
+
+\result{PROPOSIÇÃO}{6} Seja $F$ um feixe algébrico coerente sobre $X$, e
+seja $i$ um inteiro. Então, para $m$ suficientemente grande, tem-se um isomorfismo:
+\begin{equation}\tag{6.6}
+  H^{i}(X,F(-m))'
+  \simeq H^{0}\bigl(X,E^{n-i}(F)(m)\bigr),
+\end{equation}
+onde se põe (compare-se n\textsuperscript{o} 3, proposição 5):
+\begin{equation}\tag{6.7}
+  E^{j}(F)=\Extsh_{\Osh_P}^{r-n+j}(F,\Omega_P^{r}).
+\end{equation}
+Com efeito, em virtude do teorema de dualidade sobre $P$, o primeiro membro de (6.6)
+é isomorfo a
+$\operatorname{Ext}_{\Osh_P}^{r-i}(P;F(-m),\Omega_P^{r})$, pelo que (6.6) resulta
+do lema 5.
+
+\src{187}
+\result{COROLÁRIO}{} Para que se tenha $H^{i}(X,F(-m))=0$ para $m$ grande, é
+necessário e suficiente que $E^{n-i}(F)=0$.
+
+Lembremos que os $E^{j}(F)$ não dependem, na realidade, da imersão projetiva
+considerada. A condição do corolário é de natureza puramente local; por conseguinte,
+se ela se verifica para $F$, verifica-se para todo feixe localmente
+isomorfo a um feixe $F^{n}$. Em particular, se esta condição se verifica
+para $\Osh_X$, verifica-se para todo feixe algébrico coerente localmente
+livre. Este é, por exemplo, o caso para todo $i<n$ se $X$ é não singular, para
+$i=0$ se nenhuma componente de $X$ se reduz a um só ponto, e para $i=0,1$
+se $S$ é normal e todas as suas componentes têm dimensão $>1$ (cf.
+[3]). Para que isto ocorra para todo
+$i<k$, é necessário e suficiente, por definição, que os anéis locais
+$\Osh_x$ ($x\in X$) tenham « codimensão homológica » $\geq k$ (cf. [4]
+para esta noção). Se $k=n$, isto significa, em virtude do teorema 3 bis, que o
+teorema de dualidade é verdadeiro para $X$, isto é, que (6.5) é um isomorfismo para
+todo $p$ e todo $F$. Podem-se dar numerosas condições equivalentes sobre
+os anéis locais $\Osh_x$ para que isto ocorra (Nagata), por exemplo, que
+satisfaçam o teorema de equidimensionalidade de Cohen--Macaulay. Assim ocorre,
+por exemplo, se localmente $X$ é uma « interseção completa » em uma
+variedade ambiente não singular.
+
+\fsection{7}{A dualidade de Poincaré}
+
+Seja $X$ uma variedade projetiva não singular de dimensão $n$. Então
+\[
+  H^{**}(X)=H^{*}(X,\Omega_X^{*})
+\]
+é uma álgebra anticonmutativa bigraduada de dimensão finita, que graduamos
+pelo grau total, de modo que $H^{p,q}(X)=H^{p}(X,\Omega_X^{q})$ tem grau
+$p+q$. Os graus de $H^{*}(X)$ estão compreendidos entre $0$ e $2n$. Em virtude do
+teorema 2 e do corolário do teorema 3, $H^{*}(X)$ é uma « álgebra de
+Poincaré » de dimensão $2n$, isto é, $H^{2n}(X)$ está provido de um isomorfismo com
+o corpo base $k$, e o produto
+\[
+  H^{m}(X)\times H^{2n-m}(X)\longrightarrow H^{2n}(X)=k
+\]
+é uma dualidade entre $H^{m}(X)$ e $H^{2n-m}(X)$. Além disso, se $Y$ é outra
+variedade projetiva não singular, a fórmula de Künneth para os
+feixes algébricos coerentes dá
+\begin{equation}\tag{7.1}
+  H^{*}(X\times Y)=H^{*}(X)\otimes H^{*}(Y),
+\end{equation}
+isomorfismo compatível com as estruturas de álgebras de Poincaré. Além disso,
+$H^{*}(X)$ é, como álgebra comutativa, um funtor contravariante em
+$X$, pois um morfismo $f:Y\longrightarrow X$ define de maneira evidente um
+homomorfismo de álgebras graduadas
+
+\src{188}
+\begin{equation}\tag{7.2}
+  f^{*}:H^{*}(X)\longrightarrow H^{*}(Y).
+\end{equation}
+Como se trata de álgebras de Poincaré, obtém-se por transposição um
+homomorfismo de espaços vetoriais:
+\begin{equation}\tag{7.3}
+  f_{*}:H^{*}(Y)\longrightarrow H^{*}(X).
+\end{equation}
+Viu-se no n\textsuperscript{o} 4 que o efeito de $f^{*}$ sobre as classes de
+cohomologia correspondentes a ciclos não singulares se interpreta
+geometricamente tomando as classes de cohomologia que correspondem a suas
+imagens inversas. No caso atual, importa demonstrar que (7.3) corresponde
+analogamente à operação « imagem direta » de ciclos. Isto resulta, ao menos sob
+condições adequadas de não singularidade, do caso particular seguinte:
+
+\result{TEOREMA}{4} Se $f$ é a aplicação identidade de uma subvariedade não
+singular $Y^{m}$ de $X^{n}$ em $X^{n}$, então, denotando por $1_Y$
+o elemento unidade de $H(Y)$, tem-se
+\begin{equation}\tag{7.4}
+  f_{*}(1_Y)=P_X(Y),
+\end{equation}
+onde o segundo membro é a classe de cohomologia em $X$ associada a $Y$.
+
+Esta fórmula equivale a
+\begin{equation}\tag{7.4 bis}
+  \bigl\langle\xi^{m,m},P_X(Y)\bigr\rangle\varepsilon_Y
+  =f_{*}(\xi^{m,m})
+  \qquad
+  \bigl(\xi^{m,m}\in H^{m}(X,\Omega_X^{m})\bigr),
+\end{equation}
+ onde
+$\varepsilon_Y$ é o elemento fundamental em $H^{m}(Y,\Omega_Y^{m})$, e
+constitui, no caso das variedades projetivas não singulares, uma nova
+definição da classe de cohomologia associada a $Y$. Para demonstrar o
+teorema 4, interpreta-se, graças ao teorema 3, o transposto do homomorfismo
+\[
+  H^{m}(X,\Omega_X^{m})
+  \longrightarrow H^{m}(Y,\Omega_Y^{m})
+  =H^{m}(X,\Omega_Y^{m})
+\]
+como o homomorfismo
+\begin{equation}\tag{7.5}
+\begin{split}
+  H^{n-m}(X,\Omega_X^{n-m})
+  &\simeq
+  \operatorname{Ext}_{\Osh_X}^{n-m}(X;\Omega_X^{m},\Omega_X^{n})\\
+  &\longleftarrow
+  \operatorname{Ext}_{\Osh_X}^{n-m}(X;\Omega_Y^{m},\Omega_X^{n})
+  \simeq
+  \operatorname{Hom}_{\Osh_X}(X;\Omega_Y^{m},\Omega_Y^{m}).
+\end{split}
+\end{equation}
+Verifica-se que o elemento $1_Y$ do dual de $H^{m}(Y,\Omega_Y^{m})$ identifica-se
+com o elemento do membro da direita correspondente ao endomorfismo identidade de
+$\Omega_Y^{m}$, e por outro lado que a imagem deste elemento em
+$H^{n-m}(X,\Omega_X^{n-m})$ é precisamente $P_X(Y)$. Estas compatibilidades, que poderiam
+ter sido dadas já no n\textsuperscript{o} 4, podem ser enunciadas, e são
+na realidade válidas, para variedades não singulares quaisquer; a segunda
+
+\src{189}
+resulta, por exemplo, da comutatividade do diagrama seguinte de endomorfismos
+canônicos:
+\begin{equation}\tag{7.6}
+\resizebox{\textwidth}{!}{$
+\left\{
+\begin{array}{ccccc}
+\operatorname{Ext}_{\Osh_X}^{n-m}(X;\Omega_X^{m},\Omega_X^{n})
+&\longleftarrow&
+\operatorname{Ext}_{\Osh_X}^{n-m}(X;\Omega_Y^{m},\Omega_X^{n})
+&\simeq&
+\operatorname{Hom}_{\Osh_X}(X;\Omega_Y^{m},\Omega_Y^{m})\\[3pt]
+\Big\downarrow&&&&\Big\downarrow\\[3pt]
+\operatorname{Ext}_{\Osh_X}^{n-m}(X;\Osh_X,\Omega_X^{n-m})
+&\longleftarrow&
+\operatorname{Ext}_{\Osh_X}^{n-m}(X;\Osh_Y,\Omega_X^{n-m})
+&\simeq&
+\operatorname{Hom}_{\Osh_X}(X;\Omega_X^{m},\Omega_Y^{m})
+\end{array}
+\right.
+$}
+\end{equation}
+
+Obtém-se assim um equivalente exato do formalismo da dualidade de Poincaré
+sobre as variedades orientadas compactas. Em particular, o teorema 4 permite
+determinar a classe de cohomologia associada à diagonal de $X\times X$. Mediante
+um raciocínio bem conhecido, deduz-se, por exemplo, uma fórmula de Lefschetz:
+
+\result{TEOREMA}{5} Seja $f$ um endomorfismo de uma variedade projetiva não
+singular $X$, tal que os pontos fixos de $f$ tenham multiplicidade 1.
+Então o número desses pontos fixos é congruente, módulo a característica de
+$k$, com a soma alternada dos traços dos endomorfismos dos $H^{i}(X)$ definidos
+por $f$.
+
+A restrição sobre $f$ que foi necessário impor deve-se às dificuldades mencionadas na
+observação do n\textsuperscript{o} 4. Não obstante, observar-se-á que a fórmula de
+Lefschetz continua verdadeira se $f$ é « homotópico » a um endomorfismo cujos
+pontos fixos têm todos multiplicidade 1.
+
+\fsection{8}{Generalização do teorema de dualidade}
+
+Seja $X$ uma variedade algébrica não singular tal que todo feixe
+algébrico coerente $F$ sobre $X$ seja isomorfo a um quociente de um feixe
+algébrico coerente localmente livre (o que ocorre se $X$ é localmente
+fechado em um espaço projetivo). Então todo feixe algébrico coerente $F$ sobre
+$X$ admite uma resolução finita $L$ mediante feixes localmente livres, e para
+duas resoluções desta classe sempre se pode encontrar uma terceira e um
+homomorfismo desta nas duas primeiras compatível com as
+aumentações. Analogamente, se $L$ é uma resolução finita localmente livre de
+$F$, e se é dado um homomorfismo $F'\longrightarrow F$, então existe
+uma resolução finita localmente livre $L'$ de $F'$ e um homomorfismo
+$L'\longrightarrow L$ compatível com $F'\longrightarrow F$, que se pode
+supor sobrejetivo se $F'\longrightarrow F$ o é. Isto permite definir, dados
+dois inteiros $r,s\geq0$, dois multifuntores cohomológicos nos
+argumentos $A_1,\ldots,A_r$; $B_1,\ldots,B_s$,
+
+\src{190}
+que variam na categoria dos feixes algébricos coerentes sobre $X$, e cujos
+valores estão na categoria dos feixes algébricos coerentes sobre $X$,
+resp. na categoria dos módulos sobre $H^{0}(X,\Osh_X)$, mediante as fórmulas:
+\begin{equation}\tag{8.1}
+\resizebox{\textwidth}{!}{$
+\left\{
+\begin{aligned}
+\underline{T}_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+  &={}H^{*}\!\left(
+    \Homsh_{\Osh_X}\!\left(
+      L(A_1)\otimes\cdots\otimes L(A_r),
+      L(B_1)\otimes\cdots\otimes L(B_s)
+    \right)\right),\\[3pt]
+T_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+  &={}\mathbf R^{*}\Gamma\!\left(
+    \Homsh_{\Osh_X}\!\left(
+      L(A_1)\otimes\cdots\otimes L(A_r),
+      L(B_1)\otimes\cdots\otimes L(B_s)
+    \right)\right).
+\end{aligned}
+\right.
+$}
+\end{equation}
+Nesta fórmula, $L(F)$ designa uma resolução finita localmente livre do
+feixe algébrico coerente $F$, e $\mathbf R^{*}\Gamma(K)$ designa
+a hipercohomologia do espaço $X$ com respeito ao complexo de feixes $K$. Se
+$r$ ou $s$ é nulo, substitui-se o produto tensorial dos $L(A_i)$, resp. dos
+$L(B_j)$, por $\Osh_X$. Em particular, $\underline{T}_{0}^{0}$ e $T_{0}^{0}$
+são funtores graduados de 0 argumentos, $\underline{T}_{0}^{0}$ se reduz ao
+grau 0, onde é o feixe $\Osh_X$, enquanto que $T_{0}^{0}$ é idêntico a
+$H^{*}(X,\Osh_X)$. O fato de que os segundos membros de (8.1) não dependam
+das resoluções escolhidas é, em qualquer caso, evidente para a primeira linha
+(pois a questão é então local), e para a segunda resulta das observações
+gerais precedentes, tendo em conta a sequência espectral de
+hipercohomologia do complexo de feixes
+\[
+  K=\Homsh_{\Osh_X}\bigl(L(A_1)\otimes\cdots,
+      L(B_1)\otimes\cdots\bigr),
+\]
+que converge à hipercohomologia de $X$ com respeito a $K$ e cujo termo
+inicial é $H^{p}(X,H^{q}(K))$, isto é,
+\begin{equation}\tag{8.2}
+  E_{2}^{p,q}
+  =H^{p}\!\left(X,
+    (\underline{T}_{r}^{s})^{(q)}
+      (A_1,\ldots,A_r;B_1,\ldots,B_s)\right).
+\end{equation}
+Vê-se então que esta sequência espectral tampouco depende das resoluções
+escolhidas; seu limite é o primeiro membro de (8.1). Definem-se
+facilmente os operadores de conexão relativos aos diversos argumentos $A_i$, $B_j$,
+observando que toda sequência exata
+$0\longrightarrow F'\longrightarrow F\longrightarrow F''\longrightarrow0$
+pode ser resolvida mediante uma sequência exata de complexos finitos localmente livres.
+
+No sistema dos funtores $\underline{T}_{r}^{s*}$, resp.
+$T_{r}^{s*}$, definem-se operações análogas às do cálculo tensorial, cuja
+definição é imediata a partir das fórmulas definidoras (8.1). Assim, tem-se
+uma composição (que generaliza a considerada no n\textsuperscript{o} 2):
+\begin{equation}\tag{8.3}
+\resizebox{\textwidth}{!}{$
+\begin{aligned}
+&T_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+\times T_{r'}^{s'*}(A'_1,\ldots,A'_{r'};B'_1,\ldots,B'_{s'})\\
+&\qquad\longrightarrow
+T_{r+r'}^{s+s'*}
+(A_1,\ldots,A_r,A'_1,\ldots,A'_{r'};
+ B_1,\ldots,B_s,B'_1,\ldots,B'_{s'}),
+\end{aligned}
+$}
+\end{equation}
+que satisfaz as propriedades evidentes de associatividade e de compatibilidade com
+os homomorfismos funtoriais, os homomorfismos de conexão e as sequências
+espectrais. Do mesmo modo, têm-se operações de simetria cuja explicitação se deixa ao
+leitor. Tem-se, além disso, uma operação de contração cada vez que
+um dos argumentos $A_i$
+
+\src{191}
+é igual a um dos argumentos $B_j$:
+\begin{equation}\tag{8.4}
+\resizebox{\textwidth}{!}{$
+\begin{aligned}
+&T_{r}^{s*}(A_1,\ldots,A_{i-1},C,A_{i+1},\ldots,A_r;
+ B_1,\ldots,B_{j-1},C,B_{j+1},\ldots,B_s)\\
+&\qquad\longrightarrow
+T_{r-1}^{s-1*}(A_1,\ldots,\widehat{A_i},\ldots,A_r;
+ B_1,\ldots,\widehat{B_j},\ldots,B_s).
+\end{aligned}
+$}
+\end{equation}
+Além disso, se um argumento $A_i$ é um feixe localmente livre, pode
+ser suprimido, com a condição de substituir um dos $A_j$ ($j\neq i$) por
+$A_j\otimes A_i$, ou um dos $B_k$ por $B_k\otimes A_i'$ (onde
+$A_i'=\Homsh_{\Osh_X}(A_i,\Osh_X)$), e tem-se uma regra de cálculo análoga no
+caso em que um dos argumentos $B_i$ é localmente livre. Em particular, sempre
+se pode suprimir um argumento que seja idêntico a $\Osh_X$. Se todos os
+argumentos são localmente livres, salvo no máximo um dos argumentos $B_i$, a regra
+que acaba de ser enunciada dá um isomorfismo funtorial
+\begin{equation}\tag{8.5}
+  T_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+  =H^{*}\bigl(X,A_1'\otimes\cdots\otimes A_r'
+    \otimes B_1\otimes\cdots\otimes B_s\bigr)
+\end{equation}
+(pois se reduz ao caso em que $r=0$, $s=1$, onde isto é imediato; também se
+pode utilizar diretamente a sequência espectral de termo inicial (8.2)). Para os
+$\underline{T}_{r}^{s}$ se definem operações correspondentes às anteriores.
+As relações entre as diversas operações assim
+introduzidas são as mesmas que para as operações análogas do cálculo
+tensorial.
+
+Seja $n$ a dimensão de $X$. Aplicando sucessivamente uma composição
+tensorial (8.3) e contrações (8.4) sobre os argumentos repetidos, obtém-se
+um acoplamento
+\begin{equation}\tag{8.6}
+\resizebox{\textwidth}{!}{$
+  (T_{r}^{s})^{p}(A_1,\ldots;B_1,\ldots)
+  \times
+  (T_{s}^{r})^{n-p}(B_1,\ldots;A_1,\ldots,A_r\otimes\Omega_X^{n})
+  \longrightarrow H^{n}(X,\Omega_X^{n}).
+$}
+\end{equation}
+
+\result{TEOREMA}{6} Se $X$ é uma variedade projetiva não singular, então
+os acoplamentos (8.6) são dualidades.
+
+Isto resulta de maneira puramente formal do corolário do teorema 3. Com efeito,
+deste corolário resulta facilmente que, se $K$ é um complexo de feixes
+algébricos coerentes localmente livres, então a hipercohomologia de $X$ com
+respeito a $K$ está em dualidade com a hipercohomologia de $X$ com respeito a
+$K'\otimes\Omega_X^{n}$ mediante os acoplamentos naturais
+\begin{equation}\tag{8.7}
+  \mathbf R^{p}\Gamma(K)
+  \times\mathbf R^{n-p}\Gamma(K'\otimes\Omega_X^{n})
+  \longrightarrow\mathbf R^{n}\Gamma(\Omega_X^{n})
+  =H^{n}(X,\Omega_X^{n}).
+\end{equation}
+Isto se vê utilizando a sequência espectral de termo inicial
+$H^{p}(H^{q}(X,K))$ e a sequência espectral análoga para
+$K'\otimes\Omega_X^{n}$. Do resultado anterior se deduz o teorema 6
+utilizando a definição (8.1).
+
+\src{192}
+\subsection*{OBSERVAÇÕES}
+
+\noindent 1\textsuperscript{o} Para as definições anteriores ao teorema 6,
+não era necessário que $X$ fosse não singular, pois não era
+indispensável trabalhar apenas com resoluções finitas. Mas se $X$
+é singular, já não se poderá afirmar, a priori, que os
+$(\underline{T}_{r}^{s})^{p}(A_1,\ldots;B_1,\ldots)$ sejam feixes
+coerentes, pois no complexo de feixes
+\[
+  \Homsh_{\Osh_X}\bigl(L(A_1)\otimes\cdots,L(B_1)\otimes\cdots\bigr)
+\]
+haverá uma infinidade de componentes de um grau total dado.
+
+\medskip
+\noindent 2\textsuperscript{o} Verifica-se facilmente que, nas fórmulas
+(8.1), pode-se substituir um dos $L(B_i)$ por $B_i$. Tendo em conta a
+proposição 3, isto demonstra que se tem
+\begin{equation}\tag{8.8}
+\left\{
+\begin{aligned}
+  \underline{T}_{1}^{1*}(A;B)&=\Extsh_{\Osh_X}^{*}(A,B),\\
+  T_{1}^{1*}(A;B)&=\operatorname{Ext}_{\Osh_X}^{*}(X;A,B).
+\end{aligned}
+\right.
+\end{equation}
+Em particular, tomando em (8.6) $r=s=1$ e $A_1=\Osh_X$, recupera-se o
+teorema 3. A fórmula (8.8) implica também
+\[
+  T_{0}^{1*}(B)=H^{*}(X,B),
+  \qquad
+  T_{1}^{0*}(A)=\operatorname{Ext}_{\Osh_X}^{*}(X;A,\Osh_X).
+\]
+
+\medskip
+\noindent 3\textsuperscript{o} Vê-se na fórmula (8.1) que, em geral, os
+funtores $\underline{T}_{r}^{s*}$ e $T_{r}^{s*}$ têm componentes de
+graus positivos e negativos. Utilizando a observação 2, vê-se que, se a
+dimensão de $X$ é $n$, então as componentes não nulas de
+$\underline{T}_{r}^{s*}$ estão compreendidas entre $-(s-1)n$ e $rn$, se $s>0$,
+entre $0$ e $rn$, se $s=0$, e as componentes não nulas de $T_{r}^{s*}$
+estão compreendidas entre $-(s-1)n$ e $(r+1)n$, se $s>0$, entre $0$ e $(r+1)n$,
+se $s=0$ (e inclusive, salvo erro, se $r>0$, entre $-(s-1)n$ e $rn$, resp. entre
+$0$ e $rn$).
+
+\section*{BIBLIOGRAFIA}
+
+\noindent[1] Cartier (Pierre). --- Les groupes
+$\operatorname{Ext}^{s}(A,B)$, Séminaire A. Grothendieck : Algèbre homologique,
+t. 1, 1957, n\textsuperscript{o} 3.
+
+\noindent[2] Grothendieck (Alexandre). --- Sur quelques points d'algèbre
+homologique, \emph{Tohoku Math. J.}, t. 9, 1957, p. 119--183.
+
+\noindent[3] Serre (Jean-Pierre). --- Faisceaux algébriques cohérents,
+\emph{Annals of Math.}, t. 61, 1955, p. 197--278.
+
+\noindent[4] Serre (Jean-Pierre). --- Sur la dimension homologique des anneaux
+et des modules noethériens, \emph{Proc. Intern. Symp. on Alg. Number Theory}
+[1955, Tokyo et Nikko]. --- Tokyo, Science Council of Japan, 1956 ;
+p. 175--189.
+
+\clearpage
+\src{193}
+\section*{ADENDA}
+
+As dificuldades assinaladas na observação da página 13 estão atualmente
+completamente resolvidas, graças a uma extensão dos teoremas de dualidade a
+variedades quaisquer (com singularidades arbitrárias). Para esta teoria, que pode
+ser formulada no quadro geral da « teoria dos esquemas », remetemos
+aos « Éléments de Géométrie algébrique » de J. Dieudonné e A. Grothendieck,
+atualmente em preparação. Encontrar-se-ão algumas indicações em:
+
+\begin{quote}
+Grothendieck (A.). --- Cohomology theory of algebraic varieties,
+\emph{Congrès int. des Mathématiciens}, 1958, Edinburgh (de próxima publicação).
+\end{quote}
+
+\begin{flushright}
+[Abril de 1959]
+\end{flushright}
+
+\begin{center}\rule{36mm}{0.5pt}\end{center}
+
+\par

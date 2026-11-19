@@ -1,0 +1,1418 @@
+\unit{Exposición 182 — Geometría formal y geometría algebraica}
+\sid{182}
+\src{193}
+\seminar{(Mayo de 1959)}
+\paperhead{GEOMETRÍA FORMAL Y GEOMETRÍA ALGEBRAICA}%
+  {por Alexander GROTHENDIECK}
+
+\fsection{1}{Esquemas}
+
+Se sabe que un espacio algebraico afín definido sobre un cuerpo $k$ está
+esencialmente determinado por su álgebra afín $A$ (anillo de las funciones
+regulares definidas sobre $k$), pues los morfismos de espacios algebraicos
+$X\longrightarrow Y$ corresponden biunívocamente a los homomorfismos de
+$k$-álgebras $A(Y)\longrightarrow A(X)$. El álgebra afín correspondiente a un
+espacio algebraico es una $k$-álgebra de tipo finito y, desde el punto de vista
+«clásico», no tiene elementos nilpotentes; recíprocamente, toda álgebra de este
+tipo se obtiene como álgebra afín de un espacio algebraico definido sobre $k$.
+Se dispone así de un conocido diccionario que permite interpretar en términos
+de álgebra conmutativa las situaciones relativas a espacios algebraicos afines.
+Desde hace mucho se ha observado que de este modo se obtienen enunciados más
+generales, pues por lo común ya no es necesario suponer que los anillos en juego
+sean del tipo recién considerado, y la hipótesis noetheriana suele bastar. En
+particular, haya o no un cuerpo de base dado, no hay razón para excluir el caso
+en que estos anillos contengan elementos nilpotentes. Hasta ahora, los geómetras
+se habían negado a tener en cuenta estas indicaciones y se han obstinado en
+limitarse a considerar álgebras afines sin elementos nilpotentes, es decir,
+espacios algebraicos cuyos haces estructurales no tienen elementos nilpotentes
+(y, las más de las veces, incluso espacios algebraicos «absolutamente
+irreducibles»). El conferenciante considera que esta actitud ha constituido un
+serio obstáculo para el desarrollo de métodos verdaderamente naturales en
+Geometría algebraica.
+
+Sea $A$ un anillo conmutativo. Es bien sabido que el conjunto
+$X=\operatorname{Spec}(A)$ de los ideales primos de $A$ está provisto de una
+topología natural, la «topología de Zariski» o topología espectral. Por otra
+parte, hay un haz de anillos conmutativos $\Osh_X$ sobre $X$, cuyo tallo en
+$\mathfrak p\in X$ es el anillo localizado $A_{\mathfrak p}$ y cuyo anillo de
+secciones se identifica con $A$. Así, $X$ se convierte en un \emph{espacio
+anillado}, llamado \emph{espectro primo} de $A$. Un homomorfismo de anillos
+$f:A\longrightarrow B$ define un morfismo de espacios anillados
+$f':\operatorname{Spec}(B)\longrightarrow\operatorname{Spec}(A)$; la
+aplicación subyacente de conjuntos no es otra que
+$\mathfrak p\longmapsto f^{-1}(\mathfrak p)$. Los morfismos
+
+\src{194}
+de espacios anillados de $\operatorname{Spec}(B)$ en
+$\operatorname{Spec}(A)$ obtenidos de este modo son exactamente aquellos para
+los cuales los homomorfismos $\Osh_x\longrightarrow\Osh_y$ ($x=f'(y)$) son
+locales (es decir, la imagen inversa del ideal maximal es el ideal maximal).
+
+Se llama \emph{esquema afín} a un espacio anillado isomorfo a algún
+$\operatorname{Spec}(A)$, y \emph{preesquema} a un espacio anillado localmente
+afín, es decir, tal que cada punto tiene un entorno abierto que, con la
+estructura inducida, es un esquema afín. Los \emph{morfismos} de preesquemas se
+definen de manera evidente; localmente corresponden a homomorfismos de anillos.
+
+Cuando se fija un preesquema $S$ y se consideran morfismos de preesquemas
+$X\longrightarrow S$, el espacio $S$ desempeña el papel de un cuerpo o de un
+anillo de base (o, mejor, de un espacio de base en una fibración). Se dice
+entonces que $X$ es un $S$-preesquema; si $S=\operatorname{Spec}(A)$, esto
+significa también que $\Osh_X$ es un haz de $A$-álgebras. Así, todo preesquema
+puede considerarse de manera única como un $\mathbf Z$-preesquema. Naturalmente,
+los $S$-preesquemas forman una categoría; además, se demuestra que en esta
+categoría siempre existe el producto de dos objetos $X,Y$, que se denota por
+$X\times_S Y$. Esta noción de producto permite definir el cambio de base de un
+$S$-preesquema correspondiente a un morfismo $S'\longrightarrow S$: en efecto,
+$X\times_S S'$ puede considerarse como un $S'$-preesquema.
+
+Se dice que $X$ es \emph{separado} sobre $S$ si la diagonal de
+$X\times_S X$ es cerrada. Se llama \emph{esquema} a un preesquema separado
+sobre $\mathbf Z$; es entonces separado sobre cualquier base. Para simplificar,
+en adelante solo hablaremos de esquemas y, además, los supondremos
+\emph{noetherianos}, es decir, uniones finitas de abiertos afines que son
+espectros de anillos noetherianos. Se dice que $X$ es \emph{de tipo finito
+sobre} $S$ si, para todo abierto afín $U$ de $S$, su imagen inversa en $X$ es
+una unión finita de abiertos afines cuyos anillos son álgebras de tipo finito
+sobre el anillo de $U$. Son estos $S$-esquemas los que se prestan a un estudio
+propiamente geométrico. En particular, para todo $s\in S$, la fibra
+$f^{-1}(s)$ de $X$ sobre $s$ es un esquema algebraico sobre el cuerpo residual
+$\kappa(s)$ del anillo local $\Osh_s$ de $s$ en $S$. Así, en cierta medida, $X$
+puede considerarse como una familia de «espacios algebraicos» $f^{-1}(s)$, donde
+el parámetro $s$ recorre $S$ (es decir, desde el punto de vista local, el
+conjunto de los ideales primos de un anillo dado). Naturalmente, los
+$\kappa(s)$ pueden tener características distintas. Si
+$S=\operatorname{Spec}(k)$, donde $k$ es un cuerpo, se recupera esencialmente la
+noción usual de «espacio algebraico», con la única diferencia de que ahora el
+haz estructural puede tener elementos nilpotentes.
+
+\src{195}
+Inspirándose en nociones bien conocidas, se define la noción de
+\emph{morfismo proyectivo} y, más generalmente, la de \emph{morfismo propio}.
+Tal morfismo es de tipo finito; además, transforma partes cerradas en partes
+cerradas y conserva esta propiedad bajo cualquier cambio de base.
+
+Siendo $X$ un esquema (noetheriano, como siempre), el haz $\Osh_X$ es un
+\emph{haz coherente de anillos} en el sentido de [2]. Por tanto, los haces
+coherentes de módulos sobre $X$ son también los haces que localmente son
+isomorfos al conúcleo de un homomorfismo
+$\Osh_X^{m}\longrightarrow\Osh_X^{n}$.
+
+\fsection{2}{Esquemas formales}
+
+Sean $X$ un esquema y $X'$ una parte cerrada de $X$. Entonces existe un
+subhaz coherente $J$ de $\Osh_X$ tal que
+$X'=\operatorname{Supp}(\Osh_X/J)$ (e incluso existe uno máximo). Provisto de
+$\Osh_X/J$, el espacio $X'$ se convierte en un esquema, denotado por $X_0$;
+tal esquema se llama «subesquema cerrado de $X$». Para todo $n$ también se
+puede considerar $X'$ provisto de $\Osh_X/J^{n+1}$, que se denota por $X_n$;
+es un subpreesquema cerrado de $X$ cuyo conjunto subyacente sigue siendo $X'$,
+pero que tiene otro haz estructural, a saber,
+$\Osh_{X_n}=\Osh_X/J^{n+1}$. Evidentemente, los $\Osh_{X_n}$ forman un sistema
+proyectivo de haces de anillos sobre $X'$, cuyo límite proyectivo
+$\overline{\Osh}_X$ se llama \emph{completación formal de $\Osh_X$ a lo largo
+de $X'$}. Provisto de este haz de anillos, $X'$ se llama \emph{completación
+formal de $X$ a lo largo de $X'$}; es, pues, un espacio anillado, pero en
+general no un esquema. Para todo haz coherente $F$ sobre $X$ se puede considerar
+análogamente la completación formal $\overline F=\varprojlim_n F_n$ de $F$ a lo
+largo de $X'$ (donde $F_n=F\otimes_{\Osh_X}\Osh_X/J^{n+1}$); es un haz de
+módulos sobre $\overline X$. Sus secciones se llaman «secciones formales de $F$
+a lo largo de $X'$» y se identifican con los elementos de
+$\varprojlim_n\Gamma(X',F_n)$. Para $F=\Osh_X$ se obtienen las «funciones
+holomorfas» de $X$ a lo largo de $X'$ en el sentido de Zariski (terminología que
+no seguiremos por sus interferencias con la terminología clásica).
+
+Se llama \emph{esquema formal} (se sobreentiende: noetheriano) a un espacio
+topológico $\mathfrak X$, provisto de un haz de anillos topológicos
+$\Osh_{\mathfrak X}$ que satisface la condición siguiente: hay un isomorfismo
+de haces de anillos topológicos
+$\Osh_{\mathfrak X}=\varprojlim_n\Osh_n$, donde los $\Osh_n$ forman un sistema
+proyectivo de haces de anillos sobre $\mathfrak X$, cada uno de los cuales hace
+de $\mathfrak X$ un esquema $\mathfrak X_n$, y tal que, para $m\geq n$, el
+homomorfismo $\Osh_m\longrightarrow\Osh_n$ es sobreyectivo y tiene por núcleo
+$J_m^{n+1}$, donde $J_m$ es
+
+\src{196}
+el núcleo de $\Osh_m\longrightarrow\Osh_0$. Se demuestra entonces que
+$\Osh_{\mathfrak X}$ es un \emph{haz coherente de anillos locales
+noetherianos}.
+
+En virtud de las definiciones, una completación formal $\overline X$ como la
+anterior es un esquema formal y, recíprocamente, todo esquema formal es
+\emph{localmente} de este tipo. De hecho, dar un esquema formal \emph{afín} (es
+decir, tal que $\mathfrak X_0$ sea afín, lo cual implica que todos los
+$\mathfrak X_n$ lo son) equivale a dar un anillo topológico noetheriano,
+separado y completo para la topología $J$-ádica.
+
+Las definiciones habituales de morfismo, morfismo de tipo finito, morfismo
+propio, etc., para los esquemas ordinarios se extienden sin dificultad a los
+esquemas formales.
+
+\fsection{3}{Los tres teoremas fundamentales}
+
+Sea $f:X\longrightarrow Y$ un morfismo propio de esquemas (noetherianos, como
+siempre), sea $Y'$ una parte cerrada de $Y$ y sea $X'$ su imagen inversa en
+$X$; consideremos las completaciones formales correspondientes $\overline Y$ y
+$\overline X$. Entonces $f$ induce un morfismo
+$\overline f:\overline X\longrightarrow\overline Y$ de esquemas formales, que
+además es propio. Si $F$ es un haz coherente sobre $X$, entonces $\overline F$
+es un haz coherente sobre $\overline X$. En el teorema 1 se olvidan $X,Y,F$ y
+solo se consideran el morfismo propio $\overline f$ de esquemas formales y el
+haz coherente $\overline F$ sobre $\overline X$. (No obstante, el conferenciante
+solo ha escrito una demostración completa para el caso en que se parte de
+$X,Y,f,F$.)
+
+\result{TEOREMA}{1 (teorema de finitud)}
+\begin{enumerate}
+  \item[\textit{i.}] Los $R^{q}\overline f_{*}(\overline F)$ son haces
+    coherentes sobre $\overline Y$.
+  \item[\textit{ii.}] Los homomorfismos naturales
+    \[
+      R^{q}\overline f_{*}(\overline F)
+      \longrightarrow \varprojlim_n R^{q}f_{n*}(F_n)
+    \]
+    son isomorfismos.
+\end{enumerate}
+
+En este enunciado se supone elegido un subhaz coherente $J$ de $\Osh_Y$ que
+define $Y'$; por imagen inversa se obtiene un subhaz coherente de $\Osh_X$ que
+define $X'$ y, por consiguiente, se definen $F_n,X_n,Y_n$ y
+$f_n:X_n\longrightarrow Y_n$ como en el n\textsuperscript{o} 2. Si se parte de
+un morfismo propio cualquiera entre dos esquemas formales, son evidentes los
+pequeños cambios que deben hacerse al explicitar estas notaciones.
+
+El teorema 1 se refería únicamente a la «cohomología formal». El teorema siguiente
+
+\src{197}
+la relaciona con la «cohomología algebraica» y es análogo a un conocido teorema
+de Serre [4] sobre la comparación entre cohomología algebraica y cohomología
+analítica.
+
+\result{TEOREMA}{2 (Primer teorema de comparación)} Los
+$R^{q}f_{*}(F)$ son haces coherentes sobre $Y$ (lo cual es un caso particular
+del teorema 1), y los homomorfismos naturales
+\[
+  \overline{R^{q}f_{*}(F)}
+  \longrightarrow \varprojlim_n R^{q}f_{n*}(F_n)
+\]
+son isomorfismos.
+
+\result{COROLARIO}{1} Se tienen isomorfismos canónicos:
+\[
+  \overline{R^{q}f_{*}(F)}=R^{q}\overline f_{*}(\overline F).
+\]
+
+Para $q=0$, este corolario es una generalización del «teorema fundamental de
+las funciones holomorfas» de Zariski, del que deduciremos una generalización del
+«teorema de conexión» de Zariski. Obsérvese además que, mientras el teorema 1
+(\textit{ii}) es trivial para $q=0$, en modo alguno ocurre lo mismo con el
+teorema 2 ni con su formulación equivalente (corolario 1). En efecto, la
+demostración procede por inducción descendente sobre $q$ (es trivial para $q$
+grande, pues entonces ambos miembros son nulos), de modo que el caso $q=0$
+aparece como el último paso de la inducción y, por así decirlo, como el caso «más
+difícil».
+
+\result{COROLARIO}{2} Supongamos $Y=\operatorname{Spec}(A)$ y que $Y'$ está
+definido por el ideal $J$ de $A$. Entonces, para todo haz coherente $F$ sobre
+$X$, los $H^{q}(X,F)$ son $A$-módulos de tipo finito cuyas completaciones
+$J$-ádicas son los $H^{q}(\overline X,\overline F)$.
+
+Aplicando, por último, este corolario a
+$H=\Homsh_{\Osh_X}(F,G)$, se obtiene:
+
+\result{COROLARIO}{3} Supongamos $Y=\operatorname{Spec}(A)$ y que $Y'$ está
+definido por el ideal $J$ de $A$. Sean $F,G$ dos haces coherentes sobre $X$;
+entonces $\operatorname{Hom}(F,G)$ es un módulo de tipo finito sobre $A$, cuya
+completación $J$-ádica se identifica con
+$\operatorname{Hom}(\overline F,\overline G)$.
+
+Naturalmente, la aplicación natural
+$\operatorname{Hom}(F,G)\longrightarrow
+\operatorname{Hom}(\overline F,\overline G)$ es la que asocia a un
+homomorfismo $u:F\longrightarrow G$ su prolongación «por continuidad»
+$\overline u:\overline F\longrightarrow\overline G$ (con lo cual
+$\overline F$ se convierte en un funtor de $F$).
+
+Supongamos ahora que $A$ es separado y completo para su topología $J$-ádica;
+entonces los corolarios 2 y 3 precedentes dan:
+\[
+  H^{q}(X,F)=H^{q}(\overline X,\overline F),
+  \qquad
+  \operatorname{Hom}(F,G)
+  =\operatorname{Hom}(\overline F,\overline G).
+\]
+
+\src{198}
+Esta última identidad muestra que la categoría de los haces coherentes sobre
+$X$ se identifica con una \emph{subcategoría} (cuyos morfismos son los
+morfismos inducidos) de la categoría de los haces coherentes sobre
+$\overline X$. De hecho, se tiene incluso:
+
+\result{TEOREMA}{3} Para que un haz de módulos sobre $\overline X$ sea
+coherente, es necesario y suficiente que sea isomorfo a un haz de la forma
+$\overline F$, donde $F$ es un haz coherente sobre $X$ (determinado salvo
+isomorfismo canónico en virtud del teorema 2, corolario 3). [Recordemos que
+ahora $Y=\operatorname{Spec}(A)$, siendo $A$ un anillo topológico noetheriano,
+separado y completo para la topología $J$-ádica.]
+
+\result{COROLARIO}{1} Los subesquemas cerrados de $X$ corresponden
+biunívocamente a los subesquemas formales cerrados de $\overline X$.
+
+En efecto, corresponden a los subhaces coherentes de $\Osh_X$ y,
+respectivamente, de $\overline{\Osh}_X$. Considerando los grafos de morfismos
+como subesquemas cerrados, se deduce del corolario 1:
+
+\result{COROLARIO}{2} Sean $X,Z$ dos esquemas propios sobre $A$ (anillo
+noetheriano, separado y completo para la topología $J$-ádica). Entonces la
+aplicación $g\longmapsto\overline g$ define una correspondencia biunívoca entre
+los $Y$-morfismos de $X$ en $Z$ y los $\overline Y$-morfismos de $\overline X$
+en $\overline Z$.
+
+En otros términos, los esquemas algebraicos propios sobre $A$ aparecen como una
+\emph{subcategoría} (cuyos morfismos son los morfismos inducidos) de la
+categoría de los esquemas formales propios sobre $\overline Y$. Sin embargo,
+debe advertirse que existen esquemas formales propios sobre $\overline Y$ que
+no son «algebraizables», es decir, isomorfos a algún $\overline X$ con $X$
+propio sobre $A$ (del mismo modo que existen variedades analíticas complejas
+compactas que no provienen de variedades algebraicas definidas sobre el cuerpo
+de los complejos). Tales esquemas formales aparecen de manera natural en la
+«teoría de módulos». Señalemos, no obstante, un caso particular interesante en
+el que un esquema formal es algebraizable:
+
+\result{TEOREMA}{4} Sea $A$ un anillo noetheriano local completo de cuerpo
+residual $k$, y sea $\mathfrak X$ un esquema formal propio sobre $A$ (provisto
+de su topología $\mathfrak m(A)$-ádica). Se supone:
+\begin{enumerate}
+  \item[\textit{i.}] que los anillos locales de $\Osh_{\mathfrak X}$ son
+    módulos planos sobre $A$ o, lo que equivale a lo mismo, si se dota a
+    $\Osh_{\mathfrak X}$ y a $A$ de la filtración definida por las potencias del
+    ideal maximal de $A$, para los graduados asociados se tiene la relación
+    \[
+      \operatorname{gr}(\Osh_{\mathfrak X})
+      \simeq
+      \operatorname{gr}^{0}(\Osh_{\mathfrak X})
+      \otimes_k\operatorname{gr}(A).
+    \]
+  \item[\textit{ii.}] Considerando
+    $\mathfrak X_0=\mathfrak X\otimes_A k$ como un esquema algebraico sobre
+    $k$, se tiene
+    \[
+      H^2(\mathfrak X_0,\Osh_{\mathfrak X_0})=0.
+    \]
+  \item[\textit{iii.}] $\mathfrak X_0$ es proyectivo.
+\end{enumerate}
+Bajo estas condiciones, $\mathfrak X$ es algebraizable y, más precisamente, es
+isomorfo a $\overline X$, donde $X$ es un $A$-esquema proyectivo.
+
+Las condiciones \textit{(ii)} y \textit{(iii)} se satisfacen, en particular,
+si $\mathfrak X_0$ es una curva simple sobre $k$, y el teorema 4 puede aplicarse
+en particular en la «teoría de módulos» para las curvas de género dado\ldots{}
+Indiquemos cómo se demuestra el teorema 4: se demuestra (cf. la proposición 3
+más adelante) que \textit{(i)} y \textit{(ii)} implican que todo haz coherente
+sobre $\mathfrak X_0$, localmente isomorfo al haz fundamental, se obtiene por
+reducción a partir de un haz de la misma naturaleza sobre $\mathfrak X$. Se
+parte entonces de un haz «amplio» sobre $\mathfrak X_0$ (existe uno por
+\textit{(iii)}), se lo levanta a un haz invertible sobre $\mathfrak X$ y,
+utilizando el teorema 1, se demuestra que un múltiplo de este último define una
+inmersión de $\mathfrak X$ en la completación formal de un esquema
+$\mathbf P_A^r$ («proyectivo tipo» de dimensión $r$ sobre $A$).
+
+Para la demostración de los teoremas 1 a 3, véase [1].
+
+\src{199}
+\fsection{4}{Aplicación al teorema de conexión y al «Main theorem» de
+Zariski}
+
+Sea $f:X\longrightarrow Y$ un morfismo propio de esquemas. Por el teorema de
+finitud, $f_*(\Osh_X)=\mathcal A$ es un haz coherente sobre $Y$; además, es un
+haz de álgebras conmutativas, por lo que corresponde a un $Y$-esquema
+$g:Y'\longrightarrow Y$ finito sobre $Y$ (definido por la condición de ser afín
+sobre $Y$, es decir, que la imagen inversa de un abierto afín sea afín, y por
+$g_*(\Osh_{Y'})=\mathcal A$). Es inmediato que $f$ se factoriza entonces
+canónicamente como $f=gf'$, donde $f':X\longrightarrow Y'$ es un morfismo de
+$X$ en $Y'$ que esta vez satisface $f'_*(\Osh_X)=\Osh_{Y'}$. Esta factorización
+de $f$ se llama \emph{factorización de Stein} de $f$. Aplicando el primer
+teorema de comparación, corolario 1, a $f'$ y a la parte de $Y'$ reducida a un
+punto $y'$, se obtiene que $f'^{-1}(y')=X'$ es conexo (de otro modo, las
+secciones formales de $X$ a lo largo de $X'$ no formarían un anillo local,
+¡mientras que la completación de
+$f'_*(\Osh_X)_{y'}=\Osh_{Y',y'}$ es local!). Hemos demostrado:
+
+\result{TEOREMA}{5 («Teorema de conexión» de Zariski)} Sea
+$f:X\longrightarrow Y$ un morfismo propio. Entonces $f$ se factoriza de manera
+única (salvo isomorfismo) como $f=gf'$, donde $g:Y'\longrightarrow Y$ es finito
+y $f':X\longrightarrow Y'$ satisface $f'_*(\Osh_X)=\Osh_{Y'}$ (de donde
+$g_*(\Osh_{Y'})=f_*(\Osh_X)$). Las fibras de $f'$ son conexas; es decir, el
+conjunto de las componentes conexas de una fibra $f^{-1}(y)$ de $f$ está en
+correspondencia biunívoca con el conjunto de los puntos de $Y'$ sobre $y$, esto
+es, con el conjunto de los ideales maximales de $f_*(\Osh_X)_y$.
+
+De aquí se deducen inmediatamente las variantes habituales del teorema de
+conexión. Señalemos aquí únicamente el
+
+\src{200}
+\result{COROLARIO}{1} Para que un punto $x$ de $X$ esté aislado en su fibra
+$f^{-1}(y)$, es necesario y suficiente que la fibra $f'^{-1}(y')$ (donde
+$y'=f'(x)$) se reduzca a $x$, o bien que $f'$ induzca un isomorfismo de un
+entorno de $x$ sobre un entorno de $y'$. El conjunto de estos puntos es un
+abierto $U$, y $f'$ induce un isomorfismo de $U$ sobre un abierto de $Y'$.
+
+Para demostrar que $f'$ es un isomorfismo local en $x$, se observa que $f'$
+induce un isomorfismo $\Osh_{y'}\longrightarrow\Osh_x$, como se ve gracias a
+$f'_*(\Osh_X)=\Osh_{Y'}$ y al hecho de que (siendo $f'$ una aplicación cerrada
+cuya fibra en $y'$ se reduce a $x$) los $f'^{-1}(V)$ recorren un sistema
+fundamental de entornos de $x$ cuando $V$ recorre un sistema fundamental de
+entornos de $y'$. De aquí se deduce enseguida el resultado siguiente, debido a
+Chevalley en el caso «geométrico».
+
+\result{COROLARIO}{2} Para que $f$ sea un morfismo finito, es necesario y
+suficiente que sea propio y que sus fibras sean finitas.
+
+Si así ocurre, $f'$ es efectivamente un isomorfismo por lo anterior.
+
+Sea $f:X\longrightarrow Y$ un morfismo no necesariamente propio, pero
+supongamos que $X$ está contenido como abierto en un $Y$-esquema propio
+$\widetilde f:\widetilde X\longrightarrow Y$ (lo cual ocurre, en particular,
+si $f$ es cuasiproyectivo). Aplicando el corolario 1, se ve que $\widetilde f'$
+induce un isomorfismo del conjunto $U$ de los puntos de $X$ aislados en su fibra
+sobre un abierto de $Y'$ (y que $U$ es, en efecto, abierto). Se deduce la
+siguiente variante global del «Main Theorem» de Zariski.
+
+\result{TEOREMA}{6 («Main Theorem» de Zariski)} Sea
+$f:X\longrightarrow Y$ un morfismo de tipo finito. Entonces el conjunto $U$ de
+los puntos de $X$ que están aislados en su fibra es abierto y, si $f$ es
+separado,\footnote{La fe de erratas de 1962 sustituye aquí la hipótesis impresa
+«$f$ cuasiproyectivo» por la hipótesis más débil «$f$ separado», en virtud de
+SGA VIII, 6.2: todo morfismo cuasifinito y separado es cuasiproyectivo.} $U$ es
+$Y$-isomorfo a una parte abierta de un esquema $Y'$ finito sobre $Y$.
+
+Como un morfismo de tipo finito es localmente afín y, \textit{a fortiori},
+localmente cuasiproyectivo, del teorema 6 se deducen enseguida las variantes
+locales usuales del Main Theorem.
+
+\fsection{5}{Aplicación al estudio cohomológico de los morfismos propios y
+planos}
+
+Sea $f:X\longrightarrow Y$ un morfismo propio, y sea $F$ un haz coherente sobre
+$X$; se supone que $F$ es $Y$-plano, es decir, los $F_x$ son módulos planos sobre los
+anillos $\Osh_y$ ($y=f(x)$). Esto significa también que, para todo $y\in Y$, si
+filtramos $F$ a lo largo de la fibra $f^{-1}(y)$ mediante los
+$\mathfrak m_y^nF$ (siendo $\mathfrak m_y$ el ideal maximal de $\Osh_y$), el
+graduado asociado es isomorfo a
+$(F/\mathfrak m_yF)\otimes_{\kappa(y)}\operatorname{gr}(\Osh_y)$; en otros
+términos, se tiene
+\[
+  \mathfrak m_y^nF/\mathfrak m_y^{n+1}F
+  =F_y\otimes_{\kappa(y)}
+  (\mathfrak m_y^n/\mathfrak m_y^{n+1})
+\]
+para todo entero $n$, donde $X_y$ denota la fibra $f^{-1}(y)$ considerada como
+esquema propio sobre el cuerpo residual $\kappa(y)$ de $y$, y $F_y$ el haz
+$F/\mathfrak m_yF$ inducido por $F$ sobre $X_y$. Teniendo en cuenta este
+isomorfismo y el teorema 2, se obtienen cotas y, en ocasiones, cálculos de los
+$R^qf_*(F)$ en un entorno de $y$, conociendo la cohomología de $X_y$ con
+coeficientes en $F_y$. El teorema 2 adopta aquí la forma
+\[
+  \widehat{R^qf_*(F)_y}
+  =\varprojlim_n H^q(X_y,F/\mathfrak m_y^nF).
+\]
+Señalaremos únicamente la consecuencia siguiente:
+
+\src{201}
+\result{PROPOSICIÓN}{1} Sean $f:X\longrightarrow Y$ un morfismo propio y $F$
+un haz sobre $X$, coherente y $Y$-plano. Sea $y\in Y$, sea $q$ un entero, y
+supongamos que $H^q(X_y,F_y)=0$. Entonces $R^qf_*(F)$ es nulo en un entorno de
+$y$ y, para todo $n$, el homomorfismo natural
+\[
+  R^{q-1}f_*(F)_y\longrightarrow
+  H^{q-1}(X_y,F/\mathfrak m_y^nF)
+\]
+es sobreyectivo.
+
+En particular, si $f$ es un morfismo plano (es decir, $\Osh_X$ es $Y$-plano),
+entonces todo haz coherente localmente libre $F$ sobre $X$ es $Y$-plano. Sean
+$F,G$ dos haces de este tipo; aplicando la proposición 1 a
+$\Homsh_{\Osh_X}(F,G)$ y a $q=1$, se obtiene:
+
+\result{TEOREMA}{7} Sea $f$ un morfismo propio y plano, sean $F,G$ dos haces
+coherentes localmente libres sobre $X$, sea $y\in Y$ y supongamos que
+\[
+  H^1\bigl(X_y,\Homsh_{\Osh_{X_y}}(F_y,G_y)\bigr)=0,
+\]
+entonces todo homomorfismo $u_0:F_y\longrightarrow G_y$ está inducido por un
+homomorfismo
+\[
+  u:F|V\longrightarrow G|V,
+  \qquad V=f^{-1}(U),
+\]
+donde $U$ es un entorno de $y$.
+
+\result{COROLARIO}{} Si $u_0$ es un isomorfismo (resp. un monomorfismo, un
+epimorfismo), entonces lo mismo ocurre con $u$ para $U$ suficientemente
+pequeño.
+
+En particular:
+
+\src{202}
+\result{COROLARIO}{2} Sea $E_0$ un haz coherente localmente libre sobre $X_y$
+tal que
+\[
+  H^1\bigl(X_y;\Homsh_{\Osh_{X_y}}(E_0,E_0)\bigr)=0,
+\]
+entonces dos haces localmente libres cuyas restricciones a $X_y$ sean isomorfas
+a $E_0$ son isomorfos en un entorno de $X_y$.
+
+Así:
+
+\result{COROLARIO}{3} Supongamos $H^1(X_y,\Osh_{X_y})=0$. Entonces dos haces
+invertibles sobre $X$ (es decir, localmente isomorfos a $\Osh_X$) cuyas
+restricciones a $X_y$ sean isomorfas son isomorfos en un entorno de $X_y$.\footnote{El texto impreso no precisa el entorno. Se restituye aquí el alcance local del corolario 2, utilizado también en la demostración de la proposición 2.}
+
+Se deduce:
+
+\result{PROPOSICIÓN}{2} Sean $Y$ un esquema conexo y $E$ un haz coherente localmente libre de rango al menos $2$ sobre $Y$; consideremos el fibrado de espacios proyectivos
+$X=\mathbf P(E)$ asociado a $E$, provisto de su conocido haz invertible
+$\Osh_X(1)$. Entonces todo haz invertible $L$ sobre $X$ es isomorfo a un haz de
+la forma
+\[
+  f^*(L')\otimes\Osh_X(n),
+\]
+donde $L'$ es un haz invertible sobre $Y$ y $n$ un entero. Este último está
+determinado de manera única, y $L'$ está determinado salvo isomorfismo.
+
+El corolario 3 precedente demuestra que $L$ es isomorfo a algún $\Osh_X(n)$ en
+un entorno de cada fibra. El resto es casi formal.
+
+La proposición 2 permite determinar los $Y$-morfismos de $X=\mathbf P(E)$ en
+otro fibrado proyectivo. En particular, se obtiene:
+
+\result{COROLARIO}{} Sea $u$ un automorfismo de $X=\mathbf P(E)$. Entonces
+existen un haz invertible $L'$ sobre $Y$ y un isomorfismo $v$ de $E$ sobre
+$E\otimes L'$ tales que $u$ es el isomorfismo correspondiente
+\[
+  \mathbf P(E)\xrightarrow{\sim}\mathbf P(E\otimes L')=\mathbf P(E);
+\]
+el par $(v,L')$ está determinado salvo isomorfismo.
+
+Sea $\Gamma$ el conjunto de las clases de fibrados invertibles $L'$ sobre $Y$
+tales que $E\otimes L'$ sea isomorfo a $E$. Sus elementos son de torsión, pues,
+si $n$ es el rango de $E$, se ve (tomando las potencias exteriores $n$-ésimas)
+que debe tenerse $L'^{\otimes n}\simeq\Osh_Y$. El corolario puede expresarse
+entonces diciendo que se tiene una sucesión exacta de grupos
+\[
+  e\longrightarrow
+  \operatorname{Aut}(E)/\Gamma(Y,\Osh_Y^*)
+  \longrightarrow \operatorname{Aut}_Y(X)
+  \longrightarrow \Gamma\longrightarrow e
+\]
+(deducida, por lo demás, de la sucesión exacta de cohomología obtenida a partir
+de la siguiente sucesión exacta de haces de grupos
+\[
+  e\longrightarrow \Osh_Y^*
+  \longrightarrow \underline{\operatorname{Aut}}(E)
+  \longrightarrow \underline{\operatorname{Aut}}_Y(X)
+  \longrightarrow e,
+\]
+donde $\Osh_Y^*$ es el haz de las «unidades» de $\Osh_Y$, identificado con el
+centro de $\underline{\operatorname{Aut}}(E)$).
+
+\src{203}
+\fsection{6}{Aplicación a teoremas de existencia y unicidad para haces y
+esquemas sobre un anillo completo para la topología $J$-ádica}
+
+El teorema 7 daba un resultado de unicidad para haces coherentes localmente
+libres utilizando los teoremas 1 y 2. Utilizando el teorema 3, deducimos ahora
+teoremas de existencia de haces, de morfismos de esquemas o de esquemas. En lo
+sucesivo, $A$ denota un anillo noetheriano local, separado y completo. El método
+general consiste siempre en efectuar construcciones formales, lo cual consiste
+esencialmente en hacer geometría algebraica sobre un anillo artiniano, y extraer
+de ellas conclusiones de naturaleza «algebraica» mediante los tres teoremas
+fundamentales.
+
+\result{PROPOSICIÓN}{3} Sea $\mathfrak X$ un esquema formal propio y plano
+sobre $A$, y sea $F_0$ un haz localmente libre sobre $X_0$ tal que
+\[
+  H^2\bigl(X_0,\Homsh_{\Osh_{X_0}}(F_0,F_0)\bigr)=0.
+\]
+Entonces existe un haz localmente libre $F$ sobre $\mathfrak X$ que induce
+sobre $X_0$ un haz isomorfo a $F_0$. (Además, este $F$ es único salvo
+isomorfismo si
+$H^1(X_0,\Homsh_{\Osh_{X_0}}(F_0,F_0))=0$.)
+
+Se construyen sucesivamente haces localmente libres $F_n$ sobre los $X_n$, cada
+uno de los cuales induce el anterior. La construcción de $F_n$ encuentra una
+obstrucción en
+\[
+  H^2\bigl(X_0,\Homsh_{\Osh_{X_0}}(F_0,F_0)\bigr)
+  \otimes_{A/J}(J^n/J^{n+1}),
+\]
+que es, por tanto, nula por hipótesis. Utilizando ahora el teorema 3, se
+obtiene:
+
+\result{COROLARIO}{1} Sea $X$ un esquema propio y plano sobre $A$, y sea $F_0$
+como arriba. Entonces existe un haz localmente libre $F$ sobre $X$ que induce
+sobre $X_0$ un haz isomorfo a $F_0$. Además, este $F$ es único salvo
+isomorfismo si
+$H^1(X_0,\Homsh_{\Osh_{X_0}}(F_0,F_0))=0$.
+
+Sea $X_0$ un esquema de tipo finito sobre el cuerpo $k$; se supone que $X_0$ es
+simple (por lo cual entendemos absolutamente simple) sobre $k$, pero no
+necesariamente propio sobre $k$. Sea $A$ un anillo artiniano local de cuerpo
+residual $k$. Nos interesa hallar los esquemas $X$ planos sobre $A$ tales que
+$X\otimes_A k=X_0$ (este es el punto de partida de la «teoría de módulos» o de
+las «variaciones de estructura» de $X_0$). Es equivalente dar un tal $X$, o dar
+sobre el espacio topológico $X_0$ un haz $\Osh_X$ provisto de las estructuras
+siguientes:
+\begin{enumerate}
+  \item[\textit{i.}] Es un haz de $A$-álgebras.
+  \item[\textit{ii.}] Está provisto de un homomorfismo de aumentación
+    $\Osh_X\longrightarrow\Osh_{X_0}$ (compatible con las estructuras de
+    $A$-álgebras); estos datos están sujetos a las condiciones siguientes: la
+    aumentación induce un isomorfismo
+    $\Osh_X\otimes_A k\xrightarrow{\sim}\Osh_{X_0}$; $\Osh_X$ es plano sobre
+    $A$, es decir, el graduado asociado a $\Osh_X$, filtrado por las potencias
+    del ideal maximal $\mathfrak m$ de $A$, es isomorfo a
+    $\operatorname{gr}^0(\Osh_X)\otimes_k\operatorname{gr}(A)$; es decir, se
+    tienen isomorfismos
+    \[
+      \mathfrak m^n\Osh_X/\mathfrak m^{n+1}\Osh_X
+      =\Osh_{X_0}\otimes_k(\mathfrak m^n/\mathfrak m^{n+1}).
+    \]
+\end{enumerate}
+El hecho fundamental es el siguiente:
+
+\src{204}
+\result{TEOREMA}{8} Sea $X_0$ un esquema de tipo finito y simple sobre el
+cuerpo $k$, y supongamos que $X_0$ es afín. Sea $A$ un anillo local artiniano de
+cuerpo residual $k$. Entonces existe un $A$-esquema $X$ plano sobre $A$ tal que
+$X\otimes_A k=X_0$, y dos esquemas de este tipo son necesariamente isomorfos.
+
+Obsérvese que el isomorfismo en cuestión no es canónico, pues en general $X$
+tendrá $A$-automorfismos no triviales que inducen la identidad sobre $X_0$. Por
+otra parte, en general no hay una elección «canónica» de un $X$ que satisfaga
+las condiciones dadas, salvo cuando $A$ es una $k$-álgebra (caso de
+características iguales), en cuyo caso puede tomarse $X=X_0\otimes_k A$, es
+decir, $\Osh_X=\Osh_{X_0}\otimes_k A$ (sea o no afín $X_0$). En el caso de
+características distintas, ignoro en general, cuando $X_0$ no es afín, si se
+puede «levantar» $X_0$ a un $X$ definido sobre $A$. Sin embargo, sea $n$ un
+entero $>0$, pongamos $A_{n-1}=A/\mathfrak m^n$, y supongamos que se ha
+levantado $X_0$ a un $A_{n-1}$-esquema plano $X_{n-1}$; se pretende levantar
+$X_{n-1}$ a un $A_n$-esquema plano $X_n$. Por el teorema 8 ya se sabe que esto
+es posible localmente; por otra parte, se comprueba fácilmente que, si $U_n$
+levanta un abierto $U_{n-1}$ de $X_{n-1}$, entonces el haz de los grupos de
+automorfismos de $U_n$ (que inducen la identidad sobre $U_{n-1}$) es
+canónicamente isomorfo a
+\[
+  \Theta_{X_0/k}\otimes_k(\mathfrak m^n/\mathfrak m^{n+1})
+\]
+restringido a $U_{n-1}$ y, en particular, es conmutativo
+($\Theta_{X_0/k}$ denota el haz de gérmenes de $k$-derivaciones sobre $X_0$).
+Se sigue fácilmente que hay una obstrucción para construir $X_n$ que levante
+$X_{n-1}$, la cual se encuentra en
+\[
+  H^2(X_0,\Theta_{X_0/k})\otimes_k
+  \mathfrak m^n/\mathfrak m^{n+1}.
+\]
+Por consiguiente:
+
+\result{COROLARIO}{1} Sea $X_0$ un esquema de tipo finito simple sobre $k$, y
+supongamos $H^2(X_0,\Theta_{X_0/k})=0$. Entonces, para todo anillo local
+artiniano $A$ de cuerpo residual $k$, existe un $A$-esquema plano $X$ tal que
+$X\otimes_A k=X_0$.
+
+Además, si se ha podido hallar un $X$ plano sobre $A$ que levante $X_0$,
+entonces, en virtud del teorema 8, el conjunto de las clases (salvo isomorfismo)
+de $A$-esquemas planos que levantan $X_0$ se identifica con
+\[
+  H^1\bigl(X_0,\underline{\operatorname{Aut}}(X)\bigr),
+\]
+donde, naturalmente, $\underline{\operatorname{Aut}}(X)$ denota el haz de
+gérmenes de automorfismos del haz de $A$-álgebras $\Osh_X$ compatibles con la
+aumentación. La filtración de $\Osh_X$ define una filtración de
+$\underline{\operatorname{Aut}}(X)$, y el cociente de este haz por el $n$-ésimo
+subgrupo de la filtración es $\underline{\operatorname{Aut}}(X_n)$; el graduado
+asociado a esta filtración es conmutativo y se identifica con
+$\Theta_{X_0/k}\otimes_k\operatorname{gr}(A)$. En particular, si
+$\mathfrak m^{n+1}$ es la primera potencia de $\mathfrak m$ que es nula,
+entonces $F^n(\underline{\operatorname{Aut}}(X))$ (el último término de la
+filtración) pertenece al centro de $\underline{\operatorname{Aut}}(X)$ y es
+isomorfo a $\Theta_{X_0/k}\otimes_k\mathfrak m^n$; es también el haz de
+gérmenes de automorfismos de $X$ que inducen la identidad sobre
+$X_{n-1}=X\otimes_A A/\mathfrak m^n$. Utilizando estos resultados se obtienen
+enseguida los enunciados siguientes:
+
+\src{205}
+\result{COROLARIO}{2} Sea $X_0$ un esquema de tipo finito simple sobre $k$, sea
+$A$ un anillo local artiniano de cuerpo residual $k$ e ideal maximal
+$\mathfrak m$, supongamos $\mathfrak m^{n+1}=0$, sea
+$A_{n-1}=A/\mathfrak m^n$ y, por último, sea $X_{n-1}$ un
+$A_{n-1}$-esquema plano tal que $X_{n-1}\otimes_A k=X_0$. Entonces el conjunto
+de las clases (salvo un isomorfismo que induzca la identidad sobre $X_{n-1}$)
+de $A$-esquemas planos $X_n$ tales que
+$X_n\otimes_A A_{n-1}=X_{n-1}$ es vacío o es un espacio homogéneo principal
+bajo
+\[
+  H^1(X_0,\Theta_{X_0/k})\otimes_k\mathfrak m^n.
+\]
+
+(Obsérvese que, en general, no hay un elemento origen privilegiado en este
+último espacio, pues no hay una manera privilegiada de levantar $X_{n-1}$ a
+$X_n$).
+
+\result{COROLARIO}{3} Sea $X_0$ un esquema de tipo finito simple sobre $k$, y
+supongamos $H^1(X_0,\Theta_{X_0/k})=0$. Entonces, para todo anillo local
+artiniano $A$ de cuerpo residual $k$, existe a lo sumo (salvo isomorfismo) un
+$A$-esquema plano $X$ tal que $X\otimes_A k=X_0$.
+
+Los corolarios 1 y 3 implican inmediatamente los enunciados, en apariencia más
+generales, que se obtienen suponiendo solamente que $A$ es un anillo local
+noetheriano completo de cuerpo residual $k$, con tal de introducir allí $X$
+como un esquema formal sobre $A$:
+
+\result{TEOREMA}{9} Sean $k$ un cuerpo y $X_0$ un esquema de tipo finito simple
+sobre $k$. Para todo anillo local noetheriano completo $A$ de cuerpo residual
+$k$, sea $F(A)$ el conjunto de las clases (salvo un isomorfismo que induzca la
+identidad sobre $X_0$) de esquemas formales $\mathfrak X$ sobre $A$, de tipo
+finito y planos sobre $A$, tales que $\mathfrak X\otimes_A k=X_0$. Con estas
+notaciones:
+\begin{enumerate}
+  \item[\textit{i.}] Si $H^1(X_0,\Theta_{X_0/k})=0$, entonces, para todo $A$,
+    $F(A)$ tiene a lo sumo un elemento.
+  \item[\textit{ii.}] Si $H^2(X_0,\Theta_{X_0/k})=0$, entonces, para todo $A$,
+    $F(A)$ tiene al menos un elemento.
+\end{enumerate}
+
+\src{206}
+\result{COROLARIO}{1} Supongamos que $X_0$ es propio sobre $k$. Bajo la
+condición \textit{(i)}, para todo $A$ existe a lo sumo (salvo un isomorfismo que
+induzca la identidad sobre $X_0$) un esquema $X$ propio y plano sobre $A$ tal
+que $X\otimes_A k=X_0$.
+
+Se utiliza el teorema 3, corolario 2. Por ejemplo:
+
+\result{COROLARIO}{2} Si $X$ es un esquema propio y plano sobre $A$ tal que
+$X\otimes_A k$ es isomorfo al esquema proyectivo tipo $\mathbf P_k^r$ de
+dimensión $r$ sobre $k$, entonces $X$ es isomorfo a $\mathbf P_A^r$.
+
+(También se puede deducir este resultado de la proposición 3, corolario 1).
+
+\result{COROLARIO}{3} Sea $X_0$ un esquema simple y proyectivo sobre $k$, y
+supongamos que se tiene
+\[
+  H^2(X_0,\Osh_{X_0})=H^2(X_0,\Theta_{X_0/k})=0.
+\]
+Entonces, para todo $A$, existe un esquema proyectivo y plano $X$ sobre $A$ tal
+que $X\otimes_A k=X_0$.
+
+Se combinan el teorema 9\textit{(ii)} y el teorema 4. En particular:
+
+\result{COROLARIO}{4} Sea $X_0$ el esquema de una curva algebraica completa y
+simple sobre $k$. Entonces, para todo anillo local noetheriano completo $A$ de
+cuerpo residual $k$, existe un «esquema de curva simple» $X$ sobre $A$ tal que
+$X\otimes_A k=X_0$.
+
+\result{OBSERVACIONES}{}
+
+1) Los corolarios 3 y 4 son especialmente interesantes si $k$ es de
+característica $p\ne0$, tomando como $A$ un anillo de valoración discreta de
+característica $0$ y cuerpo residual $k$; por ejemplo, el «menor $A$ posible»,
+a saber, aquel cuyo ideal maximal está generado por $p$. (De hecho, por los
+teoremas de Cohen, basta conocer los corolarios 3 y 4 para un anillo $A$ de este
+tipo). Señalemos a este respecto que, según los especialistas, no se sabe si
+existen esquemas sobre un cuerpo $k$ que no sean la reducción módulo $p$ de un
+esquema plano definido sobre un tal anillo $A$. Al menos, los resultados de este
+número proporcionan un medio de investigar sistemáticamente esta cuestión. Se
+debería comenzar por examinar si la primera obstrucción que aparece en
+$H^2(X_0,\Theta_{X_0/k})$ es necesariamente nula.
+
+\emph{Complemento de 1962.} --- J.-P. Serre ha construido una variedad
+proyectiva no singular, de dimensión 3, sobre un cuerpo algebraicamente cerrado
+$k$ de característica $p>0$, que no se obtiene por reducción de un esquema
+propio sobre un anillo local íntegro de cuerpo residual $k$ y cuerpo de
+fracciones de característica cero. Mumford habría encontrado un ejemplo análogo
+con una superficie proyectiva no singular.
+
+2) Obsérvese que el teorema 3, y la técnica correspondiente, solo es válido para
+un anillo de base completo (local, para fijar ideas).
+
+Para pasar de resultados conocidos para la completación de un anillo local a
+los resultados correspondientes para ese mismo anillo local, se necesitaría un
+cuarto «teorema fundamental», cuyo enunciado definitivo aún está por hallar.
+
+\src{207}
+3) Compárense los resultados de este número (en particular, los corolarios 1 y
+2 precedentes) y del siguiente con los resultados de Kodaira--Spencer sobre la
+variación de las estructuras complejas. Utilizando el teorema conjetural al que
+se acaba de aludir, bajo las condiciones del corolario 1, pero sin suponer ya
+que $A$ sea completo, se debería poder concluir que existe un anillo $A'$ que
+contiene a $A$, finito y no ramificado sobre $A$, tal que $X\otimes_A A'$ y
+$X'\otimes_A A'$ son $A'$-isomorfos (siendo $X,X'$ dos $A$-esquemas propios y
+planos dados, tales que $X\otimes_A k=X'\otimes_A k=X_0$). Esto es al menos lo
+que puede demostrarse cuando $X_0=\mathbf P_k^r$, utilizando el corolario de la
+proposición 2. En todo caso, cuando $H^1(X_0,\Theta_{X_0/k})=0$, puede
+demostrarse que las fibras de $X,X'$ sobre todo punto $y$ de
+$Y=\operatorname{Spec}(A)$ son isomorfas, al menos después de pasar a la
+clausura algebraica del cuerpo residual $\kappa(y)$. (Se tiene un resultado
+local, aparentemente más fuerte, sin suponer ya necesariamente que $A$ sea
+local). En cuanto a las «variaciones de estructura» del espacio proyectivo,
+señalemos además la cuestión siguiente, sugerida por un problema correspondiente
+de Kodaira--Spencer. Sea $X$ un esquema propio y plano sobre el anillo local
+íntegro $A$ de cuerpo de fracciones $K$ y cuerpo residual $k$, y supongamos que
+$X\otimes_A K$ es isomorfo a $\mathbf P_K^r$; ¿es cierto que
+$X\otimes_A k=X_0$ es isomorfo a $\mathbf P_k^r$ (al menos sobre la clausura
+algebraica de $k$)? En este problema se puede suponer que $A$ es un anillo de
+valoración discreta completo. Se plantea un problema análogo cuando $X_0$ es
+una variedad abeliana.
+
+\emph{Complemento de 1962.} --- El conferenciante es ahora menos optimista
+respecto de los resultados conjeturados arriba. No obstante, Hironaka ha
+resuelto afirmativamente el problema relativo a las variaciones de estructura
+del espacio proyectivo, y Koizumi el problema análogo para las variedades
+abelianas.
+
+\fsection{7}{Aplicación a la «Teoría de módulos»}
+
+Como el propio conferenciante apenas acaba de abordar esta teoría, nos veremos
+obligados a limitarnos a algunas indicaciones. Para simplificar, nos situamos
+sobre un cuerpo $k$, es decir, trabajamos en igual característica, aunque el
+teorema 8 permite tratar también el caso general sin cambio esencial, al
+parecer. Actualmente no hemos superado la etapa «formal»; sin embargo, el
+conferenciante espera poder construir a partir de ella verdaderos esquemas de
+módulos en ciertos casos y, en particular, construir para cada entero $g$ un
+esquema sobre los enteros que desempeñe el papel de esquema de módulos universal
+para las curvas simples de género $g$.
+
+\emph{Complemento de 1962.} --- Mumford ha construido los esquemas de módulos
+para las curvas de género $g$ (cf. SHMI). El teorema 10 demuestra además que
+los «esquemas de Jacobi de nivel $n$» de la teoría de Módulos son no singulares,
+e incluso simples sobre $\mathbf Z$.
+
+\src{208}
+Retomemos la situación y las notaciones del teorema 9, suponiendo ahora que $A$
+es un álgebra local de rango finito sobre $k$, que para simplificar se supone
+algebraicamente cerrado. Entonces $F(A)$ puede considerarse como un funtor
+covariante de $A$, con valores en la categoría de conjuntos: un homomorfismo de
+$k$-álgebras $A\longrightarrow B$ define una aplicación
+$F(A)\longrightarrow F(B)$, pues todo $A$-esquema plano $X$ tal que
+$X\otimes_A k=X_0$ da lugar a un $B$-esquema $X\otimes_A B$ con las mismas
+propiedades. Supongamos que se puede hallar una $k$-álgebra local noetheriana
+completa $\mathcal O$ y un isomorfismo funtorial
+\begin{equation}
+  \tag{*}
+  \operatorname{Hom}(\mathcal O,A)\xrightarrow{\sim}F(A)
+\end{equation}
+(donde el primer miembro denota los homomorfismos de $k$-álgebras). Se ve
+fácilmente que un tal $\mathcal O$ está determinado salvo isomorfismo canónico;
+se llama entonces al espectro formal $\mathfrak Y$ de $\mathcal O$ (es decir,
+al espacio topológico reducido a un punto y provisto de un haz de anillos
+topológicos reducido a $\mathcal O$) el \emph{esquema formal de módulos} para
+$X_0$. (Obsérvese que no existe necesariamente). Sea $\mathfrak r$ el ideal
+maximal de $\mathcal O$; para cada $n$, sea
+$\mathcal O_n=\mathcal O/\mathfrak r^{n+1}$ (por tanto $\mathcal O_0=k$).
+Entonces el homomorfismo canónico $\mathcal O\longrightarrow\mathcal O_n$ es un
+elemento de $\operatorname{Hom}(\mathcal O,\mathcal O_n)$, por lo que define un
+elemento de $F(\mathcal O_n)$, es decir, un $\mathcal O_n$-esquema plano $X_n$
+cuya reducción módulo $\mathfrak r$ es $X_0$. Estos $X_n$ se deducen unos de
+otros por extensión de escalares (es decir, aquí por reducciones), de donde
+resulta que provienen de un esquema formal $\mathfrak X$ bien determinado sobre
+el esquema formal de módulos $\mathfrak Y$; $\mathfrak X$ es plano sobre
+$\mathfrak Y$ y $\mathfrak X_0=X_0$. Como se ve enseguida, el isomorfismo (*)
+se obtiene entonces asociando a todo homomorfismo de $k$-álgebras
+$\mathcal O\longrightarrow A$ la clase del $A$-esquema
+$\mathfrak X\otimes_{\mathcal O}A$ (es decir, a todo morfismo de $k$-esquemas
+$Y'=\operatorname{Spec}(A)\longrightarrow\mathfrak Y$ se asocia el
+$Y'$-esquema $\mathfrak X\otimes_{\mathfrak Y}Y'$ obtenido por cambio de base).
+Además, se ve que el isomorfismo (*) y su descripción precedente siguen siendo
+válidos si solo se supone que $A$ es una $k$-álgebra local noetheriana y
+completa (no necesariamente artiniana). Naturalmente, como de costumbre,
+$\mathcal O$ puede tener perfectamente \textit{a priori} elementos nilpotentes,
+y parece probable que existan casos en que $\mathcal O$ sea él mismo artiniano
+sin ser idéntico a $k$. Esto muestra hasta qué punto el punto de vista de
+Kodaira--Spencer (que se limita a tomar como $A$ anillos regulares) es
+inadecuado \textit{a priori} en el caso general.
+
+\src{209}
+Queda por dar condiciones suficientes para que exista un esquema formal de
+módulos para $X_0$, que se supone propio sobre $k$. En general, es fácil dar
+condiciones necesarias y suficientes sencillas sobre un funtor
+$A\longmapsto F(A)$ (de $k$-álgebras locales de rango finito, con valores en
+los conjuntos) para que pueda escribirse en la forma
+$\operatorname{Hom}(\mathcal O,A)$ para un $\mathcal O$ adecuado. No las
+detallaremos aquí. Señalemos solamente que, en el caso que nos ocupa, estas
+condiciones imponen sobre $X_0$ condiciones cohomológicas no triviales, y parece
+poco probable que se satisfagan siempre, aunque el conferenciante no ha
+construido ningún contraejemplo. En cambio, parece plausible que la condición
+$H^0(X_0,\Theta_{X_0/k})=0$ sea una condición suficiente (aunque en modo alguno
+necesaria) para la existencia de un esquema formal de módulos. Nos limitamos a
+enunciar aquí un teorema en un caso particularmente sencillo (cuyo análogo en
+la teoría de espacios analíticos es bien conocido, cf. Kodaira--Spencer), que se
+establece sin dificultad mediante los resultados del número anterior:
+
+\result{TEOREMA}{10} Sea $X_0$ un esquema propio y simple sobre el cuerpo $k$
+tal que
+\[
+  H^0(X_0,\Theta_{X_0/k})=H^2(X_0,\Theta_{X_0/k})=0.
+\]
+Entonces existe un esquema formal de módulos para $X_0$, correspondiente a un
+anillo local regular $\mathcal O$ (es decir, un álgebra de series formales sobre
+$k$).
+
+Como ya hemos señalado, no es cierto en general que el esquema formal
+$\mathfrak X$ sobre $\mathcal O$ sea algebraizable; pero se sabe que sí lo es
+cuando $X_0$ es proyectivo y $H^2(X_0,\Osh_{X_0})=0$ (teorema 4), por ejemplo
+cuando $X_0$ tiene dimensión 1. Esto da cierto fundamento a la esperanza de
+construir un esquema de módulos sobre los enteros para las curvas de género
+dado\ldots{}
+
+Obsérvese también que métodos como los expuestos en este número pueden aplicarse
+a la construcción y el estudio de las variedades de Picard, así como a muchas
+otras construcciones. Volveremos sobre ello próximamente.
+
+\fsection{8}{Aplicación al grupo fundamental}
+
+Las técnicas expuestas permiten abordar el estudio sistemático del grupo
+fundamental siguiendo el modelo de la teoría topológica. Los dos primeros
+teoremas enunciados en este número son generalizaciones de resultados de un
+trabajo reciente de Lang--Serre.
+
+Sea $X$ un esquema. Un $X$-esquema $X'$ se llama revestimiento no ramificado de
+$X$ si
+\begin{enumerate}
+  \item[\textit{i.}] $X'$ es finito sobre $X$, es decir, está definido por un
+    haz coherente de álgebras $\mathcal A=\mathcal A(X')$ sobre $X$;
+  \item[\textit{ii.}] $\mathcal A$ es un haz localmente libre sobre $X$;
+  \item[\textit{iii.}] Para todo $x\in X$, el cociente
+    \[
+      \mathcal A_x/\mathfrak m_x\mathcal A_x
+      =\mathcal A_x\otimes_{\Osh_x}\kappa(x)
+    \]
+    es un álgebra separable sobre $\kappa(x)$.
+\end{enumerate}
+
+\src{210}
+Esta noción de revestimiento no ramificado (debida a Serre y al conferenciante)
+posee todas las propiedades elementales que cabe razonablemente esperar, cuya
+lista no daremos. Limitémonos a decir que da lugar a una teoría de Galois
+modelada sobre la teoría de Galois clásica (y que la contiene; las
+demostraciones son más bien más sencillas que las comúnmente aceptadas para
+esta última) y sobre la teoría de Galois de los revestimientos topológicos. Más
+precisamente, llamemos \emph{punto geométrico} de un esquema $X$ a un morfismo
+$a$ del espectro $\xi$ de un cuerpo algebraicamente cerrado $\Omega$ en $X$, es
+decir, al dato de una extensión algebraicamente cerrada del cuerpo residual
+$\kappa(x)$ de un punto $x=|a|$ de $X$ (llamado \emph{localidad} del punto
+geométrico $a$). Si $X'$ es entonces un revestimiento no ramificado de $X$, se
+le puede asociar el conjunto $E_a(X')$ de los «puntos geométricos de $X'$ sobre
+$a$», es decir, el conjunto de los pares formados por un $x'\in X'$ sobre $x$
+y un $\kappa(x)$-homomorfismo $\kappa(x')\longrightarrow\Omega$. Se obtiene así
+(para $(X,a)$ fijos) un funtor $F(X,a)$ de la categoría $R(X)$ de los
+revestimientos no ramificados $X'$ de $X$ en la categoría de los conjuntos
+finitos. Si $X$ es conexo, el par formado por $R(X)$ y $F(X,a)$ posee las
+propiedades formales necesarias para ser isomorfo al par análogo definido por
+un grupo topológico compacto totalmente discontinuo $\pi$ adecuado (es decir,
+un límite proyectivo de grupos finitos): se toma la categoría $C(\pi)$ de los
+conjuntos finitos $E$ sobre los cuales $\pi$ actúa continuamente, y el funtor
+identidad $F(\pi)(E)=E$ de esta categoría en la categoría de los conjuntos
+finitos. Además, el grupo $\pi$ está determinado salvo isomorfismo canónico por
+la condición de que $(C(\pi),F(\pi))$ sea isomorfo a un par dado. En este caso,
+$\pi$ se llama \emph{grupo fundamental} del esquema conexo $X$ en el punto
+geométrico $a$, y se denota por $\pi_1(X,a)$. Si $X$ no es conexo, se lo
+reemplaza por la componente conexa de $x=|a|$. Si, por el contrario, $X$ es
+conexo, los grupos $\pi_1(X,a)$ correspondientes a dos puntos geométricos
+$a',a''$ de $X$ son isomorfos (el isomorfismo está determinado salvo
+automorfismos interiores), de modo que, como de costumbre, puede escogerse $a$
+de la manera más conveniente, por ejemplo en el punto genérico de $X$, supuesto
+irreducible. Naturalmente, $\pi_1(X,a)$ es un funtor covariante del esquema
+punteado $(X,a)$. Todo enunciado relativo a la clasificación de los
+revestimientos no ramificados\footnote{El texto impreso dice «revestimientos
+inseparables»; el párrafo trata de la categoría $R(X)$ de los revestimientos no
+ramificados y de su equivalencia con los conjuntos finitos dotados de una acción
+continua de $\pi_1(X,a)$.} puede traducirse entonces al lenguaje de la teoría de
+grupos siguiendo el diccionario bien conocido (salvo que hay que tener en cuenta
+que aquí se trata de grupos topológicos).
+
+\src{211}
+Nuestro objetivo es desarrollar el análogo de la sucesión exacta de homotopía
+de los espacios fibrados para un morfismo propio $f:X\longrightarrow Y$.
+Evidentemente, al no saber qué son los grupos de homotopía superiores, solo
+obtendremos resultados necesariamente incompletos. Para poder aplicar los
+teoremas fundamentales del n\textsuperscript{o} 3, debemos explicitar primero
+algunos lemas elementales relativos a los esquemas sobre cuerpos o anillos de
+Artin (¡conforme al procedimiento general!).
+
+\result{LEMA}{1} Sea $(X',a')$ un revestimiento no ramificado punteado asociado
+a una representación punteada de $\pi_1(X,a)$ en un conjunto finito $E$
+(provisto del punto marcado $e$). Entonces el morfismo canónico
+$\pi_1(X',a')\longrightarrow\pi_1(X,a)$ identifica el primer grupo con el
+estabilizador de $e$ en $\pi_1(X,a)$ (y es, por tanto, inyectivo).
+
+\result{LEMA}{2} Sea $X$ un esquema algebraico sobre el cuerpo $k$, y sea $k'$
+una extensión radicial de $k$. Entonces todo revestimiento no ramificado de
+$X\otimes_k k'$ proviene por imagen inversa (es decir, por extensión de
+escalares) de un revestimiento no ramificado de $X$, determinado salvo
+isomorfismo canónico.
+
+De estos dos lemas resulta, en particular, que para toda extensión algebraica
+$K$ de $k$, y para todo punto geométrico $a'$ de $X'=X\otimes_k K$ que se
+proyecta sobre el punto geométrico $a$ de $X$, el homomorfismo funtorial
+$\pi_1(X',a')\longrightarrow\pi_1(X,a)$ es inyectivo.
+
+\result{LEMA}{3} Sea $X$ un esquema completo sobre un anillo local artiniano
+$A$, tal que $H^0(X,\Osh_X)=A$; sea $X'$ un revestimiento no ramificado de $X$,
+y sea $A'=H^0(X',\Osh_{X'})$, que es, por tanto, un anillo finito sobre $A$
+(que \textit{a priori} puede estar ramificado sobre $A$). Sean $X_0,X'_0$ los
+subesquemas reducidos asociados a $X,X'$ (obtenidos dividiendo por los haces de
+elementos nilpotentes de $\Osh_X,\Osh_{X'}$), y sea $k$ un subcuerpo de
+$A/\mathfrak r(A)$ sobre el cual $A/\mathfrak r(A)$ sea finito (así, $X_0$ es
+un esquema algebraico completo sobre $k$, y $X'_0$ es un revestimiento no
+ramificado suyo). Sea, por último, $\Omega$ una extensión algebraicamente
+cerrada de $k$, y consideremos el revestimiento no ramificado
+$X'_0\otimes_k\Omega$ de $X_0\otimes_k\Omega$. Entonces las dos condiciones
+siguientes son equivalentes:
+\begin{enumerate}
+  \item[\textit{i.}] $X'_0\otimes_k\Omega$ está completamente descompuesto
+    sobre $X_0\otimes_k\Omega$.
+  \item[\textit{ii.}] El morfismo natural
+    $X'\longrightarrow X\otimes_A A'$ es un isomorfismo.
+\end{enumerate}
+Bajo estas condiciones, $A'$ es una extensión no ramificada de $A$. Por último,
+si $X'$ es conexo, la condición \textit{(i)} equivale a la condición siguiente,
+en apariencia más débil:
+\begin{enumerate}
+  \item[\textit{i bis.}] $X'_0\otimes_k\Omega$ admite una sección regular
+    sobre $X_0\otimes_k\Omega$.
+\end{enumerate}
+Cuando se satisface la condición \textit{(ii)}, diremos que el revestimiento no
+ramificado $X'$ de $X$ es \emph{geométricamente trivial}.
+
+\src{212}
+\result{LEMA}{4} Sea $f:X\longrightarrow Y$ un morfismo propio tal que
+$f_*(\Osh_X)=\Osh_Y$. Sean $a$ un punto geométrico de $X$ y $b$ su proyección
+sobre $Y$. Entonces $\pi_1(X,a)\longrightarrow\pi_1(Y,b)$ es sobreyectivo.
+
+En efecto, hay que demostrar lo siguiente: si un revestimiento no ramificado
+$Y'$ de $Y$ (correspondiente a un haz de álgebras localmente libre
+$\mathcal A$) es tal que $X\otimes_Y Y'$ es disconexo, entonces $Y'$ también lo
+es. En efecto, $f^*(\mathcal A)$ será suma directa de dos haces de anillos no
+nulos y, por tanto, también lo será su imagen directa; ahora bien, esta última
+no es otra que $\mathcal A\otimes f_*(\Osh_X)=\mathcal A$.
+
+\result{LEMA}{5} Sea $X$ un esquema completo sobre un cuerpo $k$; se supone que
+$H^0(X,\Osh_X)$ es un anillo local $A$ y que $A/\mathfrak r(A)$ es radicial
+sobre $k$. Sea $\Omega$ una clausura algebraica de $k$, y sea
+$\overline X=X\otimes_k\Omega$ (es conexo). Elijamos un punto geométrico
+$\overline a$ de $\overline X$ que se proyecte sobre el punto geométrico $a$ de
+$X$; entonces se tiene una sucesión exacta
+\[
+  e\longrightarrow\pi_1(\overline X,\overline a)
+  \longrightarrow\pi_1(X,a)
+  \longrightarrow\pi_1(k,b)\longrightarrow e
+\]
+(donde $\pi_1(k,b)$ es el grupo de Galois de $\Omega$ sobre $k$).
+
+La inyectividad del primer homomorfismo se ha visto con los lemas 1 y 2, la
+exactitud en el medio resulta del lema 3 y, por último, la sobreyectividad del
+último homomorfismo (que es la única que utiliza el hecho de que
+$A/\mathfrak r(A)$ sea radicial) resulta del lema 4.
+
+\result{PROPOSICIÓN}{4} Sea $f:X\longrightarrow Y$ un morfismo propio y plano
+tal que, para todo $y\in Y$, $H^0(f^{-1}(y),\Osh_{f^{-1}(y)})$ sea un álgebra
+separable sobre el cuerpo residual $\kappa(y)$ (lo cual ocurre, por ejemplo, si
+$f^{-1}(y)$ es un esquema separable sobre $\kappa(y)$, es decir, reducido y tal
+que los cuerpos correspondientes a sus componentes irreducibles sean
+extensiones separables de $\kappa(y)$). Entonces el revestimiento $Y'$ de $Y$
+asociado a $f_*(\Osh_X)$ es no ramificado.
+
+La demostración es fácil gracias al teorema 2.
+
+\src{213}
+Esta proposición, junto con el lema 1, reduce prácticamente el estudio
+homotópico de los morfismos propios y planos (con fibras separables) al caso en
+que $f_*(\Osh_X)=\Osh_Y$ (pues, utilizando la factorización de Stein, se
+reemplaza $Y$ por $Y'$).
+
+\result{OBSERVACIÓN}{} Un morfismo plano de tipo finito cuyas fibras son
+esquemas separables (resp. simples) se llama \emph{separable} (resp.
+\emph{simple}). Se demuestra que, si $f$ es plano y $f^{-1}(y)$ es separable
+(resp. simple), existe un entorno de $f^{-1}(y)$ en el que $f$ es separable
+(resp. simple). El mismo resultado es válido para «absolutamente normal»
+(«teorema de Bertini»).
+
+Sea $f:X\longrightarrow Y$ un morfismo propio tal que
+\begin{equation}
+  \tag{i}
+  f_*(\Osh_X)=\Osh_Y,
+\end{equation}
+y sea $X'$ un esquema finito sobre $X$. Sea $Y'$ el revestimiento de $Y$
+correspondiente a la factorización de Stein de $X'\longrightarrow Y$
+(cf. teorema 5). Sea $y\in Y$; entonces el conjunto de las componentes conexas
+de la fibra $F'$ de $X'$ sobre $y$ se identifica con el conjunto de los puntos
+$y'$ de $Y'$ sobre $y$ (teorema 5). Consideremos el morfismo evidente
+\begin{equation}
+  \tag{*}
+  X'\longrightarrow X\times_Y Y'
+\end{equation}
+deducido de los morfismos naturales $X'\longrightarrow X$ y
+$X'\longrightarrow Y'$\footnote{El texto impreso omite la prima en el segundo
+$X'$; el morfismo hacia $Y'$ es el de la factorización de Stein de
+$X'\to Y$.}; será un isomorfismo siempre que $X'$ sea de la forma
+$X\times_Y Y''$, donde $Y''$ es un revestimiento no ramificado de $Y$, y
+entonces $Y'$ no será sino $Y''$ y (*) será la identidad. Queremos dar
+precisamente condiciones bajo las cuales $X'$ sea de la forma que acabamos de
+indicar, es decir, que $Y'$ sea no ramificado y (*) un isomorfismo. Para ello,
+introduzcamos la fibra $F$ de $X$ en $y$; es un esquema propio sobre
+$\kappa(y)$ del cual $F'$ es un revestimiento (no ramificado si $X'$ lo es).
+Sea $F'_1$ una componente conexa de $F'$ correspondiente a un punto $y'_1$ de
+$Y'$ sobre $y$. Supongamos además
+\begin{enumerate}
+  \item[\textit{(ii)}] $X'$ es no ramificado sobre $X$ en los puntos de $F'_1$
+    (por tanto, $F'_1$ es un revestimiento no ramificado de $F$), y
+  \item[\textit{(iii)}] $F'_1$ es un revestimiento geométricamente trivial de
+    $F$ (cf. lema 3).
+\end{enumerate}
+
+\result{TEOREMA}{11} En estas condiciones, existe un entorno abierto $U'$ de
+$y'_1$ en $Y'$ tal que (*) es un isomorfismo sobre $U'$. Además, $Y'$ es no
+ramificado en $y'_1$ sobre $Y$ (pero puede ser ramificado en los demás puntos
+$y'$ de $Y'$ sobre $y$).
+
+Naturalmente, las condiciones \textit{(ii)} y \textit{(iii)} son también
+necesarias para que sea válida la conclusión del teorema. La demostración del
+teorema es fácil, con ayuda del lema 3 y del teorema 2.
+
+\src{214}
+\result{COROLARIO}{1} Supongamos siempre satisfecha \textit{(i)}. Para que un
+revestimiento no ramificado sobre $X$ sea isomorfo a la imagen inversa de un
+revestimiento no ramificado $Y'$ de $Y$, es necesario y suficiente que $X'$
+induzca sobre cada fibra $f^{-1}(y)$ un revestimiento geométricamente trivial.
+
+Como, según el teorema 11, el conjunto de los puntos de $Y$ para los cuales se
+cumple esta condición es abierto, basta verificarla en los puntos $y$ que son
+cerrados\ldots{} Señalemos el enunciado siguiente, equivalente al corolario 1:
+el núcleo del homomorfismo (sobreyectivo según el lema 4)
+$\pi_1(X)\longrightarrow\pi_1(Y)$ es el subgrupo invariante cerrado engendrado
+por las imágenes en $\pi_1(X)$ de los $\pi_1(\overline{f^{-1}(y)})$, donde
+\[
+  \overline{f^{-1}(y)}
+  =f^{-1}(y)\otimes_{\kappa(y)}\overline{\kappa(y)},
+\]
+$\overline{\kappa(y)}$ designa una clausura algebraica de $\kappa(y)$. Se
+observará que, al no poder elegir el mismo punto base para todas las fibras,
+los homomorfismos $\pi_1(\overline{f^{-1}(y)})\longrightarrow\pi_1(X)$ solo
+quedan determinados en cualquier caso (una vez elegido un punto base para $X$
+y, por tanto, para $Y$) módulo composición por un automorfismo interior en
+$\pi_1(X)$.
+
+\result{COROLARIO}{2} En las condiciones generales del teorema 11, supongamos
+además que $Y,X,X'$ son íntegros, y sean $K,L,L'$ sus cuerpos. Entonces existe
+una subextensión separable $K'$ de $K$ en $L'$, linealmente disjunta de $L$, tal
+que $L'=LK'$ (de donde $L'=L\otimes_K K'$).
+
+(Se aplica la última parte del lema 3 a la fibra geométrica de $X$). El caso de
+aplicación más interesante del teorema 11 se obtiene cuando $f$ es un morfismo
+separable. Entonces $X'$ es también separable sobre $Y$; por tanto, en virtud
+de la proposición 4, $Y'$ es no ramificado sobre $Y$, y el segundo miembro
+$X\times_Y Y'$ de (*) es no ramificado sobre $X$. Se concluye fácilmente:
+
+\result{COROLARIO}{3} Supongamos, además de \textit{(i)}, que $f$ es separable.
+Sea $X'$ un revestimiento no ramificado y conexo de $X$; para que
+$X'$\footnote{El texto impreso dice aquí «$X$»; el sujeto del criterio es el
+revestimiento $X'$ introducido en la frase anterior.} sea imagen inversa de un
+revestimiento no ramificado $Y'$ de $Y$, es necesario y suficiente que el
+revestimiento $\overline F'$ inducido sobre una fibra geométrica
+$\overline F=f^{-1}(y)$ admita una sección regular.
+
+Se observará que no era necesario suponer que $\overline F'$ fuera
+geométricamente trivial sobre $\overline F$ (lo cual será cierto \textit{a
+posteriori}, aunque \textit{a priori} esta condición sea mucho más fuerte). El
+corolario 3 es, de hecho, equivalente al enunciado siguiente:
+
+\src{215}
+\result{COROLARIO}{4} Sea $f:X\longrightarrow Y$ un morfismo propio y separable
+tal que $f_*(\Osh_X)=\Osh_Y$, sea $\overline F$ la fibra geométrica de un punto
+$y\in Y$, y elijamos un punto geométrico en $\overline F$, del cual se obtienen,
+mediante los morfismos $\overline F\longrightarrow X\longrightarrow Y$, puntos
+geométricos en $X,Y$, que se tomarán como puntos base para los grupos
+fundamentales de $\overline F,X,Y$. En estas condiciones se tiene la sucesión
+exacta
+\[
+  \boxed{
+    \pi_1(\overline F)\longrightarrow\pi_1(X)
+    \longrightarrow\pi_1(Y)\longrightarrow e
+  }.
+\]
+
+De ello se deducen fácilmente los dos enunciados siguientes de Serre--Lang,
+liberados aquí de toda hipótesis de normalidad:
+
+\result{COROLARIO}{5} Sean $X,Y$ esquemas conexos sobre un cuerpo $k$;
+supongamos que el esquema reducido $X_{\mathrm{réd}}$ es separable sobre $k$
+(lo cual es automáticamente cierto si $k$ es perfecto), y que $X$ o $Y$ es
+propio sobre $k$.\footnote{Condición añadida en la fe de erratas de 1962.}
+Elijamos un punto geométrico $a$ (resp. $b$) en $X$ (resp. $Y$), de donde se
+obtienen un punto geométrico $c=(a,b)$ en $X\times_kY$ y un morfismo natural
+\[
+  \pi_1(X\times_kY,c)\longrightarrow
+  \pi_1(X,a)\times\pi_1(Y,b)
+\]
+(deducido de los morfismos funtoriales de $\pi_1(X\times Y,c)$ en $\pi_1(X,a)$
+y $\pi_1(Y,b)$). Este morfismo es inyectivo, e incluso biyectivo si $k$ es
+algebraicamente cerrado.
+
+(La sobreyectividad en este último caso es casi trivial). De ello se deduce,
+con Serre--Lang:
+
+\result{COROLARIO}{6} Sea $X$ un esquema algebraico conexo y propio sobre un cuerpo
+algebraicamente cerrado $k$, y sea $K$ una extensión algebraicamente cerrada
+de $k$; entonces los grupos fundamentales de $X$ y $X\otimes_kK$ son los
+mismos, es decir, todo revestimiento no ramificado de este último esquema
+proviene por extensión de escalares de un revestimiento no ramificado (único
+salvo isomorfismo) de $X$.
+
+\result{OBSERVACIONES}{}
+
+1) Utilizando la proposición 4, se ve que la hipótesis
+$f_*(\Osh_X)=\Osh_Y$ del corolario 4 no es esencial. En el caso general, en vez
+de colocar el grupo unidad $e$ después de $\pi_1(Y)$, hay que continuar con
+\[
+  \pi_0(\overline F)\longrightarrow\pi_0(X)
+  \longrightarrow\pi_0(Y)\longrightarrow e.
+\]
+como en Topología algebraica.
+
+\src{216}
+2) En general, por el momento no se puede decir nada sobre el núcleo de
+$\pi_1(\overline F)\longrightarrow\pi_1(X)$, en el que debería intervenir un
+$\pi_2(Y)$. Parece, sin embargo, que debería poder demostrarse que
+$\pi_1(\overline F)\longrightarrow\pi_1(X)$ es inyectivo si $Y$ es el espectro
+de un anillo local $A$, apoyándose en el teorema 12 de más abajo (que afirma que
+así es si $A$ es completo).
+
+El teorema 11 solo utilizaba los teoremas 1 y 2. Vamos a aplicar ahora el
+teorema 3, apoyándonos en el lema elemental siguiente:
+
+\result{LEMA}{6} Sea $X$ un esquema, y $X_0$ el esquema reducido correspondiente
+(es decir, en el que se han anulado los elementos nilpotentes). Entonces todo
+revestimiento no ramificado $X'_0$ de $X_0$ está inducido por un revestimiento
+no ramificado $X'$ de $X$, determinado salvo isomorfismo canónico.
+
+Este lema, de naturaleza puramente local, desempeña aquí un papel análogo al del
+teorema 8 en teoría de módulos. Combinándolo con el teorema de existencia
+(teorema 3), se deduce:
+
+\result{TEOREMA}{12} Sea $A$ un anillo local noetheriano y completo de cuerpo
+residual $k$. Sea $X$ un esquema propio sobre $A$. Entonces todo revestimiento
+no ramificado $X'_0$ de $X_0=X\otimes_A k$ está inducido por un revestimiento no
+ramificado $X'$ de $X$, único salvo isomorfismo.
+
+En otros términos:
+
+\result{COROLARIO}{1} Elijamos un punto geométrico en $X_0$ como punto base para
+los grupos fundamentales de $X_0$ y $X$. Entonces el homomorfismo canónico
+$\pi_1(X_0)\longrightarrow\pi_1(X)$ es un isomorfismo.
+
+Apliquemos ahora a $X_0$ el lema 5 (suponiendo, para simplificar, que
+$H^0(X_0,\Osh_{X_0})=k$), y observemos que, por ser $A$ completo, sus
+extensiones no ramificadas corresponden a las extensiones no ramificadas de su
+cuerpo residual, es decir, se tiene $\pi_1(Y)=\pi_1(k)$ (donde
+$Y=\operatorname{Spec}(A)$). Se obtiene la sucesión exacta:
+\[
+  e\longrightarrow\pi_1(\overline X_0)
+  \longrightarrow\pi_1(X)\longrightarrow\pi_1(Y)\longrightarrow e.
+\]
+
+\result{COROLARIO}{2} Sea $f:X\longrightarrow Y$ un morfismo propio y plano,
+sean $y_1$ un punto de $Y$ e $y_0$ una especialización de $y_1$, y consideremos
+las fibras «geométricas» correspondientes $\overline X_1$ y $\overline X_0$;
+se supone que $\overline X_0$ es separable y conexa (lo que implica que
+$\overline X_1$ satisface las mismas condiciones). Entonces se puede hallar un
+homomorfismo de grupos
+$\pi_1(\overline X_1)\longrightarrow\pi_1(\overline X_0)$, definido salvo un
+automorfismo interior, y este homomorfismo es sobreyectivo.
+
+\src{217}
+Podría esperarse que este homomorfismo fuera siempre biyectivo; por desgracia,
+en general no es así si $\kappa(y_0)$ tiene característica $>0$. Obtendremos,
+sin embargo, más abajo una cota para el núcleo de este homomorfismo (al menos si
+$\overline X_0$ es simple), de la que se sigue que, si $\kappa(y_0)$ tiene
+característica $0$, el homomorfismo anterior es biyectivo (resultado que también
+podría demostrarse por vía trascendente). En todo caso, obtenemos ya una cota
+para el $\pi_1$ de una fibra especial por medio del de una fibra genérica.
+Utilizando, por ejemplo, el hecho de que una curva algebraica en característica
+$p$ se puede levantar a una curva en característica $0$ (teorema 9, corolario
+4), se obtiene por vía trascendente:
+
+\result{COROLARIO}{3} Sea $X_0$ el esquema de una curva completa simple sobre
+un cuerpo algebraicamente cerrado de característica cualquiera, y sea $g$ el
+género de $X_0$; entonces $\pi_1(X_0)$ admite $2g$ generadores topológicos,
+ligados por la relación bien conocida.
+
+De ello se deduce, mediante una técnica bien conocida de secciones
+hiperplanas:
+
+\result{COROLARIO}{4} Sea $X$ un esquema proyectivo simple sobre un cuerpo
+algebraicamente cerrado de característica cualquiera; entonces $\pi_1(X)$
+admite un número finito de generadores topológicos.
+
+Busquemos el núcleo del homomorfismo
+$\pi_1(\overline X_1)\longrightarrow\pi_1(\overline X_0)$. Para ello se puede
+suponer que $Y$ es el espectro de un anillo de valoración discreta completo
+$V=\Osh_y$ ($y=y_0$). La cuestión equivale a la siguiente: dado un revestimiento
+no ramificado $\overline X'_1$ de $\overline X_1$ (que, si se quiere, puede
+suponerse galoisiano), determinar en qué condiciones proviene de un
+revestimiento no ramificado de $X_0$. \textit{A priori}, el revestimiento dado
+proviene, por extensión de escalares, de un revestimiento no ramificado $X'_1$
+de $X_1\otimes_K K'$, donde $K'$ es una subextensión finita de la clausura
+algebraica $\overline K$ del cuerpo de fracciones $K$ de $V$; si
+$\overline X'_1$ fuera galoisiano de grupo $G$, se puede elegir $X'_1$
+galoisiano de grupo $G$. Se tiene entonces: para que
+$X'_1\otimes_{K'}\overline K=\overline X'_1$ provenga de un revestimiento no
+ramificado de $X_0$, es necesario y suficiente que se pueda hallar una extensión
+finita $K''$ de $K'$ en $\overline K$ tal que
+$X''_1=X'_1\otimes_{K'}K''$ sea de la forma $X''\otimes_{V''}K''$, donde $V''$
+es la clausura normal de $V$ en $K''$ y $X''$ es un revestimiento no ramificado
+de $X\otimes_VV''$. Supongamos, por ejemplo, que $X_0$ es absolutamente normal;
+de ello resulta que $X\otimes_VV''$ es normal (pues es plano sobre $V''$ y tiene
+fibra especial normal), y su cuerpo de funciones es idéntico al $K''(X_1)$ de
+\[
+  X_1\otimes_KK''
+  =(X\otimes_VK)\otimes_KK''
+  =X\otimes_VK''
+  =(X\otimes_VV'')\otimes_{V''}K''.
+\]
+Sea $L''=K''(X'_1)$ el cuerpo de funciones de $X'_1\otimes_{K'}K''$; es una
+extensión finita separable de $K''(X_1)$, y la condición anterior significa
+también que $L''$ es una extensión no ramificada del cuerpo de funciones de
+$X\otimes_VV''$ (es decir, la normalización de $X\otimes_VV''$ en $L''$ es no
+ramificada sobre $X\otimes_VV''$). Basta, por lo demás, verificar que $L''$ es
+no ramificado en los puntos de la fibra especial de $X\otimes_VV''$ (pues es no
+ramificado sobre la fibra genérica $X_1\otimes_KK''$). Si ahora $X_0$ es simple,
+del «teorema de pureza» de Nagata--Zariski resulta incluso que basta verificar
+que $L''$ es no ramificado sobre el anillo local $O''$ del punto genérico de la
+fibra especial de $X\otimes_VV''$, que es un anillo de valoración discreta,
+normalización en $K''(X_1)$ del anillo local $O\subset K(X_1)$ del punto
+genérico de la fibra especial de $X$. Por tanto, se ha obtenido:
+
+\src{218}
+\result{COROLARIO}{5} En las condiciones y con las notaciones anteriores, para
+que el revestimiento no ramificado
+$X'_1\otimes_{K'}\overline K$ de
+$\overline X_1=X_1\otimes_K\overline K$ provenga de un revestimiento no
+ramificado de $\overline X_0$, es necesario y suficiente que exista una
+subextensión finita $K''$ de $\overline K/K'$ tal que $K''(X'_1)$ sea no
+ramificado sobre el anillo de valoración discreta $O''\subset K''(X_1)$.
+
+Observemos ahora que $O''$ es la normalización en $K''(X_1)$ del anillo de
+valoración discreta $O'\subset K'(X_1)$ (normalización de $O$ en $K'(X_1)$), y
+que $O'$ contiene la normalización $V'$ de $V$ en $K'$; un uniformizante $u$ de
+$V'$ es también un uniformizante de $O'$. Supongamos ahora que $X'_1$ es
+galoisiano de grupo de Galois $G$, de orden $n$ primo con la característica $p$
+de $\kappa(y_0)$ (que es también la característica del cuerpo residual de
+$O'$). Por tanto, $K'(X'_1)$ está «moderadamente ramificado» sobre $O'$, de lo
+que resulta fácilmente («lema de Abhyankar») que, si se le adjunta una raíz
+$n$-ésima $v$ de un uniformizante de $O'$, se vuelve no ramificado sobre la
+normalización de $O'$ en $K'(X_1)(v)$. Ahora bien, se puede tomar como $v$ una
+raíz $n$-ésima de un uniformizante de $V'$, lo que prueba que se satisface la
+condición del corolario 5. (Esta posibilidad de utilizar el lema de Abhyankar y
+el teorema de pureza me la ha vendido Serre). Para expresar el resultado
+obtenido, introduzcamos, para todo grupo compacto totalmente discontinuo $\pi$,
+el grupo cociente $\widetilde\pi$ de $\pi$ por el subgrupo cerrado engendrado
+por sus $p$-subgrupos de Sylow, es decir, el límite proyectivo de los grupos
+cocientes discretos de $\pi$ que son de orden primo con $p$. Con esta notación,
+se obtiene:
+
+\result{TEOREMA}{13} Sea $f:X\longrightarrow Y$ un morfismo propio y plano,
+sean $y_1$ un punto de $Y$ e $y_0$ una especialización de $y_1$, y supongamos
+$\overline X_0$ conexo y simple. Entonces el homomorfismo
+$\widetilde\pi_1(\overline X_1)\longrightarrow
+\widetilde\pi_1(\overline X_0)$ deducido del homomorfismo sobreyectivo del
+teorema 12, corolario 2, es un isomorfismo.
+
+En otros términos:
+
+\src{219}
+\result{COROLARIO}{1} La clasificación de los revestimientos galoisianos no
+ramificados, de grupo de Galois de orden primo con la característica $p$ de
+$\kappa(y_0)$, es la misma para $\overline X_0$ y para $\overline X_1$.
+
+En particular, si $\kappa(y_0)$ tiene característica cero, se obtiene por vía
+algebraica que $\pi_1(\overline X_1)\longrightarrow\pi_1(\overline X_0)$ es
+biyectivo.
+
+Señalemos, por último, que las técnicas utilizadas proporcionan también el
+resultado siguiente, más general que el teorema 13:
+
+\result{TEOREMA}{14} Sea $f:X\longrightarrow Y$ un morfismo propio y simple,
+sea $D$ un subesquema cerrado de $X$, simple sobre $Y$, de codimensión 1 en
+todos sus puntos. Para una fibra $Z=f^{-1}(z)$ de $f$, sea $Z'=Z-Z\cap D$ y sea
+$\pi_1^t(Z')$ el cociente del grupo fundamental $\pi_1(Z')$ que clasifica los
+revestimientos no ramificados de $Z'$ que están «moderadamente ramificados»
+sobre $\overline{Z\cap D}$. Sean $y_0,y_1$ como en el teorema 13. Entonces se
+tiene un homomorfismo sobreyectivo (definido salvo un automorfismo interior)
+\[
+  \pi_1^t(\overline X'_1)\longrightarrow\pi_1^t(\overline X'_0),
+\]
+y el homomorfismo correspondiente
+\[
+  \widetilde\pi_1^t(\overline X'_1)
+  \longrightarrow\widetilde\pi_1^t(\overline X'_0)
+\]
+es un isomorfismo.
+
+De ello se deducen las variantes correspondientes de los corolarios del
+teorema 13 y del corolario 4 del teorema 12. Del mismo modo, utilizando el
+teorema 9, corolario 3, se obtiene por vía trascendente:
+
+\result{COROLARIO}{} Sea $X_0$ el esquema de una curva completa simple sobre un
+cuerpo algebraicamente cerrado de característica cualquiera, y sea
+$S=(s_i)_{1\le i\le n}$ una parte finita con $n$ elementos de $X_0$. Entonces
+$\pi_1^t(X_0-S)$ admite $2g+n$ generadores topológicos
+$x_i,y_i$ ($1\le i\le g$) y $\sigma_j$ ($1\le j\le n$), ligados por la relación
+\[
+  \left(\prod_i x_i y_i x_i^{-1}y_i^{-1}\right)
+  \sigma_1\cdots\sigma_n=1,
+\]
+donde los $\sigma_j$ son generadores de los grupos de inercia correspondientes
+a los $s_j$. Para todo grupo finito $G$ de orden primo con la característica,
+engendrado por elementos $x_i,y_i,\sigma_j$ que satisfacen la relación anterior,
+existe un revestimiento galoisiano no ramificado de $X_0-S$, de grupo $G$, cuyos
+grupos de inercia en los puntos $s_j$ están engendrados por los $\sigma_j$.
+
+Cuando $X_0$ es de género 0 y $n=3$, se tiene una solución del «problema de los
+tres puntos», al menos para los revestimientos galoisianos de orden primo con
+la característica. (Aquí, por lo demás, el teorema 9 es inútil, y parece, por
+otra parte, que el corolario anterior puede deducirse del caso particular
+considerado en el problema de los tres puntos).
+
+\src{220}
+\result{OBSERVACIONES}{}
+
+1) Un estudio más completo, en el que sin duda intervendrían revestimientos
+galoisianos generalizados de $X,X_0,X_1$ (con grupo de Galois eventualmente
+infinitesimal), debería permitir recuperar el núcleo del teorema 12, corolario
+2. En cambio, el estudio de los revestimientos que admiten ramificación no
+«moderada» parece tener que ser mucho más difícil.
+
+2) El lema 6, junto con un resultado de Grauert relativo a la completación
+formal de un esquema proyectivo no singular a lo largo de una sección
+hiperplana (o con el teorema, no demostrado por el momento, mencionado en la
+observación 2 después del teorema 11), permite también demostrar en geometría
+algebraica «abstracta» el teorema clásico de Lefschetz sobre el grupo
+fundamental.
+
+\begin{center}
+  \textbf{BIBLIOGRAFÍA}
+\end{center}
+
+\begin{description}
+  \item[{[1]}] Dieudonné (J.) y Grothendieck (A.). --- \emph{Éléments de
+    géométrie algébrique}, Publications mathématiques de l'Institut des Hautes
+    Études Scientifiques (de próxima aparición).
+  \item[{[2]}] Grothendieck (Alexander). --- \emph{The cohomology theory of
+    abstract algebraic varieties}. International Congress of Mathematicians
+    [1958. Edinburgh] (de próxima aparición).
+  \item[{[3]}] Serre (Jean-Pierre). --- \emph{Faisceaux algébriques
+    cohérents}, Annals of Math., Series 2, t. 61, 1955, p. 197--278.
+  \item[{[4]}] Serre (Jean-Pierre). --- \emph{Géométrie algébrique et
+    géométrie analytique}, Ann. Institut Fourier Grenoble, t. 6, 1955--1956,
+    p. 1--42.
+\end{description}

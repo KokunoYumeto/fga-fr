@@ -1,0 +1,1365 @@
+\unit{Exposé 221 -- Hilbert schemes}
+\sid{221}
+\src{249}
+\seminar{13th year, 1960/61, no. 221\\May 1961}
+\paperhead{CONSTRUCTION TECHNIQUES AND EXISTENCE THEOREMS IN ALGEBRAIC GEOMETRY\\
+IV. HILBERT SCHEMES}%
+  {by Alexander GROTHENDIECK}
+
+\subsection*{Introduction}
+\addcontentsline{toc}{subsection}{Introduction}
+
+The techniques presented in [2], I and II, were for the most part independent
+of any projectivity hypothesis on the schemes under consideration.
+Unfortunately, they do not at present make it possible to solve the existence
+problems posed in Exposé II of [2]. In the present exposé and the next, we shall
+solve these problems under projectivity hypotheses. The techniques employed
+are typically projective and make practically no use of the results of I and
+II of [2]. Here we shall construct the “Hilbert schemes” intended to replace
+the use of Chow coordinates, as stated in [2], II, no. 2. In the next exposé,
+the theory of passage to the quotient in schemes developed in III, together
+with the theory of Hilbert schemes, will enable us, for example, to construct
+Picard schemes (defined in [2], II, no. 3) under fairly general conditions.
+
+In summary, one may say that a fairly satisfactory technique of projective
+constructions is now available, except that there is still
+lacking\footnote{See the addendum at the end of the exposé.} a theorem on
+passage to the quotient by groups such as the projective group, acting
+“without fixed points” (cf. [2], III, no. 8). The situation even appears
+somewhat better in analytic geometry (when one restricts to studying analytic
+spaces “projective” over a given analytic space), since for analytic spaces
+the difficulty of passing to the quotient by a group acting nicely disappears.
+Moreover, in algebraic geometry as in analytic geometry, it remains to develop
+a construction technique valid without projectivity hypotheses.
+
+\fsection{1}{Bounded families of sheaves: permanence properties}
+
+Let $k$ be a field and $X$ a $k$-prescheme, of finite type for simplicity. For
+every extension $K/k$ one thus obtains a $K$-prescheme
+$X_K=X\otimes_k K$. If $\mathcal F$ is a coherent sheaf on $X_K$ and $K'$ is
+an extension of $K$, then $\mathcal F\otimes_K K'=\mathcal F_{K'}$ is a
+quasi-coherent sheaf on $X_K\otimes_K K'=X_{K'}$. Now, if $K$ and $K'$ are
+any two extensions of $k$, $\mathcal F$ is a quasi-coherent sheaf on $X_K$,
+and $\mathcal F'$
+\src{250}
+is a quasi-coherent sheaf on $X_{K'}$, we say that $\mathcal F$ and
+$\mathcal F'$ are \emph{equivalent} if there exist $k$-homomorphisms from
+$K$ and $K'$ into a common extension $K''$ of $k$ such that
+$\mathcal F_{K''}$ and $\mathcal F'_{K''}$ are isomorphic on $X_{K''}$. This
+is an equivalence relation, and we shall be interested in equivalence classes
+of sheaves under this relation and in sets of equivalence classes. Note that
+if $X$ is of finite type over $k$,\footnote{The printed text has $X_0$ here;
+only $X$ is defined in this passage.} every class of coherent sheaves can be
+defined by a coherent sheaf on some $X_K$, where $K$ is an extension of finite
+type over $k$. In defining classes of coherent sheaves one may therefore
+restrict to algebraically closed extensions of $k$; one may also restrict to a
+fixed algebraically closed extension $\Omega$ of $k$ of infinite
+transcendence degree. Two coherent sheaves $\mathcal F$ and $\mathcal F'$ on
+$X_\Omega$ are then equivalent if and only if there exists a
+$k$-automorphism $\sigma$ of $\Omega$ such that
+$\mathcal F\otimes_\Omega(\Omega,\sigma)$ is isomorphic to $\mathcal F'$.
+There is thus a bijective correspondence between the classes of coherent
+sheaves under either definition.
+
+Let $E$ and $E'$ be two sets of classes of coherent sheaves on $X$. Consider
+the classes of all sheaves of the form $\mathcal F\otimes\mathcal F'$, where
+$\mathcal F$ and $\mathcal F'$ are coherent sheaves on the same $X_K$, the
+class of $\mathcal F$ belonging to $E$ and that of $\mathcal F'$ to $E'$. One
+thereby obtains a set of classes of coherent sheaves, denoted $E\otimes E'$.
+The sets $\operatorname{Tor}_i(E,E')$, etc., are defined in the same way. More
+generally, to every function $U$ assigning to each sequence
+$\mathcal F_1,\ldots,\mathcal F_n$ of $n$ coherent sheaves on a common $X_K$
+a set $U(\mathcal F_1,\ldots,\mathcal F_n)$ of coherent sheaves on $X_K$, and
+having the evident compatibility with sheaf isomorphisms and inverse images
+under base change, we associate a function, denoted by the same symbol $U$,
+which assigns to every sequence of $n$ sets $E_1,\ldots,E_n$ of classes of
+coherent sheaves a set $U(E_1,\ldots,E_n)$ of classes of coherent sheaves.
+
+Our purpose in this section is to define certain sets of classes of sheaves,
+called \emph{bounded}, and to show that the most common operations $U$, when
+applied to bounded sets, again give bounded sets.
+
+Let $X$ be a prescheme of finite type over a noetherian $S$. For every
+$s\in S$, the fiber $X_s$ is a prescheme of finite type over $k(s)$, and we
+shall consider classes of coherent sheaves on $X_s$ in the preceding sense.
+This gives meaning to the phrase “class of coherent sheaves on a fiber of
+$X/S$,” and to analogous phrases. Likewise, proceeding separately on each
+fiber, one may still consider operations such as $E\otimes E'$, etc., which
+assign to systems of sets of
+\src{251}
+classes of coherent sheaves on the fibers of $X/S$ another set of classes of
+coherent sheaves on the fibers of $X/S$.
+
+\result{DEFINITION}{1.1} Let $E$ be a set of classes of coherent sheaves on the
+fibers of $X/S$. We say that $E$ is \emph{bounded} if there exist a prescheme
+$S'$ of finite type over $S$ and a coherent sheaf $\mathcal F'$ on
+$X'=X\times_S S'$ such that $E$ is contained in the set of classes of sheaves
+on the fibers of $X/S$ defined by $\mathcal F'$.
+
+By definition, the latter assigns to an $s\in S$ the classes of the sheaves
+$\mathcal F'\otimes_{S'}k(s')$, where $s'$ ranges over the points of $S'$ above
+$s$ (so that $k(s')$ is an extension of $k(s)$ and
+$X_s\otimes_{k(s)}k(s')$ is identified with the fiber
+$X'\otimes_{S'}k(s')=X'_{s'}$ of $X'$ at $s'$). Thus bounded families may be
+described as those contained in an \emph{algebraic family} of coherent sheaves
+parametrized by an $S'$ of finite type over $S$.
+
+A finite union of bounded families is bounded (take the disjoint-union
+prescheme of the parameter preschemes $S_i$ defining the dominating algebraic
+families). A base change $T\longrightarrow S$ transforms a bounded family
+relative to $X/S$ into a bounded family relative to $X_T/T$, and the converse
+holds if $T\longrightarrow S$ is surjective (or, more generally, if its image
+contains the $s$ that actually occur in the given family $E$ for $X/S$). This
+reduces, in principle, the determination of bounded families to the case in
+which $S$ is the spectrum of an algebra of finite type over the ring of
+integers $\mathbf Z$.
+
+If $E$ and $E'$ are bounded families of classes of sheaves relative to $X/S$,
+then $E\otimes E'$ is also bounded. Indeed, suppose $E$ and $E'$ are dominated,
+respectively, by the algebraic families defined by $T\longrightarrow S$ and
+$\mathcal F$ on $X_T$, and by $T'\longrightarrow S$ and $\mathcal F'$ on
+$X_{T'}$. Then $E\otimes E'$ is dominated by the algebraic family defined by
+$T''=T\times_S T'\longrightarrow S$ and the sheaf $\mathcal F''$ on
+$X_{T''}$ obtained as the tensor product of the inverse images of $\mathcal F$
+and $\mathcal F'$ on $X_{T''}$. This argument is valid only because the functor
+$\mathcal F\otimes\mathcal F'$ in $\mathcal F,\mathcal F'$ is right exact and
+therefore commutes with base extension (and in particular with passage to the
+fibers). It is not directly applicable to local operations such as
+$\operatorname{Tor}_i(E,E')$, $\operatorname{Hom}(E,E')$, and
+$\operatorname{Ext}^i(E,E')$. One can nevertheless show that these operations
+again transform bounded sets\footnote{The printed French omits the determiner \emph{des}; the English wording was already idiomatic.} into bounded sets, proceeding as for
+$E\otimes E'$ but also using results of the following kind (all contained in
+[3], IV, 6.11): a bounded family $E$ is always dominated by an algebraic
+family defined by a coherent sheaf $\mathcal F$ on an $X_T$ ($T$ of finite
+type over $S$) that is flat relative to $T$. (One “cuts into pieces”\footnote{The printed French has the malformed phrase « coupe au morceaux »; the English wording already expresses the corrected « coupe en morceaux ».} the
+initial parameter space.) Such
+\src{252}
+flatness properties for suitable sheaves indeed ensure that operations such as
+$\operatorname{Tor}_i(\mathcal F,\mathcal F')$ commute with arbitrary base
+change. The same method applies to operations of a global nature: direct
+images and derived direct images of coherent sheaves under proper morphisms,
+global $\operatorname{Ext}$ relative to proper morphisms (cf. [5], III,
+\S~6), etc. All these operations transform bounded families of sheaves into
+bounded families of sheaves. (N.B. -- Here the preschemes on which the various
+sheaves are taken may change under operations of the kind considered.)
+
+The following two statements are proved essentially by the same flatness
+technique; for primary decomposition on the fibers of a morphism of finite
+type, see in particular [5], IV.
+
+\result{PROPOSITION}{1.2} Let $E$ and $E'$ be bounded sets of classes of
+sheaves on the fibers of $X/S$, where $X$ is assumed proper over $S$. Then:
+
+\medskip
+\noindent (i) The family of kernels, cokernels, and images of homomorphisms
+$\mathcal F\longrightarrow\mathcal F'$, where the class of $\mathcal F$
+belongs to $E$ and that of $\mathcal F'$ belongs to $E'$, is bounded.
+
+\smallskip
+\noindent (ii) The family of sheaves $\mathcal F''$ that are extensions of a
+$\mathcal F$ by a $\mathcal F'$, where the class of $\mathcal F$ belongs to
+$E$ and that of $\mathcal F'$ belongs to $E'$, is bounded.
+
+After a suitable base change, one may suppose that $E$ and $E'$ are defined,
+respectively, by coherent sheaves $\mathcal G$ and $\mathcal G'$ on an
+$X_T/T$, where $T$ is of finite type over $S$. One may further suppose that
+certain flatness hypotheses hold, implying that the formation of the sheaves
+$f_{T*}(\operatorname{Hom}_{X_T}(\mathcal G,\mathcal G'))$ and
+$\operatorname{Ext}^{1}_{f_T}(\mathcal G,\mathcal G')$ commutes with base
+change for an arbitrary morphism $T'\longrightarrow T$. One may moreover
+suppose that these coherent sheaves on $T$ are locally free. Let $T_0$ and
+$T_1$ be the vector bundles over $T$ whose sheaves of germs of sections are,
+respectively, the preceding sheaves. One then canonically defines a
+homomorphism $\mathcal G_{T_0}\longrightarrow\mathcal G'_{T_0}$ of coherent
+sheaves on $X_{T_0}$, and an extension\footnote{The printed text reverses the two end terms of the universal extension; the class under consideration lies in $\operatorname{Ext}^1(\mathcal G,\mathcal G')$.}
+\[
+0\longrightarrow\mathcal G'_{T_1}\longrightarrow\mathcal G''
+\longrightarrow\mathcal G_{T_1}\longrightarrow0
+\]
+of coherent sheaves on $X_{T_1}$ having an evident universal property. The
+second sheaf defines an algebraic family dominating the family considered in
+(ii). The same is true of the kernel, cokernel, and image of the homomorphism
+\src{253}
+above, whose consideration proves (i) (provided that the cokernel is assumed
+flat relative to $T_0$, a case to which one again reduces by cutting $T_0$ into
+pieces\ldots).
+
+\result{PROPOSITION}{1.3} Let $E$ be a bounded family of classes\footnote{The printed French has the singular « classe »; the English was already plural.} of sheaves on
+the fibers of $X/S$. Then the classes of the structure sheaves of
+$(\operatorname{supp}\mathcal F)_{\mathrm{red}}$, where $\mathcal F$ is a
+coherent sheaf on an $X_K$, with $K$ algebraically closed, whose class belongs
+to $E$, form a bounded family.
+
+Here $(\operatorname{supp}\mathcal F)_{\mathrm{red}}$ denotes the support of
+$\mathcal F$ endowed with the induced reduced structure; that is, its
+structure sheaf is the quotient of $\mathcal O_{X_K}$ by the largest sheaf of
+ideals defining $\operatorname{supp}\mathcal F$. One can prove the analogue of
+(1.3) for the sheaves canonically deduced from $\mathcal F$ by the theory of
+primary decomposition, for example the $\mathcal F/\mathcal F_i$, where the
+$\mathcal F_i$ are the subsheaves of $\mathcal F$ primary for the components
+of the support of $\mathcal F$ and minimal with this property; or the
+$\mathcal O_{X_K}/\mathfrak p$, where $\mathfrak p$ is a sheaf of prime ideals
+associated with $\mathcal F$; or the $\mathcal O_{X_K}/\mathfrak q$, where
+$\mathfrak q$ is a sheaf of primary ideals associated with a component of the
+support of $\mathcal F$ (the reference field being algebraically closed).
+
+\fsection{2}{Bounded families and the Hilbert polynomial}
+
+In what follows, we suppose that $X$ is projective over $S$ and is equipped
+with a very ample sheaf denoted $\mathcal O_X(1)$. For every extension $K$ of
+a residue-field extension $k(s)$ of a point $s$ of $S$, we consider on $X_K$
+the corresponding sheaf $\mathcal O_{X_K}(1)$, which is again very ample.
+
+To every coherent sheaf $\mathcal F$ on $X_K$ we associate the function
+\[
+P_{\mathcal F}(n)=\text{the Euler--Poincaré characteristic of $\mathcal F(n)$
+on $X_K$},
+\]
+which is a polynomial in the integer $n$, called the \emph{Hilbert polynomial}
+of $\mathcal F$. For large values of $n$, $P(n)$ is simply the dimension of
+$H^0(X_K,\mathcal F(n))$ over $K$, since the $H^i(X_K,\mathcal F(n))$ vanish
+for $i>0$ and $n$ large.
+
+Now suppose that $\mathcal F$ is a coherent sheaf on $X$, flat over $S$. Then
+the Hilbert polynomials of the sheaves $\mathcal F_s$ induced on fibers $X_s$
+belonging to the same connected component of $S$ are all equal [5], III,
+\S~7. It follows (without a flatness hypothesis) that the set of Hilbert
+polynomials of the sheaves $\mathcal F_s$, $s\in S$, is finite for every
+coherent sheaf $\mathcal F$ on $X$.
+\src{254}
+Recall also that if $\mathcal F$ is a coherent sheaf on $X$, it is isomorphic
+to a quotient sheaf of a sheaf $\mathcal O_X(-n)^N$, for $n$ and $N$
+sufficiently large. Thus the sheaves $\mathcal F_s$ induced on the fibers are
+also quotients of the sheaf $\mathcal O(-n)^N$ on the fiber.
+
+These two observations give the “only if” part of the following theorem:
+
+\result{THEOREM}{2.1} Let $X$ be projective over a noetherian $S$, with
+$\mathcal O_X(1)$ very ample on $X$ relative to $S$. Let $E$ be a set of
+classes of sheaves on the fibers of $X/S$. For $E$ to be bounded, it is
+necessary and sufficient\footnote{The printed exposé says only “necessary”;
+the 1962 erratum to Exposé 221 prescribes “necessary and sufficient.”} that it
+satisfy the following conditions:
+
+\medskip
+\noindent (a) There exists a coherent sheaf $\mathcal L$ on $X$ (which may be
+assumed to have the form $\mathcal O_X(-n)^N$) such that $E$ is contained in
+the family of classes of coherent quotient sheaves of sheaves of the form
+$\mathcal L_K$.
+
+\smallskip
+\noindent (b) The Hilbert polynomials $P_{\mathcal F}$ of the sheaves
+$\mathcal F$ whose class belongs to $E$ are members of one fixed finite set of
+polynomials.
+
+It remains to prove the “if” part, which will be a special case of a more
+precise result. For every coherent Module $\mathcal F$ on a prescheme of finite
+type over a field $K$, and every integer $r$, let $N_r$ be the sub-Module of
+$\mathcal F$ whose sections on an open set are those sections of $\mathcal F$
+on that open set whose support has dimension $<r$. Thus $N_r=\mathcal F$ for
+$r>\dim\operatorname{supp}\mathcal F$, while $N_r=0$ for $r\leq0$, and one
+obtains a finite increasing filtration of $\mathcal F$ whose factors
+$N_{r+1}/N_r$\footnote{The printed text reverses the quotient as
+$N_r/N_{r+1}$, which is incompatible with the increasing filtration just
+defined.} have as their associated prime cycles exactly the prime cycles
+associated with $\mathcal F$ that have dimension $r$. Put
+\[
+\mathcal F_{(r)}=\mathcal F/N_r.
+\]
+Then the associated prime cycles of $\mathcal F_{(r)}$ are exactly those prime
+cycles associated with $\mathcal F$ that have dimension $\geq r$; in
+particular, it equals $\mathcal F$ if and only if the prime cycles associated
+with $\mathcal F$ have dimension $\geq r$. With this notation:
+
+\result{THEOREM}{2.2} Under the hypotheses of (2.1), let $s$ be an integer and
+suppose that $E$ satisfies condition (a) and the following weakened form of
+(b):
+
+\medskip
+\noindent $(b_s)$ The Poincaré polynomials $P_{\mathcal F}$ of the sheaves
+$\mathcal F$ whose class belongs to $E$ have bounded coefficients in degrees
+$\geq s-1$.
+
+Under these conditions, the sheaves $\mathcal F_{(s)}$ (as the class of
+$\mathcal F$ ranges through $E$) form a bounded family. Moreover, the
+coefficients of degree $s-2$ of the $P_{\mathcal F}$ are bounded below.
+\src{255}
+Thus:
+
+\result{COROLLARY}{2.3} Suppose that the sheaves $\mathcal F$ whose class
+belongs to $E$ are such that all their associated prime cycles have dimension
+$d$ satisfying $s\leq d\leq r$. Then in (2.1) (b), it is enough to consider
+the coefficients of the $P_{\mathcal F}$ in degrees from $s-1$ through $r$.
+
+The remainder of this section is devoted to an outline of the proof of (2.2).
+The key lemmas are the following two, the first of which is well known (and
+summarizes the useful mathematical content of Chow coordinates):
+
+\result{LEMMA 2.4 (CHOW)}{} Consider the structure sheaves of subschemes $Y$ of
+fibers $X_K$ ($K$ ranging over algebraically closed extensions of residue
+fields of $S$), where $Y$ is reduced and all its components have the same
+dimension $r$ (with $\mathcal O_Y$ regarded as a quotient sheaf of
+$\mathcal O_X$). If the degrees of the $Y$ are bounded, the $Y$ form a bounded
+family.
+
+Here the degree $a$ of $Y$ can most conveniently be defined by the coefficient
+of the leading term of
+\[
+P_{\mathcal O_Y}=a\frac{n^r}{r!}+\cdots.
+\]
+
+\result{LEMMA}{2.5} Let $\mathcal L$ be a coherent sheaf on $X$, and let $E$
+be a set of classes of quotient sheaves $\mathcal F$ of sheaves $\mathcal L_K$
+($K$ a residue-field extension of $S$). Suppose that the fibers of $X$ over
+$S$ have dimension $\leq r$, and write
+\[
+P_{\mathcal F}(n)=a_{\mathcal F}\frac{n^r}{r!}
++b_{\mathcal F}\frac{n^{r-1}}{(r-1)!}
++\text{terms of degree $<r-1$}.
+\]
+Then the coefficient $a_{\mathcal F}$ is bounded, while $b_{\mathcal F}$ is
+bounded below. If $b_{\mathcal F}$ is bounded, then the family of the
+$\mathcal F_{(r)}$ is bounded.
+
+\emph{Proof.} -- After replacing $S$ by a union of subschemes of $S$ covering
+$S$, one may suppose there is a finite morphism
+$f:X\longrightarrow\mathbf P^r_S$ such that $\mathcal O_X(1)$ is isomorphic to
+the inverse image of $\mathcal O_{\mathbf P^r_S}(1)$. Hence for every coherent
+sheaf $\mathcal F$ on $X$ one has
+$P_{\mathcal F}=P_{f_*(\mathcal F)}$. On the other hand, one checks readily
+(by the technique of the preceding section) that a set of sheaves $\mathcal F$
+on $X$ is bounded if and only if the set of $f_*(\mathcal F)$ is bounded.
+Finally,
+\[
+f_*(\mathcal F)_{(r)}=f_*(\mathcal F_{(r)}).
+\]
+\src{256}
+This reduces us to the case $X=\mathbf P^r_S$. Moreover, one may suppose that
+$\mathcal L=\mathcal O_{\mathbf P^r_S}(k)^s$ for suitable $k$ and $s$. The
+coefficient $a_{\mathcal F}$ satisfies
+\[
+0\leq a_{\mathcal F}\leq s
+\]
+and is therefore bounded. It is equivalent to say that the coefficient of
+$n^{r-1}$ in the $P_{\mathcal F}(n)$ is bounded below (respectively, bounded),
+or to say the same for
+$P_{\mathcal F}(n-k)=P_{\mathcal F(-k)}(n)$. We are thus reduced to the case
+\[
+\mathcal L=\mathcal O_{\mathbf P^r_S}^{s}.
+\]
+
+Consider the exact sequence
+\[
+0\longrightarrow N_r\longrightarrow\mathcal F
+\longrightarrow\mathcal F_{(r)}\longrightarrow0,
+\]
+whence
+\[
+P_{\mathcal F}=P_{\mathcal F_{(r)}}+P_{N_r}.
+\]
+Since the coefficient of $n^{r-1}$ in $P_{N_r}$ is positive (because
+$\dim\operatorname{supp}N_r\leq r-1$), we have
+\[
+b_{\mathcal F_{(r)}}\leq b_{\mathcal F}.
+\]
+Thus, in proving the assertions of the lemma, we may replace $\mathcal F$ by
+$\mathcal F_{(r)}$; that is, we may assume that the quotient sheaves
+$\mathcal F$ of $\mathcal L$ under consideration are torsion-free.
+
+Since $\mathbf P^r_K$ is normal, it follows that $\mathcal F$ is locally free
+of rank $a=a_{\mathcal F}$ on an open set $U=\mathbf P^r_K-Y$, where $Y$ has
+codimension $\geq2$. Thus $\bigwedge^a\mathcal F$ is a sheaf on
+$\mathbf P^r_K$ whose restriction to $U$ is invertible; hence (since
+$\mathbf P^r_K$ is regular and $Y$ has codimension $\geq2$) it is isomorphic
+to the restriction of an invertible sheaf on $\mathbf P^r_K$, determined up
+to isomorphism. The latter has the form $\mathcal O_{\mathbf P^r_K}(d)$ for a
+well-determined integer $d$. Since $\bigwedge^a\mathcal F$ is a quotient of
+$\bigwedge^a\mathcal O_{\mathbf P^r_K}^{s}\simeq
+\mathcal O_{\mathbf P^r_K}^{N}$\footnote{The printed text replaces the
+exponent $s$ here by an undefined $n$; $s$ is the rank of the free sheaf
+surjecting onto $\mathcal F$.}, where $N=\binom{s}{a}$, it has $N$ canonical
+sections, and these therefore define sections of
+\src{257}
+$\mathcal O_{\mathbf P^r_K}(d)$ on $U$ that are restrictions of sections $s_i$
+($1\leq i\leq N$) of $\mathcal O_{\mathbf P^r_K}(d)$ (since
+$\mathbf P^r_K$ is normal and $Y$ has codimension $\geq2$). These sections
+generate $\mathcal O_{\mathbf P^r_K}(d)$ at the points of $U$, so they are not
+all zero; this implies $d\geq0$. On the other hand, an easy calculation gives
+\[
+b_{\mathcal F}=a_{\mathcal F}(r+1)/2+d.
+\]
+In particular, this shows that $b_{\mathcal F}>0$, so $b_{\mathcal F}$ is
+bounded below. It is bounded if and only if $d$ is bounded; let us show that
+in this case $\mathcal F$ belongs to a bounded family. We may suppose that
+$a_{\mathcal F}$ and $b_{\mathcal F}$ are fixed, say equal to $a$ and $b$, so
+that $d$ is fixed. Knowledge of the $N$ sections $s_i$ of
+$\mathcal O_{\mathbf P^r_K}(d)$, that is, of a homomorphism
+\[
+s:\bigwedge^a\mathcal L_K\longrightarrow\mathcal O_{\mathbf P^r_K}(d),
+\]
+allows one to recover $\mathcal F$ as the coimage of the corresponding
+composite homomorphism
+\[
+\mathcal L_K\longrightarrow
+\operatorname{Hom}\!\left(\bigwedge^{a-1}\mathcal L_K,
+\bigwedge^a\mathcal L_K\right)\longrightarrow
+\operatorname{Hom}\!\left(\bigwedge^{a-1}\mathcal L_K,
+\mathcal O_{\mathbf P^r_K}(d)\right),
+\]
+where the first is the canonical homomorphism arising from the exterior
+product and the second is deduced from $s$. The conclusion now follows from
+(1.2) (i).
+
+Combining the preceding two lemmas proves:
+
+\result{LEMMA}{2.6} Under the preliminary hypotheses of (2.1), suppose that for
+every $\mathcal F$ one has
+\[
+P_{\mathcal F}(n)=a_{\mathcal F}\frac{n^r}{r!}
++b_{\mathcal F}\frac{n^{r-1}}{(r-1)!}
++\text{terms of degree $<r-1$},
+\]
+and that the coefficients $a_{\mathcal F}$ are bounded. Then the coefficients
+$b_{\mathcal F}$ are bounded below. If the $b_{\mathcal F}$ are bounded, then
+the $\mathcal F_{(r)}$ form a bounded family.
+
+We may suppose that the base fields $K$ for the sheaves $\mathcal F$ are
+algebraically closed. Endow each
+$\operatorname{supp}\mathcal F_{(r)}$, the union of the components of
+$\operatorname{supp}\mathcal F$ of dimension $r$, with the induced reduced
+structure. Then the degrees of the $\operatorname{supp}\mathcal F_{(r)}$ are
+bounded above by $a$, so by (2.4) the $\operatorname{supp}\mathcal F_{(r)}$
+form a bounded set. Moreover, for every component of
+$\operatorname{supp}\mathcal F_{(r)}$, the length of $\mathcal F_{(r)}$ along
+that component is $\leq a$. Hence if $\mathcal J_{\mathcal F}$ is the Ideal
+defining $\operatorname{supp}\mathcal F_{(r)}$, then $\mathcal F_{(r)}$
+\src{258}
+may be regarded as a Module on the subscheme $Y_{\mathcal F}$ of $X$ defined
+by $\mathcal J_{\mathcal F}^{a}$. As in the preceding lemma, we may also
+reduce to the case $\mathcal F=\mathcal F_{(r)}$, so that $\mathcal F$ comes
+from a Module on $Y_{\mathcal F}$. The $Y_{\mathcal F}$ correspond to a
+bounded family of quotient Modules of the $\mathcal O_{X_K}$, and hence arise
+from a closed subscheme $Y$ of a scheme $X\times_S T$. We may then apply (2.5)
+to $Y/T$ and $\mathcal L\otimes_XY$, which gives the conclusion.
+
+We can now prove (2.2) by induction on the upper bound $r$ of the
+$\dim\operatorname{supp}\mathcal F$. The statement is trivial for $r<0$;
+suppose then that $r\geq0$ and that the statement has been proved for $r'<r$.
+By (2.6), the $\mathcal F_{(r)}$ form a bounded set; hence, by (1.2) (i), so do
+the kernels of the homomorphisms
+$\mathcal L_K\longrightarrow\mathcal F_{(r)}$. There is therefore a coherent
+Module $\mathcal L'$ on $X$ such that the kernels in question, and consequently
+also the
+\[
+N_r(\mathcal F)=\operatorname{Ker}(\mathcal F\longrightarrow\mathcal F_{(r)}),
+\]
+are quotients of the Modules $\mathcal L'_K$. Since the $\mathcal F_{(r)}$ are
+bounded, the $P_{\mathcal F_{(r)}}$ remain bounded, and the formula
+\[
+P_{\mathcal F}=P_{\mathcal F_{(r)}}+P_{N_r}
+\]
+shows that the $P_{N_r}$ satisfy the same condition $(b_s)$ as the
+$P_{\mathcal F}$. Thus the $N_r$ satisfy conditions (a) and $(b_s)$, and by
+the induction hypothesis the $(N_r)_{(s)}$ remain bounded. Now
+$\mathcal F_{(s)}$ is an extension of $\mathcal F_{(r)}$ by
+$(N_r)_{(s)}$; hence by (1.2) (ii), the $\mathcal F_{(s)}$ remain bounded. For the final assertion of (2.2), carry boundedness and the next-coefficient lower bound simultaneously in the induction. The bounded kernels of the fixed-source maps to $\mathcal F_{(s)}$ provide a single coherent source surjecting onto each $N_s$, but (1.2) (i) alone does not make the quotients $N_s$ bounded. Reapply the coefficient assertion inductively to those quotients; Hilbert-polynomial additivity and Lemma 2.6 then give the required lower bound for the next coefficient.
+This completes the proof.
+
+\fsection{3}{Hilbert schemes: definition and existence theorem}
+
+Let $X$ be a prescheme over another prescheme $S$, and let $\mathcal F$ be a
+quasi-coherent Module on $X$. Denote by
+\[
+\operatorname{Quot}(\mathcal F/X/S)
+\]
+the set of quasi-coherent quotient Modules of $\mathcal F$ that are flat over
+$S$. Let now $S'\longrightarrow S$ be a base-change morphism, put
+$X'=X\times_S S'$ and
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$. Thus $X'$ is
+a prescheme over $S'$ equipped with a Module
+\src{259}
+$\mathcal F'$, and we may consider
+$\operatorname{Quot}(\mathcal F'/X'/S')$. Put
+\[
+\underline{\operatorname{Quot}}_{\mathcal F/X/S}(S')
+=\operatorname{Quot}(\mathcal F'/X'/S')
+\qquad\text{(where $X'=X\times_SS'$)}.
+\]
+If now $S''\longrightarrow S'$ is an $S$-morphism, then
+$X''=X\times_SS''$ is isomorphic to $X'\times_{S'}S''$, and $\mathcal F''$ to
+$\mathcal F'\otimes_{\mathcal O_{S'}}\mathcal O_{S''}$. Since the inverse-image
+functor
+\[
+\mathcal G'\longmapsto
+\mathcal G'\otimes_{\mathcal O_{S'}}\mathcal O_{S''}
+\]
+from the category of quasi-coherent Modules on $X'$ to the category of
+quasi-coherent Modules on $X''$ is right exact and transforms\footnote{The printed French omits the article \emph{les} before its direct object; the English was already grammatical.} $S'$-flat
+Modules into $S''$-flat Modules, there is a natural map
+\[
+\operatorname{Quot}(\mathcal F'/X'/S')\longrightarrow
+\operatorname{Quot}(\mathcal F''/X''/S''),
+\]
+so $\underline{\operatorname{Quot}}_{\mathcal F/X/S}(S')$ is a contravariant
+functor of $S'$ (a prescheme over $S$), with values in the category of sets.
+From now on we shall suppose that $X$ is projective over a noetherian $S$ and
+that $\mathcal F$ is coherent; for simplicity we shall restrict to $S'$ over
+$S$ that are locally noetherian.
+
+\result{THEOREM}{3.1} Under these hypotheses, the contravariant functor
+$\underline{\operatorname{Quot}}_{\mathcal F/X/S}$ on the category of locally
+noetherian $S$-preschemes is representable by an $S$-prescheme
+$\operatorname{Quot}_{\mathcal F/X/S}$ that is a disjoint union of a sequence
+of projective $S$-schemes (in particular,
+$\operatorname{Quot}_{\mathcal F/X/S}$ is locally of finite type over $S$).
+
+We shall obtain such a decomposition as follows. Let $\mathcal O_X(1)$ be an
+invertible sheaf on $X$ that is very ample relative to $S$. For every
+polynomial $P(n)$ with rational coefficients, let
+$\operatorname{Quot}^P(\mathcal F/X/S)$ be the subset of
+$\operatorname{Quot}(\mathcal F/X/S)$ consisting of the coherent quotients
+$\mathcal G$ of $\mathcal F$ that are flat over $S$ and whose Hilbert
+polynomial at every $s\in S$ equals $P$. Put
+\[
+\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}(S')
+=\operatorname{Quot}^P(\mathcal F'/X'/S').
+\]
+This gives a subfunctor of
+$\underline{\operatorname{Quot}}_{\mathcal F/X/S}$. The invariance property of
+Hilbert polynomials recalled in Section 2 implies the following: the functor
+$\underline{\operatorname{Quot}}_{\mathcal F/X/S}$ is representable if and
+only if the $\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$ are
+representable; in that case the representing $S$-prescheme
+$\operatorname{Quot}_{\mathcal F/X/S}$ is isomorphic to the disjoint union of
+the $\operatorname{Quot}^P_{\mathcal F/X/S}$ representing the functors
+$\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$. Thus (3.1) follows from
+the following theorem:
+\src{260}
+\result{THEOREM}{3.2} With the preceding notation, the functor
+$\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$ is represented by a
+projective $S$-prescheme $\operatorname{Quot}^P_{\mathcal F/X/S}$.
+
+The remainder of this section is devoted to the proof of (3.2).
+
+Let $\nu$ be an integer. For every $S'$ over $S$, denote by $A_\nu(S')$ the
+set of quotients $\mathcal G=\mathcal F'/\mathcal K$ of
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$ that are
+coherent and flat over $S'$, and satisfy the following conditions:
+\begin{align*}
+\text{a.}\quad &R^if'_*(\mathcal G(n))=0 &&\text{for $i>0$ and $n\geq\nu$},\\
+\text{b.}\quad &R^if'_*(\mathcal K(n))=0 &&\text{for $i>0$ and $n\geq\nu$},\\
+\text{c.}\quad &f'_*(\mathcal K(\nu+k))
+=\mathcal S'_k f'_*(\mathcal K(\nu)) &&\text{for $k\geq0$}.
+\end{align*}
+For the last relation, $X$ is assumed to be written as the homogeneous prime
+spectrum of a quasi-coherent graded algebra $\mathcal S_*$ over $S$, positively
+graded and generated by $\mathcal S_1$, and we put
+$\mathcal S'_* =\mathcal S_*\otimes_{\mathcal O_S}\mathcal O_{S'}$, so that
+$X'$ is the homogeneous prime spectrum of $\mathcal S'_*$. To prove (3.2), one
+readily reduces to the case $X=\mathbf P^r_S$ (since $S$ is a union of open
+sets $U$ such that $X|U$ is a closed subscheme of $\mathbf P^r_U$ and
+$\mathcal O_X(1)$ is induced by $\mathcal O_{\mathbf P^r_U}(1)$), and to the
+case in which $\mathcal F$ has the form
+$\mathcal O_{\mathbf P^r_S}^{N}$ and is therefore flat over $S$. In the
+preceding discussion the sheaves $\mathcal K$ are then also flat over $S'$.
+The Künneth relations ([5], III, \S~7) show that conditions (a) and (b) are
+stable under base change and imply that, for $n\geq\nu$, the formation of
+$f'_*(\mathcal G(n))$ and $f'_*(\mathcal K(n))$ commutes with base extension
+(loc. cit.); hence (c) is also stable under base extension.
+
+In other words, $A_\nu(S')$ is a contravariant functor of $S'$, more precisely
+a subfunctor of
+$A(S')=\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}(S')$. As $\nu$
+varies, one obtains an increasing sequence of subsets $A_\nu(S')$ of $A(S')$
+whose union is $A(S')$, by a well-known theorem of Serre [5], III, \S~2. Now
+suppose that $\mathcal G$ is a coherent quotient of $\mathcal F'$, flat over
+$S'$, and that $s$ is a point of $S'$ such that base change
+$\operatorname{Spec}(k(s))\longrightarrow S'$ gives a quotient
+$\mathcal G_s$ of $\mathcal F_s$ satisfying conditions (a), (b), and (c), that
+is, belonging to $A_\nu(\operatorname{Spec}(k(s)))$. Then there exists an open
+neighborhood $U$ of $s$ on which the same conditions hold for
+$\mathcal G|f'^{-1}(U)$, that is, this quotient belongs to $A_\nu(U)$. For (a)
+and (b), this follows from the “theorem on holomorphic functions” [5], III,
+\S~7; condition (c) follows from Nakayama's lemma and from the fact that in any
+case one knows
+$f'_*(\mathcal K(n+k))=\mathcal S'_k f'_*(\mathcal K(n))$
+\src{261}
+for $n$ sufficiently large and $k\geq0$ (cf. [5], III, \S~2). From these
+observations one concludes the following (compare [4], IV). The functor $A$ is
+representable if and only if the functors $A_\nu$ are representable; in that
+case the $S$-prescheme $Q$ representing $A$ is an increasing union of open
+subschemes $Q_\nu$ representing the $A_\nu$.
+
+Let
+\[
+M_* =\bigoplus_{n\geq0}f_*(\mathcal F(n))=\mathcal S_*^{N},
+\]
+so that
+\[
+M'_* =M_*\otimes_{\mathcal O_S}\mathcal O_{S'}
+=\bigoplus_{n\geq0}f'_*(\mathcal F'(n))=\mathcal S'_*{}^{N}.
+\]
+It follows from (a) that
+
+\noindent (a') $f'_*(\mathcal G(n))$ is locally free of rank $P(n)$ for
+$n\geq\nu$, [5], III, \S~7; and from (b), with $i=1$, that
+
+\noindent (a'') $f'_*(\mathcal G(n))$ is a quotient Module of $M'_n$.
+
+Moreover, knowledge of this quotient Module for $n=\nu$ determines, by (c),
+the sub-Modules $f'_*(\mathcal K(n))$ of $M'_n$ for $n\geq\nu$, and therefore
+determines $\mathcal K$ and hence $\mathcal G$. Thus one obtains an injective
+map
+\[
+A_\nu(S')\longrightarrow\operatorname{Grass}_{P(\nu)}(M'_\nu)
+\]
+from $A_\nu(S')$ to the set of locally free quotient Modules of $M'_\nu$ of
+rank $P(\nu)$, and hence a functorial homomorphism
+\[
+i_\nu:A_\nu(S')\longrightarrow
+\underline{\operatorname{Grass}}_{P(\nu)}(M_\nu)(S'),
+\]
+where the functor on the right is represented by the Grassmann scheme
+$\operatorname{Grass}_{P(\nu)}(M_\nu)$ (compare [4], V), which is projective
+over $S$. I claim:
+
+\result{LEMMA}{3.3} The functor $A_\nu(S')$ is representable, and the morphism
+$Q_\nu\longrightarrow\operatorname{Grass}_{P(\nu)}(M_\nu)$ representing the
+homomorphism $i_\nu$ is an immersion (which implies that $Q_\nu$ is
+quasi-projective over $S$).
+
+This assertion is equivalent to the following (compare [4], IV). Suppose given
+a quotient Module $N$ of $M'_\nu$, locally free of rank $P(\nu)$. Then there
+exists a subprescheme $Z$ of $S'$ such that for every locally noetherian
+prescheme $T'$
+\src{262}
+over $S'$, the inverse image of $N$ on $T'$ belongs to
+$\operatorname{Im}A_\nu(T')$ if and only if $T'\longrightarrow S'$ factors
+through the subprescheme $Z$. Changing notation, we may suppose $S'=S$; that
+is, we are given a quotient $N_\nu$ of $M_\nu$ by a sub-Module $R_\nu$. It
+comes from an element of $A_\nu(S)$ if and only if it satisfies the following
+two conditions:
+
+\medskip
+\noindent (i) $M_{\nu+k}/\mathcal S_kR_\nu$ is locally free of rank
+$P(\nu+k)$ for $k\geq0$.
+
+\smallskip
+\noindent (ii) The subsheaf $\mathcal K$ of $\mathcal F$ defined by the graded
+sub-Module
+\[
+R_* =\sum_{k\geq0}\mathcal S_kR_\nu
+\]
+of $M_*$ ([5], II, \S~3), and the quotient
+$\mathcal G=\mathcal F/\mathcal K$, satisfy conditions (a) and (b) above.
+
+These conditions are manifestly necessary. Conversely, if they hold, then the
+sheaf $\mathcal G$ defined in (ii), being isomorphic to the sheaf associated
+with the graded $\mathcal S_*$-Module $N_*$ that is the sum of the
+$M_{\nu+k}/\mathcal S_kR_\nu$, is flat over $S$ (because its fibers are direct
+factors of localizations of $N_*$\footnote{The printed text has $N$; homogeneous localization applies to the graded $\mathcal S_*$-Module $N_*$.} at homogeneous prime ideals of
+$\mathcal S_*$), and has Hilbert polynomial $P$ by (i). In view of (ii), (a')
+and (a'') hold, so for $n\geq\nu$ the natural homomorphism
+$N_n\longrightarrow f_*(\mathcal G(n))$ is a surjective homomorphism between
+locally free Modules of the same rank, and hence an isomorphism. Therefore
+\[
+f_*(\mathcal K(\nu+k))=\mathcal S_kR_\nu
+\quad\text{for every $k\geq0$}.
+\]
+This proves that $\mathcal G\in A_\nu(S)$ and that $R_\nu$ is the element of
+$\operatorname{Grass}_{P(\nu)}(M_\nu)$ defined by $\mathcal G$.
+
+Criterion (i)--(ii) also applies after a base change
+$S'\longrightarrow S$. We shall first prove that condition (i) holding after
+the base change $S'\longrightarrow S$ can be expressed by requiring
+$S'\longrightarrow S$ to factor through a certain subprescheme $Z$ of $S$.
+Once this is done, replacing $S$ by $Z$ reduces us to the case in which (i)
+already holds on $S$; since it is stable under base change, it remains to
+express condition (ii). Let $U$ be the set of $s\in S$ such that the
+cohomology in dimension $>0$ of the sheaves induced on the fiber $X_s$ by
+$\mathcal G(n)$ and $\mathcal K(n)$ vanishes for $n\geq\nu$. We have already
+observed that $U$ is open, and condition (ii) holds after a base change
+$S'\longrightarrow S$ if and only if $S'\longrightarrow S$ factors through
+$U$. This proves Lemma 3.3. It remains to prove the following lemma:
+
+\result{LEMMA}{3.4} Let $S$ be a locally noetherian prescheme equipped with a
+positively graded quasi-coherent algebra $\mathcal S_*$ generated by
+$\mathcal S_1$; let $M_*$ be a quasi-coherent graded $\mathcal S_*$-Module of
+finite type, $P$ a polynomial with rational coefficients, and $\nu$ an
+integer. Then there exists an obviously unique subprescheme $Z$ of $S$
+\src{263}
+with the following property: for every prescheme $S'$ over $S$, the Module
+$M_n\otimes_{\mathcal O_S}\mathcal O_{S'}$ is locally free of rank $P(n)$ for
+every $n\geq\nu$ if and only if $S'\longrightarrow S$ factors through $Z$.
+
+We may clearly suppose $S$ affine, hence noetherian. Then:
+
+\result{LEMMA}{3.5} For every integer $N\geq\nu$, let $U_N$ be the open subset
+of $S$ consisting of those $s\in S$ such that
+\[
+\operatorname{rank}_{k(s)}
+M_{ns}\otimes_{\mathcal O_{S,s}}k(s)\leq P(n)
+\quad\text{for every $\nu\leq n\leq N$}.
+\]
+Then the decreasing sequence of open subsets $U_N$ is stationary.
+
+It is known [3], IV, that $S$ has a finite partition into reduced subschemes
+$S_i$ such that each $M\otimes_{\mathcal O_S}\mathcal O_{S_i}$ is flat over
+$S_i$. We may therefore suppose $M$ flat, and hence the $M_n$ flat. Finally,
+we may clearly suppose $S$ connected. There then exist an integer $n_0$ and a
+polynomial $Q$ such that
+\[
+\operatorname{rank}_{k(s)}
+M_{ns}\otimes_{\mathcal O_{S,s}}k(s)=Q(n)
+\quad\text{for $n\geq n_0$},
+\]
+[5], III, \S~7. First suppose $P<Q$\footnote{The printed text has
+$P\neq Q$; the 1962 erratum prescribes $P<Q$, replaces the “$P=Q$” case by
+the complementary case $P(n)\geq Q(n)$ for large $n$, and replaces the strict
+inequalities in (*) by non-strict ones.}, so that $P(n)<Q(n)$ for large $n$.
+Then plainly $U_N=\varnothing$ for $N$ large, and the sequence $U_N$ is
+stationary. In the complementary case, $P(n)\geq Q(n)$ for large $n$, so
+$U_N=U_{n_0}$ for $N\geq n_0$, and again the sequence $U_N$ is stationary.
+
+In particular, the set $U_\infty$ of $s\in S$ such that
+\[
+\tag{*}
+\operatorname{rank}_{k(s)}
+M_{ns}\otimes_{\mathcal O_{S,s}}k(s)\leq P(n)
+\quad\text{for every $n\geq\nu$}
+\]
+is open, since it is the intersection of the $U_N$. For the proof of (3.4), we
+may therefore replace $S$ by the open set $U_\infty$\footnote{The printed text has $U$; the open subset just defined is $U_\infty$.}, reducing to the case in which
+inequality (*) holds at every $s\in S$. Moreover:
+
+\result{LEMMA}{3.6} Let $M$ be a Module on a locally noetherian prescheme $S$,
+and let $r$ be an integer. Then there exists an obviously unique subprescheme
+$Z$ of $S$ with the following property: for every $S'$ over $S$, the Module
+$M\otimes_{\mathcal O_S}\mathcal O_{S'}$ is locally free of rank $r$ if and
+only if $S'\longrightarrow S$ factors through $Z$. If
+\[
+\operatorname{rank}_{k(s)}
+M_s\otimes_{\mathcal O_{S,s}}k(s)\leq r
+\quad\text{for every $s$},
+\]
+then $Z$ is a closed subprescheme of $S$ (with $M$ assumed coherent).
+\src{264}
+Indeed, the preceding argument reduces us to the case in which inequality (*)
+holds for every $s\in S$ (replacing $S$, if necessary, by the open subset of
+points where it holds). We may then suppose that $M$ occurs in an exact
+sequence
+\[
+\mathcal O_S^q\longrightarrow\mathcal O_S^r\longrightarrow M\longrightarrow0.
+\]
+The condition under consideration for $S'$ over $S$ also means that in the
+corresponding exact sequence
+$\mathcal O_{S'}^q\longrightarrow\mathcal O_{S'}^r
+\longrightarrow M'\longrightarrow0$, the second arrow is an isomorphism; that
+is, the first is zero. Hence the closed subprescheme $Z$ of $S$ defined by the
+Ideal generated by the entries of the matrix defining
+$\mathcal O_S^q\longrightarrow\mathcal O_S^r$ has the required property.
+
+Return now to the proof of (3.4). Let $Z_n$ be the closed subscheme of $S$
+associated by (3.6) with the Module $M_n$ and the integer $r=P(n)$, and let
+$Z'_N$ be the infimum of the $Z_n$ for $\nu\leq n\leq N$. The $Z'_N$ form a
+decreasing sequence of closed subschemes of $S$\footnote{The printed text has $Z$, which is defined only in the following sentence; each $Z'_N$ is constructed as a closed subscheme of $S$.}, and hence are necessarily
+stationary. Let $Z$ be their constant value for $N$ large. This is the $Z$
+sought in (3.4). This completes the proof of (3.4), and hence also of (3.3).
+
+We have therefore proved that
+$\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$ is represented by an
+$S$-prescheme $Q$ that is an increasing union of open subschemes $Q_\nu$
+quasi-projective over $S$. To go further, invoke Theorem 2.1, from which it
+follows readily that $Q$ is quasi-compact (for it is the image of the
+prescheme $S'$ of finite type over $S$ parametrizing the family of quotient
+sheaves of the $\mathcal F_K$ with Hilbert polynomial $P$). Thus $Q$ equals one
+of the $Q_\nu$, and so is quasi-projective over $S$. To prove that it is
+projective over $S$, it remains to prove that it is proper over $S$. For this,
+it suffices to invoke the valuative criterion for properness in the form [5],
+II, 7.3.8. We need only verify:
+
+\result{LEMMA}{3.7} Let $S$ be the spectrum of a discrete valuation ring, let
+$s$ be its generic point, let $X$ be a prescheme over $S$, let $\mathcal F$ be
+a quasi-coherent Module on $X$, and let $\mathcal G_s$ be a quasi-coherent
+quotient Module of
+$\mathcal F_s=\mathcal F\otimes_{\mathcal O_S}k(s)$ on $X_s$. Then there
+exists a unique quasi-coherent quotient Module $\mathcal G$ of $\mathcal F$,
+flat over $S$, whose restriction to $X_s$ is $\mathcal G_s$.
+\src{265}
+Indeed, if $\mathcal G_s=\mathcal F_s/\mathcal K_s$, it is enough to take the
+largest subsheaf $\mathcal K$ of $\mathcal F$ inducing $\mathcal K_s$, [5], I,
+9.4.2, and put $\mathcal G=\mathcal F/\mathcal K$. One checks readily that
+this sheaf has the required properties.
+
+Theorem 3.2, and consequently (3.1), is now completely proved.
+
+The proof establishes at the same time:
+
+\result{PROPOSITION}{3.8} Under the hypotheses of (3.2), let
+$Q=\operatorname{Quot}^P_{\mathcal F/X/S}$, $X_Q=X\times_SQ$, and
+$\mathcal F_Q=\mathcal F\otimes_{\mathcal O_S}\mathcal O_Q$; and let
+$\mathcal G$ be the coherent quotient of $\mathcal F_Q$, flat over $Q$, with
+relative Hilbert polynomial $P$, such that $(Q,\mathcal G)$ represents the
+functor $\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$. There exists an
+integer $\nu$ such that for $n\geq\nu$, $(f_Q)_*(\mathcal G(n))$ is a Module on
+$Q$, locally free of rank $P(n)$ and very ample relative to $S$; that is, it
+defines an immersion of $Q$ into a Grassmann scheme
+$\operatorname{Grass}_{P(n)}(M)$ over $S$. In particular, for $n\geq\nu$, the
+sheaf
+\[
+\bigwedge^{P(n)}(f_Q)_*(\mathcal G(n))
+\]
+on $Q$ is invertible and very ample relative to $S$.
+
+As in (3.2), we may reduce to the case in which $\mathcal F$ is flat over $S$;
+then it is enough to choose an integer $\nu$ such that $A_\nu=A$ (with the
+preceding notation).
+
+The most important application of (3.2) is the case
+$\mathcal F=\mathcal O_X$. We then write
+\[
+\operatorname{Quot}_{\mathcal O_X/X/S}=\operatorname{Hilb}_{X/S},
+\qquad
+\operatorname{Quot}^P_{\mathcal O_X/X/S}=\operatorname{Hilb}^P_{X/S},
+\]
+and obtain a decomposition
+\[
+\operatorname{Hilb}_{X/S}=\coprod_P\operatorname{Hilb}^P_{X/S}.
+\]
+By definition, $\operatorname{Hilb}_{X/S}$ represents the functor
+$\underline{\operatorname{Hilb}}_{X/S}(S')$, the set of closed subschemes of
+$X'=X\times_SS'$ that are flat over $S'$; and
+$\operatorname{Hilb}^P_{X/S}$ represents the corresponding subfunctor of
+closed subschemes with a given Hilbert polynomial $P$. These preschemes are
+also called the \emph{Hilbert prescheme} of $X$ over $S$ and the
+\emph{Hilbert prescheme of index $P$}, respectively. The terminology is
+justified by the role played in the theory by Hilbert polynomials. Their
+difference in nature from the classical Chow varieties (which parametrize
+cycles rather than varieties) is of the same order as that between
+\src{266}
+the Chow ring of cycle classes on a variety and the ring of sheaf classes on
+the variety (as it appears\footnote{The printed French has feminine « telle », although its antecedent \emph{anneau} is masculine; the English was already idiomatic.} in the Riemann--Roch theorem [1]). Indeed, when
+$X=\mathbf P^r_S$ and $S$ is the spectrum of a field, knowledge of the Hilbert
+polynomial of a coherent Module $\mathcal F$ on $X$ is also equivalent to
+knowledge of the Chern classes of $\mathcal F$, or of the class of $\mathcal F$
+in the ring of classes of coherent sheaves on $X$.
+
+\result{REMARKS}{3.9} Note also that the construction of
+$\operatorname{Quot}_{\mathcal F/X/S}$ and
+$\operatorname{Quot}^P_{\mathcal F/X/S}$ was reduced to the case
+$X=\mathbf P^r_S$, $\mathcal F=\mathcal O_X^N$, with $\mathcal O_X(1)$ the
+usual very ample sheaf; more precisely, the general
+$\operatorname{Quot}_{\mathcal F/X/S}$ occur as closed subschemes of these.
+Since the formation of the $\operatorname{Quot}^P_{\mathcal F/X/S}$ is plainly
+compatible with base changes $S'\longrightarrow S$, we are reduced further to
+$S=\operatorname{Spec}(\mathbf Z)$. Ultimately, then, one is reduced to
+studying the following projective schemes over $\mathbf Z$:
+\[
+\mathfrak Q^P_{r,N}=
+\operatorname{Quot}^{P}_{(\mathcal O_{\mathbf P^r_{\mathbf Z}})^N/
+\mathbf P^r_{\mathbf Z}/\operatorname{Spec}(\mathbf Z)},
+\]
+and, more particularly, the absolute Hilbert schemes
+\[
+\operatorname{Hilb}^P_r=\mathfrak Q^P_{r,1}.
+\]
+A more detailed study of these schemes, beginning with the determination of
+their connected components (are they connected?),\footnote{The 1962 erratum
+notes that Hartshorne proved the connectedness of the
+$\operatorname{Hilb}^P_r$ over an algebraically closed field and determined
+the pairs $(r,P)$ for which $\operatorname{Hilb}^P_r\neq\varnothing$.} and
+their irreducible components (by Serre [7], there may be irreducible components
+lying entirely over a nonzero prime $p$), would be very interesting. Recall
+Weil's question whether the irreducible components of the fibers of
+$\operatorname{Hilb}^P_r$ over $s\in\operatorname{Spec}(\mathbf Z)$
+correspond to “regular” extensions of the prime field, that is, whether they
+are “relatively connected.” These questions may be more approachable for
+Hilbert schemes than for “Chow varieties.”
+
+\fsection{4}{Variants}
+
+\noindent a. Under the hypotheses of (3.1), let $U$ be an open subset of $X$,
+and let $A'$ be the subfunctor of
+$A=\underline{\operatorname{Quot}}_{\mathcal F/X/S}$ such that $A'(S')$ is the
+set of quotient Modules $\mathcal G$ of $\mathcal F'$, flat over $S'$, whose
+support is contained in $U'$. Plainly $A'$ is represented by an open subset of
+the prescheme $\operatorname{Quot}_{\mathcal F/X/S}$ representing $A$. It
+follows that Theorems (3.1) and (3.2)
+\src{267}
+remain valid when $X$ is assumed quasi-projective over $S$ instead of
+projective over $S$, provided “projective” is also replaced by
+“quasi-projective” in the conclusions and
+$\underline{\operatorname{Quot}}_{\mathcal F/X/S}(S')$ now denotes the set of
+coherent quotients $\mathcal G$ of $\mathcal F'$, flat over $S'$, whose support
+is proper over $S'$.
+
+\medskip
+\noindent b. More generally, one may impose on the quotients $\mathcal G$ of
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$, flat over $S'$,
+all kinds of additional natural conditions stable under base change, thereby
+obtaining subfunctors of
+$\underline{\operatorname{Quot}}_{\mathcal F/X/S}$ whose representability may
+be sought. In many cases, the usual criterion proves that these functors are
+again represented by open subsets of
+$\operatorname{Quot}_{\mathcal F/X/S}$. This is so, in particular, when one
+imposes one of the following additional properties:
+
+\smallskip
+\noindent $1^\circ$ The dimensions of the prime cycles associated with the
+Modules $\mathcal G_{s'}$ ($s'\in S'$)\footnote{The printed text has $\mathcal G_s$ although the quantified point is $s'$.} induced on the fibers $X'_{s'}$ belong
+to a given set of integers.
+
+\smallskip
+\noindent $2^\circ$ (When $\mathcal F=\mathcal O_X$, so that $\mathcal G$
+corresponds to a closed subprescheme $Y$ of $X'$): $Y$ is a smooth prescheme
+([3], IV) over $S'$\footnote{In the six occurrences of this condition after base change, the printed text incorrectly retains $S$ or $X$; the family lives on $X'=X\times_SS'$ relative to $S'$.}, respectively normal over $S'$ (that is, the fibers $Y_{s'}$
+are normal “over $k(s')$,”\footnote{The printed text has $k(s)$; the residue field of the indexed point $s'$ is $k(s')$.} meaning normal after every extension of the base
+field), respectively (when $X$ is flat over $S$) an $S'$-local complete
+intersection\footnote{The printed text has “$k$-local complete intersection”; the intermediate correction is relative to the base, and requires the base-changed $S'$ here.} in $X'$ over $S'$ (that is, the fibers $Y_{s'}$ are local complete
+intersections in the $X'_{s'}$).
+
+Other conditions would involve cohomological properties of the Modules
+$\mathcal G_{s'}$ induced on the $X'_{s'}$, etc. Of course, a conjunction of
+conditions each represented by an open subset $U_i$ of
+$\operatorname{Quot}_{\mathcal F/X/S}$ is represented by the intersection of
+these open subsets. For example, assigning to every $S'$ over $S$ the set of
+closed subschemes $Y$ of $X'=X\times_SS'$ that are étale coverings ([3], I) of
+$S'$ of a given rank $r$ gives a representable contravariant functor of $S'$.
+
+\medskip
+\noindent c. The preschemes $\operatorname{Hom}_S(X,Y)$,
+$\Pi_{X/S}(Z/X)$, and $\operatorname{Isom}_S(X,Y)$ defined in [2], II, C,
+no. 2 exist under suitable projectivity hypotheses and occur as open subsets
+of suitable Hilbert preschemes. Since
+\[
+\operatorname{Hom}_S(X,Y)=\Pi_{X/S}((X\times_SY)/X),
+\]
+the case of $\operatorname{Hom}_S(X,Y)$\footnote{The printed text has $\operatorname{Hom}_S(X,X)$ here, contrary to the preceding displayed identity.} reduces to that of
+$\Pi_{X/S}(Z/X)$. For every $S'$ over $S$, the set of sections of
+$Z'=Z\times_SS'$ over $X'=X\times_SS'$ is in bijective correspondence with
+the set of subpreschemes $\Gamma$ of $Z'$\footnote{The printed text has $Z$; these graphs are graphs of sections of $Z'=Z\times_SS'$.} (necessarily closed if $Z$ is
+separated over $X$) such that the morphism $\Gamma\longrightarrow X'$ induced
+by $Z'\longrightarrow X'$ is an isomorphism. In this way,
+\src{268}
+when $X$ is flat and proper over $S$ and $Z$ is quasi-projective over $S$,
+$\Pi_{X/S}(Z/X)$ exists and occurs as an open subprescheme of
+$\operatorname{Hilb}_{Z/S}$. Hence when $X$ is projective and flat over $S$
+and $Y$ is quasi-projective over $S$, $\operatorname{Hom}_S(X,Y)$ exists and
+occurs as an open subprescheme of
+$\operatorname{Hilb}_{(X\times_SY)/S}$. When $X$ and $Y$ are both projective
+over $S$, it follows at once that $\operatorname{Isom}_S(X,Y)$ also exists and
+is represented by an open subset of $\operatorname{Hom}_S(X,Y)$. Similarly,
+when $X$ is flat and projective over $S$ and $Y$ is quasi-projective over $S$,
+the $S$-prescheme $\operatorname{Imm}_S(X/Y)$ corresponding to the subfunctor
+of $\operatorname{Hom}_S(X,Y)$ whose elements are the $S'$-homomorphisms
+$X'\longrightarrow Y'$ that are immersions is also represented by an open
+subset of $\operatorname{Hom}_S(X,Y)$.
+
+Let $\mathcal L$\footnote{The printed French uses plural « Soient » before a singular subject with a parenthetical counterpart; the English was already singular.} (respectively, $\mathcal M$) be an invertible sheaf on $X$
+(respectively, $Y$), very ample relative to $S$. Then
+$\mathcal L\otimes_{\mathcal O_S}\mathcal M$ is a very ample sheaf on
+$X\times_SY$ relative to $S$. Consequently, for every polynomial $P$ with
+rational coefficients, $\operatorname{Hilb}^P_{(X\times_SY)/S}$ is defined
+and is a quasi-projective prescheme over $S$. It therefore induces on
+$\operatorname{Hom}_S(X,Y)$ an open-and-closed subset quasi-projective over
+$S$, which we denote $\operatorname{Hom}_S(X,Y)^P$. Thus the sections of
+$\operatorname{Hom}_S(X,Y)^P$ over $S$ are the $S$-morphisms
+$g:X\longrightarrow Y$ such that for every integer $n$,
+\[
+\chi\!\left(\left(\mathcal L\otimes_{\mathcal O_X}g^*(\mathcal M)\right)^{
+\otimes n}\right)=P(n).
+\]
+
+In this way one obtains generalizations of Matsusaka's theorem asserting that
+the automorphisms of a “polarized” projective variety form an algebraic group.
+Here the assertion has a plainly more precise meaning, since this group is
+defined as the solution of a universal problem. Note also that over an
+algebraically closed field, the automorphism group considered formerly is
+obtained from the “true” one defined here by quotienting out the nilpotent
+elements. This explains why the older constructions have little chance of
+working over a nonperfect base field: the Ideal of nilpotent elements appearing
+after an extension of the base field need not be “defined over $k$.” The same
+observation applies to most of the old-style constructions as well.
+
+\fsection{5}{Infinitesimal study of Hilbert schemes}
+
+It follows from the next result:
+
+\src{269}
+\result{PROPOSITION}{5.1} Let $S$ be a prescheme, let $S_0$ be a subprescheme
+defined by a quasi-coherent Ideal $\mathcal J$ of square zero, let $X$ be an
+$S$-prescheme, and let $\mathcal F$ be a quasi-coherent Module on $X$. Put
+$X_0=X\times_SS_0$ and
+$\mathcal F_0=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S_0}$, and let
+$\mathcal G_0=\mathcal F_0/\mathcal K_0$ be a quasi-coherent quotient Module of
+$\mathcal F_0$, flat over $S_0$. For every open subset $U$ of $X$, let
+$\mathcal E(U)$ be the set of quasi-coherent quotient Modules $\mathcal G$ of
+$\mathcal F|U$, flat over $S$, such that
+$\mathcal G\otimes_{\mathcal O_S}\mathcal O_{S_0}=\mathcal G_0$. As $U$
+varies, the $\mathcal E(U)$ are thus the sections of a sheaf $\mathcal E$ on
+$X$. The sheaf of groups
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X_0}}
+(\mathcal K_0,\mathcal G_0\otimes_{\mathcal O_{S_0}}\mathcal J)
+\]
+acts naturally on $\mathcal E$, which thereby becomes a sheaf “formally
+principal homogeneous under $\mathcal A$” (that is, for every open $U$ in $X$,
+$\mathcal E(U)$ is empty or is a principal homogeneous set under
+$\mathcal A(U)$).
+
+It follows that:
+
+\result{COROLLARY}{5.2} Suppose that locally on $X$ there exists an extension
+$\mathcal G$ of $\mathcal G_0$ to a quotient of $\mathcal F$ flat over $S$
+(that is, the fibers of the sheaf $\mathcal E$ are nonempty). Then there is a
+canonical obstruction class
+\[
+c(\mathcal G_0)\in H^1(X,\mathcal A)
+\]
+whose vanishing is necessary and sufficient for the existence of a global
+extension $\mathcal G$ of $\mathcal G_0$ to a quotient of $\mathcal F$ flat
+over $S$. If this class vanishes, the set $\mathcal E(X)$ of all possible
+extensions is a principal homogeneous set under
+\[
+\mathcal A(X)=\operatorname{Hom}_{\mathcal O_{X_0}}
+(\mathcal K_0,\mathcal G_0\otimes_{\mathcal O_{S_0}}\mathcal J).
+\]
+\footnote{In this last formula the printed text has $\mathcal O_X$ in place of
+$\mathcal O_{X_0}$, although the immediately preceding definition of
+$\mathcal A$ fixes $\mathcal O_{X_0}$.}
+In particular, a global extension exists if $H^1(X,\mathcal A)=0$.
+
+\result{COROLLARY}{5.3} Suppose that
+$Q=\operatorname{Quot}_{\mathcal F/X/S}$ exists (cf. 4 (a)) -- for example,
+that $X$ is quasi-projective over a locally noetherian $S$ and $\mathcal F$ is
+coherent. Let $x\in Q$ correspond to a residue extension $K=k(x)$ of $k(s)$
+($s\in S$):
+\src{270}
+thus $x$ is defined by a coherent quotient Module
+$\mathcal G_0=\mathcal F_0/\mathcal K_0$ of the Module
+$\mathcal F_0=\mathcal F_K$ on the $K$-prescheme $X_K$. Let $\mathcal A$ be the
+coherent sheaf on $X_K$ defined by
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X_0}}(\mathcal K_0,\mathcal G_0).
+\]
+Then the Zariski tangent space to the fiber $Q_s$ at $x$ (the $K$-dual of
+$\mathfrak m/\mathfrak m^2$, where $\mathfrak m$ is the maximal ideal of
+$\mathcal O_{Q_K,x}$) is canonically isomorphic to $H^0(X_K,\mathcal A)$.
+
+The description of the Zariski tangent space admits the following
+generalization. Given an $S$-morphism $g:S'\longrightarrow Q$, that is, a
+section $g'$ of $Q'=Q\times_SS'$ over $S'$, the Module
+\[
+\Omega=g^*(\Omega^1_{Q/S})=g'^*(\mathcal J/\mathcal J^2)
+\]
+(where $\mathcal J$ is the Ideal on $Q'$ defined by the section $g'$ of $Q'$
+over $S'$) is characterized by the following formula, functorial in the
+coherent Module $\mathcal M$ on $S'$:
+\[
+\operatorname{Hom}_{\mathcal O_{S'}}(\Omega,\mathcal M)
+\simeq H^0(X',\mathcal A),
+\]
+where $\mathcal A$ is the Module on $X'=X\times_SS'$ defined by
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X'}}
+(\mathcal K,\mathcal G\otimes_{\mathcal O_{S'}}\mathcal M).
+\]
+\footnote{The printed text puts $\mathcal O_S$ in this tensor product; here
+$\mathcal G$ and $\mathcal M$ are Modules over $S'$, and the square-zero
+deformation construction requires the tensor product over $\mathcal O_{S'}$.}
+Here $\mathcal G=\mathcal F'/\mathcal K$ is the quotient Module of
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$ corresponding
+to $g$. Indeed, apply (5.1) with $S_0$ replaced by $S'$ and $S$ by the
+prescheme $D(\mathcal M)=(S',\mathcal O_{S'}+\mathcal M)$, where $\mathcal M$
+is regarded as an Ideal of square zero.
+
+When $\mathcal F=\mathcal O_X$ in (5.1), the datum of $\mathcal G_0$
+corresponds to a closed subprescheme $Y_0$ of $X_0$, flat over $S_0$, defined
+by the Ideal $\mathcal J_0=\mathcal K_0$. Formula (*) then gives
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X_0}}
+(\mathcal J_0/\mathcal J_0^2,
+\mathcal O_{Y_0}\otimes_{\mathcal O_{S_0}}\mathcal J),
+\]
+where $\mathcal J_0/\mathcal J_0^2$ is interpreted as the conormal sheaf of $Y_0$
+in $X_0$, also denoted
+\src{271}
+$\check{\mathcal N}_{Y_0/X_0}$. It is then useful to regard $\mathcal A$ as a
+Module on $Y_0$ and compute $H^0$ and $H^1$ on $Y_0$. Moreover, if $Y_0$ is
+locally a complete intersection in $X_0$, with $X$ flat over $S$, then local
+extensions in (5.1) are guaranteed to exist; furthermore,
+$\mathcal J_0/\mathcal J_0^2$ is locally free on $Y_0$, and one may write
+\[
+\mathcal A=\mathcal N_{Y_0/X_0}\otimes_{\mathcal O_{S_0}}\mathcal J,
+\]
+where the first factor on the right is the normal sheaf of $Y_0$ in $X_0$.
+Using the fundamental criterion of smoothness ([3], III, 3.1), one obtains for
+example:
+
+\result{COROLLARY}{5.4} Under the hypotheses of (5.3), suppose that
+$\mathcal F=\mathcal O_X$, that $X$ is flat over $S$, and that the closed
+subprescheme $Y_0$ of $X_0$ corresponding to $\mathcal G_0$ is locally a
+complete intersection. Then the Zariski tangent space to $Q_s$ at $x$ is
+canonically isomorphic to $H^0(Y_0,\mathcal N_{Y_0/X_0})$. If
+$H^1(Y_0,\mathcal N_{Y_0/X_0})=0$, then the Hilbert prescheme
+$\operatorname{Hilb}_{X/S}$ is smooth over $S$ at $x$.
+($\mathcal N_{Y_0/X_0}$ is the normal sheaf of $Y_0$ in $X_0$.)
+
+\result{REMARK}{5.5} This statement applies in particular when $Y_0$ is a
+complete intersection in $X_0$ defined by one equation, that is, a positive
+“Cartier divisor.” Then $\mathcal N_{Y_0/X_0}$ is isomorphic to the sheaf on
+$Y_0$ induced by the invertible sheaf $\mathcal J_0^{-1}$ on $X_0$ defined by the
+divisor $Y_0$. This situation occurs especially in the study of families of
+positive divisors on a nonsingular projective variety $X_0$. The isomorphism
+between the Zariski tangent space at the point $x$ of $Q$ (or, equivalently,
+of the open subset $D$ of $Q$ corresponding to divisors) and
+$H^0(Y_0,\mathcal N_{Y_0/X_0})$ was known in classical algebraic geometry as
+the “characteristic homomorphism” from the former to the latter. It was defined
+only when $x$ was a smooth point of the parameter variety $T$ of a “complete
+continuous family” of divisors, that is, from our point of view, of an
+irreducible component of the scheme $D$ endowed with its induced reduced
+structure. The
+tangent space to $T$ at $x$ is then a subspace of the tangent space to $D$ at
+$x$, so the classical characteristic homomorphism is indeed injective, but it
+is surjective only under additional conditions, for example when $D$ is
+integral at $x$. In fact, Zappa [8] constructed an example
+\src{272}
+(with $X$ a nonsingular projective surface over the complex numbers) in which
+the characteristic homomorphism is not surjective even at the generic point of
+$T$. Thus $D$ is not integral even at the generic point of the irreducible
+component under consideration. This shows especially strikingly how varieties
+with nilpotent elements are necessary for understanding phenomena of the most
+classical theory of surfaces.\footnote{The 1962 erratum adds that Mumford had
+just constructed an irreducible component of the Hilbert scheme of
+$\mathbf P^3_{\mathbf C}$, whose general points represent nonsingular curves of
+degree 14 and genus 24, that is nonreduced at its generic point; blowing up one
+of these curves also gives a regular projective threefold whose formal moduli
+scheme is generically nonreduced.}
+
+\subsection*{5.6}
+
+In (5.4) we gave a smoothness criterion applying in particular to schemes of
+divisors. Kodaira gave a different criterion in [6], namely the vanishing of
+$H^1(X_0,\mathcal L)$, where $\mathcal L=\mathcal J_0^{-1}$ is the invertible
+sheaf on $X_0$ defined by the divisor $Y_0$. This criterion is valid when $S$
+is the spectrum of a field of characteristic zero and was proved in [6] by
+transcendental methods when the base field is $\mathbf C$. More generally, with
+$S$ arbitrary again, Kodaira's condition is sufficient for the canonical
+morphism
+\[
+D\longrightarrow\operatorname{Pic}_{X/S}
+\]
+from the prescheme of divisors to the Picard prescheme of $X/S$ to be smooth at
+the point $x$ in question (as follows readily from the usual smoothness
+criterion once the existence of $\operatorname{Pic}_{X/S}$ is known). If, in
+addition, $\operatorname{Pic}_{X/S}$ is smooth over $S$ at the image of $x$
+(for example, if $\operatorname{Pic}_{X/S}$ is smooth over $S$), then $D$ is
+smooth over $S$ at $x$. On the other hand, Cartier proved that every group
+prescheme locally of finite type over a field $k$ of characteristic zero is
+smooth over $k$. Combining these two results recovers Kodaira's result. These
+remarks also show that over a field $K$ of characteristic $p>0$, when
+$\operatorname{Pic}_{X/S}$ is not smooth over $K$\footnote{The printed text has $k$ here; the base field of this positive-characteristic sentence is $K$.} (as when $X$ is the Igusa
+surface), the condition $H^1(X_0,\mathcal L)=0$ implies, on the contrary, that
+$D$ is not smooth at $x$, and is even nonreduced at $x$ if $K$ is algebraically
+closed.
+
+Finally, let us record the following result, which plays an important role in
+the infinitesimal study of fiber spaces:
+
+\result{PROPOSITION}{5.7} Let $X$ be a finite flat prescheme over a locally
+noetherian $S$, and let $Z$ be a prescheme over $X$ such that
+$\Pi_{X/S}(Z/X)$ exists (as it does if $Z$ is quasi-projective over $X$). If
+$Z$ is smooth over $X$, then $\Pi_{X/S}(Z/X)$ is smooth over $S$.
+
+This follows immediately from the definition and the usual smoothness
+criterion ([3], III, 3.1). Note that when $X$ is finite and flat over $S$, the
+existence of $\Pi_{X/S}(Z/X)$\footnote{The printed text has $Z/K$ here; no $K$
+is defined, and the section functor under discussion since (5.7) is
+$\Pi_{X/S}(Z/X)$.} can be treated very elementarily, without
+\src{273}
+using the theory of Hilbert schemes. For example, if $X$ is radicial over $S$,
+then $\Pi_{X/S}(Z/X)$ exists without any restriction on $Z$. As another
+example, let $T$ be an $S$-prescheme and let $T_n$ be the “infinitesimal
+neighborhood of order $n$” of the diagonal of $T\times_ST$ in $T\times_ST$,
+equipped with the morphisms $p_1,p_2:T_n\longrightarrow T$ induced by the two
+projections. Regard $T_n$ as a prescheme finite over $T$ via $p_1$, and suppose
+in addition that it is flat over $T$ (as it is when $T$ is smooth over $S$).
+For every prescheme $X$ over $T$, put
+\[
+(X/T/S)^{(n)}=
+\Pi_{T_n/T}\bigl(p_2^*(X/T)/T_n\bigr).
+\]
+\footnote{The printed text places $T_n/S$ under the symbol $\Pi$. Proposition
+5.7 is applied here to the finite flat morphism $p_1:T_n\to T$, and the result
+is explicitly a prescheme over $T$; hence the denominator is $T_n/T$.}
+This is a prescheme over $T$ called the \emph{bundle of germs of sections of
+order $n$ of $X$ over $T$} (relative to $S$). It depends functorially on $X$
+and is smooth over $T$ if $X$ is.
+
+\fsection{6}{Relations with the norm and symmetric products}
+
+Let $S$ be a prescheme, let $X$ and $Y$ be $S$-preschemes, and let
+\[
+u:(X/S)^n\longrightarrow Y
+\]
+be a symmetric $S$-morphism from the $n$-th Cartesian power of $X/S$ to $Y$.
+For simplicity, suppose $S$ locally noetherian and $X$ and $Y$ of finite type
+over $S$. To every coherent Module $\mathcal F$ on $X$ whose support is finite
+over $S$, which is flat over $S$ and has relative rank $n$ over $S$ (that is,
+$f_*(\mathcal F)$ is a locally free Module of rank $n$ on $S$), one can then
+naturally associate a section of $Y$ over $S$:
+\[
+\pi^u_{X/S}(\mathcal F)\in\Gamma(Y/S).
+\]
+We shall not give the formal definition here, but merely note that the resulting
+formalism is a natural generalization of the usual formalism of norms and
+traces. For arbitrary separated $X/S$, the norm law has canonical target the divided-power space $\Gamma^n_S(X)$. If $X$ is flat over $S$ and the $n$-th symmetric power exists (for example, when the orbits of $\mathfrak S_n$ on $(X/S)^n$ lie in affine open subsets), the canonical map $\operatorname{Symm}^n_S(X)\to\Gamma^n_S(X)$ is an isomorphism, and one obtains a canonical element
+\[
+\pi_{X/S}(\mathcal F)\in\Gamma(\operatorname{Symm}^n_S(X)/S),
+\]
+\src{274}
+from which the $\pi^u_{X/S}(\mathcal F)$ can be recovered. Another important
+case is that in which $X$ is a commutative monoid over $S$, $X=Y$, and $u$
+comes from the composition law of $X$. We then write simply $\pi(\mathcal F)$
+for the section of $X$ over $S$ associated with the Module $\mathcal F$ on
+$X$.
+
+Suppose now that $\mathcal F$ is a coherent Module on $X$ such that
+$\operatorname{Quot}_{\mathcal F/X/S}$ exists, or at least such that the
+functor $\underline{\operatorname{Quot}}^n_{\mathcal F/X/S}$ assigning to every
+$S'$ over $S$ the set of coherent quotient sheaves $\mathcal M$ of
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$ that are flat
+over $S'$ and have relative rank $n$ is represented by an $S$-prescheme
+$\operatorname{Quot}^n_{\mathcal F/X/S}$. (When $X$ is quasi-projective over
+$S$, $\operatorname{Quot}^n_{\mathcal F/X/S}$ does exist and, in the notation
+of Section 3, is $\operatorname{Quot}^P_{\mathcal F/X/S}$, where $P$ is the
+constant polynomial $n$.) Since the formation of
+$\pi^u_{X/S}(\mathcal M)$ is compatible with base change, one obtains a
+canonical morphism
+\[
+\pi^u_{X/S}:\operatorname{Quot}^n_{\mathcal F/X/S}\longrightarrow Y,
+\]
+and, in general, \[ \pi_{X/S}:\operatorname{Quot}^n_{\mathcal F/X/S} \longrightarrow\Gamma^n_S(X). \] When $X$ is flat over $S$, identify this target with $\operatorname{Symm}^n_S(X)$.
+Independently of the preceding identification, when $X$ is separated over $S$, the finite-flat-family construction for $\mathcal F=\mathcal O_X$ gives a morphism
+\[
+\pi_{X/S}:\operatorname{Hilb}^n_{X/S}
+\longrightarrow\operatorname{Symm}^n_S(X).
+\]
+This is plainly an isomorphism for $n=0$ or $n=1$. But for
+$n>1$\footnote{The printed text repeats $n\geq1$, contradicting the
+isomorphism just asserted for $n=1$.}, even when
+$S$ is the spectrum of a field $k$ and $X$ is smooth over $S$, it is not in
+general an isomorphism, or even an injective morphism: a zero-dimensional
+subscheme of $X$ (corresponding, for example, to an ideal $\mathfrak i$
+primary for the maximal ideal in a local ring $\mathcal O_{X,x}$, for a closed
+point $x$ of $X$) is not determined by the cycle it defines (in this case, by
+the codimension over $k$ of $\mathfrak i$ in $\mathcal O_{X,x}$). One can say
+only the following, with $S$ arbitrary again:
+
+\medskip
+\noindent a. If $X$ is smooth over $S$, the norm morphism induces an
+isomorphism from the open subset of $\operatorname{Hilb}^n_{X/S}$ classifying
+étale coverings of rank $n$ contained in $X$ (cf. no. 4, (b)) onto the open
+subset of $\operatorname{Symm}^n_S(X)$ corresponding to $n$-cycles without
+multiple components.
+\src{275}
+
+\medskip
+\noindent b. If, in addition, $X$ has relative dimension 1 over $S$, then the
+norm morphism is an isomorphism from $\operatorname{Hilb}^n_{X/S}$ onto
+$\operatorname{Symm}^n_{X/S}$.
+
+This is because a zero-dimensional subscheme of a nonsingular algebraic curve
+is determined by its corresponding cycle. The same observation applies more
+generally to positive Cartier divisors on a nonsingular algebraic scheme (and
+it is possible that in this very special case the Chow variety gives the same
+object as the Hilbert scheme).
+
+\fsection{7}{Complements and questions}
+
+As J.-P. Serre observed, a well-known example of Nagata shows that one can find
+a scheme $S$, the spectrum of a field $k$; an $S$-scheme $S'$, the spectrum of
+a quadratic extension $k'$ of $k$; and a proper smooth (but nonprojective)
+$S'$-scheme $X$ of dimension 3 such that $\Pi_{S'/S}(X/S')$ does not exist. It
+follows a fortiori that the Hilbert scheme $\operatorname{Hilb}^2_{X/S}$ does
+not exist (nor even the $k$-scheme that would represent the étale coverings of
+$S$ of rank 2 contained in $X$, and a fortiori not the symmetric square of
+$X$; cf. the preceding section). This places serious limitations on the
+possibility of nonprojective constructions in algebraic geometry. (It is,
+however, plausible that no such limitations arise in analytic geometry, any
+more than they do in formal geometry (cf. [2], II).) On the other hand, if $X$
+is a proper scheme over $S=\operatorname{Spec}k$ and $Z$ is quasi-projective
+over $X$, then $\Pi_{X/S}(Z/X)$ exists and is a scheme that is a disjoint union
+of a sequence of schemes quasi-projective over $S$ (as in the projective case
+(3.1)). Indeed, one reduces to the case in which $X$ itself is projective by
+dominating $X$ by a projective $S$-scheme $X'$. We shall not give the details
+of the proof, which also uses the factorization result for a finite morphism
+recorded in [2], I, A, no. 2 (b). The method succeeds because, with $S$ the
+spectrum of a field, the $X'$ occurring in Chow's lemma is automatically flat
+over $S$.
+
+I do not know whether the result remains true without a hypothesis on $S$,
+assuming only that $X$ is proper and flat over $S$ and $Z$ quasi-projective
+over $X$. An important case in applications is when $Z$ is a closed subscheme
+of $X$; if $\Pi_{X/S}(Z/X)$ exists, it is necessarily a closed subscheme of
+$S$. It may be
+\src{276}
+constructed directly and quite simply when $X$ is projective over $S$, without
+using the theory of Hilbert schemes. More generally, the same method shows that
+if $Z$ is affine over $X$, then $\Pi_{X/S}(Z/X)$ exists and is affine over $S$.
+It also shows that if $X$ is proper and flat over $S$ (not necessarily
+projective over $S$), then for every locally trivial vector bundle $Z$ over
+$X$, $\Pi_{X/S}(Z/X)$ exists and is a vector bundle over $S$. It would be
+desirable to revisit and unify these results.
+
+\section*{BIBLIOGRAPHY}
+\addcontentsline{toc}{section}{Bibliography}
+
+\begin{description}
+\item[{[1]}] BOREL (A.) and SERRE (J.-P.). -- Le théorème de Riemann--Roch,
+\emph{Bull. Soc. math. France}, vol. 86, 1958, pp. 97--136.
+
+\item[{[2]}] GROTHENDIECK (Alexander). -- Technique de construction et
+théorèmes d'existence en géométrie algébrique, I, II, III, \emph{Séminaire
+Bourbaki}, vol. 13, 1959/60, no. 190, 29 pp., no. 195, 22 pp.; and vol. 14,
+1960/61, no. 212, 20 pp.
+
+\item[{[3]}] GROTHENDIECK (Alexander). -- Séminaire de Géométrie algébrique,
+I, II, III, IV. -- Paris, Institut des hautes Études scientifiques, 1960/61
+(mimeographed).
+
+\item[{[4]}] GROTHENDIECK (Alexander). -- Technique de construction en
+géométrie analytique, IV, V, \emph{Séminaire Cartan}, vol. 13, 1960/61, nos. 11
+and 12.
+
+\item[{[5]}] GROTHENDIECK (A.) and DIEUDONNÉ (J.). -- \emph{Éléments de
+géométrie algébrique}, I: Le langage des schémas. -- Paris, Presses
+universitaires de France, 1960 (Institut des hautes Études scientifiques,
+Publications mathématiques, 4); II, III, IV (forthcoming).
+
+\item[{[6]}] KODAIRA (K.). -- Characteristic linear systems of complete
+continuous systems, \emph{Amer. J. of Math.}, vol. 78, 1956, pp. 716--744.
+
+\item[{[7]}] SERRE (Jean-Pierre). -- Exemples de variétés projectives en
+caractéristique $p$ non relevables en caractéristique 0, \emph{Proc. Nat. Acad.
+Sc. U.S.A.}, vol. 47, 1961, pp. 108--109.
+
+\item[{[8]}] ZAPPA (G.). -- Sull'esistenza, sopra le superficie algebriche, di
+sistemi continui completi infiniti, la cui curva è a serie caratteristica
+incompleta, \emph{Pont. Acad. Sc. Acta}, vol. 9, 1945, pp. 91--93.
+\end{description}
+
+\section*{ADDENDUM}
+\addcontentsline{toc}{section}{Addendum}
+\begin{center}
+{\small [added during proof correction]}
+\end{center}
+
+It now appears that the conjectures of [2], III, no. 8 are false, even for
+nonsingular varieties over a field of characteristic zero, both as regards the
+existence and the quasi-projectivity of the quotient, and even when $G$ acts
+with closed graph.
+
+\par\smallskip
+\begingroup\footnotesize
+\endgroup

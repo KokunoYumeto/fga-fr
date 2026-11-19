@@ -1,0 +1,955 @@
+\unit{Exposição 232 -- Os esquemas de Picard: teoremas de existência}
+\sid{232}
+\markboth{Exposição 232}{Exposição 232}
+\src{143}
+\seminares{14.º ano, 1961/62, n.º 232\\Fevereiro de 1962}
+\paperhead{TÉCNICA DE DESCIDA E TEOREMAS DE EXISTÊNCIA EM GEOMETRIA ALGÉBRICA\\
+V. OS ESQUEMAS DE PICARD: TEOREMAS DE EXISTÊNCIA}%
+  {por Alexander GROTHENDIECK}
+
+\fsection{1}{Grupos e funtores de Picard relativos}
+
+Para todo pré-esquema (mais geralmente, todo espaço anelado) $X$, chamamos
+\emph{grupo de Picard} (absoluto) de $X$, e denotamos por
+$\operatorname{Pic}(X)$, o grupo das classes, a menos de isomorfismo, de
+Módulos invertíveis (isto é, localmente isomorfos a $\mathcal O_X$) sobre $X$.
+Tem-se, portanto, um isomorfismo canônico
+\begin{equation}
+\operatorname{Pic}(X)\xrightarrow{\sim}H^1(X,\mathcal O_X^*),
+\tag{1.1}
+\end{equation}
+onde $\mathcal O_X^*$ denota o feixe das unidades de $\mathcal O_X$ (que se
+identifica, com efeito, com o feixe dos automorfismos do Módulo invertível
+padrão $\mathcal O_X$). Observemos que
+$X\longmapsto\operatorname{Pic}(X)$ é evidentemente um funtor contravariante
+em $X$, e que o isomorfismo (1.1) é funtorial.
+
+Se $X$ é um pré-esquema sobre outro pré-esquema $S$, então, quando $S'$ varia
+na categoria $(\mathrm{Sch})/S$ dos pré-esquemas sobre $S$, obtém-se, pelo que
+precede, um funtor contravariante
+$S'\longmapsto\operatorname{Pic}(X\times_S S')$. Esse funtor não tem qualquer
+possibilidade de ser «representável» ([4], II, A), pois, devido à existência de
+automorfismos não triviais dos Módulos invertíveis que se pretende classificar,
+esse funtor não é de «natureza local» ([5], IV, 5.4). Convém, portanto,
+«torná-lo local», introduzindo, de modo geral, para todo pré-esquema relativo
+$X/S$, um grupo de natureza relativa,
+\begin{equation}
+\operatorname{Pic}'(X/S)=H^0\bigl(S,R^1f_*(\mathcal O_X^*)\bigr),
+\tag{1.2}
+\end{equation}
+(onde $f:X\longrightarrow S$ é o morfismo estrutural) (compare-se [4], II,
+C 3). No lugar citado, esse grupo é chamado grupo de Picard relativo; será
+preferível aqui chamá-lo \emph{grupo de Picard relativo restrito} de $X/S$,
+por razões que aparecerão. Quando $S'$ varia em $(\mathrm{Sch})/S$,
+$S'\longmapsto\operatorname{Pic}'(X\times_S S'/S')$ é um funtor contravariante
+em $S'$, denotado também por $\operatorname{Pic}'_{X/S}$, portanto definido
+essencialmente pela fórmula
+\begin{equation}
+\operatorname{Pic}'_{X/S}(S')=
+\operatorname{Pic}'(X\times_S S'/S').
+\tag{1.3}
+\end{equation}
+\src{144}
+Este funtor é agora «de natureza local», visto que se fez o necessário para
+isso. Intuitivamente, o segundo membro de (1.3) interpreta-se como o conjunto
+das «famílias algébricas» de classes de feixes invertíveis sobre (as fibras de)
+$X/S$, indexadas pelo pré-esquema de parâmetros $S'/S$. Quando o funtor
+$\operatorname{Pic}'$ é representável, o pré-esquema sobre $S$ que o representa
+é denotado por $\operatorname{Pic}'_{X/S}$ e chamado o
+\emph{pré-esquema de Picard} de $X$ sobre $S$; portanto, teremos
+\begin{equation}
+\operatorname{Hom}_S(S',\operatorname{Pic}'_{X/S})
+\simeq\operatorname{Pic}'_{X/S}(S')
+=\operatorname{Pic}'(X\times_S S'/S').
+\tag{1.4}
+\end{equation}
+
+Há, contudo, casos importantes em que $\operatorname{Pic}'_{X/S}$ não é
+representável (exemplo: variedade de «Brauer--Severi» sobre um corpo $k$, sem
+ponto racional sobre $k$), e nos quais, contudo, existe uma definição natural
+de um pré-esquema de Picard relativo. Isso decorre do fato de que, na definição
+do funtor $\operatorname{Pic}'$ a partir dos grupos de Picard absolutos
+$\operatorname{Pic}(X\times_S S'/S')$, ainda não se localizou o suficiente;
+mais precisamente, $\operatorname{Pic}'$ não é, em geral, «compatível com a
+descida fielmente plana». Explicitemos.
+
+Seja $\mathfrak M$ o conjunto dos morfismos de pré-esquemas que são
+\emph{fielmente planos e quase-compactos}; esse conjunto é estável por mudança
+de base e por composição. Seja $P$ um funtor contravariante de
+$(\mathrm{Sch})/S$ na categoria dos conjuntos e, para todo $S$-morfismo
+$u:T'\longrightarrow T$, $u\in\mathfrak M$, consideremos o diagrama
+\begin{equation}
+P(T)\longrightarrow P(T')\rightrightarrows P(T'\times_TT')
+\tag{1.5}
+\end{equation}
+obtido pela aplicação de $P$ ao diagrama
+\[
+T\longleftarrow T'\mathrel{\substack{\xleftarrow{\,\mathrm{pr}_1\,}\\[-0.35ex]
+\xleftarrow[\,\mathrm{pr}_2\,]{}}}T'\times_TT'.
+\]
+Se $P$ é representável, resulta da teoria da descida ([4], I, B, teor. 2) que
+o diagrama (1.5) é exato para todo $u\in\mathfrak M$. Exprime-se esse fato
+dizendo que $P$ é compatível com $\mathfrak M$, neste caso que $P$ é
+«compatível com a descida fielmente plana», ou ainda que o «pré-feixe» $P$
+sobre $(\mathrm{Sch})/S$ é um «feixe» para a noção de localização fornecida
+pelo conjunto $\mathfrak M$. Quando $P$ é arbitrário, um procedimento padrão,
+bem conhecido no caso da localização topológica usual, permite associar-lhe
+um «feixe» $\mathcal P$ e um homomorfismo de funtores
+$P\longrightarrow\mathcal P$, que seja universal num sentido evidente. O
+cálculo de $\mathcal P$ pode ser explicitado da seguinte maneira: para definir
+$\mathcal P(T)$, designa-se, para todo $T'$ sobre $T$ tal que o morfismo
+$u:T'\longrightarrow T$ pertença a $\mathfrak M$, por
+\src{145}
+$\overline H^0(T'/T,P)$ o subconjunto de $P(T')$ formado pelos elementos $\xi$
+cujas duas imagens $\xi_1,\xi_2$ em $P(T'\times_TT')$ são tais que existe um
+morfismo $v:T''\longrightarrow T'\times_TT'$, $v\in\mathfrak M$, para o qual
+$\xi_1$ e $\xi_2$ têm a mesma imagem em $P(T'')$. [N.B. -- O conjunto
+$\overline H^0$ assim definido é, portanto, maior que o conjunto
+$H^0(T'/T,P)$ introduzido em [4], I, A, 4(a).] Quando $T'$ varia sobre $T$
+fixo (sempre com $u\in\mathfrak M$), os $\overline H^0(T'/T,P)$ formam um
+sistema indutivo (quando se mune o conjunto dos $T'$ da pré-ordem definida pela
+dominação), e põe-se
+\begin{equation}
+\mathcal P(T)=\varinjlim_{T'}\overline H^0(T'/T,P).
+\tag{1.6}
+\end{equation}
+A lei funtorial em $T$ dessa expressão explicita-se de modo evidente.
+
+Quando
+\[
+P(T)=\operatorname{Pic}(X\times_ST),
+\]
+o funtor contravariante sobre $(\mathrm{Sch})/S$ definido por (1.6) denomina-se
+\emph{funtor de Picard relativo} de $X$ sobre $S$ e denota-se por
+$\operatorname{Pic}_{X/S}$; denomina-se \emph{grupo de Picard relativo} de
+$X$ sobre $S$, e denota-se por $\operatorname{Pic}(X/S)$, o grupo
+$\operatorname{Pic}_{X/S}(S)$. Obtém-se então uma bijeção evidente
+\begin{equation}
+\operatorname{Pic}_{X/S}(T)\simeq\operatorname{Pic}(X\times_ST/T).
+\tag{1.7}
+\end{equation}
+
+Um elemento de $\operatorname{Pic}(X/S)$ é, portanto, definido com o auxílio de
+um elemento $\xi'$ de um grupo $\operatorname{Pic}(X\times_SS')$ (onde
+$S'\longrightarrow S$ é fielmente plano e quase-compacto), tal que se possa
+encontrar um morfismo fielmente plano e quase-compacto
+$S''\longrightarrow S'\times_SS'$ para o qual as duas imagens inversas de
+$\xi'$ em $\operatorname{Pic}(X\times_SS'')$ sejam iguais. Um elemento $\xi'$
+de $\operatorname{Pic}(X\times_SS')$ e um elemento $\xi_1$ de
+$\operatorname{Pic}(X\times_SS_1)$ (satisfazendo as condições que acabamos de
+explicitar) definem o mesmo elemento de $\operatorname{Pic}(X/S)$ se e somente
+se existe um morfismo fielmente plano e quase-compacto
+$S'_1\longrightarrow S'\times_SS_1$ tal que as imagens dos dois elementos em
+questão em $\operatorname{Pic}(X\times_SS'_1)$ sejam iguais. É frequentemente
+conveniente continuar trabalhando com o funtor
+$P'=\operatorname{Pic}'_{X/S}$ introduzido acima; constata-se imediatamente que
+o morfismo canônico $P\longrightarrow P'$ define um isomorfismo
+\begin{equation}
+\mathcal P\xrightarrow{\sim}\mathcal P',
+\tag{1.8}
+\end{equation}
+o que fornece uma descrição de $\operatorname{Pic}_{X/S}$ em termos de
+$\operatorname{Pic}'_{X/S}=P'$, frequentemente mais cômoda. Em virtude de 2.3
+abaixo, quando, na descrição de $\operatorname{Pic}(X/S)$ que acabamos de
+explicitar, se substitui $P$ por $P'$, pode-se, com efeito,
+\src{146}
+tomar $S''=S'\times_SS'$, $S'_1=S'\times_SS_1$, ao menos sob as condições
+explicitadas em loco citato.
+
+Quando o funtor $\operatorname{Pic}_{X/S}$ é representável, diz-se que $X/S$
+admite um pré-esquema de Picard, e o pré-esquema sobre $S$ que representa o
+funtor denomina-se \emph{pré-esquema de Picard} de $X$ sobre $S$ e continua a
+ser denotado por $\operatorname{Pic}_{X/S}$. Para isso, basta evidentemente que
+$P'=\operatorname{Pic}'_{X/S}$ seja representável, pois então $P'$ já é um
+``feixe'', e a fórmula (1.8) demonstra que o morfismo
+$P'\longrightarrow\mathcal P'$ se identifica com o morfismo canônico
+\begin{equation}
+\operatorname{Pic}'_{X/S}\longrightarrow\operatorname{Pic}_{X/S},
+\tag{1.9}
+\end{equation}
+que é então um isomorfismo. Portanto, nossa terminologia é compatível com a
+introduzida acima em (1.4). Em geral, quando $\operatorname{Pic}_{X/S}$ existe,
+ele é definido pelo isomorfismo funtorial
+\begin{equation}
+\operatorname{Hom}_S(S',\operatorname{Pic}_{X/S})\xrightarrow{\sim}
+\operatorname{Pic}(X\times_SS'/S').
+\tag{1.10}
+\end{equation}
+
+\fsection{2}{Relações entre os diversos grupos de Picard relativos e absolutos}
+
+\result{PROPOSIÇÃO}{2.1} Seja $f:X\longrightarrow S$ um morfismo tal que
+$\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$. Tem-se então uma sequência
+exata
+\[
+0\longrightarrow\operatorname{Pic}(S)\longrightarrow\operatorname{Pic}(X)
+\longrightarrow\operatorname{Pic}'(X/S).
+\]
+Quando $X$ admite uma seção sobre $S$, o último morfismo é sobrejetivo, isto é,
+tem-se um isomorfismo
+\[
+\operatorname{Pic}'(X/S)\xrightarrow{\sim}
+\operatorname{Pic}(X)/\operatorname{Pic}(S).
+\]
+
+A sequência exata pode ser considerada como a sequência exata em graus baixos
+correspondente à sequência espectral de Leray para $f$ e $\mathcal O_X^*$. A
+segunda afirmação também é formal.
+
+\result{PROPOSIÇÃO}{2.2} Seja $f:X\longrightarrow S$ um morfismo quase-compacto
+e separado tal que $\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$, e seja
+$S'\longrightarrow S$ um morfismo fielmente plano e quase-compacto. Então:
+
+\noindent (i) $\operatorname{Pic}'(X/S)\longrightarrow
+\operatorname{Pic}'(X\times_SS'/S')$ é injetivo;
+
+\noindent (ii) se $X$ admite localmente uma seção sobre $S$ (isto é, todo
+$s\in S$ possui uma vizinhança aberta $U$ tal que $X|U$ tenha uma seção sobre
+$U$), então o diagrama
+\[
+\operatorname{Pic}'(X/S)\longrightarrow
+\operatorname{Pic}'(X\times_SS'/S')\rightrightarrows
+\operatorname{Pic}'(X\times_SS''/S'')
+\]
+\src{147}
+(onde $S''=S'\times_SS'$) é exato.
+
+A primeira afirmação resulta, graças às propriedades elementares da descida
+fielmente plana, da observação geral seguinte. Se $f:X\longrightarrow S$ é um
+morfismo tal que $\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$, então o
+funtor $\mathcal F\longmapsto f^*(\mathcal F)$, da categoria dos Módulos
+localmente livres de tipo finito sobre $S$ para a categoria dos Módulos
+localmente livres de tipo finito sobre $X$, é plenamente fiel, e sua imagem
+essencial é formada pelos Módulos $\mathcal G$ sobre $X$ tais que
+$f_*(\mathcal G)$ seja localmente livre e que o homomorfismo canônico
+\[
+f^*\bigl(f_*(\mathcal G)\bigr)\longrightarrow\mathcal G
+\]
+seja um isomorfismo. A segunda afirmação foi demonstrada pela teoria da descida
+em [4], I, B, 4.
+
+Os resultados de 2.2 também se enunciam assim:
+
+\result{COROLÁRIO}{2.3} Sob as condições de 2.2, o homomorfismo canônico
+(1.9) $\operatorname{Pic}'_{X/S}\longrightarrow\operatorname{Pic}_{X/S}$ é
+injetivo, e até bijetivo se $X$ admite uma seção localmente sobre $S$. (Logo,
+neste último caso, há identidade entre o grupo de Picard relativo
+$\operatorname{Pic}(X/S)$ e o grupo de Picard relativo restrito
+$\operatorname{Pic}'(X/S)$.)
+
+Combinando com 2.1, obtém-se, portanto:
+
+\result{COROLÁRIO}{2.4} Sob as condições de 2.2, tem-se uma sequência exata
+\[
+0\longrightarrow\operatorname{Pic}(S)\longrightarrow\operatorname{Pic}(X)
+\longrightarrow\operatorname{Pic}(X/S).
+\]
+Quando $X$ admite uma seção sobre $S$, o último homomorfismo é sobrejetivo,
+isto é, tem-se então um isomorfismo
+\[
+\operatorname{Pic}(X/S)\xrightarrow{\sim}
+\operatorname{Pic}(X)/\operatorname{Pic}(S).
+\]
+
+\result{OBSERVAÇÃO}{2.5} Seja $f:X\longrightarrow S$ um morfismo tal que
+$\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$, e seja $g$ uma seção de
+$X$ sobre $S$. Seja $\mathcal L$ um Módulo invertível sobre $X$; chamemos
+$g$-rigidificação de $\mathcal L$ um isomorfismo
+$\mathcal O_S\xrightarrow{\sim}g^*(\mathcal L)$, e chamemos \emph{Módulo
+invertível $g$-rigidificado} um Módulo invertível $\mathcal L$ sobre $X$ munido
+de uma $g$-rigidificação. Todo automorfismo de tal estrutura é trivial, e
+$\operatorname{Pic}'(X/S)$ identifica-se com o conjunto das classes, a menos de
+isomorfismo, de Módulos invertíveis $g$-rigidificados sobre $S$. (É esse fato que permitiu
+utilizar a teoria da descida para demonstrar 2.2(ii).) Isso fornece uma nova
+interpretação de $\operatorname{Pic}(X/S)$, pelo menos quando $f$ é, além disso,
+quase-compacto e separado, portanto
+$\operatorname{Pic}(X/S)\simeq\operatorname{Pic}'(X/S)$ por 2.3.
+\src{148}
+\result{OBSERVAÇÃO}{2.6} Seja $f:X\longrightarrow S$ um morfismo como em
+2.2, e seja $S'\longrightarrow S$ um morfismo fielmente plano e
+quase-compacto tal que exista um $S$-morfismo $S'\longrightarrow X$, isto é,
+tal que exista uma seção de $X'=X\times_SS'$ sobre $S'$. Sejam
+$S''=S'\times_SS'$ e $X''=X\times_SS''$, e consideremos a sequência exata
+\[
+\operatorname{Pic}(X/S)\longrightarrow\operatorname{Pic}(X'/S')
+\rightrightarrows\operatorname{Pic}(X''/S'').
+\]
+Aplicando 2.4, obtém-se uma sequência exata
+\[
+\operatorname{Pic}(X/S)\longrightarrow
+\operatorname{Pic}(X')/\operatorname{Pic}(S')
+\rightrightarrows
+\operatorname{Pic}(X'')/\operatorname{Pic}(S''),
+\]
+em particular, todo elemento do grupo de Picard relativo já «provém» de um
+elemento de $\operatorname{Pic}(X')$. Isso fornece, portanto, uma simplificação
+substancial da descrição do grupo de Picard relativo dada no número anterior,
+e o mesmo vale para o funtor de Picard de $X$ sobre $S$, pois, para todo $T$
+sobre $S$, pode-se aplicar o que precede a $X\times_ST/T$ e ao morfismo
+$T'=S'\times_ST\longrightarrow T$. Se, por exemplo, o próprio $f$ é fielmente
+plano, pode-se tomar $S'=X$, o que permite, quando $f$ é, além disso, de tipo
+finito (resp. suave, etc.), limitar-se, na descrição do funtor de Picard relativo
+$T\longmapsto\operatorname{Pic}(X\times_ST/T)$, às mudanças de base
+$T'\longrightarrow T$ que são de tipo finito (resp. suaves, etc.). Quando $f$
+é projetivo e plano e $S$ é localmente noetheriano, demonstra-se que se pode
+tomar acima um $S'\longrightarrow S$ tal que $S'$ seja soma disjunta de
+recobrimentos planos $S'_i$ de abertos $S_i$ de $S$ que cobrem $S$; se $f$ é
+até mesmo separável, pode-se tomar $S'_i$ étale sobre $S_i$.
+
+\fsection{3}{O teorema principal de existência: enunciado}
+
+Não se dispõe, nem mesmo a título conjectural, de um enunciado de existência
+de pré-esquemas de Picard que englobe todos os casos conhecidos. Uma condição
+«praticamente necessária», se assim se pode dizer, é que
+$f:X\longrightarrow S$ seja próprio (assegurando propriedades essenciais de
+finitude) e plano. Essas condições não são suficientes, mesmo se $S$ é o
+espectro da álgebra dos números duais $k[t]/(t^2)$ sobre um corpo $k$ (digamos,
+o corpo $\mathbf C$ dos números complexos), e $X$ tem dimensão 1. No momento de
+escrever esta exposição, os teoremas de existência mais importantes para o
+pré-esquema de Picard deduzem-se do teorema seguinte:
+
+\result{TEOREMA}{3.1} Seja $f:X\longrightarrow S$ um morfismo de pré-esquemas
+localmente noetherianos. Supõe-se:
+
+\noindent (i) $f$ é projetivo;
+\src{149}
+\noindent (ii) $f$ é plano;
+
+\noindent (iii) as fibras geométricas de $f$ são íntegras.
+
+Sob essas condições, $\operatorname{Pic}_{X/S}$ existe.
+
+A demonstração, que será esboçada nas duas seções seguintes, mostrará ao mesmo
+tempo o seguinte: seja $\xi$ a seção de $\operatorname{Pic}_{X/S}$
+correspondente a um feixe muito amplo $\mathcal O_X(1)$ sobre $X/S$ (isto é,
+induzido por uma imersão projetiva
+$X\longrightarrow\mathbf P(\mathcal E)$); existe então uma parte aberta $U$ de
+$\operatorname{Pic}_{X/S}$, união disjunta de partes abertas quase-projetivas
+sobre $S$, tal que $U$ seja estável pela translação por $\xi$, e que
+$\operatorname{Pic}_{X/S}$ seja a união crescente dos abertos $U-n\xi$ (todos
+isomorfos a $U$). Disso resulta, em particular, que, sob as condições de 3.1,
+$\operatorname{Pic}_{X/S}$ é separado sobre $S$.
+
+\result{OBSERVAÇÃO}{3.2} Vê-se por exemplos (com $S$ o espectro de um anel de
+valorização discreta e $X$ de dimensão relativa 1 sobre $S$, por exemplo) que,
+se em 3.1 se omite a hipótese (iii), substituindo-a pela hipótese mais fraca de
+que, para todo $s\in S$, o homomorfismo
+\[
+k(s)\longrightarrow H^0(X_s,\mathcal O_{X_s})
+\]
+é um isomorfismo, então $\operatorname{Pic}_{X/S}$ não é necessariamente
+separado sobre $S$; tanto no caso em que as fibras geométricas de $f$ são
+reduzidas, mas uma fibra geométrica genérica íntegra ``explode'' por
+especialização em duas componentes irredutíveis, como no caso em que as fibras
+geométricas de $f$ são irredutíveis, mas uma fibra geométrica genérica íntegra
+se especializa em uma ``fibra múltipla''. O primeiro caso ocorre, por exemplo,
+com uma cônica que degenera em duas retas concorrentes; um exemplo do segundo me
+foi fornecido por D. Mumford, com uma curva elíptica que degenera em uma curva
+elíptica dupla. Esses exemplos são válidos em toda característica.
+
+\result{OBSERVAÇÃO}{3.3} Sob as condições de 3.1, ignoro se
+$\operatorname{Pic}_{X/S}$ é uma união disjunta de abertos que são de tipo
+finito, portanto quase-projetivos, sobre $S$.
+ Observe-se
+que a consideração dos polinômios de Hilbert $Q\in\mathbf Q[t]$ permite, como no
+caso dos esquemas de Hilbert ([4], IV), decompor
+$\operatorname{Pic}_{X/S}$ em uma soma disjunta de abertos
+$\operatorname{Pic}^{Q}_{X/S}$, e parece plausível que estes sejam
+quase-projetivos sobre $S$; isso é o que se verá, ao menos, na próxima exposição,
+quando $f$ for um morfismo suave. Atente-se para o fato de que, se se substituir
+a hipótese (i) pela hipótese: $X$ é localmente projetivo sobre $S$ (o que basta
+para a validade de 3.1, pois a questão da existência de
+$\operatorname{Pic}_{X/S}$ é manifestamente local sobre $S$), é fácil, por
+outro lado,
+\src{150}
+dar exemplos em que $\operatorname{Pic}_{X/S}$ contém componentes conexas que
+não são de tipo finito sobre $S$. Seja, por exemplo, $X_0$ uma variedade
+algébrica projetiva não singular sobre um corpo $k$ algebricamente fechado,
+munida de um automorfismo $u$ e de um elemento $\xi$ do grupo de
+Néron--Severi de $X_0$, tais que os $u^n(\xi)$ sejam dois a dois distintos.
+Pode-se, por exemplo, tomar para $X_0$ o produto de uma curva elíptica $E$ por
+si mesma e, para $u$, o automorfismo
+\[
+(x,y)\longmapsto(x,y+x)
+\]
+de $E\times E$. Seja $S$ a união de duas curvas irredutíveis não singulares que
+se cortam em dois pontos $a$ e $b$. Existe sobre $S$ um recobrimento principal
+conexo $P$ de grupo $\mathbf Z$; utilizando as ações de $\mathbf Z$ sobre $X_0$
+definidas por $u$, obtém-se um fibrado associado sobre $S$, de fibra $X_0$
+(trivial sobre $S-a$ e $S-b$), na realidade um esquema abeliano sobre $S$ no
+caso particular considerado. Vê-se facilmente que
+$\operatorname{Pic}_{X/S}$, que é também o fibrado associado a $P$ e às ações
+de $\mathbf Z$ sobre $\operatorname{Pic}_{X_0/k}$ por meio de $u$, contém uma
+componente conexa isomorfa a
+\[
+P\times\operatorname{Pic}^{0}_{X_0/k},
+\]
+(onde $\operatorname{Pic}^{0}$ denota a componente conexa do elemento neutro
+em $\operatorname{Pic}$), a qual não é de tipo finito sobre $S$. [Fenômenos
+análogos também ocorrem em diversos casos de pré-esquemas de Picard não
+separados sobre $S$, como os considerados em 3.3.]
+
+\fsection{4}{Divisores de Cartier relativos e fibrados projetivos}
+
+Teremos de utilizar apenas divisores positivos e omitiremos esse qualificativo
+adicional no restante deste item.
+
+Seja $X$ um pré-esquema. Um \emph{divisor de Cartier} sobre $X$, ou simplesmente
+divisor sobre $X$, para simplificar, é um subpré-esquema fechado $D$ de $X$,
+definido por um Ideal $\mathcal J$ que é um Módulo invertível, isto é, gerado
+localmente por uma seção que não é divisor de zero de $\mathcal O_X$. A $D$
+associamos um Módulo invertível, a saber,
+\[
+\mathcal L(D)=\mathcal J^{-1},
+\]
+e a injeção canônica $\mathcal J\longrightarrow\mathcal O_X$ fornece um
+homomorfismo canônico
+\[
+s_D:\mathcal O_X\longrightarrow\mathcal J^{-1}=\mathcal L(D),
+\qquad\text{isto é,}\quad s_D\in\Gamma(X,\mathcal L(D)).
+\]
+Além disso, o dado de um divisor é essencialmente equivalente ao dado de um
+Módulo invertível $\mathcal L$ sobre $X$, munido de uma seção $s$ que não seja
+divisor de zero em ponto algum, associando reciprocamente a tal par
+$(\mathcal L,s)$ o «divisor» de $s$, denotado por $\operatorname{div}(s)$. Para
+um $\mathcal L$ invertível dado sobre $X$, o conjunto dos
+\src{151}
+divisores $D$ que definem $\mathcal L$ está em correspondência biunívoca com o
+conjunto quociente
+\[
+\Gamma(X,\mathcal L)^*/\Gamma(X,\mathcal O_X^*),
+\]
+onde $\Gamma(X,\mathcal L)^*$ designa a parte de $\Gamma(X,\mathcal L)$ formada
+pelas seções que não são divisores de zero em nenhum ponto.
+
+Suponhamos agora que se tenha um morfismo localmente de tipo finito
+$f:X\longrightarrow S$, e suponhamos, para simplificar, $S$ localmente
+Noetheriano. Sejam $\mathcal J$ um Ideal coerente sobre $X$, $D$ o subesquema de
+$X$ que ele define, $x\in X$, e $s=f(x)$. Demonstra-se que as seguintes
+condições são equivalentes:
+
+\noindent (i) $\mathcal J$ é invertível em $x$ (isto é, $\mathcal J_x$ é gerado
+por um elemento regular de $\mathcal O_{X,x}$) e $D$ é plano sobre $S$ em $x$;
+
+\noindent (ii) $X$ e $D$ são planos sobre $S$ em $x$, e $D_s$ é um divisor de
+Cartier sobre a fibra $X_s$ no ponto $x$;
+
+\noindent (iii) $X$ é plano sobre $S$ em $x$, e $\mathcal J_x$ é gerado por um
+elemento $f_x$ que induz sobre $X_s$ um germe não divisor de zero.
+
+Diz-se então que $D$ é um \emph{divisor de Cartier relativo} sobre $X/S$ (ou
+simplesmente divisor relativo sobre $X/S$) no ponto considerado. Observe-se, por
+(i), que $D$ é também um divisor relativo nos pontos vizinhos de $x$; portanto,
+se $X$ e $D$ são planos sobre $S$, e $D$ é próprio sobre $S$, então o conjunto
+dos $s\in S$ tais que $D_s$ seja um divisor de Cartier em $X_s$ (isto é, tais
+que $D$ seja um divisor de Cartier relativo nos pontos de $X_s$) é uma parte
+aberta de $S$. Por outro lado, na definição precedente fez-se o necessário para
+que a noção de divisor de Cartier relativo seja estável por uma mudança de base
+arbitrária $S'\longrightarrow S$. Consideremos então o conjunto
+$\operatorname{Div}(X/S)$ dos divisores relativos sobre $X/S$, e em seguida o
+funtor contravariante em $S'$ variável sobre $S$ definido por
+\[
+\operatorname{Div}_{X/S}(S')=
+\operatorname{Div}(X\times_SS'/S').
+\]
+
+Suponhamos $X$ plano e próprio sobre $S$. Então, pela caracterização (ii) dos
+divisores de Cartier relativos, $\operatorname{Div}_{X/S}$ pode ser considerado
+como um subfuntor do funtor $\operatorname{Hilb}_{X/S}$ definido em [4], IV, e o
+morfismo de inclusão
+\[
+\operatorname{Div}_{X/S}\longrightarrow\operatorname{Hilb}_{X/S}
+\]
+é ``representável por imersões abertas'' (cf. [5], IV, 3.13), em virtude das
+observações precedentes. Utilizando o teorema principal de existência de [4],
+IV, obtém-se:
+\src{152}
+\result{PROPOSIÇÃO}{4.1} Suponhamos que $f:X\longrightarrow S$ seja projetivo
+e plano. Então o funtor $\operatorname{Div}_{X/S}$ é representável e, mais
+precisamente, é representado por um aberto de $\operatorname{Hilb}_{X/S}$.
+
+Utilizando (para um feixe $\mathcal O_X(1)$ muito amplo dado sobre $X/S$) a
+decomposição canônica de $\operatorname{Hilb}_{X/S}$ em soma dos abertos
+$\operatorname{Hilb}^{Q}_{X/S}$ correspondentes aos polinômios de Hilbert
+$Q\in\mathbf Q[t]$, deduz-se, aliás, uma decomposição análoga
+\[
+\operatorname{Div}_{X/S}=
+\coprod_{Q\in\mathbf Q[t]}\operatorname{Div}^{Q}_{X/S}
+\]
+em soma de abertos disjuntos quase-projetivos sobre $S$.
+
+Utilizando a aplicação $D\longmapsto\mathcal L(D)$, obtém-se, por outro lado,
+um homomorfismo funtorial
+\begin{equation}
+\operatorname{Div}_{X/S}\longrightarrow\operatorname{Pic}_{X/S}
+\tag{+}
+\end{equation}
+que nos propomos estudar; ver-se-á que ele é relativamente representável ([5],
+IV, 3) sob condições bastante gerais. Partamos, portanto, de um elemento $\xi$
+de $\operatorname{Pic}_{X/S}(S')$, supondo, para simplificar a notação, que
+$S'=S$, e mostremos que o subfuntor correspondente de
+$\operatorname{Div}_{X/S}$ é representável. Tomemos primeiro o caso em que
+$\xi$ é definido por um Módulo invertível $\mathcal L$ sobre $X$. Suporemos
+que $X$ seja próprio e plano sobre $S$ e que as fibras geométricas de $X$
+sobre $S$ sejam íntegras, o que implica também ([2], III, par. 7) que se tem
+$\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$ e que essa relação permanece
+válida após toda mudança de base $S'\longrightarrow S$. Então os divisores de
+Cartier relativos $D$ sobre $X/S$ tais que $\mathcal L(D)$ e $\mathcal L$
+definem o mesmo elemento de
+$\operatorname{Pic}(X/S)=\operatorname{Pic}_{X/S}(S)$, isto é, em virtude de
+2.4, tais que $\mathcal L(D)$ e $\mathcal L$ sejam isomorfos localmente sobre
+$S$, estão em correspondência biunívoca com as seções do feixe quociente
+$f_*(\mathcal L)^*/\mathcal O_S^*$. Essa correspondência é compatível com as
+mudanças de base. Por outro lado, considerações gerais do tipo «Künneth» de
+loco citato (cf. também [6]) mostram que o fato de $X/S$ ser próprio e de
+$\mathcal L$ ser plano sobre $S$ implica a existência de um Módulo coerente
+$\mathcal Q$ sobre $S$, definido a menos de isomorfismo único, e de um
+isomorfismo de feixes
+\[
+f_*(\mathcal L)\xrightarrow{\sim}
+\operatorname{Hom}_{\mathcal O_X}(\mathcal Q,\mathcal O_S),
+\]
+ sendo, além disso, a formação de $\mathcal Q$
+compatível com as mudanças de base. Aqui $f_*(\mathcal L)^*$ designa o
+subfeixe de conjuntos de $f_*(\mathcal L)$ cujas seções sobre $U$ são as
+seções de $\mathcal L$ sobre $f^{-1}(U)$ que definem divisores de Cartier
+relativos sobre
+\src{153}
+Cartier relativos sobre $f^{-1}(U)/U$, isto é, que induzem seções que não são
+divisores de zero sobre os $X_s$ ($s\in U$). Utilizando a hipótese de que as
+fibras $X_s$ são íntegras, isso significa simplesmente que as seções induzidas
+sobre as fibras $X_s$ não são identicamente nulas, ou ainda, em termos de
+homomorfismos locais $\mathcal Q\longrightarrow\mathcal O_S$, que tais
+homomorfismos sejam sobrejetivos (Nakayama). Isso mostra que o conjunto das
+seções de $f_*(\mathcal L)^*/\mathcal O_S^*$ está em correspondência biunívoca
+com o conjunto dos Módulos quocientes invertíveis de $\mathcal Q$, ou ainda,
+pela definição do fibrado projetivo $\mathbf P(\mathcal Q)$ associado ao Módulo
+coerente $\mathcal Q$ (cf. [5], V, 2), com o conjunto das seções de
+$\mathbf P(\mathcal Q)$ sobre $S$. Essa descrição é compatível com a formação
+das imagens inversas, obtendo-se, por conseguinte, o teorema seguinte.
+
+\result{TEOREMA}{4.3} Sejam $f:X\longrightarrow S$ um morfismo próprio e plano
+com fibras geométricas íntegras, sendo $S$ localmente noetheriano, e
+$\mathcal L$ um Módulo invertível sobre $X$. Para todo $S'$ sobre $S$, seja
+$T(S')$ o conjunto dos divisores relativos $D$ sobre $X\times_SS'/S'$ tais que
+$\mathcal L(D)$ seja isomorfo a
+$\mathcal L\otimes_{\mathcal O_S}\mathcal O_{S'}$ localmente sobre $S'$ (isto
+é, tais que $\mathcal L(D)$ e
+$\mathcal L\otimes_{\mathcal O_S}\mathcal O_{S'}$ definam o mesmo elemento de
+$\operatorname{Pic}(X\times_SS'/S')$). Então existe um Módulo coerente
+$\mathcal Q$ sobre $S$, determinado a menos de isomorfismo único, tal que o
+funtor $T$ seja representável pelo fibrado projetivo $\mathbf P(\mathcal Q)$.
+
+\result{COROLÁRIO}{4.4} Se supusermos, além disso, que $f$ é projetivo, então o
+homomorfismo funtorial
+$\operatorname{Div}_{X/S}\longrightarrow\operatorname{Pic}_{X/S}$ é
+representável por morfismos projetivos.
+
+Com efeito, quando $X$ admite uma seção (resp. localmente uma seção) sobre $S$,
+o homomorfismo precedente é representável por fibrados projetivos (resp. por
+fibrados projetivos locais), graças a 4.3 e 2.1. No caso em que $f$ é
+quase-projetivo, reduz-se facilmente ao caso precedente por um método de
+descida, utilizando quase-seções finitas e planas de $X$ localmente sobre $S$.
+
+\result{OBSERVAÇÃO}{4.5} Sob as condições de 4.3, o Módulo $\mathcal Q$ sobre
+$S$ não é, em geral, localmente livre, o que se exprime pelo fato de que a
+dimensão das fibras reduzidas de $\mathcal Q$, isto é, a dos
+$H^0(X_s,\mathcal L_s)$ para $s\in S$ variável, pode dar saltos. Dado um Módulo
+coerente $\mathcal Q$ sobre o pré-esquema localmente noetheriano $S$, verifica-se
+facilmente que, para um $s\in S$ dado, $\mathcal Q$ é livre em $s$ se e somente
+se $\mathbf P(\mathcal Q)$ é plano sobre $S$ nos pontos acima de $s$ (caso em
+que será até liso sobre $S$ nos pontos acima de $s$); no caso em questão,
+estando $\mathcal Q$ definido em termos de $\mathcal L$ como acima, isso
+significa também que a formação da imagem direta $f_*(\mathcal L)$ «comuta com
+a mudança de base na
+\src{154}
+vizinhança de $s$», ou ainda que
+$f_*(\mathcal L)_s\longrightarrow H^0(X_s,\mathcal L_s)$ é sobrejetivo. Isso
+ocorre, por exemplo, se $H^1(X_s,\mathcal L_s)=0$. Sob reserva da existência
+dos pré-esquemas em questão, esses critérios aplicam-se, em particular, à
+situação universal
+$\operatorname{Div}_{X/S}\longrightarrow\operatorname{Pic}_{X/S}$, e fornecem
+uma condição necessária e suficiente, resp. suficiente, para que esse morfismo
+seja liso em um ponto dado de $\operatorname{Div}_{X/S}$.
+
+\fsection{5}{Demonstração do teorema principal de existência}
+
+Sob as condições de 3.1, escolhamos um Módulo $\mathcal O_X(1)$ muito amplo
+sobre $X/S$, e seja $\xi$ o elemento correspondente de
+$\operatorname{Pic}(X/S)$. Para abreviar, ponhamos
+\[
+P(S')=\operatorname{Pic}(X\times_SS'/S'),
+\]
+e suponhamos primeiro, para simplificar, que $X/S$ admita uma seção. Seja
+$P^+(S')$ a parte de $P(S')$ formada pelas classes dos $\mathcal L$ invertíveis
+sobre $X\times_SS'$ tais que
+\[
+R^if'_*(\mathcal L(n))=0\quad\text{para $i>0$ e todo $n\geq0$},
+\qquad
+f'_*(\mathcal L(n))\neq0\quad\text{para todo $n\geq0$}.
+\]
+Essas condições são estáveis por mudança de base, definindo, portanto, um
+subfuntor $P^+$ de $P$, evidentemente estável pela translação por $\xi$.
+Utilizando os «teoremas A e B» de Serre ([2], III, 2) e as generalidades
+([5], IV, 5), vê-se facilmente que $P$ é representável se e somente se $P^+$ o
+é, e, nesse caso, $P^+$ será representado por um aberto $U$ do pré-esquema
+$\operatorname{Pic}_{X/S}$ que representa $P$, e este último será a união
+crescente dos abertos $U-n\xi$.
+
+Para abreviar, seja $D=\operatorname{Div}_{X/S}$, e seja $D^+$ a imagem inversa
+de $P^+$ pelo morfismo canônico $D\longrightarrow P$. Tem-se, portanto, um
+morfismo
+\begin{equation}
+D^+\longrightarrow P^+,
+\tag{+}
+\end{equation}
+e já se sabe que $D^+$ é representável por um aberto $D^+$ do pré-esquema
+$D=\operatorname{Div}_{X/S}$ (cuja existência é garantida por 4.1). Resulta
+facilmente de 4.3 que o morfismo (+) é representável por morfismos lisos,
+projetivos e sobrejetivos (e, mais precisamente, por fibrados projetivos
+associados a Módulos localmente livres não nulos em toda parte): isso decorre
+do fato de que, quando $\mathcal L$ sobre $X\times_SS'$ é como no início deste
+item, então $f'_*(\mathcal L)$ é um Módulo localmente livre $\neq0$, cuja
+formação comuta com a mudança de base; com as notações de 4.3, $\mathcal Q$
+será então isomorfo ao dual de $f'_*(\mathcal L)$. Utilizando o critério geral
+([5], IV, 4.7), concluiremos daí a representabilidade de $P^+$. No lugar citado,
+tomaremos para $\mathfrak C$ o conjunto dos morfismos fielmente
+\src{155}
+planos e quase-compactos de pré-esquemas (que são de fato epimorfismos
+efetivos em virtude de [4], I B). A condição (a) de loco citato, a saber, que
+(+) é representável por morfismos pertencentes a $\mathfrak C$, está verificada,
+como acabamos de ver; o mesmo ocorre com a condição (b), que significa que o
+funtor $P^+$ é compatível com a descida fielmente plana quase-compacta, o que
+é imediato. Resta provar a condição (c) de loco citato, a saber, que a
+equivalência $R$ no pré-esquema $D^+$ deduzida do morfismo
+$\mathfrak C$-representável (+) é $\mathfrak C$-efetiva, isto é, é efetiva e
+tal que $D^+\longrightarrow D^+/R$ pertença a $\mathfrak C$. Para isso,
+observamos primeiro que os abertos $D^{+Q}$ de $D^+$ correspondentes aos
+diversos polinômios de Hilbert virtuais $Q\in\mathbf Q[t]$ são estáveis por $R$
+(pois as fibras de $R$ são conexas), o que nos reduz a mostrar que, para todo
+$Q$, a relação de equivalência $R^Q$ induzida em $D^{+Q}$ é
+$\mathfrak C$-efetiva. Ora, $D^{+Q}$ é agora quase-projetivo e, por outro lado,
+a relação de equivalência $R^Q$ é projetiva e plana. Estamos, portanto, nas
+condições de aplicação de [4], III, 6.1, o que implica o resultado desejado.
+
+No caso geral em que $X/S$ não admite necessariamente uma seção, reduzimo-nos
+facilmente ao caso anterior pela técnica de descida, ou retomamos a demonstração
+anterior com a modificação necessária na definição de $P^+$.
+
+\result{OBSERVAÇÃO}{5.1} O método seguido é essencialmente o de Matsusaka para
+a construção projetiva das variedades de Picard. O resultado de [4], III
+invocado para a possibilidade da passagem ao quociente efetivo também pode ser
+facilmente deduzido do teorema de existência dos esquemas de Hilbert (cf., por
+exemplo, [6]) (classicamente, esses quocientes eram construídos mediante o uso
+das coordenadas de Chow). Observe-se que a formação do aberto
+$\operatorname{Pic}^{+}_{X/S}$ de $\operatorname{Pic}_{X/S}$ e sua decomposição
+em abertos $\operatorname{Pic}^{+Q}_{X/S}$ quase-projetivos sobre $S$, segundo
+os polinômios de Hilbert dos divisores que definem os Módulos invertíveis
+considerados, é compatível com a mudança de base (o que permite a aplicação da
+técnica de descida).
+
+\result{OBSERVAÇÃO}{5.2} Não se exclui que $\operatorname{Pic}_{X/S}$ exista
+sempre que $f:X\longrightarrow S$ seja próprio e plano e tal que os
+homomorfismos
+\[
+k(s)\longrightarrow H^0(X_s,\mathcal O_{X_s})\qquad(s\in S)
+\]
+sejam isomorfismos (significando então esta última condição também que
+$\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$ e que essa relação permaneça
+válida após toda mudança de base $S'\longrightarrow S$). É ao menos o que se
+prova no âmbito dos espaços analíticos quando $f$ é, além disso, projetivo, por
+um método diferente (o de Chow, salvo engano) explicado em [5], IX,
+3.1. Nesse método, a passagem ao
+\src{156}
+quociente por uma relação de equivalência própria e plana em um aberto do
+esquema dos divisores é substituída por uma passagem ao quociente pelo grupo
+projetivo no esquema das imersões de $X$ em $\mathbf P^r_S$. Esse método poderá
+provavelmente adaptar-se ao caso dos esquemas utilizando os resultados de
+Mumford sobre a passagem ao quociente pelo grupo projetivo [8]; por ora, só
+existe demonstração escrita quando $X$ tem ``muitas seções locais'' sobre $S$,
+por exemplo, quando $X$ é separável sobre um anel local completo.
+ Em princípio, o método em questão teria alcance mais geral,
+pois também fornece a existência de pré-esquemas de Picard nos casos em que
+estes não são separados e nos quais, portanto, o primeiro método necessariamente
+falha. (Tecnicamente, a dificuldade provém do fato de que, quando as fibras
+geométricas de $f$ deixam de ser íntegras, o funtor considerado em 4.3 deixa de
+ser representável pelo próprio fibrado projetivo $\mathbf P(\mathcal Q)$ e
+passa a sê-lo por um aberto deste, o que conduz à delicada questão da passagem
+ao quociente por uma relação de equivalência plana, mas não própria.)
+
+\result{OBSERVAÇÃO}{5.3} Observe-se que a demonstração apresentada aqui não
+recorre nem à construção prévia das jacobianas das curvas ou famílias de curvas,
+nem à teoria das variedades abelianas ou dos esquemas abelianos, e por isso se
+distingue essencialmente de exposições tradicionais como a do livro de Lang [7]
+ou a exposição de Chevalley [1], que seguem a via esboçada por A. Weil. Mesmo no
+caso das jacobianas das curvas não singulares sobre um corpo algebricamente
+fechado (digamos, o corpo dos números complexos), a construção da jacobiana aqui
+apresentada é a única conhecida que fornece as propriedades muito fortes que
+adotamos como definição no número 1 (essencialmente as de Chevalley, mas levando
+em conta ``variedades de parâmetros'' com elementos nilpotentes). Que a
+construção dos esquemas de Picard deva preceder, e não seguir, a teoria das
+variedades abelianas é claro a priori pelo fato de que, em geral, os esquemas de
+Picard não são esquemas abelianos nem se reduzem a eles, como já se vê no caso
+das curvas singulares sobre um corpo algebricamente fechado, em que se encontram
+as ``jacobianas generalizadas'' de Rosenlicht, que não são variedades abelianas.
+Além disso, a teoria das variedades abelianas, e mais geralmente a dos esquemas
+abelianos, ganha muito em simplicidade quando se dispõe de uma teoria dos
+esquemas de Picard em geral. Em particular, a teoria de dualidade para os
+esquemas abelianos, sobretudo os resultados do tipo Cartier, torna-se quase
+formal a partir daí (cf., por exemplo, [10]).
+\src{157}
+\result{OBSERVAÇÕES}{5.4} O «princípio de compatibilidade» de Igusa para a
+jacobiana de uma curva que degenera em uma curva singular só pode ser bem
+compreendido como um teorema de existência do esquema de Picard de um esquema
+relativo em curvas $X/S$, não necessariamente suave sobre $S$. Trata-se,
+portanto, de um caso particular do teorema principal de existência 3.1 quando a
+curva especializada é íntegra (isto é, em termos clássicos, irredutível de
+multiplicidade 1). Observe-se que, por ora, o caso de uma curva especial
+redutível (mesmo quando as componentes têm multiplicidade 1, isto é, quando a
+curva especial é separável sobre o corpo residual) escapa aos teoremas de
+existência conhecidos, salvo no caso em que se está sobre um anel de valorização
+discreta completo com corpo residual algebricamente fechado; compare-se 5.2.
+Essa questão de existência certamente surgirá por ocasião de uma construção
+geométrica, na teoria dos esquemas, das «compactificações» de Baily--Satake dos
+esquemas modulares das curvas de gênero $g$. (Essa compactificação é conhecida,
+por ora, apenas para $g=1$, graças aos trabalhos de Igusa.)
+
+\fsection{6}{Teoremas de existência relativos}
+
+Esboçaremos aqui alguns casos úteis em que a existência de certos esquemas de
+Picard implica a existência de alguns outros, o que permite deduzir do teorema
+principal 3.1 diversos outros teoremas de existência.
+
+\result{PROPOSIÇÃO}{6.1} Seja $f:X\longrightarrow S$ um morfismo plano e
+projetivo tal que, na fatorização de Stein $f=f''f'$, o morfismo
+$f':X\longrightarrow S'$ seja plano e tenha fibras geométricas íntegras
+(portanto, satisfaça às hipóteses de 3.1), e o morfismo finito
+$f'':S'\longrightarrow S$ seja plano. Então $\operatorname{Pic}_{X/S}$ existe
+e (com as notações introduzidas em [4], II, C 2) tem-se um isomorfismo canônico
+\[
+\operatorname{Pic}_{X/S}\xrightarrow{\sim}
+\Pi_{S'/S}\operatorname{Pic}_{X/S'}.
+\]
+
+Para demonstrá-lo, estabelece-se primeiro um isomorfismo de funtores
+\[
+\operatorname{Pic}_{X/S}\xrightarrow{\sim}
+\Pi_{S'/S}\operatorname{Pic}_{X/S'},
+\]
+utiliza-se 3.1, que implica que $\operatorname{Pic}_{X/S'}$ é representável, e
+utiliza-se a estrutura assinalada no n\textsuperscript{o} 3 de
+$\operatorname{Pic}_{X/S'}$ (que implica que toda parte finita de uma fibra de
+$\operatorname{Pic}_{X/S'}$ sobre $S$ está contida em um aberto afim) para a
+existência de $\Pi_{S'/S}\operatorname{Pic}_{X/S'}$.
+\src{158}
+Por exemplo, quando $X$ é um esquema soma de esquemas $X_i$ sobre $S$ que
+satisfazem as condições de 3.1, o enunciado 6.1 reduz-se ao enunciado trivial
+\[
+\operatorname{Pic}_{X/S}\xrightarrow{\sim}
+\prod_i\operatorname{Pic}_{X_i/S}.
+\]
+
+\result{COROLÁRIO}{6.2} Seja $f:X\longrightarrow S$ um morfismo projetivo e
+plano com fibras geométricas localmente íntegras (por exemplo, um morfismo
+projetivo e normal); então $\operatorname{Pic}_{X/S}$ existe.
+
+Nesse caso, aliás, $S'$ é um recobrimento étale de $S$ (o que é verdadeiro
+sempre que $f$ é separável, isto é, plano com fibras geométricas reduzidas), e
+verifica-se que o teorema de estrutura enunciado no n\textsuperscript{o} 3 para
+$\operatorname{Pic}_{X/S}$ continua válido graças à estrutura análoga de
+$\operatorname{Pic}_{X/S'}$.
+
+Por outro lado, um procedimento de descida fornece um teorema de existência
+relativo, cujo alcance depende, aliás, da solução das questões de descida não
+plana levantadas em [4], I, A (c), e do qual nos limitamos a explicitar aqui um
+caso particular:
+
+\result{PROPOSIÇÃO}{6.3} Seja $f:X\longrightarrow S$ um morfismo próprio, sejam
+$X_1$ e $X_2$ dois subpré-esquemas de $X$ planos sobre $S$, definidos por dois
+Ideais coerentes $\mathcal I_1$ e $\mathcal I_2$ tais que
+$\mathcal I_1\cap\mathcal I_2=(0)$ e que
+$\mathcal O_X/(\mathcal I_1+\mathcal I_2)$ seja plano sobre $S$ (isto é, o
+subpré-esquema de $X$ que é o supremo de $X_1$ e $X_2$ é $X$, enquanto seu ínfimo $X$
+é plano sobre $S$).
+ Suponhamos, além disso, que, para todo $s\in S$, os
+homomorfismos
+\[
+k(s)\longrightarrow H^0(X_{i,s},\mathcal O_{X_{i,s}}),\qquad i=1,2,
+\]
+sejam bijetivos. Então o homomorfismo natural de funtores
+\[
+\operatorname{Pic}_{X/S}\longrightarrow
+\operatorname{Pic}_{X_1/S}\times\operatorname{Pic}_{X_2/S}
+\]
+é representável por morfismos afins; portanto, se
+$\operatorname{Pic}_{X_1/S}$ e $\operatorname{Pic}_{X_2/S}$ existem, o mesmo
+ocorre com $\operatorname{Pic}_{X/S}$, e o morfismo canônico
+\[
+\operatorname{Pic}_{X/S}\longrightarrow
+\operatorname{Pic}_{X_1/S}\times\operatorname{Pic}_{X_2/S}
+\]
+é afim.
+
+Por descida fielmente plana, reduzimo-nos ao caso em que $Z$ admite uma seção
+sobre $S$, definindo, portanto, seções de $X$, $X_1$, $X_2$ sobre $S$, o que
+permite eliminar os automorfismos nas estruturas consideradas, como explicado
+em 2.5. A demonstração consiste então em observar que o dado de um Módulo
+invertível
+\src{159}
+«rigidificado» $\mathcal L$ sobre $X$ equivale ao dado de uma tripla
+$(\mathcal L_1,\mathcal L_2,u)$, em que $\mathcal L_i$ é um Módulo invertível
+«rigidificado» sobre $X_i$, e $u$ é um isomorfismo de
+$\mathcal L_1|Z$ em $\mathcal L_2|Z$, compatível com as rigidificações.
+Resta apenas verificar que, para $\mathcal L_1$ e $\mathcal L_2$ fixados, o
+dado de $u$ se exprime por uma seção de um esquema conveniente sobre $S$, afim
+sobre $S$, o que é fácil. Deduz-se facilmente de 6.3:
+
+\result{COROLÁRIO}{6.4} Seja $X$ um esquema próprio e separável sobre um corpo
+$k$, e sejam $X_i$ as componentes irredutíveis de $X$. Se existem os
+$\operatorname{Pic}_{X_i/k}$, também existe $\operatorname{Pic}_{X/k}$, e o
+morfismo canônico
+\[
+\operatorname{Pic}_{X/k}\longrightarrow\prod_i\operatorname{Pic}_{X_i/k}
+\]
+é afim.
+
+Em combinação com 6.2, isso mostra, por exemplo, a existência de
+$\operatorname{Pic}_{X/k}$ sempre que $X$ é um esquema projetivo e separável
+sobre um corpo $k$. Quando $X$ deixa de ser separável sobre $k$, tem-se também
+um resultado de redução, utilizando um raciocínio devido a Oort [11]. O método
+aplica-se igualmente sobre um esquema de base arbitrário (caso útil, por
+exemplo, para demonstrar, na exposição seguinte, o resultado de finitude
+anunciado em 3.3). Para evitar um enunciado excessivamente técnico,
+limitemo-nos ao caso de um corpo de base:
+
+\result{PROPOSIÇÃO}{6.5} Seja $X$ um esquema próprio sobre um corpo $k$, e seja
+$X_0$ um subesquema com o mesmo conjunto subjacente (portanto, definido por um
+Ideal nilpotente sobre $X$). Então o morfismo funtorial
+\[
+\operatorname{Pic}_{X/k}\longrightarrow\operatorname{Pic}_{X_0/k}
+\]
+é representável por morfismos afins. Em particular, se
+$\operatorname{Pic}_{X_0/k}$ existe, o mesmo ocorre com
+$\operatorname{Pic}_{X/k}$, e o morfismo
+$\operatorname{Pic}_{X/k}\longrightarrow\operatorname{Pic}_{X_0/k}$ é afim.
+
+Combinando isso com 6.4, conclui-se facilmente:
+
+\result{COROLÁRIO}{6.6} Seja $X$ um pré-esquema projetivo sobre um corpo $k$;
+então $\operatorname{Pic}_{X/k}$ existe.
+
+\result{OBSERVAÇÃO}{6.6} É extremamente plausível que, para todo esquema $X$
+próprio sobre um corpo $k$, $\operatorname{Pic}_{X/k}$ exista. Os resultados precedentes reduzem essa questão ao caso em que $k$ é
+algebricamente fechado e $X$ é íntegro. Sabe-se, então, que existe um esquema
+íntegro $X'$ projetivo sobre $k$ e um morfismo dominante
+$g:X'\longrightarrow X$ (lema de Chow). Bastaria, portanto, mostrar que o
+\src{160}
+morfismo funtorial correspondente
+\[
+\operatorname{Pic}_{X/k}\longrightarrow\operatorname{Pic}_{X'/k}
+\]
+é representável (e, sem dúvida, representável por morfismos afins), pois se
+sabe, por outro lado, que $\operatorname{Pic}_{X'/k}$ é representável. Isso
+levanta questões de descida não plana ainda não resolvidas. Observe-se que,
+quando se restringe a consideração do funtor $\operatorname{Pic}_{X/k}$ aos
+pré-esquemas reduzidos (sendo $X$ próprio e íntegro sobre $k$ algebricamente
+fechado), obtém-se de fato um funtor representável, como mostrou Chevalley [1]
+no caso em que $X$ é normal, e Seshadri [12], por um método de descida, no caso
+geral. Mas, com nossas notações, o esquema construído por esses autores não é
+$\operatorname{Pic}_{X/k}$, mas
+$(\operatorname{Pic}_{X/k})_{\mathrm{réd}}$, o esquema reduzido correspondente
+a $\operatorname{Pic}_{X/k}$.
+
+\result{OBSERVAÇÃO}{6.7} Seja, mais geralmente, $f:X'\longrightarrow X$ um
+morfismo sobrejetivo de pré-esquemas próprios sobre $k$. Então, considerações de
+descida não plana levam a conjecturar que
+\[
+\operatorname{Pic}_{X/k}\longrightarrow\operatorname{Pic}_{X'/k}
+\]
+é um morfismo afim, o que implicaria, em particular (dividindo pelas
+componentes conexas dos elementos neutros), que o homomorfismo correspondente
+sobre os grupos de Néron--Severi é injetivo módulo torsão. É o que se pode
+verificar pela teoria das interseções quando $X$ e $X'$ são não singulares. A
+resposta não parece conhecida em nenhum outro caso.
+
+\result{OBSERVAÇÃO}{6.8} Ao contrário do que se poderia pensar, a consideração
+dos esquemas de Picard de esquemas algébricos com elementos nilpotentes é útil,
+e até indispensável, em diversas questões. Assim, quando $X$ é um esquema
+projetivo, digamos, regular, e $Y$ uma seção hiperplana, convém
+considerar as «vizinhanças infinitesimais» de todas as ordens $X_n$ de $Y$ e os
+esquemas de Picard $\operatorname{Pic}_{X_n/k}$; quando $X$ é irredutível de
+dimensão $\geq4$ (resp. $\geq3$), o morfismo canônico
+\[
+\operatorname{Pic}_{X/k}\longrightarrow\operatorname{Pic}_{X_n/k}
+\qquad(n\text{ grande})
+\]
+é um isomorfismo (resp. induz um isomorfismo para as imagens inversas dos
+subgrupos de torsão de Néron--Severi), resultado que nos será útil no estudo
+qualitativo dos esquemas de Picard na exposição seguinte. Do mesmo modo, a
+consideração dos esquemas de Picard de certas curvas com elementos nilpotentes
+e os teoremas fundamentais de geometria formal [3] permitem verificar, no caso
+de características iguais, uma conjectura de Mumford, a saber, que, para todo
+anel local noetheriano normal completo $A$ de dimensão 2, o grupo das classes
+de divisores de $A$ pode ser considerado como o conjunto dos pontos racionais
+sobre $k$ de um
+\src{161}
+grupo algébrico $G$ sobre o corpo residual $k$ ($G$ sendo, além disso,
+determinado canonicamente uma vez escolhido um corpo de coeficientes em $A$).
+No caso em que $A$ tem dimensão arbitrária, é plausível que exista um grupo
+proalgébrico sobre $k$ que desempenhe o mesmo papel que $G$ acima e que se
+construa, quando se pode ``dessingularizar'' $\operatorname{Spec}(A)$, como um
+limite projetivo de esquemas de Picard de esquemas projetivos convenientes (com
+elementos nilpotentes) sobre $k$.
+
+\section*{BIBLIOGRAFIA}
+\addcontentsline{toc}{section}{Bibliografia}
+
+\begin{description}
+\item[{[1]}] CHEVALLEY (Claude). -- Sur la théorie de Picard,
+\emph{Amer. J. of Math.}, v. 82, 1960, p. 435--490.
+
+\item[{[2]}] GROTHENDIECK (A.) e DIEUDONNÉ (J.). -- Éléments de géométrie
+algébrique, Chapitre I et suivants. -- Paris, Presses universitaires de France,
+1960--1961 (Institut des Hautes Études Scientifiques, Publications
+mathématiques 4, 8, \ldots).
+
+\item[{[3]}] GROTHENDIECK (Alexander). -- Géométrie formelle et géométrie
+algébrique, \emph{Séminaire Bourbaki}, v. 11, 1958/59,
+n\textsuperscript{o} 182, 28 p.
+
+\item[{[4]}] GROTHENDIECK (Alexander). -- Techniques de descente et théorèmes
+d'existence en géométrie algébrique, I--IV, \emph{Séminaire Bourbaki}, v. 12,
+1959/60, n\textsuperscript{o} 190, 29 p. e n\textsuperscript{o} 195, 22 p.;
+v. 13, 1960/61, n\textsuperscript{o} 212, 20 p. e
+n\textsuperscript{o} 221, 28 p.
+
+\item[{[5]}] GROTHENDIECK (Alexander). -- Techniques de construction en
+géométrie analytique, I--X, \emph{Séminaire Cartan}, v. 13, 1960/61:
+Déformation des structures analytiques complexes, n\textsuperscript{o} 7--17.
+
+\item[{[6]}] GROTHENDIECK (Alexander). -- Séminaire de géométrie algébrique,
+redigido por Lichtenbaum, Harvard University, 1961 (a aparecer).
+
+\item[{[7]}] LANG (Serge). -- \emph{Abelian varieties}. -- Nova York,
+Interscience Publishers, 1959 (Interscience Tracts in pure and applied
+Mathematics, 7).
+
+\item[{[8]}] MUMFORD (D.). -- An elementary theorem in geometric invariant
+theory, \emph{Bull. Amer. math. Soc.}, v. 67, 1961, p. 483--486.
+
+\item[{[9]}] MUMFORD (D.). -- The topology of normal singularities of an
+algebraic surface and a criterion for simplicity. -- Paris, Presses
+universitaires de France, 1961 (Institut des Hautes Études Scientifiques,
+Publications mathématiques, 9).
+
+\item[{[10]}] MUMFORD (D.) e TATE (J.). -- Séminaire de géométrie algébrique,
+Harvard University, Spring Term 1962 (a aparecer).
+
+\item[{[11]}] OORT (F.). -- Sur le schéma de Picard,
+\emph{Bull. Soc. math. France}, v. 90, 1962 (a aparecer).
+
+\item[{[12]}] SESHADRI (C. S.). -- Tese a aparecer em
+\emph{Annali di Matematica}.
+\end{description}
+
+\par

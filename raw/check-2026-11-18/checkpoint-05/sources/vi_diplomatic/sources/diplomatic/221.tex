@@ -1,0 +1,1334 @@
+\unit{Thuyết trình 221 -- Các lược đồ Hilbert}
+\sid{221}
+\markboth{Thuyết trình 221}{Thuyết trình 221}
+\src{249}
+\seminar{Năm thứ 13, 1960/61, số 221\\Tháng 5 năm 1961}
+\paperhead{CÁC KỸ THUẬT XÂY DỰNG VÀ CÁC ĐỊNH LÝ TỒN TẠI TRONG HÌNH HỌC ĐẠI SỐ\\
+IV. CÁC LƯỢC ĐỒ HILBERT}%
+  {Alexander GROTHENDIECK}
+
+\subsection*{Mở đầu}
+\addcontentsline{toc}{subsection}{Mở đầu}
+
+Các kỹ thuật được trình bày trong [2], I và II, về cơ bản không phụ thuộc vào
+bất kỳ giả thiết xạ ảnh nào đối với các lược đồ được xét. Tiếc rằng hiện nay
+chúng chưa cho phép giải các bài toán tồn tại được đặt ra trong Exposé II của
+[2]. Trong exposé này và exposé kế tiếp, chúng tôi sẽ giải các bài toán ấy dưới
+các giả thiết xạ ảnh. Các kỹ thuật được sử dụng mang tính xạ ảnh điển hình và
+hầu như không dùng đến các kết quả của I và II trong [2]. Ở đây, chúng tôi sẽ
+xây dựng các «lược đồ Hilbert», nhằm thay thế việc sử dụng các tọa độ Chow, như
+đã nói trong [2], II, số 2. Trong exposé kế tiếp, lý thuyết phép lấy thương đối
+với các lược đồ được phát triển trong III, kết hợp với lý thuyết các lược đồ
+Hilbert, sẽ cho phép chúng tôi, chẳng hạn, xây dựng các lược đồ Picard (được
+định nghĩa trong [2], II, số 3) dưới những điều kiện khá tổng quát.
+
+Tóm lại, có thể nói rằng hiện nay ta đã có một kỹ thuật xây dựng xạ ảnh khá
+thỏa đáng, ngoại trừ việc vẫn còn thiếu\footnote{Xem phần bổ sung ở cuối
+exposé.} một định lý về phép lấy thương theo các nhóm như nhóm xạ ảnh, tác động
+«không có điểm bất động» (xem [2], III, số 8). Tình hình dường như còn thuận lợi
+hơn đôi chút trong hình học giải tích (khi ta chỉ xét các không gian giải tích
+«xạ ảnh» trên một không gian giải tích đã cho), bởi vì đối với các không gian
+giải tích, khó khăn của phép lấy thương theo một nhóm tác động tốt sẽ biến mất.
+Mặt khác, trong hình học đại số cũng như trong hình học giải tích, vẫn còn phải
+phát triển một kỹ thuật xây dựng có hiệu lực mà không cần các giả thiết xạ ảnh.
+
+\fsection{1}{Các họ bị chặn của các bó: các tính chất ổn định}
+
+Cho $k$ là một trường và $X$ là một $k$-tiền lược đồ, giả sử thuộc kiểu hữu hạn
+để đơn giản. Với mỗi mở rộng $K/k$, ta do đó thu được một $K$-tiền lược đồ
+$X_K=X\otimes_k K$. Nếu $\mathcal F$ là một bó coherent trên $X_K$ và nếu
+$K'$ là một mở rộng của $K$, thì
+$\mathcal F\otimes_K K'=\mathcal F_{K'}$ là một bó quasi-coherent trên
+$X_K\otimes_K K'=X_{K'}$. Như vậy, nếu $K$ và $K'$ là hai mở rộng tùy ý của
+$k$, $\mathcal F$ là một bó quasi-coherent trên $X_K$ và $\mathcal F'$
+\src{250}
+là một bó quasi-coherent trên $X_{K'}$, ta nói $\mathcal F$ và
+$\mathcal F'$ là \emph{tương đương} nếu tồn tại các $k$-đồng cấu từ $K$,
+$K'$ vào cùng một mở rộng $K''$ của $k$ sao cho $\mathcal F_{K''}$ và
+$\mathcal F'_{K''}$ đẳng cấu trên $X_{K''}$. Đây là một quan hệ tương đương;
+ta sẽ quan tâm đến các lớp tương đương của các bó theo quan hệ này và đến các
+tập hợp lớp tương đương. Lưu ý rằng, nếu $X_0$ thuộc kiểu hữu hạn trên
+$k$, thì mỗi lớp bó coherent có thể được xác định bởi một bó coherent trên
+một $X_K$, trong đó $K$ là một mở rộng hữu hạn sinh của $k$. Vì vậy, trong
+định nghĩa các lớp bó coherent, ta có thể chỉ xét các mở rộng đóng đại số của
+$k$; cũng có thể chỉ xét một mở rộng đóng đại số cố định $\Omega$ của $k$, có
+bậc siêu việt vô hạn. Khi ấy, hai bó coherent $\mathcal F$ và $\mathcal F'$
+trên $X_\Omega$ tương đương khi và chỉ khi tồn tại một $k$-tự đẳng cấu $\sigma$
+của $\Omega$ sao cho $\mathcal F\otimes_\Omega(\Omega,\sigma)$ đẳng cấu với
+$\mathcal F'$. Do đó có một tương ứng song ánh giữa các lớp bó coherent theo
+một trong hai định nghĩa.
+
+Cho $E$, $E'$ là hai tập hợp các lớp bó coherent trên $X$. Xét các lớp của mọi
+bó có dạng $\mathcal F\otimes\mathcal F'$, trong đó $\mathcal F$ và
+$\mathcal F'$ là các bó coherent trên cùng một $X_K$, lớp của $\mathcal F$
+thuộc $E$ và lớp của $\mathcal F'$ thuộc $E'$. Ta thu được một tập hợp các lớp
+bó coherent, ký hiệu là $E\otimes E'$. Tương tự, ta định nghĩa các
+$\operatorname{Tor}_i(E,E')$, v.v. Tổng quát hơn, với mỗi hàm $U$ gán cho mọi
+dãy $\mathcal F_1,\ldots,\mathcal F_n$ gồm $n$ bó coherent trên cùng một $X_K$
+một tập hợp $U(\mathcal F_1,\ldots,\mathcal F_n)$ các bó coherent trên $X_K$,
+và có tính chất tương thích hiển nhiên với các đẳng cấu bó và các ảnh ngược qua
+phép đổi cơ sở, ta liên kết một hàm, cũng ký hiệu là $U$, gán cho mọi dãy gồm
+$n$ tập hợp $E_1,\ldots,E_n$ các lớp bó coherent một tập hợp
+$U(E_1,\ldots,E_n)$ các lớp bó coherent.
+
+Mục đích của chúng ta trong mục này là định nghĩa một số tập hợp lớp bó, gọi là
+\emph{bị chặn}, và chứng minh rằng các phép toán $U$ thông dụng nhất, khi áp
+dụng cho các tập hợp bị chặn, vẫn cho các tập hợp bị chặn.
+
+Cho $X$ là một tiền lược đồ thuộc kiểu hữu hạn trên một lược đồ Noether $S$.
+Với mỗi $s\in S$, thớ $X_s$ là một tiền lược đồ thuộc kiểu hữu hạn trên
+$k(s)$, và ta sẽ xét các lớp bó coherent trên $X_s$ theo nghĩa trên. Điều này
+mang lại nghĩa cho cụm từ: lớp bó coherent trên một thớ của $X/S$, cũng như
+cho các cụm từ tương tự. Cũng vậy, khi tiến hành riêng trên từng thớ, ta vẫn có
+thể xét các phép toán như $E\otimes E'$, v.v., gán cho mỗi hệ gồm những tập hợp
+\src{251}
+các lớp bó coherent trên các thớ của $X/S$ một tập hợp khác gồm các lớp bó
+coherent trên các thớ của $X/S$.
+
+\result{ĐỊNH NGHĨA}{1.1} Cho $E$ là một tập hợp các lớp bó coherent trên các
+thớ của $X/S$. Ta nói $E$ là \emph{bị chặn} nếu tồn tại một tiền lược đồ $S'$
+thuộc kiểu hữu hạn trên $S$ và một bó coherent $\mathcal F'$ trên
+$X'=X\times_S S'$ sao cho $E$ được chứa trong tập hợp các lớp bó trên các thớ
+của $X/S$ do $\mathcal F'$ xác định.
+
+Theo định nghĩa, tập hợp cuối cùng này gán cho mỗi $s\in S$ các lớp của những bó
+$\mathcal F'\otimes_{S'}k(s')$, trong đó $s'$ chạy qua các điểm của $S'$ nằm
+trên $s$ (do đó $k(s')$ là một mở rộng của $k(s)$, và
+$X_s\otimes_{k(s)}k(s')$ được đồng nhất với thớ
+$X'\otimes_{S'}k(s')=X'_{s'}$ của $X'$ tại $s'$). Có thể nói rằng các họ bị
+chặn là những họ được chứa trong một \emph{họ đại số} các bó coherent, được
+tham số hóa bởi một $S'$ thuộc kiểu hữu hạn trên $S$.
+
+Một hợp hữu hạn của các họ bị chặn là bị chặn (lấy tiền lược đồ tổng rời nhau
+của các tiền lược đồ tham số $S_i$ xác định những họ đại số bao chứa). Một phép
+đổi cơ sở $T\longrightarrow S$ biến một họ bị chặn tương đối với $X/S$ thành
+một họ bị chặn tương đối với $X_T/T$; mệnh đề đảo đúng nếu
+$T\longrightarrow S$ là toàn ánh (hoặc, tổng quát hơn, nếu ảnh của nó chứa các
+$s$ thực sự xuất hiện trong họ $E$ đã cho đối với $X/S$). Về lý thuyết, điều
+này quy việc xác định các họ bị chặn về trường hợp $S$ là phổ của một đại số
+thuộc kiểu hữu hạn trên vành số nguyên $\mathbf Z$.
+
+Nếu $E$ và $E'$ là các họ bị chặn gồm các lớp bó tương đối với $X/S$, thì
+$E\otimes E'$ cũng bị chặn. Thật vậy, giả sử $E$ và $E'$ được chứa tương ứng
+trong các họ đại số xác định bởi $T\longrightarrow S$ và $\mathcal F$ trên
+$X_T$, bởi $T'\longrightarrow S$ và $\mathcal F'$ trên $X_{T'}$. Khi đó,
+$E\otimes E'$ được chứa trong họ đại số xác định bởi
+$T''=T\times_S T'\longrightarrow S$ và bó $\mathcal F''$ trên $X_{T''}$, là
+tích tensor của các ảnh ngược của $\mathcal F$ và $\mathcal F'$ trên
+$X_{T''}$. Lập luận này chỉ đúng bởi vì hàm tử
+$\mathcal F\otimes\mathcal F'$ theo các biến $\mathcal F$, $\mathcal F'$ là
+khớp phải, nên giao hoán với mở rộng cơ sở (và đặc biệt với phép chuyển sang
+các thớ). Nó không áp dụng trực tiếp cho các phép toán địa phương như
+$\operatorname{Tor}_i(E,E')$, $\operatorname{Hom}(E,E')$,
+$\operatorname{Ext}^i(E,E')$. Tuy nhiên, có thể chứng minh rằng các phép toán
+này vẫn biến các tập hợp bị chặn thành các tập hợp bị chặn, bằng cách tiến hành
+như đối với $E\otimes E'$, nhưng sử dụng thêm các kết quả thuộc kiểu sau đây
+(tất cả đều có trong [3], IV, 6.11): một họ bị chặn $E$ luôn được chứa trong
+một họ đại số xác định bởi một bó coherent $\mathcal F$ trên một $X_T$ ($T$
+thuộc kiểu hữu hạn trên $S$), phẳng trên $T$. (Ta «cắt thành từng mảnh» không
+gian tham số ban đầu.) Những
+\src{252}
+tính chất phẳng của các bó thích hợp quả thực bảo đảm rằng các phép toán như
+$\operatorname{Tor}_i(\mathcal F,\mathcal F')$ giao hoán với mọi phép đổi cơ
+sở. Cùng phương pháp ấy áp dụng cho các phép toán mang tính toàn cục: ảnh trực
+tiếp và ảnh trực tiếp dẫn xuất của các bó coherent qua các cấu xạ riêng, các
+$\operatorname{Ext}$ toàn cục tương đối với các cấu xạ riêng (xem [5], III,
+\S~6), v.v.; mọi phép toán này đều biến các họ bị chặn của những bó thành các
+họ bị chặn của những bó. (Lưu ý. -- Ở đây những tiền lược đồ mà trên đó ta lấy
+các bó khác nhau có thể thay đổi qua các phép toán thuộc kiểu đang xét.)
+
+Hai phát biểu sau được chứng minh về cơ bản bằng cùng kỹ thuật về tính phẳng;
+đối với sự phân tích nguyên sơ trên các thớ của một cấu xạ thuộc kiểu hữu hạn,
+xem riêng [5], IV.
+
+\result{MỆNH ĐỀ}{1.2} Cho $E$, $E'$ là những tập hợp bị chặn gồm các lớp bó
+trên các thớ của $X/S$, giả sử $X$ riêng trên $S$. Khi đó:
+
+\medskip
+\noindent (i) Họ các hạt nhân, đối hạt nhân và ảnh của những đồng cấu
+$\mathcal F\longrightarrow\mathcal F'$, trong đó lớp của $\mathcal F$ thuộc
+$E$ và lớp của $\mathcal F'$ thuộc $E'$, là bị chặn.
+
+\smallskip
+\noindent (ii) Họ các bó $\mathcal F''$ là những mở rộng của một $\mathcal F$
+bởi một $\mathcal F'$, trong đó lớp của $\mathcal F$ thuộc $E$ và lớp của
+$\mathcal F'$ thuộc $E'$, là bị chặn.
+
+Sau một phép đổi cơ sở thích hợp, có thể giả sử $E$ và $E'$ lần lượt được xác
+định bởi một bó coherent $\mathcal G$ và một bó coherent $\mathcal G'$ trên
+một $X_T/T$, với $T$ thuộc kiểu hữu hạn trên $S$. Hơn nữa, có thể giả sử một
+số giả thiết về tính phẳng được thỏa mãn, kéo theo việc tạo thành các bó
+$f_{T*}(\operatorname{Hom}_{X_T}(\mathcal G,\mathcal G'))$ và
+$\operatorname{Ext}^{1}_{f_T}(\mathcal G,\mathcal G')$ giao hoán với phép đổi
+cơ sở theo một cấu xạ tùy ý $T'\longrightarrow T$. Cũng có thể giả sử các bó
+coherent nói trên là tự do địa phương trên $T$. Khi đó, gọi $T_0$ và $T_1$
+là các phân thớ vectơ trên $T$ mà bó các mầm tiết diện của chúng lần lượt là
+các bó nói trên. Khi ấy ta xác định chính tắc một đồng cấu
+$\mathcal G_{T_0}\longrightarrow\mathcal G'_{T_0}$ giữa các bó coherent trên
+$X_{T_0}$, và một mở rộng
+\[
+0\longrightarrow\mathcal G_{T_1}\longrightarrow\mathcal G''
+\longrightarrow\mathcal G'_{T_1}\longrightarrow0
+\]
+gồm các bó coherent trên $X_{T_1}$, có một tính chất phổ dụng hiển nhiên. Bó
+thứ hai này xác định một họ đại số bao chứa họ đang xét trong (ii). Điều tương
+tự cũng đúng với hạt nhân, đối hạt nhân và ảnh của đồng cấu
+\src{253}
+trước đó, mà việc xét nó chứng minh (i) (miễn là giả sử đối hạt nhân phẳng trên
+$T_0$, trường hợp mà ta lại quy về bằng cách cắt $T_0$ thành từng
+mảnh\ldots).
+
+\result{MỆNH ĐỀ}{1.3} Cho $E$ là một họ bị chặn gồm các lớp bó trên các thớ
+của $X/S$. Khi đó, các lớp của các bó cấu trúc của
+$(\operatorname{supp}\mathcal F)_{\mathrm{red}}$, trong đó $\mathcal F$ là một
+bó coherent trên một $X_K$, với $K$ đóng đại số, và lớp của nó thuộc $E$, tạo
+thành một họ bị chặn.
+
+Ở đây, $(\operatorname{supp}\mathcal F)_{\mathrm{red}}$ ký hiệu cho giá của
+$\mathcal F$ được trang bị cấu trúc rút gọn cảm sinh; tức là bó cấu trúc của nó
+là thương của $\mathcal O_{X_K}$ theo bó iđêan lớn nhất xác định
+$\operatorname{supp}\mathcal F$. Có thể chứng minh kết quả tương tự (1.3) cho
+những bó được suy ra chính tắc từ $\mathcal F$ bằng lý thuyết phân tích nguyên
+sơ, chẳng hạn các $\mathcal F/\mathcal F_i$, trong đó các $\mathcal F_i$ là
+những bó con của $\mathcal F$ nguyên sơ ứng với các thành phần của giá của
+$\mathcal F$ và tối tiểu đối với tính chất này; hoặc các
+$\mathcal O_{X_K}/\mathfrak p$, trong đó $\mathfrak p$ là một bó iđêan nguyên
+tố liên kết với $\mathcal F$; hoặc các $\mathcal O_{X_K}/\mathfrak q$, trong đó
+$\mathfrak q$ là một bó iđêan nguyên sơ liên kết với một thành phần của giá của
+$\mathcal F$ (trường tham chiếu được giả sử đóng đại số).
+
+\fsection{2}{Các họ bị chặn và đa thức Hilbert}
+
+Trong phần tiếp theo, ta giả sử $X$ xạ ảnh trên $S$ và được trang bị một bó rất
+rộng, ký hiệu $\mathcal O_X(1)$. Với mọi mở rộng $K$ của trường thặng dư $k(s)$
+tại một điểm $s$ của $S$, ta xét trên $X_K$ bó tương ứng
+$\mathcal O_{X_K}(1)$, bó này vẫn rất rộng.
+
+Với mỗi bó coherent $\mathcal F$ trên $X_K$, ta gán hàm
+\[
+P_{\mathcal F}(n)=\text{đặc trưng Euler--Poincaré của $\mathcal F(n)$
+trên $X_K$},
+\]
+là một đa thức theo số nguyên $n$, gọi là \emph{đa thức Hilbert} của
+$\mathcal F$. Với các giá trị đủ lớn của $n$, $P(n)$ không gì khác hơn là số
+chiều của $H^0(X_K,\mathcal F(n))$ trên $K$, vì các
+$H^i(X_K,\mathcal F(n))$ bằng không khi $i>0$ và $n$ đủ lớn.
+
+Bây giờ, nếu $\mathcal F$ là một bó coherent trên $X$, phẳng trên $S$, thì các
+đa thức Hilbert của những bó $\mathcal F_s$ cảm sinh trên các thớ $X_s$ thuộc
+cùng một thành phần liên thông của $S$ đều bằng nhau [5], III, \S~7. Do đó
+(không cần giả thiết phẳng), tập hợp các đa thức Hilbert của những bó
+$\mathcal F_s$, $s\in S$, là hữu hạn đối với mọi bó coherent $\mathcal F$ trên
+$X$.
+\src{254}
+Mặt khác, nhắc lại rằng nếu $\mathcal F$ là một bó coherent trên $X$, thì nó
+đẳng cấu với một bó thương của bó $\mathcal O_X(-n)^N$, với $n$ và $N$ đủ
+lớn. Do đó, các bó $\mathcal F_s$ cảm sinh trên các thớ cũng là thương của bó
+$\mathcal O(-n)$ trên thớ.
+
+Từ hai nhận xét này, ta suy ra chiều «chỉ khi» của định lý sau:
+
+\result{ĐỊNH LÝ}{2.1} Cho $X$ xạ ảnh trên $S$ Noether, với
+$\mathcal O_X(1)$ rất rộng trên $X$ tương đối với $S$. Cho $E$ là một tập hợp
+các lớp bó trên các thớ của $X/S$. Để $E$ bị chặn, điều kiện cần là nó thỏa mãn các điều kiện sau:
+
+\medskip
+\noindent (a) Tồn tại một bó coherent $\mathcal L$ trên $X$ (có thể giả sử có
+dạng $\mathcal O_X(-n)^N$) sao cho $E$ được chứa trong họ các lớp của những bó
+coherent là thương của các bó dạng $\mathcal L_K$.
+
+\smallskip
+\noindent (b) Các đa thức Hilbert $P_{\mathcal F}$ của những bó $\mathcal F$
+có lớp thuộc $E$ đều thuộc cùng một tập hợp hữu hạn các đa thức.
+
+Còn phải chứng minh chiều «nếu», đây sẽ là một trường hợp riêng của một kết quả
+chính xác hơn. Với mọi môđun coherent $\mathcal F$ trên một tiền lược đồ thuộc
+kiểu hữu hạn trên một trường $K$, và mọi số nguyên $r$, gọi $N_r$ là môđun con
+của $\mathcal F$ mà các tiết diện trên một tập mở là những tiết diện của
+$\mathcal F$ trên tập mở đó có giá mang chiều $<r$. Khi đó
+$N_r=\mathcal F$ nếu $r>\dim\operatorname{supp}\mathcal F$, còn $N_r=0$ nếu
+$r\leq0$, và ta thu được một lọc tăng hữu hạn của $\mathcal F$ mà các thương
+$N_r/N_{r+1}$ có các chu trình nguyên tố
+liên kết đúng bằng những chu trình nguyên tố liên kết với $\mathcal F$ mang
+chiều $r$. Ta đặt
+\[
+\mathcal F_{(r)}=\mathcal F/N_r,
+\]
+thì các chu trình nguyên tố liên kết với $\mathcal F_{(r)}$ đúng bằng những chu
+trình nguyên tố liên kết với $\mathcal F$ mang chiều $\geq r$; đặc biệt, nó
+bằng $\mathcal F$ khi và chỉ khi các chu trình nguyên tố liên kết với
+$\mathcal F$ mang chiều $\geq r$. Với ký hiệu này:
+
+\result{ĐỊNH LÝ}{2.2} Dưới các giả thiết của (2.1), cho $s$ là một số nguyên
+và giả sử $E$ thỏa mãn điều kiện (a) cùng dạng yếu hơn sau đây của (b):
+
+\medskip
+\noindent $(b_s)$ Các đa thức Poincaré $P_{\mathcal F}$ của những bó
+$\mathcal F$ có lớp thuộc $E$ có các hệ số ở bậc $\leq s-1$ được chặn.
+
+Dưới các điều kiện này, các bó $\mathcal F_{(s)}$ (khi lớp của $\mathcal F$
+chạy trong $E$) tạo thành một họ bị chặn. Hơn nữa, các hệ số bậc $s-2$ của
+các $P_{\mathcal F}$ bị chặn dưới.
+\src{255}
+Do đó:
+
+\result{HỆ QUẢ}{2.3} Giả sử những bó $\mathcal F$ có lớp thuộc $E$ sao cho
+mọi chu trình nguyên tố liên kết của chúng đều mang chiều $d$ thỏa mãn
+$s\leq d\leq r$. Khi đó, trong (2.1) (b), chỉ cần xét các hệ số của
+$P_{\mathcal F}$ ở các bậc từ $s-1$ đến $r$.
+
+Phần còn lại của mục này dành cho việc phác thảo chứng minh (2.2). Các bổ đề
+then chốt là hai bổ đề sau, trong đó bổ đề thứ nhất đã quen thuộc (và tóm tắt
+nội dung toán học hữu dụng của các tọa độ Chow):
+
+\result{BỔ ĐỀ 2.4 (CHOW)}{} Xét các bó cấu trúc của những lược đồ con $Y$ của
+các thớ $X_K$ ($K$ chạy qua các mở rộng đóng đại số của những trường thặng dư
+của $S$), với $Y$ rút gọn và mọi thành phần của nó cùng mang chiều $r$
+($\mathcal O_Y$ được xem như một bó thương của $\mathcal O_X$). Nếu các bậc
+của $Y$ bị chặn, thì các $Y$ tạo thành một họ bị chặn.
+
+Ở đây, bậc $a$ của $Y$ có thể được định nghĩa thuận tiện nhất bằng hệ số của
+số hạng đầu của
+\[
+P_{\mathcal O_Y}=a\frac{n^r}{r!}+\cdots.
+\]
+
+\result{BỔ ĐỀ}{2.5} Cho $\mathcal L$ là một bó coherent trên $X$ và $E$ là
+một tập hợp các lớp bó thương $\mathcal F$ của những bó $\mathcal L_K$ ($K$
+là một mở rộng trường thặng dư của $S$). Giả sử các thớ của $X$ trên $S$ mang
+chiều $\leq r$, và đặt
+\[
+P_{\mathcal F}(n)=a_{\mathcal F}\frac{n^r}{r!}
++b_{\mathcal F}\frac{n^{r-1}}{(r-1)!}
++\text{các số hạng bậc $<r-1$}.
+\]
+Khi đó, hệ số $a_{\mathcal F}$ bị chặn, còn $b_{\mathcal F}$ bị chặn dưới.
+Nếu $b_{\mathcal F}$ bị chặn, thì họ các $\mathcal F_{(r)}$ bị chặn.
+
+\emph{Chứng minh.} -- Sau khi thay $S$, nếu cần, bằng một hợp các lược đồ con
+của $S$ phủ $S$, ta có thể giả sử tồn tại một cấu xạ hữu hạn
+$f:X\longrightarrow\mathbf P^r_S$ sao cho $\mathcal O_X(1)$ đẳng cấu với ảnh
+ngược của $\mathcal O_{\mathbf P^r_S}(1)$; do đó, với mọi bó coherent
+$\mathcal F$ trên $X$, ta có
+$P_{\mathcal F}=P_{f_*(\mathcal F)}$. Mặt khác, dễ kiểm tra (bằng kỹ thuật của
+mục trước) rằng một tập hợp các bó $\mathcal F$ trên $X$ bị chặn khi và chỉ khi
+tập hợp các $f_*(\mathcal F)$ bị chặn. Cuối cùng, ta có
+\[
+f_*(\mathcal F)_{(r)}=f_*(\mathcal F_{(r)}).
+\]
+\src{256}
+Như vậy, ta quy về trường hợp $X=\mathbf P^r_S$. Hơn nữa, có thể giả sử
+$\mathcal L=\mathcal O_{\mathbf P^r_S}(k)^s$ với $k$, $s$ thích hợp. Hệ số
+$a_{\mathcal F}$ thỏa mãn
+\[
+0\leq a_{\mathcal F}\leq s
+\]
+và do đó bị chặn. Mặt khác, việc các $P_{\mathcal F}(n)$ có hệ số của
+$n^{r-1}$ bị chặn dưới (tương ứng, bị chặn) tương đương với việc khẳng định
+điều đó cho
+$P_{\mathcal F}(n-k)=P_{\mathcal F(-k)}(n)$. Như vậy, ta quy về trường hợp
+\[
+\mathcal L=\mathcal O_{\mathbf P^r_S}^{s}.
+\]
+
+Xét dãy khớp
+\[
+0\longrightarrow N_r\longrightarrow\mathcal F
+\longrightarrow\mathcal F_{(r)}\longrightarrow0,
+\]
+từ đó
+\[
+P_{\mathcal F}=P_{\mathcal F_{(r)}}+P_{N_r},
+\]
+và vì hệ số của $n^{r-1}$ trong $P_{N_r}$ không âm (do
+$\dim\operatorname{supp}N_r\leq r-1$), ta có
+\[
+b_{\mathcal F_{(r)}}\leq b_{\mathcal F}.
+\]
+Điều này cho phép ta, để chứng minh các khẳng định của bổ đề, thay
+$\mathcal F$ bằng $\mathcal F_{(r)}$, tức là giả sử những bó thương
+$\mathcal F$ của $\mathcal L$ đang xét là không xoắn.
+
+Vì $\mathbf P^r_K$ chuẩn tắc, suy ra $\mathcal F$ tự do địa phương hạng
+$a=a_{\mathcal F}$ trên một tập mở $U=\mathbf P^r_K-Y$, trong đó $Y$ có đối
+chiều $\geq2$. Do đó, $\bigwedge^a\mathcal F$ là một bó trên
+$\mathbf P^r_K$ mà hạn chế của nó lên $U$ là khả nghịch; vì vậy (do
+$\mathbf P^r_K$ chính quy và $Y$ có đối chiều $\geq2$), hạn chế này đẳng cấu
+với hạn chế của một bó khả nghịch trên $\mathbf P^r_K$, được xác định sai khác
+một đẳng cấu. Bó sau có dạng $\mathcal O_{\mathbf P^r_K}(d)$ với một số nguyên
+$d$ được xác định duy nhất. Vì $\bigwedge^a\mathcal F$ là thương của
+$\bigwedge^a\mathcal O_{\mathbf P^r_K}^{n}\simeq
+\mathcal O_{\mathbf P^r_K}^{N}$, với $N=\binom{s}{a}$, nó có $N$ tiết diện chính tắc, do đó xác
+định các tiết diện của
+\src{257}
+$\mathcal O_{\mathbf P^r_K}(d)$ trên $U$, là những hạn chế của các tiết diện
+$s_i$ ($1\leq i\leq N$) của $\mathcal O_{\mathbf P^r_K}(d)$ (vì
+$\mathbf P^r_K$ chuẩn tắc và $Y$ có đối chiều $\geq2$). Các tiết diện này sinh
+$\mathcal O_{\mathbf P^r_K}(d)$ tại các điểm của $U$, nên chúng không đồng thời
+bằng không; điều này kéo theo $d\geq0$. Mặt khác, một phép tính đơn giản cho
+\[
+b_{\mathcal F}=a_{\mathcal F}(r+1)/2+d.
+\]
+Đặc biệt, điều này cho thấy $b_{\mathcal F}>0$, nên $b_{\mathcal F}$ bị chặn
+dưới. Nó bị chặn khi và chỉ khi $d$ bị chặn; ta chứng minh rằng khi đó
+$\mathcal F$ thuộc một họ bị chặn. Có thể giả sử $a_{\mathcal F}$ và
+$b_{\mathcal F}$ cố định, lần lượt bằng $a$ và $b$, nên $d$ cố định. Việc biết
+$N$ tiết diện $s_i$ của $\mathcal O_{\mathbf P^r_K}(d)$, tức là biết một đồng
+cấu
+\[
+s:\bigwedge^a\mathcal L_K\longrightarrow\mathcal O_{\mathbf P^r_K}(d),
+\]
+cho phép khôi phục $\mathcal F$ như đối ảnh của đồng cấu hợp thành tương ứng:
+\[
+\mathcal L_K\longrightarrow
+\operatorname{Hom}\!\left(\bigwedge^{a-1}\mathcal L_K,
+\bigwedge^a\mathcal L_K\right)\longrightarrow
+\operatorname{Hom}\!\left(\bigwedge^{a-1}\mathcal L_K,
+\mathcal O_{\mathbf P^r_K}(d)\right),
+\]
+trong đó đồng cấu thứ nhất là đồng cấu chính tắc sinh bởi tích ngoài, còn đồng
+cấu thứ hai được suy ra từ $s$. Khi ấy, kết luận suy ra từ (1.2) (i).
+
+Kết hợp hai bổ đề trước, ta chứng minh được:
+
+\result{BỔ ĐỀ}{2.6} Dưới các giả thiết sơ bộ của (2.1), giả sử với mọi
+$\mathcal F$ ta có
+\[
+P_{\mathcal F}(n)=a_{\mathcal F}\frac{n^r}{r!}
++b_{\mathcal F}\frac{n^{r-1}}{(r-1)!}
++\text{các số hạng bậc $<r-1$},
+\]
+và các hệ số $a_{\mathcal F}$ bị chặn. Khi đó, các hệ số $b_{\mathcal F}$ bị
+chặn dưới. Nếu các $b_{\mathcal F}$ bị chặn, thì các $\mathcal F_{(r)}$ tạo
+thành một họ bị chặn.
+
+Có thể giả sử các trường cơ sở $K$ của những bó $\mathcal F$ đều đóng đại số.
+Trang bị cho mỗi $\operatorname{supp}\mathcal F_{(r)}$, là hợp của các thành
+phần mang bậc $r$
+của $\operatorname{supp}\mathcal F$, cấu trúc rút gọn cảm sinh. Khi đó, các
+bậc của $\operatorname{supp}\mathcal F_{(r)}$ bị chặn trên bởi $a$; do đó,
+theo (2.4), các $\operatorname{supp}\mathcal F_{(r)}$ tạo thành một tập hợp bị
+chặn. Hơn nữa, với mỗi thành phần của
+$\operatorname{supp}\mathcal F_{(r)}$, độ dài của $\mathcal F_{(r)}$ dọc theo
+thành phần đó là $\leq a$; vì vậy, nếu $\mathcal J_{\mathcal F}$ là iđêan xác
+định $\operatorname{supp}\mathcal F_{(r)}$, thì $\mathcal F_{(r)}$
+\src{258}
+có thể được xem như một môđun trên lược đồ con $Y_{\mathcal F}$ của $X$ được
+xác định bởi $\mathcal J_{\mathcal F}^{a}$. Như trong bổ đề trước, ta cũng quy
+về trường hợp $\mathcal F=\mathcal F_{(r)}$, do đó $\mathcal F$ xuất phát từ
+một môđun trên $Y_{\mathcal F}$. Các $Y_{\mathcal F}$ tương ứng với một họ bị
+chặn gồm các môđun thương của các $\mathcal O_{X_K}$, và vì thế xuất phát từ
+một lược đồ con đóng $Y$ của một lược đồ $X\times_S T$. Khi đó, ta có thể áp
+dụng (2.5) cho $Y/T$ và $\mathcal L\otimes_XY$, suy ra kết luận.
+
+Bây giờ ta có thể chứng minh (2.2) bằng quy nạp theo cận trên $r$ của các số
+$\dim\operatorname{supp}\mathcal F$. Mệnh đề là hiển nhiên với $r<0$; vì vậy,
+giả sử $r\geq0$ và mệnh đề đã được chứng minh với mọi $r'<r$. Theo (2.6), các
+$\mathcal F_{(r)}$ tạo thành một tập hợp bị chặn; do đó, theo (1.2) (i), các
+hạt nhân của những đồng cấu
+$\mathcal L_K\longrightarrow\mathcal F_{(r)}$ cũng tạo thành một tập hợp bị
+chặn. Vì thế, tồn tại một môđun coherent $\mathcal L'$ trên $X$ sao cho các hạt
+nhân đang xét, và do đó cả các
+\[
+N_r(\mathcal F)=\operatorname{Ker}(\mathcal F\longrightarrow\mathcal F_{(r)}),
+\]
+đều là những môđun thương của các môđun $\mathcal L'_K$. Vì các
+$\mathcal F_{(r)}$ bị chặn, các $P_{\mathcal F_{(r)}}$ vẫn bị chặn, và công
+thức
+\[
+P_{\mathcal F}=P_{\mathcal F_{(r)}}+P_{N_r}
+\]
+cho thấy các $P_{N_r}$ thỏa mãn cùng điều kiện $(b_s)$ như các
+$P_{\mathcal F}$. Do đó, các $N_r$ thỏa mãn các điều kiện (a) và $(b_s)$, và
+theo giả thiết quy nạp, các $(N_r)_{(s)}$ vẫn bị chặn. Mặt khác,
+$\mathcal F_{(s)}$ là một mở rộng của $\mathcal F_{(r)}$ bởi
+$(N_r)_{(s)}$; vì thế, theo (1.2) (ii), các $\mathcal F_{(s)}$ vẫn bị chặn.
+Đối với khẳng định cuối cùng của (2.2), ta lưu ý rằng các hạt nhân $N_s$ của
+$\mathcal F\longrightarrow\mathcal F_{(s)}$ vẫn bị chặn theo (1.2) (i), và hệ
+số của số hạng chứa $n^{s-1}$ trong $P_{N_s}$ vẫn bị chặn; khi đó Bổ đề 2.6
+chứng minh rằng hệ số của số hạng kế tiếp bị chặn dưới. Điều này kết thúc chứng
+minh.
+
+\fsection{3}{Các lược đồ Hilbert: định nghĩa, định lý tồn tại}
+
+Cho $X$ là một tiền lược đồ trên một tiền lược đồ khác $S$, và $\mathcal F$ là
+một môđun quasi-coherent trên $X$. Ký hiệu bởi
+\[
+\operatorname{Quot}(\mathcal F/X/S)
+\]
+tập hợp các môđun quasi-coherent thương của $\mathcal F$ phẳng trên $S$. Bây
+giờ, cho $S'\longrightarrow S$ là một cấu xạ đổi cơ sở; đặt
+$X'=X\times_S S'$ và
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$; do đó, $X'$
+là một tiền lược đồ trên $S'$ được trang bị một môđun
+\src{259}
+quasi-coherent $\mathcal F'$, và ta có thể xét
+$\operatorname{Quot}(\mathcal F'/X'/S')$. Ta đặt
+\[
+\underline{\operatorname{Quot}}_{\mathcal F/X/S}(S')
+=\operatorname{Quot}(\mathcal F'/X'/S')
+\qquad\text{(trong đó $X'=X\times_SS'$)}.
+\]
+Bây giờ, nếu $S''\longrightarrow S'$ là một $S$-cấu xạ, thì
+$X''=X\times_SS''$ đẳng cấu với $X'\times_{S'}S''$, còn $\mathcal F''$ đẳng
+cấu với $\mathcal F'\otimes_{\mathcal O_{S'}}\mathcal O_{S''}$. Vì hàm tử ảnh
+ngược
+\[
+\mathcal G'\longmapsto
+\mathcal G'\otimes_{\mathcal O_{S'}}\mathcal O_{S''}
+\]
+từ phạm trù các môđun quasi-coherent trên $X'$ vào phạm trù các môđun
+quasi-coherent trên $X''$ là khớp phải và biến các môđun phẳng trên $S'$ thành
+các môđun phẳng trên $S''$, ta thu được một ánh xạ tự nhiên
+\[
+\operatorname{Quot}(\mathcal F'/X'/S')\longrightarrow
+\operatorname{Quot}(\mathcal F''/X''/S''),
+\]
+do đó $\underline{\operatorname{Quot}}_{\mathcal F/X/S}(S')$ là một hàm tử
+phản biến theo $S'$ (một tiền lược đồ trên $S$), nhận giá trị trong phạm trù
+các tập hợp. Từ đây về sau, ta giả sử $X$ xạ ảnh trên một $S$ Noether,
+$\mathcal F$ coherent, và để đơn giản, ta chỉ xét các $S'$ trên $S$ là
+Noether địa phương.
+
+\result{ĐỊNH LÝ}{3.1} Dưới các điều kiện này, hàm tử phản biến
+$\underline{\operatorname{Quot}}_{\mathcal F/X/S}$ trên phạm trù các
+$S$-tiền lược đồ Noether địa phương được biểu diễn bởi một $S$-tiền lược đồ
+$\operatorname{Quot}_{\mathcal F/X/S}$, là hợp rời nhau của một dãy các
+$S$-lược đồ xạ ảnh (đặc biệt,
+$\operatorname{Quot}_{\mathcal F/X/S}$ thuộc kiểu hữu hạn địa phương trên
+$S$).
+
+Ta sẽ thu được một phân rã như vậy theo cách sau. Cho $\mathcal O_X(1)$ là một
+bó khả nghịch trên $X$, rất rộng tương đối với $S$. Với mỗi đa thức $P(n)$ có
+các hệ số hữu tỉ, ký hiệu $\operatorname{Quot}^P(\mathcal F/X/S)$ là tập con
+của $\operatorname{Quot}(\mathcal F/X/S)$ gồm các môđun thương coherent
+$\mathcal G$ của $\mathcal F$, phẳng trên $S$, và có đa thức Hilbert tại mọi
+$s\in S$ bằng $P$. Khi đó ta đặt
+\[
+\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}(S')
+=\operatorname{Quot}^P(\mathcal F'/X'/S')
+\]
+và như vậy thu được một hàm tử con của
+$\underline{\operatorname{Quot}}_{\mathcal F/X/S}$. Tính bất biến của các đa
+thức Hilbert được nhắc lại trong mục 2 kéo theo điều sau: để
+$\underline{\operatorname{Quot}}_{\mathcal F/X/S}$ biểu diễn được, điều kiện
+cần và đủ là các $\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$ đều
+biểu diễn được; khi đó, $S$-tiền lược đồ
+$\operatorname{Quot}_{\mathcal F/X/S}$ biểu diễn nó đẳng cấu với tiền lược đồ
+là hợp rời nhau của các $\operatorname{Quot}^P_{\mathcal F/X/S}$ biểu diễn
+những hàm tử $\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$. Vì vậy,
+(3.1) là một hệ quả của định lý sau:
+\src{260}
+\result{ĐỊNH LÝ}{3.2} Với các ký hiệu trên, hàm tử
+$\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$ được biểu diễn bởi một
+$S$-tiền lược đồ xạ ảnh $\operatorname{Quot}^P_{\mathcal F/X/S}$.
+
+Phần còn lại của mục này dành cho việc chứng minh (3.2).
+
+Cho $\nu$ là một số nguyên. Với mọi $S'$ trên $S$, ta ký hiệu $A_\nu(S')$ là
+tập hợp các môđun thương $\mathcal G=\mathcal F'/\mathcal K$ của
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$, coherent,
+phẳng trên $S'$, và thỏa mãn các điều kiện sau:
+\begin{align*}
+\text{a.}\quad &R^if'_*(\mathcal G(n))=0 &&\text{với $i>0$ và $n\geq\nu$},\\
+\text{b.}\quad &R^if'_*(\mathcal K(n))=0 &&\text{với $i>0$ và $n\geq\nu$},\\
+\text{c.}\quad &f'_*(\mathcal K(\nu+k))
+=\mathcal S'_k f'_*(\mathcal K(\nu)) &&\text{với $k\geq0$}.
+\end{align*}
+Đối với quan hệ cuối cùng này, ta giả sử $X$ được viết thành phổ nguyên tố
+thuần nhất của một đại số phân bậc quasi-coherent $\mathcal S_*$ trên $S$, có
+các bậc dương và được sinh bởi $\mathcal S_1$, rồi đặt
+$\mathcal S'_* =\mathcal S_*\otimes_{\mathcal O_S}\mathcal O_{S'}$, sao cho
+$X'$ là phổ nguyên tố thuần nhất của $\mathcal S'_*$. Để chứng minh (3.2), ta
+dễ dàng quy về trường hợp $X=\mathbf P^r_S$ (vì $S$ là hợp của các tập mở $U$
+sao cho $X|U$ là một lược đồ con đóng của $\mathbf P^r_U$ và
+$\mathcal O_X(1)$ được cảm sinh bởi $\mathcal O_{\mathbf P^r_U}(1)$), và
+trường hợp $\mathcal F$ có dạng $\mathcal O_{\mathbf P^r_S}^{N}$, do đó phẳng
+trên $S$. Khi ấy, trong phần trên, các bó $\mathcal K$ cũng phẳng trên $S'$.
+Từ các quan hệ Künneth ([5], III, \S~7), suy ra các điều kiện (a) và (b) ổn
+định qua phép đổi cơ sở, đồng thời kéo theo rằng với $n\geq\nu$, việc tạo thành
+$f'_*(\mathcal G(n))$ và $f'_*(\mathcal K(n))$ giao hoán với phép mở rộng cơ
+sở (loc. cit.); do đó, (c) cũng ổn định qua phép mở rộng cơ sở.
+
+Nói cách khác, $A_\nu(S')$ là một hàm tử phản biến theo $S'$, chính xác hơn là
+một hàm tử con của
+$A(S')=\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}(S')$. Khi $\nu$
+biến thiên, ta thu được một dãy tăng các tập con $A_\nu(S')$ của $A(S')$, có
+hợp bằng $A(S')$ theo một định lý quen thuộc của Serre [5], III, \S~2. Bây giờ,
+giả sử $\mathcal G$ là một môđun thương coherent của $\mathcal F'$, phẳng trên
+$S'$, và $s$ là một điểm của $S'$ sao cho phép đổi cơ sở
+$\operatorname{Spec}(k(s))\longrightarrow S'$ cho một môđun thương
+$\mathcal G_s$ của $\mathcal F_s$ thỏa mãn các điều kiện (a), (b), (c), tức là
+thuộc $A_\nu(\operatorname{Spec}(k(s)))$. Khi đó tồn tại một lân cận mở $U$
+của $s$ sao cho các điều kiện ấy cũng được thỏa mãn đối với
+$\mathcal G|f'^{-1}(U)$, tức là môđun thương này thuộc $A_\nu(U)$; đối với (a)
+và (b), điều này suy ra từ «định lý về các hàm chỉnh hình» [5], III, \S~7, còn
+(c) suy ra từ bổ đề Nakayama và từ việc trong mọi trường hợp ta biết rằng
+$f'_*(\mathcal K(n+k))=\mathcal S'_k f'_*(\mathcal K(n))$
+\src{261}
+với $n$ đủ lớn và $k\geq0$ (xem [5], III, \S~2). Từ những nhận xét này, ta
+suy ra điều sau (so sánh [4], IV). Để hàm tử $A$ biểu diễn được, điều kiện cần
+và đủ là các hàm tử $A_\nu$ biểu diễn được; khi đó, $S$-tiền lược đồ $Q$ biểu
+diễn $A$ là hợp tăng của các tiền lược đồ con mở $Q_\nu$ biểu diễn các
+$A_\nu$.
+
+Cho
+\[
+M_* =\bigoplus_{n\geq0}f_*(\mathcal F(n))=\mathcal S_*^{N},
+\]
+do đó
+\[
+M'_* =M_*\otimes_{\mathcal O_S}\mathcal O_{S'}
+=\bigoplus_{n\geq0}f'_*(\mathcal F'(n))=\mathcal S'_*{}^{N}.
+\]
+Từ (a) suy ra:
+
+\noindent (a') $f'_*(\mathcal G(n))$ tự do địa phương hạng $P(n)$ với
+$n\geq\nu$, [5], III, \S~7, và từ (b), với $i=1$, suy ra:
+
+\noindent (a'') $f'_*(\mathcal G(n))$ là một môđun thương của $M'_n$.
+
+Hơn nữa, việc biết môđun thương này khi $n=\nu$, theo (c), xác định các môđun
+con $f'_*(\mathcal K(n))$ của $M'_n$ với $n\geq\nu$, do đó xác định
+$\mathcal K$ và tiếp theo là $\mathcal G$. Như vậy, ta thu được một ánh xạ đơn
+\[
+A_\nu(S')\longrightarrow\operatorname{Grass}_{P(\nu)}(M'_\nu)
+\]
+từ $A_\nu(S')$ vào tập hợp các môđun thương tự do địa phương hạng $P(\nu)$ của
+$M'_\nu$, và do đó một đồng cấu theo hàm tử
+\[
+i_\nu:A_\nu(S')\longrightarrow
+\underline{\operatorname{Grass}}_{P(\nu)}(M_\nu)(S'),
+\]
+trong đó hàm tử ở vế phải được biểu diễn bởi lược đồ Grassmann
+$\operatorname{Grass}_{P(\nu)}(M_\nu)$ (so sánh [4], V), là một lược đồ xạ
+ảnh trên $S$. Ta khẳng định:
+
+\result{BỔ ĐỀ}{3.3} $A_\nu(S')$ là một hàm tử biểu diễn được, và cấu xạ
+$Q_\nu\longrightarrow\operatorname{Grass}_{P(\nu)}(M_\nu)$ biểu diễn đồng cấu
+$i_\nu$ là một phép nhúng (điều này kéo theo $Q_\nu$ tựa xạ ảnh trên $S$).
+
+Khẳng định này tương đương với khẳng định sau (so sánh [4], IV): giả sử cho
+một môđun thương $N$ của $M'_\nu$, tự do địa phương hạng $P(\nu)$; khi đó tồn
+tại một tiền lược đồ con $Z$ của $S'$ sao cho với mọi tiền lược đồ Noether địa
+phương $T'$
+\src{262}
+trên $S'$, ảnh ngược của $N$ trên $T'$ thuộc
+$\operatorname{Im}A_\nu(T')$ khi và chỉ khi $T'\longrightarrow S'$ phân tích
+qua tiền lược đồ con $Z$. Thay đổi ký hiệu, ta có thể giả sử $S'=S$, tức là ta
+có một môđun thương $N_\nu$ của $M_\nu$ theo một môđun con $R_\nu$. Để môđun
+thương này phát sinh từ một phần tử của $A_\nu(S)$, điều kiện cần và đủ là nó
+thỏa mãn hai điều kiện sau:
+
+\medskip
+\noindent (i) $M_{\nu+k}/\mathcal S_kR_\nu$ tự do địa phương hạng
+$P(\nu+k)$ với $k\geq0$.
+
+\smallskip
+\noindent (ii) Bó con $\mathcal K$ của $\mathcal F$, được xác định bởi môđun
+con phân bậc
+\[
+R_* =\sum_{k\geq0}\mathcal S_kR_\nu
+\]
+của $M_*$ ([5], II, \S~3), và môđun thương
+$\mathcal G=\mathcal F/\mathcal K$ thỏa mãn các điều kiện (a) và (b) ở trên.
+
+Các điều kiện này hiển nhiên là cần thiết; ngược lại, nếu chúng được thỏa mãn,
+thì bó $\mathcal G$ xác định trong (ii), do đẳng cấu với bó liên kết với
+$\mathcal S_*$-môđun phân bậc $N_*$ là tổng của các
+$M_{\nu+k}/\mathcal S_kR_\nu$, phẳng trên $S$ (vì các thớ của nó là những hạng
+tử trực tiếp của các môđun thu được bằng cách địa phương hóa $N$ tại các
+iđêan nguyên tố thuần nhất của $\mathcal S_*$), và có đa thức Hilbert $P$ theo
+(i). Xét đến (ii), ta
+thấy khi ấy (a') và (a'') được thỏa mãn, do đó, với $n\geq\nu$, đồng cấu tự
+nhiên $N_n\longrightarrow f_*(\mathcal G(n))$ là một đồng cấu toàn ánh giữa
+các môđun tự do địa phương có cùng hạng, nên là một đẳng cấu; vì vậy
+\[
+f_*(\mathcal K(\nu+k))=\mathcal S_kR_\nu
+\quad\text{với mọi $k\geq0$},
+\]
+điều này chứng minh rằng $\mathcal G\in A_\nu(S)$ và $R_\nu$ là phần tử của
+$\operatorname{Grass}_{P(\nu)}(M_\nu)$ được xác định bởi $\mathcal G$.
+
+Tiêu chuẩn (i)--(ii) này cũng áp dụng cho tình huống thu được sau một phép đổi
+cơ sở $S'\longrightarrow S$. Trước hết, ta sẽ chứng minh rằng việc điều kiện
+(i) được thỏa mãn sau phép đổi cơ sở $S'\longrightarrow S$ có thể biểu thị
+bằng điều kiện rằng $S'\longrightarrow S$ phân tích qua một tiền lược đồ con
+$Z$ nào đó của $S$; sau khi có kết quả này, ta quy về (bằng cách thay $S$ bởi
+$Z$) trường hợp điều kiện (i) đã được thỏa mãn trên $S$, và vì nó ổn định qua
+phép đổi cơ sở nên chỉ còn phải biểu thị điều kiện (ii). Nhưng khi ấy, nếu $U$
+ký hiệu tập hợp các $s\in S$ sao cho đối đồng điều của các bó cảm sinh trên thớ
+$X_s$ bởi $\mathcal G(n)$ và $\mathcal K(n)$ triệt tiêu ở bậc $>0$ với
+$n\geq\nu$, ta đã lưu ý rằng $U$ là mở, và điều kiện (ii) sẽ được thỏa mãn sau
+một phép đổi cơ sở $S'\longrightarrow S$ khi và chỉ khi
+$S'\longrightarrow S$ phân tích qua $U$; điều này chứng minh Bổ đề 3.3. Do đó,
+còn phải chứng minh bổ đề sau:
+
+\result{BỔ ĐỀ}{3.4} Cho $S$ là một tiền lược đồ Noether địa phương, được trang
+bị một đại số phân bậc quasi-coherent $\mathcal S_*$ có các bậc dương, được
+sinh bởi $\mathcal S_1$; cho $M_*$ là một $\mathcal S_*$-môđun phân bậc quasi-coherent
+hữu hạn sinh, $P$ là một đa thức có hệ số hữu tỉ, và $\nu$ là một số nguyên.
+Khi đó tồn tại một tiền lược đồ con $Z$ của $S$ (hiển nhiên là duy nhất)
+\src{263}
+có tính chất sau: với mọi tiền lược đồ $S'$ trên $S$, điều kiện cần và đủ để
+$M_n\otimes_{\mathcal O_S}\mathcal O_{S'}$ tự do địa phương hạng $P(n)$ với
+mọi $n\geq\nu$ là $S'\longrightarrow S$ phân tích qua $Z$.
+
+Ta hiển nhiên có thể giả sử $S$ affine, do đó là Noether. Khi ấy:
+
+\result{BỔ ĐỀ}{3.5} Với mọi số nguyên $N\geq\nu$, đặt $U_N$ là tập mở của $S$
+gồm các $s\in S$ sao cho
+\[
+\operatorname{rank}_{k(s)}
+M_{ns}\otimes_{\mathcal O_{S,s}}k(s)\leq P(n)
+\quad\text{với mọi $\nu\leq n\leq N$}.
+\]
+Khi đó dãy giảm các tập mở $U_N$ là dừng.
+
+Ta biết [3], IV, rằng $S$ có một phân hoạch hữu hạn thành các tiền lược đồ con
+rút gọn $S_i$, sao cho mỗi $M\otimes_{\mathcal O_S}\mathcal O_{S_i}$ phẳng
+trên $S_i$. Do đó, ta có thể giả sử $M$ phẳng, nên các $M_n$ phẳng. Cuối cùng,
+ta hiển nhiên có thể giả sử $S$ liên thông. Nhưng khi ấy tồn tại một số nguyên
+$n_0$ và một đa thức $Q$ sao cho
+\[
+\operatorname{rank}_{k(s)}
+M_{ns}\otimes_{\mathcal O_{S,s}}k(s)=Q(n)
+\quad\text{với $n\geq n_0$},
+\]
+[5], III, \S~7. Trước hết giả sử $P\neq Q$; khi đó
+$P(n)\neq Q(n)$ với $n$ lớn, nên hiển nhiên $U_N=\varnothing$ với $N$ lớn;
+huống chi dãy các $U_N$ là dừng. Ngược lại, nếu $P=Q$, thì
+$U_N=U_{n_0}$ với $N\geq n_0$, và dãy các $U_N$ vẫn là dừng.
+
+Đặc biệt, tập $U_\infty$ gồm các $s\in S$ sao cho
+\[
+\tag{*}
+\operatorname{rank}_{k(s)}
+M_{ns}\otimes_{\mathcal O_{S,s}}k(s)\leq P(n)
+\quad\text{với mọi $n\geq\nu$},
+\]
+là mở vì nó là giao của các $U_N$. Khi ấy, để chứng minh (3.4), ta có thể thay
+$S$ bởi tập mở $U$, nhờ đó quy về trường hợp bất đẳng thức (*) được thỏa mãn
+tại mọi $s\in S$. Hơn nữa:
+
+\result{BỔ ĐỀ}{3.6} Cho $M$ là một môđun trên một tiền lược đồ Noether địa
+phương $S$, và $r$ là một số nguyên. Khi đó tồn tại một tiền lược đồ con $Z$
+của $S$ (hiển nhiên là duy nhất) có tính chất sau: với mọi $S'$ trên $S$, điều
+kiện cần và đủ để $M\otimes_{\mathcal O_S}\mathcal O_{S'}$ tự do địa phương
+hạng $r$ là $S'\longrightarrow S$ phân tích qua $Z$. Nếu
+\[
+\operatorname{rank}_{k(s)}
+M_s\otimes_{\mathcal O_{S,s}}k(s)\leq r
+\quad\text{với mọi $s$},
+\]
+thì $Z$ là một tiền lược đồ con đóng của $S$ (giả sử $M$ coherent).
+\src{264}
+Thật vậy, lập luận trên quy ta về trường hợp bất đẳng thức (*) đúng với mọi
+$s\in S$ (nếu cần, thay $S$ bằng phần mở gồm các $s$ tại đó bất đẳng thức
+được thỏa mãn). Khi ấy ta có thể giả sử $M$ nằm trong một dãy khớp
+\[
+\mathcal O_S^q\longrightarrow\mathcal O_S^r\longrightarrow M\longrightarrow0,
+\]
+và điều kiện đang xét đối với các $S'$ trên $S$ cũng có nghĩa là, trong dãy
+khớp tương ứng $\mathcal O_{S'}^q\longrightarrow\mathcal O_{S'}^r
+\longrightarrow M'\longrightarrow0$, mũi tên thứ hai là một đẳng cấu, tức là
+mũi tên thứ nhất bằng không. Khi đó, tiền lược đồ con đóng $Z$ của $S$ được
+xác định bởi iđêan sinh bởi các hệ số của ma trận xác định đồng cấu
+$\mathcal O_S^q\longrightarrow\mathcal O_S^r$ thỏa mãn điều kiện mong muốn.
+
+Trở lại chứng minh (3.4) tại chỗ ta đã dừng, gọi $Z_n$ là lược đồ con đóng
+của $S$ được liên kết, theo (3.6), với môđun $M_n$ và số nguyên $r=P(n)$, và
+gọi $Z'_N$ là $\operatorname{Inf}$ của các $Z_n$ với
+$\nu\leq n\leq N$. Khi ấy các $Z'_N$ tạo thành một dãy giảm các lược đồ con
+đóng của $Z$, nên tất yếu dừng. Gọi $Z$ là giá trị không đổi của các
+$Z'_N$ khi $N$ lớn. Đó là $Z$ cần tìm trong (3.4). Điều này kết thúc chứng
+minh (3.4), và do đó cả chứng minh (3.3).
+
+Vậy ta đã chứng minh rằng
+$\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$ được biểu diễn bởi một
+$S$-tiền lược đồ $Q$ là hợp tăng của các tiền lược đồ con mở $Q_\nu$ tựa xạ
+ảnh trên $S$. Để tiến thêm, phải viện dẫn Định lý 2.1, từ đó dễ dàng suy ra
+$Q$ là quasi-compact (vì nó là ảnh của tiền lược đồ $S'$ thuộc kiểu hữu hạn
+trên $S$ tham số hóa họ các bó thương của $\mathcal F_K$ có đa thức Hilbert
+$P$). Do đó $Q$ bằng một trong các $Q_\nu$, vì thế tựa xạ ảnh trên $S$. Để
+chứng minh nó xạ ảnh trên $S$, chỉ còn phải chứng minh nó riêng trên $S$; để
+làm điều này, chỉ cần viện dẫn tiêu chuẩn định giá cho tính riêng dưới dạng
+[5], II, 7.3.8. Chỉ cần kiểm tra điều sau:
+
+\result{BỔ ĐỀ}{3.7} Cho $S$ là phổ của một vành định giá rời rạc, $s$ là điểm
+tổng quát của nó, $X$ là một tiền lược đồ trên $S$, $\mathcal F$ là một môđun
+quasi-coherent trên $X$, và $\mathcal G_s$ là một môđun thương quasi-coherent
+của $\mathcal F_s=\mathcal F\otimes_{\mathcal O_S}k(s)$ trên $X_s$. Khi đó
+tồn tại duy nhất một môđun thương quasi-coherent $\mathcal G$ của
+$\mathcal F$, phẳng trên $S$, sao cho hạn chế của nó lên $X_s$ là
+$\mathcal G_s$.
+\src{265}
+Thật vậy, nếu $\mathcal G_s=\mathcal F_s/\mathcal K_s$, chỉ cần xét bó con lớn
+nhất $\mathcal K$ của $\mathcal F$ cảm sinh $\mathcal K_s$, [5], I, 9.4.2, và
+lấy $\mathcal G=\mathcal F/\mathcal K$. Dễ dàng kiểm tra rằng bó này thỏa mãn
+yêu cầu.
+
+Định lý 3.2, và do đó (3.1), được chứng minh hoàn toàn.
+
+Đồng thời, chứng minh cũng cho ta điều sau:
+
+\result{MỆNH ĐỀ}{3.8} Trong các điều kiện của (3.2), đặt
+$Q=\operatorname{Quot}^P_{\mathcal F/X/S}$, $X_Q=X\times_SQ$,
+$\mathcal F_Q=\mathcal F\otimes_{\mathcal O_S}\mathcal O_Q$, và cho
+$\mathcal G$ là môđun thương coherent của $\mathcal F_Q$, phẳng trên $Q$, có
+đa thức Hilbert tương đối $P$, sao cho $(Q,\mathcal G)$ biểu diễn hàm tử
+$\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}$. Tồn tại một số nguyên
+$\nu$ sao cho, với $n\geq\nu$, $(f_Q)_*(\mathcal G(n))$ là một môđun trên $Q$
+tự do địa phương hạng $P(n)$ và rất rộng tương đối với $S$, tức là xác định
+một phép nhúng của $Q$ vào một lược đồ Grassmann
+$\operatorname{Grass}_{P(n)}(M)$ trên $S$. Đặc biệt, với $n\geq\nu$, bó
+\[
+\bigwedge^{P(n)}(f_Q)_*(\mathcal G(n))
+\]
+trên $Q$ là khả nghịch và rất rộng tương đối với $S$.
+
+Thật vậy, như đối với (3.2), ta có thể quy về trường hợp $\mathcal F$ phẳng
+trên $S$, và khi đó chỉ cần lấy một số nguyên $\nu$ sao cho $A_\nu=A$ (với các
+ký hiệu trước).
+
+Trường hợp áp dụng quan trọng nhất của (3.2) là khi
+$\mathcal F=\mathcal O_X$. Khi ấy ta viết
+\[
+\operatorname{Quot}_{\mathcal O_X/X/S}=\operatorname{Hilb}_{X/S},
+\qquad
+\operatorname{Quot}^P_{\mathcal O_X/X/S}=\operatorname{Hilb}^P_{X/S},
+\]
+do đó có một phân rã
+\[
+\operatorname{Hilb}_{X/S}=\coprod_P\operatorname{Hilb}^P_{X/S}.
+\]
+Theo định nghĩa, $\operatorname{Hilb}_{X/S}$ biểu diễn hàm tử
+$\underline{\operatorname{Hilb}}_{X/S}(S')$, là tập hợp các tiền lược đồ con
+đóng của $X'=X\times_SS'$ phẳng trên $S'$, và
+$\operatorname{Hilb}^P_{X/S}$ biểu diễn hàm tử con tương ứng với các tiền lược
+đồ con đóng có một đa thức Hilbert cho trước $P$. Các tiền lược đồ này lần lượt
+còn được gọi là \emph{tiền lược đồ Hilbert} của $X$ trên $S$ và
+\emph{tiền lược đồ Hilbert chỉ số $P$}. Thuật ngữ này được biện minh bởi vai
+trò của các đa thức Hilbert trong lý thuyết. Về bản chất, sự khác biệt của
+chúng với các đa tạp Chow cổ điển (dùng để tham số hóa các chu trình, chứ không
+phải các đa tạp) tương tự như sự khác biệt giữa
+\src{266}
+vành Chow của các lớp chu trình trên một đa tạp và vành các lớp bó trên đa
+tạp đó (như vành này xuất hiện trong định lý Riemann--Roch [1]); thật vậy,
+lưu ý rằng khi $X=\mathbf P^r_S$, với $S$ là phổ của một trường, việc biết đa
+thức Hilbert của một môđun coherent $\mathcal F$ trên $X$ cũng tương đương với
+việc biết các lớp Chern của $\mathcal F$, hay lớp của $\mathcal F$ trong vành
+các lớp bó coherent trên $X$.
+
+\result{CÁC NHẬN XÉT}{3.9} Cũng cần lưu ý rằng việc xây dựng các
+$\operatorname{Quot}_{\mathcal F/X/S}$ và
+$\operatorname{Quot}^P_{\mathcal F/X/S}$ đã được quy về trường hợp
+$X=\mathbf P^r_S$, $\mathcal F=\mathcal O_X^N$, trong đó
+$\mathcal O_X(1)$ là bó rất rộng thông thường; chính xác hơn, các
+$\operatorname{Quot}_{\mathcal F/X/S}$ tổng quát là các tiền lược đồ con đóng
+của những tiền lược đồ vừa nêu. Vì việc tạo thành các
+$\operatorname{Quot}^P_{\mathcal F/X/S}$ hiển nhiên tương thích với các phép
+đổi cơ sở $S'\longrightarrow S$, ta thấy có thể quy tiếp về trường hợp
+$S=\operatorname{Spec}(\mathbf Z)$. Sau cùng, ta được quy về việc nghiên
+cứu các lược đồ xạ ảnh sau đây trên $\mathbf Z$:
+\[
+\mathfrak Q^P_{r,N}=
+\operatorname{Quot}^{P}_{(\mathcal O_{\mathbf P^r_{\mathbf Z}})^N/
+\mathbf P^r_{\mathbf Z}/\operatorname{Spec}(\mathbf Z)},
+\]
+và đặc biệt hơn là các lược đồ Hilbert tuyệt đối:
+\[
+\operatorname{Hilb}^P_r=\mathfrak Q^P_{r,1}.
+\]
+Sẽ rất đáng quan tâm nếu nghiên cứu chi tiết hơn các lược đồ này, bắt đầu bằng
+việc xác định các thành phần liên thông của chúng (các lược đồ này có liên
+thông không?), và các thành phần bất khả quy của
+chúng (theo Serre [7], có thể có những thành phần bất khả quy nằm hoàn toàn
+phía trên một số nguyên tố $p\neq0$). Nhắc lại câu hỏi của Weil: liệu các thành
+phần bất khả quy của các thớ của $\operatorname{Hilb}^P_r$ trên các
+$s\in\operatorname{Spec}(\mathbf Z)$ có tương ứng với các mở rộng
+``chính quy'' của trường nguyên tố hay không, tức là liệu chúng có ``liên thông
+tương đối'' hay không. Không loại trừ khả năng những câu hỏi này dễ tiếp cận
+đối với các lược đồ Hilbert hơn là đối với các ``đa tạp Chow''.
+
+\fsection{4}{Các biến thể}
+
+\noindent a. Trong các điều kiện của (3.1), cho $U$ là một tập mở trong $X$,
+và ký hiệu $A'$ là hàm tử con của
+$A=\underline{\operatorname{Quot}}_{\mathcal F/X/S}$ sao cho $A'(S')$ là tập
+các môđun thương $\mathcal G$ của $\mathcal F'$, phẳng trên $S'$, có giá chứa
+trong $U'$. Ta thấy ngay rằng $A'$ được biểu diễn bởi một tập mở của tiền lược
+đồ $\operatorname{Quot}_{\mathcal F/X/S}$ biểu diễn $A$. Do đó các định lý
+(3.1) và (3.2)
+\src{267}
+vẫn còn đúng khi giả sử $X$ tựa xạ ảnh trên $S$ thay vì xạ ảnh trên $S$, đồng
+thời trong các kết luận cũng thay từ ``xạ ảnh'' bằng ``tựa xạ ảnh'', và giờ
+đây ký hiệu
+$\underline{\operatorname{Quot}}_{\mathcal F/X/S}(S')$ là tập các môđun
+thương coherent $\mathcal G$ của $\mathcal F'$, phẳng trên $S'$, có giá riêng
+trên $S'$.
+
+\medskip
+\noindent b. Nói chung, có thể áp đặt lên các môđun thương $\mathcal G$ của
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$, phẳng trên
+$S'$, mọi loại điều kiện tự nhiên bổ sung ổn định qua phép đổi cơ sở, qua đó thu
+được các hàm tử con của
+$\underline{\operatorname{Quot}}_{\mathcal F/X/S}$ mà ta muốn biểu diễn. Trong
+nhiều trường hợp, tiêu chuẩn thông thường cho phép chứng minh rằng các hàm tử
+thu được vẫn được biểu diễn bởi các tập mở của
+$\operatorname{Quot}_{\mathcal F/X/S}$. Đặc biệt, điều này đúng khi áp đặt một
+trong các tính chất bổ sung sau:
+
+\smallskip
+\noindent $1^\circ$ Chiều của mỗi chu trình nguyên tố liên kết với các môđun
+$\mathcal G_{s'}$ ($s'\in S'$), được cảm sinh trên các thớ $X'_{s'}$, thuộc
+một tập số nguyên đã cho.
+
+\smallskip
+\noindent $2^\circ$ (Khi $\mathcal F=\mathcal O_X$, do đó $\mathcal G$ tương
+ứng với một tiền lược đồ con đóng $Y$ của $X'$); $Y$ là một tiền lược đồ trơn
+([3], IV) trên $S$, hoặc chuẩn tắc trên $S$ (tức là các thớ $Y_{s'}$ chuẩn
+tắc ``trên $k(s')$'', nghĩa là vẫn chuẩn tắc sau mọi mở rộng của trường cơ
+sở), hoặc (khi $X$ phẳng trên $S$) là một giao đầy đủ địa phương theo cơ sở
+$S$ trong $X$, xét tương đối trên $S$ (tức là các thớ $Y_{s'}$ là các giao
+đầy đủ địa phương trong các $X_{s'}$).
+
+Những điều kiện khác sẽ liên quan đến các tính chất đối đồng điều
+của các môđun $\mathcal G_{s'}$ được cảm sinh trên các $X'_{s'}$, v.v. Dĩ
+nhiên, hội của các điều kiện mà mỗi điều kiện được biểu diễn bởi một tập mở
+$U_i$ của $\operatorname{Quot}_{\mathcal F/X/S}$ được biểu diễn bởi tập mở thu
+được bằng cách lấy giao các tập ấy. Chẳng hạn, với mỗi $S'$ trên $S$, xét tập
+các tiền lược đồ con đóng $Y$ của $X'=X\times_SS'$ mà mỗi tiền lược đồ là một
+phủ étale ([3], I) hạng cho trước $r$ của $S'$, ta thu được một hàm tử phản biến
+biểu diễn được theo biến $S'$.
+
+\medskip
+\noindent c. Các tiền lược đồ $\operatorname{Hom}_S(X,Y)$,
+$\Pi_{X/S}(Z/X)$, $\operatorname{Isom}_S(X,Y)$, được định nghĩa trong [2], II,
+C, n\textsuperscript{o} 2, tồn tại dưới các giả thiết xạ ảnh thích hợp và được
+hiện thực hóa dưới dạng các tập mở trong những tiền lược đồ Hilbert thích hợp.
+Vì ta có
+\[
+\operatorname{Hom}_S(X,Y)=\Pi_{X/S}((X\times_SY)/X),
+\]
+trường hợp $\operatorname{Hom}_S(X,Y)$ được quy về trường hợp
+$\Pi_{X/S}(Z/X)$. Khi đó, lưu ý rằng với mỗi $S'$ trên $S$, tập các tiết diện
+của $Z'=Z\times_SS'$ trên $X'=X\times_SS'$ tương ứng song ánh với tập các tiền
+lược đồ con $\Gamma$ của $Z'$ (nhất thiết đóng nếu $Z$ tách trên $X$) sao cho
+cấu xạ $\Gamma\longrightarrow X'$ cảm sinh bởi $Z'\longrightarrow X'$ là một
+đẳng cấu. Bằng cách này,
+\src{268}
+khi $X$ phẳng và riêng trên $S$, còn $Z$ tựa xạ ảnh trên $S$,
+$\Pi_{X/S}(Z/X)$ tồn tại và được hiện thực hóa dưới dạng một tiền lược đồ con mở của
+$\operatorname{Hilb}_{Z/S}$. Do đó, khi $X$ xạ ảnh và phẳng trên $S$, còn $Y$
+tựa xạ ảnh trên $S$, $\operatorname{Hom}_S(X,Y)$ tồn tại và được hiện thực hóa
+dưới dạng một tiền lược đồ con mở của
+$\operatorname{Hilb}_{(X\times_SY)/S}$. Khi $X$ và $Y$ đều xạ ảnh trên $S$,
+suy ra ngay $\operatorname{Isom}_S(X,Y)$ cũng tồn tại và được biểu diễn bởi
+một tập mở của $\operatorname{Hom}_S(X,Y)$. Tương tự, khi $X$ phẳng và xạ ảnh
+trên $S$, còn $Y$ tựa xạ ảnh trên $S$, $S$-tiền lược đồ
+$\operatorname{Imm}_S(X/Y)$, tương ứng với hàm tử con của hàm tử được
+$\operatorname{Hom}_S(X,Y)$ biểu diễn, gồm các $S'$-cấu xạ
+$X'\longrightarrow Y'$ là các phép nhúng, cũng được biểu diễn bởi một tập mở
+của $\operatorname{Hom}_S(X,Y)$.
+
+Cho $\mathcal L$ (tương ứng $\mathcal M$) là một bó khả nghịch trên $X$ (tương
+ứng trên $Y$), rất rộng tương đối với $S$; từ đó có một bó rất rộng
+$\mathcal L\otimes_{\mathcal O_S}\mathcal M$ trên $X\times_SY$ tương đối với
+$S$. Vì vậy, với mọi đa thức $P$ có hệ số hữu tỉ,
+$\operatorname{Hilb}^P_{(X\times_SY)/S}$ được xác định và là một tiền lược đồ
+tựa xạ ảnh trên $S$. Do đó nó cảm sinh trên $\operatorname{Hom}_S(X,Y)$ một
+tập vừa mở vừa đóng, tựa xạ ảnh trên $S$, mà ta ký hiệu là
+$\operatorname{Hom}_S(X,Y)^P$. Vậy các tiết diện của
+$\operatorname{Hom}_S(X,Y)^P$ trên $S$ là các $S$-cấu xạ
+$g:X\longrightarrow Y$ sao cho với mọi số nguyên $n$, ta có
+\[
+\chi\!\left(\left(\mathcal L\otimes_{\mathcal O_X}g^*(\mathcal M)\right)^{
+\otimes n}\right)=P(n).
+\]
+
+Theo cách đó, ta thu được những tổng quát hóa của định lý Matsusaka, khẳng định
+rằng các tự đẳng cấu của một đa tạp xạ ảnh ``phân cực'' tạo thành một nhóm đại
+số. Ở đây, khẳng định này hiển nhiên mang một ý nghĩa chính xác hơn, vì ta có
+một định nghĩa của nhóm ấy như nghiệm của một bài toán phổ dụng. Cũng cần lưu ý
+rằng, trên một trường đóng đại số, nhóm các tự đẳng cấu được xét trước đây là
+nhóm thu được từ nhóm ``thật'' được định nghĩa ở đây bằng cách lấy thương theo
+iđêan các phần tử lũy linh; điều này giải thích vì sao khó có thể thực hiện các
+phép dựng cũ trên một trường cơ sở không hoàn hảo: iđêan các phần
+tử lũy linh xuất hiện sau một phép mở rộng trường cơ sở không nhất thiết
+``được xác định trên $k$''. Nhận xét này cũng áp dụng cho phần lớn các phép dựng
+theo lối cũ.
+
+\fsection{5}{Nghiên cứu vi phân các lược đồ Hilbert}
+
+Nghiên cứu này suy ra từ kết quả sau:
+\src{269}
+\result{MỆNH ĐỀ}{5.1} Cho $S$ là một tiền lược đồ, $S_0$ là một tiền lược đồ con
+được xác định bởi một iđêan quasi-coherent $\mathcal J$ có bình phương bằng
+không, $X$ là một $S$-tiền lược đồ, $\mathcal F$ là một môđun quasi-coherent
+trên $X$, đặt $X_0=X\times_SS_0$ và
+$\mathcal F_0=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S_0}$, và cuối cùng
+cho $\mathcal G_0=\mathcal F_0/\mathcal K_0$ là một môđun thương
+quasi-coherent của $\mathcal F_0$, phẳng trên $S_0$. Với mỗi tập mở $U$ của
+$X$, gọi $\mathcal E(U)$ là tập các môđun thương quasi-coherent $\mathcal G$
+của $\mathcal F|U$, phẳng trên $S$, và thỏa mãn
+$\mathcal G\otimes_{\mathcal O_S}\mathcal O_{S_0}=\mathcal G_0$; do đó, khi
+$U$ thay đổi, các $\mathcal E(U)$ là các tiết diện của một bó $\mathcal E$
+trên $U$. Khi ấy, bó các nhóm
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X_0}}
+(\mathcal K_0,\mathcal G_0\otimes_{\mathcal O_{S_0}}\mathcal J)
+\]
+tác động tự nhiên lên $\mathcal E$, nhờ đó bó này trở thành một bó
+``thuần nhất chính một cách hình thức dưới $\mathcal A$'' (nghĩa là, với mọi
+tập mở $U$ trong $X$, $\mathcal E(U)$ hoặc là rỗng, hoặc là một tập thuần nhất
+chính dưới $\mathcal A(U)$).
+
+Từ đó suy ra:
+
+\result{HỆ QUẢ}{5.2} Giả sử địa phương trên $X$ tồn tại một phép nâng
+$\mathcal G$ của $\mathcal G_0$ thành một môđun thương của $\mathcal F$ phẳng
+trên $S$ (nghĩa là các thớ của bó $\mathcal E$ không rỗng). Khi đó tồn tại một
+lớp cản trở chính tắc
+\[
+c(\mathcal G_0)\in H^1(X,\mathcal A),
+\]
+mà sự triệt tiêu của nó là điều kiện cần và đủ để tồn tại một phép nâng toàn
+cục $\mathcal G$ của $\mathcal G_0$ thành một môđun thương của $\mathcal F$
+phẳng trên $S$. Nếu lớp này bằng không, thì tập $\mathcal E(X)$ gồm mọi phép
+nâng khả dĩ là một tập thuần nhất chính dưới
+\[
+\mathcal A(X)=\operatorname{Hom}_{\mathcal O_X}
+(\mathcal K_0,\mathcal G_0\otimes_{\mathcal O_{S_0}}\mathcal J).
+\]
+
+Đặc biệt, sự tồn tại của một phép nâng toàn cục được bảo đảm nếu
+$H^1(X,\mathcal A)=0$.
+
+\result{HỆ QUẢ}{5.3} Giả sử
+$Q=\operatorname{Quot}_{\mathcal F/X/S}$ tồn tại (xem 4 (a)) -- chẳng hạn,
+$X$ tựa xạ ảnh trên tiền lược đồ Noether địa phương $S$ và $\mathcal F$ coherent. Cho
+$x\in Q$ tương ứng với một mở rộng trường thặng dư $K=k(x)$ của $k(s)$
+($s\in S$):
+\src{270}
+do đó, $x$ được xác định bởi một môđun thương coherent
+$\mathcal G_0=\mathcal F_0/\mathcal K_0$ của môđun
+$\mathcal F_0=\mathcal F_K$ trên $K$-tiền lược đồ $X_K$. Gọi $\mathcal A$ là
+bó coherent trên $X_K$ được xác định bởi
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X_0}}(\mathcal K_0,\mathcal G_0).
+\]
+Khi đó, không gian tiếp tuyến Zariski của thớ $Q_s$ tại điểm $x$ (đối ngẫu trên
+$K$ của $\mathfrak m/\mathfrak m^2$, trong đó $\mathfrak m$ là iđêan cực đại
+của $\mathcal O_{Q_K,x}$) đẳng cấu chính tắc với $H^0(X_K,\mathcal A)$.
+
+Mô tả không gian tiếp tuyến Zariski được tổng quát hóa như sau. Với một
+$S$-cấu xạ cho trước $g:S'\longrightarrow Q$, tức là một tiết diện $g'$ của
+$Q'=Q\times_SS'$ trên $S'$, môđun
+\[
+\Omega=g^*(\Omega^1_{Q/S})=g'^*(\mathcal J/\mathcal J^2)
+\]
+(trong đó $\mathcal J$ là iđêan trên $Q'$ được xác định bởi tiết diện $g'$ của
+$Q'$ trên $S'$) được đặc trưng bởi công thức sau, có tính hàm tử theo môđun coherent
+$\mathcal M$ trên $S'$:
+\[
+\operatorname{Hom}_{\mathcal O_{S'}}(\Omega,\mathcal M)
+\simeq H^0(X',\mathcal A),
+\]
+trong đó $\mathcal A$ vẫn là môđun trên $X'=X\times_SS'$ được xác định bởi
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X'}}
+(\mathcal K,\mathcal G\otimes_{\mathcal O_S}\mathcal M),
+\]
+
+($\mathcal G=\mathcal F'/\mathcal K$ là môđun thương của
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$ tương ứng với
+$g$). Thật vậy, chỉ cần áp dụng (5.1), trong đó thay $S_0$ bởi $S'$, thay $S$
+bởi tiền lược đồ $D(\mathcal M)=(S',\mathcal O_{S'}+\mathcal M)$, với
+$\mathcal M$ được xem như một iđêan có bình phương bằng không.
+
+Khi $\mathcal F=\mathcal O_X$ trong (5.1), dữ liệu của
+$\mathcal G_0$ tương ứng với một tiền lược đồ con đóng $Y_0$ của
+$X_0$, phẳng trên $S_0$ và được xác định bởi iđêan
+$\mathcal J_0=\mathcal K_0$; khi đó (*) cho
+\[
+\mathcal A=\operatorname{Hom}_{\mathcal O_{X_0}}
+(\mathcal J_0/\mathcal J_0^2,
+\mathcal O_{Y_0}\otimes_{\mathcal O_{S_0}}\mathcal J),
+\]
+trong đó $\mathcal J/\mathcal J^2$ được hiểu là bó đối pháp tuyến của $Y_0$
+trong $X_0$, cũng được ký hiệu là
+\src{271}
+$\check{\mathcal N}_{Y_0/X_0}$; khi đó nên xem $\mathcal A$ như một môđun
+trên $Y_0$ và tính $H^0$ và $H^1$ trên $Y_0$. Hơn nữa, nếu $Y_0$ là một giao
+đầy đủ địa phương trong $X_0$, với $X$ phẳng trên $S$, thì trong (5.1) khả
+năng nâng địa phương được bảo đảm; mặt khác,
+$\mathcal J/\mathcal J^2$ tự do địa phương trên $Y_0$ và ta có thể viết
+\[
+\mathcal A=\mathcal N_{Y_0/X_0}\otimes_{\mathcal O_{S_0}}\mathcal J,
+\]
+trong đó thừa số thứ nhất ở vế phải là bó pháp tuyến của $Y_0$ trong $X_0$.
+Áp dụng tiêu chuẩn cơ bản về tính trơn ([3], III, 3.1), chẳng hạn ta thu được:
+
+\result{HỆ QUẢ}{5.4} Trong các điều kiện của (5.3), giả sử rằng
+$\mathcal F=\mathcal O_X$, rằng $X$ phẳng trên $S$, và rằng tiền lược đồ con
+đóng $Y_0$ của $X_0$ tương ứng với $\mathcal G_0$ là một giao đầy đủ địa
+phương. Khi đó, không gian tiếp tuyến Zariski của $Q_s$ tại $x$ đẳng cấu chính
+tắc với $H^0(Y_0,\mathcal N_{Y_0/X_0})$. Nếu
+$H^1(Y_0,\mathcal N_{Y_0/X_0})=0$, thì tiền lược đồ Hilbert
+$\operatorname{Hilb}_{X/S}$ trơn trên $S$ tại điểm $x$.
+($\mathcal N_{Y_0/X_0}$ là bó pháp tuyến của $Y_0$ trong $X_0$.)
+
+\result{CHÚ GIẢI}{5.5} Phát biểu này áp dụng đặc biệt khi $Y_0$ là một giao
+đầy đủ trong $X_0$ được xác định bởi một phương trình, tức là một ``ước
+Cartier'' hiệu dụng. Khi đó, $\mathcal N_{Y_0/X_0}$ đẳng cấu với bó trên $Y_0$
+cảm sinh bởi bó khả nghịch $\mathcal J^{-1}$ trên $X_0$ được xác định bởi
+ước $Y_0$. Tình huống này xuất hiện đặc biệt khi nghiên cứu các họ ước hiệu
+dụng trên một đa tạp xạ ảnh không kỳ dị $X_0$. Đẳng cấu giữa không gian tiếp
+tuyến Zariski tại điểm $x$ của $Q$ (hoặc, nếu muốn, của tập mở $D$ của $Q$
+tương ứng với các ước) và $H^0(Y_0,\mathcal N_{Y_0/X_0})$ từng được biết trong
+hình học đại số cổ điển dưới tên ``đồng cấu đặc trưng'' từ không gian thứ nhất
+đến không gian thứ hai. Đồng cấu này chỉ được xác định khi $x$ là một điểm trơn
+của đa tạp tham số $T$ của một ``họ liên tục đầy đủ'' các ước; theo quan điểm
+của chúng ta, đa tạp tham số ấy là một thành phần bất khả quy của lược đồ $D$
+với cấu trúc rút gọn cảm sinh. Khi đó, không gian tiếp tuyến của $T$ tại $x$ là
+một không gian con của không gian tiếp tuyến của $D$ tại $x$; do đó đồng cấu
+đặc trưng cổ điển quả là đơn ánh, nhưng chỉ toàn ánh dưới các điều kiện bổ
+sung, chẳng hạn nếu $D$ là nguyên tại $x$. Thật vậy, Zappa [8] đã xây dựng
+một ví dụ
+\src{272}
+(với $X$ là một mặt xạ ảnh không kỳ dị trên trường số phức) trong đó, ngay cả
+tại điểm tổng quát của $T$, đồng cấu đặc trưng cũng không toàn ánh. Do đó, điều
+này có nghĩa là $D$ không nguyên ngay cả tại điểm tổng quát của thành phần bất
+khả quy đang xét. Điều này cho thấy một cách đặc biệt nổi bật rằng các đa tạp
+có phần tử lũy linh là cần thiết để hiểu những hiện tượng thuộc lý thuyết cổ
+điển nhất về các mặt.
+
+
+\subsection*{5.6}
+
+Trong (5.4), ta đã nêu một tiêu chuẩn về tính trơn, áp dụng đặc biệt cho các
+lược đồ ước. Trong [6], Kodaira đã nêu một tiêu chuẩn khác, cụ thể là sự triệt
+tiêu của $H^1(X_0,\mathcal L)$, trong đó $\mathcal L=\mathcal J_0^{-1}$ là bó
+khả nghịch trên $X_0$ được xác định bởi ước $Y_0$; tiêu chuẩn này đúng khi $S$
+là phổ của một trường có đặc số 0, và được chứng minh trong [6] bằng phương
+pháp siêu việt khi trường cơ sở là $\mathbf C$. Ta lưu ý rằng, nói chung, khi
+$S$ lại là tùy ý, điều kiện của Kodaira là một điều kiện đủ để cấu xạ chính tắc
+\[
+D\longrightarrow\operatorname{Pic}_{X/S}
+\]
+từ tiền lược đồ các ước đến tiền lược đồ Picard của $X/S$ trơn tại điểm $x$
+đang xét (điều này dễ dàng được kiểm tra bằng tiêu chuẩn thông thường về tính
+trơn, một khi đã biết sự tồn tại của $\operatorname{Pic}_{X/S}$). Do đó, nếu
+thêm vào đó $\operatorname{Pic}_{X/S}$ trơn trên $S$ tại điểm ảnh của $x$
+(chẳng hạn nếu $\operatorname{Pic}_{X/S}$ trơn trên $S$), thì $D$ trơn trên
+$S$ tại $x$. Mặt khác, Cartier đã chứng minh rằng mọi tiền lược đồ nhóm thuộc
+kiểu hữu hạn địa phương trên một trường $k$ có đặc số 0 đều trơn trên $k$. Kết
+hợp hai kết quả này, ta thu lại kết quả của Kodaira. Cũng cần lưu ý rằng từ các
+nhận xét này suy ra rằng, trên một trường $K$ có đặc số $p>0$, khi
+$\operatorname{Pic}_{X/S}$ không trơn trên $k$ (đó là trường hợp khi $X$ là
+mặt Igusa), điều kiện $H^1(X_0,\mathcal L)=0$ trái lại kéo theo rằng $D$ không
+trơn tại $x$, và thậm chí không rút gọn tại $x$ nếu $K$ đóng đại số.
+
+Cuối cùng, ta còn nêu kết quả sau đây, vốn đóng một vai trò quan trọng trong
+nghiên cứu vi phân các không gian phân thớ:
+
+\result{MỆNH ĐỀ}{5.7} Cho $X$ là một tiền lược đồ hữu hạn và phẳng trên tiền
+lược đồ Noether địa phương $S$, và cho $Z$ là một tiền lược đồ trên $S$ sao
+cho $\Pi_{X/S}(Z/X)$ tồn tại (điều này đúng nếu $Z$ tựa xạ ảnh trên $X$). Khi
+đó, nếu $Z$ trơn trên $X$, thì $\Pi_{X/S}(Z/X)$ trơn trên $S$.
+
+Đây là một hệ quả trực tiếp của định nghĩa và của tiêu chuẩn thông thường về
+tính trơn ([3], III, 3.1). Ta lưu ý rằng khi $X$ hữu hạn và phẳng trên $S$,
+vấn đề về sự tồn tại của
+$Z/K$ có thể
+được xử lý rất sơ cấp, không cần
+\src{273}
+sử dụng lý thuyết lược đồ Hilbert. Chẳng hạn, ta thấy rằng nếu $X$ là
+radiciel trên $S$, thì $\Pi_{X/S}(Z/X)$ tồn tại mà không có bất kỳ hạn chế nào
+đối với $Z$. Một ví dụ khác, cho $T$ là một $S$-tiền lược đồ, và cho $T_n$ là
+``lân cận vô cùng bé bậc $n$'' của đường chéo của $T\times_ST$ trong
+$T\times_ST$, được trang bị các cấu xạ $p_1,p_2:T_n\longrightarrow T$ cảm
+sinh bởi hai phép chiếu. Ta xem $T_n$ như một tiền lược đồ hữu hạn trên $T$
+qua $p_1$, và giả sử thêm rằng nó phẳng trên $T$ (điều này đúng nếu $T$ trơn
+trên $S$). Với mọi tiền lược đồ $X$ trên $T$, đặt
+\[
+(X/T/S)^{(n)}=
+\Pi_{T_n/S}\bigl(p_2^*(X/T)/T_n\bigr),
+\]
+
+đó là một tiền lược đồ trên $T$ được gọi là \emph{phân thớ các mầm tiết diện
+bậc $n$ của $X$ trên $T$} (tương đối với $S$). Nó phụ thuộc theo hàm tử vào
+$X$, và trơn trên $T$ nếu $X$ cũng vậy.
+
+\fsection{6}{Quan hệ với khái niệm chuẩn và các tích đối xứng}
+
+Cho $S$ là một tiền lược đồ, $X$ và $Y$ là các $S$-tiền lược đồ,
+\[
+u:(X/S)^n\longrightarrow Y
+\]
+là một $S$-cấu xạ đối xứng từ lũy thừa Descartes thứ $n$ của $X/S$ vào $Y$.
+Để đơn giản, ta giả sử $S$ là Noether địa phương, và $X$ cùng $Y$ thuộc kiểu
+hữu hạn trên $S$. Khi đó, với mỗi môđun coherent $\mathcal F$ trên $X$, có giá
+hữu hạn trên $S$, phẳng trên $S$ và có hạng tương đối trên $S$ bằng $n$ (tức
+là $f_*(\mathcal F)$ là một môđun tự do địa phương hạng $n$ trên $S$), ta có
+thể liên kết một cách tự nhiên một tiết diện của $Y$ trên $S$:
+\[
+\pi^u_{X/S}(\mathcal F)\in\Gamma(Y/S).
+\]
+Ở đây ta sẽ không đưa ra định nghĩa hình thức, mà chỉ lưu ý rằng hình thức
+luận thu được là một sự tổng quát hóa tự nhiên của hình thức luận thông thường
+về chuẩn và vết. Khi lũy thừa đối xứng thứ $n$ của $X$ trên $S$ tồn tại (chẳng
+hạn khi các quỹ đạo của nhóm đối xứng $\mathfrak S_n$ tác động trên $(X/S)^n$
+được chứa trong các tập mở affine), ta có thể lấy
+$Y$ bằng $\operatorname{Symm}^n_S(X)$, và thu được một phần tử chính tắc
+\[
+\pi_{X/S}(\mathcal F)\in\Gamma(\operatorname{Symm}^n_S(X)/S),
+\]
+\src{274}
+cho phép khôi phục các $\pi^u_{X/S}(\mathcal F)$. Một trường hợp quan trọng
+khác là khi $X$ là một monoid giao hoán trên $S$, và $X=Y$, còn cấu xạ $u$
+xuất phát từ luật hợp thành của $X$. Khi đó ta sẽ chỉ viết $\pi(\mathcal F)$
+cho tiết diện của $X$ trên $S$ liên kết với môđun $\mathcal F$ trên $X$.
+
+Bây giờ giả sử ta có một môđun coherent $\mathcal F$ trên $X$ sao cho
+$\operatorname{Quot}_{\mathcal F/X/S}$ tồn tại, hoặc ít nhất sao cho hàm tử
+$\underline{\operatorname{Quot}}^n_{\mathcal F/X/S}$ gán cho mỗi $S'$ trên
+$S$ tập hợp các bó thương coherent $\mathcal M$ của
+$\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}$ phẳng trên
+$S'$ và có hạng tương đối $n$, được biểu diễn bởi một $S$-tiền lược đồ
+$\operatorname{Quot}^n_{\mathcal F/X/S}$. (Khi $X$ quasi-xạ ảnh trên $S$,
+thì $\operatorname{Quot}^n_{\mathcal F/X/S}$ quả thực tồn tại và, với ký hiệu
+của mục 3, chính là $\operatorname{Quot}^P_{\mathcal F/X/S}$, trong đó $P$ là
+đa thức chỉ còn số hạng hằng $n$.) Vì phép dựng
+$\pi^u_{X/S}(\mathcal M)$ tương thích với phép đổi cơ sở, ta thu được một cấu
+xạ chính tắc
+\[
+\pi^u_{X/S}:\operatorname{Quot}^n_{\mathcal F/X/S}\longrightarrow Y,
+\]
+đặc biệt, nếu lũy thừa đối xứng thứ $n$ của $X$ trên $S$ tồn tại:
+\[
+\pi_{X/S}:\operatorname{Quot}^n_{\mathcal F/X/S}
+\longrightarrow\operatorname{Symm}^n_S(X).
+\]
+Trường hợp quan trọng nhất là $\mathcal F=\mathcal O_X$, cho ta một cấu xạ:
+\[
+\pi_{X/S}:\operatorname{Hilb}^n_{X/S}
+\longrightarrow\operatorname{Symm}^n_S(X).
+\]
+Hiển nhiên đây là một đẳng cấu khi $n=0$ hoặc $n=1$. Nhưng khi
+$n\geq1$, ngay cả nếu $S$ là phổ của một trường $k$ và $X$ trơn trên
+$S$, nói chung đây không phải là một đẳng cấu, thậm chí cũng không phải là một
+cấu xạ đơn ánh, vì một lược đồ con chiều 0 của $X$ (chẳng hạn tương ứng với
+một iđêan $\mathfrak i$ nguyên sơ đối với iđêan cực đại trong vành địa phương
+$\mathcal O_{X,x}$, với $x$ là một điểm đóng của $X$) không được xác định khi
+chỉ biết chu trình do nó xác định (trong trường hợp này, khi biết đối chiều
+trên $k$ của $\mathfrak i$ trong $\mathcal O_{X,x}$). Ta chỉ có thể nói điều
+sau đây ($S$ lại là tùy ý):
+
+\medskip
+\noindent a. Nếu $X$ trơn trên $S$, thì cấu xạ chuẩn xác định một đẳng cấu từ
+tập mở của $\operatorname{Hilb}^n_{X/S}$ phân loại các phủ étale hạng $n$ nằm
+trong $X$ (xem số \textsuperscript{o} 4, (b)) lên tập mở của
+$\operatorname{Symm}^n_S(X)$ tương ứng với các $n$-chu trình không có thành
+phần bội.
+\src{275}
+
+\medskip
+\noindent b. Nếu thêm vào đó $X$ có chiều tương đối 1 trên $S$, thì cấu xạ
+chuẩn thậm chí xác định một đẳng cấu từ $\operatorname{Hilb}^n_{X/S}$ lên
+$\operatorname{Symm}^n_{X/S}$.
+
+Sở dĩ như vậy là vì một lược đồ con chiều 0 của một đường cong đại số không
+kỳ dị được xác định hoàn toàn bởi chu trình tương ứng. Cùng nhận xét ấy áp
+dụng tổng quát hơn cho các ước Cartier hiệu dụng trên một lược đồ đại số không
+kỳ dị (và không loại trừ khả năng rằng, trong trường hợp rất đặc biệt này, đa
+tạp Chow cho cùng một đối tượng như lược đồ Hilbert).
+
+\fsection{7}{Các bổ sung và câu hỏi}
+
+Như J.-P. Serre đã nhận xét, từ một ví dụ nổi tiếng của Nagata suy ra rằng có
+thể tìm được một lược đồ $S$, là phổ của một trường $k$, một $S$-lược đồ $S'$,
+là phổ của một mở rộng bậc hai $k'$ của $k$, và cuối cùng một $S'$-lược đồ $X$
+riêng và trơn (nhưng không xạ ảnh) chiều 3, sao cho $\Pi_{S'/S}(X/S')$ không
+tồn tại. Điều này càng kéo theo rằng lược đồ Hilbert
+$\operatorname{Hilb}^2_{X/S}$ không tồn tại (thậm chí cả $k$-lược đồ biểu diễn
+các phủ étale hạng 2 của $S$ nằm trong $X$ cũng không tồn tại, và càng không có
+bình phương đối xứng của $X$; xem mục trước). Do đó, khả năng thực hiện các
+phép dựng không xạ ảnh trong hình học đại số bị đặt dưới những hạn chế nghiêm
+trọng. (Tuy nhiên, có thể tin rằng những hạn chế như vậy sẽ không xuất hiện
+trong hình học giải tích, cũng như chúng không xuất hiện trong hình học hình
+thức (xem [2], II).) Mặt khác, nếu $X$ là một lược đồ riêng trên phổ $S$ của
+một trường $k$, và nếu $Z$ tựa xạ ảnh trên $X$, thì $\Pi_{X/S}(Z/X)$ tồn tại
+và là một lược đồ, hợp rời nhau của một dãy các lược đồ tựa xạ ảnh trên $S$
+(như trong trường hợp xạ ảnh (3.1)). Thật vậy, ta quy về trường hợp bản thân
+$X$ là xạ ảnh bằng cách để $X$ được trội bởi một $S$-lược đồ xạ ảnh $X'$; ở đây
+chúng tôi không trình bày chi tiết chứng minh, vốn còn sử dụng kết quả về việc
+phân tích một cấu xạ hữu hạn thành hợp được nêu trong [2], I, A,
+n\textsuperscript{o} 2 (b). Sự thành công của phương pháp nằm ở chỗ, vì $S$ là
+phổ của một trường, $X'$ xuất hiện trong bổ đề Chow tự động phẳng trên $S$.
+
+Tôi không biết kết quả có còn đúng nếu không đặt giả thiết nào lên $S$ hay
+không, khi chỉ giả sử $X$ riêng và phẳng trên $S$, còn $Z$ tựa xạ ảnh trên
+$X$. Một trường hợp quan trọng trong ứng dụng là khi $Z$ là một lược đồ con
+đóng của $X$; nếu khi ấy $\Pi_{X/S}(Z/X)$ tồn tại, thì nó nhất thiết là một
+lược đồ con đóng của $S$. Ta có thể
+\src{276}
+dựng nó trực tiếp khá đơn giản khi $X$ xạ ảnh trên $S$, mà không dùng lý
+thuyết lược đồ Hilbert; tổng quát hơn, phương pháp được sử dụng cho thấy rằng
+nếu $Z$ affine trên $X$, thì $\Pi_{X/S}(Z/X)$ tồn tại và affine trên $S$. Nó
+cũng cho thấy rằng nếu $X$ riêng và phẳng trên $S$ (không nhất thiết xạ ảnh
+trên $S$), thì với mọi phân thớ vectơ $Z$ tầm thường địa phương trên $X$,
+$\Pi_{X/S}(Z/X)$ tồn tại và là một phân thớ vectơ trên $S$. Rất nên xem xét
+lại và thống nhất các kết quả này.
+
+\section*{TÀI LIỆU THAM KHẢO}
+\addcontentsline{toc}{section}{Tài liệu tham khảo}
+
+\begin{description}
+\item[{[1]}] BOREL (A.) và SERRE (J.-P.). --- Le théorème de Riemann--Roch,
+\emph{Bull. Soc. math. France}, tập 86, 1958, tr. 97--136.
+
+\item[{[2]}] GROTHENDIECK (Alexander). --- Technique de construction et
+théorèmes d'existence en géométrie algébrique, I, II, III, \emph{Séminaire
+Bourbaki}, tập 13, 1959/60, n\textsuperscript{o} 190, 29 tr.,
+n\textsuperscript{o} 195, 22 tr.; và tập 14, 1960/61,
+n\textsuperscript{o} 212, 20 tr.
+
+\item[{[3]}] GROTHENDIECK (Alexander). --- Séminaire de Géométrie algébrique,
+I, II, III, IV. --- Paris, Institut des hautes Études scientifiques, 1960/61
+(in rô-nê-ô).
+
+\item[{[4]}] GROTHENDIECK (Alexander). --- Technique de construction en
+géométrie analytique, IV, V, \emph{Séminaire Cartan}, tập 13, 1960/61,
+n\textsuperscript{o} 11 và 12.
+
+\item[{[5]}] GROTHENDIECK (A.) và DIEUDONNÉ (J.). --- \emph{Éléments de
+géométrie algébrique}, I: Le langage des schémas. --- Paris, Presses
+universitaires de France, 1960 (Institut des hautes Études scientifiques,
+Publications mathématiques, 4); II, III, IV (sắp xuất bản).
+
+\item[{[6]}] KODAIRA (K.). --- Characteristic linear systems of complete
+continuous systems, \emph{Amer. J. of Math.}, tập 78, 1956, tr. 716--744.
+
+\item[{[7]}] SERRE (Jean-Pierre). --- Exemples de variétés projectives en
+caractéristique $p$ non relevables en caractéristique 0, \emph{Proc. Nat. Acad.
+Sc. U.S.A.}, tập 47, 1961, tr. 108--109.
+
+\item[{[8]}] ZAPPA (G.). --- Sull'esistenza, sopra le superficie algebriche, di
+sistemi continui completi infiniti, la cui curva è a serie caratteristica
+incompleta, \emph{Pont. Acad. Sc. Acta}, tập 9, 1945, tr. 91--93.
+\end{description}
+
+\section*{BỔ SUNG}
+\addcontentsline{toc}{section}{Bổ sung}
+\begin{center}
+{\small [bổ sung khi sửa bản in thử]}
+\end{center}
+
+Giờ đây có thể thấy rằng các phỏng đoán của [2], III,
+n\textsuperscript{o} 8 là sai, ngay cả đối với các đa tạp không kỳ dị trên một
+trường đặc trưng 0, cả về sự tồn tại lẫn tính tựa xạ ảnh của thương, và ngay cả
+khi $G$ tác động với đồ thị đóng.
+
+\par

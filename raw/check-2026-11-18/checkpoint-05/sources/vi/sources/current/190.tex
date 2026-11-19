@@ -1,0 +1,1532 @@
+\unit{Bài trình bày 190 — Kỹ thuật hạ xuống I}
+\sid{190}
+\markboth{Thuyết trình 190}{Thuyết trình 190}
+\src{299}
+\seminar{Năm thứ 12, 1959/60, số 190\\Tháng 12 năm 1959}
+\paperhead{KỸ THUẬT HẠ XUỐNG VÀ CÁC ĐỊNH LÝ TỒN TẠI TRONG HÌNH HỌC ĐẠI SỐ\\
+I. ĐẠI CƯƠNG. HẠ XUỐNG THEO CÁC CẤU XẠ PHẲNG TRUNG THÀNH}%
+  {do Alexander GROTHENDIECK}
+
+Xét về mặt kỹ thuật, bài trình bày này và các bài tiếp theo có thể được xem là
+những biến thể của ``định lý 90'' nổi tiếng của Hilbert. Có vẻ như A.~Weil là
+người đưa phương pháp hạ xuống vào hình học đại số, dưới tên gọi ``hạ xuống
+trường cơ sở''. Tuy nhiên, Weil chỉ xét trường hợp các mở rộng trường hữu hạn
+tách được. Sau đó P.~Cartier xử lý trường hợp các mở rộng thuần bất khả phân có
+chiều cao 1. Vì chưa có ngôn ngữ lược đồ, và cụ thể hơn là vì chưa cho phép xét
+các phần tử lũy linh trong các vành, Cartier đã không thể phát biểu sự đồng nhất
+cốt yếu giữa hai trường hợp này.
+
+Hiện nay, có vẻ như kỹ thuật hạ xuống tổng quát sẽ được trình bày (kết hợp, khi
+thích hợp, với các định lý cơ bản của ``hình học hình thức'', xem [3]) là nền
+tảng của phần lớn các định lý tồn tại trong hình học đại số.\footnote{Bản đính
+chính năm 1962 cho rằng phát biểu này quá mạnh: nó đúng ở mức độ lớn đối với
+các kỹ thuật phi xạ ảnh trong hai bài trình bày đầu của loạt TDTE I đến VI,
+nhưng không đúng đối với các kỹ thuật xạ ảnh (TDTE IV, V và VI).} Cũng cần lưu
+ý rằng kỹ thuật ấy chắc chắn có thể được chuyển sang ``hình học giải tích'', và
+có thể hy vọng rằng, trong tương lai gần, các chuyên gia sẽ chứng minh được
+những định lý tương tự theo nghĩa ``giải tích'' của các định lý tồn tại trong
+hình học hình thức được nêu ở Bài trình bày II. Dù sao, các công trình gần đây của
+Kodaira--Spencer, với những phương pháp dường như không thích hợp để định nghĩa
+và nghiên cứu các ``đa tạp môđuli'' ở lân cận các điểm kỳ dị của chúng, cho thấy
+khá rõ nhu cầu về những phương pháp gần với lý thuyết lược đồ hơn (dĩ nhiên các
+kỹ thuật siêu việt sẽ phải bổ sung cho chúng).
+
+Trong Bài trình bày I này, ta sẽ xét trường hợp hạ xuống sơ đẳng nhất (được nêu
+trong tiêu đề). Tuy vậy, các ứng dụng của các Định lý 1, 2 và 3 dưới đây đã rất
+phong phú. Ta chỉ nêu một vài ứng dụng làm ví dụ, mà không cố phát biểu chúng ở
+mức tổng quát tối đa có thể có tại đây.
+
+Ta sẽ tự do sử dụng ngôn ngữ lược đồ; về ngôn ngữ này, xin xem bài trình bày đã
+dẫn và [2]. Tuy nhiên, cần lưu ý rõ rằng các tiền lược đồ được xét trong bài này
+không nhất thiết là Noether, và các
+
+\src{300}
+cấu xạ không nhất thiết thuộc kiểu hữu hạn. Chẳng hạn, nếu $A$ là một vành địa
+phương Noether có vành đầy đủ hóa $\widehat A$, ta sẽ phải xét vành không
+Noether $\widehat A\otimes_A\widehat A$, cùng các cấu xạ giữa những lược đồ
+affine tương ứng với các phép nhúng giữa các vành đang xét.
+
+\fsection{A}{Các kiến thức chuẩn bị về phạm trù}
+
+\subsection*{1. Phạm trù phân thớ, dữ liệu hạ xuống, cấu xạ
+$\mathcal F$-hạ xuống}
+\addcontentsline{toc}{subsection}{1. Phạm trù phân thớ và dữ liệu hạ xuống}
+
+\result{a. ĐỊNH NGHĨA}{1.1} Một \emph{phạm trù phân thớ} $\mathcal F$ trên cơ
+sở $\mathcal C$ gồm một phạm trù $\mathcal C$; với mỗi
+$X\in\mathcal C$, một phạm trù $\mathcal F_X$; với mỗi cấu xạ trong
+$\mathcal C$, $f:X\longrightarrow Y$, một hàm tử
+$f^*:\mathcal F_Y\longrightarrow\mathcal F_X$, cũng được ký hiệu bởi
+\[
+  f^*(\xi)=\xi\times_Y X
+\]
+với $\xi\in\mathcal F_Y$ (trong đó $X$ được xem là một ``đối tượng của
+$\mathcal C$ trên $Y$'', nghĩa là được trang bị cấu xạ $f$); và cuối cùng, với
+hai cấu xạ hợp thành được
+$X\xrightarrow{f}Y\xrightarrow{g}Z$, một đẳng cấu hàm tử
+\[
+  c_{f,g}:(gf)^*\longrightarrow f^*g^*,
+\]
+sao cho các dữ liệu này thỏa mãn những điều kiện sau:
+
+\begin{enumerate}
+\item[(i)] $\operatorname{id}_X^*=\operatorname{id}$;
+\item[(ii)] $c_{f,g}$ là đẳng cấu đồng nhất nếu $f$ hoặc $g$ là một đẳng cấu
+đồng nhất;
+\item[(iii)] với ba cấu xạ hợp thành được
+$X\xrightarrow{f}Y\xrightarrow{g}Z\xrightarrow{h}T$, biểu đồ các đẳng cấu sau,
+được tạo bởi những đẳng cấu dạng $c_{u,v}$, là giao hoán:
+\[
+\begin{array}{ccc}
+  (h(gf))^*=((hg)f)^* & \longrightarrow & f^*(hg)^* \\
+  \big\downarrow && \big\downarrow \\
+  (gf)^*h^* & \longrightarrow & (f^*g^*)h^*=f^*(g^*h^*).
+\end{array}
+\]
+\end{enumerate}
+
+\result{VÍ DỤ}{1} Cho $\mathcal C$ là một phạm trù trong đó tồn tại các tích
+thớ. Khi đó ta định nghĩa một phạm trù phân thớ $\mathcal F$ trên cơ sở
+$\mathcal C$ bằng cách lấy $\mathcal F_X=$ phạm trù các đối tượng của
+$\mathcal C$ trên $X$; hàm tử
+$f^*:\mathcal F_Y\longrightarrow\mathcal F_X$ ứng với một cấu xạ
+$f:X\longrightarrow Y$ được định nghĩa bằng tích thớ
+$Z\longmapsto Z\times_YX$.
+
+\result{VÍ DỤ}{2} Cho $\mathcal C$ là phạm trù các tiền lược đồ và, với
+$X\in\mathcal C$, cho $\mathcal F_X$ là phạm trù các bó môđun tựa nhất quán
+trên $X$. Nếu $f:X\longrightarrow Y$ là một cấu xạ tiền lược đồ, thì
+$f^*:\mathcal F_Y\longrightarrow\mathcal F_X$ là hàm tử ảnh ngược
+
+\src{301}
+trên các bó môđun. Như vậy ta thu được một phạm trù phân thớ trên cơ sở
+$\mathcal C$.
+
+\result{b. ĐỊNH NGHĨA}{1.2} Một biểu đồ
+\[
+  E\xrightarrow{u}E'
+  \overset{v_1}{\underset{v_2}{\rightrightarrows}}E''
+\]
+gồm các ánh xạ giữa những tập hợp được gọi là \emph{khớp} nếu $u$ là một song
+ánh từ $E$ lên phần của $E'$ gồm các $x'\in E'$ thỏa mãn
+$v_1(x')=v_2(x')$.
+
+\result{ĐỊNH NGHĨA}{1.3} Cho $\mathcal F$ là một phạm trù phân thớ trên cơ sở
+$\mathcal C$; xét một biểu đồ
+\[
+  \tag{+}
+  S\xleftarrow{\alpha}S'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}S''
+\]
+gồm các cấu xạ trong $\mathcal C$ sao cho
+$\alpha\beta_1=\alpha\beta_2$; biểu đồ này được gọi là
+$\mathcal F$-\emph{khớp} nếu, với mọi cặp đối tượng $\xi,\eta$ của
+$\mathcal F_S$, biểu đồ các ánh xạ giữa tập hợp sau là khớp:
+\[
+  \tag{+'}
+  \operatorname{Hom}(\xi,\eta)
+  \xrightarrow{\alpha^*}
+  \operatorname{Hom}(\alpha^*\xi,\alpha^*\eta)
+  \overset{\beta_1^*}{\underset{\beta_2^*}{\rightrightarrows}}
+  \operatorname{Hom}(\gamma^*\xi,\gamma^*\eta),
+\]
+trong đó $\gamma=\alpha\beta_1=\alpha\beta_2$. Để đơn giản, trong biểu đồ cuối
+ta đã đồng nhất $\beta_i^*\alpha^*$ với
+$(\alpha\beta_i)^*=\gamma^*$ nhờ $c_{\beta_i,\alpha}$.
+
+\result{ĐỊNH NGHĨA}{1.4} Cho $\mathcal F$ là một phạm trù phân thớ trên cơ sở
+$\mathcal C$; xét hai cấu xạ $\beta_1,\beta_2$ từ $S''$ đến $S'$ trong
+$\mathcal C$. Cho $\xi'\in\mathcal F_{S'}$. Một \emph{dữ liệu dán} trên
+$\xi'$ (đối với cặp $(\beta_1,\beta_2)$) là một đẳng cấu từ
+$\beta_1^*(\xi')$ lên $\beta_2^*(\xi')$. Nếu
+$\xi',\eta'\in\mathcal F_{S'}$ đều được trang bị một dữ liệu dán, thì một cấu
+xạ $u:\xi'\longrightarrow\eta'$ trong $\mathcal F_{S'}$ được gọi là
+\emph{tương thích với các dữ liệu dán} nếu biểu đồ sau là giao hoán:
+\[
+\begin{array}{ccc}
+  \beta_1^*(\xi') & \longrightarrow & \beta_2^*(\xi') \\
+  \big\downarrow && \big\downarrow \\
+  \beta_1^*(\eta') & \longrightarrow & \beta_2^*(\eta').
+\end{array}
+\]
+Theo cách này, các đối tượng của $\mathcal F_{S'}$ được trang bị một dữ liệu
+dán (đối với $\beta_1,\beta_2$) tạo thành một phạm trù. Nếu
+$\alpha:S'\longrightarrow S$ là một cấu xạ sao cho
+$\alpha\beta_1=\alpha\beta_2$, thì với mọi $\xi\in\mathcal F_S$, đối tượng
+$\xi'=\alpha^*(\xi)$
+
+\src{302}
+của $\mathcal F_{S'}$ được trang bị một dữ liệu dán chính tắc, bởi vì
+\[
+  \beta_i^*\alpha^*(\xi)\simeq(\alpha\beta_i)^*(\xi)=\gamma^*(\xi),
+\]
+trong đó một lần nữa $\gamma=\alpha\beta_1=\alpha\beta_2$; hơn nữa, nếu
+$u:\xi\longrightarrow\eta$ là một cấu xạ trong $\mathcal F_S$, thì
+\[
+  \alpha^*(u):\alpha^*(\xi)\longrightarrow\alpha^*(\eta)
+\]
+là một cấu xạ trong $\mathcal F_{S'}$ tương thích với các dữ liệu dán chính
+tắc. Do đó ta thu được một hàm tử chính tắc từ phạm trù $\mathcal F_S$ đến
+phạm trù các đối tượng của $\mathcal F_{S'}$ được trang bị một dữ liệu dán đối
+với cặp $(\beta_1,\beta_2)$. Nói cách khác, Định nghĩa 1.3 cũng có thể được
+phát biểu rằng biểu đồ (+) trong định nghĩa ấy là $\mathcal F$-khớp nếu hàm tử
+trên là ``đầy đủ và trung thành'', nghĩa là nó xác định một tương đương giữa
+phạm trù $\mathcal F_S$ và một phạm trù con của phạm trù các đối tượng
+của $\mathcal F_{S'}$ được trang bị dữ liệu dán đối với
+$(\beta_1,\beta_2)$.
+
+\result{ĐỊNH NGHĨA}{1.5} Một dữ liệu dán trên
+$\xi'\in\mathcal F_{S'}$ được gọi là \emph{hữu hiệu} (đối với $\alpha$) nếu
+$\xi'$, cùng dữ liệu này, đẳng cấu với một $\alpha^*(\xi)$ nào đó, trong đó
+$\xi\in\mathcal F_S$.
+
+Khi biểu đồ (+) là $\mathcal F$-khớp, đối tượng $\xi$ trong định nghĩa trên vì
+thế được xác định tới một đẳng cấu duy nhất, và phạm trù
+$\mathcal F_S$ tương đương với phạm trù các đối tượng của
+$\mathcal F_{S'}$ được trang bị một dữ liệu dán hữu hiệu.
+
+\medskip\noindent
+c. Trường hợp quan trọng nhất là khi
+\[
+  S''=S'\times_S S',
+\]
+trong đó các $\beta_i$ là hai phép chiếu $p_1$ và $p_2$ từ
+$S'\times_S S'$ lên hai thừa số của nó (bây giờ ta giả sử rằng các tích thớ tồn
+tại trong $\mathcal C$). Khi đó có ngay hai điều kiện cần để một dữ liệu dán
+$\varphi:p_1^*(\xi')\longrightarrow p_2^*(\xi')$ trên một
+$\xi'\in\mathcal F_{S'}$ là hữu hiệu. Ta có
+\[
+  \tag{i}
+  \Delta^*(\varphi)=\operatorname{id}_{\xi'},
+\]
+trong đó $\Delta:S'\longrightarrow S'\times_S S'$ là cấu xạ đường chéo và ta
+đã đồng nhất $\Delta^*p_i^*(\xi')$ với
+$(p_i\Delta)^*(\xi')=\xi'$. Ta cũng có
+\[
+  \tag{ii}
+  p_{31}^*(\varphi)=p_{32}^*(\varphi)\,p_{21}^*(\varphi),
+\]
+
+\src{303}
+trong đó $p_{ij}$ là phép chiếu chính tắc từ
+$S'\times_S S'\times_S S'$ lên tích riêng phần của thừa số thứ $i$ và thừa số
+thứ $j$.
+
+\result{ĐỊNH NGHĨA}{1.6} Một \emph{dữ liệu hạ xuống} trên
+$\xi'\in\mathcal F_{S'}$, đối với cấu xạ
+$\alpha:S'\longrightarrow S$, là một dữ liệu dán trên $\xi'$ đối với cặp
+$(p_1,p_2)$ các phép chiếu chính tắc
+$S'\times_S S'\longrightarrow S'$ thỏa mãn các điều kiện (i) và (ii) ở trên.
+
+\result{ĐỊNH NGHĨA}{1.7} Một cấu xạ $\alpha:S'\longrightarrow S$ được gọi là
+một \emph{cấu xạ $\mathcal F$-hạ xuống} nếu biểu đồ các cấu xạ
+\[
+  S\xleftarrow{\alpha}S'
+  \overset{p_1}{\underset{p_2}{\rightrightarrows}}S'\times_S S'
+\]
+là $\mathcal F$-khớp (Định nghĩa 1.3); $\alpha$ được gọi là một
+\emph{cấu xạ $\mathcal F$-hạ xuống nghiêm ngặt} nếu thêm vào đó, mọi dữ liệu hạ
+xuống (Định nghĩa 1.6) trên một đối tượng của $\mathcal F_{S'}$ đều hữu hiệu.
+
+Điều kiện cuối cũng có thể được diễn đạt trực quan hơn như sau: việc cho một
+đối tượng của $\mathcal F_S$ là ``tương đương'' với việc cho một đối tượng của
+$\mathcal F_{S'}$ được trang bị dữ liệu hạ xuống.
+
+Lưu ý rằng nếu một cấu xạ $\alpha:S'\longrightarrow S$ có một ``tiết diện''
+$s:S\longrightarrow S'$ (nghĩa là một cấu xạ $s$ sao cho
+$\alpha s=\operatorname{id}_S$), thì nó là một cấu xạ
+$\mathcal F$-hạ xuống nghiêm ngặt.\footnote{Bản đính chính năm 1962 nói rõ rằng
+không cần giả sử trước $\alpha$ là một cấu xạ $\mathcal F$-hạ xuống.} Thật vậy,
+nếu $\xi'\in\mathcal F_{S'}$ được trang bị một dữ liệu hạ xuống đối với
+$\alpha$, thì nó ``đến từ'' $\xi=s^*(\xi')$.
+
+\medskip\noindent
+d. Có thể trình bày các khái niệm trên một cách trực quan hơn bằng cách đưa vào,
+với một đối tượng tham số $T$ của $\mathcal C$ trên $S$, tập hợp
+\[
+  \operatorname{Hom}_S(T,S')=S'(T),
+\]
+có các phần tử được ký hiệu bởi $t,t'$, v.v. Với một đối tượng
+$\xi'\in\mathcal F_{S'}$ đã cho, mỗi $t\in S'(T)$ khi đó tương ứng với một đối
+tượng $t^*(\xi')$ của $\mathcal F_T$, cũng được ký hiệu là $\xi'_t$. Một dữ
+liệu dán trên $\xi'$ (đối với $p_1,p_2$) khi đó được xác định bằng cách cho,
+với mọi $T$ trên $S$ và mọi cặp điểm $t,t'\in S'(T)$, một đẳng cấu
+\[
+  \varphi_{t',t}:\xi'_t\longrightarrow\xi'_{t'}
+\]
+(thỏa mãn các điều kiện hiển nhiên về tính hàm tử khi $T$ biến thiên). Các điều
+kiện (i) và (ii) của 1.c khi đó được viết thành
+\[
+  \tag{i bis}
+  \varphi_{t,t}=\operatorname{id}_{\xi'_t}
+  \qquad\text{với mọi $T$ và mọi $t\in S'(T)$},
+\]
+
+\src{304}
+\[
+  \tag{ii bis}
+  \varphi_{t,t''}=\varphi_{t,t'}\varphi_{t',t''}
+  \qquad\text{với mọi $T$ và mọi $t,t',t''\in S'(T)$}.
+\]
+Hơn nữa, lấy $t=t'=t''$ trong (ii bis), ta thấy
+$\varphi_{t,t}=\varphi_{t,t}^2$; vì theo giả thiết $\varphi_{t,t}$ là một đẳng
+cấu, suy ra hệ thức (i bis), nên thật ra (i bis) là hệ quả của (ii bis) (do đó
+(i) là hệ quả của (ii)). Nhưng nếu không còn giả sử tiên nghiệm rằng các
+$\varphi_{t,t'}$ là đẳng cấu (nghĩa là
+$\varphi:p_1^*(\xi')\longrightarrow p_2^*(\xi')$ là một đẳng cấu), thì (ii bis)
+không nhất thiết kéo theo (i bis); tuy vậy, kết hợp (ii bis) với (i bis) suy ra
+rằng các $\varphi_{t,t'}$ là đẳng cấu (bởi ta có
+$\varphi_{t,t'}\varphi_{t',t}=\varphi_{t,t}=\operatorname{id}_{\xi'_t}$).
+
+\subsection*{2. Các biểu đồ khớp và các toàn cấu nghiêm ngặt, các cấu xạ
+hạ xuống. Ví dụ}
+\addcontentsline{toc}{subsection}{2. Các biểu đồ khớp và các toàn cấu nghiêm ngặt}
+
+\result{a. ĐỊNH NGHĨA}{2.1} Cho $\mathcal C$ là một phạm trù. Một biểu đồ
+\[
+  T\xrightarrow{\alpha}T'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}T''
+\]
+gồm các cấu xạ trong $\mathcal C$ được gọi là \emph{khớp} nếu, với mọi
+$Z\in\mathcal C$, biểu đồ tương ứng gồm các ánh xạ giữa tập hợp
+\[
+  \operatorname{Hom}(Z,T)\longrightarrow
+  \operatorname{Hom}(Z,T')
+  \rightrightarrows\operatorname{Hom}(Z,T'')
+\]
+là khớp (Định nghĩa 1.2). Khi đó ta nói $(T,\alpha)$ (hoặc, theo lối nói lạm
+dụng, $T$) là một \emph{hạt nhân} của cặp cấu xạ
+$(\beta_1,\beta_2)$.
+
+Hạt nhân này hiển nhiên được xác định tới một đẳng cấu duy nhất. Nếu
+$\mathcal C$ là phạm trù các tập hợp, thì định nghĩa trên tương thích với Định
+nghĩa 1.2. Theo cách đối ngẫu, ta định nghĩa tính khớp của một biểu đồ
+\[
+  S\xleftarrow{\alpha}S'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}S''
+\]
+gồm các cấu xạ trong $\mathcal C$; khi đó ta nói $(S,\alpha)$ là một
+\emph{đối hạt nhân} của cặp cấu xạ $(\beta_1,\beta_2)$.
+
+\result{ĐỊNH NGHĨA}{2.2} Một cấu xạ $\alpha:S'\longrightarrow S$ được gọi là
+một \emph{toàn cấu nghiêm ngặt} nếu nó là một toàn cấu và nếu, với mọi cấu xạ
+$u:S'\longrightarrow Z$, điều kiện cần sau đây cũng đủ để $u$ phân tích thành
+$S'\longrightarrow S\longrightarrow Z$: với mọi $S''\in\mathcal C$ và mọi
+cặp cấu xạ $\beta_1,\beta_2:S''\longrightarrow S'$ sao cho
+$\alpha\beta_1=\alpha\beta_2$, ta cũng có $u\beta_1=u\beta_2$.
+
+Nếu tích thớ $S'\times_S S'$ tồn tại, điều này tương đương với việc biểu đồ
+\[
+  S\xleftarrow{\alpha}S'
+  \overset{p_1}{\underset{p_2}{\rightrightarrows}}S'\times_S S'
+\]
+
+\src{305}
+là khớp, nghĩa là $S$ là một đối hạt nhân của cặp $(p_1,p_2)$. Trong mọi
+trường hợp, một cấu xạ đối hạt nhân là một toàn cấu nghiêm ngặt. Cũng lưu ý
+rằng một toàn cấu nghiêm ngặt đồng thời là một đơn cấu thì là một đẳng cấu.
+Ta để bạn đọc phát triển khái niệm đối ngẫu về \emph{đơn cấu nghiêm ngặt}.
+
+Để làm rõ quan hệ giữa khái niệm cấu xạ $\mathcal F$-hạ xuống và khái niệm
+toàn cấu nghiêm ngặt, ta đưa thêm vào các định nghĩa sau:
+
+\result{ĐỊNH NGHĨA}{2.3} Một cấu xạ $\alpha:S'\longrightarrow S$ được gọi là
+một \emph{toàn cấu phổ dụng} (tương ứng, một \emph{toàn cấu nghiêm ngặt phổ
+dụng}) nếu, với mọi $T$ trên $S$, tích thớ $T'=S'\times_ST$ tồn tại và phép
+chiếu $T'\longrightarrow T$ là một toàn cấu (tương ứng, một toàn cấu nghiêm
+ngặt).
+
+Trong các phạm trù rất tốt (như phạm trù các tập hợp, phạm trù các bó tập hợp
+trên một không gian tôpô, các phạm trù abel, v.v.), bốn khái niệm về tính toàn
+cấu vừa được đưa vào trùng nhau; trái lại, chúng đều khác nhau trong một phạm
+trù như phạm trù các tiền lược đồ, hoặc phạm trù các tiền lược đồ trên một tiền
+lược đồ không rỗng $S$ đã cho, ngay cả khi chỉ xét các $S$-lược đồ hữu hạn trên
+$S$.
+
+\result{ĐỊNH NGHĨA}{2.4} Một cấu xạ $\alpha:S'\longrightarrow S$ được gọi là
+một \emph{cấu xạ hạ xuống} (tương ứng, một \emph{cấu xạ hạ xuống nghiêm
+ngặt}) nếu nó là một cấu xạ $\mathcal F$-hạ xuống (tương ứng, một cấu xạ
+$\mathcal F$-hạ xuống nghiêm ngặt) (xem Định nghĩa 1.7), trong đó $\mathcal F$
+là phạm trù phân thớ trên cơ sở $\mathcal C$ gồm các đối tượng của
+$\mathcal C$ trên các đối tượng của $\mathcal C$ (số 1, Ví dụ 1).
+
+\result{MỆNH ĐỀ}{2.1} Nếu trong $\mathcal C$ tồn tại các tích hữu hạn và các
+tích thớ (hữu hạn), thì trong $\mathcal C$, các cấu xạ hạ xuống chính là các
+toàn cấu nghiêm ngặt phổ dụng.
+
+\result{b. VÍ DỤ}{} Cho $\mathcal C$ là phạm trù các tiền lược đồ. Cho
+$S\in\mathcal C$, và cho $S'$ và $S''$ là hai tiền lược đồ hữu hạn trên $S$,
+nghĩa là tương ứng với các bó đại số $\mathcal A'$, $\mathcal A''$ trên $S$
+mà, xét như các bó môđun, là tựa nhất quán và thuộc kiểu hữu hạn (nghĩa là
+coherent nếu $S$ là Noether địa phương). Cho $\alpha:S'\longrightarrow S$ là
+cấu xạ cấu trúc của $S'$, và cho $\beta_1,\beta_2$ là hai $S$-cấu xạ từ $S''$
+đến $S'$, được xác định bởi các đồng cấu đại số
+$\mathcal A'\longrightarrow\mathcal A''$, vẫn được ký hiệu là
+$\beta_1,\beta_2$. Dùng sự kiện rằng một cấu xạ hữu hạn là đóng (định lý
+Cohen--Seidenberg thứ nhất), ta dễ dàng chứng minh rằng biểu đồ
+\[
+  \tag{+}
+  S\xleftarrow{\alpha}S'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}S''
+\]
+trong $\mathcal C$ là khớp khi và chỉ khi biểu đồ các bó
+
+\src{306}
+\[
+  \mathcal O_S=\mathcal A\longrightarrow\mathcal A'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}\mathcal A''
+\]
+trên $S$ là khớp. Đặc biệt, nếu $\alpha:S'\longrightarrow S$ là một cấu xạ
+hữu hạn tương ứng với một bó đại số $\mathcal A'$ trên $S$, thì $\alpha$ là
+một toàn cấu nghiêm ngặt khi và chỉ khi biểu đồ các bó
+\[
+  \mathcal O_S=\mathcal A\longrightarrow\mathcal A'
+  \overset{p_1}{\underset{p_2}{\rightrightarrows}}
+  \mathcal A'\otimes_{\mathcal A}\mathcal A'
+\]
+là khớp (nó là một toàn cấu khi và chỉ khi
+$\mathcal A\longrightarrow\mathcal A'$ là đơn ánh). Nếu $S$ là affine với
+vành $A$, và do đó $S'$ là affine với vành $A'$ hữu hạn trên $A$, thì
+$S'\longrightarrow S$ là một toàn cấu nghiêm ngặt khi và chỉ khi
+$A\longrightarrow A'$ là một đẳng cấu từ $A$ lên vành con của $A'$ gồm những
+$x'\in A'$ sao cho
+\[
+  1_{A'}\otimes_Ax'-x'\otimes_A1_{A'}=0
+\]
+(nó là một toàn cấu khi và chỉ khi $A\longrightarrow A'$ là đơn ánh). Như ta
+đã lưu ý, ngay cả khi $S$ là lược đồ của một vành địa phương Artin, một cấu xạ
+hữu hạn $S'\longrightarrow S$ là toàn cấu không nhất thiết là một toàn cấu
+nghiêm ngặt. Tuy nhiên, có thể chứng minh rằng, nếu $S$ là một tiền lược đồ
+Noether, thì mọi cấu xạ hữu hạn $S'\longrightarrow S$ là toàn cấu đều là hợp
+thành của một dãy hữu hạn các toàn cấu nghiêm ngặt, mỗi cấu xạ trong dãy cũng
+hữu hạn. Điều này cũng cho thấy hợp thành của hai toàn cấu nghiêm ngặt không
+nhất thiết là một toàn cấu nghiêm ngặt.
+
+\result{c}{} Nếu $(+)$ là một biểu đồ khớp gồm các cấu xạ hữu hạn, thì với mọi
+cấu xạ phẳng $T\longrightarrow S$ của các tiền lược đồ, biểu đồ thu được từ
+$(+)$ qua phép đổi cơ sở $T\longrightarrow S$ vẫn khớp. Suy ra rằng, nếu $X,Y$
+là hai $S$-tiền lược đồ, với $X$ phẳng trên $S$, thì biểu đồ các ánh xạ giữa
+tập hợp sau đây (trong đó $X',Y'$ là các ảnh ngược của $X,Y$ trên $S'$, còn
+$X'',Y''$ là các ảnh ngược của chúng trên $S''$)
+\[
+  \operatorname{Hom}_S(X,Y)\longrightarrow
+  \operatorname{Hom}_{S'}(X',Y')
+  \rightrightarrows
+  \operatorname{Hom}_{S''}(X'',Y'')
+\]
+là khớp. Đặc biệt, nếu $\mathcal F$ là phạm trù phân thớ trên cơ sở phạm trù
+$\mathcal C$ các tiền lược đồ, sao cho với $X\in\mathcal C$, $\mathcal F_X$
+là phạm trù các $X$-tiền lược đồ phẳng, thì biểu đồ $(+)$ là
+$\mathcal F$-khớp. (Kết quả này không còn đúng nếu không đặt giả thiết phẳng;
+đặc biệt, một toàn cấu nghiêm ngặt hữu hạn không nhất thiết là một cấu xạ hạ
+xuống.) Tương tự, ta thấy $(+)$ là $\mathcal F$-khớp nếu $\mathcal F$ là phạm
+trù phân thớ mà $\mathcal F_X$ là phạm trù các bó tựa nhất quán và phẳng trên
+tiền lược đồ $X$ (ở đây giả thiết
+
+\src{307}
+phẳng cũng là thiết yếu). Trong cả hai trường hợp, vấn đề một dữ liệu dán có
+hữu hiệu hay không (và cụ thể hơn, một dữ liệu hạ xuống khi
+$S''=S'\times_SS'$ có hữu hiệu hay không) trên một đối tượng phẳng trên $S'$
+là tinh tế (và lời giải của nó trong nhiều trường hợp riêng là một trong các
+chủ đề chính của những bài trình bày này). Diễn giả không biết liệu, với mọi
+toàn cấu nghiêm ngặt hữu hạn $S'\longrightarrow S$, mọi dữ liệu hạ xuống trên
+một bó tựa nhất quán phẳng trên $S'$ có hữu hiệu hay không (ngay cả khi giả sử
+$S$ là phổ của một vành địa phương Artin và chỉ xét các bó tự do địa phương
+hạng 1). Tổng quát hơn, cho $A$ là một vành và $A'$ là một $A$-đại số (mọi
+vành đều giao hoán) sao cho biểu đồ các ánh xạ
+\[
+  A\longrightarrow A'\rightrightarrows A'\otimes_AA'
+\]
+là khớp; điều này cũng tương đương với việc cấu xạ $S'\longrightarrow S$ tương
+ứng giữa các phổ của $A,A'$ là một cấu xạ $\mathcal F$-hạ xuống, trong đó
+$\mathcal F$ là phạm trù phân thớ các bó tựa nhất quán phẳng. Cho $M'$ là một
+$A'$-môđun phẳng được trang bị một dữ liệu hạ xuống về $A$, nghĩa là một đẳng
+cấu
+\[
+  \varphi:M'\otimes_AA'\xrightarrow{\sim}A'\otimes_AM'
+\]
+của các $A'\otimes_AA'$-môđun, thỏa mãn các điều kiện (i) và (ii) của 1.c (ta
+để bạn đọc viết tường minh các điều kiện ấy bằng ngôn ngữ môđun). Dữ liệu này
+có hữu hiệu hay không (đối với phạm trù phân thớ các bó tựa nhất quán phẳng)?
+Cho $M$ là tập con của $M'$ gồm những $x'\in M'$ sao cho
+\[
+  \varphi(x'\otimes_A1_{A'})=1_{A'}\otimes_Ax',
+\]
+đó là một $A$-môđun con của $M'$. Phép nhúng chính tắc
+$M\longrightarrow M'$ xác định một đồng cấu $A'$-môđun
+$M\otimes_AA'\longrightarrow M'$. Khi đó tính hữu hiệu của $\varphi$ có nghĩa
+là: $M$ là một $A$-môđun phẳng và đồng cấu trên là một đẳng cấu.
+
+\result{NHẬN XÉT}{} Trong các lập luận trên, ta không đặt giả thiết phẳng nào
+lên các cấu xạ của biểu đồ $(+)$; vì thế, để có một kỹ thuật hạ xuống, ta buộc
+phải đặt các giả thiết phẳng lên những đối tượng trên $S,S'$ đang xét. Trong
+§2, ta sẽ đặt giả thiết phẳng lên $\alpha:S'\longrightarrow S$, nhờ đó có được
+một kỹ thuật hạ xuống cho những đối tượng trên $S,S'$ không còn phải chịu bất
+kỳ điều kiện phẳng nào. Trong mọi trường hợp đều có một giả thiết phẳng tham
+gia. Đây là một trong những lý do chính khiến khái niệm tính phẳng quan trọng
+trong hình học đại số (vai trò này không thể lộ ra chừng nào người ta còn chỉ
+xét các trường cơ sở, bởi trên đó, quả thực, mọi thứ đều phẳng!).
+
+\src{308}
+\subsection*{3. Ứng dụng vào các cấu xạ étale}
+\addcontentsline{toc}{subsection}{3. Ứng dụng vào các cấu xạ étale}
+
+Cho $A$ là một vành địa phương và $B$ là một đại số địa phương trên $A$ mà
+iđêan cực đại của nó cảm sinh iđêan cực đại của $A$. Ta nói $B$ là
+\emph{étale} trên $A$ (thay cho ``không phân nhánh'', cách gọi được dùng ở nơi
+khác) nếu nó thỏa mãn các điều kiện sau:
+\begin{enumerate}
+\item[(i)] $B$ phẳng trên $A$;
+\item[(ii)] $B/\mathfrak mB$ là một mở rộng hữu hạn khả phân của
+$A/\mathfrak m=k$ (trong đó $\mathfrak m$ ký hiệu iđêan cực đại của $A$).
+\end{enumerate}
+Khi $A$ và $B$ là Noether và $k$ đóng đại số, điều này có nghĩa là đồng cấu
+$\widehat A\longrightarrow\widehat B$ giữa các vành đầy đủ hóa, mở rộng
+$A\longrightarrow B$, là một đẳng cấu. Một cấu xạ thuộc kiểu hữu hạn
+$f:T\longrightarrow S$ được gọi là \emph{étale tại $x\in T$}, hay cũng nói
+$T$ \emph{étale trên $S$ tại $x$}, nếu $\mathcal O_x$ étale trên
+$\mathcal O_{f(x)}$; còn $f$ được gọi là \emph{étale}, hay $f$ được gọi là một
+\emph{cấu xạ étale}, hay $T$ được gọi là \emph{étale trên $S$}, nếu $f$ étale tại mọi
+$x\in T$. Hơn nữa, lưu ý rằng nếu $S$ là Noether địa phương, thì tập các điểm của
+$T$ tại đó $f$ étale là một tập mở; việc dùng ``định lý chính'' của Zariski cho
+phép mô tả chính xác cấu trúc của $T/S$ trong một lân cận của một điểm như thế
+(bằng một phương trình thuộc kiểu quen thuộc).
+
+Khi $S$ là một lược đồ thuộc kiểu hữu hạn trên trường các số phức, nó tương ứng
+với một không gian giải tích $\overline S$ theo nghĩa của Serre [5], ngoại trừ
+việc $\overline S$ có thể chứa các phần tử lũy linh trong bó cấu trúc của nó;
+điều này không làm thay đổi gì cốt yếu trong [5]. Khi đó dễ thấy $f$ étale khi
+và chỉ khi $\overline f:\overline T\longrightarrow\overline S$ étale, nghĩa là
+mọi điểm của $\overline T$ có một lân cận mà trên đó $\overline f$ cảm sinh một
+đẳng cấu lên một tập mở của $\overline S$. Đặc biệt, với mỗi \emph{phủ étale}
+$T$ của $S$ (nghĩa là một cấu xạ hữu hạn étale $f:T\longrightarrow S$), ta có
+một phủ étale $\overline T$ của $\overline S$, và phủ này liên thông khi và chỉ
+khi $T$ liên thông [5]. Cũng dễ thấy rằng, nếu $T,T'$ là hai lược đồ
+étale trên $S$, thì ánh xạ tự nhiên
+\[
+  \operatorname{Hom}_S(T,T')\longrightarrow
+  \operatorname{Hom}_{\overline S}(\overline T,\overline{T'})
+\]
+là song ánh; nghĩa là hàm tử $T\longmapsto\overline T$ từ phạm trù các lược đồ
+étale trên $S$ đến phạm trù các không gian giải tích étale trên $\overline S$
+là ``đầy đủ và trung thành'', nên xác định một tương đương giữa phạm trù thứ
+nhất và một phạm trù con của phạm trù thứ hai. Một định lý của
+Grauert--Remmert [2] suy ra rằng, nếu $S$ chuẩn tắc, ta thu được một tương đương
+giữa phạm trù các \emph{phủ étale} của $S$ và phạm trù các phủ étale (hữu hạn)
+của $\overline S$; nghĩa là mọi phủ étale của $\overline S$ đều
+$\overline S$-đẳng cấu với một $\overline T$, trong đó $T$ là một phủ étale của
+$S$. Ta chứng minh rằng \emph{định lý Grauert--Remmert vẫn đúng mà không cần
+giả thiết $S$ chuẩn tắc}. Trước hết, cho $S'\longrightarrow S$ là một toàn cấu
+nghiêm ngặt hữu hạn; giả sử
+
+\src{309}
+định lý đã được chứng minh cho $S'$, và ta chứng minh nó đúng cho $S$. Thật vậy,
+cho $\mathfrak T$ là một phủ étale của $\overline S$, và xét nghịch ảnh
+$\mathfrak T'$ của nó trên $\overline{S'}$. Nghịch ảnh này tương ứng với một bó
+giải tích coherent các đại số $\mathcal A'$ trên $\overline{S'}$, là nghịch ảnh
+của bó các đại số $\mathcal A$ trên $\overline S$ xác định $\mathfrak T$. Theo giả
+thiết, trên $\overline{S'}$, $\mathfrak T'$ đến từ một phủ étale $T'$ của $S'$,
+nghĩa là $\mathcal A'$ đến từ một bó coherent các đại số $A'$ trên $S'$. Mặt
+khác, $\mathcal A'$ được trang bị một dữ liệu hạ xuống chính tắc đối với
+$\overline{S'}\longrightarrow\overline S$, nghĩa là một đẳng cấu giữa hai
+nghịch ảnh của nó trên
+\[
+  \overline{S'}\times_{\overline S}\overline{S'}
+  =\overline{(S'\times_SS')},
+\]
+(thỏa mãn các điều kiện (i), (ii)); theo những điều đã nói, đẳng cấu này đến từ
+một đẳng cấu giữa các bó đại số tương ứng, nghĩa là từ một dữ liệu hạ xuống
+trên $A'$ đối với $S'\longrightarrow S$. Dễ kiểm tra dữ liệu sau là hữu hiệu
+(vì dữ liệu trên $\mathcal A'$ là hữu hiệu, và tính hữu hiệu của một dữ liệu hạ
+xuống, như đã được giải thích tường minh ở mục trước, có thể được nhận biết địa
+phương trên các \emph{đầy đủ hóa} của những môđun tham gia). Do đó ta thu
+được một bó coherent các đại số $A$ trên $S$, xác định một phủ $T$ của $S$;
+đây chính là phủ cần tìm. Kết quả trên hiển nhiên vẫn đúng nếu
+$S'\longrightarrow S$ chỉ là hợp thành của một số hữu hạn các toàn cấu nghiêm
+ngặt hữu hạn, nghĩa là một toàn cấu hữu hạn bất kỳ (theo kết quả phân tích thành
+nhân tử được nêu trong mục 2). Suy ra định lý Grauert--Remmert vẫn đúng khi $S$
+là một lược đồ \emph{rút gọn}, nghĩa là $\mathcal O_S$ không có phần tử lũy
+linh, như ta thấy bằng cách đưa vào phép chuẩn hóa $S'$ của nó. Từ đó dễ dàng
+chuyển sang trường hợp tổng quát.
+
+Một chứng minh hoàn toàn tương tự, lại dùng kết quả phân tích thành nhân tử cho
+các toàn cấu nghiêm ngặt hữu hạn và bản chất ``hình thức'' của tính hữu hiệu của
+các dữ liệu hạ xuống, cho phép chứng minh kết quả sau: cho $S$ là một tiền lược
+đồ Noether địa phương và $S'\longrightarrow S$ là một cấu xạ \emph{hữu hạn,
+toàn ánh và thuần bất khả phân} (hay, tương đương, một cấu xạ thuộc kiểu hữu hạn
+sao cho với mọi $T$ trên $S$, cấu xạ
+$T'=S'\times_ST\longrightarrow T$ là một đồng phôi; điều này cũng được diễn đạt
+bằng cách nói rằng $S'\longrightarrow S$ là một \emph{đồng phôi phổ dụng}). Với
+mỗi $T$ étale trên $S$, xét nghịch ảnh $T'=T\times_SS'$ của nó, là étale trên
+$S'$. Khi đó hàm tử $T\longmapsto T'$ là một \emph{tương đương phạm trù từ
+phạm trù các tiền lược đồ $T$ étale trên $S$ đến phạm trù các tiền lược đồ $T'$
+étale trên $S'$}. (Ta dùng tính song ánh của
+\[
+  \operatorname{Hom}_S(T_1,T_2)\longrightarrow
+  \operatorname{Hom}_{S'}(T'_1,T'_2)
+\]
+đối với hai tiền lược đồ $T_1,T_2$ étale trên $S$, một sự kiện dễ kiểm tra trực
+tiếp, và sự kiện rằng định lý vừa nêu đúng nếu
+$S'=(S,\mathcal O_S/\mathcal J)$,
+
+\src{310}
+trong đó $\mathcal J$ là một bó coherent các iđêan lũy linh của $\mathcal O_S$
+([4], Bổ đề 6)). Hơn nữa, lưu ý rằng ở đây ta không giả sử các $T$ đang xét hữu
+hạn trên $S$. Đặc biệt, kết quả này suy ra cấu xạ $S'\longrightarrow S$ cảm
+sinh một đẳng cấu từ nhóm cơ bản $[\,]$ của $S'$ lên nhóm cơ bản của $S$
+(``\emph{tính bất biến tôpô của nhóm cơ bản của một tiền lược đồ}'').
+
+\subsection*{4. Quan hệ với đối đồng điều bậc 1}
+\addcontentsline{toc}{subsection}{4. Quan hệ với đối đồng điều bậc 1}
+
+\medskip\noindent
+a. Cho $\mathcal C$ là một phạm trù trong đó tích của hai đối tượng bất kỳ luôn
+tồn tại, và cho $T\in\mathcal C$. Với mỗi tập hữu hạn
+$I\ne\varnothing$, ta có thể xét $T^I$; khi $I$ biến thiên, ta thu được một hàm
+tử hiệp biến từ phạm trù các tập hữu hạn khác rỗng đến $\mathcal C$, nghĩa là
+một cái có thể gọi là \emph{đối tượng đơn hình} của $\mathcal C$, ký hiệu
+$K_T$. Đối tượng này phụ thuộc hiệp biến vào $T$; hơn nữa, nếu $u,v$ là hai
+cấu xạ $T\longrightarrow T'$, thì các cấu xạ tương ứng
+$K_T\longrightarrow K_{T'}$ đồng luân với nhau. Ta nói $T$
+\emph{trội hơn} $T'$ nếu $\operatorname{Hom}(T,T')\ne\varnothing$; đây là một
+quan hệ tiền thứ tự lọc tăng trên $\mathcal C$. Từ những điều trên suy ra rằng,
+nếu $T$ trội hơn $T'$, thì có một lớp chính tắc (sai khác một đồng luân) các
+đồng cấu giữa những đối tượng đơn hình $K_T\longrightarrow K_{T'}$; đặc biệt,
+nếu $K_T$ và $K_{T'}$ sao cho mỗi đối tượng trội hơn đối tượng kia, thì $K_T$
+và $K_{T'}$ tương đương đồng luân. Bây giờ cho $F$ là một hàm tử (phản biến,
+để cố định ý tưởng) từ $\mathcal C$ đến một phạm trù Abel $\mathcal C'$; khi đó
+\[
+  C^*(T,F)=F(K_T)
+\]
+là một đối tượng đối đơn hình của $\mathcal C'$, và do đó xác định theo cách
+quen thuộc một phức (đối dây chuyền) trong $\mathcal C'$, mà ta có thể lấy đối
+đồng điều:
+\[
+  H^*(T,F)=H^*(C^*(T,F))=H^*(F(K_T))
+\]
+(Ta có thể đặt một $\mathcal C$ làm chỉ số dưới của $H^*$ nếu có khả năng nhầm
+lẫn.) Đây là một hàm tử đối đồng điều theo $F$; tính hiệp biến hoặc phản biến
+của nó khi $T$ biến thiên suy ra từ những điều đã nói về $K_T$. Chính xác hơn,
+với $F$ cố định và $T$ biến thiên trong $\mathcal C$ (được tiền thứ tự hóa bởi
+quan hệ trội hơn), các $H^*(T,F)$ lập thành một hệ quy nạp các đối tượng phân
+bậc của $\mathcal C'$; đặc biệt, nếu $T$ và $T'$ sao cho mỗi đối tượng trội hơn
+đối tượng kia, thì $H^*(T,F)$ và $H^*(T',F)$ đẳng cấu chính tắc.
+
+Giả sử các tích thớ tồn tại trong $\mathcal C$. Với $S\in\mathcal C$ cố định,
+ta có thể áp dụng những điều trên cho phạm trù $\mathcal C_S$ gồm các đối tượng
+của $\mathcal C$ trên $S$; ta sẽ viết $C^*(T/S,F)$ và $H^*(T/S,F)$ thay cho
+$C^*(T,F)$ và $H^*(T,F)$ khi muốn nói rõ rằng ta đang làm việc trong phạm trù
+$\mathcal C_S$; như vậy,
+
+\src{311}
+$C^*(T/S,F)$ là một phức đối dây chuyền trong $\mathcal C'$ mà số hạng ở bậc
+$n$ bằng
+\[
+  F(T\times_ST\times_S\cdots\times_ST)
+\]
+(trong đó biểu thức trong ngoặc có $n+1$ thừa số).
+
+Như thường lệ, lưu ý rằng ta có thể định nghĩa $H^0(T/S,F)$ mà không giả sử
+phạm trù $\mathcal C'$ là Abel: đó là hạt nhân (Định nghĩa 2.1), nếu tồn tại,
+của cặp cấu xạ $F(p_i)$ ($i=1,2$)
+\[
+  F(T)\rightrightarrows F(T\times_ST)
+\]
+tương ứng với hai phép chiếu
+$p_1,p_2:T\times_ST\rightrightarrows T$. Đặc biệt, ta có một cấu xạ tự nhiên
+(gọi là \emph{cấu xạ tăng cường})
+\[
+  F(S)\longrightarrow H^0(T/S,F)
+\]
+là một đẳng cấu trong các trường hợp thuận lợi (đặc biệt, nếu
+$T\longrightarrow S$ là một toàn cấu nghiêm ngặt và $F$ “khớp trái”).
+Tương tự, khi $F$ nhận giá trị trong phạm trù các nhóm trong một phạm trù
+$\mathcal C''$, ta cũng có thể định nghĩa $H^1(T/S,F)$. Khi $\mathcal C''$ là
+phạm trù các tập hợp (nghĩa là $F$ nhận giá trị trong phạm trù các nhóm thông
+thường, không nhất thiết giao hoán), $H^1(T/S,F)$ là tập thương của tập con
+$Z^1(T/S,F)$ của $C^1(T/S,F)=F(T\times_ST)$ gồm các phần tử $g$ thỏa mãn
+\[
+  F(p_{31})(g)=F(p_{32})(g)\,F(p_{21})(g)
+\]
+theo nhóm toán tử $F(T)$, tác động lên $C^1(T/S,F)$ và, đặc biệt, lên tập con
+$Z^1(T/S,F)$ bởi
+\[
+  \rho(g')\cdot g=F(p_2)(g')\,g\,F(p_1)(g')^{-1}.
+\]
+
+\medskip\noindent
+b. Chẳng hạn, cho $\mathcal F$ là một phạm trù phân thớ trên cơ sở
+$\mathcal C$. Cho $\xi,\eta\in\mathcal F_S$ và, với mỗi $S'$ trên $S$, đặt
+\[
+  F_{\xi,\eta}(S')=
+  \operatorname{Hom}(\xi\times_SS',\eta\times_SS').
+\]
+Như vậy $F_{\xi,\eta}$ là một hàm tử phản biến từ $\mathcal C_S$ đến phạm trù
+các tập hợp. Với ký hiệu đó, \emph{nói rằng cấu xạ tăng cường}
+\[
+  F_{\xi,\eta}(S)\longrightarrow H^0(S'/S,F_{\xi,\eta})
+\]
+\emph{là một đẳng cấu với mọi cặp phần tử
+$\xi,\eta\in\mathcal F_S$ có nghĩa là
+$\alpha:S'\longrightarrow S$ là một cấu xạ $\mathcal F$-hạ xuống}
+(Định nghĩa 1.7).
+
+\medskip\noindent
+c. Tương tự, với $\xi\in\mathcal F_S$ và mỗi đối tượng $S'$ của $\mathcal C$
+trên $S$, đặt
+\[
+  G_\xi(S')=\operatorname{Aut}(\xi\times_SS') ;
+\]
+như vậy ta đã định nghĩa một hàm tử phản biến $G_\xi$ từ $\mathcal C_S$ đến
+phạm trù các
+
+\src{312}
+nhóm. Khi đó ta thấy $Z^1(S'/S,G_\xi)$ \emph{được đồng nhất chính tắc với tập
+các dữ liệu hạ xuống trên $\xi'=\xi\times_SS'$ đối với
+$S'\longrightarrow S$} (Định nghĩa 1.6), còn $H^1(S'/S,G_\xi)$ \emph{được
+đồng nhất với tập các lớp, sai khác một đẳng cấu, của những đối tượng trong
+$\mathcal F_{S'}$ được trang bị một dữ liệu hạ xuống đối với
+$\alpha:S'\longrightarrow S$ và, xét như các đối tượng của
+$\mathcal F_{S'}$, đẳng cấu với $\xi'=\xi\times_SS'$}. Do đó, nếu
+$\alpha:S'\longrightarrow S$ là một cấu xạ $\mathcal F$-hạ xuống (xem (b)),
+thì $H^1(S'/S,G_\xi)$ \emph{chứa như một tập con tập các lớp, sai khác một
+đẳng cấu, của những đối tượng $\eta$ trong $\mathcal F_S$ sao cho
+$\eta\times_SS'$ đẳng cấu trong $\mathcal F_{S'}$ với $\xi\times_SS'$; và phép
+nhúng này là ánh xạ đồng nhất khi và chỉ khi mọi dữ liệu hạ xuống trên
+$\xi'=\xi\times_SS'$ đối với $\alpha:S'\longrightarrow S$ đều hữu hiệu}.
+(Điều này đặc biệt đúng nếu $\alpha:S'\longrightarrow S$ là một cấu xạ
+$\mathcal F$-hạ xuống nghiêm ngặt.)
+
+\result{NHẬN XÉT}{} Các phức đối dây chuyền dạng $C^*(T/S,F)$ chứa, như những
+trường hợp riêng, phần lớn các phức chuẩn quen thuộc (đối đồng điều Čech, đối
+đồng điều nhóm, v.v.), và giữ một vai trò quan trọng trong hình học đại số,
+đặc biệt trong “đối đồng điều Weil” của các tiền lược đồ.
+
+\medskip\noindent
+d. \result{VÍ DỤ}{1} Cho $S'$ là một đối tượng trên $S\in\mathcal C$, và cho
+$\Gamma$ là một nhóm tự đẳng cấu của $S'$ sao cho $S'$ “là chính trên $S$
+theo nghĩa hình thức, với nhóm $\Gamma$”, nghĩa là cấu xạ tự nhiên
+\[
+  \Gamma\times S'\longrightarrow S'\times_SS',
+\]
+trong đó $\Gamma\times S'$ chỉ tổng trực tiếp của $\Gamma$ bản sao của $S'$,
+là một đẳng cấu. (Ta giả sử các tổng trực tiếp xuất hiện
+ở đây tồn tại trong $\mathcal C$.) Cho $F$ là một hàm tử phản biến từ
+$\mathcal C$ đến phạm trù các nhóm Abel. Khi đó $C^*(S'/S,F)$ đẳng cấu chính
+tắc với nhóm đơn hình của các đối dây chuyền thuần nhất chuẩn
+$C^*(\Gamma,F(S'))$; do đó $H^*(S'/S,F)$ đẳng cấu chính tắc với
+$H^*(\Gamma,F(S'))$.
+
+\medskip\noindent
+e. \result{VÍ DỤ}{2} Cho $\mathcal C$ là phạm trù các tiền lược đồ. Ký hiệu
+$G_a$ (“nhóm cộng”) là hàm tử phản biến từ $\mathcal C$ đến phạm trù các
+nhóm Abel, được định nghĩa bởi
+\[
+  G_a(X)=H^0(X,\mathcal O_X).
+\]
+Tương tự, ta định nghĩa hàm tử $G_m$ (“nhóm nhân”) bởi
+\[
+  G_m(X)=H^0(X,\mathcal O_X)^*
+\]
+(nhóm các phần tử khả nghịch của vành $H^0(X,\mathcal O_X)$), và tổng quát hơn,
+hàm tử $\operatorname{Gl}(n)$ (“nhóm tuyến tính cấp $n$”) bởi
+
+\src{313}
+\[
+  \operatorname{Gl}(n)(X)=
+  \operatorname{Gl}\bigl(n,H^0(X,\mathcal O_X)\bigr),
+\]
+là một hàm tử từ $\mathcal C$ đến phạm trù các nhóm (không nhất thiết giao
+hoán nếu $n>1$; với $n=1$ ta thu lại $G_m$). Hơn nữa,
+$\operatorname{Gl}(n)$ có thể được diễn giải như một hàm tử các tự đẳng cấu (xem
+(c)) bằng cách xét phạm trù phân thớ $\mathcal F$ trên cơ sở $\mathcal C$ sao
+cho, với $X\in\mathcal C$, $\mathcal F_X$ là phạm trù các bó tự do địa phương
+trên $X$: quả vậy,
+\[
+  \operatorname{Gl}(n)(X)=
+  \operatorname{Aut}_{\mathcal F_X}(\mathcal O_X^n).
+\]
+Theo (b), suy ra rằng nếu $\alpha:S'\longrightarrow S$ là một cấu xạ
+$\mathcal F$-hạ xuống (xem đoạn 2.c), thì
+$H^1(S'/S,\operatorname{Gl}(n))$ chứa tập các lớp, sai khác một đẳng cấu, của
+những bó tự do địa phương trên $S$ mà nghịch ảnh trên $S'$ đẳng cấu với
+$\mathcal O_{S'}^n$; và phép nhúng này là một đẳng thức khi và chỉ khi mọi dữ
+liệu hạ xuống trên $\mathcal O_{S'}^n$ (đối với
+$\alpha:S'\longrightarrow S$) đều hữu hiệu. Khi $S$ là phổ của một vành địa
+phương, điều đó có nghĩa là
+$H^1(S'/S,\operatorname{Gl}(n))=(e)$, vì mọi bó tự do địa phương trên $S$ khi
+ấy đều tầm thường.
+
+Lưu ý tính tương đương của các điều kiện sau đây đối với một cấu xạ
+$\alpha:S'\longrightarrow S$:
+\begin{enumerate}
+\item[(i)] đồng cấu tăng cường
+\[
+  H^0(S,\mathcal O_S)=G_a(S)\longrightarrow H^0(S'/S,G_a)
+\]
+là một đẳng cấu;
+\item[(ii)] $S'\longrightarrow S$ là một cấu xạ $\mathcal F$-hạ xuống
+(trong đó $\mathcal F$ là phạm trù phân thớ trên cơ sở $\mathcal C$ đã xét ở
+trên).
+\end{enumerate}
+Nếu $S'\longrightarrow S$ là hữu hạn, các điều kiện này còn tương đương với:
+\begin{enumerate}
+\item[(iii)] $S'\longrightarrow S$ là một toàn cấu nghiêm ngặt
+(xem đoạn 2.c).
+\end{enumerate}
+
+Bây giờ giả sử $S=\operatorname{Spec}(A)$ và
+$S'=\operatorname{Spec}(A')$. Khi đó
+\[
+  C^n(S'/S,G_a)=C^n(A'/A,G_a)=\bigotimes_A^{n+1}A',
+\]
+trong đó toán tử đối biên
+$C^n(A'/A,G_a)\longrightarrow C^{n+1}(A'/A,G_a)$ là tổng luân phiên của các
+toán tử mặt
+\[
+  \partial_i(x_0\otimes x_1\otimes\cdots\otimes x_n)
+  =x_0\otimes\cdots\otimes x_{i-1}\otimes1_{A'}\otimes
+   x_i\otimes\cdots\otimes x_n.
+\]
+Tương tự,
+\[
+  C^n(S'/S,G_m)=C^n(A'/A,G_m)
+  \simeq\left(\bigotimes_A^{n+1}A'\right)^*,
+\]
+các phép toán đơn hình trong $C^*(A'/A,G_m)$ được cảm sinh bởi những phép toán
+trong $C^*(S'/S,G_a)$. Các phép toán đơn hình trong
+$C^*(A'/A,\operatorname{Gl}(n))$ cũng được viết tường minh theo cách ấy.
+\emph{Trong mọi trường hợp mà báo cáo viên biết, ta có}
+\[
+  H^i(A'/A,G_a)=0\qquad\text{với $i>0$},
+\]
+\emph{và nếu $A$ là địa phương, ta có}
+\[
+  H^1(A'/A,G_m)=0
+  \quad\text{và tổng quát hơn}\quad
+  H^1(A'/A,\operatorname{Gl}(n))=(e)
+\]
+(khi $S'\longrightarrow S$ là một cấu xạ $\mathcal F$-hạ xuống, nghĩa là biểu
+đồ
+$A\longrightarrow A'\rightrightarrows A'\otimes_AA'$ khớp; so sánh với đoạn
+2.c). Lưu ý rằng \emph{“định lý 90” của Hilbert chẳng qua là hệ thức}
+
+\src{314}
+\[
+  H^1(S'/S,G_m)=0
+\]
+\emph{khi $A$ là một trường và $A'$ là một mở rộng Galois hữu hạn của trường ấy
+(xem Ví dụ 1), và còn có thể được phát biểu rằng, trong trường hợp đang xét,
+$S'\longrightarrow S$ là một cấu xạ hạ xuống nghiêm ngặt đối với phạm trù phân
+thớ các bó tự do địa phương hạng 1.} Chính dưới dạng cuối này mà định lý Hilbert
+nên được tổng quát hóa, bằng cách thay đổi cả các giả thiết về cấu xạ
+$S'\longrightarrow S$ lẫn các giả thiết về những bó tựa nhất quán đang xét.
+
+Cuối cùng, lưu ý tính tương đương của các tính chất sau khi $A$ là một vành
+Artin địa phương có iđêan cực đại $\mathfrak m$ và $A'$ là một $A$-đại số
+(trong đó, với mỗi số nguyên $k>0$, $A_k$ (tương ứng $A'_k$) ký hiệu vành
+$A/\mathfrak m^{k+1}$ (tương ứng $A'/\mathfrak m^{k+1}A'$)):
+\begin{enumerate}
+\item[(i)] $H^1(A'_k/A_k,G_a)=0$ với mọi $k$.
+\item[(ii)] $H^1(A'_k/A_k,G_m)=0$ với mọi $k$.
+\item[(iii)] $H^1(A'_k/A_k,\operatorname{Gl}(n))=(e)$ với mọi $k$ và mọi
+$n$.
+\end{enumerate}
+Nếu $S'\longrightarrow S$ là một toàn cấu nghiêm ngặt, thì các điều kiện trên
+thậm chí còn kéo theo rằng đó là một cấu xạ hạ xuống nghiêm ngặt đối với các
+môđun tự do trên $A'$ (thuộc kiểu hữu hạn hoặc không).
+
+\result{NHẬN XÉT}{} Định nghĩa các nhóm $H^i(S'/S,G_m)$, khi $S,S'$ là phổ của
+các trường $A,A'$, là do Amitsur. Nhóm $H^2(S'/S,G_m)$ đặc biệt đáng quan tâm
+như một biến thể “toàn cục” của nhóm Brauer; về biến thể này có thể tham khảo
+[1], Chương VII.
+
+\fsection{B}{Hạ xuống theo các cấu xạ phẳng trung thành}
+
+\subsection*{1. Phát biểu các định lý hạ xuống}
+\addcontentsline{toc}{subsection}{1. Phát biểu các định lý hạ xuống}
+
+\result{ĐỊNH NGHĨA}{1.1} Một cấu xạ
+$\alpha:S'\longrightarrow S$ của các tiền lược đồ được gọi là \emph{phẳng} nếu,
+với mọi $x'\in S'$, $\mathcal O_{x'}$ là một môđun phẳng trên vành
+$\mathcal O_{\alpha(x')}$ (nghĩa là
+$\mathcal O_{x'}\otimes_{\mathcal O_{\alpha(x')}}M$ là một hàm tử khớp theo
+$\mathcal O_{\alpha(x')}$-môđun $M$). Một cấu xạ được gọi là \emph{phẳng trung
+thành} nếu nó phẳng và toàn ánh.
+
+Chẳng hạn, nếu $S=\operatorname{Spec}(A)$ và
+$S'=\operatorname{Spec}(A')$, thì $S'$ phẳng trên $S$ khi và chỉ khi $A'$ là
+một $A$-môđun phẳng, và $S'$ phẳng trung thành trên $S$ khi và chỉ khi $A'$ là
+một $A$-môđun phẳng trung thành (nghĩa là hàm tử $A'\otimes_A M$ theo
+$A$-môđun $M$ là khớp và trung thành); theo thuật ngữ của Serre [5], điều này
+cũng có nghĩa là cặp $(A,A')$ phẳng. Nếu $S'$ phẳng trung thành trên $S$, thì
+hàm tử ảnh ngược trên các bó tựa nhất quán trên $S$ là khớp và trung thành;
+nói cách khác, để một dãy các đồng cấu của các bó
+
+\src{315}
+tựa nhất quán trên $S$ là khớp, điều kiện cần và đủ là ảnh ngược của nó trên
+$S'$ là khớp (đặc biệt, để một đồng cấu của các bó tựa nhất quán trên $S$ là
+đơn cấu, tương ứng là toàn cấu, tương ứng là đẳng cấu, điều kiện cần và đủ là
+ảnh ngược của nó trên $S'$ có tính chất ấy). Tính chất này vẫn đúng khi hạn chế
+trên một phần mở tùy ý của $S$ và, dưới dạng đó, nó đặc trưng các cấu xạ phẳng
+trung thành.
+
+\result{ĐỊNH NGHĨA}{1.2} Một cấu xạ $\alpha:S'\longrightarrow S$ được gọi là
+\emph{quasi-compact} nếu ảnh ngược của mọi phần mở quasi-compact $U$ của $S$
+là quasi-compact (nghĩa là hợp hữu hạn của các phần mở affine).
+
+Hiển nhiên, chỉ cần kiểm tra tính chất này đối với các phần mở affine của $S$.
+Chẳng hạn, một cấu xạ affine (nghĩa là cấu xạ sao cho ảnh ngược của một phần mở
+affine là affine) là quasi-compact.
+
+Lớp các cấu xạ phẳng, tương ứng phẳng trung thành, tương ứng quasi-compact, ổn
+định qua phép hợp thành và qua ``đổi cơ sở'', và dĩ nhiên chứa các đẳng cấu.
+
+\result{ĐỊNH LÝ}{1} Cho $\alpha:S'\longrightarrow S$ là một cấu xạ phẳng trung
+thành và quasi-compact của các tiền lược đồ. Khi đó $\alpha$ là một \emph{cấu
+xạ hạ xuống nghiêm ngặt} (A, Định nghĩa 1.7) đối với phạm trù phân thớ
+$\mathcal F$ của các bó tựa nhất quán (A, Mục 1, Ví dụ 2).
+
+Phát biểu này có hai ý:
+\begin{enumerate}
+\item[(i)] Nếu $F$ và $G$ là hai bó tựa nhất quán trên $S$, còn $F'$ và $G'$
+là các ảnh ngược của chúng trên $S'$, thì đồng cấu tự nhiên
+\[
+  \operatorname{Hom}(F,G)\longrightarrow\operatorname{Hom}(F',G')
+\]
+là một song ánh từ vế thứ nhất lên nhóm con của vế thứ hai gồm các đồng cấu
+$F'\longrightarrow G'$ tương thích với các dữ liệu hạ xuống chính tắc trên các
+bó ấy, nghĩa là những đồng cấu mà ảnh ngược theo hai phép chiếu từ
+$S''=S'\times_SS'$ lên $S'$ cho cùng một đồng cấu
+$F''\longrightarrow G''$.
+\item[(ii)] Mọi bó tựa nhất quán $F'$ trên $S'$, được trang bị một dữ liệu hạ
+xuống đối với cấu xạ $\alpha:S'\longrightarrow S$ (A, Định nghĩa 1.6), đều
+đẳng cấu (cùng với dữ liệu đó) với ảnh ngược của một bó tựa nhất quán $F$ trên
+$S$.
+\end{enumerate}
+Lấy $F=\mathcal O_S$ trong (i), ta được:
+
+\result{HỆ QUẢ}{1} Cho $G$ là một bó tựa nhất quán trên $S$; gọi $G'$ và $G''$
+là các ảnh ngược của nó trên $S'$ và trên $S''=S'\times_SS'$, và gọi $p_1,p_2$
+là hai phép chiếu từ $S''$ lên $S'$. Khi đó biểu đồ các ánh xạ tập hợp sau
+
+\src{316}
+\[
+  \Gamma(G)\xrightarrow{\alpha^*}\Gamma(G')
+  \underset{p_2^*}{\overset{p_1^*}{\rightrightarrows}}\Gamma(G'')
+\]
+là khớp (A, Định nghĩa 1.(a)).
+
+Mặt khác, kết hợp (i), (ii) và Định nghĩa 1.1 ta được
+
+\result{HỆ QUẢ}{2} Cho $G$ như trong Hệ quả 1. Khi đó có một tương ứng song ánh
+giữa các bó con tựa nhất quán của $G$ và các bó con tựa nhất quán của $G'$ mà
+ảnh ngược của chúng trên $S''$ theo hai phép chiếu $p_1,p_2$ cho cùng một bó
+con của $G''$.
+
+Dĩ nhiên có một phát biểu tương đương bằng ngôn ngữ các bó thương. Như đã thấy
+ở A, Mục 4, (e), Định lý 1 phải được xem là một sự khái quát hóa ``Định lý 90''
+của Hilbert, và nó bao hàm như những trường hợp riêng nhiều cách phát biểu bằng
+đối đồng điều bậc 1. Để chứng minh, ta dễ dàng quy về trường hợp
+$S=\operatorname{Spec}(A)$, $S'=\operatorname{Spec}(A')$; và đối với (i), ta
+dễ dàng quy về việc chứng minh Hệ quả 1, nghĩa là tính khớp của biểu đồ
+\[
+  M=A\otimes_A M\longrightarrow A'\otimes_A M
+  \rightrightarrows A'\otimes_AA'\otimes_A M
+\]
+đối với mọi $A$-môđun $M$, điều này suy ra từ bổ đề tổng quát hơn sau đây:
+
+\result{BỔ ĐỀ}{1.1} Cho $A'$ là một $A$-đại số phẳng trung thành. Khi đó, với
+mọi $A$-môđun $M$, phức được tăng cường bởi $M$
+$C^*(A'/A,G_a)\otimes_A M$ (xem A, Mục 4, (e)) là một \emph{phân giải} của
+$M$.
+
+Chỉ cần chứng minh rằng phức tăng cường thu được từ phức trên bằng phép đổi cơ
+sở từ $A$ sang $A'$ thỏa mãn các kết luận tương tự. Điều này dẫn đến việc kiểm
+tra phát biểu sau khi thay $A$ bởi $A'$ và $A'$ bởi $A'\otimes_AA'$, do đó quy
+ta về trường hợp có một đồng cấu $A$-đại số $A'\longrightarrow A$ (hay, bằng
+ngôn ngữ hình học, trường hợp $S'$ trên $S$ có một tiết diện). Trong trường hợp
+ấy, khẳng định suy ra từ các sự kiện tổng quát ở A, Mục 4, (a). Nhân tiện, ta
+nêu hệ quả sau, khái quát hóa một phát biểu quen thuộc trong đối đồng điều
+Galois (so sánh A, Mục 4, (e)):
+
+\result{HỆ QUẢ}{} Nếu $A'$ phẳng trung thành trên $A$, thì
+$H^0(A'/A,G_a)=A$ và
+\[
+  H^i(A'/A,G_a)=0\qquad\text{với $i\geq1$}.
+\]
+
+Để chứng minh phần (ii) của Định lý 1, ta tiến hành như đối với (i), quy về
+trường hợp $S'$ trên $S$ có một tiết diện; khi đó khẳng định suy ra từ (i)
+(xem A, Mục 1, (c)).
+
+Hiển nhiên, có thể biến đổi tùy ý Định lý 1 và các hệ quả của nó bằng cách đưa
+thêm nhiều cấu trúc khác nhau lên các bó (hoặc các hệ bó) tựa nhất quán đang
+xét. Chẳng hạn, việc cho trên $S$ một bó tựa nhất quán các đại số giao hoán
+
+\src{317}
+``tương đương'' với việc cho trên $S'$ một bó cùng loại được trang bị dữ liệu
+hạ xuống đối với $\alpha:S'\longrightarrow S$. Xét đến sự tương ứng hàm tử
+giữa các bó tựa nhất quán như vậy trên $S$ và các tiền lược đồ affine trên $S$,
+ta thu được khẳng định thứ hai của định lý sau:
+
+\result{ĐỊNH LÝ}{2} Cho $\alpha:S'\longrightarrow S$ như trong Định lý 1. Khi
+đó $\alpha$ là một \emph{cấu xạ hạ xuống} (nói chung không nghiêm ngặt)
+(A, Định nghĩa 2.4), và là một \emph{cấu xạ hạ xuống nghiêm ngặt} đối với phạm
+trù phân thớ gồm các lược đồ affine trên các tiền lược đồ (A, Định nghĩa 1.7).
+
+Khẳng định thứ nhất của định lý có nghĩa như sau: cho $X,Y$ là hai tiền lược đồ
+trên $S$; gọi $X',Y'$ là các ảnh ngược của chúng trên $S'$, và gọi $X'',Y''$
+là các ảnh ngược của chúng trên $S''=S'\times_SS'$. Khi đó biểu đồ các ánh xạ
+tự nhiên sau
+\[
+  \operatorname{Hom}_S(X,Y)\xrightarrow{\alpha^*}
+  \operatorname{Hom}_{S'}(X',Y')
+  \underset{p_2^*}{\overset{p_1^*}{\rightrightarrows}}
+  \operatorname{Hom}_{S''}(X'',Y'')
+\]
+là khớp; nghĩa là $\alpha^*$ là một song ánh từ
+$\operatorname{Hom}_S(X,Y)$ lên phần của $\operatorname{Hom}_{S'}(X',Y')$ gồm
+các đồng cấu tương thích với các dữ liệu hạ xuống chính tắc trên $X',Y'$ (nghĩa
+là những đồng cấu mà ảnh ngược theo hai phép chiếu từ $S''$ lên $S'$ bằng
+nhau). Điều này dễ dàng suy ra từ Định lý 1, Hệ quả 1, khi hạn chế $Y$ là affine
+trên $S$; trong trường hợp tổng quát, phải kết hợp Định lý 1 với kết quả sau:
+
+\result{BỔ ĐỀ}{1.2} Cho $\alpha:S'\longrightarrow S$ là một cấu xạ phẳng trung
+thành và quasi-compact. Khi đó $S$ đồng nhất với một \emph{không gian tôpô
+thương} của $S'$; nghĩa là mọi phần $U$ của $S$ sao cho $\alpha^{-1}(U)$ mở thì
+chính nó cũng mở.
+
+Để hoàn tất Định lý 2, cần cho các tiêu chuẩn về tính hữu hiệu của một dữ liệu
+hạ xuống trên một $S'$-tiền lược đồ $X'$ (khi không giả sử $X'$ affine trên
+$S'$). Trước hết, lưu ý rằng \emph{một dữ liệu hạ xuống như vậy không nhất
+thiết hữu hiệu}, ngay cả khi $S$ là phổ của một trường $k$, $S'$ là phổ của một
+mở rộng bậc hai $k'$ của trường ấy, và $X'$ là một lược đồ đại số proper chiều 2 trên
+$S'$ (như có thể thấy, theo Serre, bằng cách dùng mặt không xạ ảnh của Nagata).
+\emph{Để một dữ liệu hạ xuống trên $X'/S'$ đối với
+$\alpha:S'\longrightarrow S$ (phẳng trung thành và quasi-compact) là hữu hiệu,
+điều kiện cần và đủ là $X'$ là hợp của các phần mở $X'_i$, affine trên $S'$, và
+``ổn định'' dưới dữ liệu hạ xuống trên $X'$.} Điều này chắc chắn đúng (bất kể
+$X'/S'$ và dữ liệu hạ xuống trên $X'$ là gì) nếu cấu xạ
+$\alpha:S'\longrightarrow S$ là \emph{radicial} (nghĩa là đơn ánh và các mở
+rộng trường thặng dư
+
+\src{318}
+cũng radicial). Cũng có thể chứng minh rằng điều ấy vẫn đúng nếu
+$\alpha:S'\longrightarrow S$ là \emph{hữu hạn} và mọi phần hữu hạn của $X'$,
+nằm trong một thớ của $X'$ trên $S$, đều nằm trong một phần mở của $X'$ affine
+trên $S$ (đó là \emph{tiêu chuẩn Weil}). Đặc biệt, điều này đúng nếu $X'/S'$ là
+quasi-xạ ảnh, và trong trường hợp ấy có thể chứng minh tiền lược đồ ``hạ xuống''
+$X/S$ cũng quasi-xạ ảnh (và xạ ảnh nếu $X'/S'$ xạ ảnh). Tóm lại:
+
+\result{ĐỊNH LÝ}{3} Cho $\alpha:S'\longrightarrow S$ là một cấu xạ phẳng trung
+thành và quasi-compact của các tiền lược đồ. Nếu $\alpha$ là \emph{radicial},
+thì nó là một \emph{cấu xạ hạ xuống nghiêm ngặt}. Nếu $\alpha$ hữu hạn, thì nó
+là một cấu xạ hạ xuống nghiêm ngặt đối với phạm trù phân thớ gồm các tiền lược
+đồ quasi-xạ ảnh (hoặc xạ ảnh) trên các tiền lược đồ.
+
+\result{NHẬN XÉT}{} Tôi không biết trong khẳng định thứ hai ở trên, giả thiết
+$\alpha$ là một cấu xạ \emph{hữu hạn} có thực sự cần thiết hay không; dù sao,
+có thể kiểm tra một cách ``hình thức'' rằng giả thiết ấy có thể được thay bằng
+giả thiết sau, có vẻ yếu hơn: \emph{với mọi điểm của $S$, tồn tại một lân cận
+mở $U$, một $U'$ hữu hạn và phẳng trung thành trên $U$, cùng một $S$-cấu xạ từ
+$U'$ vào $S'$.} Một trường hợp điển hình không nằm trong trường hợp trên là
+$S=\operatorname{Spec}(A)$, $S'=\operatorname{Spec}(\widehat A)$, trong đó $A$
+là một vành Noether địa phương và $\widehat A$ là phép đầy đủ hóa của nó; hoặc
+trường hợp $S'$ quasi-hữu hạn trên $S$ (nghĩa là đẳng cấu địa phương với một
+phần mở của một $S$-lược đồ hữu hạn) nhưng không hữu hạn. Trong hai trường hợp
+ấy, người trình bày cũng không biết câu trả lời cho câu hỏi sau: cho $X$ là một
+$S$-lược đồ sao cho $X'=X\times_SS'$ xạ ảnh trên $S'$; liệu $X$ có xạ ảnh trên
+$S$ hay không?\footnote{Bản đính chính năm 1962 trả lời phủ định: một cấu xạ
+quasi-hữu hạn, étale và toàn ánh $S'\longrightarrow S$, hoặc một cấu xạ
+$\operatorname{Spec}(\widehat A)\longrightarrow\operatorname{Spec}(A)$, không
+nhất thiết là một cấu xạ hạ xuống nghiêm ngặt, ngay cả khi $A$ là vành địa
+phương của một đường cong đại số trên một trường đóng đại số $k$ và
+$S=\operatorname{Spec}(A)$. Vì thế có thể tìm được một cấu xạ proper và trơn
+$f:X\longrightarrow S$ biến $X$ thành một phân thớ chính trên cơ sở $S$ dưới
+một đường cong elliptic $E$, sao cho $f':X'\longrightarrow S'$ là xạ ảnh nhưng
+$f$ thì không. Do đó, đây cũng là một ví dụ về phân thớ chính thuần nhất không
+đẳng tầm dưới một lược đồ abel.}
+
+\subsection*{2. Áp dụng vào việc hạ xuống một số tính chất của cấu xạ}
+\addcontentsline{toc}{subsection}{2. Hạ xuống các tính chất của cấu xạ}
+
+Cho $P$ là một lớp các cấu xạ của tiền lược đồ. Cho
+$\alpha:S'\longrightarrow S$ là một cấu xạ của tiền lược đồ, cho
+$f:X\longrightarrow Y$ là một cấu xạ của các $S$-tiền lược đồ, và cho
+$f':X'\longrightarrow Y'$ là nghịch ảnh của $f$ qua $\alpha$. Khi đó ta có thể
+hỏi liệu quan hệ ``$f'\in P$'' có kéo theo ``$f\in P$'' hay không. Trong nhiều
+trường hợp quan trọng, câu trả lời là khẳng định nếu giả sử $\alpha$
+\emph{phẳng trung thành và quasi-compact} (giả thiết sau đôi khi là thừa). Điều
+này thấy được trực tiếp và không khó nếu $P$ là lớp các cấu xạ toàn ánh, tương
+ứng radicial (các trường hợp này suy ra từ tính toàn ánh của $\alpha$), tương
+ứng phẳng, tương ứng phẳng trung thành, tương ứng trơn (các trường hợp này suy
+ra từ tính phẳng trung thành của $\alpha$), tương ứng kiểu hữu hạn. Dùng các
+Định lý 1 và 2 cùng Bổ đề 1.2, ta cũng thấy điều tương tự đúng nếu $P$ là một
+trong các lớp sau: các đẳng cấu, các phép nhúng mở, các phép nhúng đóng, các
+phép nhúng (nếu $f$ kiểu hữu hạn và $Y$ Noether địa phương), các cấu xạ affine,
+các cấu xạ hữu hạn, các cấu xạ quasi-hữu hạn, các cấu xạ mở, các cấu xạ đóng,
+các đồng phôi, các cấu xạ tách,
+
+\src{319}
+các cấu xạ proper. Trường hợp quan trọng duy nhất chưa được giải quyết là các
+cấu xạ xạ ảnh và quasi-xạ ảnh, đã được nêu trong nhận xét ở Mục 1.
+
+\subsection*{3. Hạ xuống theo các cấu xạ hữu hạn phẳng trung thành}
+\addcontentsline{toc}{subsection}{3. Hạ xuống theo các cấu xạ hữu hạn phẳng trung thành}
+
+Cho $\alpha:S'\longrightarrow S$ là một cấu xạ hữu hạn tương ứng với một bó
+đại số $\mathcal A'$ trên $S$, bó này, khi xem như bó môđun, là tự do địa phương
+kiểu hữu hạn và là $\ne0$ ở mọi nơi; khi đó $\alpha$ là một cấu xạ phẳng trung
+thành và quasi-compact, nên có thể áp dụng các kết quả trên. Việc cho một bó
+tựa nhất quán $F'$ trên $S'$ tương đương với việc cho bó tựa nhất quán
+$\alpha_*(F')$ trên $S$, được trang bị cấu trúc $\mathcal A'$-môđun của nó
+(lưu ý rằng $\mathcal A'=\alpha_*(\mathcal O_{S'})$). Để đơn giản, bó này trên
+$S$ cũng sẽ được ký hiệu là $F'$. Hai nghịch ảnh $p_i^*(F')$ của $F'$ trên
+$S'\times_SS'$ cũng tương ứng với các bó tựa nhất quán gồm các
+$(\mathcal A'\otimes_{\mathcal O_S}\mathcal A')$-môđun
+\[
+  F'\otimes_{\mathcal O_S}\mathcal A'
+  \quad\text{và}\quad
+  \mathcal A'\otimes_{\mathcal O_S}F'.
+\]
+Việc cho một $(S'\times_SS')$-đồng cấu từ bó thứ nhất vào bó thứ hai tương
+đương với việc cho một đồng cấu của các
+$(\mathcal A'\otimes_{\mathcal O_S}\mathcal A')$-môđun và, vì $\mathcal A'$
+tự do địa phương, điều này tương đương với việc cho một đồng cấu của các
+$(\mathcal A'\otimes\mathcal A')$-môđun:
+\[
+  \mathcal U=
+  \operatorname{Hom}_{\mathcal O_S}(\mathcal A',\mathcal A')
+  =\mathcal A'\otimes\check{\mathcal A}'
+  \longrightarrow
+  \operatorname{Hom}_{\mathcal O_S}(F',F'),
+\]
+nghĩa là, với mỗi tiết diện $\xi$ của $\mathcal U$ trên một tập mở $V$, cho một
+đồng cấu $\mathcal O_S$-môđun
+$T_\xi:F'|_V\longrightarrow F'|_V$ thỏa mãn các điều kiện
+\begin{equation}
+  T_{f\xi}(x)=fT_\xi(x),
+  \qquad T_{\xi f}(x)=T_\xi(fx),
+  \tag{3.1}
+\end{equation}
+trong đó $f,x$ lần lượt là các tiết diện của $\mathcal A',F'$ trên một tập mở
+của $S$ nằm trong $V$. Khi ấy các điều kiện (i) và (ii) của một dữ liệu hạ xuống
+(A, Mục 1, (c)) lần lượt được viết thành:
+\begin{equation}
+  T_{1_{\mathcal U}}x=x,
+  \qquad\text{nghĩa là,}\qquad
+  T_{1_{\mathcal U}}=\operatorname{id}_{F'},
+  \tag{3.2}
+\end{equation}
+\begin{equation}
+  T_{\xi\eta}=T_\xi T_\eta.
+  \tag{3.3}
+\end{equation}
+Nói cách khác, \emph{một dữ liệu hạ xuống trên $F'$ tương đương với một biểu
+diễn của bó $\mathcal O_S$-đại số
+$\mathcal U=\operatorname{Hom}_{\mathcal O_S}(\mathcal A',\mathcal A')$ vào
+bó $\mathcal O_S$-đại số
+$\operatorname{Hom}_{\mathcal O_S}(F',F')$, thỏa mãn hai điều kiện tuyến tính
+(3.1).} Nếu có một phép ghép cặp các bó tựa nhất quán trên $S'$:
+\[
+  F'_1\times F'_2\longrightarrow F'_3
+\]
+(có thể được hiểu như một phép ghép cặp các bó $\mathcal A'$-môđun trên $S$),
+
+\src{320}
+và các dữ liệu dán trên $F'_i$, được xác định bởi các đồng cấu
+\[
+  T_i:\mathcal U\longrightarrow
+  \operatorname{Hom}_{\mathcal O_S}(F'_i,F'_i)
+  \qquad (i=1,2,3),
+\]
+thì các dữ liệu ấy tương thích với phép ghép cặp đã cho, theo nghĩa hiển nhiên,
+khi và chỉ khi điều kiện sau được thỏa mãn.
+
+Với mọi tiết diện $\xi$ của $\mathcal U$ trên một tập mở, ký hiệu
+\[
+  \Delta\xi=\sum_i\xi'_i\otimes_{\mathcal A'}\xi''_i
+\]
+là tiết diện của $\mathcal U\otimes_{\mathcal A'}\mathcal U$ (trong đó
+$\mathcal U$ được xem là một $\mathcal A'$-môđun qua cấu trúc môđun trái của
+nó) được xác định bởi công thức
+\[
+  \xi\mathbin{\cdot}(fg)=\sum_i\xi'_i(f)\xi''_i(g)
+\]
+(trong đó $f$ và $g$ là hai tiết diện của $\mathcal A'$ trên một tập mở nhỏ
+hơn), ta có công thức
+\begin{equation}
+  T^{(3)}_\xi(x\mathbin{\cdot}y)
+  =\sum_iT^{(1)}_{\xi'_i}x\mathbin{\cdot}T^{(2)}_{\xi''_i}y
+  \tag{3.4}
+\end{equation}
+với mọi cặp tiết diện $x,y$ lần lượt của $F'_1,F'_2$ trên một tập mở nhỏ
+hơn.\footnote{Bản in ghi ``của $\mathcal A'$''. Miền xác định của $T^{(1)}$ và
+$T^{(2)}$, cùng phép ghép cặp
+$F'_1\times F'_2\longrightarrow F'_3$, buộc $x$ và $y$ lần lượt phải là các
+tiết diện của $F'_1$ và $F'_2$.} (Có thể diễn đạt tính chất này bằng cách nói
+rằng các đồng cấu $T^{(i)}$ tương thích với ánh xạ đường chéo của $\mathcal U$
+đối với phép ghép cặp đã cho.) Đặc biệt, các công thức (3.1) đến (3.4) cho phép
+ta diễn giải, theo ngôn ngữ các biểu diễn của đại số có ánh xạ đường chéo, các
+dữ liệu hạ xuống trên một bó đại số tựa nhất quán trên $S'$, và do đó cũng diễn
+giải (khi hạn chế vào các đại số giao hoán) các dữ liệu hạ xuống trên một
+$S'$-lược đồ affine.
+
+Từ đây ta chuyển sang một cách diễn giải tương tự cho các dữ liệu hạ xuống trên
+một $S'$-tiền lược đồ $X'$ tùy ý: việc cho một $X'$ như vậy tương đương với
+việc cho một tiền lược đồ $X'$ trên $S$, được trang bị một đồng cấu
+$\mathcal O_S$-đại số
+\[
+  \mathcal A'\longrightarrow\mathcal O_{X'},
+\]
+và một dữ liệu hạ xuống trên $X'$ tương đương với việc cho một đồng cấu các bó
+(tương thích với cấu xạ $h:X'\longrightarrow S'$)
+\[
+  \mathcal U\longrightarrow
+  \operatorname{Hom}_{h^{-1}(\mathcal O_S)}
+  (\mathcal O_{X'},\mathcal O_{X'}),
+\]
+thỏa mãn các điều kiện tương tự các điều kiện (3.1) đến (3.4) ở trên.
+
+\textsc{Ví dụ 1 (``Weil'').} -- Giả sử $S'/S$ là một phủ étale Galois có nhóm
+Galois $\Gamma$ (xem A, các Mục 3 và 4.d). Khi đó, một dữ liệu hạ xuống trên một
+bó tựa nhất quán $F'$ trên $S'$ (tương ứng, trên một $S'$-tiền lược đồ $X'$)
+tương đương với việc cho một biểu diễn của $\Gamma$ bằng các tự đẳng cấu của
+$(S',F')$ (tương ứng, của $(S',X')$), tương thích với tác động của $\Gamma$
+trên $S'$. Kết quả này
+
+\src{321}
+là ``hình thức'', nghĩa là được chứng minh theo ngôn ngữ phạm trù; nhưng theo
+quan điểm của mục này, nó cũng suy ra từ cấu trúc tường minh của $\mathcal U$
+(được trang bị cấu trúc vành, đồng cấu vành
+$\mathcal A'\longrightarrow\mathcal U$ và ánh xạ đường chéo), cấu trúc này được
+biết hoàn toàn nhờ kết quả sau: $\mathcal U$, khi xem như một
+$\mathcal A'$-môđun trái, có một cơ sở gồm các tiết diện của $\mathcal U$
+tương ứng với các phần tử của $\Gamma$.
+
+\textsc{Ví dụ 2 (``Cartier'').} -- Cho $p$ là một số nguyên tố; giả sử
+$p\mathcal O_S=0$ (nghĩa là $\mathcal O_S$ có đặc số $p$),
+$(\mathcal A')^p\subset\mathcal O_S=\mathcal A$ (nghĩa là $S'/S$ radicial có
+chiều cao 1), và bó đại số $\mathcal A'$ trên $\mathcal A$ có một $p$-cơ sở
+tại địa phương, nghĩa là một họ tiết diện $(x_i)$ sao cho $\mathcal A'$ được sinh
+như một đại số bởi các $x_i$, chỉ chịu các điều kiện $x_i^p=0$. Ta giả sử tập
+các chỉ số $i$ là hữu hạn, có lực lượng $n$. Cho $\mathfrak g$ là bó các
+$\mathcal A$-đạo hàm của $\mathcal A'$; đó là một bó $\mathcal A'$-môđun tự do
+địa phương hạng $n$, và hơn nữa là một bó $p$-đại số Lie trên $\mathcal A$
+(nhưng không trên $\mathcal A'$), thỏa mãn điều kiện
+\begin{equation}
+  [X,fY]=X(f)Y+f[X,Y].
+  \tag{3.5}
+\end{equation}
+
+\textsc{Bổ đề.} -- $\mathcal U=
+\operatorname{Hom}_{\mathcal O_S}(\mathcal A',\mathcal A')$ được sinh, như một
+$\mathcal O_S$-đại số được trang bị một đồng cấu đại số
+$\mathcal A'\longrightarrow\mathcal U$, bởi $\mathcal A'$-môđun con trái
+$\mathfrak g$, với các quan hệ bổ sung
+\begin{equation}
+  \left\{
+  \begin{aligned}
+    Xf-fX&=X(f),\\
+    XY-YX&=[X,Y],\\
+    X^p&=X^{(p)}.
+  \end{aligned}
+  \right.
+  \tag{3.6}
+\end{equation}
+
+Từ bổ đề trên suy ra rằng một dữ liệu hạ xuống trên bó tựa nhất quán $F'$ trên
+$S'$ tương đương với việc cho, với mọi $X\in\mathfrak g$, một tự đồng cấu
+$\mathcal O_S$-môđun $\overline X$ của $F'$ thỏa mãn các điều kiện
+\begin{align}
+  \overline{fX}&=f\overline X, \tag{3.7}\\
+  \overline X(fx)&=X(f)x+f\overline X(x), \tag{3.8}\\
+  \overline{[X,Y]}&=[\overline X,\overline Y], \tag{3.9}\\
+  \overline{X^{(p)}}&=\overline X^p. \tag{3.10}
+\end{align}
+(Đó là điều có thể gọi là một liên thông tuyến tính trên $F'$, không có độ
+cong và tương thích với lũy thừa bậc $p$.) Khái niệm dữ liệu hạ xuống trên một
+$S'$-tiền lược đồ $X'$ cũng được làm tường minh theo cách ấy; ở đây quan hệ
+(3.4) được thay bằng điều kiện rằng các $\overline X$ là các đạo hàm của
+$\mathcal O_{X'}$. Vì cấu xạ $S'\longrightarrow S$ là radicial, Định lý 3 bảo
+đảm rằng mọi dữ liệu hạ xuống như vậy đều
+
+\src{322}
+hữu hiệu và do đó xác định một $S$-tiền lược đồ $X$.
+
+Ta lưu ý rằng không cần đặt bất kỳ giả thiết nào về tính phẳng, tính không kỳ
+dị hay tính hữu hạn đối với $F'$, tương ứng $X'$.
+
+\subsection*{4. Ứng dụng vào các tiêu chuẩn về tính hữu tỉ}
+\addcontentsline{toc}{subsection}{4. Ứng dụng vào các tiêu chuẩn về tính hữu tỉ}
+
+Cho $X$ là một $S$-tiền lược đồ sao cho ảnh trực tiếp của $\mathcal O_X$ trên
+$S$ là $\mathcal O_S$; tính chất này vẫn đúng sau mọi mở rộng phẳng
+$S'\longrightarrow S$ của cơ sở $S$. Nếu $F$ là một bó khả nghịch (nghĩa là
+tự do địa phương hạng 1) trên $X$, thì các tự đẳng cấu của $F$, được đồng nhất
+với các tiết diện khả nghịch của $\mathcal O_X$, tương ứng song ánh với các
+tiết diện khả nghịch của $\mathcal O_S$. Bây giờ cho $s$ là một tiết diện của
+$X$ trên $S$; theo cách nói gợi hình, ta sẽ gọi là một tiết diện của $F$ trên
+$s$ một tiết diện của bó khả nghịch $s^*(F)$ trên $S$. Từ những điều trên suy ra
+rằng, nếu $F_i$ ($i=1,2$) là hai bó khả nghịch trên $X$, mỗi bó được trang bị
+một tiết diện trên $s$, và nếu $F_1$ và $F_2$ đẳng cấu, thì tồn tại duy nhất
+một đẳng cấu từ $F_1$ lên $F_2$ tương thích với các tiết diện đang xét (nghĩa
+là biến tiết diện thứ nhất thành tiết diện thứ hai). Mặt khác, không phụ thuộc
+vào tiết diện $s$, ta quy ước coi hai bó khả nghịch $F_1$ và $F_2$ trên $X$ là
+tương đương nếu mọi điểm của $S$ đều có một lân cận mở $U$ sao cho các hạn chế
+của $F_1$ và $F_2$ lên $X|U$ đẳng cấu. Khi đó mọi bó khả nghịch $F$ trên $X$
+tương đương với một bó khả nghịch $F_1$ được trang bị một tiết diện được đánh
+dấu trên $s$ (lấy $F_1=F\,s^*(F)^{-1}$), và $F_1$ được xác định đến đẳng cấu.
+Nói cách khác, việc phân loại các bó khả nghịch trên $X$ đến tương đương cũng
+chính là việc phân loại, đến đẳng cấu, các bó khả nghịch được trang bị một tiết
+diện được đánh dấu.
+
+Vì các tính chất này vẫn đúng sau một mở rộng phẳng
+$\alpha:S'\longrightarrow S$ của cơ sở (thay tiết diện $s$ bằng ảnh ngược $s'$
+của nó qua $\alpha$), nên từ Định lý 1 ta suy ra:
+
+\emph{Cho tiền lược đồ $X/S$ như trên và giả sử nó có một tiết diện $s$; cho
+$\alpha:S'\longrightarrow S$ là một cấu xạ phẳng trung thành và quasi-compact;
+cho $F'$ là một bó khả nghịch trên $X'=X\times_SS'$. Điều kiện cần và đủ để
+$F'$ tương đương với ảnh ngược trên $X'$ của một bó khả nghịch $F$ trên $X$ là
+hai ảnh ngược $p_1^*(F')$ và $p_2^*(F')$ của nó trên
+$X'\times_XX'=X\times_S(S'\times_SS')$ tương đương. Khi đó $F$ được xác định
+đến tương đương.} (Khi ấy ta nói $F'$ hữu tỉ trên $S$.)
+
+Áp dụng nguyên lý này khi $\alpha:S'\longrightarrow S$ như trong Ví dụ 1 hoặc
+Ví dụ 2 của mục trước, ta thu được các tiêu chuẩn hữu tỉ của Weil hoặc Cartier.
+(Lưu ý rằng các tác giả này chỉ xét trường hợp $S$ và $S'$
+
+\src{323}
+là phổ của các trường; do đó, hiển nhiên $S$ là phổ của một vành địa phương,
+và quan hệ tương đương được đưa vào ở trên chính là quan hệ đẳng cấu.) Trong
+trường hợp thứ nhất, $F'$ hữu tỉ trên $S$ khi và chỉ khi các biến đổi của nó
+dưới $\Gamma$ tương đương với $F'$. Để phát biểu tiêu chuẩn hữu tỉ trong trường
+hợp thứ hai, nói chung ta xét cấu xạ đường chéo
+\[
+  X'\longrightarrow X''=X'\times_XX'
+\]
+của $X'/X$, bó iđêan tương ứng $\mathcal I$ trên $X'\times_XX'$, và bó
+$\mathcal I/\mathcal I^2$, được đồng nhất với ảnh ngược
+$\Omega^1_{X'/X}$ của nó trên $X'$. Vì các hạn chế lên đường chéo của
+$F''_i=p_i^*(F')$ ($i=1,2$) đẳng cấu (do cả hai đều đẳng cấu với $F'$), nghĩa
+là $F''_1(F''_2)^{-1}=F''$ có hạn chế tầm thường trên đường chéo, nên hạn chế
+của $F''$ lên $(X'',\mathcal O_{X''}/\mathcal I^2)$ được cho, đến đẳng cấu,
+bởi một phần tử xác định duy nhất $\xi$ của
+\[
+  H^1(X'',\mathcal I/\mathcal I^2)
+  =H^1(X',\Omega^1_{X'/X}).
+\]
+Hơn nữa, trong trường hợp này ta có
+\[
+  \Omega^1_{X'/X}
+  =\Omega^1_{S'/S}\otimes_{\mathcal O_S}\mathcal O_X,
+\]
+và do đó, nếu $\Omega^1_{S'/S}$ tự do địa phương trên $S$ (như trong trường
+hợp Cartier), thì $\xi$ xác định một tiết diện của
+\[
+  R^1f'_*(\mathcal O_{X'})\otimes\Omega^1_{S'/S}
+\]
+trên $S'$ (gọi là lớp Atiyah--Cartier của bó khả nghịch $F'$ trên $X'/S$).
+Sự triệt tiêu của lớp này là điều kiện cần và đủ để các ảnh ngược của $F'$ qua
+hai phép chiếu từ
+\[
+  (X'',\mathcal O_{X''}/\mathcal I^2)
+  =X\times_S(S'',\mathcal O_{S''}/\mathcal J^2)
+\]
+lên $X'$ tương đương (trong đó $\mathcal J$ là bó iđêan trên
+$S''=S'\times_SS'$ được xác định bởi cấu xạ đường chéo
+$S'\longrightarrow S'\times_SS'$). Vì vậy, sự triệt tiêu này hiển nhiên là
+điều kiện cần để các ảnh ngược của $F'$ trên chính
+$X''=X\times_SS''$ tương đương, và do đó cũng là điều kiện cần để $F'$ tương
+đương với ảnh ngược của một bó khả nghịch $F$ trên $X$. Lớp Atiyah--Cartier
+cũng có thể được hiểu là cản trở đối với sự tồn tại, cục bộ trên $S'$, của một
+liên thông trên $F'$ tương đối với các đạo hàm của $X'/X$; hơn nữa, một liên
+thông như vậy được xác định khi đã biết các đạo hàm của $F'$ tương ứng với các
+mở rộng tự nhiên lên $X'$ của các đạo hàm của $S'/S$. Từ điều này và các khai
+triển trong mục trước, ta dễ dàng suy ra rằng trong trường hợp Ví dụ 2 của mục
+ấy, khi $X/S$ có một tiết diện, sự triệt tiêu của lớp Atiyah--Cartier cũng đủ
+để $F'$ hữu tỉ trên $S$.
+
+\subsection*{5. Ứng dụng vào phép thu hẹp cơ sở trong một lược đồ abel}
+\addcontentsline{toc}{subsection}{5. Thu hẹp cơ sở trong một lược đồ abel}
+
+Cho $S$ là một tiền lược đồ. Một lược đồ abel trên $S$ là một lược đồ $X$ trơn
+và proper
+
+\src{324}
+trên $S$ sao cho các thớ tại những điểm $x\in S$ là các lược đồ của những đa
+tạp abel trên $\kappa(x)$. Giả sử $S$ Noether và chính quy (nghĩa là các vành
+địa phương của nó chính quy). Khi đó, dùng định lý liên thông của Murre [4]
+(ít nhất trong trường hợp ``đồng đặc số'', là trường hợp mà định lý được dẫn
+hiện đã được chứng minh), ta có thể chứng minh rằng mọi tiết diện hữu tỉ của
+$X$ trên $S$ đều xác định khắp nơi (nghĩa là thực sự là một tiết diện); điều
+này tổng quát hóa một định lý cổ điển của Weil. Tổng quát hơn, từ đó suy ra
+rằng nếu $X'$ là một lược đồ trơn trên $S$, thì mọi $S$-cấu xạ hữu tỉ từ $X'$
+vào $X$ đều xác định khắp nơi. Ta thu được kết quả sau, tổng quát hóa một kết
+quả của Chow--Lang:\footnote{Bản in ghi ``Igusa--Lang''; bản đính chính năm
+1962 quy định ``Chow--Lang''.} Cho $S$ Noether và chính quy, và ký hiệu $K$ là
+vành các hàm hữu tỉ của nó (một tích trực tiếp các trường); cho $X$ là một lược
+đồ abel trên $K$. Nếu $X$ đẳng cấu với một $K$-lược đồ có dạng
+$X_0\times_S\operatorname{Spec}(K)$, trong đó $X_0$ là một lược đồ abel trên
+$S$, thì $X_0$ được xác định đến một đẳng cấu duy nhất.
+
+Dùng kết quả duy nhất ở trên, ta thấy rằng bài toán thu hẹp cơ sở trong $X$ là
+cục bộ trên $S$ (và do đó chỉ cần biết cách thực hiện phép thu hẹp trên các
+$\operatorname{Spec}(\mathcal O_x)$, với $x\in S$). Tương tự, nếu
+$\alpha:S'\longrightarrow S$ là một cấu xạ trơn kiểu hữu hạn, nếu $K'$ là
+vành các hàm hữu tỉ của $S'$, và nếu $X\otimes_KK'$ có dạng
+$X'_0\times_{S'}\operatorname{Spec}(K')$, thì $X'_0$ được trang bị một dữ liệu
+hạ xuống chính tắc tương đối với $\alpha$. Theo Định lý 3, ta suy ra:
+
+\result{MỆNH ĐỀ}{5.1} Cho $S$ là một tiền lược đồ Noether, chính quy và bất khả
+quy, có trường hàm hữu tỉ $K$; cho $K'$ là một mở rộng hữu hạn của $K$, không
+ram hóa trên $S$; cho $S'$ là chuẩn hóa của $S$ trong $K'$ (do đó là một phủ
+étale của $S$); và cho $X$ là một lược đồ abel trên $K$ sao cho
+$X\otimes_KK'$ có dạng $X'_0\times_{S'}\operatorname{Spec}(K')$, trong đó
+$X'_0$ là một lược đồ abel xạ ảnh trên $S'$. Khi đó $X$ có dạng
+$X_0\times_S\operatorname{Spec}(K)$, trong đó $X_0$ là một lược đồ abel xạ ảnh
+trên $S$.
+
+\result{NHẬN XÉT}{} Người trình bày không biết liệu có thể thay giả thiết
+$S'\longrightarrow S$ là một phủ étale toàn ánh (cho phép dùng Định lý 3) bằng
+giả thiết rằng đó là một cấu xạ trơn, toàn ánh và kiểu hữu hạn (ngay cả khi giả
+sử nó là étale), hoặc liệu mệnh đề có còn đúng mà không cần giả sử $X'_0$ xạ
+ảnh trên $S'$ hay không (một điều kiện có lẽ tự động được thỏa mãn).
+
+\subsection*{6. Ứng dụng vào các tiêu chuẩn tầm thường cục bộ và đẳng tầm}
+\addcontentsline{toc}{subsection}{6. Các tiêu chuẩn tầm thường cục bộ và đẳng tầm}
+
+Cho $S$ là một tiền lược đồ, $G$ là một ``tiền lược đồ nhóm'' trên $S$, và $P$
+là một tiền lược đồ trên $S$ mà trên đó ``$G$ tác động'' (bên phải). Ta nói
+$P$ là thuần nhất chính hình thức dưới $G$ nếu cấu xạ quen thuộc
+\[
+  G\times_SP\longrightarrow P\times_SP
+\]
+
+\src{325}
+cảm sinh bởi tác động của $G$ lên $P$ là một đẳng cấu. Từ đây trở đi, ta giả
+sử $G$ phẳng trên $S$ (và do đó phẳng trung thành trên $S$), và dành tên
+phân thớ chính thuần nhất dưới $G$ cho một $P$ thuần nhất chính hình thức
+mà phẳng trung thành và quasi-compact trên $S$. Điều này hiển nhiên tương đương
+với việc tồn tại một mở rộng phẳng trung thành và quasi-compact
+$S'\longrightarrow S$ của cơ sở $S$ sao cho phân thớ thuần nhất chính hình thức
+\[
+  P'=P\times_SS'
+\]
+dưới $G'=G\times_SS'$ là tầm thường, nghĩa là đẳng cấu với $G'$ (nghĩa là có
+một tiết diện); đặc biệt, có thể lấy $S'=P$. Ngoài ra, lưu ý rằng nếu $S$ địa
+phương Noether, thì giả thiết $P$ phẳng trung thành tương đương với
+giả thiết
+\[
+  \widehat P_s=P\times_S\operatorname{Spec}(\widehat{\mathcal O}_s)
+\]
+phẳng trung thành trên $\widehat{\mathcal O}_s$ với mọi $s\in S$ (trong đó
+$\widehat{\mathcal O}_s$ ký hiệu phép đầy đủ hóa của vành địa phương
+$\mathcal O_s$), vì $\widehat{\mathcal O}_s$ phẳng trung thành trên
+$\mathcal O_s$. Hơn nữa, nếu $P$ có kiểu hữu hạn trên $S$ địa phương Noether,
+thì tập các điểm $s$ thỏa điều kiện trên là dựng được. Vì vậy, nếu $S$ là một
+``tiền lược đồ Jacobson'' (chẳng hạn một lược đồ kiểu hữu hạn trên một trường,
+hoặc tổng quát hơn là phổ của một vành Jacobson), thì chỉ cần kiểm tra điều kiện
+đang xét tại các điểm đóng của $S$. Điều này quy ta về trường hợp cơ sở là phổ
+của một vành địa phương đầy đủ $A$. Khi $S=\operatorname{Spec}(A)$ (với $A$ là
+một vành địa phương Noether đầy đủ) và $P$ có kiểu hữu hạn trên $S$, tính phẳng
+trung thành của $P/S$ cũng tương đương với sự tồn tại của một $S'$ hữu hạn và
+phẳng trên $S$ sao cho $P'$ tầm thường; nếu thêm $G$ trơn trên $S$, thì có thể
+giả sử $S'$ étale trên $S$. Do đó, nếu trường thặng dư của $A$ còn đóng đại số
+(``trường hợp hình học''), thì $P$ phẳng trung thành trên $A$ khi và chỉ khi nó
+tầm thường. Như vậy, nếu $S$ là một tiền lược đồ đại số trên một trường đóng
+đại số và $G$ trơn, kiểu hữu hạn trên $S$, thì điều kiện phẳng trung thành trên
+$S$ tương đương với điều kiện tầm thường giải tích (SLF) của Serre ([6],
+tr.~1--12).
+
+Ta có thể đưa vào những loại điều kiện khác, mạnh hơn, trên $P$ và mang bản chất
+của một ``tính tầm thường cục bộ''. Cụ thể, ta nói $P$ là đẳng tầm
+(tương ứng, đẳng tầm nghiêm ngặt) nếu với mọi $s\in S$, tồn tại một lân
+cận mở $U$ của $s$ và một cấu xạ hữu hạn, phẳng trung thành (tương ứng, một phủ
+étale toàn ánh) $U'\longrightarrow U$ sao cho $P'=P\times_SU'$ tầm thường.
+(Thuật ngữ của chúng ta khác với Serre [6], người gọi đẳng tầm cục bộ
+điều mà chúng ta gọi là đẳng tầm nghiêm ngặt.) Tính đẳng tầm nghiêm ngặt
+đặc biệt hữu ích khi $G$ trơn trên $S$, nhưng ngược lại là một khái niệm không
+thích hợp trong những trường hợp khác.
+
+Nếu $G$ affine trên $S$, thì theo đoạn 2, mọi phân thớ chính thuần nhất $P$ dưới
+$G$ đều affine; bởi vậy, nhờ Định lý 2, ta có thể ``hạ xuống''
+
+\src{326}
+các phân thớ như vậy dọc theo những cấu xạ phẳng trung thành và quasi-compact.
+Đặc biệt, lấy $G=\operatorname{Gl}(n)_S$, được xác định bởi điều kiện rằng hàm
+tử trên các $S$-tiền lược đồ
+\[
+  S'\longmapsto\operatorname{Hom}_S(S',G)
+\]
+(nhận giá trị trong phạm trù các nhóm) được đồng nhất với hàm tử
+\[
+  \operatorname{Gl}(n)(S')
+  =\operatorname{Gl}\bigl(n,H^0(S',\mathcal O_{S'})\bigr)
+\]
+trong A, đoạn 4.e. Dùng các sự kiện (i) mọi phân thớ chính thuần nhất dưới $G$
+(tương ứng, mọi bó tự do địa phương hạng $n$ trên $S$) trở thành đẳng cấu với
+đối tượng ``tầm thường'' $G$ (tương ứng, $\mathcal O_S^n$) sau một mở rộng
+phẳng trung thành và quasi-compact thích hợp của $S$; (ii) các đối tượng thuộc
+loại đang xét (các phân thớ chính thuần nhất dưới $G$, tương ứng các bó tự do
+địa phương hạng $n$) có thể được hạ xuống dọc theo những cấu xạ như vậy; và
+cuối cùng, (iii) nhóm tự đẳng cấu của phân thớ tầm thường trên một $S'/S$ đẳng
+cấu một cách hàm tử với nhóm tự đẳng cấu của bó tự do địa phương tầm thường
+hạng $n$ trên $S'$, ta suy ra một cách ``hình thức'' rằng việc cho trên $S$
+(hoặc trên một $S'/S$) một phân thớ chính thuần nhất có nhóm $G$ ``cũng chính
+là'' việc cho tại đó một bó tự do địa phương hạng $n$. (Chính xác hơn, ta có
+một tương đương giữa các phạm trù phân thớ.) Đặc biệt, ta suy ra:
+
+\result{MỆNH ĐỀ}{6.1} Mọi phân thớ chính thuần nhất có nhóm
+$\operatorname{Gl}(n)_S$ đều tầm thường cục bộ.
+
+Bằng những lập luận quen thuộc, ta thu được cùng kết quả cho các nhóm cấu trúc
+như $\operatorname{Sl}(n)_S$, $\operatorname{Sp}(n)_S$ và các tích của những
+nhóm như vậy. Ta cũng suy ra rằng, nếu $F$ là một nhóm con đóng của
+$G=\operatorname{Gl}(n)_S$, phẳng trên $S$, sao cho thương $G/F$ tồn tại, và
+nếu $G$ là một phân thớ chính thuần nhất đẳng tầm (tương ứng, đẳng tầm nghiêm
+ngặt) trên $G/F$, với nhóm $F\times_S(G/F)$, thì mọi phân thớ chính thuần nhất
+có nhóm $F$ đều đẳng tầm (tương ứng, đẳng tầm nghiêm ngặt). Điều này áp dụng
+cho tất cả các ``nhóm tuyến tính'' trên $S$ đã được dùng cho đến đây, và đặc
+biệt khi $G=S\times_k\Gamma$, trong đó $S$ là một tiền lược đồ trên trường $k$
+và $\Gamma$ là một nhóm tuyến tính theo nghĩa cổ điển, đặc biệt là một nhóm
+trơn, trên $k$. Do đó, đối với các nhóm như vậy, điều này giải quyết một câu hỏi
+của Serre (loc. cit.).
+
+Ta cũng lưu ý rằng, đối với phần lớn các nhóm trơn trên $S$ đã biết, dù tuyến
+tính hay không, và trong mọi trường hợp đối với các nhóm có dạng
+$S\times_k\Gamma$ như trên, có thể chứng minh rằng mọi phân thớ chính thuần nhất
+đẳng tầm đều đẳng tầm nghiêm ngặt. Điều này đặc biệt giải quyết một câu hỏi khác
+của Serre (loc. cit., tr.~1--14), vì một phân thớ chính thuần nhất thu được bằng
+phép hạ xuống kiểu Cartier (xem đoạn 3, Ví dụ 2) hiển nhiên là đẳng tầm.
+
+\result{NHẬN XÉT}{} Một trong những khó khăn cốt yếu của các vấn đề này (ngoài
+vấn đề về sự tồn tại của các lược đồ thương $G/F$) là thiếu những tiêu chuẩn về
+tính hữu hiệu cho một dữ liệu hạ xuống dọc theo một cấu xạ phẳng trung thành
+không hữu hạn.
+
+\src{327}
+\begin{center}
+  \textbf{TÀI LIỆU THAM KHẢO}
+\end{center}
+
+\begin{description}
+  \item[{[1]}] Dieudonné (J.) và Grothendieck (Alexander). --- \emph{Éléments
+    de géométrie algébrique}, sắp xuất bản trong Publications mathématiques de
+    l'Institut des Hautes Études Scientifiques.
+  \item[{[2]}] Grauert (H.) und Remmert (R.). --- \emph{Komplexe Räume}, Math.
+    Annalen, tập 136, 1958, tr.~245--318.
+  \item[{[3]}] Grothendieck (Alexander). --- \emph{Géométrie formelle et
+    géométrie algébrique}. Séminaire Bourbaki, tập 11, 1958/59, số 182.
+  \item[{[4]}] Murre (J. P.). --- \emph{On a connectedness theorem for a
+    birational transformation at a simple point}, Amer. J. Math., tập 80, 1958,
+    tr.~3--15.
+  \item[{[5]}] Serre (Jean-Pierre). --- \emph{Géométrie algébrique et géométrie
+    analytique}, Ann. Inst. Fourier Grenoble, tập 6, 1955--56, tr.~1--42.
+  \item[{[6]}] Serre (Jean-Pierre). --- \emph{Espaces fibrés algébriques},
+    Séminaire Chevalley, tập 2, 1958: Anneaux de Chow et applications, số 1.
+\end{description}
+
+\par

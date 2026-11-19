@@ -1,0 +1,91 @@
+\usepackage[a4paper,inner=31mm,outer=27mm,top=28mm,bottom=31mm,marginparwidth=17mm]{geometry}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\setmainfont{Malgun Gothic}[
+  ItalicFont={Malgun Gothic},
+  ItalicFeatures={FakeSlant=0.2},
+  BoldItalicFont={Malgun Gothic Bold},
+  BoldItalicFeatures={FakeSlant=0.2}
+]
+\setsansfont{Malgun Gothic}
+\setmonofont{TeX Gyre Cursor}
+\XeTeXlinebreaklocale "ko"
+\XeTeXlinebreakskip=0pt plus 1pt
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
+\usepackage{bookmark}
+\usepackage{hyperref}
+\hypersetup{hidelinks,unicode=true,pdfencoding=auto}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\numberwithin{equation}{section}
+\renewcommand{\contentsname}{목차}
+\makeatletter
+\renewcommand{\@pnumwidth}{2.2em}
+\renewcommand{\@tocrmarg}{3.2em}
+\makeatother
+\pdfstringdefDisableCommands{\def\textsuperscript#1{#1}}
+
+\newcommand{\sourceunit}{front}
+\newcommand{\src}[1]{%
+  \phantomsection\hypertarget{src:\sourceunit:#1}{}%
+  \marginpar{\raggedleft\footnotesize\sffamily #1}%
+}
+\newcommand{\sid}[1]{\phantomsection\hypertarget{fga:#1}{}}
+\newcommand{\Osh}{\underline{O}}
+\newcommand{\Zsh}{\underline{\mathbf Z}}
+\newcommand{\Ccat}{\mathcal C}
+\newcommand{\Homsh}{\underline{\operatorname{Hom}}}
+\newcommand{\Extsh}{\underline{\operatorname{Ext}}}
+\newcommand{\hsh}{\underline{h}}
+\newcommand{\fquote}[1]{\textquotedbl#1\textquotedbl}
+\newcommand{\seminar}[1]{%
+  \begin{flushleft}\sffamily 부르바키 세미나\\#1\end{flushleft}%
+}
+\newcommand{\seminaren}[1]{%
+  \begin{flushleft}\sffamily 부르바키 세미나\\#1\end{flushleft}%
+}
+\newcommand{\paperhead}[2]{%
+  \begin{center}
+    {\Large\bfseries #1\par}
+    \vspace{0.6\baselineskip}
+    #2
+  \end{center}
+  \vspace{0.8\baselineskip}
+}
+
+\theoremstyle{plain}
+\newtheorem{proposition}{명제}[section]
+\newtheorem{theoreme}[proposition]{정리}
+\newtheorem{theorem}[proposition]{정리}
+\newtheorem{corollaire}[proposition]{따름정리}
+\newtheorem{corollary}[proposition]{따름정리}
+\newtheorem{lemme}[proposition]{보조정리}
+\newtheorem{lemma}[proposition]{보조정리}
+
+\theoremstyle{definition}
+\newtheorem{definition}[proposition]{정의}
+\newtheorem{definitionen}[proposition]{정의}
+
+\theoremstyle{remark}
+\newtheorem*{remarque}{주}
+\newtheorem*{remark}{주}
+
+\renewcommand{\proofname}{증명}
+\newcommand{\unit}[1]{%
+  \chapter{#1}%
+  \markboth{#1}{#1}%
+}
+\newcommand{\fsection}[2]{%
+  \section*{#1. #2}%
+  \addcontentsline{toc}{section}{#1. #2}%
+}
+\newcommand{\result}[2]{%
+  \par\medskip\noindent\textbf{#1%
+  \if\relax\detokenize{#2}\relax\else\space#2\fi. ---}\enspace
+}

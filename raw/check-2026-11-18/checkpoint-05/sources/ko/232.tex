@@ -1,0 +1,965 @@
+\unit{강연 232 — 피카르 스킴: 존재 정리}
+\sid{232}
+\src{143}
+\seminar{제14년차, 1961/62, 제232호\\1962년 2월}
+\paperhead{대수기하학에서의 하강 기법과 존재 정리\\
+V. 피카르 스킴: 존재 정리}%
+  {알렉상드르 그로텐디크 지음}
+
+\fsection{1}{상대 피카르 군과 함자}
+
+모든 준스킴(더 일반적으로는 모든 환 달린 공간) $X$에 대하여, $X$ 위의
+가역 가군(즉 $\mathcal O_X$와 국소적으로 동형인 가군)들의 동형류로
+이루어진 군을 $X$의 (절대) \emph{피카르 군}이라 하고
+$\operatorname{Pic}(X)$로 나타낸다. 따라서 표준 동형사상
+\begin{equation}
+\operatorname{Pic}(X)\xrightarrow{\sim}H^1(X,\mathcal O_X^*)
+\tag{1.1}
+\end{equation}
+이 있다. 여기서 $\mathcal O_X^*$는 $\mathcal O_X$의 가역원층을 나타낸다.
+(실제로 이는 표준 가역 가군 $\mathcal O_X$의 자기동형사상들로 이루어진
+층과 동일시된다.) 분명히 $X\longmapsto\operatorname{Pic}(X)$는 $X$에 관한
+반변 함자이며, 동형사상 (1.1)은 함자적이다.
+
+$X$가 다른 준스킴 $S$ 위의 준스킴이라고 하자. $S$ 위의 준스킴들의 범주
+$(\mathrm{Sch})/S$에서 $S'$이 움직일 때, 앞의 논의에 따라
+\[
+S'\longmapsto\operatorname{Pic}(X\times_S S')
+\]
+라는 반변 함자를 얻는다. 분류하려는 가역 가군들이 자명하지 않은
+자기동형사상을 가지므로 이 함자는 “국소적 성격”을 갖지 않으며([5], IV,
+5.4), 따라서 “표현 가능”할 가능성이 전혀 없다([4], II, A). 그러므로 이
+함자를 “국소적으로 만들어야” 한다. 일반적으로 모든 상대 준스킴 $X/S$에
+대하여 상대적인 군
+\begin{equation}
+\operatorname{Pic}'(X/S)=H^0\bigl(S,R^1f_*(\mathcal O_X^*)\bigr)
+\tag{1.2}
+\end{equation}
+을 도입하자. 여기서 $f:X\longrightarrow S$는 구조사상이다([4], II, C 3과
+비교하라). 인용한 곳에서는 이 군을 상대 피카르 군이라 부르지만, 곧
+드러날 이유로 여기서는 $X/S$의 \emph{제한 상대 피카르 군}이라 부르는
+편이 낫다. $S'$이 $(\mathrm{Sch})/S$에서 움직이면
+\[
+S'\longmapsto\operatorname{Pic}'(X\times_S S'/S')
+\]
+은 $S'$에 관한 반변 함자이다. 이 함자도
+$\operatorname{Pic}'_{X/S}$로 나타내며, 본질적으로 다음 식으로 정의된다.
+\begin{equation}
+\operatorname{Pic}'_{X/S}(S')=
+\operatorname{Pic}'(X\times_S S'/S').
+\tag{1.3}
+\end{equation}
+
+\src{144}
+필요한 조치를 취했으므로 이제 이 함자는 “국소적 성격”을 갖는다.
+직관적으로 (1.3)의 우변은 매개변수 준스킴 $S'/S$로 지표화된, $X/S$의
+(섬유들 위의) 가역층 동형류들의 “대수적 족”의 집합으로 해석된다. 함자
+$\operatorname{Pic}'$가 표현 가능할 때, 이를 표현하는 $S$ 위의 준스킴을
+$\operatorname{Pic}'_{X/S}$로 나타내고 $S$ 위의 $X$의
+\emph{피카르 준스킴}이라 한다. 따라서 이 경우
+\begin{equation}
+\operatorname{Hom}_S(S',\operatorname{Pic}'_{X/S})
+\simeq\operatorname{Pic}'_{X/S}(S')
+=\operatorname{Pic}'(X\times_S S'/S')
+\tag{1.4}
+\end{equation}
+을 갖는다.
+
+그러나 $\operatorname{Pic}'_{X/S}$가 표현 가능하지 않은데도 상대 피카르
+준스킴을 자연스럽게 정의할 수 있는 중요한 경우들이 있다. 예를 들어 체
+$k$ 위에 $k$-유리점이 없는 “브라우어--세베리” 다양체가 그러하다. 이는
+절대 피카르 군 $\operatorname{Pic}(X\times_S S'/S')$으로부터
+$\operatorname{Pic}'$를 정의할 때 아직 충분히 국소화하지 않았기
+때문이다. 정확히 말하면 $\operatorname{Pic}'$는 일반적으로 “충실 평탄
+하강과 양립”하지 않는다. 이를 자세히 설명하자.
+
+$\mathfrak M$을 \emph{충실 평탄이고 준콤팩트인} 준스킴 사상들의 모임이라
+하자. 이 모임은 밑변경과 합성에 대해 안정하다. $P$를
+$(\mathrm{Sch})/S$에서 집합의 범주로 가는 반변 함자라 하고, 모든
+$S$-사상 $u:T'\longrightarrow T$, $u\in\mathfrak M$에 대하여 도식
+\begin{equation}
+P(T)\longrightarrow P(T')\rightrightarrows P(T'\times_TT')
+\tag{1.5}
+\end{equation}
+을 생각하자. 이는 도식
+\[
+T\longleftarrow T'\mathrel{\substack{\xleftarrow{\,\mathrm{pr}_1\,}\\[-0.35ex]
+\xleftarrow[\,\mathrm{pr}_2\,]{}}}T'\times_TT'
+\]
+에 $P$를 적용하여 얻는다. $P$가 표현 가능하면 하강 이론([4], I, B,
+정리 2)에 따라 모든 $u\in\mathfrak M$에 대하여 도식 (1.5)가 완전하다.
+이를 $P$가 $\mathfrak M$과 양립한다고 말한다. 지금의 경우에는 $P$가
+“충실 평탄 하강과 양립”한다고도 하고, $(\mathrm{Sch})/S$ 위의 “준층”
+$P$가 $\mathfrak M$이 주는 국소화 개념에 관한 “층”이라고도 한다. $P$가
+임의의 함자일 때, 보통의 위상적 국소화에서 잘 알려진 표준 절차를 통해
+“층” $\mathcal P$와 함자 준동형 $P\longrightarrow\mathcal P$를 대응시킬
+수 있으며, 이 준동형은 자명한 의미에서 보편적이다. $\mathcal P$는 다음과
+같이 구체적으로 계산할 수 있다. $\mathcal P(T)$를 정의하기 위하여,
+$u:T'\longrightarrow T$가 $\mathfrak M$에 속하는 모든 $T$ 위의 $T'$에
+대해 다음 집합을 생각한다.
+
+\src{145}
+$\overline H^0(T'/T,P)$를 $P(T')$의 원소 $\xi$ 가운데, 그 두 상
+$\xi_1,\xi_2\in P(T'\times_TT')$가 다음 성질을 갖는 것들로 이루어진
+부분집합이라 하자. 즉 $v\in\mathfrak M$인 사상
+$v:T''\longrightarrow T'\times_TT'$가 존재하여, $\xi_1$과 $\xi_2$의
+$P(T'')$에서의 상이 같아야 한다. [주의. 이와 같이 정의한 집합
+$\overline H^0$는 [4], I, A, 4(a)에서 도입한 집합 $H^0(T'/T,P)$보다
+크다.] $T$를 고정하고 $T'$을 움직이면(여전히 $u\in\mathfrak M$이라
+하고, $T'$들의 모임에는 지배관계가 정하는 준순서를 준다)
+$\overline H^0(T'/T,P)$들은 귀납계를 이루며, 다음과 같이 놓는다.
+\begin{equation}
+\mathcal P(T)=\varinjlim_{T'}\overline H^0(T'/T,P).
+\tag{1.6}
+\end{equation}
+이 식의 $T$에 관한 함자 법칙은 분명하게 구체화된다.
+
+\[
+P(T)=\operatorname{Pic}(X\times_ST)
+\]
+일 때, (1.6)이 정의하는 $(\mathrm{Sch})/S$ 위의 반변 함자를 $S$ 위의
+$X$의 \emph{상대 피카르 함자}라 하고 $\operatorname{Pic}_{X/S}$로
+나타낸다. 또한 군 $\operatorname{Pic}_{X/S}(S)$를 $S$ 위의 $X$의
+\emph{상대 피카르 군}이라 하고 $\operatorname{Pic}(X/S)$로 나타낸다.
+그러면 분명한 전단사
+\begin{equation}
+\operatorname{Pic}_{X/S}(T)\simeq\operatorname{Pic}(X\times_ST/T)
+\tag{1.7}
+\end{equation}
+를 얻는다.
+
+따라서 $\operatorname{Pic}(X/S)$의 한 원소는 다음과 같은 자료로
+정의된다. 충실 평탄이고 준콤팩트인 사상 $S'\longrightarrow S$와 군
+$\operatorname{Pic}(X\times_SS')$의 원소 $\xi'$를 택하되, 충실 평탄이고
+준콤팩트인 사상 $S''\longrightarrow S'\times_SS'$가 존재하여 $\xi'$의
+두 역상이 $\operatorname{Pic}(X\times_SS'')$에서 같아야 한다. 방금
+설명한 조건을 만족하는
+\[
+\xi'\in\operatorname{Pic}(X\times_SS'),\qquad
+\xi_1\in\operatorname{Pic}(X\times_SS_1)
+\]
+이 $\operatorname{Pic}(X/S)$의 같은 원소를 정의할 필요충분조건은,
+충실 평탄이고 준콤팩트인 사상
+$S'_1\longrightarrow S'\times_SS_1$이 존재하여 문제의 두 원소의 상이
+$\operatorname{Pic}(X\times_SS'_1)$에서 같은 것이다. 앞에서 도입한 함자
+$P'=\operatorname{Pic}'_{X/S}$로 계속 작업하는 편이 흔히 편리하다.
+표준 사상 $P\longrightarrow P'$이 동형사상
+\begin{equation}
+\mathcal P\xrightarrow{\sim}\mathcal P'
+\tag{1.8}
+\end{equation}
+을 유도함을 곧바로 알 수 있다. 이는
+$\operatorname{Pic}'_{X/S}=P'$를 이용하여
+$\operatorname{Pic}_{X/S}$를 기술하는, 흔히 더 편리한 방법을 준다. 아래
+2.3에 따라, 방금 설명한 $\operatorname{Pic}(X/S)$의 기술에서 $P$를
+$P'$로 바꾸면 실제로
+
+\src{146}
+$S''=S'\times_SS'$ 및 $S'_1=S'\times_SS_1$로 잡을 수 있다. 적어도 인용한
+곳에 명시된 조건 아래에서는 그렇다.
+
+함자 $\operatorname{Pic}_{X/S}$가 표현 가능하면 $X/S$가 피카르 준스킴을
+갖는다고 말한다. 이 함자를 표현하는 $S$ 위의 준스킴을 $S$ 위의 $X$의
+\emph{피카르 준스킴}이라 하고, 여전히 $\operatorname{Pic}_{X/S}$로
+나타낸다. 이를 위해서는 $P'=\operatorname{Pic}'_{X/S}$가 표현
+가능하기만 하면 됨이 분명하다. 실제로 이 경우 $P'$는 이미 “층”이고,
+(1.8)에 따라 $P'\longrightarrow\mathcal P'$은 표준 사상
+\begin{equation}
+\operatorname{Pic}'_{X/S}\longrightarrow\operatorname{Pic}_{X/S}
+\tag{1.9}
+\end{equation}
+과 동일시되며, 이 사상은 동형사상이다. 따라서 우리의 용어는 (1.4)와
+함께 앞에서 도입한 용어와 양립한다. 일반적으로
+$\operatorname{Pic}_{X/S}$가 존재할 때, 이는 함자적 동형사상
+\begin{equation}
+\operatorname{Hom}_S(S',\operatorname{Pic}_{X/S})\xrightarrow{\sim}
+\operatorname{Pic}(X\times_SS'/S')
+\tag{1.10}
+\end{equation}
+으로 정의된다.
+
+\fsection{2}{여러 상대 및 절대 피카르 군 사이의 관계}
+
+\result{명제}{2.1} $f:X\longrightarrow S$가
+$\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$를 만족하는 사상이라고
+하자. 그러면 완전열
+\[
+0\longrightarrow\operatorname{Pic}(S)\longrightarrow\operatorname{Pic}(X)
+\longrightarrow\operatorname{Pic}'(X/S)
+\]
+이 있다. $X$가 $S$ 위의 단면을 가지면 마지막 사상은 전사이다. 즉
+동형사상
+\[
+\operatorname{Pic}'(X/S)\xrightarrow{\sim}
+\operatorname{Pic}(X)/\operatorname{Pic}(S)
+\]
+이 있다.
+
+이 완전열은 $f$와 $\mathcal O_X^*$에 관한 르레 스펙트럴 열에 대응하는
+저차 완전열로 볼 수 있다. 두 번째 주장도 마찬가지로 형식적이다.
+
+\result{명제}{2.2} $f:X\longrightarrow S$가 준콤팩트 분리 사상이고
+$\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$를 만족한다고 하자. 또한
+$S'\longrightarrow S$를 충실 평탄이고 준콤팩트인 사상이라 하자. 그러면
+다음이 성립한다.
+
+\noindent (i) $\operatorname{Pic}'(X/S)\longrightarrow
+\operatorname{Pic}'(X\times_SS'/S')$은 단사이다.
+
+\noindent (ii) $X$가 $S$ 위에서 국소적으로 단면을 갖는다고 하자. 즉 모든
+$s\in S$가 열린 근방 $U$를 가져서 $X|U$가 $U$ 위의 단면을 갖는다고
+하자. 그러면 도식
+\[
+\operatorname{Pic}'(X/S)\longrightarrow
+\operatorname{Pic}'(X\times_SS'/S')\rightrightarrows
+\operatorname{Pic}'(X\times_SS''/S'')
+\]
+
+\src{147}
+은 완전하다. 여기서 $S''=S'\times_SS'$이다.
+
+첫 번째 주장은 충실 평탄 하강의 초등적 성질과 다음의 일반적 관찰로부터
+따라온다. $f:X\longrightarrow S$가
+$\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$를 만족하는 사상이라
+하자. $S$ 위의 유한 계수 국소 자유 가군들의 범주에서 $X$ 위의 유한 계수
+국소 자유 가군들의 범주로 가는 함자
+\[
+\mathcal F\longmapsto f^*(\mathcal F)
+\]
+는 충만하고 충실하다. 그 본질적 상은 $X$ 위의 가군 $\mathcal G$ 가운데
+$f_*(\mathcal G)$가 국소 자유이고 표준 준동형
+\[
+f^*\bigl(f_*(\mathcal G)\bigr)\longrightarrow\mathcal G
+\]
+이 동형사상인 것들로 이루어진다. 두 번째 주장은 [4], I, B, 4에서 하강
+이론으로 증명되었다.
+
+2.2의 결과는 다음과 같이도 진술할 수 있다.
+
+\result{따름정리}{2.3} 2.2의 조건 아래에서 표준 준동형 (1.9)
+\[
+\operatorname{Pic}'_{X/S}\longrightarrow\operatorname{Pic}_{X/S}
+\]
+은 단사이고, $X$가 $S$ 위에서 국소적으로 단면을 가지면 전단사이기까지
+하다. (따라서 후자의 경우 상대 피카르 군 $\operatorname{Pic}(X/S)$과
+제한 상대 피카르 군 $\operatorname{Pic}'(X/S)$은 동일하다.)
+
+이를 2.1과 결합하면 다음을 얻는다.
+
+\result{따름정리}{2.4} 2.2의 조건 아래에서 완전열
+\[
+0\longrightarrow\operatorname{Pic}(S)\longrightarrow\operatorname{Pic}(X)
+\longrightarrow\operatorname{Pic}(X/S)
+\]
+이 있다. $X$가 $S$ 위의 단면을 가지면 마지막 준동형은 전사이다. 즉
+동형사상
+\[
+\operatorname{Pic}(X/S)\xrightarrow{\sim}
+\operatorname{Pic}(X)/\operatorname{Pic}(S)
+\]
+이 있다.
+
+\result{비고}{2.5} $f:X\longrightarrow S$가
+$\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$를 만족하는 사상이고,
+$g$가 $S$ 위의 $X$의 단면이라고 하자. $\mathcal L$을 $X$ 위의 가역
+가군이라 하자. 동형사상
+\[
+\mathcal O_S\xrightarrow{\sim}g^*(\mathcal L)
+\]
+을 $\mathcal L$의 $g$-강체화라 하고, $g$-강체화가 주어진 $X$ 위의 가역
+가군 $\mathcal L$을 \emph{$g$-강체화된 가역 가군}이라 하자. 이러한
+구조의 모든 자기동형사상은 자명하며, $\operatorname{Pic}'(X/S)$은 $X$
+위의 $g$-강체화된 가역 가군들의 동형류 집합과
+동일시된다.\footnote{인쇄본에는 “$S$ 위”라고 되어 있다. 그러나 단면
+$g:S\to X$에 의한 강체화는 여기서 $X$ 위의 가군 $\mathcal L$에 관한
+것이다.} (바로 이 사실 덕분에 2.2(ii)를 증명할 때 하강 이론을 사용할 수
+있었다.) 이는 적어도 $f$가 더 나아가 준콤팩트이고 분리인 경우
+$\operatorname{Pic}(X/S)$에 대한 새로운 해석을 준다. 실제로 이 경우
+2.3에 따라
+\[
+\operatorname{Pic}(X/S)\simeq\operatorname{Pic}'(X/S)
+\]
+이다.
+
+\src{148}
+\result{비고}{2.6} $f:X\longrightarrow S$를 2.2에서와 같은 사상이라
+하고, $S'\longrightarrow S$를 다음 조건을 만족하는 충실 평탄이고
+준콤팩트인 사상이라 하자. 즉 $S$-사상 $S'\longrightarrow X$가 존재하며,
+동치로 $X'=X\times_SS'$가 $S'$ 위의 단면을 갖는다고 하자.
+$S''=S'\times_SS'$, $X''=X\times_SS''$로 놓고 완전열
+\[
+\operatorname{Pic}(X/S)\longrightarrow\operatorname{Pic}(X'/S')
+\rightrightarrows\operatorname{Pic}(X''/S'')
+\]
+을 생각하자. 2.4를 적용하면 완전열
+\[
+\operatorname{Pic}(X/S)\longrightarrow
+\operatorname{Pic}(X')/\operatorname{Pic}(S')
+\rightrightarrows
+\operatorname{Pic}(X'')/\operatorname{Pic}(S'')
+\]
+을 얻는다. 특히 상대 피카르 군의 모든 원소는 이미
+$\operatorname{Pic}(X')$의 어떤 원소에서 “온다”. 따라서 이는 앞
+번호에서 설명한 상대 피카르 군의 기술을 크게 단순화하며, $S$ 위의 $X$의
+피카르 함자에 대해서도 마찬가지다. 실제로 $S$ 위의 모든 $T$에 대하여
+$X\times_ST/T$와 사상 $T'=S'\times_ST\longrightarrow T$에 앞의 논의를
+적용할 수 있다. 예를 들어 $f$ 자체가 충실 평탄이면 $S'=X$로 잡을 수
+있다. 더 나아가 $f$가 유한형(각각 매끄러운 등)이면, 상대 피카르 함자
+\[
+T\longmapsto\operatorname{Pic}(X\times_ST/T)
+\]
+를 기술할 때 유한형(각각 매끄러운 등)인 밑변경
+$T'\longrightarrow T$만을 사용해도 된다. $f$가 사영이고 평탄하며 $S$가
+국소 뇌터일 때에는, 위의 $S'\longrightarrow S$를 다음과 같이 잡을 수
+있음이 증명된다. $S$를 덮는 열린집합 $S_i$들의 평탄 피복 $S'_i$를 택해
+$S'$이 이들의 서로소 합이 되게 할 수 있다. $f$가 더 나아가 분리
+가능하면 $S'_i$를 $S_i$ 위에서 에탈이 되게 잡을 수 있다.
+
+\fsection{3}{주요 존재 정리: 진술}
+
+알려진 모든 경우를 포괄하는 피카르 준스킴의 존재 명제는 추측의 형태로도
+아직 없다. 말하자면 “실질적으로 필요한” 조건은
+$f:X\longrightarrow S$가 고유이고(이는 본질적인 유한성 성질들을
+보장한다) 평탄인 것이다. 그러나 $S$가 체 $k$ 위의 쌍대수
+$k[t]/(t^2)$의 스펙트럼이고(가령 $k$를 복소수체 $\mathbf C$로 잡아도
+된다) $X$가 1차원인 경우에도 이 조건들은 충분하지 않다. 이 강연을 쓰는
+현재, 피카르 준스킴에 관한 가장 중요한 존재 정리들은 다음 정리에서
+따라온다.
+
+\result{정리}{3.1} $f:X\longrightarrow S$를 국소 뇌터 준스킴들의
+사상이라 하자. 다음을 가정한다.
+
+\noindent (i) $f$는 사영이다.
+
+\src{149}
+\noindent (ii) $f$는 평탄이다.
+
+\noindent (iii) $f$의 기하적 섬유들은 정역 준스킴이다.
+
+이 조건들 아래에서 $\operatorname{Pic}_{X/S}$가 존재한다.
+
+뒤의 두 번호에서 개략적으로 제시할 증명은 동시에 다음도 보일 것이다.
+$\xi$를 $S$에 관해 매우 풍부한 층 $\mathcal O_X(1)$에 대응하는
+$\operatorname{Pic}_{X/S}$의 단면이라 하자. (즉 이 층은 사영 몰입 사상
+$X\longrightarrow\mathbf P(\mathcal E)$에 의해 유도된다.) 그러면
+$\operatorname{Pic}_{X/S}$의 열린 부분 $U$가 존재하여, $U$는 $S$ 위에서
+준사영인 열린 부분들의 서로소 합이고 $\xi$에 의한 평행이동에 대해
+안정하며, $\operatorname{Pic}_{X/S}$는 열린집합 $U-n\xi$들의 증가하는
+합집합이다. (이 열린집합들은 모두 $U$와 동형이다.) 특히 3.1의 조건
+아래에서 $\operatorname{Pic}_{X/S}$는 $S$ 위에서 분리되어 있다.
+
+\result{비고}{3.2} 예들을 통해 다음을 알 수 있다. (예를 들어 $S$가 이산
+값매김환의 스펙트럼이고 $X$가 $S$ 위에서 상대 차원 1인 경우를 생각할 수
+있다.) 3.1에서 가정 (iii)을 생략하고, 모든 $s\in S$에 대하여 준동형
+\[
+k(s)\longrightarrow H^0(X_s,\mathcal O_{X_s})
+\]
+이 동형이라는 더 약한 가정으로 바꾸면 $\operatorname{Pic}_{X/S}$는
+$S$ 위에서 분리되어 있지 않을 수도 있다. 이는 $f$의 기하적 섬유들이
+축소이지만 정역인 기하적 일반섬유 하나가 특수화될 때 두 기약 성분으로
+``갈라지는'' 경우에도, 기하적 섬유들이 기약이지만 정역인 기하적
+일반섬유 하나가 ``다중 섬유''로 특수화되는 경우에도 일어난다. 첫 번째
+경우는 예를 들어 원뿔곡선이 한 점에서 만나는 두 직선으로 퇴화할 때
+나타난다. 두 번째 경우의 예는 D. 멈퍼드가 알려 주었는데, 타원곡선이
+이중 타원곡선으로 퇴화하는 예이다. 이 예들은 임의의 표수에서 성립한다.
+
+\result{비고}{3.3} 3.1의 조건 아래에서 $\operatorname{Pic}_{X/S}$가
+$S$ 위에서 유한형이고 따라서 준사영인 열린 부분들의 서로소 합인지는
+나는 알지 못한다.\footnote{1962년 정오표는 D. 멈퍼드가 여기서 전개한
+피카르 스킴 이론을 이용하여 이 문제를 긍정적으로 해결했다고 전한다.}
+힐베르트 스킴의 경우와 마찬가지로([4], IV), 힐베르트 다항식
+$Q\in\mathbf Q[t]$를 생각하면 $\operatorname{Pic}_{X/S}$를 열린집합
+$\operatorname{Pic}^{Q}_{X/S}$들의 서로소 합으로 분해할 수 있다. 이
+열린집합들은 $S$ 위에서 준사영일 것으로 보이며, 적어도 다음 강연에서
+$f$가 매끄러운 사상일 때 이를 보게 될 것이다. 가정 (i)을 ``$X$는
+$S$ 위에서 국소적으로 사영이다''라는 가정으로 바꾸는 경우에는 주의해야
+한다. ($\operatorname{Pic}_{X/S}$의 존재 문제는 분명히 $S$ 위에서
+국소적이므로, 이 가정만으로도 3.1은 성립한다.) 반면 이 경우에는
+
+\src{150}
+$\operatorname{Pic}_{X/S}$가 $S$ 위에서 유한형이 아닌 연결 성분들을
+포함하는 예를 쉽게 들 수 있다. 예를 들어 $X_0$를 대수적으로 닫힌 체
+$k$ 위의 비특이 사영 대수다양체라 하고, $u$를 그 자동사상, $\xi$를
+$X_0$의 네론--세베리 군의 원소라 하되 $u^n(\xi)$들이 서로 다르다고
+하자. 이를테면 $X_0$로 타원곡선 $E$와 자기 자신의 곱을 취하고, $u$로는
+$E\times E$의 자동사상
+\[
+(x,y)\longmapsto(x,y+x)
+\]
+을 취할 수 있다. $S$를 두 점 $a$와 $b$에서 만나는 두 비특이 기약곡선의
+합집합이라 하자. $S$ 위에는 연결 $\mathbf Z$-토서 $P$가 있다.
+$u$가 정하는 $\mathbf Z$의 $X_0$ 위의 작용들을 이용하면, 섬유가 $X_0$인
+$S$ 위의 연관 다발을 얻는다. 이 다발은 $S-a$와 $S-b$ 위에서 자명하고,
+지금 생각하는 특별한 경우에는 실제로 $S$ 위의 아벨 스킴이다. 또한
+$\operatorname{Pic}_{X/S}$는 $P$와, $u$를 통해
+$\operatorname{Pic}_{X_0/k}$ 위에 주어지는 $\mathbf Z$의 작용들에
+연관된 다발이며, 다음과 동형인 연결 성분을 포함함을 쉽게 알 수 있다.
+\[
+P\times\operatorname{Pic}^{0}_{X_0/k}.
+\]
+(여기서 $\operatorname{Pic}^{0}$는 $\operatorname{Pic}$ 안에서 항등원의
+연결 성분을 나타낸다.) 이 성분은 $S$ 위에서 유한형이 아니다. [$S$ 위에서
+분리되지 않은 피카르 준스킴의 여러 경우에도 3.2에서 생각한 것과 비슷한
+현상이 일어난다.]
+
+\fsection{4}{상대 카르티에 인자와 사영 다발}
+
+우리는 양의 인자만 사용할 것이며, 이 번호의 나머지 부분에서는 이
+덧붙인 수식어를 생략한다.
+
+$X$를 준스킴이라 하자. $X$ 위의 \emph{카르티에 인자}, 또는 간단히
+$X$ 위의 인자란 가역 가군인 아이디얼 $\mathcal J$에 의해 정의되는
+$X$의 닫힌 부분준스킴 $D$를 말한다. 즉 $\mathcal J$는
+$\mathcal O_X$의 영인자가 아닌 한 절단에 의해 국소적으로 생성된다.
+$D$에 가역 가군
+\[
+\mathcal L(D)=\mathcal J^{-1}
+\]
+을 결부한다. 그리고 표준 포함 사상
+$\mathcal J\longrightarrow\mathcal O_X$는 표준 준동형
+\[
+s_D:\mathcal O_X\longrightarrow\mathcal J^{-1}=\mathcal L(D),
+\qquad\text{즉}\quad s_D\in\Gamma(X,\mathcal L(D))
+\]
+을 준다. 더 나아가 인자 하나를 주는 것은 본질적으로 $X$ 위의 가역 가군
+$\mathcal L$과 모든 점에서 영인자가 아닌 절단 $s$를 주는 것과 동치이다.
+역으로 이러한 쌍 $(\mathcal L,s)$에는 $s$의 ``인자''를 결부하며, 이를
+$\operatorname{div}(s)$로 나타낸다. $X$ 위의 주어진 가역 가군
+$\mathcal L$을 정의하는 인자 $D$들의 집합은 몫집합
+
+\src{151}
+\[
+\Gamma(X,\mathcal L)^*/\Gamma(X,\mathcal O_X^*)
+\]
+과 전단사로 대응한다. 여기서 $\Gamma(X,\mathcal L)^*$는
+$\Gamma(X,\mathcal L)$의 절단들 가운데 모든 점에서 영인자가 아닌 것들로
+이루어진 부분집합을 나타낸다.
+
+이제 국소 유한형 사상 $f:X\longrightarrow S$가 주어졌다고 하고, 간단히
+$S$가 국소 뇌터라고 가정하자. $\mathcal J$를 $X$ 위의 연접 아이디얼층,
+$D$를 이것이 정의하는 $X$의 부분스킴이라 하고, $x\in X$ 및 $s=f(x)$라
+하자. 다음 조건들은 서로 동치이다.
+
+\noindent (i) $\mathcal J$는 $x$에서 가역이고(즉 $\mathcal J_x$는
+$\mathcal O_{X,x}$의 정칙 원소 하나로 생성된다), $D$는 $x$에서
+$S$ 위로 평탄이다.
+
+\noindent (ii) $X$와 $D$는 $x$에서 $S$ 위로 평탄이고, $D_s$는 점
+$x$에서 섬유 $X_s$ 위의 카르티에 인자이다.
+
+\noindent (iii) $X$는 $x$에서 $S$ 위로 평탄이고, $\mathcal J_x$는
+$X_s$ 위에 영인자가 아닌 싹을 유도하는 원소 $f_x$로 생성된다.
+
+이때 $D$를 생각하는 점에서 $X/S$ 위의 \emph{상대 카르티에 인자}(또는
+간단히 $X/S$ 위의 상대 인자)라고 한다. (i)에서 $D$가 $x$의 근방에 있는
+점들에서도 상대 인자임을 알 수 있다. 따라서 $X$와 $D$가 $S$ 위에서
+평탄이고 $D$가 $S$ 위에서 고유이면, $D_s$가 $X_s$ 안의 카르티에
+인자인 $s\in S$들의 집합(즉 $D$가 $X_s$의 점들에서 상대 카르티에
+인자인 $s$들의 집합)은 $S$의 열린 부분이다. 한편 앞의 정의는 상대
+카르티에 인자라는 개념이 임의의 밑변환 $S'\longrightarrow S$ 아래에서
+안정하도록 정해졌다. 이제 $X/S$ 위의 상대 인자들의 집합을
+$\operatorname{Div}(X/S)$라 하고, $S$ 위에서 움직이는 $S'$에 관한 반변
+함자를 다음과 같이 정의하자.
+\[
+\operatorname{Div}_{X/S}(S')=
+\operatorname{Div}(X\times_SS'/S').
+\]
+
+$X$가 $S$ 위에서 평탄이고 고유라고 가정하자. 그러면 상대 카르티에 인자의
+특성화 (ii)에 따라 $\operatorname{Div}_{X/S}$를 [4], IV에서 정의한 함자
+$\operatorname{Hilb}_{X/S}$의 부분함자로 볼 수 있으며, 포함 준동형
+\[
+\operatorname{Div}_{X/S}\longrightarrow\operatorname{Hilb}_{X/S}
+\]
+은 앞의 비고들에 따라 ``열린 몰입 사상들에 의해 표현 가능''하다
+([5], IV, 3.13과 비교하라). [4], IV의 주요 존재 정리를 이용하면 다음을
+얻는다.
+
+\src{152}
+\result{명제}{4.1} $f:X\longrightarrow S$가 사영이고 평탄하다고 하자.
+그러면 함자 $\operatorname{Div}_{X/S}$는 표현 가능하며, 더 정확히는
+$\operatorname{Hilb}_{X/S}$의 열린 부분준스킴으로 표현된다.
+
+$X/S$ 위에 주어진 매우 풍부한 층 $\mathcal O_X(1)$에 대하여,
+$\operatorname{Hilb}_{X/S}$를 힐베르트 다항식
+$Q\in\mathbf Q[t]$에 대응하는 열린 부분준스킴
+$\operatorname{Hilb}^{Q}_{X/S}$들의 합으로 분해하는 표준 분해를 사용하면,
+마찬가지로 분해
+\[
+\operatorname{Div}_{X/S}=
+\coprod_{Q\in\mathbf Q[t]}\operatorname{Div}^{Q}_{X/S}
+\]
+를 얻는다. 이는 $S$ 위에서 준사영인 서로소 열린 부분준스킴들의 합이다.
+
+한편 대응 $D\longmapsto\mathcal L(D)$를 사용하면 함자적 준동형
+\begin{equation}
+\operatorname{Div}_{X/S}\longrightarrow\operatorname{Pic}_{X/S}
+\tag{+}
+\end{equation}
+을 얻는다. 이제 이를 연구하고자 한다. 상당히 일반적인 조건 아래에서 이
+준동형은 상대적으로 표현 가능함이 드러날 것이다([5], IV, 3). 따라서
+$\operatorname{Pic}_{X/S}(S')$의 한 원소 $\xi$에서 출발하자. 표기를
+간단히 하기 위하여 $S'=S$라고 가정하고, 이에 대응하는
+$\operatorname{Div}_{X/S}$의 부분함자가 표현 가능함을 보이자. 먼저
+$\xi$가 $X$ 위의 가역 가군 $\mathcal L$로 정의되는 경우를 생각한다.
+$X$가 $S$ 위에서 고유이고 평탄하며, $S$ 위의 $X$의 기하적 섬유들이
+정수적이라고 가정하자. 그러면 ([2], III, 7절)
+$\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$이고, 이 관계는 임의의
+밑변경 $S'\longrightarrow S$ 뒤에도 성립한다. $X/S$ 위의 상대 카르티에
+인자 $D$ 가운데 $\mathcal L(D)$와 $\mathcal L$이
+\[
+\operatorname{Pic}(X/S)=\operatorname{Pic}_{X/S}(S)
+\]
+의 같은 원소를 정의하는 것들, 즉 2.4에 따라 $\mathcal L(D)$와
+$\mathcal L$이 $S$ 위에서 국소적으로 동형인 것들은 몫층
+$f_*(\mathcal L)^*/\mathcal O_S^*$의 단면들과 일대일로 대응한다. 이
+대응은 밑변경과 양립한다. 한편 인용한 곳의 “퀸네트” 유형의 일반적
+고찰([6]도 보라)에 따르면, $X/S$의 고유성과 $S$ 위에서의
+$\mathcal L$의 평탄성으로부터 $S$ 위의 연접 가군 $\mathcal Q$와 층의
+동형사상
+\[
+f_*(\mathcal L)\xrightarrow{\sim}
+\operatorname{Hom}_{\mathcal O_S}(\mathcal Q,\mathcal O_S)
+\]
+이 존재한다. 여기서 $\mathcal Q$는 유일한 동형사상을 제외하고
+정의되며, 그 형성은 밑변경과 양립한다.
+\footnote{인쇄본에서는 $\operatorname{Hom}$의 아래첨자에
+$\mathcal O_X$를 두었다. 그러나 $\mathcal Q$는 $S$ 위의 가군이므로
+그 쌍대는 $\mathcal O_S$ 위에서 취한다.} 여기서
+$f_*(\mathcal L)^*$는 $f_*(\mathcal L)$의 집합들의 부분층으로서, $U$
+위의 단면들은 $f^{-1}(U)$ 위의 $\mathcal L$의 단면들 가운데
+$f^{-1}(U)/U$ 위의 상대 카르티에 인자를 정의하는 것들이다. 즉 이들은
+
+\src{153}
+$X_s$ 위에 영인자가 아닌 단면을 유도한다($s\in U$). 섬유 $X_s$가
+정수적이라는 가정을 사용하면, 이는 유도된 단면이 각 섬유 $X_s$ 위에서
+항등적으로 영이 아니라는 뜻일 뿐이다. 또는 국소 준동형
+$\mathcal Q\longrightarrow\mathcal O_S$의 말로는 이 준동형들이
+전사라는 뜻이다(나카야마 보조정리). 따라서
+$f_*(\mathcal L)^*/\mathcal O_S^*$의 단면들의 집합은 $\mathcal Q$의
+가역 몫가군들의 집합과 일대일로 대응한다. 동치로, 연접 가군
+$\mathcal Q$에 대응하는 사영 다발 $\mathbf P(\mathcal Q)$의 정의에
+따라([5], V, 2), 이는 $S$ 위의 $\mathbf P(\mathcal Q)$의 단면들의
+집합과 일대일로 대응한다. 이 기술은 역상 형성과 양립하므로 다음 정리를
+얻는다.
+
+\result{정리}{4.3} $f:X\longrightarrow S$를 기하적 섬유가 정수적인
+고유 평탄 사상이라 하고, $S$는 국소 뇌터라고 하자. 또한 $\mathcal L$을
+$X$ 위의 가역 가군이라 하자. $S$ 위의 모든 $S'$에 대하여 $T(S')$를
+$X\times_SS'/S'$ 위의 상대 인자 $D$ 가운데 $\mathcal L(D)$가
+$S'$ 위에서 국소적으로
+$\mathcal L\otimes_{\mathcal O_S}\mathcal O_{S'}$와 동형인 것들의
+집합이라 하자. 즉 $\mathcal L(D)$와
+$\mathcal L\otimes_{\mathcal O_S}\mathcal O_{S'}$가
+$\operatorname{Pic}(X\times_SS'/S')$의 같은 원소를 정의하도록 한다.
+그러면 $S$ 위의 연접 가군 $\mathcal Q$가 존재하고 유일한 동형사상을
+제외하고 결정되며, 함자 $T$는 사영 다발 $\mathbf P(\mathcal Q)$로
+표현된다.
+
+\result{따름정리}{4.4} $f$가 더 나아가 사영이라고 가정하면, 함자적
+준동형
+$\operatorname{Div}_{X/S}\longrightarrow\operatorname{Pic}_{X/S}$은
+사영 사상들로 표현된다.
+
+실제로 $X$가 $S$ 위의 단면을 가지면(각각 국소적으로 단면을 가지면),
+4.3과 2.1에 따라 앞의 준동형은 사영 다발들로(각각 국소 사영 다발들로)
+표현된다. $f$가 준사영인 경우에는 $S$ 위에서 국소적으로 $X$의 유한
+평탄 준단면들을 사용하는 하강 방법으로 앞의 경우에 쉽게 환원된다.
+
+\result{비고}{4.5} 4.3의 조건 아래에서 $S$ 위의 가군 $\mathcal Q$는
+일반적으로 국소 자유가 아니다. 이는 $s\in S$가 변할 때
+$\mathcal Q$의 축소 섬유의 차원, 즉 $H^0(X_s,\mathcal L_s)$의 차원이
+뛸 수 있다는 사실로 나타난다. 국소 뇌터 준스킴 $S$ 위의 연접 가군
+$\mathcal Q$가 주어졌다고 하자. 주어진 $s\in S$에 대하여
+$\mathcal Q$가 $s$에서 자유일 필요충분조건은
+$\mathbf P(\mathcal Q)$가 $s$ 위의 점들에서 $S$ 위로 평탄한 것이다.
+이 경우에는 그 점들에서 $S$ 위로 매끄럽기까지 하다. 여기서는
+$\mathcal Q$가 위와 같이 $\mathcal L$로 정의되므로, 이는 직상
+$f_*(\mathcal L)$의 형성이 “$s$의 근방에서 밑변경과 가환한다”는 뜻과도
+같다. 다시 말해
+
+\src{154}
+\[
+f_*(\mathcal L)_s\longrightarrow H^0(X_s,\mathcal L_s)
+\]
+가 전사라는 뜻이다. 예를 들어 $H^1(X_s,\mathcal L_s)=0$이면 이렇게
+된다. 문제의 준스킴들이 존재한다는 전제 아래에서, 이 판정법들은 특히
+보편적 상황
+$\operatorname{Div}_{X/S}\longrightarrow\operatorname{Pic}_{X/S}$에
+적용된다. 그리하여 이 사상이 $\operatorname{Div}_{X/S}$의 주어진 한
+점에서 매끄러울 필요충분조건, 각각 충분조건을 준다.
+
+\fsection{5}{주요 존재 정리의 증명}
+
+3.1의 조건 아래에서 $X/S$ 위의 매우 풍부한 가군
+$\mathcal O_X(1)$을 택하고, $\xi$를 이에 대응하는
+$\operatorname{Pic}(X/S)$의 원소라 하자. 줄여서
+\[
+P(S')=\operatorname{Pic}(X\times_SS'/S')
+\]
+로 놓고, 먼저 표기를 간단히 하기 위하여 $X/S$가 단면을 가진다고
+가정하자. $P^+(S')$를 $X\times_SS'$ 위의 가역 가군 $\mathcal L$의
+류들 가운데
+\[
+R^if'_*(\mathcal L(n))=0\quad\text{$i>0$이고 모든 $n\geq0$에 대하여},
+\qquad
+f'_*(\mathcal L(n))\neq0\quad\text{모든 $n\geq0$에 대하여}
+\]
+를 만족하는 것들로 이루어진 $P(S')$의 부분집합이라 하자. 이 조건들은
+밑변경에 대해 안정하므로 $P$의 부분함자 $P^+$를 정의하며, 이는 분명히
+$\xi$에 의한 평행이동에 대해 안정하다. 세르의 “정리 A와 B”([2], III,
+2)와 일반적 결과들([5], IV, 5)을 사용하면 $P$가 표현 가능할
+필요충분조건은 $P^+$가 표현 가능한 것임을 쉽게 알 수 있다. 이 경우
+$P^+$는 $P$를 표현하는 준스킴 $\operatorname{Pic}_{X/S}$의 열린
+부분준스킴 $U$로 표현되고, 이 준스킴은 열린 부분준스킴 $U-n\xi$들의
+증가 합집합이다.
+
+줄여서 $D=\operatorname{Div}_{X/S}$로 놓고, $D^+$를 표준 사상
+$D\longrightarrow P$에 의한 $P^+$의 역상이라 하자. 따라서 사상
+\begin{equation}
+D^+\longrightarrow P^+
+\tag{+}
+\end{equation}
+이 있다. 또한 $D^+$는 이미 준스킴 $D=\operatorname{Div}_{X/S}$의
+열린 부분준스킴 $D^+$로 표현됨을 알고 있다. 이 준스킴의 존재는 4.1이
+보장한다. 4.3으로부터 사상 (+)가 매끄럽고 사영이며 전사인 사상들로
+표현됨이 쉽게 따른다. 더 정확히는, 모든 점에서 영이 아닌 국소 자유
+가군에 대응하는 사영 다발들로 표현된다. 실제로
+$X\times_SS'$ 위의 $\mathcal L$이 이 번호의 첫머리에서와 같으면,
+$f'_*(\mathcal L)$은 영이 아닌 국소 자유 가군이고 그 형성은 밑변경과
+가환한다. 4.3의 표기로 $\mathcal Q$는 $f'_*(\mathcal L)$의 쌍대와
+동형이다. 이제 일반 판정법([5], IV, 4.7)을 사용하여 $P^+$의 표현
+가능성을 이끌어 내겠다. 인용한 곳에서 $\mathfrak C$를 충실 평탄이고
+
+\src{155}
+준콤팩트인 준스킴 사상들의 모임으로 잡는다. 이들은 [4], I B에 따라
+유효 에피사상이다. 인용한 곳의 조건 (a), 즉 (+)가
+$\mathfrak C$에 속하는 사상들로 표현된다는 조건은 방금 본 바와 같이
+성립한다. 마찬가지로 조건 (b), 즉 함자 $P^+$가 충실 평탄이고
+준콤팩트인 하강과 양립한다는 조건도 즉시 성립한다. 이제 인용한 곳의
+조건 (c)를 증명하는 일만 남는다. 즉 $\mathfrak C$-표현 가능 사상
+(+)로부터 준스킴 $D^+$ 위에 유도된 동치관계 $R$이
+$\mathfrak C$-유효임을, 다시 말해 $R$이 유효이고
+$D^+\longrightarrow D^+/R$이 $\mathfrak C$에 속함을 증명해야 한다.
+이를 위해 먼저, 여러 가상 힐베르트 다항식 $Q\in\mathbf Q[t]$에 대응하는
+$D^+$의 열린 부분준스킴 $D^{+Q}$가 $R$에 대해 안정함을 주목한다.
+이는 $R$의 섬유들이 연결이기 때문이다. 따라서 모든 $Q$에 대하여
+$D^{+Q}$ 위에 유도된 동치관계 $R^Q$가 $\mathfrak C$-유효임을 보이는
+문제로 환원된다. 그런데 이제 $D^{+Q}$는 준사영이고, 한편 동치관계
+$R^Q$는 사영이고 평탄하다. 그러므로 [4], III, 6.1을 적용할 수 있는
+조건 아래에 있으며, 이 결과로 원하는 결론이 따른다.
+
+$X/S$가 반드시 단면을 가지지는 않는 일반적인 경우에는 하강 기법으로
+앞의 경우에 쉽게 환원한다. 또는 $P^+$의 정의에 필요한 수정을 가하여
+앞의 증명을 되풀이한다.
+
+\result{비고}{5.1} 여기서 따른 방법은 피카르 다양체를 사영적으로 구성하기
+위한 마쓰사카의 방법과 본질적으로 같다. 유효 몫으로 넘어갈 수 있음을 위해
+인용한 [4], III의 결과는 힐베르트 스킴의 존재 정리에서도 쉽게 도출할 수
+있다(예컨대 [6]을 보라). (고전적으로 이러한 몫은 차우 좌표를 이용하여
+구성했다.) $\operatorname{Pic}_{X/S}$의 열린 부분
+$\operatorname{Pic}^{+}_{X/S}$의 형성과, 고려하는 가역 가군들을 정하는
+약수들의 힐베르트 다항식에 따라 이를 $S$ 위에서 준사영인 열린 부분들
+$\operatorname{Pic}^{+Q}_{X/S}$로 분해하는 것은 밑변경과 양립함에
+주의하자. 이 사실 덕분에 하강 기법을 적용할 수 있다.
+
+\result{비고}{5.2} $f:X\longrightarrow S$가 고유이고 평탄이며 준동형
+\[
+k(s)\longrightarrow H^0(X_s,\mathcal O_{X_s})\qquad(s\in S)
+\]
+들이 동형사상일 때마다 $\operatorname{Pic}_{X/S}$가 존재할 가능성을
+배제할 수 없다. (이 마지막 조건은 이때
+$\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)$이고 이 관계가 임의의
+밑변경 $S'\longrightarrow S$ 뒤에도 유지된다는 뜻이기도 하다.) 적어도
+$f$가 더 나아가 사영인 해석공간의 경우에는, [5], IX, 3.1에서 설명한
+다른 방법(내가 틀리지 않았다면 차우의 방법)으로 이 사실을
+증명한다.\footnote{1962년 정오표는 이 비고의 첫머리에서 제시한 존재
+추측이 거짓이지만, 멈퍼드의 방법으로 그보다 약간 약한 정리를 얻을 수
+있다고 지적한다.} 그 방법에서는 약수 스킴의 한 열린 부분 위에서 고유이고
+평탄인 동치관계로 몫을 취하는 대신, $X$를 $\mathbf P^r_S$ 안에
+몰입시키는 몰입 사상들의 스킴에서 사영군으로 몫을 취한다.
+
+\src{156}
+이 방법은 사영군으로 몫을 취하는 것에 관한 멈퍼드의 결과 [8]을 이용하면
+스킴의 경우에도 아마 적용할 수 있을 것이다. 현재로서는 $X$가 $S$ 위에서
+``많은 국소 단면''을 갖는 경우에만 증명이 쓰여 있다. 예컨대 $X$가
+잉여체가 대수적으로 닫힌 완비 국소환 위에서 분리 가능한 경우가
+그렇다.\footnote{인쇄본에는 ``잉여체가 대수적으로 닫힌''이라는 말이
+빠져 있다. 정오표는 멈퍼드의 반례 때문에 이 제한이 반드시 필요하다고
+명시한다.} 원칙적으로 이 방법은 더 일반적으로 적용될 것이다. 실제로
+피카르 준스킴이 분리되지 않는 경우에도 그 존재를 보이므로, 그런 경우에는
+첫 번째 방법이 필연적으로 실패한다. (기술적인 어려움은 $f$의 기하적
+섬유들이 더 이상 정역이 아닐 때 4.3에서 고려한 함자가 사영 다발
+$\mathbf P(\mathcal Q)$ 자체로 표현되는 것이 아니라 그 안의 열린 부분으로
+표현된다는 데서 생긴다. 이 때문에 평탄이지만 고유이지 않은 동치관계로
+몫을 취하는 까다로운 문제가 나타난다.)
+
+\result{비고}{5.3} 여기서 제시한 증명은 곡선 또는 곡선족의 야코비안을
+미리 구성하는 일에도, 아벨 다양체나 아벨 스킴의 이론에도 의존하지 않는다.
+따라서 A. 베유가 개략적으로 제시한 길을 따르는 랑의 책 [7]이나 슈발레의
+강연 [1] 같은 전통적인 설명과 본질적으로 다르다. 대수적으로 닫힌 체
+(가령 복소수체) 위의 비특이 곡선의 야코비안인 경우에도, 여기서 제시한
+야코비안의 구성은 1번에서 정의로 삼은 매우 강한 성질들을 보장하는 것으로
+알려진 유일한 구성이다. (이는 본질적으로 슈발레의 성질들이지만, 멱영원을
+갖는 ``매개변수 다양체''까지 고려한 것이다.) 피카르 스킴의 구성은 아벨
+다양체 이론 뒤에 와야 하는 것이 아니라 그에 앞서야 한다. 이는 일반적으로
+피카르 스킴이 아벨 스킴도 아니고 아벨 스킴으로 환원되지도 않는다는
+사실에서 선험적으로 분명하다. 대수적으로 닫힌 체 위의 특이 곡선에서 이미
+이를 볼 수 있다. 그 경우에는 아벨 다양체가 아닌 로젠리히트의 ``일반화
+야코비안''이 나타난다. 더 나아가 피카르 스킴의 일반 이론을 갖추고 나면
+아벨 다양체 이론, 더 일반적으로는 아벨 스킴 이론이 훨씬 간단해진다.
+특히 아벨 스킴의 쌍대성 이론, 그중에서도 카르티에형 결과들은 이로부터
+거의 형식적인 귀결이 된다(예컨대 [10]을 보라).
+
+\src{157}
+\result{비고}{5.4} 특이 곡선으로 퇴화하는 곡선의 야코비안에 관한
+이구사의 ``양립성 원리''는, 반드시 $S$ 위에서 매끄럽지는 않은 곡선을
+섬유로 갖는 상대 스킴 $X/S$의 피카르 스킴에 대한 존재 정리로 이해해야만
+제대로 이해할 수 있다. 따라서 특수화된 곡선이 정역일 때, 즉 고전적
+용어로 기약이고 중복도가 1일 때 이는 주요 존재 정리 3.1의 특수한 경우다.
+현재로서는 특수 곡선이 가약인 경우는 알려진 존재 정리들로 다룰 수 없다.
+각 성분의 중복도가 1인 경우, 즉 특수 곡선이 잉여체 위에서 분리 가능한
+경우에도 마찬가지다. 다만 잉여체가 대수적으로 닫힌 완비 이산 값매김환
+위에서는 예외이며, 5.2와 비교하라. 종수 $g$인 곡선들의 모듈라이 스킴에
+대한 베일리--사타케 ``콤팩트화''를 스킴 이론 안에서 기하적으로 구성할
+때 이 존재 문제는 분명 제기될 것이다. (이 콤팩트화는 현재 이구사의
+연구 덕분에 $g=1$인 경우에만 알려져 있다.)
+
+\fsection{6}{상대 존재 정리}
+
+우리는 여기서 어떤 피카르 스킴들의 존재가 다른 피카르 스킴들의 존재를
+함의하는 몇 가지 유용한 경우를 개략적으로 살펴본다. 이로써 주요 정리
+3.1에서 여러 다른 존재 정리를 도출할 수 있다.
+
+\result{명제}{6.1} $f:X\longrightarrow S$를 평탄 사영 사상이라 하자. 스타인
+인수분해 $f=f''f'$에서 사상 $f':X\longrightarrow S'$은 평탄이고 그 기하적
+섬유들이 정역이며(따라서 3.1의 가정들을 만족한다), 유한 사상
+$f'':S'\longrightarrow S$은 평탄하다고 하자. 그러면
+$\operatorname{Pic}_{X/S}$가 존재하고, [4], II, C 2에서 도입한 표기를 쓰면
+표준 동형사상
+\[
+\operatorname{Pic}_{X/S}\xrightarrow{\sim}
+\Pi_{S'/S}\operatorname{Pic}_{X/S'}
+\]
+이 있다.
+
+이를 보이기 위해 먼저 함자들의 동형사상
+\[
+\operatorname{Pic}_{X/S}\xrightarrow{\sim}
+\Pi_{S'/S}\operatorname{Pic}_{X/S'}
+\]
+을 확립하고, $\operatorname{Pic}_{X/S'}$가 표현 가능함을 함의하는 3.1을
+사용한다. 이어서 제3절에서 지적한 $\operatorname{Pic}_{X/S'}$의 구조, 즉
+$S$ 위의 $\operatorname{Pic}_{X/S'}$의 한 섬유의 모든 유한 부분집합이 어떤
+아핀 열린집합에 포함된다는 사실을 사용하여
+$\Pi_{S'/S}\operatorname{Pic}_{X/S'}$의 존재를 얻는다.
+
+\src{158}
+예를 들어 $X$가 3.1의 조건들을 만족하는 $S$ 위의 스킴 $X_i$들의 서로소
+합인 스킴이면, 명제 6.1은 자명한 명제
+\[
+\operatorname{Pic}_{X/S}\xrightarrow{\sim}
+\prod_i\operatorname{Pic}_{X_i/S}
+\]
+로 환원된다.
+
+\result{따름정리}{6.2} $f:X\longrightarrow S$를 기하적 섬유들이 국소 정역인
+사영 평탄 사상이라 하자(예를 들어 사영이고 정규인 사상). 그러면
+$\operatorname{Pic}_{X/S}$가 존재한다.
+
+더욱이 이 경우 $S'$은 $S$의 에탈 피복이다. 이는 $f$가 분리 가능할 때, 즉
+평탄이고 그 기하적 섬유들이 축소일 때마다 참이다. 또한
+$\operatorname{Pic}_{X/S'}$의 유사한 구조 덕분에, 제3절에서
+$\operatorname{Pic}_{X/S}$에 대해 진술한 구조정리가 여전히 성립함을 확인할
+수 있다.
+
+한편 하강 절차는 상대 존재정리를 준다. 그 적용 범위는 [4], I, A (c)에서
+제기한 비평탄 하강 문제들의 해결에 달려 있는데, 여기서는 다음 특수한
+경우만 명시하겠다.
+
+\result{명제}{6.3} $f:X\longrightarrow S$를 고유 사상이라 하고, $X_1$과
+$X_2$를 $S$ 위에서 평탄인 $X$의 두 부분준스킴이라 하자. 이들이 두 연접
+아이디얼 $\mathcal I_1$과 $\mathcal I_2$로 정의되고
+$\mathcal I_1\cap\mathcal I_2=(0)$이며
+$\mathcal O_X/(\mathcal I_1+\mathcal I_2)$가 $S$ 위에서 평탄이라고 하자.
+즉 $X$의 부분준스킴 가운데 $X_1$과 $X_2$의 상한은 $X$이고, 그 하한 $Z$는
+$S$ 위에서 평탄이라고 하자.\footnote{마지막 글자는 인쇄본에서 ``$X$''로
+되어 있으나, 바로 앞 조건은 $\mathcal O_X/(\mathcal I_1+\mathcal I_2)$가
+$S$ 위에서 평탄하다는 것이므로 $S$ 위에서 평탄인 것은 $Z$이다.} 또한 모든
+$s\in S$에 대하여 준동형사상
+\[
+k(s)\longrightarrow H^0(X_{i,s},\mathcal O_{X_{i,s}}),\qquad i=1,2
+\]
+가 전단사라고 가정하자. 그러면 함자들의 자연 준동형사상
+\[
+\operatorname{Pic}_{X/S}\longrightarrow
+\operatorname{Pic}_{X_1/S}\times\operatorname{Pic}_{X_2/S}
+\]
+은 아핀 사상으로 표현 가능하다. 따라서 $\operatorname{Pic}_{X_1/S}$와
+$\operatorname{Pic}_{X_2/S}$가 존재하면 $\operatorname{Pic}_{X/S}$도
+존재하고, 표준 사상
+\[
+\operatorname{Pic}_{X/S}\longrightarrow
+\operatorname{Pic}_{X_1/S}\times\operatorname{Pic}_{X_2/S}
+\]
+은 아핀이다.
+
+충실 평탄 하강에 의해 $Z$가 $S$ 위의 단면을 갖는 경우로 환원할 수 있다.
+이 단면은 $X$, $X_1$, $X_2$의 $S$ 위 단면들을 정하므로 2.5에서 설명한
+대로 지금 고려하는 구조들에서 자기동형사상들을 제거할 수 있다. 이제 증명은
+$X$ 위의 ``강체화된'' 가역 가군 $\mathcal L$을 주는 것이 삼중항
+
+\src{159}
+$(\mathcal L_1,\mathcal L_2,u)$를 주는 것과 동치임을 지적하는 데 있다.
+여기서 $\mathcal L_i$는 $X_i$ 위의 ``강체화된'' 가역 가군이고, $u$는
+강체화들과 양립하는 $\mathcal L_1|Z$에서 $\mathcal L_2|Z$로의
+동형사상이다. $\mathcal L_1$, $\mathcal L_2$가 고정되었을 때 $u$를 주는
+것이 $S$ 위에서 아핀인 적당한 $S$ 위 스킴의 한 단면으로 표현됨을 확인하기만
+하면 되는데, 이는 쉽다. 6.3에서 곧바로 다음을 얻는다.
+
+\result{따름정리}{6.4} $X$를 체 $k$ 위의 고유이고 분리 가능한 스킴이라
+하고, $X_i$들을 $X$의 기약 성분들이라 하자. 모든
+$\operatorname{Pic}_{X_i/k}$가 존재하면 $\operatorname{Pic}_{X/k}$도
+존재하고, 표준 사상
+\[
+\operatorname{Pic}_{X/k}\longrightarrow\prod_i\operatorname{Pic}_{X_i/k}
+\]
+은 아핀이다.
+
+이를 6.2와 결합하면, 예를 들어 $X$가 체 $k$ 위의 사영이고 분리 가능한
+스킴일 때마다 $\operatorname{Pic}_{X/k}$가 존재함을 알 수 있다. $X$가 더는
+$k$ 위에서 분리 가능하지 않을 때에도 Oort [11]의 논증을 사용하면 환원
+결과를 얻는다. 이 방법은 임의의 밑스킴 위에서도 적용된다(예를 들어 다음
+강연에서 3.3에 예고한 유한성 결과를 증명할 때 유용하다). 지나치게 기술적인
+진술을 피하기 위해 기초체 위의 경우로 한정하겠다.
+
+\result{명제}{6.5} $X$를 체 $k$ 위의 고유 스킴이라 하고, $X_0$를 $X$와
+같은 바탕집합을 갖는 부분스킴이라 하자(따라서 $X$ 위의 한 멱영 아이디얼로
+정의된다). 그러면 함자적 사상
+\[
+\operatorname{Pic}_{X/k}\longrightarrow\operatorname{Pic}_{X_0/k}
+\]
+은 아핀 사상으로 표현 가능하다. 특히 $\operatorname{Pic}_{X_0/k}$가
+존재하면 $\operatorname{Pic}_{X/k}$도 존재하고, 사상
+$\operatorname{Pic}_{X/k}\longrightarrow\operatorname{Pic}_{X_0/k}$는
+아핀이다.
+
+이를 6.4와 결합하면 곧바로 다음을 얻는다.
+
+\result{따름정리}{6.6} $X$를 체 $k$ 위의 사영 준스킴이라 하자. 그러면
+$\operatorname{Pic}_{X/k}$가 존재한다.
+
+\result{비고}{6.6} 체 $k$ 위의 모든 고유 스킴 $X$에 대하여
+$\operatorname{Pic}_{X/k}$가 존재한다는 것은 지극히 그럴듯하다.\footnote{
+1962년 정오표는 Murre가 이 문제를 막 긍정적으로 해결했다고 알린다.} 앞의
+결과들은 이 문제를 $k$가 대수적으로 닫혀 있고 $X$가 정역인 경우로
+환원한다. 그러면 차우 보조정리에 의해 $k$ 위에서 사영인 정역 스킴 $X'$과
+우세 사상 $g:X'\longrightarrow X$가 존재한다. 따라서 대응하는 함자적 사상
+
+\src{160}
+\[
+\operatorname{Pic}_{X/k}\longrightarrow\operatorname{Pic}_{X'/k}
+\]
+이 표현 가능함을(그리고 아마도 아핀 사상으로 표현 가능함을) 보이면 충분할
+것이다. 실제로 $\operatorname{Pic}_{X'/k}$가 표현 가능함은 이미 알고 있기
+때문이다. 이는 현재 해결되지 않은 비평탄 하강 문제들을 제기한다. $X$가
+대수적으로 닫힌 체 $k$ 위의 고유 정역 스킴일 때, 함자
+$\operatorname{Pic}_{X/k}$를 축소 준스킴들에 제한하면 표현 가능한 함자를
+얻는다는 점에 유의하자. $X$가 정규인 경우에는 Chevalley [1]가 이를
+보였으며, 일반적인 경우에는 Seshadri [12]가 하강 방법으로 보였다. 그러나
+우리 표기에서 이 저자들이 구성한 스킴은 $\operatorname{Pic}_{X/k}$가 아니라
+그에 대응하는 축소 스킴
+$(\operatorname{Pic}_{X/k})_{\mathrm{réd}}$이다.
+
+\result{비고}{6.7} 더 일반적으로 $f:X'\longrightarrow X$를 $k$ 위의 고유
+준스킴들의 전사 사상이라 하자. 그러면 비평탄 하강을 고찰하면
+\[
+\operatorname{Pic}_{X/k}\longrightarrow\operatorname{Pic}_{X'/k}
+\]
+가 아핀 사상일 것이라고 추측하게 된다.\footnote{1962년 정오표는 이 문제가
+긍정적으로 해결되었다고 알리며 다음 강연의 주석 마지막 문단을 참조하도록
+한다.} 이는 특히 항등원의 연결 성분들로 나눈 뒤 대응하는 네롱--세베리
+군들의 준동형사상이 꼬임을 법으로 단사임을 함의할 것이다. $X$와 $X'$이
+비특이이면 교차이론으로 이를 확인할 수 있다. 그 밖의 모든 경우에는 답이
+알려져 있지 않은 듯하다.
+
+\result{비고}{6.8} 생각과 달리 멱영원을 갖는 대수적 스킴들의 피카르
+스킴을 고찰하는 일은 여러 문제에서 유용하고, 심지어 필수적이다. 예를 들어
+$X$가 $k$ 위의 사영 스킴, 이를테면 매끄러운 스킴이고,\footnote{인쇄본에는
+``정칙''이라고 되어 있으나 정오표는 ``$k$ 위에서 매끄러운''으로 바로잡도록
+한다.} $Y$가 한 초평면 단면이면, $Y$의 모든 차수의 ``무한소 근방'' $X_n$과
+피카르 스킴 $\operatorname{Pic}_{X_n/k}$를 고려해야 한다. $X$가 차원
+$\geq4$(각각 $\geq3$)인 기약 스킴이면 표준 사상
+\[
+\operatorname{Pic}_{X/k}\longrightarrow\operatorname{Pic}_{X_n/k}
+\qquad(n\text{이 충분히 클 때})
+\]
+은 동형사상이다(각각 네롱--세베리 꼬임 부분군들의 역상들 사이에
+동형사상을 유도한다). 이 결과는 다음 강연에서 피카르 스킴을 정성적으로
+연구할 때 유용할 것이다. 마찬가지로 멱영원을 갖는 몇몇 곡선들의 피카르
+스킴을 고찰하고 형식기하학의 기본정리들 [3]을 사용하면, 동표수인 경우에
+Mumford의 한 추측을 확인할 수 있다. 즉 차원 2인 모든 완비 정규 뇌터 국소환
+$A$에 대하여, $A$의 약수류군을 잉여체 $k$ 위의 한 대수군 $G$의 $k$-유리점
+집합으로 볼 수 있다.
+
+\src{161}
+더욱이 $A$ 안에서 계수체 하나를 택하면 $G$는 표준적으로 결정된다. $A$의
+차원이 임의일 때에는 위의 $G$와 같은 역할을 하는 $k$ 위의 프로대수군이
+존재할 법하다. $\operatorname{Spec}(A)$의 ``특이점을 해소''할 수 있는
+경우, 이 군은 $k$ 위의 적당한 사영 스킴들(멱영원을 갖는)의 피카르 스킴들의
+사영극한으로 구성된다.
+
+\section*{참고문헌}
+\addcontentsline{toc}{section}{참고문헌}
+
+\begin{description}
+\item[{[1]}] CHEVALLEY (Claude). -- Sur la théorie de Picard,
+\emph{Amer. J. of Math.}, 제82권, 1960, 435--490쪽.
+
+\item[{[2]}] GROTHENDIECK (A.) et DIEUDONNÉ (J.). -- Éléments de géométrie
+algébrique, 제I장 이하. -- Paris, Presses universitaires de France,
+1960--1961 (Institut des Hautes Études Scientifiques, Publications
+mathématiques 4, 8, \ldots).
+
+\item[{[3]}] GROTHENDIECK (Alexander). -- Géométrie formelle et géométrie
+algébrique, \emph{Séminaire Bourbaki}, 제11권, 1958/59,
+제182호, 28쪽.
+
+\item[{[4]}] GROTHENDIECK (Alexander). -- Techniques de descente et théorèmes
+d'existence en géométrie algébrique, I--IV, \emph{Séminaire Bourbaki}, 제12권,
+1959/60, 제190호, 29쪽 및 제195호, 22쪽; 제13권, 1960/61, 제212호, 20쪽 및
+제221호, 28쪽.
+
+\item[{[5]}] GROTHENDIECK (Alexander). -- Techniques de construction en
+géométrie analytique, I--X, \emph{Séminaire Cartan}, 제13권, 1960/61:
+Déformation des structures analytiques complexes, 제7--17호.
+
+\item[{[6]}] GROTHENDIECK (Alexander). -- Séminaire de géométrie algébrique,
+Lichtenbaum 집필, Harvard University, 1961 (출간 예정).
+
+\item[{[7]}] LANG (Serge). -- \emph{Abelian varieties}. -- New York,
+Interscience Publishers, 1959 (Interscience Tracts in pure and applied
+Mathematics, 7).
+
+\item[{[8]}] MUMFORD (D.). -- An elementary theorem in geometric invariant
+theory, \emph{Bull. Amer. math. Soc.}, 제67권, 1961, 483--486쪽.
+
+\item[{[9]}] MUMFORD (D.). -- The topology of normal singularities of an
+algebraic surface and a criterion for simplicity. -- Paris, Presses
+universitaires de France, 1961 (Institut des Hautes Études Scientifiques,
+Publications mathématiques, 9).
+
+\item[{[10]}] MUMFORD (D.) and TATE (J.). -- Séminaire de géométrie
+algébrique, Harvard University, 1962년 봄학기 (출간 예정).
+
+\item[{[11]}] OORT (F.). -- Sur le schéma de Picard,
+\emph{Bull. Soc. math. France}, 제90권, 1962 (출간 예정).
+
+\item[{[12]}] SESHADRI (C. S.). -- \emph{Annali di Matematica}에 게재 예정인
+박사학위논문.
+\end{description}
+
+\par\smallskip
+\begingroup\footnotesize
+\noindent\textit{인쇄본의 3.3 참조가 가리키는 명제는 3.2이다.}\par
+\endgroup

@@ -1,0 +1,146 @@
+{
+  "synthetic_only": true,
+  "real_audit_examined": false,
+  "results": [
+    {
+      "test": "all 137 translation layer/unit slots enumerated",
+      "status": "PASS"
+    },
+    {
+      "test": "missing section detected: en/149",
+      "status": "PASS"
+    },
+    {
+      "test": "missing section detected: en/e149",
+      "status": "PASS"
+    },
+    {
+      "test": "missing section detected: en/com",
+      "status": "PASS"
+    },
+    {
+      "test": "missing section detected: es_149_printed/149",
+      "status": "PASS"
+    },
+    {
+      "test": "missing full English language detected",
+      "status": "PASS"
+    },
+    {
+      "test": "fenced pseudo-heading ignored",
+      "status": "PASS"
+    },
+    {
+      "test": "tilde fences respect opening marker length",
+      "status": "PASS"
+    },
+    {
+      "test": "backup suffix rejected as a source locator",
+      "status": "PASS"
+    },
+    {
+      "test": "Unicode filename suffix rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "source line annotation remains a valid locator",
+      "status": "PASS"
+    },
+    {
+      "test": "existing combined-parent variant rule retained",
+      "status": "PASS"
+    },
+    {
+      "test": "packager requires fresh coverage tables",
+      "status": "PASS"
+    },
+    {
+      "test": "packager rejects an omitted layer/unit coverage row",
+      "status": "PASS"
+    },
+    {
+      "test": "packager blocks page_occurrences_with_structural_gaps",
+      "status": "PASS"
+    },
+    {
+      "test": "packager blocks translation_layer_units_with_structural_gaps",
+      "status": "PASS"
+    },
+    {
+      "test": "packager blocks privacy_pattern_findings",
+      "status": "PASS"
+    },
+    {
+      "test": "decoded text scanned: fixture.sty",
+      "status": "PASS"
+    },
+    {
+      "test": "decoded text scanned: BUILD",
+      "status": "PASS"
+    },
+    {
+      "test": "decoded text scanned: fixture.txt",
+      "status": "PASS"
+    },
+    {
+      "test": "decoded text scanned: fixture.html",
+      "status": "PASS"
+    },
+    {
+      "test": "Unicode absolute path components detected",
+      "status": "PASS"
+    },
+    {
+      "test": "validator integration scans included text beyond old extension list",
+      "status": "PASS"
+    },
+    {
+      "test": "relative path accepted",
+      "status": "PASS"
+    },
+    {
+      "test": "relative path accepted",
+      "status": "PASS"
+    },
+    {
+      "test": "relative path accepted",
+      "status": "PASS"
+    },
+    {
+      "test": "concatenated directory fragment allowed",
+      "status": "PASS"
+    },
+    {
+      "test": "TeX source-marker regex is not a network path",
+      "status": "PASS"
+    },
+    {
+      "test": "Windows absolute path detected",
+      "status": "PASS"
+    },
+    {
+      "test": "UNC network path detected",
+      "status": "PASS"
+    },
+    {
+      "test": "private interpreter shebang detected",
+      "status": "PASS"
+    },
+    {
+      "test": "portable interpreter shebang allowed",
+      "status": "PASS"
+    },
+    {
+      "test": "PDF extractable visible text scanned",
+      "status": "PASS"
+    },
+    {
+      "test": "PDF metadata scanned",
+      "status": "PASS"
+    },
+    {
+      "test": "new generated package text rescreened",
+      "status": "PASS"
+    }
+  ]
+}

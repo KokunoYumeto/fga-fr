@@ -1,0 +1,5065 @@
+{
+  "summary": {
+    "date_utc": "2026-11-18T19:56:15.747860+00:00",
+    "python_scripts": 132,
+    "compiled": 132,
+    "compile_errors": 0,
+    "warnings": 0,
+    "literal_noop_candidates": 0,
+    "raw_single_quote_escape_occurrences": 0,
+    "raw_single_quote_escape_tokens": 0,
+    "scripts_with_raw_single_quote_escapes": 0,
+    "scripts_with_append_helpers": 110,
+    "scripts_with_direct_append_sites": 33,
+    "script_set_changed_during_scan": false,
+    "files_changed_while_read": [],
+    "scripts_executed_or_imported": 0
+  },
+  "scripts": [
+    {
+      "file": "amend_149_184_degree.py",
+      "sha256": "dfc4effb4361722f6a95e9ed48b2abc041956f19907dc28bda25a3d6f779005c",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 6,
+          "mode": "a",
+          "target": "progress.log",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 5,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_169.py",
+      "sha256": "d25de6f9971aea806e98948663f8ea51e5645c6e3bb19a08cd385ed90c0af277",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 23,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_170.py",
+      "sha256": "ee6de4a5b2d283b4f62c427265711ec82634550744bf584ba60e625625a8bc11",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 42,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": [
+            "For"
+          ]
+        },
+        {
+          "line": 45,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_171.py",
+      "sha256": "9ef2824f96bcb101bb4331d1a8af00cda21d2630b282093e1331fc0d1a2cb10f",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 53,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 54,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 55,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_172.py",
+      "sha256": "8c53ea982d4cf2a0cd02c0b877c781c3a398614f5122aa65223c4fc7ffa07b60",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 17,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 18,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_173.py",
+      "sha256": "71a8e910b9afbe4fb4e5112a1bbccff5446ecd4bc1a8d47cb71c18dad657bb40",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 17,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 18,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 19,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_174.py",
+      "sha256": "fb78d91fe00654b546a3c8a71b5e02fca57c81de48521e0f196a624e667e6dc3",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 17,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 18,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_175.py",
+      "sha256": "ce0d2a3ceb305b90015b1384bf21ca9500d47dd5cdd8cc4caf1a0d488da5ea47",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 43,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_176.py",
+      "sha256": "d9888f54bb415baa8fe306d26b6b9637c7896430aabec3381aaf34ca57edf6e0",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 53,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 54,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 55,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_177.py",
+      "sha256": "fb590e30fea11befe5d102b72c85b303e632361bc99487d4dd4973abc67fe61e",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 52,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 53,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 54,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 55,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 56,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_178.py",
+      "sha256": "8dccf45fd1202c6ca53b4c1068ecd79096a86472eeb0876764d88e024067c4bb",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_179.py",
+      "sha256": "c575bef82b5dcbb48eae6a83beefa6f8f4d1eb6c65779e2d9bef67cc55e3c00d",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 43,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_180.py",
+      "sha256": "6feeee4788e441338ee7a7fd7a982aea04df31f6afef4646a7b2fa6e56b24a10",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 25,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_181.py",
+      "sha256": "695bd03cda63387e05785f0cebbd5990e09f35251348d4054f032154a96aab16",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 36,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 37,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 38,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 39,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_182.py",
+      "sha256": "b5ae6ace682f985acca2514b1c6c3713632584a674cca2c7dbdebf47a223d3f5",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_183.py",
+      "sha256": "a6d3f8eb6051ab161af9cf8d0ba3febbfdcb68c2745ca7a90cadcfcd4bd805ad",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 29,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 30,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_184.py",
+      "sha256": "5796a3b5ec21eb8313d742ef7ce9780feda98ed03cbe9908c0c4944780418429",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 20,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 21,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 22,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 23,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 24,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_185.py",
+      "sha256": "f63cb162b5522176a92144146af9875b8bed5332d49cb433cb7f37e9a90eeb09",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 22,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 23,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 24,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 25,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_186.py",
+      "sha256": "32e06d97990e3d211e8134456dc7be137fd8fd0977805778230476f16c8d6f96",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_187.py",
+      "sha256": "a6e253000c4bbefb6914a49599f12e91dee0c27e72a2bdf3fce779606716d379",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 30,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_188.py",
+      "sha256": "980e72b35b4e10c99ea57b09d77d694641e94b911523fca9774736fa5c43b665",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 46,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_189.py",
+      "sha256": "60d802a3b4835ea80936ccb834cfeef35073a05cbe7366666d05b9bd0488cd43",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 30,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_190.py",
+      "sha256": "a8b25ecbf4a35d0e05eb1035d3082f48a07377ee5c1513c169959f7d6c019453",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 46,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 47,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 48,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 49,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_191.py",
+      "sha256": "059a44f0203aaa1550eb52c09cc433fd835faeda973aba741a4887228983881a",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 46,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 47,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_192.py",
+      "sha256": "9d7bc8d2c050f8b678061f3ac813e3ed8c6f816cd6097c8e8d9e91d15e4a653c",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 35,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_149_193.py",
+      "sha256": "f6171f20a92de18ac59b65c8f0f87935e9803b1c1cf806627d76b7fbe60e04fc",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 13,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 14,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_193.py",
+      "sha256": "f3225be745705acc9ace01b5133141c2e47b6c1888d713ec2943f3b155871ec9",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 19,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 20,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_194.py",
+      "sha256": "a7d6fd6521b314e55d377956bd77a4e2fec4411b8cb70f91b6eb016d22001cd3",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 18,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 19,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 20,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_195.py",
+      "sha256": "a2ee756e136bd422f3b9bb91871420f695c1a1bb322a09ff3fe960f6119b9c4d",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 35,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_196.py",
+      "sha256": "5c43e74134fb3aa8d05babba2ed59eee85c4b37bb465ef18a851873ea763e217",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 34,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 35,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 36,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 37,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_197.py",
+      "sha256": "6013dc60e243db709dcd29061b198f2601ba068a022450762e7ec85045a98b07",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 35,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_198.py",
+      "sha256": "24d37e8ab3b3f0c78050ad8984ff537e4a6be77df19360a193c6ba74a728f59e",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 52,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 53,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 54,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 55,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 56,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 57,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_199.py",
+      "sha256": "7f222fc590d2da69080ee2ea54e7fb3fe765d8dc1acaefba92a873b5ae403c7b",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 41,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 42,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 43,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_200.py",
+      "sha256": "90f43fb2909f7c2b6d2824bbcee000b6f4d6baa0d2d35cdb3f656d1411687c9b",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 39,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 40,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 41,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 42,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_201.py",
+      "sha256": "2666adb63bc843189f1c34d1eb17fc96463c56b4eff72d8b79d151bde44fccda",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 41,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 42,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 43,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_202.py",
+      "sha256": "53f47634160cce33c047aaf7fe4448fb6bc96be73eab8fbfd0e4c33c9f24bc66",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 33,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 39,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 40,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 41,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 42,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 43,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_203.py",
+      "sha256": "de3b6a151a5519d0120d79b619e28e6678c4158409085ea46615b07b9e134b46",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 38,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 39,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 40,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 41,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_204.py",
+      "sha256": "e2ec8cbe655637bcc4218ccf61e545ba152b3c1520558f128b93c246c1dfe4c9",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 36,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 37,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 38,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 39,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_205.py",
+      "sha256": "62889925cb48f36d89365db71fffff8b1201a310c67f0a05d568376adb68bc64",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 39,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 40,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 41,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 42,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 43,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_206.py",
+      "sha256": "a23f5ff0e2a997017437e57cab53cc3891f9101cc73a9d56eedba526b6431e8a",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 42,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 43,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 46,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 47,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 48,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_207.py",
+      "sha256": "178fc5389d6ebfe315c1d4f6d4cd947b972990d7815a6b8bd5266ea66613aa8f",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 25,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_208.py",
+      "sha256": "957587496bb8b1cddeb94fafb82bbe3551e5d5284d1ffc771bb56142e164a02f",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 22,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 23,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_209.py",
+      "sha256": "02670e98f4f1d1cc3d29a1a0e31755bb074f1f77b1f46e7315f9829c23d77263",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_210.py",
+      "sha256": "3a6e684e5b99641f04eb0a7d8339f50189c9bec04aef55d691cd0d2af47face7",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 29,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 30,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_211.py",
+      "sha256": "53d766ba451bc724f843cc384f467c88d9883670db7114c63cff476bc5304f2e",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 35,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 36,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_212.py",
+      "sha256": "301298b8aae3951bcf76a221db0a5638076dc395b203177e119f54b588855672",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 37,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 38,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 39,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 40,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 41,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_213.py",
+      "sha256": "fe8daa00203f53a96b3250f79e15d96e087154081019dde90acd3dff474472e3",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 29,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 30,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_214.py",
+      "sha256": "e635f1c7d9a4509bcc0ed1b7ff3ef20d4483736fc6a97916b5f5408cba7d67a0",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 41,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 42,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 43,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_215.py",
+      "sha256": "5c35f95b2d5a2ec2bfb8cbebb2c9b371094f380bb738ec0fb53ad096439e8577",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 46,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 47,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 48,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 49,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_216.py",
+      "sha256": "3680c3e6b114554b9c85bd7c615d3592c1f77ad6f298c83e64dd1cdd00c1f330",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 22,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 23,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 24,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 25,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_217.py",
+      "sha256": "d01a326944c0ca13efe977a7b5e0048f29d7774de62a87283d4cf287120e6422",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 24,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 25,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_218.py",
+      "sha256": "91a8949773d2a99493c65d0e5aa4edf71a24da56454a67703b4a6883ab624631",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 30,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 31,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_219.py",
+      "sha256": "ccc718a2c6e32428f12482c71f2faa8d5e3ed8ec88c4213695ddbb9151853088",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 46,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 47,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 48,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 49,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 50,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 51,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_182_220.py",
+      "sha256": "d97952af2d66430f52398f81c69d2e351651b30f84f46f1ea1c0fd7cba290bca",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 25,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_299.py",
+      "sha256": "a2926e57a698e308cfc4c14662618d8cf858293f05b8424a4bdf127e62f8b563",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 19,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 20,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_300.py",
+      "sha256": "01a408fa18aacd997f7aa6d72f829ba7e9c6ce86583af4ee8bccc98e4895f855",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 39,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 40,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 41,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 42,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 51,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_301.py",
+      "sha256": "e856b7a2106c1768387c78c07f5f01bb1cfcd4d274251a745756fd06d8cdd2d8",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 40,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": [
+            "For"
+          ]
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 42,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 43,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_302.py",
+      "sha256": "8bc97f0129f24a7dd4f52d37e2f6e333ab7a5b0d00e627b534c6d519cbfe0ada",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 25,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_303.py",
+      "sha256": "1714f96d213617f456149bbebe032dd40649092d9b26566d9fc8b0489b43c82f",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 30,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_304.py",
+      "sha256": "6da204d8252ec3d84773aeb56b161b50828105c3571738af707e943e8e852864",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 29,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 35,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 36,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_305.py",
+      "sha256": "142788c13a9a2bf0db500b032fc36eee268a0911a84db90519ee9d12363a4432",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 26,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 30,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_306.py",
+      "sha256": "74cb508a80686a2dcad2e8541a1b7b1fa9cbbf05da130cff8c3ff3701d62946c",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 30,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_307.py",
+      "sha256": "79c4b05805e17d11725bceec03cce1d0d229b69a9fc9a89dfcf4eaa45eed664c",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 19,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 21,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 22,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 23,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 24,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_308.py",
+      "sha256": "37619a4ded92ccf619ee42a66a28fb6caaa3f02bab2324f287bdd86a8bf75c0e",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 33,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 37,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 38,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 39,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 40,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 41,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_309.py",
+      "sha256": "dbf9811d6a4ad3b6e8741c4182e9b7f292d4953ad545108f87c75059ba586ce4",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 30,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 38,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 39,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 40,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 41,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_310.py",
+      "sha256": "ef310750d749f183985adf4dc4915db72734601856e2e654ba77b55f42cd848f",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 28,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 30,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_311.py",
+      "sha256": "c6b9b1d6fc05dfd786c4e8f3a8a051166f39ecfcb4db1f101d46f6c01c248691",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 29,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 35,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 36,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_312.py",
+      "sha256": "3b6be1c51e589ee6a5780e62652b4df8ae87e17a1ddd0efb19a02bb09a00847a",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 51,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 57,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 58,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 59,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 60,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 61,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_313.py",
+      "sha256": "17b959dda65605bdb7e0b0cf3a7ea962a8a68c07788115795717b31888b0635d",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 34,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 35,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 36,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 37,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 38,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_314.py",
+      "sha256": "9614023a34e049bb7ac4199407d0cfb889e90c6ca47362efb21b39354cc57011",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 33,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 39,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 40,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 41,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 42,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 43,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_315.py",
+      "sha256": "4cb674c296ac56d71be26a77b4454f45d7d2920dd6bcb29cdf28ad643c55a897",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 18,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 19,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 20,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 21,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_316.py",
+      "sha256": "66f59415236f7411632f96956f3b3fb1e5a45a8a50e451c0110d2f0c14f00092",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 14,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 15,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 16,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 17,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 18,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 19,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_317.py",
+      "sha256": "d89ade85556443fe363f4b7dd287d2ada7e940b91b123478bc17219f04dca736",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 30,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 37,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 38,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 39,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 40,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 41,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 42,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 43,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_318.py",
+      "sha256": "90907c30c0e2c898d7c2b231dffee462db7b6592394bcc5b3281aaaab1628b29",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 35,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 36,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_319.py",
+      "sha256": "d71a6dbf157c1e9e13d64c156af293afb2f2ebe54b0d4f1e973f9218705313c3",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 30,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 34,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 35,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 36,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 37,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_320.py",
+      "sha256": "5c41dfff432bd7b65a229b4d277f6964b1a8c7d46124709b426e0c0eda955885",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 38,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 45,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 46,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 47,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 48,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 49,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 50,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_321.py",
+      "sha256": "4228bd8e1392d4dbed66f18b069ef37738c04842838baa4f7b84f3f17abd52cf",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 41,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 45,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 46,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 47,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 48,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 49,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 50,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 51,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_322.py",
+      "sha256": "b0f6572f3a88c5e99dfdf25ec7abff400610a8aae7b99db923098541daf462e8",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 36,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 40,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 41,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 42,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 43,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_323.py",
+      "sha256": "883103896115333eb713f0e5265c0022a7826389d987adf2b4bffe2b9c841fd8",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 39,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 43,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 46,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 47,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 48,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_324.py",
+      "sha256": "29f44158ad5d88988aef3b8f5be746a563899b2673809abb17fc7f5f6b099481",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 37,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 38,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 39,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 40,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 41,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 42,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_325.py",
+      "sha256": "75c1c0681c61a57c707156ababcdc1e8d2cdfa738a9b9a50a24e1689bab44101",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 43,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 45,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 46,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 47,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 48,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 49,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 50,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 51,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 52,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 53,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_326.py",
+      "sha256": "db0a48df5de72945c5132eb4019301e8172dbddd39db33792c0fef9d4631746a",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 25,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_190_327.py",
+      "sha256": "62e7b90ac276256271d0550244c9cbae8bcba2531c47ee7bdd5c7bd271651a76",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 43,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 44,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_369.py",
+      "sha256": "b5c9b3c0f082aaef82d2309c415f1aefb7df2f73ccff3bb72fc1f17bdfb9eda5",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 30,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 31,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_370.py",
+      "sha256": "bb493b0d5d138e7a96195239eba26ec5fc7f8898d59699e55ec8e411cce314f9",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 30,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 36,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 37,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 38,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_371.py",
+      "sha256": "0a5c9e9184a7816d5c2b4c1782f15e9c33d5f89d06c391af6342a51999b4fd7c",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 39,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 47,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 48,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_372.py",
+      "sha256": "9ec292f9cb09b65bb2650070f7ceca9f237428d8e943c0c3e0d483e3fe609886",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 36,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 43,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 46,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_373.py",
+      "sha256": "26bc16e233ae7cadb9c4b71a89726a731b2c2b9146fe03f956e6b5ea5a47ed0b",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 35,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 46,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 47,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_374.py",
+      "sha256": "543d37daea38a550af1f41ec0b35b5d2ba36ba366eee364a6d92d44e990c29be",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 29,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 30,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 35,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_375.py",
+      "sha256": "6367ca5ce0f5bf7670e33f8df7078f064d34f575d9f24a943cb85215b7187cfc",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 39,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 41,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 42,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 43,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 46,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_376.py",
+      "sha256": "3f0bf1b5beb434daa5f7f981d5804eb00fd957c6e5259c51e795553c56a119dd",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 51,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 55,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 56,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 57,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 58,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 59,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 60,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 61,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_377.py",
+      "sha256": "0e47129e360a7966bb096e02b1af51c13fc46985bcbe571c45df99370eb10f21",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_378.py",
+      "sha256": "5ab4b7b2f38b9ebf51dc60cb07efb4b861d61826294183024d71e1029ae14d30",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_379.py",
+      "sha256": "a93fb2c2db72ba518dc24db54c4a4148eacea05bcb5fc7e1f4ed8e4c4f25e466",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 57,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 67,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 68,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 69,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_380.py",
+      "sha256": "63a3a0b609464f9eec1ad0be233a373c5c13fe125ce848ce7b876d4fa7ad75f6",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 22,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_381.py",
+      "sha256": "3ec11d90b2c2007e80791efd8ab4904900059e9101b9be4f65c9f99b80493aa2",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 29,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 30,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_382.py",
+      "sha256": "c8428bc39b7147f1b7f15d7b4e4350aec1c2ab1f5f9f2eccfa98dddb68c84595",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 34,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 38,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 39,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 40,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 41,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 42,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_383.py",
+      "sha256": "04d0cdbf4a956135de6e45dda08ae393cb0a890834fb3af66285bf1c8cb3810f",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 47,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 53,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 54,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 55,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 56,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 57,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_384.py",
+      "sha256": "eb059e7e55ac0f558b0ecc97c29d07bec9c3add099df59ff9eb5a10d994f0b43",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 36,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 40,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 41,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 42,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 43,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 46,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_385.py",
+      "sha256": "c95fda21091deba870672eecd45640f8016412eb2ebf1eaa365298da07aa5ffc",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 40,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 41,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 42,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 43,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 44,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_386.py",
+      "sha256": "ad3baaabe3153e88ae1003b30c988e0d48f5f9dd7706d1da6fc87537d0aec301",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 46,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 48,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 49,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 50,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 51,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 52,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 53,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_387.py",
+      "sha256": "9354da445c01238f072c486323cb8dc063dbb9e0b6f62d3cb1a123562a64dd8d",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 52,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 53,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 54,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 55,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 56,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 57,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 58,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 59,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 60,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_388.py",
+      "sha256": "cd22e56e2b54713d1ab501f5a81e89db3c53050c66c2a25b12d5a2ff30d45140",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 63,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 64,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 65,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 66,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 67,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 68,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 69,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 70,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_389.py",
+      "sha256": "15e1afe8e665f6f924494b8a9438fcb0747c0df89f30d1b98ef4ac5ce20127dd",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 43,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 44,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 45,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 46,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 47,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 48,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 49,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_195_390.py",
+      "sha256": "3d8e5a76c4d91232b9d4798ff73be0606db91081c1d070604aa717f398f4da6b",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 18,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_212_100.py",
+      "sha256": "ec915e0c3f7b7475d9809dfcd09579522a8f4968b91219ba4a55a09992daf5ae",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_212_101.py",
+      "sha256": "555f5b867ebf280006c39601d7376b6cc254406f84b434137501371d45d4796f",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 21,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 22,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 23,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "apply_212_99.py",
+      "sha256": "a429eb8dbe608047863f20b0a7b16e6bb4c74a0c6d5238c030a43257708fe7d6",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 22,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 23,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 24,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 25,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "audit_utils.py",
+      "sha256": "80f5a995d2ddfa23e9037419e55eca9672552c69e38c2e6dccea85b9df1b56a2",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 31,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "replace",
+          "enclosing_controls": []
+        },
+        {
+          "line": 49,
+          "mode": "a",
+          "target": "CHECK_EVENTS.tsv",
+          "scope": "event",
+          "enclosing_controls": []
+        },
+        {
+          "line": 53,
+          "mode": "a",
+          "target": "CHECK_RECORD.md",
+          "scope": "record_page",
+          "enclosing_controls": []
+        },
+        {
+          "line": 56,
+          "mode": "a",
+          "target": "progress.log",
+          "scope": "record_page",
+          "enclosing_controls": [
+            "If"
+          ]
+        }
+      ],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "build_fga.py",
+      "sha256": "0d9fa20603bf5805e013d8486b74c701fb845885f3174816a50cebe6cc60829f",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "build_runner_selftest.py",
+      "sha256": "54978589e9054610052fc78b33228bec8c1695f9f05739ff356afdc6372aaace",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "check_190_cocycle_order.py",
+      "sha256": "be725b76d7fcc55b5f28b0768b57d285e91321315eccd0d8636ba93e552fc94b",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "check_190_finite_epi.py",
+      "sha256": "99b7470dc7abe1633852e0679d29133efd87a0cb27a164e5851336e9ca25f2d0",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "check_190_nonabelian.py",
+      "sha256": "eff2350a8290e53f63c217e8624a504273f75096a385ce2cc222f902615c4cf6",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "checkpoint_zip.py",
+      "sha256": "bf56c8560f1db3e1c66f5faea5888d856a2ec178d8ed60ce2759d46fc40b99b5",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "clarify_195_381_probe.py",
+      "sha256": "6c963299d076c132c46e35b79746943b2fdc204af3062879c542f79d3118b9f0",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 18,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "correction_review.py",
+      "sha256": "54de127f11796e772c25607f69b3ca4d9afe11c5b1126d7d6a91baafe22c2192",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "final_zip.py",
+      "sha256": "864166b84fd9400d1730d82e658ad69d693f80104f631f8aac375513732f8017",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "finalize_149_169.py",
+      "sha256": "ca7a340891a619257cfebd814d5da1e1c109534ec4118c6d3a6644ff4e325525",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 12,
+          "mode": "a",
+          "target": "progress.log",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 14,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": [
+            "For"
+          ]
+        }
+      ],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "gate_synthetic_tests.py",
+      "sha256": "e1c3cba7effd45dc6cdf38c3845bbd67f915dbe5f39cf63653de7c365af79762",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "prepare_page.py",
+      "sha256": "f5edc22a5fbf06c270c633cfbf310b267932f165c1099207546446c3f358ffc0",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "privacy_scan.py",
+      "sha256": "01090172b7e82b81723e6916403616257b30e301333fd549b4710ccaed9f6067",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "repair_149_169_typography.py",
+      "sha256": "9356006865f49aeede9d4e6f32b295d2a7dc93adb6cdc72c6cff437b1359b0ef",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "restore_17.py",
+      "sha256": "f29a14616f8e568ae8720504fdf2414087a12f1eaab648d01fb79baf3032747d",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "run_tooling_probes.py",
+      "sha256": "87ad7008f735e4f74691b66759d32427b29b011441b50ca004843c0016a16b95",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "script_hygiene.py",
+      "sha256": "cd963742616483d2c55a7cc4e2658d2fe30d79a27dabffe3f39494d8ad2a9d75",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "tex_compare.py",
+      "sha256": "107aeaa67d0c2de588dffbd40521c0253cf0ec32674500242c3b3fa4781ffffc",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "tex_runtime.py",
+      "sha256": "c8ffe18d9c50405e1003b98463d4339da5dd9e66a7652ebabdd5579a3ac88c21",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "tooling_preflight.py",
+      "sha256": "e12fff6e607b9702db1c99624397e9ab6afba7a55a82e8f2d2735928ed7c4995",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "update_front_record_through_195.py",
+      "sha256": "6f30ff81444230a7473dda6b252692cf083902cc0a236459ae1f1bfdc794e765",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "update_record_counts.py",
+      "sha256": "d654b027e29d4e80f440a593177771072e1aae4edd51c83b76b2dae1b3e98894",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    },
+    {
+      "file": "validate_fga.py",
+      "sha256": "5835201c98cdef7210691072558358b3d65c5b163dbdcf5d92caf5e6da9cebe4",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [],
+      "raw_single_quote_escapes": []
+    }
+  ],
+  "limits": "Static call sites only. Earlier guards or exceptions can prevent execution; their absence is not a proof of idempotence. No replacement payload or edition content is inspected semantically.",
+  "targeted_control_flow_review": {
+    "scope": "requested scripts only; static constant branches and directly unreachable statements; no code executed",
+    "files": [
+      {
+        "file": "apply_195_388.py",
+        "provable_dead_code_candidates": [],
+        "mutation_call_sites": [
+          {
+            "line": 6,
+            "call": "replace"
+          },
+          {
+            "line": 63,
+            "call": "event"
+          },
+          {
+            "line": 64,
+            "call": "event"
+          },
+          {
+            "line": 65,
+            "call": "event"
+          },
+          {
+            "line": 66,
+            "call": "event"
+          },
+          {
+            "line": 67,
+            "call": "event"
+          },
+          {
+            "line": 68,
+            "call": "event"
+          },
+          {
+            "line": 69,
+            "call": "event"
+          },
+          {
+            "line": 70,
+            "call": "record_page"
+          },
+          {
+            "line": 76,
+            "call": "update"
+          }
+        ]
+      },
+      {
+        "file": "apply_195_389.py",
+        "provable_dead_code_candidates": [],
+        "mutation_call_sites": [
+          {
+            "line": 6,
+            "call": "replace"
+          },
+          {
+            "line": 43,
+            "call": "event"
+          },
+          {
+            "line": 44,
+            "call": "event"
+          },
+          {
+            "line": 45,
+            "call": "event"
+          },
+          {
+            "line": 46,
+            "call": "event"
+          },
+          {
+            "line": 47,
+            "call": "event"
+          },
+          {
+            "line": 48,
+            "call": "event"
+          },
+          {
+            "line": 49,
+            "call": "record_page"
+          },
+          {
+            "line": 55,
+            "call": "update"
+          }
+        ]
+      },
+      {
+        "file": "apply_195_390.py",
+        "provable_dead_code_candidates": [],
+        "mutation_call_sites": [
+          {
+            "line": 6,
+            "call": "replace"
+          },
+          {
+            "line": 18,
+            "call": "record_page"
+          },
+          {
+            "line": 22,
+            "call": "update"
+          }
+        ]
+      },
+      {
+        "file": "update_front_record_through_195.py",
+        "provable_dead_code_candidates": [],
+        "mutation_call_sites": [
+          {
+            "line": 40,
+            "call": "write"
+          }
+        ]
+      },
+      {
+        "file": "apply_212_99.py",
+        "provable_dead_code_candidates": [],
+        "mutation_call_sites": [
+          {
+            "line": 6,
+            "call": "replace"
+          },
+          {
+            "line": 22,
+            "call": "event"
+          },
+          {
+            "line": 23,
+            "call": "event"
+          },
+          {
+            "line": 24,
+            "call": "event"
+          },
+          {
+            "line": 25,
+            "call": "record_page"
+          },
+          {
+            "line": 31,
+            "call": "update"
+          }
+        ]
+      },
+      {
+        "file": "apply_212_100.py",
+        "provable_dead_code_candidates": [],
+        "mutation_call_sites": [
+          {
+            "line": 6,
+            "call": "replace"
+          },
+          {
+            "line": 31,
+            "call": "event"
+          },
+          {
+            "line": 32,
+            "call": "event"
+          },
+          {
+            "line": 33,
+            "call": "event"
+          },
+          {
+            "line": 34,
+            "call": "record_page"
+          },
+          {
+            "line": 40,
+            "call": "update"
+          }
+        ]
+      },
+      {
+        "file": "apply_212_101.py",
+        "provable_dead_code_candidates": [],
+        "mutation_call_sites": [
+          {
+            "line": 6,
+            "call": "replace"
+          },
+          {
+            "line": 21,
+            "call": "event"
+          },
+          {
+            "line": 22,
+            "call": "event"
+          },
+          {
+            "line": 23,
+            "call": "record_page"
+          },
+          {
+            "line": 29,
+            "call": "update"
+          }
+        ]
+      }
+    ],
+    "scope_captured_utc": "2026-11-18T19:56:14.238691+00:00",
+    "completed_utc": "2026-11-18T20:01:06.393549+00:00",
+    "requested_files_present_at_start": [
+      "apply_195_388.py",
+      "apply_195_389.py",
+      "apply_195_390.py",
+      "update_front_record_through_195.py",
+      "apply_212_99.py",
+      "apply_212_100.py",
+      "apply_212_101.py"
+    ],
+    "optional_apply_212_101_present_at_start": true,
+    "methods": [
+      "Literal truth values, boolean short-circuit truth and safe literal comparisons only.",
+      "Empty literal for iterables and statements directly following unconditional return, raise, break or continue in the same block.",
+      "No symbol propagation, runtime evaluation, semantic replacement review or execution."
+    ],
+    "summary": {
+      "files": 7,
+      "provable_dead_code_candidates": 0,
+      "files_with_append_helper_calls": 6,
+      "append_helper_call_sites": 27,
+      "requested_files_changed_since_static_pass": []
+    },
+    "rerun_findings": {
+      "append_calls": "Six requested apply scripts contain module-level append-helper calls with no enclosing conditional. They append if reached; earlier failures may stop a rerun first. No general idempotence claim is made.",
+      "front_record_updater": {
+        "file": "update_front_record_through_195.py",
+        "write_line": 40,
+        "assert_guard_line": 14,
+        "guard_marker_contained_in_inserted_rows_literal": true,
+        "guard_disabled_under_python_optimization": true,
+        "direct_append_or_append_helper_sites": 0,
+        "limitation": "A normal rerun after a successful insertion is rejected by the assertion; optimized execution disables assertions. No claim is made about arbitrary prior file states."
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+\documentclass[11pt,twoside,openany]{book}
+\newcommand{\FgaLang}{spanish}
+\input{../tex/base.tex}
+% Printed page numbers recur across different works and errata.
+% Namespace only the invisible PDF destinations; preserve all body bytes.
+\newcommand{\FgaUnitKey}{frontmatter}
+\renewcommand{\src}[1]{%
+  \phantomsection\hypertarget{src:\FgaUnitKey:#1}{}%
+  \marginpar{\raggedleft\footnotesize\sffamily #1}%
+}
+\setlength{\emergencystretch}{3em}
+% The only inherited boldsymbol use is the Greek mu of the group scheme.
+% Select its Unicode bold-italic glyph instead of a nonexistent bold math font.
+\renewcommand{\boldsymbol}[1]{\symbfit{#1}}
+\newcommand{\seminares}[1]{\begin{flushleft}\sffamily SEMINARIO BOURBAKI\\#1\end{flushleft}}
+\theoremstyle{plain}
+\newtheorem{teorema}[proposition]{Teorema}
+\newtheorem{corolario}[proposition]{Corolario}
+\newtheorem{lema}[proposition]{Lema}
+\theoremstyle{definition}
+\newtheorem{definicion}[proposition]{Definición}
+\theoremstyle{remark}
+\newtheorem*{observacion}{Observación}
+\hypersetup{pdftitle={Fundamentos de la geometría algebraica -- Edición española actual},pdfauthor={Alexandre Grothendieck},pdfsubject={Ocho exposiciones, sus erratas y los comentarios de 1962}}
+\begin{document}
+% BEGIN RIGHTS AND AI TRANSLATION NOTICE
+\begingroup
+\small
+\noindent\textbf{Fuentes y autoría}
+
+La obra original, Fondements de la géométrie algébrique, es de Alexandre Grothendieck. La traducción humana al inglés de \href{https://github.com/thosgood/fga/tree/9976dd5f8e2ddcb388f0a07f3aa334f120d1019f}{Tim Hosgood} constituye una fuente de referencia de esta edición. Su proyecto reconoce las correcciones de Steve Hnizdur y el apoyo técnico de Jon Sterling. La versión 9976dd5f8e2ddcb388f0a07f3aa334f120d1019f identifica el texto inglés utilizado para la comparación de procedencia; no establece la versión histórica exacta incorporada inicialmente. La traducción española y las correcciones y composición posteriores fueron producidas por IA. La autoría de la traducción inglesa permanece con su traductor; no se le atribuye la traducción española. Esta atribución no constituye permiso ni aval.
+
+\noindent\textbf{Derechos, disponibilidad y autoría}
+
+Los derechos sobre las obras originales y sobre las contribuciones protegidas a estas traducciones y transcripciones derivadas corresponden a sus respectivos titulares. Todo aquello sobre lo que el editor tenga derechos en estas ediciones queda dedicado al dominio público bajo CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/deed.es). Las menciones de derechos de terceros y las autorizaciones ya concedidas siguen siendo aplicables.
+
+Estas ediciones se ofrecen gratuitamente, con fines no comerciales y exclusivamente educativos, bajo la presunción de que los respectivos titulares de derechos no se opondrían a que estas traducciones y transcripciones estuvieran disponibles gratuitamente junto a los originales franceses en NUMDAM (www.numdam.org/). Esta presunción no significa que se haya obtenido autorización; el acceso gratuito a los originales no autoriza por sí solo su traducción, adaptación o republicación.
+
+Si usted es titular de derechos sobre algún material presentado aquí y se opone a su disponibilidad, puede abrir una incidencia en GitHub (github.com/KokunoYumeto/ega-fga-es/issues). El responsable de la publicación retirará el material afectado a petición del titular de los derechos.
+
+La traducción al español está producida por IA. Las correcciones, la edición y la composición también están producidas por IA. El responsable de la publicación no tradujo el texto. Se conservan la autoría y las atribuciones de las obras originales y de las contribuciones heredadas; no se atribuyen a la IA. Los modelos documentados se identifican en cada edición.
+\par
+\endgroup
+\clearpage
+% END RIGHTS AND AI TRANSLATION NOTICE
+
+\frontmatter
+\begin{titlepage}
+\centering
+\vspace*{0.13\textheight}
+{\Huge\bfseries Fundamentos de la\par geometría algebraica\par}
+\vspace{1.5\baselineskip}
+{\Large Alexandre Grothendieck\par}
+\vfill
+{\Large Edición española actual\par}
+\vspace{\baselineskip}
+{\large Ocho exposiciones, sus erratas y los comentarios de 1962\par}
+\vspace{1.5\baselineskip}
+{\normalsize Edición española\par}
+\end{titlepage}
+\chapter*{Nota sobre esta edición}
+\addcontentsline{toc}{chapter}{Nota sobre esta edición}
+Este volumen contiene la traducción española de las exposiciones 149, 182, 190, 195, 212, 221, 232 y 236, sus erratas y los comentarios de 1962.
+
+La edición actual y la traducción según el impreso se ofrecen como textos distintos.
+
+Las cifras marginales remiten a las páginas de las exposiciones originales.
+
+Traducción, correcciones y composición producidas por IA: OpenAI Codex, GPT-6 Astra, esfuerzo Ultra.
+La autoría de la obra original corresponde a Alexandre Grothendieck.
+
+El PDF se acompaña de fuentes LaTeX editables y de los archivos necesarios para su compilación.
+
+\tableofcontents
+\mainmatter
+\def\FgaUnitKey{149}\input{149.tex}
+\def\FgaUnitKey{e149}\input{e149.tex}
+\def\FgaUnitKey{182}\input{182.tex}
+\def\FgaUnitKey{e182}\input{e182.tex}
+\def\FgaUnitKey{190}\input{190.tex}
+\def\FgaUnitKey{e190}\input{e190.tex}
+\def\FgaUnitKey{195}\input{195.tex}
+\def\FgaUnitKey{e195}\input{e195.tex}
+\def\FgaUnitKey{212}\input{212.tex}
+\def\FgaUnitKey{e212}\input{e212.tex}
+\def\FgaUnitKey{221}\input{221.tex}
+\def\FgaUnitKey{e221}\input{e221.tex}
+\def\FgaUnitKey{232}\input{232.tex}
+\def\FgaUnitKey{e232}\input{e232.tex}
+\def\FgaUnitKey{236}\input{236.tex}
+\def\FgaUnitKey{e236}\input{e236.tex}
+\def\FgaUnitKey{com}\input{com.tex}
+\end{document}

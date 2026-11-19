@@ -7,6 +7,7 @@
 \usepackage{polyglossia}
 \setdefaultlanguage{\FgaLang}
 \usepackage{microtype}
+\usepackage[normalem]{ulem}
 \usepackage{graphicx}
 \usepackage{mathtools}
 \usepackage{amsthm}
@@ -33,14 +34,14 @@
 \newcommand{\hsh}{\underline{h}}
 \newcommand{\fquote}[1]{\textquotedbl#1\textquotedbl}
 \newcommand{\seminar}[1]{%
-  \begin{flushleft}\sffamily Séminaire BOURBAKI\\#1\end{flushleft}%
+  \begin{flushleft}\normalfont Séminaire BOURBAKI\\#1\end{flushleft}%
 }
 \newcommand{\seminaren}[1]{%
   \begin{flushleft}\sffamily BOURBAKI SEMINAR\\#1\end{flushleft}%
 }
 \newcommand{\paperhead}[2]{%
   \begin{center}
-    {\Large\bfseries #1\par}
+    {\Large\normalfont #1\par}
     \vspace{0.6\baselineskip}
     #2
   \end{center}
@@ -72,7 +73,7 @@
   \section*{#1. #2}%
   \addcontentsline{toc}{section}{#1. #2}%
 }
-\newcommand{\result}[2]{%
-  \par\medskip\noindent\textbf{#1%
-  \if\relax\detokenize{#2}\relax\else\space#2\fi. ---}\enspace
+\newcommand{\result}[3][. -]{%
+  \par\medskip\noindent\textnormal{#2%
+  \if\relax\detokenize{#3}\relax\else\space#3\fi#1}\enspace
 }

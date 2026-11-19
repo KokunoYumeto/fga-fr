@@ -1,0 +1,206 @@
+\clearpage
+\chapter*{Erratum and supplement to Exposé no. 236}
+\addcontentsline{toc}{chapter}{Erratum and supplement to Exposé no. 236}
+\src{303}
+
+\noindent\textbf{8. TDTE VI: Picard schemes. General properties.}
+
+\begin{center}
+[Bourbaki Seminar, vol. 14, 1961/62, no. 236, 23 pp.]
+\end{center}
+
+\noindent\textbf{Page 12, line 16.} --- For “affine line,” read “affine line
+with the origin removed.”
+
+\noindent\textbf{Line 18.} --- For “$X[t]$,” read “$X[t,t^{-1}]$.”
+
+\noindent\textbf{Page 16, Proposition 3.1, sixth line.} --- For the malformed
+construction “The hypothesis ... results,” read “It follows from the
+hypothesis ....”
+
+\noindent\textbf{Page 21, §4: The finiteness theorem for the Picard scheme.}
+--- Finiteness questions of the kind raised in this section have been almost
+completely resolved since the present exposé was written. We indicate the main
+facts now known in this direction. To simplify the statements, we implicitly
+assume that all the Picard preschemes occurring in them exist, although an
+evident modification of the statements removes every existence hypothesis.
+In what follows, $S$ denotes a noetherian scheme and $X,Y$ proper schemes over
+$S$.
+
+\medskip
+\noindent(i) Let $f:X\longrightarrow Y$ be a surjective morphism. Then
+\[
+f^*: \operatorname{Pic}_{Y/S}\longrightarrow\operatorname{Pic}_{X/S}
+\]
+is a morphism of finite type.
+
+\src{304}
+\noindent(ii) Suppose that $Y$ is projective over $S$ and carries an invertible
+Module relatively ample over $S$. Let $X$ be the zero scheme of an arbitrary
+section of this Module, and let $f:X\longrightarrow Y$ be the canonical
+immersion. Finally, suppose that the irreducible components of the fibers of
+$Y/S$ have dimension $\geq3$. Then
+\[
+f^*: \operatorname{Pic}_{Y/S}\longrightarrow\operatorname{Pic}_{X/S}
+\]
+is of finite type.
+
+\noindent(iii) Suppose that $X$ is projective over $S$ and all its geometric
+fibers are integral of dimension $n$. Let $\mathcal O_X(1)$ be an ample
+invertible Module on $X$, permitting Hilbert polynomials to be defined. If $M$
+is a subset of $\operatorname{Pic}_{X/S}$, then $M$ is quasi-compact if and
+only if, in the Hilbert polynomials
+\[
+a_0x^n+a_1x^{n-1}+a_2x^{n-2}+\cdots
+\]
+of the elements of $M$, the coefficients $a_1$ and $a_2$ remain bounded, omitting every coefficient whose monomial would have negative degree; thus only $a_1$ occurs when $n=1$, and neither coefficient occurs when $n=0$.
+
+\noindent(iv) For every integer $n\neq0$, the $n$th-power homomorphism in the
+group prescheme $\operatorname{Pic}_{X/S}$ is a morphism of finite type.
+
+Notice that (i) and (ii) also say that, under their respective hypotheses, a
+subset $M$ of $\operatorname{Pic}_{Y/S}$ is quasi-compact if and only if its
+image in $\operatorname{Pic}_{X/S}$ is quasi-compact. It follows that an
+invertible Module $\mathcal L$ on $Y$ is $\tau$-equivalent to zero if and only
+if its inverse image on $X$ is; in other words,
+$\operatorname{Pic}_{Y/S}^\tau$ is the inverse image of
+$\operatorname{Pic}_{X/S}^\tau$. In particular, to show that the former
+prescheme is of finite type over $S$, it is enough to prove this for the latter,
+since $\operatorname{Pic}_{Y/S}\longrightarrow
+\operatorname{Pic}_{X/S}$ is of finite type. Applying (i), Chow's lemma, and
+(iii), one obtains:
+
+\medskip
+\noindent(v) $\operatorname{Pic}_{X/S}^\tau$ is of finite type over $S$.
+
+In general, combining (i) for a finite morphism with (ii) reduces most
+finiteness questions to the case in which $X/S$ has geometrically integral
+normal fibers of dimension $\leq2$. Often, by applying (i) to a surjective
+morphism not necessarily finite and using resolution of singularities of
+algebraic surfaces (due in arbitrary characteristic to Abhyankar), one even
+reduces to the case in which $X/S$ is smooth, and hence has nonsingular
+geometric fibers of dimension 2. Together with (v) and the Picard--Igusa
+inequality bounding the rank of the Néron--Severi group of a nonsingular
+projective surface, this proves the following generalization of Néron's
+finiteness theorem:
+
+\medskip
+\noindent(vi) Let $X/S$ be proper over $S$ and otherwise arbitrary. Then the
+Néron--Severi groups
+\[
+\operatorname{Pic}_{X_i/k_i}/\operatorname{Pic}_{X_i/k_i}^\circ
+\]
+of the geometric fibers $X_i/k_i$ of $X/S$
+
+\src{305}
+are of finite type, and their ranks and the orders of their torsion subgroups
+remain bounded.
+
+The same reduction to nonsingular surfaces, together with the theorems known
+in that case (namely Néron's finiteness theorem and the nondegeneracy of the
+intersection form on the Néron--Severi group), implies:
+
+\medskip
+\noindent(vii) Let $X$ be a proper scheme over an algebraically closed field.
+There are finitely many closed integral curves $C_i$ ($1\leq i\leq r$) in
+$X$ with the following property: for every subset $M$ of
+$\operatorname{Pic}_{X/k}$, $M$ is quasi-compact if and only if the integers
+\[
+\deg_{C_i'}\mathcal L\qquad(\mathcal L\in M)
+\]
+remain bounded, where $C_i'$ denotes the normalization of $C_i$.
+
+Here $r$ may be taken to be the rank of the Néron--Severi group. Once that
+group is known to be of finite type, (vii) reduces to the fact that the linear
+forms on the Néron--Severi group defined by curves $C$ in $X$ vanish
+simultaneously only on its torsion elements. When $X$ is projective and
+nonsingular, this result, as well as (v), was due to Matsusaka. Using (vii),
+one readily obtains the following characterization of invertible Modules
+$\tau$-equivalent to zero on $X$:
+
+\medskip
+\noindent(viii) Let $X/k$ be a proper scheme over a field, and let
+$\mathcal L$ be an invertible Module on $X$. The following conditions are
+equivalent:
+
+\noindent a. $\mathcal L$ is $\tau$-equivalent to zero;
+
+\noindent b. For every coherent Module $F$,
+\[
+\chi(F\otimes\mathcal L)=\chi(F),
+\]
+where $\chi$ denotes the Euler--Poincaré characteristic;
+
+\noindent b'. As in (b), but with $F=\mathcal O_Y$, where $Y$ is a closed
+integral subscheme of dimension 1 in $X$;
+
+\noindent c. For every such $Y$, writing $Y'$ for the normalized curve,
+\[
+\deg\mathcal L_{Y'}=0.
+\]
+
+If $X/k$ is projective and carries an ample invertible Module
+$\mathcal O_X(1)$, the preceding conditions are also equivalent to:
+
+\noindent d. For every integer $m$, $\mathcal L^{\otimes m}(1)$ is ample.
+
+\noindent e. (If $X$ is integral.) For every pair of integers $m,n$,
+\[
+\chi(\mathcal L^{\otimes m}(n))=\chi(\mathcal O_X(n))
+\]
+
+\src{306}
+(that is, (b) holds with $F=\mathcal L^{\otimes m}(n)$).
+
+For the sufficiency of this last condition, observe that it says that all the
+Hilbert polynomials of the $\mathcal L^{\otimes m}$ are equal. Hence, by
+Mumford's criterion (iii), the $\mathcal L^{\otimes m}$ remain in a
+quasi-compact subset of $\operatorname{Pic}_{X/k}$, which is (a). Conditions
+(b), (b'), and (c) should be regarded as variants, on an arbitrary proper
+scheme, of numerical equivalence as customarily defined on nonsingular
+projective varieties. For the latter, the equivalence of (a) and (c) was of
+course well known (Matsusaka).
+
+Criterion (e) also implies:
+
+\medskip
+\noindent(ix) Let $f:X\longrightarrow S$ be a projective flat morphism whose
+geometric fibers are integral. Then $\operatorname{Pic}_{X/S}^\tau$ is open
+and closed in $\operatorname{Pic}_{X/S}$.
+
+We confine ourselves to a few comments on the proof of the key results (i),
+(ii), and (iii). Result (iv) is somewhat separate and is proved using only (i)
+for finite surjective radicial morphisms, specifically for a Frobenius
+morphism. For (i), one makes essential use of the ideas of nonflat descent
+(see especially TDTE I, page 9). Since only finiteness results are sought, the
+lack of effectivity criteria for descent data is harmless. Mumford has
+recently proved a slightly weaker form of (iii), namely the criterion involving
+all coefficients of the Hilbert polynomial. His argument is extremely simple
+and is inspired by the proof of an ampleness criterion of Nakai (stated by
+Nakai for nonsingular surfaces and generalized by Mumford to arbitrary
+projective morphisms). It seems to me, however, that this argument is valid
+only under a slight additional restriction on the fibers of $X/S$, Serre's
+condition $(S_2)$, which is satisfied when the geometric fibers are normal.
+This restricted criterion is then used in proving (ii): criterion (i) reduces
+one to the case in which $Y/S$ is flat with geometrically integral normal
+fibers, and Mumford's criterion readily reduces one to the case in which $X/S$
+satisfies the same conditions. The dimension hypothesis then implies that the
+geometric fibers of $Y$ and $X$ have depth $\geq2$ at their closed points,
+which permits application of the “equivalence criteria” in the form given in
+SGA 1962 (Exposé XII), completing the proof of (ii). Once (i) and (ii) are
+available, it is not difficult to remove every normality hypothesis on the
+fibers from Mumford's criterion and prove it in the stronger form stated in
+(iii).
+
+\src{307}
+Finally, the proof of (i) and (ii) also shows that when $S$ is the spectrum of
+a field $k$, the morphism
+\[
+\operatorname{Pic}_{Y/k}\longrightarrow\operatorname{Pic}_{X/k}
+\]
+is affine (and not merely of finite type).
+
+\par\smallskip
+\begingroup\footnotesize
+\noindent\textit{The print asks that the coefficients $a_1$ and $a_2$ remain bounded, without specifying the case $n<2$. The current reading only makes the absent-coefficient convention explicit in low dimension. This is not a claim that the printed theorem is false.}\par
+\endgroup

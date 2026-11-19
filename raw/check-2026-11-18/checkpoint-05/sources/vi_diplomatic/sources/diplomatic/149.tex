@@ -1,0 +1,1425 @@
+\unit{Bài trình bày 149 — Các định lý đối ngẫu cho các bó đại số coherent}
+\sid{149}
+\markboth{Thuyết trình 149}{Thuyết trình 149}
+\src{169}
+\seminar{(Tháng 5 năm 1957)}
+\paperhead{CÁC ĐỊNH LÝ ĐỐI NGẪU CHO CÁC BÓ ĐẠI SỐ COHERENT}%
+  {do Alexandre GROTHENDIECK}
+
+Những kết quả sau đây, được gợi ý bởi \fquote{định lý đối ngẫu đại số}
+của Serre, đã được tìm ra vào mùa đông năm 1955 và mùa đông năm 1956. Chúng được chứng minh
+rất đơn giản nhờ những kết quả khá sơ cấp về đối đồng điều của các không gian
+xạ ảnh [3], cùng với việc sử dụng rộng rãi đại số đồng điều của
+Cartan--Eilenberg theo dạng trình bày trong [2].
+
+\fsection{1}{Các Ext của các bó môđun ({[2]}, Chương 3 và 4)}
+
+Cho $X$ là một không gian tôpô được trang bị một bó $\Osh$ các vành có đơn vị
+(không nhất thiết giao hoán). Ta xét phạm trù Abel
+$\Ccat^{\Osh}$ của các bó $\Osh$-môđun, cũng được gọi là $\Osh$-Môđun.
+Mọi vật của phạm trù này đều có một phân giải nội xạ; nhờ đó
+có thể định nghĩa trong phạm trù này các hàm tử $\operatorname{Ext}$ với những tính chất
+hình thức quen thuộc. Cụ thể hơn, để tránh nhầm lẫn, ta
+ký hiệu $\operatorname{Hom}_{\Osh}(X;A,B)$, hoặc đơn giản là
+$\operatorname{Hom}(X;A,B)$, là nhóm Abel các $\Osh$-đồng cấu từ $A$
+vào $B$, trong khi $\Homsh_{\Osh}(A,B)$ ký hiệu bó các mầm
+đồng cấu từ $A$ vào $B$ ($A,B\in\Ccat^{\Osh}$). Với
+$A\in\Ccat^{\Osh}$ cố định, ta định nghĩa các hàm tử $h_A$ và $\hsh_A$ nhận giá trị tương ứng
+trong phạm trù $\Ccat$ các nhóm Abel và phạm trù
+$\Ccat^{\Zsh}$ các bó nhóm Abel trên $X$, bằng các công thức:
+\begin{equation}\tag{1.1}
+  h_A(B)=\operatorname{Hom}_{\Osh}(X;A,B),
+  \qquad
+  \hsh_A(B)=\Homsh_{\Osh}(A,B).
+\end{equation}
+
+Các hàm tử $h_A$ và $\hsh_A$ là những hàm tử hiệp biến khớp trái;
+ta xét các hàm tử dẫn xuất phải của chúng, được ký hiệu tương ứng bởi
+$\operatorname{Ext}_{\Osh}^{p}(X;A,B)$ và $\Extsh_{\Osh}^{p}(A,B)$. Do đó,
+theo định nghĩa,
+\begin{equation}\tag{1.2}
+\left\{
+\begin{aligned}
+\operatorname{Ext}_{\Osh}^{p}(X;A,B)
+  &= (R^{p}h_A)(B)
+   = H^{p}\bigl(\operatorname{Hom}_{\Osh}(X;A,C(B))\bigr),\\
+\Extsh_{\Osh}^{p}(A,B)
+  &= (R^{p}\hsh_A)(B)
+   = H^{p}\bigl(\Homsh_{\Osh}(A,C(B))\bigr),
+\end{aligned}
+\right.
+\end{equation}
+
+trong đó ký hiệu $R^{p}$ chỉ việc chuyển sang các hàm tử dẫn xuất phải, còn
+$C(B)$ ký hiệu một phân giải nội xạ tùy ý của $B$ trong $\Ccat^{\Osh}$.
+Ký hiệu
+\[
+  \Gamma:\Ccat^{\Zsh}\longrightarrow\Ccat
+\]
+là hàm tử \fquote{tiết diện}. Nhắc lại rằng các hàm tử dẫn xuất phải của nó được
+ký hiệu bởi
+\[
+  B\longmapsto H^{p}(X,B).
+\]
+
+
+\src{170}
+\begin{equation}\tag{1.3}
+  H^{p}(X,B)=(R^{p}\Gamma)(B)=H^{p}\bigl(\Gamma(C(B))\bigr).
+\end{equation}
+Hiển nhiên, ta có $h_A=\Gamma\hsh_A$; mặt khác, ta kiểm tra được rằng $\hsh_A$
+biến các vật nội xạ thành các vật $\Gamma$-acyclic. Từ đó, theo cách quen thuộc,
+ta suy ra:
+
+\result{MỆNH ĐỀ}{1} Với mọi $\Osh$-môđun $A$, tồn tại một hàm tử
+phổ đối đồng điều trên $\Ccat^{\Osh}$, hội tụ tới hàm tử phân bậc
+$\bigl(\operatorname{Ext}_{\Osh}^{*}(X;A,B)\bigr)$ và có số hạng ban đầu là
+\begin{equation}\tag{1.4}
+  E_{2}^{p,q}(A,B)=H^{p}\bigl(X,\Extsh_{\Osh}^{q}(A,B)\bigr).
+\end{equation}
+Từ đó, ta thu được các \fquote{đồng cấu biên} và một dãy khớp năm số hạng
+mà ta sẽ không viết ra.
+
+\result{HỆ QUẢ}{1} Nếu $A$ đẳng cấu địa phương với $\Osh^{n}$, thì ta có
+các đẳng cấu chính tắc
+\begin{equation}\tag{1.5}
+  \operatorname{Ext}_{\Osh}^{p}(X;A,B)
+  \overset{\sim}{\longleftarrow}
+  H^{p}\bigl(X,\Homsh_{\Osh}(A,B)\bigr)
+\end{equation}
+(do các đồng cấu biên của dãy phổ cho). Đặc biệt, ta có
+một đẳng cấu chính tắc
+\begin{equation}\tag{1.6}
+  \operatorname{Ext}_{\Osh}^{p}(X;\Osh,B)=H^{p}(X,B).
+\end{equation}
+
+Để sử dụng các kết quả này, cần mô tả tường minh các
+$\Extsh_{\Osh}^{p}(A,B)$. Các hàm tử này được tính địa phương;
+nghĩa là, nếu $U$ là một tập mở của $X$, thì
+\[
+  \Extsh_{\Osh}^{p}(A,B)|U
+  =\Extsh_{\Osh|U}^{p}(A|U,B|U),
+\]
+vì phép hạn chế lên $U$ của một $\Osh$-môđun nội xạ
+là một $(\Osh|U)$-môđun nội xạ. Hơn nữa, với $x\in X$ cố định, ta có các đồng cấu có tính hàm tử
+\begin{equation}\tag{1.7}
+  \Homsh_{\Osh}(A,B)_x
+  \longrightarrow
+  \operatorname{Hom}_{\Osh_x}(A_x,B_x),
+\end{equation}
+chúng mở rộng duy nhất thành một đồng cấu giữa các hàm tử đối đồng điều
+theo $B$:
+\begin{equation}\tag{1.8}
+  \Extsh_{\Osh}^{p}(A,B)_x
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_x}^{p}(A_x,B_x).
+\end{equation}
+
+\result{MỆNH ĐỀ}{2} Nếu $A$, trong một lân cận của $x$, đẳng cấu với
+đối hạch của một đồng cấu $\Osh^{m}\longrightarrow\Osh^{n}$, thì (1.7) là một
+đẳng cấu với mọi $p$.
+Điều này đúng,
+nói riêng, nếu $A$ là một $\Osh$-môđun coherent [3].
+
+\src{171}
+\result{MỆNH ĐỀ}{3} Cho $L_{*}=(L_i)$ là một phân giải trái của
+$\Osh$-môđun $A$ bởi các $\Osh$-môđun, mỗi môđun đẳng cấu địa phương với
+một $\Osh^{n}$. Khi đó $\Extsh_{\Osh}^{*}(A,B)$ được đồng nhất với
+$H^{*}\bigl(\Homsh_{\Osh}(L_{*},B)\bigr)$, và
+$\operatorname{Ext}_{\Osh}^{*}(X;A,B)$ được đồng nhất với siêu đối đồng điều của $X$
+đối với phức $\Homsh_{\Osh}(L_{*},B)$.
+
+Chứng minh là chuẩn: ta xét song phức
+$\Homsh_{\Osh}(L_{*},C(B))$, trong đó $C(B)$ là một phân giải nội xạ của $B$, cùng các
+đồng cấu tự nhiên từ $\Homsh_{\Osh}(L_{*},B)$ và từ
+$\Homsh_{\Osh}(A,C(B))$ vào song phức này.
+
+Cuối cùng, lưu ý rằng hai hàm tử $\operatorname{Ext}$ được đưa vào
+trong (1.2) không chỉ là các hàm tử đối đồng điều theo $B$, mà còn là các
+song hàm tử đối đồng điều, hiệp biến theo $B$ và phản biến theo $A$.
+
+\fsection{2}{Luật hợp thành trong các Ext}
+
+Các kết quả của mục này do CARTIER và YONEDA tìm ra độc lập; xem
+một bài trình bày của CARTIER [1] để biết chi tiết. Cho $\Ccat$ là một phạm trù Abel.
+Cho $K$ và $L$ là hai vật phân bậc trong $\Ccat$. Ta ký hiệu
+$\operatorname{Hom}(K,L)$ là nhóm Abel phân bậc mà thành phần bậc
+$n$ gồm các đồng cấu thuần nhất bậc $n$ từ $K$ vào $L$ (nghĩa là
+các hệ $(u_i)$ đồng cấu $K^{i}\longrightarrow L^{i+n}$).
+
+Nếu $K$ và $L$ là các phức (với các toán tử vi phân bậc $+1$, để
+cụ thể hóa), ta trang bị cho $\operatorname{Hom}(K,L)$ toán tử
+vi phân cho bởi
+\begin{equation}\tag{2.1}
+  \delta(u)=du+(-1)^{n+1}ud,\qquad\text{trong đó }n=\deg(u),
+\end{equation}
+qua đó biến nó thành một phức với toán tử vi phân bậc $+1$. Các chu trình
+bậc $n$ là những toán tử bậc $n$ phản giao hoán với $u$ (xét như
+các toán tử thuần nhất). Khi đó ta có thể xét
+$H^{*}\bigl(\operatorname{Hom}(K,L)\bigr)$; đây là một bất biến của các kiểu
+đồng luân của $K$ và $L$, và ta có thể ký hiệu nó là $H^{*}(K,L)$.
+
+Nếu có thêm một phức thứ ba $M$, thì phép hợp thành các đồng cấu
+xác định một phép ghép cặp
+\[
+  \operatorname{Hom}(K,L)\times\operatorname{Hom}(L,M)
+  \longrightarrow\operatorname{Hom}(K,M)
+\]
+tương thích với các toán tử vi phân; do đó, khi chuyển sang đối đồng điều,
+ta được các phép ghép cặp
+\begin{equation}\tag{2.2}
+  H^{*}(K,L)\times H^{*}(L,M)\longrightarrow H^{*}(K,M),
+\end{equation}
+được ký hiệu $(u,v)\longmapsto vu$. Các phép ghép cặp này thỏa mãn tính
+kết hợp hiển nhiên. Đặc biệt, $H^{*}(K,K)$ là một vành phân bậc kết hợp
+có đơn vị, và $H^{*}(K,L)$ (tương ứng $H^{*}(L,K)$) là một môđun phân bậc phải
+(tương ứng trái) trên vành này, v.v. Ở bậc $0$, (2.2) thu về
+phép hợp thành các đồng cấu của phức. Cuối cùng, một dãy khớp các
+phức
+\[
+  0\longrightarrow K'\longrightarrow K\longrightarrow K''\longrightarrow 0,
+\]
+
+\src{172}
+sao cho $K'^{i}$ được đồng nhất với một hạng tử trực tiếp của $K^{i}$ với mọi $i$,
+dẫn đến một dãy khớp các phức nhóm $\operatorname{Hom}(K'',L)$, v.v., và do đó dẫn đến một
+toán tử nối
+\[
+  H^{i}(K',L)\longrightarrow H^{i+1}(K'',L).
+\]
+Các toán tử nối tương ứng với một dãy khớp trong $L$ cũng được định nghĩa tương tự. Các
+phép ghép cặp (2.2) tương thích, theo nghĩa thông thường, với các toán tử nối này.
+
+Giả sử bây giờ $\Ccat$ là một phạm trù trong đó mọi vật $A$ của $\Ccat$
+đều có một phân giải nội xạ $C(A)$. Khi đó, dùng một trong nhiều biến thể của định lý song phức, ta có
+\[
+  H^{*}\bigl(C(A),C(B)\bigr)
+  =H^{*}\bigl(\operatorname{Hom}(C(A),C(B))\bigr)
+\]
+là đẳng cấu chính tắc với
+\[
+  H^{*}\bigl(\operatorname{Hom}(A,C(B))\bigr)
+  =\operatorname{Ext}^{*}(A,B).
+\]
+Các toán tử nối được xét ở trên cho các đồng cấu nối của
+$\operatorname{Ext}$. Hơn nữa, các phép ghép cặp (2.2) ở đây cho
+các phép ghép cặp kết hợp, tương thích với các đồng cấu nối:
+\begin{equation}\tag{2.3}
+  \operatorname{Ext}^{*}(A,B)\times\operatorname{Ext}^{*}(B,C)
+  \longrightarrow\operatorname{Ext}^{*}(A,C).
+\end{equation}
+Đặc biệt, $\operatorname{Ext}^{*}(A,A)$ là một vành phân bậc kết hợp
+có đơn vị, v.v. (Tương tự, người ta chứng minh rằng các hàm tử
+$\operatorname{Ext}$ tác động trên các hàm tử dẫn xuất của một hàm tử
+bất kỳ; ở đây chúng ta sẽ không dùng đến sự kiện này.)
+
+Trong trường hợp phạm trù đang xét là phạm trù $\Ccat^{\Osh}$ gồm các
+$\Osh$-môđun trên $X$, do đó ta thu được các phép ghép cặp
+\begin{equation}\tag{2.4}
+  \operatorname{Ext}_{\Osh}^{p}(X;A,B)
+  \times\operatorname{Ext}_{\Osh}^{q}(X;B,C)
+  \longrightarrow\operatorname{Ext}_{\Osh}^{p+q}(X;A,C),
+\end{equation}
+có thể được viết tường minh như đã chỉ ra ở trên. Hơn nữa, bằng những triển khai tương tự,
+trong đó thay phạm trù các nhóm Abel bằng phạm trù các bó nhóm Abel trên $X$, và thay các hàm tử
+$\operatorname{Hom}$ bằng các hàm tử $\Homsh$, ta cũng định nghĩa được các phép ghép cặp có cùng
+các tính chất hình thức và lần này mang \fquote{tính địa phương}:
+\begin{equation}\tag{2.5}
+  \Extsh_{\Osh}^{p}(A,B)\times\Extsh_{\Osh}^{q}(B,C)
+  \longrightarrow\Extsh_{\Osh}^{p+q}(A,C).
+\end{equation}
+Các phép ghép cặp sau được làm rõ hơn nếu nhận thấy rằng các đồng cấu (1.8) tương thích
+với các phép ghép cặp giữa các nhóm $\operatorname{Ext}$.
+
+\src{173}
+Cuối cùng, ta nhắc lại rằng còn có một cấu trúc nhân giữa các hàm tử
+$H^{p}(X,A)$ (tích cup). Khi đó, ta thấy rằng các dãy phổ của
+Mệnh đề 1 tương thích với các cấu trúc nhân; cụ thể hơn,
+ta có một phép ghép cặp từ dãy phổ $E(A,B)$ và dãy phổ
+$E(B,C)$ vào dãy phổ $E(A,C)$; tại đích hội tụ, phép này
+thu về phép ghép cặp giữa các nhóm $\operatorname{Ext}$ toàn cục, còn tại
+số hạng đầu thì đó là phép ghép cặp được suy ra, ở vế phải của (1.4), từ
+tích cup và các phép ghép cặp của những nhóm $\operatorname{Ext}$ địa phương. Đặc biệt, từ đó suy ra
+rằng các \fquote{đồng cấu biên}
+\begin{equation}\tag{2.6}
+  \operatorname{Ext}_{\Osh}^{n}(X;A,B)
+  \longrightarrow H^{0}\bigl(X,\Extsh_{\Osh}^{n}(A,B)\bigr)
+\end{equation}
+và
+\begin{equation}\tag{2.7}
+  H^{n}\bigl(X,\Homsh_{\Osh}(A,B)\bigr)
+  \longrightarrow\operatorname{Ext}_{\Osh}^{n}(X;A,B)
+\end{equation}
+tương thích với các cấu trúc nhân. Vì vậy, nếu chỉ xét
+các bó đẳng cấu địa phương với một $\Osh^{m}$, thì điều này mô tả hoàn toàn
+phép hợp thành giữa các nhóm $\operatorname{Ext}$ toàn cục thông qua tích cup, theo
+đẳng cấu (1.5).
+
+\fsection{3}{Các kết quả về đối đồng điều địa phương}
+
+Cho $A$ là một vành giao hoán có đơn vị, cùng với một iđêan $J$. Với
+$A$-môđun biến thiên $M$, ta sẽ định nghĩa các đồng cấu có tính hàm tử
+\begin{equation}\tag{3.1}
+\left\{
+\begin{aligned}
+\operatorname{Ext}_{A}^{p}(A/J,M)
+  &\longrightarrow
+  \operatorname{Hom}_{A}\!\left(\bigwedge^{p}J/J^{2},M\otimes A/J\right),\\
+\operatorname{Tor}_{p}^{A}(A/J,M)
+  &\longleftarrow
+  \left(\bigwedge^{p}J/J^{2}\right)
+  \otimes\operatorname{Hom}_{A}(A/J,M),
+\end{aligned}
+\right.
+\end{equation}
+trong đó các tích tenxơ và tích ngoài đều được lấy trên vành $A$; cũng lưu ý
+rằng $J/J^{2}$ thực ra là một $A/J$-môđun, và các lũy thừa
+ngoài của nó, xét như $A$-môđun hay như $A/J$-môđun, là như nhau.
+Việc định nghĩa các đồng cấu (3.1) tương đương với việc định nghĩa, cho mọi
+hệ $\underline{x}=(x_1,\ldots,x_p)$ gồm các phần tử của $J$, các đồng cấu
+$\varphi_{\underline{x}}$:
+\begin{equation}\tag{3.2}
+\left\{
+\begin{aligned}
+\varphi_{\underline{x}}:
+  \operatorname{Ext}_{A}^{p}(A/J,M)&\longrightarrow M\otimes A/J,\\
+\varphi_{\underline{x}}:
+  \operatorname{Hom}_{A}(A/J,M)&\longrightarrow
+  \operatorname{Tor}_{p}^{A}(A/J,M),
+\end{aligned}
+\right.
+\end{equation}
+sao cho các điều kiện sau được thỏa mãn:
+
+
+\src{174}
+\begin{enumerate}
+\item[\textup{i.}] $\varphi_{x_1,\ldots,x_p}$ phụ thuộc theo cách
+$A$-đa tuyến tính thay phiên vào hệ các $x_i\in J$.
+\item[\textup{ii.}] $\varphi_{x_1,\ldots,x_p}$ bằng không khi một trong các $x_i$ thuộc
+$J^{2}$.
+\end{enumerate}
+Thực ra, ii. suy ra từ i., vì $a\varphi_{\underline{x}}=0$ với $a\in J$,
+như thấy được khi lưu ý rằng mọi môđun trong (3.2) đều bị
+$J$ triệt tiêu.
+
+Để định nghĩa $\varphi_{\underline{x}}$, ta xét phức
+$K_{\underline{x}}$ có $A$-môđun nền là $\bigwedge A^{p}$, và
+có toán tử vi phân là phép co $i_{\underline{x}}$ theo
+$\underline{x}$ được xem như một dạng tuyến tính trên $A^{p}$ có các thành phần
+$x_1,\ldots,x_p$. Toán tử vi phân có bậc $-1$, các bậc đều
+không âm, và nhóm đối đồng điều của phức này ở bậc $0$ là
+$A/(x_1A+\cdots+x_pA)$. Vì các $x_i$ thuộc $J$, từ đó suy ra một
+đồng cấu tăng cường $K_{\underline{x},0}\longrightarrow A/J$. Do đó,
+$K_{\underline{x}}$ xuất hiện như một phức tự do tăng cường, với môđun
+tăng cường $A/J$. Theo cách quen thuộc, từ đó suy ra các đồng cấu
+\[
+\operatorname{Ext}_{A}^{*}\bigl(H_0(K_{\underline{x}}),M\bigr)
+\longrightarrow
+H^{*}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr)
+\]
+và
+\[
+\operatorname{Tor}_{*}^{A}\bigl(H_0(K_{\underline{x}}),M\bigr)
+\longleftarrow
+H_{*}\bigl(K_{\underline{x}}\otimes_A M\bigr),
+\]
+do đó, bằng cách hợp thành với các đồng cấu trên các $\operatorname{Ext}$ và các
+$\operatorname{Tor}$ suy ra từ đồng cấu tăng cường
+$H_0(K_{\underline{x}})\longrightarrow A/J$, ta thu được các đồng cấu
+\begin{equation}\tag{3.3}
+\left\{
+\begin{aligned}
+\psi_{\underline{x}}:
+\operatorname{Ext}_{A}^{*}(A/J,M)
+&\longrightarrow H^{*}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr),\\
+\psi_{\underline{x}}:
+\operatorname{Tor}_{*}^{A}(A/J,M)
+&\longleftarrow H_{*}\bigl(K_{\underline{x}}\otimes_A M\bigr).
+\end{aligned}
+\right.
+\end{equation}
+Ta kiểm tra ngay rằng, ở bậc cao nhất $p$, các nhóm (đối) đồng điều ở các vế
+phải lần lượt là $M/(x_1M+\cdots+x_pM)$ (tương ứng, là tập các phần tử của $M$
+bị từng $x_i$ triệt tiêu). Vì các $x_i$ thuộc $J$, từ đó suy ra các
+đồng cấu
+\begin{equation}\tag{3.4}
+\left\{
+\begin{aligned}
+H^{p}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr)
+&\longrightarrow M\otimes A/J,\\
+H_{p}\bigl(K_{\underline{x}}\otimes_A M\bigr)
+&\longleftarrow\operatorname{Hom}_{A}(A/J,M).
+\end{aligned}
+\right.
+\end{equation}
+Bằng cách hợp thành các đồng cấu (3.3) và (3.4), ta thu được các đồng cấu (3.2)
+mà ta muốn định nghĩa. Việc kiểm tra i. khá dài dòng, nhưng không
+gặp khó khăn nào.
+
+
+\src{175}
+\result{MỆNH ĐỀ}{4} Cho $A$ là một vành giao hoán có đơn vị, và cho
+$(x_1,\ldots,x_p)$ là một dãy các phần tử của $A$ sao cho, với $1\leq i\leq p$,
+ảnh của $x_i$ trong vành thương của $A$ theo iđêan sinh bởi
+$(x_1,\ldots,x_{i-1})$ không phải là ước của $0$. Gọi $J$ là iđêan sinh
+bởi các $x_i$. Khi đó $J/J^{2}$ là một $(A/J)$-môđun tự do có cơ sở là các
+ảnh chính tắc của các $x_i$, phức $K_{\underline{x}}$ là một
+phân giải tự do của $A/J$, và với mọi $A$-môđun $M$, các đồng cấu (3.1) ở
+bậc $p$ đều song ánh. Điều tương tự cũng đúng với các đồng cấu tương tự
+được định nghĩa ở mọi bậc $i$, miễn là $J.M=0$.
+
+(Điểm cốt yếu, mà từ đó mọi khẳng định khác đều suy ra, là việc
+$K_{\underline{x}}$ không có đồng điều ở các bậc dương, một sự kiện quen thuộc dưới các giả thiết đã nêu.)
+
+\result{HỆ QUẢ}{1} Với $A$ và $J$ như trên, giả sử thêm rằng
+$A$ là một đại số afin chính quy có $\dim n$ trên một trường hoàn hảo $k$, và
+$A/J$ là một đại số afin chính quy. Ký hiệu $\Omega^{1}(A)$,
+$\Omega^{1}(A/J)$ là các môđun vi phân Kähler. Khi đó có một
+đẳng cấu chính tắc tương thích với phép địa phương hóa,
+\begin{equation}\tag{3.5}
+  \operatorname{Ext}_{A}^{p}\bigl(\Omega^{n-p}(A/J),\Omega^{n}(A)\bigr)=A/J.
+\end{equation}
+Thật vậy, $\Omega^{n-p}(A/J)$ là một $(A/J)$-môđun tự do hạng $1$, và tương tự,
+$\Omega^{n}(A)$ là một $A$-môđun tự do hạng $n$,
+do đó vế trái bằng
+\[
+  \operatorname{Ext}_{A}^{p}(A/J,A)
+  \otimes\Omega^{n-p}(A/J)'\otimes\Omega^{n}(A)
+\]
+(trong đó dấu « $'$ » chỉ $(A/J)$-môđun đối ngẫu). Tích tenxơ của
+hai thừa số cuối được đồng nhất với $\bigwedge^{p}(J/J^{2})$,
+nên toàn bộ biểu thức
+được đồng nhất với
+\[
+  \operatorname{Ext}_{A}^{p}\!\left(A/J,\bigwedge^{p}(J/J^{2})\right),
+\]
+và do đó, theo mệnh đề, với
+\[
+  \operatorname{Hom}_{A}\!\left(\bigwedge^{p}J/J^{2},
+  \bigwedge^{p}J/J^{2}\right),
+\]
+tức là với $A/J$. Đặc biệt,
+$\operatorname{Ext}_{A}^{p}\bigl(\Omega^{n-p}(A/J),\Omega^{n}(A)\bigr)$ chứa
+một phần tử phân biệt tương ứng với phần tử đơn vị của $A/J$, được gọi là
+\emph{lớp cơ bản của iđêan $J$ trong $A$}. (Thật ra, nó có thể được
+định nghĩa dưới những điều kiện rộng hơn đáng kể.) Hệ quả 1 có thể được viết
+dưới một dạng hình học hơn và toàn cục hơn:
+
+\result{HỆ QUẢ}{2} Cho $X$ là một đa tạp không kỳ dị trên một trường đóng
+đại số $k$, cho $Y$ là một đa tạp con đóng không kỳ dị của $X$,
+$\Osh_X$ là bó các vành địa phương của $X$, và $\Osh_Y$ là bó các vành
+địa phương của $Y$, được xem như một bó thương của $\Osh_X$. Cho $n$ là
+số chiều của $X$ và $n-p$ là số chiều của $Y$.
+
+\src{176}
+Cho $\Omega_X$ (tương ứng, $\Omega_Y$) là bó các mầm của các dạng
+vi phân chính quy trên $X$ (tương ứng, trên $Y$). Khi đó ta có các đẳng cấu
+chính tắc:
+\begin{equation}\tag{3.6}
+  \Extsh_{\Osh_X}^{p}\bigl(\Omega_Y^{n-p},\Omega_X^{n}\bigr)=\Osh_Y,
+\end{equation}
+hoặc tương đương
+\begin{equation}\tag{3.6 bis}
+  \Extsh_{\Osh_X}^{p}\bigl(\Osh_Y,\Omega_X^{n}\bigr)=\Omega_Y^{n-p}.
+\end{equation}
+Công thức (3.6 bis) có thể dùng làm định nghĩa của $\Omega_Y^{n-p}$ khi $Y$
+là một đa tạp kỳ dị. Chính xác hơn:
+
+\result{MỆNH ĐỀ}{5} Cho $Y$ là một tập con đại số có chiều
+$q=n-p$ trong một đa tạp đại số không kỳ dị $X$ có chiều $n$. Cho
+$F$ là một bó đại số nhất quán trên $X$ có giá chứa trong $Y$, và $L$
+là một bó đại số tự do địa phương trên $X$. Khi đó các bó
+$\Extsh_{\Osh_X}^{i}(F,L)$ bằng không khi $i<p$, còn khi $i=p$ ta có một
+đẳng cấu chính tắc
+\begin{equation}\tag{3.7}
+  \Extsh_{\Osh_X}^{p}(F,L)
+  =\Homsh_{\Osh_X}\!\left(F,
+  \Extsh_{\Osh_X}^{p}(\Osh_X/J,L)\right),
+\end{equation}
+trong đó $J$ là một bó iđêan tùy ý trên $X$ triệt tiêu $F$ và có
+tập các không điểm là $Y$. Đặc biệt, nếu $F$ là một bó đại số
+nhất quán trên $Y$, thì
+\begin{equation}\tag{3.7 bis}
+  \Extsh_{\Osh_X}^{p}(F,L)
+  =\Homsh_{\Osh_Y}\!\left(F,\Extsh_{\Osh_X}^{p}(\Osh_Y,L)\right).
+\end{equation}
+Sau cùng, vẫn giả sử $F$ là một bó đại số nhất quán trên $Y$, các bó
+\[
+  E^{i}(F)=\Extsh_{\Osh_X}^{p+i}(F,\Omega_X^{n})
+\]
+không phụ thuộc vào cách nhúng không gian đại số $Y$ vào một đa tạp
+không kỳ dị $X$.
+
+Vì bài toán có tính địa phương, có thể giả sử $X$ là afin và $L=\Osh_X$. Điều này quy
+bài toán về đại số giao hoán, thậm chí về đại số địa phương: nếu $A$ là một
+vành địa phương chính quy và $M$ là một $A$-môđun mà giá của nó có chiều
+$\leq q=n-p$, cần chứng minh rằng $\operatorname{Ext}_{A}^{i}(M,A)=0$ khi $i<p$, và
+\[
+  \operatorname{Ext}_{A}^{p}(M,A)
+  =\operatorname{Hom}_{A}\!\left(M,\operatorname{Ext}_{A}^{p}(A/J,A)\right),
+\]
+trong đó $J$ là một iđêan tùy ý có « số chiều » $\leq q$ và triệt tiêu $M$. Đối với
+khẳng định thứ nhất, ta quy nạp theo $q$: một phép rút gọn từng lớp trực tiếp đưa
+về trường hợp $M$ có dạng $A/J$; sau đó, thay $J$ bằng một iđêan nhỏ hơn
+và dùng giả thiết quy nạp cùng dãy khớp của các
+$\operatorname{Ext}$, ta quy về trường hợp $J$ được sinh bởi một « hệ tham số »
+như trong Mệnh đề 4, và khi đó kết quả là hiển nhiên. Kết quả
+trên cho thấy rằng, nếu $J$ là một iđêan
+
+
+\src{177}
+cố định có « số chiều » $\leq q$, thì hàm tử phản biến
+$E(M)=\operatorname{Ext}_{A}^{p}(M,A)$ trên phạm trù các $A/J$-môđun là
+khớp trái; hơn nữa, nó biến các tổng trực tiếp thành các tích trực tiếp,
+từ đó dễ dàng suy ra rằng
+\[
+  E(M)=\operatorname{Hom}_{A}\bigl(M,E(A)\bigr).
+\]
+ Sau cùng,
+khẳng định cuối của Mệnh đề 5 tinh tế hơn và suy ra từ một
+đặc trưng nội tại của các $E^{i}(F)$ nhờ một định lý đối ngẫu
+địa phương mà không thể trình bày ở đây.
+
+\result{HỆ QUẢ}{} Ký hiệu $\omega_Y^{q}$ là bó
+$\Extsh_{\Osh_X}^{p}(\Osh_Y,\Omega_X^{n})$. Khi đó, đối với các bó đại số
+nhất quán $F$ trên $Y$, ta có một đẳng cấu có tính hàm tử:
+\begin{equation}\tag{3.8}
+  \Extsh_{\Osh_X}^{p}(F,\Omega_X^{n})
+  =\Homsh_{\Osh_X}(F,\omega_Y^{q}).
+\end{equation}
+
+\fsection{4}{Lớp đối đồng điều gắn với một đa tạp con}
+
+Trong toàn bộ phần sau, $X$ ký hiệu một tập đại số có chiều $n$, được xác định
+trên một trường $k$, mà để đơn giản ta giả sử là đóng đại số. Ngoại trừ
+ở n\textsuperscript{o} 6, $X$ được giả sử không kỳ dị. Ta ký hiệu
+$\Osh_X$ là bó các vành địa phương trên $X$, và
+\[
+  \Omega_X^{*}=\bigcup_p\Omega_X^{p}
+\]
+là bó các mầm của các dạng vi phân trên $X$. Nếu $Y$ là một tập con đóng của $X$, ta đồng nhất
+các bó đại số nhất quán trên $Y$ với các bó nhất quán trên $X$
+bằng không ngoài $Y$; điều này đặc biệt áp dụng cho $\Osh_Y$ và $\Omega_Y$.
+
+\result{BỔ ĐỀ}{1} Cho $F$ là một bó đại số nhất quán trên $X$ mà
+giá của nó có chiều $\leq n-p$, và cho $L$ là một bó đại số nhất quán
+tự do địa phương trên $X$. Khi đó $\operatorname{Ext}_{\Osh_X}^{i}(X;F,L)$ bằng không
+với $i<p$, và ta có một đẳng cấu chính tắc
+\begin{equation}\tag{4.1}
+  \operatorname{Ext}_{\Osh_X}^{p}(X;F,L)
+  =H^{0}\bigl(X,\Extsh_{\Osh_X}^{p}(F,L)\bigr).
+\end{equation}
+Nếu $F$ là một bó đại số nhất quán trên một tập con đóng $Y$ của $X$ có
+chiều $\leq n-p$, thì ta có một đẳng cấu chính tắc
+\begin{equation}\tag{4.1 bis}
+  \Extsh_{\Osh_X}^{p}(F,L)
+  =\Homsh_{\Osh_X}\!\left(
+    F\otimes L'\otimes\Omega_X^{n},\omega_Y^{n-p}
+  \right),
+\end{equation}
+trong đó $\omega_Y^{n-p}$ là bó trên $Y$ được định nghĩa trong hệ quả của
+Mệnh đề 5 (và đồng nhất với $\Omega_Y^{n-p}$ nếu $Y$ không kỳ dị).
+
+Công thức (4.1) là hệ quả trực tiếp của dãy phổ trong
+Mệnh đề 1 và của Mệnh đề 5; theo công thức (3.8), ta có thể
+viết
+
+
+\src{178}
+\begin{align*}
+\Extsh_{\Osh_X}^{p}(F,L)
+&=L\otimes(\Omega_X^{n})'\otimes
+  \Extsh_{\Osh_X}^{p}(F,\Omega_X^{n})\\
+&=L\otimes(\Omega_X^{n})'\otimes
+  \Homsh_{\Osh_X}(F,\omega_Y^{q})\\
+&=\Homsh_{\Osh_X}\!\left(
+  F\otimes L'\otimes\Omega_X^{n},\omega_Y^{q}\right),
+\end{align*}
+trong đó $q=n-p$, từ đó suy ra công thức (4.1 bis).
+
+Đặc biệt, đặt $F=\Osh_Y$, $L=\Omega_X^{p}$; vì
+$\Omega_X^{n}\otimes(\Omega_X^{p})'=\Omega_X^{n-p}$, ta thu được một đẳng cấu
+chính tắc
+\begin{equation}\tag{4.2}
+  \operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\Omega_X^{p})
+  =\operatorname{Hom}_{\Osh_X}
+  (X;\Omega_X^{n-p},\omega_Y^{n-p}).
+\end{equation}
+Bây giờ, để đơn giản, giả sử $Y$ không kỳ dị, do đó
+$\omega_Y^{n-p}=\Omega_Y^{n-p}$. Ta có một đồng cấu tự nhiên từ
+$\Omega_X^{n-p}$ đến $\Omega_Y^{n-p}$, từ đó suy ra một tiết diện chính tắc $s_Y$ của
+bó $\Extsh_{\Osh_X}^{p}(\Osh_Y,\Omega_X^{p})$, và nếu
+mọi thành phần của $Y$ đều có chiều $n-p$, ta gọi nó là \emph{tiết diện
+cơ bản} của bó $\Extsh_{\Osh_X}^{p}(\Osh_Y,\Omega_X^{p})$. Theo (4.1), tiết diện
+này xác định một phần tử của
+$\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\Omega_X^{p})$. Mặt khác, đồng cấu
+tự nhiên $\Osh_X\longrightarrow\Osh_Y$ xác định một đồng cấu
+\[
+  \operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\Omega_X^{p})
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_X,\Omega_X^{p})
+  =H^{p}(X,\Omega_X^{p}).
+\]
+Như vậy, ta thu được một phần tử của $H^{p}(X,\Omega_X^{p})$, ký hiệu là $P_X(Y)$ và gọi là
+\emph{lớp đối đồng điều của $Y$ trong $X$}. Do đó, lớp này được suy ra từ tiết diện
+$s_Y$ của $\Extsh_{\Osh_X}^{p}(\Osh_Y,\Omega_X^{p})$ thông qua sơ đồ
+các đồng cấu sau đây:
+\begin{equation}\tag{4.3}
+\begin{aligned}
+H^{p}(X,\Omega_X^{p})
+&=\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_X,\Omega_X^{p})\\
+&\longleftarrow\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\Omega_X^{p})
+\xrightarrow{\ \sim\ }
+H^{0}\!\left(X,\Extsh_{\Osh_X}^{p}(\Osh_Y,\Omega_X^{p})\right).
+\end{aligned}
+\end{equation}
+
+Ta gọi một \emph{chu trình không kỳ dị chiều $n-p$} là một phần tử của nhóm
+Abel tự do sinh bởi các đa tạp con bất khả quy không kỳ dị có
+chiều $n-p$ trong $X$. Khi đó, ánh xạ $Y\longmapsto P(Y)$ mở rộng thành
+một đồng cấu từ nhóm các chu trình không kỳ dị chiều $n-p$ trên $X$
+vào nhóm $H^{p}(X,\Omega_X^{p})$.
+
+Cho $Z^{n-p}$ và $Z'^{n-p'}$ là các chu trình không kỳ dị lần lượt có chiều $n-p$ và
+$n-p'$; ta nói chúng \emph{giao hoành} nếu mọi thành phần
+của $Z$ giao hoành với mọi thành phần của $Z'$. Khi đó, chu trình $Z.Z'$ được
+xác định và là một chu trình không kỳ dị chiều $n-p-p'$. Với quy ước đó, ta có
+
+
+\src{179}
+\result{ĐỊNH LÝ}{1} Nếu $Z^{n-p}$ và $Z'^{n-p'}$ là các chu trình không kỳ dị giao hoành với nhau, thì ta có
+\begin{equation}\tag{4.4}
+  P_X(Z.Z')=P_X(Z).P_X(Z'),
+\end{equation}
+trong đó tích ở vế phải là tích cup
+\[
+  H^{p}(X,\Omega_X^{p})\times H^{p'}(X,\Omega_X^{p'})
+  \longrightarrow H^{p+p'}(X,\Omega_X^{p+p'}).
+\]
+(Ta giả sử $X$ đẳng cấu với một tập con đóng địa phương của một không gian
+xạ ảnh.)
+
+Giả thiết cuối này chỉ được dùng để suy ra rằng mọi bó đại số nhất quán trên $X$
+là thương của một bó đại số nhất quán tự do địa phương (SERRE),
+và do đó có một phân giải trái bởi các bó tự do địa phương. Để chứng minh
+Định lý 1, ta có thể giả sử $Z$ và $Z'$ là các đa tạp con bất khả quy không kỳ dị
+$Y$ và $Y'$ giao hoành với nhau. Cho $L_{*}$ là một phân giải trái
+của $\Osh_Y$ bởi
+các bó tự do địa phương; khi đó, theo Mệnh đề 3, biểu đồ các đồng cấu
+(4.3) đồng nhất với biểu đồ
+\[
+R^{p}\Gamma(\Omega_X^{p})
+\xleftarrow{\alpha}
+\mathbb R^{p}\Gamma\!\left(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\right)
+\xrightarrow[\sim]{\beta}
+\Gamma\!\left(H^{p}\bigl(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\bigr)\right),
+\]
+trong đó $\Gamma$ là hàm tử “nhóm các tiết diện” trên phạm trù
+các bó nhóm Abel trên $X$, còn $\mathbb R^{p}\Gamma$ chỉ
+siêu đối đồng điều bậc $p$ của hàm tử ấy, và $R^{p}\Gamma$ là
+hàm tử dẫn xuất thứ $p$ của nó. Để đơn giản, ta giả sử $L_0=\Osh_X$ và
+đồng cấu tăng cường $L_0\longrightarrow\Osh_Y$ là
+đồng cấu tự nhiên (điều này được phép); khi đó $\alpha$ được suy ra
+từ đồng cấu
+các phức $\Osh_X\longrightarrow L_{*}$ (trong đó $\Osh_X$ được xem như một phức
+tập trung ở bậc $0$), có tính đến rằng $\mathbb R^{p}\Gamma(K)=R^{p}\Gamma(K_0)$ nếu $K$
+là một phức các bó tập trung ở bậc $0$. Đồng cấu $\beta$ là một đồng cấu
+biên quen thuộc. Xét một biểu đồ tương tự, ứng với
+một phân giải tự do địa phương
+$L'_{*}$ của $\Osh_{Y'}$, và xét biểu đồ giao hoán của các phép ghép cặp:
+\begin{equation}\tag{4.5}
+\resizebox{\textwidth}{!}{$
+\begin{array}{ccc}
+R^{p}\Gamma(\Omega_X^{p})
+&\longleftarrow
+\mathbb R^{p}\Gamma\!\left(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\right)
+&\xrightarrow{\sim}
+\Gamma H^{p}\!\left(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\right)
+\\[3pt]
+\times&\times&\times\\[3pt]
+R^{p'}\Gamma(\Omega_X^{p'})
+&\longleftarrow
+\mathbb R^{p'}\Gamma\!\left(\Homsh_{\Osh_X}(L'_{*},\Omega_X^{p'})\right)
+&\xrightarrow{\sim}
+\Gamma H^{p'}\!\left(\Homsh_{\Osh_X}(L'_{*},\Omega_X^{p'})\right)
+\\[3pt]
+\downarrow&\downarrow&\downarrow\\[3pt]
+R^{p+p'}\Gamma(\Omega_X^{p+p'})
+&\longleftarrow
+\mathbb R^{p+p'}\Gamma\!\left(
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\Omega_X^{p+p'})\right)
+&\xrightarrow{\sim}
+\Gamma H^{p+p'}\!\left(
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\Omega_X^{p+p'})\right).
+\end{array}
+$}
+\end{equation}
+
+
+\src{180}
+Các phép ghép cặp của hai cột bên phải được suy ra từ phép ghép cặp của
+các phức bó
+\[
+\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})
+\times\Homsh_{\Osh_X}(L'_{*},\Omega_X^{p'})
+\longrightarrow
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\Omega_X^{p+p'}),
+\]
+được định nghĩa bằng tích ngoài
+$\Omega_X^{p}\times\Omega_X^{p'}\longrightarrow\Omega_X^{p+p'}$.
+Phép ghép cặp của cột thứ nhất là tích cup (tương ứng với tích
+ngoài). Tôi khẳng định hàng cuối của (4.5) đồng nhất với biểu đồ
+các đẳng cấu tương tự (4.3), trong đó $Y$ được thay bởi $Y\cap Y'$ và $p$ bởi
+$p+p'$. Để làm điều này, chỉ cần chứng minh rằng $L\otimes L'$ là một phân giải
+(hiển nhiên tự do địa phương) của $\Osh_{Y\cap Y'}$. Thật vậy, ta có
+\[
+  H_0(L\otimes L')=\Osh_Y\otimes\Osh_{Y'}=\Osh_{Y\cap Y'}
+\]
+và
+\[
+  H_i(L\otimes L')=\operatorname{Tor}_{i}^{\Osh_X}(\Osh_Y,\Osh_{Y'})=0
+  \qquad(i>0),
+\]
+vì $Y$ và $Y'$ giao hoành với nhau. Định lý 1 giờ đây suy ra
+từ công thức:
+\begin{equation}\tag{4.6}
+  s_Y.s_{Y'}=s_{Y.Y'}
+\end{equation}
+(trong đó tích ở vế trái là tích của cột cuối trong (4.5)).
+Công thức (4.6) này, có bản chất thuần túy địa phương, được kiểm tra dễ dàng
+bằng cách lấy $L_{*}$ và $L'_{*}$ là các phân giải đã xét trong Mệnh đề
+4. Tương tự, ta chứng minh (bằng một chứng minh đơn giản hơn) rằng
+$Z\longmapsto P_X(Z)$ tương thích với tích Đề-các:
+\begin{equation}\tag{4.7}
+  P_{X\times X'}(Z\times Z')=P_X(Z)\otimes P_{X'}(Z')
+\end{equation}
+(công thức có hiệu lực nếu $Z$, tương ứng $Z'$, là một chu trình không kỳ dị trên đa tạp
+không kỳ dị $X$, tương ứng $X'$, và $Z\times Z'$ được xem như một chu trình không
+kỳ dị trên $X\times X'$). Từ (4.4) và (4.7), suy ra rằng $P_X(Z)$ cũng
+tương thích với phép “lấy ảnh ngược” theo một cấu xạ của các đa tạp không
+kỳ dị $f:X\longrightarrow X'$:
+\begin{equation}\tag{4.8}
+  P_X\bigl(f^{-1}(Z')\bigr)=f^{*}\bigl(P_{X'}(Z')\bigr),
+\end{equation}
+công thức có hiệu lực nếu $Z'$ là một chu trình không kỳ dị trên $X'$ sao cho $f$
+“giao hoành” với $Z'$, nghĩa là đồ thị của $f$ giao hoành với chu trình
+$X\times Z'$ trong $X\times X'$.
+
+
+\src{181}
+\result{HỆ QUẢ}{1} Cho $X$, $X'$ là hai đa tạp không kỳ dị
+đóng địa phương trong một không gian xạ ảnh, và giả sử $X'$ đầy đủ. Cho $U$
+là một chu trình không kỳ dị trên $X\times X'$, và $a$, $b$ là hai điểm của $X'$ sao cho
+$U$ giao hoành với các chu trình $X\times(a)$ và $X\times(b)$; cho $Z$
+và $Z'$ là các chu trình không kỳ dị trên $X$ sao cho
+\[
+  Z\times(a)=(X\times(a)).U,
+  \qquad
+  Z'\times(b)=(X\times(b)).u.
+\]
+Khi đó ta có
+\[
+  P_X(Z)=P_X(Z').
+\]
+
+Thật vậy, cho $f_a:X\longrightarrow X\times X'$ được xác định bởi
+$f_a(x)=(x,a)$; khi đó, theo (4.8), ta có công thức
+$P(Z)=f_a^{*}(P(U))$, và tương tự $P(Z')=f_b^{*}(P(U))$. Mặt khác, dùng công thức
+Künneth
+\[
+  H^{*}(X\times X',\Omega_{X\times X'}^{*})
+  =H^{*}(X,\Omega_X^{*})\otimes H^{*}(X',\Omega_{X'}^{*})
+\]
+và sự kiện $H^{0}(X',\Osh_{X'})$ chỉ gồm các vô hướng, ta dễ dàng thu được
+$f_a^{*}=f_b^{*}$, từ đó suy ra kết luận.
+
+Với mọi $x\in X$, $(x)$ là một đa tạp con không kỳ dị của $X$ có
+đối chiều $n$, và do đó xác định một phần tử $\varepsilon_x$ của
+$H^{n}(X,\Omega_X^{n})$. Nếu $X$ là một đa tạp xạ ảnh không kỳ dị, từ
+Hệ quả 1 suy ra rằng $\varepsilon_x$ không phụ thuộc vào điểm $x$ được chọn; ta ký hiệu nó
+bởi $\varepsilon_X$ và gọi là \emph{lớp cơ bản} của
+$H^{n}(X,\Omega_X^{n})$.
+
+\result{NHẬN XÉT}{} Để có một lý thuyết thỏa đáng, cần định nghĩa
+$P_X(Z)$ cho các chu trình $Z$ tùy ý và chứng minh Định lý 1 cho một
+giao đúng của các chu trình. (Vào thời điểm viết bài trình bày này, điều đó vẫn chưa được
+thực hiện trong tính tổng quát hoàn toàn). Giả sử điều đó đã được thực hiện, Hệ quả 1
+trở thành: nếu $Z$ và $Z'$ là hai chu trình tương đương đại số, thì
+$P_X(Z)=P_X(Z')$ (một mệnh đề dường như không suy ra từ những điều trên, ngay cả khi
+$Z$ và $Z'$ không kỳ dị).
+
+\fsection{5}{Định lý đối ngẫu}
+
+Trong mục này, $X$ ký hiệu một đa tạp xạ ảnh không kỳ dị có chiều
+$n$.
+
+\result{ĐỊNH LÝ}{2} Lớp cơ bản $\varepsilon_X$ của
+$H^{n}(X,\Omega_X^{n})$ là một cơ sở của không gian vectơ này.
+
+(Chứng minh sẽ được trình bày ở dưới). Nhờ định lý trên, ta có thể
+đồng nhất $H^{n}(X,\Omega_X^{n})$ với trường $k$. Bây giờ xét các
+phép ghép cặp đã xét ở n\textsuperscript{o} 2, chúng đặc biệt cho một
+phép ghép cặp
+
+
+\src{182}
+\[
+\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_X,F)
+\times\operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+\longrightarrow
+\operatorname{Ext}_{\Osh_X}^{n}(X;\Osh_X,\Omega_X^{n}),
+\]
+tức là,
+\begin{equation}\tag{5.1}
+  H^{p}(X,F)
+  \times\operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+  \longrightarrow H^{n}(X,\Omega_X^{n})
+\end{equation}
+Theo Định lý 2, phép ghép cặp này xác định một đồng cấu
+\begin{equation}\tag{5.2}
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+  \longrightarrow\bigl(H^{p}(X,F)\bigr)'
+\end{equation}
+Đồng cấu này có tính hàm tử theo $F$ và giao hoán với các đồng cấu nối
+tương ứng với các dãy khớp $0\longrightarrow F'\longrightarrow F
+\longrightarrow F''\longrightarrow0$.
+
+\result{ĐỊNH LÝ}{3} Đồng cấu (5.2) là một đẳng cấu.
+
+Đặc biệt, ta thu lại kết quả của Serre:
+
+\result{HỆ QUẢ}{} Cho $E$ là một phân thớ vectơ đại số trên $X$ và
+$\Osh_X(E)$ là bó các mầm của các tiết diện chính quy của $E$. Khi đó ta có các
+đẳng cấu chính tắc:
+\begin{equation}\tag{5.3}
+  \bigl(H^{p}(X,\Osh_X(E))\bigr)'
+  =H^{n-p}\bigl(X,\Omega_X^{n}\otimes\Osh_X(E')\bigr)
+\end{equation}
+Chỉ cần áp dụng Định lý 3 và Hệ quả 1 cho Mệnh đề 1.
+
+Các Định lý 2 và 3 sẽ được suy ra từ mệnh đề sau:
+
+\noindent\textbf{(D) Đồng cấu sau đây}
+\begin{equation}\tag{5.2 bis}
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+  \longrightarrow\bigl(H^{p}(X,F)\bigr)'\otimes L,
+  \qquad L=H^{n}(X,\Omega_X^{n}),
+\end{equation}
+được cảm sinh bởi phép ghép cặp (5.1) là một đẳng cấu.
+
+Quả vậy, ta chứng minh rằng (D) kéo theo Định lý 2. Cho
+$k_x=\Osh_{(x)}$ là bó các vành địa phương của đa tạp được thu về điểm
+$x\in X$. Xét đồng cấu chính tắc
+$\Osh_X\longrightarrow k_x$ và đồng cấu tương ứng
+\begin{equation}\tag{5.3}
+  H^{0}(X,\Osh_X)\longrightarrow H^{0}(X,k_x)
+\end{equation}
+chuyển vị của đồng cấu này được đồng nhất với đồng cấu
+\begin{equation}\tag{5.4}
+  \operatorname{Ext}_{\Osh_X}^{n}(X;k_x,\Omega_X^{n})\otimes L'
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_X}^{n}(X;\Osh_X,\Omega_X^{n})\otimes L'
+\end{equation}
+được cảm sinh bởi đồng cấu trên các $\operatorname{Ext}^{n}$ tương ứng với
+$\Osh_X\longrightarrow k_x$:
+\begin{equation}\tag{5.5}
+  \operatorname{Ext}_{\Osh_X}^{n}(X;k_x,\Omega_X^{n})
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_X}^{n}(X;\Osh_X,\Omega_X^{n})
+  =H^{n}(X,\Omega_X^{n})
+\end{equation}
+
+
+\src{183}
+Vì (5.3) là một đẳng cấu, nên (5.4) cũng là một đẳng cấu, và do đó (5.5)
+cũng vậy. Vì $s_{(x)}$ là một cơ sở của
+$\operatorname{Ext}_{\Osh_X}^{n}(X;k_x,\Omega_X^{n})$ theo (4.2), suy ra ảnh
+$\varepsilon_X$ của nó là một cơ sở của $H^{n}(X,\Omega_X^{n})$.
+
+Còn phải chứng minh mệnh đề (D); mệnh đề này sẽ suy ra một cách hoàn toàn hình
+thức từ các sự kiện sơ cấp được tóm tắt trong những bổ đề sau. Trong đó, ta giả
+sử $X$ là một phần đóng (kỳ dị hoặc không) của không gian xạ ảnh $P$ chiều
+$r$. Ta dùng ký hiệu $\Osh_P(m)$ cho bó trên $P$ được ký hiệu $\Osh(m)$ trong
+[3], và ký hiệu $\Osh_X(m)$ cho bó tương tự trên $X$.
+
+\result{BỔ ĐỀ}{2} Mệnh đề (D) đúng nếu $X=P$ và $F=\Osh_P(m)$.
+
+Bổ đề này được kiểm tra bằng một phép tính trực tiếp. Phép tính tường minh các
+$H^{i}(P,\Osh_P(m))$ có trong [3], nhưng cũng có thể thực hiện một cách sơ cấp
+hơn. Phép tính tích cup
+\[
+  H^{i}(P,\Osh_P(m))\times H^{j}(P,\Osh_P(m'))
+  \longrightarrow H^{i+j}(P,\Osh_P(r+r'))
+\]
+cần thiết để viết tường minh phép ghép cặp (5.1) không gây khó khăn.
+
+\result{BỔ ĐỀ}{3} Mọi bó đại số nhất quán $F$ trên $X$ đều đẳng cấu với một
+bó thương của một bó $\Osh_X(-m)^{k}$, trong đó có thể giả sử $m$ lớn tùy ý.
+
+Điều này suy ra từ sự kiện rằng $F\otimes\Osh_X(m)$ ``được sinh bởi các tiết
+diện'' khi $m$ lớn; xem [3].
+
+\result{BỔ ĐỀ}{4} Cho $i>0$. Khi đó
+$H^{r-i}(P,\Osh_P(-m))=0$ với $m$ lớn; và với mọi bó đại số nhất quán $B$
+trên $X$, ta có
+\[
+  \operatorname{Ext}_{\Osh_X}^{i}(X;\Osh_X(-m),B)=0
+\]
+với $m$ lớn.
+
+Khẳng định thứ nhất suy ra từ những phép tính tường minh đã nhắc ở trên; đối
+với khẳng định thứ hai, ta nhận thấy có một đẳng cấu
+\[
+  \operatorname{Ext}_{\Osh_X}^{i}(X;\Osh_X(-m),B)
+  =H^{i}(X,B\otimes\Osh_X(m))
+\]
+(Mệnh đề 1, Hệ quả 1), từ đó kết luận suy ra nhờ một kết quả quen thuộc trong
+[3]. Kết hợp hai bổ đề trên, ta thu được
+
+\result{HỆ QUẢ}{} Cho $i>0$. Khi đó hàm tử
+$F\longmapsto H^{r-i}(P,F)$ trên phạm trù các bó đại số nhất quán trên $P$
+là xóa được, và hàm tử
+$\operatorname{Ext}_{\Osh_X}^{i}(X;F,B)$ trên phạm trù các bó đại số nhất quán
+trên $X$ cũng vậy.
+
+
+\src{184}
+\result{BỔ ĐỀ}{5} Cho $A$ và $B$ là hai bó đại số nhất quán trên
+$X$, và đặt $A(m)=A\otimes\Osh_X(m)$. Khi đó, với $m$ đủ lớn,
+đồng cấu chính tắc
+\[
+  \operatorname{Ext}_{\Osh_X}^{1}(X;A(-m),B)
+  \longrightarrow H^{0}\bigl(X,\Extsh_{\Osh_X}^{1}(A(-m),B)\bigr)
+  =H^{0}\bigl(X,\Extsh_{\Osh_X}^{1}(A,B)(m)\bigr)
+\]
+là một đẳng cấu.
+
+Điều này suy ra ngay từ dãy phổ của Mệnh đề 1 áp dụng cho
+$A(-m)$ và $B$, vì khi đó ta có
+\[
+  E_{2}^{p,q}(A(-m),B)
+  =H^{p}\bigl(X,\Extsh_{\Osh_X}^{q}(A(-m),B)\bigr)
+  =H^{p}\bigl(X,\Extsh_{\Osh_X}^{q}(A,B)(m)\bigr),
+\]
+và biểu thức này bằng không khi $p>0$ và $m$ lớn.
+
+Bây giờ ta chứng minh (D) trong trường hợp $X=P$. Trước hết, ta chứng minh (5.2 bis)
+là một đẳng cấu khi $p=n$; vì khi đó cả hai vế đều là các
+hàm tử khớp trái (do $H^{r+1}(P,F)=0$), từ Bổ đề 3 suy ra rằng
+chỉ cần chứng minh khẳng định cho $F=\Osh_P(-m)$; nhưng trong trường hợp này, khẳng định đó
+đã nằm trong Bổ đề 2. Vì các đồng cấu (5.2 bis) có tính hàm tử và
+tương thích với các toán tử nối, và vì khi $p<n$, cả hai vế của
+(5.2 bis), xét như các hàm tử theo $F$, đều xóa được (Hệ quả của Bổ đề 4), nên
+một lập luận chuẩn cho thấy (5.2 bis) là một đẳng cấu
+với mọi $p$. Điều này chứng minh định lý đối ngẫu cho không gian xạ ảnh.
+Bây giờ giả sử $X$ tùy ý nhưng không kỳ dị. Theo định lý
+đối ngẫu cho $P$, ta có một đẳng cấu
+\[
+  H^{n}(X,F)'=H^{n}(P,F)'
+  =\operatorname{Ext}_{\Osh_P}^{r-n}(P;F,\Omega_P^{r}).
+\]
+Theo Bổ đề 1 (n\textsuperscript{o} 4), vế cuối được đồng nhất với
+\[
+  \operatorname{Hom}_{\Osh_P}(P;F,\omega_X^{n})
+  =\operatorname{Hom}_{\Osh_X}(X;F,\Omega_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\Omega_X^{n}),
+\]
+từ đó thu được một đẳng cấu
+\begin{equation}\tag{5.6}
+  H^{n}(X,F)'=\operatorname{Hom}_{\Osh_X}(X;F,\Omega_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\Omega_X^{n}).
+\end{equation}
+Cho $F=\Omega_X^{n}$, ta thu được một đẳng cấu
+\begin{equation}\tag{5.7}
+  \gamma:H^{n}(X,\Omega_X^{n})\xrightarrow{\sim}k.
+\end{equation}
+
+
+\src{185}
+Ta kiểm tra rằng đẳng cấu (5.6) chính là (5.2 bis) với $p=n$, khi
+đặt $L=k$ nhờ (5.7). Do đó, (5.2 bis) là một đẳng cấu với
+$p=n$. Để chứng minh đây là một đẳng cấu với mọi $p$, một lần nữa chỉ cần
+chứng minh rằng, với $p<n$, hai vế của (5.2 bis) là các hàm tử
+xóa được theo $F$; hơn nữa, theo Bổ đề 3, chỉ cần chứng minh mệnh đề mạnh hơn
+rằng cả hai vế bằng không khi đặt $F=\Osh_X(-m)$ với $m$ lớn. Đối với vế
+thứ nhất, điều này đúng theo Bổ đề 4; còn đối với vế thứ hai, dùng
+định lý đối ngẫu trên $P$, ta viết:
+\[
+  H^{p}(X,\Osh_X(-m))'
+  =\operatorname{Ext}_{\Osh_P}^{r-p}
+    (P;\Osh_X(-m),\Omega_P^{r}).
+\]
+Vế thứ hai bằng không khi $p<n$ và $m$ lớn, như suy ra từ Bổ đề 5
+(trong đó ta đặt $X=P$) và từ việc $\Osh_X$, xét như một bó đại số
+nhất quán trên $P$, có chiều đối đồng điều $\leq r-n$ (vì $X$ không
+kỳ dị); do đó
+\[
+  \Extsh_{\Osh_P}^{r-p}(\Osh_X,\Omega_P^{r})=0
+  \qquad\text{với }p<n.
+\]
+
+\fsection{6}{Định lý đối ngẫu cho các đa tạp kỳ dị}
+
+Cho $X$ là một tập con đóng có chiều $n$ của không gian xạ ảnh $P$ có
+chiều $r$. Ở đây, công thức (5.6) phải được viết dưới dạng
+\begin{equation}\tag{6.1}
+  H^{n}(X,F)'
+  \simeq\operatorname{Hom}_{\Osh_X}(X;F,\omega_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\omega_X^{n}),
+\end{equation}
+trong đó ta đặt
+\begin{equation}\tag{6.2}
+  \omega_X^{n}=E^{0}(\Osh_X)
+  =\Extsh_{\Osh_P}^{r-n}(\Osh_X,\Omega_P^{r}).
+\end{equation}
+Như đã nói trong Mệnh đề 5, bó vừa được đưa vào thực ra không phụ thuộc
+vào phép nhúng đã chọn của $X$ vào một đa tạp không kỳ dị $P$.
+Đặt $F=\omega_X^{n}$ trong (6.1), ta được
+\begin{equation}\tag{6.2}
+  H^{n}(X,\omega_X^{n})'
+  \simeq\operatorname{Hom}_{\Osh_X}(X;\omega_X^{n},\omega_X^{n}),
+\end{equation}
+ từ đó tồn tại một phần tử
+phân biệt trong $H^{n}(X,\omega_X^{n})'$, tương ứng với đồng cấu
+đồng nhất từ $\omega_X^{n}$ vào chính nó:
+\begin{equation}\tag{6.3}
+  \gamma:H^{n}(X,\omega_X^{n})\longrightarrow k.
+\end{equation}
+
+\src{186}
+Khi đó, ta xét các phép ghép cặp được xác định bởi phép hợp thành các
+$\operatorname{Ext}$:
+\begin{equation}\tag{6.4}
+  H^{p}(X,F)\times
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\omega_X^{n})
+  \longrightarrow H^{n}(X,\omega_X^{n}),
+\end{equation}
+rồi hợp thành chúng với đồng cấu $\gamma$ trong (6.3); ta thu được
+các đồng cấu có tính hàm tử, tương thích với các toán tử nối:
+\begin{equation}\tag{6.5}
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\omega_X^{n})
+  \longrightarrow H^{p}(X,F)'
+\end{equation}
+(tổng quát hóa (5.2)). Ta kiểm tra rằng khi $p=n$, cách này cho
+đẳng cấu (6.1). Như vậy, ta có
+
+\result{ĐỊNH LÝ}{3 bis} Bốn điều kiện sau đây về $X$ là tương đương đối với
+một số nguyên $k\geq0$ cho trước:
+\begin{enumerate}
+  \item[\textit{i.}] Đồng cấu có tính hàm tử (6.5) là một đẳng cấu với
+    $n-k\leq p\leq n$.
+  \item[\textit{ii.}] Ta có $H^{p}(X,\Osh_X(-m))=0$ với $m$ lớn và với
+    $n-k\leq p<n$.
+  \item[\textit{iii.}] Hàm tử $H^{p}(X,F)$ trên phạm trù các bó đại số
+    nhất quán trên $X$ là xóa được với $n-k\leq p<n$.
+  \item[\textit{iv.}] Ta có
+    $E^{i}(\Osh_X)=\Extsh_{\Osh_P}^{r-n+i}(\Osh_X,\Omega_P^{r})=0$
+    với $0<i\leq k$.
+\end{enumerate}
+
+\noindent\textbf{CHỨNG MINH.} --- \textit{i.}$\Rightarrow$\textit{ii.} theo
+Bổ đề 4, \textit{ii.}$\Rightarrow$\textit{iii.} theo Bổ đề 3, còn
+\textit{iii.}$\Rightarrow$\textit{i.} bằng một lập luận chuẩn quen thuộc,
+vì khi đó hai vế của (6.5), xét như các hàm tử, đều xóa được với
+$n-k\leq p<n$ (vế thứ nhất là như vậy theo Bổ đề 4). Cuối cùng, ta chứng minh
+\textit{ii.}$\Leftrightarrow$\textit{iv.} Điều này suy ra từ hệ quả của
+mệnh đề sau đây:
+
+\result{MỆNH ĐỀ}{6} Cho $F$ là một bó đại số nhất quán trên $X$, và cho
+$i$ là một số nguyên. Khi đó, với $m$ đủ lớn, ta có một đẳng cấu:
+\begin{equation}\tag{6.6}
+  H^{i}(X,F(-m))'
+  \simeq H^{0}\bigl(X,E^{n-i}(F)(m)\bigr),
+\end{equation}
+trong đó ta đặt (so sánh n\textsuperscript{o} 3, Mệnh đề 5):
+\begin{equation}\tag{6.7}
+  E^{j}(F)=\Extsh_{\Osh_P}^{r-n+j}(F,\Omega_P^{r}).
+\end{equation}
+Thật vậy, theo định lý đối ngẫu trên $P$, vế thứ nhất của (6.6)
+đẳng cấu với
+$\operatorname{Ext}_{\Osh_P}^{r-i}(P;F(-m),\Omega_P^{r})$, do đó (6.6) suy ra
+từ Bổ đề 5.
+
+\src{187}
+\result{HỆ QUẢ}{} Ta có $H^{i}(X,F(-m))=0$ với $m$ đủ lớn nếu và chỉ nếu
+$E^{n-i}(F)=0$.
+
+Nhắc lại rằng các $E^{j}(F)$ thực ra không phụ thuộc vào phép nhúng xạ ảnh
+đang xét. Điều kiện trong hệ quả có tính hoàn toàn địa phương; do đó,
+nếu nó đúng đối với $F$, thì nó cũng đúng đối với mọi bó đẳng cấu địa phương
+với một bó $F^{n}$. Đặc biệt, nếu điều kiện này đúng
+đối với $\Osh_X$, thì nó đúng đối với mọi bó đại số nhất quán tự do địa phương.
+Chẳng hạn, điều này đúng với mọi $i<n$ nếu $X$ không kỳ dị, với
+$i=0$ nếu không thành phần nào của $X$ chỉ gồm một điểm duy nhất, và với $i=0,1$
+nếu $S$ là chuẩn tắc và mọi thành phần của nó có chiều $>1$ (xem
+[3]). Để điều này đúng với mọi
+$i<k$, theo định nghĩa, cần và đủ là các vành địa phương
+$\Osh_x$ ($x\in X$) có « đối chiều đồng điều » $\geq k$ (xem [4]
+về khái niệm này). Nếu $k=n$, theo Định lý 3 bis điều đó có nghĩa rằng
+định lý đối ngẫu đúng cho $X$, nghĩa là (6.5) là một đẳng cấu với
+mọi $p$ và mọi $F$. Có thể đưa ra nhiều điều kiện tương đương trên
+các vành địa phương $\Osh_x$ để điều này xảy ra (Nagata), chẳng hạn chúng
+thỏa mãn định lý đẳng chiều Cohen--Macaulay. Điều này xảy ra,
+chẳng hạn, nếu về địa phương $X$ là một « giao đầy đủ » trong một
+đa tạp xung quanh không kỳ dị.
+
+\fsection{7}{Đối ngẫu Poincaré}
+
+Cho $X$ là một đa tạp xạ ảnh không kỳ dị có chiều $n$. Khi đó
+\[
+  H^{**}(X)=H^{*}(X,\Omega_X^{*})
+\]
+là một đại số phản giao hoán song phân bậc hữu hạn chiều, được phân bậc
+theo bậc toàn phần, sao cho $H^{p,q}(X)=H^{p}(X,\Omega_X^{q})$ có bậc
+$p+q$. Các bậc của $H^{*}(X)$ nằm giữa $0$ và $2n$. Theo
+Định lý 2 và hệ quả của Định lý 3, $H^{*}(X)$ là một « đại số
+Poincaré » có chiều $2n$, nghĩa là $H^{2n}(X)$ được trang bị một đẳng cấu với
+trường cơ sở $k$, và tích
+\[
+  H^{m}(X)\times H^{2n-m}(X)\longrightarrow H^{2n}(X)=k
+\]
+là một phép đối ngẫu giữa $H^{m}(X)$ và $H^{2n-m}(X)$. Hơn nữa, nếu $Y$ là một
+đa tạp xạ ảnh không kỳ dị khác, công thức Künneth cho các
+bó đại số nhất quán cho
+\begin{equation}\tag{7.1}
+  H^{*}(X\times Y)=H^{*}(X)\otimes H^{*}(Y),
+\end{equation}
+một đẳng cấu tương thích với các cấu trúc đại số Poincaré. Hơn nữa,
+$H^{*}(X)$, xét như một đại số giao hoán, là một hàm tử phản biến theo
+$X$, vì một cấu xạ $f:Y\longrightarrow X$ hiển nhiên xác định một
+đồng cấu của các đại số phân bậc
+
+\src{188}
+\begin{equation}\tag{7.2}
+  f^{*}:H^{*}(X)\longrightarrow H^{*}(Y).
+\end{equation}
+Vì đây là các đại số Poincaré, phép chuyển vị cho ta một đồng cấu giữa các
+không gian vectơ:
+\begin{equation}\tag{7.3}
+  f_{*}:H^{*}(Y)\longrightarrow H^{*}(X).
+\end{equation}
+Ta đã thấy ở n\textsuperscript{o} 4 rằng tác động của $f^{*}$ lên các lớp đối đồng điều
+ứng với các chu trình không kỳ dị được diễn giải về mặt hình học bằng cách
+lấy các lớp đối đồng điều ứng với ảnh ngược của chúng. Trong trường hợp hiện
+tại, cần chứng minh rằng (7.3) cũng ứng với phép « ảnh trực tiếp » trên các
+chu trình. Điều này suy ra, ít nhất dưới các điều kiện không kỳ dị thích hợp,
+từ trường hợp riêng sau đây:
+
+\result{ĐỊNH LÝ}{4} Nếu $f$ là ánh xạ đồng nhất của một đa tạp con không
+kỳ dị $Y^{m}$ của $X^{n}$ vào $X^{n}$, thì, ký hiệu
+phần tử đơn vị của $H(Y)$ là $1_Y$, ta có
+\begin{equation}\tag{7.4}
+  f_{*}(1_Y)=P_X(Y),
+\end{equation}
+trong đó vế thứ hai là lớp đối đồng điều trong $X$ gắn với $Y$.
+
+Công thức này tương đương với
+\begin{equation}\tag{7.4 bis}
+  \bigl\langle\xi^{m,m},P_X(Y)\bigr\rangle\varepsilon_Y
+  =f_{*}(\xi^{m,m})
+  \qquad
+  \bigl(\xi^{m,m}\in H^{m}(X,\Omega_X^{m})\bigr),
+\end{equation}
+ trong đó $\varepsilon_Y$ là phần tử cơ bản
+trong $H^{m}(Y,\Omega_Y^{m})$. Trong trường hợp các đa tạp xạ ảnh không kỳ dị,
+công thức này cho một định nghĩa mới về lớp đối đồng điều gắn với $Y$. Để chứng
+minh Định lý 4, nhờ Định lý 3, ta diễn giải chuyển vị của đồng cấu
+\[
+  H^{m}(X,\Omega_X^{m})
+  \longrightarrow H^{m}(Y,\Omega_Y^{m})
+  =H^{m}(X,\Omega_Y^{m})
+\]
+như đồng cấu
+\begin{equation}\tag{7.5}
+\begin{split}
+  H^{n-m}(X,\Omega_X^{n-m})
+  &\simeq
+  \operatorname{Ext}_{\Osh_X}^{n-m}(X;\Omega_X^{m},\Omega_X^{n})\\
+  &\longleftarrow
+  \operatorname{Ext}_{\Osh_X}^{n-m}(X;\Omega_Y^{m},\Omega_X^{n})
+  \simeq
+  \operatorname{Hom}_{\Osh_X}(X;\Omega_Y^{m},\Omega_Y^{m}).
+\end{split}
+\end{equation}
+Ta kiểm tra rằng phần tử $1_Y$ của đối ngẫu của $H^{m}(Y,\Omega_Y^{m})$
+được đồng nhất với phần tử ở vế phải tương ứng với tự đồng cấu đồng nhất của
+$\Omega_Y^{m}$, và mặt khác ảnh của phần tử này trong
+$H^{n-m}(X,\Omega_X^{n-m})$ chính là $P_X(Y)$. Những tính tương thích này,
+vốn có thể được nêu ngay từ n\textsuperscript{o} 4, có thể được phát biểu, và thực ra đúng,
+đối với mọi đa tạp không kỳ dị; tính tương thích thứ hai
+
+\src{189}
+được suy ra, chẳng hạn, từ tính giao hoán của sơ đồ các tự đồng cấu chính tắc
+sau đây:
+\begin{equation}\tag{7.6}
+\resizebox{\textwidth}{!}{$
+\left\{
+\begin{array}{ccccc}
+\operatorname{Ext}_{\Osh_X}^{n-m}(X;\Omega_X^{m},\Omega_X^{n})
+&\longleftarrow&
+\operatorname{Ext}_{\Osh_X}^{n-m}(X;\Omega_Y^{m},\Omega_X^{n})
+&\simeq&
+\operatorname{Hom}_{\Osh_X}(X;\Omega_Y^{m},\Omega_Y^{m})\\[3pt]
+\Big\downarrow&&&&\Big\downarrow\\[3pt]
+\operatorname{Ext}_{\Osh_X}^{n-m}(X;\Osh_X,\Omega_X^{n-m})
+&\longleftarrow&
+\operatorname{Ext}_{\Osh_X}^{n-m}(X;\Osh_Y,\Omega_X^{n-m})
+&\simeq&
+\operatorname{Hom}_{\Osh_X}(X;\Omega_X^{m},\Omega_Y^{m})
+\end{array}
+\right.
+$}
+\end{equation}
+
+Như vậy ta thu được một bản tương tự chính xác của hình thức luận đối ngẫu
+Poincaré trên các đa tạp compact có định hướng. Đặc biệt, Định lý 4 cho phép xác
+định lớp đối đồng điều gắn với đường chéo của $X\times X$. Bằng một lập luận
+quen thuộc, chẳng hạn ta suy ra một công thức Lefschetz:
+
+\result{ĐỊNH LÝ}{5} Cho $f$ là một tự đồng cấu của một đa tạp xạ ảnh không
+kỳ dị $X$, sao cho các điểm bất động của $f$ đều có bội 1. Khi đó, theo môđun
+đặc số của $k$, số các điểm bất động này đồng dư với tổng luân phiên các vết
+của các tự đồng cấu do $f$ cảm sinh trên các $H^{i}(X)$.
+
+Hạn chế buộc phải đặt lên $f$ bắt nguồn từ những khó khăn được nêu trong
+nhận xét ở n\textsuperscript{o} 4. Tuy nhiên, ta lưu ý rằng công thức Lefschetz
+vẫn đúng nếu $f$ « đồng luân » với một tự đồng cấu mà mọi điểm bất động đều
+có bội 1.
+
+\fsection{8}{Khái quát hóa định lý đối ngẫu}
+
+Cho $X$ là một đa tạp đại số không kỳ dị sao cho mọi bó đại số nhất quán
+$F$ trên $X$ đều đẳng cấu với thương của một bó đại số nhất quán tự do địa
+phương (điều này đúng nếu $X$ đóng địa phương trong một không gian xạ ảnh).
+Khi đó mọi bó đại số nhất quán $F$ trên $X$ đều có một phân giải hữu hạn
+$L$ bởi các bó tự do địa phương; với hai phân giải như vậy, ta luôn có thể
+tìm được một phân giải thứ ba và một đồng cấu từ phân giải này vào từng phân
+giải trong hai phân giải đầu, tương thích với các đồng cấu tăng cường. Tương
+tự, nếu $L$ là một phân giải hữu hạn tự do địa phương của $F$, và nếu cho
+một đồng cấu $F'\longrightarrow F$, thì tồn tại một phân giải hữu hạn tự do
+địa phương $L'$ của $F'$ cùng một đồng cấu $L'\longrightarrow L$ tương thích
+với $F'\longrightarrow F$; có thể giả sử đồng cấu này là toàn ánh nếu
+$F'\longrightarrow F$ là toàn ánh. Điều này cho phép, với hai số nguyên
+$r,s\geq0$ đã cho, định nghĩa hai đa hàm tử đối đồng điều theo các đối số
+$A_1,\ldots,A_r$; $B_1,\ldots,B_s$,
+
+\src{190}
+biến thiên trong phạm trù các bó đại số nhất quán trên $X$, và các giá trị của
+chúng lần lượt thuộc phạm trù các bó đại số nhất quán trên $X$ và phạm trù các
+môđun trên $H^{0}(X,\Osh_X)$, theo các công thức:
+\begin{equation}\tag{8.1}
+\resizebox{\textwidth}{!}{$
+\left\{
+\begin{aligned}
+\underline{T}_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+  &={}H^{*}\!\left(
+    \Homsh_{\Osh_X}\!\left(
+      L(A_1)\otimes\cdots\otimes L(A_r),
+      L(B_1)\otimes\cdots\otimes L(B_s)
+    \right)\right),\\[3pt]
+T_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+  &={}\mathbf R^{*}\Gamma\!\left(
+    \Homsh_{\Osh_X}\!\left(
+      L(A_1)\otimes\cdots\otimes L(A_r),
+      L(B_1)\otimes\cdots\otimes L(B_s)
+    \right)\right).
+\end{aligned}
+\right.
+$}
+\end{equation}
+Trong công thức này, $L(F)$ ký hiệu một phân giải hữu hạn tự do địa phương của
+bó đại số nhất quán $F$, còn $\mathbf R^{*}\Gamma(K)$ ký hiệu siêu đối đồng
+điều của không gian $X$ đối với phức các bó $K$. Nếu $r$ hoặc $s$ bằng 0, ta thay
+tích tenxơ của các $L(A_i)$, tương ứng của các $L(B_j)$, bằng $\Osh_X$. Đặc
+biệt, $\underline{T}_{0}^{0}$ và $T_{0}^{0}$ là các hàm tử phân bậc không có
+đối số; $\underline{T}_{0}^{0}$ tập trung ở bậc 0, tại đó nó là bó $\Osh_X$,
+còn $T_{0}^{0}$ được đồng nhất với $H^{*}(X,\Osh_X)$. Trong mọi trường hợp,
+việc các vế phải của (8.1) không phụ thuộc vào các phân giải đã chọn là hiển
+nhiên đối với dòng thứ nhất (vì khi đó vấn đề mang tính địa phương), còn đối
+với dòng thứ hai thì suy ra từ những nhận xét tổng quát ở trên, khi xét dãy phổ
+siêu đối đồng điều của phức các bó
+\[
+  K=\Homsh_{\Osh_X}\bigl(L(A_1)\otimes\cdots,
+      L(B_1)\otimes\cdots\bigr),
+\]
+hội tụ tới siêu đối đồng điều của $X$ đối với $K$ và có số hạng ban đầu là
+$H^{p}(X,H^{q}(K))$, tức là
+\begin{equation}\tag{8.2}
+  E_{2}^{p,q}
+  =H^{p}\!\left(X,
+    (\underline{T}_{r}^{s})^{(q)}
+      (A_1,\ldots,A_r;B_1,\ldots,B_s)\right).
+\end{equation}
+Khi đó, ta thấy rằng chính dãy phổ này cũng không phụ thuộc vào các phân giải
+đã chọn; đích hội tụ của nó là vế trái trong dòng thứ hai của (8.1). Ta dễ dàng
+định nghĩa các toán tử nối ứng với từng đối số $A_i$, $B_j$, vì mọi dãy khớp
+$0\longrightarrow F'\longrightarrow F\longrightarrow F''\longrightarrow0$
+đều có thể được phân giải bởi một dãy khớp các phức hữu hạn tự do địa phương.
+
+Trong hệ các hàm tử $\underline{T}_{r}^{s*}$, tương ứng $T_{r}^{s*}$, ta định
+nghĩa các phép toán tương tự như các phép toán trong phép tính tenxơ; định nghĩa
+của chúng suy ra ngay từ các công thức định nghĩa (8.1). Vì vậy, ta có một phép
+hợp thành (khái quát hóa phép hợp thành đã xét ở n\textsuperscript{o} 2):
+\begin{equation}\tag{8.3}
+\resizebox{\textwidth}{!}{$
+\begin{aligned}
+&T_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+\times T_{r'}^{s'*}(A'_1,\ldots,A'_{r'};B'_1,\ldots,B'_{s'})\\
+&\qquad\longrightarrow
+T_{r+r'}^{s+s'*}
+(A_1,\ldots,A_r,A'_1,\ldots,A'_{r'};
+ B_1,\ldots,B_s,B'_1,\ldots,B'_{s'}),
+\end{aligned}
+$}
+\end{equation}
+thỏa mãn các tính chất hiển nhiên về tính kết hợp và tính tương thích với các
+đồng cấu có tính hàm tử, các đồng cấu nối và các dãy phổ. Tương tự, ta có các
+phép đối xứng, mà ta để độc giả tự viết tường minh. Ngoài ra, ta còn có một
+phép co mỗi khi một trong các đối số $A_i$
+
+\src{191}
+trùng với một trong các đối số $B_j$:
+\begin{equation}\tag{8.4}
+\resizebox{\textwidth}{!}{$
+\begin{aligned}
+&T_{r}^{s*}(A_1,\ldots,A_{i-1},C,A_{i+1},\ldots,A_r;
+ B_1,\ldots,B_{j-1},C,B_{j+1},\ldots,B_s)\\
+&\qquad\longrightarrow
+T_{r-1}^{s-1*}(A_1,\ldots,\widehat{A_i},\ldots,A_r;
+ B_1,\ldots,\widehat{B_j},\ldots,B_s).
+\end{aligned}
+$}
+\end{equation}
+Ngoài ra, nếu một đối số $A_i$ là một bó tự do địa phương, thì có thể
+lược bỏ đối số ấy, với điều kiện thay một trong các $A_j$ ($j\neq i$) bằng
+$A_j\otimes A_i$, hoặc thay một trong các $B_k$ bằng $B_k\otimes A_i'$ (trong đó
+$A_i'=\Homsh_{\Osh_X}(A_i,\Osh_X)$); ta có một quy tắc tính toán tương tự khi
+một trong các đối số $B_i$ là một bó tự do địa phương. Đặc biệt, ta luôn có thể
+lược bỏ một đối số đồng nhất với $\Osh_X$. Nếu mọi đối số đều tự do địa phương, trừ nhiều nhất
+một trong các đối số $B_i$, thì quy tắc vừa nêu cho một đẳng cấu có tính hàm tử
+\begin{equation}\tag{8.5}
+  T_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+  =H^{*}\bigl(X,A_1'\otimes\cdots\otimes A_r'
+    \otimes B_1\otimes\cdots\otimes B_s\bigr)
+\end{equation}
+(vì ta được quy về trường hợp $r=0$, $s=1$, trong đó điều này là hiển nhiên;
+ta cũng có thể dùng trực tiếp dãy phổ có số hạng ban đầu (8.2)). Đối với các
+$\underline{T}_{r}^{s}$, ta cũng định nghĩa các phép toán tương ứng với những
+phép toán vừa nêu. Các quan hệ giữa những phép toán vừa được đưa vào cũng giống
+như các quan hệ giữa những phép toán tương tự trong phép tính tenxơ.
+
+Cho $n$ là chiều của $X$. Bằng cách áp dụng liên tiếp một phép hợp thành tenxơ
+(8.3) và các phép co (8.4) trên những đối số trùng nhau, ta thu được một phép ghép cặp
+\begin{equation}\tag{8.6}
+\resizebox{\textwidth}{!}{$
+  (T_{r}^{s})^{p}(A_1,\ldots;B_1,\ldots)
+  \times
+  (T_{s}^{r})^{n-p}(B_1,\ldots;A_1,\ldots,A_r\otimes\Omega_X^{n})
+  \longrightarrow H^{n}(X,\Omega_X^{n}).
+$}
+\end{equation}
+
+\result{ĐỊNH LÝ}{6} Nếu $X$ là một đa tạp xạ ảnh không kỳ dị, thì các phép
+ghép cặp (8.6) là những phép đối ngẫu.
+
+Điều này suy ra một cách hoàn toàn hình thức từ hệ quả của Định lý 3. Thật vậy,
+từ hệ quả ấy dễ dàng suy ra rằng nếu $K$ là một phức các bó đại số nhất quán tự do
+địa phương, thì siêu đối đồng điều của $X$ đối với $K$ đối ngẫu với siêu đối
+đồng điều của $X$ đối với $K'\otimes\Omega_X^{n}$ qua các phép ghép cặp tự nhiên
+\begin{equation}\tag{8.7}
+  \mathbf R^{p}\Gamma(K)
+  \times\mathbf R^{n-p}\Gamma(K'\otimes\Omega_X^{n})
+  \longrightarrow\mathbf R^{n}\Gamma(\Omega_X^{n})
+  =H^{n}(X,\Omega_X^{n}).
+\end{equation}
+Ta thấy điều này bằng cách dùng dãy phổ có số hạng ban đầu
+$H^{p}(H^{q}(X,K))$ và dãy phổ tương tự cho
+$K'\otimes\Omega_X^{n}$. Từ kết quả trên, Định lý 6 suy ra bằng cách dùng
+định nghĩa (8.1).
+
+\src{192}
+\subsection*{NHẬN XÉT}
+
+\noindent 1\textsuperscript{o} Đối với các định nghĩa trước Định lý 6,
+không cần giả sử $X$ không kỳ dị, vì không nhất thiết chỉ làm việc với các
+phân giải hữu hạn. Nhưng nếu $X$ kỳ dị, thì nói chung không còn có thể khẳng
+định tiên nghiệm rằng các
+$(\underline{T}_{r}^{s})^{p}(A_1,\ldots;B_1,\ldots)$ là những bó nhất quán,
+bởi vì trong phức các bó
+\[
+  \Homsh_{\Osh_X}\bigl(L(A_1)\otimes\cdots,L(B_1)\otimes\cdots\bigr)
+\]
+sẽ có vô hạn thành phần có một bậc toàn phần cho trước.
+
+\medskip
+\noindent 2\textsuperscript{o} Dễ dàng kiểm tra rằng trong các công thức
+(8.1), có thể thay một trong các $L(B_i)$ bằng $B_i$. Theo Mệnh đề 3, điều này
+chứng tỏ rằng ta có
+\begin{equation}\tag{8.8}
+\left\{
+\begin{aligned}
+  \underline{T}_{1}^{1*}(A;B)&=\Extsh_{\Osh_X}^{*}(A,B),\\
+  T_{1}^{1*}(A;B)&=\operatorname{Ext}_{\Osh_X}^{*}(X;A,B).
+\end{aligned}
+\right.
+\end{equation}
+Đặc biệt, lấy $r=s=1$ và $A_1=\Osh_X$ trong (8.6), ta thu lại Định lý 3.
+Công thức (8.8) cũng kéo theo
+\[
+  T_{0}^{1*}(B)=H^{*}(X,B),
+  \qquad
+  T_{1}^{0*}(A)=\operatorname{Ext}_{\Osh_X}^{*}(X;A,\Osh_X).
+\]
+
+\medskip
+\noindent 3\textsuperscript{o} Công thức (8.1) cho thấy rằng, nói chung, các
+hàm tử $\underline{T}_{r}^{s*}$ và $T_{r}^{s*}$ có các thành phần ở cả bậc
+dương lẫn bậc âm. Dùng Nhận xét 2, ta thấy rằng nếu $X$ có chiều $n$, thì các
+thành phần khác không của $\underline{T}_{r}^{s*}$ nằm giữa $-(s-1)n$ và $rn$
+khi $s>0$, và nằm giữa $0$ và $rn$ khi $s=0$; các thành phần khác không của
+$T_{r}^{s*}$ nằm giữa $-(s-1)n$ và $(r+1)n$ khi $s>0$, và nằm giữa $0$ và
+$(r+1)n$ khi $s=0$ (và thậm chí, nếu không nhầm, khi $r>0$, chúng nằm giữa
+$-(s-1)n$ và $rn$, tương ứng giữa $0$ và $rn$).
+
+\section*{TÀI LIỆU THAM KHẢO}
+
+\noindent[1] Cartier (Pierre). --- Les groupes
+$\operatorname{Ext}^{s}(A,B)$, Séminaire A. Grothendieck : Algèbre homologique,
+tập 1, 1957, số 3.
+
+\noindent[2] Grothendieck (Alexandre). --- Sur quelques points d'algèbre
+homologique, \emph{Tohoku Math. J.}, tập 9, 1957, tr. 119--183.
+
+\noindent[3] Serre (Jean-Pierre). --- Faisceaux algébriques cohérents,
+\emph{Annals of Math.}, tập 61, 1955, tr. 197--278.
+
+\noindent[4] Serre (Jean-Pierre). --- Sur la dimension homologique des anneaux
+et des modules noethériens, \emph{Proc. Intern. Symp. on Alg. Number Theory}
+[1955, Tokyo và Nikko]. --- Tokyo, Science Council of Japan, 1956;
+tr. 175--189.
+
+\clearpage
+
+\src{193}
+\section*{BỔ SUNG}
+
+Những khó khăn được nêu trong nhận xét ở trang 13 hiện nay đã được giải quyết
+hoàn toàn, nhờ việc mở rộng các định lý đối ngẫu sang các đa tạp bất kỳ
+(có các kỳ dị tùy ý). Đối với lý thuyết này, vốn có thể được trình bày trong
+khuôn khổ tổng quát của « lý thuyết lược đồ », chúng tôi dẫn chiếu đến bộ
+« Éléments de Géométrie algébrique » của J. Dieudonné và A. Grothendieck,
+hiện đang được biên soạn. Có thể tìm thấy một vài chỉ dẫn trong:
+
+\begin{quote}
+Grothendieck (A.). --- Cohomology theory of algebraic varieties,
+\emph{Congrès int. des Mathématiciens}, 1958, Edinburgh (sắp xuất bản).
+\end{quote}
+
+\begin{flushright}
+[Tháng 4 năm 1959]
+\end{flushright}
+
+\begin{center}\rule{36mm}{0.5pt}\end{center}
+
+\par

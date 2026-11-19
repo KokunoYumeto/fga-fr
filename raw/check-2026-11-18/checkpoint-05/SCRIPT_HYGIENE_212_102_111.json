@@ -1,0 +1,564 @@
+{
+  "summary": {
+    "date_utc": "2026-11-18T20:23:08.783189+00:00",
+    "scope": "apply_212_102.py through apply_212_111.py only",
+    "requested": 10,
+    "present": 10,
+    "compiled": 10,
+    "compile_errors": 0,
+    "warnings": 0,
+    "literal_noop_candidates": 0,
+    "raw_single_quote_escape_occurrences": 0,
+    "append_helper_calls": 55,
+    "scripts_with_append_helpers": 10,
+    "direct_append_sites": 1,
+    "scripts_executed_or_imported": 0,
+    "files_changed_while_read": [],
+    "provable_dead_code_candidates": 0,
+    "wrapper_literal_noop_candidates": 0,
+    "event_call_sites": 45,
+    "record_page_call_sites": 10,
+    "completed_utc": "2026-11-18T20:24:17.826879+00:00",
+    "requested_hash_changes": []
+  },
+  "scripts": [
+    {
+      "file": "apply_212_102.py",
+      "sha256": "886f7ae6c5a91a888973e6d86a2682a518d684c967ff476a389a8fee2bfbe278",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 17,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 18,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 19,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 20,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 21,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": [],
+      "changed_while_read": false,
+      "provable_dead_code_candidates": [],
+      "replacement_wrappers_checked": [
+        "r"
+      ],
+      "wrapper_literal_noop_candidates": []
+    },
+    {
+      "file": "apply_212_103.py",
+      "sha256": "5e8d03dcf0ae40db096c1d824b067c9821c11e92866cf66e3f6ba8cfb86f4e09",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 24,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 25,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": [],
+      "changed_while_read": false,
+      "provable_dead_code_candidates": [],
+      "replacement_wrappers_checked": [
+        "r"
+      ],
+      "wrapper_literal_noop_candidates": []
+    },
+    {
+      "file": "apply_212_104.py",
+      "sha256": "952011534d49167bc84d452137b0ade9aa8e2f794f18a1834d6f8fd14eef3d26",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 30,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 35,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": [],
+      "changed_while_read": false,
+      "provable_dead_code_candidates": [],
+      "replacement_wrappers_checked": [
+        "r"
+      ],
+      "wrapper_literal_noop_candidates": []
+    },
+    {
+      "file": "apply_212_105.py",
+      "sha256": "1dcba1d7dde4ee162dfdeede09d2cf26fa9c9073f4a554c5c7e9f3cb096b9eb8",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 31,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 35,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": [],
+      "changed_while_read": false,
+      "provable_dead_code_candidates": [],
+      "replacement_wrappers_checked": [
+        "r"
+      ],
+      "wrapper_literal_noop_candidates": []
+    },
+    {
+      "file": "apply_212_106.py",
+      "sha256": "0bc916f3b801187f4dcff91057f4cbd6bec0e7eccde476d88333c9b726cd448f",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 25,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": [],
+      "changed_while_read": false,
+      "provable_dead_code_candidates": [],
+      "replacement_wrappers_checked": [
+        "r"
+      ],
+      "wrapper_literal_noop_candidates": []
+    },
+    {
+      "file": "apply_212_107.py",
+      "sha256": "b1df22934afd73b51e646ea5b00a148a31a03a422f4d720639ba7a4ed9bfc2cf",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 25,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": [],
+      "changed_while_read": false,
+      "provable_dead_code_candidates": [],
+      "replacement_wrappers_checked": [
+        "r"
+      ],
+      "wrapper_literal_noop_candidates": []
+    },
+    {
+      "file": "apply_212_108.py",
+      "sha256": "22a981651aa911aa0b5eb4ef5c8c24cf21f3ca9211cf5c4909a35f5a41124f16",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": [],
+      "changed_while_read": false,
+      "provable_dead_code_candidates": [],
+      "replacement_wrappers_checked": [
+        "r"
+      ],
+      "wrapper_literal_noop_candidates": []
+    },
+    {
+      "file": "apply_212_109.py",
+      "sha256": "6644f2a91af5f2363a9ba24b2ce4b4a03dac404e126c1c7eb67c6ce2327d9415",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [
+        {
+          "line": 20,
+          "mode": "a",
+          "target": "CORRECTIONS.tsv",
+          "scope": "module",
+          "enclosing_controls": [
+            "For",
+            "If"
+          ]
+        }
+      ],
+      "append_helper_calls": [
+        {
+          "line": 32,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 33,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 34,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 35,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 36,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 37,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 38,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": [],
+      "changed_while_read": false,
+      "provable_dead_code_candidates": [],
+      "replacement_wrappers_checked": [
+        "r"
+      ],
+      "wrapper_literal_noop_candidates": [],
+      "direct_append_detail": {
+        "open_line": 20,
+        "selection_condition_line": 15,
+        "guard": "else branch of loop-variable selection, not a duplicate-entry check",
+        "writerow_lines": [
+          26
+        ],
+        "literal_row_loop_size": 3,
+        "outer_selection_loop_size": 2
+      }
+    },
+    {
+      "file": "apply_212_110.py",
+      "sha256": "3111fe07a508527fb187b804bbe22e39c7a68b7bba3db0e33aade5b397bc14a8",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 25,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 30,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 31,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": [],
+      "changed_while_read": false,
+      "provable_dead_code_candidates": [],
+      "replacement_wrappers_checked": [
+        "r"
+      ],
+      "wrapper_literal_noop_candidates": []
+    },
+    {
+      "file": "apply_212_111.py",
+      "sha256": "38e471c1d1319ee5e20922d6f52425b94134a452f34bdf8eead059407ca92d6b",
+      "compiled": true,
+      "compile_errors": [],
+      "warnings": [],
+      "literal_noop_candidates": [],
+      "direct_append_sites": [],
+      "append_helper_calls": [
+        {
+          "line": 21,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 22,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 23,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 24,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 25,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 26,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 27,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 28,
+          "helper": "event",
+          "scope": "module",
+          "enclosing_controls": []
+        },
+        {
+          "line": 29,
+          "helper": "record_page",
+          "scope": "module",
+          "enclosing_controls": []
+        }
+      ],
+      "raw_single_quote_escapes": [],
+      "changed_while_read": false,
+      "provable_dead_code_candidates": [],
+      "replacement_wrappers_checked": [
+        "r"
+      ],
+      "wrapper_literal_noop_candidates": []
+    }
+  ],
+  "limits": "Static structural inspection only. No replacement, evidence, edition, ledger or mathematical content is interpreted. Earlier failures may prevent reaching a write.",
+  "methods": {
+    "control_flow": "Literal truth/comparisons, empty literal for iterables and direct statements after unconditional transfer; no variable propagation or code evaluation.",
+    "wrapper_noops": "Literal old/new comparisons through statically recognized local wrappers of replace(); no replacement content is printed or interpreted.",
+    "synthetic_checks": "Five structural detector assertions passed; fixture code not executed.",
+    "helper_semantics": "Read only event(), record_page(), and replace() structural AST with string values redacted. Appends have no duplicate guard; replace() retains only its existing limited preimage/ledger guard."
+  }
+}

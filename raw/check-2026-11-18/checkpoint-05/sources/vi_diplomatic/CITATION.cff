@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: Khi trích dẫn, ghi rõ tác giả nguyên tác và bản dịch tiếng Việt.
+title: Nền tảng hình học đại số — Bản dịch tiếng Việt theo bản in
+version: 2026-10-24-diplomatic
+authors:
+- family-names: Grothendieck
+  given-names: Alexandre
+repository-code: https://github.com/KokunoYumeto/ega-fga-sga-vi
+references:
+- type: software
+  title: FGA — human English translation used as a reference
+  authors:
+  - family-names: Hosgood
+    given-names: Tim
+  repository-code: https://github.com/thosgood/fga
+  url: https://github.com/thosgood/fga/tree/9976dd5f8e2ddcb388f0a07f3aa334f120d1019f
+  commit: 9976dd5f8e2ddcb388f0a07f3aa334f120d1019f

@@ -1,0 +1,1085 @@
+\unit{Thuyết trình 236 -- Các lược đồ Picard: các tính chất tổng quát}
+\sid{236}
+\markboth{Thuyết trình 236}{Thuyết trình 236}
+\src{221}
+\seminar{Năm thứ 14\textsuperscript{}, 1961/62, số 236\textsuperscript{}\\Tháng Năm 1962}
+\paperhead{KỸ THUẬT HẠ XUỐNG VÀ CÁC ĐỊNH LÝ TỒN TẠI TRONG HÌNH HỌC ĐẠI SỐ\\
+VI. CÁC LƯỢC ĐỒ PICARD: CÁC TÍNH CHẤT TỔNG QUÁT}%
+  {do Alexander GROTHENDIECK}
+
+\fsection{0}{Các bổ sung cho thuyết trình trước ([3], V)\texorpdfstring{\textsuperscript{(1)}}{(1)}}
+
+Đã có một số tiến bộ liên quan đến các vấn đề tồn tại của những tiền lược đồ
+Picard được nêu ra trong [3], V:
+
+\medskip
+\noindent a. (Mumford). Nói chung, không đúng rằng khi
+$f:X\longrightarrow S$ là một cấu xạ xạ ảnh và khả ly (= phẳng với các thớ
+khả ly), tiền lược đồ Picard $\operatorname{Pic}_{X/S}$ tồn tại, ngay cả khi
+các thớ của $f$ có chiều 1 và $S$ là phổ của một vành định giá rời rạc đầy đủ.
+Một ví dụ thu được bằng cách lấy $S=\operatorname{Spec}\mathbf R[[t]]$ và lấy
+$X$ là lược đồ con của $\mathbf P^2_S$ được xác định bởi phương trình (trong đó
+$x,y,z$ là các biến thuần nhất)
+\[
+x^2+y^2=tz^2.
+\]
+Như vậy, đây là một conic suy biến về mặt hình học thành hai đường thẳng giao
+nhau, nhưng thớ đặc biệt trên trường $\mathbf R$ vẫn bất khả quy (nó được cho
+bởi phương trình $x^2+y^2=0$ trên $\mathbf R$). Dễ thấy rằng, sau mở rộng étale
+$S'\longrightarrow S$, với $S'=\operatorname{Spec}\mathbf C[[t]]$, tiền lược
+đồ Picard của $X'/S'$ tồn tại và có một mô tả tường minh như tổng rời nhau của
+các bản sao $\widetilde S$, trong đó $\widetilde S$ thu được từ $S$ bằng
+cách tách đôi gốc vô hạn lần. Ta dễ dàng nhận thấy dữ liệu hạ xuống trên
+$\operatorname{Pic}_{X'/S'}$ đối với $S'\longrightarrow S$ (ở đây được cho
+bởi tác động của nhóm Galois $\mathbf Z/2\mathbf Z$ của $S'$ trên $S$) không
+hữu hiệu: nhóm này hoán đổi một số điểm đã tách đôi, nên có những quỹ đạo không
+nằm trong một tập mở afin. Tuy nhiên, Mumford có thể chứng minh rằng nếu
+$f:X\longrightarrow S$ là một cấu xạ xạ ảnh và khả ly sao cho, với mọi
+$s\in S$, các thành phần bất khả quy của $X_s$ là bất khả quy hình học trên
+$k(s)$, thì $\operatorname{Pic}_{X/S}$ tồn tại; chứng minh của ông dựa trên
+một sự tinh chỉnh định lý thương của mình, xem [7]. Mặt khác, cần lưu ý rằng,
+ngay cả khi không có giả thiết nào về các thành phần bất khả quy của các thớ
+$X_s$, lược đồ $\operatorname{Pic}^{\tau}_{X/S}$ (sẽ được giới thiệu dưới
+đây) vẫn có thể tồn tại.
+\src{222}
+\noindent b. (Murre). Cho $X$ là một lược đồ riêng trên một trường; khi đó
+$\operatorname{Pic}_{X/k}$ tồn tại. Chứng minh dựa một phần trên chứng minh
+của Chevalley [1] và sử dụng cốt yếu cấu trúc nhóm của hàm tử Picard.
+
+Đối với một số bổ sung về lý thuyết các lược đồ Picard, đặc biệt trong mối
+liên hệ với các lược đồ abel, nên tham khảo [7]. Cuối cùng, một thiếu sót đáng
+kể của thuyết trình này là chưa có các «tiêu chuẩn tương đương» cho phép so
+sánh lược đồ Picard của một lược đồ xạ ảnh với các lược đồ Picard của những
+tiết diện siêu phẳng của nó; các định lý then chốt để xây dựng những tiêu
+chuẩn như vậy nằm trong [5], và cần ghép thêm các định lý tồn tại của các
+lược đồ Picard.
+
+\fsection{1}{Các tính chất tôpô của các tiền lược đồ nhóm giao hoán}
+
+Trước hết, cho $k$ là một trường và $G$ là một tiền lược đồ nhóm trên $k$.
+Vì phần tử đơn vị $e$, do hữu tỷ trên $k$, nhất thiết là đóng, nên đường chéo
+của $G\times_kG$ lập tức là đóng, và do đó $G$ là tách: mọi tiền lược đồ nhóm
+trên một trường đều tách. Ta ký hiệu bởi $G^\circ$ thành phần liên thông của
+phần tử đơn vị $e$. Vì $e$ hữu tỷ trên $k$, $G^\circ$ thực ra liên thông hình
+học, nghĩa là phép tạo $G^\circ$ tương thích với mọi đổi trường cơ sở. Cũng
+suy ra rằng $G^\circ$ ổn định dưới phép nhân khi xét như một tập; và khi $G$
+Noether địa phương, nên $G^\circ$ mở, ta có thể xem $G^\circ$ như một nhóm
+con mở của $G$. Sau đây ta giả sử $G$ thuộc kiểu hữu hạn địa phương trên $k$;
+khi đó $G^\circ$ bất khả quy hình học và thuộc kiểu hữu hạn trên $k$. Thật
+vậy, có thể giả sử $k$ đóng đại số, rồi giả sử thêm $G$ rút gọn (vì khi ấy
+$G_{\mathrm{réd}}$ là một nhóm con của $G$, do
+$G_{\mathrm{réd}}\times_kG_{\mathrm{réd}}$ vẫn rút gọn); do đó trơn trên
+$k$ tại một tập mở không rỗng, và vì tịnh tiến tập mở ấy nên trơn ở mọi nơi.
+Nhưng khi đó $G$ bất khả quy địa phương, nên các thành phần bất khả quy của nó
+trùng với các thành phần liên thông; do đó $G^\circ$ bất khả quy. Cho $U$ là
+một lân cận afin của $e$ trong $G^\circ$; dùng tính bất khả quy của $G^\circ$,
+ta thấy ngay
+$U\cdot U=G^\circ$, điều này chứng minh $G^\circ$ tựa compact, nên thuộc kiểu
+hữu hạn trên $k$.
+
+Để đơn giản, giả sử $G$ giao hoán. Với mỗi số nguyên $n>0$, cho $G^{(n)}$ là
+ảnh ngược của $G^\circ$ qua đồng cấu $\varphi_n$ lũy thừa bậc $n$ trong
+$G$; do đó $G^{(n)}$ là một nhóm con mở của $G$. Ta đặt:
+\[
+G^\tau=\bigcup_nG^{(n)}.
+\]
+\src{223}
+\[
+G^\sigma=\bigcup_{(n,p)=1}G^{(n)},
+\qquad
+G^\rho=\bigcup_hG^{(p^h)},
+\]
+trong đó $p$ là số mũ đặc trưng của trường $k$. Như vậy ta thu được các nhóm
+con mở của $G$, thỏa mãn
+\[
+G^\sigma\cap G^\rho=G^\circ,
+\qquad
+G^\sigma G^\rho=G^\tau.
+\]
+
+\result{NHẬN XÉT}{} Ta có thể dựng lược đồ nhóm thương
+$G/G^\circ=N$ (xem [3], IV), rồi định nghĩa $G^\tau$, $G^\sigma$, $G^\rho$
+là các ảnh ngược trong $G$, tương ứng, của nhóm con xoắn của $N$, của thành
+phần $p$-nguyên sơ, và của tổng các thành phần $q$-nguyên sơ với $q$ là số
+nguyên tố $\neq p$. Cần lưu ý rằng $N$ là một lược đồ nhóm rời rạc khả ly trên
+$k$; do đó, sau khi chọn một bao đóng đại số $\overline k$ của $k$, sinh ra
+một nhóm Galois $\pi$, nó được đồng nhất với một nhóm rời rạc thông thường mà
+$\pi$ tác động bằng các tự đẳng cấu. Chính bằng cách này ta có thể diễn giải
+hiển nhiên việc dựng nhóm con xoắn và sự phân tích nhóm ấy thành các thành
+phần $q$-nguyên sơ. Khi $G$ là lược đồ Picard của một lược đồ $X$ riêng trên
+$k$, có thể gọi $N$ là \emph{lược đồ Néron--Severi} (rút gọn) của $X$ trên
+$k$. Khi $G^\circ_{\mathrm{réd}}$ là một lược đồ nhóm con của $G^\circ$, điều
+này đặc biệt xảy ra mỗi khi $k$ hoàn hảo hoặc $G^\circ$ riêng trên $k$ (chẳng
+hạn khi $X$ chuẩn hình học), cũng nên đưa vào thương
+$N'=G/G^\circ_{\mathrm{réd}}$; thương này có khuynh hướng ứng xử tốt hơn $N$
+về phương diện chuyên biệt hóa, nghĩa là khi $X$ biến thiên trong một họ các
+lược đồ đại số.
+
+Bây giờ cho $S$ là một tiền lược đồ Noether địa phương và $G$ là một tiền
+lược đồ nhóm trên $S$, thuộc kiểu hữu hạn địa phương trên $S$. Ta không giả
+sử $G$ thuộc kiểu hữu hạn trên $S$, cũng không giả sử là tách trên $S$. Ta
+đặt
+\[
+G^\circ=\bigcup_{s\in S}(G_s)^\circ,
+\]
+và, khi $G$ giao hoán,
+\[
+G^\tau=\bigcup_{s\in S}(G_s)^\tau,
+\qquad
+G^\sigma=\bigcup_{s\in S}(G_s)^\sigma,
+\qquad
+G^\rho=\bigcup_{s\in S}(G_s)^\rho.
+\]
+\src{224}
+Đó là các tập con của $G$, ổn định dưới phép nhân của $G$; điều này hiển nhiên
+không kéo theo rằng chúng có thể được định nghĩa bằng các tiền lược đồ nhóm
+con của $G$. Đặc biệt, dường như nói chung không tồn tại tiền lược đồ nhóm
+con nào của $G$ có tập nền là $G^\circ$. Dĩ nhiên, nếu một trong các tập ấy
+mở thì, với cấu trúc cảm sinh, nó là một tiền lược đồ nhóm con mở của $G$. Ta
+sẽ thấy điều này luôn đúng với $G^\tau$; vì thế, từ quan điểm các hàm tử biểu
+diễn được, đặc biệt từ quan điểm «chuyên biệt hóa», tương đương số ứng xử thỏa
+đáng hơn tương đương đại số. Sau đây là các tính chất tổng quát chính của
+những tập vừa được định nghĩa:
+
+\result{ĐỊNH LÝ}{1.1} $G^\circ$, $G^\tau$, $G^\sigma$, $G^\rho$ đều kiến
+thiết được địa phương. Hơn nữa:
+
+\noindent (i) $G^\circ$ tựa compact trên $S$. Khi các $G_s^\circ$ riêng và
+$G$ tách trên $S$, thì $G^\circ$ riêng trên $S$, do đó đóng trong $G$.
+
+\noindent (ii) $G^\tau$ mở. Nếu $G^\circ$ đóng thì $G^\tau$ cũng đóng.
+
+\noindent (iii) Nếu $G^\circ$ đóng thì $G^\sigma$ cũng đóng, miễn là ta ở
+trong đồng đặc trưng, nghĩa là mọi trường thặng dư của $S$ có cùng đặc trưng.
+Nếu $G^\circ$ đóng và $G\longrightarrow S$ mở phổ dụng tại các điểm của
+$G^\sigma$ (xem Hệ quả 1.5 dưới đây), thì
+$G^\sigma\longrightarrow S$ mở phổ dụng.
+
+\noindent (iv) Nếu $G^\circ$ đóng thì $G^\rho$ cũng đóng. Giả sử ta ở trong
+đồng đặc trưng và, với mọi số nguyên $n>0$ sao cho $(n,p)=1$, đồng cấu lũy
+thừa bậc $n$ trong $G$ là mở; khi đó $G^\rho$ mở.
+
+Ta nêu vài chỉ dẫn cho chứng minh. Việc $G^\circ$ kiến thiết được địa phương
+và tựa compact trên $S$ nằm trong bổ đề sau:
+
+\result{BỔ ĐỀ}{1.2} Giả sử $S\neq\varnothing$. Khi đó tồn tại một tập mở
+không rỗng $U$ trong $S$, một lược đồ nhóm $H$ thuộc kiểu hữu hạn trên $U$ có
+các thớ liên thông, và một đồng cấu lược đồ nhóm
+$H\longrightarrow G|U$ là một phép nhúng mở có ảnh $G^\circ|U$.
+
+Để chứng minh bổ đề, có thể giả sử $S$ bất khả quy; gọi $\eta$ là điểm tổng
+quát của nó và thực hiện đổi cơ sở
+$S'=\operatorname{Spec}(\mathcal O_{S,\eta})\longrightarrow S$. Ta thu được
+một lược đồ nhóm $G'$ trên vành Artin địa phương
+$\mathcal O_{S,\eta}=A$, trong đó có một lược đồ nhóm con mở
+$G'{}^\circ$ thuộc kiểu hữu hạn trên $A$, như đã nói ở trên. Vì vậy nó thu
+được từ một lược đồ nhóm $H$ thuộc kiểu hữu hạn trên một lân cận mở $U$ của
+$\eta$, và phép nhúng chính tắc $G'{}^\circ\longrightarrow G'$ thu được từ
+một phép nhúng
+\src{225}
+mở $H\longrightarrow G|U$, và phép nhúng này sẽ là một đồng cấu lược đồ nhóm
+khi $U$ đủ nhỏ. Các thớ của $H$ liên thông nếu lấy $U$ đủ nhỏ và đều có
+cùng chiều, bằng chiều của các thớ của $G$ khi $U$ đủ nhỏ; do đó, với mọi
+$s\in U$, ảnh của
+$H_s$ trong $G_s$ chính là $G_s^\circ$ (sau khi lại thu nhỏ $U$), chứng minh
+1.2.
+
+Khẳng định thứ hai trong (i) nằm trong bổ đề sau (áp dụng cho một lân cận mở
+tựa compact của $G^\circ$ trong $G$):
+
+\result{BỔ ĐỀ}{1.3} Cho $X$ là một tiền lược đồ thuộc kiểu hữu hạn và tách
+trên $S$ Noether địa phương, $g$ là một tiết diện của $X$ trên $S$, và
+$X^\circ$ là hợp của các thành phần liên thông của $g(s)$ trong các $X_s$.
+Cho $s\in S$ sao cho $X_s^\circ$ riêng trên $k(s)$. Khi đó tồn tại một lân
+cận mở $U$ của $s$ sao cho $X^\circ|U$ riêng trên $U$, và do đó đóng trong
+$X|U$.
+
+Bằng hạ phẳng trung thành trên cơ sở, ta quy về trường hợp $S$ là phổ của một
+vành địa phương đầy đủ và $s$ là điểm đóng của nó. Áp dụng [2], III, 5.5.1,
+ta thấy $X$ phân tích thành tổng của hai tập mở rời nhau $X'$ và $X''$, trong
+đó tập thứ nhất riêng trên $S$ và thỏa $X'_s=X_s^\circ$. Điều này quy ta về
+trường hợp $X=X'$, nghĩa là $X$ riêng trên $S$. Trong trường hợp ấy, ta dùng
+một chứng minh chuẩn dựa trên tiêu chuẩn định giá cho tính riêng của một bộ
+phận (bị bỏ sót trong [2], chương II).
+
+Ta chứng minh $G^\tau$ mở; hay tương đương, vì phép tạo $G^\tau$ (cũng như
+phép tạo $G^\circ$, $G^\sigma$, $G^\rho$) giao hoán với mở rộng cơ sở: với
+mọi tiết diện $g$ của $G$ trên $S$, $g^{-1}(G^\tau)$ mở. Điều này có nghĩa là
+hai điều:
+
+\medskip
+\noindent a. Cho $y\in S$ sao cho $g(y)\in G_y^\tau$; khi đó, với mọi
+$y'\in\overline{\{y\}}$ đủ gần $y$, ta có $g(y')\in G_{y'}^\tau$.
+
+\medskip
+\noindent b. Cho $y'\in S$ sao cho $g(y')\in G_{y'}^\tau$; khi đó, với mọi
+tổng quát hóa $y$ của $y'$, ta có $g(y)\in G_y^\tau$.
+
+Đối với (a), lưu ý rằng tồn tại một số nguyên $n>0$ sao cho
+$g^n(y)\in G_y^\circ$; vì $G^\circ$ kiến thiết được,
+$(g^n)^{-1}(G^\circ)$ kiến thiết được, nên
+$g^n(y')\in G_{y'}^\circ$ với $y'\in\overline{\{y\}}$ đủ gần $y$. Đối với
+(b), lưu ý rằng các $g(y')^n=g^n(y')$ nằm trong một tập mở tựa compact của
+$G_{y'}$ (vì chúng thuộc một số hữu hạn lớp modulo $G_{y'}^\circ$); do đó tồn
+tại một tập mở tựa compact $U$ trong $G$ chứa các $g^n(y')$, và vì thế cũng
+chứa các tổng quát hóa $g^n(y)$ của chúng. Vậy các lũy thừa của $g(y)$ nằm
+trong một tập mở tựa compact của $G_y$, điều này dễ dàng kéo theo
+$g(y)\in G_y^\tau$.
+\src{226}
+Giả sử $G^\circ$ đóng; ta chứng minh $G^\tau$ cũng đóng. Vì đã biết
+$G^\tau$ mở, nên kiến thiết được địa phương, chỉ còn phải chứng minh nó ổn
+định dưới phép chuyên biệt hóa. Điều này suy ra từ việc nó là hợp của các tập
+đóng, cụ thể là các ảnh ngược, qua các đồng cấu $\varphi_n$ lũy thừa bậc
+$n$, của tập đóng $G^\circ$.
+
+Cũng lập luận ấy sẽ chứng minh $G^\sigma$ và $G^\rho$ đóng nếu $G^\circ$
+đóng (trong trường hợp thứ nhất, với điều kiện ta ở trong đồng đặc trưng), một
+khi đã chứng minh $G^\sigma$ và $G^\rho$ kiến thiết được địa phương. Thật vậy,
+với $x\in G^\tau$, gọi $\nu(x)$ là số nguyên nhỏ nhất $n>0$ sao cho đồng cấu
+$\varphi_n$ lũy thừa bậc $n$ đưa $x$ vào $G^\circ$. Khi đó $G^\sigma$
+(tương ứng, $G^\rho$) gồm các $x\in X$ sao cho $\nu(x)$ nguyên tố cùng nhau với $p$ (tương ứng,
+là một lũy thừa của $p$), và khẳng định của ta về tính kiến thiết được suy ra
+từ khẳng định chính xác hơn sau đây:
+
+\result{BỔ ĐỀ}{1.4} Hàm $\nu$ trên $G^\tau$ kiến thiết được địa phương.
+
+Thật vậy, điều này có nghĩa là, với mọi số nguyên $n>0$, tập các
+$x\in G^\tau$ sao cho $\nu(x)=n$ kiến thiết được địa phương; nhưng đó là hiệu
+của $\varphi_n^{-1}(G^\circ)$ và hợp của các
+$\varphi_d^{-1}(G^\circ)$, trong đó $d$ chạy qua các ước thực sự của $n$. Vì
+$G^\circ$ kiến thiết được địa phương, các $\varphi_d^{-1}(G^\circ)$ cũng vậy,
+và do đó hiệu nói trên cũng vậy.
+
+Giả sử $G^\circ$ đóng và $G\longrightarrow S$ mở phổ dụng tại các điểm của
+$G^\sigma$; ta chứng minh $G^\sigma\longrightarrow S$ là mở, nghĩa là biến
+một lân cận trong $G^\sigma$ của $x\in G^\sigma$ thành một lân cận của
+$y=f(x)$. Vì $G^\sigma$ kiến thiết được địa phương, ta quy về việc chứng minh
+rằng, với mọi tổng quát hóa $y'$ của $y$, tồn tại một tổng quát hóa $x'$ của
+$x$ trong $G^\sigma$ nằm trên $y'$. Bằng đổi cơ sở, điều này quy ta về trường
+hợp $S$ là phổ của một vành định giá rời rạc, còn $y,y'$ lần lượt là điểm đóng
+và điểm tổng quát. Dùng việc $G\longrightarrow S$ mở tại $x$ (do đó tồn tại
+một tổng quát hóa $x_1$ của $x$ trong $G$ nằm trên $y'$), ta có thể giả sử
+thêm rằng tồn tại một tiết diện $g$ của $G$ trên $S$ sao cho $x=g(y)$ (sau
+khi lại đổi cơ sở nếu cần). Nếu $k(y')$ có đặc trưng 0, chỉ cần lấy một tổng
+quát hóa bất kỳ $x'$ của $x$ trong $G$ nằm trên $y'$; nó thuộc $G^\tau$ vì
+$G^\tau$ mở, và do đó thuộc $G^\sigma$ vì
+$G_{y'}^\sigma=G_{y'}^\tau$. Nếu $k(y')$ có đặc trưng $p>0$, đặt
+\[
+\nu(g(y'))=p^hm\qquad\text{với }(m,p)=1 ;
+\]
+\src{227}
+chọn hai số nguyên $a$ và $b$ sao cho $ap^h+bm=1$, và đặt
+\[
+g_1=g^{ap^h},\qquad g_2=g^{bm},\qquad\text{do đó}\qquad g=g_1g_2 ;
+\]
+theo cách dựng, ta có $g_1(y')\in G^\sigma$ và
+$g_2(y')\in G^\rho$. Vì $G^\circ$ đóng, suy ra
+$g_1(y)\in G^\sigma$ và $g_2(y)\in G^\rho$; mặt khác, từ
+\[
+g(y)=g_1(y)g_2(y)\in G^\sigma,
+\]
+ta cũng có $g_2(y)\in G^\sigma$, nên
+\[
+g_2(y)\in G_y^\sigma\cap G_y^\rho=G_y^\circ.
+\]
+Từ giả thiết và việc $S$ là phổ của một vành định giá rời rạc, suy ra
+$G-(G_y-G_y^\circ)$ là một tập mở của $G$ mà trên đó
+$G\longrightarrow S$ cảm sinh một cấu xạ mở; do đó, qua mỗi điểm của
+$G_y^\circ$ có một «tựa tiết diện». Vì vậy, sau khi lại thực hiện một mở rộng
+trên cơ sở $S$ nếu cần, ta có thể giả sử tồn tại một tiết diện $g'_2$ của
+$G^\circ$ trên $S$ sao cho $g'_2(y)=g_2(y)$. Đặt $g'=g_1g'_2$; theo cách dựng,
+$g'(y)=g(y)=x$, và
+\[
+g'(y')=g_1(y')g'_2(y')\in G^\sigma,
+\]
+do đó $g(y')=x'$ là một tổng quát hóa
+của $x$ trong $G^\sigma$ nằm trên $y'$, chứng minh (iii).
+
+Cuối cùng, ta chứng minh khẳng định cuối của (iv). Ta quy về việc chứng minh
+rằng, nếu $x\in G^\rho$, thì mọi tổng quát hóa $x'$ của $x$ đều thuộc
+$G^\rho$. Có thể giả sử (sau khi lấy ảnh qua $\varphi_{n^h}$ với $h$ thích
+hợp nếu cần) rằng thậm chí $x\in G^\circ$. Khi đó, với mọi số nguyên $n$
+nguyên tố cùng nhau với đặc trưng, $x$ thuộc ảnh của $\varphi_n$ (vì lũy thừa
+bậc $n$ trong một nhóm liên thông thuộc kiểu hữu hạn trên một trường có đặc
+trưng nguyên tố cùng nhau với $n$ là toàn ánh). Vì $\varphi_n$ mở, suy ra $x'$
+cũng thuộc ảnh của $\varphi_n$. Chính xác hơn, cho $U$ là một tập mở tựa
+compact của $G^\tau$ chứa $G_y^\circ$; khi đó
+$x'\in\varphi_n(U)$ với mọi $n$ nguyên tố cùng nhau với $p$. Lấy $n$ là một
+bội chung của các thừa số nguyên tố cùng nhau với $p$ của $\nu(z)$, với
+$z\in U$, ta thu được $x'\in G^\rho$.
+
+Khẳng định (1.1), (iii), được bổ sung như sau:
+
+\result{HỆ QUẢ}{1.5} Cho $n>1$ là một số nguyên sao cho đồng cấu lũy thừa bậc
+$n$, $\varphi_n:G\longrightarrow G$, mở phổ dụng (chẳng hạn étale), và đặt
+\[
+G^{(n)}=\varphi_n^{-1}(G^\circ),
+\]
+Giả sử các thớ liên thông $G_s^\circ$ không «chứa
+\src{228}
+thành phần cộng tính» (nghĩa là nhóm thu được sau khi mở rộng trường $k(s)$
+đến bao đóng đại số không chứa nhóm con đẳng cấu với $\mathbf G_a$). Khi đó
+$G\longrightarrow S$ mở phổ dụng tại các điểm của các $G^{(n^h)}$. Đặc biệt,
+nếu các $G_s^\circ$ không chứa thành phần cộng tính và, với mọi số nguyên
+$n>1$, đồng cấu $\varphi_n$ mở phổ dụng tại các điểm có đặc trưng thặng dư
+nguyên tố cùng nhau với $p$, thì $G\longrightarrow S$ mở phổ dụng tại các điểm của $G^\sigma$, và
+do đó, theo (1.1), (iii), nếu $G^\circ$ đóng thì
+$G^\sigma\longrightarrow S$ mở phổ dụng. Trong các trường hợp này,
+$s\longmapsto\dim G_s$ là một hàm hằng địa phương trên $S$.
+
+Thật vậy, từ giả thiết suy ra hạt nhân ${}_nG$ của $\varphi_n$ mở phổ dụng
+trên $S$, nên $G\longrightarrow S$ mở phổ dụng tại các điểm của ${}_nG$, và
+do đó (thay $n$ bởi $n^h$) tại các điểm của ${}_{n^h}G$. Giả thiết về các thớ
+$G_s^\circ$ được dùng chính xác để bảo đảm rằng các điểm có cấp là một lũy
+thừa của $n$ trong $G_s$ trù mật trong hợp của các $G^{(n^h)}$; từ đó dễ suy
+ra $G\longrightarrow S$ mở phổ dụng tại mọi điểm của hợp này, đặc biệt dọc
+theo tiết diện đơn vị, và rồi dễ suy ra $s\longmapsto\dim G_s$ là một hàm
+hằng địa phương.
+
+\result{NHẬN XÉT}{1.6} Nhắc lại rằng một cấu xạ $X\longrightarrow S$ được gọi
+là mở phổ dụng nếu nó biến mọi tập mở thành một tập mở và vẫn giữ tính chất
+đáng khen ấy sau mọi phép đổi cơ sở $S'\longrightarrow S$. Điều này cũng có
+nghĩa (khi $S$ Noether địa phương và $X\longrightarrow S$ thuộc kiểu hữu hạn
+địa phương) rằng mọi thành phần bất khả quy của $X$ trội lên $S$, và tính chất
+này được bảo toàn sau mọi phép đổi cơ sở $S'\longrightarrow S$. Trong cả hai
+khẳng định ấy, hơn nữa, chỉ cần (với các giả thiết hữu hạn ở trên) kiểm tra
+bằng các phép đổi cơ sở $S'\longrightarrow S$, trong đó $S'$ là phổ của một
+vành định giá rời rạc (đầy đủ với trường thặng dư đóng đại số nếu muốn~...).
+Định nghĩa mở rộng hiển nhiên cho trường hợp một bộ phận $Z$ của $X$ (chẳng
+hạn bộ phận $G^\sigma$ của $G$). Hoàn toàn bình thường là, ngay cả khi bắt đầu
+từ một cấu xạ xạ ảnh trơn $X\longrightarrow S$ có các thớ hình học liên thông
+(chẳng hạn tích thớ của họ môđun các đường cong elliptic trên
+$S=\operatorname{Spec}\mathbf C[j]$ với chính nó),
+$\operatorname{Pic}_{X/S}$ vẫn không mở phổ dụng trên $S$, nghĩa là có thể có
+những thành phần bất khả quy của $\operatorname{Pic}_{X/S}$ nằm hoàn toàn
+trên một điểm duy nhất của $S$: điều này liên quan đến việc hạng của nhóm
+Néron--Severi của các thớ của $X/S$ có thể nhảy lên (các hiện tượng «nhân
+phức»). Trái lại, (1.5) bảo đảm rằng, trong những trường hợp thuận lợi,
+$\operatorname{Pic}_{X/S}^\sigma$ (và dường như thường ngay cả
+$\operatorname{Pic}_{X/S}^\tau$) mở phổ dụng trên $S$.
+\src{229}
+Cuối cùng, sau đây là một trường hợp hữu ích trong đó, một cách ngoại lệ,
+$G^\circ$ lại là mở:
+
+\result{HỆ QUẢ}{1.7} Giả sử $G\longrightarrow S$ mở phổ dụng tại các điểm của
+$G^\circ$ (xem (1.5)), và các thớ $G_s$ khả ly, do đó trơn trên $k(s)$ (điều
+kiện sau tự động được thỏa mãn khi đặc trưng thặng dư bằng không, theo một kết
+quả của Cartier). Khi đó $G^\circ$ mở trong $G$. Nếu thêm nữa $S$ rút gọn, thì
+$G^\circ$ trơn (đặc biệt là phẳng) trên $S$.
+
+Khẳng định thứ nhất còn có thể được làm chính xác hơn như sau. Nếu, với một
+$s\in S$ cho trước, $G\longrightarrow S$ mở phổ dụng tại các điểm của
+$G_s^\circ$ và $G_s^\circ$ khả ly trên $k(s)$, thì $G^\circ$ là một lân cận
+của $G_s^\circ$ (hơn nữa, giả thiết đặt tại $s$ vẫn sẽ đúng tại các điểm lân
+cận). Mệnh đề này, vốn độc lập với mọi cấu trúc nhóm, sẽ được chứng minh trong
+[2], IV, đoạn 7. Khẳng định cuối của (1.7), cũng độc lập với mọi cấu trúc nhóm
+và mọi vấn đề về thành phần liên thông, là một trường hợp riêng của một tiêu
+chuẩn phẳng được cho trong [IV], đoạn 5, và tiêu chuẩn này tổng quát hơn còn
+kéo theo:
+
+\result{HỆ QUẢ}{1.8} Cho $U$ là một bộ phận mở của một thớ $G_s$, sao cho
+$G\longrightarrow S$ mở phổ dụng tại các điểm của $U$ (xem (1.5)). Nếu $G_s$
+khả ly trên $k(s)$ và $S$ rút gọn tại $s$, thì $G$ phẳng trên $S$ tại các điểm
+của $U$ (do đó, trong trường hợp này, trơn trên $S$ tại các điểm của $U$).
+
+\result{CÁC NHẬN XÉT}{1.9} Tôi không biết, khi $G$ tách trên $S$, liệu
+$G^\circ$ hay $G^\tau$ có luôn đóng trong $G$ hay không; điều này có vẻ khó xảy
+ra. Dù sao, ta có những phản ví dụ hiển nhiên nếu bỏ giả thiết tách, chẳng hạn
+lấy đường thẳng afin mà gốc được tách đôi vô hạn đếm được lần. Như vậy ta thu
+được một lược đồ nhóm $G$ trên đường thẳng afin, mọi thớ của nó, trừ một thớ
+bằng $\mathbf Z$, đều rút về nhóm chỉ gồm phần tử đơn vị. Lược đồ nhóm này là
+con mở, cụ thể là bao đóng của tiết diện đơn vị, trong tiền lược đồ Picard của
+$S$-lược đồ $X$ tương ứng với một họ conic suy biến thành hai đường thẳng giao
+nhau.
+
+Hơn nữa, ngay cả khi bắt đầu với một lược đồ nhóm hữu hạn và phẳng $G$ trên
+phổ $S$ của một vành định giá rời rạc $V$, sao cho $G^\circ$ chỉ còn là tiết
+diện đơn vị và do đó là đóng, nhiều kết luận vẫn trở thành sai nếu bỏ một số
+giả thiết. Giả sử $V$ có đồng đặc trưng $p>0$, và cho $G$ là hạt nhân của đồng
+cấu
+$\mathbf G_a\longrightarrow\mathbf G_a$ được xác định bởi đồng cấu các hàm tử
+\[
+f\longmapsto f^p-tf,
+\]
+trong đó $t$ là một phần tử đều hóa của $V$.
+\src{230}
+(Nhắc lại rằng, theo định nghĩa, «nhóm cộng» $\mathbf G_a$ trên $S$ biểu diễn
+hàm tử $S'\longmapsto\Gamma(S',\mathcal O_{S'})$.) Khi đó, với tư cách là một
+$S$-lược đồ,
+\[
+G=\operatorname{Spec}V[x]/(x^p-tx)
+\]
+là hợp của $p$ «đường thẳng» giao nhau, mô tả một nhóm
+$\mathbf Z/p\mathbf Z$ suy biến thành một nhóm vô cùng bé kiểu cộng. Trong ví
+dụ này, $G^\circ=G^\sigma$ (và đó là một trong $p$ đường thẳng), nên không mở
+trong $G$. Trong trường hợp khác đặc trưng, với đặc trưng thặng dư $p>0$, ta
+bắt đầu từ lược đồ nhóm $H=\symbf{\mu}_p$, là hạt nhân của phép lấy lũy thừa
+bậc $p$ trong $\mathbf G_m$, do đó
+\[
+H=\operatorname{Spec}V[x]/(x^p-1) ;
+\]
+đây lại là hợp của $p$ đường thẳng giao nhau, mô tả một nhóm
+$\mathbf Z/p\mathbf Z$ (trong đặc trưng 0) suy biến thành một nhóm vô cùng bé
+kiểu nhân trong đặc trưng $p$. Cho $H'$ là «lược đồ nhóm hằng» được xác định
+bởi nhóm hữu hạn thông thường $\mathbf Z/p\mathbf Z$, tức hợp rời của
+$\mathbf Z/p\mathbf Z$ bản sao của $S$, hay cũng là
+$\operatorname{Spec}V^{\mathbf Z/p\mathbf Z}$. Khi đó $G=H\times_S H'$ mô tả
+một nhóm $(\mathbf Z/p\mathbf Z)^2$ trong đặc trưng 0, suy biến thành tích của
+một nhóm vô cùng bé với $\mathbf Z/p\mathbf Z$ trong đặc trưng $p$. Ở đây
+$G^\rho$ là hợp của tiết diện đơn vị và thớ đặc biệt, nên $G^\rho$ không mở,
+trong khi $G^\sigma$ là hợp của tiết diện đơn vị và thớ tổng quát, nên không
+đóng, trái với điều được khẳng định trong các trường hợp đồng đặc trưng ở
+(1.1), (iii) và (iv). Dĩ nhiên, đây là những hiện tượng gắn với đặc trưng
+$p>0$. Thật vậy, các kết quả trên cho:
+
+\result{HỆ QUẢ}{1.10} Giả sử mọi đặc trưng thặng dư của $S$ đều bằng không,
+do đó $G^\tau=G^\sigma$ và $G^\circ=G^\rho$. Khi đó $G^\tau=G^\sigma$ là mở,
+thậm chí vừa mở vừa đóng nếu $G$ tách trên $S$ và các $G_s^\circ$ riêng; dưới
+cùng giả thiết ấy, $G^\circ=G^\rho$ riêng trên $S$, nên đóng trong $G$. Cuối
+cùng, giả sử với mọi số nguyên $n>1$, đồng cấu lũy thừa bậc $n$ trong $G$ mở
+phổ dụng; khi đó $G^\circ$ mở. Nếu thêm nữa các $G_s^\circ$ không có thành
+phần cộng (chẳng hạn các $G_s^\circ$ riêng, như trên), thì
+$G^\tau\longrightarrow S$ mở phổ dụng, và thậm chí trơn nếu $S$ rút gọn.
+
+Cuối cùng, ta ghi nhận kết quả dễ sau đây:
+
+\result{MỆNH ĐỀ}{1.11} Tồn tại một bộ phận mở $U$ của $S$ sao cho tập $G'$ gồm
+các điểm của $G$ tại đó $G$ trơn (tương ứng phẳng) trên $S$ là tập nền của một
+lược đồ nhóm con mở cảm sinh từ $G|U$. Hơn nữa, mọi tiết diện của $G$ trên $U$
+đều là một tiết diện của $G'$ trên $U$.
+\src{231}
+\result{HỆ QUẢ}{1.12} Nếu $G$ trơn (tương ứng phẳng) trên $S$ tại các điểm của
+tiết diện đơn vị, thì nó cũng như vậy tại các điểm của mọi tiết diện của $G$
+trên $S$, và tại mọi điểm của $G^\circ$. Nếu thêm nữa, với mọi số nguyên
+$n>0$, đồng cấu lũy thừa bậc $n$
+$\varphi_n:G\longrightarrow G$ là étale tại các điểm có đặc trưng nguyên tố
+cùng nhau với $n$, thì $G$ trơn (tương ứng phẳng) trên $S$ tại mọi điểm của
+$G^\sigma$.
+
+\fsection{2}{Ứng dụng vào các tính chất địa phương của các lược đồ Picard}
+
+\result{ĐỊNH LÝ}{2.1}
+
+\noindent(i) Cho $f:X\longrightarrow S$ là một cấu xạ riêng và trơn, và giả
+sử $\operatorname{Pic}_{X/S}$ tồn tại (chẳng hạn $f$ là một cấu xạ xạ ảnh).
+Khi đó $\operatorname{Pic}_{X/S}$ tách trên $S$, và với mọi bộ phận đóng $Z$
+của $\operatorname{Pic}_{X/S}$ thuộc kiểu hữu hạn trên $S$, $Z$ riêng trên
+$S$.
+
+\noindent(ii) Cho $X$ là một tiền lược đồ trên một trường $k$, riêng và chuẩn
+hình học. Khi đó $\operatorname{Pic}_{X/S}^\circ$ riêng trên $k$.
+
+\begin{proof}
+(i) Các tiêu chuẩn định giá ([2], II, đoạn 7) quy ta về việc chứng minh điều
+sau: nếu $S$ là phổ của một vành định giá rời rạc đầy đủ, $U$ là tập mở chỉ
+gồm điểm tổng quát của $S$, thì mọi tiết diện hữu tỷ của
+$\operatorname{Pic}_{X/S}$ trên $S$, nghĩa là mọi tiết diện trên $U$, đều kéo
+dài duy nhất thành một tiết diện trên $S$. Theo định nghĩa của
+$\operatorname{Pic}_{X/S}$, điều này tương đương với mệnh đề sau: với mọi
+Môđun khả nghịch $\mathcal L$ trên $V=f^{-1}(U)$, tồn tại một Môđun khả nghịch
+trên $X$ kéo dài $\mathcal L$, duy nhất sai khác một đẳng cấu. Điều này dễ dàng
+suy ra từ mô tả các Môđun khả nghịch trên $V$, tương ứng trên $X$, bằng các
+lớp «ước Cartier», vì các vành địa phương của $X$ là chính quy ($X$ trơn trên
+lược đồ chính quy $S$), nên là các vành phân tích duy nhất theo Auslander; do
+đó mọi ước trên $S$ đều là một ước
+Cartier. Thật vậy, mọi ước trên $V$ đều có thể được kéo dài thành một ước trên
+$X$ bằng cách lấy «bao đóng» của nó.
+\end{proof}
+
+\result{NHẬN XÉT}{2.2} Chứng minh vẫn đúng nếu chỉ giả sử $f$ phẳng và các thớ
+$X_s$ là các giao đầy đủ địa phương và trơn trên $k(s)$ ở đối chiều $\leq2$,
+theo kết quả sau được chứng minh trong [5]: một vành địa phương Noether là giao
+đầy đủ và chính quy ở đối chiều $\leq3$ thì là vành phân tích duy nhất («phỏng
+đoán Samuel»). Cần lưu ý rằng
+\src{232}
+kết quả trở thành sai nếu thay «đối chiều $\leq2$» bằng «đối chiều
+$\leq1$», nghĩa là bằng giả thiết «chuẩn», như có thể thấy từ ví dụ một họ các
+siêu mặt bậc hai không kỳ dị suy biến thành một nón bậc hai.
+
+(ii) Dùng bổ đề Chow, ta quy về trường hợp $X$ xạ ảnh, do đó được nhúng vào
+$\mathbf P_k^n$; ta có thể giả sử $X$ liên thông. Nếu $\dim X=1$, thì $X$ trơn
+trên $k$, và ta áp dụng (i). Nếu $\dim X\geq2$, ta có thể dùng một biến thể của
+các «tiêu chuẩn tương đương» đã biết, từ đó suy ra rằng tồn tại hữu hạn đường
+cong $Y_i$ trơn nằm trong $X$ (thu được bằng cách giao $X$ với các không gian
+con tuyến tính thích hợp của $\mathbf P_k^n$), sao cho
+\[
+\operatorname{Pic}_{X/k}^\tau\longrightarrow
+\prod_i\operatorname{Pic}_{Y_i/k}^\tau
+\]
+là một đơn cấu, và do đó cảm sinh một đơn cấu trên các thành phần liên thông.
+Vì thành phần liên thông của vế phải riêng trên $k$ theo kết quả trên, và vì
+đồng cấu đang xét là một đồng cấu các lược đồ nhóm, tất yếu là một phép nhúng
+đóng, nên $\operatorname{Pic}_{X/k}^\circ$ cũng riêng trên $k$. Có thể tránh
+việc dùng các tiêu chuẩn tương đương tinh tế bằng cách sử dụng cấu trúc của các
+nhóm đại số giao hoán trên một trường đóng đại số (do Chevalley--Borel); ta quy
+về việc chứng minh rằng mọi cấu xạ từ đường thẳng afin vào
+$\operatorname{Pic}_{X/k}^\tau$ là hằng. Điều này tương đương với việc mọi
+Môđun khả nghịch trên $X[t]$ đều đến từ một Môđun khả
+nghịch trên $X$. Kết quả quen thuộc và rất sơ cấp này thậm chí không dùng đến
+việc $X$ riêng trên $k$ (giả thiết $X$ chuẩn cho phép lập tức quy về trường hợp
+$X$ chính quy).
+
+\result{HỆ QUẢ}{2.3} Cho $f:X\longrightarrow S$ là một cấu xạ riêng và chuẩn
+(nghĩa là phẳng với các thớ hình học chuẩn), và giả sử
+$\operatorname{Pic}_{X/S}$ tồn tại. Khi đó $\operatorname{Pic}_{X/S}^\circ$
+riêng trên $S$, nên đóng trong $\operatorname{Pic}_{X/S}$; hơn nữa,
+$\operatorname{Pic}_{X/S}^\tau$ và $\operatorname{Pic}_{X/S}^\rho$ cũng đóng,
+và $\operatorname{Pic}_{X/S}^\sigma$ cũng vậy trong «đồng đặc trưng».
+
+Ta áp dụng (1.1) và (2.1), (ii).
+
+\result{HỆ QUẢ}{2.4} Cho $f:X\longrightarrow S$ là một cấu xạ riêng và trơn,
+sao cho $\operatorname{Pic}_{X/S}$ tồn tại và là hợp rời của các lược đồ
+$P^{(i)}$ thuộc kiểu hữu hạn trên $S$ (xem [3], V, 4.1). Khi đó mỗi $P^{(i)}$
+riêng trên $S$.
+
+Điều này suy ra từ (2.1), (i). Như đã nêu trong (2.2), kết quả có thể được tổng
+quát hóa bằng cách đặt các giả thiết ít hạn chế hơn lên các thớ của $f$, nhưng
+trở thành sai nếu ta chỉ giả sử $f$ chuẩn. Trong trường hợp này, tôi cũng không
+biết liệu $\operatorname{Pic}_{X/S}^\tau$ có vẫn riêng trên $S$ hay không,
+ngay cả khi giả sử nó thuộc kiểu hữu hạn trên $S$.
+\src{233}
+\result{ĐỊNH LÝ}{2.5} Cho $f:X\longrightarrow S$ là một cấu xạ riêng và
+phẳng, sao cho $\operatorname{Pic}_{X/S}$ tồn tại, và với mỗi số nguyên $n$,
+cho $\varphi_n$ là đồng cấu lũy thừa bậc $n$ trong tiền lược đồ nhóm này. Khi
+đó $\varphi_n$ là étale tại mọi điểm
+$x\in X$ có đặc trưng
+thặng dư nguyên tố cùng nhau với $n$.
+
+Theo đặc trưng hóa vi phân của các cấu xạ étale, khẳng định này tương đương với
+khẳng định sau:
+
+\result{BỔ ĐỀ}{2.6} Giả sử $S$ là phổ của một vành Artin địa phương $A$ mà
+iđêan cực đại $\mathfrak m$ có lũy thừa bậc $(\nu+1)$ bằng không, và đặt
+\[
+A_{\nu-1}=A/\mathfrak m^\nu,
+\qquad X_{\nu-1}=X\otimes_A A_{\nu-1},
+\]
+$\mathcal L$ là một Môđun khả nghịch trên $X$, và cuối cùng
+$\mathcal L'_{\nu-1}$ là một Môđun khả nghịch trên $X_{\nu-1}$ mà lũy thừa
+tensor bậc $n$ đẳng cấu với
+\[
+\mathcal L_{\nu-1}=\mathcal L\otimes_A A_{\nu-1}.
+\]
+Khi đó tồn tại một Môđun khả nghịch $\mathcal L'$ trên $X$ mà lũy thừa tensor
+bậc $n$ đẳng cấu với $\mathcal L$ (nếu $n$ nguyên tố cùng nhau với đặc trưng
+thặng dư của $k=k(A)$).
+
+Ta chứng minh bổ đề. Đặt
+\[
+V=\mathfrak m^\nu=\mathfrak m^\nu/\mathfrak m^{\nu+1} ;
+\]
+đây là một không gian vectơ trên $k=k(A)$. Trước hết ta tìm cách kéo dài
+$\mathcal L'_{\nu-1}$ thành một Môđun khả nghịch tùy ý $\mathcal L'$ trên
+$X$. Trở ngại cho việc này nằm trong
+\[
+H^2(X_0,\mathcal O_{X_0})\otimes_k V,
+\]
+nhưng theo giả thiết về $\mathcal L'_{\nu-1}$ và sự kiện
+$\mathcal L_{\nu-1}$ có thể được kéo dài, ta thấy tích của trở ngại này với
+$n$ bằng không; do đó chính nó bằng không vì $n$ nguyên tố cùng nhau với đặc
+trưng. Hơn nữa, độ tùy ý trong phép kéo dài đã chọn nằm trong
+\[
+H^1(X_0,\mathcal O_{X_0})\otimes_k V,
+\]
+và sai lệch $\xi$ của $\mathcal L'^{\otimes n}$ so với $\mathcal L$ nằm trong
+cùng Môđun ấy. Nếu ta tìm cách hiệu chỉnh $\mathcal L'$ để làm sai lệch này
+bằng không, thì bài toán quy về việc tìm một $\eta$ trong Môđun nói trên sao
+cho $n\eta=\xi$. Điều này lại khả thi vì $n$ nguyên tố cùng nhau với đặc
+trưng.
+
+\result{HỆ QUẢ}{} Dưới các điều kiện của (2.5), giả sử thêm rằng các lược đồ
+Picard của các thớ $X_s$ không chứa thành phần cộng (chẳng hạn các $X_s$ chuẩn
+hình học, xem (2.1), (ii)). Khi đó
+$\operatorname{Pic}_{X/S}\longrightarrow S$ mở phổ dụng tại các điểm của
+$\operatorname{Pic}_{X/S}^\circ$. Nếu $\operatorname{Pic}_{X/S}^\circ$ đóng
+(chẳng hạn các $X_s$ chuẩn hình học, xem (2.3)), thì chính
+$\operatorname{Pic}_{X/S}^\sigma$ mở phổ dụng trên $S$. Cuối cùng, trong
+trường hợp đồng đặc trưng, $\operatorname{Pic}_{X/S}^\rho\longrightarrow S$
+mở phổ dụng.
+
+Ta áp dụng (1.5) và (1.1).
+\src{234}
+\result{HỆ QUẢ}{2.7} Cho $f:X\longrightarrow Y$ là một cấu xạ riêng và phẳng, sao cho $\operatorname{Pic}_{X/S}$ tồn
+tại. Khi đó hàm số
+\[
+s\longmapsto\dim\operatorname{Pic}_{X_s/k(s)}
+\]
+trên $S$ là nửa liên tục trên (nghĩa là nó có thể nhảy lên, nhưng không thể
+nhảy xuống), và thậm chí liên tục (nghĩa là hằng địa phương) nếu các
+$\operatorname{Pic}_{X_s/k(s)}$ không chứa thành phần cộng.
+
+Khẳng định thứ nhất đúng một cách tầm thường, hoặc gần như vậy, đối với mọi
+tiền lược đồ nhóm thuộc kiểu hữu hạn địa phương trên một cơ sở Noether địa
+phương, vì chỉ cần xét dọc theo tiết diện đơn vị. Khẳng định thứ hai suy ra từ
+(2.5).
+
+\result{NHẬN XÉT}{2.8} Cho $s,s'\in S$ sao cho $s$ là một chuyên biệt hóa của
+$s'$. Khi đó (2.7) tương đương với một bất đẳng thức (tương ứng một đẳng thức)
+giữa các chiều của các lược đồ Picard của $X_{s'}$ và của «chuyên biệt hóa»
+$X_s$ của nó. Hơn nữa, ngay từ trước khi các lược đồ Picard được xây dựng,
+Serre đã nhận xét rằng tính bất biến của chiều các lược đồ Picard của $X_s$ trong
+trường hợp một cấu xạ trơn $f:X\longrightarrow S$ là hệ quả hình thức của lý
+thuyết chuyên biệt hóa nhóm cơ bản ([4], X), và của các quan hệ Kummer cổ điển
+giữa các điểm có cấp hữu hạn trên đa tạp Picard với nhóm cơ bản Abel hóa ([4],
+XI). Nếu nói chung ta ký hiệu bởi $\alpha,\mu,\lambda$ các chiều của phần Abel,
+phần nhân và phần cộng của $\operatorname{Pic}_{X_s/k(s)}^\circ$, và định
+nghĩa tương tự $\alpha',\mu',\lambda'$, thì các quan hệ đã biết được biểu thị
+bởi những bất đẳng thức sau:
+\[
+\tag{*}\alpha+\mu+\lambda\geq\alpha'+\mu'+\lambda'
+\]
+(đúng miễn là $\operatorname{Pic}_{X/S}$ tồn tại, do đó có lẽ đúng trong mọi
+trường hợp), và khi $\lambda=\lambda'=0$, bất đẳng thức này rút về một đẳng
+thức, đúng dưới cùng các giả thiết tồn tại:
+\[
+\alpha+\mu=\alpha'+\mu' ;
+\]
+mặt khác ta có
+\[
+\tag{**}2\alpha+\mu\leq2\alpha'+\mu'
+\]
+\src{235}
+theo lập luận của Serre, nếu các $X_s$ khả ly (thậm chí không cần giả sử
+$\operatorname{Pic}_{X/S}^\tau$ tồn tại), hoặc nếu các
+${}_n\operatorname{Pic}_{X/S}$ (các hạt nhân của $\varphi_n$ trong hàm tử
+Picard) tách trên $S$ (vì chúng étale trên $S$ theo (2.5)). Ta có xu hướng
+phỏng đoán rằng (*) luôn là một đẳng thức, hoặc ít nhất khi các $X_s$ khả ly,
+và rằng ta có các bất đẳng thức
+\[
+\tag{***}\alpha\leq\alpha',\qquad\lambda\geq\lambda',
+\]
+những bất đẳng thức này phải đúng mỗi khi ta có một tiền lược đồ nhóm thuộc
+kiểu hữu hạn địa phương trên $S$ Noether địa phương, trong đó chiều của các
+thớ là hằng (xem (1.3) về một kết quả khẳng định theo hướng này).
+
+\result{NHẬN XÉT}{2.9} Trong mọi trường hợp đã biết,
+$\operatorname{Pic}_{X/S}^\tau$ mở phổ dụng trên $S$, nhưng có lẽ không nên vì
+thế mà nuôi quá nhiều ảo tưởng, ngay cả khi $f:X\longrightarrow S$ trơn. Dù
+sao, Mumford đã xây dựng một ví dụ (đúng là với $S$ không rút gọn, thực ra $S$
+là phổ của một vành Artin) trong đó $\operatorname{Pic}_{X/S}^\tau$ không
+phẳng trên $S$, bằng cách làm biến thiên vô cùng bé mặt Igusa. Hơn nữa, điểm
+được Mumford xét nằm trong $\operatorname{Pic}_{X/S}^\rho$, và vẫn có thể xảy
+ra rằng (với $f:X\longrightarrow S$ trơn) $\operatorname{Pic}_{X/S}^\tau$
+phẳng trên $S$ tại các điểm của $\operatorname{Pic}_{X/S}^\sigma$; tuy nhiên,
+diễn giả nghi ngờ rằng điều này luôn đúng, ngay cả khi giới hạn ở các điểm của
+$\operatorname{Pic}_{X/S}^\circ$ và giả sử $S$ là phổ của một vành định giá
+rời rạc. Câu hỏi này còn gắn với việc nghiên cứu các điểm bất động của một
+lược đồ Abel dưới tác động của một nhóm hữu hạn các tự đẳng cấu, một tình
+huống mà dường như ta còn thiếu ví dụ.
+
+Dường như, ngay cả khi chỉ xét $f:X\longrightarrow S$ trơn và xạ ảnh, các kết
+quả về tính chính quy địa phương của $\operatorname{Pic}_{X/S}$ được nêu trong
+mục này, cùng với các phỏng đoán được chỉ ra trong (2.8), bao quát gần như tất
+cả những gì có thể nói về vấn đề này nếu không có các giả thiết cụ thể hơn về bản chất
+các thớ của $f$. Tuy nhiên, nhắc lại rằng nếu các thớ hình học của
+$\operatorname{Pic}_{X/S}$ rút gọn và không có thành phần cộng, thì từ (1.8)
+và (2.5) suy ra rằng $\operatorname{Pic}_{X/S}$ trơn trên $S$ tại các điểm của
+$\operatorname{Pic}_{X/S}^\sigma$ khi $S$ rút gọn; kết quả này thậm chí vẫn
+đúng, nếu $f:X\longrightarrow S$ chuẩn, mà không có giả thiết nào về $S$, như
+ta sẽ thấy trong (3.5). Liên quan đến điều này, ta ghi nhận:
+
+\result{MỆNH ĐỀ}{2.10}
+
+\noindent(i) Nếu $\operatorname{Pic}_{X/S}$ trơn (tương ứng phẳng) trên $S$
+tại các điểm của tiết diện đơn vị, thì nó cũng như vậy tại mọi điểm của
+$\operatorname{Pic}_{X/S}^\sigma$, và tại các điểm của mọi tiết diện của
+$\operatorname{Pic}_{X/S}$ trên $S$.
+\src{236}
+\noindent(ii) Cho $s\in S$ sao cho
+\[
+H^2(X_s,\mathcal O_{X_s})=0,
+\]
+khi đó tồn tại một lân cận mở $U$ của $s$ sao cho
+$\operatorname{Pic}_{X/S}|U$ trơn trên $U$.
+
+\noindent(iii) Cho $X$ là một lược đồ riêng trên một trường, khi đó
+\[
+\dim\operatorname{Pic}_{X/k}\leq\dim H^1(X,\mathcal O_X),
+\]
+dấu bằng xảy ra khi và chỉ khi $\operatorname{Pic}_{X/k}$ trơn trên $k$; điều
+này luôn đúng nếu $k$ có đặc số không.
+
+(i) suy ra từ (2.5) và (1.12), còn (ii) suy ra từ tiêu chuẩn vi phân vô cùng
+đối với các cấu xạ trơn và một phép tính chướng ngại quen thuộc, vì (theo
+``định lý nửa liên tục'') giả thiết đặt tại $s$ vẫn đúng tại các điểm lân cận.
+Cuối cùng, (iii) suy ra từ sự kiện $H^1(X,\mathcal O_X)$ đẳng cấu với không
+gian tiếp xúc Zariski của $\operatorname{Pic}_{X/k}$ tại phần tử đơn vị; khẳng
+định cuối cùng là một trường hợp riêng của một định lý của Cartier, nói rằng
+một ``nhóm hình thức'' trong đặc số 0 là trơn hình thức trên $k$.
+
+\fsection{3}{Lược đồ con Abel chính tắc của
+\texorpdfstring{$\operatorname{Pic}_{X/S}$}{Pic(X/S)} và lược đồ Albanese}
+
+\result{MỆNH ĐỀ}{3.1} Cho $k$ là một trường và $G$ là một lược đồ nhóm giao
+hoán kiểu hữu hạn trên $k$, ``không có thành phần cộng''. Khi đó
+$G_{\mathrm{réd}}^\circ$ khả ly trên $k$, và do đó nó là một lược đồ nhóm con
+trơn trên $k$.
+
+Điều này hiển nhiên nếu $k$ hoàn hảo, đặc biệt đối với $G_{\bar k}$, trong đó
+$\bar k$ là bao đóng đại số của $k$; vì thế chỉ cần chứng minh rằng
+$(G_{\bar k}^\circ)_{\mathrm{réd}}$ được hạ xuống từ một lược đồ con của $G$.
+Bây giờ, giả thiết trên $G_{\bar k}$ (không có thành phần cộng) dễ dàng suy ra rằng tồn tại một số nguyên $m$ sao cho
+$(G_{\bar k}^\circ)_{\mathrm{réd}}$ là ảnh theo nghĩa lược đồ của đồng cấu lũy
+thừa bậc $m$ trong $G_{\bar k}$. Vì đồng cấu cuối này đến từ đồng cấu tương tự
+đối với $G$, ảnh theo nghĩa lược đồ của đồng cấu sau đáp ứng yêu cầu.
+
+\result{HỆ QUẢ}{3.2} Cho $X$ là một lược đồ chuẩn và riêng trên $k$ sao cho
+$\operatorname{Pic}_{X/k}$ tồn tại. Khi đó tồn tại một lược đồ con Abel $A$
+của $\operatorname{Pic}_{X/k}$ có tập nền là
+$\operatorname{Pic}_{X/k}^\circ$.
+
+Thật vậy, theo (2.1), (ii), $\operatorname{Pic}_{X/k}^\circ$ riêng trên $k$
+nên thỏa mãn điều kiện của (3.1).
+\src{237}
+Vậy kết quả trước cho thấy rằng, trong một số trường hợp, ``đa tạp Picard''
+cổ điển (mà trong lý thuyết hiện nay sẽ được ký hiệu là
+$(\operatorname{Pic}_{X/k})_{\mathrm{réd}}^\circ$) ``được xác định trên
+$k$'', mà không cần giả sử trường $k$ là hoàn hảo.
+
+Bây giờ, cho $f:X\longrightarrow S$ là một lược đồ tương đối riêng và phẳng,
+với
+\[
+\mathcal O_S\xrightarrow{\sim}f_*(\mathcal O_X)
+\]
+để đơn giản, sao cho $\operatorname{Pic}_{X/S}$ tồn tại và
+$\operatorname{Pic}_{X/S}^\circ$ riêng trên $S$. Ngoài ra, đối với (3.3),
+(ii), ta giả sử rằng có một tập mở của $\operatorname{Pic}_{X/S}$ chứa
+$\operatorname{Pic}_{X/S}^\circ$ và tựa xạ ảnh trên $S$; như đã thấy, điều
+kiện này được thỏa mãn nếu $f$ là xạ ảnh và có các thớ hình học khả ly và bất khả
+quy. Nhắc lại rằng một lược đồ Abel trên $S$ là một lược đồ nhóm trên $S$,
+riêng và trơn trên $S$, có các thớ liên thông hình học. Ta xét xem có tồn tại
+một lược đồ nhóm con $A$ của $\operatorname{Pic}_{X/S}$, vừa là một lược đồ
+Abel vừa có tập nền là $\operatorname{Pic}_{X/S}^\circ$, hay không. Ta vừa
+thấy rằng một lược đồ như thế luôn tồn tại nếu $S$ là phổ của một trường. Sau
+đây là điều có thể khẳng định trong trường hợp tổng quát đang xét:
+
+\result{ĐỊNH LÝ}{3.3} Dưới các điều kiện trên:
+
+\noindent(i) Nếu tồn tại một lược đồ con Abel của
+$\operatorname{Pic}_{X/S}$ có tập nền là
+$\operatorname{Pic}_{X/S}^\circ$, thì nó là duy nhất. Do đó, phép tạo thành
+nó tương thích với các phép đổi cơ sở.
+
+\noindent(ii) Để một lược đồ con Abel như thế tồn tại, chỉ cần nó tồn tại sau
+mọi phép đổi cơ sở $S'\longrightarrow S$, trong đó $S'$ là Artin địa phương;
+nếu $S$ là phổ của một vành địa phương, thì thậm chí chỉ cần kiểm tra với
+$S'=\operatorname{Spec}(A_n)$, trong đó
+$A_n=A/\mathfrak m^{n+1}$. Nếu $S$ rút gọn, cũng chỉ cần kiểm tra với các phép
+đổi cơ sở $S'\longrightarrow S$, trong đó $S'$ là phổ của một vành định giá
+rời rạc (đầy đủ với trường thặng dư đóng đại số, nếu muốn).
+
+\noindent(iii) Giả sử $A$ tồn tại, và cho
+$B=\operatorname{Alb}^0(X/S)$ là lược đồ Abel đối ngẫu (tức là
+$B=\operatorname{Pic}_{A/S}^\circ$ [7]). Khi đó, ta có thể xây dựng chính tắc
+một không gian thuần nhất chính $P=\operatorname{Alb}^1(X/S)$ dưới $B$, và
+một $S$-cấu xạ $X\longrightarrow P$ phổ dụng đối với các $S$-cấu xạ từ $X$
+vào các lược đồ para-Abel (tức là các không gian thuần nhất chính dưới các
+lược đồ Abel). Phép tạo thành $\operatorname{Alb}^0(X/S)$,
+$\operatorname{Alb}^1(X/S)$ và
+$X\longrightarrow\operatorname{Alb}^1(X/S)$ giao hoán với phép đổi cơ sở.
+
+Ta phác thảo chứng minh:
+
+(i) là một tính chất cứng tổng quát của các lược đồ con Abel trong các lược đồ
+nhóm giao hoán: nếu hai lược đồ con như thế trùng nhau theo nghĩa tập hợp tại
+một điểm $s\in S$, thì chúng trùng nhau trên toàn bộ thành phần
+\src{238}
+liên thông của $s$ [7]. (Kết quả này khái quát một định lý cổ điển của Chow.)
+
+(ii) Dùng các lược đồ Hilbert, ta thấy hàm tử gán cho mỗi $S'$ trên $S$ tập
+(chỉ gồm 1 hoặc 0 phần tử) các lược đồ con Abel chính tắc của
+$(\operatorname{Pic}_{X/S})\times_S S'$ được biểu diễn bởi một lược đồ $T$
+kiểu hữu hạn trên $S$. Theo (i), $T\longrightarrow S$ là một đơn cấu, và theo
+(3.2), nó là toàn ánh. Nói rằng tồn tại một lược đồ con Abel chính tắc của
+$\operatorname{Pic}_{X/S}$ có nghĩa là $T$ có một tiết diện trên $S$, hay
+tương đương, $T\longrightarrow S$ là một đẳng cấu. Điều này cũng tương đương
+với việc $T\longrightarrow S$ là étale, hoặc, trong trường hợp $S$ rút gọn,
+với việc $T\longrightarrow S$ là riêng. Từ đó suy ra ngay (ii).
+
+(iii) Chỉ cần dùng định nghĩa của $\operatorname{Pic}_{X/S}$, ta thấy rằng,
+đối với mọi lược đồ Abel $C$ trên $S$, việc cho một $S$-cấu xạ từ $X$ vào một
+không gian thuần nhất chính dưới $C$ tương đương với việc cho một đồng cấu nhóm
+$C'\longrightarrow\operatorname{Pic}_{X/S}$, trong đó $C'$ là lược đồ Abel
+đối ngẫu của $C$. Mà nếu lược đồ con Abel chính tắc $A$ của
+$\operatorname{Pic}_{X/S}$ tồn tại, thì các đồng cấu này nhất thiết phân tích
+qua $A$ (cũng có thể thấy điều này bằng cách dùng các điểm có cấp hữu hạn). Từ
+đó suy ra ngay (iii).
+
+\result{NHẬN XÉT}{3.4} Ta sẽ ký hiệu bởi
+$\operatorname{Pic}_{X/S}^{\circ\circ}$ lược đồ con Abel chính tắc của
+$\operatorname{Pic}_{X/S}$, nếu nó tồn tại. Đáng tiếc là điều này không phải
+lúc nào cũng xảy ra, như có thể thấy khi làm biến thiên vô cùng bé mặt Igusa
+(bằng biến dạng modular bậc nhất). Tuy nhiên, có thể
+$\operatorname{Pic}_{X/S}^{\circ\circ}$ ít nhất tồn tại nếu $S$ rút gọn,
+hoặc, theo (ii), tương đương với điều đó, nếu $S$ là phổ của một vành định giá
+rời rạc. Khi đó, cho $X_0,X_1$ là thớ đặc biệt và tổng quát của $X$, và đặt
+\[
+A_1=\operatorname{Pic}_{X_1/K}^\circ,
+\]
+trong đó $K$ là trường phân thức của vành định giá $V$. Theo Koizumi, tồn tại
+một lược đồ Abel $A$ trên $S$, duy nhất về căn bản, có thớ tổng quát là $A_1$,
+và dễ dàng thấy như trong (2.1), (i) (từ đây giả sử $X$ trơn trên $S$), rằng
+cấu xạ đồng nhất của $A_1$ mở rộng thành một cấu xạ
+\[
+A\longrightarrow\operatorname{Pic}_{X/S}.
+\]
+Do đó có một đồng cấu
+\[
+\tag{*}A_0\longrightarrow\operatorname{Pic}_{X_0/k}^{\circ\circ},
+\]
+mà ta dễ dàng chứng minh là toàn ánh, có hạt nhân là một $p$-nhóm hữu hạn,
+trong đó $p$ là số mũ đặc số của trường thặng dư $k$
+\src{239}
+(vẫn bằng cách dùng các điểm có cấp hữu hạn). Với quy ước đó, các điều kiện
+sau đây trên $X/S$ là tương đương:
+
+\medskip
+\noindent a. Đồng cấu (*) ở trên là một đẳng cấu (điều mà Shimura sẽ diễn đạt
+bằng cách nói rằng phép tạo thành ``đa tạp Picard'' là ``tương thích với phép
+chuyên biệt hóa'').
+
+\noindent b. $\operatorname{Pic}_{X/S}^{\circ\circ}$ tồn tại (khi đó nó
+không gì khác ngoài $A$).
+
+\noindent c. (Để ghi nhớ) Các
+$\operatorname{Pic}_{X_n/S}^{\circ\circ}$ tồn tại.
+
+Theo nhận xét đã nêu về hạt nhân của (*), điều kiện (a) được thỏa mãn nếu đặc
+số thặng dư bằng không, nhưng kết quả này sẽ được khái quát đáng kể trong
+(3.5).
+
+Dĩ nhiên, nếu $\operatorname{Pic}_{X/S}$ trơn trên $S$ tại các điểm của
+$\operatorname{Pic}_{X/S}^\circ$, thì tập sau là mở trong
+$\operatorname{Pic}_{X/S}$ (xem (1.7)) và do đó, với cấu trúc cảm sinh, nó là
+một lược đồ con Abel của $\operatorname{Pic}_{X/S}$, nên bằng
+$\operatorname{Pic}_{X/S}^{\circ\circ}$, vốn tồn tại trong trường hợp này.
+Nhưng ta còn có kết quả mạnh hơn nhiều:
+
+\result{ĐỊNH LÝ}{3.5} Dưới các điều kiện của (3.3), cho $s\in S$ sao cho
+$\operatorname{Pic}_{X_s/k(s)}$ trơn trên $k(s)$ (hay, tương đương,
+\[
+\dim\operatorname{Pic}_{X_s/k(s)}=\dim H^1(X_s,\mathcal O_{X_s})).
+\]
+Khi đó tồn tại một lân cận mở $U$ của $s$ sao cho
+$\operatorname{Pic}_{X/S}$ trơn trên $S$ trong các điểm của $\operatorname{Pic}_{X/S}^\circ|U$, và do đó đây là một lược
+đồ con Abel mở trong $\operatorname{Pic}_{X/S}|U$. Đặc biệt,
+$\operatorname{Pic}_{X|U/U}^{\circ\circ}$ tồn tại.
+
+Ta nêu nguyên lý của chứng minh. Những điều trên đưa ta về trường hợp $S$ là
+phổ của một vành artin địa phương $A$, và ta quy nạp theo cấp vô cùng bé của
+$A$. Do đó, có thể giả sử $\operatorname{Pic}_{X_n/A_n}^\circ$ trơn trên
+$A_n$, và chỉ cần chứng minh rằng
+$\operatorname{Pic}_{X_{n+1}/A_{n+1}}^\circ$ trơn trên $A_{n+1}$. Ta thấy
+rằng để làm điều này, chỉ cần xây dựng một lược đồ Abel $P_{n+1}$ trên
+$A_{n+1}$ mở rộng
+\[
+P_n=\operatorname{Pic}_{X_n/A_n}^\circ,
+\]
+đồng thời xây dựng một Môđun khả nghịch $\mathcal L_{n+1}$ trên
+$X_{n+1}\times_{A_{n+1}}P_{n+1}$ mở rộng Môđun khả nghịch $\mathcal L_n$
+trên $X_n\times_{A_n}P_n$ xuất hiện trong định nghĩa của lược đồ Picard
+$\operatorname{Pic}_{X_n/A_n}$ như nghiệm của một bài toán phổ dụng. (N.B. ---
+Ta có thể giả sử $X$ có một tiết diện trên $S$~...) Để thực hiện phép xây dựng,
+phải dùng kết quả then chốt sau: mọi lược đồ Abel xác định trên một vành thương
+của một vành artin địa phương đều có thể mở rộng (nói cách khác, ``lược đồ
+hình thức các Môđun'' tuyệt đối ([3], II) của một lược đồ Abel trên một trường
+đóng đại số là trơn trên vành các
+\src{240}
+vectơ Witt của $k$); bản thân kết quả này thu được bằng cách dùng các tính chất
+hình thức tổng quát của chướng ngại đối với phép nâng và các phép toán nhóm.
+Chấp nhận kết quả này, trước hết ta mở rộng $P_n$ một cách tùy ý thành
+$P_{n+1}$; khi đó gặp một chướng ngại đối với việc nâng $\mathcal L_n$, nằm
+trong
+\[
+H^2(X_0\times P_0,\mathcal O_{X_0\times P_0})\otimes_k V
+\qquad(\text{trong đó }V=\mathfrak m^{n+1}/\mathfrak m^{n+2}),
+\]
+và thực ra nằm trong không gian con
+\[
+H^1(X_0,\mathcal O_{X_0})\otimes
+H^1(P_0,\mathcal O_{P_0})\otimes_k V
+\]
+(do hạn chế của $\mathcal L_n$ lên hai nhân tử $X_n$ và $P_n$ là tầm thường).
+Mà không gian sau chính là
+\[
+H^1(P_0,\mathcal T_{P_0/k})\otimes V,
+\]
+trong đó $\mathcal T_{P_0/k}$ là bó tiếp xúc của $P_0/k$, vì vậy nó cũng là
+không gian biểu thị tính bất định trong phép nâng $P_n$ thành $P_{n+1}$ ([3],
+II). Do đó, có thể hiệu chỉnh phép nâng này (theo một và chỉ một cách, như phải
+vậy) để triệt tiêu chướng ngại đối với việc nâng $\mathcal L_n$.
+
+\result{HỆ QUẢ}{3.6} Dưới các điều kiện của (3.5),
+$R^1f_*(\mathcal O_X)$ là một Môđun tự do địa phương trên $S$ trong một lân
+cận của $s$, và phép tạo thành nó giao hoán với phép đổi cơ sở.
+
+Thật vậy, Môđun này chính là Môđun tiếp xúc của
+$\operatorname{Pic}_{X/S}$ dọc theo tiết diện đơn vị.
+
+\result{NHẬN XÉT}{3.7} Dùng cùng lập luận như đối với (3.5), ta có thể chứng
+minh rằng nếu $S'$ là một lược đồ con của $S$ được xác định bởi một Iđêan
+coherent lũy linh, và nếu chỉ giả sử $\operatorname{Pic}_{X'/S'}^\circ$ tồn
+tại và có các thớ trơn, thì $\operatorname{Pic}_{X/S}^\circ$ nhất thiết tồn
+tại và là một lược đồ Abel trên $S$. Điều này cho phép xây dựng các lược đồ
+Picard trong một số trường hợp mặc dù không có giả thiết xạ ảnh; chẳng hạn,
+lược đồ Abel đối ngẫu của một lược đồ Abel trên một vành artin luôn tồn tại.
+Mặt khác, dùng (3.6) trong trường hợp $X$ là một lược đồ Abel trên $S$, và dùng
+cấu trúc đã biết của $H^*(X_s,\mathcal O_{X_s})$ như một đại số ngoài trên
+$H^1(X_s,\mathcal O_{X_s})$ (Rosenlicht--Serre), ta thấy rằng với mọi $i$,
+$R^if_*(\mathcal O_X)$ tự do địa phương, và chính xác hơn, đẳng cấu với lũy
+thừa ngoài thứ $i$ của $R^1f_*(\mathcal O_X)$.
+
+\result{NHẬN XÉT}{3.8} Trong trường hợp một cấu xạ xạ ảnh trơn
+$f:X\longrightarrow S$, với $S$ rút gọn và có các đặc số thặng dư bằng không,
+kết quả (3.6) đã được biết bằng phương pháp siêu việt, như một hệ quả của lý
+thuyết Hodge. Thật ra, tất cả các $R^pf_*(\Omega^q_{X/S})$ khi đó đều tự do
+địa phương. Trái lại, có các phản ví dụ
+\src{241}
+trong trường hợp đặc số hỗn hợp đối với tính tự do địa phương của
+$R^1f_*(\mathcal O_X)$, bằng cách dùng các đa tạp Serre ([8], tr.~50). Dường
+như không có phản ví dụ nào trong trường hợp cùng đặc số.
+
+\result{HỆ QUẢ}{3.8} Dưới các điều kiện của (3.5),
+$\operatorname{Pic}_{X/S}|U$ trơn trên $U$ tại mọi điểm của
+$\operatorname{Pic}_{X/S}^\sigma|U$.
+
+Áp dụng (2.10), (i). Đặc biệt, có tính đến (2.10), (iii):
+
+\result{HỆ QUẢ}{3.9} Giả sử $S$ có các đặc số thặng dư bằng không. Khi đó
+$\operatorname{Pic}_{X/S}^\tau$ trơn trên $S$.
+
+\result{NHẬN XÉT}{3.10} Từ đó suy ra, chẳng hạn, nếu
+$\operatorname{Pic}_{X/S}$ cũng riêng trên $S$, thì nhóm con xoắn của các
+nhóm Néron--Severi của các thớ hình học của $f$ không đổi trên mỗi thành phần
+liên thông của $S$ (điều này cũng hiển nhiên bằng phương pháp siêu việt khi
+$f$ trơn và xạ ảnh). Ta lưu ý rằng việc áp dụng trực tiếp (2.5) cho phép chứng
+minh tổng quát hơn rằng, nếu $\operatorname{Pic}_{X/S}$ riêng trên $S$ (chẳng
+hạn $f:X\longrightarrow S$ trơn và xạ ảnh) và nếu $q$ là một số nguyên tố
+khác các đặc số thặng dư của $S$, thì thành phần $q$-nguyên sơ của các nhóm
+con xoắn Néron--Severi của các thớ hình học của $X/S$ không đổi trên mỗi thành
+phần liên thông của $S$. Tuy nhiên, trong đặc số $p>0$, điều này không còn đúng
+đối với thành phần $p$-nguyên sơ của phần xoắn. Dù vậy, vẫn có thể xảy ra rằng
+hạng trên $k(s)$ của
+\[
+\operatorname{Pic}_{X_s/k(s)}^\tau/
+\operatorname{Pic}_{X_s/k(s)}^{\circ\circ}=T_{X_s/k(s)}
+\]
+là hằng địa phương; khi $S$ rút gọn, có thể chứng minh rằng điều này tương
+đương với việc $\operatorname{Pic}_{X/S}^{\circ\circ}$ tồn tại và
+$\operatorname{Pic}_{X/S}^\tau$ phẳng trên $S$, và chỉ cần kiểm tra câu hỏi
+khi $S$ là phổ của một vành định giá rời rạc. Đó là điều tôi đã kiểm tra trong
+một vài ví dụ đã xét; nhưng vì phát biểu tương ứng với $S$ artin là sai (xem
+các nhận xét (2.9) và (3.4)), có lẽ không nên nuôi quá nhiều ảo tưởng.
+
+\fsection{4}{Định lý về tính hữu hạn đối với lược đồ Picard}
+
+Cho $f:X\longrightarrow S$ là một cấu xạ xạ ảnh và phẳng sao cho
+$\operatorname{Pic}_{X/S}$ tồn tại; khi đó, việc xét các ``đa thức Hilbert''
+$Q\in\mathbf Q[t]$ cho phép phân tích $\operatorname{Pic}_{X/S}$ thành tổng
+rời nhau của các tập mở $\operatorname{Pic}_{X/S}^Q$. Nếu không đặt thêm các
+giả thiết, chẳng hạn bảo đảm $\operatorname{Pic}_{X/S}$ tách trên $S$, thì
+nói chung các tập mở này không nhất thiết thuộc kiểu hữu hạn trên $S$; ta có
+một phản ví dụ khi $X$ là ``một đường conic suy biến thành hai đường thẳng''.
+Điều này
+\src{242}
+có thể vẫn đúng nếu $f$ khả ly và có các thớ hình học bất khả quy. Câu hỏi này
+liên quan đến việc $\operatorname{Pic}_{X/S}^\tau$ có thuộc kiểu hữu hạn trên
+$S$ hay không, điều có lẽ đúng mà không cần giả thiết nào về các thớ của
+$X/S$. Khi $f:X\longrightarrow S$ trơn, lưu ý rằng
+$\operatorname{Pic}_{X/S}^\tau$ nằm trong một trong các
+$\operatorname{Pic}_{X/S}^Q$ (nhờ sự kiện rằng, trên một đa tạp xạ ảnh không
+kỳ dị, tương đương ``theo xoắn'' tinh hơn tương đương số đối với các ước, và
+thật ra, theo Matsusaka, là ``đồng nhất với'' tương đương số), nên nó thuộc
+kiểu hữu hạn trên $S$ nếu các $\operatorname{Pic}_{X/S}^Q$ cũng vậy. Lưu ý
+rằng các câu hỏi về tính hữu hạn vừa nêu vẫn có một ý nghĩa hiển nhiên ngay cả khi
+không giả sử $\operatorname{Pic}_{X/S}$ tồn tại, vì chúng được diễn đạt bằng
+cách nói rằng một số họ Môđun khả nghịch là ``bị chặn'' theo nghĩa của [3],
+IV: với mỗi trường đóng đại số $k$, xét các lược đồ con nguyên của
+$\mathbf P_k^r$, có chiều $n$ và bậc $d$, cùng các Môđun khả nghịch trên các
+tiền lược đồ như thế, có đa thức Hilbert $Q$ (trong đó $r,n,d,Q$ được cho
+trước); cần chứng minh rằng họ các Môđun này (được xem là các Môđun coherent
+trên các $\mathbf P_k^r$) bị chặn, tức là có thể được tham số hóa bởi một lược
+đồ kiểu hữu hạn trên $\mathbf Z$.
+
+Dùng phương pháp của Matsusaka [6], một chứng minh khá kỹ thuật (viện đến các
+``tiêu chuẩn tương đương'' dưới một dạng thích hợp) cho phép trả lời khẳng định
+khi ta giới hạn ở các đa tạp con không kỳ dị của $\mathbf P_k^r$. Chính xác
+hơn, ta được kết quả sau:
+
+\result{ĐỊNH LÝ}{4.1} Cho: $X\longrightarrow S$ là một cấu xạ trơn và xạ ảnh có các thớ liên thông hình học, với $S$
+noether, $\mathcal O_X(1)$ là một Môđun rất rộng trên $X$, tương đối với $S$,
+$E$ là một tập con của $\operatorname{Pic}_{X/S}$ tương ứng với một họ
+$(\mathcal L_i)$ các Môđun khả nghịch trên các thớ hình học
+$\overline X_{s_i}$ của $X/S$, $D_i$ là một ước (không nhất thiết dương) trên
+$\overline X_{s_i}$ xác định $\mathcal L_i$,
+\[
+a_n^{(i)}t^n+\cdots+a_0^{(i)}
+\]
+là đa thức Hilbert của $\mathcal L_i$, $\xi=\xi_i$ là một ước xác định
+$\mathcal O_X(1)$, tức là một tiết diện siêu phẳng. Các điều kiện sau là tương
+đương:
+
+\noindent a. $Q$ là tựa
+compact, tức là nằm trong một tập mở kiểu hữu hạn trên $S$, tức là họ các
+$(\mathcal L_i)$ bị chặn.
+
+\noindent b. $E$ nằm trong hợp của một số hữu hạn các tập
+$\operatorname{Pic}_{X/S}^Q$, $Q\in\mathbf Q[t]$, tức là tập các đa thức
+Hilbert của các $\mathcal L_i$ là hữu hạn.
+
+\noindent b'. (Nếu các thớ của $X/S$ đều có cùng chiều $n$.) Hai hệ số
+$a_{n-1}^{(i)}$ và $a_{n-2}^{(i)}$ của các đa thức Hilbert của
+$\mathcal L_i$ nằm trong một tập hữu hạn.
+\src{243}
+\noindent b''. (Nếu các thớ của $X/S$ đều có cùng chiều $n$.) Các số nguyên
+\[
+\xi^{n-1}D_i\qquad\text{và}\qquad\xi^{n-2}D_i^2
+\]
+(các bậc xạ ảnh của $D_i$ và $D_i^2$) bị chặn trên.
+
+\result{HỆ QUẢ}{4.2} Cho $f:X\longrightarrow S$ là một cấu xạ trơn và xạ ảnh
+có các thớ liên thông hình học; khi đó các lược đồ
+$\operatorname{Pic}_{X/S}^Q$ và $\operatorname{Pic}_{X/S}^\tau$
+($Q\in\mathbf Q[t]$) là xạ ảnh trên $S$.
+
+Vì chúng thuộc kiểu hữu hạn trên $S$ theo (4.1), ta có thể áp dụng (2.4).
+
+\section*{TÀI LIỆU THAM KHẢO}
+\addcontentsline{toc}{section}{Tài liệu tham khảo}
+
+\begin{description}
+\item[{[1]}] CHEVALLEY (Claude). -- Sur la théorie de Picard,
+\emph{Amer. J. of Math.}, t. 82, 1960, tr. 435--490.
+
+\item[{[2]}] GROTHENDIECK (A.) và DIEUDONNÉ (J.). -- Éléments de géométrie
+algébrique, Chương I và các chương tiếp theo. -- Paris, Presses universitaires
+de France, 1960--1961 (Institut des Hautes Études Scientifiques, 4, 8, 11,
+\ldots).
+
+\item[{[3]}] GROTHENDIECK (Alexander). -- Technique de descente et théorèmes
+d'existence en géométrie algébrique, I--V, \emph{Séminaire Bourbaki}, t. 12,
+1959/60, n\textsuperscript{o} 190, 29 tr. và n\textsuperscript{o} 195, 22 tr.;
+t. 13, 1960/61, n\textsuperscript{o} 212, 20 tr. và
+n\textsuperscript{o} 221, 28 tr.; t. 14, 1961/62,
+n\textsuperscript{o} 232, 19 tr.
+
+\item[{[4]}] GROTHENDIECK (Alexander). -- Séminaire de géométrie algébrique,
+1960/61. -- Paris, Institut des Hautes Études Scientifiques, 1961.
+
+\item[{[5]}] GROTHENDIECK (Alexander). -- Séminaire de géométrie algébrique,
+1961/62, do một nhóm thính giả biên soạn. -- Paris, Institut des Hautes Études
+Scientifiques (sắp xuất bản).
+
+\item[{[6]}] MATSUSAKA (T.). -- The criteria for algebraic equivalence and the
+torsion group, \emph{Amer. J. Math.}, t. 79, 1957, tr. 53--66.
+
+\item[{[7]}] MUMFORD (D.) và TATE (J.). -- Séminaire de géométrie algébrique,
+Harvard University, học kỳ mùa xuân 1962 (sắp xuất bản).
+
+\item[{[8]}] SERRE (Jean-Pierre). -- Sur la topologie des variétés algébriques
+en caractéristique $p$, \emph{Symposium internacional de topología algebraica}
+[1956, Mexico], tr. 24--53. -- Mexico, Universidad nacional autónoma, 1958.
+\end{description}
+
+\par

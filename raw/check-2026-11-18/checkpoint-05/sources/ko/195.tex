@@ -1,0 +1,1057 @@
+\unit{강연 195 — 하강 기법 II}
+\sid{195}
+\src{369}
+\seminar{제12년차, 1959/60, 제195호\\1960년 2월}
+\paperhead{대수기하학에서의 하강 기법과 존재 정리\\
+II. 형식적 모듈라이 이론에서의 존재 정리}%
+  {알렉상드르 그로텐디크 지음}
+
+\fsection{A}{표현 가능한 함자와 프로-표현 가능한 함자}
+
+\subsection*{1. 표현 가능한 함자}
+\addcontentsline{toc}{subsection}{1. 표현 가능한 함자}
+
+$\mathcal C$를 범주라 하자. 각 $X\in\mathcal C$에 대하여 $h_X$를
+$\mathcal C$에서 집합의 범주 $(\operatorname{Ens})$로 가는 반변 함자
+\[
+  h_X:\mathcal C\longrightarrow(\operatorname{Ens})
+\]
+로서, 다음 식으로 정의하자:
+\[
+  h_X(Y)=\operatorname{Hom}(Y,X).
+\]
+$\mathcal C$에 사상 $X\longrightarrow X'$가 있으면, 이로부터 자명한
+방식으로 함자 준동형 $h_X\longrightarrow h_{X'}$가 나온다. 즉 $h_X$는
+$X$에 관하여 공변 함자이며, 다시 말해 표준 공변 함자
+\[
+  h:\mathcal C\longrightarrow
+  \operatorname{Hom}\bigl(\mathcal C^o,(\operatorname{Ens})\bigr)
+\]
+를 정의하였다. 이는 $\mathcal C$에서, $\mathcal C$의 쌍대범주
+$\mathcal C^o$로부터 집합의 범주로 가는 공변 함자들의 범주로 가는
+함자이다. 다음 사실을 상기하자.
+
+\result{명제}{1.1} 이 함자 $h$는 \emph{충실충만하다}. 다시 말해
+$\mathcal C$의 임의의 두 대상 $X,X'$에 대하여 자연스러운 사상
+\[
+  \operatorname{Hom}(X,X')\longrightarrow
+  \operatorname{Hom}(h_X,h_{X'})
+\]
+은 전단사이다.
+
+특히 함자 $F\in\operatorname{Hom}(\mathcal C^o,(\operatorname{Ens}))$가
+$h_X$ 꼴의 함자와 동형이면, $X$는 유일한 동형을 제외하고 결정된다.
+이때 함자 $F$가 \emph{표현 가능하다}고 한다. 앞의 명제는 표준 함자 $h$가
+범주 $\mathcal C$와
+$\operatorname{Hom}(\mathcal C^o,(\operatorname{Ens}))$의 표현 가능한
+함자들로 이루어진 충만 부분범주 사이의 동치를 정의한다는 뜻이다. 이
+사실은 ``보편 문제의 해''라는 개념의 기초가 된다. 그러한 문제는 언제나
+$\mathcal C$에서 $(\operatorname{Ens})$로 가는 주어진 함자(여기서처럼
+반변이거나, 쌍대적인 경우에는 공변)가 표현 가능한지를 조사하는 문제이다.
+
+\src{370}
+더 나아가 범주에서 곱이라는 개념 자체의 정의에 따라 [1], 함자
+$h:X\longmapsto h_X$는 곱이 존재할 때마다 곱과 가환한다. 더 일반적으로
+유한 또는 무한 사영극한, 특히 섬유곱이나 ``핵'' [2] 등의 형성과도,
+그것들이 존재할 때마다 가환한다. 즉 $X\times X'$가 존재할 때마다
+함자의 동형사상
+\[
+  h_{X\times X'}\xrightarrow{\sim}h_X\times h_{X'}
+\]
+이 있으며, 다시 말해 $Y$에 관하여 함자적인 전단사
+\[
+  h_{X\times X'}(Y)\xrightarrow{\sim}h_X(Y)\times h_{X'}(Y)
+\]
+가 있다. 특히 $\mathcal C$에서 사상
+\[
+  X\times X'\longrightarrow X''
+\]
+을 주는 것(즉 $\mathcal C$에서 $X,X',X''$ 사이의 ``합성법''을 주는 것)은
+사상
+\[
+  h_{X\times X'}=h_X\times h_{X'}\longrightarrow h_{X''}
+\]
+을 주는 것과 동치이다. 다시 말해 각 $Y\in\mathcal C$에 대하여 집합의
+합성법
+\[
+  h_X(Y)\times h_{X'}(Y)\longrightarrow h_{X''}(Y)
+\]
+을 주되, $\mathcal C$의 모든 사상 $Y\longrightarrow Y'$에 대하여 집합
+사상들의 계
+\[
+  h_{X^{(i)}}(Y)\longleftarrow h_{X^{(i)}}(Y')
+  \qquad(\text{$i=0,1,2$에 대하여})
+\]
+가 $Y$와 $Y'$에 대응하는 두 합성법 사이의 사상이 되도록 하는 것과
+동치이다. 이로부터 $\mathcal C$의 대상 $X$ 위의 ``$\mathcal C$-군'',
+``$\mathcal C$-환'' 등의 구조는 다음과 같이 나타내는 것이 이론적으로나
+실제적으로 가장 편리함을 알 수 있다. 각 $Y\in\mathcal C$에 대하여 집합
+$h_X(Y)$ 위에 통상적인 의미의 군의 법칙(각각 환의 법칙 등)이 있고,
+사상 $Y\longrightarrow Y'$에 대응하는 사상
+$h_X(Y)\longleftarrow h_X(Y')$는 군의 준동형(각각 환의 준동형 등)이어야
+한다. 예컨대 이 방법은 임의의 밑준스킴 $S$ 위에서 여러 고전군
+$G_a$, $G_m$, $\operatorname{Gl}(n)$ 등을 정의하고 이 군들 사이의
+고전적인 관계들을 쓰는 데, 준연접층 $\mathcal F$로 정의되는 $S$ 위의
+아핀 스킴 $V(\mathcal F)$에 ``벡터 다발''의 구조를 주는 데, 그리고
+이에 대응하는 여러 깃발 다양체(그라스만 다양체, 사영 다발)를 정의하고
+연구하는 데 가장 직관적이고 편리하다. 일반적 방법의 요지는 표준 함자
+$h$를 이용하여 $\mathcal C$의 대상들을 $\mathcal C$에서 집합의 범주로
+가는 특별한 반변 함자들, 곧 표현 가능한 함자들과 그대로 동일시하는
+것이다.
+
+\src{371}
+
+예를 들어 아핀 스킴의 경우 기하학의 언어에서 가환대수의 언어로
+옮겨가기 위해 필요한 통상적인 화살표 뒤집기 절차는 앞의 고찰을
+쌍대화하게 한다. 특히 $\mathcal C\longrightarrow(\operatorname{Ens})$인
+표현 가능한 공변 함자, 즉
+\[
+  Y\longmapsto\operatorname{Hom}(X,Y)=h'_X(Y)
+\]
+꼴의 함자도 도입하게 한다.
+
+\subsection*{2. 프로-표현 가능한 함자와 프로대상}
+\addcontentsline{toc}{subsection}{2. 프로-표현 가능한 함자와 프로대상}
+
+$\widetilde X=(X_i)_{i\in I}$를 $\mathcal C$의 대상들의 사영계라 하자.
+이에 대응하는 공변 함자는
+\[
+  h'_{\widetilde X}=\varinjlim_i h'_{X_i}
+\]
+이고, 더 구체적으로는
+\[
+  h'_{\widetilde X}(Y)=\varinjlim_i h'_{X_i}(Y)
+  =\varinjlim_i\operatorname{Hom}(X_i,Y)
+\]
+로 주어지는 $\mathcal C$에서 $(\operatorname{Ens})$로 가는 함자이다.
+$I$가 여과될 때 이 꼴의 함자와 동형인 $\mathcal C$에서
+$(\operatorname{Ens})$로 가는 함자를 \emph{프로-표현 가능하다}고 한다.
+앞 절에 따르면 이들은 정확히 표현 가능한 함자들의 여과 귀납극한과
+동형인 함자들이다. $\widetilde X'=(X'_j)_{j\in J}$를 $\mathcal C$의 두
+번째 여과 사영계라 하자. 여기서 $J$는 두 번째 여과된 사전순서
+지표집합이다. 그러면 명제 1.1을 일반화하는 표준 전단사
+\[
+  \operatorname{Hom}(h'_{\widetilde X'},h'_{\widetilde X})
+  =\varprojlim_j\varinjlim_i\operatorname{Hom}(X_i,X'_j)
+\]
+가 있음을 쉽게 확인할 수 있다.
+
+이로써 $\mathcal C$의 프로대상들의 범주
+$\operatorname{Pro}(\mathcal C)$를 도입하게 된다. 그 대상들은
+$\mathcal C$의 대상들의 사영계들이다. 이때 지표집합은 여과된 사전순서
+집합들 사이에서 달라질 수 있다. 이러한 두 대상
+$\widetilde X=(X_i)_{i\in I}$와
+$\widetilde X'=(X'_j)_{j\in J}$에 대하여
+\[
+  \operatorname{ProHom}(\widetilde X,\widetilde X')
+  =\varprojlim_j\varinjlim_i\operatorname{Hom}(X_i,X'_j)
+\]
+로 놓으며, 프로-사상들의 합성은 명백하다. 구성 자체에 따라
+$\widetilde X\longmapsto h'_{\widetilde X}$는 $\widetilde X$에 관한 반변
+함자로 볼 수 있고, $\mathcal C$의 프로대상들의 범주
+$\operatorname{Pro}(\mathcal C)$의 쌍대범주와, $\mathcal C$에서
+$(\operatorname{Ens})$로 가는 프로-표현 가능한 공변 함자들의 범주 사이의
+동치를 준다. 물론 $\mathcal C$의 대상 $X$는 표준적으로 하나의 프로대상을
+정의하며, 이 프로대상도 $X$로 나타낸다.
+
+\src{372}
+따라서 $\mathcal C$는 $\operatorname{Pro}(\mathcal C)$의 충만 부분범주와
+동치이다. 이제 $\widetilde X=(X_i)_{i\in I}$가 $\mathcal C$의 임의의
+프로대상이면, 앞의 동일시 아래에서
+\[
+  \widetilde X=\varprojlim_i X_i
+\]
+이다. 여기서 사영극한은 $\operatorname{Pro}(\mathcal C)$에서 취한다
+($h'_{\widetilde X}=\varinjlim_i h'_{X_i}$이기 때문이다). $X_i$들의
+사영극한이 $\mathcal C$에서 존재하더라도, 일반적으로 이것은
+$\operatorname{Pro}(\mathcal C)$에서의 사영극한 $\widetilde X$와 동형이
+아님에 주의해야 한다. $\mathcal C$가 집합의 범주일 때 이미 이 사실은
+명백하다. 정의 자체에 따라 $\varprojlim_{\mathcal C}X_i=L$이라는 것은
+$Y\in\mathcal C$에 관한 $(\operatorname{Ens})$-값 함자
+\[
+  \varprojlim_i\operatorname{Hom}_{\mathcal C}(Y,X_i)
+  =\operatorname{Hom}_{\operatorname{Pro}(\mathcal C)}(Y,\widetilde X)
+\]
+가 $L$에 의해 표현 가능하다는 조건, 즉
+$\operatorname{Hom}_{\mathcal C}(Y,L)$과 동형이라는 조건으로 정의된다.
+따라서 $\varprojlim_{\mathcal C}X_i$는 이미 프로대상 $\widetilde X$를
+이용하여 정의되며, 정의될 때에는 정확히 말해 $\widetilde X$에
+함자적으로 의존한다. 그러므로 이를
+$\varprojlim_{\mathcal C}(\widetilde X)$로 나타내도 무방하다.
+$\mathcal C$에서 사영극한이 언제나 존재하면
+$\varprojlim_{\mathcal C}(\widetilde X)$는
+$\operatorname{Pro}(\mathcal C)$에서 $\mathcal C$로 가는 함자이고,
+함자들의 표준 준동형
+$\varprojlim_{\mathcal C}(\widetilde X)\longrightarrow\widetilde X$가 있다.
+
+생각을 고정하기 위해 공변이라고 한 임의의 함자
+\[
+  F:\mathcal C\longrightarrow\mathcal C'
+\]
+는 자명한 방식으로 함자
+\[
+  \operatorname{Pro}(F):\operatorname{Pro}(\mathcal C)
+  \longrightarrow\operatorname{Pro}(\mathcal C')
+\]
+로 연장된다. 따라서 $\mathcal C'$에서 사영극한이 언제나 존재하면,
+$F$는 표준적으로 합성함자
+\[
+  \overline F:\operatorname{Pro}(\mathcal C)\longrightarrow\mathcal C',
+  \qquad
+  \overline F=\varprojlim_{\mathcal C'}\circ\operatorname{Pro}(F)
+\]
+도 정의한다. 이 함자는 $\widetilde X=(X_i)_{i\in I}$를
+$\varprojlim_{\mathcal C'}F(X_i)$로 보낸다.
+
+프로대상 $\widetilde X$가, 전이사상 $X_i\longrightarrow X_j$가
+에피사상인 프로대상 $(X_i)_{i\in I}$와 동형이면 이를
+\emph{엄밀한 프로대상}이라 한다. 이러한 대상이 정의하는 함자를
+\emph{엄밀하게 프로-표현 가능하다}고 한다. 이때 $I$가 여과된
+순서집합이라고 더 요구할 수 있고, 모든 에피사상
+$X_i\longrightarrow X'$은 적당한 $j\in I$에 대한 에피사상
+
+\src{373}
+$X_i\longrightarrow X_j$와 동치라고 더 요구할 수 있다. 이 조건으로
+$j$는 유일하게 결정된다. 이 조건들 아래에서 사영계
+$(X_i)_{i\in I}$는 사영계의 통상적인 동형이라는 의미에서 유일한 동형을
+제외하고 결정된다. 따라서 $\operatorname{Pro}(\mathcal C)$에서 엄밀한
+프로대상들 $\widetilde X^{(\alpha)}$의 사영계의 사영극한은 언제나
+존재하며, 위의 $F$, $\overline F$라는 표기 아래에서 다음이 성립한다:
+\[
+  \overline F\left(\varprojlim_\alpha\widetilde X^{(\alpha)}\right)
+  =\varprojlim_{\alpha,\mathcal C'}
+  \overline F\left(\widetilde X^{(\alpha)}\right).
+\]
+특히 $\mathcal C$의 모든 프로대상이 엄밀하면(다음 절 참조), 연장된 함자
+$\overline F$는 사영극한과 가환한다.
+\subsection*{3. 프로표현 가능 함자의 특징짓기}
+\addcontentsline{toc}{subsection}{3. 프로표현 가능 함자의 특징짓기}
+
+유한 사영극한(즉 반드시 여과될 필요는 없는 유한 준순서집합에 관한
+사영극한)이 존재하는 두 범주 $\mathcal C$, $\mathcal C'$을 생각하자. 이는
+유한곱과 유한 섬유곱이 존재한다고 해도 같다(특히 이 조건은 모든 $X$에
+대하여 $\operatorname{Hom}(X,e)$가 한 원소로만 이루어지는 ``오른쪽 단위원
+대상'' $e$가 존재함을 뜻한다). $F$를 $\mathcal C$에서 $\mathcal C'$으로 가는
+공변 함자라 하자. 다음 조건들은 서로 동치이다.
+
+\begin{enumerate}
+\item[(i)] $F$는 유한 사영극한과 교환한다.
+\item[(ii)] $F$는 유한곱 및 유한 섬유곱과 교환한다.
+\item[(iii)] $F$는 유한곱과 교환하고, $\mathcal C$의 모든 완전 도식
+\[
+  X\longrightarrow X'\rightrightarrows X''
+\]
+에 대하여([3], A, 정의 2.1), $F$로 변환한 도식
+\[
+  F(X)\longrightarrow F(X')\rightrightarrows F(X'')
+\]
+도 완전하다.
+\end{enumerate}
+
+이때 $F$를 \emph{왼쪽 완전}이라고 한다.
+
+이제부터는 $\mathcal C$에 유한 사영극한이 존재한다고 가정한다. 그러면
+정의에서 바로, 표현 가능 함자는 왼쪽 완전이고 사영극한으로 넘기면
+프로표현 가능 함자도 왼쪽 완전임을 알 수 있다.
+
+역을 얻기 위하여
+\[
+  F:\mathcal C\longrightarrow(\operatorname{Ens})
+\]
+를 공변 함자라 하고, $X\in\mathcal C$, $\xi\in F(X)$라 하자. 모든
+$X'\in\mathcal C$, $\xi'\in F(X')$ 및 $\xi=F(u)(\xi')$를 만족하는 모든
+엄밀 단사사상([3], A, 2) $u:X'\longrightarrow X$에 대하여 $u$가
+동형사상이면, $\xi$(또는 쌍 \src{374}$(X,\xi)$)를 \emph{극소}라고 한다.
+한편 $\xi\in F(X)$, $\xi''\in F(X'')$일 때, $\xi''=F(v)(\xi)$를 만족하는
+사상 $v:X\longrightarrow X''$가 존재하면 쌍 $(X,\xi)$가 $(X'',\xi'')$을
+\emph{지배한다}고 한다. $\xi$가 극소이고 $F$가 왼쪽 완전이면 이 사상
+$v$는 유일하며, $\xi''$가 극소이면 $v$는 전사이다. 이로부터 다음 명제를
+쉽게 얻는다.
+
+\result{명제}{3.1} $F$가 엄밀하게 프로표현 가능하기 위한 필요충분조건은
+다음 두 조건을 만족하는 것이다.
+\begin{enumerate}
+\item[(i)] $F$는 왼쪽 완전이다.
+\item[(ii)] $\xi\in F(X)$인 모든 쌍 $(X,\xi)$는 어떤 극소 쌍의 지배를
+받는다.
+\end{enumerate}
+
+$\mathcal C$의 모든 대상이 아르틴이면 마지막 조건은 자동으로 성립한다.
+실제로 $\xi$가 어떤 $\xi'\in F(X')$의 상이 되게 하는 $X$의 부분대상
+$X'$ 가운데 극소인 것을 택하면 된다. 따라서 다음을 얻는다.
+
+\result{따름정리}{} 모든 대상이 아르틴이고 유한 사영극한이 존재하는 범주
+$\mathcal C$를 생각하자. 이때 $\mathcal C$에서 $(\operatorname{Ens})$로 가는
+프로표현 가능 함자들은 정확히 왼쪽 완전 함자들이며, 더 나아가 모두
+엄밀하게 프로표현 가능하다.
+
+마지막 사실은 \emph{$\mathcal C$의 모든 프로대상이 엄밀하다}는 뜻이기도
+하다.
+
+\subsection*{4. 예: 갈루아형 군과 프로대수군}
+\addcontentsline{toc}{subsection}{4. 갈루아형 군과 프로대수군}
+
+$\mathcal C$가 통상적인 유한군들의 범주이면 $\operatorname{Pro}(\mathcal C)$는
+콤팩트 완전불연결 위상군들의 범주와 동치이다. 이러한 군들과, 통상적인
+유한군을 주어진 밑준스킴 위의 유한 군 스킴(예를 들어 체 $k$ 위의 유한
+대수군)으로 바꾸어 얻는 일반화들은 준스킴에 대한 절대 및 상대 기본군,
+호모토피군, 호몰로지군의 역할을 하게 될 것이다. 이 모든 예에는 명제
+3.1의 따름정리를 적용할 수 있으며, $\pi_1$은 바로 대응하는 함자를 통해
+정의해야 한다 [2]. 체 위의 대수군 또는 준대수군의 범주(더 일반적으로는
+뇌터 준스킴 위의 그러한 범주)에서 출발해도 마찬가지이며, 이때 Serre의
+``프로대수군''을 얻는다 [4].
+
+\subsection*{5. 예: ``형식적 다양체''}
+\addcontentsline{toc}{subsection}{5. 예: 형식적 다양체}
+
+$\Lambda$를 뇌터 환이라 하고, $\mathcal C$를 유한 생성이고 아르틴인
+$\Lambda$-가군인 $\Lambda$-대수 $A$들의 범주(더 짧게 말하면,
+
+\src{375}
+아르틴 $\Lambda$-대수들의 범주)라 하자. 명제 3.1의 따름정리의 조건들이
+성립한다. 여기서 범주 $\operatorname{Pro}(\mathcal C)$는 $\Lambda$ 위의 위상대수
+$O$ 가운데 $O_i\in\mathcal C$인 대수들의 위상적 사영극한
+\[
+  O=\varprojlim_i O_i
+\]
+과 동형인 것들의 범주와 동치이다. 다시 말해 그 위상은 선형이고 분리이며
+완비이고, $O$의 모든 열린 아이디얼 $J_i$에 대하여 $O/J_i$는 $\Lambda$ 위의
+아르틴 대수이다. 그러한 대수에 대응하는 함자
+$\mathcal C\longrightarrow(\operatorname{Ens})$는 다름 아닌
+\begin{align*}
+  F(A)=h'_O(A)
+  &=\{\text{$O\longrightarrow A$인 위상적 $\Lambda$-대수의 연속 준동형}\}\\
+  &=\varinjlim_i
+    \operatorname{Hom}_{\Lambda\text{-대수}}(O_i,A)
+\end{align*}
+이다.
+
+또한 범주 $\mathcal C$는 본질적으로, $\Lambda$의 극대 아이디얼
+$\mathfrak m$들에 대한 $\Lambda_{\mathfrak m}$의 완비 국소환에 대응하는
+같은 종류의 범주들의 곱이다. 따라서 원한다면 $\Lambda$가 그러한 완비
+국소환인 경우로 한정할 수 있다. 어느 경우든 $O$는 $O$가 정의하는 형식적
+스킴 [2]의 ``점''들에 대응하는 국소 성분들의 위상적 곱으로 정준적으로
+분해된다. 그러한 점은 $K\in\mathcal C$인 어떤 체 $K$에 대한 $F(K)$의 원소
+$\xi$로 정의된다(예를 들어 $K$는 생각하는 국소 성분의 잉여체이다). 두 쌍
+$(\xi,K)$와 $(\xi',K')$가 같은 점을 정의하기 위한 필요충분조건은 동일한
+$(\xi'',K'')$이 두 쌍을 지배하는 것이며, 이는 두 쌍이 동일한
+$(\xi''',K''')$을 지배하는 것과도 같다. (모든 $\Lambda/\mathfrak m$이
+대수적으로 닫혀 있으면 $F(\Lambda/\mathfrak m)$들의 서로소 합집합을
+취하는 것으로 충분하다.)
+
+$\xi\in F(K)$에 대응하는 $O$의 국소 성분 $O_\xi$가 뇌터 환이 되기 위한
+조건을 주는 것이 중요하다. $\Lambda$가 완비 국소환(다시 말하지만
+뇌터 환)일 때, 이는 $O_\xi$가 $\Lambda$ 위의 형식적 멱급수환
+$\Lambda[[t_1,\ldots,t_n]]$의 어떤 몫환과 동형이라고 하는 것과 같다.
+그러한 판정조건을 주기 위하여, 모든 환 $A$에 대해 $A$의 ``쌍대수''의
+$A$-대수 $I_A$를
+\[
+  I_A=A[t]/t^2A[t]
+\]
+로 도입하자. $\varepsilon:I_A\longrightarrow A$를 증대 준동형이라 하자.
+이는 $A\in\mathcal C$일 때 사상
+\[
+  F(\varepsilon):F(I_A)\longrightarrow F(A)
+\]
+
+\src{376}
+을 정의한다. $F$가 왼쪽 완전이라는 사실을 이용하면, $F(I_A)$에서
+``$\xi$로 환원되는'' $\xi'\in F(I_A)$들로 이루어진 부분집합
+\[
+  F(I_A,\xi)=F(\varepsilon)^{-1}(\xi)
+\]
+에 $A$-가군 구조를 내재적으로 정의할 수 있다. $O$로 나타낸 $F$의
+구체적인 꼴을 이용하면 이 $A$-가군은
+\[
+  \operatorname{Hom}_{\Lambda}(\mathfrak m_\xi/\mathfrak m_\xi^2,A)
+\]
+와 동일시된다. 여기서 $\mathfrak m_\xi$는 준동형
+$\xi:O\longrightarrow A$의 핵이며, $A$가 체이면 $O$의 국소 성분
+$O_\xi$의 극대 아이디얼이다. 이로부터 곧바로 다음 명제를 얻는다.
+
+\result{명제}{5.1} $K\in\mathcal C$가 체이고 $\xi\in F(K)$라 하자.
+$\xi$에 대응하는 $O$의 국소 성분 $O_\xi$가 뇌터 환이기 위한
+필요충분조건은 $\xi$로 환원되는 $F(I_K)$의 원소들의 집합
+$F(I_K,\xi)$가 $K$ 위의 유한 차원 벡터공간인 것이다. 이 조건 아래에는
+정준 동형
+\[
+  F(I_K,\xi)=
+  \operatorname{Hom}\!\left(
+    \frac{\mathfrak m_\xi/\mathfrak m_\xi^2}
+         {\operatorname{im}(\mathfrak n_\xi/\mathfrak n_\xi^2)},K
+  \right)
+\]
+이 있다. 여기서 $\mathfrak n_\xi$는 $\Lambda$의 극대 아이디얼, 즉
+$\Lambda\longrightarrow K$의 핵이다.
+\footnote{인쇄본에는 여기서 $\Lambda$가 체일 때에만 옳은 공식이 실려
+있다. 1962년 정오표는 일반적인 경우 $\mathfrak m_\xi/\mathfrak m_\xi^2$를
+$\mathfrak n_\xi/\mathfrak n_\xi^2$의 상으로 나눈 몫을 쓰도록 정정한다.}
+특히 $K$-벡터공간 $F(I_K,\xi)$의 차원은 이렇게 고친 벡터공간의 체
+$O_\xi/\mathfrak m_\xi=K(\xi)$ 위에서의 차원과 같다.
+
+$O_\xi$가 뇌터라고 가정하고, 표기를 간단히 하기 위하여 $\Lambda$가 완비
+국소환이고 $O=O_\xi$라고 가정하자. $O$가 $\Lambda[t_1,\ldots,t_n]$을
+이 환의 한 극대 아이디얼에서 국소화한 것의 완비화 위에서 유한 에탈
+대수이고, 이 극대 아이디얼이 $\Lambda$의 극대 아이디얼을 유도할 때,
+$O$가 \emph{$\Lambda$ 위에서 매끄럽다}고 한다. $O$의 $\Lambda$ 위의 잉여
+확대가 자명하면(예를 들어 $\Lambda$의 잉여체가 대수적으로 닫혀 있으면),
+이는 $O$ 자체가 그러한 형식적 멱급수 대수와 동형이라고 하는 것과 같다.
+\footnote{1962년 정오표는 ``$\Lambda$ 위에서 매끄럽다''는 이 정의가 잉여
+확대 $k'/k$가 분리일 때에만 옳다고 명시하며, 일반적인 경우에는 SGA III,
+1.1을 참조한다.}
+마지막으로 $O$가 반드시 뇌터라고 가정하지 않을 때에도, $O$가 앞의
+의미에서 뇌터이고 $\Lambda$ 위에서 매끄러운 몫 $\Lambda$-대수들의 위상적
+사영극한과 동형이면 $O$가 $\Lambda$ 위에서 매끄럽다고 한다. $\Lambda$와
+$O$가 더 이상 국소라고 가정하지 않는 경우로도 곧바로 일반화할 수 있다.
+이제 다음 명제가 성립한다.
+
+\result{명제}{5.2} $O$가 $\Lambda$ 위에서 매끄럽기 위한 필요충분조건은
+대응하는 함자 $F$가 에피사상을 에피사상으로 보내는 것이다.
+
+이는 $\mathcal C$의 모든 전사 준동형 $A\longrightarrow A'$에 대하여
+$F(A)\longrightarrow F(A')$가 전사라는 뜻이다. 물론 $A$가 국소인 경우,
+그리고 (단계적으로 진행하여) $A\longrightarrow A'$의 핵인 $A$의
+아이디얼이 $A$의 극대 아이디얼에 의해 소멸되는 경우에 이 조건을
+확인하는 것으로 충분하다. 실제로는 함자 $F$를 낳는 상황의 무한소
+불변량들과 관련된 어떤 장애가 0임을 확인하는 문제로 환원되며, 이는
+코호몰로지적 성격의 문제이다.
+
+마지막으로 앞의 맥락에서 \emph{정의환}에 관하여 몇 마디 하자. 계속해서
+$F$를 $\mathcal C$에서 $(\operatorname{Ens})$로 가는 함자라 하고, 위상적
+$\Lambda$-대수 $O$가 $F$를 프로표현한다고 하자. 그러면 모든
+$A\in\mathcal C$와 모든 $\xi\in F(A)$에 대하여, $\xi$가 어떤
+$\xi'\in F(A')$의 상이 되게 하는 $A$의 부분환 $A'$ 가운데 가장 작은 것이
+존재하며, 이때 $\xi'$도 유일하게 정해진다. 실제로 $O$에서 $A$로 가는
+준동형으로 $\xi$를 해석하고, 이 준동형에 의한 $O$의 상을 $A'$로 취하면
+된다. 이때 $A'$를 대상 $\xi\in F(A)$의 정의환이라고 한다.
+$u:A\longrightarrow B$가 대수 준동형이고 $\eta=F(u)(\xi)$이면 $\eta$의
+정의환은 $\xi$의 정의환을 $u$로 보낸 상이다. $\mathcal C$에서
+$(\operatorname{Ens})$로 가는 함자 $F$에서 출발할 때, 정의환의 존재와
+방금 말한 성질들은 약간의 차이를 제외하면 $F$가 프로표현 가능하다는
+사실과 동치이다. 따라서 이 성질들은 대개 결코 자명하지 않다.
+
+\fsection{B}{두 존재정리}
+
+A의 5절의 표기를 유지하고 공변 함자
+\[
+  F:\mathcal C\longrightarrow(\operatorname{Ens})
+\]
+에서 출발하자. $F$가 프로표현 가능하기 위한, 즉 위와 같이 어떤
+$\Lambda$-대수 $O$로 나타낼 수 있기 위한 다루기 쉬운 판정조건을 찾고자
+한다. A, 명제 3.1의 따름정리에 따라 이를 위한 필요충분조건은 $F$가 왼쪽
+완전인 것이다. 현재의 하강 기법으로는([3], p.~9의 질문들 참조) 가장
+중요한 경우에 이 판정조건을 이 꼴로 직접 확인할 수 없으므로, 겉보기에는
+덜 강한 판정조건들이 필요하다.
+
+\result{정리}{1} 함자 $F$가 프로표현 가능하기 위한 필요충분조건은 다음
+두 조건을 만족하는 것이다.
+\begin{enumerate}
+\item[(i)] $F$는 유한곱과 교환한다.
+\item[(ii)] 모든 대수 $A\in\mathcal C$와 모든 준동형
+$A\longrightarrow A'$에 대하여, 도식
+\[
+  A\longrightarrow A'\rightrightarrows A'\otimes_A A'
+\]
+이 완전하면([3], A, 정의 1.2), 변환한 도식
+\[
+  F(A)\longrightarrow F(A')\rightrightarrows F(A'\otimes_A A')
+\]
+
+\src{378}
+도 완전하다.
+\end{enumerate}
+또한 $A$가 국소이고 다음 두 경우 가운데 하나인 때에 (ii)를 확인하는
+것으로 충분하다.
+\begin{enumerate}
+\item[(a)] $A'$는 $A$ 위의 자유 가군이다.
+\item[(b)] 몫가군 $A'/A$는 길이 1인 $A$-가군이다.
+\end{enumerate}
+
+이 정리의 증명은 상당히 섬세하여 여기서는 개요를 제시할 수 없다. 다만
+그 증명이 아르틴 대수의 스펙트럼 안의 동치관계(범주론적 의미에서)에 대한
+연구에 본질적으로 의존함을 지적해 둔다. 이 연구에는 아직도 여러 문제가
+남아 있으며, 이 이론을 더 발전시키려면 그 해결이 꼭 필요한 듯하다.
+
+응용에서 조건 (i)의 확인은 언제나 자명하다. 조건 (ii)의 확인은 두
+부분으로 나뉜다. $A'$가 자유 $A$-가군인 경우는 평탄 사상에 의한 하강
+기법([3], 정리 1, 2, 3)에 속하며 어려움이 없다. 경우 (b)를 다루기
+위해서는 다음 결과를 사용한다.
+
+\result{정리}{2} $A$를 극대 아이디얼 $\mathfrak m$을 갖는 아르틴
+국소환이라 하고, $A'$을 $A$를 포함하는 $A$-대수라 하자. 다음을 가정한다.
+$\mathfrak mA'\subset A$이고 도식
+\[
+  A\longrightarrow A'\rightrightarrows A'\otimes_A A'
+\]
+은 완전하다(특히 $A'/A$가 길이 1인 $A$-가군이면 그러하다).
+$\mathcal F$를 변하는 준스킴 위의 준연접이고 평탄한 층들로 이루어진
+섬유화 범주([3], A, 정의 1.1)라 하자. 그러면 사상
+$\operatorname{Spec}(A')\longrightarrow\operatorname{Spec}(A)$은 엄밀한
+$\mathcal F$-하강 사상이다([3], A, 정의 1.7).
+
+다시 말해 평탄 $A$-가군 $M$을 주는 것은, 평탄 $A'$-가군 $M'$과
+$M'\otimes_AA'$에서 $A'\otimes_AM'$로 가는
+$A'\otimes_AA'$-가군 동형사상 가운데 하강 자료의 통상적인 추이성 조건을
+만족하는 것을 주는 것과 완전히 동치이다(앞에 인용한 곳).
+
+정리 2는 먼저
+\[
+  H^i(A'/A,G_a)=0\qquad\text{$i\geq 1$에 대하여}
+\]
+임을 증명하여 얻는다([3], A, 4(e)). 가정 $\mathfrak mA'\subset A$를
+이용하면 $A$가 체 $k$, 즉 $A/\mathfrak m$인 경우로 쉽게 환원할 수 있다.
+그런 다음 [3], 16쪽에서 언급한 동치들을 적용한다.
+
+\fsection{C}{몇 가지 특수한 경우에의 응용}
+\subsection*{1. 준스킴으로 표현되는 함자에 관한 일반적 고찰}
+\addcontentsline{toc}{subsection}{1. 준스킴으로 표현되는 함자에 관한 일반적 고찰}
+
+$S$를 국소 뇌터 준스킴이라 하자. $S$ 위의 준스킴 $X$가 $S$ 위에서
+\src{379}국소 유한형이라는 것은, $y\in S$로 사영되는 모든 $x\in X$에
+대하여,\footnote{인쇄본에는 여기에서 ``$y\in Y$''라고 되어 있고 이 문단
+끝에서도 다시 $Y$를 쓴다. 고려하는 사상이 $X\longrightarrow S$이므로 두
+곳 모두 $S$로 읽는다.} 환이 $A$인 $y$의 아핀 근방과, 그 위에 놓이며
+환이 $B$인 $x$의 아핀 근방이 존재하여 $B$가 유한형 $A$-대수가 되는
+것을 말한다. 고전적 보편 문제의 해로서 나타나는 중요한 예들 가운데에는
+$S$ 위에서 국소 유한형이지만 $S$ 위에서 유한형은 아닌 준스킴이 많이
+있다. 따라서 곡선의 피카르 스킴을 무한히 많은 연결 성분의 합집합으로
+다룰 수 있어야 한다. 이 연결 성분들을 항등원의 연결 성분, 즉
+``피카르 다양체''와 혼동해서는 안 된다. 그러므로 때로는 $S$ 위에서
+국소 유한형인 준스킴들의 범주 $\mathcal C$ 안에서 반변 함자 $F$의 표현
+가능성을 검토하는 것이 편리하다. 이 강연들의 주된 목적은 이러한 함자
+$F$가 표현 가능한지를 판별하고, 이에 대응하는 $S$-준스킴 $X$의 성질을
+$F$의 성질을 통해 연구하게 해 주는 일반적 기법을 전개하는 데 있다.
+덧붙여 말하면, 이 연구에서는 $S$ 위에서 분리되지 않은 준스킴의
+비병리적인 예들이, 특히 excellent인 $S$-스킴의 ``피카르 준스킴''으로서
+나타난다. 그러므로 스킴이 아닌 준스킴을 대수기하학에서 배제해서는 안 된다.
+
+$X$를 $S$ 위에서 국소 유한형인 준스킴이라 하고,
+\[
+  F(Y)=\operatorname{Hom}_S(Y,X)
+\]
+를 이에 결부된 반변 함자라 하자. $F$를, $S$ 위에서 아르틴이고 유한인
+준스킴 $Y$들로 이루어진 $\mathcal C$의 부분범주 $\mathcal C_0$에
+제한한 함자 $F_0$를 생각할 수 있다. 따라서
+$S=\operatorname{Spec}(\Lambda)$일 때 $\mathcal C_0$는 B에서 다룬
+아르틴 $\Lambda$-대수의 범주의 쌍대범주이다.
+$Y=\operatorname{Spec}(A)$이고 $A$가 아르틴 국소환이면, $Y$는 $S$의
+닫힌점 $s$ 위에 놓인 한 점 $y$로 이루어진다. 이때 $Y$에서 $X$로 가는
+$S$-사상(즉 $F(Y)$의 한 원소)은 $s$ 위에 놓인 점 $x\in X$와
+$\mathcal O_{x,X}$에서 $A$로 가는 $\mathcal O_{s,S}$-준동형을 주는
+것으로 정해진다. 그러한 준동형이 존재하면 $x$는 반드시 $X$의 닫힌점이다
+(그 잉여체가 $s$의 잉여체 위에서 대수적이기 때문이다). 따라서 $F$를
+``아르틴 $\Lambda$-대수''에 제한한 $F_0$는 pro-표현가능하며, 닫힌점
+$s\in S$ 위에 놓인 닫힌점 $x\in X$에서의 $X$의 국소환의 완비화
+$\widehat{\mathcal O}_{x,X}$들을 국소 성분으로 갖는 위상
+$\Lambda$-대수로 표현된다. 이는 $F_0$만 알아도 $X$의 구조, 즉 표시한
+점들에서 그 국소환들의 완비화의 구조에 관한 정확한 정보를 얻는다는 것을
+보여 준다. $S$가
+
+\src{380}
+대수적으로 닫힌 체의 스펙트럼인 경우에도, $\mathcal O_Y$가 멱영원을 가질
+수 있는 ``다양체'' $Y$를 체계적으로 고려하고, 특히 아르틴 국소환의
+스펙트럼을 사용해야만 고전적 보편 문제의 ``올바른 정식화''에 도달하고
+그 ``무한소적'' 측면을 파악할 수 있다는 점에 유의하자.
+
+미리 주어진 함자 $F$가 표현 가능한지를 판정하려 할 때, 정리 1과 2를
+이용하여 $F_0$를 연구하면 거의 완전한 지침을 얻는다. 예를 들어
+$F(I_K,\xi)$라는 집합들의 성질과 그 함자적 거동을 간단히 조사하여
+(A를 보라), 흔히 $F_0$조차 pro-표현가능하지 않음을 알게 되는 경우가
+있다. 이는 지금까지 계수가 $>1$인 벡터다발을 분류하는 모듈라이 다양체를
+다소나마 자연스럽게 정의하려 했던 시도들이 실패한 까닭을 설명한다.
+또는 $F_0$가 분명 표현 가능하지만 벡터 공간 $F(I_K,\xi)$들이 유한
+차원이 아니어서 ``형식적'' 해로 만족해야 하는 경우도 있다. 마지막으로
+$F_0$가 완비 뇌터 국소환들의 곱으로 잘 표현되는 경우가 있다. 이는 $F$
+자체도 표현 가능하리라는 매우 강한 근거를 제공하며, 우리가 뒤에 전개할
+더 대역적인 성격의 유사한 성질들과 결합하면 실제로 그러함을 함의하기에
+충분할 것이다. 끝으로, ``대역적'' 함자 $F$에서 유래하지 않는 $F_0$만
+주어지는 흥미로운 기하 문제들도 나타나며(아래의 문단 4와 5를 보라),
+그 경우에는 $F_0$에 ``형식적 모듈라이 스킴''을 결부시킬 수만 있어도
+만족할 만하다.
+
+이 일반적 고찰을 마치면서, 스킴 이론이 겉보기의 이상 현상을 어떻게
+설명하는지 보자. 예를 들어 이구사 곡면 $V$의 ``피카르 다양체'' $P$는
+한 점으로 이루어져 있지만
+\[
+  H^1(V,\mathcal O_V)\ne 0 ;
+\]
+이다. 이 경우 $P$는 항등군으로 축소되지 않는 ``순수하게 무한소적인''
+군이다. 즉 $P$는 기초체 $k$ 위에서 유한 계수인 국소대수 $O$로 정의되고,
+$P$의 곱셈 구조에 대응하는 대각사상을 갖는다. $\mathfrak m$이 $O$의
+극대 아이디얼이면 $\mathfrak m/\mathfrak m^2$의 쌍대는
+$H^1(V,\mathcal O_V)$와 표준적으로 동형이다(아래의 문단 3을 보라).
+피카르 군이 고전적 의미의 대수군, 즉 기초체 $k$ 위에서 매끄러운 군일
+때에만 $H^1(V,\mathcal O_V)$의 차원(이는 언제나
+$\mathfrak m/\mathfrak m^2$의 차원과 같다)이 피카르 군의 차원과 같다.
+
+\subsection*{2. 스킴 $\underline{\operatorname{Hom}}_S(X,Y)$,
+$\Pi_{X/S}Z$, $\underline{\operatorname{Aut}}_S(X)$ 등}
+\addcontentsline{toc}{subsection}{2. Hom, Pi 및 Aut 스킴}
+
+$X,Y$를 $S$ 위의 두 준스킴이라 하자. $S$ 위의 모든 준스킴 $T$에 대하여
+
+\src{381}
+$X_T=X\times_ST$, $Y_T=Y\times_ST$라 하고, 집합
+\[
+  F(T)=\operatorname{Hom}_T(X_T,Y_T)
+      =\operatorname{Hom}_S(X_T,Y)
+      =\operatorname{Hom}_S(X\times_ST,Y)
+\]
+을 $T$의 반변 함자로 생각하자. 이 함자가 표현 가능하면 이를 표현하는
+$S$ 위의 준스킴을 $\underline{\operatorname{Hom}}_S(X,Y)$로 나타낸다.
+따라서 함자적 동형사상
+\[
+  \operatorname{Hom}_S
+  \bigl(T,\underline{\operatorname{Hom}}_S(X,Y)\bigr)
+  \xrightarrow{\sim}
+  \operatorname{Hom}_S(T\times_SX,Y)
+\]
+이 존재한다. 이 보편 문제로 환원되는 변형은 많다. $S$-준스킴 $X$의
+$S$-자기동형사상들의 준스킴은 군 준스킴이 되고, 한 $S$-군 준스킴에서
+다른 $S$-군 준스킴으로 가는 $S$-준동형사상들의 준스킴은 두 번째 군
+스킴이 가환이면 가환 군 준스킴이 되는 것 등이 그 예이다.
+$S$ 위의 준스킴 $X$ 위에 준스킴 $Z$가 주어졌을 때 함자
+\[
+  F(T)=\operatorname{Hom}_{X_T}(X_T,Z_T)
+\]
+(즉 $X_T$ 위에서 $Z_T$의 ``단면''들의 집합)를 생각함으로써
+$\underline{\operatorname{Hom}}_S(X,Y)$의 정의를 일반화할 수도 있다.
+이 함자가 표현 가능하면 이를 표현하는 $S$-준스킴을 $\Pi_{X/S}Z$로
+나타낸다. 따라서 정의에 의해 함자적 동형사상
+\[
+  \operatorname{Hom}_S(T,\Pi_{X/S}Z)
+  =\operatorname{Hom}_{X_T}(X_T,Z_T)
+\]
+이 존재한다. $Z=Y\times_SX$로 두면
+$\underline{\operatorname{Hom}}_S(X,Y)$를 다시 얻는다. 이 정의들에서
+새로 도입한 준스킴에 관한 자명하지만 유용한 공식 모음이 따라 나온다.
+그 공식들은 곱과 섬유곱이 존재하는 모든 범주에서 성립하므로 여기서는
+제시하지 않겠다. 더 본질적인 것은
+$\underline{\operatorname{Hom}}_S(X,Y)$ 꼴의 스킴이 존재하는가 하는
+문제이다. 먼저 $X$를 고정했을 때, 모든 $S$ 위의 $Y$에 대하여
+$\underline{\operatorname{Hom}}_S(X,Y)$가 존재하려면(또는 모든 $X$
+위의 $Z$에 대하여 $\Pi_{X/S}Z$가 존재하려면) $X$가 $S$ 위에서 평탄해야
+함을 알 수 있다. 더 일반적인 $Y$에 대해 해가 존재하리라고 합리적으로
+기대하려면 $X$가 또한 $S$ 위에서 고유해야 한다고 여겨진다. 더 나아가
+필요한 경우 $Y/S$, 각각 $Z/X$에 ``준사영''과 같은 가정을 두면, 이
+조건들은 $\underline{\operatorname{Hom}}_S(X,Y)$와 $\Pi_{X/S}Z$의
+존재에 충분한 듯하다. 적어도 상당히 많은 경우에는 이를 확인할 수 있다
+(예를 들어 $Y$가 $S$ 위에서 아핀인 경우, 또는 직접적인 초등적 구성에
+의해 $X$가 $S$ 위에서 유한인 경우). 정리 1과 2로부터 다음을 얻는다.
+
+\src{382}
+\result{명제}{2.1} $\Lambda$를 뇌터환, $X$와 $Y$를 $\Lambda$ 위의
+임의의 두 준스킴이라 하고, 아르틴 $\Lambda$-대수들의 범주
+$\mathcal C_0$ 위의 함자
+\[
+  F(A)=\operatorname{Hom}_A(X_A,Y_A)
+\]
+를 생각하자. $X$가 $\Lambda$ 위에서 평탄하면 이 함자는
+pro-표현가능하다.
+
+또한 모든 $A\in\mathcal C_0$와 $\xi\in F(A)$에 대하여 표준 동형사상
+\[
+  F(I_A,\xi)=H^0\!\left(
+    X_A,
+    \underline{\operatorname{Hom}}_{\mathcal O_{X_A}}
+    \bigl(\xi^*(\Omega^1_{Y_A/A}),\mathcal O_{X_A}\bigr)
+  \right)
+\]
+이 존재한다. 여기서 $\Omega^1_{Y_A/A}$는 $A$에 대한 $Y_A$의 카엘러
+$1$-미분들의 층이다. $A$를 체로 두고 A.5.1과 [2]의 유한성 정리를
+사용하면 다음 따름정리를 얻는다.
+
+\result{따름정리}{} $X$가 $S$ 위에서 평탄하고 고유이며, $Y$가 $S$
+위에서 국소 유한형이라고 하자. 그러면 $F$는 pro-표현가능하고, 이에
+대응하는 위상 $\Lambda$-대수의 국소 성분들은 뇌터환이다.
+
+\result{주석}{} 이 절에서 다룬 문제들과 그 밖의 많은 문제들은 고전
+대수기하학에서 흔히 사영공간 안의 순환의 ``차우 좌표''를 이용하여
+연구되었다. 차우 좌표를 쓰면 이 순환들을 적절한 사영 다양체의 점으로
+볼 수 있었다. 그러나 이 방법과 일반적으로 차우 좌표를 사용하는 방법은
+스킴의 관점에서는 돌이킬 수 없을 만큼 불충분해 보인다. 매개변수
+다양체에서 멱영원을 소거하므로 특히 순환의 무한소 변동을 제대로
+연구하는 데 맞지 않으며, 사영공간에 의존하는 비내재적 성격도 지니기
+때문이다. 유감스럽게도 많은 대수기하학자가 다양체의 족이나 순환의 족을
+연구할 때 차우 좌표라는 언어만 사용했다. 분명한 기술적 가치가 있었지만
+(아마 일시적인 가치였겠지만), 이는 이러한 개념들을 명료하게 하는 데
+심각한 장애가 되었던 듯하다. 스킴 이론에서 차우 다양체에 대응하는
+대상을 얻으려면 다음 보편 문제에 이른다. $X$를 $S$ 위의 준스킴이라
+하자. 모든 $S$ 위의 준스킴 $T$에 대하여, $T$ 위에서 평탄한
+$X_T=X\times_ST$의 닫힌 부분준스킴들의 집합을 $F(T)$라 한다. 이
+$T$의 함자를 $S$ 위의 준스킴으로 표현하려 한다. 더 일반적으로 $X$ 위의
+준연접층 $G$를 주고, $T$ 위에서 평탄한 $G_T$의 몫층들의 집합을
+$F(T)$로 둘 수 있다.
+
+\src{383}
+$S$가 국소 뇌터이고 $X$가 $S$ 위에서 고유이며 $G$가 연접이면, 이
+문제에는 $S$ 위에서 국소 유한형인 스킴 $C$로 주어지는 해가 존재하는
+듯하다. 아무튼 $S$가 국소 뇌터라는 가정만으로도 $F$를 ``아르틴
+$S$-대수''에 제한한 함자는 pro-표현가능하다. 더 나아가 $X$가 $S$
+위에서 고유이고 $G$가 연접이면, 이에 대응하는 위상환 $O$의 국소 성분은
+뇌터환이다. 물론 $S$ 위에서 $X$의 ``차우 스킴''이 존재함을 증명한
+뒤에도, 이를 서로소 열린집합 $C_i$들로 분해해야 한다. 이 $C_i$들은
+변동하는 순환의 차수와 차원 같은 연속 불변량을 고정하는 데 대응하며,
+$S$ 위에서 단지 국소 유한형일 뿐 아니라 유한형이어야 한다. 또한 이
+스킴과 고전적 차우 다양체 사이의 관계를 밝히고, 언제 $C_i$가 $S$ 위에서
+사영이거나 적어도 준사영인지도 밝혀야 한다.\footnote{1962년의 정오표에
+따르면 사영인 경우는 힐베르트 스킴(TDTE IV)에 의해 완전히 해결된다.
+반면 나가타와 히로나카의 예들은 사영성 가정이 없으면 비특이 완비
+3차원 다양체의 0차원 부분다양체에 대해서조차 이러한 함자들이 표현
+가능하지 않을 수 있음을 보여 준다. 이 현상은 대칭제곱이 존재하지 않을
+가능성과 관련된다.}
+\subsection*{3. 피카르 스킴}
+\addcontentsline{toc}{subsection}{3. 피카르 스킴}
+
+$f:X\longrightarrow S$를 $S$-준스킴이라 하자.\footnote{더 완전한 연구에
+대해서는 1962년 정오표가 TDTE V를 참조하도록 한다.} $X$의 구조층의
+가역원들로 이루어진 곱셈층 $\mathcal O_X^*$과 군
+\[
+  P(X/S)=H^0\bigl(S,R^1f_*(\mathcal O_X^*)\bigr)
+\]
+을 생각하자. 이를 $X/S$의 상대 피카르 군이라 한다. 따라서 이 군의 한
+원소는 $S$의 열린 덮개 $(U_i)$와 각 $f^{-1}(U_i)$ 위의 가역층 $L_i$를
+주되, 모든 쌍 $(i,j)$에 대하여
+$L_i|f^{-1}(U_i\cap U_j)$와 $L_j|f^{-1}(U_i\cap U_j)$가 적어도
+$U_i\cap U_j$ 위에서 국소적으로 동형이 되도록 함으로써 정의된다(즉 이
+두 층은 [3], B, 4의 의미에서 ``동치''이다). $X/S$가 단면을 가지면
+$P(X/S)$는 다름 아닌 $X$ 위의 가역층들을 이 ``동치''로 나눈 동치류들의
+집합이다(
+\textit{loco citato}). 이제 $S$ 위의 모든 $T$에 대하여
+\[
+  F(T)=P(X_T/T)
+\]
+로 놓자. 그러면 $T$에 대한 반변 함자를 얻으며, 이를 $X/S$의 피카르
+함자라 부를 수 있다. 이 함자가 표현 가능하면, 이를 표현하는 $S$ 위의
+준스킴을 $X/S$의 피카르 준스킴이라 부르고 $\underline P(X/S)$로 나타낸다.
+따라서 함자들의 동형사상
+\[
+  \operatorname{Hom}_S\bigl(T,\underline P(X/S)\bigr)
+  \xrightarrow{\sim}P(X_T/T)
+\]
+을 갖는다. 피카르 준스킴을 만드는 과정은 밑변경과 양립한다. 특히 $S$
+위의 $X$의 섬유들에 대한 피카르 준스킴들(이는 $s\in S$의 잉여체
+$K(s)$ 위의 준스킴이다)은 $\underline P(X/S)$의 섬유들이다. 물론
+$P(X_T/T)=F(T)$가 가환군이므로 피카르 준스킴들은 군 준스킴이다. 또한
+특이점을 가질 수 있는 완비 곡선의 피카르 스킴에서 항등원을 포함하는 연결
+성분은 다름 아닌 로젠리히트의 일반화 야코비안이다. 따라서 존재가 증명되고
+나면 그 성질 대부분은 명백해질 것이다.
+
+\result{비고}{} 여기서 채택한 정의는 $S$의 모든 점\footnote{인쇄본에는
+``$Y$''라고 되어 있으나, 여기서는 밑 $Y$가 정의되지 않았고 이 조건은 밑
+$S$에 관한 것이다.}이 열린 근방 $U$를 가져 그 위에서 $X$가 단면을 갖는
+경우에만 타당하다. 일반적인 경우에도 존재정리를 얻으려면 피카르 함자의
+정의를 조금 수정해야 한다.
+
+여기서 피카르 준스킴이 존재할 법한 조건들은 다음과 같다. $X$는 $S$
+위에서 고유이고 평탄하며, $f_*(\mathcal O_X)=\mathcal O_S$이고, $X$는
+$S$ 위에서 국소적으로 단면을 갖는다. 마지막 조건은 하강 기법을 적용할 때
+자연스럽게 나타난다. 즉 $X$ 위의 가역층 $L$에 단면 $s$ 위에서 표시된
+단면을 갖추어 그 자기동형들을 제거한다([3], B, 4). 특히 다음을 얻는다.
+
+\src{384}
+\result{명제}{3.1} $S=\operatorname{Spec}(\Lambda)$이고 $\Lambda$가
+뇌터 환이라고 하자. $X$가 $S$ 위에서 평탄이며, $S$ 위의 모든 유한형
+$T$에 대하여
+\[
+  f_{T*}(\mathcal O_{X_T})=\mathcal O_T
+\]
+라고 가정하자($f$가 고유이고 분리가능이거나,\footnote{1962년 정오표는
+``$f$가 고유이고 분리가능이다''라는 가정을 명시적으로 요구한다.} $S$가
+한 체의 스펙트럼이면, K\"unneth 정리에 의해 마지막 조건은
+$f_*(\mathcal O_X)=\mathcal O_S$와 동치이다). 그러면 아르틴
+$\Lambda$-대수들의 범주 위에서 $X/S$의 피카르 함자는 pro-표현 가능하다.
+
+더 나아가 여기서는
+\[
+  F(I_A,\xi)=H^1(X_A,\mathcal O_{X_A})
+\]
+이고, 특히 다음이 성립한다.
+
+\result{따름정리}{} $X$가 $S$ 위에서 고유이면, 피카르 함자에 대응하는
+위상적 $\Lambda$-대수 $O$의 국소 성분들은 뇌터이다.
+
+\result{비고}{} 이 번호의 정의와 결과는 $X$ 위의 주다발들의 분류로
+일반화할 수 있다. 여기서 구조군은 $S$ 위에서 아핀이고 평탄인 가환 군
+스킴 $G$이다. $G$가 가환이 아니면 주다발에 딸린 수반 군다발(그 단면들은
+주다발의 자기동형들이다)이 더는 자명하지 않으므로, 명제 3.1은 진술된
+그대로는 성립하지 않는다. 그러나 보편 문제를 수정하여 여전히 해를 얻을
+수 있다(적어도 현재로서는 형식기하에서). 이 번호와 뒤따르는 번호들의
+맥락에서, 그리고 동형까지밖에 정의되지 않는 대상들의 부류에 대한
+``모듈라이 스킴''을 찾을 때마다 기억해야 할 황금률은 언제나 다음과 같다.
+분류하려는 대상에 있을 수 있는 자기동형들을, 필요하다면 보조 구조(표시된
+점이나 표시된 단면의 원소, 미분형식의 고정 등)를 도입하여 제거하되, 그
+구조는 원래 문제를 본질적으로 바꾸지 않을 만큼 무해하게 택한다.
+
+\subsection*{4. 다양체의 형식적 모듈라이}
+\addcontentsline{toc}{subsection}{4. 다양체의 형식적 모듈라이}
+
+$\Lambda$를 잉여체가 $k$인 뇌터 국소환이라 하고(대부분의 경우
+$\Lambda$는 $k$ 또는 Cohen의 $p$-환이다), $X_0$를 $k$ 위의 준스킴이라
+하자. 모든 아르틴 국소 $\Lambda$-대수 $A$에 대하여, $A$ 위에서 평탄인
+$A$-준스킴 $X$ 가운데 다음 동형사상을 갖춘 것들의 동형류 집합을 $F(A)$라
+하자.
+\[
+  (*)\qquad
+  X\otimes_A\kappa(A)\xleftarrow{\sim}
+  X_0\otimes_k\kappa(A),
+\]
+여기서 $\kappa(A)$는 $A$의 잉여체이다. 물론 이러한 평탄
+$A$-준스킴들 사이의 동형사상은 구조의 일부로 주어진 위 동형사상을
+보존해야 한다. $A$가 반드시 국소일 필요는 없는 아르틴
+$\Lambda$-대수이고 그 국소 성분들이 $A_i$이면, $F(A)$를 $F(A_i)$들의
+곱으로 잡는다. 이로써 $F$는 $A$에 대한 곱을 보존하는 함자가 되며, 이를
+$X_0$(및 $\Lambda$)의 모듈라이 함자라 부를 수 있다. 이 함자가 표현
+가능하면 잉여체가 $k$인 국소 위상적 $\Lambda$-대수 $O$가 이에 대응하며,
+$O$의 형식적 스펙트럼을 $X_0$(및 $\Lambda$)의 형식적 모듈라이 스킴이라
+한다. 이 개념에 관한 몇 가지 자세한 내용은 [2]를 보라.
+
+여기서 하강 기법을 적용할 때 $X_0$의 ``유한'' 자기동형들은 무해하다.
+이들은 $A$-준스킴 $X$가 앞에서 정한 의미의 자기동형을 갖는지 여부에
+영향을 주지 않기 때문이다. $A$가 체인 경우가 아니면, $X$가 비자명한
+$A$-자기동형을 갖지 않기 위한 필요충분조건은
+\[
+  H^0(X_0,\Theta_{X_0/k})=0
+\]
+이다. 여기서 $\Theta_{X_0/k}$는 $X_0$의 $k$-미분들로 이루어진 층(즉
+접다발)을 나타낸다. 또한 적어도 $X_0$가 $k$ 위에서 매끄러우면 다음을
+쉽게 얻는다.
+\[
+  F(I_A,\xi)=H^1(X_A,\Theta_{X_A/A}).
+\]
+그러므로 평소와 같이 다음을 결론 내린다.
+
+\src{386}
+\result{명제}{4.1} $H^0(X_0,\Theta_{X_0/k})=0$이라고 가정하자. 그러면
+$X_0$의 형식적 모듈라이 스킴이 존재한다. 더 나아가 $X_0$가 $k$ 위에서
+고유이면 이 형식적 모듈라이 스킴은 뇌터이다.
+
+\result{비고}{} 1\textsuperscript{o} $X_0$가 $k$ 위에서 매끄럽다고
+가정하지 않으면, $F(I_A,\xi)$는 다음 $A$-가군의 한 부분가군과 동일시된다.
+\[
+  \operatorname{Ext}^1_{\mathcal O_{P_A}}
+  \bigl(P_A;\mathcal I_{X_A},\mathcal O_{X_A}\bigr),
+\]
+여기서 $P_A=X_A\times_\Lambda X_A$로 놓고, 대각 사상
+$X_A\longrightarrow P_A$를 통해 $\mathcal O_{X_A}$를 $P_A$ 위의
+연접층으로 보며, $\mathcal I_{X_A}$는 이 대각 사상이 정의하는 $P_A$
+위의 연접 아이디얼층을 나타낸다. 더 정확히 말하면, 호흐실트 이론을
+간단히 전역화하여 위의 $\operatorname{Ext}^1$을 다음 데이터와 함께 주어진
+$X_A$ 위의 평탄한 $I_A$-대수층 $\mathcal O$들의 동형류 집합과 동일시할
+수 있다.
+\[
+  \mathcal O\otimes_{I_A}A\longrightarrow\mathcal O_{X_A}
+\]
+이 사상은 증대 동형사상이다(여기서 $I_A=A[t]/(t^2)$로 놓음을 상기하자).
+부분가군 $F(I_A,\xi)$는 가환 대수층들에 대응하는 것이다. 따라서 [2]가
+시사했던 것과 달리 매끄러움 가정들은 모듈라이 이론에서 본질적이지 않다.
+
+2\textsuperscript{o} 특히 $k$ 위에서 매끄럽고 고유인 모든 대수곡선
+$X_0$는 $\Lambda$ 위에서 매끄러운 형식적 모듈라이 스킴을 갖는다는 것을
+상기하자(
+\textit{loco citato}). 그 상대 차원은 종수 $g$가 $\geq2$이면 $3g-3$이고,
+$g=0$ 또는 $1$이면 $g$이다. 뒤의 두 경우는 더는 명제 4.1에 직접
+포함되지 않는다. 그러나 타원곡선($g=1$)의 경우에는 뒤따르는 고찰을
+이용하여 이 명제로 환원할 수 있을 것이다.
+
+물론 여러 구조를 갖춘 $k$ 위의 스킴들의 계를 생각하면 명제 4.1을 마음껏
+변형할 수 있다. 예를 들어 $X_0$가 표시된 원점을 갖는 $k$ 위의 아벨
+스킴이라고 하자(즉 $X_0$를 $k$ 위의 군 스킴으로 본다). $A$ 위의 아벨
+스킴들(즉 $A$ 위에서 고유이고 매끄러운 군 스킴들) 가운데 아벨 스킴의
+동형사상 $(*)$를 갖춘 것들의 동형류 집합을 $F(A)$라 하자. 곱셈 구조를
+부과하면(심지어 ``단위원 단면''만 부과해도) 무한소 자기동형들이 제거되고,
+따라서 완비 뇌터 국소환 $O$에 대응하는 형식적 모듈라이 스킴이 존재함을
+확인할 수 있다. 더 나아가 $S$를 국소 뇌터 준스킴이라 하고, $X$를
+``절대 연결''인 섬유들을 갖는 $S$ 위의 고유 매끄러운 스킴이라 하자.
+$X$ 위의 곱셈 구조가 단위원 단면을 가지면, 적어도 한 섬유 위에서 결합적이고
+가환이며 $S$가 연결인 한, 그 구조는 반드시 결합적이고 가환이다. 또한 그
+구조는
+
+\src{387}
+단위원 단면만 알면 유일하게 결정된다. 더 나아가 $S$가 잉여체 $k$를 갖는
+아르틴 국소환 $A$의 스펙트럼이고, $X$가 $A$ 위에서 고유이며 단면 $s$를
+갖는다고 하자. 끝으로 $X\otimes_Ak$가 $k$ 위의 아벨 스킴 구조를 가지며,
+그 항등원은 $s$에 대응하는 $X\otimes_Ak$의 점이라고 하자. 간단한 장애
+계산과 세르에게서 비롯된 논증을 함께 쓰면, $s$를 단위원 단면으로 갖는
+곱셈 구조가 실제로 $X$ 위에 존재함을 증명할 수 있다. (여기서 출발하여,
+$A$가 완비 뇌터 국소환인 경우로 넘어가기 위해 [2]의 ``존재정리''를 쓰고
+일반적인 경우에는 [3]의 하강 기법을 쓰면, 연결인 모든 국소 뇌터 $S$에
+대해 같은 명제를 증명할 수 있다.) 이는 여기서 생각한 함자 $F(A)$가 이
+번호의 처음에서 $X_0$ 위의 곱셈 구조를 잊고 정의한 대응하는 함자와
+동형임을 증명한다. 특히 $\mathfrak m$이 $O$의 극대 아이디얼이면
+$\mathfrak m/\mathfrak m^2$은 $H^1(X_0,\Theta_{X_0/k})$의 쌍대와
+표준적으로 동형이며, 따라서 그 차원은 $n^2$이다. 여기서
+$n=\dim X_0$이다. $O$가 실제로 $\Lambda$ 위에서 매끄러운지, 즉
+$\Lambda$ 위의 $n^2$개 미정원에 대한 형식적 멱급수 대수와 동형인지
+밝히는 것은 매우 흥미로울 것이다. 제1절 명제 5.2를 이용하면 이 문제를
+주어진 아벨 스킴으로 환원되는 아벨 스킴들의 존재 문제와 동치인 형태로
+진술할 수 있다. 어쨌든 초월적 방법을 쓰면 $k$의 표수가 0일 때 답이
+긍정적임을 알 수 있다. 표수가 $p\ne0$이면 $\Lambda$가 대수적으로 닫힌
+체 $k$의 비트 벡터 환인 경우만 다루면 충분함은 명백하다. 이제야말로
+``그린버그 함자''가 그 진가를 보일 때인지도 모른다\ldots\footnote{1962년
+정오표는 한 체 위의 아벨 다양체의 형식적 모듈라이 스킴이 비트 벡터 환 위에서
+매끄럽다고 밝힌다. 즉 아르틴 국소 몫환 위의 모든 아벨 스킴은 그 몫환을
+낳는 환으로 올려진다. 증명은 강연 182, p.~12에서 도입한 올림의 장애류가
+변하는 방식을 사용한다. 또한 종수 $g$인 곡선과 편극된 아벨 스킴에 대한
+Mumford의 구성들도 상기시킨다(cf. SHMT).}
+\subsection*{5. 피복의 연장}
+\addcontentsline{toc}{subsection}{5. 피복의 연장}
+
+$\mathfrak X$를 뇌터 형식적 준스킴 [2]라 하고, $U$를 $\mathfrak X$의
+열린 부분이라 하자. $U$는 $\mathcal O_{\mathfrak X}$의 한 단면이
+``소멸하지 않음''으로 국소적으로 정의되며, 이 단면은 $\mathfrak X$ 위에서뿐
+아니라 모든 $X_n$ 위에서도 영인자가 아니다.\footnote{이 명확화는 1962년의
+정오표가 요구한 것이다.} 따라서 $U$는 충분히 커서, 열린집합 $V$ 위의
+$\mathcal O_{\mathfrak X}$의 단면이 $U\cap V$에서 영이면 그 단면 자체가
+영이다. $\mathcal J$를 $\mathfrak X$의 ``정의 아이디얼층''이라 하고
+\[
+  X_n=(\mathfrak X,\mathcal O_{\mathfrak X}/\mathcal J^{n+1})
+\]
+이라 놓자. 그러면 이는 통상적인 뇌터 준스킴이다. 이제
+$\mathfrak X',\mathfrak X''$을 $\mathfrak X$의 두 평탄 피복, 즉 연접이고
+가군층으로서 국소 자유인 대수층으로 정의되는 $\mathfrak X$ 위의 두
+준스킴이라 하고, 이들이 $U$ 위에서 비분기라고 하자. 그러면 자명한 사상
+\[
+  \operatorname{Hom}_{\mathfrak X}(\mathfrak X',\mathfrak X'')
+  \longrightarrow
+  \operatorname{Hom}_{X_0}(X'_0,X''_0)
+\]
+은 단사이다. 특히 $X'_0$ 위에 항등을 유도하는 $\mathfrak X'$의
+자동사상은 항등사상이다. 이로써 이 상황에 하강 기법을 적용할 수 있다.
+특히 $U_0$ 위에서 비분기인 $X_0$의 평탄 피복 $X'_0$에서 출발하자.
+
+\src{388}
+$G(\mathfrak X)$를 $X_0$ 위에 $X'_0$를 유도하는(따라서 필연적으로
+$U$ 위에서 비분기인) $\mathfrak X$의 평탄 피복 $\mathfrak X'$의 동형류
+전체로 두되, 여기서 동형은 $X'_0$ 위에 항등을 유도하는 것으로 한다.
+$\mathfrak X$의 모든 열린 부분 $V$에 대하여 $G(V)$를 같은 방식으로
+정의하고, 더 일반적으로 $\mathfrak X$ 위의 모든 형식적 준스킴
+$\mathfrak Y$에 대하여 $G(\mathfrak Y)$를 정의한다. 그러면 [2]와 [3]의
+결과들로부터 우선 다음 결과들이 따른다.
+
+\noindent a. $V$가 $\mathfrak X$의 열린집합들을 달릴 때 $G(V)$들은
+$\mathfrak X$ 위의 층을 이루며, 이를 $G_{\mathfrak X}=G$라 쓴다. 이 층을
+$U$에 제한하면 각 섬유가 한 원소로만 이루어진 상수층이다.
+
+더 일반적으로 $G_{\mathfrak X}$의 섬유를 결정하는 문제는 완비 국소환의
+문제이다. 정확히 말하면 다음과 같다.
+
+\noindent b. 모든 $x\in\mathfrak X$에 대하여
+\[
+  G_x=G\bigl(\operatorname{Spec}(\mathcal O_{\mathfrak X,x})\bigr)
+  \subset
+  G\bigl(\operatorname{Spec}(\widehat{\mathcal O}_{\mathfrak X,x})\bigr),
+\]
+이다. (오른쪽 항은 $\widehat{\mathcal O}_{\mathfrak X,x}$ 위의 유한 자유
+대수 $B$ 가운데
+$B\otimes_{\widehat{\mathcal O}_{\mathfrak X,x}}\mathcal O_{X_0,x}$와
+$\widehat{\mathcal O}'_{0x}$ 사이의 동형사상이 주어진 것들의 동형류이며,
+여기서 $\mathcal O'_0$는 $X'_0$를 정의하는 $X_0$ 위의 대수층이다.)
+\footnote{인쇄된 식은 $G_x$를 완비된 항과 직접 동일시하고
+$\mathcal O'_{0x}$ 위의 모자를 빠뜨렸다. 이 포함관계와 완비화는 1962년
+정오표가 규정한 것이다.}
+
+\noindent c. 다음 정준 동형사상이 있다.
+\[
+  G_{\mathfrak X}=\varprojlim_nG_{X_n} ;
+\]
+다시 말해 $\mathfrak X$의 모든 열린집합 $V$에 대하여
+\[
+  G(V)=\varprojlim_nG(V_n).
+\]
+
+\noindent d. $\mathfrak X$가 정의 아이디얼 $\mathfrak m$을 갖는 완비
+뇌터 국소환 $\Lambda$ 위의 통상적인 고유 스킴 $X$로부터 얻어진다고 하자.
+구체적으로 $\mathcal J=\mathfrak m\mathcal O_X$라 놓고
+$\mathcal O_X$의 $\mathcal J$-아딕 완비화를 취한다고 하자. 그러면
+$G(\mathfrak X)$는 ``$X'_0$로 환원되는'' 통상적인 스킴 $X$의 평탄
+피복들의 동형류 전체와 정준적으로 동형이다.
+
+비유적으로 말하면, (a)와 (b)는 이 문제의 국소적 측면과 대역적 측면 사이의
+근본 관계를 확립하고, (c)는 ``유한한'' 측면과 ``무한소적'' 측면 사이의
+관계를 주며, 마지막으로 (d)는 명시된 조건 아래에서 ``형식적'' 측면과
+``대수적'' 측면이 동일함을 상기시킨다.
+
+이제 $\mathfrak X$가 완비 뇌터 국소환 $\Lambda$ 위에서 정의되고
+$\mathcal J=\mathfrak m\mathcal O_{\mathfrak X}$라고 하자. 따라서 $X_0$는
+$\Lambda/\mathfrak m$ 위의 준스킴이다. $A$가 $\Lambda$-가군으로 유한
+생성인 모든 $\Lambda$-대수일 때
+\[
+  F(A)=G(\mathfrak X\times_\Lambda A)
+\]
+라 놓자. 여기서 표시는 문자 그대로 $A/\mathfrak mA$ 위에서가 아니라,
+축소 대수 $A_{\mathrm{red}}$로 밑변경한 뒤에 취한다. 이는 $A$에 관한
+공변 함자로서 집합의 범주에 값을 가진다. (c)에 따르면 이 함자는 아르틴
+$A$들에 대해서만 알면 완전히 알 수 있다. 또한 이 함자가 pro-표현 가능하다고
+말하는 것, 즉
+\[
+  F(A)=\operatorname{Hom}_{\Lambda\text{-algèbres top.}}(O,A)
+\]
+
+\src{389}
+꼴이라고 말하는 것은, $O$가 A의 5절에서 고찰한 유형의 위상
+$\Lambda$-대수인 경우나 $A$를 아르틴 대수들로 제한한 경우나 마찬가지이다.
+따라서 정리 1과 정리 2를 함께 적용하면 실제로 다음을 얻는다.
+
+\result{명제}{5.1} 이 함자가 분류하는 모든 아르틴 족이 그 계수 대수 위에서
+평탄하고, 선택한 열린집합이 관련 밑변경 뒤에도 스킴론적으로 조밀하다고 하자.
+그러면 앞의 함자는 pro-표현 가능하다.
+
+물론 (a)에 따라 $U=\mathfrak X$이면 $\mathfrak X$ 위의 모든
+$\mathfrak Y$에 대하여 $G(\mathfrak Y)$는 한 원소로만 이루어지고, 이때
+함자 $F$는 별다른 흥미가 없다($O=\Lambda$이다). 사실상 그 밖의 거의 모든
+경우에는 위상 국소환 $O$가 뇌터가 아닌 듯하다. 그럼에도 그 존재는 해들의
+집합 $G(\mathfrak X)$가 갖는 ``연속적'' 성격을 두드러지게 드러낸다. 이는
+직관적으로 $X'_0$를 연장할 때 분기가 전파되는 방식을 ``연속적으로'' 선택할
+수 있다는 사실에 대응한다. 이 결과를 국소 유체론에서 J.-P. Serre [4]가
+취한 관점과 비교해 볼 수 있다. 그 관점 역시 ``기하적'' 국소체의 극대 아벨
+확대가 갖는 위상 갈루아군의 연속적 성격을 드러내며, 그 쌍대군은
+(Pontrjagin의 의미에서) 대수군들(또는 적어도 준대수군들)의 귀납극한으로
+나타난다. 여기에서도 확대들의 분류는 무한 차원의 ``다양체들''로 주어진다.
+더욱이 위에서 $\mathfrak X$를 완비 국소환의 형식적 스펙트럼으로 취할 수
+있으며, 이때 $\Lambda$는 예를 들어 그 환의 Cohen 부분환으로 취할 수 있다.
+그리고 이 절의 결과들을 차원이 $>1$인 완비 국소환의 확대를 연구하는 데
+사용할 수 있으리라 기대할 수 있다. 국소적인 경우와 대역적인 경우 모두에서,
+이 결과들은 고차 분기 현상과 표수 영에서의 현상(초월적 방법으로 다룰 수
+있는 현상) 사이의 정확한 관계를 정식화하게 해 줄지도 모른다. 어쨌든 [2]에서
+기본군을 연구하기 위해 설명한 방법을 ``순분기''인 경우로 확장하고, 초월적
+방법으로 ``세 점 문제''를 해결할 수 있게 하는 것은 바로 명제 5.1에 앞선
+분석이다.
+
+끝으로 $X_0$의 차원이 1이면 상황이 단순해짐을 지적하자. 이때 (a)를 점을
+뺀 완비 국소 스킴에서의 형식적 붙이기로 보충하면
+\[
+  G(\mathfrak X)\simeq
+  \prod_iG\bigl(\operatorname{Spec}(\widehat{\mathcal O}_{\mathfrak X,x_i})\bigr),
+\]
+이며, 여기서 $x_i$들은 $X_0-U$의 점들이다. 즉 분기점들에서의 ``국소''
+확대들은 임의로 주어도 된다. $X_0$의 정규성만으로는 5.1의 형식적 모듈라이
+스킴이 $\operatorname{Spec}(\Lambda)$ 위에서 매끄럽게 되지 않는다. 인쇄된
+마지막 명제는 일반적으로 거짓이다.
+
+\src{390}
+\begin{center}
+  \textbf{참고문헌}
+\end{center}
+
+\begin{description}
+  \item[{[1]}] Grothendieck (Alexander). --- \emph{Sur quelques points
+    d'algèbre homologique}, Tohoku Math. J., t. 9, 1957, p. 119--221.
+  \item[{[2]}] Grothendieck (Alexander). --- \emph{Géométrie formelle et
+    géométrie algébrique}, Séminaire Bourbaki, t. 11, 1958/59, fasc. 3,
+    n\textsuperscript{o} 182.
+  \item[{[3]}] Grothendieck (Alexander). --- \emph{Technique de descente et
+    théorèmes d'existence en géométrie algébrique, I : Généralités, Descente
+    par morphismes fidèlement plats}, Séminaire Bourbaki, t. 12, 1959/60,
+    fasc. 1, n\textsuperscript{o} 190.
+  \item[{[4]}] Serre (Jean-Pierre). --- \emph{Corps locaux et isogénies},
+    Séminaire Bourbaki, t. 11, 1958/59, fasc. 3, n\textsuperscript{o} 185.
+\end{description}
+
+\par\smallskip
+\begingroup\footnotesize
+
+
+\noindent\textit{2.1의 인쇄본은 접공간 공식에 $H^1$을 쓰지만, 고정된 사상의 일차 변동은 전역 도함수들, 즉 $H^0$로 주어진다. 5.1에는 계수 대수 위의 평탄성과 관련 밑변경 뒤의 스킴론적 조밀성이 필요하다. 함자의 표시는 $A/\mathfrak mA$가 아니라 축소 계수 대수 $A_{\mathrm{red}}$로 밑변경한 뒤에 취한다.}\par
+\noindent\textit{$X_0$의 정규성만으로 형식적 모듈라이 스킴의 매끄러움이 따르지는 않는다. 일차원 경우의 완비 국소 곱 분해에는 층 성질 (a)와 점을 뺀 완비 국소 스킴에서의 형식적 붙이기가 필요하다. 정오표에서 (b)의 완비화 등식은 포함관계로 약화되므로, (a)와 (b)만으로는 그 전사성을 얻을 수 없다.}\par
+\endgroup

@@ -1,0 +1,35 @@
+from audit_utils import *
+
+for tree,layer in [('fr_printed','French as printed'),('fr','French corrected')]:
+ rel=f'sources/{tree}/fr/195.tex'
+ def r(a,b,line,kind='reading',why='',count=1):
+  replace(rel,a,b,layer,'195-378',line,'B.1–2 / C.1','400-dpi full scan and all three enlarged bands. '+why,kind,count=count)
+ r('et quand de plus on est','et quand de plus, on est','opening continuation',why='Printed comma after de plus.')
+ r(r'\item[(a)]',r'\item[a.]','first alternative label',why='Printed a followed by a period.')
+ r(r'\item[(b)] le module',r'\item[b.] Le module','second alternative label and initial',why='Printed b followed by a period and capital Le.')
+ r('un module libre sur','un module \\uline{libre} sur','first alternative emphasis',why='Only libre is underlined.')
+ r("de longueur 1.\n\\end{enumerate}","de \\uline{longueur} 1.\n\\end{enumerate}",'second alternative emphasis',why='Only longueur is underlined; the small detached mark after the period is treated as ink.')
+ r("relations d'équivalence (au sens", "\\uline{relations d'équivalence} (au sens",'proof announcement emphasis',why='Printed underline.')
+ r("le spectre d'une algèbre\nartinienne (étude", "le \\uline{spectre d'une algèbre artinienne}, (étude",'proof announcement emphasis and comma',why='The underline starts at spectre and a comma precedes the parenthesis.')
+ r('technique de descente par morphismes plats ([3],','\\uline{technique de descente par morphismes plats} ([3],','flat descent emphasis',why='Printed underline.')
+ r("et que\n\\[\n  A\\longrightarrow A'\\rightrightarrows A'\\otimes_A A'\n\\]\nsoit exact", "et que $A\\longrightarrow A'\\rightrightarrows A'\\otimes_A A'$ soit \\uline{exact}",'Theorem 2 exactness diagram',kind='structure',why='The diagram is inline in the print; exact alone is underlined.')
+ r('([3], A, définition 1.1)','([3] A, définition 1, 1)','fibered-category reference',why='No comma after [3]; comma-numbered definition.')
+ r(r'un morphisme de $\mathcal F$-descente strict ([3], A, définition 1.7).',r'un \uline{morphisme de} $\mathcal F$-\uline{descente strict} ([3] A, définition 1, 7).','Theorem 2 conclusion',why='Printed selective underline and exact reference punctuation.')
+ r(r'i\geq 1',r'i\geqslant 1','cohomology range',why='The scan uses a slanted lower stroke.')
+ r('([3], A, 4(e)),','([3] A, 4. e.),','cohomology reference',why='Literal printed reference punctuation.')
+ r('un corps $k$','un corps $\\mathfrak k$','residue-field letter',why='The handwritten letter has the upright Gothic form of k; retained provisionally for recurrent-letter review.')
+ r('dans [3], page 16.','dans [3], page 16,','final proof-reference punctuation',why='A descending comma is printed after 16; retained in both layers.')
+ r(r'\fsection{C}{Applications à quelques cas particuliers}',r'\fsection{\normalfont C}{\normalfont\uline{Applications à quelques cas particuliers}.}','section C heading',why='Roman underlined title with final period.')
+ r(r'\subsection*{1. Remarques générales sur les foncteurs représentés par des pré-schémas}',r'\subsection*{\normalfont 1. \uline{Remarques générales sur les foncteurs représentés par des pré-schémas}.}','subsection heading',why='Roman underlined title with final period.')
+ upright_page(rel,layer,'195-378')
+
+event('195-B1-sufficiency','carried as background without fault found','The continuation explicitly says that the proof of the criterion cannot be sketched here. Necessity was checked on page 377. Sufficiency and the reduction to the two local cases are retained as the announced pro-representability theorem; this run has not reconstructed the required analysis of equivalence relations on Artinian spectra. No claim of a completed proof is made. Finite free nonzero extensions in case a are faithfully flat, which explains their connection to the preceding descent results.','195, pp. 377–378, Theorem 1 and its two special cases')
+event('195-B2-Amitsur','targeted proof check','Write B=A-prime and m=rad(A). Since mB is contained in A and is nilpotent, it is contained in m; the reverse inclusion gives mB=m. Thus m is an ideal of both rings and k=A/m embeds into B/m. For every tensor power B tensor_A ... tensor_A B, reduction modulo m has kernel exactly the embedded copy of m: a coefficient in m can be moved through the tensor factors and multiplied in m, and multiplication of all factors proves injectivity of that copy. The augmented Amitsur complex therefore fits into a short exact sequence with the constant-m complex (alternating differentials zero and identity) and the augmented Amitsur complex of the nonzero k-algebra B/m. The latter is contracted by a k-linear map B/m to k taking 1 to 1. Both outer complexes are exact, so the full augmented complex is exact. This proves the stated positive-degree additive cohomology vanishing and also the equalizer assertion under mB contained in A. If B/A has A-length one, m annihilates it, giving that hypothesis. The coefficient field letter is typographically provisional, not a change of mathematics.','195, p. 378, Theorem 2 and its cohomology proof sketch')
+event('195-B2-flat-descent','carried as background without fault found','The additive acyclicity step is proved in the separate event. Passing from that statement to effective descent for all flat modules uses the equivalences invoked in expose 190 and a nilpotent lifting argument; the full categorical equivalence, including arbitrary module ranks, is retained as background rather than asserted to have been completely reconstructed here. The printed tensor orientations M-prime tensor_A A-prime and A-prime tensor_A M-prime are consistent with the two projections and the usual cocycle condition.','195, p. 378, Theorem 2, equivalent module formulation and final reference')
+record_page('195',378,r'''Compared sources/fr_printed/fr/195.tex entry lines 452–505 and sources/fr/fr/195.tex entry lines 453–506 with scan leaf 11 at 400 dpi, full page and all three enlarged bands. Read both alternatives, the inline exactness diagram, every tensor base and prime in the descent isomorphism, the cohomology range, reference punctuation and both headings.
+
+Both layers restore the roman letter labels and capital Le, selective underlining, commas, inline diagram, literal reference punctuation, slanted inequality, roman underlined headings and upright mathematical letters. The handwritten residue-field k is provisionally Gothic for recurrent-letter comparison. The comma after page 16 is retained as printed. No mathematical difference between the French layers was introduced.
+
+The omitted proof of the main criterion and its special-case reduction remain explicitly identified background. Checked faithful flatness in the finite free case and proved the additive Amitsur acyclicity in Theorem 2 by reduction modulo the common maximal ideal. The full flat-module descent equivalence remains separately identified background, with tensor orientations checked.''')
+from update_record_counts import update
+update()

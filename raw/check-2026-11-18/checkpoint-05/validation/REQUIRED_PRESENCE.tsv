@@ -1,0 +1,22 @@
+item	kind	status
+sources	required deliverable	present
+pdf	required deliverable	present
+scripts	required deliverable	present
+CORRECTIONS.tsv	required deliverable	present
+CHECK_RECORD.md	required deliverable	present
+CHECK_EVENTS.tsv	required deliverable	present
+PDF_CHECK.md	required deliverable	present
+NOTES.md	required deliverable	present
+README.md	required deliverable	present
+progress.log	required deliverable	present
+sources/fr/fr/main.tex	layer entry point	present
+sources/fr_printed/fr/main.tex	layer entry point	present
+sources/en/en/main.tex	layer entry point	present
+sources/es/es/FGA_ES_CURRENT.tex	layer entry point	present
+sources/es_149_printed/es/FGA_ES_149_PRINTED.tex	layer entry point	present
+sources/pt-BR/pt_BR/FGA_PTBR_CURRENT.tex	layer entry point	present
+sources/pt-BR_printed/pt_BR/FGA_PTBR_PRINTED.tex	layer entry point	present
+sources/vi/FGA_vi_current.tex	layer entry point	present
+sources/vi_diplomatic/FGA_vi_diplomatic.tex	layer entry point	present
+sources/ko/main.tex	layer entry point	present
+sources/zh-Hans/source/zh/main.tex	layer entry point	present

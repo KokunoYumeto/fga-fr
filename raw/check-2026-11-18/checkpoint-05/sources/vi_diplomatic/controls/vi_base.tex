@@ -1,0 +1,53 @@
+\usepackage[a4paper,inner=28mm,outer=25mm,top=25mm,bottom=28mm,marginparwidth=15mm]{geometry}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{TeX Gyre Cursor}
+\usepackage{polyglossia}
+\setdefaultlanguage{vietnamese}
+\usepackage{microtype}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
+\usepackage{bookmark}
+\usepackage{hyperref}
+\hypersetup{hidelinks,unicode=true,hypertexnames=false}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\numberwithin{equation}{section}
+
+\newcommand{\src}[1]{%
+  \phantomsection\hypertarget{src:\fgasourceid:#1}{}%
+  \marginpar{\raggedleft\footnotesize\sffamily #1}%
+}
+\newcommand{\fgasourceid}{unset}
+\newcommand{\sid}[1]{\gdef\fgasourceid{#1}\phantomsection\hypertarget{fga:#1}{}}
+\newcommand{\Osh}{\underline{O}}
+\newcommand{\Zsh}{\underline{\mathbf Z}}
+\newcommand{\Ccat}{\mathcal C}
+\newcommand{\Homsh}{\underline{\operatorname{Hom}}}
+\newcommand{\Extsh}{\underline{\operatorname{Ext}}}
+\newcommand{\hsh}{\underline{h}}
+\newcommand{\fquote}[1]{\textquotedbl#1\textquotedbl}
+\newcommand{\seminar}[1]{%
+  \begin{flushleft}\sffamily HỘI THẢO BOURBAKI\\#1\end{flushleft}%
+}
+\newcommand{\paperhead}[2]{%
+  \begin{center}
+    {\Large\bfseries #1\par}
+    \vspace{0.6\baselineskip}
+    #2
+  \end{center}
+  \vspace{0.8\baselineskip}
+}
+\newcommand{\unit}[1]{%
+  \chapter{#1}%
+  \markboth{#1}{#1}%
+}
+\newcommand{\fsection}[2]{%
+  \section*{#1. #2}%
+  \addcontentsline{toc}{section}{#1. #2}%
+}

@@ -1,0 +1,928 @@
+\unit{Exposé 212 -- Quotient preschemes}
+\sid{212}
+\src{99}
+\seminar{13th year, 1960/61, no. 212\\February 1961}
+\paperhead{CONSTRUCTION TECHNIQUES AND EXISTENCE THEOREMS IN ALGEBRAIC GEOMETRY\\
+III. QUOTIENT PRESCHEMES}%
+  {by Alexander GROTHENDIECK}
+
+\subsection*{Introduction}
+\addcontentsline{toc}{subsection}{Introduction}
+
+The problems treated in the present exposé differ from those considered in
+the preceding two in that one seeks to represent certain covariant, rather
+than contravariant, functors of variable schemes. The procedure of passing to
+a quotient is nevertheless essential in many construction problems in
+algebraic geometry, including those of Exposés I and II ([1], [2]). Thus the
+question of the \emph{effectivity of descent data} on a $T$-prescheme $X$,
+relative to a faithfully flat and quasi-compact morphism
+$T\longrightarrow S$, is equivalent to the question of the existence of a
+quotient of $X$ (satisfying the reasonable properties examined below) by the
+flat equivalence relation in $X$ defined by the descent data; the questions
+raised in [1], A, \S~2 c will no doubt be resolved at the same time as the
+questions posed in paragraph 2 of the present exposé. Likewise, the
+\emph{Picard scheme} of an $S$-scheme $X$ (for the definition, see [2], C,
+\S~3) may be defined in various ways as a quotient of certain other schemes
+(of positive divisors, or of immersions into a projective scheme) by flat
+equivalence relations, while the definition and construction of these
+auxiliary schemes is technically simpler: they are schemes of the form
+$\underline{\operatorname{Hom}}_S(X,Y)$ and variants defined in [2], C,
+\S~2, whose construction will be the subject of the next exposé (under
+suitable projectivity hypotheses). Combining the results of the present
+exposé and the next therefore yields the construction of Picard schemes under
+suitable hypotheses.
+
+The problem of passing to a quotient in the category of preschemes still
+presents several unresolved questions. The most important is mentioned in
+paragraph 8. It is at present the sole obstacle to the construction of
+\emph{moduli schemes over the integers for curves of arbitrary genus,
+polarized abelian varieties}, etc. This shows that its solution merits the
+efforts of specialists in algebraic groups.
+
+\src{100}
+\subsection*{1. Equivalence relations and effective equivalence relations}
+\addcontentsline{toc}{subsection}{1. Equivalence relations and effective equivalence relations}
+
+Let $\mathcal C$ be a category and let $X$ be an object of $\mathcal C$. A
+pair of morphisms
+\[
+  p_1,p_2:R\rightrightarrows X
+\]
+is called an \emph{equivalence pair} in $\mathcal C$, with \emph{target} $X$
+and \emph{source} $R$, if for every object $T$ of $\mathcal C$ the two
+corresponding maps
+\[
+  p_1(T),p_2(T):R(T)\rightrightarrows X(T)
+\]
+(where, for every object $Y$ of $\mathcal C$, we put
+$Y(T)=\operatorname{Hom}(T,Y)$) define a map
+\[
+  R(T)\longrightarrow X(T)\times X(T)
+\]
+that induces a bijection from $R(T)$ onto the graph of an equivalence relation
+on the set $X(T)$. There is an evident equivalence relation among the
+equivalence pairs with target $X$; an equivalence class for this latter
+relation is called a \emph{$\mathcal C$-equivalence relation on $X$}, or
+simply an equivalence relation when no confusion can result.
+
+If $X\times X$ exists, giving an equivalence relation on $X$ is equivalent to
+giving a subobject $R$ of $X\times X$ such that, for every object $T$ of
+$\mathcal C$, the subset of
+\[
+  (X\times X)(T)=X(T)\times X(T)
+\]
+corresponding to $R(T)$ is the graph of an equivalence relation on $X(T)$.
+Writing $p_1$ and $p_2$ for the morphisms from $R$ to $X$ induced by the
+projections $\operatorname{pr}_1$ and $\operatorname{pr}_2$, the preceding
+condition says that $(p_1,p_2)$ is an equivalence pair. One may also express
+diagrammatically in $\mathcal C$ (provided that $X\times X$ and the fiber
+product $(R,p_2)\times_X(R,p_1)$ exist) the set-theoretic axioms of an
+equivalence relation for the $R(T)$ in the $X(T)$, in accordance with the
+general principle explained in [2], A, \S~1. We shall not need this.
+
+Whenever there is a pair of morphisms $(p_1,p_2)$ with the same source $R$ and
+the same target $X$, one may define the \emph{cokernel} of the pair as the
+object $Y$ of $\mathcal C$ that represents the functor covariant in $Z$
+\[
+  \operatorname{Hom}_{p_1,p_2}(X,Z),
+\]
+the set of morphisms $u$ from $X$ to $Z$ such that $up_1=up_2$. If $Y$
+exists, it is determined up to a unique isomorphism. We denote it by
+$X/(p_1,p_2)$ or, by abuse of notation, by $X/R$, the latter notation being
+used chiefly when
+\src{101}$(p_1,p_2)$ is an equivalence pair: it is then customary to identify
+in the notation the equivalence relation defined by the pair with $R$. Notice
+that if $Y$ is regarded as a quotient of $X$, it in fact depends only on the
+equivalence relation defined by the pair $(p_1,p_2)$.
+
+Now start with a morphism
+\[
+  f:X\longrightarrow Y,
+\]
+which allows us to regard $X$ as an ``object over $Y$'', and suppose that the
+fiber product
+\[
+  R(f)=X\times_Y X
+\]
+exists. Let $p_1$ and $p_2$ be its two projections. Then $(p_1,p_2)$ is an
+equivalence pair, called the pair \emph{associated} with the morphism $f$. It
+therefore defines an equivalence relation, called the relation associated with
+$f$.
+
+A pair of morphisms $(p_1,p_2)$ with target $X$ and common source $R$ is
+called an \emph{effective equivalence pair} if
+\begin{enumerate}
+  \item[(i)] the cokernel $X/(p_1,p_2)=Y$ exists;
+  \item[(ii)] the fiber product $X\times_Y X$ exists;
+  \item[(iii)] the morphism $R\longrightarrow X\times_Y X$ with components $p_1$
+  and $p_2$ is an isomorphism.
+\end{enumerate}
+Then $(p_1,p_2)$ is indeed an equivalence pair. The equivalence relation it
+defines is also called an \emph{effective equivalence relation}.
+
+A morphism $f:X\longrightarrow Y$ is called an \emph{effective epimorphism}
+if
+\begin{enumerate}
+  \item[(i)] the fiber product $X\times_Y X=R$ exists;
+  \item[(ii)] the quotient $X/(p_1,p_2)$ exists, where $p_1$ and $p_2$ are the two
+  projections from $R$ to $X$;
+  \item[(iii)] the morphism $X/(p_1,p_2)\longrightarrow Y$ induced by $f$ is an
+  isomorphism.
+\end{enumerate}
+Then $f$ is indeed an epimorphism, and even a strict epimorphism (see [1], A,
+\S~2.3); the converse holds if the fiber product $X\times_Y X$ exists. The
+quotient object of $X$ defined by the epimorphism $f$ is also called an
+\emph{effective quotient} of $X$.
+
+The preceding definitions imply the following ``Galois correspondence'':
+
+\src{102}
+\result{PROPOSITION}{1.1} There is a one-to-one correspondence, preserving
+the natural orders, between the set of effective equivalence relations $R$ on
+$X$ and the set of effective quotients $Y$ of $X$: to $R$ corresponds the
+effective quotient $X/R$, and to $Y$ corresponds the effective equivalence
+relation defined by the canonical projection $X\longrightarrow Y$ (which is
+defined by the fiber product $X\times_Y X$ equipped with its two projections).
+
+In very good categories (sets, sheaves of sets, etc.), every quotient is
+effective and every equivalence relation is effective. This is no longer so
+in categories such as the category of preschemes over a fixed prescheme $S$,
+even when $S$ is the spectrum of a field, and even when one restricts to
+schemes finite over $S$. Questions of effectivity, and even (for preschemes
+not finite over $S$) questions of the existence of quotients, most often prove
+delicate.
+
+\subsection*{2. Example: preschemes finite over $S$}
+\addcontentsline{toc}{subsection}{2. Example: preschemes finite over S}
+
+Let $\mathcal C$ be the category of preschemes finite over $S$, where $S$ is
+assumed locally Noetherian. It is equivalent to the opposite of the category
+of coherent sheaves of commutative algebras on $S$, or, when $S$ is affine
+with ring $A$, to the opposite of the category of $A$-algebras finite over
+$A$ (i.e. finitely generated as $A$-modules). It follows at once that finite
+projective limits and finite inductive limits exist in $\mathcal C$. This is
+well known (without any finiteness hypothesis\ldots) for the former. Thus the
+fiber product of preschemes $X,Y$ over $S$ corresponds to the tensor product
+$B\otimes_A C$ of the corresponding algebras; the kernel of two morphisms
+$X\rightrightarrows Y$, defined by two homomorphisms of $A$-algebras
+$u,v:C\rightrightarrows B$, corresponds to the quotient of $B$ by the ideal
+generated by the elements $u(c)-v(c)$, etc. For finite inductive limits it is
+enough to consider, on the one hand, finite sums, which correspond to the
+ordinary product of $A$-algebras, and, on the other hand, cokernels of pairs of
+morphisms $X\rightrightarrows Y$, which correspond (as one sees immediately)
+to the subring of $C$ consisting of the elements on which the homomorphisms
+$u,v:C\rightrightarrows B$ coincide (this subring is finite over $A$ by the
+Noetherian hypothesis). One may moreover show, using the Noetherian
+hypothesis, that the finite inductive limits, and in particular the quotients,
+so constructed in the category $\mathcal C$ of preschemes finite over $S$ are
+in fact quotients in the category of \emph{all} preschemes.
+
+\src{103}
+As we said in [1], there are non-effective epimorphisms in $\mathcal C$ (or
+non-strict epimorphisms\footnote{The printed text omits ``non'' before
+``strict''. In the category under consideration fiber products exist, and the
+preceding paragraph establishes precisely the equivalence between effectivity
+and strict epimorphy.}; this is the same thing since fiber products exist).
+\emph{I do not know whether equivalence relations are always effective} when
+no flatness hypothesis is imposed. In this direction I have obtained only very
+partial positive results, indispensable for the proof of the fundamental
+theorem in the formal theory of modules (see [2], B, th. 1). Let us point out
+that in the problem posed it is easy to reduce to the case where $S$ is the
+spectrum of a local Artinian ring $A$ with algebraically closed residue field.
+But even if $A$ is a field, the answer is not known.
+
+One may also consider a prescheme $X$ over $S$ that is no longer assumed
+finite over $S$, but with an equivalence relation $R$ on $X$ such that
+$p_1:R\longrightarrow X$ is a finite morphism. Then $R$ is called a finite
+equivalence relation. Suppose for simplicity that $S$ and $X$ are affine (and
+hence $R$ is affine, so that the situation reduces to one of pure commutative
+algebra). \emph{Even in this case it is not known whether a quotient $X/R=Y$
+exists and whether the canonical morphism $X\longrightarrow Y$ is finite}.
+(The simplest case is that in which $S$ is the spectrum of a field $k$ and
+$X$ is the spectrum of $k[t]$, i.e. the affine line.) Of course, if the two
+preceding problems have affirmative solutions, one may conclude in the present
+situation that $R$ is effective. Notice that the problem of the
+\emph{existence} of a quotient $Y$ and the finiteness of
+$f:X\longrightarrow Y$ arises in exactly the same terms if, instead of the
+graph of an equivalence relation on $X$, one has only an equivalence pregraph
+on $X$ in the sense of paragraph 4.
+
+The question of passing to the quotient by a more or less arbitrary finite
+equivalence relation arises in constructing preschemes by ``gluing'' given
+preschemes $X_i$ along certain closed subpreschemes; the gluing law is
+expressed precisely by a finite equivalence relation on the sum prescheme $X$
+of the $X_i$. One should also expect the solution of the problems posed here,
+and of various variants, to be a preliminary condition for developing a
+general technique of nonprojective constructions in the direction initiated
+in [2].
+
+The only general positive fact known to the author is the following:
+
+\result{PROPOSITION}{2.1} Let $S$ be a locally Noetherian prescheme, let $s$
+be a point of $S$, and let $\Omega$ be an algebraically closed extension of
+$k(s)$. Consider the
+\src{104}corresponding ``fiber functor'' $F$, which assigns to every $S$-scheme
+$X$ finite over $S$ the set of $\Omega$-valued points of $X_s$. This functor
+(trivially left exact) is \emph{right exact}, i.e. it commutes with finite
+inductive limits, and in particular with cokernels of pairs of morphisms.
+
+Using this result for all the ``geometric points'' of $S$, one deduces that
+the ``quotient'' category $\mathcal C'$ of $\mathcal C$, obtained by reasoning
+``modulo surjective radicial morphisms'' (i.e. by formally adjoining inverses
+to the morphisms in question), is a ``geometric'' category, i.e. it satisfies
+the same properties ``of finite nature'' as the category of sets. In
+particular, every equivalence relation in it is effective. This implies that
+if $R$ is an equivalence relation on an $X$ finite over $S$, then the canonical
+morphism
+\[
+  R\longrightarrow X\times_Y X\qquad (\text{where }Y=X/R)
+\]
+is \emph{radicial and surjective} (in fact a surjective closed immersion,
+since it is a monomorphism).
+
+\subsection*{3. The case of an operator group}
+\addcontentsline{toc}{subsection}{3. The case of an operator group}
+
+Assume again that $\mathcal C$ is an arbitrary category. Let $G,X$ be objects
+of $\mathcal C$, and suppose that $G$ is a $\mathcal C$-operator group on the
+object $X$ of $\mathcal C$. This means (see [2], A, \S~1) that for every
+object $T$ of $\mathcal C$ a group structure has been given on $G(T)$ and a
+$G(T)$-set structure on $X(T)$, in such a way that as $T$ varies the
+structures in question ``vary functorially'' with $T$. If the products
+$G\times G$ and $G\times X$ exist in $\mathcal C$, such a structure may also
+be defined as a pair of morphisms
+\[
+  G\times G\longrightarrow G,
+  \qquad \pi:G\times X\longrightarrow X,
+\]
+subject to the condition that for every object $T$ of $\mathcal C$, the
+corresponding laws of composition on the sets $G(T)$ and $X(T)$ make $G(T)$ a
+group acting on $X(T)$. Translating this axiom into the commutativity of
+certain diagrams in $\mathcal C$ is easy but tedious, and in fact completely
+useless in every case known to me.
+
+Suppose that $G\times X$ exists, and consider the two morphisms
+\[
+  p_1,p_2:G\times X\rightrightarrows X
+\]
+with
+\src{105}
+\[
+  p_1=\operatorname{pr}_2,\qquad p_2=\pi.
+\]
+One sees immediately that $(p_1,p_2)$ is an equivalence pair if and only if,
+for every object $T$ of $\mathcal C$, the map
+\[
+  G(T)\times X(T)\simeq(G\times X)(T)
+  \longrightarrow X(T)\times X(T),
+\]
+defined by this pair is injective, i.e. if the group $G(T)$ acts
+\emph{freely} on the set $X(T)$, that is, if $g\in G(T)$, $x\in X(T)$, and
+$g\cdot x=x$ imply that $g$ is the identity element of $G(T)$. One then says
+that $G$ \emph{acts freely on $X$} (or that $X$ is a
+\emph{$\mathcal C$-principal space under $G$}). The equivalence relation
+associated with the pair $(p_1,p_2)$ is then called the \emph{equivalence
+relation defined by the group $G$ acting freely on $X$}. If $X\times X$ also
+exists and one considers the morphism
+\[
+  p:G\times X\longrightarrow X\times X
+\]
+defined by the pair $(p_1,p_2)$, the condition that $G$ act freely means that
+$p$ is a \emph{monomorphism}.
+
+Of course, even when $G$ does not act freely on $X$, one wants criteria for
+the existence of a quotient of $X$ by $G$, i.e. of the cokernel of the
+preceding pair $(p_1,p_2)$.
+
+The cokernel in question will often be denoted by $X/G$, or preferably by
+$G\backslash X$ if $G$ acts on the left (the former notation being reserved
+for the case in which $G$ acts on the right). Notice that even when the
+``image'' of $G\times X$ under $p$ exists (this image being defined, for
+example, as the smallest subobject of $X\times X$ through which $p$ factors),
+say $R$, it is most often not an equivalence relation on $X$. If one then
+tries to pass directly to the quotient by $R$ (or more precisely by the pair
+of morphisms from $R$ to $X$ induced by the two projections
+$\operatorname{pr}_i$), one irretrievably loses the special features of the
+original pair $(p_1,p_2)$. It is therefore important to find a generalization
+of the notion of equivalence relation that applies directly to the pair
+defined by a $\mathcal C$-operator group.
+
+\subsection*{4. Pre-equivalence relations}
+\addcontentsline{toc}{subsection}{4. Pre-equivalence relations}
+
+Recall that a category in which every morphism is an isomorphism is called a
+\emph{groupoid}. On the other hand, a category must be defined as consisting
+of two underlying sets $(X,R)$, the set of \emph{objects} and the set of
+\emph{arrows}, equipped with the following structures:
+\src{106}
+\begin{enumerate}
+\item[(i)] A pair of maps
+\[
+  p_1,p_2:R\rightrightarrows X
+\]
+called the \emph{source map} and the \emph{target map},
+
+\item[(ii)] A map
+\[
+  \pi:(R,p_2)\times_X(R,p_1)\longrightarrow R
+\]
+called the \emph{composition map}.
+\end{enumerate}
+These data must satisfy familiar axioms, which we shall not repeat here and
+which could be expressed by the commutativity of certain diagrams, together
+with the existence of a map $D:X\to R$ (necessarily unique) making two other
+diagrams commute. The map $D$ sends an object to its corresponding identity
+arrow and satisfies
+\[
+  p_1D=p_2D=\operatorname{id}_X.
+\]
+To say that the category is a groupoid then means that there exists a map
+\[
+  s:R\longrightarrow R
+\]
+(necessarily unique), called the \emph{inversion} of $R$, which transforms
+each arrow into an inverse arrow. This could be expressed by the commutativity
+of four further diagrams formed from $s$, $\Delta$, and the preceding data;
+the first two are
+\[
+  p_1s=p_2,\qquad p_2s=p_1.
+\]
+
+With these points recalled, the general definitions in ([2], A, \S~1) show,
+in particular, what is meant by a structure of a $\mathcal C$-\emph{category},
+respectively a $\mathcal C$-\emph{groupoid}, on a pair of objects $X,R$ of an
+arbitrary category $\mathcal C$: by definition, it is the datum, for every
+object $T$ of $\mathcal C$, of a category structure, respectively a groupoid
+structure, in the set-theoretic sense whose set of objects is $X(T)$ and whose
+set of arrows is $R(T)$, these structures ``varying functorially'' with the
+variable $T$. This therefore gives two morphisms
+\[
+  p_1,p_2:R\rightrightarrows X
+\]
+called the \emph{source morphism} and the \emph{target morphism}, and, when
+the required fiber product exists, a morphism
+\src{107}
+\[
+  \pi:(R,p_2)\times_X(R,p_1)\longrightarrow R
+\]
+called the \emph{composition morphism}. These three data then suffice to
+determine the category structure on $X,R$, the axiom imposed on them being as
+follows: for every $T$, the three corresponding data for $X(T),R(T)$ define a
+category structure (respectively a groupoid structure) on this pair of sets.
+When appropriate, this may be expressed by the commutativity of certain
+diagrams involving a uniquely determined morphism
+\[
+  D:X\longrightarrow R
+\]
+and, in the case of groupoids, a uniquely determined morphism
+\[
+  s:R\longrightarrow R;
+\]
+the diagrams are written out just as in the ``set-theoretic'' case. This
+laborious interpretation of the axioms is fortunately useless in practice.
+The sole theoretical interest of being able to express the data and axioms in
+terms of morphisms and equalities of morphisms between certain fiber products
+is the following: if $F:\mathcal C\to\mathcal C'$ is a left exact functor
+(i.e. one commuting with finite products and fiber products), then it
+transforms a $\mathcal C$-category (respectively a $\mathcal C$-groupoid) into
+a $\mathcal C'$-category (respectively a $\mathcal C'$-groupoid), provided
+finite products and fiber products exist in $\mathcal C$.
+
+In practice, it is important to know how to interpret the morphisms
+$p_1,p_2,\pi,D,s$ as \emph{simplicial operations} in a suitable semisimplicial
+or simplicial object of $\mathcal C$, at least when fiber products exist in
+$\mathcal C$. To fix terminology, let us introduce the \emph{category
+$\mathcal S$ of standard simplices} as the category whose objects are the
+finite sets of the form
+\[
+  \Delta_n=[0,n],\qquad\text{where }n\geq 0
+\]
+(the interval of integers from $0$ to $n$), and whose morphisms or arrows are
+\emph{arbitrary maps} between these finite sets. Notice that the category
+$\mathcal S$ is equivalent to the category of \emph{nonempty} finite sets,
+with maps of finite sets as morphisms. In $\mathcal S$, the coproduct of a
+finite \emph{nonempty} family of objects clearly exists, as does the pushout
+of two objects under a third (the operation dual to the fiber product). Let
+$\mathcal S'$ denote the subcategory of $\mathcal S$ having the same objects
+but whose morphisms are the \emph{increasing maps} between the $\Delta_n$.
+This category is equivalent to the category of nonempty totally ordered
+finite sets. In this category the
+\src{108}
+coproduct of two objects never exists, and the pushout of two objects $A,B$
+under a third $C$ does not exist in general (take, for example,
+$C=\Delta_0$, $A=B=\Delta_1$, with the two structure maps $u:C\to A$ and
+$v:C\to B$ equal). It does exist in certain cases, however; for example,
+\[
+  C=\Delta_0,\qquad A=\Delta_m,\qquad B=\Delta_n,\qquad
+  u(0)=m,\qquad v(0)=0,
+\]
+and in this case
+\[
+  \Delta_m\amalg_{\Delta_0}\Delta_n=\Delta_{m+n}.
+\]
+
+A \emph{simplicial object} (respectively a \emph{semisimplicial object}) in a
+category $\mathcal C$ is, by definition, a contravariant functor $K$ from
+$\mathcal S$ (respectively from $\mathcal S'$) to $\mathcal C$. Thus a
+simplicial object defines a semisimplicial object by restriction, but the
+first notion differs from the second essentially through the presence of
+\emph{symmetry operations} on the $K_n=K(\Delta_n)$, corresponding to the
+images under the functor $K$ of the elements of the symmetric group on $n+1$
+letters (regarded as the automorphism group of $\Delta_n$ in $\mathcal S$).
+
+For every $n$, let $\Delta'_n$ (respectively $\Delta''_n$) be the finite
+category whose object set is $\Delta_n$, defined by the chaotic order relation
+(respectively the natural total order) on $\Delta_n$ (the set of arrows being
+the graph of that order relation). It is clear that $\Delta'_n$ (respectively
+$\Delta''_n$) depends functorially on the object $\Delta_n$ of $\mathcal S$
+(respectively $\mathcal S'$). If $Z$ is a category, then
+$\operatorname{Hom}(\Delta'_n,Z)$ (respectively
+$\operatorname{Hom}(\Delta''_n,Z)$), as $\Delta_n$ varies, is a functor from
+$\mathcal S$ (respectively $\mathcal S'$) to the category of sets, i.e. a
+simplicial set (respectively a semisimplicial set), said to be
+\emph{associated with the category $Z$}; denote them by $Z'$ and $Z''$. There
+is moreover an evident natural homomorphism from the semisimplicial set
+associated with $Z'$ to $Z''$, and the latter is an isomorphism if and only if
+$Z$ is a groupoid. With this understood:
+
+\result{PROPOSITION}{4.1} The functor $Z\longmapsto Z''$ from the category of
+categories to the category of semisimplicial sets is fully faithful, and
+defines an equivalence between the category of \emph{categories} and the
+category of semisimplicial sets, i.e. contravariant functors $K$ from
+$\mathcal S'$ to $(\mathrm{Set})$, which transform pushouts $A\amalg_C B$ of
+the type specified above into fiber products of sets. Likewise, the functor
+$Z\longmapsto Z'$ from the category of groupoids to the category of
+simplicial sets is fully faithful, and defines an equivalence between the
+category of \emph{groupoids} and the category of
+\src{109}
+simplicial sets, i.e. contravariant functors $K$ from $\mathcal S$ to
+$(\mathrm{Set})$, which transform pushouts into fiber products.
+
+Thus categories may be regarded as particular semisimplicial sets, and
+groupoids as particular simplicial sets, provided of course that one reasons
+``up to isomorphism,'' as is required when interpreting certain structures in
+terms of others. The usual procedure of reduction to the set-theoretic case
+then implies:
+
+\result{COROLLARY}{4.2} The preceding statement remains valid when categories,
+groupoids, and simplicial sets are replaced by $\mathcal C$-categories,
+$\mathcal C$-groupoids, and simplicial objects in $\mathcal C$, provided that
+fiber products exist in $\mathcal C$.
+
+The semisimplicial object $K$ in $\mathcal C$ associated with a category
+$(X,R,\ldots)$ in $\mathcal C$ may be made explicit by interpreting the
+component $K_n=K(\Delta_n)$ of $K$ as the $n$-fold fiber power of
+$(R,p_1)$ over $X$\footnote{The printed text says
+``$(n+1)$-fold fiber power'' and, in the following formula, $K_0=R$. The
+object component of the nerve is $K_0=X$ and its arrow component is $K_1=R$;
+the two index corrections are therefore linked.}, or better, by the
+recurrence formula
+\[
+  K_0=X,\qquad
+  K_n=(K_{n-1},p_{n-1}^{(n-1)})\times_X(R,p_1),
+\]
+where the $p_i^{(n-1)}$ ($0\leq i\leq n-1$) are the natural projections from
+$K_{n-1}$ to $X$ (which are themselves also defined recursively). In this
+way, $p_1,p_2,\pi,D,s$ are interpreted as the simplicial operations
+corresponding respectively to the following morphisms in $\mathcal S$: face
+$0$ of $\Delta_1$, face $1$ of $\Delta_1$, face $(0,2)$ of $\Delta_2$, the
+degeneracy $\Delta_1\to\Delta_0$, and the symmetry of $\Delta_1$. All other
+semisimplicial (respectively simplicial) operations are obtained formally from
+the preceding four (respectively five) by composition and fiber products.
+
+A \emph{pre-equivalence relation} on an object $X$ of a category is now
+defined to be the datum of a groupoid whose object of objects (so to speak) is
+$X$. Such a datum therefore includes, among other things, an object $R$ and
+two morphisms
+\[
+  p_1,p_2:R\rightrightarrows X.
+\]
+But notice that these data alone do not determine the structure in question,
+in contrast to what happens for equivalence pairs. In this exposé, we are
+interested in this notion in order to obtain criteria for the possibility of
+passing to the quotient, i.e. for forming the cokernel of the pair
+$(p_1,p_2)$. Thus the statement of the problem does not invoke the additional
+data inherent in a groupoid. In proving the results that follow, we shall
+\src{110}
+nevertheless use these additional data, and in particular the simplicial
+operations (including symmetry operations) through dimension $3$ (involving
+the fourfold fiber power of $R$ over $X$).
+
+An equivalence relation on an object $X$ of $\mathcal C$ defines a
+pre-equivalence relation: it suffices to see this in the set-theoretic case,
+where one associates with an equivalence relation on a set $X$ the groupoid
+whose set of objects is $X$ and whose set of arrows is the graph of the
+equivalence relation.
+
+A $\mathcal C$-monoid $G$ acting on an object $X$ of $\mathcal C$ defines a
+$\mathcal C$-category whose underlying objects are $R=G\times X$ and $X$
+(provided that $G\times X$ exists), and this is a $\mathcal C$-groupoid if and
+only if $G$ is a group. Again, it suffices to verify this in the set-theoretic
+case. The composition of the arrows $(g,a)$ and $(g',g\cdot a)$ is then
+defined by
+\[
+  (g',g\cdot a)(g,a)=(g'g,a),
+\]
+i.e. if $a,b\in X$, then $\operatorname{Hom}(a,b)$ is by definition the
+transporter from $a$ to $b$, and the morphisms compose by means of composition
+of the elements of $G$.
+
+\medskip
+\noindent\textbf{REMARK. ---} The logical difficulties raised by a statement
+such as (4.1) can be avoided by understanding that all the objects under
+consideration lie in a fixed ``Universe'' (which is itself a set).
+
+\fsection{5}{Quotient by a finite flat equivalence relation}
+
+\result{THEOREM}{5.1} Let $X=\operatorname{Spec}(B)$ be an affine scheme and
+$R$ a pre-equivalence relation on $X$ whose component $R_1$ is affine, say
+$R_1=\operatorname{Spec}(C)$. Suppose that the first projection
+$p_1:R_1\to X$ is finite and locally free; in other words, suppose that the
+corresponding ring homomorphism $p_1^*:B\to C$ makes $C$ a finitely generated
+projective $B$-module. Let $A$ be the subring of $B$ that is the kernel of the
+pair of homomorphisms
+\[
+  p_1^*,p_2^*:B\rightrightarrows C
+\]
+(the set of elements $b$ such that $p_1^*(b)=p_2^*(b)$). Let
+$Y=\operatorname{Spec}(A)$, and let $f:X\to Y$ be the morphism defined by the
+inclusion of $A$ into $B$. Under these conditions:
+\begin{enumerate}
+\item[(i)] $B$ is integral over $A$, i.e. $f$ is an integral morphism.
+
+\item[(ii)] The morphism $f$ is surjective, and its fibers are the equivalence
+classes
+\src{111}
+$p_2(p_1^{-1}(x))$ in the set $X$ modulo $R$; moreover, the topology of $Y$ is
+the quotient of that of $X$.
+
+\item[(iii)] $Y$ is the quotient of $X$ by $R$ in the category of preschemes.
+
+\item[(iv)] If $R$ comes from an \emph{equivalence relation}, then the
+morphism $f:X\to Y$ is finite locally free (i.e. $B$ is a finitely generated
+projective $A$-module), and the equivalence relation is effective, i.e.
+$R_1\to X\times_Y X$ is an isomorphism.
+\end{enumerate}
+
+This theorem generalizes the familiar theorem concerning a finite group $G$
+acting by automorphisms on the ring $B$ and the invariant ring $A$, and its
+proof is analogous to the familiar proof. Statement (iii) can be sharpened as
+follows:
+
+\result{COROLLARY}{5.2} The canonical morphism
+$R_1\to X\times_Y X$ is \emph{surjective}.
+
+Let $R$ still be a ``finite and locally free'' pre-equivalence relation on
+$X$, but now let $X$ be an arbitrary prescheme. Suppose that one can find a
+prescheme $Y$ and a morphism $f:X\to Y$ such that $fp_1=fp_2$ and, moreover,
+such that the sequence of homomorphisms of sheaves of rings on $Y$
+\[
+  \mathcal O_Y\longrightarrow f_*(\mathcal O_X)
+  \rightrightarrows g_*(\mathcal O_R)
+\]
+is exact (where $g=fp_i$). The theorem then gives conclusions analogous to
+(i)--(iv) above; in particular, by (iii), $Y$ is the quotient of $X$ by $R$
+and is therefore determined up to unique isomorphism. Under these conditions
+the pre-equivalence relation $R$ on $X$ is said to be \emph{admissible}. With
+this definition:
+
+\result{THEOREM}{5.3} Let $X$ be a prescheme and $R$ a pre-equivalence relation
+on $X$ such that $p_1:R_1\to X$ is finite and locally free. Then $R$ is
+admissible if and only if every set-theoretic equivalence class
+$p_2(p_1^{-1}(x))$ in $X$ modulo $R$ is contained in an affine open subset
+(a condition that is always satisfied if every finite subset of $X$ is
+contained in an affine open subset, for example if $X$ is quasi-projective
+over an affine scheme).
+
+Indeed, one shows without difficulty that every equivalence class modulo $R$
+in $X$ is then contained in an affine open subset \emph{stable under $R$}, and
+one constructs the quotient $Y$ by gluing the pieces obtained from Theorem
+5.1.
+\src{112}
+
+\result{COROLLARY}{5.4} Suppose that this condition is satisfied and that, in
+addition, $R$ comes from an equivalence relation. Then that relation is
+effective, i.e. $R_1\to X\times_Y X$ is an isomorphism, and $f:X\to Y$ is
+finite and locally free.
+
+One immediately concludes by ``descent'':
+
+\result{COROLLARY}{5.5} Under the hypotheses of (5.4), $X$ has rank $n$
+everywhere over $Y$ if and only if $(R_1,p_1)$ has rank $n$ everywhere over
+$X$. If $X,R_1$ are $Z$-preschemes and $p_1,p_2$ are $Z$-morphisms, so that
+$Y$ is a $Z$-prescheme, then $X$ is flat over $Z$ if and only if $Y$ is flat
+over $Z$.
+
+In summary:
+
+\result{SCHOLIUM}{} The datum of a finite, locally free, and surjective
+morphism $f:X\to Y$ of preschemes is equivalent to the datum of a prescheme
+$X$ equipped with an equivalence relation $R$ such that $p_1:R\to X$ is
+finite and locally free and every class $p_2(p_1^{-1}(x))$ is contained in an
+affine open subset.
+
+\medskip
+\noindent\textbf{REMARKS 5.6.}
+
+\smallskip
+\noindent $1^\circ$ No noetherian hypothesis was needed.
+
+\smallskip
+\noindent $2^\circ$ This notion of passage to the quotient includes, as a
+special case, CARTIER's ``inseparable descent,'' which amounts to determining
+the finite locally free morphisms $f:X\to Y$ such that $f_*(\mathcal O_X)$
+admits a $p$-basis relative to $\mathcal O_Y$ (where $X$ is a given prescheme
+whose sheaf $\mathcal O_X$ is annihilated by the prime number $p>0$). Notice
+that the result is readily expressed without any regularity hypothesis on the
+local rings and without assuming that $X$ is an algebraic scheme over a field.
+The JACOBSON--BOURBAKI theory is obtained by taking $X$ to be the spectrum of
+a field of characteristic $p$.
+
+\smallskip
+\noindent $3^\circ$ GABRIEL had previously obtained a special case of Theorem
+(5.3) in the theory of passage to the quotient for finite commutative groups
+over a field $k$. [Compare (7.4).]
+
+\fsection{6}{Quotient by a proper flat equivalence relation}
+
+\result{THEOREM}{6.1} Let $S$ be a locally noetherian prescheme, $X$ a
+quasi-projective $S$-scheme, and $R$ a pre-equivalence relation on $X$ such
+that:
+\src{113}
+\begin{enumerate}
+\item[(a)] $p_1:R_1\to X$ is proper and flat;
+\item[(b)] $R_1\to X\times_S X$ is finite, or equivalently, by (a), has
+finite fibers (a condition automatically satisfied if $R$ comes from an
+equivalence relation).
+\end{enumerate}
+Under these conditions:
+\begin{enumerate}
+\item[(i)] $X/R=Y$ exists and, if $S$ is noetherian and $R$ comes from an
+equivalence relation, is quasi-projective over $S$.\footnote{The printed text
+does not contain the second hypothesis. The linked erratum to Exposé 212 says
+that quasi-projectivity then appears to have been proved only when $R$ comes
+from an equivalence relation.}
+
+\item[(ii)] The canonical morphism $f:X\to Y$ is surjective, proper, and open;
+its fibers are the equivalence classes $p_2(p_1^{-1}(x))$ in $X$ modulo $R$.
+Thus $Y$ is identified with the quotient topological space of $X$ by the
+set-theoretic equivalence relation defined by $R$. Finally,
+$R_1\to X\times_Y X$ is surjective.
+
+\item[(iii)] If $R$ comes from an equivalence relation, then that relation is
+effective, i.e. $R_1\to X\times_Y X$ is an isomorphism, and moreover
+$f:X\to Y$ is flat (hence faithfully flat).
+\end{enumerate}
+
+For the proof, one reduces to (5.1) by means of suitable quasi-sections of $X$
+for $R$, the proof being analogous to the construction of quotient algebraic
+groups in the Chevalley Seminar.
+
+In summary:
+
+\result{SCHOLIUM}{} Let $X$ be quasi-projective over a locally noetherian
+$S$. The datum of a proper, faithfully flat, and surjective morphism
+$f:X\to Y$ from $X$ to an $S$-prescheme $Y$ is equivalent to the datum of an
+equivalence relation $R$ on $X$ such that $p_1:R\to X$ is proper and flat.
+
+The same method gives the following result:
+
+\result{THEOREM}{6.2} Let $S$ be a noetherian prescheme, $X$ a prescheme of
+finite type over $S$, and $R$ a pre-equivalence relation on the $S$-prescheme
+$X$. Suppose that:
+\begin{enumerate}
+\item[(a)] $p_1:R_1\to X$ is flat and of finite type;
+\item[(b)] the morphism $R_1\to X\times_S X$ is quasi-finite (i.e. has finite
+fibers).
+\end{enumerate}
+Then there exists a dense open subset $U$ of $X$ that is \emph{saturated} for
+$R$, such that:
+\begin{enumerate}
+\item[(i)] If $R_U$ is the pre-equivalence relation induced by $R$ on $U$,
+then $U/R_U$ exists and is of finite type over $S$.
+
+\item[(ii)] The canonical morphism $U\to U/R_U$ is surjective and open; its
+fibers are the set-theoretic equivalence classes for $R_U$ (thus $U/R_U$ is
+the quotient topological space of $U$ by the set-theoretic equivalence
+relation defined by $R_U$). Finally, the morphism
+\[
+  (R_U)_1\longrightarrow U\times_{U/R_U}U
+\]
+is surjective.
+\src{114}
+
+\item[(iii)] If $R$ comes from an equivalence relation, one may arrange for
+$U\to U/R_U$ to be faithfully flat and for $R_U$ to be effective.
+\end{enumerate}
+
+This is a result of an essentially ``birational'' nature.
+
+\medskip
+\noindent\textbf{REMARKS 6.3.}
+
+\smallskip
+\noindent $1^\circ$ I do not know whether hypothesis (b) is unnecessary in
+(6.1) and (6.2). In taking quotients by groups, it forces us in practice to
+restrict ourselves to the case in which all stabilizers are finite groups.
+
+\smallskip
+\noindent $2^\circ$ One may ask whether there are results analogous to (6.1)
+and (6.2) without a flatness hypothesis. I have no counterexample in this
+direction. On the other hand, even retaining the flatness hypothesis and
+restricting to equivalence relations for which $p_1:R\to X$ is flat and
+quasi-finite (but not finite), with $X$ affine, it can happen that $R$ is not
+effective: take the equivalence relations induced on affine open subsets
+covering Nagata's variety (on which a group of order two acts in a
+``non-admissible'' manner).
+
+\fsection{7}{Applications}
+
+As we said in the introduction, the most important application of (6.1) is
+the construction of Picard schemes, as well as solutions to various other
+moduli problems, to which we shall return later.
+
+One obtains a simple proof of the following result of SHIMURA:
+
+\result{PROPOSITION}{7.1} Let $A$ be an abelian scheme defined over a discrete
+valuation ring $V$ with fraction field $K$. Then every abelian scheme $B'$ over
+$K$ that is isogenous to a quotient of $A\otimes_V K$ ``has good reduction
+over $V$,'' i.e. is isomorphic to some $B\otimes_V K$,\footnote{The printed
+text has $B\otimes_V A$. Since $B$ is a $V$-scheme and the assertion concerns
+its generic fiber, the base factor must be $K$.} where $B$ is an abelian
+scheme over $V$ (essentially unique, as we recall).
+
+We may suppose that $B'$ is the quotient of $A_K$ by a subgroup scheme $C'$.
+(N.B.: $C'$ will not in general be ``reduced,'' i.e. its local rings will have
+nilpotent elements.) Consider the closed subscheme $C$ of $A$ that is the
+``closure'' of $C'$, i.e. the smallest closed subscheme of $A$ such that $C_K$
+contains $C'$. We have $C_K=C'$, and the fact that $V$ is a discrete valuation
+ring readily implies that $C$ is a subgroup scheme of $A$ over $V$. Since $A$
+is proper over $\operatorname{Spec}(V)=S$, so is $C$; moreover, $A$ is even
+projective over $S$. We may therefore apply (6.1) to construct $A/C=B$,
+\src{115}
+which is the desired $B$.
+
+Finally, essentially familiar arguments allow one to deduce from (6.2) the
+following result:
+
+\result{THEOREM}{7.2} Let $S$ be the spectrum of an artinian ring, let $F$ and
+$G$ be group schemes of finite type over $S$, and let $u:F\to G$ be a
+homomorphism of group schemes over $S$. Suppose that:
+\begin{enumerate}
+\item[(i)] $F$ is flat over $S$;
+\item[(ii)] the kernel of $u$ is finite.
+\end{enumerate}
+Under these conditions, the quotient scheme $G/F$ exists; the canonical
+morphism $G\to G/F$ is surjective and open, and its fibers are the
+set-theoretic equivalence classes defined by the right actions of $F$ on $G$.
+Finally, if $u$ is a monomorphism, then $G\to G/F$ is flat and the morphism
+\[
+  G\times F\longrightarrow G\times_{G/F}G
+\]
+is an isomorphism. In other words, $G$ is a principal homogeneous space over
+$G/F$ with structure group (acting on the right) $F$, or rather
+$F\times_S(G/F)$ regarded as a group scheme over $G/F$ (see [1], B, \S~6).
+
+\result{COROLLARY}{7.3} Under these conditions, $G$ is flat over $S$ if and
+only if $G/F$ is flat over $S$. If this condition holds, formation of the
+quotient by $F$ commutes with every base extension of $S$; and if $F$ is a
+normal subgroup of $G$, then $G/F$ can be endowed with the structure of the
+\emph{quotient group} of $G$ by $F$.
+
+The situation is particularly simple when $S$ is the spectrum of a field, for
+then every $S$-prescheme is automatically flat over $S$. One obtains:
+
+\result{COROLLARY}{7.4} Let $F,G$ be group schemes of finite type over a field
+$k$, and let $u:F\to G$ be a homomorphism of $k$-groups. Then $u$ factors as
+$F\to F'\to G$, where $F\to F'$ is the quotient homomorphism by the closed
+subgroup $\operatorname{Ker}u$ of $F$, and $F'\to G$ is a group homomorphism
+that is a closed immersion. The quotient $G/F=G/F'$ exists. The usual
+formalism (of the kind provided by Noether's theorems) is valid among
+algebraic groups over $k$.
+
+This result makes it possible to treat uniformly both passage to the quotient
+among algebraic groups in the classical sense (i.e. those which are
+irreducible over $k$ and smooth over $k$) and passage to the quotient by
+``infinitesimal'' subgroups
+\src{116}
+considered by CARTIER. It is advantageous to regard the ``hyperalgebras''
+introduced by CARTIER, following DIEUDONNÉ's work on formal groups, as groups
+in the category of formal schemes over $k$, and, when applicable (if they
+correspond to hyperalgebras of finite rank over $k$), as finite algebraic
+groups over $k$.
+
+\fsection{8}{A conjecture}
+
+It answers the need to form quotients by the projective group acting on
+certain subschemes of ``Hilbert schemes'' (the latter replacing Chow varieties
+in scheme theory).
+
+Let $S$ be a prescheme and $n$ an integer. To every prescheme $S'$ over $S$,
+associate the group $\operatorname{Gl}(n,\Gamma(S',\mathcal O_{S'}))$ of
+invertible $n$-by-$n$ matrices with entries in the ring of sections of
+$\mathcal O_{S'}$. This gives a contravariant functor in $S'$, which is readily
+shown to be representable; it therefore corresponds to a group scheme over
+$S$, in fact affine over $S$, denoted $\operatorname{Gl}(n)_S$. Its formation
+is compatible with base change, so in fact everything comes from a group
+scheme over $\mathbf Z$, denoted $\operatorname{Gl}(n)$. The group
+$\operatorname{Gl}(1)$, called the multiplicative group and often denoted
+$\mathbf G_m$, corresponds to the functor
+$S\longmapsto\Gamma(S,\mathcal O_S)^*$, the group of ``units'' over $S$. There
+is an evident homomorphism $\operatorname{Gl}(1)\to\operatorname{Gl}(n)$, and
+one readily constructs the quotient group, denoted $\operatorname{GP}(n-1)$
+and called the \emph{projective group of degree $n-1$ over $\mathbf Z$}. It
+represents the functor associating to $S$ the group of sections of the sheaf
+$\widetilde{\operatorname{Gl}(n)}_S/
+\widetilde{\operatorname{Gl}(1)}_S$, where
+$\widetilde{\operatorname{Gl}(n)}_S$ denotes the sheaf of germs of sections of
+$\operatorname{Gl}(n)_S$ over $S$. (Care must be taken: sections of
+$\operatorname{GP}(n-1)_S$ over $S$ do not in general come from sections of
+$\operatorname{Gl}(n)_S$ over $S$!) Notice that one can prove that
+$\operatorname{GP}(n-1)$ also represents the functor
+$S\longmapsto\operatorname{Aut}_S(\mathbf P_S^{n-1})$, where
+$\mathbf P_S^{n-1}$ is standard projective space of relative dimension $n-1$
+over $S$, at least for noetherian $S$. This is how it enters moduli theory.
+
+Let $S$ be a noetherian scheme, which may if desired be assumed affine, and
+let $X$ be a quasi-projective $S$-prescheme equipped with an invertible sheaf
+$\mathcal L$ that is very ample relative to $S$. Suppose that the group
+$G=\operatorname{GP}(n)_S$ acts on $X$ and at the same time on $\mathcal L$
+(compatibly with its action on $X$), and that it acts \emph{freely} on
+$X$.\footnote{The printed text says ``on $S$.'' The action under consideration
+and the quotient condition concern $X$.}
+\src{117}
+
+\result{CONJECTURE}{8.1}\footnote{The linked erratum to Exposé 212 states
+that this conjecture is definitively false. It also reports that the positive
+fact in Remark 8.1 was subsequently proved and refers to Mumford's theorem and
+later refinements.} Under the preceding conditions:
+
+\smallskip
+\noindent $1^\circ$ \emph{The equivalence relation defined by $G$ is
+effective, the quotient $Y=X/G$ is of finite type over $S$, and the canonical
+morphism $f:X\to Y$ is flat and surjective} (thus $X$ becomes a principal
+homogeneous bundle over $Y$ with group
+$G\times_S Y=\operatorname{GP}(n)_Y$).
+
+\smallskip
+\noindent $2^\circ$ Let $\mathcal L'$ be the invertible sheaf on $Y$ deduced
+from $\mathcal L$ by ``faithfully flat descent'' along $f$ (see [1], B,
+\S~th. 1). Then $\mathcal L'$ is \emph{pre-ample on $Y$ relative to $S$}, i.e.
+there exist an integer $m$ and a quasi-finite morphism from $Y$ to a suitable
+standard projective scheme $\mathbf P_S^N$ such that
+$(\mathcal L')^{\otimes m}$ is isomorphic to the inverse image of
+$\mathcal O_{\mathbf P_S^N}(1)$.
+
+Notice that even if $X$ is separated over $S$, it may happen that $Y$ is not
+separated over $S$ (a situation occurring in entirely nonpathological moduli
+problems). If $1^\circ$ holds, then $Y$ is separated if and only if the
+equivalence relation defined by $G$ has a closed graph, i.e. if
+$G\times X\to X\times X$ has closed image (it is then a closed immersion). If
+$Y$ is separated, then $\mathcal L'$ is pre-ample on $Y$ relative to $S$ if
+and only if it is ample, i.e. if a suitable tensor power defines a projective
+immersion. In the moduli problems mentioned in the introduction, one can show
+that the resulting equivalence relation does indeed have a closed graph.
+
+\medskip
+\noindent\textbf{REMARKS 8.1. ---} We have assumed
+$G=\operatorname{GP}(n)_S$ to fix ideas and because this is presently the most
+important case in practice. A reasonable hypothesis on $G$ would instead seem
+to be that $G$ is one of the ``forms'' over $S$ of one of the Tohokû groups
+(whose construction over the integers was also carried out by CHEVALLEY). The
+only positive fact known to me in the direction of the preceding conjecture
+is the following: let $X$ be \emph{an affine scheme over a field $k$ of
+characteristic $0$, on which the group $\operatorname{Gl}(n)_k$ or
+$\operatorname{GP}(n-1)_k$ acts freely. Then the equivalence relation defined
+by $G$ is effective, the quotient $X/G$ is also affine, and the morphism
+$X\to X/G$ is flat and surjective}. The proof uses the following fact (which
+at present has been proved only in characteristic $0$): when $G$ is made to
+act on the affine coordinate ring $A$ of $G$, regarded as a vector space over
+$k$, the trivial representation of $G$ occurs only once (in a composition
+series of a finite-dimensional $G$-stable vector subspace over $k$). It seems
+possible that a systematic use of
+\src{118}
+the theory of linear representations of $G$ will eventually provide a proof
+of the conjecture, at least over a base field. When the base is no longer a
+field, the speaker knows nothing.
+
+\section*{BIBLIOGRAPHY}
+\addcontentsline{toc}{section}{Bibliography}
+
+\begin{description}
+\item[{[1]}] GROTHENDIECK (Alexander). --- Techniques de descente et théorèmes
+d'existence en géométrie algébrique, I: Généralités, Séminaire Bourbaki,
+1959/60, no. 190, 29 pp.
+
+\item[{[2]}] GROTHENDIECK (Alexander). --- Techniques de descente et théorèmes
+d'existence en géométrie algébrique, II: Le théorème d'existence en théorie
+formelle des modules, Séminaire Bourbaki, 1959/60, no. 195, 22 pp.
+
+\item[{[3]}] GROTHENDIECK (A.) and DIEUDONNÉ (J.). --- Éléments de géométrie
+algébrique, I: Le langage des schémas. --- Paris, Presses universitaires de
+France, 1960 (Institut des hautes Études scientifiques, Publications
+mathématiques, 4).
+\end{description}
+
+\par\smallskip
+\begingroup\footnotesize
+\endgroup

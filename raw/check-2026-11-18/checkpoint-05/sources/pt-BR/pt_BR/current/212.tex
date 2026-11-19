@@ -1,0 +1,941 @@
+\unit{Exposição 212 -- Pré-esquemas quocientes}
+\sid{212}
+\markboth{Exposição 212}{Exposição 212}
+\src{99}
+\seminares{13.º ano, 1960/61, n.º 212\\Fevereiro de 1961}
+\paperhead{TÉCNICAS DE CONSTRUÇÃO E TEOREMAS DE EXISTÊNCIA EM GEOMETRIA ALGÉBRICA\\
+III. PRÉ-ESQUEMAS QUOCIENTES}%
+  {por Alexander GROTHENDIECK}
+
+\subsection*{Introdução}
+\addcontentsline{toc}{subsection}{Introdução}
+
+Os problemas tratados na presente exposição diferem dos considerados nas duas
+anteriores, pois se procura representar certos funtores covariantes, e não mais
+contravariantes, de esquemas variáveis. O procedimento de passagem ao quociente
+é, contudo, essencial em muitos problemas de construção em geometria algébrica,
+inclusive os das Exposições I e II ([1], [2]). Assim, a questão da
+\emph{efetividade de um dado de descida} sobre um $T$-pré-esquema $X$,
+relativamente a um morfismo fielmente plano e quase-compacto
+$T\longrightarrow S$, equivale à questão da existência de um quociente de $X$
+(que satisfaça as propriedades razoáveis examinadas adiante) pela relação de
+equivalência plana em $X$ definida pelo dado de descida; as questões levantadas
+em [1], A, \S~2 c serão, sem dúvida, resolvidas ao mesmo tempo que as questões
+formuladas no parágrafo 2 da presente exposição. Do mesmo modo, o
+\emph{esquema de Picard} de um $S$-esquema $X$ (para a definição, ver [2], C,
+\S~3) pode ser definido de várias maneiras como quociente de certos outros
+esquemas (de divisores efetivos, ou de imersões em um esquema projetivo) por
+relações de equivalência planas, sendo tecnicamente mais simples a definição e
+a construção desses esquemas auxiliares: são esquemas da forma
+$\underline{\operatorname{Hom}}_S(X,Y)$ e variantes definidos em [2], C,
+\S~2, cuja construção será objeto da exposição seguinte (sob hipóteses
+adequadas de projetividade). Combinando, portanto, os resultados da presente
+exposição e da seguinte, obtém-se a construção dos esquemas de Picard sob
+hipóteses adequadas.
+
+O problema da passagem ao quociente na categoria dos pré-esquemas ainda
+apresenta várias questões não resolvidas. A mais importante é mencionada no
+parágrafo 8. Atualmente, ela é o único obstáculo à construção de
+\emph{esquemas de moduli sobre os inteiros para curvas de gênero arbitrário,
+variedades abelianas polarizadas}, etc. Isso mostra que sua solução merece os
+esforços dos especialistas em grupos algébricos.
+\src{100}
+\subsection*{1. Relações de equivalência e relações de equivalência efetivas}
+\addcontentsline{toc}{subsection}{1. Relações de equivalência e relações de equivalência efetivas}
+
+Sejam $\mathcal C$ uma categoria e $X$ um objeto de $\mathcal C$. Um par de
+morfismos
+\[
+  p_1,p_2:R\rightrightarrows X
+\]
+é chamado de \emph{par de equivalência} em $\mathcal C$, com \emph{alvo} $X$ e
+\emph{fonte} $R$, se, para todo objeto $T$ de $\mathcal C$, as duas aplicações
+correspondentes
+\[
+  p_1(T),p_2(T):R(T)\rightrightarrows X(T)
+\]
+(onde, para todo objeto $Y$ de $\mathcal C$, se põe
+$Y(T)=\operatorname{Hom}(T,Y)$) definem uma aplicação
+\[
+  R(T)\longrightarrow X(T)\times X(T)
+\]
+que induz uma bijeção de $R(T)$ sobre o gráfico de uma relação de equivalência
+no conjunto $X(T)$. Introduz-se, entre os pares de equivalência com alvo $X$,
+uma relação de equivalência evidente; uma classe de equivalência para esta
+última é chamada \emph{$\mathcal C$-relação de equivalência em $X$}, ou
+simplesmente uma relação de equivalência quando não houver risco de confusão.
+
+Se $X\times X$ existe, dar uma relação de equivalência em $X$ equivale a dar um
+subobjeto $R$ de $X\times X$ tal que, para todo objeto $T$ de $\mathcal C$, o
+subconjunto de
+\[
+  (X\times X)(T)=X(T)\times X(T)
+\]
+correspondente a $R(T)$ seja o gráfico de uma relação de equivalência em
+$X(T)$. Denotando por $p_1$ e $p_2$ os morfismos de $R$ em $X$ induzidos pelas
+projeções $\operatorname{pr}_1$ e $\operatorname{pr}_2$, a condição anterior
+exprime que $(p_1,p_2)$ é um par de equivalência. Também se podem exprimir
+diagramaticamente em $\mathcal C$ (desde que existam $X\times X$ e o produto
+fibrado $(R,p_2)\times_X(R,p_1)$) os axiomas conjuntistas de uma relação de
+equivalência para $R(T)$ em $X(T)$, de acordo com o princípio geral
+explicado em [2], A, \S~1. Não precisaremos disso.
+
+Sempre que se tem um par de morfismos $(p_1,p_2)$ com a mesma fonte $R$ e o
+mesmo alvo $X$, pode-se definir o \emph{conúcleo} do par como o objeto $Y$ de
+$\mathcal C$ que representa o funtor covariante em $Z$
+\[
+  \operatorname{Hom}_{p_1,p_2}(X,Z),
+\]
+conjunto dos morfismos $u$ de $X$ em $Z$ tais que $up_1=up_2$. Se $Y$ existe,
+fica determinado a menos de um isomorfismo único. Será denotado por
+$X/(p_1,p_2)$ ou, por abuso de notação, por $X/R$, sendo esta última notação
+empregada sobretudo quando
+\src{101}$(p_1,p_2)$ é um par de equivalência: é então usual identificar,
+na notação, a relação de equivalência definida pelo par com $R$. Observe-se
+que, se $Y$ for considerado um quociente de $X$, ele depende, de fato, apenas
+da relação de equivalência definida pelo par $(p_1,p_2)$.
+
+Partamos agora de um morfismo
+\[
+  f:X\longrightarrow Y
+\]
+que permite, portanto, considerar $X$ como um «objeto sobre $Y$», e suponhamos
+que exista o produto fibrado
+\[
+  R(f)=X\times_Y X
+\]
+Sejam $p_1$ e $p_2$ suas duas projeções. Então $(p_1,p_2)$ é um par de
+equivalência, chamado par \emph{associado} ao morfismo $f$. Ele define, assim,
+uma relação de equivalência, chamada relação associada a $f$.
+
+Um par de morfismos $(p_1,p_2)$ com alvo $X$ e fonte comum $R$ é chamado
+\emph{par de equivalência efetivo} se
+\begin{enumerate}
+  \item[(i)] o conúcleo $X/(p_1,p_2)=Y$ existe;
+  \item[(ii)] o produto fibrado $X\times_Y X$ existe;
+  \item[(iii)] o morfismo $R\longrightarrow X\times_Y X$ cujas componentes são
+  $p_1$ e $p_2$ é um isomorfismo.
+\end{enumerate}
+Então $(p_1,p_2)$ é de fato um par de equivalência. A relação de equivalência
+que ele define é também chamada \emph{relação de equivalência efetiva}.
+
+Um morfismo $f:X\longrightarrow Y$ é chamado \emph{epimorfismo efetivo} se
+\begin{enumerate}
+  \item[(i)] o produto fibrado $X\times_Y X=R$ existe;
+  \item[(ii)] o quociente $X/(p_1,p_2)$ existe, onde $p_1$ e $p_2$ são as duas
+  projeções de $R$ em $X$;
+  \item[(iii)] o morfismo $X/(p_1,p_2)\longrightarrow Y$ induzido por $f$ é um
+  isomorfismo.
+\end{enumerate}
+Então $f$ é de fato um epimorfismo, e até um epimorfismo estrito (cf. [1], A,
+\S~2.3), sendo a recíproca verdadeira se o produto fibrado $X\times_Y X$
+existir. Diz-se também que o objeto quociente de $X$ definido pelo epimorfismo
+$f$ é um \emph{quociente efetivo} de $X$.
+
+As definições precedentes implicam a seguinte «correspondência de Galois»:
+\src{102}
+\result{PROPOSIÇÃO}{1.1} Há uma correspondência biunívoca, que preserva as
+ordens naturais, entre o conjunto das relações de equivalência efetivas $R$
+em $X$ e o conjunto dos quocientes efetivos $Y$ de $X$: a $R$ corresponde o
+quociente efetivo $X/R$, e a $Y$ corresponde a relação de equivalência efetiva
+definida pela projeção canônica $X\longrightarrow Y$ (que é definida pelo
+produto fibrado $X\times_Y X$ munido de suas duas projeções).
+
+Nas categorias muito boas (conjuntos, feixes de conjuntos etc.), todo
+quociente é efetivo e toda relação de equivalência é efetiva. Isso já não
+ocorre em categorias como a categoria dos pré-esquemas sobre um pré-esquema
+$S$ dado, mesmo quando $S$ é o espectro de um corpo e mesmo quando nos
+restringimos aos esquemas finitos sobre $S$. As questões de efetividade e até
+mesmo (no caso de pré-esquemas não finitos sobre $S$) as questões relativas à
+existência de quocientes revelam-se quase sempre delicadas.
+
+\subsection*{2. Exemplo: pré-esquemas finitos sobre $S$}
+\addcontentsline{toc}{subsection}{2. Exemplo: pré-esquemas finitos sobre S}
+
+Seja $\mathcal C$ a categoria dos pré-esquemas finitos sobre $S$, supondo-se
+$S$ localmente Noetheriano. Ela é equivalente à categoria oposta da categoria
+dos feixes coerentes de álgebras comutativas sobre $S$, ou ainda, se $S$ é
+afim com anel $A$, à categoria oposta da categoria das $A$-álgebras finitas
+sobre $A$ (isto é, finitamente geradas como $A$-módulos). Conclui-se
+imediatamente que existem em $\mathcal C$ os limites projetivos finitos e os
+limites indutivos finitos. Isso é bem conhecido (sem qualquer hipótese de
+finitude\ldots) quanto aos primeiros. Assim, o produto fibrado de pré-esquemas
+$X,Y$ sobre $S$ corresponde ao produto tensorial $B\otimes_A C$ das álgebras
+correspondentes; o núcleo de dois morfismos $X\rightrightarrows Y$,
+correspondentes a dois homomorfismos de $A$-álgebras
+$u,v:C\rightrightarrows B$, corresponde ao quociente de $B$ pelo ideal gerado
+pelos elementos $u(c)-v(c)$ etc. Para os limites indutivos finitos, basta
+considerar, de um lado, as somas finitas, que correspondem ao produto ordinário
+de $A$-álgebras, e, de outro, os conúcleos de pares de morfismos
+$X\rightrightarrows Y$, que correspondem de fato (como se verifica
+imediatamente) ao subanel de $C$ formado pelos elementos nos quais os
+homomorfismos $u,v:C\rightrightarrows B$ coincidem (este último é finito sobre
+$A$ graças à hipótese Noetheriana). Observe-se, aliás, que se pode mostrar,
+utilizando a hipótese Noetheriana, que os limites indutivos finitos e, em
+particular, os quocientes assim construídos na categoria $\mathcal C$ dos
+pré-esquemas finitos sobre $S$ são, na realidade, quocientes na categoria de
+\emph{todos} os pré-esquemas.
+\src{103}
+Como dissemos em [1], há em $\mathcal C$ epimorfismos não efetivos (ou não
+estritos\footnote{O texto impresso omite «não» antes de «estritos». Na
+categoria considerada existem produtos fibrados, e o parágrafo anterior
+estabelece precisamente a equivalência entre efetividade e epimorfia estrita.};
+dá no mesmo, pois existem produtos fibrados). \emph{Ignoro se as relações de
+equivalência são sempre efetivas} quando não se impõe nenhuma hipótese de
+planicidade. Nessa direção, obtive apenas resultados positivos muito parciais,
+indispensáveis à demonstração do teorema fundamental da teoria formal de
+moduli (ver [2], B, teo. 1). Assinalemos que, no problema proposto, é fácil
+reduzir-se ao caso em que $S$ é o espectro de um anel artiniano local $A$, com
+corpo residual algebricamente fechado. Mas, mesmo se $A$ for um corpo, a
+resposta não é conhecida.
+
+Também se pode considerar um pré-esquema $X$ sobre $S$ que já não se suponha
+finito sobre $S$, mas que seja munido de uma relação de equivalência $R$ em
+$X$ tal que $p_1:R\longrightarrow X$ seja um morfismo finito. Diz-se então que
+$R$ é uma relação de equivalência finita. Suponhamos, para simplificar, que $S$
+e $X$ sejam afins (logo, $R$ é afim, de modo que a situação se reduz a uma
+questão de álgebra comutativa pura). \emph{Mesmo nesse caso, ignora-se se
+existe um quociente $X/R=Y$ e se o morfismo canônico $X\longrightarrow Y$ é
+finito}. (O caso mais simples é aquele em que $S$ é o espectro de um corpo $k$
+e $X$ é o espectro de $k[t]$, isto é, a reta afim.) Naturalmente, se os dois
+problemas precedentes tiverem soluções afirmativas, pode-se concluir, na
+situação presente, que $R$ é efetiva. Observemos que o problema da
+\emph{existência} de um quociente $Y$ e da finitude de
+$f:X\longrightarrow Y$ se apresenta exatamente nos mesmos termos se, em vez
+do grafo de uma relação de equivalência em $X$, houver apenas um pré-grafo de
+equivalência em $X$, no sentido do parágrafo 4.
+
+A questão da passagem ao quociente por uma relação de equivalência finita mais
+ou menos arbitrária surge na construção de pré-esquemas por «colagem» de
+pré-esquemas dados $X_i$ ao longo de certos subpré-esquemas fechados; a lei de
+colagem exprime-se precisamente por uma relação de equivalência finita no
+pré-esquema soma $X$ dos $X_i$. Deve-se esperar também que a solução dos
+problemas aqui propostos, e de diversas variantes, seja uma condição prévia ao
+desenvolvimento de uma técnica geral de construções não projetivas, na direção
+iniciada em [2].
+
+O único fato positivo geral conhecido pelo autor é o seguinte:
+
+\result{PROPOSIÇÃO}{2.1} Sejam $S$ um pré-esquema localmente noetheriano, $s$
+um ponto de $S$ e $\Omega$ uma extensão algebricamente fechada de $k(s)$.
+Considere o
+\src{104}«funtor fibra» correspondente $F$, que associa a todo $S$-esquema
+$X$ finito sobre $S$ o conjunto dos pontos de $X_s$ com valores em $\Omega$.
+Esse funtor (trivialmente exato à esquerda) é \emph{exato à direita}, isto é,
+comuta com os limites indutivos finitos e, em particular, com os conúcleos de
+pares de morfismos.
+
+Usando esse resultado para todos os «pontos geométricos» de $S$, deduz-se que
+a categoria «quociente» $\mathcal C'$ de $\mathcal C$, obtida raciocinando
+«módulo morfismos radiciais sobrejetivos» (isto é, adjungindo formalmente
+inversos aos morfismos em questão), é uma categoria «geométrica», isto é,
+satisfaz as mesmas propriedades «de natureza finita» que a categoria dos
+conjuntos. Em particular, toda relação de equivalência nela é efetiva. Isso
+implica que, se $R$ for uma relação de equivalência em um $X$ finito sobre
+$S$, então o morfismo canônico
+\[
+  R\longrightarrow X\times_Y X\qquad (\text{onde }Y=X/R)
+\]
+é \emph{radicial e sobrejetivo} (de fato, uma imersão fechada sobrejetiva,
+pois é um monomorfismo).
+
+\subsection*{3. O caso de um grupo de operadores}
+\addcontentsline{toc}{subsection}{3. O caso de um grupo de operadores}
+
+Suponhamos novamente que $\mathcal C$ seja uma categoria qualquer. Sejam
+$G,X$ objetos de $\mathcal C$, e suponhamos que $G$ seja um
+$\mathcal C$-grupo de operadores sobre o objeto $X$ de $\mathcal C$. Isso
+significa (cf. [2], A, \S~1) que, para todo objeto $T$ de $\mathcal C$, foram
+dadas uma estrutura de grupo em $G(T)$ e uma estrutura de $G(T)$-conjunto em
+$X(T)$, de tal modo que, variando $T$, as estruturas em questão «variam
+funtorialmente» com $T$. Se os produtos $G\times G$ e $G\times X$ existirem
+em $\mathcal C$, tal estrutura também poderá ser definida por um par de
+morfismos
+\[
+  G\times G\longrightarrow G,
+  \qquad \pi:G\times X\longrightarrow X,
+\]
+sujeito à condição de que, para todo objeto $T$ de $\mathcal C$, as leis de
+composição correspondentes para os conjuntos $G(T)$ e $X(T)$ façam de $G(T)$
+um grupo que age sobre $X(T)$. A tradução desse axioma pela comutatividade de
+certos diagramas em $\mathcal C$ é fácil, mas fastidiosa e, de fato,
+perfeitamente inútil em todos os casos que conheço.
+
+Suponhamos que $G\times X$ exista e consideremos os dois morfismos
+\[
+  p_1,p_2:G\times X\rightrightarrows X
+\]
+dados por\footnote{O texto impresso apresenta \texttt{pr\_1}. Como os dois
+morfismos têm codomínio $X$, o primeiro deles deve ser
+\texttt{pr\_2}; corrige-se aqui o erro tipográfico.}
+\src{105}
+\[
+  p_1=\operatorname{pr}_2,\qquad p_2=\pi.
+\]
+Verifica-se imediatamente que $(p_1,p_2)$ é um par de equivalência se, e
+somente se, para todo objeto $T$ de $\mathcal C$, a aplicação
+\[
+  G(T)\times X(T)\simeq(G\times X)(T)
+  \longrightarrow X(T)\times X(T),
+\]
+definida por esse par é injetiva, isto é, se o grupo $G(T)$ age
+\emph{livremente} sobre o conjunto $X(T)$, ou seja, se $g\in G(T)$,
+$x\in X(T)$ e $g\cdot x=x$ implicam que $g$ é o elemento identidade de
+$G(T)$. Diz-se então que $G$ \emph{age livremente sobre $X$} (ou que $X$ é um
+\emph{$\mathcal C$-espaço principal sob $G$}). A relação de equivalência
+associada ao par $(p_1,p_2)$ chama-se então \emph{relação de equivalência
+definida pelo grupo $G$ que age livremente sobre $X$}. Quando $X\times X$
+também existe e se considera o morfismo
+\[
+  p:G\times X\longrightarrow X\times X
+\]
+definido pelo par $(p_1,p_2)$, a condição de que $G$ aja livremente significa
+que $p$ é um \emph{monomorfismo}.
+
+Naturalmente, mesmo quando $G$ não age livremente sobre $X$, procuram-se
+critérios para a existência de um quociente de $X$ por $G$, isto é, do
+conúcleo do par anterior $(p_1,p_2)$.
+
+O conúcleo em questão será muitas vezes denotado por $X/G$, ou,
+preferencialmente, por $G\backslash X$ se $G$ agir à esquerda (reservando-se a
+notação anterior para o caso em que $G$ age à direita). Observe-se que, mesmo
+quando existe a «imagem» de $G\times X$ por $p$ (definida, por exemplo, como o
+menor subobjeto de $X\times X$ pelo qual $p$ se fatora), digamos $R$, ela quase
+nunca é uma relação de equivalência em $X$. Se então se tenta passar
+diretamente ao quociente por $R$ (ou, mais precisamente, pelo par de morfismos
+de $R$ em $X$ induzidos pelas duas projeções $\operatorname{pr}_i$), perdem-se
+irremediavelmente as características particulares do par original
+$(p_1,p_2)$. É, portanto, importante encontrar uma generalização da noção de
+relação de equivalência que se aplique diretamente ao par definido por um
+grupo de operadores de $\mathcal C$.
+
+\subsection*{4. Pré-relações de equivalência}
+\addcontentsline{toc}{subsection}{4. Pré-relações de equivalência}
+
+Recordemos que uma categoria na qual todo morfismo é um isomorfismo se chama
+\emph{grupoide}. Por outro lado, uma categoria deve ser definida como formada
+por dois conjuntos subjacentes $(X,R)$, o conjunto de \emph{objetos} e o
+conjunto de \emph{setas}, munidos das seguintes estruturas:
+\src{106}
+\begin{enumerate}
+\item[(i)] Um par de aplicações
+\[
+  p_1,p_2:R\rightrightarrows X
+\]
+chamadas \emph{aplicação fonte} e \emph{aplicação alvo},
+
+\item[(ii)] Uma aplicação
+\[
+  \pi:(R,p_2)\times_X(R,p_1)\longrightarrow R
+\]
+chamada \emph{aplicação de composição}.
+\end{enumerate}
+Esses dados devem satisfazer axiomas bem conhecidos, que não repetiremos aqui
+e que poderiam ser explicitados pela comutatividade de certos diagramas e pela
+existência de uma aplicação $D:X\to R$ (necessariamente única) que torna
+comutativos outros dois diagramas. $D$ corresponde à passagem de um objeto à
+seta identidade correspondente e satisfaz
+\[
+  p_1D=p_2D=\operatorname{id}_X.
+\]
+Dizer que a categoria é um grupoide significa então que existe uma aplicação
+\[
+  s:R\longrightarrow R
+\]
+(necessariamente única), chamada a \emph{inversão} de $R$, que transforma cada
+seta em uma seta inversa, o que poderia ser explicitado pela comutatividade de
+outros quatro diagramas, formados com $s$, $\Delta$ e os dados precedentes, e
+dos quais os dois primeiros se escrevem:
+\[
+  p_1s=p_2,\qquad p_2s=p_1.
+\]
+
+Recordados esses pontos, as definições gerais em ([2], A, \S~1) mostram, em
+particular, o que se deve entender por uma estrutura de
+$\mathcal C$-\emph{categoria}, respectivamente de
+$\mathcal C$-\emph{grupoide}, sobre um par de objetos $X,R$ de uma categoria
+qualquer $\mathcal C$: trata-se, por definição, do dado, para todo objeto $T$
+de $\mathcal C$, de uma estrutura de categoria, respectivamente de grupoide,
+no sentido conjuntista, cujo conjunto de objetos é $X(T)$ e o conjunto de
+setas é $R(T)$, essas estruturas
+\guillemotleft variando funtorialmente\guillemotright{} com $T$ variável.
+Isso implica, portanto, a definição de dois morfismos
+\[
+  p_1,p_2:R\rightrightarrows X
+\]
+chamados \emph{morfismo fonte} e \emph{morfismo alvo} e, quando existe o
+produto fibrado desejado, de um morfismo
+\src{107}
+\[
+  \pi:(R,p_2)\times_X(R,p_1)\longrightarrow R
+\]
+chamado \emph{morfismo de composição}. Esses três dados bastam então para
+determinar a estrutura de categoria sobre $X,R$, sendo o axioma a impor a
+esses dados o seguinte: para todo $T$, os três dados correspondentes para
+$X(T),R(T)$ definem sobre esse par de conjuntos uma estrutura de categoria
+(respectivamente, de grupoide). Quando for o caso, isso pode ser expresso pela
+comutatividade de certos diagramas que envolvem um morfismo univocamente
+determinado
+\[
+  D:X\longrightarrow R
+\]
+e, no caso dos grupoides, um morfismo univocamente determinado
+\[
+  s:R\longrightarrow R;
+\]
+diagramas que se explicitam como no caso «conjuntista». Essa interpretação
+trabalhosa dos axiomas é, felizmente, inútil na prática. O único interesse
+teórico da possibilidade de expressar os dados e os axiomas a partir de
+morfismos e igualdades de morfismos entre certos produtos fibrados é o
+seguinte: se temos um funtor $F:\mathcal C\to\mathcal C'$ exato à esquerda
+(isto é, que comuta com produtos finitos e produtos fibrados), ele transforma
+uma $\mathcal C$-categoria (respectivamente, um $\mathcal C$-grupoide) em uma
+$\mathcal C'$-categoria (respectivamente, um $\mathcal C'$-grupoide), desde
+que existam produtos finitos e produtos fibrados em $\mathcal C$.
+
+Na prática, é importante saber interpretar os morfismos
+$p_1,p_2,\pi,D,s$ como \emph{operações simpliciais} em um objeto
+semissimplicial ou simplicial adequado de $\mathcal C$, ao menos quando
+existem produtos fibrados em $\mathcal C$. Para fixar a terminologia,
+introduzamos a \emph{categoria $\mathcal S$ dos simplexos padrão} como a
+categoria cujos objetos são os conjuntos finitos da forma
+\[
+  \Delta_n=[0,n],\qquad\text{onde }n\geq 0
+\]
+(intervalo dos inteiros de $0$ a $n$), e cujos morfismos ou setas são as
+\emph{aplicações arbitrárias} entre esses conjuntos finitos. Observe-se que a
+categoria $\mathcal S$ é equivalente à categoria dos conjuntos finitos
+\emph{não vazios}, tomando-se como morfismos as aplicações entre conjuntos
+finitos. Em $\mathcal S$, existe evidentemente o coproduto de uma família
+finita \emph{não vazia} de objetos, bem como o coproduto fibrado de dois
+objetos sob um terceiro (operação dual ao produto fibrado). Denotemos por
+$\mathcal S'$ a subcategoria de $\mathcal S$ que tem os mesmos objetos, mas
+cujos morfismos são as \emph{aplicações crescentes} entre os $\Delta_n$. Essa
+categoria é equivalente à categoria dos conjuntos finitos não vazios
+totalmente ordenados. Nesta categoria, o
+\src{108}
+coproduto de dois objetos nunca existe, e o coproduto fibrado de dois objetos
+$A,B$ sob um terceiro $C$ não existe em geral (tome-se, por exemplo,
+$C=\Delta_0$, $A=B=\Delta_1$, com as duas aplicações estruturais
+$u:C\to A$ e $v:C\to B$ iguais). Contudo, ele existe em certos casos; por
+exemplo,
+\[
+  C=\Delta_0,\qquad A=\Delta_m,\qquad B=\Delta_n,\qquad
+  u(0)=m,\qquad v(0)=0,
+\]
+e, nesse caso,
+\[
+  \Delta_m\amalg_{\Delta_0}\Delta_n=\Delta_{m+n}.
+\]
+
+Um \emph{objeto simplicial} (respectivamente, um \emph{objeto
+semissimplicial}) em uma categoria $\mathcal C$ é, por definição, um funtor
+contravariante $K$ de $\mathcal S$ (respectivamente, de $\mathcal S'$) em
+$\mathcal C$. Portanto, um objeto simplicial define por restrição um objeto
+semissimplicial, mas a primeira noção difere essencialmente da segunda pela
+presença de \emph{operações de simetria} nos $K_n=K(\Delta_n)$,
+correspondentes às imagens, pelo funtor $K$, dos elementos do grupo simétrico
+de $n+1$ letras (considerado como o grupo de automorfismos de $\Delta_n$ em
+$\mathcal S$).
+
+Para todo $n$, seja $\Delta'_n$ (respectivamente, $\Delta''_n$) a categoria
+finita cujo conjunto de objetos é $\Delta_n$, definida pela relação de ordem
+caótica (respectivamente, pela ordem total natural) em $\Delta_n$ (sendo o
+conjunto de setas o grafo dessa relação de ordem). É evidente que $\Delta'_n$
+(respectivamente, $\Delta''_n$) depende funtorialmente do objeto $\Delta_n$ de
+$\mathcal S$ (respectivamente, de $\mathcal S'$). Se $Z$ for uma categoria,
+então $\operatorname{Hom}(\Delta'_n,Z)$ (respectivamente,
+$\operatorname{Hom}(\Delta''_n,Z)$), quando $\Delta_n$ varia, é um funtor de
+$\mathcal S$ (respectivamente, de $\mathcal S'$) para a categoria dos
+conjuntos, isto é, um conjunto simplicial (respectivamente, um conjunto
+semissimplicial), dito \emph{associado à categoria $Z$}; denotemo-los por $Z'$
+e $Z''$. Há, além disso, um homomorfismo natural evidente do conjunto
+semissimplicial associado a $Z'$ para $Z''$, e este último é um isomorfismo se,
+e somente se, $Z$ for um grupoide. Posto isso:
+
+\result{PROPOSIÇÃO}{4.1} O funtor $Z\longmapsto Z''$ da categoria das
+categorias para a categoria dos conjuntos semissimpliciais é plenamente fiel
+e define uma equivalência entre a categoria das \emph{categorias} e a
+categoria dos conjuntos semissimpliciais, isto é, dos funtores contravariantes
+$K$ de $\mathcal S'$ para $(\mathrm{Set})$ que transformam os coprodutos
+fibrados $A\amalg_C B$ do tipo especificado acima em produtos fibrados de
+conjuntos. Do mesmo modo, o funtor $Z\longmapsto Z'$ da categoria dos
+grupoides para a categoria dos conjuntos simpliciais é plenamente fiel e
+define uma equivalência entre a categoria dos \emph{grupoides} e a categoria
+dos
+\src{109}
+conjuntos simpliciais, isto é, funtores contravariantes $K$ de $\mathcal S$
+em $(\mathrm{Ens})$, que transformam somas amalgamadas em produtos fibrados.
+
+Pode-se, portanto, considerar as categorias como conjuntos semissimpliciais
+particulares, e os grupoides como conjuntos simpliciais particulares, com a
+condição, naturalmente, de raciocinar «a menos de isomorfismo», como é de rigor
+quando se interpretam certas estruturas em termos de outras. O procedimento
+usual de redução ao caso conjuntista implica então:
+
+\result{COROLÁRIO}{4.2} O enunciado precedente continua válido quando se
+substituem as categorias, os grupoides e os conjuntos simpliciais por
+$\mathcal C$-categorias, $\mathcal C$-grupoides e $\mathcal C$-objetos
+simpliciais, contanto que existam produtos fibrados em $\mathcal C$.
+
+O objeto semissimplicial $K$ em $\mathcal C$ associado a uma categoria
+$(X,R,\ldots)$ em $\mathcal C$ pode ser explicitado interpretando-se a
+componente $K_n=K(\Delta_n)$ de $K$ como a $n$-ésima potência fibrada de
+$(R,p_1)$ sobre $X$, ou melhor, pela fórmula de recorrência
+\[
+  K_0=X,\qquad
+  K_n=(K_{n-1},p_{n-1}^{(n-1)})\times_X(R,p_1),
+\]
+onde os $p_i^{(n-1)}$ ($0\leq i\leq n-1$) são as projeções naturais de
+$K_{n-1}$ em $X$ (que também se definem por recorrência). Dessa forma,
+$p_1,p_2,\pi,D,s$ são interpretados como as operações simpliciais que
+correspondem respectivamente aos morfismos em $\mathcal S$: a face $0$ de
+$\Delta_1$, a face $1$ de $\Delta_1$, a face $(0,2)$ de $\Delta_2$, a
+degenerescência $\Delta_1\to\Delta_0$ e a simetria de $\Delta_1$. Todas as
+demais operações semissimpliciais (respectivamente simpliciais) deduzem-se
+formalmente das quatro (respectivamente cinco) precedentes por composição e
+produtos fibrados.
+
+Chama-se agora \emph{pré-relação de equivalência} em um objeto $X$ de uma
+categoria o dado de um grupoide cujo objeto dos objetos (se assim se pode
+dizer) é $X$. Tal dado compreende, portanto, entre outras coisas, um objeto $R$
+e dois morfismos
+\[
+  p_1,p_2:R\rightrightarrows X.
+\]
+Observe-se, porém, que esses dados, por si sós, não determinam a estrutura
+considerada, ao contrário do que ocorre com os pares de equivalência. Nesta
+exposição, interessamo-nos por essa noção com o objetivo de obter critérios de
+possibilidade de passagem ao quociente, isto é, de formação do conúcleo do par
+$(p_1,p_2)$. O enunciado do problema, portanto, não faz uso dos dados
+adicionais inerentes a um grupoide. Na demonstração dos resultados que se
+seguem,
+\src{110}
+utilizaremos, contudo, esses dados adicionais e, em particular, as operações
+simpliciais (incluindo as operações de simetria) até a dimensão $3$ (nas quais
+intervém a quarta potência fibrada de $R$ sobre $X$).
+
+Uma relação de equivalência em um objeto $X$ de $\mathcal C$ define uma
+pré-relação de equivalência: basta verificá-lo no caso conjuntista, no qual se
+associa a uma relação de equivalência em um conjunto $X$ o grupoide cujo
+conjunto de objetos é $X$ e cujo conjunto de setas é o grafo da relação de
+equivalência.
+
+Um $\mathcal C$-monoide $G$ que opera sobre um objeto $X$ de $\mathcal C$
+define uma $\mathcal C$-categoria cujos objetos subjacentes são $R=G\times X$
+e $X$ (desde que $G\times X$ exista), e que é um $\mathcal C$-grupoide se, e
+somente se, $G$ for um grupo. Basta, ainda, fazer a verificação no caso
+conjuntista. Define-se então a composição das setas $(g,a)$ e
+$(g',g\cdot a)$ por
+\[
+  (g',g\cdot a)(g,a)=(g'g,a),
+\]
+isto é, se $a,b\in X$, então $\operatorname{Hom}(a,b)$ é, por definição, o
+transportador de $a$ em $b$, e os morfismos se compõem mediante a composição
+dos elementos de $G$.
+
+\medskip
+\noindent\textbf{OBSERVAÇÃO. ---} Podem-se evitar as dificuldades lógicas
+levantadas por um enunciado como (4.1), subentendendo-se que todos os objetos
+considerados se encontram em um «Universo» fixado (que é ele próprio um
+conjunto).
+
+\fsection{5}{Quociente por uma relação de equivalência finita e plana}
+
+\result{TEOREMA}{5.1} Sejam $X=\operatorname{Spec}(B)$ um esquema afim e $R$
+uma pré-relação de equivalência em $X$, cuja componente $R_1$ é afim, digamos
+$R_1=\operatorname{Spec}(C)$. Suponha-se que a primeira projeção
+$p_1:R_1\to X$ seja um morfismo finito e localmente livre; em outras palavras,
+que o homomorfismo de anéis correspondente $p_1^*:B\to C$ faça de $C$ um
+$B$-módulo projetivo de tipo finito. Seja $A$ o subanel de $B$ que é o núcleo
+do par de homomorfismos
+\[
+  p_1^*,p_2^*:B\rightrightarrows C
+\]
+(isto é, o conjunto dos elementos $b$ tais que
+$p_1^*(b)=p_2^*(b)$). Seja $Y=\operatorname{Spec}(A)$, e seja $f:X\to Y$ o
+morfismo definido pela inclusão de $A$ em $B$. Nessas condições:
+\begin{enumerate}
+\item[(i)] $B$ é integral sobre $A$, isto é, $f$ é um morfismo integral.
+
+\item[(ii)] O morfismo $f$ é sobrejetivo, e suas fibras são as classes de
+equivalência
+\src{111}
+conjuntistas $p_2\allowbreak(p_1^{-1}(x))$ em $X$ módulo $R$, e a topologia
+de $Y$ é a topologia quociente da de $X$.
+
+\item[(iii)] $Y$ é o quociente de $X$ por $R$ na categoria dos pré-esquemas.
+
+\item[(iv)] Se $R$ provém de uma \emph{relação de equivalência}, então o
+morfismo $f:X\to Y$ é finito e localmente livre (isto é, $B$ é um $A$-módulo
+projetivo finitamente gerado), e a relação de equivalência é efetiva, isto é,
+$R_1\to X\times_Y X$ é um isomorfismo.
+\end{enumerate}
+
+Este teorema generaliza o conhecido teorema relativo ao caso de um grupo
+finito $G$ que atua por automorfismos no anel $B$ e ao anel de invariantes
+$A$, e sua demonstração é análoga à demonstração conhecida. Pode-se precisar
+(iii) da seguinte maneira:
+
+\result{COROLÁRIO}{5.2} O morfismo canônico
+$R_1\to X\times_Y X$ é \emph{sobrejetivo}.
+
+Seja ainda $R$ uma pré-relação de equivalência «finita e localmente livre» em
+$X$, sendo agora $X$ um pré-esquema arbitrário. Suponhamos que se possa
+encontrar um pré-esquema $Y$ e um morfismo $f:X\to Y$ tais que $fp_1=fp_2$ e,
+além disso, que seja exata a sequência de homomorfismos de feixes de anéis
+sobre $Y$:
+\[
+  \mathcal O_Y\longrightarrow f_*(\mathcal O_X)
+  \rightrightarrows g_*(\mathcal O_R)
+\]
+(onde $g=fp_i$). Resulta então do teorema que se têm conclusões (i) a (iv)
+análogas às do teorema; em particular, por (iii), $Y$ é o quociente de $X$ por
+$R$ e, portanto, fica determinado a menos de isomorfismo único. Diz-se, nessas
+condições, que a pré-relação de equivalência $R$ em $X$ é \emph{admissível}.
+Com essa definição:
+
+\result{TEOREMA}{5.3} Sejam $X$ um pré-esquema e $R$ uma pré-relação de
+equivalência em $X$ tal que $p_1:R_1\to X$ seja um morfismo finito e localmente
+livre. Para que $R$ seja admissível, é necessário e suficiente que toda classe
+de equivalência conjuntista $p_2(p_1^{-1}(x))$ em $X$ módulo $R$ esteja
+contida em um aberto afim (condição sempre verificada se todo subconjunto
+finito de $X$ estiver contido em um aberto afim, por exemplo, se $X$ for
+quase-projetivo sobre um esquema afim).
+
+Mostra-se, com efeito, sem dificuldade que toda classe de equivalência módulo
+$R$ em $X$ está então contida em um aberto afim \emph{estável por $R$}, e
+constrói-se o quociente $Y$ pela colagem das partes obtidas com o auxílio do
+Teorema 5.1.
+\src{112}
+
+\result{COROLÁRIO}{5.4} Suponhamos satisfeita essa condição e que, além disso,
+$R$ provenha de uma relação de equivalência. Então esta última é efetiva, isto
+é, $R_1\to X\times_Y X$ é um isomorfismo, e $f:X\to Y$ é um morfismo finito
+localmente livre.
+
+Conclui-se imediatamente, por «descida»:
+
+\result{COROLÁRIO}{5.5} Sob as condições de (5.4), $X$ tem posto $n$ em todo
+ponto sobre $Y$ se e somente se $(R_1,p_1)$ tem posto $n$ em todo ponto sobre
+$X$. Se $X,R_1$ forem $Z$-pré-esquemas e $p_1,p_2$ forem $Z$-morfismos, sendo
+portanto $Y$ um $Z$-pré-esquema, então $X$ é plano sobre $Z$ se e somente se
+$Y$ o for.
+
+Em resumo:
+
+\result{ESCÓLIO}{} O dado de um morfismo finito, localmente livre e
+sobrejetivo $f:X\to Y$ de pré-esquemas equivale ao dado de um pré-esquema $X$
+munido de uma relação de equivalência $R$ tal que $p_1:R\to X$ seja finito e
+localmente livre, e que toda classe $p_2(p_1^{-1}(x))$ esteja contida em um
+aberto afim.
+
+\medskip
+\noindent\textbf{OBSERVAÇÕES 5.6.}
+
+\smallskip
+\noindent $1^\circ$ Não foi necessário fazer nenhuma hipótese Noetheriana.
+
+\smallskip
+\noindent $2^\circ$ Esta noção de passagem ao quociente inclui, como caso
+particular, a «descida inseparável» de CARTIER, que corresponde à determinação
+dos morfismos finitos localmente livres $f:X\to Y$ tais que
+$f_*(\mathcal O_X)$ admita uma $p$-base em relação a $\mathcal O_Y$ (sendo $X$
+um pré-esquema dado cujo feixe $\mathcal O_X$ é anulado pelo número primo
+$p>0$). Observe-se que o resultado se exprime facilmente sem hipótese de
+regularidade sobre os anéis locais e sem supor que $X$ seja um esquema
+algébrico sobre um corpo. A teoria de JACOBSON--BOURBAKI é obtida tomando-se
+como $X$ o espectro de um corpo de característica $p$.
+
+\smallskip
+\noindent $3^\circ$ GABRIEL havia obtido anteriormente um caso particular do
+teorema (5.3) na teoria da passagem ao quociente para grupos comutativos
+finitos sobre um corpo $k$. [Compare-se (7.4).]
+
+\fsection{6}{Quociente por uma relação de equivalência própria e plana}
+
+\result{TEOREMA}{6.1} Sejam $S$ um pré-esquema localmente Noetheriano, $X$
+um $S$-esquema quasi-projetivo, $R$ uma pré-relação de equivalência em $X$,
+tal que:
+\src{113}
+\begin{enumerate}
+\item[(a)] $p_1:R_1\to X$ é próprio e plano;
+\item[(b)] $R_1\to X\times_S X$ é um morfismo finito ou, o que equivale em
+virtude de (a), tem fibras finitas (condição automaticamente satisfeita se
+$R$ provém de uma relação de equivalência).
+\end{enumerate}
+Nessas condições:
+\begin{enumerate}
+\item[(i)] $X/R=Y$ existe e (se $S$ é Noetheriano e se $R$ provém de uma
+relação de equivalência) é quase-projetivo sobre $S$.\footnote{O texto impresso
+não contém a segunda hipótese. A errata vinculada à exposição 212 esclarece
+que a quase-projetividade parece então demonstrada apenas quando $R$ provém
+de uma relação de equivalência.}
+
+\item[(ii)] O morfismo canônico $f:X\to Y$ é sobrejetivo, próprio e aberto;
+suas fibras são as classes de equivalência $p_2(p_1^{-1}(x))$ em $X$ módulo
+$R$; portanto, $Y$ identifica-se com o espaço topológico quociente de $X$ pela
+relação de equivalência conjuntista definida por $R$. Por fim,
+$R_1\to X\times_Y X$ é sobrejetivo.
+
+\item[(iii)] Se $R$ provém de uma relação de equivalência, esta última é
+efetiva, isto é, $R_1\to X\times_Y X$ é um isomorfismo e, além disso,
+$f:X\to Y$ é plano (portanto, fielmente plano).
+\end{enumerate}
+
+Para a demonstração, reduz-se a (5.1) por meio de quase-seções adequadas de $X$
+para $R$, sendo a demonstração análoga à construção dos grupos algébricos
+quocientes no Seminário Chevalley.
+
+Em resumo:
+
+\result{ESCÓLIO}{} Seja $X$ quase-projetivo sobre $S$ localmente Noetheriano. O
+dado de um morfismo próprio, fielmente plano e sobrejetivo $f:X\to Y$ de $X$
+para um $S$-pré-esquema $Y$ equivale ao dado de uma relação de equivalência $R$
+em $X$, tal que $p_1:R\to X$ seja próprio e plano.
+
+O mesmo método fornece o resultado seguinte:
+
+\result{TEOREMA}{6.2} Sejam $S$ um pré-esquema Noetheriano, $X$ um
+pré-esquema de tipo finito sobre $S$ e $R$ uma pré-relação de equivalência no
+$S$-pré-esquema $X$; supõe-se que:
+\begin{enumerate}
+\item[(a)] $p_1:R_1\to X$ é plano e de tipo finito;
+\item[(b)] o morfismo $R_1\to X\times_S X$ é quase-finito (isto é, tem fibras
+finitas).
+\end{enumerate}
+Então existe um aberto $U$ denso em $X$, \emph{saturado} para $R$, tal que:
+\begin{enumerate}
+\item[(i)] Se $R_U$ é a pré-relação de equivalência induzida por $R$ em $U$,
+então $U/R_U$ existe e é de tipo finito sobre $S$.
+
+\item[(ii)] O morfismo canônico $U\to U/R_U$ é sobrejetivo e aberto; suas
+fibras são as classes de equivalência conjuntistas para $R_U$ (portanto,
+$U/R_U$ é o espaço topológico quociente de $U$ pela relação de equivalência
+conjuntista definida por $R_U$); por fim, o morfismo
+\[
+  (R_U)_1\longrightarrow U\times_{U/R_U}U
+\]
+é sobrejetivo.
+\src{114}
+
+\item[(iii)] Se $R$ provém de uma relação de equivalência, pode-se supor que
+$U\to U/R_U$ seja fielmente plano e que $R_U$ seja efetiva.
+\end{enumerate}
+
+Este é um resultado de natureza essencialmente «birracional».
+
+\medskip
+\noindent\textbf{OBSERVAÇÕES 6.3.}
+
+\smallskip
+\noindent $1^\circ$ Ignoro se, em (6.1) e (6.2), a hipótese (b) é inútil. Na
+passagem ao quociente por grupos, ela nos obriga praticamente a nos
+restringirmos ao caso em que os estabilizadores são todos grupos finitos.
+
+\smallskip
+\noindent $2^\circ$ Pode-se perguntar se não há resultados análogos a (6.1) e
+(6.2) sem hipótese de planicidade. Não conheço nenhum contraexemplo nessa
+direção. Em contrapartida, mesmo conservando a hipótese de planicidade e
+restringindo-nos a relações de equivalência tais que $p_1:R\to X$ seja plano e
+quase-finito (mas não finito), sendo $X$ afim, pode ocorrer que $R$ não seja
+efetiva: tomem-se as relações de equivalência induzidas nos abertos afins que
+recobrem a variedade de Nagata (na qual um grupo de ordem dois opera de modo
+«não admissível»).
+
+\fsection{7}{Aplicações}
+
+Como dissemos na introdução, a aplicação mais importante de (6.1) é a
+construção de esquemas de Picard, bem como de soluções para vários outros
+problemas de moduli, aos quais voltaremos posteriormente.
+
+Obtém-se uma demonstração simples do seguinte resultado de SHIMURA:
+
+\result{PROPOSIÇÃO}{7.1} Seja $A$ um esquema abeliano definido sobre um anel de
+valorização discreta $V$, com corpo de frações $K$. Então todo esquema
+abeliano $B'$ sobre $K$, isógeno a um quociente de $A\otimes_V K$, «tem boa
+redução sobre $V$», isto é, é isomorfo a algum $B\otimes_V K$,
+\footnote{O texto impresso traz $B\otimes_V A$. Como $B$ é um $V$-esquema e a
+afirmação diz respeito à sua fibra genérica, o fator de base deve ser $K$.} onde $B$ é um esquema
+abeliano sobre $V$ (essencialmente único, recordemo-lo).
+
+Pode-se supor que $B'$ seja o quociente de $A_K$ por um subesquema em grupos
+$C'$. (N.B.: $C'$ não será, em geral, «reduzido», isto é, seus anéis locais
+terão elementos nilpotentes.) Considere-se o subesquema fechado $C$ de $A$ que
+é o «fecho» de $C'$, isto é, o menor subesquema fechado de $A$ tal que $C_K$
+contenha $C'$. Teremos $C_K=C'$, e do fato de que $V$ é um anel de valorização
+discreta deduz-se facilmente que $C$ é um subesquema em grupos de $A$ sobre
+$V$. Como $A$ é próprio sobre $\operatorname{Spec}(V)=S$, o mesmo vale para
+$C$; por outro lado, $A$ é até projetivo sobre $S$. Pode-se então aplicar
+(6.1) para construir $A/C=B$,
+\src{115}
+que é o $B$ procurado.
+
+Por fim, argumentos essencialmente conhecidos permitem deduzir de (6.2) o
+seguinte resultado:
+
+\result{TEOREMA}{7.2} Sejam $S$ o espectro de um anel Artiniano, $F$ e $G$
+esquemas em grupos de tipo finito sobre $S$, e $u:F\to G$ um homomorfismo de
+esquemas em grupos sobre $S$. Suponhamos:
+\begin{enumerate}
+\item[(i)] $F$ é plano sobre $S$;
+\item[(ii)] o núcleo de $u$ é finito.
+\end{enumerate}
+Nessas condições, existe o esquema quociente $G/F$; o morfismo canônico
+$G\to G/F$ é sobrejetivo e aberto, e suas fibras são as classes de equivalência
+conjuntistas definidas pelas ações à direita de $F$ sobre $G$. Por fim, se $u$
+é um monomorfismo, então $G\to G/F$ é plano e o morfismo
+\[
+  G\times F\longrightarrow G\times_{G/F}G
+\]
+é um isomorfismo; em outras palavras, $G$ é um espaço homogêneo principal
+sobre $G/F$, com grupo estrutural (atuando à direita) $F$, ou melhor,
+$F\times_S(G/F)$ considerado como esquema em grupos sobre $G/F$ (cf. [1], B,
+\S~6).
+
+\result{COROLÁRIO}{7.3} Nessas condições, para que $G$ seja plano sobre $S$,
+é necessário e suficiente que $G/F$ o seja. Se essa condição for satisfeita,
+a passagem ao quociente por $F$ comuta com toda extensão da base $S$ e, se
+$F$ for um subgrupo normal de $G$, $G/F$ poderá ser munido de uma estrutura
+de \emph{grupo quociente} de $G$ por $F$.
+
+A situação é particularmente simples quando $S$ é o espectro de um corpo,
+pois então todo $S$-pré-esquema é automaticamente plano sobre $S$. Obtém-se:
+
+\result{COROLÁRIO}{7.4} Sejam $F,G$ esquemas em grupos de tipo finito sobre um
+corpo $k$, e seja $u:F\to G$ um homomorfismo de $k$-grupos. Então $u$ se
+fatora como $F\to F'\to G$, onde $F\to F'$ é o homomorfismo de passagem ao
+quociente pelo subgrupo fechado $\operatorname{Ker}u$ de $F$, e $F'\to G$ é
+um homomorfismo de grupos que é uma imersão fechada. Existe o quociente
+$G/F=G/F'$. O formalismo usual (do tipo dos teoremas de Noether) é válido
+entre os grupos algébricos sobre $k$.
+
+Este resultado permite tratar de maneira uniforme a passagem ao quociente nos
+grupos algébricos no sentido clássico (isto é, os que são irredutíveis sobre
+$k$ e suaves sobre $k$) e a passagem ao quociente por subgrupos
+«infinitesimais»
+\src{116}
+considerados por CARTIER. É vantajoso considerar as «hiperálgebras»
+introduzidas por CARTIER, na esteira dos trabalhos de DIEUDONNÉ sobre os grupos
+formais, como grupos na categoria dos esquemas formais sobre $k$ e, quando for
+o caso (se corresponderem a hiperálgebras de posto finito sobre $k$), como
+grupos algébricos finitos sobre $k$.
+
+\fsection{8}{Uma conjectura}
+
+Ela responde à necessidade de saber passar ao quociente pelo grupo projetivo
+que atua em certos subesquemas dos «esquemas de Hilbert» (estes últimos
+substituindo, na teoria dos esquemas, as variedades de Chow).
+
+Sejam $S$ um pré-esquema e $n$ um inteiro. A todo pré-esquema $S'$ sobre $S$,
+façamos corresponder o grupo
+$\operatorname{Gl}(n,\Gamma(S',\mathcal O_{S'}))$ das matrizes invertíveis de
+$n$ linhas e $n$ colunas com entradas no anel das seções de
+$\mathcal O_{S'}$. Obtém-se assim um funtor contravariante em $S'$, que se
+mostra facilmente representável; ele corresponde, portanto, a um esquema em
+grupos sobre $S$, de fato afim sobre $S$, denotado por $\operatorname{Gl}(n)_S$.
+Sua formação é compatível com a mudança de base, de modo que, na realidade,
+tudo provém de um esquema em grupos sobre $\mathbf Z$, denotado por
+$\operatorname{Gl}(n)$. O grupo $\operatorname{Gl}(1)$, chamado grupo
+multiplicativo e frequentemente denotado por $\mathbf G_m$, corresponde ao
+funtor $S\longmapsto\Gamma(S,\mathcal O_S)^*$, grupo das «unidades» sobre $S$.
+Há um homomorfismo evidente
+$\operatorname{Gl}(1)\to\operatorname{Gl}(n)$, e constrói-se facilmente o
+grupo quociente, denotado por $\operatorname{GP}(n-1)$ e chamado
+\emph{grupo projetivo de grau $n-1$ sobre $\mathbf Z$}. Ele representa o
+funtor que associa a $S$ o grupo das seções do feixe
+$\widetilde{\operatorname{Gl}(n)}_S/
+\widetilde{\operatorname{Gl}(1)}_S$, onde
+$\widetilde{\operatorname{Gl}(n)}_S$ denota o feixe dos germes de seções de
+$\operatorname{Gl}(n)_S$ sobre $S$. (É preciso observar que as seções de
+$\operatorname{GP}(n-1)_S$ sobre $S$ não provêm, em geral, de seções de
+$\operatorname{Gl}(n)_S$ sobre $S$!) Note-se que se pode provar que
+$\operatorname{GP}(n-1)$ representa também o funtor
+$S\longmapsto\operatorname{Aut}_S(\mathbf P_S^{n-1})$, onde
+$\mathbf P_S^{n-1}$ é o espaço projetivo padrão de dimensão relativa $n-1$
+sobre $S$, ao menos quando $S$ é Noetheriano. É dessa maneira que ele intervém
+na teoria de módulos.
+
+Seja $S$ um esquema Noetheriano, que se pode, se desejado, supor afim, e seja
+$X$ um $S$-pré-esquema quase-projetivo, munido de um feixe invertível
+$\mathcal L$ muito amplo relativamente a $S$. Suponhamos que o grupo
+$G=\operatorname{GP}(n)_S$ atue em $X$ e, ao mesmo tempo, em $\mathcal L$ (de
+modo compatível com sua ação em $X$), e que atue \emph{livremente} em
+$X$.\footnote{O texto impresso diz «em $S$». A ação considerada e a condição
+de quociente dizem respeito a $X$.}
+\src{117}
+
+\result{CONJECTURA}{8.1}\footnote{A errata vinculada à exposição 212 assinala
+que esta conjectura é «decididamente falsa». Indica também que o fato positivo
+da observação 8.1 foi desde então demonstrado e remete aos trabalhos de Mumford
+e a seus refinamentos.} Nas condições precedentes:
+
+\smallskip
+\noindent $1^\circ$ \emph{A relação de equivalência definida por $G$ é
+efetiva, o quociente $Y=X/G$ é de tipo finito sobre $S$ e o morfismo canônico
+$f:X\to Y$ é plano e sobrejetivo} (portanto, $X$ torna-se um fibrado principal
+homogêneo sobre $Y$, de grupo
+$G\times_S Y=\operatorname{GP}(n)_Y$).
+
+\smallskip
+\noindent $2^\circ$ Seja $\mathcal L'$ o feixe invertível sobre $Y$ deduzido
+de $\mathcal L$ por «descida fielmente plana» ao longo de $f$ (cf. [1], B,
+\S~th. 1). Então $\mathcal L'$ é \emph{pré-amplo sobre $Y$ relativamente a
+$S$}, isto é, existem um inteiro $m$ e um morfismo quase-finito de $Y$ para um
+esquema projetivo padrão conveniente $\mathbf P_S^N$, tais que
+$(\mathcal L')^{\otimes m}$ seja isomorfo à imagem inversa de
+$\mathcal O_{\mathbf P_S^N}(1)$.
+
+Observe-se que, mesmo se $X$ é separado sobre $S$, pode ocorrer que $Y$ não
+seja separado sobre $S$ (situação que ocorre em problemas de módulos nada
+patológicos). Se $1^\circ$ se verifica, então $Y$ é separado se e somente se a
+relação de equivalência definida por $G$ tem gráfico fechado, isto é, se
+$G\times X\to X\times X$ tem imagem fechada (trata-se então de uma imersão
+fechada). Se $Y$ é separado, então $\mathcal L'$ é pré-amplo sobre $Y$
+relativamente a $S$ se e somente se é amplo, isto é, se uma potência tensorial
+adequada define uma imersão projetiva. Nos problemas de módulos mencionados na
+introdução, pode-se mostrar que a relação de equivalência obtida tem de fato um
+gráfico fechado.
+
+\medskip
+\noindent\textbf{OBSERVAÇÕES 8.1. ---} Supusemos
+$G=\operatorname{GP}(n)_S$ para fixar as ideias e porque este é atualmente o
+caso mais importante na prática. A hipótese razoável a fazer sobre $G$
+pareceria antes que $G$ fosse uma das «formas» sobre $S$ de um dos grupos de
+Tohokû (cuja construção sobre os inteiros também foi realizada por CHEVALLEY).
+O único fato positivo que conheço na direção da conjectura precedente é o
+seguinte: seja $X$ \emph{um esquema afim sobre um corpo $k$ de característica
+$0$, no qual o grupo $\operatorname{Gl}(n)_k$ ou
+$\operatorname{GP}(n-1)_k$ atua livremente. Então a relação de equivalência
+definida por $G$ é efetiva, o quociente $X/G$ também é afim e o morfismo
+$X\to X/G$ é plano e sobrejetivo}. A demonstração utiliza o fato seguinte (que
+por enquanto só está demonstrado em característica $0$): quando se faz $G$
+atuar sobre o anel de coordenadas afim $A$ de $G$, considerado como espaço
+vetorial sobre $k$, a representação trivial de $G$ ocorre apenas uma vez (em
+uma série de composição de um subespaço vetorial de dimensão finita sobre $k$,
+estável sob $G$). Parece possível que um uso sistemático da
+\src{118}
+a teoria das representações lineares de $G$ acabará por fornecer uma
+demonstração da conjectura, ao menos quando se está sobre um corpo de base.
+Quando já não se está sobre um corpo de base, o conferencista nada sabe.
+
+\section*{BIBLIOGRAFIA}
+\addcontentsline{toc}{section}{Bibliografia}
+
+\begin{description}
+\item[{[1]}] GROTHENDIECK (Alexander). --- Techniques de descente et théorèmes
+d'existence en géométrie algébrique, I: Généralités, Séminaire Bourbaki,
+1959/60, n\textsuperscript{o} 190, 29 p.
+
+\item[{[2]}] GROTHENDIECK (Alexander). --- Techniques de descente et théorèmes
+d'existence en géométrie algébrique, II: Le théorème d'existence en théorie
+formelle des modules, Séminaire Bourbaki, 1959/60,
+n\textsuperscript{o} 195, 22 p.
+
+\item[{[3]}] GROTHENDIECK (A.) e DIEUDONNÉ (J.). --- Éléments de géométrie
+algébrique, I: Le langage des schémas. --- Paris, Presses universitaires de
+France, 1960 (Institut des hautes Études scientifiques, Publications
+mathématiques, 4).
+\end{description}
+
+\par

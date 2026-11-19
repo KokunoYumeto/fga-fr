@@ -1,0 +1,54 @@
+from audit_utils import *
+for tree,layer in [('fr_printed','French as printed'),('fr','French corrected')]:
+ rel=f'sources/{tree}/fr/190.tex'
+ def r(a,b,line,statement='B.4',kind='reading',why='',count=1):
+  replace(rel,a,b,layer,'190-323',line,statement,'400-dpi full scan, three enlarged bands and a tight enlargement of the H1 identity. '+why,kind,count=count)
+ r("relation d'isomorphie.)","relation d'isomorphie).",'first parenthesis',why='Period after the closing parenthesis.')
+ r("\\[\n  X'\\longrightarrow X''=X'\\times_XX'\n\\]","$X'\\longrightarrow X''=X'\\times_XX'$",'diagonal morphism',kind='structure',why='Inline formula.')
+ old="image réciproque $\\Omega^1_{X'/X}$ sur $X'$. Comme"
+ new="image réciproque $\\Omega^1_{X'/X}$ sur $X'$ (\\uline{faisceau des} 1-\\uline{différentielles de} $X'$ \\uline{par rapport à} $X$). Comme"
+ r(old,new,'after conormal sheaf',why='Restore the omitted explanatory parenthesis and its selective underlining.')
+ r('i.e.','i. e.','before difference line bundle',why='Spaced abbreviation.')
+ r("F''_1(F''_2)^{-1}=F''","F''_1F''_2^{-1}=F''",'difference line bundle',why='No parentheses around the second line bundle.')
+ r("=H^1(X',\\Omega^1_{X'/X}).","=H^1(X',\\Omega^1_{X'/X}),",'H1 identity end',why='Terminal comma. The tight crop confirms that the denominator of Omega is unprimed X; no additional prime is inferred.')
+ r("\\[\n  \\Omega^1_{X'/X}\n  =\\Omega^1_{S'/S}\\otimes_{\\mathcal O_S}\\mathcal O_X,\n\\]","$\\Omega^1_{X'/X}=\\Omega^1_{S'/S}\\otimes_{\\mathcal O_S}\\mathcal O_X$,",'differential base-change identity',kind='structure',why='Inline identity.')
+ r('et par suite, si $','et par suite, \\uline{si} $','local-freeness clause',why='Selective underline.')
+ r('est localement libre sur $S$','\\uline{est localement libre sur} $S$','local-freeness clause',why='Selective underline; S is unprimed in the print and is retained.')
+ r('définit une section de\n','\\uline{définit une section de}\n','class interpretation',why='Underlined prose.')
+ r("\\[\n  R^1f'_*(\\mathcal O_{X'})\\otimes\\Omega^1_{S'/S}\n\\]","$R^1f'_*(\\mathcal O_{X'})\\otimes\\Omega^1_{S'/S}$",'higher-direct-image expression',kind='structure',why='Inline formula.')
+ r("sur $S'$ (appelée classe de Atiyah--Cartier du faisceau inversible $F'$ sur\n$X'/S$), dont l'annulation est nécessaire et suffisante pour que les images\nréciproques de $F'$ par les deux projections de","\\uline{sur} $S'$ (appelée \\uline{classe} de Atiyah--Cartier \\uline{du faisceau inversible} $F'$ \\uline{sur}\n$X'/S$) \\uline{dont l'annulation est nécessaire et suffisante pour que les images réciproques de} $F'$ \\uline{par les deux projections de}",'Atiyah–Cartier class',why='Selective underlines and no comma after the explanatory parenthesis.')
+ r("sur $X'$ soient équivalentes (où","\\uline{sur} $X'$ \\uline{soient équivalentes} (où",'after first-neighborhood identity',why='Selective underlines.')
+ r('trivialement\nnécessaire pour','trivialement\n\\uline{nécessaire} pour','necessity sentence',why='Nécessaire is underlined.')
+ r("d'une connexion de $F'$","d'une \\uline{connexion} de $F'$",'connection interpretation',why='The first occurrence of connexion is underlined.')
+ r("l'exemple 2 dudit numéro,","l'exemple 2 dudit,",'concluding reference',why='The print ends the reference with dudit and does not repeat numéro.')
+ r('Atiyah--Cartier','Atiyah-Cartier','three named-class occurrences',count=3,why='Short hyphens.')
+ old='\\subsection*{5. Application à la restriction du schéma de base dans un schéma abélien}\n\\addcontentsline{toc}{subsection}{5. Restriction du schéma de base dans un schéma abélien}\n\n'
+ new='\\addcontentsline{toc}{subsection}{5. Restriction du schéma de base dans un schéma abélien}\n\\result{5. \\uline{Application à la restriction du schéma de base dans un schéma abélien}}{} '
+ r(old,new,'section 5 heading','B.5',kind='structure',why='Roman run-in heading with underlined title, followed by a short dash.')
+ r('On appelle schéma abélien sur','On appelle \\uline{schéma abélien} sur','definition','B.5',why='Underlined term.')
+ if tree=='fr_printed':
+  r("$\\Omega^1_{X'/X}$ sur $X'$ (","$\\Omega^1_{X'/X}$ sur $X$ (",'space of differential sheaf',why='Printed X lacks the required prime.')
+  r("F''_i=p_i^*(F')","F''_i=p_i(F')",'definition of two pullbacks',why='The print omits the pullback star.')
+  r("R^1f'_*(\\mathcal O_{X'})","R^1f'(\\mathcal O_{X'})",'higher-direct-image expression',why='The print omits the direct-image star.')
+ else:
+  r('soit rationnelle sur $S$','soit rationnel sur $S$','last sentence of section 4',kind='misprint of the original',why='The adjective qualifies the masculine faisceau inversible F-prime, also called rationnel at the start of this page.')
+ for old,new,label in [(r'\mathcal I',r'\text{\uwave{I}}','diagonal ideal'),(r'\mathcal J',r'\text{\uwave{J}}','base diagonal ideal'),(r'\mathcal O',r'\text{\uwave{O}}','structure ring')]:
+  s,_,_=page_text(rel,323)
+  r(old,new,'all '+label+' identifiers',why='Ordinary wavy-underlined identifiers.',count=s.count(old))
+ upright_page(rel,layer,'190-323')
+with (ROOT/'CORRECTIONS.tsv').open('a',newline='') as f:
+ w=csv.writer(f,delimiter='\t')
+ for line,old,new,why in [('space of differential sheaf',"Omega1(X-prime/X) sur X","Omega1(X-prime/X) sur X-prime",'The conormal sheaf is pulled back to the diagonal X-prime, where the relative differential sheaf lives.'),('definition of two pullbacks',"F''_i=p_i(F')","F''_i=p_i^*(F')",'The line bundles are explicitly the inverse images under the two projections.'),('higher-direct-image expression',"R^1f'(O_X-prime)","R^1f'_*(O_X-prime)",'The displayed sheaf on S-prime is the first higher direct image under f-prime.')]:
+  w.writerow(['sources/fr/fr/190.tex','French corrected','190-323',line,'B.4',old,new,'The enlarged scan shows the old reading. '+why,'misprint of the original','low'])
+event('190-B4-galois-criterion','used and rechecked in this run','The Galois criterion follows from the rigidified line-bundle criterion on 322 and the decomposition of the double fiber product into group graphs checked on 320. Over the spectrum of a local ring, any open neighborhood of the closed point is the whole spectrum, so the stated equivalence is isomorphism. The base-section and base-change assumptions of 322 remain in force.','190, p. 323, opening paragraph')
+event('190-B4-first-order-class','targeted proof check','For the first infinitesimal neighborhood D of the diagonal, J=I/I^2 is square zero and 1+J identifies additively with J. The projection D to X-prime retracts the diagonal, so every global unit on X-prime lifts. The units exact sequence therefore injects H1(J) into Pic(D), with image the kernel of restriction to Pic(X-prime). The difference line bundle has its canonical diagonal trivialization, hence a unique such class. Conormal differentials identify J with Omega1(X-prime/X). Local transition functions yield the same class as d log of those functions, the obstruction to compatible local connection one-forms.','190, p. 323, first H1 display and connection interpretation')
+event('190-B4-differential-base-change','targeted proof check','For B over A and C over A, derivations of C tensor_A B relative to C identify with A-derivations of B, so Omega1((C tensor B)/C)=C tensor_A Omega1(B/A). This verifies the printed tensor identity with its implicit pullbacks. Under the local finite-free hypotheses of the Cartier example and the base-change inputs of 322, the projection formula gives the displayed R1 sheaf. The star on f-prime and the star on p_i are required to identify the indicated functors. The more general sheaf-theoretic base-change scope remains background.','190, p. 323, inline differential and R1 formulas')
+event('190-B4-cartier-sufficiency','targeted proof check','Assume the hypotheses from 322, a finite p-basis as in 321, and vanishing of the relative first-order class. Locally on the base this gives a connection on F-prime along the base derivations. Normalize the line bundle along s-prime and subtract the pullback of its restricted connection, making that restriction the canonical connection on the trivial line. Curvature and the failure to respect p-th powers are O_X-prime-linear endomorphisms of the line bundle. Their coefficients are pulled back from the base because f-prime-star(O_X-prime)=O_S-prime, and their restrictions to s-prime vanish. They are therefore zero. Relations (3.7)–(3.10) and the checked presentation on 321 now give descent. Two normalized connections differ by a base one-form vanishing on s-prime, hence coincide, so the local constructions glue. This supplies the missing integrability and p-curvature step in the final sentence.','190, p. 323, last sentence of section 4')
+event('190-B3-p-basis-scope','carried as background without fault found','The reference to Cartier over fields draws attention to a scope mismatch with the literal x_i^p=0 presentation on 321: a nontrivial field extension cannot be generated by nonzero nilpotent elements. The coordinate-derivation proof there also works for B=A[x_i]/(x_i^p-a_i), with a_i in A, but changing the printed hypothesis to that broader one is not a uniquely determined typographical repair. Preserve the special-case text and explain the broader formulation and its role in the notes.','190, pp. 321 and 323, p-basis hypothesis and field comparison')
+record_page('190',323,r'''Compared sources/fr_printed/fr/190.tex and sources/fr/fr/190.tex entry lines 1246–1305 with scan leaf 26 at 400 dpi, all three enlarged bands and a tighter crop of the H1 identity. The latter confirms an unprimed denominator X: no spurious correction to that subscript was made.
+
+Restored the omitted parenthetical definition of differentials, the inline diagonal, tensor and higher-direct-image formulas, wavy I/J/O identifiers, selective underlines, printed short hyphens, run-in section 5 heading and punctuation. Removed the unprinted repetition of numéro after dudit. Printed French restores the erroneous base X of the differential sheaf and the two omitted functor stars; corrected French retains X-prime, the pullback star and the higher-direct-image star with explicit rows. Corrected French changes rationnelle to rationnel to agree with faisceau.
+
+Checked the first-order class through the square-zero units sequence, its connection obstruction, and the tensor identity by the universal property of differentials. The Cartier sufficiency argument is completed by normalizing the connection along the chosen section: both curvature and p-curvature then vanish because their scalar endomorphisms come from the base and vanish along that section. The field comparison exposes the restricted scope of x_i^p=0 on 321; this is recorded for the notes, without silently widening the printed hypothesis.''')
+from update_record_counts import update
+update()

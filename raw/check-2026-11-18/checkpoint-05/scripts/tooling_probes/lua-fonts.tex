@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{TeX Gyre Cursor}
+\usepackage{polyglossia}
+\setdefaultlanguage{french}
+\setotherlanguages{english,spanish,vietnamese}
+\usepackage{geometry,microtype,graphicx,mathtools,amsthm,unicode-math,bookmark,hyperref}
+\setmathfont{Latin Modern Math}
+\usepackage[normalem]{ulem}
+\begin{document}
+\setbox0=\hbox{\uline{abc} Fran\c cais \( X+\symup{x}+\mathcal F+\mathfrak G \)}
+\typeout{FGA-ZERO-PAGE-FONT-SMOKE-PASS}
+\end{document}

@@ -1,0 +1,1344 @@
+\unit{Bài trình bày 182 — Hình học hình thức và hình học đại số}
+\sid{182}
+\markboth{Thuyết trình 182}{Thuyết trình 182}
+\src{193}
+\seminar{(Tháng 5 năm 1959)}
+\paperhead{HÌNH HỌC HÌNH THỨC VÀ HÌNH HỌC ĐẠI SỐ}%
+  {do Alexander GROTHENDIECK}
+
+\fsection{1}{Lược đồ}
+
+Ta biết rằng một không gian đại số affine xác định trên một trường $k$ về căn
+bản được xác định bởi đại số affine $A$ của nó (vành các hàm chính quy xác định
+trên $k$), vì các cấu xạ giữa các không gian đại số
+$X\longrightarrow Y$ tương ứng song ánh với các đồng cấu
+$k$-đại số $A(Y)\longrightarrow A(X)$. Đại số affine tương ứng với một không
+gian đại số là một $k$-đại số kiểu hữu hạn và, theo quan điểm
+\fquote{cổ điển}, không có phần tử lũy linh; ngược lại, mọi đại số thuộc kiểu
+này đều nhận được như đại số affine của một không gian đại số xác định trên
+$k$. Như vậy có một từ điển quen thuộc cho phép diễn giải các tình huống liên
+quan đến không gian đại số affine bằng ngôn ngữ đại số giao hoán. Từ lâu người
+ta đã nhận thấy rằng cách làm này cho những mệnh đề tổng quát hơn, vì thông
+thường không còn cần giả sử các vành đang xét thuộc kiểu vừa nêu; giả thiết
+Noether thường là đủ. Đặc biệt, dù có cho trước một trường cơ sở hay không,
+không có lý do gì để loại trừ trường hợp các vành ấy chứa phần tử lũy linh.
+Cho đến nay, các nhà hình học vẫn từ chối lưu ý đến những chỉ dẫn này và khăng
+khăng chỉ xét các đại số affine không có phần tử lũy linh, nghĩa là các không
+gian đại số mà bó cấu trúc không có phần tử lũy linh (và phần lớn còn chỉ xét
+các không gian đại số \fquote{bất khả quy tuyệt đối}). Báo cáo viên cho rằng
+quan niệm ấy đã gây trở ngại nghiêm trọng cho sự phát triển của các phương
+pháp thật sự tự nhiên trong hình học đại số.
+
+Cho $A$ là một vành giao hoán. Ta biết rằng tập
+$X=\operatorname{Spec}(A)$ các iđêan nguyên tố của $A$ mang một tôpô tự nhiên,
+gọi là \fquote{tôpô Zariski} hay tôpô phổ. Mặt khác, trên $X$ có một bó các
+vành giao hoán $\Osh_X$, với thớ tại $\mathfrak p\in X$ là vành địa phương hóa
+$A_{\mathfrak p}$ và vành các tiết diện của nó được đồng nhất với $A$. Do đó
+$X$ trở thành một \emph{không gian có vành}, gọi là \emph{phổ nguyên tố} của
+$A$. Một đồng cấu vành $f:A\longrightarrow B$ xác định một cấu xạ của các
+không gian có vành
+$f':\operatorname{Spec}(B)\longrightarrow\operatorname{Spec}(A)$; ánh xạ tập
+hợp nền chính là $\mathfrak p\longmapsto f^{-1}(\mathfrak p)$. Các cấu xạ
+
+\src{194}
+của các không gian có vành từ $\operatorname{Spec}(B)$ đến
+$\operatorname{Spec}(A)$ thu được theo cách này chính là những cấu xạ mà các
+đồng cấu $\Osh_x\longrightarrow\Osh_y$ ($x=f'(y)$) đều là đồng cấu địa phương
+(nghĩa là nghịch ảnh của iđêan cực đại là iđêan cực đại).
+
+Ta gọi một không gian có vành đẳng cấu với một
+$\operatorname{Spec}(A)$ nào đó là \emph{lược đồ affine}, và gọi một không gian
+có vành affine địa phương là \emph{tiền lược đồ}; nói cách khác, mỗi điểm của
+nó có một lân cận mở mà, với cấu trúc cảm sinh, là một lược đồ affine. Các
+\emph{cấu xạ} của tiền lược đồ được định nghĩa theo cách hiển nhiên; ở địa
+phương chúng tương ứng với các đồng cấu vành.
+
+Khi cố định một tiền lược đồ $S$ và xét các cấu xạ tiền lược đồ
+$X\longrightarrow S$, không gian $S$ đóng vai trò của một trường hay một vành
+cơ sở (hay đúng hơn, của một không gian cơ sở trong một phân thớ). Khi đó ta
+nói $X$ là một $S$-tiền lược đồ; nếu $S=\operatorname{Spec}(A)$, điều này cũng
+có nghĩa $\Osh_X$ là một bó các $A$-đại số. Vì thế, mỗi tiền lược đồ có thể
+được xem một cách duy nhất như một $\mathbf Z$-tiền lược đồ. Dĩ nhiên, các
+$S$-tiền lược đồ lập thành một phạm trù; hơn nữa, người ta chứng minh rằng
+trong phạm trù này tích của hai vật $X,Y$ luôn tồn tại và được ký hiệu
+$X\times_S Y$. Khái niệm tích này cho phép định nghĩa phép thay đổi cơ sở của
+một $S$-tiền lược đồ ứng với một cấu xạ $S'\longrightarrow S$: quả vậy,
+$X\times_S S'$ có thể được xem như một $S'$-tiền lược đồ.
+
+Ta nói $X$ \emph{tách} trên $S$ nếu đường chéo của $X$ trong
+$X\times_S X$ là đóng. Một tiền lược đồ tách trên $\mathbf Z$ được gọi là một
+\emph{lược đồ}; khi ấy nó tách trên mọi cơ sở. Để đơn giản, từ đây ta chỉ nói
+đến các lược đồ và còn giả sử chúng là \emph{Noether}, nghĩa là hợp hữu hạn
+của các tập mở affine vốn là phổ của các vành Noether. Ta nói $X$ \emph{thuộc
+kiểu hữu hạn trên} $S$ nếu với mọi tập mở affine $U$ của $S$, nghịch ảnh của
+$U$ trong $X$ là hợp hữu hạn của các tập mở affine có các vành là đại số kiểu
+hữu hạn trên vành của $U$. Chính những $S$-lược đồ như vậy mới thích hợp cho
+một nghiên cứu thực sự mang tính hình học. Đặc biệt, với mọi $s\in S$, thớ
+$f^{-1}(s)$ của $X$ trên $s$ là một lược đồ đại số trên trường thặng dư
+$\kappa(s)$ của vành địa phương $\Osh_s$ tại $s$ trong $S$. Bởi vậy, trong một
+chừng mực nào đó, có thể xem $X$ như một họ các \fquote{không gian đại số}
+$f^{-1}(s)$, trong đó tham số $s$ chạy trên $S$ (nghĩa là, theo quan điểm địa
+phương, trên tập các iđêan nguyên tố của một vành đã cho). Dĩ nhiên, các
+$\kappa(s)$ có thể có những đặc số khác nhau. Nếu
+$S=\operatorname{Spec}(k)$, với $k$ là một trường, ta về căn bản thu lại khái
+niệm thông thường về \fquote{không gian đại số}, chỉ khác ở chỗ giờ đây bó cấu
+trúc có thể có các phần tử lũy linh.
+
+\src{195}
+Lấy cảm hứng từ các khái niệm quen thuộc, ta định nghĩa khái niệm
+\emph{cấu xạ xạ ảnh} và, tổng quát hơn, \emph{cấu xạ proper}. Một cấu xạ như
+vậy thuộc kiểu hữu hạn; hơn nữa, nó biến các tập con đóng thành các tập con
+đóng và giữ nguyên tính chất này sau mọi phép thay đổi cơ sở.
+
+Với $X$ là một lược đồ (Noether, như vẫn giả sử), bó $\Osh_X$ là một
+\emph{bó vành coherent} theo nghĩa của [2]. Do đó, các bó môđun coherent trên
+$X$ cũng chính là những bó đẳng cấu địa phương với đối hạch của một đồng cấu
+$\Osh_X^{m}\longrightarrow\Osh_X^{n}$.
+
+\fsection{2}{Lược đồ hình thức}
+
+Cho $X$ là một lược đồ và $X'$ là một tập con đóng của $X$. Khi đó tồn tại một
+bó con coherent $J$ của $\Osh_X$ sao cho
+$X'=\operatorname{Supp}(\Osh_X/J)$ (thậm chí còn có một bó lớn nhất như vậy).
+Khi được trang bị $\Osh_X/J$, không gian $X'$ trở thành một lược đồ, ký hiệu
+$X_0$; lược đồ ấy được gọi là \fquote{lược đồ con đóng của $X$}. Với mọi $n$,
+ta cũng có thể xét $X'$ được trang bị $\Osh_X/J^{n+1}$, ký hiệu $X_n$; đây là
+một tiền lược đồ con đóng của $X$, có tập nền vẫn là $X'$ nhưng mang một bó
+cấu trúc khác, cụ thể là $\Osh_{X_n}=\Osh_X/J^{n+1}$. Hiển nhiên, các
+$\Osh_{X_n}$ lập thành một hệ xạ ảnh các bó vành trên $X'$; giới hạn xạ ảnh
+$\overline{\Osh}_X$ của hệ ấy được gọi là \emph{hoàn thành hình thức của
+$\Osh_X$ dọc theo $X'$}. Khi được trang bị bó vành này, $X'$ được gọi là
+\emph{hoàn thành hình thức của $X$ dọc theo $X'$}; đó là một không gian có
+vành, nhưng nói chung không phải là một lược đồ. Với mọi bó coherent $F$ trên
+$X$, tương tự ta có thể xét hoàn thành hình thức
+$\overline F=\varprojlim_n F_n$ của $F$ dọc theo $X'$, trong đó
+$F_n=F\otimes_{\Osh_X}\Osh_X/J^{n+1}$; đây là một bó môđun trên
+$\overline X$. Các tiết diện của nó được gọi là \fquote{các tiết diện hình
+thức của $F$ dọc theo $X'$} và được đồng nhất với các phần tử của
+$\varprojlim_n\Gamma(X',F_n)$. Với $F=\Osh_X$, ta thu được các
+\fquote{hàm chỉnh hình} của $X$ dọc theo $X'$ theo nghĩa Zariski (chúng tôi
+không dùng thuật ngữ ấy vì nó xung đột với thuật ngữ cổ điển).
+
+Ta gọi một không gian tôpô $\mathfrak X$, được trang bị một bó các vành tôpô
+$\Osh_{\mathfrak X}$ thỏa mãn điều kiện sau, là một \emph{lược đồ hình thức}
+(ngầm hiểu: Noether): có một đẳng cấu các bó vành tôpô
+$\Osh_{\mathfrak X}=\varprojlim_n\Osh_n$, trong đó các $\Osh_n$ lập thành một
+hệ xạ ảnh các bó vành trên $\mathfrak X$, mỗi bó biến $\mathfrak X$ thành một
+lược đồ $\mathfrak X_n$, và với $m\geq n$, đồng cấu
+$\Osh_m\longrightarrow\Osh_n$ là toàn ánh, có hạch bằng $J_m^{n+1}$, trong đó
+$J_m$ là
+
+\src{196}
+hạch của $\Osh_m\longrightarrow\Osh_0$. Khi đó người ta chứng minh được rằng
+$\Osh_{\mathfrak X}$ là một \emph{bó coherent các vành địa phương Noether}.
+
+Theo các định nghĩa, một hoàn thành hình thức $\overline X$ như trên là một
+lược đồ hình thức; ngược lại, mọi lược đồ hình thức đều \emph{ở địa phương}
+thuộc dạng này. Thật vậy, cho một lược đồ hình thức \emph{affine} (nghĩa là
+$\mathfrak X_0$ affine, kéo theo mọi $\mathfrak X_n$ đều affine) tương đương
+với cho một vành tôpô Noether, tách và đầy đủ đối với tôpô $J$-adic.
+
+Các định nghĩa thông thường về cấu xạ, cấu xạ kiểu hữu hạn, cấu xạ proper,
+v.v.\ của các lược đồ thông thường được mở rộng không khó khăn sang các lược
+đồ hình thức.
+
+\fsection{3}{Ba định lý cơ bản}
+
+Cho $f:X\longrightarrow Y$ là một cấu xạ proper của các lược đồ (Noether, như
+vẫn giả sử), $Y'$ là một tập con đóng của $Y$, còn $X'$ là nghịch ảnh của nó
+trong $X$; xét các hoàn thành hình thức tương ứng $\overline Y$ và
+$\overline X$. Khi đó $f$ cảm sinh một cấu xạ
+$\overline f:\overline X\longrightarrow\overline Y$\footnote{Bản in ghi
+$\overline f:\overline X\longrightarrow\overline X$; đối miền phải là
+$\overline Y$, vì đây là cấu xạ được cảm sinh từ
+$f:X\longrightarrow Y$.} của các lược đồ hình thức,
+và cấu xạ này cũng proper. Nếu $F$ là một bó coherent trên $X$, thì
+$\overline F$ là một bó coherent trên $\overline X$. Trong Định lý 1, ta quên
+$X,Y,F$ và chỉ xét cấu xạ proper $\overline f$ của các lược đồ hình thức cùng
+bó coherent $\overline F$ trên $\overline X$. (Tuy nhiên, báo cáo viên mới chỉ
+viết một chứng minh đầy đủ cho trường hợp xuất phát từ $X,Y,f,F$.)
+
+\result{ĐỊNH LÝ}{1 (định lý hữu hạn)}
+\begin{enumerate}
+  \item[\textit{i.}] Các $R^{q}\overline f_{*}(\overline F)$ là những bó
+    coherent trên $\overline Y$.
+  \item[\textit{ii.}] Các đồng cấu tự nhiên
+    \[
+      R^{q}\overline f_{*}(\overline F)
+      \longrightarrow \varprojlim_n R^{q}f_{n*}(F_n)
+    \]
+    là những đẳng cấu.
+\end{enumerate}
+
+Trong mệnh đề này, ta giả sử đã chọn một bó con coherent $J$ của $\Osh_Y$ xác
+định $Y'$; lấy nghịch ảnh, ta được một bó con coherent của $\Osh_X$ xác định
+$X'$, và do đó xác định $F_n,X_n,Y_n$ cùng
+$f_n:X_n\longrightarrow Y_n$ như trong mục số 2. Nếu xuất phát từ một cấu xạ
+proper tùy ý giữa hai lược đồ hình thức, những thay đổi nhỏ cần thực hiện khi
+viết tường minh các ký hiệu này là hiển nhiên.
+
+Định lý 1 chỉ liên quan đến \fquote{đối đồng điều hình thức}. Định lý tiếp theo
+
+\src{197}
+liên hệ nó với \fquote{đối đồng điều đại số} và tương tự một định lý quen thuộc
+của Serre [4] về sự so sánh giữa đối đồng điều đại số và đối đồng điều giải
+tích.
+
+\result{ĐỊNH LÝ}{2 (Định lý so sánh thứ nhất)} Các
+$R^{q}f_{*}(F)$ là những bó coherent trên $Y$ (đây là một trường hợp riêng của
+Định lý 1), và các đồng cấu tự nhiên
+\[
+  \overline{R^{q}f_{*}(F)}
+  \longrightarrow \varprojlim_n R^{q}f_{n*}(F_n)
+\]
+là những đẳng cấu.
+
+\result{HỆ QUẢ}{1} Ta có các đẳng cấu chính tắc:
+\[
+  \overline{R^{q}f_{*}(F)}=R^{q}\overline f_{*}(\overline F).
+\]
+
+Với $q=0$, hệ quả này là một khái quát của \fquote{định lý cơ bản về các hàm
+chỉnh hình} của Zariski; từ đó ta sẽ suy ra một khái quát của
+\fquote{định lý liên thông} của Zariski. Cũng cần lưu ý rằng, trong khi Định
+lý 1 (\textit{ii}) là tầm thường với $q=0$, điều đó hoàn toàn không đúng đối
+với Định lý 2 hay với phát biểu tương đương của nó (Hệ quả 1). Thật vậy, chứng
+minh tiến hành bằng quy nạp lùi theo $q$ (nó là tầm thường khi $q$ lớn, vì khi
+ấy cả hai vế đều bằng không), nên trường hợp $q=0$ xuất hiện ở bước cuối của
+quy nạp và, có thể nói, là trường hợp \fquote{khó nhất}.
+
+\result{HỆ QUẢ}{2} Giả sử $Y=\operatorname{Spec}(A)$ và $Y'$ được xác định bởi
+iđêan $J$ của $A$. Khi đó, với mọi bó coherent $F$ trên $X$, các
+$H^{q}(X,F)$ là những $A$-môđun hữu hạn sinh, và các hoàn thành $J$-adic của
+chúng là các $H^{q}(\overline X,\overline F)$.
+
+Cuối cùng, áp dụng hệ quả này cho $H=\Homsh_{\Osh_X}(F,G)$, ta thu được:
+
+\result{HỆ QUẢ}{3} Giả sử $Y=\operatorname{Spec}(A)$ và $Y'$ được xác định bởi
+iđêan $J$ của $A$. Cho $F,G$ là hai bó coherent trên $X$; khi đó
+$\operatorname{Hom}(F,G)$ là một $A$-môđun hữu hạn sinh, và hoàn thành
+$J$-adic của nó được đồng nhất với
+$\operatorname{Hom}(\overline F,\overline G)$.
+
+Dĩ nhiên, ánh xạ tự nhiên
+$\operatorname{Hom}(F,G)\longrightarrow
+\operatorname{Hom}(\overline F,\overline G)$ là ánh xạ gán cho một đồng cấu
+$u:F\longrightarrow G$ phần mở rộng \fquote{theo liên tục}
+$\overline u:\overline F\longrightarrow\overline G$ của nó (nhờ đó
+$\overline F$ trở thành một hàm tử theo $F$).
+
+Bây giờ giả sử $A$ tách và đầy đủ đối với tôpô $J$-adic; khi đó Hệ quả 2 và
+Hệ quả 3 ở trên cho:
+\[
+  H^{q}(X,F)=H^{q}(\overline X,\overline F),
+  \qquad
+  \operatorname{Hom}(F,G)
+  =\operatorname{Hom}(\overline F,\overline G).
+\]
+
+\src{198}
+Đẳng thức cuối cùng này cho thấy phạm trù các bó coherent trên $X$ được đồng
+nhất với một \emph{phạm trù con} (các cấu xạ là những cấu xạ cảm sinh) của
+phạm trù các bó coherent trên $\overline X$. Thật ra, ta còn có kết quả mạnh
+hơn sau đây:
+
+\result{ĐỊNH LÝ}{3} Một bó môđun trên $\overline X$ là coherent khi và chỉ khi
+nó đẳng cấu với một bó có dạng $\overline F$, trong đó $F$ là một bó coherent
+trên $X$ (được xác định duy nhất đến đẳng cấu chính tắc theo Định lý 2, Hệ quả
+3). [Nhắc lại rằng lúc này $Y=\operatorname{Spec}(A)$, với $A$ là một vành
+tôpô Noether, tách và đầy đủ đối với tôpô $J$-adic.]
+
+\result{HỆ QUẢ}{1} Các lược đồ con đóng của $X$ tương ứng song ánh với các
+lược đồ con hình thức đóng của $\overline X$.
+
+Thật vậy, chúng lần lượt tương ứng với các bó con coherent của $\Osh_X$ và
+$\overline{\Osh}_X$. Xem đồ thị của các cấu xạ như những lược đồ con đóng, từ
+Hệ quả 1 ta suy ra:
+
+\result{HỆ QUẢ}{2} Cho $X,Z$ là hai lược đồ proper trên $A$ (một vành Noether
+$J$-adic, tách và đầy đủ). Khi đó ánh xạ
+$g\longmapsto\overline g$ xác định một tương ứng song ánh giữa các $Y$-cấu xạ
+từ $X$ đến $Z$ và các $\overline Y$-cấu xạ từ $\overline X$ đến
+$\overline Z$.
+
+Nói cách khác, các lược đồ đại số proper trên $A$ tạo thành một
+\emph{phạm trù con} (các cấu xạ là những cấu xạ cảm sinh) của phạm trù các
+lược đồ hình thức proper trên $\overline Y$. Tuy nhiên, cần lưu ý rằng có những
+lược đồ hình thức proper trên $\overline Y$ không \fquote{đại số hóa được},
+nghĩa là không đẳng cấu với một $\overline X$ nào, trong đó $X$ proper trên
+$A$ (cũng như có những đa tạp giải tích phức compact không phát sinh từ các đa
+tạp đại số xác định trên trường số phức). Những lược đồ hình thức như vậy xuất
+hiện một cách tự nhiên trong \fquote{lý thuyết moduli}. Dẫu vậy, ta ghi nhận
+một trường hợp riêng đáng chú ý trong đó một lược đồ hình thức đại số hóa được:
+
+\result{ĐỊNH LÝ}{4} Cho $A$ là một vành địa phương Noether đầy đủ có trường
+thặng dư $k$, và cho $\mathfrak X$ là một lược đồ hình thức proper trên $A$
+(được trang bị tôpô $\mathfrak m(A)$-adic). Giả sử:
+\begin{enumerate}
+  \item[\textit{i.}] các vành địa phương của $\Osh_{\mathfrak X}$ là những
+    $A$-môđun phẳng; tương đương, nếu trang bị $\Osh_{\mathfrak X}$ và $A$
+    các lọc xác định bởi các lũy thừa của iđêan cực đại của $A$, thì các đối
+    tượng phân bậc liên kết thỏa mãn hệ thức
+    \[
+      \operatorname{gr}(\Osh_{\mathfrak X})
+      \simeq
+      \operatorname{gr}^{0}(\Osh_{\mathfrak X})
+      \otimes_k\operatorname{gr}(A).
+    \]
+  \item[\textit{ii.}] khi xem
+    $\mathfrak X_0=\mathfrak X\otimes_A k$ như một lược đồ đại số trên $k$,
+    ta có
+    \[
+      H^2(\mathfrak X_0,\Osh_{\mathfrak X_0})=0.
+    \]
+  \item[\textit{iii.}] $\mathfrak X_0$ là xạ ảnh.
+\end{enumerate}
+Khi đó $\mathfrak X$ đại số hóa được; chính xác hơn, nó đẳng cấu với
+$\overline X$, trong đó $X$ là một $A$-lược đồ xạ ảnh.
+
+Các điều kiện \textit{(ii)} và \textit{(iii)} đặc biệt được thỏa mãn nếu
+$\mathfrak X_0$ là một đường cong trơn trên $k$; vì thế Định lý 4 có thể được
+áp dụng, chẳng hạn, trong \fquote{lý thuyết moduli} của các đường cong có
+giống cho trước\ldots{} Ta phác họa cách chứng minh Định lý 4. Người ta chứng
+minh (xem Mệnh đề 3 dưới đây) rằng \textit{(i)} và \textit{(ii)} kéo theo:
+mọi bó coherent trên $\mathfrak X_0$ đẳng cấu địa phương với bó cấu trúc đều
+nhận được bằng phép rút gọn từ một bó cùng loại trên $\mathfrak X$. Bắt đầu từ
+một bó \fquote{ample} trên $\mathfrak X_0$ (tồn tại theo \textit{(iii)}), ta
+nâng nó thành một bó khả nghịch trên $\mathfrak X$; rồi dùng Định lý 1 để chứng
+minh rằng một lũy thừa thích hợp của bó ấy xác định một phép nhúng
+$\mathfrak X$ vào hoàn thành hình thức của một lược đồ $\mathbf P_A^r$
+(\fquote{không gian xạ ảnh chuẩn} chiều $r$ trên $A$).
+
+Về chứng minh các Định lý 1 đến 3, xem [1].
+
+\src{199}
+\fsection{4}{Áp dụng vào định lý liên thông và \fquote{Định lý chính} của
+Zariski}
+
+Cho $f:X\longrightarrow Y$ là một cấu xạ proper của các lược đồ. Theo định lý
+hữu hạn, $f_*(\Osh_X)=\mathcal A$ là một bó coherent trên $Y$; hơn nữa, đó là
+một bó các đại số giao hoán, nên tương ứng với một $Y$-lược đồ
+$g:Y'\longrightarrow Y$ hữu hạn trên $Y$ (được xác định bởi các điều kiện: nó
+affine trên $Y$, nghĩa là nghịch ảnh của một tập mở affine là affine, và
+$g_*(\Osh_{Y'})=\mathcal A$). Hiển nhiên khi đó $f$ phân tích chính tắc thành
+$f=gf'$, trong đó $f':X\longrightarrow Y'$ là một cấu xạ từ $X$ đến $Y'$ thỏa
+mãn $f'_*(\Osh_X)=\Osh_{Y'}$. Phân tích này của $f$ được gọi là
+\emph{phân tích Stein} của $f$. Áp dụng Định lý so sánh thứ nhất, Hệ quả 1,
+cho $f'$ và cho phần của $Y'$ rút gọn về một điểm $y'$, ta thấy
+$f'^{-1}(y')=X'$ liên thông (nếu không, các tiết diện hình thức của $X$ dọc
+theo $X'$ sẽ không tạo thành một vành địa phương, trong khi hoàn thành của
+$f'_*(\Osh_X)_{y'}=\Osh_{Y',y'}$ lại là địa phương!). Ta đã chứng minh:
+
+\result{ĐỊNH LÝ}{5 (\fquote{Định lý liên thông} của Zariski)} Cho
+$f:X\longrightarrow Y$ là một cấu xạ proper. Khi đó $f$ phân tích duy nhất
+(đến đẳng cấu) thành $f=gf'$, trong đó $g:Y'\longrightarrow Y$ là hữu hạn và
+$f':X\longrightarrow Y'$ thỏa mãn
+$f'_*(\Osh_X)=\Osh_{Y'}$ (do đó
+$g_*(\Osh_{Y'})=f_*(\Osh_X)$). Các thớ của $f'$ liên thông; nói cách khác, tập
+các thành phần liên thông của một thớ $f^{-1}(y)$ của $f$ tương ứng song ánh
+với tập các điểm của $Y'$ nằm trên $y$, tức là với tập các iđêan cực đại của
+$f_*(\Osh_X)_y$.
+
+Các biến thể quen thuộc của định lý liên thông được suy ra ngay lập tức. Ở đây
+ta chỉ ghi nhận hệ quả sau.
+
+\src{200}
+\result{HỆ QUẢ}{1} Một điểm $x$ của $X$ cô lập trong thớ $f^{-1}(y)$ khi và
+chỉ khi thớ $f'^{-1}(y')$ (trong đó $y'=f'(x)$) rút gọn về $x$; tương đương,
+$f'$ cảm sinh một đẳng cấu từ một lân cận của $x$ lên một lân cận của $y'$.
+Tập các điểm như vậy là một tập mở $U$, và $f'$ cảm sinh một đẳng cấu từ $U$
+lên một tập mở của $Y'$.
+
+Để chứng minh $f'$ là một đẳng cấu địa phương tại $x$, ta lưu ý rằng $f'$ cảm
+sinh một đẳng cấu $\Osh_{y'}\longrightarrow\Osh_x$, như suy ra từ
+$f'_*(\Osh_X)=\Osh_{Y'}$ và từ sự kiện sau: vì $f'$ là một ánh xạ đóng có thớ
+trên $y'$ rút gọn về $x$, các tập $f'^{-1}(V)$ chạy qua một hệ cơ bản các lân
+cận của $x$ khi $V$ chạy qua một hệ cơ bản các lân cận của $y'$. Từ đó suy ra
+ngay kết quả sau, do Chevalley chứng minh trong trường hợp
+\fquote{hình học}.
+
+\result{HỆ QUẢ}{2} Một cấu xạ $f$ là hữu hạn khi và chỉ khi nó proper và các
+thớ của nó hữu hạn.
+
+Thật vậy, trong trường hợp ấy $f'$ là một đẳng cấu theo kết quả vừa chứng minh.
+
+Cho $f:X\longrightarrow Y$ là một cấu xạ không nhất thiết proper, nhưng giả sử
+$X$ nằm như một tập mở trong một $Y$-lược đồ proper
+$\widetilde f:\widetilde X\longrightarrow Y$ (điều này đặc biệt đúng nếu $f$
+là quasi-xạ ảnh). Áp dụng Hệ quả 1, ta thấy $\widetilde f'$ cảm sinh một đẳng
+cấu từ tập $U$ các điểm của $X$ cô lập trong thớ của chúng lên một tập mở của
+$Y'$ (và $U$ quả thật là tập mở). Từ đó suy ra dạng toàn cục sau đây của
+\fquote{Định lý chính} của Zariski.
+
+\result{ĐỊNH LÝ}{6 (\fquote{Định lý chính} của Zariski)} Cho
+$f:X\longrightarrow Y$ là một cấu xạ kiểu hữu hạn. Khi đó tập $U$ các điểm
+của $X$ cô lập trong thớ của chúng là mở; nếu $f$ tách,\footnote{Bản đính chính
+năm 1962 thay giả thiết in là \fquote{$f$ quasi-xạ ảnh} bằng giả thiết yếu hơn
+\fquote{$f$ tách}, theo SGA VIII, 6.2: mọi cấu xạ quasi-hữu hạn và tách đều
+quasi-xạ ảnh.} thì $U$ đẳng cấu trên $Y$ với một phần mở của một lược đồ $Y'$
+hữu hạn trên $Y$.
+
+Vì một cấu xạ kiểu hữu hạn là affine địa phương, và do đó \textit{a fortiori}
+quasi-xạ ảnh địa phương, các dạng địa phương quen thuộc của Định lý chính được
+suy ra ngay từ Định lý 6.
+
+\src{201}
+\result{MỆNH ĐỀ}{1} Cho $f:X\longrightarrow Y$ là một cấu xạ proper và $F$
+là một bó trên $X$, coherent và phẳng trên $Y$. Cho $y\in Y$, cho $q$ là một
+số nguyên, và giả sử $H^q(X_y,F_y)=0$. Khi đó $R^qf_*(F)$ triệt tiêu trong một
+lân cận của $y$, và với mọi $n$, đồng cấu tự nhiên
+\[
+  R^{q-1}f_*(F)_y\longrightarrow
+  H^{q-1}(X_y,F/\mathfrak m_y^nF)
+\]
+là toàn ánh.
+
+Đặc biệt, nếu $f$ là một cấu xạ phẳng (nghĩa là $\Osh_X$ phẳng trên $Y$), thì
+mọi bó coherent địa phương tự do $F$ trên $X$ đều phẳng trên $Y$. Cho $F,G$ là
+hai bó như vậy; áp dụng Mệnh đề 1 cho $\Homsh_{\Osh_X}(F,G)$ với $q=1$, ta
+được:
+
+\result{ĐỊNH LÝ}{7} Cho $f$ là một cấu xạ proper và phẳng, $F,G$ là hai bó
+coherent địa phương tự do trên $X$, $y\in Y$, và giả sử
+\[
+  H^1\bigl(X_y,\Homsh_{\Osh_{X_y}}(F_y,G_y)\bigr)=0,
+\]
+thì mọi đồng cấu $u_0:F_y\longrightarrow G_y$ đều được cảm sinh bởi một đồng
+cấu
+\[
+  u:F|V\longrightarrow G|V,
+  \qquad V=f^{-1}(U),
+\]
+trong đó $U$ là một lân cận của $y$.
+
+\result{HỆ QUẢ}{} Nếu $u_0$ là một đẳng cấu (tương ứng, một đơn cấu, một toàn
+cấu), thì $u$ cũng vậy khi $U$ đủ nhỏ.
+
+Đặc biệt:
+
+\src{202}
+\result{HỆ QUẢ}{2} Cho $E_0$ là một bó coherent địa phương tự do trên $X_y$
+thỏa mãn
+\[
+  H^1\bigl(X_y;\Homsh_{\Osh_{X_y}}(E_0,E_0)\bigr)=0,
+\]
+thì hai bó địa phương tự do mà các hạn chế xuống $X_y$ đều đẳng cấu
+với $E_0$ sẽ đẳng cấu trong một lân cận của $X_y$.
+
+Do đó:
+
+\result{HỆ QUẢ}{3} Giả sử $H^1(X_y,\Osh_{X_y})=0$. Khi đó hai bó khả nghịch
+trên $X$ (nghĩa là địa phương đẳng cấu với $\Osh_X$) mà các hạn chế xuống
+$X_y$ đẳng cấu với nhau thì bản thân chúng cũng đẳng cấu trong một lân cận của $X_y$.\footnote{Bản in không nêu rõ lân cận. Ở đây khôi phục phạm vi địa phương của Hệ quả 2, cũng được sử dụng trong chứng minh Mệnh đề 2.}
+
+Suy ra:
+
+\result{MỆNH ĐỀ}{2} Cho $Y$ là một lược đồ liên thông và $E$ là một bó
+coherent địa phương tự do có hạng ít nhất $2$ trên $Y$;\footnote{Bản in không
+nêu cận dưới cho hạng. Giả thiết này là cần thiết: nếu $E$ có
+hạng $1$, thì $\mathbf P(E)=Y$ và số nguyên $n$ trong phân tích dưới đây không
+còn được xác định duy nhất. Hệ quả về các tự đẳng cấu phía sau kế thừa cùng
+giả thiết.} xét phân thớ không gian xạ ảnh $X=\mathbf P(E)$ liên kết với $E$,
+được trang bị bó khả nghịch quen thuộc $\Osh_X(1)$. Khi đó mọi bó khả nghịch
+$L$ trên $X$ đều đẳng cấu với một bó có dạng
+\[
+  f^*(L')\otimes\Osh_X(n),
+\]
+trong đó $L'$ là một bó khả nghịch trên $Y$ và $n$ là một số nguyên. Số nguyên
+vừa nêu được xác định duy nhất, còn $L'$ được xác định đến đẳng cấu.
+
+Hệ quả 3 ở trên chứng minh rằng $L$ đẳng cấu với một $\Osh_X(n)$ nào đó trong
+một lân cận của mỗi thớ. Phần còn lại gần như chỉ là hình thức.
+
+Mệnh đề 2 cho phép xác định các $Y$-cấu xạ từ $X=\mathbf P(E)$ đến một phân
+thớ xạ ảnh khác. Đặc biệt, ta được:
+
+\result{HỆ QUẢ}{} Cho $u$ là một tự đẳng cấu của $X=\mathbf P(E)$. Khi đó tồn
+tại một bó khả nghịch $L'$ trên $Y$ và một đẳng cấu $v$ từ $E$ lên
+$E\otimes L'$ sao cho $u$ là đẳng cấu tương ứng
+\[
+  \mathbf P(E)\xrightarrow{\sim}\mathbf P(E\otimes L')=\mathbf P(E);
+\]
+cặp $(v,L')$ được xác định đến đẳng cấu.
+
+Cho $\Gamma$ là tập các lớp của những bó khả nghịch $L'$ trên $Y$ sao cho
+$E\otimes L'$ đẳng cấu với $E$. Các phần tử của tập này đều là phần tử xoắn:
+thật vậy, nếu $n$ là hạng của $E$, thì lấy lũy thừa ngoài bậc $n$ cho thấy
+nhất thiết phải có
+$L'^{\otimes n}\simeq\Osh_Y$. Vì thế, hệ quả có thể được phát biểu bằng dãy
+khớp các nhóm
+\[
+  e\longrightarrow
+  \operatorname{Aut}(E)/\Gamma(Y,\Osh_Y^*)
+  \longrightarrow \operatorname{Aut}_Y(X)
+  \longrightarrow \Gamma\longrightarrow e
+\]
+(dãy này cũng suy ra từ dãy khớp đối đồng điều phát sinh từ dãy khớp sau đây
+của các bó nhóm
+\[
+  e\longrightarrow \Osh_Y^*
+  \longrightarrow \underline{\operatorname{Aut}}(E)
+  \longrightarrow \underline{\operatorname{Aut}}_Y(X)
+  \longrightarrow e,
+\]
+trong đó $\Osh_Y^*$ là bó các \fquote{đơn vị} của $\Osh_Y$, được đồng nhất với
+tâm của $\underline{\operatorname{Aut}}(E)$).
+
+\src{203}
+\fsection{6}{Ứng dụng vào các định lý tồn tại và duy nhất cho bó và lược đồ
+trên một vành đầy đủ theo tôpô \texorpdfstring{$J$}{J}-adic}
+
+Định lý 7 đã cho một kết quả duy nhất đối với các bó coherent địa phương tự do,
+bằng cách dùng các Định lý 1 và 2. Giờ đây, nhờ Định lý 3, ta suy ra các định
+lý tồn tại cho bó, cấu xạ lược đồ hoặc lược đồ. Trong phần còn lại, $A$ ký hiệu
+một vành Noether địa phương, tách và đầy đủ. Phương pháp tổng quát luôn là thực
+hiện các phép dựng hình thức, về bản chất tức là làm hình học đại số trên một
+vành Artin, rồi dùng ba định lý cơ bản để rút ra các kết luận có tính chất
+“đại số”.
+
+\result{MỆNH ĐỀ}{3} Cho $\mathfrak X$ là một lược đồ hình thức proper và phẳng
+trên $A$, và cho $F_0$ là một bó địa phương tự do trên $X_0$ sao cho
+\[
+  H^2\bigl(X_0,\Homsh_{\Osh_{X_0}}(F_0,F_0)\bigr)=0.
+\]
+Khi đó tồn tại một bó địa phương tự do $F$ trên $\mathfrak X$ mà hạn chế xuống
+$X_0$ đẳng cấu với $F_0$. (Hơn nữa, $F$ này duy nhất đến đẳng cấu nếu
+$H^1(X_0,\Homsh_{\Osh_{X_0}}(F_0,F_0))=0$.)
+
+Ta lần lượt dựng các bó địa phương tự do $F_n$ trên các $X_n$, mỗi bó cảm sinh
+bó đứng trước. Cản trở đối với việc dựng $F_n$ nằm trong
+\[
+  H^2\bigl(X_0,\Homsh_{\Osh_{X_0}}(F_0,F_0)\bigr)
+  \otimes_{A/J}(J^n/J^{n+1}),
+\]
+nên bằng không theo giả thiết. Bây giờ áp dụng Định lý 3, ta được:
+
+\result{HỆ QUẢ}{1} Cho $X$ là một lược đồ proper và phẳng trên $A$, và cho
+$F_0$ như trên. Khi đó tồn tại một bó địa phương tự do $F$ trên $X$ mà hạn chế
+xuống $X_0$ đẳng cấu với $F_0$. Hơn nữa, $F$ này duy nhất đến đẳng cấu nếu
+$H^1(X_0,\Homsh_{\Osh_{X_0}}(F_0,F_0))=0$.
+
+Cho $X_0$ là một lược đồ kiểu hữu hạn trên trường $k$; giả sử $X_0$ trơn (ở
+đây hiểu là trơn tuyệt đối) trên $k$, nhưng không nhất thiết proper trên $k$.
+Cho $A$ là một vành Artin địa phương có trường thặng dư $k$. Ta muốn tìm các
+lược đồ $X$ phẳng trên $A$ sao cho $X\otimes_A k=X_0$ (đây là điểm xuất phát
+của “lý thuyết moduli” hoặc của “các biến thiên cấu trúc” của $X_0$). Việc cho
+một $X$ như vậy tương đương với việc cho, trên không gian tôpô $X_0$, một bó
+$\Osh_X$ được trang bị các cấu trúc sau:
+\begin{enumerate}
+  \item[\textit{i.}] Nó là một bó các $A$-đại số.
+  \item[\textit{ii.}] Nó được trang bị một đồng cấu tăng cường
+    $\Osh_X\longrightarrow\Osh_{X_0}$ (tương thích với các cấu trúc
+    $A$-đại số); các dữ liệu này phải thỏa các điều kiện sau: phép tăng cường
+    cảm sinh một đẳng cấu
+    $\Osh_X\otimes_A k\xrightarrow{\sim}\Osh_{X_0}$; $\Osh_X$ phẳng trên
+    $A$, nghĩa là đối tượng phân bậc liên kết với $\Osh_X$, được lọc bởi các
+    lũy thừa của iđêan cực đại $\mathfrak m$ của $A$, đẳng cấu với
+    $\operatorname{gr}^0(\Osh_X)\otimes_k\operatorname{gr}(A)$; tương đương,
+    ta có các đẳng cấu
+    \[
+      \mathfrak m^n\Osh_X/\mathfrak m^{n+1}\Osh_X
+      =\Osh_{X_0}\otimes_k(\mathfrak m^n/\mathfrak m^{n+1}).
+    \]
+\end{enumerate}
+Sự kiện cơ bản là như sau:
+
+\src{204}
+\result{ĐỊNH LÝ}{8} Cho $X_0$ là một lược đồ kiểu hữu hạn và trơn trên trường
+$k$, và giả sử $X_0$ affine. Cho $A$ là một vành Artin địa phương có trường
+thặng dư $k$. Khi đó tồn tại một $A$-lược đồ $X$ phẳng trên $A$ sao cho
+$X\otimes_A k=X_0$, và hai lược đồ bất kỳ như vậy tất yếu đẳng cấu.
+
+Lưu ý rằng đẳng cấu nói trên không chính tắc, vì nói chung $X$ sẽ có những tự
+đẳng cấu trên $A$ không tầm thường cảm sinh đồng nhất trên $X_0$. Mặt khác,
+nói chung không có cách chọn “chính tắc” một $X$ thỏa các điều kiện đã nêu,
+trừ khi $A$ là một $k$-đại số (trường hợp cùng đặc số); khi ấy có thể lấy
+$X=X_0\otimes_k A$, nghĩa là $\Osh_X=\Osh_{X_0}\otimes_k A$ (dù $X_0$ affine
+hay không). Trong trường hợp khác đặc số, khi $X_0$ không affine, nói chung ta
+không biết liệu có thể “nâng” $X_0$ thành một $X$ xác định trên $A$ hay không.
+Tuy nhiên, cho $n$ là một số nguyên $>0$, đặt
+$A_{n-1}=A/\mathfrak m^n$, và giả sử đã nâng $X_0$ thành một
+$A_{n-1}$-lược đồ phẳng $X_{n-1}$; ta muốn nâng $X_{n-1}$ thành một
+$A_n$-lược đồ phẳng $X_n$. Theo Định lý 8, ta đã biết điều này thực hiện được
+ở địa phương. Hơn nữa, dễ kiểm tra rằng nếu $U_n$ nâng một tập mở $U_{n-1}$
+của $X_{n-1}$, thì bó nhóm các tự đẳng cấu của $U_n$ (cảm sinh đồng nhất trên
+$U_{n-1}$) đẳng cấu chính tắc với
+\[
+  \Theta_{X_0/k}\otimes_k(\mathfrak m^n/\mathfrak m^{n+1})
+\]
+được hạn chế xuống $U_{n-1}$, và đặc biệt có tính giao hoán
+($\Theta_{X_0/k}$ ký hiệu bó các mầm của các $k$-đạo hàm trên $X_0$). Từ đó
+dễ suy ra rằng có một cản trở đối với việc dựng $X_n$ nâng $X_{n-1}$, nằm
+trong
+\[
+  H^2(X_0,\Theta_{X_0/k})\otimes_k
+  \mathfrak m^n/\mathfrak m^{n+1}.
+\]
+Do đó:
+
+\result{HỆ QUẢ}{1} Cho $X_0$ là một lược đồ kiểu hữu hạn trơn trên $k$, và
+giả sử $H^2(X_0,\Theta_{X_0/k})=0$. Khi đó, với mọi vành Artin địa phương
+$A$ có trường thặng dư $k$, tồn tại một $A$-lược đồ phẳng $X$ sao
+cho $X\otimes_A k=X_0$.
+
+Hơn nữa, nếu đã tìm được một $X$ phẳng trên $A$ nâng $X_0$, thì theo Định lý
+8, tập các lớp (đến đẳng cấu) của các $A$-lược đồ phẳng nâng $X_0$ được đồng
+nhất với
+\[
+  H^1\bigl(X_0,\underline{\operatorname{Aut}}(X)\bigr),
+\]
+trong đó, dĩ nhiên, $\underline{\operatorname{Aut}}(X)$ ký hiệu bó các mầm
+của những tự đẳng cấu của bó $A$-đại số $\Osh_X$ tương thích với phép tăng
+cường. Lọc của $\Osh_X$ xác định một lọc của
+$\underline{\operatorname{Aut}}(X)$; thương của bó này cho nhóm con thứ
+$n$ trong lọc là $\underline{\operatorname{Aut}}(X_n)$. Đối tượng phân bậc
+liên kết với lọc này có tính giao hoán và được đồng nhất với
+$\Theta_{X_0/k}\otimes_k\operatorname{gr}(A)$. Đặc biệt, nếu
+$\mathfrak m^{n+1}$ là lũy thừa đầu tiên của $\mathfrak m$ bằng không, thì
+$F^n(\underline{\operatorname{Aut}}(X))$ (bậc cuối của lọc) nằm trong tâm của
+$\underline{\operatorname{Aut}}(X)$ và đẳng cấu với
+$\Theta_{X_0/k}\otimes_k\mathfrak m^n$; nó cũng là bó các mầm của những tự
+đẳng cấu của $X$ cảm sinh đồng nhất trên
+$X_{n-1}=X\otimes_A A/\mathfrak m^n$. Dùng các kết quả này, ta lập tức thu
+được các mệnh đề sau:
+
+\src{205}
+\result{HỆ QUẢ}{2} Cho $X_0$ là một lược đồ kiểu hữu hạn trơn trên $k$, cho
+$A$ là một vành Artin địa phương có trường thặng dư $k$ và iđêan cực đại
+$\mathfrak m$, giả sử $\mathfrak m^{n+1}=0$, đặt
+$A_{n-1}=A/\mathfrak m^n$, và cuối cùng cho $X_{n-1}$ là một
+$A_{n-1}$-lược đồ phẳng sao cho $X_{n-1}\otimes_A k=X_0$. Khi đó tập các
+lớp (đến một đẳng cấu cảm sinh đồng nhất trên $X_{n-1}$) của các $A$-lược đồ
+phẳng $X_n$ sao cho $X_n\otimes_A A_{n-1}=X_{n-1}$ hoặc rỗng, hoặc là một
+không gian thuần nhất chính dưới
+\[
+  H^1(X_0,\Theta_{X_0/k})\otimes_k\mathfrak m^n.
+\]
+
+(Lưu ý rằng nói chung không có điểm gốc ưu tiên trong không gian vừa nêu, vì
+không có cách ưu tiên nào để nâng $X_{n-1}$ thành $X_n$.)
+
+\result{HỆ QUẢ}{3} Cho $X_0$ là một lược đồ kiểu hữu hạn trơn trên $k$, và
+giả sử $H^1(X_0,\Theta_{X_0/k})=0$. Khi đó, với mọi vành Artin địa phương
+$A$ có trường thặng dư $k$, tồn tại nhiều nhất một (đến đẳng cấu) $A$-lược đồ
+phẳng $X$ sao cho $X\otimes_A k=X_0$.
+
+Các Hệ quả 1 và 3 lập tức kéo theo những mệnh đề bề ngoài tổng quát hơn, thu
+được khi chỉ giả sử $A$ là một vành Noether địa phương đầy đủ có trường thặng
+dư $k$, miễn là ta đưa $X$ vào dưới dạng một lược đồ hình thức trên $A$:
+
+\result{ĐỊNH LÝ}{9} Cho $k$ là một trường và $X_0$ là một lược đồ kiểu hữu
+hạn trơn trên $k$. Với mỗi vành Noether địa phương đầy đủ $A$ có trường thặng
+dư $k$, gọi $F(A)$ là tập các lớp (đến một đẳng cấu cảm sinh đồng nhất trên
+$X_0$) của các lược đồ hình thức $\mathfrak X$ trên $A$, kiểu hữu hạn và phẳng
+trên $A$, sao cho $\mathfrak X\otimes_A k=X_0$. Với các ký hiệu ấy:
+\begin{enumerate}
+  \item[\textit{i.}] Nếu $H^1(X_0,\Theta_{X_0/k})=0$, thì với mọi $A$,
+    $F(A)$ có nhiều nhất một phần tử.
+  \item[\textit{ii.}] Nếu $H^2(X_0,\Theta_{X_0/k})=0$, thì với mọi $A$,
+    $F(A)$ có ít nhất một phần tử.
+\end{enumerate}
+
+\src{206}
+\result{HỆ QUẢ}{1} Giả sử $X_0$ proper trên $k$. Dưới điều kiện
+\textit{(i)}, với mọi $A$ tồn tại nhiều nhất một (đến một đẳng cấu cảm sinh
+đồng nhất trên $X_0$) lược đồ $X$ proper và phẳng trên $A$ sao cho
+$X\otimes_A k=X_0$.
+
+Ở đây ta dùng Định lý 3, Hệ quả 2. Chẳng hạn:
+
+\result{HỆ QUẢ}{2} Nếu $X$ là một lược đồ proper và phẳng trên $A$ sao cho
+$X\otimes_A k$ đẳng cấu với lược đồ xạ ảnh chuẩn $\mathbf P_k^r$ chiều $r$
+trên $k$, thì $X$ đẳng cấu với $\mathbf P_A^r$.
+
+(Kết quả này cũng có thể suy ra từ Mệnh đề 3, Hệ quả 1.)
+
+\result{HỆ QUẢ}{3} Cho $X_0$ là một lược đồ xạ ảnh trơn trên $k$, và giả sử
+\[
+  H^2(X_0,\Osh_{X_0})=H^2(X_0,\Theta_{X_0/k})=0.
+\]
+Khi đó, với mọi $A$, tồn tại một lược đồ xạ ảnh $X$, phẳng trên $A$, sao cho
+$X\otimes_A k=X_0$.
+
+Kết hợp Định lý 9\textit{(ii)} với Định lý 4. Đặc biệt:
+
+\result{HỆ QUẢ}{4} Cho $X_0$ là lược đồ của một đường cong đại số đầy đủ và
+trơn trên $k$. Khi đó, với mọi vành Noether địa phương đầy đủ $A$ có trường
+thặng dư $k$, tồn tại một “lược đồ đường cong trơn” $X$ trên $A$ sao cho
+$X\otimes_A k=X_0$.
+
+\result{NHẬN XÉT}{}
+
+1) Các Hệ quả 3 và 4 đặc biệt đáng chú ý khi $k$ có đặc số $p\ne0$: ta lấy
+$A$ là một vành định giá rời rạc có đặc số $0$ và trường thặng dư $k$; chẳng
+hạn, “$A$ nhỏ nhất có thể”, tức là vành có iđêan cực đại sinh bởi $p$. (Thật
+vậy, theo các định lý của Cohen, chỉ cần biết các Hệ quả 3 và 4 cho một vành
+$A$ như vậy.) Về điểm này, cần lưu ý rằng theo các chuyên gia, chưa biết có
+tồn tại những lược đồ trên một trường $k$ không phải là phép rút gọn modulo
+$p$ của một lược đồ phẳng xác định trên một vành $A$ như vậy hay không. Ít
+nhất, các kết quả của mục này cung cấp một phương pháp để khảo sát câu hỏi ấy
+một cách có hệ thống. Trước hết nên xét xem cản trở đầu tiên xuất hiện trong
+$H^2(X_0,\Theta_{X_0/k})$ có nhất thiết bằng không hay không.
+
+\emph{Bổ sung năm 1962.} --- J.-P. Serre đã dựng một đa tạp xạ ảnh trơn chiều
+3 trên một trường đóng đại số $k$ có đặc số $p>0$, không thu được bằng phép
+rút gọn từ một lược đồ proper trên một vành địa phương nguyên có trường thặng
+dư $k$ và trường phân thức đặc số không. Nghe nói Mumford đã tìm được một ví
+dụ tương tự với một mặt xạ ảnh trơn.
+
+2) Cần lưu ý rằng Định lý 3 và kỹ thuật tương ứng chỉ áp dụng khi vành cơ sở
+(địa phương, để cố định ý tưởng) là đầy đủ.
+
+Muốn chuyển từ các kết quả đã biết cho vành đầy đủ hóa của một vành địa phương
+sang các kết quả tương ứng cho chính vành địa phương ấy, ta cần một “định lý
+cơ bản” thứ tư, mà phát biểu dứt khoát của nó vẫn còn phải tìm.
+
+\src{207}
+3) Hãy so sánh các kết quả của mục này (đặc biệt là các Hệ quả 1 và 2 ở trên)
+và của mục kế tiếp với các kết quả của Kodaira--Spencer về sự biến thiên của
+các cấu trúc phức. Dùng định lý phỏng đoán vừa nói đến, dưới các điều kiện của
+Hệ quả 1 nhưng không còn giả sử $A$ đầy đủ, ta hẳn có thể kết luận rằng tồn
+tại một vành $A'$ chứa $A$, hữu hạn và không phân nhánh trên $A$, sao cho
+$X\otimes_A A'$ và $X'\otimes_A A'$ đẳng cấu trên $A'$ (ở đây $X,X'$ là hai
+$A$-lược đồ proper và phẳng đã cho, thỏa
+$X\otimes_A k=X'\otimes_A k=X_0$). Ít nhất, điều này có thể chứng minh khi
+$X_0=\mathbf P_k^r$, bằng cách dùng hệ quả của Mệnh đề 2. Trong mọi trường
+hợp, khi $H^1(X_0,\Theta_{X_0/k})=0$, có thể chứng minh rằng các thớ của
+$X,X'$ trên mọi điểm $y$ của $Y=\operatorname{Spec}(A)$ là đẳng cấu, ít nhất
+sau khi chuyển sang bao đóng đại số của trường thặng dư $\kappa(y)$. (Có một
+kết quả địa phương, dường như mạnh hơn, trong đó không còn cần giả sử $A$ là
+địa phương.) Đối với “các biến thiên cấu trúc” của không gian xạ ảnh, ta cũng
+nêu câu hỏi sau đây, do một bài toán tương ứng của Kodaira--Spencer gợi ra.
+Cho $X$ là một lược đồ proper và phẳng trên vành địa phương nguyên $A$, có
+trường phân thức $K$ và trường thặng dư $k$, và giả sử $X\otimes_A K$ đẳng
+cấu với $\mathbf P_K^r$; liệu $X\otimes_A k=X_0$ có đẳng cấu với
+$\mathbf P_k^r$ hay không (ít nhất trên bao đóng đại số của $k$)? Trong bài
+toán này, có thể giả sử $A$ là một vành định giá rời rạc đầy đủ. Một bài toán
+tương tự được đặt ra khi $X_0$ là một đa tạp abel.
+
+\emph{Bổ sung năm 1962.} --- Khi ấy diễn giả đã bớt lạc quan hơn về các kết
+quả phỏng đoán ở trên. Tuy nhiên, Hironaka đã giải bài toán về các biến thiên
+cấu trúc của không gian xạ ảnh theo hướng khẳng định, còn Koizumi giải bài
+toán tương tự cho các đa tạp abel.
+
+\fsection{7}{Ứng dụng vào “lý thuyết moduli”}
+
+Vì bản thân diễn giả mới chỉ vừa bắt đầu nghiên cứu lý thuyết này, ta buộc
+phải giới hạn ở một vài chỉ dẫn. Để đơn giản, ta làm việc trên một trường $k$,
+nghĩa là trong trường hợp cùng đặc số, mặc dù Định lý 8 dường như cũng cho phép
+xử lý trường hợp tổng quát mà không có thay đổi bản chất nào. Hiện tại ta chưa
+vượt quá giai đoạn “hình thức”; tuy nhiên, diễn giả hy vọng từ đó có thể dựng
+được các lược đồ moduli thực sự trong một số trường hợp và, đặc biệt, với mỗi
+số nguyên $g$, dựng một lược đồ trên các số nguyên đóng vai trò lược đồ moduli
+phổ dụng cho các đường cong trơn có giống $g$.
+
+\emph{Bổ sung năm 1962.} --- Mumford đã dựng các lược đồ moduli cho các đường
+cong giống $g$ (xem SHMI). Hơn nữa, Định lý 10 chứng minh rằng các “lược đồ
+Jacobi mức $n$” của lý thuyết moduli là không kỳ dị, và thậm chí trơn trên
+$\mathbf Z$.
+
+\src{208}
+Trở lại tình huống và ký hiệu của Định lý 9, giờ đây giả sử $A$ là một đại số
+địa phương hữu hạn chiều trên $k$, và để đơn giản trường này được giả sử đóng đại số.
+Khi đó có thể xem $F(A)$ như một hàm tử hiệp biến theo $A$, nhận giá trị trong
+phạm trù các tập hợp: một đồng cấu các $k$-đại số $A\longrightarrow B$ xác
+định một ánh xạ $F(A)\longrightarrow F(B)$, vì mỗi $A$-lược đồ phẳng $X$ sao
+cho $X\otimes_A k=X_0$ cho một $B$-lược đồ $X\otimes_A B$ có cùng các tính
+chất. Giả sử có thể tìm được một $k$-đại số Noether địa phương đầy đủ
+$\mathcal O$ và một đẳng cấu có tính hàm tử
+\begin{equation}
+  \tag{*}
+  \operatorname{Hom}(\mathcal O,A)\xrightarrow{\sim}F(A)
+\end{equation}
+(trong đó vế thứ nhất ký hiệu các đồng cấu $k$-đại số). Dễ thấy một
+$\mathcal O$ như vậy được xác định đến đẳng cấu chính tắc; khi ấy, ta gọi phổ
+hình thức $\mathfrak Y$ của $\mathcal O$ (nghĩa là không gian tôpô chỉ gồm
+một điểm và được trang bị một bó các vành tôpô thu về $\mathcal O$) là
+\emph{lược đồ moduli hình thức} của $X_0$. (Lược đồ này không nhất thiết tồn
+tại.) Cho $\mathfrak r$ là iđêan cực đại của $\mathcal O$; với mỗi $n$, đặt
+$\mathcal O_n=\mathcal O/\mathfrak r^{n+1}$ (do đó $\mathcal O_0=k$). Khi
+ấy, đồng cấu chính tắc $\mathcal O\longrightarrow\mathcal O_n$ là một phần tử
+của $\operatorname{Hom}(\mathcal O,\mathcal O_n)$, nên xác định một phần tử
+của $F(\mathcal O_n)$, tức là một $\mathcal O_n$-lược đồ phẳng $X_n$ có phép
+rút gọn modulo $\mathfrak r$ bằng $X_0$. Các $X_n$ này suy ra từ nhau bằng
+mở rộng vô hướng (ở đây tức là bằng các phép rút gọn), do đó chúng đến từ một
+lược đồ hình thức $\mathfrak X$ xác định duy nhất trên lược đồ moduli hình
+thức $\mathfrak Y$; $\mathfrak X$ phẳng trên $\mathfrak Y$ và
+$\mathfrak X_0=X_0$. Khi đó, như thấy ngay, đẳng cấu (*) có được bằng cách
+gắn với mỗi đồng cấu $k$-đại số $\mathcal O\longrightarrow A$ lớp của
+$A$-lược đồ $\mathfrak X\otimes_{\mathcal O}A$ (nghĩa là, với mỗi cấu xạ các
+$k$-lược đồ $Y'=\operatorname{Spec}(A)\longrightarrow\mathfrak Y$, ta gắn
+$Y'$-lược đồ $\mathfrak X\otimes_{\mathfrak Y}Y'$ thu được bằng đổi cơ sở).
+Hơn nữa, đẳng cấu (*) và mô tả vừa nêu vẫn còn đúng nếu chỉ giả sử $A$ là một
+$k$-đại số Noether địa phương đầy đủ (không nhất thiết Artin). Dĩ nhiên, như
+thường lệ, $\mathcal O$ hoàn toàn có thể có các phần tử lũy linh
+\textit{a priori}, và dường như có thể tồn tại những trường hợp trong đó
+$\mathcal O$ tự nó là Artin nhưng không đồng nhất với $k$. Điều này cho thấy
+quan điểm Kodaira--Spencer (chỉ xét các $A$ là vành chính quy) không thích hợp
+\textit{a priori} đến mức nào trong trường hợp tổng quát.
+
+\src{209}
+Ta còn phải nêu các điều kiện đủ để tồn tại một lược đồ moduli hình thức cho
+$X_0$, được giả sử proper trên $k$. Nói chung, dễ nêu các điều kiện cần và đủ
+đơn giản trên một hàm tử $A\longmapsto F(A)$ (từ các $k$-đại số địa phương
+hữu hạn chiều đến các tập hợp) để nó có thể viết dưới dạng
+$\operatorname{Hom}(\mathcal O,A)$ với một $\mathcal O$ thích hợp. Ta sẽ
+không trình bày chi tiết các điều kiện ấy ở đây. Chỉ xin lưu ý rằng, trong
+trường hợp đang xét, chúng áp đặt lên $X_0$ những điều kiện đối đồng điều không
+tầm thường, và dường như khó có khả năng chúng luôn được thỏa mãn, dù diễn giả
+chưa dựng được phản ví dụ nào. Trái lại, có vẻ hợp lý khi cho rằng điều kiện
+$H^0(X_0,\Theta_{X_0/k})=0$ là điều kiện đủ (dù tuyệt nhiên không cần) cho sự
+tồn tại của một lược đồ moduli hình thức. Ở đây ta chỉ phát biểu một định lý
+trong một trường hợp đặc biệt đơn giản (định lý tương tự trong lý thuyết không
+gian giải tích đã được biết rõ; xem Kodaira--Spencer), và định lý này được suy
+ra không khó khăn từ các kết quả của mục trước:
+
+\result{ĐỊNH LÝ}{10} Cho $X_0$ là một lược đồ proper và trơn trên trường $k$
+sao cho
+\[
+  H^0(X_0,\Theta_{X_0/k})=H^2(X_0,\Theta_{X_0/k})=0.
+\]
+Khi đó tồn tại một lược đồ moduli hình thức cho $X_0$, tương ứng với một vành
+địa phương chính quy $\mathcal O$ (nghĩa là một đại số chuỗi lũy thừa hình thức
+trên $k$).
+
+Như đã lưu ý, nói chung không đúng rằng lược đồ hình thức $\mathfrak X$ trên
+$\mathcal O$ là đại số hóa được; tuy nhiên, ta biết điều đó đúng khi $X_0$ là
+xạ ảnh và $H^2(X_0,\Osh_{X_0})=0$ (Định lý 4), chẳng hạn khi $X_0$ có chiều
+1. Điều này đem lại một phần cơ sở cho hy vọng dựng được một lược đồ moduli
+trên các số nguyên cho các đường cong có giống cho trước\ldots{}
+
+Cũng cần lưu ý rằng các phương pháp như những phương pháp trình bày trong mục
+này có thể áp dụng vào việc dựng và nghiên cứu các đa tạp Picard, cũng như vào
+nhiều phép dựng khác. Ta sẽ sớm trở lại vấn đề này.
+
+\fsection{8}{Ứng dụng vào nhóm cơ bản}
+
+Các kỹ thuật đã trình bày cho phép bắt đầu nghiên cứu có hệ thống nhóm cơ bản
+theo mô hình của lý thuyết tôpô. Hai định lý đầu tiên được phát biểu trong mục
+này là những khái quát hóa các kết quả trong một công trình gần đây của
+Lang--Serre.
+
+Cho $X$ là một lược đồ. Một $X$-lược đồ $X'$ được gọi là một phủ không phân
+nhánh của $X$ nếu
+\begin{enumerate}
+  \item[\textit{i.}] $X'$ hữu hạn trên $X$, nghĩa là nó được xác định bởi một
+    bó coherent các đại số $\mathcal A=\mathcal A(X')$ trên $X$;
+  \item[\textit{ii.}] $\mathcal A$ là một bó địa phương tự do trên $X$;
+  \item[\textit{iii.}] Với mọi $x\in X$, thương
+    \[
+      \mathcal A_x/\mathfrak m_x\mathcal A_x
+      =\mathcal A_x\otimes_{\Osh_x}\kappa(x)
+    \]
+    là một đại số khả phân trên $\kappa(x)$.
+\end{enumerate}
+
+\src{210}
+Khái niệm phủ không phân nhánh này (do Serre và diễn giả đề xuất) có mọi tính
+chất sơ cấp mà ta có thể kỳ vọng một cách hợp lý; ta sẽ không liệt kê chúng.
+Chỉ xin nói rằng nó dẫn đến một lý thuyết Galois theo mô hình của lý thuyết
+Galois cổ điển (và bao hàm lý thuyết ấy; các chứng minh thậm chí còn đơn giản
+hơn khá nhiều so với những chứng minh thường được chấp nhận cho lý thuyết sau) và của lý thuyết
+Galois về các phủ tôpô. Cụ thể hơn, ta gọi một \emph{điểm hình học} của một
+lược đồ $X$ là một cấu xạ $a$ từ phổ $\xi$ của một trường đóng đại số $\Omega$
+vào $X$, nghĩa là dữ liệu của một mở rộng đóng đại số của trường thặng dư
+$\kappa(x)$ của một điểm $x=|a|$ thuộc $X$ (được gọi là \emph{vị trí} của
+điểm hình học $a$). Nếu $X'$ là một phủ không phân nhánh của $X$, ta có thể
+gắn với nó tập $E_a(X')$ các “điểm hình học của $X'$ nằm trên $a$”, nghĩa là
+tập các cặp gồm một $x'\in X'$ nằm trên $x$ và một $\kappa(x)$-đồng cấu
+$\kappa(x')\longrightarrow\Omega$. Như vậy (với $(X,a)$ cố định), ta thu được
+một hàm tử $F(X,a)$ từ phạm trù $R(X)$ các phủ không phân nhánh $X'$ của $X$
+đến phạm trù các tập hữu hạn. Nếu $X$ liên thông, cặp gồm $R(X)$ và $F(X,a)$
+có các tính chất hình thức cần thiết để đẳng cấu với cặp tương tự được xác định
+bởi một nhóm tôpô compact hoàn toàn không liên thông $\pi$ thích hợp (nghĩa là
+một giới hạn xạ ảnh của các nhóm hữu hạn): ta lấy phạm trù $C(\pi)$ của các tập
+hữu hạn $E$ trên đó $\pi$ tác động liên tục, cùng hàm tử quên
+$F(\pi)(E)=E$ từ phạm trù này đến phạm trù các tập hữu hạn. Hơn nữa, nhóm
+$\pi$ được xác định đến đẳng cấu chính tắc bởi điều kiện $(C(\pi),F(\pi))$
+đẳng cấu với một cặp đã cho. Trong trường hợp này, $\pi$ được gọi là
+\emph{nhóm cơ bản} của lược đồ liên thông $X$ tại điểm hình học $a$, và được
+ký hiệu $\pi_1(X,a)$. Nếu $X$ không liên thông, ta thay nó bằng thành phần liên
+thông chứa $x=|a|$. Ngược lại, nếu $X$ liên thông, thì các nhóm $\pi_1(X,a)$
+ứng với hai điểm hình học $a',a''$ của $X$ là đẳng cấu (đẳng cấu ấy chỉ được
+xác định đến các tự đẳng cấu trong), nên như thường lệ, ta có thể chọn $a$
+theo cách thuận tiện nhất, chẳng hạn tại điểm tổng quát của $X$, với giả thiết
+lược đồ này bất khả quy. Dĩ nhiên, $\pi_1(X,a)$ là một hàm tử hiệp biến theo lược
+đồ có điểm gốc $(X,a)$. Khi đó, mọi phát biểu về việc phân loại các phủ không
+phân nhánh\footnote{Bản in ghi “các phủ bất khả phân”; đoạn văn đang xét phạm
+trù $R(X)$ của các phủ không phân nhánh và sự tương đương của nó với các tập
+hữu hạn được trang bị một tác động liên tục của $\pi_1(X,a)$.} đều có thể
+chuyển sang ngôn ngữ lý thuyết nhóm theo từ điển quen thuộc (ngoại trừ việc
+phải lưu ý rằng ở đây ta làm việc với các nhóm tôpô).
+
+\src{211}
+Mục đích của ta là phát triển một tương tự của dãy đồng luân chính xác của các
+không gian phân thớ đối với một cấu xạ proper $f:X\longrightarrow Y$. Hiển
+nhiên, vì chưa biết các nhóm đồng luân bậc cao phải là gì, ta chỉ có thể thu
+được những kết quả tất yếu chưa đầy đủ. Để áp dụng các định lý cơ bản của
+mục n\textsuperscript{o} 3, trước hết ta phải phát biểu tường minh vài bổ đề sơ cấp về các lược đồ
+trên trường hoặc trên vành Artin (đúng theo phương pháp tổng quát!).
+
+\result{BỔ ĐỀ}{1} Cho $(X',a')$ là một phủ không phân nhánh có điểm gốc, liên
+kết với một biểu diễn có điểm gốc của $\pi_1(X,a)$ trên một tập hữu hạn $E$
+(có điểm được đánh dấu $e$). Khi đó cấu xạ chính tắc
+$\pi_1(X',a')\longrightarrow\pi_1(X,a)$ đồng nhất nhóm thứ nhất với nhóm ổn
+định của $e$ trong $\pi_1(X,a)$ (và do đó là đơn ánh).
+
+\result{BỔ ĐỀ}{2} Cho $X$ là một lược đồ đại số trên trường $k$, và cho $k'$
+là một mở rộng thuần bất khả phân của $k$. Khi đó mọi phủ không phân nhánh của
+$X\otimes_k k'$ đều thu được bằng ảnh ngược (tức là bằng mở rộng vô hướng) từ
+một phủ không phân nhánh của $X$, được xác định duy nhất đến đẳng cấu chính
+tắc.
+
+Đặc biệt, từ hai bổ đề này suy ra rằng với mọi mở rộng đại số $K$ của $k$, và
+mọi điểm hình học $a'$ của $X'=X\otimes_k K$ chiếu xuống điểm hình học $a$ của
+$X$, đồng cấu có tính hàm tử
+$\pi_1(X',a')\longrightarrow\pi_1(X,a)$ là đơn ánh.
+
+\result{BỔ ĐỀ}{3} Cho $X$ là một lược đồ đầy đủ trên một vành Artin địa phương
+$A$ sao cho $H^0(X,\Osh_X)=A$; cho $X'$ là một phủ không phân nhánh của $X$,
+và đặt $A'=H^0(X',\Osh_{X'})$, vì thế là một vành hữu hạn trên $A$
+(\textit{a priori} có thể phân nhánh trên $A$). Gọi $X_0,X'_0$ là các lược đồ
+rút gọn liên kết với $X,X'$ (thu được bằng cách chia cho các bó phần tử lũy
+linh của $\Osh_X,\Osh_{X'}$), và cho $k$ là một trường con của
+$A/\mathfrak r(A)$ sao cho $A/\mathfrak r(A)$ hữu hạn trên trường con ấy (như vậy
+$X_0$ là một lược đồ đại số đầy đủ trên $k$, còn $X'_0$ là một phủ không phân
+nhánh của nó). Cuối cùng, cho $\Omega$ là một mở rộng đóng đại số của $k$, và
+xét phủ không phân nhánh $X'_0\otimes_k\Omega$ của
+$X_0\otimes_k\Omega$. Khi đó hai điều kiện sau tương đương:
+\begin{enumerate}
+  \item[\textit{i.}] $X'_0\otimes_k\Omega$ hoàn toàn phân rã trên
+    $X_0\otimes_k\Omega$.
+  \item[\textit{ii.}] Cấu xạ tự nhiên
+    $X'\longrightarrow X\otimes_A A'$ là một đẳng cấu.
+\end{enumerate}
+Dưới các điều kiện ấy, $A'$ là một mở rộng không phân nhánh của $A$. Cuối
+cùng, nếu $X'$ liên thông, điều kiện \textit{(i)} tương đương với điều kiện
+sau đây, bề ngoài yếu hơn:
+\begin{enumerate}
+  \item[\textit{i bis.}] $X'_0\otimes_k\Omega$ có một tiết diện chính quy
+    trên $X_0\otimes_k\Omega$.
+\end{enumerate}
+Khi điều kiện \textit{(ii)} được thỏa mãn, ta nói phủ không phân nhánh $X'$
+của $X$ là \emph{tầm thường về mặt hình học}.
+
+\src{212}
+\result{BỔ ĐỀ}{4} Cho $f:X\longrightarrow Y$ là một cấu xạ proper sao cho
+$f_*(\Osh_X)=\Osh_Y$. Cho $a$ là một điểm hình học của $X$ và $b$ là ảnh của
+nó trên $Y$. Khi đó $\pi_1(X,a)\longrightarrow\pi_1(Y,b)$ là toàn ánh.
+
+Thật vậy, cần chứng minh điều sau: nếu một phủ không phân nhánh $Y'$ của $Y$
+(tương ứng với một bó đại số địa phương tự do $\mathcal A$) có tính chất
+$X\otimes_Y Y'$ không liên thông, thì $Y'$ cũng không liên thông. Quả vậy,
+$f^*(\mathcal A)$ khi ấy là tổng trực tiếp của hai bó vành khác không, nên ảnh
+trực tiếp của nó cũng vậy; nhưng ảnh trực tiếp ấy chính là
+$\mathcal A\otimes f_*(\Osh_X)=\mathcal A$.
+
+\result{BỔ ĐỀ}{5} Cho $X$ là một lược đồ đầy đủ trên trường $k$; giả sử
+$H^0(X,\Osh_X)$ là một vành địa phương $A$ và $A/\mathfrak r(A)$ là thuần bất
+khả phân trên $k$. Cho $\Omega$ là một bao đóng đại số của $k$, và đặt
+$\overline X=X\otimes_k\Omega$ (lược đồ này liên thông). Chọn một điểm hình
+học $\overline a$ của $\overline X$ chiếu xuống điểm hình học $a$ của $X$;
+khi đó có một dãy chính xác
+\[
+  e\longrightarrow\pi_1(\overline X,\overline a)
+  \longrightarrow\pi_1(X,a)
+  \longrightarrow\pi_1(k,b)\longrightarrow e
+\]
+(trong đó $\pi_1(k,b)$ là nhóm Galois của $\Omega$ trên $k$).
+
+Tính đơn ánh của đồng cấu thứ nhất đã được chứng minh trong các Bổ đề 1 và 2;
+tính chính xác ở giữa suy ra từ Bổ đề 3; cuối cùng, tính toàn ánh của đồng cấu
+sau cùng (đây là chỗ duy nhất dùng việc $A/\mathfrak r(A)$ thuần bất khả phân)
+suy ra từ Bổ đề 4.
+
+\result{MỆNH ĐỀ}{4} Cho $f:X\longrightarrow Y$ là một cấu xạ proper và phẳng
+sao cho, với mọi $y\in Y$, $H^0(f^{-1}(y),\Osh_{f^{-1}(y)})$ là một đại số khả
+phân trên trường thặng dư $\kappa(y)$ (chẳng hạn, điều này đúng nếu
+$f^{-1}(y)$ là một lược đồ khả phân trên $\kappa(y)$, tức là rút gọn và các
+trường tương ứng với các thành phần bất khả quy của nó là những mở rộng khả
+phân của $\kappa(y)$). Khi đó phủ $Y'$ của $Y$ liên kết với
+$f_*(\Osh_X)$ là không phân nhánh.
+
+Chứng minh suy ra dễ dàng từ Định lý 2.
+
+\src{213}
+Mệnh đề này, cùng với Bổ đề 1, trên thực tế quy việc nghiên cứu đồng luân của
+các cấu xạ proper và phẳng (có thớ khả phân) về trường hợp
+$f_*(\Osh_X)=\Osh_Y$ (vì khi dùng phân tích Stein, ta thay $Y$ bởi $Y'$).
+
+\result{NHẬN XÉT}{} Một cấu xạ phẳng kiểu hữu hạn có các thớ là những lược đồ
+khả phân (tương ứng, trơn) được gọi là \emph{khả phân} (tương ứng,
+\emph{trơn}). Ta chứng minh được rằng nếu $f$ phẳng và $f^{-1}(y)$ khả phân
+(tương ứng, trơn), thì tồn tại một lân cận của $f^{-1}(y)$ trên đó $f$ khả
+phân (tương ứng, trơn). Kết quả tương tự đúng cho “chuẩn tắc tuyệt đối”
+(“định lý Bertini”).
+
+Cho $f:X\longrightarrow Y$ là một cấu xạ proper sao cho
+\begin{equation}
+  \tag{i}
+  f_*(\Osh_X)=\Osh_Y,
+\end{equation}
+và cho $X'$ là một lược đồ hữu hạn trên $X$. Gọi $Y'$ là phủ của $Y$ tương ứng
+với phân tích Stein của $X'\longrightarrow Y$ (xem Định lý 5). Cho $y\in Y$;
+khi đó tập các thành phần liên thông của thớ $F'$ của $X'$ trên $y$ được đồng
+nhất với tập các điểm $y'$ của $Y'$ nằm trên $y$ (Định lý 5). Xét cấu xạ hiển
+nhiên
+\begin{equation}
+  \tag{*}
+  X'\longrightarrow X\times_Y Y'
+\end{equation}
+suy ra từ các cấu xạ tự nhiên $X'\longrightarrow X$ và
+$X'\longrightarrow Y'$\footnote{Bản in bỏ dấu phẩy trên $X'$ thứ hai; cấu xạ
+đến $Y'$ là cấu xạ trong phân tích Stein của $X'\to Y$.}; cấu xạ này là một
+đẳng cấu mỗi khi $X'$ có dạng $X\times_Y Y''$, trong đó $Y''$ là một phủ không
+phân nhánh của $Y$; khi ấy $Y'$ chính là $Y''$ và (*) là đồng nhất. Ta muốn
+đưa ra chính xác các điều kiện để $X'$ có dạng vừa nêu, tức là để $Y'$ không
+phân nhánh và (*) là một đẳng cấu. Vì thế, xét thớ $F$ của $X$ trên $y$; đó là
+một lược đồ proper trên $\kappa(y)$, còn $F'$ là một phủ của nó (không phân
+nhánh nếu $X'$ không phân nhánh). Cho $F'_1$ là một thành phần liên thông của
+$F'$ tương ứng với một điểm $y'_1$ của $Y'$ nằm trên $y$. Giả sử thêm rằng
+\begin{enumerate}
+  \item[\textit{(ii)}] $X'$ không phân nhánh trên $X$ tại các điểm của $F'_1$
+    (do đó $F'_1$ là một phủ không phân nhánh của $F$), và
+  \item[\textit{(iii)}] $F'_1$ là một phủ tầm thường về mặt hình học của $F$
+    (xem Bổ đề 3).
+\end{enumerate}
+
+\result{ĐỊNH LÝ}{11} Dưới các điều kiện này, tồn tại một lân cận mở $U'$ của
+$y'_1$ trong $Y'$ sao cho (*) là một đẳng cấu trên $U'$. Hơn nữa, $Y'$ không
+phân nhánh tại $y'_1$ trên $Y$ (nhưng có thể phân nhánh tại các điểm $y'$ khác
+của $Y'$ nằm trên $y$).
+
+Dĩ nhiên, các điều kiện \textit{(ii)} và \textit{(iii)} cũng là cần thiết để
+kết luận của định lý đúng. Chứng minh của định lý là dễ dàng, nhờ Bổ đề 3 và
+Định lý 2.
+
+
+\src{214}
+\result{HỆ QUẢ}{1} Tiếp tục giả sử \textit{(i)} được thỏa mãn. Để một phủ
+không phân nhánh của $X$ đẳng cấu với ảnh ngược của một phủ không phân
+nhánh $Y'$ của $Y$, điều kiện cần và đủ là $X'$ cảm sinh trên mỗi thớ
+$f^{-1}(y)$ một phủ tầm thường về mặt hình học.
+
+Theo Định lý 11, tập các điểm của $Y$ tại đó điều kiện này được thỏa mãn là
+mở, nên chỉ cần kiểm tra nó tại các điểm đóng $y$\ldots{} Ta ghi lại phát biểu
+sau, tương đương với Hệ quả 1: hạt nhân của đồng cấu (toàn ánh theo Bổ đề 4)
+$\pi_1(X)\longrightarrow\pi_1(Y)$ là nhóm con chuẩn tắc đóng sinh bởi các ảnh
+trong $\pi_1(X)$ của các $\pi_1(\overline{f^{-1}(y)})$, trong đó
+\[
+  \overline{f^{-1}(y)}
+  =f^{-1}(y)\otimes_{\kappa(y)}\overline{\kappa(y)},
+\]
+và $\overline{\kappa(y)}$ ký hiệu một bao đóng đại số của $\kappa(y)$. Cần lưu
+ý rằng vì không thể chọn cùng một điểm gốc cho tất cả các thớ, các đồng cấu
+$\pi_1(\overline{f^{-1}(y)})\longrightarrow\pi_1(X)$ trong mọi trường hợp chỉ
+được xác định (sau khi đã chọn một điểm gốc cho $X$, và do đó cho $Y$) đến hợp
+thành với một tự đẳng cấu trong của $\pi_1(X)$.
+
+\result{HỆ QUẢ}{2} Dưới các giả thiết tổng quát của Định lý 11, giả sử thêm
+rằng $Y,X,X'$ nguyên, và gọi $K,L,L'$ là các trường hàm tương ứng. Khi đó tồn
+tại một mở rộng trung gian khả phân $K'$ của $K$ trong $L'$, độc lập tuyến
+tính với $L$, sao cho $L'=LK'$ (do đó $L'=L\otimes_K K'$).
+
+(Ta áp dụng phần cuối của Bổ đề 3 cho thớ hình học của $X$.) Trường hợp áp dụng
+đáng quan tâm nhất của Định lý 11 là khi $f$ là một cấu xạ khả phân. Khi ấy
+$X'$ cũng khả phân trên $Y$; do đó, theo Mệnh đề 4, $Y'$ không phân nhánh trên
+$Y$, và vế thứ hai $X\times_Y Y'$ trong (*) không phân nhánh trên $X$. Ta dễ
+dàng suy ra:
+
+\result{HỆ QUẢ}{3} Ngoài \textit{(i)}, giả sử $f$ khả phân. Cho $X'$ là một
+phủ không phân nhánh liên thông của $X$; để
+$X'$\footnote{Bản in ghi “$X$” ở đây; chủ thể của tiêu chuẩn là phủ $X'$ được
+đưa vào ở câu trước.} là ảnh ngược của một phủ không phân nhánh $Y'$ của $Y$,
+điều kiện cần và đủ là phủ $\overline F'$ cảm sinh trên một thớ hình học
+$\overline F=f^{-1}(y)$ có một tiết diện chính quy.
+
+Cần lưu ý rằng không phải giả sử $\overline F'$ tầm thường về mặt hình học
+trên $\overline F$ (điều này sẽ đúng \textit{a posteriori}, mặc dù
+\textit{a priori} điều kiện ấy mạnh hơn nhiều). Thật ra, Hệ quả 3 tương đương
+với phát biểu sau:
+
+\src{215}
+\result{HỆ QUẢ}{4} Cho $f:X\longrightarrow Y$ là một cấu xạ proper và khả
+phân sao cho $f_*(\Osh_X)=\Osh_Y$; cho $\overline F$ là thớ hình học của một
+điểm $y\in Y$, và chọn một điểm hình học trong $\overline F$. Qua các cấu xạ
+$\overline F\longrightarrow X\longrightarrow Y$, ta thu được các điểm hình
+học trong $X,Y$, được lấy làm điểm gốc cho các nhóm cơ bản của
+$\overline F,X,Y$. Dưới các điều kiện ấy, ta có dãy chính xác
+\[
+  \boxed{
+    \pi_1(\overline F)\longrightarrow\pi_1(X)
+    \longrightarrow\pi_1(Y)\longrightarrow e
+  }.
+\]
+
+Từ đó dễ dàng suy ra hai phát biểu sau của Serre--Lang, ở đây không còn cần
+bất kỳ giả thiết chuẩn tắc nào:
+
+\result{HỆ QUẢ}{5} Cho $X,Y$ là các lược đồ liên thông trên một trường $k$;
+giả sử lược đồ rút gọn $X_{\mathrm{réd}}$ khả phân trên $k$ (điều này tự động
+đúng nếu $k$ hoàn hảo), và giả sử $X$ hoặc $Y$ proper trên
+$k$.\footnote{Điều kiện được bổ sung trong bản đính chính năm 1962.} Chọn một
+điểm hình học $a$ (tương ứng, $b$) trong $X$ (tương ứng, $Y$), từ đó thu được
+một điểm hình học $c=(a,b)$ trong $X\times_kY$ và một cấu xạ tự nhiên
+\[
+  \pi_1(X\times_kY,c)\longrightarrow
+  \pi_1(X,a)\times\pi_1(Y,b)
+\]
+(suy ra từ các cấu xạ có tính hàm tử từ $\pi_1(X\times Y,c)$ vào
+$\pi_1(X,a)$ và $\pi_1(Y,b)$). Cấu xạ này là đơn ánh, và thậm chí là song ánh
+nếu $k$ đóng đại số.
+
+(Tính toàn ánh trong trường hợp sau gần như hiển nhiên.) Cùng với Serre--Lang,
+ta suy ra:
+
+\result{HỆ QUẢ}{6} Cho $X$ là một lược đồ đại số liên thông và proper trên
+một trường đóng đại số $k$, và cho $K$ là một mở rộng đóng đại số của $k$;
+khi đó các nhóm cơ bản của $X$ và $X\otimes_kK$ là như nhau, tức là mọi phủ
+không phân nhánh của lược đồ sau đều thu được bằng mở rộng vô hướng từ một phủ
+không phân nhánh của $X$, duy nhất đến đẳng cấu.
+
+\result{NHẬN XÉT}{}
+
+1) Dùng Mệnh đề 4, ta thấy giả thiết $f_*(\Osh_X)=\Osh_Y$ trong Hệ quả 4 không
+cốt yếu. Trong trường hợp tổng quát, thay vì đặt nhóm đơn vị $e$ sau
+$\pi_1(Y)$, ta phải tiếp tục bằng
+\[
+  \pi_0(\overline F)\longrightarrow\pi_0(X)
+  \longrightarrow\pi_0(Y)\longrightarrow e.
+\]
+như trong tôpô đại số.
+
+\src{216}
+2) Nói chung, hiện nay chưa thể nói gì về hạt nhân của
+$\pi_1(\overline F)\longrightarrow\pi_1(X)$, nơi lẽ ra phải có sự tham gia của
+một $\pi_2(Y)$. Tuy nhiên, có vẻ ta phải chứng minh được rằng
+$\pi_1(\overline F)\longrightarrow\pi_1(X)$ là đơn ánh nếu $Y$ là phổ của một
+vành địa phương $A$, bằng cách dựa vào Định lý 12 dưới đây (định lý này khẳng
+định điều đó khi $A$ đầy đủ).
+
+Định lý 11 chỉ dùng các Định lý 1 và 2. Bây giờ ta sẽ áp dụng Định lý 3, dựa
+trên bổ đề sơ cấp sau:
+
+\result{BỔ ĐỀ}{6} Cho $X$ là một lược đồ, và $X_0$ là lược đồ rút gọn tương
+ứng (tức là lược đồ trong đó các phần tử lũy linh đã bị triệt tiêu). Khi đó mọi
+phủ không phân nhánh $X'_0$ của $X_0$ đều được cảm sinh bởi một phủ không phân
+nhánh $X'$ của $X$, được xác định duy nhất đến đẳng cấu chính tắc.
+
+Bổ đề này, có bản chất hoàn toàn địa phương, đóng vai trò ở đây tương tự như
+Định lý 8 trong lý thuyết môđun. Kết hợp nó với định lý tồn tại (Định lý 3),
+ta suy ra:
+
+\result{ĐỊNH LÝ}{12} Cho $A$ là một vành Noether địa phương đầy đủ có trường
+thặng dư $k$. Cho $X$ là một lược đồ proper trên $A$. Khi đó mọi phủ không
+phân nhánh $X'_0$ của $X_0=X\otimes_A k$ đều được cảm sinh bởi một phủ không
+phân nhánh $X'$ của $X$, duy nhất đến đẳng cấu.
+
+Nói cách khác:
+
+\result{HỆ QUẢ}{1} Chọn một điểm hình học trong $X_0$ làm điểm gốc cho các
+nhóm cơ bản của $X_0$ và $X$. Khi đó đồng cấu chính tắc
+$\pi_1(X_0)\longrightarrow\pi_1(X)$ là một đẳng cấu.
+
+Bây giờ áp dụng Bổ đề 5 cho $X_0$ (để đơn giản, giả sử
+$H^0(X_0,\Osh_{X_0})=k$), và lưu ý rằng vì $A$ đầy đủ, các mở rộng không phân
+nhánh của nó tương ứng với các mở rộng không phân nhánh của trường thặng dư;
+tức là $\pi_1(Y)=\pi_1(k)$ (trong đó $Y=\operatorname{Spec}(A)$). Ta thu được
+dãy chính xác:
+\[
+  e\longrightarrow\pi_1(\overline X_0)
+  \longrightarrow\pi_1(X)\longrightarrow\pi_1(Y)\longrightarrow e.
+\]
+
+\result{HỆ QUẢ}{2} Cho $f:X\longrightarrow Y$ là một cấu xạ proper và phẳng,
+cho $y_1$ là một điểm của $Y$ và $y_0$ là một chuyên hóa của $y_1$, và xét các
+thớ “hình học” tương ứng $\overline X_1$ và $\overline X_0$; giả sử
+$\overline X_0$ khả phân và liên thông (điều này kéo theo
+$\overline X_1$ thỏa các điều kiện tương tự). Khi đó có thể tìm được một đồng
+cấu nhóm
+$\pi_1(\overline X_1)\longrightarrow\pi_1(\overline X_0)$, được xác định đến
+một tự đẳng cấu trong, và đồng cấu này là toàn ánh.
+
+
+\src{217}
+Có thể hy vọng đồng cấu này luôn song ánh; tiếc thay, nói chung điều đó không
+đúng nếu $\kappa(y_0)$ có đặc số $>0$. Tuy nhiên, dưới đây ta sẽ thu được một
+chặn cho hạt nhân của đồng cấu ấy (ít nhất khi $\overline X_0$ trơn), từ đó suy
+ra rằng nếu $\kappa(y_0)$ có đặc số $0$ thì đồng cấu trên là song ánh (một kết
+quả cũng có thể chứng minh bằng phương pháp siêu việt). Dù sao, ta đã có một
+chặn cho $\pi_1$ của một thớ đặc biệt theo nhóm tương ứng của một thớ tổng quát.
+Chẳng hạn, dùng sự kiện một đường cong đại số trong đặc số $p$ có thể được nâng
+lên một đường cong trong đặc số $0$ (Định lý 9, Hệ quả 4), ta thu được bằng
+phương pháp siêu việt:
+
+\result{HỆ QUẢ}{3} Cho $X_0$ là lược đồ của một đường cong đầy đủ và trơn trên
+một trường đóng đại số có đặc số tùy ý, và gọi $g$ là giống của $X_0$; khi đó
+$\pi_1(X_0)$ có $2g$ phần tử sinh tôpô, chịu ràng buộc bởi hệ thức quen thuộc.
+
+Từ đó, bằng kỹ thuật tiết diện siêu phẳng quen thuộc, suy ra:
+
+\result{HỆ QUẢ}{4} Cho $X$ là một lược đồ xạ ảnh trơn trên một trường đóng đại
+số có đặc số tùy ý; khi đó $\pi_1(X)$ có hữu hạn phần tử sinh tôpô.
+
+Ta tìm hạt nhân của đồng cấu
+$\pi_1(\overline X_1)\longrightarrow\pi_1(\overline X_0)$. Để làm việc này,
+có thể giả sử $Y$ là phổ của một vành định giá rời rạc đầy đủ
+$V=\Osh_y$ ($y=y_0$). Câu hỏi tương đương với câu hỏi sau: cho một phủ không
+phân nhánh $\overline X'_1$ của $\overline X_1$ (nếu muốn, có thể giả sử nó là
+Galois), xác định những điều kiện để nó đến từ một phủ không phân nhánh của
+$X_0$. \textit{A priori}, phủ đã cho đến từ, bằng mở rộng vô hướng, một phủ
+không phân nhánh $X'_1$ của $X_1\otimes_K K'$, trong đó $K'$ là một mở rộng
+con hữu hạn của bao đóng đại số $\overline K$ của trường phân thức $K$ của
+$V$; nếu $\overline X'_1$ là Galois với nhóm $G$, ta có thể chọn $X'_1$ là
+Galois với nhóm $G$. Khi đó ta có: để
+$X'_1\otimes_{K'}\overline K=\overline X'_1$ đến từ một phủ không phân nhánh
+của $X_0$, điều kiện cần và đủ là có thể tìm được một mở rộng hữu hạn $K''$
+của $K'$ trong $\overline K$ sao cho
+$X''_1=X'_1\otimes_{K'}K''$ có dạng $X''\otimes_{V''}K''$, trong đó $V''$ là
+bao đóng nguyên của $V$ trong $K''$, còn $X''$ là một phủ không phân nhánh của
+$X\otimes_VV''$. Chẳng hạn, giả sử $X_0$ chuẩn tắc tuyệt đối; khi đó
+$X\otimes_VV''$ chuẩn tắc (vì nó phẳng trên $V''$ và có thớ đặc biệt chuẩn
+tắc), và trường hàm của nó đồng nhất với trường $K''(X_1)$ của
+\[
+  X_1\otimes_KK''
+  =(X\otimes_VK)\otimes_KK''
+  =X\otimes_VK''
+  =(X\otimes_VV'')\otimes_{V''}K''.
+\]
+Cho $L''=K''(X'_1)$ là trường hàm của
+$X'_1\otimes_{K'}K''$; đây là một mở rộng hữu hạn khả phân của $K''(X_1)$, và
+điều kiện trên cũng có nghĩa là $L''$ là một mở rộng không phân nhánh của
+trường hàm của $X\otimes_VV''$ (tức là phép chuẩn hóa của
+$X\otimes_VV''$ trong $L''$ không phân nhánh trên $X\otimes_VV''$). Hơn nữa,
+chỉ cần kiểm tra rằng $L''$ không phân nhánh tại các điểm của thớ đặc biệt của
+$X\otimes_VV''$ (vì nó không phân nhánh trên thớ tổng quát
+$X_1\otimes_KK''$). Nếu bây giờ $X_0$ trơn, “định lý thuần khiết” của
+Nagata--Zariski thậm chí cho thấy chỉ cần kiểm tra rằng $L''$ không phân nhánh
+trên vành địa phương $O''$ tại điểm tổng quát của thớ đặc biệt của
+$X\otimes_VV''$; đây là một vành định giá rời rạc, là phép chuẩn hóa trong
+$K''(X_1)$ của vành địa phương $O\subset K(X_1)$ tại điểm tổng quát của thớ
+đặc biệt của $X$. Do đó ta đã thu được:
+
+\src{218}
+\result{HỆ QUẢ}{5} Dưới các giả thiết và với các ký hiệu trên, để phủ không
+phân nhánh $X'_1\otimes_{K'}\overline K$ của
+$\overline X_1=X_1\otimes_K\overline K$ đến từ một phủ không phân nhánh của
+$\overline X_0$, điều kiện cần và đủ là tồn tại một mở rộng con hữu hạn $K''$
+của $\overline K/K'$ sao cho $K''(X'_1)$ không phân nhánh trên vành định giá
+rời rạc $O''\subset K''(X_1)$.
+
+Bây giờ lưu ý rằng $O''$ là phép chuẩn hóa trong $K''(X_1)$ của vành định giá
+rời rạc $O'\subset K'(X_1)$ (phép chuẩn hóa của $O$ trong $K'(X_1)$), và
+$O'$ chứa bao đóng nguyên $V'$ của $V$ trong $K'$; một phần tử đều hóa $u$ của
+$V'$ cũng là một phần tử đều hóa của $O'$. Giả sử bây giờ $X'_1$ là Galois với
+nhóm Galois $G$, có cấp $n$ nguyên tố cùng nhau với đặc số $p$ của
+$\kappa(y_0)$ (đồng thời là đặc số của trường thặng dư của $O'$). Khi đó
+$K'(X'_1)$ phân nhánh thuần trên $O'$, và dễ dàng suy ra (“bổ đề Abhyankar”)
+rằng sau khi ghép thêm một căn bậc $n$, ký hiệu $v$, của một phần tử đều hóa
+của $O'$, mở rộng ấy trở thành không phân nhánh trên phép chuẩn hóa của $O'$
+trong $K'(X_1)(v)$. Nhưng có thể lấy $v$ là một căn bậc $n$ của một phần tử
+đều hóa của $V'$, điều này chứng minh rằng điều kiện của Hệ quả 5 được thỏa
+mãn. (Khả năng dùng bổ đề Abhyankar và định lý thuần khiết là do Serre bán cho
+tôi.) Để diễn đạt kết quả thu được, với mọi nhóm compact hoàn toàn không liên
+thông $\pi$, ta đưa vào nhóm thương $\widetilde\pi$ của $\pi$ theo nhóm con
+đóng sinh bởi các nhóm con Sylow $p$ của nó, tức là giới hạn xạ ảnh của các
+nhóm thương rời rạc của $\pi$ có cấp nguyên tố cùng nhau với $p$. Với ký hiệu
+này, ta thu được:
+
+\result{ĐỊNH LÝ}{13} Cho $f:X\longrightarrow Y$ là một cấu xạ proper và
+phẳng, cho $y_1$ là một điểm của $Y$ và $y_0$ là một chuyên hóa của $y_1$, và
+giả sử $\overline X_0$ liên thông và trơn. Khi đó đồng cấu
+$\widetilde\pi_1(\overline X_1)\longrightarrow
+\widetilde\pi_1(\overline X_0)$ suy ra từ đồng cấu toàn ánh trong Định lý 12,
+Hệ quả 2, là một đẳng cấu.
+
+Nói cách khác:
+
+\src{219}
+\result{HỆ QUẢ}{1} Việc phân loại các phủ Galois không phân nhánh có nhóm
+Galois với cấp nguyên tố cùng nhau với đặc số $p$ của $\kappa(y_0)$ là như
+nhau đối với $\overline X_0$ và $\overline X_1$.
+
+Đặc biệt, nếu $\kappa(y_0)$ có đặc số không, bằng phương pháp đại số ta thu
+được rằng $\pi_1(\overline X_1)\longrightarrow\pi_1(\overline X_0)$ là song
+ánh.
+
+Cuối cùng, ta lưu ý rằng các kỹ thuật đã dùng còn cho kết quả sau, tổng quát
+hơn Định lý 13:
+
+\result{ĐỊNH LÝ}{14} Cho $f:X\longrightarrow Y$ là một cấu xạ proper và trơn,
+cho $D$ là một lược đồ con đóng của $X$, trơn trên $Y$ và có đối chiều 1 tại
+mọi điểm của nó. Với một thớ $Z=f^{-1}(z)$ của $f$, đặt $Z'=Z-Z\cap D$ và gọi
+$\pi_1^t(Z')$ là thương của nhóm cơ bản $\pi_1(Z')$ phân loại các phủ không
+phân nhánh của $Z'$ phân nhánh thuần trên $\overline{Z\cap D}$. Cho $y_0,y_1$
+như trong Định lý 13. Khi đó có một đồng cấu toàn ánh (được xác định đến một tự
+đẳng cấu trong)
+\[
+  \pi_1^t(\overline X'_1)\longrightarrow\pi_1^t(\overline X'_0),
+\]
+và đồng cấu tương ứng
+\[
+  \widetilde\pi_1^t(\overline X'_1)
+  \longrightarrow\widetilde\pi_1^t(\overline X'_0)
+\]
+là một đẳng cấu.
+
+Từ đó suy ra các biến thể tương ứng của các hệ quả của Định lý 13 và của Hệ
+quả 4 của Định lý 12. Tương tự, dùng Định lý 9, Hệ quả 3, bằng phương pháp
+siêu việt ta thu được:
+
+\result{HỆ QUẢ}{} Cho $X_0$ là lược đồ của một đường cong đầy đủ và trơn trên
+một trường đóng đại số có đặc số tùy ý, và cho
+$S=(s_i)_{1\le i\le n}$ là một tập con hữu hạn gồm $n$ phần tử của $X_0$. Khi
+đó $\pi_1^t(X_0-S)$ có $2g+n$ phần tử sinh tôpô
+$x_i,y_i$ ($1\le i\le g$) và $\sigma_j$ ($1\le j\le n$), chịu ràng buộc bởi
+hệ thức
+\[
+  \left(\prod_i x_i y_i x_i^{-1}y_i^{-1}\right)
+  \sigma_1\cdots\sigma_n=1,
+\]
+trong đó các $\sigma_j$ là những phần tử sinh của các nhóm quán tính tương ứng
+với các $s_j$. Với mọi nhóm hữu hạn $G$ có cấp nguyên tố cùng nhau với đặc số,
+được sinh bởi các phần tử $x_i,y_i,\sigma_j$ thỏa hệ thức trên, tồn tại một
+phủ Galois không phân nhánh của $X_0-S$, với nhóm $G$, sao cho các nhóm quán
+tính tại các điểm $s_j$ được sinh bởi các $\sigma_j$.
+
+Khi $X_0$ có giống 0 và $n=3$, ta có một lời giải của “bài toán ba điểm”, ít
+nhất đối với các phủ Galois có cấp nguyên tố cùng nhau với đặc số. (Ở đây,
+Định lý 9 thật ra không cần dùng, và hơn nữa dường như hệ quả trước có thể được
+suy ra từ trường hợp riêng xét trong bài toán ba điểm.)
+
+\src{220}
+\result{NHẬN XÉT}{}
+
+1) Một nghiên cứu đầy đủ hơn, chắc chắn phải dùng các phủ Galois tổng quát hóa
+của $X,X_0,X_1$ (với nhóm Galois có thể là vô cùng bé), hẳn sẽ cho phép thu
+lại hạt nhân trong Định lý 12, Hệ quả 2. Trái lại, việc nghiên cứu các phủ cho
+phép phân nhánh không “thuần” dường như phải khó hơn nhiều.
+
+2) Bổ đề 6, kết hợp với một kết quả của Grauert về phép đầy đủ hóa hình thức
+của một lược đồ xạ ảnh trơn dọc theo một tiết diện siêu phẳng (hoặc với định
+lý, hiện chưa được chứng minh, nêu trong Nhận xét 2 sau Định lý 11), cũng cho
+phép chứng minh trong hình học đại số “trừu tượng” định lý Lefschetz cổ điển về
+nhóm cơ bản.
+
+\begin{center}
+  \textbf{TÀI LIỆU THAM KHẢO}
+\end{center}
+
+\begin{description}
+  \item[{[1]}] Dieudonné (J.) và Grothendieck (A.). --- \emph{Éléments de
+    géométrie algébrique}, Publications mathématiques de l'Institut des Hautes
+    Études Scientifiques (sắp xuất bản).
+  \item[{[2]}] Grothendieck (Alexander). --- \emph{The cohomology theory of
+    abstract algebraic varieties}. International Congress of Mathematicians
+    [1958. Edinburgh] (sắp xuất bản).
+  \item[{[3]}] Serre (Jean-Pierre). --- \emph{Faisceaux algébriques
+    cohérents}, Annals of Math., Series 2, t. 61, 1955, p. 197--278.
+  \item[{[4]}] Serre (Jean-Pierre). --- \emph{Géométrie algébrique et
+    géométrie analytique}, Ann. Institut Fourier Grenoble, t. 6, 1955--1956,
+    p. 1--42.
+\end{description}
+
+\par
