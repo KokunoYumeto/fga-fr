@@ -1,0 +1,109 @@
+layer	pass_number	latest_pass	category	source	line	message	log_line
+en	1	False	warning	sources/en/en/epstopdf-base.sty		Package epstopdf Warning: Shell escape feature is not enabled.	250
+en	1	False	warning	sources/en/en/main.tex		Package unicode-math Warning: Using \overbracket and \underbracket from	258
+en	1	False	warning	sources/en/en/main.tex		Package unicode-math Warning: I'm going to overwrite the following commands	265
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	293
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	297
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	301
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	305
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	309
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	313
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	317
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	321
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	325
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	329
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	333
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	337
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	394
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	460
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	548
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	633
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	713
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	786
+en	1	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	848
+en	1	False	warning	sources/en/en/149.tex		LaTeX Warning: Marginpar on page 17 moved.	923
+en	1	False	warning	sources/en/en/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	940
+en	1	False	warning	sources/en/en/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	947
+en	1	False	warning	sources/en/en/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	954
+en	1	False	warning	sources/en/en/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	967
+en	1	False	warning	sources/en/en/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	971
+en	1	False	warning	sources/en/en/232.tex		LaTeX Warning: Marginpar on page 111 moved.	1246
+en	1	False	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1357
+en	1	False	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1361
+en	1	False	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1365
+en	1	False	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1401
+en	1	False	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1405
+en	1	False	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1409
+en	1	False	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1413
+en	2	False	warning	sources/en/en/epstopdf-base.sty		Package epstopdf Warning: Shell escape feature is not enabled.	250
+en	2	False	warning	sources/en/en/main.tex		Package unicode-math Warning: Using \overbracket and \underbracket from	258
+en	2	False	warning	sources/en/en/main.tex		Package unicode-math Warning: I'm going to overwrite the following commands	265
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	296
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	300
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	304
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	308
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	312
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	316
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	320
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	324
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	328
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	332
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	336
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	340
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	397
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	463
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	551
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	636
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	716
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	789
+en	2	False	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	851
+en	2	False	warning	sources/en/en/149.tex		LaTeX Warning: Marginpar on page 17 moved.	926
+en	2	False	warning	sources/en/en/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	943
+en	2	False	warning	sources/en/en/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	950
+en	2	False	warning	sources/en/en/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	957
+en	2	False	warning	sources/en/en/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	970
+en	2	False	warning	sources/en/en/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	974
+en	2	False	warning	sources/en/en/232.tex		LaTeX Warning: Marginpar on page 111 moved.	1249
+en	2	False	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1360
+en	2	False	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1364
+en	2	False	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1368
+en	2	False	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1404
+en	2	False	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1408
+en	2	False	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1412
+en	2	False	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1416
+en	3	True	warning	sources/en/en/epstopdf-base.sty		Package epstopdf Warning: Shell escape feature is not enabled.	250
+en	3	True	warning	sources/en/en/main.tex		Package unicode-math Warning: Using \overbracket and \underbracket from	258
+en	3	True	warning	sources/en/en/main.tex		Package unicode-math Warning: I'm going to overwrite the following commands	265
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	296
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	300
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	304
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	308
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	312
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	316
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	320
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	324
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	328
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	332
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	336
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	340
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	397
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	463
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	551
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	636
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	716
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	789
+en	3	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	851
+en	3	True	warning	sources/en/en/149.tex		LaTeX Warning: Marginpar on page 17 moved.	926
+en	3	True	warning	sources/en/en/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	943
+en	3	True	warning	sources/en/en/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	950
+en	3	True	warning	sources/en/en/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	957
+en	3	True	warning	sources/en/en/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	970
+en	3	True	warning	sources/en/en/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	974
+en	3	True	warning	sources/en/en/232.tex		LaTeX Warning: Marginpar on page 111 moved.	1249
+en	3	True	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1360
+en	3	True	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1364
+en	3	True	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1368
+en	3	True	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1404
+en	3	True	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1408
+en	3	True	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1412
+en	3	True	warning	sources/en/en/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1416

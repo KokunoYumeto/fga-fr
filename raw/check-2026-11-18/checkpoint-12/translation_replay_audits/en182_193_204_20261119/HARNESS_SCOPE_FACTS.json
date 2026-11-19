@@ -1,0 +1,23 @@
+{
+  "row_id": "C022479",
+  "row_sha256": "83bbda5534b23a3d3c9ce274975b3bf87cf3b66fd1bcfe853d1fb920a7f38fd3",
+  "old_sha256": "02e0ef1cfdc75cee18549b4ef97c7c42972d3ce3ad361f3ef23de4ac7bc71aaf",
+  "new_sha256": "94d73cfffcaa484e3fbeaafb181886fbfed19cb1778f5fbdfc5d7f2d51bed1fe",
+  "old_bytes": 1397,
+  "new_bytes": 1398,
+  "old_marker_character_offset": 1388,
+  "new_marker_character_offset": 0,
+  "remaining_text_exact_after_deleting_marker_and_LF": true,
+  "reference_reuse_pairs": [
+    {
+      "target_index": 22,
+      "french_index": 23
+    },
+    {
+      "target_index": 23,
+      "french_index": 23
+    }
+  ],
+  "reference_reuse_script": "apply_en_182_202.py",
+  "interpretation": "Mechanical observations only; neither marker placement nor formula pairing is adjudicated."
+}

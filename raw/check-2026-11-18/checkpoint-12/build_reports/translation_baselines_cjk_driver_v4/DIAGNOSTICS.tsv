@@ -1,0 +1,6 @@
+layer	pass_number	latest_pass	category	source	line	message	log_line
+ko	1	True	error	sources/ko/base-ko.tex	9	"Font TU/MalgunGothic(0)<local>=""Malgun Gothic/OT:script=latn;language=dflt;mapping=tex-text;"" at 8.69135pt not loadable: Metric (TFM) file or installed font not found."	57
+zh-Hans	1	True	warning	sources/zh-Hans/source/zh/main.tex		Package unicode-math Warning: Using \overbracket and \underbracket from	268
+zh-Hans	1	True	warning	sources/zh-Hans/source/zh/main.tex		Package unicode-math Warning: I'm going to overwrite the following commands	275
+zh-Hans	1	True	warning	sources/zh-Hans/source/zh/main.tex		Package hyperref Warning: Rerun to get /PageLabels entry.	286
+zh-Hans	1	True	error	sources/zh-Hans/source/zh/main.tex	19	Font TU/SimSun(0)<local>=SimSun/OT:script=hani;language=dflt;embolden=2.2;mapping=tex-text; at 24.88pt not loadable: Metric (TFM) file or installed font not found.	288

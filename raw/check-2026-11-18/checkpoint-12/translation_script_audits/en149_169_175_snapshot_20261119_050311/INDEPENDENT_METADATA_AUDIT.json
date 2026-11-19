@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-11-19T05:09:04.622966+00:00",
+  "completed_utc": "2026-11-19T05:09:05.227110+00:00",
+  "capture_started_utc": "2026-11-19T05:03:11.053149+00:00",
+  "extra_capture_started_utc": "2026-11-19T05:03:54.541115+00:00",
+  "verified_frozen_files": 17,
+  "baseline_correction_rows": 20729,
+  "frozen_correction_rows": 21124,
+  "exact_raw_baseline_prefix": true,
+  "exact_parsed_baseline_prefix": true,
+  "appended_rows": 395,
+  "requested_en169_175_rows": 314,
+  "requested_row_range": [
+    "C020742",
+    "C021055"
+  ],
+  "per_page_rows": {
+    "169": 41,
+    "170": 30,
+    "171": 63,
+    "172": 30,
+    "173": 34,
+    "174": 45,
+    "175": 71
+  },
+  "outside_requested_append_groups": [
+    {
+      "source": "sources/fr/fr/149.tex",
+      "layer": "French corrected",
+      "printed_page": "149-171",
+      "rows": 1
+    },
+    {
+      "source": "sources/fr/fr/149.tex",
+      "layer": "French corrected",
+      "printed_page": "149-175",
+      "rows": 1
+    },
+    {
+      "source": "sources/fr/fr/149.tex",
+      "layer": "French corrected",
+      "printed_page": "149-177",
+      "rows": 2
+    },
+    {
+      "source": "sources/fr/fr/149.tex",
+      "layer": "French corrected",
+      "printed_page": "149-183",
+      "rows": 2
+    },
+    {
+      "source": "sources/fr/fr/149.tex",
+      "layer": "French corrected",
+      "printed_page": "149-185",
+      "rows": 1
+    },
+    {
+      "source": "sources/fr/fr/149.tex",
+      "layer": "French corrected",
+      "printed_page": "149-187",
+      "rows": 1
+    },
+    {
+      "source": "sources/fr/fr/149.tex",
+      "layer": "French corrected",
+      "printed_page": "149-188",
+      "rows": 1
+    },
+    {
+      "source": "sources/fr/fr/212.tex",
+      "layer": "French corrected",
+      "printed_page": "212-109",
+      "rows": 1
+    },
+    {
+      "source": "sources/fr/fr/212.tex",
+      "layer": "French corrected",
+      "printed_page": "212-114",
+      "rows": 1
+    },
+    {
+      "source": "sources/fr/fr/212.tex",
+      "layer": "French corrected",
+      "printed_page": "212-116",
+      "rows": 1
+    },
+    {
+      "source": "sources/en/en/149.tex",
+      "layer": "English",
+      "printed_page": "149-176",
+      "rows": 69
+    }
+  ],
+  "exact_duplicate_groups": 2,
+  "exact_duplicate_extra_rows": 2,
+  "new_duplicate_rows_in_appended_suffix": 0,
+  "scripts": 7,
+  "explicit_math_index_pairs": 255,
+  "per_page_explicit_pairs": {
+    "169": 33,
+    "170": 24,
+    "171": 51,
+    "172": 26,
+    "173": 24,
+    "174": 37,
+    "175": 60
+  },
+  "literal_script_event_calls": 8,
+  "exact_event_projection_matches": 8,
+  "matched_record_progress_pages": 7,
+  "english_unit_completion_markers": 0,
+  "additional_record_page_keys": [
+    176
+  ],
+  "additional_progress_page_keys": [
+    176
+  ],
+  "operation_counts_are_not_generated_row_counts": true,
+  "edit_scripts_executed": false,
+  "substantive_validity_assessed": false,
+  "live_reads_or_source_ledger_writes": false,
+  "failure_count": 0,
+  "failures": []
+}

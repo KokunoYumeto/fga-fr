@@ -1,0 +1,10 @@
+[
+  {
+    "body_sha256": "b4daa570aa36244be6f33ce5487b0b5ac069293c5d834457738baa30382d7fd6",
+    "match_sha256": "41fc020699c008c7ebe312f396e89d34789b770c8bbe48f6f8ec2ee2600dbc12",
+    "byte_start": 25,
+    "byte_end_exclusive": 36,
+    "control": "overline",
+    "basis": "verified_balanced_inline_math_control_sequence"
+  }
+]

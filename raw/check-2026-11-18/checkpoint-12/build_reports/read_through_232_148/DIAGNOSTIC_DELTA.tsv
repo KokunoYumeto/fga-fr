@@ -1,0 +1,3 @@
+layer	category	source	message	previous_count	current_count	delta
+fr	warning	sources/fr/fr/232.tex	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	0	4	4
+fr_printed	warning	sources/fr_printed/fr/232.tex	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	0	4	4

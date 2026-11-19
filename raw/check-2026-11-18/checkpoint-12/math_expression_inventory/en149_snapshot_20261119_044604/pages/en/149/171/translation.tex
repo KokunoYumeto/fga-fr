@@ -1,0 +1,57 @@
+\src{171}
+\result{PROPOSITION}{3} Let $L_{*}=(L_i)$ be a left resolution of the
+$\Osh$-Module $A$ by $\Osh$-Modules, each locally isomorphic to some $\Osh^{n}$.
+Then $\Extsh_{\Osh}^{*}(A,B)$ identifies with
+$H^{*}\bigl(\Homsh_{\Osh}(L_{*},B)\bigr)$, and
+$\operatorname{Ext}_{\Osh}^{*}(X;A,B)$ identifies with the hypercohomology of
+$X$ with respect to the complex $\Homsh_{\Osh}(L_{*},B)$.
+
+The proof is standard: consider the bicomplex $\Homsh_{\Osh}(L_{*},C(B))$,
+where $C(B)$ is an injective resolution of $B$, and the natural homomorphisms
+from $\Homsh_{\Osh}(L_{*},B)$ and $\Homsh_{\Osh}(A,C(B))$ into this bicomplex.
+
+Finally, let us point out that the two $\operatorname{Ext}$ functors introduced
+in (1.2) are not only cohomological functors in $B$, but cohomological
+bifunctors, covariant in $B$ and contravariant in $A$.
+
+\fsection{2}{Composition law in Ext}
+
+The results of this section are due independently to CARTIER and YONEDA; see an
+exposé by CARTIER [1] for details. Let $\Ccat$ be an abelian category, and let
+$K$ and $L$ be two graded objects in $\Ccat$. We denote by
+$\operatorname{Hom}(K,L)$ the graded abelian group whose component of degree
+$n$ consists of the homogeneous homomorphisms of degree $n$ from $K$ to $L$
+(that is, systems $(u_i)$ of homomorphisms
+$K^{i}\longrightarrow L^{i+n}$).
+
+If $K$ and $L$ are complexes (with differential operators of degree $+1$, to
+fix ideas), we equip $\operatorname{Hom}(K,L)$ with the differential operator
+given by
+\begin{equation}\tag{2.1}
+  \delta(u)=du+(-1)^{n+1}ud,\qquad\text{where }n=\deg(u),
+\end{equation}
+making it a complex with differential of degree $+1$. The cycles of degree $n$
+are the operators of degree $n$ that anticommute with $d$ (as homogeneous
+operators).\footnote{The printed text reads “with $u$”; equation (2.1) requires
+“with $d$.”} We may therefore consider
+$H^{*}\bigl(\operatorname{Hom}(K,L)\bigr)$; it is an invariant of the homotopy
+types of $K$ and $L$, and may be denoted by $H^{*}(K,L)$.
+
+Given a third complex $M$, composition of homomorphisms defines a pairing
+\[
+  \operatorname{Hom}(K,L)\times\operatorname{Hom}(L,M)
+  \longrightarrow\operatorname{Hom}(K,M)
+\]
+compatible with the differentials, hence, after passing to cohomology, pairings
+\begin{equation}\tag{2.2}
+  H^{*}(K,L)\times H^{*}(L,M)\longrightarrow H^{*}(K,M),
+\end{equation}
+denoted $(u,v)\longmapsto vu$. These pairings satisfy the evident associativity
+property. In particular, $H^{*}(K,K)$ is an associative graded ring with
+identity, and $H^{*}(K,L)$ (respectively $H^{*}(L,K)$) is a graded right
+(respectively left) module over this ring, and so on. In degree $0$, (2.2)
+reduces to composition of morphisms of complexes. Finally, an exact sequence of
+complexes
+\[
+  0\longrightarrow K'\longrightarrow K\longrightarrow K''\longrightarrow 0,
+\]

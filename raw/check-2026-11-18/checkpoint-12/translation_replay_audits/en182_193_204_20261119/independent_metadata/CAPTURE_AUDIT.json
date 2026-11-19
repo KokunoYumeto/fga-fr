@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-11-19T06:05:34.841249+00:00",
+  "snapshot_sha256": "bfef51ee5b20e7eea029e3e32f1b933df28e6b9c79fa5143d9d03716f26fa6d4",
+  "capture_started_utc": "2026-11-19T05:58:45.201449+00:00",
+  "capture_completed_utc": "2026-11-19T05:58:45.264860+00:00",
+  "files": 316,
+  "bytes": 11022940,
+  "all_hashes_and_sizes_exact": true,
+  "file_set_exact": true,
+  "unlisted_files": [],
+  "missing_files": [],
+  "payload_interpretation": false
+}

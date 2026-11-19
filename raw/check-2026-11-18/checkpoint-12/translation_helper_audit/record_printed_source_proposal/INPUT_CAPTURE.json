@@ -1,0 +1,33 @@
+{
+  "started_utc": "2026-11-19T06:10:03.536534+00:00",
+  "completed_utc": "2026-11-19T06:10:03.538694+00:00",
+  "two_consecutive_reads_identical": true,
+  "attempt": 1,
+  "files": [
+    {
+      "path": "scripts/translation_edits.py",
+      "bytes": 6685,
+      "sha256": "fdfb328ef3646f8790a3e2a7eb7b5888acd5acb71dc8fce78fb7928b621a59b5"
+    },
+    {
+      "path": "scripts/audit_utils.py",
+      "bytes": 6810,
+      "sha256": "48a8aaecd4d5909ec785362e22460d0d11504284851e953f8064d8e2c0f2f244"
+    },
+    {
+      "path": "sources/en/en/149.tex",
+      "bytes": 72352,
+      "sha256": "0f3ed1355b33dbeebdb46d8f38f1a5a149da42b79b2e98d3dce646eae7df9d8b"
+    },
+    {
+      "path": "sources/fr/fr/149.tex",
+      "bytes": 75584,
+      "sha256": "f00873843cbad6224b1422a8e08b36c52b7478d759b53d1c17f840f4bb0e77c8"
+    },
+    {
+      "path": "sources/fr_printed/fr/149.tex",
+      "bytes": 75500,
+      "sha256": "0e77ee4be2c7aae01881417459e070e8a27648c20901f58bf348c51a168db31d"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+requested	resolved_family	style	collection_index	font_file	bytes	sha256
+Malgun Gothic	Noto Sans CJK KR	Regular	1	NotoSansCJK-Regular.ttc	19484784	b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a
+Malgun Gothic Bold	Noto Sans CJK KR	Bold	1	NotoSansCJK-Bold.ttc	20050760	faa5f3656a78b2e2d450d27fe8382c778bc2b6bb5ea29c986664a6a435056ceb
+SimSun	Noto Serif CJK SC	Regular	2	NotoSerifCJK-Regular.ttc	26411360	5d9c31a059600193c9d7968a998bde886ccdc77e934006ad243b41794c496a7d
+Microsoft YaHei	Noto Sans CJK SC	Regular	2	NotoSansCJK-Regular.ttc	19484784	b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a

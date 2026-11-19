@@ -1,0 +1,15 @@
+{
+  "stage": "read_after_note_cleanup",
+  "started_utc": "2026-11-19T05:13:56.178278+00:00",
+  "completed_utc": "2026-11-19T05:13:56.199917+00:00",
+  "manifest_sha256": "bb135005ece9ee38357940a8902d2a127c184f5ff4989fa00880ea279df0e64d",
+  "files": 58,
+  "source_bytes": 1318607,
+  "exact_hash_matches": 58,
+  "baseline_same_path_set": true,
+  "unchanged_files": 56,
+  "changed_source_ids": [
+    "fr/fr/149.tex",
+    "fr/fr/212.tex"
+  ]
+}

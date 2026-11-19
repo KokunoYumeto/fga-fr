@@ -1,0 +1,12 @@
+file	field	category	count
+CORRECTIONS.tsv	kind	reading	14927
+CORRECTIONS.tsv	kind	misprint of the original	215
+CORRECTIONS.tsv	kind	translation	0
+CORRECTIONS.tsv	kind	typesetting	60
+CORRECTIONS.tsv	kind	structure	534
+CORRECTIONS.tsv	kind	terminology	0
+CORRECTIONS.tsv	kind	<outside allowed set>	0
+CORRECTIONS.tsv	confidence	high	0
+CORRECTIONS.tsv	confidence	medium	0
+CORRECTIONS.tsv	confidence	low	15735
+CORRECTIONS.tsv	confidence	<outside allowed set>	1

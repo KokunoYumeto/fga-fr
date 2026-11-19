@@ -1,0 +1,1332 @@
+\unit{Exposé 221 -- Les schémas de Hilbert}
+\sid{221}
+\src{249}
+\seminar{13e année, 1960/61, n\textsuperscript{o} 221\\Mai 1961}
+\paperhead{TECHNIQUES DE CONSTRUCTION ET THÉORÈMES D'EXISTENCE EN GÉOMÉTRIE ALGÉBRIQUE\\
+IV : LES SCHÉMAS DE HILBERT}%
+  {par Alexander GROTHENDIECK}
+
+\phantomsection\addcontentsline{toc}{subsection}{Introduction}
+\noindent INTRODUCTION. - Les techniques exposées dans [2], I et II, étaient pour l'essentiel
+indépendantes de toute hypothèse projective sur les schémas envisagés.
+Malheureusement, elles ne permettent pas à l'heure actuelle de résoudre les
+problèmes d'existence posés dans l'exposé II de [2]. Dans le présent exposé et
+le suivant, nous allons résoudre ces problèmes moyennant des hypothèses
+projectives. Les techniques employées sont typiquement projectives, et ne font
+pratiquement pas usage des résultats de I et II de [2]. Ici, nous allons
+construire les "schémas de Hilbert" destinés à remplacer l'utilisation des
+coordonnées de Chow, comme il a été dit dans [2], II, n\textsuperscript{o} 2.
+Dans l'exposé suivant, la théorie de passage au quotient dans les schémas
+développée dans III, jointe à la théorie des schémas de Hilbert, nous permettra
+par exemple de construire les schémas de Picard (définis dans [2], II,
+n\textsuperscript{o} 3) sous des conditions assez générales.
+
+En résumé, on peut dire qu'on dispose maintenant d'une technique de
+constructions projectives à peu près satisfaisante, sauf qu'il manque
+encore\textnormal{(*)}\begingroup\renewcommand{\thefootnote}{(*)}\stepcounter{footnote}\footnotetext{Voir l'additif à la fin de l'exposé.}\endgroup un théorème de passage au
+quotient par des groupes tels que le groupe projectif, opérant "sans points
+fixes", (cf. [2], III, n\textsuperscript{o} 8). La situation semble même un peu
+meilleure en géométrie analytique (lorsqu'on s'y borne à l'étude des espaces
+analytiques "projectifs" sur un espace analytique donné), car pour les
+espaces analytiques la difficulté de passage au quotient par un groupe opérant
+joliment disparaît. Par ailleurs, en géométrie algébrique comme en géométrie
+analytique, il resterait à mettre au point une technique de construction
+valable sans hypothèses projectives.
+
+\fsection{1}{\normalfont\uline{Familles limitées de faisceaux : propriétés de permanence}.}
+
+Soient $\symup{k}$ un corps, et $\symup{X}$ un $\symup{k}$-préschéma, de type fini pour simplifier.
+Pour toute extension $\symup{K/k}$, on en déduit donc un $\symup{K}$-préschéma
+$\symup{X_K=X\otimes_k K}$. Si $\symup{\mathcal F}$ est un faisceau cohérent sur $\symup{X_K}$, et si
+$\symup{K'}$ est une extension de $\symup{K}$, alors
+$\symup{\mathcal F\otimes_K K'={\mathcal F}_{K'}}$ est un faisceau quasi-cohérent sur
+$\symup{X_K\otimes_K K'=X_{K'}}$. Ceci dit, si $\symup{K}$ et $\symup{K'}$ sont deux extensions
+quelconques de $\symup{k}$, $\symup{\mathcal F}$ un faisceau quasi-cohérent sur $\symup{X_K}$ et
+$\symup{\mathcal F'}$
+\src{250}
+un faisceau quasi-cohérent sur $\symup{X_{K'}}$, on dira que $\symup{\mathcal F}$ et
+$\symup{\mathcal F'}$ sont \uline{équivalents} s'il existe des $\symup{k}$-homomorphismes de
+$\symup{K}$, $\symup{K'}$ dans une même extension $\symup{K''}$ de $\symup{k}$, tels que
+$\symup{\mathcal F_{K''}}$ et $\symup{\mathcal F'_{K''}}$ soient isomorphes sur $\symup{X_{K''}}$.
+C'est là une relation d'équivalence, et on s'intéressera à des classes
+d'équivalence de faisceaux pour cette relation, et à des ensembles de classes
+d'équivalence. Notons que si $\symup{X}$ est de type fini sur
+$\symup{k}$, alors toute classe de faisceaux cohérents peut être définie par un
+faisceau cohérent sur un $\symup{X_K}$, où $\symup{K}$ est une extension \uline{de type fini} de $\symup{k}$.
+On peut alors, dans la définition des classes de faisceaux cohérents, se borner
+aux extensions \uline{algébriquement closes} de $\symup{k}$, et on peut aussi se limiter à une
+extension algébriquement close fixée $\symup{\Omega}$ de $\symup{k}$, de degré de
+transcendance infini, deux faisceaux cohérents $\symup{\mathcal F}$ et $\symup{\mathcal F'}$
+sur $\symup{X_\Omega}$ étant équivalents si et seulement s'il existe un
+$\symup{k}$-automorphisme $\symup{\sigma}$ de $\symup{\Omega}$, tel que
+$\symup{\mathcal F\otimes_\Omega(\Omega,\sigma)}$ soit isomorphe à $\symup{\mathcal F'}$.
+On constate qu'il y a correspondance biunivoque entre les classes de faisceaux
+cohérents pour l'une ou l'autre définition.
+
+Soient $\symup{E}$, $\symup{E'}$ deux ensembles de classes de faisceaux cohérents sur $\symup{X}$.
+Considérons les classes de tous les faisceaux de la forme
+$\symup{\mathcal F\otimes\mathcal F'}$, où $\symup{\mathcal F}$ et $\symup{\mathcal F'}$ sont des
+faisceaux cohérents sur un \uline{même} $\symup{X_K}$, la classe de $\symup{\mathcal F}$ étant dans
+$\symup{E}$ et celle de $\symup{\mathcal F'}$ dans $\symup{E'}$. On trouve ainsi un ensemble de
+classes de faisceaux cohérents, qu'on notera $\symup{E\otimes E'}$. On définit de même
+les $\symup{\mathop{\text{\uwave{Tor}}}\nolimits_i(E,E')}$, etc. De façon générale, à toute fonction
+$\symup{\mathcal U}$, associant à toute suite $\symup{\mathcal F_1,\cdots,\mathcal F_n}$ de $\symup{n}$
+faisceaux cohérents sur un même $\symup{X_K}$ un ensemble
+$\symup{\mathcal U(\mathcal F_1,\cdots,\mathcal F_n)}$ de faisceaux cohérents sur $\symup{X_K}$, et
+ayant une propriété évidente de compatibilité avec les isomorphismes de
+faisceaux et les images inverses par changement de base, on associe une
+fonction, notée par le même symbole $\symup{\mathcal U}$, associant à toute suite de $\symup{n}$
+ensembles $\symup{E_1,\cdots,E_n}$ de classes de faisceaux cohérents, un ensemble
+$\symup{\mathcal U(E_1,\cdots,E_n)}$ de classes de faisceaux cohérents.
+
+Notre but dans ce numéro est de donner une définition de certains ensembles de
+classes de faisceaux, qualifiés de \uline{limités}, et de montrer que les
+opérations $\symup{\mathcal U}$ les plus courantes, appliquées à des ensembles limités, donnent
+encore des ensembles limités.
+
+Soit $\symup{X}$ un préschéma de type fini sur $\symup{S}$ \uline{noethérien}. Pour tout $\symup{s\in S}$, la
+fibre $\symup{X_s}$ est un préschéma de type fini sur $\symup{k(s)}$, et nous considérerons des
+classes de faisceaux cohérents sur $\symup{X_s}$, au sens précédent. Cela donne un sens
+à la locution : classe de faisceaux cohérents sur une fibre de $\symup{X/S}$, et les
+locutions analogues. De même, procédant séparément sur chaque fibre, on peut
+encore considérer des opérations telles que $\symup{E\otimes E'}$ etc. faisant
+correspondre à des systèmes d'ensembles de
+\src{251}
+classes de faisceaux cohérents sur les fibres de $\symup{X/S}$, un autre ensemble de
+classes de faisceaux cohérents sur les fibres de $\symup{X/S}$.
+
+\result{DÉFINITION}{1.1} \uline{Soit} $\symup{E}$ \uline{un ensemble de classes de faisceaux cohérents
+sur les fibres de} $\symup{X/S}$. \uline{On dit que} $\symup{E}$ \uline{est limité, s'il existe un
+préschéma} $\symup{S'}$ \uline{de type fini sur} $\symup{S}$, \uline{et un faisceau cohérent} $\symup{\mathcal F'}$ \uline{sur}
+$\symup{X'=X\times_S S'}$, \uline{tel que} $\symup{E}$ \uline{soit contenu dans l'ensemble des classes de
+faisceaux sur les fibres de} $\symup{X/S}$ \uline{défini par} $\symup{\mathcal F'}$.
+
+Ce dernier, par définition, fait correspondre à un $\symup{s\in S}$ les classes des
+faisceaux $\symup{\mathcal F'\otimes_{S'}k(s')}$, où $\symup{s'}$ parcourt les points de $\symup{S'}$
+au-dessus de $\symup{s}$ (de sorte que $\symup{k(s')}$ est une extension de $\symup{k(s)}$, et
+$\symup{X_s\otimes_{k(s)}k(s')}$ s'identifie à la fibre
+$\symup{X'\otimes_{S'}k(s')=X'_{s'}}$ de $\symup{X'}$ en $\symup{s'}$). On peut dire que les familles
+limitées sont celles qui sont contenues dans une \uline{famille algébrique} de
+faisceaux cohérents, paramétrée par un $\symup{S'}$ de type fini sur $\symup{S}$.
+
+Une réunion finie de familles limitées est limitée (prendre le préschéma somme
+des préschémas de paramètres $\symup{S_i}$ définissant les familles algébriques
+majorantes). Un changement de base $\symup{T\to S}$ transforme une famille
+limitée relative à $\symup{X/S}$ en une famille limitée relative à $\symup{X_T/T}$, et la
+réciproque est vraie si $\symup{T\to S}$ est surjectif (ou plus
+généralement, si son image contient les $\symup{s}$ qui interviennent effectivement
+dans la famille donnée $\symup{E}$ pour $\symup{X/S}$). Cela ramène théoriquement la
+détermination des familles limitées au cas où $\symup{S}$ est le spectre d'une algèbre
+de type fini sur l'anneau des entiers $\symup{Z}$.
+
+Si $\symup{E}$ et $\symup{E'}$ sont des familles limitées de classes de faisceaux relatives à
+$\symup{X/S}$, alors $\symup{E\otimes E'}$ est également limité : en effet, si $\symup{E}$ et $\symup{E'}$ sont
+majorés respectivement par les familles algébriques définies par des
+$\symup{T\to S}$ et $\symup{F}$ sur $\symup{X_T}$, $\symup{T'\to S}$ et
+$\symup{F'}$ sur $\symup{X_{T'}}$, on voit que $\symup{E\otimes E'}$ est majoré par la famille
+algébrique définie par $\symup{T''=T\times_S T'\to S}$ et le faisceau
+$\symup{F''}$ sur $\symup{X_{T''}}$ produit tensoriel des images inverses de
+$\symup{\mathcal F}$ et $\symup{\mathcal F'}$ sur $\symup{X_{T''}}$. Ce raisonnement n'est correct que
+parce que le foncteur $\symup{\mathcal F\otimes\mathcal F'}$ en $\symup{\mathcal F}$,
+$\symup{\mathcal F'}$ est exact à droite, donc commute à l'extension de la base (et en
+particulier au passage aux fibres). Il n'est pas applicable tel quel aux
+opérations locales telles que $\symup{\mathop{\text{\uwave{Tor}}}\nolimits_i(E,E')}$,
+$\symup{\mathop{\text{\uwave{Hom}}}\nolimits(E,E')}$, $\symup{\mathop{\text{\uwave{Ext}}}\nolimits^i(E,E')}$. On peut cependant
+montrer que ces opérations transforment encore des ensembles limités en ensembles
+limités, en procédant comme pour $\symup{E\otimes E'}$, mais en utilisant en plus des
+résultats du type suivant (tous contenus dans [3], IV, 6.11) : une famille
+limitée $\symup{E}$ est toujours majorée par une famille algébrique définie par un
+faisceau cohérent $\symup{\mathcal F}$ sur un $\symup{X_T}$ ($\symup{T}$ de type fini sur $\symup{S}$) qui est
+\uline{plat} relativement à $\symup{T}$. (On "coupe en morceaux" l'espace des paramètres
+initial). De telles
+\src{252}
+propriétés de platitude sur des faisceaux convenables assurent en effet la
+commutation d'opérations telles que $\symup{\mathop{\text{\uwave{Tor}}}\nolimits_i(\mathcal F,\mathcal
+F')}$ au changement de base quelconque. La même méthode s'applique pour des
+opérations de nature globale : images directes et images directes dérivées de
+faisceaux cohérents par des morphismes propres, $\symup{\operatorname{Ext}}$ globaux
+relatifs à des morphismes propres (cf. [5], III, \S~6), etc., toutes ces
+opérations transforment des familles limitées de faisceaux en familles limitées
+de faisceaux (N. B. - Ici les préschémas sur lesquels on prend les divers
+faisceaux peuvent changer par les opérations du type envisagé).
+
+Les deux énoncés qui suivent se démontrent essentiellement par la même
+technique de platitude ; pour la décomposition primaire sur les fibres d'un
+morphisme de type fini, voir en particulier [5], IV.
+
+\result{PROPOSITION}{1.2} \uline{Soient} $\symup{E}$, $\symup{E'}$ \uline{des ensembles limités de classes de
+faisceaux sur les fibres de} $\symup{X/S}$, $\symup{X}$ \uline{étant supposé propre sur} $\symup{S}$. \uline{Alors} :
+
+\medskip
+\noindent (i) \uline{La famille des noyaux, conoyaux, images d'homomorphismes}
+$\symup{\mathcal F\to\mathcal F'}$, \uline{où la classe de} $\symup{\mathcal F}$ \uline{est dans}
+$\symup{E}$ \uline{et celle de} $\symup{\mathcal F'}$ \uline{dans} $\symup{E'}$, \uline{est limitée}.
+
+\smallskip
+\noindent (ii) \uline{La famille des faisceaux} $\symup{\mathcal F''}$ \uline{extensions d'un}
+$\symup{\mathcal F}$ \uline{par un} $\symup{\mathcal F'}$, \uline{où la classe de} $\symup{\mathcal F}$ \uline{est dans} $\symup{E}$
+\uline{et celle de} $\symup{\mathcal F'}$ \uline{dans} $\symup{E'}$, \uline{est limitée}.
+
+Moyennant un changement de base convenable, on peut supposer $\symup{E}$ et $\symup{E'}$
+définis respectivement par un faisceau cohérent $\symup{\mathcal G}$ et $\symup{\mathcal G'}$
+sur un $\symup{X_T/T}$, $\symup{T}$ de type fini sur $\symup{S}$. De plus, on peut supposer satisfaites
+certaines hypothèses de platitude, impliquant que la formation du faisceau
+$\symup{f_T(\mathop{\text{\uwave{Hom}}}\nolimits_{O_{X_T}}(\mathcal G,\mathcal G'))}$ et
+$\symup{\mathop{\text{\uwave{Ext}}}\nolimits^{1}_{f_T}(\mathcal G,\mathcal G')}$ commute au changement
+de base pour un morphisme quelconque $\symup{T'\to T}$. De plus, on peut
+supposer les faisceaux cohérents précédents sur $\symup{T}$ localement libres. Soient
+alors $\symup{T_0}$ et $\symup{T_1}$ les fibrés vectoriels sur $\symup{T}$ dont les faisceaux de germes
+de sections sont respectivement les faisceaux précédents. On définit alors
+canoniquement un homomorphisme
+$\symup{\mathcal G_{T_0}\to\mathcal G'_{T_0}}$ de faisceaux cohérents sur
+$\symup{X_{T_0}}$, et une extension
+\[
+\symup{0\to\mathcal G'_{T_1}\to\mathcal G''
+\to\mathcal G_{T_1}\to0}
+\]
+de faisceaux cohérents sur $\symup{X_{T_1}}$, ayant une propriété universelle évidente.
+Ce deuxième faisceau définit une famille algébrique qui majore la famille
+envisagée dans (ii). Il en est de même pour les noyau, conoyau et image de
+l'homomorphisme
+\src{253}
+précédent, dont la considération établit (i) (pourvu qu'on suppose le conoyau
+plat relativement à $\symup{T_0}$, auquel cas on se ramène encore en découpant $\symup{T_0}$ en
+morceaux\ldots).
+
+\result{PROPOSITION}{1.3} \uline{Soit} $\symup{E}$ \uline{une famille limitée de classes de faisceaux
+sur les fibres de} $\symup{X/S}$. \uline{Alors les classes des faisceaux structuraux des}
+$\symup{(\operatorname{supp}\mathcal F)_{\mathrm{réd}}}$, \uline{où} $\symup{\mathcal F}$ \uline{est un
+faisceau cohérent sur un} $\symup{X_K}$, \uline{avec} $\symup{K}$ \uline{algébriquement clos, dont la classe est
+dans} $\symup{E}$, \uline{forment une famille limitée}.
+
+Ici, $\symup{(\operatorname{supp}\mathcal F)_{\mathrm{réd}}}$ désigne le support de
+$\symup{\mathcal F}$, muni de la structure réduite induite, i. e. son faisceau
+structural est le quotient de $\symup{\mathcal O_{X_K}}$ par le plus grand faisceau
+d'idéaux définissant $\symup{\operatorname{supp}\mathcal F}$. On peut prouver le
+résultat analogue à (1.3) pour les faisceaux déduits canoniquement de
+$\symup{\mathcal F}$ par la théorie de la décomposition primaire, par exemple les
+$\symup{\mathcal F/\mathcal F_i}$, où les $\symup{\mathcal F_i}$ sont les sous-faisceaux de
+$\symup{\mathcal F}$ primaires pour les composantes du support de $\symup{\mathcal F}$,
+minimaux pour cette propriété ; ou les $\symup{\mathcal O_{X_K}/\text{\uwave{p}}}$, où
+$\symup{\text{\uwave{p}}}$ est un faisceau d'idéaux premier associé à $\symup{\mathcal F}$, ou les
+$\symup{\mathcal O_{X_K}/\text{\uwave{q}}}$, où $\symup{\text{\uwave{q}}}$ est un faisceau d'idéaux
+primaire associé à une composante du support de $\symup{\mathcal F}$, (le corps de
+référence étant algébriquement clos).
+
+\fsection{2}{\normalfont\uline{Familles limitées et polynôme de Hilbert}.}
+
+Dans la suite, nous supposons que $\symup{X}$ est projectif sur $\symup{S}$, muni d'un faisceau
+très ample, noté $\symup{\mathcal O_X(1)}$. Pour toute extension $\symup{K}$ d'une extension
+résiduelle $\symup{k(s)}$ d'un point $\symup{s}$ de $\symup{S}$, on considère sur $\symup{X_K}$ le faisceau
+$\symup{\mathcal O_{X_K}(1)}$ correspondant, qui sera encore très ample.
+
+A tout faisceau cohérent $\symup{\mathcal F}$ sur $\symup{X_K}$, on associe la fonction
+\[
+\symup{P_{\mathcal F}(n)}=\text{caractéristique d'Euler-Poincaré de $\symup{F(n)}$
+sur $\symup{X_K}$}
+\]
+qui est un polynôme en l'entier $\symup{n}$, appelé \uline{polynôme de Hilbert} de
+$\symup{\mathcal F}$. Pour les grandes valeurs de $\symup{n}$, $\symup{P(n)}$ n'est autre chose que la
+dimension de $\symup{H^0(X_K,\mathcal F(n))}$ sur $\symup{K}$, puisque les
+$\symup{H^i(X_K,\mathcal F(n))}$ sont nuls pour $\symup{i>0}$ et $\symup{n}$ grand.
+
+Si maintenant $\symup{\mathcal F}$ est un faisceau cohérent sur $\symup{X}$, \uline{plat} par rapport
+à $\symup{S}$, alors les polynômes de Hilbert des faisceaux $\symup{\mathcal F_s}$ induits sur
+les fibres $\symup{X_s}$ relatifs à une même composante connexe de $\symup{S}$, sont tous égaux
+[5], III, \S~7. Il en résulte (sans hypothèse de platitude) que l'ensemble des
+polynômes de Hilbert des faisceaux $\symup{\mathcal F_s}$, $\symup{s\in S}$, est fini pour tout
+faisceau cohérent $\symup{\mathcal F}$ sur $\symup{X}$.
+\src{254}
+Rappelons d'autre part que si $\symup{\mathcal F}$ est un faisceau cohérent sur $\symup{X}$, il
+est isomorphe à un faisceau quotient d'un faisceau $\symup{\mathcal O_X(-n)^N}$, pour
+$\symup{n}$, $\symup{N}$ assez grands. Donc les faisceaux $\symup{\mathcal F_s}$ induits sur les fibres
+sont également quotients du faisceau $\symup{\mathcal O(-n)^N}$ sur la fibre.
+
+De ces deux remarques, on déduit la partie "il faut" du théorème suivant :
+
+\result{THÉORÈME}{2.1} \uline{Soit} $\symup{X}$ \uline{projectif sur} $\symup{S}$ \uline{noethérien},
+$\symup{\mathcal O_X(1)}$ \uline{très ample sur} $\symup{X}$ \uline{relativement à} $\symup{S}$. \uline{Soit} $\symup{E}$ \uline{un ensemble
+de classes de faisceaux sur les fibres de} $\symup{X/S}$. \uline{Pour que} $\symup{E}$ \uline{soit limité, il
+faut qu'il
+satisfasse les conditions suivantes} :
+
+\medskip
+\noindent (a) \uline{Il existe un faisceau cohérent} $\symup{\mathcal L}$ \uline{sur} $\symup{X}$ (\uline{qu'on peut
+supposer de la forme} $\symup{\mathcal O_X(-n)^N}$) \uline{tel que} $\symup{E}$ \uline{soit contenu dans la
+famille des classes de faisceaux cohérents quotients de faisceaux de la forme}
+$\symup{\mathcal L_K}$.
+
+\smallskip
+\noindent (b) \uline{Les polynômes de Hilbert} $\symup{P_{\mathcal F}}$ \uline{des faisceaux}
+$\symup{\mathcal F}$ \uline{dont la classe est dans} $\symup{E}$, \uline{sont éléments d'un même ensemble} fini
+\uline{de polynômes}.
+
+Il reste à prouver le "il suffit", qui sera un cas particulier d'un résultat
+plus précis. Pour tout Module cohérent $\symup{\mathcal F}$ sur un préschéma de type
+fini sur un corps $\symup{K}$, et tout entier $\symup{r}$, soit $\symup{N_r}$ le sous-Module de
+$\symup{\mathcal F}$ dont les sections sur un ouvert sont les sections de $\symup{\mathcal F}$
+sur cet ouvert dont le support est de dimension $\symup{<r}$. On a donc
+$\symup{N_r=\mathcal F}$ pour $\symup{r>\dim\operatorname{supp}\mathcal F}$, $\symup{N_r=0}$ pour
+$\symup{r\leq0}$, et on obtient une filtration croissante finie de $\symup{\mathcal F}$ dont
+les facteurs $\symup{N_{r+1}/N_r}$ ont comme cycles premiers associés exactement les cycles premiers
+associés à $\symup{\mathcal F}$ qui sont de dimension $\symup{r}$. On posera
+\[
+\symup{\mathcal F_{(r)}=\mathcal F/N_r,}
+\]
+donc $\symup{\mathcal F_{(r)}}$ a comme cycles premiers associés exactement les cycles
+premiers associés à $\symup{\mathcal F}$ qui sont de dimension $\symup{\geq r}$, et en
+particulier, il est égal à $\symup{\mathcal F}$ si et seulement si les cycles premiers
+associés à $\symup{\mathcal F}$ sont de dimension $\symup{\geq r}$. Ceci posé :
+
+\result{THÉORÈME}{2.2} \uline{Sous les conditions de} \uline{(2.1)}, \uline{soit} $\symup{s}$ \uline{un entier, et
+supposons que} $\symup{E}$ \uline{satisfasse les conditions (a), et la forme affaiblie suivante
+de (b}) :
+
+\medskip
+\noindent $\symup{(b_s)}$ \uline{Les polynômes de Poincaré} $\symup{P_{\mathcal F}}$ \uline{des faisceaux}
+$\symup{\mathcal F}$ \uline{dont la classe est dans} $\symup{E}$, \uline{ont des coefficients} en degrés
+$\symup{\geq s-1}$ \uline{qui restent bornés}.
+
+\uline{Sous ces conditions, les faisceaux} $\symup{\mathcal F_{(s)}}$ (\uline{lorsque la classe de}
+$\symup{\mathcal F}$ \uline{reste dans} $\symup{E}$) \uline{forment une famille limitée. De plus, les
+coefficients en degré} $\symup{s-2}$ \uline{des} $\symup{P_{\mathcal F}}$ \uline{restent minorés}.
+\src{255}
+Ainsi :
+
+\result{COROLLAIRE}{2.3} \uline{Supposons que les faisceaux} $\symup{\mathcal F}$ \uline{dont la classe
+est dans} $\symup{E}$ \uline{soient tels que tous les cycles premiers associés soient de
+dimension} $\symup{d}$ \uline{satisfaisant} $\symup{s\leq d\leq r}$. \uline{Alors dans} \uline{(2.1)} (\uline{b), on peut se
+borner aux coefficients des} $\symup{P_{\mathcal F}}$ \uline{en degrés compris entre} $\symup{s-1}$ \uline{et}
+$\symup{r}$.
+
+La fin du numéro est consacrée à l'esquisse de la démonstration de (2.2). Les
+lemmes-clefs sont les deux lemmes suivants, dont le premier est bien connu (et
+résume le contenu mathématique utile des coordonnées de Chow) :
+
+\result{LEMME 2.4 (CHOW)}{} \uline{Considérons les faisceaux structuraux de
+sous-schémas} $\symup{Y}$ \uline{de fibres} $\symup{X_K}$ ($\symup{K}$ \uline{extensions algébriquement closes de corps
+résiduels de} $\symup{S}$) \uline{avec} $\symup{Y}$ \uline{réduit et toutes ses composantes de même dimension}
+$\symup{r}$, ($\symup{\mathcal O_Y}$ \uline{étant considéré comme un faisceau quotient de}
+$\symup{\mathcal O_X}$). \uline{Si les degrés des} $\symup{Y}$ \uline{restent bornés, les} $\symup{Y}$ \uline{forment une
+famille limitée}.
+
+Ici, le degré $\symup{a}$ de $\symup{Y}$ peut se définir le plus commodément par le coefficient
+du terme dominant de $\symup{P_{\mathcal O_Y}=an^r/r!+\ldots}$.
+
+\result{LEMME}{2.5} \uline{Soient} $\symup{\mathcal L}$ \uline{un faisceau cohérent sur} $\symup{X}$, $\symup{E}$ \uline{un
+ensemble de classes de faisceaux quotient} $\symup{\mathcal F}$ \uline{de faisceaux}
+$\symup{\mathcal L_K}$ ($\symup{K}$ \uline{extension résiduelle de} $\symup{S}$). \uline{On suppose les fibres de} $\symup{X}$
+\uline{sur} $\symup{S}$ \uline{de dimension} $\symup{\leq r}$, \uline{et on pose}
+\[
+\symup{P_{\mathcal F}(n)=a_{\mathcal F}n^r/r!+b_{\mathcal F}n^{r-1}/(r-1)!}+\text{termes de degré $\symup{<r-1}$}.
+\]
+\uline{Alors le coefficient} $\symup{a_{\mathcal F}}$ \uline{reste borné, et} $\symup{b_{\mathcal F}}$ \uline{reste
+minoré. Si} $\symup{b_{\mathcal F}}$ \uline{reste borné, alors la famille des}
+$\symup{\mathcal F_{(r)}}$ \uline{est limitée}.
+
+DÉMONSTRATION. - Quitte à remplacer $\symup{S}$ par une réunion de sous-schémas
+de $\symup{S}$ recouvrant $\symup{S}$, on peut supposer qu'il existe un morphisme \uline{fini}
+$\symup{f:X\to\mathfrak P^r_S}$, tel que $\symup{\mathcal O_X(1)}$ soit isomorphe à
+l'image inverse de $\symup{\mathcal O_{\mathfrak P^r_S}(1)}$, donc pour tout faisceau
+cohérent $\symup{\mathcal F}$ sur $\symup{X}$, on a
+$\symup{P_{\mathcal F}=P_{f_*(\mathcal F)}}$. D'autre part, on vérifie facilement (par
+la technique du numéro précédent) qu'un ensemble de faisceaux $\symup{\mathcal F}$ sur
+$\symup{X}$ est limité si et seulement si l'ensemble des $\symup{f_*(\mathcal F)}$ l'est.
+Enfin on a
+\[
+\symup{f_*(\mathcal F)_{(r)}=f_*(\mathcal F_{(r)}).}
+\]
+\src{256}
+Cela nous ramène donc au cas où $\symup{X=\mathfrak P^r_S}$. De plus, on peut supposer
+que $\symup{\mathcal L=\mathcal O_{\mathfrak P^r_S}(k)^s}$ pour $\symup{k}$, $\symup{s}$ convenables. Le
+coefficient $\symup{a_{\mathcal F}}$ satisfait
+\[
+\symup{0\leq a_{\mathcal F}\leq s}
+\]
+et reste donc borné. Cela dit, il revient au même de dire que les
+$\symup{P_{\mathcal F}(n)}$ ont un coefficient de $\symup{n^{r-1}}$ restant minoré (resp.
+borné) ou de le dire pour les
+$\symup{P_{\mathcal F}(n-k)=P_{\mathcal F(-k)}(n)}$. Cela nous ramène au cas où
+\[
+\symup{\mathcal L=\mathcal O_{\mathfrak P^r_S}^{s}.}
+\]
+
+Considérons la suite exacte
+\[
+\symup{0\to N_r\to\mathcal F
+\to\mathcal F_{(r)}\to0,}
+\]
+d'où
+\[
+\symup{P_{\mathcal F}=P_{\mathcal F_{(r)}}+P_{N_r},}
+\]
+et comme le coefficient de $\symup{n^{r-1}}$ dans $\symup{P_{N_r}}$ est positif (car
+$\symup{\dim\operatorname{supp}N_r\leq r-1}$), on a
+\[
+\symup{b_{\mathcal F_{(r)}}\leq b_{\mathcal F}.}
+\]
+Cela nous permet, pour prouver les assertions du lemme, de remplacer
+$\symup{\mathcal F}$ par $\symup{\mathcal F_{(r)}}$, i. e. de supposer que les quotients
+$\symup{\mathcal F}$ envisagés de $\symup{\mathcal L}$ sont sans torsion.
+
+Comme $\symup{\mathfrak P^r_K}$ est normal, il s'ensuit que $\symup{\mathcal F}$ est localement
+libre de rang $\symup{a=a_{\mathcal F}}$ dans un ouvert
+$\symup{U=\mathfrak P^r_K-Y}$, où $\symup{Y}$ est de codimension $\symup{\geq2}$. Donc
+$\symup{\mathop{\bigwedge}\limits^{a}\mathcal F}$ est un faisceau sur $\symup{P^r_K}$ dont la restriction
+à $\symup{U}$ est inversible, donc ($\symup{\mathfrak P^r_K}$ étant régulier et $\symup{Y}$ de
+codimension $\symup{\geq2}$) isomorphe à la restriction d'un faisceau inversible sur
+$\symup{\mathfrak P^r_K}$, défini à un isomorphisme près. Ce dernier est de la forme
+$\symup{\mathcal O_{\mathfrak P^r_K}(d)}$ pour un entier $\symup{d}$ bien déterminé. Comme
+$\symup{\mathop{\bigwedge}\limits^{a}\mathcal F}$ est un quotient de
+$\symup{\mathop{\bigwedge}\limits^{a}\mathcal O_{\mathfrak P^r_K}^{s}\simeq
+\mathcal O_{\mathfrak P^r_K}^{N}}$, avec $\symup{N=\binom{s}{a}}$, il admet $\symup{N}$ sections
+canoniques, définissant donc des sections de
+\src{257}
+$\symup{\mathcal O_{\mathfrak P^r_K}(d)}$ sur $\symup{U}$, qui sont restrictions de sections
+$\symup{s_i}$ ($\symup{1\leq i\leq N}$) de $\symup{\mathcal O_{\mathfrak P^r_K}(d)}$, (puisque
+$\symup{\mathfrak P^r_K}$ est normal et $\symup{Y}$ de codimension $\symup{\geq2}$). Ces dernières
+engendrent $\symup{\mathcal O_{\mathfrak P^r_K}(d)}$ aux points de $\symup{U}$, donc ne sont pas
+toutes nulles, ce qui implique que l'on a $\symup{d\geq0}$. D'autre part, un calcul
+facile montre qu'on a
+\[
+\symup{b_{\mathcal F}=a_{\mathcal F}(r+1)/2+d.}
+\]
+Cela montre en particulier que $\symup{b_{\mathcal F}\geq0}$, donc $\symup{b_{\mathcal F}}$ est
+minoré. Il reste borné si et seulement si $\symup{d}$ reste borné, montrons qu'alors
+$\symup{\mathcal F}$ reste dans une famille limitée. On peut supposer
+$\symup{a_{\mathcal F}}$ et $\symup{b_{\mathcal F}}$ fixés, soient $\symup{a}$ et $\symup{b}$, donc $\symup{d}$ fixé.
+La connaissance des $\symup{N}$ sections $\symup{s_i}$ de $\symup{\mathcal O_{\mathfrak P^r_K}(d)}$,
+i. e. d'un homomorphisme
+$\symup{s:\mathop{\bigwedge}\limits^{a}\mathcal L_K\to\mathcal O_{\mathfrak P^r_K}(d)}$, permet de récupérer $\symup{\mathcal F}$ comme la co-image de l'homomorphisme composé
+correspondant :
+\[
+\symup{\mathcal L_K\to
+\mathop{\text{\uwave{Hom}}}\nolimits\!\left(\mathop{\bigwedge}\limits^{a-1}\mathcal L_K,
+\mathop{\bigwedge}\limits^{a}\mathcal L_K\right)\to
+\mathop{\text{\uwave{Hom}}}\nolimits\!\left(\mathop{\bigwedge}\limits^{a-1}\mathcal L_K,
+\mathcal O_{\mathfrak P^r_K}(d)\right),}
+\]
+où le premier est l'homomorphisme canonique provenant du produit extérieur, et
+le deuxième est déduit de $\symup{s}$. On conclut alors par (1.2) (i).
+
+La conjonction des deux lemmes précédents permet de prouver :
+
+\result{LEMME}{2.6} \uline{Supposons sous les conditions préliminaires de} \uline{(2.1)} \uline{que
+l'on ait pour tout} $\symup{\mathcal F}$ :
+\[
+\symup{P_{\mathcal F}(n)=a_{\mathcal F}n^r/r!+b_{\mathcal F}n^{r-1}/(r-1)!}+\text{termes de degré $\symup{<r-1}$},
+\]
+\uline{et que les coefficients} $\symup{a_{\mathcal F}}$ \uline{restent bornés. Alors les coefficients}
+$\symup{b_{\mathcal F}}$ \uline{restent minorés. Si les} $\symup{b_{\mathcal F}}$ \uline{sont bornés, alors
+les} $\symup{\mathcal F_{(r)}}$ \uline{sont limités}.
+
+On peut supposer que les corps de base $\symup{K}$ pour les faisceaux $\symup{\mathcal F}$ sont
+algébriquement clos. Munissons chaque
+$\symup{\operatorname{supp}\mathcal F_{(r)}=}$ réunion des composantes de dimension
+$\symup{r}$
+de $\symup{\operatorname{supp}\mathcal F}$, de la structure réduite induite. Alors les
+degrés des $\symup{\operatorname{supp}\mathcal F_{(r)}}$ restent majorés par $\symup{a}$, donc
+en vertu de (2.4) les $\symup{\operatorname{supp}\mathcal F_{(r)}}$ forment un ensemble
+limité. De plus, pour toute composante de
+$\symup{\operatorname{supp}\mathcal F_{(r)}}$, la longueur de $\symup{\mathcal F_{(r)}}$ pour
+cette composante est $\symup{\leq a}$, donc si $\symup{\mathcal J_{\mathcal F}}$ est l'Idéal
+qui définit $\symup{\operatorname{supp}\mathcal F_{(r)}}$, alors $\symup{\mathcal F_{(r)}}$
+\src{258}
+peut être considéré comme un Module sur le sous-schéma $\symup{Y_{\mathcal F}}$ de $\symup{X}$
+défini par $\symup{\mathcal J_{\mathcal F}^{a}}$. Comme dans le lemme précédent, on se
+ramène aussi au cas où on a $\symup{\mathcal F=\mathcal F_{(r)}}$, donc $\symup{\mathcal F}$
+provient d'un Module sur $\symup{Y_{\mathcal F}}$. Les $\symup{Y_{\mathcal F}}$ correspondent à
+une famille limitée de Modules quotients des $\symup{\mathcal O_{X_K}}$, donc
+proviennent d'un sous-schéma fermé $\symup{Y}$ d'un schéma $\symup{X\times_S T}$. On peut alors
+appliquer (2.5) à $\symup{Y/T}$ et $\symup{\mathcal L\otimes_XY}$, d'où la conclusion.
+
+Nous pouvons maintenant prouver (2.2) par récurrence sur la borne supérieure
+$\symup{r}$ des $\symup{\dim\operatorname{supp}\mathcal F}$. L'énoncé est trivial pour $\symup{r<0}$,
+supposons donc $\symup{r\geq0}$ et l'énoncé prouvé pour les $\symup{r'<r}$. En vertu de (2.6)
+les $\symup{\mathcal F_{(r)}}$ forment un ensemble limité, donc aussi en vertu de (1.2)
+(i) les noyaux des homomorphismes
+$\symup{\mathcal L_K\to\mathcal F_{(r)}}$ ; il existe donc un Module
+cohérent $\symup{\mathcal L'}$ sur $\symup{X}$, tel que les noyaux en question, donc aussi les
+$\symup{N_r(\mathcal F)=\operatorname{Ker}(\mathcal F\to\mathcal F_{(r)})}$, soient quotients des Modules $\symup{\mathcal L'_K}$. Comme les $\symup{\mathcal F_{(r)}}$ sont
+limités, les $\symup{P_{\mathcal F_{(r)}}}$ restent bornés, et la formule
+\[
+\symup{P_{\mathcal F}=P_{\mathcal F_{(r)}}+P_{N_r}}
+\]
+montre alors que les $\symup{P_{N_r}}$ satisfont à la même condition $\symup{(b_s)}$ que les
+$\symup{P_{\mathcal F}}$. Donc les $\symup{N_r}$ satisfont les conditions (a) et $\symup{(b_s)}$, et
+par l'hypothèse de récurrence les $\symup{(N_r)_{(s)}}$ restent limités. Or
+$\symup{\mathcal F_{(s)}}$ est une extension de $\symup{\mathcal F_{(r)}}$ par
+$\symup{(N_r)_{(s)}}$, donc par (1.2) (ii), les $\symup{\mathcal F_{(s)}}$ restent limités.
+Pour la dernière assertion de (2.2), on note que les noyaux $\symup{N_s}$ de
+$\symup{\mathcal F\to\mathcal F_{(s)}}$ sont quotients des noyaux des
+homomorphismes $\symup{\mathcal L_K\to\mathcal F_{(s)}}$, qui restent limités en vertu de (1.2)
+(i), et que le coefficient du terme en $\symup{n^{s-1}}$ dans $\symup{P_{N_s}}$ reste borné ;
+le lemme 2.6 prouve alors que le coefficient du terme suivant reste minoré.
+Cela achève la démonstration.
+
+\fsection{3}{\normalfont\uline{Schémas de Hilbert : définition, théorème d'existence}.}
+
+Soient $\symup{X}$ un préschéma sur un autre $\symup{S}$, et $\symup{\mathcal F}$ un Module
+quasi-cohérent sur $\symup{X}$. Désignons par
+\[
+\symup{\operatorname{Quot}(\mathcal F/X/S)}
+\]
+l'ensemble des Modules quasi-cohérents quotients de $\symup{\mathcal F}$ qui sont plats
+sur $\symup{S}$. Soit maintenant $\symup{S'\to S}$ un morphisme de changement de
+base, posons $\symup{X'=X\times_S S'}$ et
+$\symup{\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}}$, donc $\symup{X'}$ est
+un préschéma sur $\symup{S'}$ muni d'un Module
+\src{259}
+quasi-cohérent $\symup{\mathcal F'}$, et on peut considérer
+$\symup{\operatorname{Quot}(\mathcal F'/X'/S')}$. On pose
+\[
+\symup{\mathop{\text{\uwave{Quot}}}\nolimits_{\mathcal F/X/S}(S')
+=\operatorname{Quot}(\mathcal F'/X'/S')}
+\qquad\text{(où $\symup{X'=X\times_SS'}$)}.
+\]
+Si maintenant $\symup{S''\to S'}$ est un $\symup{S}$-morphisme, alors
+$\symup{X''=X\times_SS''}$ est isomorphe à $\symup{X'\times_{S'}S''}$ et $\symup{\mathcal F''}$ à
+$\symup{\mathcal F'\otimes_{\mathcal O_{S'}}\mathcal O_{S''}}$, et comme le foncteur
+image inverse
+$\symup{\mathcal G'\rightsquigarrow\mathcal G'\otimes_{\mathcal O_{S'}}\mathcal O_{S''}}$
+de la catégorie des Modules quasi-cohérents sur $\symup{X'}$ dans la catégorie des
+Modules quasi-cohérents sur $\symup{X''}$ est exact à droite et transforme les Modules
+$\symup{S'}$-plats en Modules $\symup{S''}$-Plats, on trouve une application naturelle
+\[
+\symup{\operatorname{Quot}(\mathcal F'/X'/S')\to
+\operatorname{Quot}(\mathcal F''/X''/S''),}
+\]
+donc $\symup{\mathop{\text{\uwave{Quot}}}\nolimits_{\mathcal F/X/S}(S')}$ est un \uline{foncteur
+contravariant en} $\symup{S'}$ (préschéma au dessus de $\symup{S}$), à valeurs dans la catégorie
+des ensembles. Par la suite, nous supposerons que $\symup{X}$ est \uline{projectif} sur $\symup{S}$
+\uline{noethérien}, $\symup{\mathcal F}$ \uline{cohérent}, et nous nous limiterons pour simplifier à
+des $\symup{S'}$ sur $\symup{S}$ qui sont localement noethériens.
+
+\result{THÉORÈME}{3.1} \uline{Sous ces conditions, le foncteur contravariant}
+$\symup{\mathop{\text{\uwave{Quot}}}\nolimits_{\mathcal F/X/S}}$ \uline{sur la catégorie des}
+$\symup{S}$\uline{-préschémas localement noethériens est} représentable \uline{par un} $\symup{S}$\uline{-préschéma}
+$\symup{\underline{\operatorname{Quot}}_{\mathcal F/X/S}}$, \uline{somme d'une suite de} $\symup{S}$\uline{-schémas
+projectifs (a fortiori} $\symup{\underline{\operatorname{Quot}}_{\mathcal F/X/S}}$ \uline{est localement de
+type fini sur} $\symup{S}$).
+
+Nous obtiendrons une telle décomposition de la façon suivante. Soit
+$\symup{\mathcal O_X(1)}$ un faisceau inversible sur $\symup{X}$ très ample relativement à
+$\symup{S}$. Pour tout polynôme $\symup{P(n)}$ à coefficients rationnels, soit
+$\symup{\operatorname{Quot}^P(\mathcal F/X/S)}$ la partie de
+$\symup{\operatorname{Quot}(\mathcal F/X/S)}$ formée des quotients cohérents
+$\symup{\mathcal G}$ de $\symup{\mathcal F}$ qui sont plats sur $\symup{S}$ et dont le polynôme de
+Hilbert en tout $\symup{s\in S}$ est égal à $\symup{P}$. On posera alors
+\[
+\symup{\mathop{\text{\uwave{Quot}}}\nolimits^P_{\mathcal F/X/S}(S')
+=\operatorname{Quot}^P(\mathcal F'/X'/S')}
+\]
+et on obtient ainsi un sous-foncteur de
+$\symup{\mathop{\text{\uwave{Quot}}}\nolimits_{\mathcal F/X/S}}$. La propriété d'invariance
+des polynômes de Hilbert rappelée dans le numéro 2 implique ceci : \uline{Pour que}
+$\symup{\mathop{\text{\uwave{Quot}}}\nolimits_{\mathcal F/X/S}}$ \uline{soit représentable, il faut
+et il suffit que les}
+$\symup{\mathop{\text{\uwave{Quot}}}\nolimits^P_{\mathcal F/X/S}}$ \uline{le soient, et alors le}
+$\symup{S}$\uline{-préschéma} $\symup{\mathop{\text{\uwave{Quot}}}\nolimits_{\mathcal F/X/S}}$, \uline{qui le représente, est
+isomorphe au préschéma somme des}
+$\symup{\mathop{\text{\uwave{Quot}}}\nolimits^P_{\mathcal F/X/S}}$ \uline{qui représentent les foncteurs}
+$\symup{\mathop{\text{\uwave{Quot}}}\nolimits^P_{\mathcal F/X/S}}$. Ceci posé, (3.1) sera
+donc une conséquence du théorème suivant :
+\src{260}
+\result{THÉORÈME}{3.2} \uline{Avec les notations précédentes, le foncteur}
+$\symup{\mathop{\text{\uwave{Quot}}}\nolimits^P_{\mathcal F/X/S}}$ \uline{est représentable par un}
+$\symup{S}$\uline{-préschéma projectif} $\symup{\operatorname{Quot}^P_{\mathcal F/X/S}}$.
+
+La suite de ce numéro est consacrée à la démonstration de (3.2).
+
+Soit $\symup{\nu}$ un entier. Pour tout $\symup{S'}$ au-dessus de $\symup{S}$, nous désignons par
+$\symup{A_\nu(S')}$ l'ensemble des quotients
+$\symup{\mathcal G=\mathcal F'/\mathcal K}$ de
+$\symup{\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}}$, cohérents,
+plats sur $\symup{S'}$, de polynôme de Hilbert $\symup{P}$, et satisfaisant les conditions suivantes :
+\begin{align*}
+\text{a.}\quad &\symup{R^if^\prime_*(\mathcal G(n))=0} &&\text{pour $\symup{i>0}$ et $\symup{n\geq\nu}$}\\
+\text{b.}\quad &\symup{R^if^\prime_*(\mathcal K(n))=0} &&\text{pour $\symup{i>0}$ et $\symup{n\geq\nu}$}\\
+\text{c.}\quad &\symup{f^\prime_*(\mathcal K(\nu+k))=\mathcal S^\prime_k f^\prime_*(\mathcal K(\nu))} &&\text{pour $\symup{k\geq0}$}.
+\end{align*}
+Pour cette dernière relation, on suppose que $\symup{X}$ est écrit comme le spectre
+premier homogène d'une algèbre graduée quasi-cohérente $\symup{\mathcal S_*}$ sur $\symup{S}$,
+à degrés positifs, engendrée par $\symup{\mathcal S_1}$, et on pose
+$\symup{\mathcal S' =\mathcal S\otimes_{\mathcal O_S}\mathcal O_{S'}}$, de sorte
+que $\symup{X'}$ est le spectre premier homogène de $\symup{\mathcal S'}$. Pour prouver
+(3.2), on se ramène d'ailleurs facilement au cas où $\symup{X=\mathfrak P^r_S}$ (puisque
+$\symup{S}$ est réunion d'ouverts $\symup{U}$ tels que $\symup{X|U}$ soit un sous-schéma fermé de
+$\symup{\mathfrak P^r_U}$ et $\symup{\mathcal O_X(1)}$ induit par
+$\symup{\mathcal O_{\mathfrak P^r_U}(1)}$), et où $\symup{\mathcal F}$ est de la forme
+$\symup{(\mathcal O_{\mathfrak P^r_S})^{N}}$, donc est plat sur $\symup{S}$. Alors dans ce qui
+précède, les faisceaux $\symup{\mathcal K}$ sont également plats sur $\symup{S'}$. Il résulte
+alors des relations de Künneth ([5], III, \S~7), et de (b) que les conditions (a) et (b)
+sont stables par changement de base, et impliquent que pour $\symup{n\geq\nu}$, la
+formation de $\symup{f'_*(\mathcal G(n))}$ et de $\symup{f'_*(\mathcal K(n))}$ commute à
+l'extension de la base (loc. cit.), donc (c) est également stable par extension
+de la base.
+
+En d'autres termes, $\symup{A_\nu(S')}$ \uline{est un foncteur contravariant en} $\symup{S'}$, de \uline{façon
+précise un sous-foncteur de}
+$\symup{A(S')=\mathop{\text{\uwave{Quot}}}\nolimits^P_{\mathcal F/X/S}(S')}$. Pour $\symup{\nu}$
+variable, on obtient ainsi une suite croissante de parties $\symup{A_\nu(S')}$ de
+$\symup{A(S')}$, dont la réunion est $\symup{A(S')}$ en vertu d'un théorème bien connu de
+SERRE [5], III, \S~2. Notons maintenant que si $\symup{\mathcal G}$ est un quotient
+cohérent de $\symup{\mathcal F'}$, plat sur $\symup{S'}$, $\symup{s}$ un élément de $\symup{S'}$ tel que le
+changement de base, $\symup{\operatorname{Spec}(k(s))\to S'}$ donne lieu à
+un quotient $\symup{G_s}$ de $\symup{F_s}$ satisfaisant aux conditions (a),
+(b), (c), i. e. qui est dans $\symup{A_\nu\operatorname{Spec}(k(s))}$, alors il existe
+un voisinage ouvert $\symup{U}$ de $\symup{s}$ tel que ces mêmes conditions soient vérifiées
+pour $\symup{\mathcal G|f'^{-1}(U)}$, i. e. ce quotient est dans $\symup{A_\nu(U)}$ ; pour (a)
+et (b), cela résulte en effet du "théorème des fonctions holomorphes" [5],
+III, \S~7, et (c) résulte du lemme de Nakayama, et du fait qu'on sait en tous
+cas que
+$\symup{f'_*(\mathcal K(n+k))=\mathcal S'_k f'_*(\mathcal K(n))}$
+\src{261}
+pour $\symup{n}$ assez grand, et $\symup{k\geq0}$, (cf. [5], III, \S~2). De ces remarques on
+conclut ceci (comparer [4], IV). \uline{Pour que le foncteur} $\symup{A}$ \uline{soit représentable,
+il faut et il suffit que les foncteurs} $\symup{A_\nu}$ \uline{le soient, et alors le}
+$\symup{S}$\uline{-préschéma} $\symup{Q}$ \uline{qui représente} $\symup{A}$ \uline{est réunion croissante d'ouverts} $\symup{Q_\nu}$
+\uline{représentant les} $\symup{A_\nu}$.
+
+Soit
+\[
+\symup{M_* =\sum_{n\geq0}f_*(\mathcal F(n))=\mathcal S_*^{N},}
+\]
+de sorte que l'on a
+\[
+\symup{M'_* =M_*\otimes_{\mathcal O_S}\mathcal O_{S'}
+=\sum_{n\geq0}f'_*(\mathcal F'(n))=\mathcal S'_*{}^{N}.}
+\]
+Il résulte de (a) que l'on a :
+
+\noindent (a') $\symup{f'_*(\mathcal G(n))}$ est localement libre de rang $\symup{P(n)}$ pour
+$\symup{n\geq\nu}$, [5], III, \S~7, et de (b), pour $\symup{i=1}$ :
+
+\noindent (a'') $\symup{f'_*(\mathcal G(n))}$ est un Module quotient de $\symup{M'_n}$.
+
+D'ailleurs, la connaissance de ce Module quotient, pour $\symup{n=\nu}$, implique en
+vertu de (c) celle des sous-Modules $\symup{f'_*(\mathcal K(n))}$ de $\symup{M'_n}$ pour
+$\symup{n\geq\nu}$, donc la connaissance de $\symup{\mathcal K}$ et par suite de $\symup{\mathcal G}$.
+On obtient ainsi une \uline{application injective}
+\[
+\symup{A_\nu(S')\to\operatorname{Grass}_{P(\nu)}(M'_\nu)}
+\]
+de $\symup{A_\nu(S')}$ dans l'ensemble des Modules quotients localement libres de rang
+$\symup{P(\nu)}$ de $\symup{M'_\nu}$, d'où un homomorphisme \uline{fonctoriel}
+\[
+\symup{i_\nu:A_\nu(S')\to
+\mathop{\text{\uwave{Grass}}}\nolimits_{P(\nu)}(M_\nu)(S'),}
+\]
+où le foncteur du deuxième membre est représentable par le schéma grassmanien
+$\symup{\operatorname{Grass}_{P(\nu)}(M_\nu)}$ (comparer [4], V), qui est projectif
+sur $\symup{S}$. Je dis :
+
+\result{LEMME}{3.3} $\symup{A_\nu(S')}$ \uline{est un foncteur représentable, et le morphisme}
+$\symup{Q_\nu\to\operatorname{Grass}_{P(\nu)}(M_\nu)}$ \uline{qui représente
+l'homomorphisme} $\symup{i_\nu}$ \uline{est une immersion} (ce qui implique que $\symup{Q_\nu}$ \uline{est
+quasi-projectif sur} $\symup{S}$).
+
+Cette assertion est équivalente à la suivante (comparer [4], IV) : Supposons
+donné un Module quotient $\symup{N}$ de $\symup{M'_\nu}$, localement libre de rang $\symup{P(\nu)}$,
+alors il existe un sous-préschéma $\symup{Z}$ de $\symup{S'}$ tel que pour tout préschéma
+localement noethérien $\symup{T'}$
+\src{262}
+sur $\symup{S'}$, l'image inverse de $\symup{N}$ sur $\symup{T'}$ est dans
+$\symup{\operatorname{Im}A_\nu(T')}$ si et seulement si $\symup{T'\to S'}$ est
+majoré par le sous-préschéma $\symup{Z}$. Changeant de notations, on peut supposer
+$\symup{S'=S}$, i. e. on s'est donné un quotient $\symup{N_\nu}$ de $\symup{M_\nu}$ par un sous-Module
+$\symup{R_\nu}$. Pour qu'il provienne d'un élément de $\symup{A_\nu(S)}$, il faut et il suffit
+qu'il satisfasse les deux conditions suivantes :
+
+\medskip
+\noindent (i) $\symup{M_{\nu+k}/\mathcal S_kR_\nu}$ est localement libre de rang
+$\symup{P(\nu+k)}$ pour $\symup{k\geq0}$.
+
+\smallskip
+\noindent (ii) Le sous-faisceau $\symup{\mathcal K}$ de $\symup{\mathcal F}$ défini par le
+sous-Module gradué
+$\symup{R_* =\sum\limits_{k\geq0}\mathcal S_kR_\nu}$
+de $\symup{M_*}$ ([5], II, \S~3) et le quotient $\symup{\mathcal G=\mathcal F/\mathcal K}$,
+satisfont les conditions (a) et (b) plus haut. Ces conditions sont manifestement nécessaires, d'autre part si elles sont
+vérifiées, alors le faisceau $\symup{\mathcal G}$ défini dans (ii), étant isomorphe au
+faisceau associé au $\symup{\mathcal S_*}$-Module gradué $\symup{N_*}$ somme des
+$\symup{M_{\nu+k}/\mathcal S_kR_\nu}$, est \uline{plat} sur $\symup{S}$ (car ses fibres sont des
+facteurs directs de modules localisés de $\symup{N_*}$ pour des idéaux premiers homogènes
+de $\symup{\mathcal S_*}$), et correspond au polynôme de Hilbert $\symup{P}$ en vertu de (i).
+Compte tenu de (ii), on voit alors que (a') et (a'') sont vérifiées, donc pour
+$\symup{n\geq\nu}$, l'homomorphisme naturel
+$\symup{N_n\to f_*(\mathcal G(n))}$ est un homomorphisme \uline{surjectif} de
+Modules localement libres de même rang, donc un isomorphisme, donc on a
+$\symup{f_*(\mathcal K(\nu+k))=\mathcal S_kR_\nu}$ pour tout $\symup{k\geq0}$,
+ce qui prouve que $\symup{\mathcal G\in A_\nu(S)}$ et que $\symup{R_\nu}$ est l'élément de
+$\symup{\operatorname{Grass}_{P(\nu)}(M_\nu)}$ défini par $\symup{\mathcal G}$.
+
+Ce critère (i) (ii) s'applique également à la situation obtenue après un
+changement de base $\symup{S'\to S}$. Nous allons prouver d'abord que le
+fait que la condition (i) soit vérifiée après le changement de base
+$\symup{S'\to S}$, s'exprime par la condition que $\symup{S'\to S}$
+est majoré par un certain sous-préschéma $\symup{Z}$ de $\symup{S}$ ; une fois ce résultat
+obtenu, on est ramené (remplaçant $\symup{S}$ par $\symup{Z}$) au cas où la condition (i) est
+déjà vérifiée sur $\symup{S}$, et comme elle est stable par changement de base, il
+reste à exprimer la condition (ii). Mais alors, si $\symup{U}$ désigne l'ensemble des
+$\symup{s\in S}$ tels que la cohomologie des faisceaux induits sur la fibre $\symup{X_s}$ par
+$\symup{\mathcal G(n)}$ et $\symup{\mathcal K(n)}$ soit nulle en dimension $\symup{>0}$ pour
+$\symup{n\geq\nu}$, on a déjà signalé que $\symup{U}$ est ouvert, et la condition (ii) sera
+vérifiée après un changement de base $\symup{S'\to S}$ si et seulement si
+$\symup{S'\to S}$ est majoré par $\symup{U}$, ce qui prouve le lemme 3.3. Il reste
+donc à prouver le lemme suivant :
+
+\result{LEMME}{3.4} \uline{Soient} $\symup{S}$ \uline{un préschéma localement noethérien, muni d'une
+algèbre graduée quasi-cohérente} $\symup{\mathcal S_*}$ \uline{à degrés positifs, engendrée par}
+$\symup{\mathcal S_1}$, $\symup{M_*}$ \uline{un} $\symup{\mathcal S}$\uline{-Module gradué quasi-cohérent de type
+fini}, $\symup{P}$ \uline{un polynôme à coefficients rationnels}, $\symup{\nu}$ \uline{un entier, Alors il
+existe un sous-préschéma} $\symup{Z}$ \uline{de} $\symup{S}$ (\uline{évidemment unique})
+\src{263}
+\uline{ayant la propriété suivante : Pour tout préschéma} $\symup{S'}$ \uline{sur} $\symup{S}$, \uline{pour que}
+$\symup{M_n\otimes_{\mathcal O_S}\mathcal O_{S'}}$ \uline{soit localement libre de rang} $\symup{P(n)}$
+\uline{pour tout} $\symup{n\geq\nu}$, \uline{il faut et il suffit que} $\symup{S'\to S}$ \uline{soit majoré
+par} $\symup{Z}$.
+
+On peut évidemment supposer $\symup{S}$ affine, donc noethérien. Alors :
+
+\result{LEMME}{3.5} \uline{Pour tout entier} $\symup{N\geq\nu}$, \uline{soit} $\symup{U_N}$ \uline{l'ouvert de} $\symup{S}$
+\uline{formé des} $\symup{s\in S}$ \uline{tels que}
+$\symup{\operatorname{rang}_{k(s)}M_{ns}\otimes_{\mathcal O_{S,s}}k(s)\leq P(n)}$
+\uline{pour tout} $\symup{\nu\leq n\leq N}$. \uline{Alors la suite décroissante des ouverts} $\symup{U_N}$ \uline{est stationnaire}.
+
+On sait [3], IV, que $\symup{S}$ admet une partition finie en sous-préschémas réduits
+$\symup{S_i}$, tels que chaque $\symup{M\otimes_{\mathcal O_S}\mathcal O_{S_i}}$ soit \uline{plat} sur
+$\symup{S_i}$ : On peut donc supposer $\symup{M}$ plat, donc les $\symup{M_n}$ plats. Enfin, on peut
+évidemment supposer $\symup{S}$ connexe. Mais alors il existe un entier $\symup{n_0}$ et un
+polynôme $\symup{Q}$ tels que
+\[
+\symup{\operatorname{rang}_{k(s)}
+M_{ns}\otimes_{\mathcal O_{S,s}}k(s)=Q(n)}
+\quad\text{pour $\symup{n\geq n_0}$}
+\]
+[5], III, \S~7. Supposons d'abord $\symup{P\neq Q}$ donc
+$\symup{P(n)\neq Q(n)}$ pour $\symup{n}$ grand, alors on a évidemment $\symup{U_N=\varnothing}$ pour $\symup{N}$
+grand, a fortiori la suite des $\symup{U_N}$ est stationnaire. Si au contraire $\symup{P=Q}$, alors on aura $\symup{U_N=U_{n_0}}$ pour $\symup{N\geq n_0}$,
+et la suite des $\symup{U_N}$ est encore stationnaire.
+
+En particulier, l'ensemble $\symup{U_\infty}$ des $\symup{s\in S}$ tels que
+\[
+\tag{*}
+\symup{\operatorname{rang}_{k(s)}
+M_{ns}\otimes_{\mathcal O_{S,s}}k(s)\leq P(n)}
+\quad\text{pour tout $\symup{n\geq\nu}$},
+\]
+étant l'intersection des $\symup{U_N}$, est ouvert. On peut alors, pour la démonstration
+de (3.4), remplacer $\symup{S}$ par l'ouvert $\symup{U_\infty}$, ce qui nous ramène au cas où
+l'inégalité (*) est satisfaite en tout $\symup{s\in S}$. D'ailleurs :
+
+\result{LEMME}{3.6} \uline{Soit} $\symup{M}$ \uline{un Module sur un préschéma localement noethérien}
+$\symup{S}$, \uline{et} $\symup{r}$ \uline{un entier. Alors il existe un sous-préschéma} $\symup{Z}$ \uline{de} $\symup{S}$
+(\uline{évidemment unique) ayant la propriété suivante : pour tout} $\symup{S'}$ \uline{sur} $\symup{S}$, \uline{pour
+que} $\symup{M\otimes_{\mathcal O_S}\mathcal O_{S'}}$ \uline{soit localement libre de rang} $\symup{r}$,
+\uline{il faut et il suffit que} $\symup{S'\to S}$ \uline{soit majoré par} $\symup{Z}$. \uline{Si on a}
+$\symup{\operatorname{rang}_{k(s)}M_s\otimes_{\mathcal O_{S,s}}k(s)\leq r}$
+\uline{pour tout} $\symup{s}$, \uline{alors} $\symup{Z}$ \uline{est un sous-préschéma fermé de} $\symup{S}$ (on suppose $\symup{M}$ cohérent).
+\src{264}
+En effet, le raisonnement précédent nous ramène au cas où on a l'inégalité (*)
+pour tout $\symup{s\in S}$ (en remplaçant au besoin $\symup{S}$ par la partie ouverte formée
+des $\symup{s}$ où l'inégalité est vérifiée). On peut alors supposer que $\symup{M}$ s'insère
+dans une suite exacte
+\[
+\symup{\mathcal O_S^q\to\mathcal O_S^r\to M\to0,}
+\]
+et la condition envisagée sur les $\symup{S'}$ sur $\symup{S}$ signifie aussi que dans la suite
+exacte $\symup{\mathcal O_{S'}^q\to\mathcal O_{S'}^r
+\to M'\to0}$ correspondante, la deuxième flèche est un
+isomorphisme, i. e. la première est nulle. On voit alors que le sous-préschéma
+fermé $\symup{Z}$ de $\symup{S}$ défini par l'Idéal engendré par les coefficients de la matrice
+définissant l'homomorphisme
+$\symup{\mathcal O_S^q\to\mathcal O_S^r}$, satisfait à la condition voulue.
+
+Revenant alors à la démonstration de (3.4) où nous l'avions laissée, on désigne
+par $\symup{Z_n}$ le sous-schéma \uline{fermé} de $\symup{S}$ associé en vertu de (3.6) au Module $\symup{M_n}$
+et à l'entier $\symup{r=P(n)}$, par $\symup{Z'_N}$ le $\symup{\operatorname{Inf}}$ des $\symup{Z_n}$ pour
+$\symup{\nu\leq n\leq N}$. Alors les $\symup{Z'_N}$ forment une suite décroissante de
+sous-schémas fermés de $\symup{S}$, donc nécessairement stationnaire. Soit $\symup{Z}$ la
+valeur constante des $\symup{Z'_N}$ pour $\symup{N}$ grand. C'est le $\symup{Z}$ cherché dans (3.4).
+Cela achève la démonstration de (3.4), donc aussi celle de (3.3).
+
+On a donc prouvé que
+$\symup{\mathop{\text{\uwave{Quot}}}\nolimits^P_{\mathcal F/X/S}}$ \uline{est représentable par un}
+$\symup{S}$\uline{-préschéma} $\symup{Q}$ \uline{qui est une réunion croissante de sous-préschémas ouverts}
+$\symup{Q_\nu}$ \uline{quasi-projectifs sur} $\symup{S}$. Pour aller plus loin, il faut invoquer le
+théorème 2.1, d'où on conclut facilement que $\symup{Q}$ est \uline{quasi-compact}, (car image du
+préschéma de type fini $\symup{S'}$ sur $\symup{S}$ qui paramètre la famille des faisceaux
+quotients des $\symup{\mathcal F_K}$ ayant le polynôme de Hilbert $\symup{P}$). Donc $\symup{Q}$ est
+égal à l'un des $\symup{Q_\nu}$, donc quasi-projectif sur $\symup{S}$. Pour prouver qu'il est
+projectif sur $\symup{S}$, il reste donc à prouver qu'il est \uline{propre} sur $\symup{S}$, et pour
+cela il suffit d'invoquer le critère valuatif de propreté sous la forme [5],
+II, 7.3.8. Il suffit de vérifier ceci :
+
+\result{LEMME}{3.7} \uline{Soient} $\symup{S}$ \uline{le spectre d'un anneau de valuation discrète},
+$\symup{s}$ \uline{son point générique}, $\symup{X}$ \uline{un préschéma sur} $\symup{S}$, $\symup{\mathcal F}$ \uline{un Module
+quasi-cohérent sur} $\symup{X}$, $\symup{\mathcal G_s}$ \uline{un Module quotient quasi-cohérent de}
+$\symup{\mathcal F_s=\mathcal F\otimes_{\mathcal O_S}k(s)}$ \uline{sur} $\symup{X_s}$. \uline{Alors il existe
+un Module quotient quasi-cohérent} $\symup{\mathcal G}$ \uline{unique de} $\symup{\mathcal F}$, \uline{plat sur}
+$\symup{S}$, \uline{et dont la restriction à} $\symup{X_s}$ \uline{soit} $\symup{\mathcal G_s}$.
+\src{265}
+En effet, si $\symup{\mathcal G_s=\mathcal F_s/\mathcal K_s}$, il suffit de considérer
+le plus grand sous-faisceau $\symup{\mathcal K}$ de $\symup{\mathcal F}$ induisant
+$\symup{\mathcal K_s}$, [5], I, 9.4.2 et de prendre
+$\symup{\mathcal G=\mathcal F/\mathcal K}$. On vérifie facilement que ce faisceau
+convient.
+
+Le théorème 3.2, et par suite (3.1) est complètement démontré.
+
+La démonstration prouve en même temps ceci :
+
+\result{PROPOSITION}{3.8} \uline{Sous les conditions de} \uline{(3.2)}, \uline{soient}
+$\symup{Q=\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}}$, $\symup{X_Q=X\times_SQ}$,
+$\symup{F_Q=\mathcal F\otimes_{\mathcal O_S}\mathcal O_Q}$, \uline{et soit}
+$\symup{\mathcal G}$ \uline{le quotient cohérent de} $\symup{\mathcal F_Q}$, \uline{plat sur} $\symup{Q}$, \uline{ayant le
+polynôme de Hilbert relatif} $\symup{P}$, \uline{tel que} $\symup{(Q,\mathcal G)}$ \uline{représente le foncteur}
+$\symup{\mathop{\text{\uwave{Quot}}}\nolimits^P_{\mathcal F/X/S}}$. \uline{Il existe un entier}
+$\symup{\nu}$ \uline{tel que, pour} $\symup{n\geq\nu}$, $\symup{(f_Q)_*(\mathcal G(n))}$ \uline{soit un Module sur} $\symup{Q}$
+\uline{localement libre de rang} $\symup{P(n)}$, \uline{et très ample relativement à} $\symup{S}$, \uline{i. e.
+définissant une immersion de} $\symup{Q}$ \uline{dans un schéma grassmanien}
+$\symup{\underline{\operatorname{Grass}}_{P(n)}(M)}$ \uline{sur} $\symup{S}$. \uline{A fortiori, pour} $\symup{n\geq\nu}$, \uline{le
+faisceau} $\symup{\mathop{\bigwedge}\limits^{P(n)}(f_Q)_*(\mathcal G(n))}$ \uline{sur} $\symup{Q}$ \uline{est inversible très ample relativement à} $\symup{S}$.
+
+On peut en effet se ramener, comme pour (3.2), au cas où $\symup{F}$ est plat
+sur $\symup{S}$, et alors il suffit de prendre un entier $\symup{\nu}$ tel que $\symup{A_\nu=A}$ (avec
+les notations précédentes).
+
+Le cas le plus important d'application de (3.2) est celui où
+$\symup{\mathcal F=\mathcal O_X}$. On écrit alors
+\[
+\symup{\underline{\operatorname{Quot}}_{\mathcal O_X/X/S}=\underline{\operatorname{Hilb}}_{X/S},
+\qquad
+\underline{\operatorname{Quot}}^P_{\mathcal O_X/X/S}=\underline{\operatorname{Hilb}}^P_{X/S},}
+\]
+donc on a une décomposition
+\[
+\symup{\underline{\operatorname{Hilb}}_{X/S}=\coprod_P\underline{\operatorname{Hilb}}^P_{X/S}.}
+\]
+Par définition, $\symup{\underline{\operatorname{Hilb}}_{X/S}}$ représente le foncteur
+$\symup{\mathop{\text{\uwave{Hilb}}}\nolimits_{X/S}(S')}$ = ensemble des sous-préschémas
+fermés de $\symup{X'=X\times_SS'}$ qui sont plats sur $\symup{S'}$ ; et
+$\symup{\underline{\operatorname{Hilb}}^P_{X/S}}$ représente le sous-foncteur correspondant aux
+sous-préschémas fermés admettant un polynôme de Hilbert donné $\symup{P}$. Ces
+préschémas sont aussi appelés le \uline{préschéma de Hilbert} de $\symup{X}$ sur $\symup{S}$,
+respectivement le \uline{préschéma de Hilbert d'indice} $\symup{P}$. La terminologie est
+justifiée par le rôle joué dans la théorie par les polynômes de Hilbert. Leur
+différence de nature avec les classiques variétés de Chow (destinées à
+paramétrer des cycles, et non des variétés) est du même ordre qu'entre
+\src{266}
+\uline{l'anneau de Chow} des classes de cycles d'une variété, et \uline{l'anneau des classes de faisceaux} de la variété (tel qu'il s'introduit dans le théorème de
+Riemann-Roch [1]) ; on notera en effet que lorsque $\symup{X=\mathfrak P^r_S}$, $\symup{S}$
+étant le spectre d'un corps, la connaissance du polynôme de Hilbert d'un Module
+cohérent $\symup{\mathcal F}$ sur $\symup{X}$ équivaut aussi à celle des classes de Chern de
+$\symup{\mathcal F}$ et de son rang, ou encore de la classe de $\symup{\mathcal F}$ dans l'anneau des classes
+de faisceaux cohérents sur $\symup{X}$.
+
+\result{REMARQUES}{3.9} On notera aussi que la construction des
+$\symup{\underline{\operatorname{Quot}}_{\mathcal F/X/S}}$ et
+$\symup{\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}}$ a été ramenée au cas où
+$\symup{X=\mathfrak P^r_S}$, $\symup{\mathcal F=\mathcal O_X^N}$, $\symup{\mathcal O_X(1)}$ étant le
+faisceau très ample habituel ; de façon précise, les
+$\symup{\underline{\operatorname{Quot}}_{\mathcal F/X/S}}$ généraux se réalisent comme des
+sous-préschémas fermés des précédents. Comme la formation des
+$\symup{\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}}$ est évidemment compatible avec les
+changements de base $\symup{S'\to S}$, on voit qu'on est ramené au cas où
+on a de plus $\symup{S=\operatorname{Spec}(\mathbf Z)}$. En fin de compte, on est donc
+ramené à étudier les schémas projectifs sur $\symup{\mathbf Z}$ :
+\[
+\symup{\mathfrak Q^P_{r,N}=
+\underline{\operatorname{Quot}}^{P}_{(\mathcal O_{\mathfrak P^r_{\mathbf Z}})^N/
+\mathfrak P^r_{\mathbf Z}/\operatorname{Spec}(\mathbf Z)},}
+\]
+et plus particulièrement les schémas de Hilbert absolus :
+\[
+\symup{\underline{\operatorname{Hilb}}^P_r=\mathfrak Q^P_{r,1}.}
+\]
+Une étude plus détaillée de ces schémas, à commencer par la détermination de
+leurs composantes connexes (sont-ils connexes ?), leurs composantes irréductibles (en
+vertu de SERRE [7], il peut y avoir des composantes irréductibles qui se
+trouvent tout entières sur un nombre premier $\symup{p\neq0}$), serait fort
+intéressante. Rappelons la question de WEIL si les composantes irréductibles des
+fibres de $\symup{\underline{\operatorname{Hilb}}^P_r}$ sur les
+$\symup{s\in\operatorname{Spec}(\mathbf Z)}$ correspondent à des extensions
+"régulières" du corps premier, i. e. si elles sont "relativement connexes".
+Il n'est pas exclu que ces questions soient plus abordables pour les schémas de
+Hilbert que pour les "variétés de Chow".
+
+\fsection{4}{\normalfont\uline{Variantes}.}
+
+\noindent a. Sous les conditions de (3.1), soit $\symup{U}$ un ouvert dans $\symup{X}$, et
+désignons par $\symup{A'}$ le sous-foncteur de
+$\symup{A=\mathop{\text{\uwave{Quot}}}\nolimits_{\mathcal F/X/S}}$, tel que $\symup{A'(S')}$ soit
+l'ensemble des Modules quotients $\symup{\mathcal G}$ de $\symup{\mathcal F'}$, plats sur
+$\symup{S'}$, dont le support est contenu dans $\symup{U'}$. On voit aussitôt que $\symup{A'}$ est
+représentable par une partie ouverte du préschéma
+$\symup{\underline{\operatorname{Quot}}_{\mathcal F/X/S}}$ qui représente $\symup{A}$. Il s'ensuit que les
+théorèmes (3.1) et (3.2)
+\src{267}
+restent valables en supposant que $\symup{X}$ est \\uline{quasi-projectif} sur $\symup{S}$ au lieu de
+projectif sur $\symup{S}$, quand on remplace aussi dans les conclusions les mots
+"projectif" par "quasi-projectif", et qu'on désigne maintenant par
+$\symup{\mathop{\text{\uwave{Quot}}}\nolimits_{\mathcal F/X/S}(S')}$ l'ensemble des
+quotients cohérents $\symup{\mathcal G}$ de $\symup{\mathcal F'}$, plats sur $\symup{S'}$, \uline{dont le support est propre sur} $\symup{S'}$.
+
+\medskip
+\noindent b. De façon générale, on peut imposer aux quotients $\symup{G}$ de
+$\symup{\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}}$, plats sur $\symup{S'}$
+toutes sortes de conditions naturelles supplémentaires, stables par changement
+de base, obtenant ainsi autant de sous-foncteurs de
+$\symup{\mathop{\text{\uwave{Quot}}}\nolimits_{\mathcal F/X/S}}$ qu'on se propose de
+représenter. Le critère habituel permet dans beaucoup de cas de prouver qu'on
+obtient encore des foncteurs représentables par des parties ouvertes de
+$\symup{\underline{\operatorname{Quot}}_{\mathcal F/X/S}}$. Il en est en particulier ainsi
+lorsqu'on impose l'une des propriétés supplémentaires suivantes :
+
+\smallskip
+\noindent $\symup{1^\circ}$ Les dimensions des cycles premiers associés aux Modules
+$\symup{G_{s'}}$, ($\symup{s'\in S'}$) induits sur les fibres $\symup{X'_{s'}}$ appartiennent
+à un ensemble donné d'entiers.
+
+\smallskip
+\noindent $\symup{2^\circ}$ (Lorsque $\symup{\mathcal F=\mathcal O_X}$, donc $\symup{\mathcal G}$
+correspond à un sous-préschéma fermé $\symup{Y}$ de $\symup{X'}$) ; $\symup{Y}$ est un préschéma \\uline{simple}
+([3], IV) sur $\symup{S'}$, resp. \\uline{normal} sur $\symup{S'}$ (i. e. les fibres $\symup{Y_{s'}}$ sont normales
+"sur $\symup{k(s')}$", i. e. sont normales par toute extension du corps de base),
+resp. (lorsque $\symup{X}$ est plat sur $\symup{S}$) sont des $\symup{S'}$-intersections complètes
+locales dans $\symup{X'}$ relativement à $\symup{S'}$ (i. e. les fibres $\symup{Y_{s'}}$ sont des
+intersections complètes locales dans les $\symup{X_{s'}}$).
+
+D'autres conditions feraient intervenir des propriétés de nature
+cohomologique sur les Modules $\symup{G_{s'}}$ induits sur les $\symup{X'_{s'}}$,
+etc. Bien entendu, la conjonction de conditions dont chacune est représentée
+par un ouvert $\symup{U_i}$ de $\symup{\underline{\operatorname{Quot}}_{\mathcal F/X/S}}$, est représentée
+par l'ouvert intersection. Par exemple, considérant pour tout $\symup{S'}$ sur $\symup{S}$
+l'ensemble des sous-préschémas fermés $\symup{Y}$ de $\symup{X'=X\times_SS'}$ qui sont des
+revêtements étales ([3], I) de rang donné $\symup{r}$ de $\symup{S'}$, on trouve un foncteur
+contravariant représentable en $\symup{S'}$.
+
+\medskip
+\noindent c. Les préschémas $\symup{\underline{\operatorname{Hom}}_S(X,Y)}$,
+$\symup{\prod\limits_{X/S}(Z/X)}$, $\symup{\underline{\operatorname{Isom}}_S(X,Y)}$, définis dans [2], II, C,
+n\textsuperscript{o} 2, existent moyennant des hypothèses projectives
+convenables, et se réalisent comme des ouverts dans des préschémas de Hilbert
+convenables. Comme on a $\symup{\underline{\operatorname{Hom}}_S(X,Y)=\prod\limits_{X/S}((X\times Y)/X)}$, le cas de $\symup{\underline{\operatorname{Hom}}_S(X,Y)}$ se ramène à celui de $\symup{\prod\limits_{X/S}(Z/X)}$.
+On note alors que pour tout $\symup{S'}$ sur $\symup{S}$, l'ensemble des sections de
+$\symup{Z'=Z\times_SS'}$ sur $\symup{X'=X\times_SS'}$ est en correspondance biunivoque avec
+l'ensemble des sous-préschémas $\symup{\Gamma}$ de $\symup{Z'}$ (nécessairement fermés si $\symup{Z}$
+est séparé sur $\symup{X}$) tels que le morphisme $\symup{\Gamma\to X'}$ induit par
+$\symup{Z'\to X'}$ soit un isomorphisme. De cette façon,
+\src{268}
+\uline{lorsque} $\symup{X}$ \uline{est plat et propre sur} $\symup{S}$, \uline{et} $\symup{Z}$ \uline{est quasi-projectif sur} $\symup{S}$,
+$\symup{\prod\limits_{X/S}(Z/X)}$ \uline{existe et se réalise comme un sous-préschéma ouvert de}
+$\symup{\underline{\operatorname{Hilb}}_{Z/S}}$. \uline{Donc lorsque} $\symup{X}$ \uline{est projectif et plat sur} $\symup{S}$, \uline{et}
+$\symup{Y}$ \uline{quasi-projectif sur} $\symup{S}$, $\symup{\underline{\operatorname{Hom}}_S(X,Y)}$ \uline{existe et se réalise
+comme un sous-préschéma ouvert de}
+$\symup{\underline{\operatorname{Hilb}}_{(X\times_SY)/S}}$. Lorsque $\symup{X}$ et $\symup{Y}$ sont tous les deux
+projectifs sur $\symup{S}$, il s'ensuit aussitôt que $\symup{\underline{\operatorname{Isom}}_S(X,Y)}$
+existe également, et se représente par une partie ouverte de
+$\symup{\underline{\operatorname{Hom}}_S(X,Y)}$. De même, lorsque $\symup{X}$ est plat et projectif sur $\symup{S}$
+et $\symup{Y}$ quasi-projectif sur $\symup{S}$, le $\symup{S}$-préschéma
+$\symup{\underline{\operatorname{Imm}}_S(X/Y)}$, correspondant au sous-foncteur du foncteur
+représenté par $\symup{\underline{\operatorname{Hom}}_S(X,Y)}$ qui correspond aux
+$\symup{S'}$-homomorphismes $\symup{X'\to Y'}$ qui sont des immersions, est
+également représentable par une partie ouverte de
+$\symup{\underline{\operatorname{Hom}}_S(X,Y)}$.
+
+Soient $\symup{\mathcal L}$ (resp. $\symup{\mathcal M}$) un faisceau inversible sur $\symup{X}$ (resp.
+$\symup{Y}$) très ample relativement à $\symup{S}$, d'où un faisceau très ample
+$\symup{\mathcal L\otimes_{\mathcal O_S}\mathcal M}$ sur $\symup{X\times_SY}$ relativement à
+$\symup{S}$. Par suite, pour tout polynôme $\symup{P}$ à coefficients rationnels,
+$\symup{\underline{\operatorname{Hilb}}^P_{(X\times_SY)/S}}$ est défini et est un préschéma
+quasi-projectif sur $\symup{S}$. Il induit donc sur $\symup{\underline{\operatorname{Hom}}_S(X,Y)}$ une
+partie à la fois ouverte et fermée quasi-projective sur $\symup{S}$, que nous noterons
+$\symup{\underline{\operatorname{Hom}}_S(X,Y)^P}$. Donc les sections de
+$\symup{\underline{\operatorname{Hom}}_S(X,Y)^P}$ sur $\symup{S}$ sont les $\symup{S}$-morphismes
+$\symup{g:X\to Y}$ tels que pour tout entier $\symup{n}$, on ait
+\[
+\symup{\chi\!\left(\left(\mathcal L\otimes_{\mathcal O_X}g^*(\mathcal M)\right)^{
+\otimes n}\right)=P(n).}
+\]
+
+On obtient de cette façon des généralisations du théorème de Matsusaka,
+affirmant que les automorphismes d'une variété projective "polarisée" forment
+un groupe algébrique, assertion qui prend ici une signification évidemment plus
+précise, puisque nous disposons d'une définition de ce groupe comme solution
+d'un problème universel. On notera d'ailleurs que, sur un corps algébriquement
+clos, le groupe des automorphismes considéré anciennement est celui déduit du
+"vrai" défini ici en divisant par les éléments nilpotents ; cela explique
+pourquoi il y a peu de chance que les constructions plus anciennes puissent se
+faire sur un corps de base non parfait, l'Idéal des éléments nilpotents
+apparaissant après extension du corps de base n'étant pas nécessairement
+"défini sur $\symup{k}$". Cette même remarque s'applique d'ailleurs également à la
+plupart des constructions ancien style.
+
+\src{269}
+\fsection{5}{\normalfont\uline{Étude différentielle des schémas de Hilbert}.}
+
+Elle découle du résultat suivant :
+\result{PROPOSITION}{5.1} Soient $\symup{S}$ un préschéma, $\symup{S_0}$ un sous-préschéma
+défini par un Idéal quasi-cohérent $\symup{\mathcal J}$ de carré nul, $\symup{X}$ un
+$\symup{S}$-préschéma, $\symup{\mathcal F}$ un Module quasi-cohérent sur $\symup{X}$,
+$\symup{X_0=X\times_SS_0}$ et
+$\symup{\mathcal F_0=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S_0}}$, enfin
+$\symup{\mathcal G_0=\mathcal F_0/\mathcal K_0}$ un Module quotient quasi-cohérent de
+$\symup{\mathcal F_0}$, plat sur $\symup{S_0}$. Pour tout ouvert $\symup{U}$ de $\symup{X}$, soit
+$\symup{\mathcal E(U)}$ l'ensemble des Modules quotients quasi-cohérents $\symup{\mathcal G}$ de
+$\symup{\mathcal F|U}$, plats sur $\symup{S}$, et tels que
+$\symup{\mathcal G\otimes_{\mathcal O_S}\mathcal O_{S_0}=\mathcal G_0}$ ; ainsi pour
+$\symup{U}$ variable, les $\symup{\mathcal E(U)}$ sont les sections d'un faisceau $\symup{\mathcal E}$
+sur $\symup{X}$. Ceci posé, le faisceau en groupes
+\[
+\symup{\mathcal A=\underline{\operatorname{Hom}}_{\mathcal O_{X_0}}
+(\mathcal K_0,\mathcal G_0\otimes_{\mathcal O_{S_0}}\mathcal J)}
+\]
+opère de façon naturelle sur $\symup{\mathcal E}$, qui devient ainsi un faisceau
+"formellement principal homogène sous $\symup{\mathcal A}$" (i. e. pour tout ouvert
+$\symup{U}$ dans $\symup{X}$, $\symup{\mathcal E(U)}$ est vide ou un ensemble principal homogène sous
+$\symup{\mathcal A(U)}$).
+
+On en conclut :
+
+\result{COROLLAIRE}{5.2} Supposons qu'il existe localement sur $\symup{X}$ un
+prolongement $\symup{\mathcal G}$ de $\symup{\mathcal G_0}$ en un quotient de $\symup{\mathcal F}$ plat
+sur $\symup{S}$, (i. e. que les fibres du faisceau $\symup{\mathcal E}$ soient non vides). Alors
+il existe une classe d'obstruction canonique
+\[
+\symup{c(\mathcal G_0)\in H^1(X,\mathcal A),}
+\]
+dont l'annulation est nécessaire et suffisante pour l'existence d'un
+prolongement global $\symup{\mathcal G}$ de $\symup{\mathcal G_0}$ en un quotient de
+$\symup{\mathcal F}$ plat sur $\symup{S}$. Si cette classe est nulle, alors l'ensemble
+$\symup{\mathcal E(X)}$ de tous les prolongements possibles est un ensemble principal
+homogène sous $\symup{\mathcal A(X)=\operatorname{Hom}_{\mathcal O_X}(\mathcal K_0,\mathcal G_0\otimes_{\mathcal O_{S_0}}\mathcal J)}$.
+
+L'existence du prolongement global est alors garantie en particulier si
+$\symup{H^1(X,\mathcal A)=0}$.
+
+\result{COROLLAIRE}{5.3} Supposons que
+$\symup{Q=\underline{\operatorname{Quot}}_{\mathcal F/X/S}}$ existe (cf. 4. (a)) - par exemple que
+$\symup{X}$ soit quasi-projectif sur $\symup{S}$ localement noethérien, et $\symup{\mathcal F}$
+cohérent. Soit $\symup{x\in Q}$, correspondant à une extension résiduelle $\symup{K=k(x)}$
+d'un $\symup{k(s)}$ ($\symup{s\in S}$) :
+\src{270}
+donc $\symup{x}$ est défini par un Module quotient cohérent
+$\symup{\mathcal G_0=\mathcal F_0/\mathcal K_0}$ du Module
+$\symup{\mathcal F_0=F_K}$ sur le $\symup{K}$-préschéma $\symup{X_K}$. Soit $\symup{\mathcal A}$ le
+faisceau cohérent sur $\symup{X_K}$ défini par
+\[
+\symup{\mathcal A=\underline{\operatorname{Hom}}_{\mathcal O_{X_0}}(\mathcal K_0,\mathcal G_0).}
+\]
+Alors l'espace tangent de Zariski de la fibre $\symup{Q_s}$ au point $\symup{x}$ (dual sur $\symup{K}$
+de $\symup{m/m^2}$, où $\symup{m}$ est l'idéal maximal de
+$\symup{\mathcal O_{Q_K,x}}$) est canoniquement isomorphe à $\symup{H^0(X_K,\mathcal A)}$.
+
+Le résultat donnant l'espace tangent de Zariski peut se généraliser, et donne
+une caractérisation, pour un $\symup{S}$-morphisme donné $\symup{g:S'\to Q}$, i. e.
+une section $\symup{g'}$ de $\symup{Q'=Q\times_SS'}$ sur $\symup{S'}$, du Module
+\[
+\symup{\Omega=g^*(\Omega^1_{Q/S})=g'^*(\mathcal J/\mathcal J^2)}
+\]
+(où $\symup{\mathcal J}$ est l'Idéal sur $\symup{Q'}$ défini par la section $\symup{g'}$ de $\symup{Q'}$ sur
+$\symup{S'}$), par la formule fonctorielle en le Module cohérent $\symup{\mathcal M}$ sur $\symup{S'}$ :
+\[
+\symup{\operatorname{Hom}_{\mathcal O_{S'}}(\Omega,\mathcal M)
+\simeq H^0(X',\mathcal A),}
+\]
+où $\symup{\mathcal A}$ est encore le Module sur $\symup{X'=X\times_SS'}$ défini par
+\[
+\symup{\mathcal A=\underline{\operatorname{Hom}}_{\mathcal O_{X'}}
+(\mathcal K,\mathcal G\otimes_{\mathcal O_{S'}}\mathcal M),}
+\]
+
+($\symup{\mathcal G=\mathcal F'/\mathcal K}$ étant le Module quotient de
+$\symup{\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}}$ qui correspond à
+$\symup{g}$). Il suffit en effet d'appliquer (5.1) en y remplaçant $\symup{S_0}$ par $\symup{S'}$, $\symup{S}$
+par le préschéma $\symup{D(\mathcal M)=(S',\mathcal O_{S'}+\mathcal M)}$, où
+$\symup{\mathcal M}$ est considéré comme un Idéal de carré nul.
+
+Lorsque dans (5.1), on a $\symup{\mathcal F=\mathcal O_X}$, donc la donnée de
+$\symup{\mathcal G_0}$ correspond à la donnée d'un sous-préschéma fermé $\symup{Y_0}$ de $\symup{X_0}$
+plat sur $\symup{S_0}$ défini par l'Idéal $\symup{\mathcal J_0=\mathcal K_0}$, alors (5.1) donne
+\[
+\symup{\mathcal A=\underline{\operatorname{Hom}}_{\mathcal O_{X_0}}
+(\mathcal J_0/\mathcal J_0^2,
+\mathcal O_{Y_0}\otimes_{\mathcal O_{S_0}}\mathcal J),}
+\]
+où $\symup{\mathcal J_0/\mathcal J_0^2}$ s'interprète comme le \uline{faisceau conormal} à $\symup{Y_0}$
+dans $\symup{X_0}$, qu'on note aussi
+\src{271}
+$\symup{\mathcal N_{Y_0/X_0}}$ ; il y a alors intérêt à considérer $\symup{\mathcal A}$
+comme un Module sur $\symup{Y_0}$, et de calculer $\symup{H^0}$ et $\symup{H^1}$ sur $\symup{Y_0}$. D'ailleurs,
+si $\symup{Y_0}$ est localement une intersection complète dans $\symup{X_0}$, $\symup{X}$ étant plat
+sur $\symup{S}$, alors dans (5.1) la possibilité de prolongement local est garantie,
+d'autre part $\symup{\mathcal J_0/\mathcal J_0^2}$ est localement libre sur $\symup{Y_0}$ et on peut
+écrire
+\[
+\symup{\mathcal A=\check{\mathcal N}_{X_0/Y_0}\otimes_{\mathcal O_{S_0}}\mathcal J,}
+\]
+où le premier facteur du deuxième membre est le faisceau normal à $\symup{Y_0}$ dans
+$\symup{X_0}$. Utilisant le critère fondamental de simplicité ([3], III, 3.1), on
+trouve par exemple :
+
+\result{COROLLAIRE}{5.4} Sous les conditions de (5.3), supposons que
+$\symup{\mathcal F=\mathcal O_X}$, $\symup{X}$ plat sur $\symup{S}$, et que le sous-préschéma fermé
+$\symup{Y_0}$ de $\symup{X_0}$ qui correspond à $\symup{\mathcal G_0}$ soit localement une intersection
+complète. Alors l'espace tangent de Zariski à $\symup{Q_s}$ en $\symup{x}$ est canoniquement
+isomorphe à $\symup{H^0(Y_0,\check{\mathcal N}_{X_0/Y_0})}$. Si
+$\symup{H^1(Y_0,\check{\mathcal N}_{X_0/Y_0})=0}$, alors le préschéma de Hilbert
+$\symup{Q}$ est simple sur $\symup{S}$ en le point $\symup{x}$.
+($\symup{\check{\mathcal N}_{X_0/Y_0}}$ est le faisceau normal à $\symup{Y_0}$ dans $\symup{X_0}$.)
+
+\result{REMARQUE}{5.5} Cet énoncé s'applique en particulier lorsque $\symup{Y_0}$ est
+une intersection complète dans $\symup{X_0}$ définie par \uline{une} équation, i. e. est un
+"diviseur de Cartier" positif. Alors $\symup{\check{\mathcal N}_{X_0/Y_0}}$ est isomorphe au
+faisceau sur $\symup{Y_0}$ induit par le faisceau inversible $\symup{\mathcal J_0^{-1}}$ sur
+$\symup{X_0}$ défini par le diviseur $\symup{Y_0}$. C'est la situation rencontrée en particulier
+dans l'étude des familles de diviseurs positifs sur une variété projective non
+singulière $\symup{X_0}$. L'isomorphisme entre l'espace tangent de Zariski en le point
+$\symup{x}$ de $\symup{Q}$ (ou si on préfère, de l'ouvert $\symup{D}$ de $\symup{Q}$ qui correspond aux
+diviseurs) et $\symup{\mathcal H^0(Y_0,\check{\mathcal N}_{X_0/Y_0})}$ était connu en géométrie
+algébrique classique sous le nom de "\uline{homomorphisme caractéristique}" du premier
+dans le second. Il n'était défini que lorsque $\symup{x}$ était un point simple de la
+variété des paramètres $\symup{T}$ d'une "famille continue complète" de diviseurs,
+c'est-à-dire, de notre point de vue, une composante irréductible du schéma
+$\symup{D}$, munie de la structure \uline{réduite} induite. L'espace tangent à $\symup{T}$ en $\symup{x}$ est alors
+un \uline{sous-espace} de l'espace tangent à $\symup{D}$ en $\symup{x}$, donc l'homomorphisme
+caractéristique des anciens est bien injectif, mais n'est surjectif que sous des
+conditions supplémentaires, par exemple si $\symup{D}$ est intègre en $\symup{x}$. En fait,
+ZAPPA [8] a construit un exemple
+\src{272}
+(avec $\symup{X}$ surface projective non singulière sur le \uline{corps des complexes}) où même
+en le point générique de $\symup{T}$, l'homomorphisme caractéristique n'est pas
+surjectif. \uline{Cela signifie donc que} $\symup{D}$ \uline{n'est pas intègre même en le point
+générique de la composante irréductible envisagée}. Cela montre de façon
+particulièrement frappante comment les variétés à éléments nilpotents sont
+nécessaires pour comprendre des phénomènes de la plus classique théorie des
+surfaces.
+
+5.6. - On a donné dans (5.4) un critère de simplicité, s'appliquant en particulier aux
+schémas de diviseurs. KODAIRA a donné dans [6] un critère différent, savoir la
+nullité de $\symup{H^1(X_0,\mathcal L)}$, où $\symup{\mathcal L=\mathcal J_0^{-1}}$ est le
+faisceau inversible sur $\symup{X_0}$ défini par le diviseur $\symup{Y_0}$ ; critère valable
+lorsque $\symup{S}$ est le spectre d'un corps de caractéristique 0, et prouvé dans [6]
+par voie transcendante dans le cas où le corps de base est $\symup{\text{\uwave{C}}}$. Notons
+ici que, de façon générale, $\symup{S}$ étant à nouveau quelconque, la condition de
+Kodaira est une condition suffisante pour que le morphisme canonique $\symup{D\to\underline{\operatorname{Pic}}_{X/S}}$ du préschéma des diviseurs dans le préschéma de Picard de $\symup{X/S}$ soit simple au
+point $\symup{x}$ envisagé (comme on le vérifie facilement par le critère habituel de
+simplicité, une fois acquise l'existence de $\symup{\underline{\operatorname{Pic}}_{X/S}}$). Si
+donc, de plus, $\symup{\underline{\operatorname{Pic}}_{X/S}}$ est simple sur $\symup{S}$ au point image de
+$\symup{x}$ (par exemple si $\symup{\underline{\operatorname{Pic}}_{X/S}}$ est simple sur $\symup{S}$), alors $\symup{D}$
+est simple sur $\symup{S}$ en $\symup{x}$. D'autre part, CARTIER a démontré que tout préschéma
+en groupes localement de type fini sur \uline{un corps} $\symup{k}$ \uline{de caractéristique} 0 est
+simple sur $\symup{k}$. En conjuguant ces deux résultats, on retrouve le résultat de
+KODAIRA. On notera qu'il résulte de ces remarques que sur un corps $\symup{K}$ de
+caractéristique $\symup{p>0}$, lorsque $\symup{\underline{\operatorname{Pic}}_{X/S}}$ n'est pas simple sur
+$\symup{K}$ (ce qui est le cas lorsque $\symup{X}$ est la surface de Igusa), la condition
+$\symup{H^1(X_0,\mathcal L)=0}$ implique au contraire que $\symup{D}$ n'est pas simple en $\symup{x}$,
+et même n'est pas réduit en $\symup{x}$ si $\symup{K}$ est algébriquement clos.
+
+Pour finir, signalons encore le résultat suivant, qui joue un rôle important
+dans l'étude différentielle des espaces fibrés :
+
+\result{PROPOSITION}{5.7} Soient $\symup{X}$ un préschéma fini et plat sur $\symup{S}$
+localement noethérien, et soit $\symup{Z}$ un préschéma sur $\symup{X}$, tel que
+$\symup{\prod\limits_{X/S}(Z/X)}$ existe (ce qui est le cas si $\symup{Z}$ est quasi-projectif sur $\symup{X}$).
+Si alors $\symup{Z}$ est simple sur $\symup{X}$, $\symup{\prod\limits_{X/S}(Z/X)}$ est simple sur $\symup{S}$.
+
+C'est une conséquence immédiate de la définition, et du critère habituel de
+simplicité ([3], III, 3.1). Remarquons que lorsque $\symup{X}$ est fini et plat sur
+$\symup{S}$, la question de l'existence de $\symup{\prod\limits_{X/S}(Z/X)}$ peut se traiter très élémentairement, sans
+\src{273}
+utiliser la théorie des schémas de Hilbert. On trouve par exemple que si $\symup{X}$
+est radiciel sur $\symup{S}$, alors $\symup{\prod\limits_{X/S}(Z/X)}$ existe sans aucune restriction sur
+$\symup{Z}$. Par exemple, soit $\symup{T}$ un $\symup{S}$-préschéma, et soit $\symup{T_n}$ le "voisinage
+infinitésimal d'ordre $\symup{n}$" de la diagonale de $\symup{T\times_ST}$ dans $\symup{T\times_ST}$,
+muni des morphismes $\symup{p_1,p_2:T_n\to T}$ induits par les deux
+projections. On considère $\symup{T_n}$ comme un préschéma fini sur $\symup{T}$ grâce à $\symup{p_1}$,
+supposons-le de plus plat sur $\symup{T}$ (ce qui est le cas si $\symup{T}$ est simple sur $\symup{S}$).
+Pour tout préschéma $\symup{X}$ sur $\symup{T}$, posons
+\[
+\symup{(X/T/S)^{(n)}=
+\prod\limits_{T_n/T}\bigl(p_2^*(X/T)/T_n\bigr),}
+\]
+
+c'est un préschéma sur $\symup{T}$ appelé \uline{fibré des germes de sections d'ordre}
+$\symup{n}$ \uline{de} $\symup{X}$ \uline{sur} $\symup{T}$ (relativement à $\symup{S}$). Il dépend fonctoriellement de $\symup{X}$, et
+est simple sur $\symup{T}$ si $\symup{X}$ l'est.
+
+\fsection{6}{\normalfont\uline{Relations avec la notion de norme et les produits symétriques}.}
+
+Soient $\symup{S}$ un préschéma, $\symup{X}$ et $\symup{Y}$ des $\symup{S}$-préschémas,
+\[
+\symup{u:(X/S)^n\to Y}
+\]
+un $\symup{S}$-morphisme \uline{symétrique} de la puissance cartésienne $\symup{n}$-ième de $\symup{X/S}$ dans
+$\symup{Y}$. Nous supposerons pour simplifier $\symup{S}$ localement noethérien, et $\symup{X}$ et $\symup{Y}$
+de type fini sur $\symup{S}$. On peut alors, à tout Module cohérent $\symup{\mathcal F}$ sur
+$\symup{X}$, à support fini sur $\symup{S}$, plat sur $\symup{S}$ et de rang relatif sur $\symup{S}$ égal à $\symup{n}$
+(i. e. tel que $\symup{f_*(\mathcal F)}$ soit un Module localement libre de rang $\symup{n}$ sur
+$\symup{S}$), faire correspondre de façon naturelle une section de $\symup{Y}$ sur $\symup{S}$ :
+\[
+\symup{\mathcal N^u_{X/S}(\mathcal F)\in\Gamma(Y/S).}
+\]
+Nous ne donnerons pas ici la définition en forme, nous contentant de signaler
+que le formalisme auquel on arrive est une généralisation naturelle du
+formalisme habituel des normes et traces. Lorsque la puissance symétrique $\symup{n}$-ième de $\symup{X}$ sur $\symup{S}$ existe (par exemple lorsque les orbites du groupe symétrique $\symup{\mathfrak S_n}$ opérant sur $\symup{(X/S)^n}$ sont contenues dans des ouverts affines), on peut prendre pour $\symup{Y}$ cette puissance symétrique $\symup{\operatorname{Symm}^n_S(X)}$, et on trouve un élément canonique
+\[
+\symup{\mathcal N_{X/S}(\mathcal F)\in\Gamma(\operatorname{Symm}^n_S(X)/S),}
+\]
+\src{274}
+qui permet de retrouver les $\symup{\mathcal N^u_{X/S}(F)}$. Un autre cas important
+est celui où $\symup{X}$ est un monoïde commutatif sur $\symup{S}$, et $\symup{X=Y}$, le morphisme $\symup{u}$
+provenant de la loi de composition de $\symup{X}$. On écrira alors simplement
+$\symup{\mathcal N(\mathcal F)}$ pour la section de $\symup{X}$ sur $\symup{S}$ associée au Module
+$\symup{\mathcal F}$ sur $\symup{X}$.
+
+Supposons maintenant que l'on ait un Module cohérent $\symup{\mathcal F}$ sur $\symup{X}$, tel
+que $\symup{\underline{\operatorname{Quot}}_{\mathcal F/X/S}}$ existe, ou du moins tel que le
+foncteur $\symup{\mathop{\text{\uwave{Quot}}}\nolimits^n_{\mathcal F/X/S}}$ qui associe à
+tout $\symup{S'}$ sur $\symup{S}$ l'ensemble des faisceaux quotients cohérents $\symup{\mathcal M}$ de
+$\symup{\mathcal F'=\mathcal F\otimes_{\mathcal O_S}\mathcal O_{S'}}$ qui sont plats
+sur $\symup{S'}$ et de rang relatif $\symup{n}$, soit représentable par un $\symup{S}$-préschéma
+$\symup{\underline{\operatorname{Quot}}^n_{\mathcal F/X/S}}$ (Lorsque $\symup{X}$ est quasi-projectif sur
+$\symup{S}$, alors $\symup{\underline{\operatorname{Quot}}^n_{\mathcal F/X/S}}$ existe bien, et n'est
+autre, avec les notations du numéro 3, que
+$\symup{\underline{\operatorname{Quot}}^P_{\mathcal F/X/S}}$, où $\symup{P}$ est le polynôme réduit au
+terme constant $\symup{n}$.) Comme la formation des $\symup{\mathcal N^u_{X/S}(\mathcal M)}$ est
+compatible avec le changement de base, on obtient alors un morphisme canonique
+\[
+\symup{\mathcal N^u_{X/S}:\underline{\operatorname{Quot}}^n_{\mathcal F/X/S}\to Y,}
+\]
+en particulier, si la puissance symétrique $\symup{n}$-ième de $\symup{X}$ sur $\symup{S}$ existe :
+\[
+\symup{\mathcal N_{X/S}:\underline{\operatorname{Quot}}^n_{\mathcal F/X/S}\to\operatorname{Symm}^n_S(X).}
+\]
+Le cas le plus important est celui où $\symup{\mathcal F=\mathcal O_X}$, qui donne un morphisme :
+\[
+\symup{\mathcal N_{X/S}:\underline{\operatorname{Hilb}}^n_{X/S}
+\to\operatorname{Symm}^n_S(X).}
+\]
+C'est évidemment un isomorphisme pour $\symup{n=0}$ ou $\symup{n=1}$. Mais pour
+$\symup{n>1}$, même
+si $\symup{S}$ est le spectre d'un corps $\symup{k}$, et lorsque $\symup{X}$ est simple sur $\symup{S}$, ce
+n'est pas en général un isomorphisme ni même un morphisme injectif, puisque un
+sous-schéma de dimension 0 de $\symup{X}$ (correspondant par exemple à un idéal
+$\symup{i}$ primaire pour l'idéal maximal dans un anneau local
+$\symup{\mathcal O_{X,x}}$, pour un point fermé $\symup{x}$ de $\symup{X}$) n'est pas connu quand on
+connaît le cycle qu'il définit (en l'occurrence, quand on connaît la codimension
+sur $\symup{k}$ de $\symup{i}$ dans $\symup{\mathcal O_{X,x}}$). On peut seulement dire ceci
+($\symup{S}$ étant de nouveau quelconque) :
+
+\medskip
+\noindent a. Si $\symup{X}$ est simple sur $\symup{S}$, alors le morphisme-norme définit un
+isomorphisme de l'ouvert de $\symup{\underline{\operatorname{Hilb}}^n_{X/S}}$ qui correspond à la
+classification de revêtements étales de rang $\symup{n}$ contenus dans $\symup{X}$ (cf.
+n\textsuperscript{o} 4, (b)), avec l'ouvert de
+$\symup{\operatorname{Symm}^n_S(X)}$ qui correspond aux $\symup{n}$-cycles sans composantes
+multiples.
+\src{275}
+
+\medskip
+\noindent b. Si de plus $\symup{X}$ est de dimension relative 1 sur $\symup{S}$, alors le
+morphisme norme définit même un isomorphisme de
+$\symup{\underline{\operatorname{Hilb}}^n_{X/S}}$ avec $\symup{\operatorname{Symm}^n_{X/S}}$.
+
+Ce dernier fait est dû à ce qu'un sous-schéma de dimension 0 d'une courbe
+algébrique non singulière est connu quand on connaît le cycle correspondant. La
+même remarque s'applique d'ailleurs plus généralement aux diviseurs de Cartier,
+positifs sur un schéma algébrique non singulier (et il n'est pas exclu que dans
+ce cas très particulier, la variété de Chow donne la même chose que le schéma
+de Hilbert).
+
+\fsection{7}{\normalfont\uline{Compléments et questions}.}
+
+Comme l'a remarqué J.-P. SERRE, il résulte d'un exemple bien connu de NAGATA
+qu'on peut trouver un schéma $\symup{S}$, spectre d'un corps $\symup{k}$, un $\symup{S}$-schéma $\symup{S'}$,
+spectre d'une extension quadratique $\symup{k'}$ de $\symup{k}$, enfin un $\symup{S'}$-schéma $\symup{X}$
+propre et simple (mais non projectif) de dimension 3, tel que
+$\symup{\prod\limits_{S'/S}(X/S')}$ n'existe pas. Cela implique a fortiori que le schéma de
+Hilbert $\symup{\underline{\operatorname{Hilb}}^2_{X/S}}$ n'existe pas (ni même le $\symup{k}$-schéma qui
+représenterait les revêtements étales de rang 2 de $\symup{S}$ contenus dans $\symup{X}$, ni a
+fortiori le carré symétrique de $\symup{X}$, cf. numéro précédent). Cela impose donc
+des limitations sérieuses aux possibilités de constructions non projectives en
+Géométrie algébrique. (Il est cependant plausible que de telles limitations ne
+se présenteront pas en Géométrie analytique, pas plus qu'elles ne se présentent
+en Géométrie formelle, (cf. [2], II)). Par contre, si $\symup{X}$ est un schéma propre
+sur le spectre $\symup{S}$ d'un corps $\symup{k}$, et si $\symup{Z}$ est quasi-projectif sur $\symup{X}$, alors
+$\symup{\prod\limits_{X/S}(Z/X)}$ existe, et est un schéma, somme d'une suite de schémas
+quasi-projectifs sur $\symup{S}$ (comme dans le cas projectif (3.1)). Pour le voir, on
+se ramène en effet au cas où $\symup{X}$ est lui-même projectif, en dominant $\symup{X}$ par un
+$\symup{S}$-schéma projectif $\symup{X'}$ ; nous ne donnerons pas ici le détail de la
+démonstration, qui utilise aussi le résultat de factorisation d'un morphisme
+fini signalé dans [2], I, A, n\textsuperscript{o} 2 (b). Le succès de la méthode
+tient au fait que, $\symup{S}$ étant le spectre d'un corps, le $\symup{X'}$ qui intervient dans
+le lemme de Chow sera automatiquement plat sur $\symup{S}$.
+J'ignore si le résultat reste valable sans hypothèse sur $\symup{S}$, en supposant
+seulement $\symup{X}$ propre et plat sur $\symup{S}$, $\symup{Z}$ quasi-projectif sur $\symup{X}$. Un cas
+important dans les applications est celui où $\symup{Z}$ est un sous-schéma fermé de
+$\symup{X}$ ; si alors $\symup{\prod\limits_{X/S}(Z/X)}$ existe, c'est nécessairement un sous-schéma
+fermé de $\symup{S}$. On peut le
+\src{276}
+construire directement de façon assez simple lorsque $\symup{X}$ est projectif sur $\symup{S}$,
+sans utiliser la théorie des schémas de Hilbert, et la méthode employée montre
+plus généralement que si $\symup{Z}$ est affine sur $\symup{X}$, alors $\symup{\prod\limits_{X/S}(Z/X)}$ existe
+et est affine sur $\symup{S}$. Elle montre également que si $\symup{X}$ est propre et plat sur
+$\symup{S}$ (pas nécessairement projectif sur $\symup{S}$), alors pour tout fibré vectoriel $\symup{Z}$
+localement trivial sur $\symup{X}$, $\symup{\prod\limits_{X/S}(Z/X)}$ existe, et est un fibré vectoriel
+sur $\symup{S}$. Il serait désirable que ces résultats soient repris et unifiés.
+
+\begin{center}BIBLIOGRAPHIE\end{center}
+\addcontentsline{toc}{section}{Bibliographie}
+
+\begin{description}
+\item[{\normalfont[1]}] BOREL (A.) et SERRE (J.-P.). - Le théorème de Riemann-Roch,
+Bull. Soc. math. France, t. 86, 1958, p. 97-136.
+
+\item[{\normalfont[2]}] GROTHENDIECK (Alexander). - Technique de construction et
+théorèmes d'existence en géométrie algébrique, I., II., III., Séminaire
+Bourbaki, t. 13, 1959/60, n\textsuperscript{o} 190, 29 p.,
+n\textsuperscript{o} 195, 22 p. ; et t. 14, 1960/61,
+n\textsuperscript{o} 212, 20 p.
+
+\item[{\normalfont[3]}] GROTHENDIECK (Alexander). - Séminaire de Géométrie algébrique,
+I., II., III., IV. - Paris, Institut des hautes Études scientifiques, 1960/61
+(multigraphié).
+
+\item[{\normalfont[4]}] GROTHENDIECK (Alexander). - Technique de construction en
+géométrie analytique, IV., V., Séminaire Cartan, t. 13, 1960/61,
+n\textsuperscript{o} 11 et 12.
+
+\item[{\normalfont[5]}] GROTHENDIECK (A.) et DIEUDONNÉ (J.). - Éléments de
+géométrie algébrique, I : Le langage des schémas. - Paris, Presses
+universitaires de France, 1960 (Institut des hautes Études scientifiques,
+Publications mathématiques, 4) ; II., III., IV. (à paraître).
+
+\item[{\normalfont[6]}] KODAIRA (K.). - Characteristic linear systems of complete
+continuous systems, Amer. J. of Math., t. 78, 1956, p. 716-744.
+
+\item[{\normalfont[7]}] SERRE (Jean-Pierre). - Exemples de variétés projectives en
+caractéristique $\symup{p}$ non relevables en caractéristique 0, Proc. Nat. Acad.
+Sc. U. S. A., t. 47, 1961, p. 108-109.
+
+\item[{\normalfont[8]}] ZAPPA (G.). - Sull'esistenza, sopra le superficie algebriche, di
+sistemi continui completi infiniti, la cui curva è a serie caratteristica
+incompleta, Pont. Acad. Sc. Acta, t. 9, 1945, p. 91-93.
+\end{description}
+
+\begin{center}ADDITIF\end{center}
+\addcontentsline{toc}{section}{Additif}
+\begin{center}
+[ajouté à la correction des épreuves]
+\end{center}
+
+Il apparaît maintenant que les conjectures de [2], III,
+n\textsuperscript{o} 8, sont fausses, même pour des variétés non singulières sur
+un corps de caractéristique 0, tant en ce qui concerne l'existence que la
+quasi-projectivité du quotient, et même lorsque $\symup{\mathfrak G}$ opère avec un graphe fermé.
+
+\begin{center}
+  \rule{.14\linewidth}{.3pt}
+\end{center}

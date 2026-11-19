@@ -1,0 +1,205 @@
+layer	category	source	line	message	log_line
+fr	warning	sources/fr/fr/epstopdf-base.sty		Package epstopdf Warning: Shell escape feature is not enabled.	253
+fr	warning	sources/fr/fr/main.tex		Package unicode-math Warning: Using \overbracket and \underbracket from	261
+fr	warning	sources/fr/fr/main.tex		Package unicode-math Warning: I'm going to overwrite the following commands	268
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	296
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	300
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	304
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	308
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	312
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	316
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	320
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	324
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	328
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	332
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	336
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	340
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	396
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	460
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	550
+fr	error	sources/fr/fr/149.tex	516	Missing $ inserted.	590
+fr	error	sources/fr/fr/149.tex	516	Display math should end with $$.	596
+fr	error	sources/fr/fr/149.tex	517	LaTeX Error: \symupallowed only in math mode.	602
+fr	error	sources/fr/fr/149.tex	521	Missing $ inserted.	611
+fr	error	sources/fr/fr/149.tex	521	Missing $ inserted.	617
+fr	error	sources/fr/fr/149.tex	522	LaTeX Error: Bad math environment delimiter.	624
+fr	error	sources/fr/fr/149.tex	522	You can't use `\leqno' in horizontal mode.	633
+fr	error	sources/fr/fr/149.tex	522	Missing $ inserted.	639
+fr	error	sources/fr/fr/149.tex	522	Display math should end with $$.	645
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	697
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	777
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	850
+fr	warning	sources/fr/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	914
+fr	warning	sources/fr/fr/149.tex		LaTeX Warning: Marginpar on page 18 moved.	989
+fr	warning	sources/fr/fr/e149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	998
+fr	warning	sources/fr/fr/e149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1002
+fr	warning	sources/fr/fr/e149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1006
+fr	warning	sources/fr/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1019
+fr	error	sources/fr/fr/182.tex	48	Undefined control sequence.	1022
+fr	error	sources/fr/fr/182.tex	48	Double subscript.	1028
+fr	error	sources/fr/fr/182.tex	98	Undefined control sequence.	1037
+fr	error	sources/fr/fr/182.tex	98	Double subscript.	1043
+fr	warning	sources/fr/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1050
+fr	error	sources/fr/fr/182.tex	132	Undefined control sequence.	1056
+fr	error	sources/fr/fr/182.tex	132	Double subscript.	1062
+fr	error	sources/fr/fr/182.tex	136	Undefined control sequence.	1068
+fr	error	sources/fr/fr/182.tex	136	Double subscript.	1074
+fr	warning	sources/fr/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1081
+fr	error	sources/fr/fr/182.tex	285	Extra }, or forgotten \endgroup.	1092
+fr	warning	sources/fr/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1099
+fr	error	sources/fr/fr/182.tex	356	Undefined control sequence.	1102
+fr	error	sources/fr/fr/182.tex	356	Double subscript.	1108
+fr	warning	sources/fr/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1118
+fr	error	sources/fr/fr/182.tex	458	Undefined control sequence.	1127
+fr	error	sources/fr/fr/182.tex	477	Undefined control sequence.	1133
+fr	warning	sources/fr/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1140
+fr	warning	sources/fr/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1144
+fr	warning	sources/fr/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1148
+fr	warning	sources/fr/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1152
+fr	warning	sources/fr/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1156
+fr	error	sources/fr/fr/182.tex	543	Undefined control sequence.	1162
+fr	error	sources/fr/fr/182.tex	543	Double subscript.	1168
+fr	warning	sources/fr/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1180
+fr	error	sources/fr/fr/182.tex	754	Undefined control sequence.	1183
+fr	warning	sources/fr/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1193
+fr	warning	sources/fr/fr/e182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1236
+fr	warning	sources/fr/fr/e182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1240
+fr	warning	sources/fr/fr/e182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1244
+fr	error	sources/fr/fr/190.tex	1258	Double superscript.	1314
+fr	warning	sources/fr/fr/e190.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1333
+fr	warning	sources/fr/fr/e190.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1337
+fr	warning	sources/fr/fr/e190.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1341
+fr	warning	sources/fr/fr/195.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1354
+fr	error	sources/fr/fr/195.tex	219	Limit controls must follow a math operator.	1364
+fr	warning	sources/fr/fr/195.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1378
+fr	warning	sources/fr/fr/195.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1385
+fr	warning	sources/fr/fr/e195.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1409
+fr	warning	sources/fr/fr/e195.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1413
+fr	warning	sources/fr/fr/e195.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1417
+fr	warning	sources/fr/fr/212.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1450
+fr	warning	sources/fr/fr/212.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1459
+fr	warning	sources/fr/fr/212.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1466
+fr	warning	sources/fr/fr/212.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1473
+fr	warning	sources/fr/fr/e212.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1485
+fr	warning	sources/fr/fr/e212.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1489
+fr	warning	sources/fr/fr/e212.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1493
+fr	warning	sources/fr/fr/e221.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1550
+fr	warning	sources/fr/fr/e221.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1554
+fr	warning	sources/fr/fr/e221.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1558
+fr	warning	sources/fr/fr/e232.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1680
+fr	warning	sources/fr/fr/e232.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1684
+fr	warning	sources/fr/fr/e232.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1688
+fr	warning	sources/fr/fr/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1701
+fr	warning	sources/fr/fr/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1705
+fr	warning	sources/fr/fr/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1709
+fr	warning	sources/fr/fr/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1747
+fr	warning	sources/fr/fr/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1751
+fr	warning	sources/fr/fr/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1755
+fr	warning	sources/fr/fr/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1759
+fr	warning	sources/fr/fr/e236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1779
+fr	warning	sources/fr/fr/e236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1783
+fr	warning	sources/fr/fr/e236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1787
+fr	error	sources/fr/fr/main.tex		error:  (file lasy6) (type 3): font lasy6 at 600 not found	1833
+fr	error	sources/fr/fr/main.tex		==> Fatal error occurred, no output PDF file produced!	1834
+fr_printed	warning	sources/fr_printed/fr/epstopdf-base.sty		Package epstopdf Warning: Shell escape feature is not enabled.	253
+fr_printed	warning	sources/fr_printed/fr/main.tex		Package unicode-math Warning: Using \overbracket and \underbracket from	261
+fr_printed	warning	sources/fr_printed/fr/main.tex		Package unicode-math Warning: I'm going to overwrite the following commands	268
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	296
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	300
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	304
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	308
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	312
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	316
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	320
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	324
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	328
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	332
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	336
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	340
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	396
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	460
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	548
+fr_printed	error	sources/fr_printed/fr/149.tex	513	Missing $ inserted.	588
+fr_printed	error	sources/fr_printed/fr/149.tex	513	Display math should end with $$.	594
+fr_printed	error	sources/fr_printed/fr/149.tex	514	LaTeX Error: \symupallowed only in math mode.	600
+fr_printed	error	sources/fr_printed/fr/149.tex	518	Missing $ inserted.	609
+fr_printed	error	sources/fr_printed/fr/149.tex	518	Missing $ inserted.	615
+fr_printed	error	sources/fr_printed/fr/149.tex	519	LaTeX Error: Bad math environment delimiter.	622
+fr_printed	error	sources/fr_printed/fr/149.tex	519	You can't use `\leqno' in horizontal mode.	631
+fr_printed	error	sources/fr_printed/fr/149.tex	519	Missing $ inserted.	637
+fr_printed	error	sources/fr_printed/fr/149.tex	519	Display math should end with $$.	643
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	694
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	777
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	850
+fr_printed	warning	sources/fr_printed/fr/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	915
+fr_printed	warning	sources/fr_printed/fr/149.tex		LaTeX Warning: Marginpar on page 18 moved.	990
+fr_printed	warning	sources/fr_printed/fr/e149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	999
+fr_printed	warning	sources/fr_printed/fr/e149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1003
+fr_printed	warning	sources/fr_printed/fr/e149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1007
+fr_printed	warning	sources/fr_printed/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1020
+fr_printed	error	sources/fr_printed/fr/182.tex	48	Undefined control sequence.	1023
+fr_printed	error	sources/fr_printed/fr/182.tex	48	Double subscript.	1029
+fr_printed	error	sources/fr_printed/fr/182.tex	98	Undefined control sequence.	1038
+fr_printed	error	sources/fr_printed/fr/182.tex	98	Double subscript.	1044
+fr_printed	warning	sources/fr_printed/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1051
+fr_printed	error	sources/fr_printed/fr/182.tex	132	Undefined control sequence.	1057
+fr_printed	error	sources/fr_printed/fr/182.tex	132	Double subscript.	1063
+fr_printed	error	sources/fr_printed/fr/182.tex	136	Undefined control sequence.	1069
+fr_printed	error	sources/fr_printed/fr/182.tex	136	Double subscript.	1075
+fr_printed	warning	sources/fr_printed/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1082
+fr_printed	error	sources/fr_printed/fr/182.tex	285	Extra }, or forgotten \endgroup.	1093
+fr_printed	warning	sources/fr_printed/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1100
+fr_printed	error	sources/fr_printed/fr/182.tex	356	Undefined control sequence.	1103
+fr_printed	error	sources/fr_printed/fr/182.tex	356	Double subscript.	1109
+fr_printed	warning	sources/fr_printed/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1119
+fr_printed	error	sources/fr_printed/fr/182.tex	458	Undefined control sequence.	1128
+fr_printed	error	sources/fr_printed/fr/182.tex	477	Undefined control sequence.	1134
+fr_printed	warning	sources/fr_printed/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1141
+fr_printed	warning	sources/fr_printed/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1145
+fr_printed	warning	sources/fr_printed/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1149
+fr_printed	warning	sources/fr_printed/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1153
+fr_printed	warning	sources/fr_printed/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1157
+fr_printed	error	sources/fr_printed/fr/182.tex	543	Undefined control sequence.	1163
+fr_printed	error	sources/fr_printed/fr/182.tex	543	Double subscript.	1169
+fr_printed	warning	sources/fr_printed/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1181
+fr_printed	error	sources/fr_printed/fr/182.tex	754	Undefined control sequence.	1184
+fr_printed	warning	sources/fr_printed/fr/182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1194
+fr_printed	warning	sources/fr_printed/fr/e182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1237
+fr_printed	warning	sources/fr_printed/fr/e182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1241
+fr_printed	warning	sources/fr_printed/fr/e182.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1245
+fr_printed	error	sources/fr_printed/fr/190.tex	1258	Double superscript.	1315
+fr_printed	warning	sources/fr_printed/fr/e190.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1334
+fr_printed	warning	sources/fr_printed/fr/e190.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1338
+fr_printed	warning	sources/fr_printed/fr/e190.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1342
+fr_printed	warning	sources/fr_printed/fr/195.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1355
+fr_printed	error	sources/fr_printed/fr/195.tex	219	Limit controls must follow a math operator.	1365
+fr_printed	warning	sources/fr_printed/fr/195.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1379
+fr_printed	warning	sources/fr_printed/fr/195.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1386
+fr_printed	warning	sources/fr_printed/fr/e195.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1410
+fr_printed	warning	sources/fr_printed/fr/e195.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1414
+fr_printed	warning	sources/fr_printed/fr/e195.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1418
+fr_printed	warning	sources/fr_printed/fr/212.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1451
+fr_printed	warning	sources/fr_printed/fr/212.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1458
+fr_printed	warning	sources/fr_printed/fr/212.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1465
+fr_printed	warning	sources/fr_printed/fr/212.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1472
+fr_printed	warning	sources/fr_printed/fr/e212.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1486
+fr_printed	warning	sources/fr_printed/fr/e212.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1490
+fr_printed	warning	sources/fr_printed/fr/e212.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1494
+fr_printed	warning	sources/fr_printed/fr/e221.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1551
+fr_printed	warning	sources/fr_printed/fr/e221.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1555
+fr_printed	warning	sources/fr_printed/fr/e221.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1559
+fr_printed	warning	sources/fr_printed/fr/e232.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1681
+fr_printed	warning	sources/fr_printed/fr/e232.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1685
+fr_printed	warning	sources/fr_printed/fr/e232.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1689
+fr_printed	warning	sources/fr_printed/fr/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1702
+fr_printed	warning	sources/fr_printed/fr/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1706
+fr_printed	warning	sources/fr_printed/fr/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1710
+fr_printed	warning	sources/fr_printed/fr/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1748
+fr_printed	warning	sources/fr_printed/fr/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1752
+fr_printed	warning	sources/fr_printed/fr/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1756
+fr_printed	warning	sources/fr_printed/fr/236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1760
+fr_printed	warning	sources/fr_printed/fr/e236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1780
+fr_printed	warning	sources/fr_printed/fr/e236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1784
+fr_printed	warning	sources/fr_printed/fr/e236.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	1788
+fr_printed	error	sources/fr_printed/fr/main.tex		error:  (file lasy6) (type 3): font lasy6 at 600 not found	1834
+fr_printed	error	sources/fr_printed/fr/main.tex		==> Fatal error occurred, no output PDF file produced!	1835

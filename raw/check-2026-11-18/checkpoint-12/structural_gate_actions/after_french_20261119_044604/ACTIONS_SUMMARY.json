@@ -1,0 +1,51 @@
+{
+  "status": "COMPLETE",
+  "started_utc": "2026-11-19T04:56:34.563457+00:00",
+  "completed_utc": "2026-11-19T04:56:35.978284+00:00",
+  "bound_correction_rows": 20729,
+  "bound_event_rows": 786,
+  "bound_gate_syntax_issues": 1,
+  "malformed_row": "C000214",
+  "malformed_row_preexisting_in_original_checkpoint": true,
+  "confidence_repair_requires_owner_choice": true,
+  "exact_duplicate_groups": 2,
+  "exact_duplicate_extra_rows": 2,
+  "candidate_keep_rows": [
+    "C003871",
+    "C003872"
+  ],
+  "candidate_remove_rows": [
+    "C003873",
+    "C003874"
+  ],
+  "duplicates_preexisting_in_original_checkpoint": true,
+  "frozen_row_count_after_only_candidate_dedup": 20727,
+  "recorded_page_pointer_gaps": 54,
+  "proposed_source_locators": 108,
+  "proposed_source_locators_with_root_reported_staleness": 6,
+  "locator_gap_counts_by_unit": {
+    "149": 6,
+    "221": 25,
+    "232": 19,
+    "236": 4
+  },
+  "keys_with_multiple_record_targets": [
+    "232-149"
+  ],
+  "how_advisory_rows": 23,
+  "how_unique_value_hashes": 20,
+  "how_rule_counts": {
+    "H01": 7,
+    "H02": 7,
+    "H03": 9
+  },
+  "how_candidate_counts": {
+    "refuted, with the refined statement's id": 14,
+    "targeted proof check": 9
+  },
+  "confidence_or_check_meanings_assessed": false,
+  "sources_ledgers_records_progress_rights_or_fga_check_modified": false,
+  "no_claim_of_current_live_source_alignment": true,
+  "failure_count": 0,
+  "failures": []
+}

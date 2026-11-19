@@ -1,0 +1,905 @@
+\unit{Exposé 212 -- Préschémas quotients}
+\sid{212}
+\src{99}
+\seminar{13e année, 1960/61, n\textsuperscript{o} 212\\\hfill Février 1961}
+\paperhead{TECHNIQUES DE CONSTRUCTION ET THÉORÈMES D'EXISTENCE EN GÉOMÉTRIE ALGÉBRIQUE\\
+III : PRÉSCHEMAS QUOTIENTS}%
+  {par Alexander GROTHENDIECK}
+
+\subsection*{\textnormal{\uline{Introduction}.}}
+\addcontentsline{toc}{subsection}{Introduction}
+
+Les problèmes traités dans le présent exposé diffèrent de ceux envisagés dans
+les deux précédents, en ce qu'on essaye de représenter certains foncteurs
+covariants, et non plus contravariants, de schémas variables. Le procédé de
+passage au quotient est cependant essentiel dans beaucoup de questions de
+construction en géométrie algébrique, y compris celles des exposés I et II
+([1], [2]). Ainsi, la question de \uline{l'effectivité d'une donnée de descente}
+sur un $\symup{T}$-préschéma $\symup{X}$, relativement à un morphisme fidèlement plat et
+quasi-compact $\symup{T\to S}$, équivaut à la question de l'existence d'un
+quotient de $\symup{X}$ (satisfaisant les propriétés raisonnables examinées plus bas),
+pour la relation d'équivalence plate dans $\symup{X}$ définie par la donnée de descente ;
+les questions soulevées dans [1], A, \S~2 c se résoudront sans doute en même
+temps que les questions posées dans le paragraphe numéro 2 du présent exposé.
+De même, le \uline{schéma de Picard} (pour la définition, cf. [2], C, \S~3)
+d'un $\symup{S}$-schéma $\symup{X}$ peut se définir de diverses manières comme quotient de
+certains autres schémas (de diviseurs positifs, ou d'immersions dans un
+projectif) par des relations d'équivalence plates, la définition et la
+construction de ces schémas auxiliaires étant d'ailleurs techniquement plus
+simple : ce sont en effet des schémas du type
+$\symup{\underline{\operatorname{Hom}}_S(X,Y)}$ et variantes définis dans [2], C,
+\S~2, et dont la construction sera l'objet de l'exposé suivant (sous des
+hypothèses de projectivité convenables). Combinant donc les résultats du
+présent exposé et du suivant, on arrive à la construction des schémas de
+Picard, sous des hypothèses convenables.
+
+Le problème du passage au quotient dans les préschémas offre encore plusieurs
+questions non résolues. La plus importante est mentionnée dans le paragraphe
+8. Elle reste actuellement le seul obstacle à la construction des
+\uline{schémas de modules sur les entiers pour les courbes de genre arbitraire},
+les \uline{variétés abéliennes polarisées}, etc. C'est dire que sa solution mérite les
+efforts des spécialistes des groupes algébriques.
+
+\src{100}
+\subsection*{\textnormal{1. \uline{Relations d'équivalence, relations d'équivalence effectives}.}}
+\addcontentsline{toc}{subsection}{1. Relations d'équivalence, relations d'équivalence effectives}
+
+Soient $\symup{\text{\uwave{C}}}$ une catégorie, et $\symup{X}$ un objet de $\symup{\text{\uwave{C}}}$. Un couple
+de morphismes
+\[
+  \symup{p_1,p_2:R\rightrightarrows X}
+\]
+est dit \fquote{\uline{couple d'équivalence}} dans $\symup{\text{\uwave{C}}}$, de \uline{but} $\symup{X}$ et
+de \uline{source} $\symup{R}$, si pour tout objet $\symup{T}$ de $\symup{\text{\uwave{C}}}$, les deux
+applications correspondantes
+\[
+  \symup{p_1(T),p_2(T):R(T)\rightrightarrows X(T)}
+\]
+(où pour tout objet $\symup{Y}$ de $\symup{\text{\uwave{C}}}$, on pose
+$\symup{Y(T)=\operatorname{Hom}(T,Y)}$) définissent une application
+\[
+  \symup{R(T)\to X(T)\times X(T)}
+\]
+induisant une bijection de $\symup{R(T)}$ sur le graphe d'une relation d'équivalence
+dans l'ensemble $\symup{X(T)}$. On introduit entre les couples d'équivalences de but
+$\symup{X}$ une relation d'équivalence évidente, une classe d'équivalence pour cette
+dernière est appelée une $\symup{\text{\uwave{C}}}$\uline{-relation d'équivalence} dans $\symup{X}$,
+ou simplement une relation d'équivalence si aucune confusion n'en résulte.
+
+Si $\symup{X\times X}$ existe, la donnée d'une relation d'équivalence dans $\symup{X}$
+équivaut à la donnée d'un sous-objet $\symup{R}$ de $\symup{X\times X}$, tel que, pour tout
+objet $\symup{T}$ de $\symup{\text{\uwave{C}}}$, le sous-ensemble de $\symup{(X\times X)(T)=X(T)\times X(T)}$ qui correspond à $\symup{R(T)}$ soit le graphe d'une relation d'équivalence dans
+$\symup{X(T)}$. Désignant par $\symup{p_1}$ et $\symup{p_2}$ les morphismes de $\symup{R}$ dans $\symup{X}$ induits
+par les projections $\symup{\operatorname{pr}_1}$ et $\symup{\operatorname{pr}_2}$, la
+condition précédente exprime que $\symup{(p_1,p_2)}$ est un couple d'équivalence. On
+peut aussi exprimer diagrammatiquement dans $\symup{\text{\uwave{C}}}$ (sous réserve de
+l'existence de $\symup{X\times X}$ et du produit fibré
+$\symup{(R,p_2)\times_X(R,p_1)}$) les axiomes d'une relation d'équivalence au sens
+ensembliste pour les $\symup{R(T)}$ dans les $\symup{X(T)}$, conformément au principe général
+expliqué dans [2], A, \S~1. Nous n'en aurons pas besoin.
+
+Chaque fois qu'on a un couple de morphismes $\symup{(p_1,p_2)}$ de même source $\symup{R}$ et
+de même but $\symup{X}$, on peut définir le \uline{conoyau} du couple comme l'objet $\symup{Y}$
+de $\symup{\text{\uwave{C}}}$ qui représente le foncteur covariant en $\symup{Z}$ :
+\[
+  \symup{\operatorname{Hom}_{p_1,p_2}(X,Z),}
+\]
+ensemble des morphismes $\symup{u}$ de $\symup{X}$ dans $\symup{Z}$ tels que $\symup{up_1=up_2}$. Si $\symup{Y}$
+existe, il est déterminé à un isomorphisme unique près. On le notera
+$\symup{Y/(p_1,p_2)}$ ou, par abus de notation, $\symup{Y/R}$, cette dernière notation étant
+surtout employée lorsque
+\src{101}$\symup{(p_1,p_2)}$ est un couple d'équivalence : il est d'usage alors
+d'identifier dans les notations la relation d'équivalence définie par le
+couple, et $\symup{R}$. Noter que si on considère $\symup{Y}$ comme un quotient de $\symup{X}$, il ne
+dépend en effet que de la relation d'équivalence définie par le couple
+$\symup{(p_1,p_2)}$.
+
+Partons maintenant d'un morphisme
+\[
+  \symup{f:X\to Y}
+\]
+qui permet donc de considérer $\symup{X}$ comme un \fquote{objet au-dessus de $\symup{Y}$}, et
+supposons que le produit fibré
+\[
+  \symup{\text{\uwave{R}}(f)=X\times_Y X}
+\]
+existe. Soient $\symup{p_1}$ et $\symup{p_2}$ ses deux projections. Alors $\symup{(p_1,p_2)}$ est un
+couple d'équivalence, dit \uline{associé} au morphisme $\symup{f}$. Il définit donc une
+relation d'équivalence, dite associée à $\symup{f}$.
+
+On dit qu'un couple de morphismes $\symup{(p_1;p_2)}$ de but $\symup{X}$, de même source $\symup{R}$,
+est un \uline{couple d'équivalence effectif}, si
+\begin{enumerate}
+  \item[(i)] le conoyau $\symup{X/(p_1,p_2)=Y}$ existe
+  \item[(ii)] le produit fibré $\symup{X\times_Y X}$ existe
+  \item[(iii)] le morphisme $\symup{R\to X\times_Y X}$ de composantes $\symup{p_1}$ et
+  $\symup{p_2}$ est un isomorphisme.
+\end{enumerate}
+Alors le couple $\symup{(p_1,p_2)}$ est bien un couple d'équivalence. On dit aussi que
+la relation d'équivalence qu'il définit est une \uline{relation d'équivalence
+effective}.
+
+On dit qu'un morphisme $\symup{f:X\to Y}$ est un \uline{épimorphisme
+effectif} si
+\begin{enumerate}
+  \item[(i)] le produit fibré $\symup{X\times_Y X=R}$ existe;
+  \item[(ii)] le quotient $\symup{X/(p_1,p_2)}$ existe, où $\symup{p_1}$ et $\symup{p_2}$ sont les deux
+  projections de $\symup{R}$ dans $\symup{X}$;
+  \item[(iii)] le morphisme $\symup{X/(p_1,p_2)\to Y}$ induit par $\symup{f}$ est un
+  isomorphisme.
+\end{enumerate}
+Alors $\symup{f}$ est bien un épimorphisme, et même un épimorphisme strict (cf. [1],
+A, \S~2. 3), la réciproque étant vraie si le produit fibré $\symup{X\times_Y X}$
+existe. On dit aussi que l'objet quotient de $\symup{X}$ défini par l'épimorphisme $\symup{f}$
+est un \uline{quotient effectif} de $\symup{X}$.
+
+Les définitions précédentes impliquent la \fquote{\uline{correspondance galoisienne}}
+suivante :
+
+\src{102}
+\result{PROPOSITION}{1.1} Il y a correspondance biunivoque, respectant les
+ordres naturels, entre l'ensemble des relations d'équivalence effectives $\symup{R}$
+dans $\symup{X}$, et l'ensemble des quotients effectifs $\symup{Y}$ de $\symup{X}$, à $\symup{R}$
+correspondant le quotient effectif $\symup{X/R}$, et à $\symup{Y}$ correspondant la relation
+d'équivalence effective définie par la projection canonique
+$\symup{X\to Y}$, (qui est définie par le produit fibré $\symup{X\times_Y X}$
+muni de ses deux projections).
+
+Dans les très bonnes catégories (ensembles, faisceaux d'ensembles, etc.) tout
+quotient est effectif, et toute relation d'équivalence est effective. Il n'en
+est plus de même dans les catégories telles que la catégorie des préschémas
+au-dessus d'un préschéma $\symup{S}$ donné, même lorsque $\symup{S}$ est le spectre d'un corps,
+et même en se bornant aux schémas finis sur $\symup{S}$. Les questions d'effectivité,
+et même (dans le cas de préschémas non finis sur $\symup{S}$) les questions d'existence
+de quotients, s'avèrent le plus souvent délicates.
+
+\subsection*{\textnormal{2. \uline{Exemple} : \uline{préschémas finis sur} $\symup{S}$.}}
+\addcontentsline{toc}{subsection}{2. Exemple: préschémas finis sur S}
+
+Soit $\symup{\text{\uwave{C}}}$ la catégorie des préschémas finis sur $\symup{S}$, supposé
+localement noethérien. Elle est équivalente à la catégorie opposée de la
+catégorie des faisceaux cohérents d'algèbres commutatives sur $\symup{S}$, ou encore,
+si $\symup{S}$ est affine d'anneau $\symup{A}$, à la catégorie opposée de la catégorie des
+$\symup{A}$-algèbres finies sur $\symup{A}$ (i. e. qui sont des modules de type fini sur $\symup{A}$).
+On en conclut tout de suite que dans $\symup{\text{\uwave{C}}}$ les limites projectives
+finies et les limites inductives finies existent. C'est bien connu (sans
+aucune hypothèse de finitude\ldots) pour les premières. Ainsi le produit fibré
+de préschémas $\symup{X,Y}$ sur $\symup{S}$ correspond au produit tensoriel $\symup{B\otimes_A C}$
+des algèbres correspondantes, le noyau de deux morphismes
+$\symup{X\rightrightarrows Y}$, défini par deux homomorphismes de $\symup{A}$-algèbres
+$\symup{u,v:C\rightrightarrows B}$, correspond au quotient de $\symup{B}$ par l'idéal engendré
+par les $\symup{u(c)-v(c)}$, etc. Pour les limites inductives finies, il suffit de
+considérer d'une part les sommes finies, qui correspondent au produit ordinaire
+de $\symup{A}$-algèbres, et d'autre part les conoyaux de couples de morphismes
+$\symup{X\rightrightarrows Y}$, qui correspondent en effet, (comme on constate
+aussitôt) au sous-anneau de $\symup{C}$ ensemble des éléments où les homomorphismes
+$\symup{u,v:C\rightrightarrows B}$ coïncident (ce dernier est fini sur $\symup{A}$ grâce à
+l'hypothèse noethérienne). Notons d'ailleurs qu'on peut montrer, utilisant
+l'hypothèse noethérienne, que les limites inductives finies, et en particulier
+les quotients, ainsi construits dans la catégorie $\symup{\text{\uwave{C}}}$ des préschémas
+finis sur $\symup{S}$, sont en réalité des quotients dans la catégorie de \uline{tous}
+les préschémas.
+
+\src{103}
+Comme nous avons dit dans [1], \uline{il y a dans} $\symup{\text{\uwave{C}}}$ \uline{des épimorphismes non effectifs} (ou stricts, cela revient au même puisque les produits fibrés
+existent). \uline{J'ignore si les relations d'équivalence sont toujours
+effectives}, lorsqu'on ne fait pas d'hypothèse de platitude. Je n'ai obtenu,
+dans cette direction, que des résultats très partiels, positifs,
+indispensables pour la démonstration du théorème fondamental en théorie
+formelle des modules (cf. [2], B, th. 1). Signalons qu'il est facile dans le
+problème posé de se ramener au cas où $\symup{S}$ est le spectre d'un anneau $\symup{A}$
+artinien local, de corps résiduel algébriquement clos. Mais même si $\symup{A}$ est un
+corps, la réponse n'est pas connue.
+
+On peut aussi considérer le cas d'un préschéma $\symup{X}$ sur $\symup{S}$ qui n'est plus
+supposé fini sur $\symup{S}$, mais en considérant une relation d'équivalence $\symup{R}$ dans
+$\symup{X}$ telle que $\symup{p_1:R\to X}$ soit un morphisme fini. On dit alors
+que $\symup{R}$ est une relation d'équivalence finie. Supposant pour simplifier $\symup{S}$ et
+$\symup{X}$ affines (donc $\symup{R}$ affine, de sorte que la situation est ramenée à une
+situation de pure algèbre commutative), \uline{on ignore même dans ce cas s'il
+existe un quotient} $\symup{X/R=Y}$ \uline{et si le morphisme canonique}
+$\symup{X\to Y}$ \uline{est fini}. (Le cas le plus simple est celui où on
+suppose que $\symup{S}$ est le spectre d'un corps $\symup{k}$, et où $\symup{X}$ est le spectre de
+$\symup{k[t]}$, i. e. la droite affine.) Bien entendu, si les deux problèmes précédents
+se résolvent par l'affirmative, on peut conclure dans la situation présente que
+$\symup{R}$ est effective. Notons que le problème de \uline{l'existence} d'un quotient
+$\symup{Y}$ et de la finitude de $\symup{f:X\to Y}$ se pose dans exactement les
+mêmes termes si, au lieu d'un graphe d'équivalence dans $\symup{X}$, on a seulement un
+prégraphe d'équivalence dans $\symup{X}$, au sens du paragraphe 4.
+
+La question du passage au quotient par une relation d'équivalence finie plus
+ou moins arbitraire se pose dans la construction des préschémas par
+\fquote{recollement} de préschémas donnés $\symup{X_i}$ suivant certains sous-préschémas
+fermés; la loi du recollement s'exprime précisément par une relation
+d'équivalence finie dans le préschéma somme $\symup{X}$ des $\symup{X_i}$. Il faut s'attendre
+aussi que la solution des problèmes posés ici et de diverses variantes, sera
+une condition préliminaire à la mise au point d'une technique générale de
+constructions non projectives, dans la direction inaugurée dans [2].
+
+Le seul fait général positif connu du rédacteur est le suivant :
+
+\result{PROPOSITION}{2.1} Soient $\symup{S}$ un préschéma localement noethérien, $\symup{s}$
+un point de $\symup{S}$, et $\symup{\Omega}$ une extension algébriquement close de $\symup{k(s)}$.
+Considérons le
+\src{104}\fquote{foncteur-fibre} correspondant $\symup{F}$, associant à tout $\symup{S}$-schéma
+$\symup{X}$ fini sur $\symup{S}$, l'ensemble des points de $\symup{X/S}$ à valeurs dans $\symup{\Omega}$. Ce
+foncteur (trivialement exact à gauche) est \uline{exact à droite}, i. e. commute
+aux limites inductives finies, et en particulier aux conoyaux de couples de
+morphismes.
+
+En utilisant ce résultat pour tous les \fquote{points géométriques} de $\symup{S}$, on en
+déduit que la catégorie $\symup{C'}$ \fquote{quotient} de $\symup{C}$, obtenue en
+raisonnant \fquote{modulo morphismes surjectifs radiciels} (i. e. obtenue en
+adjoignant formellement des inverses pour les morphismes en question), est une
+catégorie \fquote{géométrique}, i. e. satisfait les mêmes propriétés \fquote{de nature
+finie} que la catégorie des ensembles. En particulier, toute relation
+d'équivalence y est effective. Cela implique que si $\symup{R}$ est une relation
+d'équivalence dans un $\symup{X}$ fini sur $\symup{S}$, alors le morphisme canonique $\symup{R\to X\times_Y X}$ (où $\symup{Y=X/R}$) est \uline{radiciel et surjectif} (en fait une immersion fermée surjective,
+puisque c'est un monomorphisme).
+
+\subsection*{\textnormal{3. \uline{Cas d'un groupe d'opérateurs}.}}
+\addcontentsline{toc}{subsection}{3. Cas d'un groupe d'opérateurs}
+
+On suppose de nouveau que $\symup{\text{\uwave{C}}}$ est une catégorie quelconque. Soient
+$\symup{G,X}$ des objets de $\symup{\text{\uwave{C}}}$, et supposons que $\symup{G}$ est un
+$\symup{\text{\uwave{C}}}$-groupe d'opérateurs sur l'objet $\symup{X}$ de $\symup{\text{\uwave{C}}}$. Cela
+signifie (cf. [2], A, \S~1) que pour tout objet $\symup{T}$ de $\symup{\text{\uwave{C}}}$, on s'est
+donné une structure de groupe sur $\symup{G(T)}$ et une structure d'ensemble à groupe
+d'opérateurs $\symup{G(T)}$ sur $\symup{X(T)}$, de telle façon que pour $\symup{T}$ variable, les
+structures en question \fquote{varient fonctoriellement} avec $\symup{T}$. Si dans
+$\symup{\text{\uwave{C}}}$ les produits $\symup{G\times G}$ et $\symup{G\times X}$ existent, une telle
+structure peut encore se définir comme un couple de morphismes
+\[
+  \symup{G\times G\to G,
+  \qquad \pi:G\times X\to X}
+\]
+soumis à la condition que pour tout objet $\symup{T}$ de $\symup{\text{\uwave{C}}}$, les lois de
+composition correspondantes pour les ensembles $\symup{G(T)}$ et $\symup{X(T)}$ fassent de
+$\symup{G(T)}$ un groupe opérant sur $\symup{X(T)}$. La traduction de cet axiome par la
+commutativité de certains diagrammes dans $\symup{\text{\uwave{C}}}$ est facile, mais
+fastidieuse, et en fait, parfaitement inutile dans tous les cas à ma
+connaissance.
+
+Supposons que $\symup{G\times X}$ existe, et considérons les deux morphismes
+\[
+  \symup{p_1,p_2:G\times X\rightrightarrows X}
+\]
+avec
+\src{105}
+\[
+  \symup{p_1=\operatorname{pr}_1,\qquad p_2=\pi.}
+\]
+On constate aussitôt que le couple $\symup{(p_1,p_2)}$ est un couple d'équivalence si,
+et seulement si, pour tout objet $\symup{T}$ de $\symup{\text{\uwave{C}}}$, l'application
+\[
+  \symup{G(T)\times X(T)\sim(G\times X)(T)
+  \to X(T)\times X(T),}
+\]
+définie par ce couple, est injective, i. e. si le groupe $\symup{G(T)}$ opère
+\uline{librement} sur l'ensemble $\symup{X(T)}$, i. e. $\symup{g\in G(T)}$, $\symup{x\in X(T)}$,
+$\symup{g\cdot x=x}$ implique $\symup{g=}$ élément unité du groupe $\symup{G(T)}$. On dit
+alors que $\symup{G}$ \uline{opère librement} sur $\symup{X}$, (ou que $\symup{X}$ est un
+$\symup{\text{\uwave{C}}}$\uline{-espace principal sous} $\symup{G}$). La relation d'équivalence
+associée au couple $\symup{(p_1,p_2)}$ est alors appelée la \uline{relation
+d'équivalence définie par le groupe} $\symup{G}$ opérant librement sur $\symup{X}$. Lorsque
+$\symup{X\times X}$ existe également et qu'on considère le morphisme
+\[
+  \symup{p:G\times X\to X\times X}
+\]
+défini par le couple $\symup{(p_1,p_2)}$, la condition que $\symup{G}$ opère librement signifie
+que $\symup{p}$ est un \uline{monomorphisme}.
+
+Bien entendu, même lorsque $\symup{G}$ n'opère pas librement sur $\symup{X}$, on désire avoir
+des critères d'existence d'un quotient de $\symup{X}$ par $\symup{G}$, i. e. du conoyau du
+couple $\symup{(p_1,p_2)}$ précédent.
+
+Le conoyau en question sera souvent noté $\symup{X/G}$, ou de préférence $\symup{G\backslash
+X}$ si $\symup{G}$ opère à gauche (la notation précédente étant réservée au cas où $\symup{G}$
+opère à droite). On notera que même lorsque \fquote{l'image} de $\symup{G\times X}$ par $\symup{p}$
+existe (cette image étant définie par exemple comme le plus petit sous-objet de
+$\symup{X\times X}$ par lequel on peut factoriser $\symup{p}$), soit $\symup{R}$, cette dernière n'est
+pas le plus souvent une relation d'équivalence dans $\symup{X}$. Si on essaye alors de
+passer directement au quotient par $\symup{R}$ (ou plus précisément, par le couple des
+morphismes de $\symup{R}$ dans $\symup{X}$ induits par les deux projections
+$\symup{\operatorname{pr}_i}$) on perd sans espoir les caractères particuliers du
+couple de départ $\symup{(p_1,p_2)}$. Il importe donc de trouver une généralisation de
+la notion de relation d'équivalence, s'appliquant directement au couple défini
+par un $\symup{\text{\uwave{C}}}$-groupe d'opérateurs.
+
+\subsection*{\textnormal{4. \uline{Pré-relations d'équivalence}.}}
+\addcontentsline{toc}{subsection}{4. Pré-relations d'équivalence}
+
+Rappelons qu'on appelle \uline{groupoïde} une catégorie où tous les morphismes
+sont des isomorphismes. D'autre part, une catégorie doit être définie comme
+formée de deux ensembles de base $\symup{(X,R)}$, l'ensemble des \uline{objets} et
+l'ensemble des \uline{flèches}, munis des structures suivantes :
+\src{106}
+\begin{enumerate}
+\item[(i)] Un couple d'applications
+\[
+  \symup{p_1,p_2:R\rightrightarrows X}
+\]
+appelées \uline{application-source} et \uline{application-but},
+
+\item[(ii)] Une application
+\[
+  \symup{\pi:(R,p_2)\times_X(R,p_1)\to R}
+\]
+appelée \uline{application-composition}.
+\end{enumerate}
+Ces données doivent satisfaire à des axiomes bien connus, que nous ne
+répéterons pas ici, et qui pourraient s'expliciter par la commutativité de
+certains diagrammes, et l'existence d'une application $\symup{D:X\to R}$
+(nécessairement unique) rend commutatifs deux autres diagrammes. $\symup{D}$
+correspond au passage d'un objet à la flèche identique correspondante, et
+satisfait à
+\[
+  \symup{p_1D=p_2D=\operatorname{id}_X.}
+\]
+Dire que la catégorie est un groupoïde signifie alors qu'il existe une
+application
+\[
+  \symup{s:R\to R}
+\]
+(nécessairement unique), appelée la \uline{symétrie} de $\symup{R}$, transformant
+chaque flèche en une flèche inverse, ce qui pourrait s'expliciter par la
+commutativité de quatre autres diagrammes, formés au moyen de $\symup{s}$, $\symup{\Delta}$
+et des données précédentes, et dont les deux premiers s'écrivent :
+\[
+  \symup{p_1s=p_2,\qquad p_2s=p_1.}
+\]
+
+Ces points étant rappelés, les définitions générales dans ([2], A,
+\S~1) montrent en particulier ce qu'il faut entendre par une structure de
+$\symup{\text{\uwave{C}}}$-\uline{catégorie}, resp. de $\symup{\text{\uwave{C}}}$-\uline{groupoïde}, sur un
+couple d'objets $\symup{X,R}$ d'une catégorie quelconque $\symup{\text{\uwave{C}}}$ : c'est, par
+définition, la donnée, pour tout objet $\symup{T}$ de $\symup{\text{\uwave{C}}}$, d'une structure
+de catégorie resp. de groupoïde au sens ensembliste, dont l'ensemble des
+objets soit $\symup{X(T)}$, et l'ensemble des flèches $\symup{R(T)}$, ces structures
+\fquote{variant fonctoriellement} avec $\symup{T}$ variable.
+Cela implique donc la définition de deux morphismes
+\[
+  \symup{p_1,p_2:R\rightrightarrows X}
+\]
+appelés \uline{morphisme-source} et \uline{morphisme-but}, et lorsque le produit
+fibré voulu existe d'un morphisme
+\src{107}
+\[
+  \symup{\pi:(R,p_2)\times_X(R,p_1)\to R}
+\]
+appelé morphisme composition, ces trois données suffisant alors à
+déterminer la structure de catégorie sur $\symup{X,R}$, l'axiome à mettre sur ces
+données étant le suivant : pour tout $\symup{T}$, les trois données correspondantes
+pour $\symup{X(T),R(T)}$ définissent sur ce couple d'ensembles une structure de
+catégorie, (resp. de groupoïde). Le cas échéant, cela peut s'exprimer par la
+commutativité de certains diagrammes, impliquant un morphisme bien déterminé
+\[
+  \symup{D:X\to R}
+\]
+et dans le cas des groupoïdes, un morphisme bien déterminé
+\[
+  \symup{s:R\to R,}
+\]
+diagrammes qui s'explicitent comme dans le cas \fquote{ensembliste}. Cette
+interprétation fastidieuse des axiomes est heureusement inutile pour la
+pratique, le seul intérêt théorique de la possibilité d'exprimer les données
+et axiomes à partir de morphismes et égalités de morphismes entre certains
+produits fibrés étant le suivant : si on a un foncteur
+$\symup{F:\text{\uwave{C}}\to\text{\uwave{C}}'}$ exact à gauche (i. e. commutant aux produits
+finis et aux produits fibrés), il transforme une $\symup{\text{\uwave{C}}}$-catégorie
+(resp. un $\symup{\text{\uwave{C}}}$-groupoïde) en une $\symup{\text{\uwave{C}}'}$-catégorie (resp. en un
+$\symup{\text{\uwave{C}}'}$-groupoïde) (sous réserve de l'existence des produits finis et
+produits fibrés dans $\symup{\text{\uwave{C}}}$).
+
+Il est important en pratique de savoir interpréter les morphismes
+$\symup{p_1,p_2,\pi,D,s}$ comme des \uline{opérations simpliciales} dans un objet
+semi-simplicial ou simplicial convenable de $\symup{\text{\uwave{C}}}$, du moins lorsque
+dans $\symup{\text{\uwave{C}}}$ les produits fibrés existent. Pour fixer la terminologie,
+introduisons la \uline{catégorie} $\symup{\text{\uwave{S}}}$ \uline{des simplexes-types} comme la
+catégorie dont les objets sont les ensembles finis de la forme
+\[
+  \symup{\Delta_n=[0,n]\qquad\text{où }n\geqslant 0}
+\]
+(intervalle des entiers de $\symup{0}$ à $\symup{n}$), et dont les morphismes ou flèches sont
+les \uline{applications quelconques} entre ces ensembles finis. On notera que
+la catégorie $\symup{\text{\uwave{S}}}$ est équivalente à la catégorie des ensembles finis
+\uline{non vides}, où on prend comme morphismes les applications entre ensembles
+finis. Dans $\symup{\text{\uwave{S}}}$, la somme d'une famille finie \uline{non vide} d'objets
+existe évidemment, ainsi que la somme amalgamée de deux objets sous un
+troisième (opération duale du produit fibré). On désigne par $\symup{\text{\uwave{\phantom{S}}}'}$ la
+sous-catégorie de $\symup{\text{\uwave{S}}}$ ayant mêmes objets, mais où les morphismes sont
+les \uline{applications croissantes} entre les $\symup{\Delta_n}$. Cette catégorie est
+équivalente à la catégorie des ensembles finis totalement ordonnés non
+vides. Dans cette catégorie la
+\src{108}
+somme de deux objets n'existe jamais, et la somme amalgamée de deux objets
+$\symup{A,B}$ sous un troisième $\symup{C}$ n'existe pas en général (prendre par exemple
+$\symup{C=\Delta_0}$, $\symup{A=B=\Delta_1}$, les deux applications structurales
+$\symup{u:C\to A}$ et $\symup{v:C\to B}$ égales). Elle existe cependant dans certains cas,
+par exemple
+\[
+  \symup{C=\Delta_0,\qquad A=\Delta_m,\qquad B=\Delta_n,\qquad
+  u(0)=m,\qquad v(0)=0}
+\]
+et dans ce cas, on a
+\[
+  \symup{\Delta_m\mathbin{\mathrm{n}}_{\Delta_0}\Delta_n=\Delta_{m+n}.}
+\]
+
+Un \uline{objet simplicial} (resp. un objet \uline{semi-simplicial}) dans une
+catégorie $\symup{\text{\uwave{C}}}$ est par définition un foncteur contravariant $\symup{K}$ de
+$\symup{\text{\uwave{S}}}$ (resp. de $\symup{\text{\uwave{S}}'}$) dans $\symup{\text{\uwave{C}}}$. Un objet simplicial
+définit donc un objet semi-simplicial par restriction, mais la première
+notion diffère de la seconde essentiellement par la présence d'\uline{opérations
+de symétrie} dans les $\symup{K_n=K(\Delta_n)}$, qui correspondent aux transformés
+par le foncteur $\symup{K}$ des éléments du groupe symétrique à $\symup{n+1}$ lettres
+(considéré comme le groupe des automorphismes de $\symup{\Delta_n}$ dans
+$\symup{\text{\uwave{S}}}$).
+
+Ceci dit, pour tout $\symup{n}$, soit $\symup{\Delta'_n}$ (resp. $\symup{\Delta''_n}$) la catégorie
+finie, dont l'ensemble des objets est $\symup{\Delta_n}$, définie par la relation
+d'ordre chaotique (resp. d'ordre total naturel) sur $\symup{\Delta_n}$ (l'ensemble
+des flèches étant le graphe de la dite relation d'ordre). Il est évident que
+$\symup{\Delta'_n}$ (resp. $\symup{\Delta''_n}$) dépend fonctoriellement de l'objet $\symup{\Delta_n}$
+de $\symup{\text{\uwave{S}}}$ (resp. $\symup{\text{\uwave{S}}'}$). Si alors $\symup{Z}$ est une catégorie,
+$\symup{\operatorname{Hom}(\Delta'_n,Z)}$ (resp.
+$\symup{\operatorname{Hom}(\Delta''_n,Z)}$) est, pour $\symup{\Delta_n}$ variable, un foncteur
+de la catégorie $\symup{\text{\uwave{S}}}$, (resp. $\symup{\text{\uwave{S}}'}$), dans la catégorie des
+ensembles, i. e. un \uline{ensemble simplicial} (resp. \uline{semi-simplicial}), dit
+\uline{associé à la catégorie} $\symup{Z}$ : soient $\symup{Z'}$ et $\symup{Z''}$. On a d'ailleurs un
+homomorphisme naturel évident de l'ensemble semi-simplicial associé à $\symup{Z'}$
+dans $\symup{Z''}$, et ce dernier est un isomorphisme si et seulement si $\symup{Z}$ est un
+groupoïde. Ceci posé :
+
+\result{PROPOSITION}{4.1} Le foncteur $\symup{Z\rightsquigarrow Z''}$ de la catégorie des
+catégories dans la catégorie des ensembles semi-simpliciaux est pleinement
+fidèle, et définit une équivalence de la catégorie des \uline{catégories} avec
+la catégorie des ensembles semi-simpliciaux, i. e. des foncteurs contravariants
+$\symup{K}$ de $\symup{\text{\uwave{S}}'}$ dans $\symup{(\mathrm{Ens})}$, \uline{qui transforment les sommes amalgamées} $\symup{A\mathbin{\phantom{\mathrm{n}}}_C B}$ \uline{du type précisé plus haut, en produits fibrés d'ensembles}. De même, le foncteur $\symup{Z\rightsquigarrow Z'}$ de la catégorie des
+groupoïdes dans la catégorie des ensembles simpliciaux est pleinement fidèle,
+et définit une équivalence de la catégorie des \uline{groupoïdes} avec la
+catégorie des
+\src{109}
+ensembles simpliciaux, i. e. des foncteurs contravariants $\symup{K}$ de $\symup{\text{\uwave{S}}}$
+dans $\symup{(\mathrm{Ens})}$, \uline{qui transforment des sommes amalgamées en produits fibrés}.
+
+On peut donc considérer les catégories comme des ensembles semi-simpliciaux
+particuliers, et les groupoïdes comme des ensembles simpliciaux particuliers,
+à condition bien entendu de raisonner \fquote{à un isomorphisme près} comme il est
+de rigueur quand on interprète certaines structures en termes d'autres. Le
+procédé habituel de réduction au cas ensembliste implique alors :
+
+\result{COROLLAIRE}{4.2} L'énoncé précédent reste valable quand on remplace
+les catégories, groupoïdes, ensembles simpliciaux, par des
+$\symup{\text{\uwave{C}}}$-catégories, $\symup{\text{\uwave{C}}}$-groupoïdes, $\symup{\text{\uwave{C}}}$-objets
+simpliciaux, pourvu que dans $\symup{\text{\uwave{C}}}$ les produits fibrés existent.
+
+L'objet semi-simplicial $\symup{K}$ dans $\symup{\text{\uwave{C}}}$ associé à une catégorie
+$\symup{(X,R,\ldots)}$ dans $\symup{\text{\uwave{C}}}$ peut s'expliciter, en interprétant la
+composante $\symup{K_n=K(\Delta_n)}$ de $\symup{K}$ comme étant la puissance fibrée
+$\symup{(n+1)}$-ième de $\symup{(R,p_1)}$ sur $\symup{X}$, ou mieux,
+par la formule de récurrence,
+\[
+  \symup{K_0=R,\qquad
+  K_n=(K_{n-1},p_n^{(n-1)})\times_X(R,p_1)}
+\]
+où les $\symup{p_i^{(n-1)}}$ ($\symup{0\leqslant i\leqslant n-1}$) sont les projections naturelles de
+$\symup{K_{n-1}}$ dans $\symup{X}$ (qui se définissent également par récurrence). De cette
+façon, $\symup{p_1,p_2,\pi,D,s}$ s'interprètent comme les opérations simpliciales qui
+correspondent respectivement aux morphismes dans $\symup{\text{\uwave{S}}}$ : face $\symup{0}$ de
+$\symup{\Delta_1}$, face $\symup{1}$ de $\symup{\Delta_1}$, face $\symup{(0,2)}$ de $\symup{\Delta_2}$,
+dégénérescence $\symup{\Delta_1\to\Delta_0}$, symétrie de $\symup{\Delta_1}$. Toutes les
+autres opérations semi-simpliciales (resp. simpliciales) se déduisent
+formellement des quatre (resp. cinq) précédentes par composition et produits
+fibrés.
+
+On appelle maintenant \uline{pré-relation d'équivalence} dans un objet $\symup{X}$
+d'une catégorie, la donnée d'un groupoïde dont l'objet des objets (si on peut
+dire) est $\symup{X}$. Une telle donnée comporte donc entre autres un objet $\symup{R}$ et
+deux morphismes
+\[
+  \symup{p_1,p_2:R\rightrightarrows X.}
+\]
+Mais on notera que ces seules données ne déterminent pas la structure
+envisagée, contrairement à ce qui a lieu pour les couples d'équivalence. Dans
+cet exposé, nous nous intéressons à cette notion dans le but d'obtenir des
+critères de possibilité de passage au quotient, i. e. de formation du conoyau
+du couple $\symup{(p_1,p_2)}$. L'énoncé du problème ne fait donc pas appel aux données
+supplémentaires inhérentes à un groupoïde. Dans la démonstration des résultats
+qui vont suivre, on se
+\src{110}
+sert cependant de ces données supplémentaires, et en particulier des
+opérations simpliciales (y inclus des opérations de symétrie) jusqu'en
+dimension $\symup{3}$ (faisant intervenir la puissance fibrée quadruple de $\symup{R}$ sur
+$\symup{X}$).
+
+Une relation d'équivalence dans un objet $\symup{X}$ de $\symup{\text{\uwave{C}}}$ définit une
+pré-relation d'équivalence : il suffit de le voir dans le cas ensembliste, et
+on associe alors à une relation d'équivalence, dans un ensemble $\symup{X}$, le
+groupoïde dont l'ensemble d'objets est $\symup{X}$, et l'ensemble des flèches est
+l'ensemble graphe de la relation d'équivalence.
+
+Un $\symup{\text{\uwave{C}}}$-monoïde $\symup{G}$ opérant sur un objet $\symup{X}$ de $\symup{\text{\uwave{C}}}$ définit
+une $\symup{\text{\uwave{C}}}$-catégorie dont les objets de base sont $\symup{R=G\times X}$ et $\symup{X}$
+(sous réserve que $\symup{G\times X}$ existe), et qui est un $\symup{\text{\uwave{C}}}$-groupoïde
+si et seulement si $\symup{G}$ est un groupe. Il suffit encore d'en faire la
+vérification dans le cas ensembliste. On définit alors la composition des
+flèches $\symup{(g,a)}$ et $\symup{(g',g\cdot a)}$ comme étant
+\[
+  \symup{(g',g\cdot a)(g,a)=(g'g,a)}
+\]
+i. e. si $\symup{a,b\in X}$ ; alors $\symup{\operatorname{Hom}(a,b)}$ est par définition le
+transporteur de $\symup{a}$ dans $\symup{b}$, et les morphismes se composent grâce à la
+composition des éléments de $\symup{G}$.
+
+\result{REMARQUE}{} On peut éviter les difficultés logiques que
+soulève un énoncé tel que (4.1) en y sous-entendant que tous les objets
+envisagés se trouvent dans un \fquote{Univers} fixé, (qui lui-même est un
+ensemble).
+
+\fsection{\normalfont 5}{\normalfont\uline{Quotient par une relation d'équivalence finie et plate}.}
+
+\result{THÉORÈME}{5.1} Soient $\symup{X=\operatorname{Spec}(B)}$ un schéma affine,
+$\symup{\mathcal R}$ une pré-relation d'équivalence dans $\symup{X}$, dont la composante $\symup{R_1}$ est
+affine, soit $\symup{R_1=\operatorname{Spec}(C)}$. On suppose que la première
+projection $\symup{p_1:R_1\to X}$ est un morphisme fini et localement libre, en
+d'autres termes que l'homomorphisme d'anneaux correspondant
+$\symup{p_1':B\to C}$ fait de $\symup{C}$ un $\symup{B}$-module projectif de type fini. Soit $\symup{A}$ le
+sous-anneau de $\symup{B}$ noyau du couple d'homomorphismes $\symup{p_1',p_2':B\rightrightarrows C}$ (= ensemble des éléments $\symup{b}$ tels que $\symup{p_1'(b)=p_2'(b)}$). Soit
+$\symup{Y=\operatorname{Spec}(A)}$, et $\symup{f:X\to Y}$ le morphisme défini par l'immersion
+de $\symup{A}$ dans $\symup{B}$. Sous ces conditions :
+\begin{enumerate}
+\item[(i)] $\symup{B}$ est entier sur $\symup{A}$, i. e. $\symup{f}$ est un morphisme entier.
+
+\item[(ii)] Le morphisme $\symup{f}$ est surjectif, ses fibres sont les classes
+d'équivalence
+\src{111}
+ensemblistes $\symup{p_2\allowbreak(p_1^{-1}(x))}$ dans $\symup{X}$ modulo $\symup{\mathcal R}$, et la topologie de $\symup{Y}$
+est quotient de celle de $\symup{X}$.
+
+\item[(iii)] $\symup{Y}$ est le quotient de $\symup{X}$ par $\symup{\mathcal R}$ dans la catégorie des
+préschémas.
+
+\item[(iv)] Si $\symup{\mathcal R}$ provient d'une \uline{relation} d'équivalence, alors le
+morphisme $\symup{f:X\to Y}$ est fini localement libre (i. e. $\symup{B}$ est un $\symup{A}$-module
+projectif de type fini), et la relation d'équivalence est effective, i. e.
+$\symup{R_1\to X\times_Y X}$ est un isomorphisme.
+\end{enumerate}
+
+Ce théorème généralise le théorème bien connu relatif au cas d'un groupe
+fini $\symup{G}$ opérant par automorphismes sur l'anneau $\symup{B}$, et à l'anneau $\symup{A}$ des
+invariants, et la démonstration est analogue à la démonstration connue. On
+peut préciser (iii) ainsi :
+
+\result{COROLLAIRE}{5.2} Le morphisme canonique
+$\symup{R_1\to X\times_Y X}$ est \uline{surjectif}.
+
+Soit toujours $\symup{\mathcal R}$ une pré-relation d'équivalence \fquote{finie et localement libre} dans $\symup{X}$, mais $\symup{X}$ étant un préschéma quelconque. Supposons qu'on
+puisse trouver un préschéma $\symup{Y}$ et un morphisme $\symup{f:X\to Y}$ tel que
+$\symup{fp_1=fp_2}$, et tel en plus que la suite d'homomorphismes de faisceaux
+d'anneaux sur $\symup{Y}$ :
+\[
+  \symup{\mathcal O_Y\to f_*(\mathcal O_X)
+  \rightrightarrows g_*(\mathcal O_R)}
+\]
+soit exacte (où $\symup{g=fp_i}$). Il résulte alors du théorème qu'on a des
+conclusions (i) à (iv) analogues à celles du théorème, en particulier, par
+(iii), $\symup{Y}$ est le quotient de $\symup{X}$ par $\symup{\mathcal R}$, et par suite déterminé à un
+isomorphisme unique près. On dira sous ces conditions que la pré-relation
+d'équivalence $\symup{\mathcal R}$ dans $\symup{X}$ est \fquote{\uline{admissible}}. Avec cette définition :
+
+\result{THÉORÈME}{5.3} Soient $\symup{X}$ un préschéma, $\symup{\mathcal R}$ une pré-relation
+d'équivalence dans $\symup{X}$, telle que $\symup{p_1:R_1\to X}$ soit un morphisme fini et
+localement libre. Pour que $\symup{\mathcal R}$ soit admissible, il faut et il suffit que toute
+classe d'équivalence ensembliste $\symup{p_2(p_1^{-1}(x))}$ dans $\symup{X}$ modulo $\symup{\mathcal R}$ soit
+contenue dans un ouvert affine (condition toujours vérifiée si toute partie
+finie de $\symup{X}$ est contenue dans un ouvert affine, par exemple si $\symup{X}$ est
+quasi-projectif sur un schéma affine).
+
+On montre en effet sans difficulté que toute classe d'équivalence mod $\symup{\mathcal R}$
+dans $\symup{X}$ est alors contenue dans un ouvert affine \uline{stable} par $\symup{\mathcal R}$, et on
+construit le quotient $\symup{Y}$ par recollement des morceaux obtenus à l'aide du
+théorème 5.1.
+\src{112}
+
+\result{COROLLAIRE}{5.4} Supposons cette condition réalisée et que de plus
+$\symup{\mathcal R}$ provient d'une relation d'équivalence. Alors cette dernière est effective,
+i. e. $\symup{R_1\to X\times_Y X}$ est un isomorphisme, et $\symup{f:X\to Y}$ est un morphisme
+fini localement libre.
+
+On en conclut aussitôt, par \fquote{descente} :
+
+\result{COROLLAIRE}{5.5} Sous les conditions de (5.4), pour que $\symup{X}$ soit
+partout de rang $\symup{n}$ au-dessus de $\symup{Y}$, il faut et il suffit que $\symup{(R_1,p_1)}$ soit
+partout de rang $\symup{n}$ au-dessus de $\symup{X}$. Si $\symup{X,R_1}$ sont des $\symup{Z}$-préschémas et
+$\symup{p_1,p_2}$ des $\symup{Z}$-morphismes, donc $\symup{Y}$ un $\symup{Z}$-préschéma, alors $\symup{X}$ est plat
+sur $\symup{Z}$ si et seulement si $\symup{Y}$ l'est.
+
+En résumé :
+
+\result{SCHOLIE}{} La donnée d'un morphisme fini, localement libre et
+surjectif $\symup{f:X\to Y}$ de préschémas, est équivalente à la donnée d'un
+préschéma $\symup{X}$ muni d'une relation d'équivalence $\symup{R}$ telle que $\symup{p_1:R\to X}$
+soit fini et localement libre, et que toute classe $\symup{p_2(p_1^{-1}(x))}$ soit
+contenue dans un ouvert affine.
+
+\medskip
+\noindent\textnormal{REMARQUES 5.6.}
+
+\smallskip
+\noindent $\symup{1^\circ}$ On n'a pas eu à faire d'hypothèse noethérienne.
+
+\smallskip
+\noindent $\symup{2^\circ}$ Cette notion de passage au quotient comprend comme cas
+particulier la \fquote{descente inséparable} de CARTIER, qui correspond à la
+détermination des morphismes finis localement libres $\symup{f:X\to Y}$ tels que
+$\symup{f_*(\mathcal O_X)}$ admette une $\symup{p}$-base par rapport à $\symup{\mathcal O_Y}$ ($\symup{X}$
+étant un préschéma donné dont le faisceau $\symup{\mathcal O_X}$ est annulé par le
+nombre premier $\symup{p>0}$). On notera que le résultat s'exprime aisément sans
+hypothèse de régularité sur les anneaux locaux et sans supposer que $\symup{X}$ est un
+schéma algébrique sur un corps. La théorie de JACOBSON-BOURBAKI est obtenue
+en prenant pour $\symup{X}$ le spectre d'un corps de caractéristique $\symup{p}$.
+
+\smallskip
+\noindent $\symup{3^\circ}$ GABRIEL avait auparavant obtenu un cas particulier du
+théorème (5.3) dans la théorie du passage au quotient pour les groupes
+commutatifs finis au-dessus d'un corps $\symup{k}$. [Comparer (7.4)].
+
+\fsection{\normalfont 6}{\normalfont\uline{Quotient par une relation d'équivalence propre et plate}.}
+
+\result{THÉORÈME}{6.1} Soient $\symup{S}$ un préschéma \uline{localement noethérien}, $\symup{X}$
+un $\symup{S}$-schéma \uline{quasi-projectif}, $\symup{\mathcal R}$ une pré-relation d'équivalence dans $\symup{X}$,
+telle que :
+\src{113}
+(a) $\symup{p_1:R_1\to X}$ est propre et plat ; (b) $\symup{R_1\to X\times_S X}$ est un morphisme fini, ou ce qui revient au
+même en vertu de (a), à fibres finies (condition automatiquement vérifiée si
+$\symup{\mathcal R}$ provient d'une relation d'équivalence). Sous ces conditions :
+\begin{enumerate}
+\item[(i)] $\symup{X/\mathcal R=Y}$ existe, et (si $\symup{S}$ est noethérien) est quasi-projectif sur $\symup{S}$.
+
+\item[(ii)] Le morphisme canonique $\symup{f:X\to Y}$ est surjectif, propre, ouvert,
+ses fibres sont les classes d'équivalence $\symup{p_2(p_1^{-1}(x))}$ dans $\symup{X}$ mod $\symup{\mathcal R}$,
+donc $\symup{Y}$ s'identifie à l'espace topologique quotient de $\symup{X}$ par la relation
+d'équivalence ensembliste définie par $\symup{\mathcal R}$. Enfin,
+$\symup{R_1\to X\times_Y X}$ est surjectif.
+
+\item[(iii)] Si $\symup{\mathcal R}$ provient d'une relation d'équivalence, cette dernière est
+effective, i. e. $\symup{R_1\to X\times_Y X}$ est un isomorphisme, et de plus
+$\symup{f:X\to Y}$ est plat (donc fidèlement plat).
+\end{enumerate}
+
+Pour la démonstration, on se ramène à (5.1) grâce à des quasi-sections
+convenables de $\symup{X}$ pour $\symup{\mathcal R}$, la démonstration étant analogue à la construction
+des groupes algébriques quotients dans le Séminaire Chevalley.
+
+En résumé :
+
+\result{SCHOLIE}{} Soit $\symup{X}$ quasi-projectif sur $\symup{S}$ localement noethérien. La
+donnée d'un morphisme propre, fidèlement plat et surjectif $\symup{f:X\to Y}$ de $\symup{X}$
+dans un $\symup{S}$-préschéma $\symup{Y}$, est équivalente à la donnée d'une relation
+d'équivalence $\symup{R}$ sur $\symup{X}$, telle que $\symup{p_1:R\to X}$ soit propre et plat.
+
+La même méthode donne le résultat suivant :
+
+\result{THÉORÈME}{6.2} Soient $\symup{S}$ un préschéma noethérien, $\symup{X}$ un
+préschéma de type fini sur $\symup{S}$, $\symup{\mathcal R}$ une pré-relation d'équivalence dans le
+$\symup{S}$-préschéma $\symup{X}$, on suppose que : (a) $\symup{p_1:R_1\to X}$ est plat et de type fini ; (b) Le morphisme $\symup{R_1\to X\times_S X}$ est quasi-fini, (i. e. à fibres
+finies). Alors il existe un ouvert $\symup{U}$ \uline{dense} dans $\symup{X}$ \uline{saturé} pour $\symup{\mathcal R}$, tel que :
+\begin{enumerate}
+\item[(i)] Si $\symup{\mathcal R_U}$ est la pré-relation d'équivalence induite par $\symup{\mathcal R}$ dans
+$\symup{U}$, alors $\symup{U/\mathcal R_U}$ existe, et est de type fini sur $\symup{S}$.
+
+\item[(ii)] Le morphisme canonique $\symup{U\to U/\mathcal R_U}$ est surjectif et ouvert, ses
+fibres sont les classes d'équivalence ensembliste pour $\symup{\mathcal R_U}$, (donc $\symup{U/\mathcal R_U}$ est
+un espace topologique quotient de $\symup{U}$ par la relation d'équivalence ensembliste
+définie par $\symup{\mathcal R_U}$), enfin le morphisme
+$\symup{(\mathcal R_U)_1\to U\times_{U/\mathcal R_U}U}$ est surjectif.
+\src{114}
+
+\item[(iii)] Si $\symup{\mathcal R}$ provient d'une relation d'équivalence, on peut supposer
+$\symup{U\to U/\mathcal R_U}$ fidèlement plat et $\symup{\mathcal R_U}$ effectif.
+\end{enumerate}
+
+C'est là un résultat de nature essentiellement \fquote{birationnelle}.
+
+\medskip
+\noindent\textnormal{REMARQUES 6.3.}
+
+\smallskip
+\noindent $\symup{1^\circ}$ J'ignore si dans (6.1) et (6.2) l'hypothèse (b) est
+inutile. Elle nous oblige pratiquement dans le passage au quotient par des
+groupes de nous borner au cas où les stabilisateurs sont tous des groupes
+finis.
+
+\smallskip
+\noindent $\symup{2^\circ}$ On peut se demander s'il n'y a pas des résultats analogues
+à (6.1) et (6.2) sans hypothèse de platitude. Je n'ai aucun contre-exemple
+dans cette direction. Par contre, même en gardant l'hypothèse de platitude, et
+en se bornant à des relations d'équivalence telles que $\symup{p_1:R\to X}$ soit plat
+et quasi-fini (mais non fini), $\symup{X}$ étant affine, il peut arriver que $\symup{R}$ ne
+soit pas effective : prendre les relations d'équivalence induites sur des
+ouverts affines recouvrant la variété de Nagata (où un groupe à deux éléments
+opère de façon \fquote{non admissible}).
+
+\fsection{\normalfont 7}{\normalfont\uline{Applications}.}
+
+Comme nous l'avons dit dans l'introduction, l'application la plus importante
+de (6.1) est la construction de schémas de Picard, ainsi que de solutions pour
+divers autres problèmes de \fquote{modules}, sur lesquels nous reviendrons
+ultérieurement.
+
+On obtient une démonstration simple du résultat suivant de SHIMURA :
+
+\result{PROPOSITION}{7.1} Soit $\symup{A}$ un schéma abélien défini sur un anneau de
+valuation discrète $\symup{V}$ de corps des fractions $\symup{K}$. Alors tout schéma abélien
+$\symup{B'}$ sur $\symup{K}$ isogène à un quotient de $\symup{A\otimes_V K}$ \fquote{se réduit bien pour $\symup{V}$} i. e. est isomorphe à un $\symup{B\otimes_V A}$, où $\symup{B}$ est un
+schéma abélien sur $\symup{V}$ (essentiellement unique, rappelons-le).
+
+On peut supposer que $\symup{B'}$ est le quotient de $\symup{A_K}$ par un sous-schéma en
+groupes $\symup{C'}$. (N. B. : $\symup{C'}$ ne sera en général pas \fquote{réduit}, i. e. ses anneaux
+locaux auront des éléments nilpotents). Considérons le sous-schéma fermé $\symup{C}$
+de $\symup{A}$ \fquote{adhérence} de $\symup{C'}$, i. e. le plus petit sous-schéma fermé de $\symup{A}$ tel
+que $\symup{C_K}$ majore $\symup{C'}$. On aura $\symup{C_K=C'}$, et du fait que $\symup{V}$ est un anneau de
+valuation discrète, on tire facilement que $\symup{C}$ est un sous-schéma en groupes
+de $\symup{A}$ sur $\symup{V}$. Comme $\symup{A}$ est propre sur $\symup{\operatorname{Spec}(V)=S}$, il en est
+de même de $\symup{C}$, d'autre part $\symup{A}$ est même projectif sur $\symup{S}$. On peut alors
+appliquer (6.1) pour construire $\symup{A/C=B}$,
+\src{115}
+c'est le $\symup{B}$ cherché.
+
+Enfin, des raisonnements essentiellement connus permettent de tirer de (6.2)
+le résultat suivant :
+
+\result{THÉORÈME}{7.2} Soient $\symup{S}$ le spectre d'un anneau artinien, $\symup{F}$ et
+$\symup{G}$ des schémas en groupes de type fini sur $\symup{S}$, $\symup{u:F\to G}$ un homomorphisme
+de schémas en groupes sur $\symup{S}$. On suppose
+\begin{enumerate}
+\item[(i)] $\symup{F}$ est plat sur $\symup{S}$;
+\item[(ii)] le noyau de $\symup{u}$ est fini.
+\end{enumerate}
+Sous ces conditions, le schéma quotient $\symup{G/F}$ existe, le morphisme canonique
+$\symup{G\to G/F}$ est surjectif et ouvert, ses fibres sont les classes d'équivalence
+ensemblistes définies par les opérations à droite de $\symup{F}$ sur $\symup{G}$. Enfin, si
+$\symup{u}$ est un monomorphisme, alors le morphisme $\symup{G\to G/F}$ est plat et le
+morphisme $\symup{G\times F\to G\times_{(G/F)}G}$ est un isomorphisme, en d'autres termes $\symup{G}$ est un espace principal homogène
+sur $\symup{G/F}$, de groupe structural (opérant à droite) $\symup{F}$, ou plutôt
+$\symup{F\times_S(G/F)}$ considéré comme schéma en groupes sur $\symup{G/F}$ (cf. [1], B,
+\S~6).
+
+\result{COROLLAIRE}{7.3} Sous ces conditions, pour que $\symup{G}$ soit plat sur $\symup{S}$,
+il faut et il suffit que $\symup{G/F}$ le soit. Si cette condition est vérifiée, alors
+le passage au quotient par $\symup{F}$ commute à toute extension de la base $\symup{S}$, et
+si $\symup{F}$ est un sous-groupe invariant de $\symup{G}$, $\symup{G/F}$ peut être muni d'une
+structure de \uline{groupe quotient} de $\symup{G}$ par $\symup{F}$.
+
+La situation est particulièrement simple si $\symup{S}$ est le spectre d'un corps, car
+alors tout $\symup{S}$-préschéma est automatiquement plat sur $\symup{S}$. On trouve :
+
+\result{COROLLAIRE}{7.4} Soient $\symup{F,G}$ des schémas en groupes de type fini sur
+un corps $\symup{k}$, et soit $\symup{u:F\to G}$ un homomorphisme de $\symup{k}$-groupes. Alors $\symup{u}$ se
+factorise en $\symup{F\to F'\to G}$, où $\symup{F\to F'}$ est un homomorphisme de passage au
+quotient par le sous-groupe fermé $\symup{\operatorname{Ker}u}$ de $\symup{F}$, et où
+$\symup{F'\to G}$ est un homomorphisme de groupes qui est une immersion fermée. Le
+quotient $\symup{G/F=G/F'}$ existe. Le formalisme habituel (genre théorèmes de Noether)
+est valable parmi les groupes algébriques sur $\symup{k}$.
+
+Ce résultat permet de traiter de manière uniforme le passage au quotient dans
+les groupes algébriques au sens classique (i. e. qui sont irréductibles sur $\symup{k}$
+et simples sur $\symup{k}$), et le passage au quotient par des sous-groupes
+\fquote{infinitésimaux}
+\src{116}
+considéré par CARTIER. Il y a avantage à considérer les \fquote{hyperalgèbres}
+introduites par CARTIER, à la suite des travaux de DIEUDONNÉ sur les groupes
+formels, comme des groupes dans la catégorie des schémas formels au-dessus de
+$\symup{k}$, et le cas échéant (s'ils correspondent à des hyperalgèbres de rang fini
+sur $\symup{k}$) comme des groupes algébriques finis sur $\symup{k}$.
+
+\fsection{\normalfont 8}{\normalfont\uline{Une conjecture}.}
+
+Elle répond au besoin de savoir passer au quotient par le groupe projectif
+opérant sur certains sous-schémas des \fquote{schémas de Hilbert} (ces derniers
+remplaçant, en théorie des schémas, les variétés de Chow).
+
+Soient $\symup{S}$ un préschéma, et $\symup{n}$ un entier. A tout préschéma $\symup{S'}$ sur $\symup{S}$,
+faisons correspondre le groupe
+$\symup{\operatorname{Gl}(n,\Gamma(S',\mathcal O_{S'}))}$ des matrices inversibles à
+$\symup{n}$ lignes et $\symup{n}$ colonnes à valeurs dans l'anneau des sections de
+$\symup{\mathcal O_{S'}}$. On obtient ainsi un foncteur contravariant en $\symup{S'}$, dont on
+montre aisément qu'il est représentable, il correspond donc à un schéma en
+groupes sur $\symup{S}$, d'ailleurs affine sur $\symup{S}$, noté $\symup{G\ell(n)_S}$. Sa
+formation est compatible avec le changement de base, de sorte qu'en réalité
+tout provient d'un schéma en groupes sur $\symup{\text{\uwave{Z}}}$, noté $\symup{G\ell(n)}$. Le groupe $\symup{\operatorname{Gl}(1)}$, appelé groupe
+multiplicatif et souvent noté $\symup{G_m}$, correspond au foncteur
+$\symup{S\rightsquigarrow\Gamma(S,\mathcal O_S)^*}$, groupe des \fquote{unités} sur $\symup{S}$. On a
+un homomorphisme évident $\symup{\operatorname{Gl}(1)\to\operatorname{Gl}(n)}$, et on
+construit facilement le groupe quotient, noté $\symup{\operatorname{GP}(n-1)}$ et
+appelé le \uline{groupe projectif de degré} $\symup{n-1}$ \uline{sur} $\symup{\text{\uwave{Z}}}$. Il représente
+le foncteur qui, à $\symup{S}$, associe le groupe des sections du faisceau
+$\symup{\text{\uwave{Gl}}(n)_S/
+\text{\uwave{Gl}}(1)_S}$, où
+$\symup{\text{\uwave{Gl}}(n)_S}$ désigne le faisceau des germes de sections
+de $\symup{\operatorname{Gl}(n)_S}$ sur $\symup{S}$. (On fera attention que les sections de
+$\symup{\operatorname{GP}(n-1)_S}$ sur $\symup{S}$ ne proviennent pas en général de sections
+de $\symup{\operatorname{Gl}(n)_S}$ sur $\symup{S}$!). Notons que l'on peut prouver que
+$\symup{\operatorname{GP}(n-1)}$ représente également le foncteur
+$\symup{S\rightsquigarrow\operatorname{Aut}_S(P_S^{n-1})}$, (où
+$\symup{P_S^{n-1}}$ est le schéma projectif-type de dimension relative $\symup{n-1}$
+sur $\symup{S}$), du moins pour $\symup{S}$ noethérien. C'est de cette façon qu'il s'introduit
+en théorie des modules.
+
+Soit $\symup{S}$ un schéma noethérien, qu'on peut si on veut supposer affine, et soit
+$\symup{X}$ un $\symup{S}$-préschéma quasi-projectif, muni d'un faisceau inversible $\symup{\mathcal L}$
+très ample relativement à $\symup{S}$. On suppose que le groupe
+$\symup{G=\operatorname{GP}(n)_S}$ opère sur $\symup{X}$ et en même temps sur $\symup{\mathcal L}$ (de
+façon compatible avec ses opérations sur $\symup{X}$), et qu'il opère \uline{librement}
+sur $\symup{S}$.
+\src{117}
+
+\result{CONJECTURE}{8.1} Sous les conditions précédentes:
+
+\smallskip
+\noindent $\symup{1^\circ}$ \uline{La relation d'équivalence définie par} $\symup{G}$ \uline{est
+effective, le quotient} $\symup{Y=X/G}$ \uline{est de type fini sur} $\symup{S}$ \uline{et le morphisme
+canonique} $\symup{f:X\to Y}$ \uline{est plat et surjectif} (\uline{donc} $\symup{X}$ \uline{devient un fibré
+principal homogène sur} $\symup{Y}$, \uline{de groupe} $\symup{G\times_S Y=\operatorname{GP}(n)_Y}$).
+
+\smallskip
+\noindent $\symup{2^\circ}$ \uline{Soit} $\symup{\mathcal L'}$ \uline{le faisceau inversible sur} $\symup{Y}$ \uline{déduit de} $\symup{\mathcal L}$ \uline{par \fquote{descente fidèlement plate} par} $\symup{f}$ (cf. [1], B, \S~th. 1). \uline{Alors} $\symup{\mathcal L'}$ \uline{est \fquote{préample} sur} $\symup{Y}$ \uline{par rapport à} $\symup{S}$,
+i. e. \uline{il existe un entier} $\symup{m}$ \uline{et un morphisme quasi-fini de} $\symup{Y}$ \uline{dans un schéma projectif-type convenable} $\symup{P_S^N}$, \uline{tels que} $\symup{(\mathcal L')^{\otimes m}}$ \uline{soit isomorphe à l'image inverse de} $\symup{\mathcal O_{P_S^N}(1)}$.
+
+On notera que même si $\symup{X}$ est séparé sur $\symup{S}$, il pourra arriver que $\symup{Y}$ ne soit
+pas séparé sur $\symup{S}$ (situation qui se rencontre dans des situations de
+\fquote{problèmes de modules} pas du tout pathologiques). Si $\symup{1^\circ}$ est vérifié,
+alors $\symup{Y}$ est séparé si et seulement si la relation d'équivalence définie par
+$\symup{G}$ a un graphe fermé, i. e. si $\symup{G\times X\to X\times X}$ a une image fermée
+(c'est alors une immersion fermée). Si $\symup{Y}$ est séparé, alors $\symup{\mathcal L'}$ est
+préample sur $\symup{Y}$ par rapport à $\symup{S}$ si et seulement s'il est ample, i. e. si
+une puissance tensorielle convenable définit une immersion projective. Dans
+les problèmes de modules mentionnés dans l'introduction, on peut montrer que la
+relation d'équivalence à laquelle on parvient à bien un graphe fermé.
+
+\medskip
+\result{REMARQUES}{8.1} Nous avons supposé
+$\symup{G=\operatorname{GP}(n)_S}$ pour fixer les idées et parce que c'est le cas le
+plus important en pratique, à l'heure actuelle. L'hypothèse raisonnable à
+faire sur $\symup{G}$ semblerait plutôt que $\symup{G}$ soit une des \fquote{formes} sur $\symup{S}$ d'un
+des groupes de Tohokû (dont la construction sur les entiers a été faite
+également par CHEVALLEY). Le seul fait positif qui me soit connu dans la
+direction de la conjecture précédente est le suivant: \uline{Soit} $\symup{X}$ \uline{un schéma
+affine sur un corps} $\symup{k}$ \uline{de caractéristique} $\symup{0}$, \uline{où le groupe}
+$\symup{\operatorname{Gl}(n)_k}$ \uline{ou} $\symup{\operatorname{GP}(n-1)_k}$ \uline{opère librement. Alors
+la relation d'équivalence définie par} $\symup{G}$ \uline{est effective, le quotient} $\symup{X/G}$ \uline{est
+également affine, et le morphisme} $\symup{X\to X/G}$ \uline{est plat et surjectif}. La
+démonstration utilise le fait suivant (qui pour l'instant n'est démontré qu'en
+caractéristique $\symup{0}$): lorsque l'on fait opérer $\symup{G}$ sur l'anneau affine $\symup{A}$ de
+$\symup{G}$, considéré comme espace vectoriel sur $\symup{k}$, la représentation triviale de
+$\symup{G}$ n'intervient qu'une fois (dans une suite de composition d'un sous-espace
+vectoriel de dimension finie sur $\symup{k}$ stable sous $\symup{G}$). Il semble possible
+qu'une utilisation systématique de la
+\src{118}
+théorie des représentations linéaires de $\symup{G}$ finira par donner une
+démonstration de la conjecture, du moins lorsque l'on est sur un corps de base.
+Lorsque l'on n'est plus sur un corps de base, le conférencier ignore tout.
+
+\begin{center}BIBLIOGRAPHIE\end{center}
+\addcontentsline{toc}{section}{Bibliographie}
+
+\begin{description}
+\item[{\normalfont[1]}] GROTHENDIECK (Alexander). - Techniques de descente et théorèmes
+d'existence en géométrie algébrique, I: Généralités, Séminaire Bourbaki,
+1959/60, n\textsuperscript{o} 190, 29 p.
+
+\item[{\normalfont[2]}] GROTHENDIECK (Alexander). - Techniques de descente et théorèmes
+d'existence en géométrie algébrique, II: Le théorème d'existence en théorie
+formelle des modules, Séminaire Bourbaki, 1959/60,
+n\textsuperscript{o} 195, 22 p.
+
+\item[{\normalfont[3]}] GROTHENDIECK (A.) et DIEUDONNÉ (J.). - Éléments de géométrie
+algébrique, I: Le langage des schémas. - Paris, Presses universitaires de
+France, 1960 (Institut des hautes Études scientifiques, Publications
+mathématiques, 4).
+\end{description}
+
+\begin{center}
+  \rule{.14\linewidth}{.3pt}
+\end{center}

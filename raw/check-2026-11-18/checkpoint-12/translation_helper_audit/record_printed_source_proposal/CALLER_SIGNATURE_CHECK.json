@@ -1,0 +1,42 @@
+{
+  "completed_utc": "2026-11-19T06:10:04.058320+00:00",
+  "helper_sha256": "fdfb328ef3646f8790a3e2a7eb7b5888acd5acb71dc8fce78fb7928b621a59b5",
+  "helper_signature": "(layer, unit, page, rel, body, entry_lines=None)",
+  "proposed_signature": "(layer, unit, page, rel, body, entry_lines=None, printed=False)",
+  "helper_default_values": [
+    null
+  ],
+  "helper_posonly_parameters": 0,
+  "helper_vararg": null,
+  "helper_keyword_only_parameters": [],
+  "helper_varkw": null,
+  "top_level_python_files_enumerated": 317,
+  "relevant_files_ast_parsed": 50,
+  "call_count": 44,
+  "positional_arity_counts": {
+    "6": 44
+  },
+  "keyword_name_counts": {},
+  "calls_with_starred_positional": 0,
+  "calls_with_double_star_keywords": 0,
+  "all_existing_calls_keep_identical_binding": true,
+  "all_existing_calls_default_printed_false": true,
+  "explicit_import_or_assignment_aliases": [],
+  "unresolved_attribute_or_dynamic_access": [],
+  "wildcard_import_files": 45,
+  "parse_issues": [],
+  "all_read_code_bytes_unchanged": true,
+  "show_math_align_math_source_expression_ast_identical": true,
+  "source_expression_AST": {
+    "show_math": "JoinedStr(values=[Constant(value='sources/'), FormattedValue(value=IfExp(test=Name(id='printed', ctx=Load()), body=Constant(value='fr_printed'), orelse=Constant(value='fr')), conversion=-1), Constant(value='/fr/'), FormattedValue(value=Name(id='unit', ctx=Load()), conversion=-1), Constant(value='.tex')])",
+    "align_math": "JoinedStr(values=[Constant(value='sources/'), FormattedValue(value=IfExp(test=Name(id='printed', ctx=Load()), body=Constant(value='fr_printed'), orelse=Constant(value='fr')), conversion=-1), Constant(value='/fr/'), FormattedValue(value=Name(id='unit', ctx=Load()), conversion=-1), Constant(value='.tex')])",
+    "record_translation_page": "JoinedStr(values=[Constant(value='sources/fr/fr/'), FormattedValue(value=Name(id='unit', ctx=Load()), conversion=-1), Constant(value='.tex')])"
+  },
+  "limitations": [
+    "Static inventory of top-level FGA_CHECK/scripts/*.py at the recorded time; no execution or arbitrary dynamic name resolution.",
+    "Direct imported names, module aliases, simple assignment aliases, and wildcard-import direct calls are inventoried; later rebinding or dynamic dispatch cannot be proven from this inventory.",
+    "No caller source literals or payloads are emitted or interpreted."
+  ],
+  "production_edits": 0,
+  "source_or_scan_reads": 0
+}

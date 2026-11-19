@@ -1,0 +1,512 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-19T04:23:43.927901+00:00",
+  "candidate_stage": "read_through_236_243",
+  "baseline_stage": "read_through_236_237",
+  "scope": "Finished compiler metadata and frozen-source hashes only. No live source reads, diagnostic payloads emitted, source meaning review, PDF/image opening, or rendering.",
+  "tree_hash_implementation": "Exact existing build_fga.py tree_hash function AST executed with hashlib; no other build functions executed.",
+  "tree_hash_function_sha256": "e2d260a6ab10179267eafb5fdd6beb31c151505d1bf27286815e8751facfa3fd",
+  "undefined_reference_counting": "Individual warning records match singular reference followed by undefined; plural undefined references notices are counted separately. Citation counts are separate. Diagnostic message text is not emitted.",
+  "overflow_delta_identity": "Exact (source,box,line_start,line_end); values and mapped physical pages compared separately. Changed line numbers appear as removed/added locations; no content correspondence inferred.",
+  "gate": "Three successful passes, zero engine errors/missing glyphs, zero final undefined references/citations, stable auxiliary state, positive consistent physical-page metadata, matching stable frozen-source hashes. Existing overflows and non-reference warnings are reported, not treated as source failures.",
+  "builds": [
+    {
+      "stage": "read_through_236_237",
+      "layer": "fr",
+      "engine": "lualatex",
+      "passes": 3,
+      "finished_utc": "2026-11-19T03:59:21.558889+00:00",
+      "pdf_pages": 148,
+      "status_from_metadata": "overflow above 2 pt",
+      "aux_stable": true,
+      "source_hash_matches": true,
+      "latest_pass": {
+        "stage": "read_through_236_237",
+        "layer": "fr",
+        "pass_number": 3,
+        "exit_code": 0,
+        "errors": 0,
+        "missing_glyphs": 0,
+        "warnings": 99,
+        "undefined_reference_warnings": 0,
+        "undefined_reference_summary_warnings": 0,
+        "undefined_citation_warnings": 0,
+        "undefined_citation_summary_warnings": 0,
+        "aux_stable": true,
+        "aux_sha256": "2f274a3c169a324da0d09a4018b40a6bdc37b6e3290a664aa7433dd1a4c5b2f6",
+        "physical_page_label_keys": 148,
+        "overfull_boxes": 7,
+        "boxes_over_2pt": 5,
+        "boxes_over_10pt": 3,
+        "max_overfull_pt": 36.72565
+      }
+    },
+    {
+      "stage": "read_through_236_237",
+      "layer": "fr_printed",
+      "engine": "lualatex",
+      "passes": 3,
+      "finished_utc": "2026-11-19T04:05:49.311085+00:00",
+      "pdf_pages": 148,
+      "status_from_metadata": "overflow above 2 pt",
+      "aux_stable": true,
+      "source_hash_matches": true,
+      "latest_pass": {
+        "stage": "read_through_236_237",
+        "layer": "fr_printed",
+        "pass_number": 3,
+        "exit_code": 0,
+        "errors": 0,
+        "missing_glyphs": 0,
+        "warnings": 99,
+        "undefined_reference_warnings": 0,
+        "undefined_reference_summary_warnings": 0,
+        "undefined_citation_warnings": 0,
+        "undefined_citation_summary_warnings": 0,
+        "aux_stable": true,
+        "aux_sha256": "0d1f8148f681ef6a10c5fae9c17fd61ebcf62e7bfc64d3e1af853ec6312e05ae",
+        "physical_page_label_keys": 148,
+        "overfull_boxes": 8,
+        "boxes_over_2pt": 6,
+        "boxes_over_10pt": 3,
+        "max_overfull_pt": 36.72565
+      }
+    },
+    {
+      "stage": "read_through_236_243",
+      "layer": "fr",
+      "engine": "lualatex",
+      "passes": 3,
+      "finished_utc": "2026-11-19T04:18:20.291499+00:00",
+      "pdf_pages": 148,
+      "status_from_metadata": "overflow above 2 pt",
+      "aux_stable": true,
+      "source_hash_matches": true,
+      "latest_pass": {
+        "stage": "read_through_236_243",
+        "layer": "fr",
+        "pass_number": 3,
+        "exit_code": 0,
+        "errors": 0,
+        "missing_glyphs": 0,
+        "warnings": 100,
+        "undefined_reference_warnings": 0,
+        "undefined_reference_summary_warnings": 0,
+        "undefined_citation_warnings": 0,
+        "undefined_citation_summary_warnings": 0,
+        "aux_stable": true,
+        "aux_sha256": "011adcddb253a04572927a3d93f68950aacab38df4f488d3f289f551741b4a9b",
+        "physical_page_label_keys": 148,
+        "overfull_boxes": 7,
+        "boxes_over_2pt": 5,
+        "boxes_over_10pt": 3,
+        "max_overfull_pt": 36.72565
+      }
+    },
+    {
+      "stage": "read_through_236_243",
+      "layer": "fr_printed",
+      "engine": "lualatex",
+      "passes": 3,
+      "finished_utc": "2026-11-19T04:23:05.070983+00:00",
+      "pdf_pages": 148,
+      "status_from_metadata": "overflow above 2 pt",
+      "aux_stable": true,
+      "source_hash_matches": true,
+      "latest_pass": {
+        "stage": "read_through_236_243",
+        "layer": "fr_printed",
+        "pass_number": 3,
+        "exit_code": 0,
+        "errors": 0,
+        "missing_glyphs": 0,
+        "warnings": 100,
+        "undefined_reference_warnings": 0,
+        "undefined_reference_summary_warnings": 0,
+        "undefined_citation_warnings": 0,
+        "undefined_citation_summary_warnings": 0,
+        "aux_stable": true,
+        "aux_sha256": "9133dc8f120c9d57bc51eee8328865d8b186c7411127151c0ab5fe6bf3c40c2c",
+        "physical_page_label_keys": 148,
+        "overfull_boxes": 8,
+        "boxes_over_2pt": 6,
+        "boxes_over_10pt": 3,
+        "max_overfull_pt": 36.72565
+      }
+    }
+  ],
+  "deltas": [
+    {
+      "layer": "fr",
+      "engine_same": true,
+      "baseline_pdf_pages": 148,
+      "candidate_pdf_pages": 148,
+      "pdf_page_delta": 0,
+      "latest_metric_deltas": {
+        "errors": 0,
+        "missing_glyphs": 0,
+        "warnings": 1,
+        "undefined_reference_warnings": 0,
+        "undefined_reference_summary_warnings": 0,
+        "undefined_citation_warnings": 0,
+        "undefined_citation_summary_warnings": 0,
+        "overfull_boxes": 0,
+        "boxes_over_2pt": 0,
+        "boxes_over_10pt": 0,
+        "max_overfull_pt": 0.0
+      },
+      "overflow_location_counts": {
+        "unchanged": 7
+      }
+    },
+    {
+      "layer": "fr_printed",
+      "engine_same": true,
+      "baseline_pdf_pages": 148,
+      "candidate_pdf_pages": 148,
+      "pdf_page_delta": 0,
+      "latest_metric_deltas": {
+        "errors": 0,
+        "missing_glyphs": 0,
+        "warnings": 1,
+        "undefined_reference_warnings": 0,
+        "undefined_reference_summary_warnings": 0,
+        "undefined_citation_warnings": 0,
+        "undefined_citation_summary_warnings": 0,
+        "overfull_boxes": 0,
+        "boxes_over_2pt": 0,
+        "boxes_over_10pt": 0,
+        "max_overfull_pt": 0.0
+      },
+      "overflow_location_counts": {
+        "unchanged": 8
+      }
+    }
+  ],
+  "input_sha256": {
+    "tmp/tex_runtime/builds/read_through_236_237/fr/result.json": "b25edefc1de0477025531c7c87aac580213326b46a5764cbd1b4f56f252e2123",
+    "tmp/tex_runtime/builds/read_through_236_237/fr_printed/result.json": "f119d4d811dc5f61e00593e5ef337146ca1771dbb32f72cf811872f21718a8e3",
+    "tmp/tex_runtime/builds/read_through_236_243/fr/result.json": "e88e93312879eda909ee7598042c0ba89ae263ec2159f54accafda45c58a7523",
+    "tmp/tex_runtime/builds/read_through_236_243/fr_printed/result.json": "69e5e687c0bdd76247580b3ecd2f015d8ab750774307561a5b7993f39294cd0f",
+    "FGA_CHECK/scripts/build_fga.py": "0d9fa20603bf5805e013d8486b74c701fb845885f3174816a50cebe6cc60829f",
+    "FGA_CHECK/build_reports/read_through_236_237/BUILD_SUMMARY.tsv": "4ecf4c833d82b8de4deaa8ce9e21818c14cc52879b2b2b46ee91637f6027edba"
+  },
+  "failures": [],
+  "warning_audit": {
+    "grouping": "Relative source path, compiler warning family and SHA256 of whitespace-normalized diagnostic message, with only on-input-line numbers replaced by a placeholder; warning text is never emitted.",
+    "passes": [
+      {
+        "layer": "fr",
+        "pass_number": 1,
+        "baseline_warning_count": 99,
+        "candidate_warning_count": 100,
+        "warning_count_delta": 1,
+        "baseline_group_count": 19,
+        "candidate_group_count": 19,
+        "baseline_family_counts": {
+          "package_epstopdf": 1,
+          "package_unicode-math": 2,
+          "package_hyperref": 95,
+          "latex": 1
+        },
+        "candidate_family_counts": {
+          "package_epstopdf": 1,
+          "package_unicode-math": 2,
+          "package_hyperref": 96,
+          "latex": 1
+        },
+        "changed_groups": [
+          {
+            "source": "sources/fr/fr/236.tex",
+            "warning_family": "package_hyperref",
+            "normalized_message_sha256": "0751045260b394234aa8cecff58e194cd3e5d76552f475912de4ad9f5ffe9f2d",
+            "baseline_count": 19,
+            "candidate_count": 20,
+            "delta": 1
+          }
+        ]
+      },
+      {
+        "layer": "fr",
+        "pass_number": 2,
+        "baseline_warning_count": 99,
+        "candidate_warning_count": 100,
+        "warning_count_delta": 1,
+        "baseline_group_count": 19,
+        "candidate_group_count": 19,
+        "baseline_family_counts": {
+          "package_epstopdf": 1,
+          "package_unicode-math": 2,
+          "package_hyperref": 95,
+          "latex": 1
+        },
+        "candidate_family_counts": {
+          "package_epstopdf": 1,
+          "package_unicode-math": 2,
+          "package_hyperref": 96,
+          "latex": 1
+        },
+        "changed_groups": [
+          {
+            "source": "sources/fr/fr/236.tex",
+            "warning_family": "package_hyperref",
+            "normalized_message_sha256": "0751045260b394234aa8cecff58e194cd3e5d76552f475912de4ad9f5ffe9f2d",
+            "baseline_count": 19,
+            "candidate_count": 20,
+            "delta": 1
+          }
+        ]
+      },
+      {
+        "layer": "fr",
+        "pass_number": 3,
+        "baseline_warning_count": 99,
+        "candidate_warning_count": 100,
+        "warning_count_delta": 1,
+        "baseline_group_count": 19,
+        "candidate_group_count": 19,
+        "baseline_family_counts": {
+          "package_epstopdf": 1,
+          "package_unicode-math": 2,
+          "package_hyperref": 95,
+          "latex": 1
+        },
+        "candidate_family_counts": {
+          "package_epstopdf": 1,
+          "package_unicode-math": 2,
+          "package_hyperref": 96,
+          "latex": 1
+        },
+        "changed_groups": [
+          {
+            "source": "sources/fr/fr/236.tex",
+            "warning_family": "package_hyperref",
+            "normalized_message_sha256": "0751045260b394234aa8cecff58e194cd3e5d76552f475912de4ad9f5ffe9f2d",
+            "baseline_count": 19,
+            "candidate_count": 20,
+            "delta": 1
+          }
+        ]
+      },
+      {
+        "layer": "fr_printed",
+        "pass_number": 1,
+        "baseline_warning_count": 99,
+        "candidate_warning_count": 100,
+        "warning_count_delta": 1,
+        "baseline_group_count": 19,
+        "candidate_group_count": 19,
+        "baseline_family_counts": {
+          "package_epstopdf": 1,
+          "package_unicode-math": 2,
+          "package_hyperref": 95,
+          "latex": 1
+        },
+        "candidate_family_counts": {
+          "package_epstopdf": 1,
+          "package_unicode-math": 2,
+          "package_hyperref": 96,
+          "latex": 1
+        },
+        "changed_groups": [
+          {
+            "source": "sources/fr_printed/fr/236.tex",
+            "warning_family": "package_hyperref",
+            "normalized_message_sha256": "0751045260b394234aa8cecff58e194cd3e5d76552f475912de4ad9f5ffe9f2d",
+            "baseline_count": 19,
+            "candidate_count": 20,
+            "delta": 1
+          }
+        ]
+      },
+      {
+        "layer": "fr_printed",
+        "pass_number": 2,
+        "baseline_warning_count": 99,
+        "candidate_warning_count": 100,
+        "warning_count_delta": 1,
+        "baseline_group_count": 19,
+        "candidate_group_count": 19,
+        "baseline_family_counts": {
+          "package_epstopdf": 1,
+          "package_unicode-math": 2,
+          "package_hyperref": 95,
+          "latex": 1
+        },
+        "candidate_family_counts": {
+          "package_epstopdf": 1,
+          "package_unicode-math": 2,
+          "package_hyperref": 96,
+          "latex": 1
+        },
+        "changed_groups": [
+          {
+            "source": "sources/fr_printed/fr/236.tex",
+            "warning_family": "package_hyperref",
+            "normalized_message_sha256": "0751045260b394234aa8cecff58e194cd3e5d76552f475912de4ad9f5ffe9f2d",
+            "baseline_count": 19,
+            "candidate_count": 20,
+            "delta": 1
+          }
+        ]
+      },
+      {
+        "layer": "fr_printed",
+        "pass_number": 3,
+        "baseline_warning_count": 99,
+        "candidate_warning_count": 100,
+        "warning_count_delta": 1,
+        "baseline_group_count": 19,
+        "candidate_group_count": 19,
+        "baseline_family_counts": {
+          "package_epstopdf": 1,
+          "package_unicode-math": 2,
+          "package_hyperref": 95,
+          "latex": 1
+        },
+        "candidate_family_counts": {
+          "package_epstopdf": 1,
+          "package_unicode-math": 2,
+          "package_hyperref": 96,
+          "latex": 1
+        },
+        "changed_groups": [
+          {
+            "source": "sources/fr_printed/fr/236.tex",
+            "warning_family": "package_hyperref",
+            "normalized_message_sha256": "0751045260b394234aa8cecff58e194cd3e5d76552f475912de4ad9f5ffe9f2d",
+            "baseline_count": 19,
+            "candidate_count": 20,
+            "delta": 1
+          }
+        ]
+      }
+    ]
+  },
+  "overflow_all_passes": {
+    "identity": "Exact source, box, line start, line end; amount, physical mapped pages, shipout candidate, mapping method and relative raw source compared. Log-line offsets retained but excluded from identity.",
+    "passes": [
+      {
+        "layer": "fr",
+        "pass_number": 1,
+        "baseline_records": 7,
+        "candidate_records": 7,
+        "location_counts": {
+          "unchanged": 7
+        }
+      },
+      {
+        "layer": "fr",
+        "pass_number": 2,
+        "baseline_records": 7,
+        "candidate_records": 7,
+        "location_counts": {
+          "unchanged": 7
+        }
+      },
+      {
+        "layer": "fr",
+        "pass_number": 3,
+        "baseline_records": 7,
+        "candidate_records": 7,
+        "location_counts": {
+          "unchanged": 7
+        }
+      },
+      {
+        "layer": "fr_printed",
+        "pass_number": 1,
+        "baseline_records": 8,
+        "candidate_records": 8,
+        "location_counts": {
+          "unchanged": 8
+        }
+      },
+      {
+        "layer": "fr_printed",
+        "pass_number": 2,
+        "baseline_records": 8,
+        "candidate_records": 8,
+        "location_counts": {
+          "unchanged": 8
+        }
+      },
+      {
+        "layer": "fr_printed",
+        "pass_number": 3,
+        "baseline_records": 8,
+        "candidate_records": 8,
+        "location_counts": {
+          "unchanged": 8
+        }
+      }
+    ]
+  },
+  "baseline_report_check": {
+    "path": "FGA_CHECK/build_reports/read_through_236_237/BUILD_SUMMARY.tsv",
+    "status": "PASS",
+    "checks": [
+      {
+        "layer": "fr",
+        "numeric_fields": [
+          "passes",
+          "exit_code",
+          "pdf_pages",
+          "errors",
+          "warnings",
+          "missing_glyphs",
+          "max_overfull_pt",
+          "boxes_over_2pt",
+          "boxes_over_10pt"
+        ],
+        "text_fields": [
+          "engine",
+          "source_tree_sha256",
+          "status",
+          "aux_stable"
+        ],
+        "matches": true
+      },
+      {
+        "layer": "fr_printed",
+        "numeric_fields": [
+          "passes",
+          "exit_code",
+          "pdf_pages",
+          "errors",
+          "warnings",
+          "missing_glyphs",
+          "max_overfull_pt",
+          "boxes_over_2pt",
+          "boxes_over_10pt"
+        ],
+        "text_fields": [
+          "engine",
+          "source_tree_sha256",
+          "status",
+          "aux_stable"
+        ],
+        "matches": true
+      }
+    ],
+    "failures": []
+  },
+  "initial_capture_audit": {
+    "status": "PASS",
+    "stage": "read_through_236_243",
+    "metadata_path": "tmp/frozen_build_inputs/read_through_236_243/LIVE_FREEZE.json",
+    "metadata_sha256": "f20968d814d0658059efbe2f1312efa8e4e6063769ec534b162767a5c007c070",
+    "capture_started_utc": "2026-11-19T04:11:47.386762+00:00",
+    "capture_completed_utc": "2026-11-19T04:11:47.915238+00:00",
+    "capture_attempt": 1,
+    "manifest_files": 58,
+    "compared_files": 58,
+    "manifest_all_layer_entries": 274,
+    "source_bytes": 1317430,
+    "initial_and_frozen_file_sets_exact": true,
+    "capture_consistency_statement_sha256": "fff08b722db801d9116644e1d332df7ad3ade60cebde049a1643d9c19cb85786",
+    "scope": "Only the 58 French entries of the all-layer capture manifest and corresponding French files in the two immutable source copies; no live sources or other-layer source bytes read.",
+    "failures": []
+  },
+  "writes": "Only tmp/french_build_236_243_audit; no source, ledger, or FGA_CHECK writes."
+}

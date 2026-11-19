@@ -1,0 +1,30 @@
+{
+  "captured_utc": "2026-11-19T06:01:08.696121+00:00",
+  "original_inputs": [
+    {
+      "path": "inputs/original_sources/en/en/182.tex",
+      "bytes": 73069,
+      "sha256": "36feb52785502d482aa55e426d81b194a38b15bbbfe253a242b7c9bf985a0fec"
+    },
+    {
+      "path": "tmp/math_expression_inventory_02/sources/en/en/182.tex",
+      "bytes": 73069,
+      "sha256": "36feb52785502d482aa55e426d81b194a38b15bbbfe253a242b7c9bf985a0fec"
+    }
+  ],
+  "original_copies_identical": true,
+  "baseline_ledger_rows": 21869,
+  "baseline_ledger_bytes": 7143471,
+  "baseline_ledger_sha256": "46651663a85588656365e532efeaa9fc6052872126d7bf1cd8037f32d6dd7359",
+  "selected_rows": 682,
+  "selected_first": "C021870",
+  "selected_last": "C022552",
+  "excluded_interleaved_rows": [
+    {
+      "row_id": "C022110",
+      "file": "sources/en/tex/base.tex",
+      "page": "149-170",
+      "row_sha256": "f3a61e8d772ad509dada60ddcf07a8fff268d952a5a187920bcc39c14328ab5f"
+    }
+  ]
+}

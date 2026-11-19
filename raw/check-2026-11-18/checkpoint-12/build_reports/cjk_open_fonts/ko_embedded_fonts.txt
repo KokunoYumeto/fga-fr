@@ -1,0 +1,6 @@
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+KBZEMB+NotoSansCJKjp-Bold-Identity-H CID Type 0C       Identity-H       yes yes yes      4  0
+GUJBQF+NotoSansCJKjp-Regular-Identity-H CID Type 0C       Identity-H       yes yes yes      6  0
+WLUWST+TeXGyreCursor-Regular-Identity-H CID Type 0C       Identity-H       yes yes yes     18  0
+IIDPHU+LatinModernMath-Regular-Identity-H CID Type 0C       Identity-H       yes yes yes     43  0

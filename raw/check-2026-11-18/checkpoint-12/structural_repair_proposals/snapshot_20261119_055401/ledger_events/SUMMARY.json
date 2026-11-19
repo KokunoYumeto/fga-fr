@@ -1,0 +1,54 @@
+{
+  "status": "COMPLETE_UNAPPLIED_PROPOSALS",
+  "completed_utc": "2026-11-19T05:59:04.396124+00:00",
+  "capture_started_utc": "2026-11-19T05:54:01.062615+00:00",
+  "capture_completed_utc": "2026-11-19T05:54:01.099052+00:00",
+  "capture_sha256": "148d8cf0778a785ad48b36b5f30d2f885bbf0c55c0bdb4b2c06fcd219b9ca756",
+  "selected_input_files": 2,
+  "selected_input_rows": {
+    "CORRECTIONS.tsv": 22552,
+    "CHECK_EVENTS.tsv": 860
+  },
+  "target_rows_revalidated_against_prior_report": 28,
+  "operation_count": 28,
+  "confidence_alternatives": 3,
+  "confidence_choice": null,
+  "duplicate_deletions": 2,
+  "duplicate_keep_delete_pairs": [
+    [
+      "C003871",
+      "C003873"
+    ],
+    [
+      "C003872",
+      "C003874"
+    ]
+  ],
+  "event_replacements": 23,
+  "event_rule_counts": {
+    "H01": 7,
+    "H02": 7,
+    "H03": 9
+  },
+  "mechanical_spelling_candidates": 14,
+  "conditional_H03_candidates": 9,
+  "event_other_field_bytes_preserved": true,
+  "event_original_how_preserved_verbatim": true,
+  "confidence_other_field_bytes_preserved": true,
+  "all_old_payloads_match_exact_frozen_ranges": true,
+  "all_json_utf8_round_trips": true,
+  "selected_operation_count": 0,
+  "applied_operation_count": 0,
+  "privacy_pattern_matches": 0,
+  "privacy_payload_redactions": 0,
+  "privacy_note": "No selected payload matched the listed local-root, email, drive-like or file-URI patterns; exact bytes were retained. TeX control syntax is not classified as a local path.",
+  "source_files_read": 0,
+  "live_reads": false,
+  "production_writes": 0,
+  "whole_gate_run": false,
+  "all_inputs_unchanged": true,
+  "checkpoint_provenance_reused_and_exact_target_hashes_revalidated": true,
+  "operations_sha256": "d995c03e3c7cc7372d416ae56554f833eaca4403e2229cf09b9a94ddba199dd2",
+  "operations_bytes": 167530,
+  "blockers": []
+}

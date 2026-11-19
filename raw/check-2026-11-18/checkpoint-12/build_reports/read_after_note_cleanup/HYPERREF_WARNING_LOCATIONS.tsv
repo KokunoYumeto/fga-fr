@@ -1,0 +1,193 @@
+layer	source	input_line	removed_token	log_line
+fr	sources/fr/fr/149.tex	14	math shift	299
+fr	sources/fr/fr/149.tex	14	\@@underline	303
+fr	sources/fr/fr/149.tex	14	\hbox	307
+fr	sources/fr/fr/149.tex	14	\mathsurround	311
+fr	sources/fr/fr/149.tex	14	\z@	315
+fr	sources/fr/fr/149.tex	14	math shift	319
+fr	sources/fr/fr/149.tex	14	math shift	323
+fr	sources/fr/fr/149.tex	14	\@@underline	327
+fr	sources/fr/fr/149.tex	14	\hbox	331
+fr	sources/fr/fr/149.tex	14	\mathsurround	335
+fr	sources/fr/fr/149.tex	14	\z@	339
+fr	sources/fr/fr/149.tex	14	math shift	343
+fr	sources/fr/fr/149.tex	133	\uline	399
+fr	sources/fr/fr/149.tex	240	\uline	463
+fr	sources/fr/fr/149.tex	440	\uline	551
+fr	sources/fr/fr/149.tex	672	\uline	636
+fr	sources/fr/fr/149.tex	872	\uline	719
+fr	sources/fr/fr/149.tex	976	\uline	792
+fr	sources/fr/fr/149.tex	1105	\uline	857
+fr	sources/fr/fr/e149.tex	3	\mathsurround	941
+fr	sources/fr/fr/e149.tex	3	\z@	945
+fr	sources/fr/fr/e149.tex	3	superscript	949
+fr	sources/fr/fr/182.tex	8	\uline	962
+fr	sources/fr/fr/182.tex	100	\uline	969
+fr	sources/fr/fr/182.tex	151	\uline	976
+fr	sources/fr/fr/182.tex	317	\uline	991
+fr	sources/fr/fr/182.tex	387	\uline	998
+fr	sources/fr/fr/182.tex	498	\uline	1008
+fr	sources/fr/fr/182.tex	498	math shift	1012
+fr	sources/fr/fr/182.tex	498	\symup	1016
+fr	sources/fr/fr/182.tex	498	math shift	1020
+fr	sources/fr/fr/182.tex	498	\uline	1024
+fr	sources/fr/fr/182.tex	719	\uline	1035
+fr	sources/fr/fr/182.tex	815	\uline	1042
+fr	sources/fr/fr/e182.tex	3	\mathsurround	1085
+fr	sources/fr/fr/e182.tex	3	\z@	1089
+fr	sources/fr/fr/e182.tex	3	superscript	1093
+fr	sources/fr/fr/e190.tex	3	\mathsurround	1175
+fr	sources/fr/fr/e190.tex	3	\z@	1179
+fr	sources/fr/fr/e190.tex	3	superscript	1183
+fr	sources/fr/fr/195.tex	9	\uline	1196
+fr	sources/fr/fr/195.tex	425	\uline	1213
+fr	sources/fr/fr/195.tex	496	\uline	1220
+fr	sources/fr/fr/e195.tex	3	\mathsurround	1244
+fr	sources/fr/fr/e195.tex	3	\z@	1248
+fr	sources/fr/fr/e195.tex	3	superscript	1252
+fr	sources/fr/fr/212.tex	540	\uline	1285
+fr	sources/fr/fr/212.tex	648	\uline	1292
+fr	sources/fr/fr/212.tex	724	\uline	1299
+fr	sources/fr/fr/212.tex	797	\uline	1306
+fr	sources/fr/fr/e212.tex	3	\mathsurround	1320
+fr	sources/fr/fr/e212.tex	3	\z@	1324
+fr	sources/fr/fr/e212.tex	3	superscript	1328
+fr	sources/fr/fr/221.tex	36	\uline	1345
+fr	sources/fr/fr/221.tex	216	\uline	1356
+fr	sources/fr/fr/221.tex	467	\uline	1367
+fr	sources/fr/fr/221.tex	859	\uline	1383
+fr	sources/fr/fr/221.tex	967	\uline	1392
+fr	sources/fr/fr/221.tex	1160	\uline	1401
+fr	sources/fr/fr/221.tex	1244	\uline	1408
+fr	sources/fr/fr/e221.tex	3	\mathsurround	1422
+fr	sources/fr/fr/e221.tex	3	\z@	1426
+fr	sources/fr/fr/e221.tex	3	superscript	1430
+fr	sources/fr/fr/232.tex	9	\uwave	1443
+fr	sources/fr/fr/232.tex	179	\uwave	1514
+fr	sources/fr/fr/232.tex	302	\uwave	1523
+fr	sources/fr/fr/232.tex	302	\uwave	1527
+fr	sources/fr/fr/232.tex	387	\uwave	1534
+fr	sources/fr/fr/232.tex	569	\uwave	1554
+fr	sources/fr/fr/232.tex	715	\uwave	1571
+fr	sources/fr/fr/e232.tex	3	\mathsurround	1587
+fr	sources/fr/fr/e232.tex	3	\z@	1591
+fr	sources/fr/fr/e232.tex	3	superscript	1595
+fr	sources/fr/fr/236.tex	9	\uwave	1608
+fr	sources/fr/fr/236.tex	9	\mathsurround	1612
+fr	sources/fr/fr/236.tex	9	\z@	1616
+fr	sources/fr/fr/236.tex	9	superscript	1620
+fr	sources/fr/fr/236.tex	59	\uwave	1627
+fr	sources/fr/fr/236.tex	470	\uwave	1642
+fr	sources/fr/fr/236.tex	707	\uwave	1653
+fr	sources/fr/fr/236.tex	707	math shift	1657
+fr	sources/fr/fr/236.tex	707	\symup	1661
+fr	sources/fr/fr/236.tex	707	math shift	1665
+fr	sources/fr/fr/236.tex	707	\@@underline	1669
+fr	sources/fr/fr/236.tex	707	\hbox	1673
+fr	sources/fr/fr/236.tex	707	\new@ifnextchar	1677
+fr	sources/fr/fr/236.tex	707	\mathsurround	1681
+fr	sources/fr/fr/236.tex	707	\z@	1685
+fr	sources/fr/fr/236.tex	707	math shift	1689
+fr	sources/fr/fr/236.tex	707	subscript	1693
+fr	sources/fr/fr/236.tex	707	math shift	1697
+fr	sources/fr/fr/236.tex	707	\uwave	1701
+fr	sources/fr/fr/236.tex	954	\uwave	1712
+fr	sources/fr/fr/e236.tex	4	\mathsurround	1726
+fr	sources/fr/fr/e236.tex	4	\z@	1730
+fr	sources/fr/fr/e236.tex	4	superscript	1734
+fr_printed	sources/fr_printed/fr/149.tex	14	math shift	299
+fr_printed	sources/fr_printed/fr/149.tex	14	\@@underline	303
+fr_printed	sources/fr_printed/fr/149.tex	14	\hbox	307
+fr_printed	sources/fr_printed/fr/149.tex	14	\mathsurround	311
+fr_printed	sources/fr_printed/fr/149.tex	14	\z@	315
+fr_printed	sources/fr_printed/fr/149.tex	14	math shift	319
+fr_printed	sources/fr_printed/fr/149.tex	14	math shift	323
+fr_printed	sources/fr_printed/fr/149.tex	14	\@@underline	327
+fr_printed	sources/fr_printed/fr/149.tex	14	\hbox	331
+fr_printed	sources/fr_printed/fr/149.tex	14	\mathsurround	335
+fr_printed	sources/fr_printed/fr/149.tex	14	\z@	339
+fr_printed	sources/fr_printed/fr/149.tex	14	math shift	343
+fr_printed	sources/fr_printed/fr/149.tex	133	\uline	399
+fr_printed	sources/fr_printed/fr/149.tex	240	\uline	463
+fr_printed	sources/fr_printed/fr/149.tex	440	\uline	551
+fr_printed	sources/fr_printed/fr/149.tex	672	\uline	636
+fr_printed	sources/fr_printed/fr/149.tex	872	\uline	719
+fr_printed	sources/fr_printed/fr/149.tex	976	\uline	792
+fr_printed	sources/fr_printed/fr/149.tex	1105	\uline	857
+fr_printed	sources/fr_printed/fr/e149.tex	3	\mathsurround	941
+fr_printed	sources/fr_printed/fr/e149.tex	3	\z@	945
+fr_printed	sources/fr_printed/fr/e149.tex	3	superscript	949
+fr_printed	sources/fr_printed/fr/182.tex	8	\uline	962
+fr_printed	sources/fr_printed/fr/182.tex	100	\uline	969
+fr_printed	sources/fr_printed/fr/182.tex	151	\uline	976
+fr_printed	sources/fr_printed/fr/182.tex	317	\uline	991
+fr_printed	sources/fr_printed/fr/182.tex	387	\uline	998
+fr_printed	sources/fr_printed/fr/182.tex	498	\uline	1008
+fr_printed	sources/fr_printed/fr/182.tex	498	math shift	1012
+fr_printed	sources/fr_printed/fr/182.tex	498	\symup	1016
+fr_printed	sources/fr_printed/fr/182.tex	498	math shift	1020
+fr_printed	sources/fr_printed/fr/182.tex	498	\uline	1024
+fr_printed	sources/fr_printed/fr/182.tex	719	\uline	1035
+fr_printed	sources/fr_printed/fr/182.tex	815	\uline	1042
+fr_printed	sources/fr_printed/fr/e182.tex	3	\mathsurround	1085
+fr_printed	sources/fr_printed/fr/e182.tex	3	\z@	1089
+fr_printed	sources/fr_printed/fr/e182.tex	3	superscript	1093
+fr_printed	sources/fr_printed/fr/e190.tex	3	\mathsurround	1175
+fr_printed	sources/fr_printed/fr/e190.tex	3	\z@	1179
+fr_printed	sources/fr_printed/fr/e190.tex	3	superscript	1183
+fr_printed	sources/fr_printed/fr/195.tex	9	\uline	1196
+fr_printed	sources/fr_printed/fr/195.tex	424	\uline	1213
+fr_printed	sources/fr_printed/fr/195.tex	495	\uline	1220
+fr_printed	sources/fr_printed/fr/e195.tex	3	\mathsurround	1244
+fr_printed	sources/fr_printed/fr/e195.tex	3	\z@	1248
+fr_printed	sources/fr_printed/fr/e195.tex	3	superscript	1252
+fr_printed	sources/fr_printed/fr/212.tex	540	\uline	1285
+fr_printed	sources/fr_printed/fr/212.tex	648	\uline	1292
+fr_printed	sources/fr_printed/fr/212.tex	724	\uline	1299
+fr_printed	sources/fr_printed/fr/212.tex	797	\uline	1306
+fr_printed	sources/fr_printed/fr/e212.tex	3	\mathsurround	1320
+fr_printed	sources/fr_printed/fr/e212.tex	3	\z@	1324
+fr_printed	sources/fr_printed/fr/e212.tex	3	superscript	1328
+fr_printed	sources/fr_printed/fr/221.tex	36	\uline	1345
+fr_printed	sources/fr_printed/fr/221.tex	216	\uline	1356
+fr_printed	sources/fr_printed/fr/221.tex	466	\uline	1367
+fr_printed	sources/fr_printed/fr/221.tex	858	\uline	1383
+fr_printed	sources/fr_printed/fr/221.tex	966	\uline	1392
+fr_printed	sources/fr_printed/fr/221.tex	1159	\uline	1401
+fr_printed	sources/fr_printed/fr/221.tex	1243	\uline	1408
+fr_printed	sources/fr_printed/fr/e221.tex	3	\mathsurround	1422
+fr_printed	sources/fr_printed/fr/e221.tex	3	\z@	1426
+fr_printed	sources/fr_printed/fr/e221.tex	3	superscript	1430
+fr_printed	sources/fr_printed/fr/232.tex	9	\uwave	1443
+fr_printed	sources/fr_printed/fr/232.tex	179	\uwave	1514
+fr_printed	sources/fr_printed/fr/232.tex	302	\uwave	1523
+fr_printed	sources/fr_printed/fr/232.tex	302	\uwave	1527
+fr_printed	sources/fr_printed/fr/232.tex	387	\uwave	1534
+fr_printed	sources/fr_printed/fr/232.tex	569	\uwave	1554
+fr_printed	sources/fr_printed/fr/232.tex	715	\uwave	1571
+fr_printed	sources/fr_printed/fr/e232.tex	3	\mathsurround	1587
+fr_printed	sources/fr_printed/fr/e232.tex	3	\z@	1591
+fr_printed	sources/fr_printed/fr/e232.tex	3	superscript	1595
+fr_printed	sources/fr_printed/fr/236.tex	9	\uwave	1608
+fr_printed	sources/fr_printed/fr/236.tex	9	\mathsurround	1612
+fr_printed	sources/fr_printed/fr/236.tex	9	\z@	1616
+fr_printed	sources/fr_printed/fr/236.tex	9	superscript	1620
+fr_printed	sources/fr_printed/fr/236.tex	59	\uwave	1627
+fr_printed	sources/fr_printed/fr/236.tex	470	\uwave	1642
+fr_printed	sources/fr_printed/fr/236.tex	707	\uwave	1653
+fr_printed	sources/fr_printed/fr/236.tex	707	math shift	1657
+fr_printed	sources/fr_printed/fr/236.tex	707	\symup	1661
+fr_printed	sources/fr_printed/fr/236.tex	707	math shift	1665
+fr_printed	sources/fr_printed/fr/236.tex	707	\@@underline	1669
+fr_printed	sources/fr_printed/fr/236.tex	707	\hbox	1673
+fr_printed	sources/fr_printed/fr/236.tex	707	\new@ifnextchar	1677
+fr_printed	sources/fr_printed/fr/236.tex	707	\mathsurround	1681
+fr_printed	sources/fr_printed/fr/236.tex	707	\z@	1685
+fr_printed	sources/fr_printed/fr/236.tex	707	math shift	1689
+fr_printed	sources/fr_printed/fr/236.tex	707	subscript	1693
+fr_printed	sources/fr_printed/fr/236.tex	707	math shift	1697
+fr_printed	sources/fr_printed/fr/236.tex	707	\uwave	1701
+fr_printed	sources/fr_printed/fr/236.tex	954	\uwave	1712
+fr_printed	sources/fr_printed/fr/e236.tex	4	\mathsurround	1726
+fr_printed	sources/fr_printed/fr/e236.tex	4	\z@	1730
+fr_printed	sources/fr_printed/fr/e236.tex	4	superscript	1734

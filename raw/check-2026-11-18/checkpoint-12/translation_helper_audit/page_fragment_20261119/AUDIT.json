@@ -1,0 +1,908 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-11-19T05:42:20.662977+00:00",
+  "completed_utc": "2026-11-19T05:42:20.704893+00:00",
+  "checks": [
+    {
+      "check": "center_open_fragment",
+      "pass": true,
+      "details": {
+        "strict": {
+          "accepted": false,
+          "payloads": [],
+          "issues": [
+            "unclosed_environment_at_end_of_file"
+          ]
+        },
+        "fragment": {
+          "accepted": true,
+          "payloads": [
+            "$x$"
+          ],
+          "issues": []
+        }
+      }
+    },
+    {
+      "check": "center_close_fragment",
+      "pass": true,
+      "details": {
+        "strict": {
+          "accepted": false,
+          "payloads": [],
+          "issues": [
+            "unmatched_or_crossed_environment_end"
+          ]
+        },
+        "fragment": {
+          "accepted": true,
+          "payloads": [
+            "$x$"
+          ],
+          "issues": []
+        }
+      }
+    },
+    {
+      "check": "description_open_fragment",
+      "pass": true,
+      "details": {
+        "strict": {
+          "accepted": false,
+          "payloads": [],
+          "issues": [
+            "unclosed_environment_at_end_of_file"
+          ]
+        },
+        "fragment": {
+          "accepted": true,
+          "payloads": [
+            "$x$"
+          ],
+          "issues": []
+        }
+      }
+    },
+    {
+      "check": "description_close_fragment",
+      "pass": true,
+      "details": {
+        "strict": {
+          "accepted": false,
+          "payloads": [],
+          "issues": [
+            "unmatched_or_crossed_environment_end"
+          ]
+        },
+        "fragment": {
+          "accepted": true,
+          "payloads": [
+            "$x$"
+          ],
+          "issues": []
+        }
+      }
+    },
+    {
+      "check": "enumerate_open_fragment",
+      "pass": true,
+      "details": {
+        "strict": {
+          "accepted": false,
+          "payloads": [],
+          "issues": [
+            "unclosed_environment_at_end_of_file"
+          ]
+        },
+        "fragment": {
+          "accepted": true,
+          "payloads": [
+            "$x$"
+          ],
+          "issues": []
+        }
+      }
+    },
+    {
+      "check": "enumerate_close_fragment",
+      "pass": true,
+      "details": {
+        "strict": {
+          "accepted": false,
+          "payloads": [],
+          "issues": [
+            "unmatched_or_crossed_environment_end"
+          ]
+        },
+        "fragment": {
+          "accepted": true,
+          "payloads": [
+            "$x$"
+          ],
+          "issues": []
+        }
+      }
+    },
+    {
+      "check": "flushright_open_fragment",
+      "pass": true,
+      "details": {
+        "strict": {
+          "accepted": false,
+          "payloads": [],
+          "issues": [
+            "unclosed_environment_at_end_of_file"
+          ]
+        },
+        "fragment": {
+          "accepted": true,
+          "payloads": [
+            "$x$"
+          ],
+          "issues": []
+        }
+      }
+    },
+    {
+      "check": "flushright_close_fragment",
+      "pass": true,
+      "details": {
+        "strict": {
+          "accepted": false,
+          "payloads": [],
+          "issues": [
+            "unmatched_or_crossed_environment_end"
+          ]
+        },
+        "fragment": {
+          "accepted": true,
+          "payloads": [
+            "$x$"
+          ],
+          "issues": []
+        }
+      }
+    },
+    {
+      "check": "proof_open_fragment",
+      "pass": true,
+      "details": {
+        "strict": {
+          "accepted": false,
+          "payloads": [],
+          "issues": [
+            "unclosed_environment_at_end_of_file"
+          ]
+        },
+        "fragment": {
+          "accepted": true,
+          "payloads": [
+            "$x$"
+          ],
+          "issues": []
+        }
+      }
+    },
+    {
+      "check": "proof_close_fragment",
+      "pass": true,
+      "details": {
+        "strict": {
+          "accepted": false,
+          "payloads": [],
+          "issues": [
+            "unmatched_or_crossed_environment_end"
+          ]
+        },
+        "fragment": {
+          "accepted": true,
+          "payloads": [
+            "$x$"
+          ],
+          "issues": []
+        }
+      }
+    },
+    {
+      "check": "quote_open_fragment",
+      "pass": true,
+      "details": {
+        "strict": {
+          "accepted": false,
+          "payloads": [],
+          "issues": [
+            "unclosed_environment_at_end_of_file"
+          ]
+        },
+        "fragment": {
+          "accepted": true,
+          "payloads": [
+            "$x$"
+          ],
+          "issues": []
+        }
+      }
+    },
+    {
+      "check": "quote_close_fragment",
+      "pass": true,
+      "details": {
+        "strict": {
+          "accepted": false,
+          "payloads": [],
+          "issues": [
+            "unmatched_or_crossed_environment_end"
+          ]
+        },
+        "fragment": {
+          "accepted": true,
+          "payloads": [
+            "$x$"
+          ],
+          "issues": []
+        }
+      }
+    },
+    {
+      "check": "default_false_true_identical_on_balanced_input",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "malformed_unclosed_dollar_still_rejected",
+      "pass": true,
+      "details": {
+        "strict_issue_codes": [
+          "unclosed_environment_at_end_of_file",
+          "unclosed_math_at_end_of_file"
+        ],
+        "fragment_issue_codes": [
+          "unclosed_math_at_end_of_file"
+        ]
+      }
+    },
+    {
+      "check": "malformed_unmatched_display_closer_still_rejected",
+      "pass": true,
+      "details": {
+        "strict_issue_codes": [
+          "unclosed_environment_at_end_of_file",
+          "unmatched_math_closer"
+        ],
+        "fragment_issue_codes": [
+          "unmatched_math_closer"
+        ]
+      }
+    },
+    {
+      "check": "malformed_unclosed_equation_still_rejected",
+      "pass": true,
+      "details": {
+        "strict_issue_codes": [
+          "unclosed_environment_at_end_of_file",
+          "unclosed_environment_at_end_of_file",
+          "unclosed_math_at_end_of_file"
+        ],
+        "fragment_issue_codes": [
+          "unclosed_environment_at_end_of_file",
+          "unclosed_math_at_end_of_file"
+        ]
+      }
+    },
+    {
+      "check": "malformed_crossed_math_environment_still_rejected",
+      "pass": true,
+      "details": {
+        "strict_issue_codes": [
+          "unclosed_environment_at_end_of_file",
+          "unclosed_environment_at_end_of_file",
+          "unclosed_math_at_end_of_file",
+          "unmatched_or_crossed_environment_end"
+        ],
+        "fragment_issue_codes": [
+          "unclosed_environment_at_end_of_file",
+          "unclosed_math_at_end_of_file",
+          "unmatched_or_crossed_environment_end"
+        ]
+      }
+    },
+    {
+      "check": "malformed_unclosed_math_brace_still_rejected",
+      "pass": true,
+      "details": {
+        "strict_issue_codes": [
+          "unclosed_environment_at_end_of_file",
+          "math_delimiters_cross_brace_depth",
+          "unclosed_brace"
+        ],
+        "fragment_issue_codes": [
+          "math_delimiters_cross_brace_depth",
+          "unclosed_brace"
+        ]
+      }
+    },
+    {
+      "check": "malformed_inner_environment_without_math_still_rejected",
+      "pass": true,
+      "details": {
+        "strict_issue_codes": [
+          "unclosed_environment_at_end_of_file",
+          "math_environment_mode_conflict"
+        ],
+        "fragment_issue_codes": [
+          "math_environment_mode_conflict"
+        ]
+      }
+    },
+    {
+      "check": "malformed_unclassified_environment_still_rejected",
+      "pass": true,
+      "details": {
+        "strict_issue_codes": [
+          "unclosed_environment_at_end_of_file",
+          "unclassified_environment",
+          "unclassified_environment"
+        ],
+        "fragment_issue_codes": [
+          "unclassified_environment",
+          "unclassified_environment"
+        ]
+      }
+    },
+    {
+      "check": "raw_fragment_mode_requires_whole_file_guard",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_valid_corrected_list_boundary_page_1",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_valid_corrected_list_boundary_page_1",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_valid_corrected_list_boundary_page_2",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_valid_corrected_list_boundary_page_2",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_valid_printed_list_boundary_page_1",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_valid_printed_list_boundary_page_1",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_valid_printed_list_boundary_page_2",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_valid_printed_list_boundary_page_2",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_math_rejects_source_actual_crossed_nonmath_environments_outside_page",
+      "pass": true,
+      "details": {
+        "issue_codes": [
+          "unclosed_environment_at_end_of_file",
+          "unmatched_or_crossed_environment_end"
+        ],
+        "isolated_files_unchanged": true
+      }
+    },
+    {
+      "check": "align_math_rejects_source_actual_crossed_nonmath_environments_outside_page",
+      "pass": true,
+      "details": {
+        "issue_codes": [
+          "unclosed_environment_at_end_of_file",
+          "unmatched_or_crossed_environment_end"
+        ],
+        "isolated_files_unchanged": true
+      }
+    },
+    {
+      "check": "show_math_rejects_target_actual_crossed_nonmath_environments_outside_page",
+      "pass": true,
+      "details": {
+        "issue_codes": [
+          "unclosed_environment_at_end_of_file",
+          "unmatched_or_crossed_environment_end"
+        ],
+        "isolated_files_unchanged": true
+      }
+    },
+    {
+      "check": "align_math_rejects_target_actual_crossed_nonmath_environments_outside_page",
+      "pass": true,
+      "details": {
+        "issue_codes": [
+          "unclosed_environment_at_end_of_file",
+          "unmatched_or_crossed_environment_end"
+        ],
+        "isolated_files_unchanged": true
+      }
+    },
+    {
+      "check": "show_math_rejects_source_unclosed_math_outside_page",
+      "pass": true,
+      "details": {
+        "issue_codes": [
+          "unclosed_math_at_end_of_file"
+        ],
+        "isolated_files_unchanged": true
+      }
+    },
+    {
+      "check": "align_math_rejects_source_unclosed_math_outside_page",
+      "pass": true,
+      "details": {
+        "issue_codes": [
+          "unclosed_math_at_end_of_file"
+        ],
+        "isolated_files_unchanged": true
+      }
+    },
+    {
+      "check": "show_math_rejects_target_unclosed_math_outside_page",
+      "pass": true,
+      "details": {
+        "issue_codes": [
+          "unclosed_math_at_end_of_file"
+        ],
+        "isolated_files_unchanged": true
+      }
+    },
+    {
+      "check": "align_math_rejects_target_unclosed_math_outside_page",
+      "pass": true,
+      "details": {
+        "issue_codes": [
+          "unclosed_math_at_end_of_file"
+        ],
+        "isolated_files_unchanged": true
+      }
+    },
+    {
+      "check": "show_math_rejects_source_balanced_whole_math_crossing_page_boundary",
+      "pass": true,
+      "details": {
+        "issue_codes": [
+          "unclosed_math_at_end_of_file"
+        ],
+        "isolated_files_unchanged": true
+      }
+    },
+    {
+      "check": "align_math_rejects_source_balanced_whole_math_crossing_page_boundary",
+      "pass": true,
+      "details": {
+        "issue_codes": [
+          "unclosed_math_at_end_of_file"
+        ],
+        "isolated_files_unchanged": true
+      }
+    },
+    {
+      "check": "show_math_rejects_target_balanced_whole_math_crossing_page_boundary",
+      "pass": true,
+      "details": {
+        "issue_codes": [
+          "unclosed_math_at_end_of_file"
+        ],
+        "isolated_files_unchanged": true
+      }
+    },
+    {
+      "check": "align_math_rejects_target_balanced_whole_math_crossing_page_boundary",
+      "pass": true,
+      "details": {
+        "issue_codes": [
+          "unclosed_math_at_end_of_file"
+        ],
+        "isolated_files_unchanged": true
+      }
+    },
+    {
+      "check": "show_and_align_signatures_unchanged",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "math_ranges_keeps_one_argument_and_adds_optional_false_flag",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "existing_saved_direct_call_signatures_compatible",
+      "pass": true,
+      "details": {
+        "callsites": 33,
+        "unresolved": []
+      }
+    },
+    {
+      "check": "captured_live_helper_inputs_unchanged",
+      "pass": true,
+      "details": null
+    }
+  ],
+  "failed_checks": [],
+  "signatures": {
+    "align_math": {
+      "before": "rel, layer, unit, page, pairs, expected, printed=False, localized=None",
+      "current": "(rel, layer, unit, page, pairs, expected, printed=False, localized=None)"
+    },
+    "math_ranges": {
+      "before": "text",
+      "current": "(text, page_fragment=False)"
+    },
+    "show_math": {
+      "before": "rel, unit, page, printed=False",
+      "current": "(rel, unit, page, printed=False)"
+    }
+  },
+  "callsites": [
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_169.py",
+      "line": 6,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "931ebb3a249b41899afa5d1f07aa2a2c4219dfbc083e05862a8526e880b69b91"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_170.py",
+      "line": 5,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "460c12c21666ed009d3b8356b9c70bc50ffe064a060f1377e18555a4310e563a"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_171.py",
+      "line": 16,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [
+        "localized"
+      ],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "5521337c16ac69b80e668c81c8c9f68f87dd04870409232fc5068475144a43ef"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_172.py",
+      "line": 10,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "94fbdfafd522a23aed0d9c30ef225da2a2678e0e972d0c9529b93bb696a00b5d"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_173.py",
+      "line": 8,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "85d8289940df69870947b5c508e91c2bbbc0157a4e78287393b04f923d1b19c4"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_174.py",
+      "line": 8,
+      "function": "math_ranges",
+      "positional_count": 1,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "d6038fe774ccea4b7b5ca7de3ad6087e6eb69659e8910a3ec3d6f60f503f9939"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_174.py",
+      "line": 9,
+      "function": "math_ranges",
+      "positional_count": 1,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "d6038fe774ccea4b7b5ca7de3ad6087e6eb69659e8910a3ec3d6f60f503f9939"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_174.py",
+      "line": 13,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [
+        "localized"
+      ],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "d6038fe774ccea4b7b5ca7de3ad6087e6eb69659e8910a3ec3d6f60f503f9939"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_175.py",
+      "line": 15,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "8248bf4557a8b3292b4607f664b242aa900be792adc1c544b44352a5fa541d6a"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_176.py",
+      "line": 10,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "efd7c47ae875c0c002c302d2500530973e95cc88fd3f00ca14007bf067e22874"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_177.py",
+      "line": 12,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "ceedec53f3b9e954bc8c52a9804ada861fb0f3a1929d7518ead318ea27376cbb"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_178.py",
+      "line": 8,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "76bae3e7e3416552838f8b5fe81b430a6d692ac1c89e52c497aa9151a82afb89"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_179.py",
+      "line": 8,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "9948d05dd93460dd58b4446e719c81a3e37c84a855aabadd957f662cb91e8cd4"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_180.py",
+      "line": 13,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "f6c51e45b3411ce86f41747dd1f33c1f23a15e4a4be3345fb31a85113301d018"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_181.py",
+      "line": 11,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "e18c76b9b459cabc754cac365f48aa3116c7cd90fa809c22cc265e7d671d6f64"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_182.py",
+      "line": 8,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "c56d47498c5a3ef2419a51691349bc561e73af46f718e3ef65220a71662c2b0b"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_183.py",
+      "line": 12,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "cf90d05de91e5acea27ab57cc5b618b9287e258a3313dde7ec5c08c522688e12"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_184.py",
+      "line": 10,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "a213b1cf331d1e7bd93f1dcc29402e32b6b6fb77ea0f3b5ea2b8c7bb60c8408f"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_185.py",
+      "line": 10,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [
+        "localized"
+      ],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "62441cc2f20677607283aa87f632b64823a1fd1863142600d784d295bb234e04"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_186.py",
+      "line": 8,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "dc99f1fac5a01bda5e6e99078c9f10704ebe96615661b85ed2706098e3f726b2"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_187.py",
+      "line": 10,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "76175df9509d6b1363b9dab188a7152af62a0b9811215d8440f2517a6d3796e3"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_188.py",
+      "line": 10,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "109fb58d4573825c1d11663966275bc91fb935ebb657ae828b9c6ffeb45c5f21"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_189.py",
+      "line": 16,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "174ae39cccb6447dd326ef9fb4cbadc149b2f65c346b91cbcf1700edbe1cca9f"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_190.py",
+      "line": 9,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "4357936f39d240e86d6fe1d7a7e3959f0d01fd16672b1cf2c04da74c991a0693"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_191.py",
+      "line": 12,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "f54345bb482f30c4d72d3009e0281cb48a0abba7fbc3a500c710c3c94a7da0bf"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_192.py",
+      "line": 11,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "578d4ee6a789f2800795e707fca75bdc7fd9c9e343c63c1eac30d0e2882fb019"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_193.py",
+      "line": 8,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "eb98d891cd0f91a6df20b097678c1c683e5d19970749901a623af15a77c6bb38"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_194.py",
+      "line": 8,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "154f66bdf288912752fa2beb54f4872c61dacb8760721b733defe6e0bad419b7"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_195.py",
+      "line": 10,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "4af80400194f3556cf66c66e06b037957b16c94db8ee3b74b8f47ba1ef13810f"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_196.py",
+      "line": 8,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "54edab75a79c6f62433f6e3728d04f16f6e438171abecd156907a8ed3871cfe8"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_197.py",
+      "line": 8,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "2f848d4a1813f905a29b9c84ab6bae8e0936fde116c92adc45a74bd905d6f492"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_198.py",
+      "line": 14,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "bbd64cf0c278e3111819e6c5526ccc9d7043aa274938d95ee266a0c1b8ef47ac"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_199.py",
+      "line": 11,
+      "function": "align_math",
+      "positional_count": 6,
+      "keywords": [],
+      "variable_arguments": false,
+      "signature_compatible": true,
+      "file_sha256": "0f569b71cbc11ef40d736a30822acc5e00ca0e27032c760d5127523bf7f623e9"
+    }
+  ],
+  "input_hashes": {
+    "translation_edits.py": "d6d061bd8ac1638f0a8c60dc0830f83253bca30756e80223a610f6c69132ddb2",
+    "translation_math_lexer.py": "7ae88b1d85906698cd728f36aa47545c550622b43193c63cd8e0aa7df828c7e4",
+    "audit_utils.py": "48a8aaecd4d5909ec785362e22460d0d11504284851e953f8064d8e2c0f2f244"
+  },
+  "baseline_file": "tmp/frozen_build_inputs/en149_complete_193/scripts/translation_edits.py",
+  "baseline_sha256": "939995511f8f95d02abccc01efb7bcac933592932d1c9c777051c2fb7b28de17",
+  "isolated_fixture_root": "tmp/translation_page_fragment_audit_20261119",
+  "scope": "Synthetic lexical boundary and call-signature audit only. No translation, mathematical, scan, source or ledger review; no production sources or records modified.",
+  "guard_note": "page_fragment=True alone also filters crossed nonmath environment ends. show_math validates each complete file strictly before its fragment; align_math validates both complete files strictly before fragment math extraction or writes. Raw fragment mode therefore depends on that whole-file guard."
+}

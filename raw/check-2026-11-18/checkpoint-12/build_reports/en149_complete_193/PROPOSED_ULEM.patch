@@ -1,0 +1,6 @@
+--- a/sources/en/tex/base.tex
++++ b/sources/en/tex/base.tex
+@@ -9,2 +9,3 @@
+ \usepackage{microtype}
++\usepackage[normalem]{ulem}
+ \usepackage{graphicx}

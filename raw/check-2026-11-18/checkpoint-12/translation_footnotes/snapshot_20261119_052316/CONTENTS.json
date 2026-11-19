@@ -1,0 +1,3236 @@
+[
+  {
+    "body_sha256": "004113dfe94d549d75258df7161925dd187d255b2b812e2f426adf894e3acac1",
+    "bytes": 141,
+    "exact_body_utf8": "O texto impresso inverte o quociente, escrevendo\n$N_r/N_{r+1}$, o que é incompatível com a filtração crescente que acaba de ser\ndefinida.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "029cf5ed18a29d6e9da05cfd462b312f0438f040e5b1359a5462c80171d419d3",
+    "bytes": 239,
+    "exact_body_utf8": "Bản in ghi ``của $\\mathcal A'$''. Miền xác định của $T^{(1)}$ và\n$T^{(2)}$, cùng phép ghép cặp\n$F'_1\\times F'_2\\longrightarrow F'_3$, buộc $x$ và $y$ lần lượt phải là các\ntiết diện của $F'_1$ và $F'_2$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "02e00ee5c32e9d97cdd253da7bd7c48c9281ef720606ebac6cc6f461caf4f4ae",
+    "bytes": 114,
+    "exact_body_utf8": "印刷文本在第二个 $X'$ 上漏掉了撇号；到 $Y'$ 的态射是\n$X'\\to Y$ 的 Stein 分解中的态射。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "05442b971ab31b4383ce9efda2be6db2173a3a2daf84fcf48bf4d418be3bf42a",
+    "bytes": 216,
+    "exact_body_utf8": "인쇄본에는 “$\\mathcal A'$의”라고 되어 있다.\n$T^{(1)}$과 $T^{(2)}$의 정의역 및 짝지음\n$F'_1\\times F'_2\\longrightarrow F'_3$에 따르면, $x,y$는 각각\n$F'_1,F'_2$의 단면이어야 한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "05e0582adc8ede2d29f3023c76ed9c1ee8d4a05a3895fece48386a09343cd690",
+    "bytes": 233,
+    "exact_body_utf8": "A errata de 1962 considera excessiva essa formulação: ela é\nválida em grande medida para as técnicas não projetivas das duas primeiras\nexposições da série TDTE I a VI, mas não para as técnicas projetivas (TDTE IV,\nV e VI).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "061d33df989808e28834426f28dd2f03b84692d3e4802025d88174c37aae687f",
+    "bytes": 186,
+    "exact_body_utf8": "El texto impreso invierte los términos extremos de esta sucesión. Se trata de extensiones de $\\mathcal G$ por $\\mathcal G'$, como indica $\\operatorname{Ext}^1(\\mathcal G,\\mathcal G')$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "071b477e0c2781073ae67bc5870b37086fd1d80bd63406bb35a9b91748f719e7",
+    "bytes": 198,
+    "exact_body_utf8": "与报告 212 相联系的勘误指出，这一猜想\n“终究是错误的”。它还指出，评注 8.1 中的肯定性结果后来已经得到证明，\n并提及 Mumford 的工作及其改进。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "081f918cfab3ccb3bff44d62d4dc5d2179ebaff2039409342d4ce45343ff7919",
+    "bytes": 113,
+    "exact_body_utf8": "印刷文本写作\n$H^{p}(H^{q}(X,K))$；初始项应为谱序列 (8.2) 的初始项，即\n$H^{p}(X,H^{q}(K))$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0895dc4974c1debbc0901e6864040e552655bd929f7a292b8d9b0e9bbc377232",
+    "bytes": 91,
+    "exact_body_utf8": "더 완전한 연구에\n대해서는 1962년 정오표가 TDTE V를 참조하도록 한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "08f79b298226db6ccf684cdddc63f1314696b9970e853690708f94cd51bd3b81",
+    "bytes": 149,
+    "exact_body_utf8": "El texto impreso contiene $B\\otimes_V A$.\nComo $B$ es un $V$-esquema y la afirmación concierne a su fibra genérica, el\nfactor de base debe ser $K$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "09156a14031bc44ee1ea05c7f4d484973f333b00ac334d1c2846f81e758bb59e",
+    "bytes": 167,
+    "exact_body_utf8": "印刷公式把 $G_x$ 直接等同于\n完备化后的项，并漏掉了 $\\mathcal O'_{0x}$ 上的帽号。这里的包含关系和\n完备化均依照 1962 年勘误。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "09bea9e1baa75cc4e50ae25fb7274c77beafa89b19b2e5d36a5cc07028f94870",
+    "bytes": 92,
+    "exact_body_utf8": "El texto impreso lleva $k$; el cuerpo base de esta frase en característica positiva es $K$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0a358294d23a845e4cc91f6734d215c66f680577d9459e50cc2bfe6ea483023d",
+    "bytes": 95,
+    "exact_body_utf8": "El texto impreso lleva $N$; aquí se localiza el Módulo graduado $N_*$ que acaba de definirse.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0afdca2c00c567cdb7d8a562eae602afdb2275e3e3902878b9d15e36f9e55831",
+    "bytes": 213,
+    "exact_body_utf8": "El texto impreso omite «no» antes de\n«estrictos». En la categoría considerada existen productos fibrados, y el\npárrafo anterior establece precisamente la equivalencia entre efectividad y\nepimorfía estricta.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0b3ed819acea359a63fcb0e2cb7a0e60c938598212fb8bd4ff1f3d3510156467",
+    "bytes": 92,
+    "exact_body_utf8": "O texto impresso\ntraz «Sejam: $X\\longrightarrow S$»; o morfismo utilizado a seguir é $f$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0b84b7a1c50d2c4731a39bd6d159019a7d301feaa996d4ae533ca6fa28a2dc0a",
+    "bytes": 213,
+    "exact_body_utf8": "Bản đính chính năm 1962 cho biết phỏng đoán tồn tại\nđược phát biểu ở đầu nhận xét này là sai, nhưng các phương pháp của Mumford cho\nmột định lý yếu hơn đôi chút.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0c14505dcacb91f8dac083de816cf05cfe20ea081ba39a0e1a87c35deb673098",
+    "bytes": 118,
+    "exact_body_utf8": "El texto impreso dice aquí «$X$»; el sujeto del criterio es el\nrevestimiento $X'$ introducido en la frase anterior.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0c58c8e6f50b581a124514456e07c29409178a7e08d3f4df13cac57b47d34f14",
+    "bytes": 195,
+    "exact_body_utf8": "The printed\r\ntext reads “prime to $p$.” In this statement quantified by $n$, the étaleness\r\ncriterion and the argument using the kernels ${}_nG$ require residue\r\ncharacteristic prime to $n$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0d170630761ce96df689f18c35db1c1c9bd7124833fce91f4c1303dc18c62b9d",
+    "bytes": 81,
+    "exact_body_utf8": "El texto impreso dice «regular»; la\nfe de erratas prescribe «liso sobre $k$».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0e4e22d9e9d50121970856b8916602b7d29bfbede2537af731b3e1bdbfec45db",
+    "bytes": 198,
+    "exact_body_utf8": "印刷文本在这个张量积中写的是 $\\mathcal O_S$；但这里\n$\\mathcal G$ 和 $\\mathcal M$ 都是 $S'$ 上的模，而平方零形变的构造\n要求在 $\\mathcal O_{S'}$ 上取张量积。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0ea1be41eea897efc40f89f0e190baf9d5928e86161fcbaf271e9bc22a67e7a5",
+    "bytes": 97,
+    "exact_body_utf8": "The printed text reads\r\n“on $S$.” The factoriality invoked is that of the local rings of $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0ea4852e8b577d19a6b1d89f3907d70e311c1abe47de154e1785366d232ef582",
+    "bytes": 83,
+    "exact_body_utf8": "The 1962 erratum reports that Murre had just answered this\r\nquestion affirmatively.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0ee7c6fac8380fecf415df20fc568e60e31caa5170bd532e8768e5767762a244",
+    "bytes": 47,
+    "exact_body_utf8": "1962년 정오표에서 추가된 조건이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0f336a1759f57a1f8c4bf74efb58da25e6f1b1ce5f6ee8fa0f4a061d994208cd",
+    "bytes": 230,
+    "exact_body_utf8": "Bản đính chính\r\nnăm 1962 thay giả thiết in là \\fquote{$f$ quasi-xạ ảnh} bằng giả thiết yếu hơn\r\n\\fquote{$f$ tách}, theo SGA VIII, 6.2: mọi cấu xạ quasi-hữu hạn và tách đều\r\nquasi-xạ ảnh.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0fa3bf6a4bca3ed99dbd81fd3b098d349ee84cde7196693402945658dd65b028",
+    "bytes": 135,
+    "exact_body_utf8": "Mumford (David). --- An elementary theorem\r\nin geometric invariant theory, \\emph{Bull. Amer. Math. Soc.}, vol. 67, 1961,\r\npp. 483--486.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0fae4115678a855731a175344078d4477aadcb194bd4b517587985a63a3ee814",
+    "bytes": 101,
+    "exact_body_utf8": "Bản in ghi $\\Osh_P(r+r')$; hai thừa số\n$\\Osh_P(m)$ và $\\Osh_P(m')$ đòi hỏi $\\Osh_P(m+m')$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0fcc8f74a47727d3fc3eacd75a1a236e7677de79987108201efafacea1333684",
+    "bytes": 110,
+    "exact_body_utf8": "O texto impresso traz «da reta afim». A errata vinculada,\np.~303, prescreve «reta afim privada da origem».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0fd3d6f1b8edc0fcf6b624d9deb09173d1d6a7554b8d452040e2c09eab04f98e",
+    "bytes": 448,
+    "exact_body_utf8": "La fe de erratas de 1962\nprecisa que el caso proyectivo queda completamente resuelto por los esquemas de\nHilbert (TDTE IV), mientras que ejemplos de Nagata y Hironaka muestran que, sin\nuna hipótesis de proyectividad, estos funtores pueden no ser representables,\nincluso para las subvariedades de dimensión cero de una variedad completa no\nsingular de dimensión tres; este fenómeno está ligado a la posible\ninexistencia del cuadrado simétrico.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "0fdbd621180623b4ceee705368f085feec466df9fc0f4a009b8162b3c9b7f879",
+    "bytes": 85,
+    "exact_body_utf8": "1962年的勘误指出，无须预先假设\n$\\alpha$ 是 $\\mathcal F$-下降态射。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "113d630d9c21eb089f424966a984375842258fc27c1cb242e810b2dadaaf9280",
+    "bytes": 125,
+    "exact_body_utf8": "O texto impresso traz “grau $r$”; a filtração\n$\\mathcal F_{(r)}$ é definida pela dimensão do suporte, não pelo grau.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "124311ce423ae36a81c650402f3165160ef834d0220d3f2455626650dca46e51",
+    "bytes": 156,
+    "exact_body_utf8": "인쇄본은 보편 확장의 두\n끝 항을 서로 뒤바꾸어 놓았다. 고려하는 류는\n$\\operatorname{Ext}^1(\\mathcal G,\\mathcal G')$에 속한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "12af8fee86c1be528ec2d0482faed535084bca017e4a49a8a301edc0724cde48",
+    "bytes": 120,
+    "exact_body_utf8": "Bản in ghi “$X$” ở đây; chủ thể của tiêu chuẩn là phủ $X'$ được\r\nđưa vào ở câu trước.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "13034c64c8abbcde1ca8dd0eaf3d1131a5ed7a9dc5da1d92f0b71ea6d83b668d",
+    "bytes": 85,
+    "exact_body_utf8": "HARTSHORNE\n(R.). --- Connectedness of the Hilbert scheme (Luận án, Harvard, 1962).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "130d3da1fec5ecd0cf38fcda22c64c1c993b7380078cbcc55fe169191634608f",
+    "bytes": 143,
+    "exact_body_utf8": "인쇄본에는 ``필요하다''만 적혀 있다.\nExposé 221에 대한 1962년의 정오표는 ``필요충분하다''로 고치도록 한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1323cb34bff23bd314798b3e343134a034ff9dbbede7f87c6d4374abfdf036e7",
+    "bytes": 134,
+    "exact_body_utf8": "MUMFORD (David). --- An elementary theorem in geometric\ninvariant theory, \\emph{Bull. Amer. Math. Soc.}, tập 67, 1961, tr. 483--486.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "13a42ba8c25f7f88748ff9c6b82318dab1f41f906203f011522fed0b8f2c7859",
+    "bytes": 144,
+    "exact_body_utf8": "The printed text reads “$Q$.” The subset introduced\r\nin the statement, whose quasi-compactness expresses boundedness of the family,\r\nis $E$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "13d9d72308913ec81b2e793ab1bbd8808352c18bd911d59c1e3e84c384f1a1b0",
+    "bytes": 105,
+    "exact_body_utf8": "Bản in lặp lại $n\\geq1$, mâu thuẫn với đẳng cấu vừa được khẳng\nđịnh cho $n=1$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "149158f74c61ca102f6ff97f6b3d60e5d50179901beb1c8e7222dc2443584e97",
+    "bytes": 163,
+    "exact_body_utf8": "인쇄본에는 “$S$ 위”라고 되어 있다. 그러나 단면\n$g:S\\to X$에 의한 강체화는 여기서 $X$ 위의 가군 $\\mathcal L$에 관한\n것이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "14b82cedd2171e18d5c3590307a83b5f656c9d24595303ef14cc4423a193d717",
+    "bytes": 118,
+    "exact_body_utf8": "El texto impreso lleva $U$; al variar los abiertos $U$ de $X$, los conjuntos $\\mathcal E(U)$ definen un haz sobre $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "14ee37a432d54e07787f9c3c643c3622331bf879c8f6560c0b9539908f65efd2",
+    "bytes": 260,
+    "exact_body_utf8": "1962년의 정오표는 이 서술이\n지나치다고 판단한다. 이 서술은 TDTE I--VI 계열의 처음 두 강연에서 다룬\n비사영적 기법들에는 상당한 정도로 타당하지만, 사영적 기법들\n(TDTE IV, V, VI)에는 그렇지 않다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "14ee5d8374e87435a4af0c45cd584cbc8c9d95410073745e1b81e3b27731591f",
+    "bytes": 39,
+    "exact_body_utf8": "这一限定由 1962 年勘误加入。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "14f045cbdff517d49c7365e79a8bf95d357ab2bdfa5ba83c58cc46dd9e6469c8",
+    "bytes": 98,
+    "exact_body_utf8": "El texto impreso lleva $Z$; todos los $Z_n$ y sus ínfimos $Z'_N$ son subesquemas cerrados de $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "14f2ca907337915a59bcc3d916a41df3a6c055177aac7842dc53b31597cfea3b",
+    "bytes": 104,
+    "exact_body_utf8": "印刷文本作\n“$f:X\\longrightarrow Y$”，但下面的 Picard 预概形和函数的基都是 $S$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "15210854541093b873a16f64632bed4b7b60d1bc5d011fb3f398ab0e1feda615",
+    "bytes": 94,
+    "exact_body_utf8": "The printed French omits the determiner \\emph{des}; the English wording was already idiomatic.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1525cf8d45a314f0be5077b1c7d6cea238c2a457b4f757b864dcfb9217a472ce",
+    "bytes": 124,
+    "exact_body_utf8": "El texto impreso omite la prima en el segundo\n$X'$; el morfismo hacia $Y'$ es el de la factorización de Stein de\n$X'\\to Y$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "15873e72d7aadfc408f1d915383946053013d515ad5676532053aee76dfcc2de",
+    "bytes": 208,
+    "exact_body_utf8": "1962年的勘误认为这一说法过强：对于 TDTE I--VI 系列前两篇\n报告所用的非射影技术，这一说法在很大程度上成立；但对于射影技术\n（TDTE IV、V、VI）则不成立。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "16417754619cb05b68d931b906df7c0f6a16d91d8cb29916c23535f2b2049b0c",
+    "bytes": 188,
+    "exact_body_utf8": "Bản đính chính năm 1962 cho biết bài toán này có\nlời giải khẳng định và dẫn chiếu đến đoạn cuối của phần Bình luận cho thuyết trình\ntiếp theo.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1650aca50a8a0ec994b096b196946b9447614c0eaf55088019001f6ddd4415f2",
+    "bytes": 193,
+    "exact_body_utf8": "Bản in bỏ cụm «có\ntrường thặng dư đóng đại số»; bản đính chính nói rõ rằng phản ví dụ của Mumford\nkhiến hạn chế này trở nên không thể thiếu.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "174e02a9fc96ce45de30d9e056ad13fe1757f3954613a799b8c8536e886320ba",
+    "bytes": 132,
+    "exact_body_utf8": "인쇄본에는\n$H^{p}(H^{q}(X,K))$라고 되어 있으나, 첫 항은 스펙트럼 열 (8.2)의\n것, 곧 $H^{p}(X,H^{q}(K))$이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1751d1ed349e4b8b7be5d95a6091bc1c1e34de1bc353cc0fedf0ab02aa2ac219",
+    "bytes": 131,
+    "exact_body_utf8": "The printed text has $Z$, which is defined only in the following sentence; each $Z'_N$ is constructed as a closed subscheme of $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "17a9560f0a4a68b4f1347c853cf66eb5d54cb0a0f800b5ba47e13b3513c99854",
+    "bytes": 134,
+    "exact_body_utf8": "The printed text replaces the\r\nexponent $s$ here by an undefined $n$; $s$ is the rank of the free sheaf\r\nsurjecting onto $\\mathcal F$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "185256bcc320d7c0a939666d92ad2c1d552ba59f465e86db7440a1aafe8de1a3",
+    "bytes": 254,
+    "exact_body_utf8": "인쇄본에는 여기서 $\\Lambda$가 체일 때에만 옳은 공식이 실려\n있다. 1962년 정오표는 일반적인 경우 $\\mathfrak m_\\xi/\\mathfrak m_\\xi^2$를\n$\\mathfrak n_\\xi/\\mathfrak n_\\xi^2$의 상으로 나눈 몫을 쓰도록 정정한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "19be092139dd70712ad3943df992c0f80dc806c0e5b791c81a29fe2bf1248c69",
+    "bytes": 231,
+    "exact_body_utf8": "\nGrothendieck (Alexander). --- The cohomology theory of abstract algebraic\nvarieties, \\emph{Proceedings of the International Congress of Mathematicians}\n[1958, Edinburgh], tr. 103--118. --- Cambridge, at the University Press, 1960.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "19dacca50fe5ebdd85a4557a98ac66258c1ec2ad988fd05f190600ee1c5ee3f4",
+    "bytes": 201,
+    "exact_body_utf8": "The printed text\r\nhas a malformed construction equivalent to “The hypothesis ... results.” The\r\nlinked erratum, p.~303, inserts the preposition needed for “It follows from the\r\nhypothesis ...”.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "19e6ec4300df5c40e10ac2ff5979588a9dc750de937f4a26e9522f3a4bb57dcc",
+    "bytes": 167,
+    "exact_body_utf8": "印刷文本及法、英可编辑见证在此\n第二次出现时都漏去了指数 $N$；上一句明确给出\n$\\mathcal O_X(-n)^N$，取纤维仍保留同一重数。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1a0219a4df876f23e16af4d706d5f62dccb5a503b53f154313ca3fbd51dd49dd",
+    "bytes": 616,
+    "exact_body_utf8": "1962年\n勘误给出了否定答案：拟有限、平展且满射的态射\n$S'\\longrightarrow S$，或态射\n$\\operatorname{Spec}(\\widehat A)\\longrightarrow\\operatorname{Spec}(A)$，\n未必是严格下降态射；即使 $A$ 是代数闭域 $k$ 上一条代数曲线的局部环，且\n$S=\\operatorname{Spec}(A)$，情形仍然如此。确实可以找到固有光滑态射\n$f:X\\longrightarrow S$，使 $X$ 成为以椭圆曲线 $E$ 为结构群、以 $S$ 为基\n的主丛，并且 $f':X'\\longrightarrow S'$ 射影而 $f$ 不射影。因此，这也给出\n阿贝尔概形下非等平凡的主齐性丛的一个例子。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1b73e9ade62b4961877d3eb4c267fac2795ad5cc1bd0de3b04fba831645ee331",
+    "bytes": 205,
+    "exact_body_utf8": "A última letra está impressa como ``$X$'', mas a condição\nimediatamente anterior diz respeito à planura de\n$\\mathcal O_X/(\\mathcal I_1+\\mathcal I_2)$ sobre $S$ e, portanto, define $Z$\nplano sobre $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1b940227e2ae08cce254d8aee82dabc41b9074176fcdf919c25c88914cd396f7",
+    "bytes": 172,
+    "exact_body_utf8": "印刷文本写作 $f_{*}(\\xi^{m,m})$。由于\n$\\xi^{m,m}\\in H^{m}(X,\\Omega_X^{m})$，且等式两端均属于\n$H^{m}(Y,\\Omega_Y^{m})$，这里需要的映射是 $f^{*}$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1ba09db8a4698daefae94496120b3728104643ea84ce7a3c846627cc964b428b",
+    "bytes": 87,
+    "exact_body_utf8": "印刷文本使用并集号；这里的分次结构是\n诸层 $\\Omega_X^p$ 的直和。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1bde375ec1df6e6f728224a90b0e3d7ec7bca1e9ac42b975d23de1797b5152c6",
+    "bytes": 115,
+    "exact_body_utf8": "인쇄본은 여기서 ``$S$가 정규이다''라고 되어 있지만, 이 단락은\n다양체 $X$만을 다룬다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1c276954d1b67c5cb7a5194b6b0e34e38a732b9859d19d5c9b77731763347204",
+    "bytes": 224,
+    "exact_body_utf8": "O texto impresso diz «de $\\mathcal A'$». Os domínios de\n$T^{(1)}$ e $T^{(2)}$, assim como o emparelhamento\n$F'_1\\times F'_2\\longrightarrow F'_3$, obrigam a que $x$ e $y$ sejam seções\nde $F'_1$ e $F'_2$, respectivamente.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1c6d842b5b6cd5f90fbd1e0c2d8d426d6977235a32629a714fca387e614fe7fb",
+    "bytes": 113,
+    "exact_body_utf8": "印刷文本此处作“在 $S$ 上”；\n这里所用的唯一分解性是 $X$ 的局部环的唯一分解性。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1c87b344c46bbe321c0d1dc118356bc0d5c187ab113003b9453223ac6fc0e45f",
+    "bytes": 130,
+    "exact_body_utf8": "O\ntexto impresso traz «sobre $S$»; a rigidificação por uma seção $g:S\\to X$\nconcerne aqui ao Módulo $\\mathcal L$ sobre $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1cd4dd8504eadbad005e2ebf5a234be9c35d7ef6e3db9a48768f66e57f9393e2",
+    "bytes": 158,
+    "exact_body_utf8": "인쇄본은 여기서 지수 $s$를\n정의되지 않은 $n$으로 바꾸어 적었다. $s$는 $\\mathcal F$로 전사하는\n자유층의 계수(階數)이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1d70d67e14c983ac92da2a83252298e6dde788a14367ae76c864792304c07731",
+    "bytes": 121,
+    "exact_body_utf8": "인쇄본에는 $X[t]$라고 되어\n있다. 이에 연결된 303쪽의 정오표는 $X[t,t^{-1}]$로 고치도록 한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1d93c14f788f09b94f191eb3b64566bfea4b9f88c1adc12e3bda39b68ea8b833",
+    "bytes": 193,
+    "exact_body_utf8": "인쇄본에는 $f_{*}(\\xi^{m,m})$라고 되어 있다. 그런데\n$\\xi^{m,m}\\in H^{m}(X,\\Omega_X^{m})$이고 양변이\n$H^{m}(Y,\\Omega_Y^{m})$에 속하므로 필요한 사상은 $f^{*}$이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1dbd60272acf5d065fa1848f1c2521f0f94f4598f770761b261f918c265153eb",
+    "bytes": 121,
+    "exact_body_utf8": "The printed text says “on $S$”; rigidification by a\r\nsection $g:S\\to X$ here concerns the Module $\\mathcal L$ on $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1f11fd3d88e351252f1c297222405cee870b8bf3cdb6e5682729d886e39a25c6",
+    "bytes": 43,
+    "exact_body_utf8": "See the addendum at the end of the exposé.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1f41341ea0b58be71e636e5a92481d47c1eb5fccb9fd4af8d2d738dbbd2f1ad1",
+    "bytes": 122,
+    "exact_body_utf8": "O ramo corrente\ntraz $f:X\\longrightarrow S$, pois tanto o pré-esquema de Picard quanto a função\nseguinte têm base $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1f468b31e184600f9bd246833e0c97b40d853add4b296d07459d8976b4f40a88",
+    "bytes": 190,
+    "exact_body_utf8": "Bản đính chính\nnăm 1962 cho biết D. Mumford đã giải câu hỏi này theo hướng khẳng định, bằng\nlý thuyết các lược đồ Picard được phát triển ở đây.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "1fc1fc3052744ccd4305d072d22d65b1020ed1ebf10ac7709d5169b071284474",
+    "bytes": 228,
+    "exact_body_utf8": "El texto impreso pone $\\mathcal O_S$ en este producto tensorial;\naquí $\\mathcal G$ y $\\mathcal M$ son Módulos sobre $S'$, y la construcción de\ndeformación de cuadrado nulo exige el producto tensorial sobre\n$\\mathcal O_{S'}$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "20e5b667ec648dc77b56ba79ff96ef9fd675a47a1820c3fd99d6f5b2e137542a",
+    "bytes": 157,
+    "exact_body_utf8": "The printed text reverses the two end terms of the universal extension; the class under consideration lies in $\\operatorname{Ext}^1(\\mathcal G,\\mathcal G')$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "20ed21d453d975d996e10b579252c5a2918428d26ccde570749ceb8a3682d34d",
+    "bytes": 260,
+    "exact_body_utf8": "인쇄본에는\n$P\\neq Q$라고 되어 있다. 1962년 정오표는 이를 $P<Q$로 고치고,\n``$P=Q$''인 경우를 그 반대인 $n$이 클 때 $P(n)\\geq Q(n)$인 경우로\n바꾸며, (*)의 엄격한 부등식을 넓은 부등식으로 바꾸도록 한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "20f3fe550981f95bcbf0db30ba592e8ea3d46c6671da9b6e9cde24a62b9d2fb3",
+    "bytes": 164,
+    "exact_body_utf8": "印刷\n文本将后两项的说明次序颠倒；依本页紧前给出的定义，译文按与特征指数互素部分、\n特征指数准素部分的次序复原。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "216e5492adab1a3e915714fbdb042c4dc8dbe202fcc6d4c5101d2d70b0e3ffc9",
+    "bytes": 98,
+    "exact_body_utf8": "印刷文本作“在 $S$ 上”。这里所考察的\n作用和取商条件都是关于 $X$ 的。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "21e7a7984a7fb6595e128917fde39faf039945cd06f069a47f4c91dce262932a",
+    "bytes": 108,
+    "exact_body_utf8": "1962 年勘误指出，这一问题有肯定答案，并参见下一篇报告\n《评论》的最后一段。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "220f0811f93c1da7d3f095890738267b73fa28c03c4398ef72f7d86f180d73d9",
+    "bytes": 109,
+    "exact_body_utf8": "Bản in ghi «$x\\in X$»;\r\n$\\varphi_n$ là tự đồng cấu lũy thừa của tiền lược đồ Picard.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "22413221b3a954ccdd6561c287039dc94318f28c129c37d6fae2f523659f28e3",
+    "bytes": 245,
+    "exact_body_utf8": "La rama diplomática\nconserva las dos lecturas impresas « libre » y la segunda lectura « rango $n$ »;\nla rama actual las corrige a « proyectivo de rango $1$ », como exige también\nla identificación con $\\bigwedge^{p}(J/J^{2})$ más abajo.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "225834ea080146ddacf6d677b280b5ea568be6392e9d61a3db5f9385ccb5c7ba",
+    "bytes": 194,
+    "exact_body_utf8": "Văn bản in ghi\n$B\\otimes_V A$. Vì $B$ là một $V$-lược đồ và khẳng định liên quan đến thớ\ntổng quát của nó, nên thừa số cơ sở nhất thiết phải là $K$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "225ca17f9832346937fa7e91128a7a3327ad8d4f047cb28e26d43e8dc13c63d7",
+    "bytes": 206,
+    "exact_body_utf8": "Bản đính chính năm 1962 làm rõ rằng định nghĩa «trơn trên\n$\\Lambda$» này chỉ đúng khi mở rộng thặng dư $k'/k$ khả phân; trong trường\nhợp tổng quát, xem SGA III, 1.1.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "22914eb491fdf1dc7c4e286b36e2fb5385f14d9844792a05c522146560624948",
+    "bytes": 167,
+    "exact_body_utf8": "印刷文本没有第二个假设。与报告 212 相联系的勘误\n指出，此时似乎只有在 $R$ 来自一个等价关系时，拟射影性才得到了证明。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "23387467e83f4a5f8ed2e2b4a5151eb648bbe6d42cd6142b8ad1f404fc1c14ab",
+    "bytes": 31,
+    "exact_body_utf8": "강연 끝의 부록을 보라.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "23e78817afb96df7e89fa32a841f2e3351dfcdb2a6610ea3aae32a0167ded83c",
+    "bytes": 232,
+    "exact_body_utf8": "La\nfe de erratas de 1962 señala que Hartshorne demostró la conexidad de los\n$\\operatorname{Hilb}^P_r$ sobre un cuerpo algebraicamente cerrado y determinó\nlos pares $(r,P)$ para los cuales\n$\\operatorname{Hilb}^P_r\\neq\\varnothing$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "2603cb79e1b71c7f06da5bdbe1ab09117273ecf0c5c6f64b443999667b21ced6",
+    "bytes": 137,
+    "exact_body_utf8": "Bản in ghi ở đây «trên $S$»; tính phân tích duy\r\nnhất được viện dẫn là của các vành địa phương của $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "26b7e340a1860500456ccbaa3e31565665eb3de553f026a484a51d8d6f9fc1b1",
+    "bytes": 137,
+    "exact_body_utf8": "O texto impresso substitui aqui o\nexpoente $s$ por um $n$ não definido; $s$ é o posto do feixe livre do qual\n$\\mathcal F$ é quociente.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "278f7b7ce50bc1fa86893f1de8c6ab85c74d93901bc0f7c9c996270da20f4c4d",
+    "bytes": 126,
+    "exact_body_utf8": "인쇄본에는\n``정칙''이라고 되어 있으나 정오표는 ``$k$ 위에서 매끄러운''으로 바로잡도록\n한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "27d7a7e23660e1cddb264fcfed73c5b68016f0fc7c94f78806b95b32b2c89587",
+    "bytes": 141,
+    "exact_body_utf8": "The 1962 erratum reports that this question has\r\nan affirmative answer and refers to the last paragraph of the Comments on the\r\nnext exposé.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "298536cb6bb8cf66ca762ad3e67242c875eb525efe480163f6cde41fb1c163b2",
+    "bytes": 594,
+    "exact_body_utf8": "Bản\nđính chính năm 1962 thông báo rằng lược đồ hình thức môđuli của một đa tạp Abel\ntrên một trường là trơn trên vành Witt: mọi lược đồ Abel trên một thương Artin\nđịa phương đều nâng được lên vành mà nó là thương. Chứng minh sử dụng tính\nbiến thiên của lớp cản trở đối với phép nâng được đưa vào trong Bài trình bày\n182, tr. 12. Bản đính chính cũng nhắc đến các phép dựng của Mumford cho các\nđường cong giống $g$ và các lược đồ Abel phân cực (xem SHMT).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "299254cf5d5f138a58aeda90ad1de9302f3fd6b603187dcd5bf0cc753b665a7c",
+    "bytes": 196,
+    "exact_body_utf8": "A fórmula impressa identifica diretamente\n$G_x$ com o termo completado e omite o acento circunflexo sobre\n$\\mathcal O'_{0x}$. A inclusão e o completamento são os prescritos pela\nerrata de 1962.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "2a0ce9a622c3b0afe005acd3ad6967a691c4dc80200ae82bfd1646b7eec34694",
+    "bytes": 142,
+    "exact_body_utf8": "O texto impresso traz aqui «$Q$»; o subconjunto\nintroduzido no enunciado, cuja quase-compacidade exprime que a família é\nlimitada, é $E$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "2b0d76fff5f58fcd42b546b0649fb7e23c2279ea74aeee9fd5c8985fa00b439e",
+    "bytes": 81,
+    "exact_body_utf8": "Điều kiện chính xác hóa này do\nbản đính chính năm 1962 áp đặt.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "2b554430c33cd807fff877d45e6fc8d81984a4a50c30985818998b96fcf2303f",
+    "bytes": 160,
+    "exact_body_utf8": "印刷文本作“与 $p$ 互素”。在这个由 $n$ 量化的命题中，\n平展性判据以及使用核 ${}_nG$ 的论证要求剩余特征与 $n$ 互素。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "2c65d01328e82b057c8fed03e1f9ddaaffa38cdbb65ccc020245e2334e64600c",
+    "bytes": 235,
+    "exact_body_utf8": "The 1962 erratum calls this formulation excessive: it is\r\ntrue to a large extent for the nonprojective techniques treated in the first\r\ntwo exposés of the TDTE I--VI series, but not for the projective techniques\r\n(TDTE IV, V, and VI).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "2c87dce0cc3f4d90e478deee5e58f905750268250dd86e573984c0399563724b",
+    "bytes": 150,
+    "exact_body_utf8": "인쇄본에는 여기서 $Z/K$라고 되어\n있다. $K$는 정의되어 있지 않고, (5.7)부터 고찰한 단면 함자는\n$\\Pi_{X/S}(Z/X)$이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "2ceb6a9f8ff17a0f89462d405b02a5ce21893cd4202f2360741771152ab87a76",
+    "bytes": 121,
+    "exact_body_utf8": "인쇄본에는 ``Igusa--Lang''이라고 되어 있으나,\n1962년 정오표는 ``Chow--Iang''으로 고치도록 한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "2d0b03df47e936d83a3702014447549f950abe17712aa6cd47f5f76ce036da93",
+    "bytes": 254,
+    "exact_body_utf8": "La fe de erratas vinculada de la Exposición 212\nafirma que esta conjetura es definitivamente falsa. También señala que el\nhecho positivo de la Observación 8.1 fue demostrado posteriormente y remite\nal teorema de Mumford y a refinamientos posteriores.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "2da5a2ce48abbfc80008a7d593fee1f88a80dd4d8cb98b4d20e302c7b2a107af",
+    "bytes": 45,
+    "exact_body_utf8": "Véase el aditivo al final de la exposición.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "2ea2891e53babfe08b95d22181b12fee6d5ba7f3e6da20ef902fd28c339aa9a7",
+    "bytes": 251,
+    "exact_body_utf8": "El texto impreso da aquí una fórmula que solo es correcta cuando\n$\\Lambda$ es un cuerpo. La fe de erratas de 1962 prescribe, en el caso general,\nel cociente de $\\mathfrak m_\\xi/\\mathfrak m_\\xi^2$ por la imagen de\n$\\mathfrak n_\\xi/\\mathfrak n_\\xi^2$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "2ea7cc8267818e9acfd76a71e435d48694118c6e8ed1f83d9d8d1efe6373959d",
+    "bytes": 97,
+    "exact_body_utf8": "인쇄된 프랑스어 본문은 여기서 직접목적어 앞의 관사 ``les''를\n빠뜨렸다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "2f24780d19f665f0d6d884c5e167036559e122ff401c51bb76ce4b6b9c37f916",
+    "bytes": 218,
+    "exact_body_utf8": "The printed text places $T_n/S$ under the symbol $\\Pi$. Proposition\r\n5.7 is applied here to the finite flat morphism $p_1:T_n\\to T$, and the result\r\nis explicitly a prescheme over $T$; hence the denominator is $T_n/T$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "2f2ab8f41a1bc14c02507f0b8f215dd204a4e8aad423b94359acb97cba3bf08b",
+    "bytes": 234,
+    "exact_body_utf8": "Công thức in đồng nhất trực tiếp $G_x$ với\nhạng tử đầy đủ hóa và bỏ dấu mũ trên $\\mathcal O'_{0x}$. Bao hàm và đầy đủ hóa\nlà những điều được bản đính chính năm 1962 quy định.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "2f53c0d8207cfcf0aa16ad925099664768ebd6e8002654f84c33caf83284a79c",
+    "bytes": 102,
+    "exact_body_utf8": "印刷文本作“次数 $r$”；滤过 $\\mathcal F_{(r)}$ 是按支集维数而非次数定义的。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "2f62023f38820f8db3b879818d7e7d9fa688ff5dfb7576037853a3e7733ccc80",
+    "bytes": 140,
+    "exact_body_utf8": "A errata de 1962 assinala que D. Mumford resolveu afirmativamente essa\nquestão por meio da teoria dos esquemas de Picard desenvolvida aqui.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "30f4b4eec5c0a995a5fd363733738b87c040a571f19ba4556dcd6f999462b3a5",
+    "bytes": 174,
+    "exact_body_utf8": "인쇄본에는 여기에 ``$X$''라고 되어 있으나,\n이 대목에서 $X$는 정의되어 있지 않다. 지금 살피는 네 장소는 모두\n$G$의 부분집합이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "310c70d256b40608a515dfb0d7212e8024162bbfefec97bd0c79d783fbb196e4",
+    "bytes": 188,
+    "exact_body_utf8": "Bản in đặt $\\mathcal O_X$ ở chỉ số dưới của\n$\\operatorname{Hom}$; vì $\\mathcal Q$ là một Môđun trên $S$, đối ngẫu của nó\nđược lấy trên $\\mathcal O_S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "311601e75c3d233f4f6b7765759e4c71050242609e10710537019988dc562d51",
+    "bytes": 74,
+    "exact_body_utf8": "O texto impresso traz «regular»;\na errata prescreve «suave sobre $k$».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3181e992651de7faa9c914262808efd333dc37ee17e51c7a6de55dc3bd75aa41",
+    "bytes": 136,
+    "exact_body_utf8": "La rama diplomática conserva la lectura\nimpresa « con $u$ »; la rama actual la corrige a « con $d$ » conforme a\nla ecuación (2.1).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "32737cb14ed4041d345e860b498452cfbd824f98122396f14593b1b13a9fa9c5",
+    "bytes": 194,
+    "exact_body_utf8": "인쇄본에는 두 번째 가정이 없다.\n강연 212에 딸린 정오표는 이때 준사영성이 $R$이 동치관계에서 오는 경우에만\n증명된 것으로 보인다고 명시한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "32cad051f4cbed2b3c9eaaa7652144e172d6aab48d9647fe26250bdca81e6985",
+    "bytes": 131,
+    "exact_body_utf8": "El texto impreso dice\n$H^{p}(H^{q}(X,K))$; el término inicial es el de la sucesión espectral (8.2),\nesto es, $H^{p}(X,H^{q}(K))$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3370d636f24c158a4b3b2ddd95decf69dcf2c72086ed7d772f3e86da04b0d276",
+    "bytes": 74,
+    "exact_body_utf8": "印刷文本作“正则”；勘误规定改为“在 $k$ 上光滑”。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "345f20cc170a94a34c6a1b8201092163df3ac91f38f7fc1bcb6334e1674a8202",
+    "bytes": 58,
+    "exact_body_utf8": "关于更完整的研究，\n1962 年勘误转引 TDTE V。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "348fc25227cf40052735813a9f94bab1a426ec4c8eac9a92280a5c72fe00a360",
+    "bytes": 122,
+    "exact_body_utf8": "The printed exposé says only “necessary”;\r\nthe 1962 erratum to Exposé 221 prescribes “necessary and sufficient.”",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "366f1d2a0d96e72b02142a5e9cd520fc6a3f362afc6b932cb6cae3beb22c11b8",
+    "bytes": 167,
+    "exact_body_utf8": "Văn bản in ghi \\texttt{pr\\_1}. Vì cả hai cấu xạ đều có\nđối đích $X$, cấu xạ thứ nhất phải là \\texttt{pr\\_2}; ở đây ta sửa lỗi in.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "36e86b2c854d21dfb3044bbc022443e6d9a02cce184fad1b48f32b2003496c98",
+    "bytes": 169,
+    "exact_body_utf8": "印刷文本在“严格”之前漏掉了“非”。在这里考察的范畴中，\n纤维积存在，而上一段恰好证明了有效性与严格满态射性等价。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "36fa5d264c782d54da01499f60e9dc5a6dc9494c7740aa7229351a15d7822092",
+    "bytes": 96,
+    "exact_body_utf8": "El texto impreso\ndice «Sea: $X\\longrightarrow S$»; el morfismo utilizado más adelante es $f$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "36fb48f0154a819df35447b0a6a79dee3e3d559b52501832b4e97e9009472085",
+    "bytes": 266,
+    "exact_body_utf8": "Bản in ghi “các phủ bất khả phân”; đoạn văn đang xét phạm\r\ntrù $R(X)$ của các phủ không phân nhánh và sự tương đương của nó với các tập\r\nhữu hạn được trang bị một tác động liên tục của $\\pi_1(X,a)$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "373cc08c37fd50a37fc2c81ca4614c1a4c17d6cded861d09ba72f045768a2626",
+    "bytes": 33,
+    "exact_body_utf8": "见本篇报告末尾的补遗。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "37c669a5315aaf6bac2af0245e54faced5febfc25748fb8a740c218602140fc8",
+    "bytes": 147,
+    "exact_body_utf8": "인쇄본에는 $Z$라고 되어 있으나, $Z$는 다음 문장에서야 정의된다.\n$Z'_N$들은 $S$의 닫힌 부분스킴으로 구성된다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "38107f9a6065016a4191c3138493aa0806f7c2928a36c230bc1194dd9d04e14c",
+    "bytes": 103,
+    "exact_body_utf8": "인쇄본에는 여기서 $X_0$라고 되어 있으나, 이 문단에서 정의된 것은\n$X$뿐이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3821e81ba66151eb464868ac641ea386198b9589fd13c090bf7f08aef042cdb9",
+    "bytes": 193,
+    "exact_body_utf8": "印刷文本在符号 $\\Pi$ 下写的是 $T_n/S$。这里将命题 5.7\n应用于有限平坦态射 $p_1:T_n\\to T$，并且所得对象明确是 $T$ 上的\n预概形；故分母应为 $T_n/T$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "38db4a4384852d0d397a17796ef64b59c35e0f25a7c9c90e92352b94b35aac84",
+    "bytes": 123,
+    "exact_body_utf8": "A errata de 1962 esclarece que não é\nnecessário supor previamente que $\\alpha$ seja um morfismo de\n$\\mathcal F$-descida.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3927ac3eb3b735ac54a092d012a2157d773ca9a05a4908b540869ae47f2b3605",
+    "bytes": 248,
+    "exact_body_utf8": "原印本及法、英可编辑见证均作\n$p_1=\\operatorname{pr}_1$；但\n$\\operatorname{pr}_1:G\\times X\\to G$，而这里两个态射的靶都是 $X$，\n且下一个公式要求 $(g,x)\\mapsto(x,gx)$，故此处采用类型正确的第二投影。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "39405677671c8dbc6e01999d0b04a3534ed6ffe1450cdebb993640be1b5f02b5",
+    "bytes": 104,
+    "exact_body_utf8": "印刷文本此处作“$Q$”；陈述中引入的子集是 $E$，\n其拟紧性正表示该族有界。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "398a8353ae7ebc2cda529f74153bdc150a6f5cc3517b0a9d6984ba8fe9bbfff2",
+    "bytes": 211,
+    "exact_body_utf8": "Trong công thức cuối cùng này, bản in ghi $\\mathcal O_X$ thay cho\n$\\mathcal O_{X_0}$, mặc dù đối tượng sau đã được cố định trong định nghĩa\nngay trước đó của $\\mathcal A$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "39ca83b5ba2d31f660cfabd50f4233c459696b7f209c1d8e3e91402c4049c66b",
+    "bytes": 149,
+    "exact_body_utf8": "印刷文本作\n$\\varphi_{n^h}$；对 $x\\in G^\\rho$，第 223 页给出的定义提供了一个\n特征指数 $p$ 的幂，把 $x$ 映入 $G^\\circ$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3b8c546930cacff9cf18ac51d98514255de33140eae0c7319935bba6272a72b7",
+    "bytes": 415,
+    "exact_body_utf8": "A errata de 1962 acrescenta que Mumford acabava de\nconstruir uma componente irredutível do esquema de Hilbert de\n$\\mathbf P^3_{\\mathbf C}$, cujos pontos gerais representam curvas não\nsingulares de grau 14 e gênero 24, não reduzida em seu ponto genérico; a\nexplosão de uma dessas curvas fornece também um esquema projetivo regular de\ndimensão 3 cujo esquema formal de módulos é genericamente não reduzido.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3bdd3a5bd7ce4e3e43ed61553d221efe023041fe0773911c3979e088df24b781",
+    "bytes": 259,
+    "exact_body_utf8": "Bản đính chính năm 1962 ghi nhận rằng Hartshorne đã\nchứng minh tính liên thông của các $\\operatorname{Hilb}^P_r$ trên một trường\nđóng đại số và xác định các cặp $(r,P)$ sao cho\n$\\operatorname{Hilb}^P_r\\neq\\varnothing$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3bf18eff8f5fbff0c4db9da4c02408d9a6f842db243c5f4c79b56c64670cc6f5",
+    "bytes": 110,
+    "exact_body_utf8": "El texto impreso numera también esta fórmula « (6.2) »; el sufijo\n« bis » distingue las dos apariciones.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3c224a41ee1c284e4a2c8124e6aa57db427ff0f6bc1aa586e204e73d48b55c34",
+    "bytes": 141,
+    "exact_body_utf8": "Bản in ghi «trên $S$»; phép\nrigid hóa bởi một tiết diện $g:S\\to X$ ở đây liên quan đến Môđun\n$\\mathcal L$ trên $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3c87c22aa1b4d58588683a5d31a89f6153c56002fa93ead51d50a995f8a833cd",
+    "bytes": 175,
+    "exact_body_utf8": "인쇄본에는\n$B\\otimes_V A$라고 되어 있다. $B$는 $V$-스킴이고 이 주장은 그 일반섬유에\n관한 것이므로, 바탕 인자는 반드시 $K$여야 한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3c97f005ff9254f4441a4d3a97becc83d87c06b6b91ffd863fe6df36a7e6bd3d",
+    "bytes": 144,
+    "exact_body_utf8": "인쇄본에는\n``$f:X\\longrightarrow Y$''라고 되어 있으나, 뒤따르는 함수와 피카르\n준스킴은 모두 $S$를 밑으로 한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3cb5652d2dae6cc5713d48ef307e6677d6287cd4f25c51cb4e32f681c356bd07",
+    "bytes": 87,
+    "exact_body_utf8": "Bản in ghi ``Igusa--Lang''; bản đính chính năm\n1962 quy định ``Chow--Lang''.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3ce4772dd88b6fa72c47731e4057f8faa30aac71b62fa73ac5f2c65208f43531",
+    "bytes": 85,
+    "exact_body_utf8": "印刷文本此处作 $X$；这个判据的\n主语是前一句引入的覆盖 $X'$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3deea6b44dca8d6364961ac4fd616620a3107eae392a771205262643cb95e409",
+    "bytes": 137,
+    "exact_body_utf8": "The printed French uses plural « Soient » before a singular subject with a parenthetical counterpart; the English was already singular.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3e44a0d265314523b5baa38c38b9164c40db1f8d82da442e688ed1ae1227ae47",
+    "bytes": 124,
+    "exact_body_utf8": "인쇄본에는 “(1.7)”로 되어 있으나,\n$p$가 나타나고 앞 문장이 있으므로 “(1.8)”이어야 한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3e8e3c72892700c36adfcf0c35e3a8de6180f9cb958799e58383e41062da8949",
+    "bytes": 291,
+    "exact_body_utf8": "Bản in cho ở đây một công thức chỉ đúng khi $\\Lambda$ là một\ntrường. Bản đính chính năm 1962 quy định rằng trong trường hợp tổng quát phải\nlấy thương của $\\mathfrak m_\\xi/\\mathfrak m_\\xi^2$ theo ảnh của\n$\\mathfrak n_\\xi/\\mathfrak n_\\xi^2$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3f4e3d03e6ffdffff00f08ca14d6819b52b7e2a3c989ba0545fce47675159cd2",
+    "bytes": 230,
+    "exact_body_utf8": "\nGrothendieck (Alexander). --- The cohomology theory of abstract algebraic\nvarieties, \\emph{Proceedings of the International Congress of Mathematicians}\n[1958, Edinburgh], p. 103--118. --- Cambridge, at the University Press, 1960.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3f94d9d7c69bb632b38b4e04019ff9edbf010dd407b5987a489fca42a351dd8a",
+    "bytes": 464,
+    "exact_body_utf8": "1962년\n정오표는 한 체 위의 아벨 다양체의 형식적 모듈라이 스킴이 비트 벡터 환 위에서\n매끄럽다고 밝힌다. 즉 아르틴 국소 몫환 위의 모든 아벨 스킴은 그 몫환을\n낳는 환으로 올려진다. 증명은 강연 182, p.~12에서 도입한 올림의 장애류가\n변하는 방식을 사용한다. 또한 종수 $g$인 곡선과 편극된 아벨 스킴에 대한\nMumford의 구성들도 상기시킨다(cf. SHMT).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3fd0b3fa6f240ee6f9fb83a3972edd6f2e0d56599b259c2dd64d5714a1ac03e3",
+    "bytes": 84,
+    "exact_body_utf8": "A errata de 1962 prescreve\nexplicitamente a hipótese «$f$ próprio e separável».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "3fdcb1711478ed2be0abd007b7c1d5089cf3613a4930a5f232421207c7e892bc",
+    "bytes": 796,
+    "exact_body_utf8": "1962년의 정오표는 부정적인 답을 준다.\n준유한이고 에탈이며 전사인 사상 $S'\\longrightarrow S$, 또는\n$\\operatorname{Spec}(\\widehat A)\\longrightarrow\\operatorname{Spec}(A)$\n꼴의 사상은 언제나 엄밀 하강 사상인 것은 아니다. 이는 $A$가\n대수적으로 닫힌 체 $k$ 위의 대수곡선의 국소환이고\n$S=\\operatorname{Spec}(A)$인 경우에도 마찬가지이다. 따라서\n$X$를 밑이 $S$이고 타원곡선 $E$를 구조군으로 하는 주다발로 만드는 고유하고\n매끄러운 사상 $f:X\\longrightarrow S$로서,\n$f':X'\\longrightarrow S'$은 사영이지만 $f$는 사영이 아닌 것을\n찾을 수 있다. 그러므로 이는 아벨 스킴을 구조군으로 하는 등상적이지\n않은 동차 주다발의 예이기도 하다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "40e06f6238971b8c4850172ea995171c1d83ea16e69767d04524ca2f5c3c27bb",
+    "bytes": 216,
+    "exact_body_utf8": "마지막 글자는 인쇄본에서 ``$X$''로\n되어 있으나, 바로 앞 조건은 $\\mathcal O_X/(\\mathcal I_1+\\mathcal I_2)$가\n$S$ 위에서 평탄하다는 것이므로 $S$ 위에서 평탄인 것은 $Z$이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "417c210695a6e8e4efd626d2f5c1b8a14a1b26c21cc4016567ef1d7f384ee856",
+    "bytes": 109,
+    "exact_body_utf8": "Bản in dùng danh từ số ít\r\n``la fibre'' cho hai thớ; cách đọc số nhiều là ``les\r\nfibres''.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "42391863947d525f9a5f8897000bc0741a08fdc0af30286dcccd1e36e326f90a",
+    "bytes": 111,
+    "exact_body_utf8": "인쇄본은\n합집합 기호를 사용한다. 그러나 등급 구조는 층 $\\Omega_X^p$들의 직합\n이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "429a37ad7c52ef8c83e0ac5f2e2ab5daaeeb5751a1f2c058e46c65ffdb7ae5cc",
+    "bytes": 165,
+    "exact_body_utf8": "O texto impresso apresenta \\texttt{pr\\_1}. Como os dois\nmorfismos têm codomínio $X$, o primeiro deles deve ser\n\\texttt{pr\\_2}; corrige-se aqui o erro tipográfico.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "42b4dbecda611f17221630d86d0a3367743438fefae113541635534be5a28b23",
+    "bytes": 127,
+    "exact_body_utf8": "O texto impresso traz apenas «é necessário»;\na errata de 1962 da Exposição 221 prescreve «é necessário e suficiente».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4311edcd93dec3230a7e79e18c5a1f7758837a571d1ca7c6f9f3512f2fd0aa26",
+    "bytes": 123,
+    "exact_body_utf8": "O texto impresso diz\n$H^{p}(H^{q}(X,K))$; o termo inicial é o da sequência espectral (8.2),\nisto é, $H^{p}(X,H^{q}(K))$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "442a63bad472b04d774a7264e100a1d340a90fd5f042fead5f63d67d2b7776fa",
+    "bytes": 94,
+    "exact_body_utf8": "印刷文本在紧前一条注记之后仍将本推论编号为\n3.8；译文保留原编号。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "468719fc81733fb4ebf830f0106edad57b0c5e3ac75ebf2c093541396ed9b245",
+    "bytes": 162,
+    "exact_body_utf8": "La rama\ndiplomática conserva el signo de unión impreso; la rama actual lo corrige a\nla suma directa que define la estructura graduada de los haces $\\Omega_X^p$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "46ce0d56ff815e62e7460072679ca7b8f4dd122955cafc47b577ee9136fb2a90",
+    "bytes": 72,
+    "exact_body_utf8": "Para un estudio más\ncompleto, la fe de erratas de 1962 remite a TDTE V.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "47205a79c25b08e78018495af387c40a081c2bb16e856275cb45ba388a18f6c3",
+    "bytes": 80,
+    "exact_body_utf8": "O texto impresso diz «Igusa--Lang»; a errata de 1962\nprescreve «Chow--Iang».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4778c9e803492cec47b40d77d61c03a14c389c91371a0fb4cf968131fb57dc1f",
+    "bytes": 229,
+    "exact_body_utf8": "Grothendieck (Alexander). --- The cohomology\ntheory of abstract algebraic varieties, \\emph{Proceedings of the\nInternational Congress of Mathematicians} [1958, Edinburgh], p. 103--118.\n--- Cambridge, at the University Press, 1960.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "47989d0e17b9202c2042f5af9bab551e45f16d48e80b14ccbc1715820b3854e4",
+    "bytes": 174,
+    "exact_body_utf8": "Bản in ghi «$X$» ở đây,\r\nnhưng ký hiệu ấy không được định nghĩa trong đoạn này; cả bốn locus đang xét đều là\r\ncác bộ phận của $G$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "47aafa08293f8350f4f9113270debe373e4a6bf6e160d5225356e7a2cefee649",
+    "bytes": 138,
+    "exact_body_utf8": "印刷文本作“秩 $n$”；\n两个最高次形式模的秩均为 $1$，下文与 $\\bigwedge^{p}(J/J^{2})$ 的等同也要求\n如此。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "47c008a9659220e472cce758ee7fa707e64734913d8a1451977b3cf1d974f5f2",
+    "bytes": 135,
+    "exact_body_utf8": "O texto impresso diz $E(A)$; na categoria considerada, o objeto\nrepresentante é $A/J$, e a igualdade requerida para (3.7) é $E(A/J)$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "486f20f406ae1b2d083e1be16c748372140d527e81931aa04a8349d39398606b",
+    "bytes": 89,
+    "exact_body_utf8": "El texto impreso dice «Igusa--Lang»; la fe de erratas de\n1962 prescribe «Chow--Iang».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "48a41f3a6e746dca549bfb722885388f816a5378ba3adfc84a34a7d3fa2432e3",
+    "bytes": 242,
+    "exact_body_utf8": "El texto impreso lleva\n$P\\neq Q$; la fe de erratas de 1962 prescribe $P<Q$, sustituye el caso «$P=Q$» por\nel caso complementario $P(n)\\geq Q(n)$ para $n$ grande, y sustituye las\ndesigualdades estrictas de (*) por desigualdades no estrictas.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "48e7d5b079bd4d6740cc910fe870903d75c99bea1f900bff8191f3c43cb2bdb8",
+    "bytes": 110,
+    "exact_body_utf8": "The printed French omits the article \\emph{les} before its direct object; the English was already grammatical.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4904908ca3bf11a4531e23c5b7d12e99735607e09664776e02d4bf59b377bd35",
+    "bytes": 105,
+    "exact_body_utf8": "O texto impresso traz «$x\\in X$»;\n$\\varphi_n$ é o endomorfismo de potência do pré-esquema de Picard.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4917e7eed39e8e30e3f640696532acadb1458f9f2d58a946c809eb6bbeaabbff",
+    "bytes": 143,
+    "exact_body_utf8": "La exposición impresa dice\nsolamente «es necesario»; la fe de erratas de 1962 de la Exposición 221 prescribe «es\nnecesario y suficiente».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4996311abc62d7d6fc17a5d5ad610118007b82960ac912a629475a3a6ac8ed82",
+    "bytes": 164,
+    "exact_body_utf8": "El texto impreso\ndice $\\varphi_{n^h}$. Para $x\\in G^\\rho$, la definición de la p.~223 da una\npotencia del exponente característico $p$ que envía $x$ a $G^\\circ$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4ad8a5c48b5dbe6d3e1eb2f2e3376ed939b831ac03411860683216257257bf4a",
+    "bytes": 100,
+    "exact_body_utf8": "The printed text has $\\operatorname{Hom}_S(X,X)$ here, contrary to the preceding displayed identity.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4ada9f8fb5dfaaf620f4fee6ac777cd12e41822b8ff99471a37b97fff8aa5a87",
+    "bytes": 102,
+    "exact_body_utf8": "El texto impreso dice «en $S$». La acción considerada y la\ncondición de cociente conciernen a $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4b119e61067dc628c405acb39d602304fccd015ae1cdffdf58d83ccd2ed42609",
+    "bytes": 89,
+    "exact_body_utf8": "Bản in ghi « với $u$ »; phương trình\n(2.1) buộc phải đọc « với $d$ ».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4b4111bfe20d1d5dde578736d80147bb7e42cf97f09b771a4ac926d0d8cee2f6",
+    "bytes": 164,
+    "exact_body_utf8": "The printed text gives a second\r\nformula ``(5.3)'' on page 182 and refers to it here; the identifier\r\n``(5.3 bis)'' distinguishes this formula from the first (5.3).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4ba83067d758e256079f489a87e503d65f9c786a9663cf7993b18b25a7302fe8",
+    "bytes": 81,
+    "exact_body_utf8": "Bản in ghi «chính quy»; bản đính chính quy định «trơn\ntrên $k$».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4be629ee84ce580b79f532fa8ac9911e8249718c6ae10dab2c2a6b24f2ca8e12",
+    "bytes": 92,
+    "exact_body_utf8": "印刷文本也把该公式编号为“(6.2)”；后缀“bis”用于区分两次出现。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4c0f259889b69270704633ed295545a1e3fb68adce9fdc8a3bd29138ffad0cc1",
+    "bytes": 115,
+    "exact_body_utf8": "Bản in ghi\r\n``Soient : $X\\longrightarrow S$'' (dạng số nhiều); cấu xạ được dùng về sau là\r\n$f$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4c9fba3474bd7f0fdee4eced6d98dd86662b79649e107409f699af4c5e1274bc",
+    "bytes": 161,
+    "exact_body_utf8": "인쇄본에는 $E(A)$로 되어 있다. 여기서 다루는 범주에서 이를\n표현하는 대상은 $A/J$이고, (3.7)에 필요한 등식은 $E(A/J)$이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4ddd24f340c70dfcff771255478c065707c1e2e236bc5978f9e8c970878e2136",
+    "bytes": 125,
+    "exact_body_utf8": "The printed text reverses the quotient as\r\n$N_r/N_{r+1}$, which is incompatible with the increasing filtration just\r\ndefined.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4ef6ced624b01d63701585f8aec635c691a5794c53deeca0997693bae6aa1aa4",
+    "bytes": 201,
+    "exact_body_utf8": "La fórmula impresa identifica directamente\n$G_x$ con el término completado y omite el sombrero sobre\n$\\mathcal O'_{0x}$. La inclusión y el completado son los prescritos por la fe\nde erratas de 1962.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4f5ed0a3007a82e6ae8f8aadc23f4f4e38a83f419909f83a5349f479220ea865",
+    "bytes": 126,
+    "exact_body_utf8": "El texto impreso dice «de la recta\nafín». La fe de erratas vinculada, p.~303, prescribe «recta afín privada del\norigen».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4f9e3578f0def60655918e846028070f97aab752407d324ec93afb3072890841",
+    "bytes": 94,
+    "exact_body_utf8": "El texto impreso dice « (1.7) »; la\npresencia de $p$ y la frase anterior exigen « (1.8) ».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4fb10c7e9a55fec2b5885e54a74d93e0401fe44956da0d4e2a9c7f9942cc5b6c",
+    "bytes": 130,
+    "exact_body_utf8": "MUMFORD (David). --- An elementary theorem in geometric\ninvariant theory, \\emph{Bull. Amer. Math. Soc.}, t. 67, 1961,\np. 483--486.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "4fd747484564fd2136c5d5d8e90a00c79929f61b726f3a361bca8480d246fe61",
+    "bytes": 457,
+    "exact_body_utf8": "The 1962 erratum reports that the formal moduli scheme of\r\nan abelian variety over a field is smooth over the Witt ring: every abelian\r\nscheme over an Artinian local quotient lifts to the ring of which it is a\r\nquotient. The proof uses the variance properties of the lifting obstruction\r\nclass introduced in Exposé 182, p. 12. It also recalls Mumford's constructions\r\nof moduli schemes for curves of genus $g$ and for polarized abelian schemes\r\n(cf. SHMT).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "508473eb67402500b5bcc1c1dc0bbdcfdb0aaa22f7cff33fed69fe41825556ec",
+    "bytes": 103,
+    "exact_body_utf8": "인쇄본은 방금 $n=1$에 대해 단언한 동형사상과\n모순되게 $n\\geq1$을 되풀이한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "51002aa7c06f9a8a5e3cc5e3c271df46a35ae94dc8fc04a7c89ddc27d5fa0533",
+    "bytes": 183,
+    "exact_body_utf8": "O texto impresso diz $f_{*}(\\xi^{m,m})$. Visto que\n$\\xi^{m,m}\\in H^{m}(X,\\Omega_X^{m})$ e que ambos os membros pertencem a\n$H^{m}(Y,\\Omega_Y^{m})$, a aplicação requerida é $f^{*}$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "5145d0c76b0f62b223c2a5c39692325545cb2e0aa7bb9866fe853060ee4b0d6e",
+    "bytes": 186,
+    "exact_body_utf8": "1962年的勘误指出，Hartshorne 已证明\n代数闭域上的 $\\operatorname{Hilb}^P_r$ 是连通的，并确定了满足\n$\\operatorname{Hilb}^P_r\\neq\\varnothing$ 的各对 $(r,P)$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "51bc8b6ad381b0b9b7c50d2cd26b684f82203135c8ad587d12fd781881dbbfa7",
+    "bytes": 158,
+    "exact_body_utf8": "O texto impresso omite ``com corpo residual algebricamente fechado'';\na errata esclarece que o contraexemplo de Mumford torna essa restrição\nindispensável.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "5257f6a6b5cdc7cd7911eddb834b4240901011fb12b54c0cb70c313fa202f665",
+    "bytes": 226,
+    "exact_body_utf8": "印刷文本及法、英可编辑见证在说明句中漏去了下标 $0$；\n紧接在前面的公式及 $Y_0\\subset X_0$ 的定义表明余法层是\n$\\mathcal J_0/\\mathcal J_0^2$，而 $\\mathcal J$ 是底的平方零理想。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "52687ac5b75a1201b9a8bf9184b9d0cce518e577fe8c1a66e58de5f34d1b394a",
+    "bytes": 382,
+    "exact_body_utf8": "The 1962 erratum adds that Mumford had\r\njust constructed an irreducible component of the Hilbert scheme of\r\n$\\mathbf P^3_{\\mathbf C}$, whose general points represent nonsingular curves of\r\ndegree 14 and genus 24, that is nonreduced at its generic point; blowing up one\r\nof these curves also gives a regular projective threefold whose formal moduli\r\nscheme is generically nonreduced.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "52adfd0f47bc176f9b4623851a1c974d1c8ecc2a5f02abfec77f1ddbd52e6c0a",
+    "bytes": 102,
+    "exact_body_utf8": "印刷文本作\\fquote{$Y$}；此处没有定义任何基 $Y$，而这一条件针对\n的是基 $S$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "52c47cfee96c2565daef65aec84469e1ac30649ec3184b85301da95c21e18c74",
+    "bytes": 126,
+    "exact_body_utf8": "The\r\nprinted text has “$X$” here; the subject of the criterion is the covering $X'$\r\nintroduced in the preceding sentence.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "52e328eafd9ad71111453557cb9a9d4cd4c3cbabdca60127a0ef64fc4fc09710",
+    "bytes": 124,
+    "exact_body_utf8": "Bản in ghi\r\n``Bây giờ, giả thiết ...''; đính chính liên quan, tr.~303, quy định ``Từ giả\r\nthiết ...''.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "539ba3e142b4cb45fae9d82a99af3a26c3a05372e75954534bf4706ac5024ad7",
+    "bytes": 83,
+    "exact_body_utf8": "印刷文本作“$x\\in X$”；\n$\\varphi_n$ 是 Picard 预概形的幂自同态。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "53cbd52d6c5a4f57d85d68fb8b4b621d45588f690fdab6b12fc6de7ed8af5286",
+    "bytes": 159,
+    "exact_body_utf8": "인쇄본에는\n``아핀 직선에서''라고 되어 있다. 이에 연결된 303쪽의 정오표는 ``원점을 뺀\n아핀 직선''으로 고치도록 한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "547452a73ca286c5ee7df4f1e9137984f38b50a1f9896d25f697ba27b55c431a",
+    "bytes": 124,
+    "exact_body_utf8": "The printed text reads\r\n$\\operatorname{Pic}_{X/S}^\\circ$, although $S$ does not occur in this\r\nstatement over the field $k$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "54bf27003684a2b92e1ab2a7970a9ea44acee76535a2f88815977407b0c6195f",
+    "bytes": 76,
+    "exact_body_utf8": "El texto impreso dice « con $u$ »; la ecuación\n(2.1) exige « con $d$ ».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "5539aef44f6c7f6ac5a51146578fe87bb49d3cfc61e8f6c39e02ba8816a6a065",
+    "bytes": 173,
+    "exact_body_utf8": "인쇄본에는 여기서 ``$Q$''라고 되어 있다. 명제에서\n도입되었으며 그 준콤팩트성이 이 족의 유계성을 나타내는 부분집합은\n$E$이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "572cb12c1fb4ecb69cc63797c3ff4980ca76bd05f085d26b68cfdc45792e3bc3",
+    "bytes": 299,
+    "exact_body_utf8": "Bản đính\nchính năm 1962 cho rằng phát biểu này quá mạnh: nó đúng ở mức độ lớn đối với\ncác kỹ thuật phi xạ ảnh trong hai bài trình bày đầu của loạt TDTE I đến VI,\nnhưng không đúng đối với các kỹ thuật xạ ảnh (TDTE IV, V và VI).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "5781a4f78f1ab2cc044bb4261901ca93529ffd5470b0f5527628bde60ca2e7f9",
+    "bytes": 79,
+    "exact_body_utf8": "1962 年勘误明确规定应加上\n\\fquote{$f$ 固有且可分}这一假设。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "57d436d61f2c5b78b443267eb950ca526974cc99929a78cda35858094aea2b4b",
+    "bytes": 185,
+    "exact_body_utf8": "1962年的勘误在此把印出的假设\n\\fquote{$f$ 拟射影}改为较弱的假设\\fquote{$f$ 分离}；依据 SGA VIII，6.2，\n每个拟有限且分离的态射都是拟射影的。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "57f1cfaed30ca4b7d0e721b5d27fc3e4171a9eb41641e886706c5f4e2d322f9a",
+    "bytes": 70,
+    "exact_body_utf8": "Điều kiện được bổ sung trong bản đính chính năm 1962.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "5acfce6daa129b6fe2e8618e67ab10d0a480682ae07d79e0be522464e49d1e16",
+    "bytes": 131,
+    "exact_body_utf8": "The printed French has feminine « telle », although its antecedent \\emph{anneau} is masculine; the English was already idiomatic.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "5ad03ae30e3e75ce0f9add537191556bf90f6f1eb370b4a05460127a7e43f73c",
+    "bytes": 91,
+    "exact_body_utf8": "인쇄본에는 $U$라고 되어 있다. 방금 정의한 열린집합은 $U_\\infty$이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "5b464b1e1730bcf2234b005dc313169670bb1db1b6123fafa430f4a3ce900309",
+    "bytes": 290,
+    "exact_body_utf8": "Văn bản in ghi\n$P\\neq Q$; bản đính chính năm 1962 quy định $P<Q$, rồi thay trường hợp\n«$P=Q$» bằng trường hợp bù $P(n)\\geq Q(n)$ với $n$ lớn, và thay các bất đẳng\nthức nghiêm ngặt trong (*) bằng các bất đẳng thức không nghiêm ngặt.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "5bdced23159439d27d5ef4db6f3229a6d4a333abc630518a7281e859c9123c65",
+    "bytes": 167,
+    "exact_body_utf8": "Bản in không nêu rõ lân cận. Ở đây khôi phục phạm vi địa phương của Hệ quả 2, cũng được sử dụng trong chứng minh Mệnh đề 2.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "5d221195f3e5659fa6cc4ef1e9f5857c2d5bacaa38d510c9f5896e532d72942c",
+    "bytes": 122,
+    "exact_body_utf8": "El texto impreso dice «$X$», que no está definido en este\npasaje; los cuatro loci considerados son subconjuntos de $G$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "5d4b719d6fb852d0769cdff1d72554148daaf04960ab5d70818cff961c776585",
+    "bytes": 113,
+    "exact_body_utf8": "Bản in ghi\n$H^{p}(H^{q}(X,K))$; số hạng ban đầu được cho bởi (8.2), tức là\n$H^{p}(X,H^{q}(K))$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "5e355ddf8751d6a5a4081d62b315a38ad5ef7dba13dfaa5957b916c36fc1310e",
+    "bytes": 225,
+    "exact_body_utf8": "El texto\nimpreso no contiene la segunda hipótesis. La fe de erratas vinculada de la Exposición\n212 dice que la cuasiproyectividad parece haberse demostrado entonces solo\ncuando $R$ proviene de una relación de equivalencia.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "5e5e70fe3d6cd481d07f8aac97d535878463122369373aa9136df622e603e13d",
+    "bytes": 90,
+    "exact_body_utf8": "Bản in ghi $X[t]$; bản đính\r\nchính liên kết, tr.~303, quy định $X[t,t^{-1}]$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "5ecc10b8dd6e16837f6f09e544816bd46627f8961a2a8fd18d9c9bae3c967c66",
+    "bytes": 118,
+    "exact_body_utf8": "Bản đính\nchính in «Chow--Iang»; văn bản hiện hành dùng tên đã được kiểm chứng\n«Chow--Lang».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "60cc8afe6437f43ac4979ed66a7d569791b09b3bf50b9b9f8cce3fc3256181dd",
+    "bytes": 100,
+    "exact_body_utf8": "印刷文本仅作“必要”；1962 年关于报告 221 的勘误规定改为“充分必要”。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "617cd114f7cf8f011ef2dc017ba5077736ec398cb420511afa4886bb1cb0f95f",
+    "bytes": 199,
+    "exact_body_utf8": "The printed text says “inseparable coverings.”\r\nThe paragraph concerns the category $R(X)$ of unramified coverings and its\r\nequivalence with finite sets carrying a continuous $\\pi_1(X,a)$-action.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "61825f54a7c64dcc4503266df5500395e062ef9535ffe77d3dd576e11e01058e",
+    "bytes": 38,
+    "exact_body_utf8": "Precisão imposta pela\nerrata de 1962.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "6249ef302446af2917a65c1f3341936bca88c6df394f2758437e22edf8dfdba8",
+    "bytes": 111,
+    "exact_body_utf8": "1962 年的勘误指出，D. Mumford\n利用这里发展的 Picard 概形理论肯定地解决了这个问题。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "624e506a79b57bc249a8357a4c4ad1a09400647494d8c887b5506bdf12ec1a14",
+    "bytes": 117,
+    "exact_body_utf8": "O texto\nimpresso traz $\\operatorname{Pic}_{X/S}^\\circ$, embora $S$ não intervenha neste\nenunciado sobre o corpo $k$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "62509b40d480cd06208fc8e62fc6b5be438acad1005b0bc9f05db4ba08dc827c",
+    "bytes": 82,
+    "exact_body_utf8": "Hartshorne (R.). ---\r\nConnectedness of the Hilbert scheme (Thesis, Harvard, 1962).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "62f99e71629e3e50f4619382ad310e68761dd71635c1364386acb7de747c38bc",
+    "bytes": 108,
+    "exact_body_utf8": "印刷\n文本作“Or l'hypothèse ...”；相应勘误第~303 页规定为“Or, de l'hypothèse\n...”。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "632865ab8893619aeebe91d88b5de6afd9bc6d3cf47336dabea77b753955a8b3",
+    "bytes": 157,
+    "exact_body_utf8": "La rama diplomática conserva la lectura impresa « $S$ es\nnormal »; la rama actual sustituye la letra porque el párrafo solo se refiere\na la variedad $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "63a23849e735cd3223039268c6cc909b50febf0267ee8186a151bc12f1fcdce6",
+    "bytes": 83,
+    "exact_body_utf8": "인쇄본에는\n$\\mathcal G_s$라고 되어 있으나, 양화된 점은 $s'$이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "644a3737a64efe5ac278e5d7803cd12ebaa7dba99dbf7b2f5bb9bbbf8407b768",
+    "bytes": 156,
+    "exact_body_utf8": "Bản in ghi $Z/K$ tại đây; không có $K$ nào được định\nnghĩa, và hàm tử các tiết diện được xét từ (5.7) là $\\Pi_{X/S}(Z/X)$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "64a30ee06c129f8f82b7e9144a48a762a54849d794e7a3a2486ff51226ae9846",
+    "bytes": 91,
+    "exact_body_utf8": "\n1962년 정오표는 Murre가 이 문제를 막 긍정적으로 해결했다고 알린다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "64a45c721cb7831e0082f534dd0ef0ccb4673e896238e5267611c18abf803f96",
+    "bytes": 182,
+    "exact_body_utf8": "인쇄본은 182쪽에서 두 번째 공식\n“(5.3)”을 제시하고 여기서 그것을 참조한다. 식별자 “(5.3 bis)”는 이\n공식을 첫 번째 (5.3)과 구별한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "64adff1821c9c504f7259dd49b8d4db47681deb8398b5c9297ab1441f2467085",
+    "bytes": 119,
+    "exact_body_utf8": "인쇄본에는\n``$S$에''라고 되어 있다. 여기서 생각하는 작용과 몫 조건은 $X$에 관한\n것이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "64bbff96fb5b50967f84a7f3cdbc8b8bf28aff62f7a8b3d4d15cbcc22846ee36",
+    "bytes": 136,
+    "exact_body_utf8": "인쇄본에는\n여기서 ``$S$ 위''라고 되어 있으나, 사용되는 유일인수분해성은 $X$의\n국소환들의 성질이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "65c4d12e8f10132771e96522be3841b009e03ce20a702b97f1460d85d8529462",
+    "bytes": 162,
+    "exact_body_utf8": "Bản in ghi ở đây ``$y\\in Y$'' và lại\ndùng $Y$ ở cuối đoạn. Vì cấu xạ đang xét là $X\\longrightarrow S$, ta đọc $S$\nở các chỗ đó.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "666d112979cea6492082393332e7e53f98a16fa01d96d6f99fb77cdcf3218c58",
+    "bytes": 58,
+    "exact_body_utf8": "印刷文本此处作 $X_0$；本段中只定义了 $X$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "6721af0e76cf5b18a0b3ce772917f9b6fd9cc8ea589ca1dc6c55d9291b4f5f13",
+    "bytes": 211,
+    "exact_body_utf8": "O texto impresso\nnão contém a segunda hipótese. A errata vinculada à exposição 212 esclarece\nque a quase-projetividade parece então demonstrada apenas quando $R$ provém\nde uma relação de equivalência.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "67af18d8490fc5c266a7ce8d3af69f2088e3cf41f0f476ae2373ead02eecd513",
+    "bytes": 249,
+    "exact_body_utf8": "인쇄본에는\n“$(n+1)$번째 섬유 거듭제곱”이라 되어 있고, 뒤이은 공식에는\n$K_0=R$이라 되어 있다. 신경의 대상 성분은 $K_0=X$이고 화살표\n성분은 $K_1=R$이므로, 두 첨자 수정은 서로 연동된다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "686188277982e6fbab10bcc9a6dcb8e95dfa014bdc3da79d7f0cfc5911a3b55d",
+    "bytes": 153,
+    "exact_body_utf8": "印刷文本在第 182 页给出了第二个公式\n“(5.3)”，并在此处引用它；标识“(5.3 bis)”把该公式与第一个 (5.3) 区分开。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "68f4b950be86a7e40881bce5c20cca517163c44659ad6153aca87f34517e8106",
+    "bytes": 164,
+    "exact_body_utf8": "O texto impresso dá uma\nsegunda fórmula « (5.3) » na página 182 e remete aqui a ela; o identificador\n« (5.3 bis) » distingue esta fórmula da primeira (5.3).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "698424113bb1890e92d25cd906f3e0d098cfa1cc71ddba7f84e66505c6ff3f0b",
+    "bytes": 168,
+    "exact_body_utf8": "O texto impresso traz $\\varphi_{n^h}$; para\n$x\\in G^\\rho$, a definição dada na p.~223 fornece uma potência do expoente\ncaracterístico $p$ que envia $x$ a $G^\\circ$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "6a1e2beca579acb63c0ebccc7963a0d1c5debcf3fcc2f312280b749ff6aa060f",
+    "bytes": 698,
+    "exact_body_utf8": "A errata de 1962 responde negativamente: um morfismo\n$S'\\longrightarrow S$ quase-finito, étale e sobrejetivo, ou um morfismo\n$\\operatorname{Spec}(\\widehat A)\\longrightarrow\\operatorname{Spec}(A)$, não é\nsempre um morfismo de descida estrito, mesmo se $A$ é o anel local de\numa curva algébrica sobre um corpo algebricamente fechado $k$ e\n$S=\\operatorname{Spec}(A)$. Pode-se encontrar assim um morfismo próprio e liso\n$f:X\\longrightarrow S$, que faz de $X$ um fibrado principal de base $S$ sob\numa curva elíptica $E$, tal que $f':X'\\longrightarrow S'$ seja projetivo, mas\n$f$ não o seja. Portanto, também é um exemplo de fibrado principal homogêneo\nnão isotrivial sob um esquema abeliano.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "6a717d9ec558b5ec1f9228c5a0c548cc4f8505fc3e524309085c54205cdacf4d",
+    "bytes": 209,
+    "exact_body_utf8": "El texto\nimpreso contiene una construcción mal formada equivalente a «La hipótesis ...\nresulta». La fe de erratas vinculada, p.~303, inserta la preposición necesaria\npara «De la hipótesis ... resulta».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "6ab4a272f353144cafd27a1324cefa07a9a14ba8142ec86b60c5048057b23b94",
+    "bytes": 139,
+    "exact_body_utf8": "El texto impreso sustituye aquí el\nexponente $s$ por un $n$ no definido; $s$ es el rango del haz libre que se\nproyecta sobre $\\mathcal F$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "6b3103a8def3086c73c8dba1e85ba811651cfd03c819ef5326676a1167d8f410",
+    "bytes": 222,
+    "exact_body_utf8": "The printed text says\r\n``$(n+1)$-fold fiber power'' and, in the following formula, $K_0=R$. The\r\nobject component of the nerve is $K_0=X$ and its arrow component is $K_1=R$;\r\nthe two index corrections are therefore linked.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "6b6e9e43771fb055c1cbe5ad5728bac219de6d572997bbcea915aceeb217262c",
+    "bytes": 102,
+    "exact_body_utf8": "인쇄본에는 “$u$와”로 되어 있으나, 식\n(2.1)에 따르면 “$d$와”이어야 한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "6b8ad327d36e43e20a5ab22f796d5a51748075e88aa37e23be22a725623ef0d4",
+    "bytes": 85,
+    "exact_body_utf8": "The printed text reads\r\n$X[t]$; the linked erratum, p.~303, prescribes $X[t,t^{-1}]$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "6dc7b60a1ef7a3ebe2edfee63f4a709c2947c25770130a8b99ba80b0ee3c8513",
+    "bytes": 81,
+    "exact_body_utf8": "HARTSHORNE (R.). --- Connectedness of the Hilbert\nscheme (Thesis, Harvard, 1962).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "6e06937e133de6fa03956cac8e63dc1aa1fea6360a73d05eaffb32e9fdb3ea9c",
+    "bytes": 129,
+    "exact_body_utf8": "인쇄본에는\n``다음을 두자: $X\\longrightarrow S$''라고 되어 있으나, 이하에서 사용하는\n사상은 $f$이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "6e8e23190cb4c9bcd9af3a1385badc56c786f66bc736c8c31ec8f42586d59d43",
+    "bytes": 49,
+    "exact_body_utf8": "Precisión impuesta por la fe de\nerratas de 1962.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "6f775ce8cbc061f5c9a885a7b91dd82e1fcdc0bd745689d6c90333dfd63336f5",
+    "bytes": 136,
+    "exact_body_utf8": "The 1962 erratum reports that\r\nD. Mumford answered this question affirmatively by means of the theory of\r\nPicard schemes developed here.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7065f5e987d1e072d416f6023a2e5b436b8a85b5743fe0bdeccc79de40b3f587",
+    "bytes": 74,
+    "exact_body_utf8": "The printed text has $\\mathcal G_s$ although the quantified point is $s'$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "71aec6c5a32a89cc773ab0776d7acf1f90dc102f6db4613400a17f1d9ff3b546",
+    "bytes": 215,
+    "exact_body_utf8": "1962년 정오표는 Hartshorne이 대수적으로 닫힌 체 위의\n$\\operatorname{Hilb}^P_r$가 연결임을 증명하고\n$\\operatorname{Hilb}^P_r\\neq\\varnothing$인 순서쌍 $(r,P)$를 결정했다고\n밝힌다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "71d421d3d63af35ac12a0ecd4b17f12a0a14479e9b74ce8d86fb4a71927f5750",
+    "bytes": 108,
+    "exact_body_utf8": "原文未注明固有性。在正特征下，一般的非固有概形不满足这一基域扩张不变性。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "72f0ff547d04041939264a07f81394631e9803eff9002aff544f9f07965d419f",
+    "bytes": 190,
+    "exact_body_utf8": "인쇄본에서는 $\\operatorname{Hom}$의 아래첨자에\n$\\mathcal O_X$를 두었다. 그러나 $\\mathcal Q$는 $S$ 위의 가군이므로\n그 쌍대는 $\\mathcal O_S$ 위에서 취한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "74f22edd57188ee5f2486530886b58073c860240f1e6846608c84dae9ecb07f7",
+    "bytes": 80,
+    "exact_body_utf8": "印本作\\fquote{Igusa--Lang}；1962年\n勘误指定改为\\fquote{Chow--Iang}。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7528d63a725f7c8ac35fe45ebf36e6c6cf35f153183c93ebdec3e7b6eca88546",
+    "bytes": 206,
+    "exact_body_utf8": "The 1962 erratum replaces the printed hypothesis “$f$ is\r\nquasi-projective” by the weaker hypothesis “$f$ is separated,” by SGA VIII,\r\n6.2: every separated quasi-finite morphism is quasi-projective.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "75470f7e11bf57aa557e485a0ec055b33a8c6c2d98edb320bcdaa62ed44a1e89",
+    "bytes": 108,
+    "exact_body_utf8": "The printed text also numbers this formula ``(6.2)''; the suffix\r\n``bis'' distinguishes the two occurrences.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "75477b1beb824a999f9db6ca1a1c5d7937b3b9a22b2f696e78c56a551f37283c",
+    "bytes": 122,
+    "exact_body_utf8": "印刷文本作“在 $S$ 上”；这里，由截面 $g:S\\to X$\n进行刚化所涉及的是 $X$ 上的模 $\\mathcal L$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "755a75d29d953a6691b462ee92e84ad71dc7541906f0b2aceb72df4cfc4301ae",
+    "bytes": 156,
+    "exact_body_utf8": "The printed text omits “with algebraically closed residue\r\nfield”; the erratum says that Mumford's counterexample makes this restriction\r\nindispensable.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "75906cf027f313c4c26ef5a477eae3c37595639de60f62459fc495205e80883d",
+    "bytes": 161,
+    "exact_body_utf8": "El texto impreso lleva $(n+1)$, $K_0=R$ y $p_n^{(n-1)}$ en estos tres lugares. La indexación del nervio exige $n$, $K_0=X$ y $p_{n-1}^{(n-1)}$, respectivamente.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7609e59e95736dea4a8797d56101b55b2f4382669fd1f38e2bc22070df316bae",
+    "bytes": 106,
+    "exact_body_utf8": "印刷文本此处作“$g(y')=x'$”；上一句构造且\n此处计算其一般纤维的截面是 $g'$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7747fe5670bba5b414722265fb3095a0bffffa86f5e28505ae60a9de716861a6",
+    "bytes": 171,
+    "exact_body_utf8": "인쇄본에는 $\\varphi_{n^h}$라고\n되어 있다. $x\\in G^\\rho$이면 p.~223의 정의에 따라 표수 지수 $p$의 한\n거듭제곱이 $x$를 $G^\\circ$로 보낸다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "774bbc5bfda814e3e9bbffe6e472aaf1698363c955f70b4946503c4abce68021",
+    "bytes": 134,
+    "exact_body_utf8": "O texto impresso traz aqui\n«$X$», que não está definido nesta passagem; os quatro conjuntos considerados\nsão subconjuntos de $G$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "775fce070059b308b1357a9049bf37c712378a1d88362d2c5e62e1ec65762785",
+    "bytes": 86,
+    "exact_body_utf8": "A\nerrata de 1962 assinala que Murre acabava de resolver afirmativamente essa\nquestão.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7769a5186ddd2c06b243f43299dae19ba480e48dcb97194fbd4a9ab35033f5e8",
+    "bytes": 143,
+    "exact_body_utf8": "Bản in ghi «$g(y')=x'$» ở đây; tiết diện được dựng\r\ntrong câu trước và đang được tính thớ tổng quát là $g'$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "77aea7ee1766d24091070ee973dc60fa7e040ba764f0d75d9c0c5421e55d15c6",
+    "bytes": 84,
+    "exact_body_utf8": "The printed text reads “regular”; the erratum prescribes “smooth\r\nover $k$.”",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "77c282f6aa83c3cec28282725cc756c0d55b96fa8117974707e4c2275796fd1f",
+    "bytes": 133,
+    "exact_body_utf8": "\n인쇄본에는 $Z$라고 되어 있으나, 여기서 생각하는\n그래프들은 $Z'=Z\\times_SS'$의 절단들의 그래프이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "78295ae84f0efc229ee4c05cefea5746097c7f20454265ff1269903cdfc27884",
+    "bytes": 74,
+    "exact_body_utf8": "O texto impresso diz « com $u$ »; a equação\n(2.1) exige « com $d$ ».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "782bc658f2a86b9e276eacf18188e8300b5621a68fc1458f444ebf402d50e447",
+    "bytes": 178,
+    "exact_body_utf8": "The printed formula identifies $G_x$\r\ndirectly with the completed term and omits the hat on\r\n$\\mathcal O'_{0x}$. The inclusion and completion are prescribed by the 1962\r\nerratum.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "79cb6d473b1745001aa594dcd89365d0c71aaed7f76c1a5e5e202a5d2a6ef3de",
+    "bytes": 131,
+    "exact_body_utf8": "MUMFORD (David). --- An elementary\ntheorem in geometric invariant theory, \\emph{Bull. Amer. Math. Soc.}, t. 67,\n1961, pp. 483--486.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7a39eeda8a789a76fc83eca5a5c2bdf60d3bd23a8ea4c92ed608458e1eda846d",
+    "bytes": 188,
+    "exact_body_utf8": "O texto\nimpresso traz uma construção equivalente a «Ora, a hipótese ... resulta»; a\nerrata vinculada, p.~303, insere a preposição necessária para «Ora, da hipótese\n... resulta».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7a61fb8c1c7ffdc9b30f926e5ca2f09ada326ee5d22b59afbc87d62c56749a89",
+    "bytes": 187,
+    "exact_body_utf8": "Serre (Jean-Pierre). --- Exemples de variétés projectives en\ncaractéristique $p$ non relevables en caractéristique zéro, \\emph{Proc. Nat.\nAcad. Sc. U.S.A.}, t. 47, 1961, p. 108--109.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7a9832cb6bf73f95a649b1fb01cfbca76cb31d5569ca2d082e7d58fa97f605d4",
+    "bytes": 225,
+    "exact_body_utf8": "인쇄본에는\n``엄밀하지 않은''에서 ``않은''이 빠져 있다. 지금 생각하는 범주에는\n섬유곱이 존재하며, 바로 앞 문단은 유효성과 엄밀 에피사상임 사이의\n동치를 확립한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7a9dd8ae44e2941585aff5928a9548f64b3795f30dc30455b900340a315b3043",
+    "bytes": 125,
+    "exact_body_utf8": "인쇄본에는 $N$이라고 되어\n있다. 동차 국소화가 적용되는 것은 등급 $\\mathcal S_*$-가군 $N_*$이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7acb9617d9e69c085e98b5e79683e2944be4d5c63f9d84f28da89b867c225bc8",
+    "bytes": 243,
+    "exact_body_utf8": "O texto impresso troca\nas duas últimas correspondências: atribui a $G^\\sigma$ a componente\n$p$-primária e a $G^\\rho$ seu complemento primo com $p$. As definições\nprecedentes de $G^\\sigma$ e $G^\\rho$ impõem a ordem corrigida adotada aqui.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7afe66282d3cfc9ead3999b96bfdb0689fbd5fba1677f438312ccbc924417166",
+    "bytes": 491,
+    "exact_body_utf8": "La fe de erratas de 1962\nanuncia que el esquema formal de módulos de una variedad abeliana sobre un\ncuerpo es liso sobre el anillo de Witt: todo esquema abeliano sobre un cociente\nartiniano local se levanta al anillo del cual es cociente. La demostración\nutiliza la varianza de la clase de obstrucción al levantamiento introducida en\nla exposición 182, p. 12. También recuerda las construcciones de Mumford para\nlas curvas de género $g$ y los esquemas abelianos polarizados (cf. SHMT).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7b19f0cb1cf6c589f2005764732b74be3eec56171cacbf25af2a42c3ede93915",
+    "bytes": 127,
+    "exact_body_utf8": "The printed text reads “$X$,” which is not\r\ndefined in this passage; all four loci under consideration are subsets of\r\n$G$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7b21c58d4ceefc6ea9121606b8cf310dfde7834bf62abc6987cbff8fb13ce165",
+    "bytes": 106,
+    "exact_body_utf8": "The printed text has $\\Osh_P(r+r')$; the two factors\r\n$\\Osh_P(m)$ and $\\Osh_P(m')$ require $\\Osh_P(m+m')$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7b81886f3174f876d32521c1a753693ec3e22fd5f34f6184d4e300f45a089a8d",
+    "bytes": 80,
+    "exact_body_utf8": "Bản in ghi $K$-môđun; cơ sở đúng theo kiểu\ncủa cấu trúc là $A$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7bdd61b9c273c50f0d617204ca8057d7d9b04d5993bede55fc36d4cf0b48468a",
+    "bytes": 113,
+    "exact_body_utf8": "O ramo\ncorrente traz $\\operatorname{Pic}_{X/k}^\\circ$, pois $S$ não intervém neste\nenunciado sobre o corpo $k$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7c1246edbf4955a89939ff5fdc63784869a009cc2972fa1666e3ea9efd793a91",
+    "bytes": 103,
+    "exact_body_utf8": "Bản in ghi ở đây « $S$ là chuẩn tắc »; đoạn này\nchỉ liên quan đến đa tạp $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7c77ea7f2352faf3d59a118df17371ada8d3327feb9f0a6787f620982a24d3a5",
+    "bytes": 70,
+    "exact_body_utf8": "The printed text has $X_0$ here;\r\nonly $X$ is defined in this passage.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7cf58a115067b0b5458a8f28c0586d0fae6d6b4951cc209b52b6dd202d473a2d",
+    "bytes": 155,
+    "exact_body_utf8": "La rama diplomática conserva el término impreso\n$H^{p}(H^{q}(X,K))$; la rama actual lo corrige según la sucesión espectral\n(8.2) a $H^{p}(X,H^{q}(K))$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7e36dc0a72afc4447b04cc91e0b60d3e505a12a5b6c9d67e6a91c240e2067f03",
+    "bytes": 113,
+    "exact_body_utf8": "Văn bản in ghi «trên $S$».\nTác động đang xét và điều kiện lấy thương liên quan đến $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7e498def08765386c8ad3fecf25f354cd433e784953abf408eece3121c5f52f1",
+    "bytes": 82,
+    "exact_body_utf8": "O texto impresso traz $X[t]$; a\nerrata vinculada, p.~303, prescreve $X[t,t^{-1}]$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7e5b7d59faa924d32b927a9f54524e93a738c7978444f8029eb6fc7df4181b74",
+    "bytes": 79,
+    "exact_body_utf8": "The printed text reads “with $u$”; equation (2.1) requires\r\n“with $d$.”",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7f152daceaf6a5e8298e4993e9c9e6481b831a6cde1dc4a39e93346ef710acef",
+    "bytes": 98,
+    "exact_body_utf8": "El texto impreso repite $n\\geq1$, contradiciendo el\nisomorfismo que acaba de afirmarse para $n=1$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7f2d065553b17ac2c26402b021ccc2aecf392adca158f639e82d72a6bdb0f6c6",
+    "bytes": 175,
+    "exact_body_utf8": "El texto impreso dice aquí\n« $y\\in Y$ » y vuelve a emplear $Y$ al final del párrafo. Como el morfismo\nconsiderado es $X\\longrightarrow S$, se lee $S$ en ambas apariciones.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7f885ee2ef5665c5b155707ae3663e11946098272a3ddcd826ac39288b6e8465",
+    "bytes": 120,
+    "exact_body_utf8": "Bản in cũng đánh số công thức này là « (6.2) »; hậu tố\n« bis » phân biệt hai lần xuất hiện.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "7f8e6fc7fd3a9c50b88276f136f8eee1d07dc3caad436b3faee76ae47970eaaa",
+    "bytes": 131,
+    "exact_body_utf8": "MUMFORD (David). --- An elementary theorem in geometric\ninvariant theory, \\emph{Bull. Amer. Math. Soc.}, t. 67, 1961, pp. 483--486.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8094c9e95e5a55772c4d5559ff0cc85bc1a9c89f00f4561f8e2825c31b6513e2",
+    "bytes": 219,
+    "exact_body_utf8": "The 1962 erratum\r\nnotes that Hartshorne proved the connectedness of the\r\n$\\operatorname{Hilb}^P_r$ over an algebraically closed field and determined\r\nthe pairs $(r,P)$ for which $\\operatorname{Hilb}^P_r\\neq\\varnothing$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "80c5184ca277690e51e529c603e2d53b4663a1214d3ebdbaeaccbd7322af90e6",
+    "bytes": 182,
+    "exact_body_utf8": "En esta última fórmula, el texto impreso lleva $\\mathcal O_X$ en\nlugar de $\\mathcal O_{X_0}$, aunque la definición inmediatamente anterior de\n$\\mathcal A$ fija $\\mathcal O_{X_0}$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "81725d8ad9b0f80196613a8879644ff522329b9388698efaa37aa6f6eb9e5b3e",
+    "bytes": 160,
+    "exact_body_utf8": "La fe de erratas de 1962 informa de\nque D. Mumford respondió afirmativamente a esta cuestión mediante la teoría de\nlos esquemas de Picard desarrollada aquí.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "819ad6e1c1f83dd1591905cefc28f3fcc116fc8bb6c29b2410c1d98ee22e33f9",
+    "bytes": 92,
+    "exact_body_utf8": "印刷文本把此商颠倒写成\n$N_r/N_{r+1}$，这与刚定义的递增滤过不相容。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "82b8c7a216dd3171008e6d601b3e192582ccc988c59a1442c7153b0f2ee4a541",
+    "bytes": 145,
+    "exact_body_utf8": "The printed French has the malformed phrase « coupe au morceaux »; the English wording already expresses the corrected « coupe en morceaux ».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "834c2a952410dc9683d52b7d354297b2e37537b3e58ed9db5131d805a9f92fb0",
+    "bytes": 74,
+    "exact_body_utf8": "1962 年勘误指出，Murre 当时刚刚肯定地解决了这一问题。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8406baf81c26af52d9fc1642f29a069f690824c3cbf637d3635823b526ca672a",
+    "bytes": 161,
+    "exact_body_utf8": "The 1962 erratum specifies that this definition is correct only when\r\nthe residue extension $k'/k$ is separable; for the general case it refers to\r\nSGA III, 1.1.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "84469eb2ef12c6f34a879b61cf908fac08c1d558fb0f44ae57f50666e7eaf30c",
+    "bytes": 132,
+    "exact_body_utf8": "Bản in dùng\ndấu hợp; trong nhánh hiện hành, cấu trúc phân bậc là tổng trực tiếp\ncủa các bó $\\Omega_X^p$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "850164b9fd483507fb0d8f2fbd89d58fd50c75a0d2709f8760989d120ac72ae0",
+    "bytes": 235,
+    "exact_body_utf8": "A errata vinculada à exposição 212 assinala\nque esta conjectura é «decididamente falsa». Indica também que o fato positivo\nda observação 8.1 foi desde então demonstrado e remete aos trabalhos de Mumford\ne a seus refinamentos.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "853a564a0b78f9a8fd803477fa466c8dc21eab1904eee4820d9ceda1f4393672",
+    "bytes": 163,
+    "exact_body_utf8": "O texto impresso coloca $\\mathcal O_X$ como subíndice de\n$\\operatorname{Hom}$; como $\\mathcal Q$ é um Módulo sobre $S$, seu dual é\ntomado sobre $\\mathcal O_S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "864b6619933888659e720c86c890c76237d9cef6d1e46db6a07eafe272ae9b00",
+    "bytes": 109,
+    "exact_body_utf8": "O texto impresso numera também esta fórmula « (6.2) »; o sufixo\n« bis » distingue as duas ocorrências.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8703cc24b261dc8de55978d0fe05d02a8d2a4ffbcd36508d76a88f8e57efe4e1",
+    "bytes": 81,
+    "exact_body_utf8": "The printed French has the singular « classe »; the English was already plural.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8852519abf6bd4ed62cf79bfaa0ecc04d0802bde41b9a9b52d6a57893807c543",
+    "bytes": 229,
+    "exact_body_utf8": "El texto impreso dice «revestimientos\ninseparables»; el párrafo trata de la categoría $R(X)$ de los revestimientos no\nramificados y de su equivalencia con los conjuntos finitos dotados de una acción\ncontinua de $\\pi_1(X,a)$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "888259f0fef4842150f5d8723467fea115dda7bcc9e6586735bccb45db0d6ba4",
+    "bytes": 147,
+    "exact_body_utf8": "O texto impresso traz $B\\otimes_V A$. Como $B$ é um $V$-esquema e a\nafirmação diz respeito à sua fibra genérica, o fator de base deve ser $K$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "88894422b0650b733d8aefe7782b7fa0d01275c0762a21a5373e161eb5c1bc8b",
+    "bytes": 94,
+    "exact_body_utf8": "The 1962 erratum explicitly prescribes\r\nthe hypothesis that $f$ be “proper and separable.”",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "895dc4df0a781c29e5bd9b48fc67c476156f6a1fadd7d5786df9dcf51ef1c649",
+    "bytes": 87,
+    "exact_body_utf8": "The\r\nprinted text says “Igusa--Lang”; the 1962 erratum prescribes “Chow--Iang.”",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8a09f5d6799125384c68ea23c9380083749439eb6df45af9156747e0e44b2da1",
+    "bytes": 105,
+    "exact_body_utf8": "The printed text says ``on $S$.'' The action under consideration\r\nand the quotient condition concern $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8a526c5d301215a1f3dcfb8ec7728c0f76976a9f4409a8ee55122de5a753edde",
+    "bytes": 136,
+    "exact_body_utf8": "印刷文本在这里写的是 $Z/K$；但文中没有定义 $K$，而且从\n(5.7) 开始所考察的截面函子是 $\\Pi_{X/S}(Z/X)$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8a5d44acf47838a52bdb9f9b166fd783f2b5daffd2d8e9617bfa00ea417ea31f",
+    "bytes": 466,
+    "exact_body_utf8": "A errata de 1962\nanuncia que o esquema formal de módulos de uma variedade abeliana sobre um\ncorpo é liso sobre o anel de Witt: todo esquema abeliano sobre um quociente\nartiniano local se levanta ao anel do qual é quociente. A demonstração\nutiliza a variância da classe de obstrução ao levantamento introduzida na\nexposição 182, p. 12. Também recorda as construções de Mumford para\nas curvas de gênero $g$ e os esquemas abelianos polarizados (cf. SHMT).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8a8cb4c7e3dd4f0416102b2e9c5057e250bbc2afffa3db9b1ffb21b53c96347d",
+    "bytes": 116,
+    "exact_body_utf8": "印刷文本作 $E(A)$；在所考虑的范畴中，表示对象是 $A/J$，而 (3.7)\n所需的等式为 $E(A/J)$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8b2c7c0d82d1179648d4e558400079676c868c5af5a69991e02f1424ea7b4224",
+    "bytes": 116,
+    "exact_body_utf8": "El texto\nimpreso dice $\\operatorname{Pic}_{X/S}^\\circ$, aunque $S$ no aparece en este\nenunciado sobre el cuerpo $k$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8b2f13a95ae7205a07faaf4a3e79f6efac873606846521aaebd6c3b57ddcead7",
+    "bytes": 104,
+    "exact_body_utf8": "El texto impreso dice $\\Osh_P(r+r')$; los dos factores\n$\\Osh_P(m)$ y $\\Osh_P(m')$ exigen $\\Osh_P(m+m')$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8b54648de4a3ec553ca83b2232fc0ec02aaac07d2dde29e3f79f8865332bbc8d",
+    "bytes": 205,
+    "exact_body_utf8": "The printed text\r\ndoes not contain the second hypothesis. The linked erratum to Exposé 212 says\r\nthat quasi-projectivity then appears to have been proved only when $R$ comes\r\nfrom an equivalence relation.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8b925a42d71dd4ea680165e59cfef205b21f39fbcbe7b8e1da3242094ca403e8",
+    "bytes": 183,
+    "exact_body_utf8": "인쇄본에는 ``잉여체가 대수적으로 닫힌''이라는 말이\n빠져 있다. 정오표는 멈퍼드의 반례 때문에 이 제한이 반드시 필요하다고\n명시한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8c818273c654a82d44f7ac4cadf5b8647a719e5ca9dcc3939d3e1bd8a995596e",
+    "bytes": 114,
+    "exact_body_utf8": "印刷文本漏去了“剩余域代数闭”；勘误指出，Mumford 的反例\n表明这一限制不可或缺。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8cff105d327851461ead36ceb824c7439f6fcc8f334135826410411f9b1ba257",
+    "bytes": 380,
+    "exact_body_utf8": "1962 年勘误指出，域上阿贝尔簇的形式模概形\n在 Witt 环上光滑：任一阿廷局部商环上的阿贝尔概形都可提升到该商环所来自的\n环上。证明使用了第182次报告第12页引入的提升障碍类的变换性质。勘误还回顾了\nMumford 对亏格为 $g$ 的曲线以及极化阿贝尔概形所作的模概形构造\n（参见 SHMT）。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8d06044659ea368542fe8bcf844516c2cf0222d6cee1b2b0d5cac943704e9f65",
+    "bytes": 221,
+    "exact_body_utf8": "인쇄본은 이 텐서곱에 $\\mathcal O_S$를 쓴다. 그러나 여기서\n$\\mathcal G$와 $\\mathcal M$은 $S'$ 위의 가군들이며, 제곱영 변형의\n구성에는 $\\mathcal O_{S'}$ 위의 텐서곱이 필요하다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8e405a0b524b99d268a19b8c175e2b2abb071997cfa614ea026b352d2d3169e1",
+    "bytes": 112,
+    "exact_body_utf8": "El texto\nimpreso emplea un signo de unión; la estructura graduada es la suma directa\nde los haces $\\Omega_X^p$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8f25343be0637ba193a11aaa707b0dd0fb511f964f7e9fe577bd76881de0dea3",
+    "bytes": 127,
+    "exact_body_utf8": "La fe de erratas de 1962 precisa que\nno es necesario suponer previamente que $\\alpha$ sea un morfismo de\n$\\mathcal F$-descenso.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8f388ccf11c37b3664b4831c9336d170654622015673866ad62bda962757abdd",
+    "bytes": 91,
+    "exact_body_utf8": "O texto impresso diz « (1.7) »; a\npresença de $p$ e a frase anterior exigem « (1.8) ».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "8fbd7390c9ea7ebaa3abfd161f03b08266f18c8a69c2e4f27eb492f14ff040ed",
+    "bytes": 106,
+    "exact_body_utf8": "O texto impresso repete $n\\geq1$, em contradição com o\nisomorfismo que acaba de ser afirmado para $n=1$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "922b4f399be93af3c16779c69822e883ec5fb9840cee657bb26c025bd8af373c",
+    "bytes": 94,
+    "exact_body_utf8": "The printed text has $k$ here; the base field of this positive-characteristic sentence is $K$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "92cab3b7ab3a70d819a03fae94c0aef02925f5ac4af30639df7a1070de05ecbf",
+    "bytes": 175,
+    "exact_body_utf8": "O texto impresso\ndiz « posto $n$ »; os dois módulos de formas de grau máximo têm posto\n$1$, como exige também a identificação com $\\bigwedge^{p}(J/J^{2})$ mais abaixo.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "92e2ddc9d226d210c61555acbe11d8f7e2dcad09511a46e2a42fcad210e570e2",
+    "bytes": 146,
+    "exact_body_utf8": "印刷文本及法、英可编辑见证在这里作未定义的\n$U$；本段唯一刚刚定义且由不等式 (*) 给出的开集是 $U_\\infty$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "9394d6094cd04dc927ec9a7190965d2116536293e4e0f507993245266f622876",
+    "bytes": 224,
+    "exact_body_utf8": "O texto impresso diz «recobrimentos\ninseparáveis»; o parágrafo trata da categoria $R(X)$ dos recobrimentos não\nramificados e de sua equivalência com os conjuntos finitos dotados de uma ação\ncontínua de $\\pi_1(X,a)$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "939e3a1bb522ec34b06bf9edf4189cf9960917c8143c2900f8aa57f9c52a8516",
+    "bytes": 223,
+    "exact_body_utf8": "The printed formula is correct only when $\\Lambda$ is a field. The\r\n1962 erratum directs that in general\r\n$\\mathfrak m_\\xi/\\mathfrak m_\\xi^2$ be replaced by its quotient by the image\r\nof $\\mathfrak n_\\xi/\\mathfrak n_\\xi^2$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "93cff3bc1d4cac529bf4b544b72d01c5771b85bab733384241ea7241c2e9100a",
+    "bytes": 183,
+    "exact_body_utf8": "Nesta última fórmula, o texto impresso põe $\\mathcal O_X$ no lugar\nde $\\mathcal O_{X_0}$, embora este último esteja fixado na definição\nimediatamente precedente de $\\mathcal A$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "93fcd85edd1d3e090e59f065191ee8525eb997ffb6e542793d993427b6395e2a",
+    "bytes": 100,
+    "exact_body_utf8": "La fe de erratas de 1962 informa de que Murre acababa de responder\nafirmativamente a esta cuestión.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "9401bf6bb02b6a06952cc7623b3e728ac66c2639efee93b6d52ce28f0d5f5131",
+    "bytes": 184,
+    "exact_body_utf8": "原文未给出秩的下界。秩为 $1$ 时，$\\mathbf P(E)=Y$，下面分解中的整数 $n$ 不再唯一。随后的自同构推论及正合列也采用秩至少为 $2$ 的假设。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "954250700781923b1a3aae0658a3c050ac062fb46a3a591f7da8c6c58d615162",
+    "bytes": 130,
+    "exact_body_utf8": "El texto impreso\ndice «$f:X\\longrightarrow Y$», aunque tanto el preesquema de Picard como la\nfunción siguiente tienen base $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "9563d05d8f238ac7c708da3a4ccdbb1ffda0705b5cb2b06c01567cef124f6e4e",
+    "bytes": 157,
+    "exact_body_utf8": "La rama diplomática conserva la lectura impresa $E(A)$; en la rama\nactual, el objeto representante es $A/J$, y la igualdad requerida para (3.7)\nes $E(A/J)$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "95b0c91f0861d04cfaf39580cc5840b76628acc09837d85f78a20f9c42d4cbc3",
+    "bytes": 185,
+    "exact_body_utf8": "El texto impreso dice $f_{*}(\\xi^{m,m})$. Puesto que\n$\\xi^{m,m}\\in H^{m}(X,\\Omega_X^{m})$ y que ambos miembros pertenecen a\n$H^{m}(Y,\\Omega_Y^{m})$, la aplicación requerida es $f^{*}$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "96b12b7e4381d26596dfa1a67fa1206f7cfaf63bc17899660aa9fa9e6ad3fe3a",
+    "bytes": 318,
+    "exact_body_utf8": "Bản in không\r\nnêu cận dưới cho hạng. Giả thiết này là cần thiết: nếu $E$ có\r\nhạng $1$, thì $\\mathbf P(E)=Y$ và số nguyên $n$ trong phân tích dưới đây không\r\ncòn được xác định duy nhất. Hệ quả về các tự đẳng cấu phía sau kế thừa cùng\r\ngiả thiết.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "9770e14636e745cd07f359675c3a15f3ba9cfc02eb9d071bd5e9a96249f246f8",
+    "bytes": 189,
+    "exact_body_utf8": "1962년 정오표는 이 비고의 첫머리에서 제시한 존재\n추측이 거짓이지만, 멈퍼드의 방법으로 그보다 약간 약한 정리를 얻을 수\n있다고 지적한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "98758e1d7b5c5242a884f2a8af763dbc662b62f32148d6ccd4898305e07b2309",
+    "bytes": 114,
+    "exact_body_utf8": "인쇄본에는 괄호 안의 대응 대상을 동반한 단수 주어 앞에 복수형\n« Soient »가 쓰였다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "98cec1890490c40c2b09d2b877b3ebc2625df3fd1fe14798738e0975352926c9",
+    "bytes": 133,
+    "exact_body_utf8": "The printed text reads “from the affine line.” The\r\nlinked erratum, p.~303, prescribes “affine line with the origin removed.”",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "9942b6ee79c149a99270f2c64ecc19cdceae15719614d96a58d982f1c61ec1aa",
+    "bytes": 61,
+    "exact_body_utf8": "이 명확화는 1962년의\n정오표가 요구한 것이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "99d6368d4ad8da4ba7f38f4dbd7951469cb8419c6aef1365f88cf3d89fac0f0c",
+    "bytes": 165,
+    "exact_body_utf8": "The printed\r\ntext reads $\\varphi_{n^h}$. For $x\\in G^\\rho$, the definition on p.~223 gives\r\na power of the characteristic exponent $p$ that sends $x$ into $G^\\circ$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "99d8a446d8bfd27380dd6366136d674dd84cf9db0c2b99096b472b6f3e3152ee",
+    "bytes": 171,
+    "exact_body_utf8": "印刷文本作\\fquote{不可分覆盖}；但本段讨论的是\n非分歧覆盖范畴 $R(X)$ 以及它同带连续 $\\pi_1(X,a)$-作用的有限集范畴之间\n的等价。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "9a0864214bfc5456cb8ebd7bd3cdb7604a65964d871c54d9e0644d6655d2469f",
+    "bytes": 247,
+    "exact_body_utf8": "Bản in ghi $\\mathcal O_S$ trong tích tensor này; ở đây $\\mathcal G$\nvà $\\mathcal M$ là các môđun trên $S'$, và phép dựng biến dạng theo một iđêan\ncó bình phương bằng không đòi hỏi tích trên $\\mathcal O_{S'}$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "9a212447d31a2d9f888bdbf4de85ccbb86afc5e3642479a8d55f2b19a7262c6d",
+    "bytes": 156,
+    "exact_body_utf8": "印刷文本此处作\\fquote{$y\\in Y$}，并在本段末尾再次\n使用 $Y$。由于所考察的态射是 $X\\longrightarrow S$，两处均按 $S$ 读取。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "9b312a7a4f604f1cf8c487cb11f41e60f34ccf680c143333b267c8cb2909693c",
+    "bytes": 127,
+    "exact_body_utf8": "The printed text has $Z/K$ here; no $K$\r\nis defined, and the section functor under discussion since (5.7) is\r\n$\\Pi_{X/S}(Z/X)$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "9d8bc87cae741711cf79b530a8e713f74af50c36a640f8a52309c5e1cd29996f",
+    "bytes": 231,
+    "exact_body_utf8": "El texto impreso coloca $T_n/S$ bajo el símbolo $\\Pi$. La\nProposición 5.7 se aplica aquí al morfismo finito y plano\n$p_1:T_n\\to T$, y el resultado es explícitamente un preesquema sobre $T$; por\ntanto, el denominador es $T_n/T$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "9d9d87ecaa4d8e95660b6523db4639a7786043c1f09bb86425d420d53a844e1f",
+    "bytes": 303,
+    "exact_body_utf8": "Bản đính chính gắn với Chuyên đề 212 cho\nbiết giả thuyết này «hoàn toàn sai». Bản này cũng cho biết kết quả tích cực\ntrong Nhận xét 8.1 về sau đã được chứng minh và dẫn chiếu đến công trình của Mumford\ncùng những cải tiến tiếp theo.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "9dcc9d7054cf966445f4f600dbac92cd75d5045ed4708bef8ac89faac7c19e0d",
+    "bytes": 36,
+    "exact_body_utf8": "Condition added by the 1962 erratum.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a0015c3c13c5f1d192455367934f6c5e173d981df2ed29c3c3b549eb8416c795",
+    "bytes": 86,
+    "exact_body_utf8": "인쇄본에는 $k(s)$라고 되어 있으나,\n점 $s'$의 잉여체는 $k(s')$이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a0118150c1e2e62fc584b1a44249a1681ab32b1ef402331171b54fb4b2252a73",
+    "bytes": 110,
+    "exact_body_utf8": "O texto impresso diz aqui «$X$»; o objeto do critério é o\nrecobrimento $X'$ introduzido na frase anterior.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a02441efd7c5f90b9e33f1cfe83f1988895454304e969a10ce020313528ec5ae",
+    "bytes": 141,
+    "exact_body_utf8": "El texto impreso invierte\nel cociente, escribiendo $N_r/N_{r+1}$, lo que es incompatible con la\nfiltración creciente que acaba de definirse.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a0278ab7d4f1573b857d57077730527300874442f1399450a5dfae777418fca3",
+    "bytes": 90,
+    "exact_body_utf8": "The printed text repeats $n\\geq1$, contradicting the\r\nisomorphism just asserted for $n=1$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a0ac48a3045a731396d0333e551a94428770bbc114c194457d47748ec915a32f",
+    "bytes": 674,
+    "exact_body_utf8": "The 1962 erratum\r\nanswers in the negative: a quasi-finite, étale, surjective morphism\r\n$S'\\longrightarrow S$, or a morphism\r\n$\\operatorname{Spec}(\\widehat A)\\longrightarrow\\operatorname{Spec}(A)$, need\r\nnot be a strict descent morphism, even if $A$ is the local ring of an algebraic\r\ncurve over an algebraically closed field $k$ and $S=\\operatorname{Spec}(A)$.\r\nOne may thus find a proper smooth morphism $f:X\\longrightarrow S$ making $X$ a\r\nprincipal bundle over $S$ under an elliptic curve $E$, such that\r\n$f':X'\\longrightarrow S'$ is projective but $f$ is not. This is therefore also\r\nan example of a non-isotrivial homogeneous principal bundle under an abelian\r\nscheme.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a0b53f060e021bcf2bb46ac59bfef1ef52596301d9ccd6e55a79250fa2eab336",
+    "bytes": 145,
+    "exact_body_utf8": "La rama diplomática conserva la segunda numeración impresa « (6.2) »;\nla rama actual usa « (6.2 bis) » para distinguir las dos apariciones.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a151fc996767c3cd87aa843e7ab20992cbecf0702c55a16cce2ca035c6a4d293",
+    "bytes": 74,
+    "exact_body_utf8": "印刷文本此处写作“$S$ 正规”；本段只涉及代数簇 $X$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a17225d2c0cfc4b12f092f4af0f252e807b7ca5f30a69f9e6b51761923ffa824",
+    "bytes": 99,
+    "exact_body_utf8": "El texto impreso dice «sobre $S$». La factorialidad invocada es\nla de los anillos locales de $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a2335cb867d43bd0d21a64a74c5a54049955a8042521795a1d6803ca48a264aa",
+    "bytes": 143,
+    "exact_body_utf8": "Văn\nbản in chỉ ghi «điều kiện cần»; bản đính chính năm 1962 cho Exposé 221 quy định\n«điều kiện cần và đủ».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a36a7e0b835a9f78c8ac7080043abe375450d6f7f7a2d056e1494ad4c8f17b09",
+    "bytes": 84,
+    "exact_body_utf8": "The printed text has $k(s)$; the residue field of the indexed point $s'$ is $k(s')$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a3da69bd80996d596a426bcbd10dcc79b878c19e0f949de88191072803970870",
+    "bytes": 101,
+    "exact_body_utf8": "The printed text has $N$; homogeneous localization applies to the graded $\\mathcal S_*$-Module $N_*$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a3f89d0f351f38752728afb437996b02dbc3340d999f537aff90898db7a37f0c",
+    "bytes": 433,
+    "exact_body_utf8": "A errata de 1962\nesclarece que o caso projetivo fica completamente resolvido pelos esquemas de\nHilbert (TDTE IV), enquanto exemplos de Nagata e Hironaka mostram que, sem\numa hipótese de projetividade, esses funtores podem não ser representáveis,\nmesmo para as subvariedades de dimensão zero de uma variedade completa não\nsingular de dimensão três; esse fenômeno está ligado à possível\ninexistência do quadrado simétrico.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a46d55a7036bc633075602eb95e6419c28d38f444bba5d7ae821aadbe3e964c4",
+    "bytes": 101,
+    "exact_body_utf8": "Bản đính chính năm 1962 quy định tường\nminh giả thiết ``$f$ riêng và khả tách''.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a4b8f1660fe4ecc6b31b970a054bbd07176fc7ef2dec75129d5c01f3574dc19f",
+    "bytes": 111,
+    "exact_body_utf8": "O texto impresso omite a prima no segundo\n$X'$; o morfismo para $Y'$ é o da fatoração de Stein de\n$X'\\to Y$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a4ea87002c13a656637fcf1f548427c50561748d91e893b969d51d098a1a3184",
+    "bytes": 109,
+    "exact_body_utf8": "1962년 정오표는\n``$f$가 고유이고 분리가능이다''라는 가정을 명시적으로 요구한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a5102fcc9646f435e7c3cc36668d1568dc380ab67310e9a4c3b2c5eb33f4c668",
+    "bytes": 302,
+    "exact_body_utf8": "原印本及法、英可编辑见证均作 $K_0=R$，并在递推式中使用\n$p_n^{(n-1)}$；但前文 $K_n=\\operatorname{Hom}(\\Delta''_n,Z)$ 的定义给出\n$K_0=X$、$K_1=R$，且所声明的投影下标范围为\n$0\\leq i\\leq n-1$。这里保留原式；该下标冲突已作为源文疑点记录。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a5258ba5d8fb57e2d6a7e673f34c957608c986509bebd8697b25c7b51fc04257",
+    "bytes": 193,
+    "exact_body_utf8": "La fe de erratas de 1962 indica que la conjetura de existencia\nformulada al comienzo de esta observación es falsa, aunque los métodos de\nMumford demuestran un teorema ligeramente más débil.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a6171a54fc723163edaee048de057fc7c97f46ec53881fd5a917b9ea26c59ea5",
+    "bytes": 192,
+    "exact_body_utf8": "Serre (Jean-Pierre). --- Exemples de\r\nvariétés projectives en caractéristique $p$ non relevables en caractéristique\r\nzéro, \\emph{Proc. Nat. Acad. Sc. U.S.A.}, vol. 47, 1961, pp. 108--109.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a65c13f64de845f649cfaf07adb5bfb0cdcecd55169dedd4bb3cfdec328400fd",
+    "bytes": 207,
+    "exact_body_utf8": "El texto impreso omite el subíndice $0$ en las dos menciones del haz conormal y en $\\mathcal J_0^{-1}$ más abajo. El Ideal de $Y_0$ en $X_0$ es $\\mathcal J_0$; el Ideal $\\mathcal J$ de la base es distinto.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a6ae18e5534d2376d25638f6f7491a5362d65bec9e322db9dfe62b61a76e42f1",
+    "bytes": 127,
+    "exact_body_utf8": "O ramo corrente traz $x\\in\\operatorname{Pic}_{X/S}$, pois\n$\\varphi_n$ é o endomorfismo de potência do pré-esquema de Picard.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a70ce8b33cf4119c30ceff956115167171fa548df94fb4d72d9096940c6d5e60",
+    "bytes": 868,
+    "exact_body_utf8": "Bản đính chính năm 1962 trả lời phủ định: một cấu xạ\nquasi-hữu hạn, étale và toàn ánh $S'\\longrightarrow S$, hoặc một cấu xạ\n$\\operatorname{Spec}(\\widehat A)\\longrightarrow\\operatorname{Spec}(A)$, không\nnhất thiết là một cấu xạ hạ xuống nghiêm ngặt, ngay cả khi $A$ là vành địa\nphương của một đường cong đại số trên một trường đóng đại số $k$ và\n$S=\\operatorname{Spec}(A)$. Vì thế có thể tìm được một cấu xạ proper và trơn\n$f:X\\longrightarrow S$ biến $X$ thành một phân thớ chính trên cơ sở $S$ dưới\nmột đường cong elliptic $E$, sao cho $f':X'\\longrightarrow S'$ là xạ ảnh nhưng\n$f$ thì không. Do đó, đây cũng là một ví dụ về phân thớ chính thuần nhất không\nđẳng tầm dưới một lược đồ abel.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a7487f92f014020516235e0523381d087165f9a0a19f7a16939c9e491fecc06e",
+    "bytes": 155,
+    "exact_body_utf8": "O texto impresso não especifica a vizinhança. Restabelece-se aqui o alcance local do corolário 2, também utilizado na demonstração da proposição 2.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a76d3ac733d96d22715f4fca2767a667126a801e54ad96ec80ecbc145518a3f9",
+    "bytes": 211,
+    "exact_body_utf8": "O texto impresso põe $\\mathcal O_S$ nesse produto tensorial; aqui\n$\\mathcal G$ e $\\mathcal M$ são Módulos sobre $S'$, e a construção da\ndeformação de quadrado nulo exige o produto sobre $\\mathcal O_{S'}$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a7af2d9d08460640bd9d5fabf4a1c2d1d9250776bf927e8cfd6c76e5dba3e56c",
+    "bytes": 103,
+    "exact_body_utf8": "O texto impresso diz «em $S$». A ação considerada e a condição\nde quociente dizem respeito a $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a7cbb86881dc1b9513f9e7d9d803bba75feb31d4ffd6f96a1e5c305e61868caa",
+    "bytes": 219,
+    "exact_body_utf8": "印刷文本在这里给出的公式只有当 $\\Lambda$ 是域时才正确。\n1962年的勘误规定，在一般情形中，须将\n$\\mathfrak m_\\xi/\\mathfrak m_\\xi^2$ 除以\n$\\mathfrak n_\\xi/\\mathfrak n_\\xi^2$ 的像。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a7f11e7282f449a092b0da7ab9c5949f550a8927dc073ed3dc633cc0779a1491",
+    "bytes": 94,
+    "exact_body_utf8": "O texto impresso diz aqui « $S$ é normal »; o parágrafo\nrefere-se apenas à variedade $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a8229c59cd918b82a022a2541299bf94a68db36dbcd2002fb9f9563a924dfdb4",
+    "bytes": 51,
+    "exact_body_utf8": "인쇄본에는 한정사 ``des''가\n빠져 있다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a82ae79a224ea02f7678c59e569616dfc620750215ad7abe174398c9e86645f6",
+    "bytes": 166,
+    "exact_body_utf8": "Bản in ghi $f_{*}(\\xi^{m,m})$. Vì\n$\\xi^{m,m}\\in H^{m}(X,\\Omega_X^{m})$ và cả hai vế đều thuộc\n$H^{m}(Y,\\Omega_Y^{m})$, ánh xạ cần dùng là $f^{*}$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a88be53bbcf96ac42ad7b61b9dc506d2fd13b01279f07f453a729dc5c99c69d0",
+    "bytes": 189,
+    "exact_body_utf8": "最后一个字母在印刷文本中为“$X$”，但紧接在前面的条件是\n$\\mathcal O_X/(\\mathcal I_1+\\mathcal I_2)$ 在 $S$ 上平坦，因此定义\n的是 $Z$ 在 $S$ 上平坦。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a8ca71278da7ee27b190497d9aec0ca8b4ad568f0548b214fa832f4dd911fd5f",
+    "bytes": 114,
+    "exact_body_utf8": "El texto impreso dice «$Y$»; aquí no se ha definido\nninguna base $Y$, y la condición se refiere a la base $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a8d3dd1bd28775170774a84e92baee1a39ee697a052311b0995fbdf09690299b",
+    "bytes": 48,
+    "exact_body_utf8": "Condición añadida en la fe de erratas de 1962.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "a9c47a70cc29d5e9d7c4e99ae3822da15d96d0e806d383d6afab097df184829d",
+    "bytes": 163,
+    "exact_body_utf8": "In the six occurrences of this condition after base change, the printed text incorrectly retains $S$ or $X$; the family lives on $X'=X\\times_SS'$ relative to $S'$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "aa2fde7b473cb1c2028edbdd250f1601dcef690ea3a38088e9352a51f77bcd1f",
+    "bytes": 128,
+    "exact_body_utf8": "O texto impresso traz aqui $Z/K$;\nnenhum $K$ está definido, e o funtor de seções considerado desde (5.7) é\n$\\Pi_{X/S}(Z/X)$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "aaa7e83a5c0ee39a5bcf2702d381bac56c9b3abe3fb0321140aa680f7aecc80a",
+    "bytes": 102,
+    "exact_body_utf8": "El texto impreso lleva $U$; el abierto considerado aquí es $U_\\infty$, la intersección de los $U_N$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ab1c85e06583f548d385113a50b23b2a471ea988074018f9167051604bd26761",
+    "bytes": 139,
+    "exact_body_utf8": "The printed\r\ntext has $B\\otimes_V A$. Since $B$ is a $V$-scheme and the assertion concerns\r\nits generic fiber, the base factor must be $K$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "abc4d3c605013e791c1946f789d93f282f9faf499479630f2afd261b06e7915f",
+    "bytes": 209,
+    "exact_body_utf8": "O texto impresso omite «não» antes de «estritos». Na\ncategoria considerada existem produtos fibrados, e o parágrafo anterior\nestabelece precisamente a equivalência entre efetividade e epimorfia estrita.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "abcb2d146b275dfd1f1c4a461407e2396064043ff2336eec4434acd5eca97b9d",
+    "bytes": 153,
+    "exact_body_utf8": "The printed text has “$k$-local complete intersection”; the intermediate correction is relative to the base, and requires the base-changed $S'$ here.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "abe325901179792e8269743e9ec002833441b7e87a370ca23f62c004efefba5f",
+    "bytes": 427,
+    "exact_body_utf8": "La fe de erratas de 1962 añade que Mumford acababa de\nconstruir una componente irreducible del esquema de Hilbert de\n$\\mathbf P^3_{\\mathbf C}$ cuyos puntos generales representan curvas no\nsingulares de grado 14 y género 24, que es no reducida en su punto genérico;\nal hacer explotar una de estas curvas se obtiene también una variedad triple\nproyectiva regular cuyo esquema formal de módulos es genéricamente no\nreducido.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ac0f7e7e845a3c9620c677344358140d6da64cbf3cbc598f6a45512f88a1e0e2",
+    "bytes": 141,
+    "exact_body_utf8": "The printed text reads “$g(y')=x'$.” The section\r\nconstructed in the preceding sentence, whose generic fiber is being computed,\r\nis $g'$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ac8224b90fd30ed2bace1cbf10dc819482a9c6557a3b20d3f4c4a2466535e117",
+    "bytes": 216,
+    "exact_body_utf8": "La rama diplomática conserva la lectura\nimpresa « (1.7) » y la afirmación en todos los grados; la rama actual corrige\nla referencia a « (1.8) » y restringe el alcance a las hipótesis que justifican\ncada grado.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ac923c359c74889646617e5500ae9cf79ae456212c42cd87879948c2ddad4f12",
+    "bytes": 187,
+    "exact_body_utf8": "Serre (Jean-Pierre). --- Exemples de\nvariétés projectives en caractéristique $p$ non relevables en caractéristique\nzéro, \\emph{Proc. Nat. Acad. Sc. U.S.A.}, t. 47, 1961, p. 108--109.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "acd10c692d833beb065e04ff566d2406f7352f083b49dde84704256203000c36",
+    "bytes": 178,
+    "exact_body_utf8": "In this last formula the printed text has $\\mathcal O_X$ in place of\r\n$\\mathcal O_{X_0}$, although the immediately preceding definition of\r\n$\\mathcal A$ fixes $\\mathcal O_{X_0}$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ade5f57b243688a624d581622216add4737595b9349946fe389152e1248a3084",
+    "bytes": 75,
+    "exact_body_utf8": "El texto impreso lleva aquí $X_0$;\nsolo $X$ está definido en este pasaje.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ade7a3f48dc7ed0ac7777bc41e4c74989890f66e28a6e0f127e9467e1ce2310a",
+    "bytes": 205,
+    "exact_body_utf8": "The final letter is printed “$X$,” but\r\nthe immediately preceding condition concerns the flatness of\r\n$\\mathcal O_X/(\\mathcal I_1+\\mathcal I_2)$ over $S$ and therefore defines $Z$\r\nto be flat over $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "af070d899e2cb8145fd6d81b5570d3a38ad6bacba6a8887f90b9c9fe29d80167",
+    "bytes": 127,
+    "exact_body_utf8": "인쇄본에는\n여기서 ``$X$''라고 되어 있으나, 이 판정의 주어는 앞 문장에서 도입한\n피복 $X'$이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b06fc78da1e91b99260fc98443f39d9d7d1b92a1c4d15bb66f52dad67698c273",
+    "bytes": 128,
+    "exact_body_utf8": "Bản in bỏ dấu phẩy trên $X'$ thứ hai; cấu xạ\r\nđến $Y'$ là cấu xạ trong phân tích Stein của $X'\\to Y$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b23f91c143e56c84a48cea9db45e4efc50eda5cdd60b001dcf6a907ccb595f5a",
+    "bytes": 69,
+    "exact_body_utf8": "The printed text has $U$; the open subset just defined is $U_\\infty$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b308706f1f961f5f43fb8aac7e0e405014021a51bad3731e839498e44c1b8174",
+    "bytes": 218,
+    "exact_body_utf8": "A errata de 1962 assinala que\nHartshorne demonstrou a conexidade dos $\\operatorname{Hilb}^P_r$ sobre um\ncorpo algebricamente fechado e determinou os pares $(r,P)$ para os quais\n$\\operatorname{Hilb}^P_r\\neq\\varnothing$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b32b81fdc970527056abc8c4f4d0d356666802697bb5ff194aaf01f66fb47ac9",
+    "bytes": 146,
+    "exact_body_utf8": "The printed text has $E(A)$. In the category under consideration the\r\nrepresenting object is $A/J$, and the equality needed for (3.7) is $E(A/J)$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b364746b1ab6d6efa566282896e0d8f4fdefdf48a0d5a890ac31e7bb194edcf9",
+    "bytes": 543,
+    "exact_body_utf8": "Bản đính chính năm 1962 nói rõ rằng\ntrường hợp xạ ảnh được giải quyết hoàn toàn bởi các lược đồ Hilbert (TDTE IV),\ntrong khi các ví dụ của Nagata và Hironaka cho thấy rằng, nếu thiếu giả thiết\nxạ ảnh, các hàm tử này có thể không biểu diễn được, ngay cả đối với các đa tạp\ncon chiều không của một đa tạp đầy đủ không kỳ dị chiều ba; hiện tượng này liên\nquan đến khả năng không tồn tại bình phương đối xứng.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b37a6fef1d1cdae16fcef3a2c725bb404ede4a9c495fe0488f69d8443bd23038",
+    "bytes": 37,
+    "exact_body_utf8": "此条件由1962年的勘误加入。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b3bd81b2c120e3e86531a32759591eab99eff26db1aafa7fce0e07fd7e21ad27",
+    "bytes": 183,
+    "exact_body_utf8": "A errata de 1962 assinala que a conjectura de existência formulada\nno início desta observação é falsa, mas que os métodos de Mumford fornecem um\nteorema ligeiramente mais fraco.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b432c731e085a6fad1277865715c4eb10d6b398e06a9f669b70eca2e32324208",
+    "bytes": 153,
+    "exact_body_utf8": "Văn bản in thay số mũ $s$ ở đây bằng\nmột $n$ không được định nghĩa; $s$ là hạng của bó tự do toàn ánh lên\n$\\mathcal F$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b4daa570aa36244be6f33ce5487b0b5ac069293c5d834457738baa30382d7fd6",
+    "bytes": 182,
+    "exact_body_utf8": "Bản in ghi\r\n$\\overline f:\\overline X\\longrightarrow\\overline X$; đối miền phải là\r\n$\\overline Y$, vì đây là cấu xạ được cảm sinh từ\r\n$f:X\\longrightarrow Y$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b52f541a2e9e6fdef47ecc337ea037e9cc8b1ce2296b1d6df156f6ed674dc8a7",
+    "bytes": 224,
+    "exact_body_utf8": "The printed text says “of $\\mathcal A'$.” The domains of\r\n$T^{(1)}$ and $T^{(2)}$, together with the pairing\r\n$F'_1\\times F'_2\\longrightarrow F'_3$, require $x$ and $y$ to be sections of\r\n$F'_1$ and $F'_2$, respectively.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b58e83c99f389c466a8695eab1280bf08702795017314861f26ba0c50572da68",
+    "bytes": 123,
+    "exact_body_utf8": "Bản in ghi\r\n«$f:X\\longrightarrow Y$», mặc dù tiền lược đồ Picard và hàm số sau đều có cơ\r\nsở $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b5d4522a7c9036e8ccd958ae224767b2f8ffc19620b12a23a9275160917980ae",
+    "bytes": 188,
+    "exact_body_utf8": "Serre (Jean-Pierre). --- Exemples de variétés\nprojectives en caractéristique $p$ non relevables en caractéristique zéro,\n\\emph{Proc. Nat. Acad. Sc. U.S.A.}, t. 47, 1961, tr. 108--109.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b5de30665a1ef7dab2e2f9945566ab0d56b94357cdee186eb47bdf954c8ec4be",
+    "bytes": 166,
+    "exact_body_utf8": "The 1962 erratum states that the existence conjecture advanced\r\nat the beginning of this remark is false, although Mumford's methods prove a\r\nslightly weaker theorem.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b5e6124aeffa684352bc601696840f850a755a6e12142ff04bcdde987f096a72",
+    "bytes": 163,
+    "exact_body_utf8": "El texto impreso omite «con cuerpo residual algebraicamente\ncerrado»; la fe de erratas dice que el contraejemplo de Mumford hace indispensable\nesta restricción.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b6eddfcb4939660c7c33e9f41c5435c9ef0ca170232da79972d94dde46c90bcc",
+    "bytes": 177,
+    "exact_body_utf8": "印刷文本及法、英可编辑见证在此作“$Z$ 的闭子概形”；但\n$Z$ 直到下一句才被定义为该列的稳定值，而各 $Z_n$ 都是 $S$ 的闭子概形。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b71f85af1f3ddd0192ddea30c7e1a820f549104025fda0e503051f568e3b5d4e",
+    "bytes": 130,
+    "exact_body_utf8": "MUMFORD\n(David). --- An elementary theorem in geometric invariant theory, \\emph{Bull.\nAmer. Math. Soc.}, t. 67, 1961, p. 483--486.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b720c7475b2e34a825eb86680c4fed5b88d9b287bfe3f98f6de01ce5910f85ae",
+    "bytes": 153,
+    "exact_body_utf8": "印刷文本及法、英可编辑见证在这里由已经指定的域 $K$\n突然改作 $k$；本句余下部分仍以 $K$ 为基域，故恢复为 $K$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b7b79d585b7a08546e88cd5115fea73560158009204df3466d387c73ea5338dc",
+    "bytes": 119,
+    "exact_body_utf8": "1962년 정오표는 $\\alpha$가 미리\n$\\mathcal F$-하강 사상이라고 가정할 필요가 없다고 명시한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b7e5dd41a2529e498c880c5c5a0b3b5a59c4a22d416415320ed33b87244e0bf2",
+    "bytes": 223,
+    "exact_body_utf8": "El texto impreso dice «prima con $p$». En este enunciado\ncuantificado por $n$, el criterio para que un morfismo sea étale y el argumento que utiliza los\nnúcleos $ {}_nG$ requieren característica residual prima con $n$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b85110b55dc1f4d98e87735b84602d65b33856e4f875072c9d7f5eb8f90aa747",
+    "bytes": 120,
+    "exact_body_utf8": "印刷文本此处作“$X$”，但本段中没有定义这个符号；所考察的四个\n部分都是 $G$ 的子集。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b909aac3dfe81d5b04c293bf6bfab24e51e999c12152089f5716ffa94716d6e6",
+    "bytes": 137,
+    "exact_body_utf8": "인쇄본에는\n``$Y$''라고 되어 있으나, 여기서는 밑 $Y$가 정의되지 않았고 이 조건은 밑\n$S$에 관한 것이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "b985f85e8bddda7f588bfd94bb97bbdacd8fda9a9c853984b643fcd47cf6e00f",
+    "bytes": 207,
+    "exact_body_utf8": "A errata de 1962 substitui aqui a hipótese impressa\n«$f$ quase-projetivo» pela hipótese mais fraca «$f$ separado», em virtude de\nSGA VIII, 6.2: todo morfismo quase-finito e separado é quase-projetivo.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ba8b98cd61fecc3dee81750d79991438d70c3a970f7e9a44aa9976f92d328a6c",
+    "bytes": 171,
+    "exact_body_utf8": "El texto impreso da una\nsegunda fórmula « (5.3) » en la página 182 y remite aquí a ella; el identificador\n« (5.3 bis) » distingue esta fórmula de la primera (5.3).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "baa19da24c7ccbc42c9b715eb6e438d6d4880853d6d8efae244123d2e8f319f1",
+    "bytes": 114,
+    "exact_body_utf8": "Bản đính chính năm\n1962 cho biết Murre vừa giải quyết bài toán này theo hướng khẳng định.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "bb01cded1d5fdd72c2ecf6fbe73982ece56c23828348971f2a443db621dfd2c2",
+    "bytes": 177,
+    "exact_body_utf8": "印刷文本及法、英可编辑见证写成层\n“在 $U$ 上”；由于 $U$ 变化而 $\\mathcal E(U)$ 构成开集上的截面函子，\n该层的底空间是固定的 $X$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "bb04a96bb155a3ae4d6ca904cbc890ca45a7667bda637e27022c05172d45478a",
+    "bytes": 224,
+    "exact_body_utf8": "O texto impresso traz\n$P\\neq Q$; a errata de 1962 prescreve $P<Q$, substitui o caso «$P=Q$» pelo\ncaso contrário $P(n)\\geq Q(n)$ para $n$ grande e substitui as desigualdades\nestritas de (*) por desigualdades não estritas.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "bb639ed4f5538256bfbfc9e6a334c7c7224efe81b7a97e9b6f810d20f808aefb",
+    "bytes": 223,
+    "exact_body_utf8": "O texto impresso põe $T_n/S$ sob o símbolo $\\Pi$. A proposição 5.7\naplica-se aqui ao morfismo finito e plano $p_1:T_n\\to T$, e o resultado é\nexplicitamente um pré-esquema sobre $T$; portanto, o denominador é $T_n/T$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "bbd960ec7b08a1e01fb8f2defd231c9158a77a4490c44021006d6e40e3e2d897",
+    "bytes": 202,
+    "exact_body_utf8": "Bản in gọi $f$ là\n« ánh xạ đồng nhất »; nhánh hiện hành dùng phép nhúng, phù hợp với kiểu của\n$f:Y\\longrightarrow X$ và với các bản đối chiếu được duy trì.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "bbea3da02460edf5b06e120fdf1f8ac0f7e187170d916e6ad88234d85e8b4c4b",
+    "bytes": 131,
+    "exact_body_utf8": "The printed text\r\nreads “$f:X\\longrightarrow Y$,” although both the Picard prescheme and the\r\nfollowing function have base $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "bc94b10975a6a0390bf6ccc351988c625ffabcd1d937fbc2fea1976484e63315",
+    "bytes": 91,
+    "exact_body_utf8": "The printed text says here\r\n``$S$ is normal''; the paragraph involves only the variety $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "bcf960dc2c43ead3fde8154ec2854bd69189a6a809f7b1374c83e99ceabd545c",
+    "bytes": 255,
+    "exact_body_utf8": "Bản in đặt $T_n/S$ dưới ký hiệu $\\Pi$. Mệnh đề 5.7 được áp dụng ở\nđây cho cấu xạ hữu hạn và phẳng $p_1:T_n\\to T$, và kết quả hiển nhiên là một\ntiền lược đồ trên $T$; do đó mẫu số là $T_n/T$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "bd1d899bc076c9f661e5cc85028b5196ec873baac1b82e0e848ac8c0e4c60fd1",
+    "bytes": 143,
+    "exact_body_utf8": "A errata de 1962 assinala que essa questão se\nresolve afirmativamente e remete ao último parágrafo dos Comentários à\nexposição seguinte.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "bd3f2d0f732c84ef5d74682af012110aac658ad05322c7d9d73957db9e0295dd",
+    "bytes": 84,
+    "exact_body_utf8": "原文作 $H^1$。固定态射的一阶变化由全局导子，即 $H^0$，描述。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "bdacc9d0b6f8ad153f39ac09a9b62c6228836beeeb08b8ddfde4f814f09a60b2",
+    "bytes": 214,
+    "exact_body_utf8": "Chữ cái cuối được in là «$X$», nhưng điều kiện ngay\ntrước đó nói về tính phẳng của $\\mathcal O_X/(\\mathcal I_1+\\mathcal I_2)$ trên\n$S$ và do đó xác định $Z$ phẳng trên $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "be763077fa53f9950a1009286a7220a83ec4e15853c2fa7db0811e0e1d9cf06f",
+    "bytes": 201,
+    "exact_body_utf8": "O francês mantido traz a\nconstrução impossível «en les points». O ramo corrente verte a leitura\ncorrigida «aux points» por «nos pontos»; o diplomático preserva literalmente\n«em os pontos».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "bec50c99ee88fd08dc615eac3f0b807ad4f1c57310cb310104358724eb30dd92",
+    "bytes": 223,
+    "exact_body_utf8": "강연 212와 관련된 정오표는 이 추측이\n``결국 거짓''이라고 지적한다. 또한 비고 8.1의 긍정적 사실이 그 뒤\n증명되었다고 밝히고 멈포드의 연구와 그 정련들을 참조한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "bfd26891cc5bfc216641faa5c08e9cc43a37953792d447116a37cc17552bd047",
+    "bytes": 99,
+    "exact_body_utf8": "Để có một nghiên\ncứu đầy đủ hơn, bản đính chính năm 1962 dẫn đến TDTE V.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c10f941eab0e2394d197dcbf823e5aa147284974c513abca91c3b9f92fcfec6e",
+    "bytes": 152,
+    "exact_body_utf8": "인쇄본에서는 두 번째 $X'$의 프라임을 빠뜨렸다.\n$Y'$로 가는 사상은 $X'\\to Y$의 스타인 인수분해에서 오는 사상이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c1a3ba2d29cf8d9887cb6eb783d4fa4c94a3388b17c3e127ea9fb6fc1a7b86c1",
+    "bytes": 135,
+    "exact_body_utf8": "인쇄본에는\n$\\operatorname{Pic}_{X/S}^\\circ$라고 되어 있으나, 체 $k$ 위의 이 명제에는\n$S$가 나타나지 않는다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c201cbae435d5c7b659e2c531c2c3bcdad667e6b23a7b84df540b895811b0897",
+    "bytes": 106,
+    "exact_body_utf8": "Bản in ghi\r\ncấu tạo bất chuẩn ``en les points de''; cách viết chuẩn là ``aux\r\npoints de''.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c2eb4bb196a05107c90f94f97b2d7da0c0a0e3ceb6b3147e68fc09e273ef48c9",
+    "bytes": 219,
+    "exact_body_utf8": "La fe de erratas de 1962 sustituye aquí la hipótesis impresa\n«$f$ cuasiproyectivo» por la hipótesis más débil «$f$ separado», en virtud de\nSGA VIII, 6.2: todo morfismo cuasifinito y separado es cuasiproyectivo.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c305ff0007a3df5b3d4872585a27cef230b519ea94b2d6b562497bfc3cdec9ae",
+    "bytes": 254,
+    "exact_body_utf8": "Bản in ghi «nguyên tố cùng nhau với\r\n$p$». Trong mệnh đề được lượng hóa theo $n$ này, tiêu chuẩn étale và lập luận\r\nbằng các hạt nhân ${}_nG$ đòi hỏi đặc trưng thặng dư nguyên tố cùng nhau với\r\n$n$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c3407c84e44740dcc02bc3478fb7e2f463d278cc77daa37471e44cd569566bd1",
+    "bytes": 217,
+    "exact_body_utf8": "The printed text puts $\\mathcal O_S$ in this tensor product; here\r\n$\\mathcal G$ and $\\mathcal M$ are Modules over $S'$, and the square-zero\r\ndeformation construction requires the tensor product over $\\mathcal O_{S'}$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c3cfc01a35409320aaa22aacfc71612be88b4fd09b472d79663d3919b14e0f22",
+    "bytes": 147,
+    "exact_body_utf8": "The printed text does not specify the neighborhood. The local scope of Corollary 2 is restored here; it is also used in the proof of Proposition 2.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c3d052365843f45a234e5188ccccb9c924e632b44334354578a8774c5634880c",
+    "bytes": 145,
+    "exact_body_utf8": "인쇄본에는 여기에서\n$\\operatorname{Hom}_S(X,X)$라고 되어 있으나, 이는 바로 앞의 표시된\n등식과 양립하지 않는다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c464707e5185442582df544a7d2790ce0789a1ee70f19f044cc22e48a2a269b3",
+    "bytes": 72,
+    "exact_body_utf8": "인쇄본에는 잘못된 구절 ``coupe au\nmorceaux''가 쓰여 있다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c4ac31bc9c7ddd485d3442ebc4cb542b7c183f33be6509bb2fd2505001e44675",
+    "bytes": 96,
+    "exact_body_utf8": "O ramo corrente traz aqui «sobre $X$»; a fatorialidade invocada é\na dos anéis locais de $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c58a3ce751c65db6b5623ea64d558dcdb8476a74eae19a11eed2f913bc9c1aea",
+    "bytes": 125,
+    "exact_body_utf8": "인쇄본은 몫을\n$N_r/N_{r+1}$로 뒤집어 적었는데, 이는 방금 정의한 증가 여과와 양립하지\n않는다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c5a0b72a4448f1baeb79c989b5293174cd154c6dc12ac353e6179e8934ecc34f",
+    "bytes": 138,
+    "exact_body_utf8": "O texto impresso traz aqui «$g(y')=x'$»; a seção\nconstruída na frase precedente e cuja fibra genérica está sendo calculada é\n$g'$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c5f5360b30818fc3a7258937be679e3111c2c74062766eaa22da7d15e86bc295",
+    "bytes": 135,
+    "exact_body_utf8": "Bản đính chính năm 1962 nói rõ rằng\nkhông cần giả sử trước $\\alpha$ là một cấu xạ $\\mathcal F$-hạ xuống.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c5f839254f8c3c45e754cadcd5c7e78d54687841f697a225a09c2321de0b0d38",
+    "bytes": 55,
+    "exact_body_utf8": "For a fuller study,\r\nthe 1962 erratum refers to TDTE V.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c61fcb8bc987e6eca0098902f93f7810f607ff6b894ac8a7ef41ac0bc19816fd",
+    "bytes": 112,
+    "exact_body_utf8": "인쇄본도 이 공식에 ``(6.2)''라는 번호를 붙였다. 접미사\n``bis''는 두 출현을 구별한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c640a59605b796db3070eb1394d0d4b550658a0042b4eee80dd862094041fec6",
+    "bytes": 150,
+    "exact_body_utf8": "Bản in ghi tại đây ``$Q$''; tập con được đưa vào\r\ntrong phát biểu và có tính tựa compact biểu thị họ bị chặn là $E$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c674b29173db8cc7edd248f98f4f7ec55561c70b1832f9d3afd60064be2713a2",
+    "bytes": 88,
+    "exact_body_utf8": "印刷文本再次写成 $n\\geq1$，这与刚刚断言的\n$n=1$ 时为同构相矛盾。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c6789dca209228718f0c75bedf2a9489de8a3d3c157284d73ea9f225faebc401",
+    "bytes": 128,
+    "exact_body_utf8": "The printed text has\r\n$H^{p}(H^{q}(X,K))$; the initial term is that of the spectral sequence (8.2),\r\nnamely $H^{p}(X,H^{q}(K))$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c70dab318bbcfa8098d777d25c461efb8fea93350345045ebb6826bbd9a3636b",
+    "bytes": 119,
+    "exact_body_utf8": "原文未明确限定邻域。这里采用推论2中的局部结论，后面的命题2的证明也使用这一结论。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c84a1ac631102f05ee9f68951a091ae159c6098c4b0e503f8990112bbf9896c2",
+    "bytes": 233,
+    "exact_body_utf8": "Grothendieck\r\n(Alexander). --- The cohomology theory of abstract algebraic varieties,\r\n\\emph{Proceedings of the International Congress of Mathematicians}\r\n[1958, Edinburgh], pp. 103--118. --- Cambridge, at the University Press, 1960.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c8d1d4794b2703b5d32a1cf6a7fc0c75dacf56b54289074c5434bf2ceee5348b",
+    "bytes": 116,
+    "exact_body_utf8": "인쇄본에는 여성형 « telle »라고 되어\n있으나, 그 선행사인 « l'anneau »는 남성명사이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c9194bd95856341a533982d14df20789d26cc2d73c8d0e2a836f819eadbd84ac",
+    "bytes": 128,
+    "exact_body_utf8": "Bản in ghi\r\n$\\operatorname{Pic}_{X/S}^\\circ$, mặc dù $S$ không xuất hiện trong mệnh đề\r\ntrên trường $k$ này.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "c96c354c3816d50453b2a8447d2e2ea46189028e38dd25db3eac7b91c79c1deb",
+    "bytes": 139,
+    "exact_body_utf8": "El texto impreso dice «sobre $S$»; la rigidificación mediante una\nsección $g:S\\to X$ concierne aquí al Módulo $\\mathcal L$ sobre $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "cb9074920ead597975103d50ed990e4a1f3a942d12d2f1e3e382348455b65167",
+    "bytes": 248,
+    "exact_body_utf8": "Bản in gọi\ncả hai môđun là « tự do » và ghi « hạng $n$ » cho môđun thứ hai; thực ra, cả hai\nđều là môđun xạ ảnh hạng $1$, như phép đồng nhất với $\\bigwedge^{p}(J/J^{2})$ bên dưới cũng đòi hỏi.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ccf40f77cb748e7e429253b8dc00c2d27fae18158701c065e79dbe3b0721a488",
+    "bytes": 233,
+    "exact_body_utf8": "O texto impresso dá aqui uma fórmula que só é correta quando\n$\\Lambda$ é um corpo. A errata de 1962 prescreve, no caso geral,\no quociente de $\\mathfrak m_\\xi/\\mathfrak m_\\xi^2$ pela imagem de\n$\\mathfrak n_\\xi/\\mathfrak n_\\xi^2$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "cd6864f82ea957105b5d2aa998d5d358c559834a7c424f6c17719717cda33654",
+    "bytes": 102,
+    "exact_body_utf8": "O texto impresso diz $\\Osh_P(r+r')$; os dois fatores\n$\\Osh_P(m)$ e $\\Osh_P(m')$ exigem $\\Osh_P(m+m')$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "cf4daa73405345407d244d1288add89894518179765de54bf332583e226628db",
+    "bytes": 184,
+    "exact_body_utf8": "El texto impreso omite las primas en estas propiedades de $Y$ sobre la base variable $S'$ y dentro de $X'$. La hipótesis relativa al $X$ original plano sobre $S$ permanece sin primas.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "cf8cd78222e3e93f4fd57a6b3207b3897be62f95eb32c080ababf291d49a506f",
+    "bytes": 427,
+    "exact_body_utf8": "1962년의 정오표는\nMumford가 $\\mathbf P^3_{\\mathbf C}$의 힐베르트 스킴에서, 일반점들이 차수\n14이고 종수가 24인 비특이 곡선들을 나타내며 그 일반점에서 비축소인 한\n기약 성분을 막 구성했다고 덧붙인다. 그러한 곡선 가운데 하나를\n블로업하면 그 형식적 모듈라이 스킴이 일반점에서 비축소인 3차원 정칙\n사영 스킴도 얻어진다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "cfa7dce49fc5f3d3992b021a500b52345db4d2247407abfd6986669edfc87651",
+    "bytes": 180,
+    "exact_body_utf8": "El texto impreso\ndice « rango $n$ »; los dos módulos de formas de grado máximo tienen rango\n$1$, como exige también la identificación con $\\bigwedge^{p}(J/J^{2})$ más abajo.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "cfd15fc535b109e45ade3aa19f0aaefd67c26ca0d2d0d46115f0d1c8c2d2fe5d",
+    "bytes": 51,
+    "exact_body_utf8": "This qualification is imposed by\r\nthe 1962 erratum.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "cff9658fd7138b65bf9a8da80b3db1c0dcf283710ea8c5a8fe35b5b21c146d4e",
+    "bytes": 119,
+    "exact_body_utf8": "El texto impreso dice «$x\\in X$». La\naplicación $\\varphi_n$ es el endomorfismo de potencia del preesquema de\nPicard.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "d004050b3e332bcc7f38daa287259b1c1e40de73c01d15093ce4d2de83db6ae7",
+    "bytes": 90,
+    "exact_body_utf8": "El texto impreso dice\n$X[t]$; la fe de erratas vinculada, p.~303, prescribe $X[t,t^{-1}]$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "d0e7a4a87bdfcf157b5564fd38f05c6d3f9290ddd7c83aca002517b216e11bd4",
+    "bytes": 80,
+    "exact_body_utf8": "HARTSHORNE\n(R.). --- Connectedness of the Hilbert scheme (Tesis, Harvard, 1962).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "d217fc945f30a47218aad735e1419968f02da325d32719c5692d6c7f5860c3a7",
+    "bytes": 82,
+    "exact_body_utf8": "The printed text has $Z$; these graphs are graphs of sections of $Z'=Z\\times_SS'$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "d3c34a829103c836e8121b92343897a4fcb8781fe62733d7ea62f814b497fc8b",
+    "bytes": 148,
+    "exact_body_utf8": "이 마지막 공식에서 인쇄본은 바로 앞의 $\\mathcal A$ 정의에\n고정되어 있는 $\\mathcal O_{X_0}$ 대신 $\\mathcal O_X$를 쓴다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "d40360ee3feda6c2de5ad63472be79c6463d237f915670a0c55232c21eda739f",
+    "bytes": 166,
+    "exact_body_utf8": "El texto impreso coloca $\\mathcal O_X$ como subíndice de\n$\\operatorname{Hom}$; puesto que $\\mathcal Q$ es un Módulo sobre $S$, su dual\nse toma sobre $\\mathcal O_S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "d45600be2d2acea2855921e579a8295a7aa261508dce020fb7d5fcf132a06719",
+    "bytes": 102,
+    "exact_body_utf8": "The printed text has “$Y$”; no base $Y$ is defined here,\r\nand the condition concerns the base $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "d46ba3ccfc765aacafda53a6647e6a9fd1e9395a3f307b8fdef18aa35c588396",
+    "bytes": 92,
+    "exact_body_utf8": "Văn bản in ghi $X_0$ ở đây; trong đoạn này chỉ có $X$ được định\nnghĩa.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "d4c6368d2b9a25e9b4c92e9212c0de49f00fc497e5d1f34881cfb5d9790b9aeb",
+    "bytes": 136,
+    "exact_body_utf8": "El texto impreso lleva aquí $Z/K$; no\nse ha definido ningún $K$, y el funtor de secciones considerado desde (5.7) es\n$\\Pi_{X/S}(Z/X)$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "d58b4397590d2a3b064c35672847aa3b8d993428da85e0f54d5ebfd7407c9b63",
+    "bytes": 234,
+    "exact_body_utf8": "La fe de erratas de 1962 considera excesiva esta\nformulación: es válida en gran medida para las técnicas no proyectivas de los\ndos primeros exposés de la serie TDTE I a VI, pero no para las técnicas\nproyectivas (TDTE IV, V y VI).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "d6c65b7beadaa2eb49c505b880dca29b86650dd64113bce24f1dbdb2e3a1f56b",
+    "bytes": 42,
+    "exact_body_utf8": "Condição acrescentada na errata de 1962.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "d8641e8c229f234896856f522a92b8a157b7fce44fc0998fadf18fce66f1aaea",
+    "bytes": 154,
+    "exact_body_utf8": "在最后这个公式中，印刷文本写的是 $\\mathcal O_X$，而不是\n紧接在前面的 $\\mathcal A$ 定义中已经确定的 $\\mathcal O_{X_0}$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "d8b23aadaf75de79da31cb15dc7dcab1ee3acda9aebb77833cbf06a9891a24a7",
+    "bytes": 51,
+    "exact_body_utf8": "인쇄본에는 단수 ``classe''가\n쓰여 있다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "d8f7e77529e062614a59e8dcb47a04c6b9c85802a8610b741cb0e269d1068e55",
+    "bytes": 379,
+    "exact_body_utf8": "The 1962\r\nerratum records that the projective case is completely solved by Hilbert\r\nschemes (TDTE IV), while examples of Nagata and Hironaka show that without a\r\nprojectivity hypothesis these functors need not be representable, even for\r\nzero-dimensional subvarieties of a nonsingular complete threefold; this is\r\nconnected with the possible nonexistence of the symmetric square.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "d8fe125d821197b1d3df27c781cece95d8c8296e455ec6e92fb2309239d70401",
+    "bytes": 108,
+    "exact_body_utf8": "印刷文本作 $\\Osh_P(r+r')$；两个因子 $\\Osh_P(m)$ 和\n$\\Osh_P(m')$ 要求此处为 $\\Osh_P(m+m')$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "d9f626cfdcd8b6fdbcbf976304c5a1f27adc2d3ff037858b3c32485860bea49a",
+    "bytes": 177,
+    "exact_body_utf8": "O texto impresso diz aqui\n« $y\\in Y$ » e volta a empregar $Y$ ao final do parágrafo. Como o morfismo\nconsiderado é $X\\longrightarrow S$, lê-se $S$ em ambas as ocorrências.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "da9b56d97ce6b08ccdecc5ece78af793d2af1f162780b5039de965a4b6ae1220",
+    "bytes": 105,
+    "exact_body_utf8": "印刷文本作“仿射直线”。相应勘误\n第~303 页规定为“去掉原点的仿射直线”。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "dae711828cfe72729423ca64968185100be984c0567347bd8693352d172a240c",
+    "bytes": 123,
+    "exact_body_utf8": "The 1962 erratum specifies that it is\r\nunnecessary to assume beforehand that $\\alpha$ is an $\\mathcal F$-descent\r\nmorphism.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "db0f90a5818f3741d64b36b0fc1778a281e5e6b7e41bce5426b08cabf8835f17",
+    "bytes": 155,
+    "exact_body_utf8": "印刷文本把 $\\mathcal O_X$ 写在\n$\\operatorname{Hom}$ 的下标中；由于 $\\mathcal Q$ 是 $S$ 上的模，\n其对偶应在 $\\mathcal O_S$ 上取。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "dbacc0e1d71a0eb82c9a3084aa7ea594839619777659f7ef74d92d8452dd312d",
+    "bytes": 153,
+    "exact_body_utf8": "인쇄본에는 여기에 ``$g(y')=x'$''라고\n되어 있으나, 앞 문장에서 구성하고 지금 일반 섬유를 계산하는 단면은\n$g'$이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "dbb897968fd356d3e97a7d5412d623a6f4e5cb2b4655baf1de714553f932f2f7",
+    "bytes": 242,
+    "exact_body_utf8": "Văn bản in không chứa\ngiả thiết thứ hai. Bản đính chính gắn với\nExposé 212 nói rằng tính tựa xạ ảnh khi ấy dường như chỉ được chứng minh khi\n$R$ xuất phát từ một quan hệ tương đương.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "dd2ba752a8d9cf461a6627a11316f0096a0c8b26344f003e77d14b826ffbbe7a",
+    "bytes": 35,
+    "exact_body_utf8": "Ver o adendo\nao fim da exposição.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "dd469b0c998c42495d769fa8d0baf7e90ef70aa7ba4b3cd4307d96dc3292df20",
+    "bytes": 181,
+    "exact_body_utf8": "印本作\\fquote{$\\mathcal A'$ 的截面}。$T^{(1)}$ 与\n$T^{(2)}$ 的定义域以及配对 $F'_1\\times F'_2\\longrightarrow F'_3$ 都要求\n$x,y$ 分别是 $F'_1,F'_2$ 的截面。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "dd8e900b13be6e2508a5ca9a7d50397e8cda32a2347742e7d8d62c9092566e4c",
+    "bytes": 233,
+    "exact_body_utf8": "인쇄본에서는 $\\Pi$ 기호 아래에 $T_n/S$를 둔다. 여기서는 유한\n평탄 사상 $p_1:T_n\\to T$에 명제 5.7을 적용하며, 그 결과는 명시적으로\n$T$ 위의 준스킴이다. 따라서 분모는 $T_n/T$이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "dde7413fd4359f3ff0a27d726cd3f8ba5cf460f7a4979b7c1422d4edfa548b27",
+    "bytes": 105,
+    "exact_body_utf8": "The printed text uses\r\na union sign; the graded structure is the direct sum of the sheaves\r\n$\\Omega_X^p$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "deade623cc32df1b48a246eb6c64ea1c93ef78bfc11932ca67fae5e4fe4ba93d",
+    "bytes": 268,
+    "exact_body_utf8": "1962년의 정오표는\n여기서 인쇄본의 ``$f$는 준사영이다''라는 가정을 더 약한 ``$f$는 분리\n사상이다''라는 가정으로 바꾼다. 이는 SGA VIII, 6.2, 즉 모든 준유한 분리\n사상은 준사영이라는 사실에 따른 것이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "deebec5e376ae259d16bf85f1660f90f6d26c59865bce2e78ecf56cd82c88b22",
+    "bytes": 92,
+    "exact_body_utf8": "La fe de erratas de 1962 prescribe\nexplícitamente la hipótesis «$f$ propio y separable».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "df086ace48701825c40526c24f8644a452d17363dc98c0fecdb60bdd175ff3cd",
+    "bytes": 164,
+    "exact_body_utf8": "The printed text has $f_{*}(\\xi^{m,m})$. Since\r\n$\\xi^{m,m}\\in H^{m}(X,\\Omega_X^{m})$ and both sides belong to\r\n$H^{m}(Y,\\Omega_Y^{m})$, the required map is $f^{*}$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "df14f5bb124f9233aa9aa1fff89ac28112653c47a75c451fda1225a3c291194e",
+    "bytes": 137,
+    "exact_body_utf8": "Bản in ghi $E(A)$; trong nhánh hiện hành, đối tượng\nbiểu diễn là $A/J$, và đẳng thức cần cho (3.7) là $E(A/J)$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e00bebb6df9c119131ed3a7f1a63f4524baa40e682a6688144f9351dd721a40d",
+    "bytes": 141,
+    "exact_body_utf8": "El texto impreso dice $E(A)$; en la categoría considerada, el objeto\nrepresentante es $A/J$, y la igualdad requerida para (3.7) es $E(A/J)$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e0eb40b66652a774fd476f92a54455a17ef5001c00c5d2e0693d1d75048d1899",
+    "bytes": 153,
+    "exact_body_utf8": "1962년 정오표는 D. 멈퍼드가 여기서 전개한\n피카르 스킴 이론을 이용하여 이 문제를 긍정적으로 해결했다고 전한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e1cc8973c72fd4e63e5dd9c053eea8d6d4e3687a03f9f2ea07e6389cf99e7761",
+    "bytes": 271,
+    "exact_body_utf8": "O francês mantido traz no singular «la fibre spéciale et\ngénérique». Os testemunhos inglês “the special and generic fibers” e espanhol\n«las fibras especial y genérica» exigem o plural; o ramo corrente usa «as\nfibras» e o diplomático preserva «a fibra».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e1d74cebf5a6ad68783c9780457118b1621a265d928d66b2711c3329733a04ee",
+    "bytes": 132,
+    "exact_body_utf8": "인쇄본에는 $\\Osh_P(r+r')$로 되어\n있으나, 두 인자 $\\Osh_P(m)$과 $\\Osh_P(m')$에 따라\n$\\Osh_P(m+m')$이어야 한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e292d26aeb8250875e540fcefb7420e1a86a62cac56d1bbc122fef364d8d66f0",
+    "bytes": 147,
+    "exact_body_utf8": "1962년 정오표는 이 문제가\n긍정적으로 해결되었다고 알리며 다음 강연의 주석 마지막 문단을 참조하도록\n한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e2ec0869701420819c5f686969d1dc6fbfbaf01fdea147d358de58304ed8f92e",
+    "bytes": 158,
+    "exact_body_utf8": "인쇄본에는\n``Or l'hypothèse ...''라고 되어 있으나, 이에 연결된 정오표 303쪽은\n``Or, de l'hypothèse ...''로 고치도록 규정한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e30bb614f87af5ba9ffd9ef2583d4f48206fd61bd315f24548cc4270b8095f14",
+    "bytes": 315,
+    "exact_body_utf8": "1962 年勘误说明，射影情形已由 Hilbert 概形（TDTE IV）\n完全解决；而 Nagata 与 Hironaka 的例子表明，在没有射影性假设时，这些函子\n可能不可表，哪怕只考察一个三维非奇异完备簇的零维子簇也是如此；这一现象与\n对称平方可能不存在有关。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e38da0edcc674e5faa775fcabd984529fd4f3ba7b093c308a4d6d807aed6458e",
+    "bytes": 176,
+    "exact_body_utf8": "원문에는 근방 조건이 명시되어 있지 않다. 여기서는 따름정리2의 국소적 결론을 적용하며, 명제2의 증명에서도 이 결론을 사용한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e42fa51cc7a42b1e0a25b06576046af1a37da26ed33d146edd1b63291d84010a",
+    "bytes": 224,
+    "exact_body_utf8": "印刷文本为\n$P\\neq Q$；1962年的勘误规定应为 $P<Q$，随后把“$P=Q$”的情形替换为\n相反情形，即当 $n$ 足够大时 $P(n)\\geq Q(n)$，并把 (*) 中的严格\n不等式替换为非严格不等式。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e4f51f0b16a3c6cfc896eeda2724dbc54191fe3d3c9b9f830b2b2df096a30b09",
+    "bytes": 135,
+    "exact_body_utf8": "Văn bản in đảo thương thành $N_r/N_{r+1}$, điều này\nkhông tương thích với lọc tăng vừa được định nghĩa.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e58b914bfa6acb41d05508d35a0637c9a21e0e1319025a8b6e8b5a903e452af8",
+    "bytes": 167,
+    "exact_body_utf8": "Bản in ghi $\\varphi_{n^h}$; đối với $x\\in G^\\rho$, định\r\nnghĩa ở tr.~223 cho một lũy thừa của số mũ đặc trưng $p$ đưa $x$ vào\r\n$G^\\circ$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e6b5ab39114d92df190593ed77d6ad297f85a2da7c839b17278eef3d449c8cc4",
+    "bytes": 131,
+    "exact_body_utf8": "O texto impresso\ntraz «$f:X\\longrightarrow Y$», embora tanto o pré-esquema de Picard quanto a\nfunção seguinte tenham base $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e6f69b39cbd6c4045f3dccf27fa17614fb1d6c5f6eb151e3acd7315eac1a425f",
+    "bytes": 126,
+    "exact_body_utf8": "인쇄본에는 ``$x\\in X$''라고\n되어 있으나, $\\varphi_n$은 피카르 준스킴의 거듭제곱 자기준동형이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e743b7666d2fb5734aae2beb91e1232e43c9306f95212484318752d6cf56460c",
+    "bytes": 190,
+    "exact_body_utf8": "인쇄된 식은 $G_x$를 완비된 항과 직접 동일시하고\n$\\mathcal O'_{0x}$ 위의 모자를 빠뜨렸다. 이 포함관계와 완비화는 1962년\n정오표가 규정한 것이다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e8ba7ea5c392c63d880bca13593e701fce568cf584e3142a4d4a540bc39d5c87",
+    "bytes": 157,
+    "exact_body_utf8": "La fe de erratas de 1962 informa de que esta cuestión\ntiene respuesta afirmativa y remite al último párrafo de los Comentarios a la\nexposición siguiente.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e912043c67ee459ae282be383f9b29a21cd5e90fddfc348fe7f3230bda65f29e",
+    "bytes": 40,
+    "exact_body_utf8": "Xem phần bổ sung ở cuối\nexposé.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e919129e9a8adb06352e2fd2855f200d4dabc93c75f830f71f47942e7ad80ac7",
+    "bytes": 127,
+    "exact_body_utf8": "The printed text omits the prime on the\r\nsecond $X'$; the morphism to $Y'$ is the one in the Stein factorization of\r\n$X'\\to Y$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e926e1cf0e822ea78182261d68e2faaf9641401232b6ff972d42454ea38289a9",
+    "bytes": 429,
+    "exact_body_utf8": "1962년의 정오표에\n따르면 사영인 경우는 힐베르트 스킴(TDTE IV)에 의해 완전히 해결된다.\n반면 나가타와 히로나카의 예들은 사영성 가정이 없으면 비특이 완비\n3차원 다양체의 0차원 부분다양체에 대해서조차 이러한 함자들이 표현\n가능하지 않을 수 있음을 보여 준다. 이 현상은 대칭제곱이 존재하지 않을\n가능성과 관련된다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "e9a661b76d86108efd631ee183128e903b8b92f3e5aa8d22efd84d0a0e48c7df",
+    "bytes": 202,
+    "exact_body_utf8": "인쇄본에는\n「계수(階數) $n$」이라고 되어 있다. 최고차 형식의 두 가군은 계수(階數)\n$1$이며, 이는 아래의 $\\bigwedge^{p}(J/J^{2})$와의 동일시에도 필요하다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ea34b8b9d7418a5ece8738678c002961752d5948473b93c02e03d0e4bd4d4d62",
+    "bytes": 114,
+    "exact_body_utf8": "印刷文本此处以一个未定义的\n$n$ 代替指数 $s$；$s$ 是满射到 $\\mathcal F$ 的自由层之秩。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ea91459d0cffb8d2bf309237a1dd2c6f38ed4469dd36fb11c7f88fa933b5245c",
+    "bytes": 195,
+    "exact_body_utf8": "기저변환 뒤에 나오는 이 조건의\n여섯 곳에서 인쇄본은 잘못하여 $S$ 또는 $X$를 그대로 두었지만, 그 족은\n$X'=X\\times_SS'$ 위에서 $S'$에 대하여 놓인다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ea9386fe1d6d4d285891ae94cc64319e938af6a16f14f6c35447730c2cee07ff",
+    "bytes": 218,
+    "exact_body_utf8": "The printed text omits ``non'' before\r\n``strict''. In the category under consideration fiber products exist, and the\r\npreceding paragraph establishes precisely the equivalence between effectivity\r\nand strict epimorphy.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "eadcc5177b194cb743137a066e94810503b57f98322c9c33370bd97927669f4c",
+    "bytes": 193,
+    "exact_body_utf8": "인쇄본에는 여기에서 ``$y\\in Y$''라고 되어 있고 이 문단\n끝에서도 다시 $Y$를 쓴다. 고려하는 사상이 $X\\longrightarrow S$이므로 두\n곳 모두 $S$로 읽는다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "eae4f51a9c3a7b77eb89684de9708e7861b03464f70cc158d8c7ef9c92676e94",
+    "bytes": 82,
+    "exact_body_utf8": "印刷文本作“设：\n$X\\longrightarrow S$”；下文所用的态射是 $f$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "eb92c29edaad0fe4ae7b4866c7b6e253efb815149f407477b6185b89c4c8ed87",
+    "bytes": 135,
+    "exact_body_utf8": "El texto impreso omite aquí el exponente $N$; la restricción a la fibra conserva la potencia directa de rango $N$ del haz precedente.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ebbf67822562c233aefa1a62203a41cff0ea4b88d8243d571776795a4aa3f48d",
+    "bytes": 192,
+    "exact_body_utf8": "La fe de erratas de 1962 precisa que esta definición de «liso sobre\n$\\Lambda$» solo es correcta cuando la extensión residual $k'/k$ es separable;\nen el caso general, remite a SGA III, 1.1.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ebc627fac2ced55e14a749aa1dd71ce9b9c4cdd8884842059c103bfb4c8e2fb1",
+    "bytes": 95,
+    "exact_body_utf8": "El texto impreso dice aquí « $S$ es normal »; el párrafo\nsolo se refiere a la variedad $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ebce595fe10a81f85de68f928a2b2513767d5abe2121a5941f11dc1aa9147912",
+    "bytes": 214,
+    "exact_body_utf8": "La letra final aparece impresa como\n«$X$», pero la condición inmediatamente anterior concierne a la planitud de\n$\\mathcal O_X/(\\mathcal I_1+\\mathcal I_2)$ sobre $S$ y, por tanto, define $Z$\ncomo plano sobre $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ecdd9d24aabcb334191b73d5890a048a512acb15aaa1e6355d85d6685f3a68e7",
+    "bytes": 599,
+    "exact_body_utf8": "Bản đính chính năm 1962 bổ sung rằng Mumford vừa xây dựng một thành\nphần bất khả quy của lược đồ Hilbert của $\\mathbf P^3_{\\mathbf C}$; các điểm\ntổng quát của thành phần này biểu diễn những đường cong không kỳ dị bậc 14 và\ngiống 24, nhưng chính thành phần ấy không rút gọn tại điểm tổng quát. Phép\nthổi lên dọc theo một trong các đường cong này còn cho một lược đồ xạ ảnh chính\nquy chiều 3 mà lược đồ moduli hình thức của nó không rút gọn tại điểm tổng\nquát.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "edd4774f0650d99efa761dd1d6610fcbf400d1c4277d469718c0481185ab8984",
+    "bytes": 146,
+    "exact_body_utf8": "The printed text places $\\mathcal O_X$ under\r\n$\\operatorname{Hom}$; since $\\mathcal Q$ is a Module on $S$, its dual is taken\r\nover $\\mathcal O_S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ee70ffabe6400acdb7239e4af4a4096b65eb53fcdada3649523ac5642d897168",
+    "bytes": 237,
+    "exact_body_utf8": "Văn bản in bỏ từ «không» trước «chặt». Trong phạm\ntrù đang xét, các tích thớ tồn tại, và đoạn trước xác lập chính xác sự tương\nđương giữa tính hữu hiệu và tính toàn cấu chặt.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ee9c0b4298ea27a2b21970c10c6276e049bd98d592a79b5294737a3b9284cd07",
+    "bytes": 143,
+    "exact_body_utf8": "Bản in ghi «từ đường thẳng afin». Bản đính chính liên kết,\r\ntr.~303, quy định «đường thẳng afin khuyết gốc».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "eec840fb94faff8129fa081bba173563750759edad36d35cf6cec5df1ae1165f",
+    "bytes": 153,
+    "exact_body_utf8": "El texto impreso no precisa el entorno. Se restituye aquí el alcance local del corolario 2, utilizado también en la demostración de la proposición 2.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f01c914182a3d5b8e5d994643d70493fde3eb44168b9401a43b3fa26d98c7f02",
+    "bytes": 79,
+    "exact_body_utf8": "HARTSHORNE\n(R.). --- Connectedness of the Hilbert scheme (Tese, Harvard, 1962).",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f0ac41f3ee68082cb7a58cdddb671cbe1fde4b5511ca6c81e8529655b3bd91b6",
+    "bytes": 221,
+    "exact_body_utf8": "Bản in đưa ra một công thức thứ hai\n``(5.3)'' ở trang 182 và tại đây dẫn chiếu đến công thức ấy; ký hiệu\n``(5.3 bis)'' phân biệt công thức này với công thức (5.3) thứ nhất.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f13f27df67fabdec812314ae27606c8850795322dbdac06d29428d0ad298f5a1",
+    "bytes": 124,
+    "exact_body_utf8": "El texto impreso dice «$g(y')=x'$». La sección\nconstruida en la frase anterior, cuya fibra genérica se calcula, es $g'$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f1502533aa7fc10f36ffbccd5f8ff6a266597a53b6faea38fa8b5431e824276f",
+    "bytes": 76,
+    "exact_body_utf8": "印刷文本作“与 $u$”；方程 (2.1) 要求此处\n为“与 $d$”。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f1b1ecf1e8e3f8e0249c905d9b365200a6b7b8e316460543254a58ad3afc5a9f",
+    "bytes": 76,
+    "exact_body_utf8": "O texto impresso traz aqui $X_0$;\nsomente $X$ está definido nesta passagem.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f1d7b1981bb6665571c083aad3c1d2a7fc6c227604d0d7887da8f47007528381",
+    "bytes": 88,
+    "exact_body_utf8": "The printed text\r\nreads “Let: $X\\longrightarrow S$”; the morphism used below is $f$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f2446808e8cdc046129645dfab8baed29c62dfd82398036971013f9f5ecadd72",
+    "bytes": 108,
+    "exact_body_utf8": "印刷文本作\n$\\operatorname{Pic}_{X/S}^\\circ$，但在这一关于域 $k$ 的陈述中并未出现\n$S$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f262c9b55cf6fd8f929f1adca3882e5a0bd551a447974cc9cd1f0bc75e68acd7",
+    "bytes": 212,
+    "exact_body_utf8": "인쇄본에는 ``$p$와 서로소''라고 되어 있다.\n$n$으로 양화된 이 명제에서 에탈성 판정법과 핵 ${}_nG$를 이용하는 논증은\n잉여표수가 $n$과 서로소일 것을 요구한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f2ba4d52058d1ddf630bcd19ce79938418c6b480cbd85b22d33e2eda8d24513f",
+    "bytes": 172,
+    "exact_body_utf8": "El texto impreso da \\texttt{pr\\_1}. Puesto que los dos\nmorfismos tienen codominio $X$, el primero de ellos debe ser\n\\texttt{pr\\_2}; se corrige aquí la errata tipográfica.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f2c68daf39c165b5fa7c97c1dfa2a2c9a710d25418e2290d85ae69f4a5cd3bbf",
+    "bytes": 107,
+    "exact_body_utf8": "O texto\nimpresso emprega um sinal de união; a estrutura graduada é a soma direta\ndos feixes $\\Omega_X^p$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f2e3c92ae22656f4f039cbca262f8d012f013e66b1bb82ee7e5dc68369128ac8",
+    "bytes": 140,
+    "exact_body_utf8": "El texto impreso dice «$Q$». El subconjunto\nintroducido en el enunciado, cuya cuasicompacidad expresa la acotación de la\nfamilia, es $E$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f3ec11d23648bbcf212c0638c1d829d152a0f68e2c3b94336e3f17d47530900a",
+    "bytes": 97,
+    "exact_body_utf8": "O texto impresso traz aqui «sobre $S$»; a fatorialidade invocada é\na dos anéis locais de $X$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f514254ad42f1eb853b4b90638eb945459a45b6b11ded4c7ac0a21aa2115644d",
+    "bytes": 188,
+    "exact_body_utf8": "The printed text has “$y\\in Y$” here and uses $Y$ again at\r\nthe end of the paragraph. Since the morphism under consideration is\r\n$X\\longrightarrow S$, both occurrences are read as $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f5417046f62150fe8169f8add0ff71df4609d8530f25b6d2803e55d506d91083",
+    "bytes": 86,
+    "exact_body_utf8": "印刷文本作“(1.7)”；$p$ 的出现及前一句均要求此处为“(1.8)”。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f55f078b8a193c8a8b6b76fa825edeed552f353ea7ba924e56e335f1f2fb15c2",
+    "bytes": 713,
+    "exact_body_utf8": "La fe de erratas de 1962 responde negativamente: un morfismo\n$S'\\longrightarrow S$ cuasifinito, étale y sobreyectivo, o un morfismo\n$\\operatorname{Spec}(\\widehat A)\\longrightarrow\\operatorname{Spec}(A)$, no es\nsiempre un morfismo de descenso estricto, incluso si $A$ es el anillo local de\nuna curva algebraica sobre un cuerpo algebraicamente cerrado $k$ y\n$S=\\operatorname{Spec}(A)$. Se puede encontrar así un morfismo propio y liso\n$f:X\\longrightarrow S$, que hace de $X$ un fibrado principal de base $S$ bajo\nuna curva elíptica $E$, tal que $f':X'\\longrightarrow S'$ sea proyectivo, pero\n$f$ no lo sea. Por tanto, también es un ejemplo de fibrado principal homogéneo\nno isotrivial bajo un esquema abeliano.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f669496d098f4e1d7b4d7e7010f447372385b0fe0aacc194b35090a8fb7480a0",
+    "bytes": 231,
+    "exact_body_utf8": "인쇄된\n본문에는 ``비분리 피복''이라고 되어 있다. 그러나 이 문단은 비분기\n피복들의 범주 $R(X)$와 연속적인 $\\pi_1(X,a)$-작용을 갖는 유한집합들의\n범주 사이의 동치를 다룬다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f66b8c061542016f01ca9264f7b605b55cfe12a18aecf691c408a6eecb5ffe60",
+    "bytes": 131,
+    "exact_body_utf8": "1962年的勘误指出，本注记开头提出的存在性猜想是错误的，\n但 Mumford 的方法给出一个稍弱的定理。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f6c508a22dba5bd1158ae15aa47a1bc35ac21596f13081adc0a43c2823ddd810",
+    "bytes": 198,
+    "exact_body_utf8": "1962년 정오표는 ``$\\Lambda$ 위에서 매끄럽다''는 이 정의가 잉여\n확대 $k'/k$가 분리일 때에만 옳다고 명시하며, 일반적인 경우에는 SGA III,\n1.1을 참조한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f6e40c9d0e5eac04f4e27e9822734b41b184c1df0cd1c4b0583e37b9170712eb",
+    "bytes": 214,
+    "exact_body_utf8": "La rama diplomática conserva la fórmula impresa\n$f_{*}(\\xi^{m,m})$; la rama actual la corrige a $f^{*}(\\xi^{m,m})$, pues\n$\\xi^{m,m}\\in H^{m}(X,\\Omega_X^{m})$ y ambos miembros pertenecen a\n$H^{m}(Y,\\Omega_Y^{m})$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f6f1ff136653f94517b08d07b69f3a68ae4b58e79556a37fd3c8e2ef6bffcd23",
+    "bytes": 219,
+    "exact_body_utf8": "The linked erratum to Exposé 212 states\r\nthat this conjecture is definitively false. It also reports that the positive\r\nfact in Remark 8.1 was subsequently proved and refers to Mumford's theorem and\r\nlater refinements.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f6f43a3437ebd2462b39b78ff64c39543e1209a9ce0717a21db3a8b5619b2054",
+    "bytes": 362,
+    "exact_body_utf8": "1962 年勘误补充说，Mumford 当时刚刚构造出\n$\\mathbf P^3_{\\mathbf C}$ 的 Hilbert 概形的一个不可约分支，其一般点\n表示次数为 14、亏格为 24 的非奇异曲线，而该分支在其一般点处\n非约化；沿其中一条曲线作爆破，还可得到一个三维正则射影概形，其\n形式模概形在一般点处非约化。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f6fec7bb8c70be9d1a7c59869082f8014704d933347a4318a8ef41f0b5c11e66",
+    "bytes": 104,
+    "exact_body_utf8": "The printed text reads “(1.7)”; the presence\r\nof $p$ and the preceding sentence require “(1.8).”",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f780d6fb26a6107444900eec258b0d086614d284b08a37916432b4def9653df7",
+    "bytes": 158,
+    "exact_body_utf8": "1962年的勘误指出，这个\\fquote{在 $\\Lambda$ 上光滑}的定义只有\n在剩余扩张 $k'/k$ 可分时才正确；一般情形参见 SGA III，1.1。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f84219d46aa2fb64230201ba1fdb38ede5393509b70a06d7ed14fb388c377892",
+    "bytes": 74,
+    "exact_body_utf8": "印刷文本作 $X[t]$；相应勘误第~303 页规定为\n$X[t,t^{-1}]$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "f8b0697fb2ecca5ab353043c73f079611d7b66bf155c822f050fe84e021c2bd3",
+    "bytes": 251,
+    "exact_body_utf8": "El texto impreso intercambia\nlas dos últimas correspondencias: asigna a $G^\\sigma$ la componente\n$p$-primaria y a $G^\\rho$ su complemento primo con $p$. Las definiciones\nprecedentes de $G^\\sigma$ y $G^\\rho$ obligan al orden corregido que se da aquí.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "fa20c581348f7c7f406a7fcd9affab3f12622191eb1ac2ef835c76524b818345",
+    "bytes": 136,
+    "exact_body_utf8": "Văn bản in ghi «bậc $r$»; lọc\n$\\mathcal F_{(r)}$ được định nghĩa bằng chiều của giá, không phải bằng bậc.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "fa34cc67d3787d3f15efc7fa470114d1078de3c6014470cfb6af069495438534",
+    "bytes": 110,
+    "exact_body_utf8": "The printed text reads “$x\\in X$.”\r\nThe map $\\varphi_n$ is the power endomorphism of the Picard prescheme.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "fa3ccbdcb26993fdf414da3881e3c45b431a783b065bfc3b65f89b15298974e8",
+    "bytes": 136,
+    "exact_body_utf8": "Bản in ghi ``$Y$''; ở đây không có cơ sở $Y$ nào được định nghĩa,\nvà điều kiện đang nói đến cơ sở $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "faee375b53e4f92befdd5cc1e650552471782e7f39e09097fb782867eb660b20",
+    "bytes": 154,
+    "exact_body_utf8": "인쇄본에는\n``$k$-intersections''라고 되어 있다. 이 조건은 기저에 관한 것이므로 여기서는 기저변환된 $S'$를 써야 한다.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "faf3260610b849c75b1dba4e83f8159db96697e376b6401093fe524f45030fa2",
+    "bytes": 220,
+    "exact_body_utf8": "The printed text has\r\n$P\\neq Q$; the 1962 erratum prescribes $P<Q$, replaces the “$P=Q$” case by\r\nthe complementary case $P(n)\\geq Q(n)$ for large $n$, and replaces the strict\r\ninequalities in (*) by non-strict ones.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "fb25ef835cfe78384d6853cb57dbf2d038059dcb7accde8714938aa814e40920",
+    "bytes": 178,
+    "exact_body_utf8": "A errata de 1962 esclarece que esta definição de «liso sobre\n$\\Lambda$» só é correta quando a extensão residual $k'/k$ é separável;\nno caso geral, remete a SGA III, 1.1.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "fb733d1c141dd787e02fe0dcf61b15aa1c245657b3401d7da2ed8e18421d5630",
+    "bytes": 190,
+    "exact_body_utf8": "O texto impresso traz «prima com $p$». Nesta proposição\nquantificada por $n$, o critério de etalidade e o argumento pelos núcleos\n${}_nG$ exigem característica residual prima com $n$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "fbfc35e25ef7aa78ad8078bfa03c11d043f8310faa99222ba89c29e7f4dde95e",
+    "bytes": 110,
+    "exact_body_utf8": "Bản in ghi « (1.7) »; sự\nxuất hiện của $p$ và câu trước buộc phải đọc là « (1.8) ».",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "fc97671f14c9514fbb0a3dddf9e1b92f4272cd89e665ac22fca29d65a5149707",
+    "bytes": 223,
+    "exact_body_utf8": "El texto impreso dice «de $\\mathcal A'$». Los\ndominios de $T^{(1)}$ y $T^{(2)}$, así como el apareamiento\n$F'_1\\times F'_2\\longrightarrow F'_3$, obligan a que $x$ e $y$ sean secciones\nde $F'_1$ y $F'_2$, respectivamente.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "fcc61066fccb86ce720520d4bba088bae8a241b765c1f787b37c7130c912bca5",
+    "bytes": 166,
+    "exact_body_utf8": "The printed text says\r\n“rank $n$.” Both modules of top-degree forms have rank $1$, as is also required\r\nby the identification with $\\bigwedge^{p}(J/J^{2})$ below.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "fd9590c0fcedc232040edaac9484be5b932b52fc9366186c9d0c653e619f3f29",
+    "bytes": 106,
+    "exact_body_utf8": "O texto impresso diz «$Y$»; aqui não se definiu\nnenhuma base $Y$, e a condição se refere à base $S$.",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "fe4cfef5c262b2b4d1926df45643aa351e8ac0d07b6d57ec459069d9c3fc9c24",
+    "bytes": 125,
+    "exact_body_utf8": "印刷文本作 $B\\otimes_V A$。由于 $B$ 是\n$V$-概形，而命题所讨论的是它的泛纤维，基因子必为 $K$。",
+    "body_withheld_for_sanitization": false
+  },
+  {
+    "body_sha256": "ff3c60026e3a29b01717cd654073071cf559f8288818e1c3b6516367396c583a",
+    "bytes": 63,
+    "exact_body_utf8": "Para um estudo mais\ncompleto, a errata de 1962 remete a TDTE V.",
+    "body_withheld_for_sanitization": false
+  }
+]

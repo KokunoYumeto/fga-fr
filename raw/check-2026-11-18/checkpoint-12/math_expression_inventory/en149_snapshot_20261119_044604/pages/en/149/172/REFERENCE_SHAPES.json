@@ -1,0 +1,132 @@
+{
+  "french": [
+    {
+      "id": "fr:149:S00010",
+      "layer": "fr",
+      "unit": "149",
+      "file": "sources/fr/fr/149.tex",
+      "raw_sha256": "46eb1d6ff3fd5c4aef045d2570c668972f095d4abb5ffd2049579d1ad65ebc6d",
+      "token_sha256": "81187f370b11f5e7f352f67a4e797165debfa7c634dac7b0dd97a86d87b92e80",
+      "raw_text": "(2.2)",
+      "classification": "literal_reference_shaped_candidate_only",
+      "byte_start": 9852,
+      "byte_end_exclusive": 9857,
+      "line_start": 172,
+      "line_end": 172,
+      "page": "172",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "172"
+      ]
+    },
+    {
+      "id": "fr:149:S00011",
+      "layer": "fr",
+      "unit": "149",
+      "file": "sources/fr/fr/149.tex",
+      "raw_sha256": "46eb1d6ff3fd5c4aef045d2570c668972f095d4abb5ffd2049579d1ad65ebc6d",
+      "token_sha256": "81187f370b11f5e7f352f67a4e797165debfa7c634dac7b0dd97a86d87b92e80",
+      "raw_text": "(2.2)",
+      "classification": "literal_reference_shaped_candidate_only",
+      "byte_start": 10541,
+      "byte_end_exclusive": 10546,
+      "line_start": 187,
+      "line_end": 187,
+      "page": "172",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "172"
+      ]
+    },
+    {
+      "id": "fr:149:S00012",
+      "layer": "fr",
+      "unit": "149",
+      "file": "sources/fr/fr/149.tex",
+      "raw_sha256": "156b7dcd8d2075d17ab7901cd62241977dda43d3858e6a00cfcdaee7b48ba9fc",
+      "token_sha256": "094e412f57c26d22d157de2a09d2cce881e1573089c0c8c3df225e4114ba65e2",
+      "raw_text": "(1.8)",
+      "classification": "literal_reference_shaped_candidate_only",
+      "byte_start": 12078,
+      "byte_end_exclusive": 12083,
+      "line_start": 214,
+      "line_end": 214,
+      "page": "172",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "172"
+      ]
+    }
+  ],
+  "translation": [
+    {
+      "id": "en:149:S00012",
+      "layer": "en",
+      "unit": "149",
+      "file": "sources/en/en/149.tex",
+      "raw_sha256": "46eb1d6ff3fd5c4aef045d2570c668972f095d4abb5ffd2049579d1ad65ebc6d",
+      "token_sha256": "81187f370b11f5e7f352f67a4e797165debfa7c634dac7b0dd97a86d87b92e80",
+      "raw_text": "(2.2)",
+      "classification": "literal_reference_shaped_candidate_only",
+      "byte_start": 8395,
+      "byte_end_exclusive": 8400,
+      "line_start": 185,
+      "line_end": 185,
+      "page": "172",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "172"
+      ]
+    },
+    {
+      "id": "en:149:S00013",
+      "layer": "en",
+      "unit": "149",
+      "file": "sources/en/en/149.tex",
+      "raw_sha256": "46eb1d6ff3fd5c4aef045d2570c668972f095d4abb5ffd2049579d1ad65ebc6d",
+      "token_sha256": "81187f370b11f5e7f352f67a4e797165debfa7c634dac7b0dd97a86d87b92e80",
+      "raw_text": "(2.2)",
+      "classification": "literal_reference_shaped_candidate_only",
+      "byte_start": 8992,
+      "byte_end_exclusive": 8997,
+      "line_start": 201,
+      "line_end": 201,
+      "page": "172",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "172"
+      ]
+    },
+    {
+      "id": "en:149:S00014",
+      "layer": "en",
+      "unit": "149",
+      "file": "sources/en/en/149.tex",
+      "raw_sha256": "156b7dcd8d2075d17ab7901cd62241977dda43d3858e6a00cfcdaee7b48ba9fc",
+      "token_sha256": "094e412f57c26d22d157de2a09d2cce881e1573089c0c8c3df225e4114ba65e2",
+      "raw_text": "(1.8)",
+      "classification": "literal_reference_shaped_candidate_only",
+      "byte_start": 10348,
+      "byte_end_exclusive": 10353,
+      "line_start": 228,
+      "line_end": 228,
+      "page": "172",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "172"
+      ]
+    }
+  ]
+}

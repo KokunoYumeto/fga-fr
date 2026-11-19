@@ -1,0 +1,16 @@
+{
+  "script": "scripts/repair_en_ulem.py",
+  "script_sha256": "c732b85d643806cd39055c7b93f986f409557ed1496e4372eca35f26a31eb659",
+  "target": "sources/en/tex/base.tex",
+  "captured_target_sha256": "e73a88ba4bff1b3f85d5912e94b7eee8306b6c00d7815a33e47893cbae63f5c4",
+  "preimage": "\\usepackage{microtype}\n\\usepackage{graphicx}\n",
+  "postimage": "\\usepackage{microtype}\n\\usepackage[normalem]{ulem}\n\\usepackage{graphicx}\n",
+  "preimage_count_in_capture": 1,
+  "postimage_previously_absent": true,
+  "inverse_text_check": true,
+  "replacement_removes_its_preimage": true,
+  "newline_style_preserved_by_audit_utils": "CRLF",
+  "record_kind": "typesetting",
+  "record_confidence": "low",
+  "applied_by_support": false
+}

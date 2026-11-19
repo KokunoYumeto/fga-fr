@@ -1,0 +1,32 @@
+from audit_utils import *
+from collections import Counter
+import csv
+for tree,layer in [('fr_printed','French as printed'),('fr','French corrected')]:
+    rel=f'sources/{tree}/fr/232.tex'
+    def r(a,b,line,why,kind='reading',count=1):
+        replace(rel,a,b,layer,'232-151',line,'4, relative Cartier criterion',
+                'Scan leaf 10 at 400 dpi and enlarged top, middle and bottom crops: '+why,kind=kind,count=count)
+    r("l'ensemble quotient\n\\[\n\\Gamma(X,\\mathcal L)^*/\\Gamma(X,\\mathcal O_X^*),\n\\]\noù", "l'ensemble quotient $\\Gamma(X,\\mathcal L)^*/\\Gamma(X,\\mathcal O_X^*)$, où",'opening quotient','The quotient is inline, followed by a comma.','structure')
+    r(r'\mathcal J',r'\mathfrak J','four ideal letters','The ideal is Gothic J, including the two stalks.',count=4)
+    r(r'\longrightarrow',r'\to','three arrows','The three arrows are short.',count=3)
+    r('i.e.','i. e.','two abbreviations','The initials are spaced.',count=2)
+    r('et $D$ est plat sur $S$ en $x$ ;','et $D$ est plat sur $S$ en $x$.','condition (i)','The item ends with a full stop.')
+    r('sur la fibre $X_s$ en le point $x$ ;','sur la fibre $X_s$ en le point $x$.','condition (ii)','The item ends with a full stop.')
+    r(r'\emph{diviseur de Cartier relatif}',r'\uline{diviseur de Cartier relatif}','definition','The term is straight underlined.')
+    r('sur $X/S$ (ou','sur $X/S$, (ou','definition punctuation','There is a comma before the parenthesis.')
+    r('Considérons alors\n','Considérons alors,\n','divisor functor introduction','A comma follows alors.')
+    r(r'\operatorname{Div}_{X/S}',r'\text{\uwave{Div}}_{X/S}','three divisor functor names','The functor name has a wavy underline.',count=3)
+    r(r'foncteur $\operatorname{Hilb}_{X/S}$ défini',r'foncteur $\text{\uwave{Hilb}}_{X/S}$ défini','Hilbert functor in prose','This name is wavy underlined. The last displayed Hilb is unmarked in the print and is deliberately retained.')
+    r('« représentable par des immersions ouvertes » (cf.',"``représentable par des immersions ouvertes'', (cf.",'representability sentence','The print has ordinary double quotes and a comma before the parenthesis.')
+    if tree=='fr':
+        r('et $D$ est plat sur $S$ en $x$.','et $X$ et $D$ sont plats sur $S$ en $x$.','condition (i)','The quantifier is x in X, not only x in D. For S=Spec k[t], X=Spec k at t=0 and the empty divisor, J=O_X is invertible and O_D=0 is flat, but X is not flat, so printed (i) does not imply (ii). Add the same ambient flatness as in (ii)-(iii), retaining the printed scope x in X. At points of D alone the standard local criterion already implies ambient flatness; that narrower alternative is recorded, not silently assumed.','misprint of the original')
+    upright_page(rel,layer,'232-151')
+event('232-4-relative-Cartier-criterion','refuted, with the refined statement\'s id','For the printed arbitrary x in X, (i) fails to imply (ii): take S=Spec k[t], X=Spec k at t=0, D empty, J=O_X. The generator 1 is regular and the zero module O_D is flat, but X is not flat. If flatness at x is reserved for x in D, (i) is instead undefined outside D, whereas (ii)-(iii) make sense there. Refined statement 232-4-relative-Cartier-criterion-refined adds X flat at x to (i), matching the scope and the other two conditions. Restricting x to D would also repair the equivalence, but would alter its stated point scope.','232, p. 151, conditions (i)-(iii)')
+event('232-4-relative-Cartier-criterion-refined','targeted proof check','Write R=O_S,s, A=O_X,x, J for the ideal and B=A/J. For refined (i), A and B are R-flat, so tensoring 0 to J to A to B to 0 with the residue field preserves injectivity; a generator of the invertible J therefore remains regular in the fibre. For (ii), flatness identifies J tensor k with the fibre ideal; lift a regular generator, and Nakayama gives J=fA. Fibrewise regularity with A flat gives regularity of f and flatness of A/(f) by the local flatness criterion, also proving (iii) to (i). Away from D, f is a unit and ambient flatness is exactly the remaining condition. The local flatness criterion is the named background algebra input.','232, p. 151, conditions (i)-(iii)')
+event('232-4-regular-sections-quotient','independent re-proof','The preceding ideal/regular-section construction identifies divisors defining a fixed invertible sheaf L with regular sections modulo automorphisms of L. These automorphisms are exactly multiplication by Gamma(X,O_X units), so the printed quotient is correct, including the different positions of its two stars.','232, p. 151, opening inline quotient')
+event('232-4-Cartier-open-and-base-change','targeted proof check','For a flat family with flat closed subscheme D, local freeness of the coherent ideal is open. The failure locus is closed and contained in D; properness of D makes its image closed in S, giving the claimed open set of fibres. Arbitrary base change preserves the exact ideal sequence because O_D is S-flat; the pulled-back invertible ideal remains injective and defines the pulled-back relative divisor. Applying this to the universal flat proper Hilbert family identifies the divisor locus with an open subfunctor. For non-Noetherian test bases the same conclusion uses finite-presentation descent/limit arguments, carried as background.','232, p. 151, definition and last two paragraphs')
+with (ROOT/'CORRECTIONS.tsv').open(newline='') as f:
+    c=Counter((x['layer'],x['kind']) for x in csv.DictReader(f,delimiter='\t') if x['printed_page']=='232-151')
+record_page('232',151,'Compared both French layers, entry lines 412-462, with scan leaf 10 at 400 dpi and three enlarged bands. Read the regular-section quotient, all three local Cartier conditions, the relative definition, openness and base-change assertions, and the inclusion in the Hilbert functor.\n\nRestored the inline quotient, Gothic ideal letters, short arrows, punctuation, exact definition emphasis and wavy functor names. Preserved the locally unmarked Hilb in the final display. The printed condition (i) omits ambient flatness although x ranges through all of X; recorded the empty-divisor counterexample and added X flat at x only in corrected French. Checked the refined equivalence with its local-flatness input, the quotient by units, base change, and openness.\n\nOperation counts: '+'; '.join(f'{a}, {b}: {n}' for (a,b),n in sorted(c.items()))+'. Final row verdicts remain pending.')
+from update_record_counts import update
+update()

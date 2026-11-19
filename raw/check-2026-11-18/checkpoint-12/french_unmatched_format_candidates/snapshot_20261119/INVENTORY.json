@@ -1,0 +1,33 @@
+{
+  "started_utc": "2026-11-19T05:01:08.592877+00:00",
+  "captured_current_inputs_utc": "2026-11-19T05:01:08.968875+00:00",
+  "completed_utc": "2026-11-19T05:01:10.773062+00:00",
+  "capture_attempt": 1,
+  "hunk_snapshot_utc": "2026-11-19T04:46:04.787397+00:00",
+  "hunk_orientation": "fr_to_fr_printed",
+  "hunk_input_sha256": "b5483f3df496f8099e29b88da608d24be25fe73fab369b12403e1ac3d99b6021",
+  "hunk_snapshot_ledger_sha256": "d3a12e44ee34221f973587541f4b7730f422724eb64e8da44196dac76029b943",
+  "current_ledger_sha256": "7e0e76f752bd7d79ecba5d51b3cfcaec97bda738ab7380da3eb73a774e3d4584",
+  "hunk_snapshot_ledger_rows": 20729,
+  "current_ledger_rows": 20939,
+  "old_ledger_row_hash_prefix_unchanged": true,
+  "unmatched_hunks": 68,
+  "hunks_outside_149_212": 55,
+  "hunks_with_paired_candidate": 56,
+  "hunks_without_paired_candidate": 12,
+  "candidate_links": 335,
+  "distinct_candidate_ledger_rows": 104,
+  "ledger_payload_rows": 158,
+  "history_rows_for_no_pair": 722,
+  "history_without_identical_printed_operation": 59,
+  "current_changed_French_files": [
+    "sources/fr/fr/149.tex",
+    "sources/fr/fr/212.tex"
+  ],
+  "hunks_with_old_fr_payload_not_present_now": [
+    "FD000005",
+    "FD000038",
+    "FD000170"
+  ],
+  "scope": "Mechanical candidate linkage only. No source, ledger, mathematical, translation or correction-validity adjudication."
+}

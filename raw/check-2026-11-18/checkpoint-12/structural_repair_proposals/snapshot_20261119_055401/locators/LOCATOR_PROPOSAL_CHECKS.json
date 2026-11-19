@@ -1,0 +1,16 @@
+[
+  {
+    "conditional_target": "LOC-232-149-1",
+    "selected_operations": 54,
+    "all_54_selected_page_keys_have_both_path_patterns": true,
+    "postimage_sha256": "68534a241a30e1115891c8c983e1047bfb6bb6d265886176ca8d60da5e591ecc",
+    "production_write": false
+  },
+  {
+    "conditional_target": "LOC-232-149-2",
+    "selected_operations": 54,
+    "all_54_selected_page_keys_have_both_path_patterns": true,
+    "postimage_sha256": "94754540bf5b0e28c1d9a66e8eaf5d61210de9f582a2ae67ffb92ace1784af00",
+    "production_write": false
+  }
+]

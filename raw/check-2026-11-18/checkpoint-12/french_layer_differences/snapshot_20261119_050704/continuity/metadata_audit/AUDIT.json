@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-11-19T05:15:49.643854+00:00",
+  "completed_utc": "2026-11-19T05:15:51.156866+00:00",
+  "failed_checks": [],
+  "checks": [
+    {
+      "check": "old_frozen_manifest_exact",
+      "pass": true,
+      "details": {
+        "files": 59
+      }
+    },
+    {
+      "check": "current_frozen_manifest_exact",
+      "pass": true,
+      "details": {
+        "files": 59
+      }
+    },
+    {
+      "check": "ledger_hashes_sizes_and_prefixes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "French_ledger_row_sequence_unchanged_since_previous_supplement",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "source_changes_manifest_exact",
+      "pass": true,
+      "details": {
+        "changed_files": [
+          "sources/fr/fr/149.tex",
+          "sources/fr/fr/212.tex"
+        ],
+        "errors": []
+      }
+    },
+    {
+      "check": "all_printed_files_unchanged",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "all_old_and_current_hunk_payloads_hashes_and_line_locators_exact",
+      "pass": true,
+      "details": {
+        "slices": 1212,
+        "errors": []
+      }
+    },
+    {
+      "check": "all_hunks_reconstruct_printed_files_exactly",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "all_mappings_complete_unique_and_byte_supported",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "mapping_counts_reconcile",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "recorded_footnote_payloads_and_full_file_replay_exact",
+      "pass": true,
+      "details": {
+        "operations": 12,
+        "errors": []
+      }
+    },
+    {
+      "check": "ordinary_candidate_payload_hashes_locators_and_literal_predicates",
+      "pass": true,
+      "details": {
+        "links": 895,
+        "errors": []
+      }
+    },
+    {
+      "check": "declared_projection_deletions_reconstruct_and_preserve_alphabet_controls",
+      "pass": true,
+      "details": {
+        "projections": 1230,
+        "errors": []
+      }
+    },
+    {
+      "check": "all_current_format_pair_fragments_hashes_counts_and_locators_exact",
+      "pass": true,
+      "details": {
+        "links": 339,
+        "errors": []
+      }
+    },
+    {
+      "check": "current_format_counts_and_unmatched_scope_reconcile",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "all_included_current_ledger_payloads_exact",
+      "pass": true,
+      "details": {
+        "rows": 159
+      }
+    },
+    {
+      "check": "every_old_format_pair_revalidation_exact",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "previous_twelve_no_pair_cases_exactly_unchanged_and_still_no_pair",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "history_links_counterparts_and_append_order_exact",
+      "pass": true,
+      "details": {
+        "links": 722,
+        "errors": []
+      }
+    },
+    {
+      "check": "no_detected_email_or_absolute_host_prefix",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "all_frozen_inputs_unchanged_after_validation",
+      "pass": true,
+      "details": null
+    }
+  ],
+  "hunk_slices_verified": 1212,
+  "ordinary_candidate_links_verified": 895,
+  "format_candidate_links_verified": 339,
+  "projections_reconstructed": 1230,
+  "footnote_operations_replayed": 12,
+  "scope": "Byte, declared-deletion projection, literal fragment, coordinate and ledger metadata validation only. No mathematical or correction-validity adjudication."
+}

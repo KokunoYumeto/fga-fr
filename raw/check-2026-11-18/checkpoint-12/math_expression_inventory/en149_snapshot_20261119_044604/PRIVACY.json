@@ -1,0 +1,16 @@
+[
+  {
+    "file": "sources/en/en/149.tex",
+    "kind": "tex_control_lookalike_preserved",
+    "start": 2432,
+    "end": 2440,
+    "sha256": "54a1fa83acbeabe75ac6b08634aa6f3e8216e3f174b22a22aac2396b00211dcd"
+  },
+  {
+    "file": "sources/fr/fr/149.tex",
+    "kind": "tex_control_lookalike_preserved",
+    "start": 2927,
+    "end": 2935,
+    "sha256": "54a1fa83acbeabe75ac6b08634aa6f3e8216e3f174b22a22aac2396b00211dcd"
+  }
+]

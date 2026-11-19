@@ -1,0 +1,7 @@
+layer	pass_number	latest_pass	box	pt	source	line_start	line_end	pdf_pages	mapping	shipout_candidate	log_line
+en	1	False	hbox	7.59183	sources/en/en/149.tex	111	114	6	SyncTeX nodes in diagnostic line range; visual confirmation required	6	385
+en	1	False	hbox	26.84898	sources/en/en/149.tex	480	480	11	SyncTeX nodes in diagnostic line range; visual confirmation required	11	570
+en	2	False	hbox	7.59183	sources/en/en/149.tex	111	114	8	SyncTeX nodes in diagnostic line range; visual confirmation required	8	388
+en	2	False	hbox	26.84898	sources/en/en/149.tex	480	480	13	SyncTeX nodes in diagnostic line range; visual confirmation required	13	573
+en	3	True	hbox	7.59183	sources/en/en/149.tex	111	114	8	SyncTeX nodes in diagnostic line range; visual confirmation required	8	388
+en	3	True	hbox	26.84898	sources/en/en/149.tex	480	480	13	SyncTeX nodes in diagnostic line range; visual confirmation required	13	573

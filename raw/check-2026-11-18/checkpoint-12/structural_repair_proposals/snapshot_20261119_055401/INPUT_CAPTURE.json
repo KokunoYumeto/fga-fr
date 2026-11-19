@@ -1,0 +1,66 @@
+{
+  "started_utc": "2026-11-19T05:54:01.062615+00:00",
+  "completed_utc": "2026-11-19T05:54:01.099052+00:00",
+  "two_consecutive_reads_identical": true,
+  "attempt": 1,
+  "input_root": "FGA_CHECK",
+  "source_scope": "Only the eight French source files named by the existing 54-gap report; no page content interpretation.",
+  "report_basis": "structural_gate_actions/after_french_20261119_044604",
+  "files": [
+    {
+      "path": "CHECK_EVENTS.tsv",
+      "bytes": 532678,
+      "sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e"
+    },
+    {
+      "path": "CHECK_RECORD.md",
+      "bytes": 400976,
+      "sha256": "ca95c4b362d790db3367deb7647de4abff8f2b2489546df5d5c70ff844217eed"
+    },
+    {
+      "path": "CORRECTIONS.tsv",
+      "bytes": 7579360,
+      "sha256": "16b248554cf8bedfedcf396e05f417336b934831b9625df93db8d924269bc847"
+    },
+    {
+      "path": "sources/fr/fr/149.tex",
+      "bytes": 75584,
+      "sha256": "f00873843cbad6224b1422a8e08b36c52b7478d759b53d1c17f840f4bb0e77c8"
+    },
+    {
+      "path": "sources/fr/fr/221.tex",
+      "bytes": 89867,
+      "sha256": "2485e1297c5aff1346ce7dcb031d5637778a974b47532a13de19a034d9754ee7"
+    },
+    {
+      "path": "sources/fr/fr/232.tex",
+      "bytes": 60313,
+      "sha256": "8bb55fd61971548ee201c18e147b0b683f3f0aa5991ed6ced70d378c2162021b"
+    },
+    {
+      "path": "sources/fr/fr/236.tex",
+      "bytes": 74215,
+      "sha256": "63b4adc124eac2d993042dd415f984d4e4a02847b86623e0e3e944cff8de5482"
+    },
+    {
+      "path": "sources/fr_printed/fr/149.tex",
+      "bytes": 75500,
+      "sha256": "0e77ee4be2c7aae01881417459e070e8a27648c20901f58bf348c51a168db31d"
+    },
+    {
+      "path": "sources/fr_printed/fr/221.tex",
+      "bytes": 89644,
+      "sha256": "d12d2592b5ef68c700bf5ed5a9c517cb9a748e345b0eb9cc6a66faed5e75de4f"
+    },
+    {
+      "path": "sources/fr_printed/fr/232.tex",
+      "bytes": 60104,
+      "sha256": "fee9336abf3f58f0932a8521a2624c7aa432b92055b7bba9e43cd94dee01a480"
+    },
+    {
+      "path": "sources/fr_printed/fr/236.tex",
+      "bytes": 73756,
+      "sha256": "a3f8d21c5770f0d5b9297ba3c4e3b4b0e195baa52028aece4e60c2900d605cc0"
+    }
+  ]
+}

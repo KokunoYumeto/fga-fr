@@ -1,0 +1,13 @@
+stage	layer	pass_number	exit_code	errors	missing_glyphs	warnings	undefined_reference_warnings	undefined_reference_summaries	undefined_citation_warnings	undefined_citation_summaries	aux_stable	aux_sha256	physical_page_label_keys	overfull_boxes	boxes_over_2pt	boxes_over_10pt	max_overfull_pt
+read_through_errata_307	fr	1	0	0	0	100	0	0	0	0	False	e3fde8b5595e91baadda668c43cb87e70c63cdda5d86a8181ab6274a60a631d8	146	7	5	3	36.72565
+read_through_errata_307	fr	2	0	0	0	100	0	0	0	0	False	011adcddb253a04572927a3d93f68950aacab38df4f488d3f289f551741b4a9b	148	7	5	3	36.72565
+read_through_errata_307	fr	3	0	0	0	100	0	0	0	0	True	011adcddb253a04572927a3d93f68950aacab38df4f488d3f289f551741b4a9b	148	7	5	3	36.72565
+read_through_errata_307	fr_printed	1	0	0	0	100	0	0	0	0	False	9f0b36b52e7409509e75cdea5cfbdf9938659199e2a82877f2cf634ac291ebb0	146	8	6	3	36.72565
+read_through_errata_307	fr_printed	2	0	0	0	100	0	0	0	0	False	9133dc8f120c9d57bc51eee8328865d8b186c7411127151c0ab5fe6bf3c40c2c	148	8	6	3	36.72565
+read_through_errata_307	fr_printed	3	0	0	0	100	0	0	0	0	True	9133dc8f120c9d57bc51eee8328865d8b186c7411127151c0ab5fe6bf3c40c2c	148	8	6	3	36.72565
+read_after_note_cleanup	fr	1	0	0	0	100	0	0	0	0	False	56ceb00bc36ebab6196a88e589e465d970ec2dfce2411be6b0c071a2b2e24062	146	7	5	3	36.72565
+read_after_note_cleanup	fr	2	0	0	0	100	0	0	0	0	False	6257597a249edd0743f4c647d4d01186b1f892df2a38191f19bd54e1bcc2504b	148	7	5	3	36.72565
+read_after_note_cleanup	fr	3	0	0	0	100	0	0	0	0	True	6257597a249edd0743f4c647d4d01186b1f892df2a38191f19bd54e1bcc2504b	148	7	5	3	36.72565
+read_after_note_cleanup	fr_printed	1	0	0	0	100	0	0	0	0	False	9f0b36b52e7409509e75cdea5cfbdf9938659199e2a82877f2cf634ac291ebb0	146	8	6	3	36.72565
+read_after_note_cleanup	fr_printed	2	0	0	0	100	0	0	0	0	False	9133dc8f120c9d57bc51eee8328865d8b186c7411127151c0ab5fe6bf3c40c2c	148	8	6	3	36.72565
+read_after_note_cleanup	fr_printed	3	0	0	0	100	0	0	0	0	True	9133dc8f120c9d57bc51eee8328865d8b186c7411127151c0ab5fe6bf3c40c2c	148	8	6	3	36.72565

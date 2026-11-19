@@ -1,0 +1,68 @@
+\src{179}
+\result{THEOREM}{1} If $Z^{n-p}$ and $Z'^{n-p'}$ are nonsingular cycles that
+intersect transversely, then
+\begin{equation}\tag{4.4}
+  P_X(Z.Z')=P_X(Z).P_X(Z'),
+\end{equation}
+where the product on the right is the cup product
+\[
+  H^{p}(X,\Omega_X^{p})\times H^{p'}(X,\Omega_X^{p'})
+  \longrightarrow H^{p+p'}(X,\Omega_X^{p+p'}).
+\]
+(We assume that $X$ is isomorphic to a locally closed subset of a projective
+space.)
+
+This last hypothesis is used only to conclude that every coherent algebraic
+sheaf on $X$ is a quotient of a locally free coherent algebraic sheaf (SERRE),
+and hence admits a left resolution by locally free sheaves. To prove Theorem 1,
+we may suppose that $Z$ and $Z'$ are irreducible nonsingular subvarieties $Y$
+and $Y'$ meeting transversely. Let $L_{*}$ be a left resolution of $\Osh_Y$ by
+locally free sheaves. By Proposition 3, the diagram of homomorphisms (4.3) then
+identifies with
+\[
+R^{p}\Gamma(\Omega_X^{p})
+\xleftarrow{\alpha}
+\mathbb R^{p}\Gamma\!\left(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\right)
+\xrightarrow[\sim]{\beta}
+\Gamma\!\left(H^{p}\bigl(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\bigr)\right).
+\]
+Here $\Gamma$ is the “group of sections” functor on the category of sheaves of
+abelian groups on $X$, $\mathbb R^{p}\Gamma$ denotes its hypercohomology in
+dimension $p$, and $R^{p}\Gamma$ its $p$-th derived functor. For simplicity, we
+may suppose that $L_0=\Osh_X$ and that the augmentation
+$L_0\longrightarrow\Osh_Y$ is the natural homomorphism (which is permissible).
+Then $\alpha$ is induced by the homomorphism of complexes
+$\Osh_X\longrightarrow L_{*}$ (with $\Osh_X$ regarded as a complex concentrated
+in degree $0$), taking account of the equality
+$\mathbb R^{p}\Gamma(K)=R^{p}\Gamma(K_0)$ when $K$ is a complex of sheaves
+concentrated in degree $0$. The homomorphism $\beta$ is the familiar edge
+homomorphism. Consider the analogous diagram for a locally free resolution
+$L'_{*}$ of $\Osh_{Y'}$, and then the following commutative diagram of pairings:
+\begin{equation}\tag{4.5}
+\resizebox{\textwidth}{!}{$
+\begin{array}{ccc}
+R^{p}\Gamma(\Omega_X^{p})
+&\longleftarrow
+\mathbb R^{p}\Gamma\!\left(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\right)
+&\xrightarrow{\sim}
+\Gamma H^{p}\!\left(\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})\right)
+\\[3pt]
+\times&\times&\times\\[3pt]
+R^{p'}\Gamma(\Omega_X^{p'})
+&\longleftarrow
+\mathbb R^{p'}\Gamma\!\left(\Homsh_{\Osh_X}(L'_{*},\Omega_X^{p'})\right)
+&\xrightarrow{\sim}
+\Gamma H^{p'}\!\left(\Homsh_{\Osh_X}(L'_{*},\Omega_X^{p'})\right)
+\\[3pt]
+\downarrow&\downarrow&\downarrow\\[3pt]
+R^{p+p'}\Gamma(\Omega_X^{p+p'})
+&\longleftarrow
+\mathbb R^{p+p'}\Gamma\!\left(
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\Omega_X^{p+p'})\right)
+&\xrightarrow{\sim}
+\Gamma H^{p+p'}\!\left(
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\Omega_X^{p+p'})\right).
+\end{array}
+$}
+\end{equation}
+

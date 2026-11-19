@@ -1,0 +1,243 @@
+{
+  "status": "STRUCTURAL_INVENTORY_COMPLETE",
+  "created_utc": "2026-11-19T02:37:01.152571+00:00",
+  "scope": "Frozen sources only; syntax/byte scans only; no prose, mathematics, translation, scan, PDF, or image assessment; no text segments emitted.",
+  "source_root": "tmp/source_marker_structure_01/sources",
+  "counts": {
+    "layers": 11,
+    "syntax_files": 201,
+    "marker_files": 171,
+    "marker_invocations": 2133,
+    "unit_identifier_invocations": 131,
+    "marker_definition_records": 106,
+    "literal_input_edges": 190,
+    "direct_include_reachable_files": 201,
+    "marker_metadata_exact_match_files": 171
+  },
+  "macro_convention": {
+    "page_marker": "\\src{token}",
+    "declared_arity": 1,
+    "observed_argument_classes": {
+      "decimal": 2133
+    },
+    "unit_identifier": "\\sid{decimal|e<decimal>|com}",
+    "unit_identifier_arity": 1,
+    "observed_unit_argument_classes": {
+      "decimal": 81,
+      "unit_com": 10,
+      "unit_erratum_e_decimal": 40
+    }
+  },
+  "marker_alias_records": [],
+  "unit_context_macro_layers": {
+    "FgaUnitKey": [
+      "es",
+      "es_149_printed",
+      "pt-BR",
+      "pt-BR_printed"
+    ],
+    "fgasourceid": [
+      "vi",
+      "vi_diplomatic"
+    ],
+    "fgaunitid": [
+      "zh-Hans"
+    ],
+    "sourceunit": [
+      "ko"
+    ]
+  },
+  "expose_file_conventions": [
+    "<digits>.tex",
+    "e<digits>.tex",
+    "com.tex",
+    "149_diplomatic.tex in es_149_printed"
+  ],
+  "segment_boundary_contract": "Each row indexes exact original bytes: marker [start_byte,end_byte_exclusive), following segment [segment_start_byte,segment_end_byte_exclusive). The last segment ends at EOF; bytes before the first marker are indexed separately in MARKER_FILES.tsv. No segment bytes are saved. Root must verify file_sha256 before extracting.",
+  "include_scope": "Direct literal edges from a discovered documentclass entry are traversed. Conditional/dynamic edges and includeonly are reported, not executed. Resolution prefers entry working directory, then including-file directory, then layer root.",
+  "duplicate_scope": "Duplicates and gaps are file-local structural facts. Repeated page values in different exposés/layers are not treated as errors. Use (layer,path,argument,same_token_occurrence_in_file) as a stable marker identity.",
+  "marker_metadata_sha256": "2c8f367b6c13b62989011d58e96db6dcc7fb0b08b376698431a451d418d8c385",
+  "source_inventory_comparison": {
+    "frozen_file_count": 274,
+    "inventory_metadata_rows": 274,
+    "metadata_paths_missing_from_frozen": [],
+    "frozen_paths_not_in_metadata": []
+  },
+  "layers": [
+    {
+      "layer": "en",
+      "entry_paths": "en/en/main.tex",
+      "marker_macro": "src",
+      "marker_arity": 1,
+      "src_definition_paths": "en/tex/base.tex",
+      "src_definition_count": 1,
+      "marker_files": 17,
+      "marker_invocations": 211,
+      "marker_argument_patterns": "decimal",
+      "direct_include_reachable_files": 20,
+      "marker_files_not_directly_reachable": 0,
+      "marker_metadata_exact_match_files": 17
+    },
+    {
+      "layer": "es",
+      "entry_paths": "es/es/FGA_ES_CURRENT.tex",
+      "marker_macro": "src",
+      "marker_arity": 1,
+      "src_definition_paths": "es/es/FGA_ES_CURRENT.tex,es/tex/base.tex",
+      "src_definition_count": 2,
+      "marker_files": 17,
+      "marker_invocations": 211,
+      "marker_argument_patterns": "decimal",
+      "direct_include_reachable_files": 19,
+      "marker_files_not_directly_reachable": 0,
+      "marker_metadata_exact_match_files": 17
+    },
+    {
+      "layer": "es_149_printed",
+      "entry_paths": "es_149_printed/es/FGA_ES_149_PRINTED.tex",
+      "marker_macro": "src",
+      "marker_arity": 1,
+      "src_definition_paths": "es_149_printed/es/FGA_ES_149_PRINTED.tex,es_149_printed/tex/base.tex",
+      "src_definition_count": 2,
+      "marker_files": 1,
+      "marker_invocations": 25,
+      "marker_argument_patterns": "decimal",
+      "direct_include_reachable_files": 3,
+      "marker_files_not_directly_reachable": 0,
+      "marker_metadata_exact_match_files": 1
+    },
+    {
+      "layer": "fr",
+      "entry_paths": "fr/fr/main.tex",
+      "marker_macro": "src",
+      "marker_arity": 1,
+      "src_definition_paths": "fr/tex/base.tex",
+      "src_definition_count": 1,
+      "marker_files": 17,
+      "marker_invocations": 211,
+      "marker_argument_patterns": "decimal",
+      "direct_include_reachable_files": 20,
+      "marker_files_not_directly_reachable": 0,
+      "marker_metadata_exact_match_files": 17
+    },
+    {
+      "layer": "fr_printed",
+      "entry_paths": "fr_printed/fr/main.tex",
+      "marker_macro": "src",
+      "marker_arity": 1,
+      "src_definition_paths": "fr_printed/tex/base.tex",
+      "src_definition_count": 1,
+      "marker_files": 17,
+      "marker_invocations": 211,
+      "marker_argument_patterns": "decimal",
+      "direct_include_reachable_files": 20,
+      "marker_files_not_directly_reachable": 0,
+      "marker_metadata_exact_match_files": 17
+    },
+    {
+      "layer": "ko",
+      "entry_paths": "ko/main.tex",
+      "marker_macro": "src",
+      "marker_arity": 1,
+      "src_definition_paths": "ko/base-ko.tex",
+      "src_definition_count": 1,
+      "marker_files": 17,
+      "marker_invocations": 209,
+      "marker_argument_patterns": "decimal",
+      "direct_include_reachable_files": 21,
+      "marker_files_not_directly_reachable": 0,
+      "marker_metadata_exact_match_files": 17
+    },
+    {
+      "layer": "pt-BR",
+      "entry_paths": "pt-BR/pt_BR/FGA_PTBR_CURRENT.tex",
+      "marker_macro": "src",
+      "marker_arity": 1,
+      "src_definition_paths": "pt-BR/pt_BR/FGA_PTBR_CURRENT.tex,pt-BR/tex/base.tex",
+      "src_definition_count": 2,
+      "marker_files": 17,
+      "marker_invocations": 211,
+      "marker_argument_patterns": "decimal",
+      "direct_include_reachable_files": 19,
+      "marker_files_not_directly_reachable": 0,
+      "marker_metadata_exact_match_files": 17
+    },
+    {
+      "layer": "pt-BR_printed",
+      "entry_paths": "pt-BR_printed/pt_BR/FGA_PTBR_PRINTED.tex",
+      "marker_macro": "src",
+      "marker_arity": 1,
+      "src_definition_paths": "pt-BR_printed/pt_BR/FGA_PTBR_PRINTED.tex,pt-BR_printed/tex/base.tex",
+      "src_definition_count": 2,
+      "marker_files": 17,
+      "marker_invocations": 211,
+      "marker_argument_patterns": "decimal",
+      "direct_include_reachable_files": 19,
+      "marker_files_not_directly_reachable": 0,
+      "marker_metadata_exact_match_files": 17
+    },
+    {
+      "layer": "vi",
+      "entry_paths": "vi/FGA_vi_current.tex",
+      "marker_macro": "src",
+      "marker_arity": 1,
+      "src_definition_paths": "vi/controls/vi_base.tex",
+      "src_definition_count": 1,
+      "marker_files": 17,
+      "marker_invocations": 211,
+      "marker_argument_patterns": "decimal",
+      "direct_include_reachable_files": 20,
+      "marker_files_not_directly_reachable": 0,
+      "marker_metadata_exact_match_files": 17
+    },
+    {
+      "layer": "vi_diplomatic",
+      "entry_paths": "vi_diplomatic/FGA_vi_diplomatic.tex",
+      "marker_macro": "src",
+      "marker_arity": 1,
+      "src_definition_paths": "vi_diplomatic/controls/vi_base.tex",
+      "src_definition_count": 1,
+      "marker_files": 17,
+      "marker_invocations": 211,
+      "marker_argument_patterns": "decimal",
+      "direct_include_reachable_files": 20,
+      "marker_files_not_directly_reachable": 0,
+      "marker_metadata_exact_match_files": 17
+    },
+    {
+      "layer": "zh-Hans",
+      "entry_paths": "zh-Hans/source/zh/main.tex",
+      "marker_macro": "src",
+      "marker_arity": 1,
+      "src_definition_paths": "zh-Hans/source/tex/zh.tex",
+      "src_definition_count": 1,
+      "marker_files": 17,
+      "marker_invocations": 211,
+      "marker_argument_patterns": "decimal",
+      "direct_include_reachable_files": 20,
+      "marker_files_not_directly_reachable": 0,
+      "marker_metadata_exact_match_files": 17
+    }
+  ],
+  "issues": [
+    {
+      "type": "nonconsecutive_marker_values",
+      "path": "ko/195.tex",
+      "decimal_gap_ranges": [
+        [
+          377,
+          377
+        ],
+        [
+          385,
+          385
+        ]
+      ],
+      "roman_gap_value_ranges": []
+    }
+  ],
+  "issue_types": {
+    "nonconsecutive_marker_values": 1
+  },
+  "writes": "Only tmp/source_marker_audit; no archives, checkpoints, live-source or FGA_CHECK writes."
+}

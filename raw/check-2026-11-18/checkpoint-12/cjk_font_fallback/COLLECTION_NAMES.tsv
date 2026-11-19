@@ -1,0 +1,6 @@
+file	collection_index	family	name_table_postscript	shared_cff_font_name
+NotoSansCJK-Regular.ttc	0	Noto Sans CJK JP	NotoSansCJKjp-Regular	NotoSansCJKjp-Regular
+NotoSansCJK-Regular.ttc	1	Noto Sans CJK KR	NotoSansCJKkr-Regular	NotoSansCJKjp-Regular
+NotoSansCJK-Regular.ttc	2	Noto Sans CJK SC	NotoSansCJKsc-Regular	NotoSansCJKjp-Regular
+NotoSerifCJK-Regular.ttc	0	Noto Serif CJK JP	NotoSerifCJKjp-Regular	NotoSerifCJKjp-Regular
+NotoSerifCJK-Regular.ttc	2	Noto Serif CJK SC	NotoSerifCJKsc-Regular	NotoSerifCJKjp-Regular

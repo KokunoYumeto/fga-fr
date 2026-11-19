@@ -1,0 +1,53 @@
+{
+  "translation": "en",
+  "french_layer": "fr",
+  "unit": "149",
+  "page": "193",
+  "page_key": "149-193",
+  "status": "aligned_marker_boundaries",
+  "french_file": "sources/fr/fr/149.tex",
+  "translation_file": "sources/en/en/149.tex",
+  "french_sha256": "a237670c2a981f1c617518213be9903b8fb2076c96a49da9224e4733d54d1db4",
+  "translation_sha256": "42fdb8ee8a7db0b65e39facd6e3ebc9e6a74e655b048d9dd4a7fa1b261ad5b9c",
+  "french_segment": {
+    "status": "literal_marker_segment",
+    "page": "193",
+    "next_page": "",
+    "prefix_included": false,
+    "marker_byte_start": 76417,
+    "byte_start": 76417,
+    "byte_end_exclusive": 77288,
+    "line_start": 1328,
+    "line_end": 1351,
+    "bytes": 871,
+    "sha256": "3b399d308155e7a6e2c886655ff4d84881121ae077c1fa80f3bb04da940dd105",
+    "file": "sources/fr/fr/149.tex"
+  },
+  "translation_segment": {
+    "status": "literal_marker_segment",
+    "page": "193",
+    "next_page": "",
+    "prefix_included": false,
+    "marker_byte_start": 61432,
+    "byte_start": 61432,
+    "byte_end_exclusive": 62243,
+    "line_start": 1392,
+    "line_end": 1415,
+    "bytes": 811,
+    "sha256": "bd52d56aec7eddc03b773dd3d66dfcb83d5b3c933282cb6738728b166152932f",
+    "file": "sources/en/en/149.tex"
+  },
+  "french_math_all": 0,
+  "translation_math_all": 0,
+  "french_math": 0,
+  "translation_math": 0,
+  "french_references": 0,
+  "translation_references": 0,
+  "french_reference_shapes": 0,
+  "translation_reference_shapes": 0,
+  "candidate_alignments": {
+    "math": [],
+    "references": [],
+    "reference_shapes": []
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "completed_utc": "2026-11-19T05:28:09.553652+00:00",
+  "source_capture_started_utc": "2026-11-19T05:23:16.008741+00:00",
+  "source_capture_completed_utc": "2026-11-19T05:23:16.154329+00:00",
+  "files_by_version": {
+    "current": 161,
+    "original": 161
+  },
+  "footnotes_by_version": {
+    "current": 544,
+    "original": 554
+  },
+  "unique_exact_bodies": 539,
+  "withheld_body_count": 0,
+  "verified_tex_control_lookalikes_preserved": 1,
+  "marker_only_by_version": {
+    "current": 8,
+    "original": 8
+  },
+  "status_counts": {
+    "current": {
+      "exact_body_in_other_version_same_file": 544
+    },
+    "original": {
+      "no_exact_body_in_other_version_same_layer": 10,
+      "exact_body_in_other_version_same_file": 544
+    }
+  },
+  "extraction_issues": 0,
+  "cross_marker_footnotes": 0,
+  "parameter_template_candidates": 0,
+  "all_frozen_input_hashes_match": true,
+  "original_manifest_sha256": "8b95e5ab9629a5b3447ebedd3fdacaa2d6e91b7ae45be08dd6582a2fee97b56f",
+  "script_sha256": "d76c11e2e59079fecdd6a49df2b2892a3885183e4eba5e4a8e7bc2cb8d1bf4b9",
+  "source_marker_helper_sha256": "d2cc95f1b28d52d2885c34c74838855face2485fe63f78f0553c5b9d9a9e2ca3",
+  "comparison_policy": "Exact content bytes only; corresponding version and translation layer. Same file/page and exact whole-invocation matches are separate locators. No text normalization or validity classification.",
+  "current_sources_may_have_evolved_after_capture": true,
+  "live_source_ledger_record_progress_mutations": 0,
+  "source_prose_read_or_interpreted": false
+}

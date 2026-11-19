@@ -1,0 +1,47 @@
+{
+  "started_utc": "2026-11-19T04:34:27.208032+00:00",
+  "capture_completed_utc": "2026-11-19T04:34:29.506380+00:00",
+  "completed_utc": "2026-11-19T04:34:34.417416+00:00",
+  "input_decisions_sha256": "12222334df2f8e66d6f350bb52250a48247f051d8d01afc7e8c3ddafe37466af",
+  "input_standards_sha256": "d92d9666b8b2f8437ce42eb88f31a087488cd6d7d5fffe3bad1aaabdf462fae8",
+  "decision_rows": 67,
+  "input_confidence_counts": {
+    "high": 38,
+    "medium": 27,
+    "low": 2
+  },
+  "applicable_decisions": 53,
+  "applicable_confidence_counts": {
+    "high": 31,
+    "medium": 20,
+    "low": 2
+  },
+  "out_of_scope_decisions": [
+    "T040",
+    "T041",
+    "T042",
+    "T043",
+    "T044",
+    "T045",
+    "T046",
+    "T047",
+    "T062",
+    "T063",
+    "T064",
+    "T065",
+    "T066",
+    "T067"
+  ],
+  "translation_files": 161,
+  "unit_files": 137,
+  "ancillary_files": 24,
+  "literal_candidates": 1172,
+  "literal_occurrences": 64847,
+  "sources_unchanged": true,
+  "low_confidence_occurrences": {
+    "T051": 21,
+    "T055": 253
+  },
+  "nfc_diagnostics": [],
+  "non_adjudication": "No edition text changed. Literal substrings are navigation aids, not decisions; duplicates and irrelevant senses are retained."
+}

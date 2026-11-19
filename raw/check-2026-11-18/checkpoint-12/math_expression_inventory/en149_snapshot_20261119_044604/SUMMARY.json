@@ -1,0 +1,63 @@
+{
+  "completed_utc": "2026-11-19T04:58:57.883041+00:00",
+  "selected_files": 2,
+  "translation_unit_pairs": 1,
+  "page_pairs": 25,
+  "math_regions": 1751,
+  "outermost_math_regions": 1716,
+  "nested_math_regions": 35,
+  "explicit_reference_commands": 132,
+  "reference_shaped_candidates": 155,
+  "lexical_issues": 0,
+  "page_status_counts": {
+    "aligned_marker_boundaries": 25
+  },
+  "alignment_status_counts": {
+    "math": {
+      "unpaired_ordered_block": 24
+    },
+    "references": {
+      "raw_identical": 66
+    },
+    "reference_shapes": {
+      "raw_identical": 76,
+      "unpaired_ordered_block": 3
+    }
+  },
+  "privacy_blockers": 0,
+  "tex_control_lookalikes_preserved": 2,
+  "input_capture": {
+    "started_utc": "2026-11-19T04:58:57.607889+00:00",
+    "completed_utc": "2026-11-19T04:58:57.607994+00:00",
+    "two_consecutive_reads_identical": true,
+    "source_work": "tmp/math_expression_inventory_02",
+    "files": {
+      "sources/en/en/149.tex": {
+        "bytes": 62243,
+        "sha256": "42fdb8ee8a7db0b65e39facd6e3ebc9e6a74e655b048d9dd4a7fa1b261ad5b9c"
+      },
+      "sources/fr/fr/149.tex": {
+        "bytes": 77288,
+        "sha256": "a237670c2a981f1c617518213be9903b8fb2076c96a49da9224e4733d54d1db4"
+      }
+    },
+    "note": "Fixed 04:46:04 UTC completed-French source snapshot. Root subsequently removed nine corrected-French editorial footnotes in 149.tex and began English edits; later changes are not included. Regenerate from a new selected-file capture for current review.",
+    "pairings": {
+      "en": "fr"
+    },
+    "script_sha256": "9d3c8d4d1ee9da963abc839294565d9941a22c6338eb2e77223cbb057a30a0cb",
+    "lexer_sha256": "7ae88b1d85906698cd728f36aa47545c550622b43193c63cd8e0aa7df828c7e4",
+    "marker_helper_sha256": "d2cc95f1b28d52d2885c34c74838855face2485fe63f78f0553c5b9d9a9e2ca3"
+  },
+  "exactness_checks": {
+    "all_math_slices_match_hashes": true,
+    "all_reference_slices_match_hashes": true,
+    "unique_math_ids": true,
+    "problematic_math_ids": [],
+    "token_boundary_fixture": true,
+    "whitespace_fixture": true,
+    "comment_fixture": true
+  },
+  "semantic_adjudication_performed": false,
+  "live_sources_modified": false
+}

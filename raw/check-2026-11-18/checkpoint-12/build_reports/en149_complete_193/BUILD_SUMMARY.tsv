@@ -1,0 +1,2 @@
+layer	engine	entry	passes	exit_code	pdf_pages	aux_stable	errors	warnings	missing_glyphs	max_overfull_pt	boxes_over_2pt	boxes_over_10pt	status	source_tree_sha256	date_utc	working_directory	command	visual_review
+en	lualatex	sources/en/en/main.tex	1	1	0	False	2	15	0	0	0	0	engine error	f48bc40aacf6cb2066cfa7c3741c6d952a56c10b2eafbf4a691bd63bfdbc274a	2026-11-19T05:33:35.584596+00:00	sources/en/en	lualatex -no-shell-escape -interaction=nonstopmode -halt-on-error -file-line-error -synctex=1 -jobname=main <instrumented driver for main.tex>	not performed by this script

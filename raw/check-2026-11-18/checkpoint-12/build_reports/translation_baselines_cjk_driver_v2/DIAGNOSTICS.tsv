@@ -1,0 +1,6 @@
+layer	pass_number	latest_pass	category	source	line	message	log_line
+ko	1	True	error	sources/ko/base-ko.tex	10	Package fontspec Error: 	58
+zh-Hans	1	True	warning	sources/zh-Hans/source/zh/main.tex		Package unicode-math Warning: Using \overbracket and \underbracket from	268
+zh-Hans	1	True	warning	sources/zh-Hans/source/zh/main.tex		Package unicode-math Warning: I'm going to overwrite the following commands	275
+zh-Hans	1	True	warning	sources/zh-Hans/source/zh/main.tex		Package hyperref Warning: Rerun to get /PageLabels entry.	286
+zh-Hans	1	True	error	sources/zh-Hans/source/zh/149.tex	132	Package fontspec Error: 	322

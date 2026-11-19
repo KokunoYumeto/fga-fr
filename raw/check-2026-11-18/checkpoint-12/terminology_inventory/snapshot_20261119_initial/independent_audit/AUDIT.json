@@ -1,0 +1,204 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-11-19T04:36:09.779847+00:00",
+  "completed_utc": "2026-11-19T04:36:12.843486+00:00",
+  "scope": "Independent lexical metadata audit; no scan, paragraph, mathematical or translation adjudication. No FGA_CHECK or source writes by this audit.",
+  "checks": [
+    {
+      "check": "exactly_67_input_and_inventory_rows",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "all_original_fields_and_row_identifiers_exact",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "entire_input_confidence_counts",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "53_applicable_31_high_20_medium_2_low",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "14_out_of_scope_7_high_7_medium",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "all_inventory_applicability_and_low_exclusion_exact",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "five_all_language_rows_literal_scope",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "input_record_hash_exact",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "input_standard_hash_exact",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "all_manifest_sizes_and_hashes_exact",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "manifest_covers_all_translation_tex_files",
+      "pass": true,
+      "details": {
+        "manifest_files": 161,
+        "actual_files": 161
+      }
+    },
+    {
+      "check": "161_files_137_units_24_ancillary",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "unique_literal_identifiers",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "low_table_is_exact_ordered_subset",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "all_occurrence_count_matches_metadata",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "all_64847_literal_byte_line_page_and_scope_locators_exact",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "T051_exact_low_literal_set",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "T055_exact_low_literal_set",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "exhaustive_independent_low_occurrence_enumeration",
+      "pass": true,
+      "details": {
+        "expected": 274,
+        "actual": 274,
+        "per_literal": {
+          "T051": {
+            "归纳极限": 1,
+            "逆极限": 20,
+            "余极限": 0,
+            "射影极限": 0,
+            "正向极限": 0
+          },
+          "T055": {
+            "섬유": 204,
+            "섬유곱": 30,
+            "의 올": 0,
+            "올곱": 0,
+            "파이버": 0,
+            "올": 19
+          }
+        }
+      }
+    },
+    {
+      "check": "low_counts_21_chinese_253_korean",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "both_low_decisions_reproduced_field_for_field",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "all_274_low_markdown_locator_rows_exact",
+      "pass": true,
+      "details": {
+        "expected": 274,
+        "actual": 274
+      }
+    },
+    {
+      "check": "outputs_contain_no_detected_host_paths_or_emails",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "source_bytes_unchanged_during_independent_audit",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "inventory_artifact_bytes_stable_during_independent_audit",
+      "pass": true,
+      "details": null
+    }
+  ],
+  "failed_checks": [],
+  "source_files": 161,
+  "source_bytes": 4570772,
+  "decision_rows": 67,
+  "applicable_decisions": 53,
+  "literal_candidates": 1172,
+  "literal_occurrences_checked": 64847,
+  "low_occurrences_independently_enumerated": 274,
+  "low_term_counts": {
+    "T051": {
+      "归纳极限": 1,
+      "逆极限": 20,
+      "余极限": 0,
+      "射影极限": 0,
+      "正向极限": 0
+    },
+    "T055": {
+      "섬유": 204,
+      "섬유곱": 30,
+      "의 올": 0,
+      "올곱": 0,
+      "파이버": 0,
+      "올": 19
+    }
+  },
+  "path_detector_tex_false_positives": {
+    "overline": 48,
+    "widetilde": 11,
+    "xi": 26,
+    "mathcal": 101,
+    "operatorname": 12,
+    "bigwedge": 12
+  },
+  "audit_harness_revision": "The first audit compared doubled TeX backslashes against the revised Markdown and overmatched six ordinary TeX controls as Windows paths. Those two detector false positives were corrected before this complete rerun; no source or inventory data repair was required.",
+  "audited_artifact_sha256": {
+    "terminology_inventory/snapshot_20261119_initial/README.md": "76e754c1eabdb0d290797e630b5aa2439eccc7cbc48ed9ff474bca6a7a9c942c",
+    "terminology_inventory/snapshot_20261119_initial/SEARCH_LITERALS.tsv": "ae760c06a2b9b4a674d9a63e61e53b411baad32f1e0293022dcdb7249c96b53c",
+    "terminology_inventory/snapshot_20261119_initial/INVENTORY.json": "989a49b0059c7380f3cd38b70090b9d574d82f5d2ca3a0f56d9a41048628d66a",
+    "terminology_inventory/snapshot_20261119_initial/LITERAL_OCCURRENCES.tsv": "87d864cb8ff229fa172014f1b2ba31ae38e14ff651d83cfc2d94a57ee2b577fa",
+    "terminology_inventory/snapshot_20261119_initial/DECISION_INVENTORY.tsv": "bac6e6e1f3660cf5922be71add6e355335e991ebad083ad093b20908279bb467",
+    "terminology_inventory/snapshot_20261119_initial/SOURCE_HASHES.tsv": "511b821ee20d1641110354db772f7259487e95efdc885fbff69985337d2aeb67",
+    "terminology_inventory/snapshot_20261119_initial/LOW_CONFIDENCE_OCCURRENCES.tsv": "9c5b189f51c90fffa6f1c0a236139132d3c66bf18429ef8f2164ba6508621721",
+    "TERMINOLOGY_LOW_CONFIDENCE.md": "e3bfd5c46cf52578e992b18f4e456b6cb9ea78c90edc2ece2f3630d7e3fdc77d",
+    "scripts/terminology_inventory.py": "f6e814d0308b7778a029fef14ed13cacfab65aa15e19197c3b4e25b396586583"
+  }
+}

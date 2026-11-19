@@ -1,0 +1,13 @@
+stage	layer	passes	last_exit_code	boxes_over_2pt	max_overfull_pt	underfull_h_badness_10000	source_tree_sha256	disposition
+layout_mechanical_01	fr	3	0	4	36.72565	0	9dba7e2f99fe169d9bfbae10f4be2f5973843c637312763ff88071fd2e47811d	Superseded: main files override the appended global stretch; only the local display-size change helped.
+layout_mechanical_01	fr_printed	3	0	5	36.72565	0	b30e02167850533c907668e3757cf247e6d02e410a85eafb799cab1eec85508b	Superseded: main files override the appended global stretch; only the local display-size change helped.
+layout_mechanical_01	ko	3	0	3	7.77426	1	9629e2f091543dd0957ea8051681ae70c85c8bb92d11671e5837c7964a39bd1e	Superseded: main files override the appended global stretch; only the local display-size change helped.
+layout_mechanical_02	fr	3	0	1	36.72565	0	9a7d56e777b1ad94bd228444cf9a4e4a8bd257f9e5d2ab32d6764d62945adf1c	Superseded: local 3em stretch leaves one over-2pt box per affected layer.
+layout_mechanical_02	fr_printed	3	0	1	36.72565	0	2a981b2f25f0fe8b1be62881c04775e35c284ff222d4b8485b4ce9c87b70e684	Superseded: local 3em stretch leaves one over-2pt box per affected layer.
+layout_mechanical_02	ko	3	0	1	2.92223	1	0ef440816295b54d85e8d1517b7cfdbfcd727c8f7ca6e65d1eb45dda4d31af14	Superseded: local 3em stretch leaves one over-2pt box per affected layer.
+layout_mechanical_03	fr	3	0	0	0.94453	1	6d38f4089bbe2955c55a70413af5832b7fd80e6d73447886752d1908746b8ef4	Rejected French variant: 8em removes overflow but adds a badness-10000 horizontal box per layer.
+layout_mechanical_03	fr_printed	3	0	0	0.94453	1	411872f1d6c8009ec7bfc05174a8f14c8e5a3a63971e27b8b2c73cdbb57c360b	Rejected French variant: 8em removes overflow but adds a badness-10000 horizontal box per layer.
+layout_mechanical_04	fr	3	0	0	0.94453	0	ebdc95588f28bcc19293cf21061e831ff25f5ed76f2d173793957f2ec251d4a5	Selected French candidate: local small paragraph replaces the 8em trial.
+layout_mechanical_04	fr_printed	3	0	0	0.94453	0	2a0de167055dff685f4e9e150e9c6b113c6ef8b080ab360c5484bb6b590d7590	Selected French candidate: local small paragraph replaces the 8em trial.
+layout_mechanical_05	ko	3	0	1	2.92223	1	b81ad39e1bbeb292c022ab4170f08fd91f59f8363215637f7b6a947941967b7f	Rejected Korean variant: 5em leaves the 2.92223pt box.
+layout_mechanical_07	ko	3	0	0	0	1	0f1d74de0d09302810385b53694b8db992d1fea38a70dff98ed66e10cc6cc1e3	Selected Korean candidate: local small inline formula removes the remaining box.

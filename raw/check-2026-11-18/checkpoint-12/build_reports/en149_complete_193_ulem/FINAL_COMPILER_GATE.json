@@ -1,0 +1,21 @@
+{
+  "stage": "en149_complete_193_ulem",
+  "source_tree_sha256": "abb6575adc58bf1927f68ecbd436fc6d3ed08a28718e74c3cd3f3f371715fbf5",
+  "engine_exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "aux_stable": true,
+  "pdf_pages": 149,
+  "last_two_aux_hashes_equal": true,
+  "unresolved_reference_or_citation_diagnostics": 0,
+  "source_files_changed_since_completed_capture": [
+    "sources/en/en/182.tex",
+    "sources/en/tex/base.tex"
+  ],
+  "en149_identical_to_replayed_source": true,
+  "exact_preamble_patch_verified": true,
+  "original_replay_capture_unchanged": true,
+  "live_source_ledger_record_progress_mutations_by_support": 0
+}

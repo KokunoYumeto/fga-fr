@@ -1,0 +1,70 @@
+{
+  "started_utc": "2026-11-19T05:03:11.053149+00:00",
+  "completed_utc": "2026-11-19T05:03:11.072235+00:00",
+  "source_root": "FGA_CHECK",
+  "two_consecutive_reads_identical": true,
+  "attempt": 1,
+  "files": {
+    "sources/en/en/149.tex": {
+      "bytes": 65245,
+      "sha256": "e59ea6cd50c4272f829ad6cc062fa7c6b291eccc6698115da959e0f6a92fd204"
+    },
+    "sources/fr/fr/149.tex": {
+      "bytes": 75584,
+      "sha256": "f00873843cbad6224b1422a8e08b36c52b7478d759b53d1c17f840f4bb0e77c8"
+    },
+    "CORRECTIONS.tsv": {
+      "bytes": 6685682,
+      "sha256": "df4277175cec6590b52d324a3e845c64d4f99d2a5a13433af0641c6db66e0b26"
+    },
+    "CHECK_RECORD.md": {
+      "bytes": 371038,
+      "sha256": "9e28cdd2c978e8b336ec8f5f5a62cb3fdeb4cb3e4c0ef78a913cc24302781583"
+    },
+    "progress.log": {
+      "bytes": 9902,
+      "sha256": "34a7645f72f7dd80e54c977d66660acfdc5eb9fd60a85780f74ae64b95133a39"
+    },
+    "scripts/audit_utils.py": {
+      "bytes": 6810,
+      "sha256": "48a8aaecd4d5909ec785362e22460d0d11504284851e953f8064d8e2c0f2f244"
+    },
+    "scripts/translation_edits.py": {
+      "bytes": 5093,
+      "sha256": "939995511f8f95d02abccc01efb7bcac933592932d1c9c777051c2fb7b28de17"
+    },
+    "scripts/translation_math_lexer.py": {
+      "bytes": 15164,
+      "sha256": "7ae88b1d85906698cd728f36aa47545c550622b43193c63cd8e0aa7df828c7e4"
+    },
+    "scripts/apply_en_149_169.py": {
+      "bytes": 3602,
+      "sha256": "931ebb3a249b41899afa5d1f07aa2a2c4219dfbc083e05862a8526e880b69b91"
+    },
+    "scripts/apply_en_149_170.py": {
+      "bytes": 3633,
+      "sha256": "460c12c21666ed009d3b8356b9c70bc50ffe064a060f1377e18555a4310e563a"
+    },
+    "scripts/apply_en_149_171.py": {
+      "bytes": 3930,
+      "sha256": "5521337c16ac69b80e668c81c8c9f68f87dd04870409232fc5068475144a43ef"
+    },
+    "scripts/apply_en_149_172.py": {
+      "bytes": 2708,
+      "sha256": "94fbdfafd522a23aed0d9c30ef225da2a2678e0e972d0c9529b93bb696a00b5d"
+    },
+    "scripts/apply_en_149_173.py": {
+      "bytes": 3816,
+      "sha256": "85d8289940df69870947b5c508e91c2bbbc0157a4e78287393b04f923d1b19c4"
+    },
+    "scripts/apply_en_149_174.py": {
+      "bytes": 3970,
+      "sha256": "d6038fe774ccea4b7b5ca7de3ad6087e6eb69659e8910a3ec3d6f60f503f9939"
+    },
+    "scripts/apply_en_149_175.py": {
+      "bytes": 4484,
+      "sha256": "8248bf4557a8b3292b4607f664b242aa900be792adc1c544b44352a5fa541d6a"
+    }
+  },
+  "scope": "Mechanical script/source/ledger check through English149 page175 only. Later pages are not adjudicated or reviewed."
+}

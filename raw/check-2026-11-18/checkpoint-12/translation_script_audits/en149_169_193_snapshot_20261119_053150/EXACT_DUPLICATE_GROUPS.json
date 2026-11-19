@@ -1,0 +1,18 @@
+[
+  {
+    "row_sha256": "902f6cb9475977724c70988e104e365e89047d161bdc3f7e78484ba2ce0715a2",
+    "row_ids": [
+      "C003871",
+      "C003873"
+    ],
+    "entirely_in_baseline_prefix": true
+  },
+  {
+    "row_sha256": "2a42d7bfde4ae6627631fbfb57abbf03fc82c4f07d13335f46872b2e107b90ea",
+    "row_ids": [
+      "C003872",
+      "C003874"
+    ],
+    "entirely_in_baseline_prefix": true
+  }
+]

@@ -1,0 +1,50 @@
+\src{184}
+\result{LEMMA}{5} Let $A$ and $B$ be two coherent algebraic sheaves on $X$, and
+set $A(m)=A\otimes\Osh_X(m)$. Then, for $m$ sufficiently large, the canonical
+homomorphism
+\[
+  \operatorname{Ext}_{\Osh_X}^{1}(X;A(-m),B)
+  \longrightarrow H^{0}\bigl(X,\Extsh_{\Osh_X}^{1}(A(-m),B)\bigr)
+  =H^{0}\bigl(X,\Extsh_{\Osh_X}^{1}(A,B)(m)\bigr)
+\]
+is an isomorphism.
+
+This follows at once from the spectral sequence of Proposition 1 applied to
+$A(-m)$ and $B$, since one then has
+\[
+  E_{2}^{p,q}(A(-m),B)
+  =H^{p}\bigl(X,\Extsh_{\Osh_X}^{q}(A(-m),B)\bigr)
+  =H^{p}\bigl(X,\Extsh_{\Osh_X}^{q}(A,B)(m)\bigr),
+\]
+which vanishes for $p>0$ and $m$ large.
+
+We now prove (D) in the case $X=P$. First we prove that (5.2 bis) is an
+isomorphism for $p=n$. Both sides are then left-exact functors (since
+$H^{r+1}(P,F)=0$), so Lemma 3 shows that it suffices to prove the assertion for
+$F=\Osh_P(-m)$; in that case it is contained in Lemma 2. The homomorphisms
+(5.2 bis) are functorial and compatible with the connecting homomorphisms, and
+for $p<n$ its two sides are coeffaceable functors of $F$ (Corollary to Lemma 4).
+A standard argument therefore shows that (5.2 bis) is an isomorphism for every
+$p$. This proves the duality theorem for projective space. Now let $X$ be
+arbitrary but nonsingular. By the duality theorem for $P$, there is an
+isomorphism
+\[
+  H^{n}(X,F)'=H^{n}(P,F)'
+  =\operatorname{Ext}_{\Osh_P}^{r-n}(P;F,\Omega_P^{r}).
+\]
+By Lemma 1 (no. 4), the last term identifies with
+\[
+  \operatorname{Hom}_{\Osh_P}(P;F,\omega_X^{n})
+  =\operatorname{Hom}_{\Osh_X}(X;F,\Omega_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\Omega_X^{n}),
+\]
+and hence there is an isomorphism
+\begin{equation}\tag{5.6}
+  H^{n}(X,F)'=\operatorname{Hom}_{\Osh_X}(X;F,\Omega_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\Omega_X^{n}).
+\end{equation}
+Taking $F=\Omega_X^{n}$ gives an isomorphism
+\begin{equation}\tag{5.7}
+  \gamma:H^{n}(X,\Omega_X^{n})\xrightarrow{\sim}k.
+\end{equation}
+

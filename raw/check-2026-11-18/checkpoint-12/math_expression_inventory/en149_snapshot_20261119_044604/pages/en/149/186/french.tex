@@ -1,0 +1,53 @@
+\src{186}
+Considérons alors les accouplements définis par la composition des $\symup{\operatorname{Ext}}$ :
+\begin{equation}\tag{6.4}
+  \symup{H^{p}(X,F)\times
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\underline{\omega}_X^{n})
+  \longrightarrow H^{n}(X,\underline{\omega}_X^{n})}
+\end{equation}
+et composons-les avec l'homomorphisme $\symup{\gamma}$ de (6.3), on obtient des
+homomorphismes fonctoriels, compatibles avec les opérateurs bord :
+\begin{equation}\tag{6.5}
+  \symup{\operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\underline{\omega}_X^{n})
+  \longrightarrow H^{p}(X,F)'}
+\end{equation}
+(généralisant (5.2)). On vérifie que pour $\symup{p=n}$, on obtient ainsi
+l'isomorphisme (6.1). Ceci posé, on a le
+
+\result{THÉORÈME}{3 bis} \uline{Les quatre conditions suivantes sur} $\symup{X}$ \uline{sont
+équivalentes pour un entier} $\symup{k\geq0}$ \uline{donné} :
+\begin{enumerate}
+  \item[\textnormal{i.}] \uline{L'homomorphisme fonctoriel} (6.5) \uline{est un isomorphisme pour}
+    $\symup{n-k\leq p\leq n}$.
+  \item[\textnormal{ii.}] \uline{On a} $\symup{H^{p}(X,\Osh_X(-m))=0}$ \uline{pour} $\symup{m}$ \uline{grand et pour}
+    $\symup{n-k\leq p<n}$.
+  \item[\textnormal{iii.}] \uline{Le foncteur} $\symup{H^{p}(X,F)}$ \uline{sur la catégorie des faisceaux
+    algébriques cohérents sur} $\symup{X}$ \uline{est coeffaçable pour} $\symup{n-k\leq p<n}$.
+  \item[\textnormal{iv.}] \uline{On a}
+    $\symup{E^{i}(\Osh_X)=\Extsh_{\Osh_P}^{r-n+i}(\Osh_X,\underline{\omega}_P^{r})=0}$
+    \uline{pour} $\symup{0<i\leq k}$.
+\end{enumerate}
+
+\noindent DÉMONSTRATION. -- \textnormal{i.}$\symup{\Rightarrow}$\textnormal{ii.} en
+vertu du lemme 4, \textnormal{ii.}$\symup{\Rightarrow}$\textnormal{iii.} en vertu du lemme 3,
+\textnormal{iii.}$\symup{\Rightarrow}$\textnormal{i.} par un raisonnement standard bien connu,
+compte tenu que les deux membres de (6.5) sont alors des foncteurs coeffaçables
+pour $\symup{n-k\leq p<n}$ (le premier l'étant en vertu du lemme 4). Enfin prouvons
+\textnormal{ii.}$\symup{\Leftrightarrow}$\textnormal{iv.} Cela résulte du corollaire à la
+proposition qui suit :
+
+\result{PROPOSITION}{6} \uline{Soit} $\symup{F}$ \uline{un faisceau algébrique cohérent sur} $\symup{X}$, \uline{et
+soit} $\symup{i}$ \uline{un entier. Alors pour} $\symup{m}$ \uline{assez grand, on a un isomorphisme} :
+\begin{equation}\tag{6.6}
+  \symup{H^{i}(X,F(-m))'
+  \simeq H^{0}\bigl(X,E^{n-i}(F)(m)\bigr),}
+\end{equation}
+\uline{où on pose} (comparer n\textsuperscript{o} 3, proposition 5) :
+\begin{equation}\tag{6.7}
+  \symup{E^{j}(F)=\Extsh_{\Osh_P}^{r-n+j}(F,\underline{\Omega}_P^{r})}
+\end{equation}
+En effet, en vertu du théorème de dualité sur $\symup{P}$, le premier membre de (6.6)
+est isomorphe à
+$\symup{\operatorname{Ext}_{\Osh_P}^{r-i}(P;F(-m),\underline{\Omega}_P^{r})}$, donc (6.6) résulte
+du lemme 5.
+

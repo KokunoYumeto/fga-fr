@@ -1,0 +1,76 @@
+\src{190}
+which range over the category of coherent algebraic sheaves on $X$ and take
+values, respectively, in the category of coherent algebraic sheaves on $X$ and
+in the category of modules over $H^{0}(X,\Osh_X)$, by the formulas
+\begin{equation}\tag{8.1}
+\resizebox{\textwidth}{!}{$
+\left\{
+\begin{aligned}
+\underline{T}_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+  &={}H^{*}\!\left(
+    \Homsh_{\Osh_X}\!\left(
+      L(A_1)\otimes\cdots\otimes L(A_r),
+      L(B_1)\otimes\cdots\otimes L(B_s)
+    \right)\right),\\[3pt]
+T_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+  &={}\mathbf R^{*}\Gamma\!\left(
+    \Homsh_{\Osh_X}\!\left(
+      L(A_1)\otimes\cdots\otimes L(A_r),
+      L(B_1)\otimes\cdots\otimes L(B_s)
+    \right)\right).
+\end{aligned}
+\right.
+$}
+\end{equation}
+Here $L(F)$ denotes a finite locally free resolution of the coherent algebraic
+sheaf $F$, and $\mathbf R^{*}\Gamma(K)$ denotes the hypercohomology of $X$ with
+respect to the complex of sheaves $K$. If $r$ or $s$ is zero, the tensor product
+of the $L(A_i)$, respectively of the $L(B_j)$, is replaced by $\Osh_X$. In
+particular, $\underline{T}_{0}^{0}$ and $T_{0}^{0}$ are graded functors with no
+arguments: $\underline{T}_{0}^{0}$ is concentrated in degree 0, where it is the
+sheaf $\Osh_X$, while $T_{0}^{0}$ is identified with $H^{*}(X,\Osh_X)$. The
+independence of the right-hand sides of (8.1) from the chosen resolutions is in
+any event evident for the first line (the question then being local), and for
+the second follows from the preceding general remarks, taking into account the
+hypercohomology spectral sequence of the complex of sheaves
+\[
+  K=\Homsh_{\Osh_X}\bigl(L(A_1)\otimes\cdots,
+      L(B_1)\otimes\cdots\bigr),
+\]
+which abuts to the hypercohomology of $X$ with respect to $K$. Its initial term
+is $H^{p}(X,H^{q}(K))$, i.e.
+\begin{equation}\tag{8.2}
+  E_{2}^{p,q}
+  =H^{p}\!\left(X,
+    (\underline{T}_{r}^{s})^{(q)}
+      (A_1,\ldots,A_r;B_1,\ldots,B_s)\right).
+\end{equation}
+It follows that this spectral sequence itself is independent of the chosen
+resolutions, and its abutment is the first member of (8.1). The connecting
+operators in the various arguments $A_i,B_j$ are readily defined, since every
+exact sequence
+$0\longrightarrow F'\longrightarrow F\longrightarrow F''\longrightarrow0$
+can be resolved by an exact sequence of finite locally free complexes.
+
+On the system of functors $\underline{T}_{r}^{s*}$, respectively $T_{r}^{s*}$,
+one defines operations analogous to those of tensor calculus, whose definitions
+follow immediately from (8.1). Thus there is a composition (generalizing the
+one considered in Section 2)
+\begin{equation}\tag{8.3}
+\resizebox{\textwidth}{!}{$
+\begin{aligned}
+&T_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+\times T_{r'}^{s'*}(A'_1,\ldots,A'_{r'};B'_1,\ldots,B'_{s'})\\
+&\qquad\longrightarrow
+T_{r+r'}^{s+s'*}
+(A_1,\ldots,A_r,A'_1,\ldots,A'_{r'};
+ B_1,\ldots,B_s,B'_1,\ldots,B'_{s'}),
+\end{aligned}
+$}
+\end{equation}
+satisfying the evident associativity and compatibility properties with respect
+to functorial homomorphisms, connecting homomorphisms, and spectral sequences.
+There are likewise symmetry operations, whose explicit description is left to
+the reader. In addition, there is a contraction operation whenever one of the
+arguments $A_i$
+

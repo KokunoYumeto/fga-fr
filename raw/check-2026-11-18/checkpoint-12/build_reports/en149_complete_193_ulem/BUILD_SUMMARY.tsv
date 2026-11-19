@@ -1,0 +1,2 @@
+layer	engine	entry	passes	exit_code	pdf_pages	aux_stable	errors	warnings	missing_glyphs	max_overfull_pt	boxes_over_2pt	boxes_over_10pt	status	source_tree_sha256	date_utc	working_directory	command	visual_review
+en	lualatex	sources/en/en/main.tex	3	0	149	True	0	36	0	26.84898	2	1	overflow above 2 pt	abb6575adc58bf1927f68ecbd436fc6d3ed08a28718e74c3cd3f3f371715fbf5	2026-11-19T05:40:23.234093+00:00	sources/en/en	lualatex -no-shell-escape -interaction=nonstopmode -halt-on-error -file-line-error -synctex=1 -jobname=main <instrumented driver for main.tex>	not performed by this script

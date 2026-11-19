@@ -1,0 +1,1171 @@
+{
+  "version": 1,
+  "correction_columns": [
+    "file",
+    "layer",
+    "printed_page",
+    "line",
+    "statement",
+    "old",
+    "new",
+    "evidence",
+    "kind",
+    "confidence"
+  ],
+  "event_columns": [
+    "id",
+    "date_utc",
+    "who",
+    "how",
+    "result",
+    "where"
+  ],
+  "allowed_kinds": [
+    "reading",
+    "misprint of the original",
+    "translation",
+    "typesetting",
+    "structure",
+    "terminology"
+  ],
+  "allowed_confidences": [
+    "high",
+    "medium",
+    "low"
+  ],
+  "legacy_event_types": [
+    "targeted proof check",
+    "independent re-proof",
+    "computation or formal certificate",
+    "used and rechecked in this run",
+    "carried as background without fault found",
+    "refuted, with the refined statement's id"
+  ],
+  "expected_pages": [
+    {
+      "unit": "149",
+      "printed_page": "169"
+    },
+    {
+      "unit": "149",
+      "printed_page": "170"
+    },
+    {
+      "unit": "149",
+      "printed_page": "171"
+    },
+    {
+      "unit": "149",
+      "printed_page": "172"
+    },
+    {
+      "unit": "149",
+      "printed_page": "173"
+    },
+    {
+      "unit": "149",
+      "printed_page": "174"
+    },
+    {
+      "unit": "149",
+      "printed_page": "175"
+    },
+    {
+      "unit": "149",
+      "printed_page": "176"
+    },
+    {
+      "unit": "149",
+      "printed_page": "177"
+    },
+    {
+      "unit": "149",
+      "printed_page": "178"
+    },
+    {
+      "unit": "149",
+      "printed_page": "179"
+    },
+    {
+      "unit": "149",
+      "printed_page": "180"
+    },
+    {
+      "unit": "149",
+      "printed_page": "181"
+    },
+    {
+      "unit": "149",
+      "printed_page": "182"
+    },
+    {
+      "unit": "149",
+      "printed_page": "183"
+    },
+    {
+      "unit": "149",
+      "printed_page": "184"
+    },
+    {
+      "unit": "149",
+      "printed_page": "185"
+    },
+    {
+      "unit": "149",
+      "printed_page": "186"
+    },
+    {
+      "unit": "149",
+      "printed_page": "187"
+    },
+    {
+      "unit": "149",
+      "printed_page": "188"
+    },
+    {
+      "unit": "149",
+      "printed_page": "189"
+    },
+    {
+      "unit": "149",
+      "printed_page": "190"
+    },
+    {
+      "unit": "149",
+      "printed_page": "191"
+    },
+    {
+      "unit": "149",
+      "printed_page": "192"
+    },
+    {
+      "unit": "149",
+      "printed_page": "193"
+    },
+    {
+      "unit": "182",
+      "printed_page": "193"
+    },
+    {
+      "unit": "182",
+      "printed_page": "194"
+    },
+    {
+      "unit": "182",
+      "printed_page": "195"
+    },
+    {
+      "unit": "182",
+      "printed_page": "196"
+    },
+    {
+      "unit": "182",
+      "printed_page": "197"
+    },
+    {
+      "unit": "182",
+      "printed_page": "198"
+    },
+    {
+      "unit": "182",
+      "printed_page": "199"
+    },
+    {
+      "unit": "182",
+      "printed_page": "200"
+    },
+    {
+      "unit": "182",
+      "printed_page": "201"
+    },
+    {
+      "unit": "182",
+      "printed_page": "202"
+    },
+    {
+      "unit": "182",
+      "printed_page": "203"
+    },
+    {
+      "unit": "182",
+      "printed_page": "204"
+    },
+    {
+      "unit": "182",
+      "printed_page": "205"
+    },
+    {
+      "unit": "182",
+      "printed_page": "206"
+    },
+    {
+      "unit": "182",
+      "printed_page": "207"
+    },
+    {
+      "unit": "182",
+      "printed_page": "208"
+    },
+    {
+      "unit": "182",
+      "printed_page": "209"
+    },
+    {
+      "unit": "182",
+      "printed_page": "210"
+    },
+    {
+      "unit": "182",
+      "printed_page": "211"
+    },
+    {
+      "unit": "182",
+      "printed_page": "212"
+    },
+    {
+      "unit": "182",
+      "printed_page": "213"
+    },
+    {
+      "unit": "182",
+      "printed_page": "214"
+    },
+    {
+      "unit": "182",
+      "printed_page": "215"
+    },
+    {
+      "unit": "182",
+      "printed_page": "216"
+    },
+    {
+      "unit": "182",
+      "printed_page": "217"
+    },
+    {
+      "unit": "182",
+      "printed_page": "218"
+    },
+    {
+      "unit": "182",
+      "printed_page": "219"
+    },
+    {
+      "unit": "182",
+      "printed_page": "220"
+    },
+    {
+      "unit": "190",
+      "printed_page": "299"
+    },
+    {
+      "unit": "190",
+      "printed_page": "300"
+    },
+    {
+      "unit": "190",
+      "printed_page": "301"
+    },
+    {
+      "unit": "190",
+      "printed_page": "302"
+    },
+    {
+      "unit": "190",
+      "printed_page": "303"
+    },
+    {
+      "unit": "190",
+      "printed_page": "304"
+    },
+    {
+      "unit": "190",
+      "printed_page": "305"
+    },
+    {
+      "unit": "190",
+      "printed_page": "306"
+    },
+    {
+      "unit": "190",
+      "printed_page": "307"
+    },
+    {
+      "unit": "190",
+      "printed_page": "308"
+    },
+    {
+      "unit": "190",
+      "printed_page": "309"
+    },
+    {
+      "unit": "190",
+      "printed_page": "310"
+    },
+    {
+      "unit": "190",
+      "printed_page": "311"
+    },
+    {
+      "unit": "190",
+      "printed_page": "312"
+    },
+    {
+      "unit": "190",
+      "printed_page": "313"
+    },
+    {
+      "unit": "190",
+      "printed_page": "314"
+    },
+    {
+      "unit": "190",
+      "printed_page": "315"
+    },
+    {
+      "unit": "190",
+      "printed_page": "316"
+    },
+    {
+      "unit": "190",
+      "printed_page": "317"
+    },
+    {
+      "unit": "190",
+      "printed_page": "318"
+    },
+    {
+      "unit": "190",
+      "printed_page": "319"
+    },
+    {
+      "unit": "190",
+      "printed_page": "320"
+    },
+    {
+      "unit": "190",
+      "printed_page": "321"
+    },
+    {
+      "unit": "190",
+      "printed_page": "322"
+    },
+    {
+      "unit": "190",
+      "printed_page": "323"
+    },
+    {
+      "unit": "190",
+      "printed_page": "324"
+    },
+    {
+      "unit": "190",
+      "printed_page": "325"
+    },
+    {
+      "unit": "190",
+      "printed_page": "326"
+    },
+    {
+      "unit": "190",
+      "printed_page": "327"
+    },
+    {
+      "unit": "195",
+      "printed_page": "369"
+    },
+    {
+      "unit": "195",
+      "printed_page": "370"
+    },
+    {
+      "unit": "195",
+      "printed_page": "371"
+    },
+    {
+      "unit": "195",
+      "printed_page": "372"
+    },
+    {
+      "unit": "195",
+      "printed_page": "373"
+    },
+    {
+      "unit": "195",
+      "printed_page": "374"
+    },
+    {
+      "unit": "195",
+      "printed_page": "375"
+    },
+    {
+      "unit": "195",
+      "printed_page": "376"
+    },
+    {
+      "unit": "195",
+      "printed_page": "377"
+    },
+    {
+      "unit": "195",
+      "printed_page": "378"
+    },
+    {
+      "unit": "195",
+      "printed_page": "379"
+    },
+    {
+      "unit": "195",
+      "printed_page": "380"
+    },
+    {
+      "unit": "195",
+      "printed_page": "381"
+    },
+    {
+      "unit": "195",
+      "printed_page": "382"
+    },
+    {
+      "unit": "195",
+      "printed_page": "383"
+    },
+    {
+      "unit": "195",
+      "printed_page": "384"
+    },
+    {
+      "unit": "195",
+      "printed_page": "385"
+    },
+    {
+      "unit": "195",
+      "printed_page": "386"
+    },
+    {
+      "unit": "195",
+      "printed_page": "387"
+    },
+    {
+      "unit": "195",
+      "printed_page": "388"
+    },
+    {
+      "unit": "195",
+      "printed_page": "389"
+    },
+    {
+      "unit": "195",
+      "printed_page": "390"
+    },
+    {
+      "unit": "212",
+      "printed_page": "99"
+    },
+    {
+      "unit": "212",
+      "printed_page": "100"
+    },
+    {
+      "unit": "212",
+      "printed_page": "101"
+    },
+    {
+      "unit": "212",
+      "printed_page": "102"
+    },
+    {
+      "unit": "212",
+      "printed_page": "103"
+    },
+    {
+      "unit": "212",
+      "printed_page": "104"
+    },
+    {
+      "unit": "212",
+      "printed_page": "105"
+    },
+    {
+      "unit": "212",
+      "printed_page": "106"
+    },
+    {
+      "unit": "212",
+      "printed_page": "107"
+    },
+    {
+      "unit": "212",
+      "printed_page": "108"
+    },
+    {
+      "unit": "212",
+      "printed_page": "109"
+    },
+    {
+      "unit": "212",
+      "printed_page": "110"
+    },
+    {
+      "unit": "212",
+      "printed_page": "111"
+    },
+    {
+      "unit": "212",
+      "printed_page": "112"
+    },
+    {
+      "unit": "212",
+      "printed_page": "113"
+    },
+    {
+      "unit": "212",
+      "printed_page": "114"
+    },
+    {
+      "unit": "212",
+      "printed_page": "115"
+    },
+    {
+      "unit": "212",
+      "printed_page": "116"
+    },
+    {
+      "unit": "212",
+      "printed_page": "117"
+    },
+    {
+      "unit": "212",
+      "printed_page": "118"
+    },
+    {
+      "unit": "221",
+      "printed_page": "249"
+    },
+    {
+      "unit": "221",
+      "printed_page": "250"
+    },
+    {
+      "unit": "221",
+      "printed_page": "251"
+    },
+    {
+      "unit": "221",
+      "printed_page": "252"
+    },
+    {
+      "unit": "221",
+      "printed_page": "253"
+    },
+    {
+      "unit": "221",
+      "printed_page": "254"
+    },
+    {
+      "unit": "221",
+      "printed_page": "255"
+    },
+    {
+      "unit": "221",
+      "printed_page": "256"
+    },
+    {
+      "unit": "221",
+      "printed_page": "257"
+    },
+    {
+      "unit": "221",
+      "printed_page": "258"
+    },
+    {
+      "unit": "221",
+      "printed_page": "259"
+    },
+    {
+      "unit": "221",
+      "printed_page": "260"
+    },
+    {
+      "unit": "221",
+      "printed_page": "261"
+    },
+    {
+      "unit": "221",
+      "printed_page": "262"
+    },
+    {
+      "unit": "221",
+      "printed_page": "263"
+    },
+    {
+      "unit": "221",
+      "printed_page": "264"
+    },
+    {
+      "unit": "221",
+      "printed_page": "265"
+    },
+    {
+      "unit": "221",
+      "printed_page": "266"
+    },
+    {
+      "unit": "221",
+      "printed_page": "267"
+    },
+    {
+      "unit": "221",
+      "printed_page": "268"
+    },
+    {
+      "unit": "221",
+      "printed_page": "269"
+    },
+    {
+      "unit": "221",
+      "printed_page": "270"
+    },
+    {
+      "unit": "221",
+      "printed_page": "271"
+    },
+    {
+      "unit": "221",
+      "printed_page": "272"
+    },
+    {
+      "unit": "221",
+      "printed_page": "273"
+    },
+    {
+      "unit": "221",
+      "printed_page": "274"
+    },
+    {
+      "unit": "221",
+      "printed_page": "275"
+    },
+    {
+      "unit": "221",
+      "printed_page": "276"
+    },
+    {
+      "unit": "232",
+      "printed_page": "143"
+    },
+    {
+      "unit": "232",
+      "printed_page": "144"
+    },
+    {
+      "unit": "232",
+      "printed_page": "145"
+    },
+    {
+      "unit": "232",
+      "printed_page": "146"
+    },
+    {
+      "unit": "232",
+      "printed_page": "147"
+    },
+    {
+      "unit": "232",
+      "printed_page": "148"
+    },
+    {
+      "unit": "232",
+      "printed_page": "149"
+    },
+    {
+      "unit": "232",
+      "printed_page": "150"
+    },
+    {
+      "unit": "232",
+      "printed_page": "151"
+    },
+    {
+      "unit": "232",
+      "printed_page": "152"
+    },
+    {
+      "unit": "232",
+      "printed_page": "153"
+    },
+    {
+      "unit": "232",
+      "printed_page": "154"
+    },
+    {
+      "unit": "232",
+      "printed_page": "155"
+    },
+    {
+      "unit": "232",
+      "printed_page": "156"
+    },
+    {
+      "unit": "232",
+      "printed_page": "157"
+    },
+    {
+      "unit": "232",
+      "printed_page": "158"
+    },
+    {
+      "unit": "232",
+      "printed_page": "159"
+    },
+    {
+      "unit": "232",
+      "printed_page": "160"
+    },
+    {
+      "unit": "232",
+      "printed_page": "161"
+    },
+    {
+      "unit": "236",
+      "printed_page": "221"
+    },
+    {
+      "unit": "236",
+      "printed_page": "222"
+    },
+    {
+      "unit": "236",
+      "printed_page": "223"
+    },
+    {
+      "unit": "236",
+      "printed_page": "224"
+    },
+    {
+      "unit": "236",
+      "printed_page": "225"
+    },
+    {
+      "unit": "236",
+      "printed_page": "226"
+    },
+    {
+      "unit": "236",
+      "printed_page": "227"
+    },
+    {
+      "unit": "236",
+      "printed_page": "228"
+    },
+    {
+      "unit": "236",
+      "printed_page": "229"
+    },
+    {
+      "unit": "236",
+      "printed_page": "230"
+    },
+    {
+      "unit": "236",
+      "printed_page": "231"
+    },
+    {
+      "unit": "236",
+      "printed_page": "232"
+    },
+    {
+      "unit": "236",
+      "printed_page": "233"
+    },
+    {
+      "unit": "236",
+      "printed_page": "234"
+    },
+    {
+      "unit": "236",
+      "printed_page": "235"
+    },
+    {
+      "unit": "236",
+      "printed_page": "236"
+    },
+    {
+      "unit": "236",
+      "printed_page": "237"
+    },
+    {
+      "unit": "236",
+      "printed_page": "238"
+    },
+    {
+      "unit": "236",
+      "printed_page": "239"
+    },
+    {
+      "unit": "236",
+      "printed_page": "240"
+    },
+    {
+      "unit": "236",
+      "printed_page": "241"
+    },
+    {
+      "unit": "236",
+      "printed_page": "242"
+    },
+    {
+      "unit": "236",
+      "printed_page": "243"
+    },
+    {
+      "unit": "com",
+      "printed_page": "297"
+    },
+    {
+      "unit": "com",
+      "printed_page": "298"
+    },
+    {
+      "unit": "e149",
+      "printed_page": "298"
+    },
+    {
+      "unit": "e182",
+      "printed_page": "298"
+    },
+    {
+      "unit": "e182",
+      "printed_page": "299"
+    },
+    {
+      "unit": "e190",
+      "printed_page": "300"
+    },
+    {
+      "unit": "e195",
+      "printed_page": "300"
+    },
+    {
+      "unit": "e195",
+      "printed_page": "301"
+    },
+    {
+      "unit": "e212",
+      "printed_page": "301"
+    },
+    {
+      "unit": "e212",
+      "printed_page": "302"
+    },
+    {
+      "unit": "e221",
+      "printed_page": "302"
+    },
+    {
+      "unit": "e232",
+      "printed_page": "303"
+    },
+    {
+      "unit": "e236",
+      "printed_page": "303"
+    },
+    {
+      "unit": "e236",
+      "printed_page": "304"
+    },
+    {
+      "unit": "e236",
+      "printed_page": "305"
+    },
+    {
+      "unit": "e236",
+      "printed_page": "306"
+    },
+    {
+      "unit": "e236",
+      "printed_page": "307"
+    }
+  ],
+  "required_source_paths": [
+    "sources/en/NOTICE.tex",
+    "sources/en/README.md",
+    "sources/en/RIGHTS_NOTICE.md",
+    "sources/en/SOURCES.md",
+    "sources/en/_repository/ATTRIBUTION.md",
+    "sources/en/_repository/CITATION.cff",
+    "sources/en/_repository/PURPOSE.md",
+    "sources/en/_repository/README.md",
+    "sources/en/_repository/RIGHTS.md",
+    "sources/en/_repository/RIGHTS_NOTICE.md",
+    "sources/en/en/149.tex",
+    "sources/en/en/182.tex",
+    "sources/en/en/190.tex",
+    "sources/en/en/195.tex",
+    "sources/en/en/212.tex",
+    "sources/en/en/221.tex",
+    "sources/en/en/232.tex",
+    "sources/en/en/236.tex",
+    "sources/en/en/com.tex",
+    "sources/en/en/e149.tex",
+    "sources/en/en/e182.tex",
+    "sources/en/en/e190.tex",
+    "sources/en/en/e195.tex",
+    "sources/en/en/e212.tex",
+    "sources/en/en/e221.tex",
+    "sources/en/en/e232.tex",
+    "sources/en/en/e236.tex",
+    "sources/en/en/main.tex",
+    "sources/en/tex/base.tex",
+    "sources/es/FUENTES.md",
+    "sources/es/README.md",
+    "sources/es/RIGHTS_NOTICE.md",
+    "sources/es/es/149.tex",
+    "sources/es/es/182.tex",
+    "sources/es/es/190.tex",
+    "sources/es/es/195.tex",
+    "sources/es/es/212.tex",
+    "sources/es/es/221.tex",
+    "sources/es/es/232.tex",
+    "sources/es/es/236.tex",
+    "sources/es/es/FGA_ES_CURRENT.tex",
+    "sources/es/es/com.tex",
+    "sources/es/es/e149.tex",
+    "sources/es/es/e182.tex",
+    "sources/es/es/e190.tex",
+    "sources/es/es/e195.tex",
+    "sources/es/es/e212.tex",
+    "sources/es/es/e221.tex",
+    "sources/es/es/e232.tex",
+    "sources/es/es/e236.tex",
+    "sources/es/tex/base.tex",
+    "sources/es_149_printed/FUENTES.md",
+    "sources/es_149_printed/README.md",
+    "sources/es_149_printed/RIGHTS_NOTICE.md",
+    "sources/es_149_printed/es/149_diplomatic.tex",
+    "sources/es_149_printed/es/FGA_ES_149_PRINTED.tex",
+    "sources/es_149_printed/tex/base.tex",
+    "sources/fr/NOTICE.tex",
+    "sources/fr/README.md",
+    "sources/fr/RIGHTS_NOTICE.md",
+    "sources/fr/SOURCES.md",
+    "sources/fr/_repository/ATTRIBUTION.md",
+    "sources/fr/_repository/CITATION.cff",
+    "sources/fr/_repository/PURPOSE.md",
+    "sources/fr/_repository/README.md",
+    "sources/fr/_repository/RIGHTS.md",
+    "sources/fr/_repository/RIGHTS_NOTICE.md",
+    "sources/fr/fr/149.tex",
+    "sources/fr/fr/182.tex",
+    "sources/fr/fr/190.tex",
+    "sources/fr/fr/195.tex",
+    "sources/fr/fr/212.tex",
+    "sources/fr/fr/221.tex",
+    "sources/fr/fr/232.tex",
+    "sources/fr/fr/236.tex",
+    "sources/fr/fr/com.tex",
+    "sources/fr/fr/e149.tex",
+    "sources/fr/fr/e182.tex",
+    "sources/fr/fr/e190.tex",
+    "sources/fr/fr/e195.tex",
+    "sources/fr/fr/e212.tex",
+    "sources/fr/fr/e221.tex",
+    "sources/fr/fr/e232.tex",
+    "sources/fr/fr/e236.tex",
+    "sources/fr/fr/main.tex",
+    "sources/fr/tex/base.tex",
+    "sources/fr_printed/NOTICE.tex",
+    "sources/fr_printed/README.md",
+    "sources/fr_printed/RIGHTS_NOTICE.md",
+    "sources/fr_printed/SOURCES.md",
+    "sources/fr_printed/_repository/ATTRIBUTION.md",
+    "sources/fr_printed/_repository/CITATION.cff",
+    "sources/fr_printed/_repository/PURPOSE.md",
+    "sources/fr_printed/_repository/README.md",
+    "sources/fr_printed/_repository/RIGHTS.md",
+    "sources/fr_printed/_repository/RIGHTS_NOTICE.md",
+    "sources/fr_printed/fr/149.tex",
+    "sources/fr_printed/fr/182.tex",
+    "sources/fr_printed/fr/190.tex",
+    "sources/fr_printed/fr/195.tex",
+    "sources/fr_printed/fr/212.tex",
+    "sources/fr_printed/fr/221.tex",
+    "sources/fr_printed/fr/232.tex",
+    "sources/fr_printed/fr/236.tex",
+    "sources/fr_printed/fr/com.tex",
+    "sources/fr_printed/fr/e149.tex",
+    "sources/fr_printed/fr/e182.tex",
+    "sources/fr_printed/fr/e190.tex",
+    "sources/fr_printed/fr/e195.tex",
+    "sources/fr_printed/fr/e212.tex",
+    "sources/fr_printed/fr/e221.tex",
+    "sources/fr_printed/fr/e232.tex",
+    "sources/fr_printed/fr/e236.tex",
+    "sources/fr_printed/fr/main.tex",
+    "sources/fr_printed/tex/base.tex",
+    "sources/ko/149.tex",
+    "sources/ko/182.tex",
+    "sources/ko/190.tex",
+    "sources/ko/195.tex",
+    "sources/ko/212.tex",
+    "sources/ko/221.tex",
+    "sources/ko/232.tex",
+    "sources/ko/236.tex",
+    "sources/ko/BUILD.md",
+    "sources/ko/BUILD.ps1",
+    "sources/ko/PUBLIC_COVERAGE_MANIFEST.json",
+    "sources/ko/_repository/ATTRIBUTION.md",
+    "sources/ko/_repository/CITATION.cff",
+    "sources/ko/_repository/PURPOSE.md",
+    "sources/ko/_repository/README.md",
+    "sources/ko/_repository/RIGHTS_NOTICE.md",
+    "sources/ko/base-ko.tex",
+    "sources/ko/com.tex",
+    "sources/ko/e149.tex",
+    "sources/ko/e182.tex",
+    "sources/ko/e190.tex",
+    "sources/ko/e195.tex",
+    "sources/ko/e212.tex",
+    "sources/ko/e221.tex",
+    "sources/ko/e232.tex",
+    "sources/ko/e236.tex",
+    "sources/ko/front-ko.tex",
+    "sources/ko/main.tex",
+    "sources/ko/notice.tex",
+    "sources/pt-BR/BUILD.md",
+    "sources/pt-BR/CITATION.cff",
+    "sources/pt-BR/README.md",
+    "sources/pt-BR/RIGHTS_NOTICE.md",
+    "sources/pt-BR/SOURCES.md",
+    "sources/pt-BR/_repository/ATTRIBUTION_FGA.md",
+    "sources/pt-BR/pt_BR/FGA_PTBR_CURRENT.tex",
+    "sources/pt-BR/pt_BR/current/149.tex",
+    "sources/pt-BR/pt_BR/current/182.tex",
+    "sources/pt-BR/pt_BR/current/190.tex",
+    "sources/pt-BR/pt_BR/current/195.tex",
+    "sources/pt-BR/pt_BR/current/212.tex",
+    "sources/pt-BR/pt_BR/current/221.tex",
+    "sources/pt-BR/pt_BR/current/232.tex",
+    "sources/pt-BR/pt_BR/current/236.tex",
+    "sources/pt-BR/pt_BR/current/com.tex",
+    "sources/pt-BR/pt_BR/current/e149.tex",
+    "sources/pt-BR/pt_BR/current/e182.tex",
+    "sources/pt-BR/pt_BR/current/e190.tex",
+    "sources/pt-BR/pt_BR/current/e195.tex",
+    "sources/pt-BR/pt_BR/current/e212.tex",
+    "sources/pt-BR/pt_BR/current/e221.tex",
+    "sources/pt-BR/pt_BR/current/e232.tex",
+    "sources/pt-BR/pt_BR/current/e236.tex",
+    "sources/pt-BR/tex/base.tex",
+    "sources/pt-BR_printed/BUILD.md",
+    "sources/pt-BR_printed/CITATION.cff",
+    "sources/pt-BR_printed/README.md",
+    "sources/pt-BR_printed/RIGHTS_NOTICE.md",
+    "sources/pt-BR_printed/SOURCES.md",
+    "sources/pt-BR_printed/pt_BR/FGA_PTBR_PRINTED.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/149.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/182.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/190.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/195.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/212.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/221.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/232.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/236.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/com.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/e149.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/e182.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/e190.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/e195.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/e212.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/e221.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/e232.tex",
+    "sources/pt-BR_printed/pt_BR/diplomatic/e236.tex",
+    "sources/pt-BR_printed/tex/base.tex",
+    "sources/vi/ATTRIBUTION.md",
+    "sources/vi/BUILD.md",
+    "sources/vi/CITATION.cff",
+    "sources/vi/FGA_vi_current.tex",
+    "sources/vi/NOTICE_vi.tex",
+    "sources/vi/README.md",
+    "sources/vi/RIGHTS_NOTICE.md",
+    "sources/vi/controls/vi_base.tex",
+    "sources/vi/sources/current/149.tex",
+    "sources/vi/sources/current/182.tex",
+    "sources/vi/sources/current/190.tex",
+    "sources/vi/sources/current/195.tex",
+    "sources/vi/sources/current/212.tex",
+    "sources/vi/sources/current/221.tex",
+    "sources/vi/sources/current/232.tex",
+    "sources/vi/sources/current/236.tex",
+    "sources/vi/sources/current/com.tex",
+    "sources/vi/sources/current/e149.tex",
+    "sources/vi/sources/current/e182.tex",
+    "sources/vi/sources/current/e190.tex",
+    "sources/vi/sources/current/e195.tex",
+    "sources/vi/sources/current/e212.tex",
+    "sources/vi/sources/current/e221.tex",
+    "sources/vi/sources/current/e232.tex",
+    "sources/vi/sources/current/e236.tex",
+    "sources/vi_diplomatic/ATTRIBUTION.md",
+    "sources/vi_diplomatic/BUILD.md",
+    "sources/vi_diplomatic/CITATION.cff",
+    "sources/vi_diplomatic/FGA_vi_diplomatic.tex",
+    "sources/vi_diplomatic/NOTICE_vi.tex",
+    "sources/vi_diplomatic/README.md",
+    "sources/vi_diplomatic/RIGHTS_NOTICE.md",
+    "sources/vi_diplomatic/controls/vi_base.tex",
+    "sources/vi_diplomatic/sources/diplomatic/149.tex",
+    "sources/vi_diplomatic/sources/diplomatic/182.tex",
+    "sources/vi_diplomatic/sources/diplomatic/190.tex",
+    "sources/vi_diplomatic/sources/diplomatic/195.tex",
+    "sources/vi_diplomatic/sources/diplomatic/212.tex",
+    "sources/vi_diplomatic/sources/diplomatic/221.tex",
+    "sources/vi_diplomatic/sources/diplomatic/232.tex",
+    "sources/vi_diplomatic/sources/diplomatic/236.tex",
+    "sources/vi_diplomatic/sources/diplomatic/com.tex",
+    "sources/vi_diplomatic/sources/diplomatic/e149.tex",
+    "sources/vi_diplomatic/sources/diplomatic/e182.tex",
+    "sources/vi_diplomatic/sources/diplomatic/e190.tex",
+    "sources/vi_diplomatic/sources/diplomatic/e195.tex",
+    "sources/vi_diplomatic/sources/diplomatic/e212.tex",
+    "sources/vi_diplomatic/sources/diplomatic/e221.tex",
+    "sources/vi_diplomatic/sources/diplomatic/e232.tex",
+    "sources/vi_diplomatic/sources/diplomatic/e236.tex",
+    "sources/zh-Hans/ATTRIBUTION.md",
+    "sources/zh-Hans/BUILD.md",
+    "sources/zh-Hans/CITATION.cff",
+    "sources/zh-Hans/README.md",
+    "sources/zh-Hans/RIGHTS_NOTICE.md",
+    "sources/zh-Hans/_repository/ATTRIBUTION.md",
+    "sources/zh-Hans/_repository/CITATION.cff",
+    "sources/zh-Hans/_repository/PURPOSE.md",
+    "sources/zh-Hans/_repository/README.md",
+    "sources/zh-Hans/_repository/RIGHTS_NOTICE.md",
+    "sources/zh-Hans/source/NOTICE.tex",
+    "sources/zh-Hans/source/tex/zh.tex",
+    "sources/zh-Hans/source/zh/149.tex",
+    "sources/zh-Hans/source/zh/182.tex",
+    "sources/zh-Hans/source/zh/190.tex",
+    "sources/zh-Hans/source/zh/195.tex",
+    "sources/zh-Hans/source/zh/212.tex",
+    "sources/zh-Hans/source/zh/221.tex",
+    "sources/zh-Hans/source/zh/232.tex",
+    "sources/zh-Hans/source/zh/236.tex",
+    "sources/zh-Hans/source/zh/com.tex",
+    "sources/zh-Hans/source/zh/e149.tex",
+    "sources/zh-Hans/source/zh/e182.tex",
+    "sources/zh-Hans/source/zh/e190.tex",
+    "sources/zh-Hans/source/zh/e195.tex",
+    "sources/zh-Hans/source/zh/e212.tex",
+    "sources/zh-Hans/source/zh/e221.tex",
+    "sources/zh-Hans/source/zh/e232.tex",
+    "sources/zh-Hans/source/zh/e236.tex",
+    "sources/zh-Hans/source/zh/main.tex",
+    "sources/MANIFEST.tsv"
+  ],
+  "reference_catalogs": {
+    "validation/PAGE_COVERAGE.tsv": "c2d4b8b5c51d143f883dba52a21c98672452d985f281f4ced88b5eb8852e0923",
+    "validation/SOURCE_INVENTORY.tsv": "d917defd1106a8e2e28d6d5ce92e41c4728e82651e9c179ba8686443b85bec69"
+  },
+  "interpretation": "Structural policy only. Event-how extensions are advisory unless strict legacy-event mode is requested; no payload validity is assessed."
+}

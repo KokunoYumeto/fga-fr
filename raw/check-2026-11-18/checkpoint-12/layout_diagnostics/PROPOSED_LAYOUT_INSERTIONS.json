@@ -1,0 +1,115 @@
+[
+  {
+    "path": "fr/fr/149.tex",
+    "kind": "local display font size",
+    "line_start": 477,
+    "line_end": 485,
+    "before": "\\[\r\n\\symup{\\Extsh_{\\Osh_X}^{p}(F,L)\r\n=L\\otimes(\\underline{\\Omega}_X^{n})'\\otimes\r\n  \\Extsh_{\\Osh_X}^{p}(F,\\underline{\\Omega}_X^{n})\r\n=L\\otimes(\\underline{\\Omega}_X^{n})'\\otimes\r\n  \\Homsh_{\\Osh_X}(F,\\underline{\\omega}_Y^{q})\r\n=\\Homsh_{\\Osh_X}\\!\\left(\r\n  F\\otimes L'\\otimes\\underline{\\Omega}_X^{n},\\underline{\\omega}_Y^{q}\\right)}\r\n\\]",
+    "after": "{\\small\r\n\\[\r\n\\symup{\\Extsh_{\\Osh_X}^{p}(F,L)\r\n=L\\otimes(\\underline{\\Omega}_X^{n})'\\otimes\r\n  \\Extsh_{\\Osh_X}^{p}(F,\\underline{\\Omega}_X^{n})\r\n=L\\otimes(\\underline{\\Omega}_X^{n})'\\otimes\r\n  \\Homsh_{\\Osh_X}(F,\\underline{\\omega}_Y^{q})\r\n=\\Homsh_{\\Osh_X}\\!\\left(\r\n  F\\otimes L'\\otimes\\underline{\\Omega}_X^{n},\\underline{\\omega}_Y^{q}\\right)}\r\n\\]\r\n}"
+  },
+  {
+    "path": "fr_printed/fr/149.tex",
+    "kind": "local display font size",
+    "line_start": 474,
+    "line_end": 482,
+    "before": "\\[\r\n\\symup{\\Extsh_{\\Osh_X}^{p}(F,L)\r\n=L\\otimes(\\underline{\\Omega}_X^{n})'\\otimes\r\n  \\Extsh_{\\Osh_X}(F,\\underline{\\Omega}_X^{n})\r\n=L\\otimes(\\underline{\\Omega}_X^{n})'\\otimes\r\n  \\Homsh_{\\Osh_X}(F,\\underline{\\omega}_Y^{q})\r\n=\\Homsh_{\\Osh_X}\\!\\left(\r\n  F\\otimes L'\\otimes\\underline{\\Omega}_X^{n},\\underline{\\omega}_Y^{q}\\right)}\r\n\\]",
+    "after": "{\\small\r\n\\[\r\n\\symup{\\Extsh_{\\Osh_X}^{p}(F,L)\r\n=L\\otimes(\\underline{\\Omega}_X^{n})'\\otimes\r\n  \\Extsh_{\\Osh_X}(F,\\underline{\\Omega}_X^{n})\r\n=L\\otimes(\\underline{\\Omega}_X^{n})'\\otimes\r\n  \\Homsh_{\\Osh_X}(F,\\underline{\\omega}_Y^{q})\r\n=\\Homsh_{\\Osh_X}\\!\\left(\r\n  F\\otimes L'\\otimes\\underline{\\Omega}_X^{n},\\underline{\\omega}_Y^{q}\\right)}\r\n\\]\r\n}"
+  },
+  {
+    "path": "fr/fr/182.tex",
+    "kind": "local emergency stretch",
+    "line_start": 256,
+    "line_end": 257,
+    "before": "\\result{COROLLAIRE}{1} \\uline{Les sous-schémas fermés de} $\\symup{X}$ \\uline{correspondent\r\nbiunivoquement aux sous-schémas formels fermés de} $\\symup{\\overline X}$.\r\n\r\n",
+    "after": "\\begingroup\\emergencystretch=3em\r\n\\result{COROLLAIRE}{1} \\uline{Les sous-schémas fermés de} $\\symup{X}$ \\uline{correspondent\r\nbiunivoquement aux sous-schémas formels fermés de} $\\symup{\\overline X}$.\r\n\r\n\\endgroup\r\n\r\n"
+  },
+  {
+    "path": "fr/fr/182.tex",
+    "kind": "local emergency stretch",
+    "line_start": 269,
+    "line_end": 278,
+    "before": "En d'autres termes, \\uline{les schémas algébriques propres sur} $\\symup{A}$ \\uline{apparaissent comme\r\nune sous-catégorie} (avec comme morphismes les morphismes induits) de la\r\ncatégorie des schémas formels propres sur $\\symup{\\overline Y}$. On fera attention\r\ncependant \\uline{qu'il existe des schémas formels propres sur} $\\symup{\\overline Y}$ \\uline{qui ne\r\nsont pas \\fquote{algébrisables}}, i.e. isomorphes à un $\\symup{\\overline X}$, avec $\\symup{X}$ propre\r\nsur $\\symup{A}$ (tout comme il existe des variétés analytiques complexes compactes qui\r\nne proviennent pas de variétés algébriques définies sur le corps des complexes).\r\nDe tels schémas formels s'introduisent de façon naturelle en \\uline{\\fquote{théorie des\r\nmodules}}. Notons cependant un cas particulier intéressant où un schéma formel\r\nest algébrisable :\r\n\r\n",
+    "after": "\\begingroup\\emergencystretch=3em\r\nEn d'autres termes, \\uline{les schémas algébriques propres sur} $\\symup{A}$ \\uline{apparaissent comme\r\nune sous-catégorie} (avec comme morphismes les morphismes induits) de la\r\ncatégorie des schémas formels propres sur $\\symup{\\overline Y}$. On fera attention\r\ncependant \\uline{qu'il existe des schémas formels propres sur} $\\symup{\\overline Y}$ \\uline{qui ne\r\nsont pas \\fquote{algébrisables}}, i.e. isomorphes à un $\\symup{\\overline X}$, avec $\\symup{X}$ propre\r\nsur $\\symup{A}$ (tout comme il existe des variétés analytiques complexes compactes qui\r\nne proviennent pas de variétés algébriques définies sur le corps des complexes).\r\nDe tels schémas formels s'introduisent de façon naturelle en \\uline{\\fquote{théorie des\r\nmodules}}. Notons cependant un cas particulier intéressant où un schéma formel\r\nest algébrisable :\r\n\r\n\\endgroup\r\n\r\n"
+  },
+  {
+    "path": "fr/fr/182.tex",
+    "kind": "local paragraph font size",
+    "line_start": 439,
+    "line_end": 444,
+    "before": "\\src{202}\r\n\\result{COROLLAIRE}{2} \\uline{Soit} $\\symup{E_0}$ \\uline{un faisceau cohérent localement libre sur}\r\n$\\symup{X_y}$ \\uline{tel que}\r\n$\\symup{H^1\\bigl(X_y;\\mathop{\\text{\\uwave{Hom}}}\\nolimits_{O_X}(E_0,E_0)\\bigr)=0}$,\r\n\\uline{alors deux faisceaux localement libres dont les restrictions à} $\\symup{X_y}$ \\uline{sont\r\nisomorphes à} $\\symup{E_0}$, \\uline{sont isomorphes dans un voisinage de} $\\symup{X_y}$.\r\n\r\n",
+    "after": "\\begingroup\\small\r\n\\src{202}\r\n\\result{COROLLAIRE}{2} \\uline{Soit} $\\symup{E_0}$ \\uline{un faisceau cohérent localement libre sur}\r\n$\\symup{X_y}$ \\uline{tel que}\r\n$\\symup{H^1\\bigl(X_y;\\mathop{\\text{\\uwave{Hom}}}\\nolimits_{O_X}(E_0,E_0)\\bigr)=0}$,\r\n\\uline{alors deux faisceaux localement libres dont les restrictions à} $\\symup{X_y}$ \\uline{sont\r\nisomorphes à} $\\symup{E_0}$, \\uline{sont isomorphes dans un voisinage de} $\\symup{X_y}$.\r\n\r\n\\endgroup\r\n\r\n"
+  },
+  {
+    "path": "fr/fr/212.tex",
+    "kind": "local emergency stretch",
+    "line_start": 289,
+    "line_end": 290,
+    "before": "défini par le couple $\\symup{(p_1,p_2)}$, la condition que $\\symup{G}$ opère librement signifie\r\nque $\\symup{p}$ est un \\uline{monomorphisme}.\r\n\r\n",
+    "after": "\\begingroup\\emergencystretch=3em\r\ndéfini par le couple $\\symup{(p_1,p_2)}$, la condition que $\\symup{G}$ opère librement signifie\r\nque $\\symup{p}$ est un \\uline{monomorphisme}.\r\n\r\n\\endgroup\r\n\r\n"
+  },
+  {
+    "path": "fr_printed/fr/182.tex",
+    "kind": "local emergency stretch",
+    "line_start": 256,
+    "line_end": 257,
+    "before": "\\result{COROLLAIRE}{1} \\uline{Les sous-schémas fermés de} $\\symup{X}$ \\uline{correspondent\r\nbiunivoquement aux sous-schémas formels fermés de} $\\symup{\\overline X}$.\r\n\r\n",
+    "after": "\\begingroup\\emergencystretch=3em\r\n\\result{COROLLAIRE}{1} \\uline{Les sous-schémas fermés de} $\\symup{X}$ \\uline{correspondent\r\nbiunivoquement aux sous-schémas formels fermés de} $\\symup{\\overline X}$.\r\n\r\n\\endgroup\r\n\r\n"
+  },
+  {
+    "path": "fr_printed/fr/182.tex",
+    "kind": "local emergency stretch",
+    "line_start": 269,
+    "line_end": 278,
+    "before": "En d'autres termes, \\uline{les schémas algébriques propres sur} $\\symup{A}$ \\uline{apparaissent comme\r\nune sous-catégorie} (avec comme morphismes les morphismes induits) de la\r\ncatégorie des schémas formels propres sur $\\symup{\\overline Y}$. On fera attention\r\ncependant \\uline{qu'il existe des schémas formels propres sur} $\\symup{\\overline Y}$ \\uline{qui ne\r\nsont pas \\fquote{algébrisables}}, i.e. isomorphes à un $\\symup{\\overline X}$, avec $\\symup{X}$ propre\r\nsur $\\symup{A}$ (tout comme il existe des variétés analytiques complexes compactes qui\r\nne proviennent pas de variétés algébriques définies sur le corps des complexes).\r\nDe tels schémas formels s'introduisent de façon naturelle en \\uline{\\fquote{théorie des\r\nmodules}}. Notons cependant un cas particulier intéressant où un schéma formel\r\nest algébrisable :\r\n\r\n",
+    "after": "\\begingroup\\emergencystretch=3em\r\nEn d'autres termes, \\uline{les schémas algébriques propres sur} $\\symup{A}$ \\uline{apparaissent comme\r\nune sous-catégorie} (avec comme morphismes les morphismes induits) de la\r\ncatégorie des schémas formels propres sur $\\symup{\\overline Y}$. On fera attention\r\ncependant \\uline{qu'il existe des schémas formels propres sur} $\\symup{\\overline Y}$ \\uline{qui ne\r\nsont pas \\fquote{algébrisables}}, i.e. isomorphes à un $\\symup{\\overline X}$, avec $\\symup{X}$ propre\r\nsur $\\symup{A}$ (tout comme il existe des variétés analytiques complexes compactes qui\r\nne proviennent pas de variétés algébriques définies sur le corps des complexes).\r\nDe tels schémas formels s'introduisent de façon naturelle en \\uline{\\fquote{théorie des\r\nmodules}}. Notons cependant un cas particulier intéressant où un schéma formel\r\nest algébrisable :\r\n\r\n\\endgroup\r\n\r\n"
+  },
+  {
+    "path": "fr_printed/fr/182.tex",
+    "kind": "local paragraph font size",
+    "line_start": 439,
+    "line_end": 444,
+    "before": "\\src{202}\r\n\\result{COROLLAIRE}{2} \\uline{Soit} $\\symup{E_0}$ \\uline{un faisceau cohérent localement libre sur}\r\n$\\symup{X_y}$ \\uline{tel que}\r\n$\\symup{H^1\\bigl(X_y;\\mathop{\\text{\\uwave{Hom}}}\\nolimits_{O_X}(E_0,E_0)\\bigr)=0}$,\r\n\\uline{alors deux faisceaux localement libres dont des restrictions à} $\\symup{X_y}$ \\uline{sont\r\nisomorphes à} $\\symup{E_0}$, \\uline{sont isomorphes dans un voisinage de} $\\symup{X_y}$.\r\n\r\n",
+    "after": "\\begingroup\\small\r\n\\src{202}\r\n\\result{COROLLAIRE}{2} \\uline{Soit} $\\symup{E_0}$ \\uline{un faisceau cohérent localement libre sur}\r\n$\\symup{X_y}$ \\uline{tel que}\r\n$\\symup{H^1\\bigl(X_y;\\mathop{\\text{\\uwave{Hom}}}\\nolimits_{O_X}(E_0,E_0)\\bigr)=0}$,\r\n\\uline{alors deux faisceaux localement libres dont des restrictions à} $\\symup{X_y}$ \\uline{sont\r\nisomorphes à} $\\symup{E_0}$, \\uline{sont isomorphes dans un voisinage de} $\\symup{X_y}$.\r\n\r\n\\endgroup\r\n\r\n"
+  },
+  {
+    "path": "fr_printed/fr/182.tex",
+    "kind": "local emergency stretch",
+    "line_start": 898,
+    "line_end": 924,
+    "before": "\\result{LEMME}{3} \\uline{Soit} $\\symup{Z}$ \\uline{un schéma complet au-dessus d'un anneau local\r\nartinien} $\\symup{A}$, \\uline{tel que} $\\symup{H^0(X,O_X)=A}$, \\uline{soit} $\\symup{X'}$ \\uline{un revêtement non ramifié de}\r\n$\\symup{X}$ \\uline{et soit} $\\symup{A'=H^0(X',O_{X'})}$, \\uline{qui est donc un anneau fini sur} $\\symup{A}$\r\n(pouvant a priori être ramifié sur $\\symup{A}$). \\uline{Soient} $\\symup{X_0,X'_0}$ \\uline{les\r\nsous-schémas réduits associés à} $\\symup{X,X'}$ (obtenus en divisant par les faisceaux\r\ndes éléments nilpotents dans $\\symup{O_X,O_{X'}}$), \\uline{soit} $\\symup{k}$ \\uline{un sous-corps de}\r\n$\\symup{A/\\mathfrak r(A)}$ \\uline{sur lequel} $\\symup{A/\\mathfrak r(A)}$ soit fini (ainsi $\\symup{X_0}$ est un\r\nschéma algébrique complet sur $\\symup{k}$, et $\\symup{X'_0}$ en est un revêtement non ramifié).\r\n\\uline{Soit enfin} $\\symup{\\Omega}$ \\uline{une extension algébriquement close de} $\\symup{k}$, \\uline{et considérons\r\nle revêtement non ramifié} $\\symup{X'_0\\otimes_k\\Omega}$ \\uline{de}\r\n$\\symup{X_0\\otimes_k\\Omega}$. \\uline{Alors les deux conditions suivantes sont équivalentes} :\r\n\\src{212}\r\n\\begin{enumerate}\r\n  \\item[i.] $\\symup{X'_0\\otimes_k\\Omega}$ \\uline{est complètement décomposé sur}\r\n    $\\symup{X_0\\otimes_k\\Omega}$.\r\n  \\item[ii.] \\uline{Le morphisme naturel}\r\n    $\\symup{X'\\longrightarrow X\\otimes_A A'}$ \\uline{est un isomorphisme}.\r\n\\end{enumerate}\r\n\\uline{Sous ces conditions}, $\\symup{A'}$ \\uline{est une extension} non ramifiée \\uline{de} $\\symup{A}$. \\uline{Enfin, si}\r\n$\\symup{X'}$ \\uline{est connexe, la condition} (i) \\uline{équivaut à la condition suivante\r\nplus faible en apparence} :\r\n\\begin{enumerate}\r\n  \\item[i. bis] $\\symup{X'_0\\otimes_k\\Omega}$ \\uline{admet une section régulière\r\n    au-dessus de} $\\symup{X_0\\otimes_k\\Omega}$.\r\n\\end{enumerate}\r\nLorsque la condition (ii) est vérifiée, nous dirons que le revêtement\r\nnon ramifié $\\symup{X'}$ de $\\symup{X}$ est \\uline{géométriquement trivial}.\r\n\r\n",
+    "after": "\\begingroup\\emergencystretch=3em\r\n\\result{LEMME}{3} \\uline{Soit} $\\symup{Z}$ \\uline{un schéma complet au-dessus d'un anneau local\r\nartinien} $\\symup{A}$, \\uline{tel que} $\\symup{H^0(X,O_X)=A}$, \\uline{soit} $\\symup{X'}$ \\uline{un revêtement non ramifié de}\r\n$\\symup{X}$ \\uline{et soit} $\\symup{A'=H^0(X',O_{X'})}$, \\uline{qui est donc un anneau fini sur} $\\symup{A}$\r\n(pouvant a priori être ramifié sur $\\symup{A}$). \\uline{Soient} $\\symup{X_0,X'_0}$ \\uline{les\r\nsous-schémas réduits associés à} $\\symup{X,X'}$ (obtenus en divisant par les faisceaux\r\ndes éléments nilpotents dans $\\symup{O_X,O_{X'}}$), \\uline{soit} $\\symup{k}$ \\uline{un sous-corps de}\r\n$\\symup{A/\\mathfrak r(A)}$ \\uline{sur lequel} $\\symup{A/\\mathfrak r(A)}$ soit fini (ainsi $\\symup{X_0}$ est un\r\nschéma algébrique complet sur $\\symup{k}$, et $\\symup{X'_0}$ en est un revêtement non ramifié).\r\n\\uline{Soit enfin} $\\symup{\\Omega}$ \\uline{une extension algébriquement close de} $\\symup{k}$, \\uline{et considérons\r\nle revêtement non ramifié} $\\symup{X'_0\\otimes_k\\Omega}$ \\uline{de}\r\n$\\symup{X_0\\otimes_k\\Omega}$. \\uline{Alors les deux conditions suivantes sont équivalentes} :\r\n\\src{212}\r\n\\begin{enumerate}\r\n  \\item[i.] $\\symup{X'_0\\otimes_k\\Omega}$ \\uline{est complètement décomposé sur}\r\n    $\\symup{X_0\\otimes_k\\Omega}$.\r\n  \\item[ii.] \\uline{Le morphisme naturel}\r\n    $\\symup{X'\\longrightarrow X\\otimes_A A'}$ \\uline{est un isomorphisme}.\r\n\\end{enumerate}\r\n\\uline{Sous ces conditions}, $\\symup{A'}$ \\uline{est une extension} non ramifiée \\uline{de} $\\symup{A}$. \\uline{Enfin, si}\r\n$\\symup{X'}$ \\uline{est connexe, la condition} (i) \\uline{équivaut à la condition suivante\r\nplus faible en apparence} :\r\n\\begin{enumerate}\r\n  \\item[i. bis] $\\symup{X'_0\\otimes_k\\Omega}$ \\uline{admet une section régulière\r\n    au-dessus de} $\\symup{X_0\\otimes_k\\Omega}$.\r\n\\end{enumerate}\r\nLorsque la condition (ii) est vérifiée, nous dirons que le revêtement\r\nnon ramifié $\\symup{X'}$ de $\\symup{X}$ est \\uline{géométriquement trivial}.\r\n\r\n\\endgroup\r\n\r\n"
+  },
+  {
+    "path": "fr_printed/fr/212.tex",
+    "kind": "local emergency stretch",
+    "line_start": 289,
+    "line_end": 290,
+    "before": "défini par le couple $\\symup{(p_1,p_2)}$, la condition que $\\symup{G}$ opère librement signifie\r\nque $\\symup{p}$ est un \\uline{monomorphisme}.\r\n\r\n",
+    "after": "\\begingroup\\emergencystretch=3em\r\ndéfini par le couple $\\symup{(p_1,p_2)}$, la condition que $\\symup{G}$ opère librement signifie\r\nque $\\symup{p}$ est un \\uline{monomorphisme}.\r\n\r\n\\endgroup\r\n\r\n"
+  },
+  {
+    "path": "ko/149.tex",
+    "kind": "local emergency stretch",
+    "line_start": 72,
+    "line_end": 79,
+    "before": "\\result{명제}{1} 모든 $\\Osh$-가군 $A$에 대하여 $\\Ccat^{\\Osh}$ 위의\n코호몰로지형 스펙트럼 함자가 존재하며, 이는 등급 함자\n$\\bigl(\\operatorname{Ext}_{\\Osh}^{*}(X;A,B)\\bigr)$로 수렴하고 그 초항은\n\\begin{equation}\\tag{1.4}\n  E_{2}^{p,q}(A,B)=H^{p}\\bigl(X,\\Extsh_{\\Osh}^{q}(A,B)\\bigr).\n\\end{equation}\n이로부터 \\fquote{가장자리 준동형}들과 우리가 적지 않을 5항\n완전열을 얻는다.\n\n",
+    "after": "\\begingroup\\emergencystretch=3em\n\\result{명제}{1} 모든 $\\Osh$-가군 $A$에 대하여 $\\Ccat^{\\Osh}$ 위의\n코호몰로지형 스펙트럼 함자가 존재하며, 이는 등급 함자\n$\\bigl(\\operatorname{Ext}_{\\Osh}^{*}(X;A,B)\\bigr)$로 수렴하고 그 초항은\n\\begin{equation}\\tag{1.4}\n  E_{2}^{p,q}(A,B)=H^{p}\\bigl(X,\\Extsh_{\\Osh}^{q}(A,B)\\bigr).\n\\end{equation}\n이로부터 \\fquote{가장자리 준동형}들과 우리가 적지 않을 5항\n완전열을 얻는다.\n\n\\endgroup\n\n"
+  },
+  {
+    "path": "ko/182.tex",
+    "kind": "local inline math font size",
+    "line_start": 506,
+    "line_end": 509,
+    "actual_insertion_line": 508,
+    "before": "그러면 $X_0$ 위에 $F_0$와 동형인 층을 유도하는 $\\mathfrak X$ 위의 국소\n자유층 $F$가 존재한다. (더구나\n$H^1(X_0,\\Homsh_{\\Osh_{X_0}}(F_0,F_0))=0$이면 이 $F$는 동형까지\n유일하다.)\n\n",
+    "after": "그러면 $X_0$ 위에 $F_0$와 동형인 층을 유도하는 $\\mathfrak X$ 위의 국소\n자유층 $F$가 존재한다. (더구나\n{\\small $H^1(X_0,\\Homsh_{\\Osh_{X_0}}(F_0,F_0))=0$}이면 이 $F$는 동형까지\n유일하다.)\n\n"
+  },
+  {
+    "path": "ko/190.tex",
+    "kind": "local emergency stretch",
+    "line_start": 1112,
+    "line_end": 1123,
+    "before": "다시 말해, \\emph{$F'$ 위의 하강 자료를 주는 것은\n$\\mathcal O_S$-대수의 층\n$\\mathcal U=\\operatorname{Hom}_{\\mathcal O_S}(\\mathcal A',\\mathcal A')$\n에서 $\\mathcal O_S$-대수의 층\n$\\operatorname{Hom}_{\\mathcal O_S}(F',F')$로 가는, 두 선형성 조건\n(3.1)을 만족하는 표현을 주는 것과 동치이다.} $S'$ 위의 준연접층들\n사이에 짝지음\n\\[\n  F'_1\\times F'_2\\longrightarrow F'_3\n\\]\n이 주어졌다고 하자(이는 $S$ 위의 $\\mathcal A'$-가군의 층들 사이의\n짝지음으로 해석할 수 있다).\n\n",
+    "after": "\\begingroup\\emergencystretch=3em\n다시 말해, \\emph{$F'$ 위의 하강 자료를 주는 것은\n$\\mathcal O_S$-대수의 층\n$\\mathcal U=\\operatorname{Hom}_{\\mathcal O_S}(\\mathcal A',\\mathcal A')$\n에서 $\\mathcal O_S$-대수의 층\n$\\operatorname{Hom}_{\\mathcal O_S}(F',F')$로 가는, 두 선형성 조건\n(3.1)을 만족하는 표현을 주는 것과 동치이다.} $S'$ 위의 준연접층들\n사이에 짝지음\n\\[\n  F'_1\\times F'_2\\longrightarrow F'_3\n\\]\n이 주어졌다고 하자(이는 $S$ 위의 $\\mathcal A'$-가군의 층들 사이의\n짝지음으로 해석할 수 있다).\n\n\\endgroup\n\n"
+  }
+]

@@ -1,0 +1,1062 @@
+\unit{Exposé 236 -- Les schémas de Picard : propriétés générales}
+\sid{236}
+\src{221}
+\seminar{14e année, 1961/62, n\textsuperscript{o} 236\\Mai 1962}
+\paperhead{TECHNIQUE DE DESCENTE ET THÉORÈMES D'EXISTENCE EN GÉOMÉTRIE ALGÉBRIQUE\\
+VI. LES SCHÉMAS DE PICARD : PROPRIÉTÉS GÉNÉRALES}%
+  {par Alexander GROTHENDIECK}
+
+\fsection{\normalfont 0}{\normalfont\uwave{Compléments à l'exposé précédent} ([3], V) (\textsuperscript{1}).}
+
+Il y a eu quelques progrès concernant les questions d'existence de préschémas
+de Picard soulevées dans [3], V :
+
+\medskip
+\noindent a. (MUMFORD). Il n'est pas vrai en général que lorsque
+$\symup{f:X\to S}$ est un morphisme projectif et séparable (= plat à
+fibres séparables), le préschéma de Picard $\symup{\underline{\operatorname{Pic}}_{X/S}}$ existe,
+même si les fibres de $\symup{f}$ sont de dimension 1, et si $\symup{S}$ est le spectre d'un
+anneau de valuation discrète complet. Un exemple en est fourni en prenant
+$\symup{S=\operatorname{Spec}\text{\uwave{R}}[[t]]}$, et pour $\symup{X}$ le sous-schéma de
+$\symup{\text{\uwave{P}}^2_S}$ défini par l'équation (où $\symup{x,y,z}$ sont des variables
+homogènes) $\symup{x^2+y^2=tz^2}$,
+qui représente donc une conique dégénérant en deux droites concourantes
+géométriquement, mais la fibre spéciale sur le corps $\symup{\text{\uwave{R}}}$ étant
+néanmoins irréductible (elle est donnée par l'équation $\symup{x^2+y^2=0}$ sur
+$\symup{\text{\uwave{R}}}$). On voit facilement que, après extension étale
+$\symup{S'\to S}$, avec $\symup{S'=\operatorname{Spec}\text{\uwave{C}}[[t]]}$, le
+préschéma de Picard de $\symup{X'/S'}$ existe, et on en obtient une description
+explicite comme somme de copies $\symup{\widetilde S}$, où $\symup{\widetilde S}$ est déduit de
+$\symup{S}$ en dédoublant une infinité de fois l'origine. On constate aisément que la
+donnée de descente sur $\symup{\underline{\operatorname{Pic}}_{X'/S'}}$ pour
+$\symup{S'\to S}$ (donnée ici par les opérations du groupe de Galois
+$\symup{\text{\uwave{Z}}/2\text{\uwave{Z}}}$ de $\symup{S'}$ sur $\symup{S}$) n'est pas effective, le groupe
+échangeant entre eux certains points dédoublés (de sorte qu'il y a des orbites
+qui ne sont pas contenues dans un ouvert affine). Cependant, MUMFORD peut
+montrer que si $\symup{f:X\to S}$ est un morphisme projectif séparable tel
+que, pour tout $\symup{s\in S}$, les composantes irréductibles de $\symup{X_s}$ sont
+géométriquement irréductibles relativement à $\symup{k(s)}$, alors
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ existe ; sa démonstration s'appuie sur un
+raffinement de son théorème de passage au quotient, cf. [7]. Noter d'autre part
+qu'il reste possible que, sans hypothèses sur les composantes irréductibles des
+fibres $\symup{X_s}$, le schéma $\symup{\underline{\operatorname{Pic}}^{\tau}_{X/S}}$ (qui sera introduit
+plus bas) existe pourtant.
+
+\src{222}
+\noindent b. (MURRE). Soit $\symup{X}$ un schéma propre sur un corps, alors
+$\symup{\underline{\operatorname{Pic}}_{X/k}}$ existe. La démonstration reprend en partie la
+démonstration de CHEVALLEY [1], et s'appuie à fond sur la structure de groupe
+du foncteur de Picard.
+
+Pour certains compléments concernant la théorie des schémas de Picard,
+notamment en relation avec les schémas abéliens, il y aura intérêt à consulter
+[7]. Enfin, une lacune notable du présent exposé est l'absence de ``critères
+d'équivalence'', permettant de comparer le schéma de Picard d'un schéma
+projectif, et de ses sections hyperplanes ; les théorèmes-clefs pour développer
+de tels critères se trouvent dans [5], auquel il faut joindre les théorèmes
+d'existence des schémas de Picard.
+
+\fsection{\normalfont 1}{\normalfont\uwave{Propriétés topologiques des préschémas en groupes commutatifs}.}
+
+Soient d'abord $\symup{k}$ un corps, $\symup{G}$ un préschéma en groupes sur $\symup{k}$. Comme
+l'élément neutre $\symup{e}$, étant rationnel sur $\symup{k}$, est nécessairement fermé, il
+s'ensuit aussitôt que la diagonale de $\symup{G\times_kG}$ est fermée, donc $\symup{G}$ est
+\uline{séparé} : \uline{tout préschéma en groupes sur un corps est séparé}. Nous désignerons
+par $\symup{G^\circ}$ la composante connexe de l'élément neutre $\symup{e}$. Comme $\symup{e}$ est
+rationnel sur $\symup{k}$, $\symup{G^\circ}$ est en fait \uline{géométriquement connexe}, i. e. la
+formation de $\symup{G^\circ}$ est compatible avec le changement de corps de base. Il
+s'ensuit aussi que $\symup{G^\circ}$ est stable par multiplication (ensemblistement),
+et lorsque $\symup{G}$ est localement noethérien, donc $\symup{G^\circ}$ ouvert, on peut
+considérer $\symup{G^\circ}$ comme un \uline{sous-groupe ouvert} de $\symup{G}$. Dans la suite, nous
+supposerons $\symup{G}$ localement de type fini sur $\symup{k}$ ; alors $\symup{G^\circ}$ est
+\uline{géométriquement irréductible et de type fini sur} $\symup{k}$. En effet, on peut
+supposer $\symup{k}$ algébriquement clos, donc de plus $\symup{G}$ réduit (car
+$\symup{G_{\mathrm{réd}}}$ sera alors un sous-groupe de $\symup{G}$, compte tenu que
+$\symup{G_{\mathrm{réd}}\times_kG_{\mathrm{réd}}}$ sera encore réduit), donc simple
+sur $\symup{k}$ sur un ouvert non vide, donc partout comme on voit en translatant ledit
+ouvert. Mais alors $\symup{G}$ est localement irréductible, donc ses composantes
+irréductibles sont identiques à ses composantes connexes, donc $\symup{G^\circ}$ est
+irréductible. Soit alors $\symup{U}$ un voisinage affine de $\symup{e}$ dans $\symup{G^\circ}$ ;
+utilisant le fait que $\symup{G^\circ}$ est irréductible, on voit tout de suite que
+$\symup{U\cdot U=G^\circ}$, ce qui prouve que $\symup{G^\circ}$ est quasi-compact, donc de type
+fini sur $\symup{k}$.
+
+Supposons pour simplifier que $\symup{G}$ soit commutatif. Pour tout entier $\symup{n>0}$, soit
+$\symup{G^{(n)}}$ l'image inverse de $\symup{G^\circ}$ par l'homomorphisme $\symup{\varphi_n}$ de
+puissance $\symup{n}$-ième dans $\symup{G}$, donc $\symup{G^{(n)}}$ est un sous-groupe ouvert de $\symup{G}$.
+Nous poserons :
+\[
+\symup{G^\tau=\bigcup\limits_nG^{(n)}}
+\]
+
+\src{223}
+\[
+\symup{\begin{gathered}
+G^\sigma=\bigcup\limits_{(n,p)=1}G^{(n)}\\[6pt]
+G^\rho=\bigcup\limits_hG^{(p^h)}
+\end{gathered}}
+\]
+où $\symup{p}$ est l'exposant caractéristique pour le corps $\symup{k}$. On obtient donc autant
+de sous-groupes ouverts de $\symup{G}$, satisfaisant
+\[
+\symup{G^\sigma\cap G^\rho=G^\circ,
+\qquad
+G^\sigma\cdot G^\rho=G^\tau.}
+\]
+
+\result{\uline{Remarque}}{} On peut construire le schéma en groupes quotient
+$\symup{G/G^\circ=N}$ (cf. [3], IV), et définir alors $\symup{G^\tau}$, $\symup{G^\sigma}$, $\symup{G^\rho}$
+comme les images inverses dans $\symup{G}$ du sous-groupe de torsion de $\symup{N}$ (resp. de sa composante $\symup{p}$-primaire, resp. du complémentaire naturel de cette dernière, somme des composantes $\symup{q}$-primaires pour $\symup{q}$ nombre premier $\symup{\neq p}$). On
+notera à ce propos que $\symup{N}$ est un schéma en groupes discret séparable sur $\symup{k}$,
+donc (une fois choisi une clôture algébrique $\symup{\overline k}$ de $\symup{k}$, donnant lieu
+à un groupe de Galois $\symup{\pi}$) s'identifie à un groupe discret ordinaire sur
+lequel $\symup{\pi}$ opère par automorphismes. C'est de cette façon qu'on peut
+interpréter de façon évidente la construction du sous-groupe de torsion et la
+décomposition de ce dernier en ses composantes $\symup{q}$-primaires. Lorsque $\symup{G}$ est
+le schéma de Picard d'un schéma $\symup{X}$ propre sur $\symup{k}$, $\symup{N}$ pourra s'appeler le
+\uline{schéma de Néron-Severi} (réduit) de $\symup{X}$ sur $\symup{k}$. Lorsque
+$\symup{G_{\mathrm{réd}}}$ est un sous-schéma en groupes de $\symup{G^\circ}$, ce qui a
+lieu en particulier chaque fois que $\symup{k}$ est parfait ou que $\symup{G^\circ}$ est
+propre sur $\symup{k}$ (par exemple $\symup{X}$ géométriquement normal), il y a lieu également
+d'introduire le quotient $\symup{N'=G/G^\circ_{\mathrm{réd}}}$, qui a tendance à se
+comporter mieux que $\symup{N}$ du point de vue spécialisation, i. e. quand $\symup{X}$ varie
+dans une famille de schémas algébriques.
+
+Soient maintenant $\symup{S}$ un préschéma localement noethérien, et $\symup{G}$ un préschéma
+en groupes sur $\symup{S}$, localement de type fini sur $\symup{S}$. Nous ne supposons pas $\symup{G}$
+de type fini sur $\symup{S}$, ni séparé sur $\symup{S}$. Nous poserons alors
+\[
+\symup{G^\circ=\bigcup\limits_{s\in S}(G_s)^\circ,}
+\]
+et lorsque $\symup{G}$ est commutatif :
+\[
+\symup{G^\tau=\bigcup\limits_{s\in S}(G_s)^\tau,
+\qquad
+G^\sigma=\bigcup\limits_{s\in S}(G_s)^\sigma,
+\qquad
+G^\rho=\bigcup\limits_{s\in S}(G_s)^\rho.}
+\]
+
+\src{224}
+Ce sont là des parties de $\symup{G}$, stable par la multiplication de $\symup{G}$, de qui
+n'implique évidemment pas qu'elles puissent être définies à l'aide de
+sous-préschémas en groupes de $\symup{G}$. Notamment, il semble qu'\uline{il n'existe pas en général de sous-préschéma en groupes de} $\symup{G}$ \uline{dont l'ensemble sous-jacent soit} $\symup{G^\circ}$. Bien entendu, si l'un de ces ensembles est ouvert, alors, muni de la
+structure induite, c'est un sous-préschéma en groupes ouvert de $\symup{G}$. Nous
+verrons qu'il en est toujours ainsi de $\symup{G^\tau}$ ; ainsi, du point de vue des
+foncteurs représentables, en particulier \uline{du point de vue ``spécialisations'', l'équivalence numérique se comporte de façon plus satisfaisante que l'équivalence algébrique}. Voici les principales propriétés générales des
+ensembles qu'on vient de définir :
+
+\result{THÉORÈME}{1.1} $\symup{G^\circ}$, $\symup{G^\tau}$, $\symup{G^\sigma}$, $\symup{G^\rho}$ \uline{sont localement constructibles}. De plus :
+
+\noindent (i) $\symup{G^\circ}$ est quasi-compact sur $\symup{S}$. Lorsque les $\symup{G_s^\circ}$
+sont propres et $\symup{G}$ séparé sur $\symup{S}$, alors $\symup{G^\circ}$ est propre sur $\symup{S}$ donc
+fermé dans $\symup{G}$.
+
+\noindent (ii) $\symup{G^\tau}$ est ouvert. Si $\symup{G^\circ}$ est fermé, il en est de même
+de $\symup{G^\tau}$.
+
+\noindent (iii) Si $\symup{G^\circ}$ est fermé, il en est de même de $\symup{G^\sigma}$ pourvu
+qu'on soit en égale caractéristique, i. e. tous les corps résiduels de $\symup{S}$ ont
+même caractéristique. Si $\symup{G^\circ}$ est fermé et si $\symup{G\to S}$ est
+universellement ouvert en les points de $\symup{G^\sigma}$ (cf. corollaire 1.5
+ci-dessous), alors $\symup{G^\sigma\to S}$ est universellement ouvert.
+
+\noindent (iv) Si $\symup{G^\circ}$ est fermé, il en est de même de $\symup{G^\rho}$.
+Supposons qu'on soit en égale caractéristique, et que pour tout entier $\symup{n>0}$
+tel que $\symup{(n,p)=1}$, l'homomorphisme de puissance $\symup{n}$-ième dans $\symup{G}$ soit ouvert,
+alors $\symup{G^\rho}$ est ouvert.
+
+Donnons des indications sur la démonstration. Le fait que $\symup{G^\circ}$ soit
+localement constructible, et quasi-compact sur $\symup{S}$, est contenu dans le lemme
+suivant :
+
+\result{LEMME}{1.2} \uline{Supposons que} $\symup{S}$ \uline{soit} $\symup{\neq\varnothing}$, \uline{alors il existe un ouvert
+non vide} $\symup{U}$ \uline{dans} $\symup{S}$, \uline{et un schéma en groupes de type fini} $\symup{H}$ \uline{sur} $\symup{U}$ \uline{à
+fibres connexes, enfin un homomorphisme de schémas en groupes}
+$\symup{H\to G|U}$ \uline{qui soit une immersion ouverte ayant pour image}
+$\symup{G^\circ|U}$.
+
+Pour prouver le lemme, on peut supposer $\symup{S}$ irréductible, soit $\symup{\eta}$ son point
+générique, et faisons le changement de base
+$\symup{S'=\operatorname{Spec}(\mathcal O_{S,\eta})\to S}$, on trouve un
+schéma en groupes $\symup{G'}$ sur un anneau artinien local
+$\symup{\mathcal O_{S,s}=A}$, dans lequel on a un sous-schéma en groupes \uline{ouvert}
+$\symup{G'{}^\circ}$ \uline{de type fini sur} $\symup{A}$, comme on a dit plus haut. Il provient donc
+d'un schéma en groupes de type fini $\symup{H}$ sur un voisinage ouvert $\symup{U}$ de $\symup{\eta}$,
+et l'immersion canonique $\symup{G'{}^\circ\to G'}$ provient d'une
+immersion
+
+\src{225}
+ouverte $\symup{H\to G|U}$, qui sera un homomorphisme de schémas en groupes
+pour $\symup{U}$ assez petit. Comme les fibres de $\symup{H}$ sont connexes si on prend $\symup{U}$
+assez petit, et toutes de même dimension, égale à celle des fibres de $\symup{G}$ pour
+$\symup{U}$ assez petit, il s'ensuit que, pour tout $\symup{s\in U}$, l'image de $\symup{H_s}$ dans
+$\symup{G_s}$ est exactement $\symup{G_s^\circ}$ ($\symup{U}$ assez petit), ce qui prouve 1.2.
+
+La deuxième assertion dans (i) est contenue dans le lemme suivant (qu'on
+applique à un voisinage ouvert quasi-compact de $\symup{G^\circ}$ dans $\symup{G}$) :
+
+\result{LEMME}{1.3} \uline{Soient} $\symup{X}$ \uline{un préschéma de type fini et séparé sur} $\symup{S}$
+\uline{localement noethérien}, $\symup{g}$ \uline{une section de} $\symup{X}$ \uline{sur} $\symup{S}$, $\symup{X^\circ}$ \uline{la réunion des
+composantes connexes des} $\symup{g(s)}$ \uline{dans les} $\symup{X_s}$. \uline{Soit} $\symup{s\in S}$, \uline{tel que}
+$\symup{X_s^\circ}$ \uline{soit propre sur} $\symup{k(s)}$, \uline{alors il existe un voisinage ouvert} $\symup{U}$ \uline{de}
+$\symup{s}$, \uline{tel que} $\symup{X^\circ|U}$ \uline{soit propre sur} $\symup{U}$, \uline{et a fortiori fermé dans} $\symup{X|U}$.
+
+Par descente fidèlement plate de la base, on se ramène au cas où $\symup{S}$ est le
+spectre d'un anneau local complet, et $\symup{s}$ son point fermé. Appliquant [2], III,
+5.5.1, on voit que $\symup{X}$ se décompose en somme de deux ouverts disjoints $\symup{X'}$ et
+$\symup{X''}$, le premier propre sur $\symup{S}$ et tel que $\symup{X'_s=X_s^\circ}$. Cela nous ramène
+au cas où $\symup{X=X'}$, i. e. où $\symup{X}$ est propre sur $\symup{S}$. Dans ce cas on s'en tire par
+une démonstration standard, utilisant le critère valuatif de propreté d'une
+partie (oublié dans [2], chap. II).
+
+Prouvons que $\symup{G^\tau}$ est ouvert, ou ce qui revient au même, compte tenu que la
+formation de $\symup{G^\tau}$ (comme celle de $\symup{G^\circ}$, $\symup{G^\sigma}$, $\symup{G^\rho}$) commute
+à l'extension de la base : pour toute section $\symup{g}$ de $\symup{G}$ sur $\symup{S}$,
+$\symup{g^{-1}(G^\tau)}$ est ouvert. Cela signifie deux choses :
+
+\medskip
+\noindent a. Soit $\symup{y\in S}$ tel que $\symup{g(y)\in G^\tau}$, alors pour tout
+$\symup{y'\in\overline{y}}$ voisin de $\symup{y}$, on a $\symup{g(y')\in G^\tau}$.
+
+\medskip
+\noindent b. Soit $\symup{y'\in S}$ tel que $\symup{g(y')\in G^\tau}$, alors, pour toute
+générisation $\symup{y}$ de $\symup{y'}$, on a $\symup{g(y)\in G^\tau}$.
+
+Pour (a), on note qu'il existe un entier $\symup{n>0}$ tel que
+$\symup{g^n(y)\in G^\circ}$, comme $\symup{G^\circ}$ est constructible,
+$\symup{(g^n)^{-1}(G^\circ)}$ est constructible, il s'ensuit que l'on a
+$\symup{g^n(y')\in G^\circ}$ pour $\symup{y'\in\overline{y}}$ voisin de $\symup{y}$. Pour
+(b), on note que les $\symup{g(y')^n=g^n(y')}$ restent dans un ouvert quasi-compact de
+$\symup{G_{y'}}$ (car ils sont contenus dans un nombre fini de classes mod.
+$\symup{G_{y'}^\circ}$), donc il existe un ouvert quasi-compact $\symup{U}$ dans $\symup{G}$ qui
+contient les $\symup{g^n(y')}$, donc aussi leurs générisations $\symup{g^n(y)}$, donc les
+puissances de $\symup{g(y)}$ restent dans un ouvert quasi-compact de $\symup{G_y}$, ce qui
+implique facilement que $\symup{g(y)\in G_y^\tau}$.
+
+\src{226}
+Supposons $\symup{G^\circ}$ fermé, prouvons qu'il en est de même de $\symup{G^\tau}$. Comme on
+sait déjà que $\symup{G^\tau}$ est ouvert, donc localement constructible, il reste à
+prouver qu'il est stable par spécialisation, ce qui provient du fait que c'est
+une réunion de fermés, à savoir les images inverses, par les homomorphismes
+$\symup{\varphi_n}$ de puissance $\symup{n}$-ième, du fermé $\symup{G^\circ}$.
+
+Le même argument prouvera que $\symup{G^\sigma}$ et $\symup{G^\rho}$ sont fermés si $\symup{G^\circ}$
+l'est (sous réserve dans le premier cas qu'on soit en égale caractéristique),
+une fois démontré que $\symup{G^\sigma}$ et $\symup{G^\rho}$ sont localement constructibles.
+Or, pour $\symup{x\in G^\tau}$, soit $\symup{\nu(x)}$ le plus petit entier $\symup{n>0}$ tel que
+l'homomorphisme $\symup{\varphi_n}$ de puissance $\symup{n}$-ième envoie $\symup{x}$ dans $\symup{G}$,
+Donc $\symup{G^\sigma}$ (resp. $\symup{G^\rho}$) est formé des $\symup{x\in X}$ tels que $\symup{\nu(x)}$ soit premier à
+$\symup{p}$ (resp. une puissance de $\symup{p}$) et notre assertion de constructibilité
+résulte alors de la suivante, plus précise :
+
+\result{LEMME}{1.4} \uline{La fonction} $\symup{\nu}$ \uline{sur} $\symup{G^\tau}$ \uline{est localement constructible}.
+
+Cela signifie en effet que, pour tout entier $\symup{n>0}$, l'ensemble des
+$\symup{x\in G^\tau}$, tels que $\symup{\nu(x)=n}$, est localement constructible ; or c'est la
+différence de $\symup{\varphi_n^{-1}(G^\circ)}$ et de la réunion des
+$\symup{\varphi_d^{-1}(G^\circ)}$, où $\symup{d}$ parcourt les diviseurs propres de $\symup{n}$ ; comme
+$\symup{G^\circ}$ est localement constructible, il en est de même des
+$\symup{\varphi_i^{-1}(G^\circ)}$, donc aussi de la différence précédente.
+
+Supposons $\symup{G^\circ}$ fermé et $\symup{G\to  S}$ universellement ouvert en les
+points de $\symup{G^\sigma}$, prouvons que $\symup{G^\sigma\to  S}$ est ouverte,
+i. e. transforme un voisinage dans $\symup{G^\sigma}$ d'un $\symup{x\in G^\sigma}$ en un
+voisinage de $\symup{y=f(x)}$. Comme $\symup{G^\sigma}$ est localement constructible, on est
+ramené à prouver que, pour toute générisation $\symup{y'}$ de $\symup{y}$, il existe une
+générisation $\symup{x'}$ de $\symup{x}$ dans $\symup{G}$ au-dessus de $\symup{y'}$. Cela nous ramène
+par changement de base au cas où $\symup{S}$ est le spectre d'un anneau de valuation
+discrète et où $\symup{y,y'}$ sont respectivement le point fermé et le point générique.
+Utilisant le fait que $\symup{G\to  S}$ est ouvert en $\symup{x}$ (donc qu'il existe
+une générisation $\symup{x_1}$ de $\symup{x}$ dans $\symup{G}$ au-dessus de $\symup{y'}$), on peut supposer de
+plus qu'il existe une section $\symup{g}$ de $\symup{G}$ sur $\symup{S}$, telle que $\symup{x=g(y)}$ (quitte à
+faire encore un changement de base). Si $\symup{k(y')}$ est de caractéristique 0, il
+suffit de prendre n'importe quelle générisation $\symup{x'}$ de $\symup{x}$ dans $\symup{G}$ au-dessus
+de $\symup{y'}$, elle est dans $\symup{G^\tau}$ puisque $\symup{G^\tau}$ est ouvert, donc dans
+$\symup{G^\sigma}$ puisque $\symup{G_{y'}^\sigma=G_{y'}^\tau}$, Si la caractéristique de
+$\symup{k(y')}$ est $\symup{p>0}$, posons
+\[
+\symup{\nu(g(y'))=p^hm\qquad\text{avec }(m,p)=1 ;}
+\]
+
+\src{227}
+soient $\symup{a}$ et $\symup{b}$ deux entiers tels que $\symup{ap^h+bm=1}$, posons
+\[
+\symup{g_1=g^{ap^h},\qquad g_2=g^{bm}\qquad\text{d'où}\qquad g=g_1g_2 ;}
+\]
+donc par construction, on a $\symup{g_1(y')\in G^\sigma}$ et
+$\symup{g_2(y')\in G^\rho}$. Comme $\symup{G^\circ}$ est fermé il s'ensuit que
+$\symup{g_1(y)\in G^\sigma}$ et $\symup{g_2(y)\in G^\rho}$, d'où, en vertu de
+\[
+\symup{g(y)=g_1(y)g_2(y)\in G^\sigma,}
+\]
+aussi $\symup{g_2(y)\in G^\sigma}$, donc
+\[
+\symup{g_2(y)\in G_y^\sigma\cap G_y^\rho=G_y^\circ.}
+\]
+Or de l'hypothèse, et du fait que $\symup{S}$ est le spectre d'un anneau de valuation
+discrète, résulte que $\symup{G-(G_y-G_y^\circ)}$ est un ouvert de $\symup{G}$ sur lequel
+$\symup{G\to  S}$ induit un morphisme ouvert, donc que, par tout point de
+$\symup{G_y^\circ}$, passe une ``quasi-section'' ; par suite, quitte à faire encore une
+extension sur la base $\symup{S}$, on peut supposer qu'il existe une section $\symup{g'_2}$ de
+$\symup{G^\circ}$ sur $\symup{S}$ telle que $\symup{g'_2(y)=g_2(y)}$. Posons $\symup{g'=g_1g'_2}$ ; alors, par
+construction, $\symup{g'(y)=g(y)=x}$, et
+$\symup{g'(y')=g_1(y')g'_2(y')\in G^\sigma}$, donc $\symup{g(y')=x'}$ est une générisation de $\symup{x}$ dans $\symup{G^\sigma}$ au-dessus de
+$\symup{y'}$, ce qui prouve (iii).
+
+Prouvons enfin la dernière assertion (iv). On est ramené à prouver que, si
+$\symup{x\in G^\rho}$, alors toute générisation $\symup{x'}$ de $\symup{x}$ est dans $\symup{G^\rho}$. On peut
+supposer (quitte à prendre les images par $\symup{\varphi_{n^h}}$ pour $\symup{h}$
+convenable) que l'on a même
+$\symup{x\in G^\circ}$. Alors, pour tout entier $\symup{n}$ premier à la caractéristique, $\symup{x}$
+est dans l'image de $\symup{\varphi_n}$ (car la puissance $\symup{n}$-ième dans un groupe de
+type fini connexe sur un corps de caractéristique première à $\symup{n}$ est
+surjective). Comme $\symup{\varphi_n}$ est ouverte, il s'ensuit que $\symup{x'}$ est également
+dans l'image de $\symup{\varphi_n}$. Plus précisément, soit $\symup{U}$ un ouvert
+quasi-compact de $\symup{G^\tau}$ contenant $\symup{G_y^\circ}$, alors on a
+$\symup{x'\in\varphi_n(U)}$ pour tout $\symup{n}$ premier à $\symup{p}$. Prenant pour $\symup{n}$ un multiple
+commun des facteurs premiers à $\symup{p}$ des $\symup{\nu(z)}$, pour $\symup{z\in U}$, on trouve que
+$\symup{x'\in G^\rho}$.
+
+L'assertion (1.1), (iii), se complète ainsi :
+
+\result{COROLLAIRE}{1.5} Soit $\symup{n>1}$ un entier tel que l'homomorphisme de
+puissance $\symup{n}$-ième $\symup{\varphi_n:G\to  G}$ soit universellement ouvert,
+(par exemple étale) posons
+$\symup{G^{(n)}=\varphi_n^{-1}(G^\circ)}$, et supposons que les fibres connexes $\symup{G_s^\circ}$ ne ``contiennent pas de
+
+\src{228}
+composante additive'' (i. e. le groupe déduit par extension du corps $\symup{k(s)}$ à la
+clôture algébrique ne contient pas de sous-groupe isomorphe à $\symup{G_a}$). Alors $\symup{G\to  S}$ est universellement ouvert en les
+points des $\symup{G^{(n^h)}}$. En particulier, si les $\symup{G_s^\circ}$ ne contiennent pas
+de composante additive et si, pour tout entier $\symup{n>1}$, l'homomorphisme
+$\symup{\varphi_n}$ est universellement ouvert en les points de caractéristique
+résiduelle première à $\symup{p}$,
+alors $\symup{G\to  S}$ est universellement ouvert en les points de
+$\symup{G^\sigma}$, donc ((1.1), (iii)) si $\symup{G^\circ}$ est fermé,
+$\symup{G^\sigma\to  S}$ est universellement ouvert. Dans ces cas,
+$\symup{s\rightsquigarrow\dim G_s}$ est une fonction localement constante sur $\symup{S}$.
+
+En effet, de l'hypothèse résulte que le noyau $\symup{{}_nG}$ de $\symup{\varphi_n}$ est
+universellement ouvert sur $\symup{S}$, donc $\symup{G\to  S}$ est universellement
+ouvert en les points de $\symup{{}_nG}$, donc (remplaçant $\symup{n}$ par $\symup{n^h}$) en les points
+des $\symup{{}_{(n^h)}G}$. Or l'hypothèse sur les fibres $\symup{G_s^\circ}$ sert exactement à assurer que les points d'ordre une puissance de $\symup{n}$
+dans $\symup{G_s}$ sont denses dans la réunion des $\symup{G^{(n^h)}}$, d'où résulte facilement que
+$\symup{G\to  S}$ est universellement ouvert en tous les points de cette
+réunion, en particulier le long de la section unité, d'où facilement le fait
+que $\symup{s\rightsquigarrow\dim G_s}$ est une fonction localement constante.
+
+\result{\normalfont\uline{Remarque}}{1.6} Rappelons qu'un morphisme $\symup{X\to  S}$ est dit
+universellement ouvert s'il transforme tout ouvert en un ouvert, et garde cette
+propriété louable après tout changement de base $\symup{S'\to  S}$. Cela
+signifie aussi (lorsque $\symup{S}$ est localement noethérien et $\symup{X\to  S}$
+localement de type fini), que toute composante irréductible de $\symup{X}$ domine $\symup{S}$,
+et que cette propriété est conservée après tout changement de base
+$\symup{S'\to  S}$. Dans ces deux assertions, il suffit d'ailleurs
+(moyennant les hypothèses de finitude ci-dessus) de tester avec des changements
+de base $\symup{S'\to  S}$, où $\symup{S'}$ est le spectre d'un anneau de valuation
+discrète, (complet à corps résiduel algébriquement clos si on y tient~...). La
+définition s'étend de façon évidente au cas d'une partie $\symup{Z}$ de $\symup{X}$ (telle la
+partie $\symup{G^\sigma}$ de $\symup{G}$). C'est un phénomène parfaitement normal, même si on
+part d'un morphisme projectif simple $\symup{X\to  S}$ à fibres
+géométriques connexes (par exemple le carré fibré de la famille modulaire de
+courbes elliptiques sur $\symup{S=\operatorname{Spec}\text{\uwave{C}}[j]}$), que
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ ne soit pas universellement ouvert sur $\symup{S}$, i. e.
+qu'il puisse y avoir des composantes irréductibles de
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ se trouvant tout entières au-dessus d'un seul point
+de $\symup{S}$ : cela est lié au fait que le rang du groupe de Néron-Severi des fibres
+de $\symup{X/S}$ peut faire des sauts vers le haut (phénomènes de ``multiplication complexe''). Par contre, (1.5) nous assure que, dans les bons cas,
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\sigma}$ (et le plus souvent même, semble-t-il,
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\tau}$) est universellement ouvert sur $\symup{S}$.
+
+\src{229}
+Enfin, voici un cas utile où, exceptionnellement, $\symup{G^\circ}$ consente à être
+ouvert :
+
+\result{COROLLAIRE}{1.7} Supposons que $\symup{G\to S}$ soit
+universellement ouvert en les points de $\symup{G^\circ}$ (cf. (1.5)), et que les
+fibres $\symup{G_s}$ soient séparables, donc simples sur $\symup{k(s)}$ (cette dernière
+condition étant automatiquement remplie en caractéristique résiduelle nulle,
+en vertu d'un résultat de CARTIER). Alors $\symup{G^\circ}$ est ouvert dans $\symup{G}$. Si de
+plus $\symup{S}$ est réduit, $\symup{G^\circ}$ est simple (en particulier, plat) sur $\symup{S}$.
+
+La première assertion peut d'ailleurs se préciser en notant que si, pour un
+$\symup{s\in S}$ donné, $\symup{G\to S}$ est universellement ouvert en les points
+de $\symup{G_s^\circ}$ et si $\symup{G_s^\circ}$ est séparable sur $\symup{k(s)}$, alors $\symup{G^\circ}$ est
+un voisinage de $\symup{G_s^\circ}$ (et d'ailleurs, l'hypothèse faite en $\symup{s}$ restera
+vérifiée en les points voisins). Cet énoncé, d'ailleurs indépendant de toute
+structure de groupes, se trouvera démontré dans [2], IV, paragraphe 7. La
+dernière assertion dans (1.7), également indépendante de toute structure de
+groupe et de toute question de composante {\addfontfeatures{LetterSpace=12}connexe}, est un cas particulier d'un
+critère de platitude donné dans [IV], paragraphe 5, qui implique, plus
+généralement :
+
+\result{COROLLAIRE}{1.8} Soit $\symup{U}$ une partie ouverte d'une fibre $\symup{G_s}$, telle
+que $\symup{G\to S}$ soit universellement ouvert en les points de $\symup{U}$ (cf.
+(1.5)). Si $\symup{G_s}$ est séparable sur $\symup{k(s)}$ et $\symup{S}$ réduit en $\symup{s}$, alors $\symup{G}$ est
+plat sur $\symup{S}$ en les points de $\symup{U}$ (donc en l'occurrence, simple sur $\symup{S}$ en les
+points de $\symup{U}$).
+
+\result{\normalfont\uline{Remarques}}{1.9} J'ignore si, lorsque $\symup{G}$ est séparé sur $\symup{S}$, $\symup{G^\circ}$
+ou $\symup{G^\tau}$ est toujours fermé dans $\symup{G}$ ; cela semble peu probable. On trouve
+en tous cas des contre-exemples évidents si on laisse tomber l'hypothèse de
+séparation, par exemple en prenant la droite affine dont on dédouble une
+infinité dénombrable de fois l'origine, obtenant ainsi un schéma en groupes $\symup{G}$
+sur la droite affine dont toutes les fibres sont réduites au groupe unité, sauf
+une dont la fibre est $\symup{\text{\uwave{Z}}}$. Ce schéma en groupes est un sous-schéma en
+groupes ouvert, savoir l'adhérence de la section unité, dans le préschéma de
+Picard du $\symup{S}$-schéma $\symup{X}$ correspondant à une famille de coniques dégénérant en
+deux droites concourantes.
+
+D'ailleurs, même en partant d'un schéma en groupes fini et plat, $\symup{G}$, sur le
+spectre $\symup{S}$ d'un anneau de valuation discrète $\symup{V}$, et par suite si $\symup{G^\circ}$
+est réduit à la section unité, donc fermé, diverses conclusions deviennent
+fausses si on abandonne certaines hypothèses. Supposons que $\symup{V}$ soit d'égale
+caractéristique $\symup{p>0}$, et soit $\symup{G}$ le noyau de l'homomorphisme
+$\symup{\text{\uwave{G}}_a\longrightarrow\text{\uwave{G}}_a}$ défini par l'homomorphisme de
+foncteurs $\symup{f\rightsquigarrow f^p-tf}$ où $\symup{t}$ est une uniformisante de $\symup{V}$.
+
+\src{230}
+(Se rappeler que, par définition, le ``groupe additif'' $\symup{\text{\uwave{G}}_a}$ sur $\symup{S}$
+représente le foncteur $\symup{S'\rightsquigarrow\Gamma(S',O_{S'})}$.) Alors, en
+tant que $\symup{S}$-schéma, $\symup{G=\operatorname{Spec}V[x]/(x^p-tx)}$ est réunion de $\symup{p}$ ``droites'' concourantes, figurant un groupe
+$\symup{\text{\uwave{Z}}/p\text{\uwave{Z}}}$ qui dégénère en un groupe infinitésimal de type additif.
+Dans cet exemple, $\symup{G^\circ=G^\sigma}$ (et c'est l'une des $\symup{p}$ droites), donc
+n'est pas ouvert dans $\symup{G}$. Dans le cas d'inégale caractéristique, caractéristique résiduelle $\symup{p>0}$, partons du schéma en groupes
+$\symup{H=\mu_p}$ noyau de la puissance $\symup{p}$-ième dans $\symup{\text{\uwave{G}}_m}$, donc $\symup{H=\operatorname{Spec}V[x]/(x^p-1)}$, c'est encore la réunion de $\symup{p}$ droites concourantes, figurant un groupe
+$\symup{\text{\uwave{Z}}/p\text{\uwave{Z}}}$ (en caractéristique 0) qui dégénère en un groupe
+infinitésimal de type multiplicatif en caractéristique $\symup{p}$. Soit $\symup{H'}$ le
+``schéma en groupes constant'' défini par le groupe fini ordinaire
+$\symup{\text{\uwave{Z}}/p\text{\uwave{Z}}}$, donc la somme disjointe de $\symup{\text{\uwave{Z}}/p\text{\uwave{Z}}}$
+copies de $\symup{S}$, ou encore $\symup{\operatorname{Spec}V^{\text{\uwave{Z}}/p\text{\uwave{Z}}}}$. Alors
+$\symup{G=H\times_S H'}$ décrit un groupe $\symup{(\text{\uwave{Z}}/p\text{\uwave{Z}})^2}$ en
+caractéristique 0, dégénérant en un groupe infinitésimal fois
+$\symup{\text{\uwave{Z}}/p\text{\uwave{Z}}}$ en caractéristique $\symup{p}$. Ici $\symup{G^\rho}$ est la réunion de
+la section unité et de la fibre spéciale, donc $\symup{G^\rho}$ n'est pas ouvert,
+alors que $\symup{G^\sigma}$ est la réunion de la section unité et de la fibre
+générale, donc n'est pas fermé, contrairement à ce qui est affirmé dans les
+cas d'égale caractéristique dans (1.1), (iii) et (iv). Bien entendu, ce sont là
+des phénomènes liés à la caractéristique $\symup{p>0}$. Les résultats qui précèdent
+donnent en effet :
+
+\result{COROLLAIRE}{1.10} Supposons les caractéristiques résiduelles de $\symup{S}$
+toutes nulles, donc $\symup{G^\tau=G^\sigma}$, et $\symup{G^\circ=G^\rho}$. Alors
+$\symup{G^\tau=G^\sigma}$ est ouvert, et même ouvert et fermé si $\symup{G}$ est séparé sur
+$\symup{S}$ et si les $\symup{G_s^\circ}$ sont propres ; sous cette même hypothèse,
+$\symup{G^\circ=G^\rho}$ est propre sur $\symup{S}$ donc fermé dans $\symup{G}$. Supposons enfin que,
+pour tout entier $\symup{n>1}$, l'homomorphisme de puissance $\symup{n}$-ième dans $\symup{G}$ soit
+universellement ouvert, alors $\symup{G^\circ}$ est ouvert ; et si de plus les
+$\symup{G_s^\circ}$ n'ont pas de composante additive (par exemple les $\symup{G_s^\circ}$
+propres, comme ci-dessus), alors $\symup{G^\tau\to S}$ est universellement
+ouvert, et même simple si $\symup{S}$ est réduit.
+
+Signalons enfin le résultat facile suivant :
+
+\result{PROPOSITION}{1.11} Il existe une partie ouverte $\symup{U}$ de $\symup{S}$, telles que
+l'ensemble $\symup{G'}$ des points de $\symup{G}$ en lesquels $\symup{G}$ est simple (resp. plat)
+au-dessus de $\symup{S}$, soit l'ensemble sous-jacent à un sous-schéma en groupes ouvert
+induit de $\symup{G|U}$. De plus, toute section de $\symup{G}$ sur $\symup{U}$ est une section de $\symup{G'}$
+sur $\symup{U}$.
+
+\src{231}
+\result{COROLLAIRE}{1.12} Si $\symup{G}$ est simple (resp. plat) sur $\symup{S}$ en les points
+de la section unité, elle l'est en les points de toute section de $\symup{G}$ sur $\symup{S}$,
+et en tous les points de $\symup{G^\circ}$. Si de plus pour tout entier $\symup{n>0}$,
+l'homomorphisme de puissance $\symup{n}$-ième
+$\symup{\varphi_n:G\to G}$ est étale en les points de caractéristique
+première à $\symup{n}$, alors $\symup{G}$ est simple (resp. plat) sur $\symup{S}$ en tous les points de
+$\symup{G^\sigma}$.
+
+\fsection{2}{\normalfont\uwave{Application aux propriétés locales des schémas de Picard}.}
+
+\result[.]{THÉORÈME}{2.1}
+
+\noindent(i) \uline{Soit} $\symup{f:X\to S}$ \uline{un morphisme propre et simple, et
+supposons que} $\symup{\underline{\operatorname{Pic}}_{X/S}}$ \uline{existe} (par exemple $\symup{f}$ un morphisme projectif). \uline{Alors} $\symup{\underline{\operatorname{Pic}}_{X/S}}$ \uline{est séparé sur} $\symup{S}$, \uline{et pour toute
+partie fermée} $\symup{Z}$ \uline{de} $\symup{\underline{\operatorname{Pic}}_{X/S}}$ \uline{qui est de type fini sur} $\symup{S}$,
+$\symup{Z}$ \uline{est propre sur} $\symup{S}$.
+
+\noindent(ii) \uline{Soit} $\symup{X}$ \uline{un préschéma sur un corps} $\symup{k}$, \uline{propre et géométriquement
+normal. Alors} $\symup{\underline{\operatorname{Pic}}_{X/S}^\circ}$ \uline{est propre sur} $\symup{k}$.
+
+\result[.]{\uline{Démonstration}}{}
+
+(i) Les critères valuatifs ([2], II, paragraphe 7) nous ramènent à prouver ceci :
+si $\symup{S}$ est le spectre d'un anneau de valuation discrète complet, $\symup{U}$ l'ouvert
+réduit au point générique de $\symup{S}$, alors toute section rationnelle de
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ sur $\symup{S}$, i. e. toute section au-dessus de $\symup{U}$, se
+prolonge de façon unique en une section au-dessus de $\symup{S}$. Compte tenu de la
+définition de $\symup{\underline{\operatorname{Pic}}_{X/S}}$, cela équivaut à l'énoncé suivant :
+pour tout Module inversible $\symup{\mathcal L}$ sur $\symup{V=f^{-1}(U)}$, il existe un Module
+inversible sur $\symup{X}$ qui prolonge $\symup{\mathcal L}$, unique à un isomorphisme près. Or
+ceci résulte facilement de la description des Modules inversibles sur $\symup{V}$,
+resp. $\symup{X}$ en termes de classes de diviseurs ``de Cartier'', compte tenu que
+les anneaux locaux de $\symup{X}$ sont réguliers ($\symup{X}$ étant simple sur $\symup{S}$ régulier),
+donc factoriels en vertu d'AUSLANDER, ce qui implique que tout diviseur sur
+$\symup{S}$ est un diviseur de Cartier. En effet tout diviseur sur $\symup{V}$ peut se prolonger en un diviseur sur $\symup{X}$ en prenant son
+``adhérence''.
+
+
+\result{\normalfont\uline{Remarque}}{2.2} La démonstration reste valable en supposant seulement
+que $\symup{f}$ est plat et ses fibres $\symup{X_s}$ sont localement des intersections
+complètes, et simples sur $\symup{k(s)}$ en codimension $\symup{\leqslant2}$, compte tenu du résultat
+suivant démontré dans [5] : un anneau local noethérien intersection complète
+qui est régulier en codimension $\symup{\leqslant3}$ est factoriel (``conjecture de Samuel'').
+On notera que le
+
+\src{232}
+résultat devient faux si on remplace ``codimension $\symup{\leqslant2}$'' par ``codimension $\symup{\leqslant1}$'', i. e. par l'hypothèse ``normal'', comme on peut se convaincre sur
+l'exemple d'une famille de quadratiques non singulières dégénérant en un cône
+quadratique.
+
+(ii) Utilisant le lemme de Chow, on est ramené au cas où $\symup{X}$ est projectif,
+donc plongé dans $\symup{P_k^n}$ ; on peut supposer $\symup{X}$ connexe. Si
+$\symup{\dim X=1}$, alors $\symup{X}$ est simple sur $\symup{k}$, et on applique (i). Si $\symup{\dim X\geqslant2}$,
+on peut utiliser une variante des ``critères d'équivalence'' connus, qui
+implique qu'il existe un nombre fini de courbes $\symup{Y_i}$ simples sur $\symup{X}$ (obtenues
+comme intersections de $\symup{X}$ avec des sous-espaces linéaires convenables de
+$\symup{P_k^n}$), telles que $\symup{\underline{\operatorname{Pic}}_{X/k}^\tau\to\prod\limits_i\underline{\operatorname{Pic}}_{Y_i/k}^\tau}$ soit un monomorphisme, et induit a fortiori un monomorphisme pour les
+composantes connexes. Comme celle du second membre est propre sur $\symup{k}$ d'après
+ce qui précède, et qu'il s'agit d'un homomorphisme de schémas en groupes, qui
+sera nécessairement une immersion fermée, il s'ensuit que
+$\symup{\underline{\operatorname{Pic}}_{X/k}^\circ}$ est également propre sur $\symup{k}$. On peut éviter
+le recours aux délicats critères d'équivalence en utilisant la structure des
+groupes algébriques commutatifs sur un corps algébriquement clos (due à
+CHEVALLEY-BOREL) ; on est ramené à prouver que tout morphisme de la droite
+affine dans $\symup{\underline{\operatorname{Pic}}_{X/S}^\tau}$ est constant, ce qui
+équivaut à dire que tout Module inversible sur
+$\symup{X[t]}$ provient d'un Module inversible sur $\symup{X}$, résultat qui
+est bien connu et fort élémentaire et n'utilise pas même le fait que $\symup{X}$ soit
+propre sur $\symup{k}$ (l'hypothèse $\symup{X}$ normal permettant de se réduire aussitôt au cas
+$\symup{X}$ régulier).
+
+\result{COROLLAIRE}{2.3} Soit $\symup{f:X\to S}$ un morphisme propre et
+normal (i. e. plat et à fibres géométriques normales), supposons que
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ existe, alors $\symup{\underline{\operatorname{Pic}}_{X/S}^\circ}$ est
+propre sur $\symup{S}$, donc fermé dans $\symup{\underline{\operatorname{Pic}}_{X/S}}$ ; de plus
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\tau}$ et $\symup{\underline{\operatorname{Pic}}_{X/S}^\rho}$ sont
+également fermés, et aussi $\symup{\underline{\operatorname{Pic}}_{X/S}^\sigma}$ en ``égale caractéristique''.
+
+On applique (1.1) et (2.1), (ii).
+
+\result{COROLLAIRE}{2.4} Soit $\symup{f:X\to S}$ un morphisme propre et
+simple, tel que $\symup{\underline{\operatorname{Pic}}_{X/S}}$ existe et soit somme de schémas
+$\symup{P^{(i)}}$ de type fini sur $\symup{S}$ (cf. [3], V, 4.1). Alors chaque $\symup{P^{(i)}}$ est
+propre sur $\symup{S}$.
+
+Résulte de (2.1), (i). Comme on l'a signalé dans (2.2), le résultat peut se
+généraliser en faisant des hypothèses moins restrictives sur les fibres de $\symup{f}$,
+mais devient faux si on se borne à supposer $\symup{f}$ normal. Dans ce cas, j'ignore
+d'ailleurs si $\symup{\underline{\operatorname{Pic}}_{X/S}^\tau}$ est néanmoins propre sur $\symup{S}$,
+même en admettant qu'il soit de type fini sur $\symup{S}$.
+
+\src{233}
+\result{THÉORÈME}{2.5} \uline{Soit} $\symup{f:X\to S}$ \uline{un morphisme propre et
+plat, tel que} $\symup{\underline{\operatorname{Pic}}_{X/S}}$ \uline{existe, et pour tout entier} $\symup{n}$, \uline{soit}
+$\symup{\varphi_n}$ \uline{l'homomorphisme puissance} $\symup{n}$\uline{-ième dans ce préschéma en groupes.
+Alors} $\symup{\varphi_n}$ \uline{est étale en tous les points}
+$\symup{x\in X}$ \uline{à
+caractéristique résiduelle première à} $\symup{n}$.
+
+Par la caractérisation infinitésimale des morphismes étales, cette assertion
+équivaut à la suivante :
+
+\result{LEMME}{2.6} Supposons que $\symup{S}$ soit le spectre d'un anneau local
+artinien $\symup{A}$ dont l'idéal maximal $\symup{m}$ soit de puissance
+$\symup{(\nu+1)}$-ième nulle, soit $\symup{A_{m-1}=A/m^\nu}$, $\symup{X_{\nu-1}=X\otimes_A A_{\nu-1}}$, $\symup{\mathcal L}$ un Module inversible sur $\symup{X}$, enfin $\symup{\mathcal L'_{\nu-1}}$ un
+Module inversible sur $\symup{X_{\nu-1}}$ dont la puissance tensorielle $\symup{n}$-ième soit
+isomorphe à $\symup{\mathcal L_{\nu-1}=\mathcal L\otimes_A A_{\nu-1}}$. Alors il existe un Module inversible $\symup{\mathcal L'}$ sur $\symup{X}$ dont la puissance
+tensorielle $\symup{n}$-ième est isomorphe à $\symup{\mathcal L}$ (si $\symup{n}$ est premier à la
+caractéristique résiduelle de $\symup{k=k(A)}$).
+
+Prouvons le lemme. On pose $\symup{V=m^\nu=m^\nu/m^{\nu+1}}$, c'est un espace vectoriel sur $\symup{k=k(A)}$. On commence à prolonger
+$\symup{\mathcal L'_{\nu-1}}$ en un Module inversible quelconque sur $\symup{\mathcal L'}$ sur $\symup{X}$.
+L'obstruction à ce faire se trouve dans $\symup{H^2(X_0,O_{X_0})\otimes_k V}$, mais, en vertu de l'hypothèse faite sur $\symup{\mathcal L'_{\nu-1}}$ et du fait que
+$\symup{\mathcal L_{\nu-1}}$ peut se prolonger, on voit que le produit de cette
+obstruction par $\symup{n}$ est nul, donc elle-même est nulle puisque $\symup{n}$ premier
+à la caractéristique. D'ailleurs, l'arbitraire dans le prolongement effectué
+se trouve dans $\symup{H^1(X_0,O_{X_0})\otimes_k V}$, et la déviation $\symup{\xi}$ de $\symup{\mathcal L'^{\otimes n}}$ avec $\symup{\mathcal L}$ se trouve
+dans le même Module ; si on essaye de corriger $\symup{\mathcal L'}$ de façon à rendre
+cette déviation nulle, on est ramené à trouver un $\symup{\eta}$ dans ledit Module,
+tel que $\symup{n\eta=\xi}$. Or c'est possible encore grâce au fait que $\symup{n}$ est
+premier à la caractéristique.
+
+\result{COROLLAIRE}{} Sous les conditions de (2.5), supposons de plus que les
+schémas de Picard des fibres $\symup{X_s}$ ne contiennent pas de composante additive
+(par exemple les $\symup{X_s}$ géométriquement normaux, cf. (2.1), (ii)). Alors
+$\symup{\underline{\operatorname{Pic}}_{X/S}\to S}$ est universellement ouvert en les
+points de $\symup{\underline{\operatorname{Pic}}_{X/S}^\sigma}$. Si
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\circ}$ est fermé (par exemple les $\symup{X_s}$
+géométriquement normaux, cf. (2.3), alors
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\sigma}$ est lui-même universellement ouvert sur $\symup{S}$.
+Enfin, dans le cas d'égale caractéristique,
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\rho\to S}$ est universellement ouvert.
+
+On applique (1.5) et (1.1).
+
+\src{234}
+\result{COROLLAIRE}{2.7} Soit $\symup{f:X\to Y}$ un morphisme propre et
+plat, tel que $\symup{\underline{\operatorname{Pic}}_{X/S}}$ existe. Alors la fonction $\symup{s\rightsquigarrow\dim\underline{\operatorname{Pic}}_{X_s/k(s)}}$ sur $\symup{S}$ est semi-continue supérieurement (i. e. elle peut faire des sauts vers
+le haut, mais pas vers le bas), et elle est même continue (i. e. localement
+constante) si les $\symup{\underline{\operatorname{Pic}}_{X_s/k(s)}}$ ne contiennent pas de
+composante additive.
+
+La première assertion est vraie trivialement ou presque pour tout préschéma en
+groupes localement de type fini sur une base localement noethérienne, puisqu'il
+suffit de regarder le long de la section unité. La deuxième assertion résulte
+de (2.5).
+
+\result{REMARQUE}{2.8} Soient $\symup{s,s'\in S}$ tels que $\symup{s}$ soit une spécialisation
+de $\symup{s'}$, alors (2.7) équivaut à une inégalité (resp. égalité) entre les
+dimensions des schémas de Picard de $\symup{X_{s'}}$ et de sa ``spécialisée'' $\symup{X_s}$.
+D'ailleurs SERRE avait fait observer, dès avant la construction des schémas de
+Picard, que l'invariance de la dimension des Picards des $\symup{X_s}$ dans le cas d'un
+morphisme \uline{simple} $\symup{f:X\to S}$ était une conséquence formelle de la
+théorie de la spécialisation du groupe fondamental ([4], X), et des relations
+classiques à la Kummer entre les points d'ordre fini sur la variété de Picard,
+et le groupe fondamental rendu abélien, ([4], XI). Si on désigne de façon
+générale par $\symup{\alpha,\mu,\lambda}$ les dimensions de la partie abélienne,
+multiplicative, additive de $\symup{\underline{\operatorname{Pic}}_{X_s/k(s)}}$, et qu'on
+définit de même $\symup{\alpha',\mu',\lambda'}$, les relations connues, s'expriment par
+les inégalités suivantes :
+\[
+\symup{\tag{*}\alpha+\mu+\lambda\geqslant\alpha'+\mu'+\lambda'}
+\]
+(valable pourvu que $\symup{\underline{\operatorname{Pic}}_{X/S}}$ existe, donc probablement en
+tous cas), inégalité qui, pour $\symup{\lambda=\lambda'=0}$, se réduit à une égalité,
+valable sous les mêmes hypothèses d'existence :
+\[
+\symup{\alpha+\mu=\alpha'+\mu' ;}
+\]
+d'autre part on a
+\[
+\symup{\tag{**}2\alpha+\mu\leqslant2\alpha'+\mu'}
+\]
+
+\src{235}
+par l'argument de Serre, si les $\symup{X_s}$ sont séparables (sans même supposer
+l'existence de $\symup{\underline{\operatorname{Pic}}_{X/S}^\tau}$), ou si les
+$\symup{{}_n\underline{\operatorname{Pic}}_{X/S}}$ (noyaux de $\symup{\varphi_n}$ dans le foncteur de
+Picard) sont \uline{séparés} sur $\symup{S}$, (compte tenu
+qu'ils sont étales sur $\symup{S}$ grâce à (2.5)). On aurait tendance à conjecturer que (*) est une égalité en tous cas,
+ou du moins si les $\symup{X_s}$ sont séparables, et qu'on a des inégalités
+\[
+\symup{\tag{***}\alpha\leqslant\alpha',\qquad\lambda\geqslant\lambda'}
+\]
+qui devraient être valables chaque fois qu'on a un préschéma en groupes,
+localement de type fini sur $\symup{S}$ localement noethérien, dans lequel la dimension
+des fibres est constante (voir (1.3) pour un résultat positif dans cette
+direction).
+
+\result{\uline{Remarque}}{2.9} Dans tous les cas connus,
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\tau}$ est universellement ouvert sur $\symup{S}$, mais il ne
+faut sans doute pas s'en autoriser pour des illusions excessives, même si
+$\symup{f:X\to S}$ est simple ; en tous cas, MUMFORD a construit un
+exemple (il est vrai avec $\symup{S}$ non réduit, en fait $\symup{S}$ spectre d'un anneau
+artinien) où $\symup{\underline{\operatorname{Pic}}_{X/S}^\tau}$ n'est pas plat sur $\symup{S}$, en faisant
+varier infinitésimalement la surface de Igusa. Le point envisagé par MUMFORD se
+trouve d'ailleurs dans $\symup{\underline{\operatorname{Pic}}_{X/S}^\rho}$, et il reste possible
+(pour $\symup{f:X\to S}$ simple) que $\symup{\underline{\operatorname{Pic}}_{X/S}}$ soit
+plat sur $\symup{S}$ aux points de $\symup{\underline{\operatorname{Pic}}_{X/S}^\sigma}$ ; le conférencier
+doute cependant qu'il en soit toujours ainsi, même en se restreignant aux
+points de $\symup{\underline{\operatorname{Pic}}_{X/S}^\circ}$ et en supposant que $\symup{S}$ est le
+spectre d'un anneau de valuation discrète. La question est d'ailleurs liée à
+l'étude des points fixes d'un schéma abélien sous un groupe fini
+d'automorphismes, situation pour laquelle on semble manquer d'exemples.
+
+Il semblerait que même en se bornant à $\symup{f:X\to S}$ simple et
+projectif, les résultats de régularité locale sur $\symup{\underline{\operatorname{Pic}}_{X/S}}$
+énoncés dans le présent numéro, et les conjectures signalées dans (2.8),
+épuisent à peu près ce qu'on peut dire à ce sujet sans hypothèses plus
+particulières sur la nature des fibres de $\symup{f}$. Rappelons cependant que, si les
+fibres géométriques de $\symup{\underline{\operatorname{Pic}}_{X/S}}$ sont \uline{réduites} et sans
+composante additive, alors il résulte de (1.8) et de (2.5) que
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ est simple sur $\symup{S}$ en les points de
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\sigma}$ lorsque $\symup{S}$ est réduit ; ce résultat vaut
+même, si $\symup{f:X\to S}$ est normal, sans hypothèse sur $\symup{S}$, comme nous
+verrons dans (3.5). Signalons à ce propos :
+
+\par\noindent PROPOSITION 2.10.
+
+\noindent(i) Si $\symup{\underline{\operatorname{Pic}}_{X/S}}$ est simple (resp. plat) sur $\symup{S}$ en
+les points de la section unité, il l'est en tous les points de
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\sigma}$, et en les points de toute section de
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ sur $\symup{S}$.
+
+\src{236}
+\noindent(ii) Soit $\symup{s\in S}$ tel que $\symup{H^2(X_s,\mathcal O_{X_s})=0}$, alors il existe un voisinage ouvert $\symup{U}$ de $\symup{s}$ tel que
+$\symup{\underline{\operatorname{Pic}}_{X/S}|U}$ soit simple sur $\symup{U}$.
+
+\noindent(iii) Soit $\symup{X}$ un schéma propre sur un corps, alors on a
+\[
+\symup{\dim\underline{\operatorname{Pic}}_{X/k}\leqslant\dim H^1(X,\mathcal O_X),}
+\]
+l'égalité ayant lieu si et seulement si $\symup{\underline{\operatorname{Pic}}_{X/k}}$ est simple
+sur $\symup{k}$ ; c'est toujours le cas si $\symup{k}$ est de caractéristique nulle.
+
+(i) résulte de (2.5) et (1.12), (ii) du critère infinitésimal pour les
+morphismes simples et d'un calcul d'obstructions bien connu, compte tenu que
+(par le ``théorème de semi-continuité'') l'hypothèse faite en $\symup{s}$ sera encore
+vérifiée aux points voisins. Enfin (iii) résulte du fait que
+$\symup{H^1(X,\mathcal O_X)}$ est isomorphe à l'espace tangent de Zariski en l'élément
+neutre de $\symup{\underline{\operatorname{Pic}}_{X/k}}$ ; la dernière assertion est un cas
+particulier d'un théorème de CARTIER, disant qu'un ``groupe formel'' en
+caractéristique 0 est formellement simple sur $\symup{k}$.
+
+\fsection{\normalfont 3}{\normalfont\uwave{Le sous-schéma abélien canonique de}
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$, \uwave{et schéma d'Albanese}.}
+
+\result{PROPOSITION}{3.1} Soient $\symup{k}$ un corps, $\symup{G}$ un schéma en groupes de
+type fini sur $\symup{k}$, commutatif et ``sans composante additive''. Alors
+$\symup{G_{\mathrm{réd}}^\circ}$ est séparable sur $\symup{k}$, et par suite c'est un
+sous-schéma en groupes simple sur $\symup{k}$.
+
+La chose étant triviale si $\symup{k}$ est parfait, en particulier pour $\symup{G_{\bar k}}$,
+où $\symup{\bar k}$ est la clôture algébrique de $\symup{k}$, il suffit de voir que
+$\symup{(G_{\bar k}^\circ)_{\mathrm{réd}}}$ provient d'un sous-schéma de $\symup{G}$. Or l'hypothèse sur $\symup{G_{\bar k}}$ (pas de composante additive) résulte facilement
+qu'il existe un entier $\symup{m}$ tel que $\symup{(G_k^\circ)_{\mathrm{réd}}}$ soit
+l'image ``schématique'' de l'homomorphisme de puissance $\symup{m}$-ième dans
+$\symup{G_{\bar k}}$. Comme ce dernier homomorphisme provient de l'homomorphisme
+analogue pour $\symup{G}$, l'image schématique de ce dernier répond à la question.
+
+\result{COROLLAIRE}{3.2} Soit $\symup{X}$ un schéma normal et propre sur $\symup{k}$ tel que
+$\symup{\underline{\operatorname{Pic}}_{X/k}}$ existe, alors il existe un sous-schéma abélien $\symup{A}$
+de $\symup{\underline{\operatorname{Pic}}_{X/k}}$ dont l'ensemble sous-jacent est
+$\symup{\underline{\operatorname{Pic}}_{X/k}^\circ}$.
+
+En effet, en vertu de (2.1), (ii), $\symup{\operatorname{Pic}_{X/k}^\circ}$ étant
+propre sur $\symup{k}$ satisfait à la condition de (3.1).
+
+\src{237}
+Le résultat précédent montre donc que, dans certains cas, la classique
+``variété de Picard'' (qui serait notée
+$\symup{(\underline{\operatorname{Pic}}_{X/\bar k})_{\mathrm{réd}}^\circ}$ dans la théorie actuelle)
+``est définie sur $\symup{k}$'', sans supposer le corps $\symup{k}$ parfait.
+
+Soit maintenant $\symup{f:X\to S}$ un schéma relatif propre et plat, avec $\symup{\mathcal O_S\overset{\sim}{\to}f_*(\mathcal O_X)}$ pour simplifier, tel que $\symup{\underline{\operatorname{Pic}}_{X/S}}$ existe et que
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\circ}$ soit propre sur $\symup{S}$. Nous supposerons de plus
+pour (3.3), (ii) qu'il existe un ouvert de $\symup{\underline{\operatorname{Pic}}_{X/S}}$
+contenant $\symup{\underline{\operatorname{Pic}}_{X/S}^\circ}$ qui soit quasi-projectif sur $\symup{S}$ ;
+cette condition est vérifiée, on l'a vu, si $\symup{f}$ est projectif et à fibres
+géométriques séparables et irréductibles. Rappelons qu'on appelle \uline{schéma
+abélien} sur $\symup{S}$ un schéma en groupes sur $\symup{S}$, propre et simple sur $\symup{S}$, à
+fibres géométriques connexes. Nous nous proposons d'examiner s'il existe un
+sous-schéma en groupes $\symup{A}$ de $\symup{\underline{\operatorname{Pic}}_{X/S}}$ qui soit un schéma
+abélien et dont l'ensemble sous-jacent soit $\symup{\underline{\operatorname{Pic}}_{X/S}^\circ}$.
+On vient de voir qu'il en existe toujours si $\symup{S}$ est le spectre d'un corps.
+Voici ce qu'on sait dire dans le cas général envisagé ici :
+
+\result{THÉORÈME}{3.3} \uline{Sous les conditions précédentes} :
+
+\noindent(i) \uline{S'il existe un sous-schéma abélien de}
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ \uline{dont l'ensemble sous-jacent soit}
+$\symup{\operatorname{Pic}_{X/S}^\circ}$, \uline{il est unique. Sa formation est par suite
+compatible avec les changements de base}.
+
+\noindent(ii) \uline{Pour qu'il existe un tel sous-schéma abélien, il suffit qu'il en
+existe après tout changement de base} $\symup{S'\to S}$, \uline{où} $\symup{S'}$ \uline{est
+artinien local ; si} $\symup{S}$ \uline{est le spectre d'un anneau local, il suffit même de
+tester avec les} $\symup{S'=\operatorname{Spec}(A_n)}$, \uline{où}
+$\symup{A_n=A/m^{n+1}}$. \uline{Si} $\symup{S}$ \uline{est réduit, il suffit également de tester
+avec les changements de base} $\symup{S'\to S}$, \uline{où} $\symup{S'}$ \uline{est le spectre
+d'un anneau de valuation discrète,
+(complet à corps résiduel algébriquement clos
+si on y tient}).
+
+\noindent(iii) \uline{Supposons que} $\symup{A}$ \uline{existe, et soit}
+$\symup{B=\operatorname{Alb}^\circ(X/S)}$ \uline{le schéma abélien dual}, (i. e.
+$\symup{B=\underline{\operatorname{Pic}}_{A/S}^\circ}$ [7]). \uline{Alors on peut construire
+canoniquement un espace principal homogène} $\symup{P=\operatorname{Alb}^1(X/S)}$ \uline{sous}
+$\symup{B}$, \uline{et un} $\symup{S}$\uline{-morphisme} $\symup{X\to P}$ \uline{qui soit universel pour les}
+$\symup{S}$\uline{-morphismes de} $\symup{X}$ \uline{dans des schémas para-abéliens} (i. e. des espaces
+principaux homogènes sous des schémas abéliens). \uline{La formation de}
+$\symup{\operatorname{Alb}^\circ(X/S)}$, $\symup{\operatorname{Alb}^1(X/S)}$ \uline{et}
+$\symup{X\to\operatorname{Alb}^1(X/S)}$ \uline{commute au changement de base}.
+
+Esquissons la démonstration :
+
+(i) est une propriété de rigidité générale pour les sous-schémas abéliens des
+schémas en groupes commutatifs, si deux tels sous-schémas coïncident
+ensemblistement en un point $\symup{s\in S}$, ils coïncident au-dessus de toute la
+composante
+
+\src{238}
+connexe de $\symup{s}$ [7]. (Ce résultat généralise un classique théorème de CHOW.)
+
+(ii) Utilisant les schémas de Hilbert, on voit que le foncteur qui, à tout
+$\symup{S'}$ sur $\symup{S}$, associe l'ensemble (réduit à 1 ou 0 éléments) des sous-schémas
+abéliens canoniques de $\symup{(\underline{\operatorname{Pic}}_{X/S})\times_S S'}$ est
+représentable par un schéma de type fini $\symup{T}$ sur $\symup{S}$. En vertu de (i),
+$\symup{T\to S}$ est un monomorphisme, et en vertu de (3.2) il est
+surjectif. Dire qu'il existe un sous-schéma abélien canonique de
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ signifie que $\symup{T}$ a une section sur $\symup{S}$, ou encore
+que $\symup{T\to S}$ est un isomorphisme. Ceci équivaut aussi à dire que
+$\symup{T\to S}$ est étale, ou dans le cas où $\symup{S}$ est réduit, que
+$\symup{T\to S}$ est propre. D'où aussitôt (ii).
+
+(iii) Utilisant simplement la définition de $\symup{\underline{\operatorname{Pic}}_{X/S}}$, on
+constate que, pour tout schéma abélien $\symup{C}$ sur $\symup{S}$, la donnée d'un
+$\symup{S}$-morphisme de $\symup{X}$ dans un espace principal homogène sous $\symup{C}$, équivaut à la
+donnée d'un homomorphisme de groupes
+$\symup{C'\to\underline{\operatorname{Pic}}_{X/S}}$, où $\symup{C'}$ est le schéma abélien
+dual de $\symup{C}$. Or si le sous-schéma abélien canonique $\symup{A}$ de
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ existe, ces homomorphismes se factorisent
+nécessairement par $\symup{A}$ (comme on peut voir encore en utilisant les points
+d'ordre fini). D'où aussitôt (iii).
+
+\result{\uline{Remarques}}{3.4} Nous noterons
+$\symup{\underline{\operatorname{Pic}}_{X/S}^{\circ\circ}}$ le sous-schéma abélien canonique de
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$, s'il existe. Ce n'est malheureusement pas toujours
+le cas, comme on peut voir en faisant varier infinitésimalement la surface de
+Igusa (par la déformation modulaire du premier ordre). Il est cependant
+possible que $\symup{\underline{\operatorname{Pic}}_{X/S}^{\circ\circ}}$ existe du moins si $\symup{S}$
+est réduit, ou ce qui revient au même d'après (ii), si $\symup{S}$ est le spectre d'un
+anneau de valuation discrète. Soient alors $\symup{X_0,X_1}$ la fibre spéciale et
+générique de $\symup{X}$, et soit $\symup{A_1=\underline{\operatorname{Pic}}_{X_1/K_1}}$, où $\symup{K}$ est le corps des fractions de l'anneau de valuation $\symup{V}$. En vertu de
+KOIZUMI, il existe un schéma abélien $\symup{A}$ sur $\symup{S}$, essentiellement unique, dont
+la fibre générale est $\symup{A_1}$, et on voit aisément comme dans (2.1), (i)
+(supposant désormais $\symup{X}$ simple sur $\symup{S}$) que le morphisme identique de $\symup{A_1}$
+se prolonge en un morphisme
+\[
+\symup{A\to\underline{\operatorname{Pic}}_{X/S}.}
+\]
+D'où un homomorphisme
+\[
+\symup{\tag{*}A_0\to\underline{\operatorname{Pic}}_{X_0/k}^{\circ\circ},}
+\]
+dont on montre facilement que c'est un homomorphisme surjectif à noyau un
+$\symup{p}$-groupe fini, où $\symup{p}$ est l'exposant caractéristique du corps résiduel $\symup{k}$
+
+\src{239}
+(toujours par utilisation des points d'ordre fini). Ceci posé, les conditions
+suivantes sur $\symup{X/S}$ sont équivalentes :
+
+\medskip
+\noindent a. L'homomorphisme précédent (*) est un isomorphisme (ce que SHIMURA
+exprimerait en disant que la formation de la ``variété de Picard'' est
+``compatible avec spécialisations'').
+
+\noindent b. $\symup{\underline{\operatorname{Pic}}_{X/S}^{\circ\circ}}$ existe (alors il ne sera
+autre que $\symup{A}$).
+
+\noindent c. (Pour mémoire) Les
+$\symup{\underline{\operatorname{Pic}}_{X_n/S}^{\circ\circ}}$ existent.
+
+D'après la remarque qu'on a faite sur le noyau de (*), la condition (a) est
+satisfaite si la caractéristique résiduelle est nulle, mais ce résultat sera
+généralisé notablement (3.5).
+
+Bien entendu, si $\symup{\underline{\operatorname{Pic}}_{X/S}}$ est simple sur $\symup{S}$ aux points de
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\circ}$, alors ce dernier est ouvert dans
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ (cf. (1.7)) et par suite, muni de la structure
+induite, c'est un sous-schéma abélien de $\symup{\underline{\operatorname{Pic}}_{X/S}}$, donc égal
+à $\symup{\underline{\operatorname{Pic}}_{X/S}^{\circ\circ}}$ qui existe dans ce cas. Mais on a
+bien mieux :
+
+\result{THÉORÈME}{3.5} \uline{Sous les conditions de} (3.3), \uline{soit} $\symup{s\in S}$ \uline{tel que}
+$\symup{\underline{\operatorname{Pic}}_{X_s/k(s)}}$ \uline{soit simple sur} $\symup{k(s)}$, (\uline{ou ce qui revient au
+même}, $\symup{\dim\underline{\operatorname{Pic}}_{X_s/k(s)}=\dim H^1(X_s,\mathcal O_{X_s})}$).
+\uline{Alors il existe un voisinage ouvert} $\symup{U}$ \uline{de} $\symup{s}$ \uline{tel que}
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ \uline{soit simple sur} $\symup{S}$ \uline{en les points de}
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\circ|U}$, \uline{qui est donc un sous-schéma abélien ouvert
+dans} $\symup{\underline{\operatorname{Pic}}_{X/S}|U}$. \uline{A fortiori},
+$\symup{\underline{\operatorname{Pic}}_{X|U/U}^{\circ\circ}}$ \uline{existe}.
+
+Indiquons le principe de la démonstration. Ce qui précède nous ramène au cas où
+$\symup{S}$ est le spectre d'un anneau artinien local $\symup{A}$, et on raisonne par récurrence
+sur l'ordre infinitésimal de $\symup{A}$. On peut donc supposer
+$\symup{\underline{\operatorname{Pic}}_{X_n/A_n}^\circ}$ simple sur $\symup{A_n}$, et se borner à prouver
+que $\symup{\underline{\operatorname{Pic}}_{X_{n+1}/A_{n+1}}^\circ}$ est simple sur $\symup{A_{n+1}}$. On
+constate qu'il suffit pour ceci de construire un schéma abélien $\symup{P_{n+1}}$ sur
+$\symup{A_{n+1}}$ qui prolonge $\symup{P_n=\underline{\operatorname{Pic}}_{X_n/A_n}^\circ}$, et en même temps un Module inversible $\symup{\mathcal L_{n+1}}$ sur
+$\symup{X_{n+1}\times_{A_{n+1}}P_{n+1}}$ qui prolonge le Module inversible
+$\symup{\mathcal L_n}$ sur $\symup{X_n\times_{A_n}P_n}$ qui intervient dans la définition du
+schéma de Picard $\symup{\underline{\operatorname{Pic}}_{X_n/A_n}}$ comme solution d'un problème
+universel. (N. B. - Nous pouvons supposer que $\symup{X}$ est muni d'une section sur
+$\symup{S}$~...) Pour faire la construction, on doit utiliser le résultat-clef suivant :
+\uline{tout schéma abélien défini sur un quotient d'anneau local artinien peut se
+prolonger} (en d'autres termes, le ``schéma formel des Modules'' absolu ([3],
+II.) pour un schéma abélien sur un corps algébriquement clos, est simple sur
+l'anneau des
+
+\src{240}
+vecteurs de Witt sur $\symup{k}$) ; ce résultat lui-même s'obtient en utilisant les
+propriétés formelles générales de l'obstruction à relever, et les opérations du
+groupe. Ce résultat admis, on commence par prolonger $\symup{P_n}$ n'importe comment en
+$\symup{P_{n+1}}$ ; on rencontre alors une obstruction à relever $\symup{\mathcal L_n}$,
+obstruction qui se trouve dans un $\symup{H^2(X_0\times P_0,\mathcal O_{X_0\times P_0})\otimes_k V}$
+(où $\symup{V=m^{n+1}/m^{n+2}}$), et même dans le sous-espace
+$\symup{H^1(X_0,\mathcal O_{X_0})\otimes H^1(P_0,\mathcal O_{P_0})\otimes_k V}$
+(compte tenu que la restriction de $\symup{\mathcal L_n}$ aux deux facteurs $\symup{X_n}$ et
+$\symup{P_n}$ est triviale). Or ce dernier espace n'est autre que $\symup{H^1(P_0,\mathfrak G_{P_0/k})\otimes V}$, où $\symup{\mathfrak G_{P_0/k}}$ est le faisceau tangent à $\symup{P_0/k}$, donc c'est aussi
+l'espace qui exprime l'indétermination qu'il y avait dans le relèvement de
+$\symup{P_n}$ à $\symup{P_{n+1}}$ ([3], II). Par suite, on peut corriger ce relèvement (d'une
+et d'une seule façon comme il se doit) de façon à tuer l'obstruction à relever
+$\symup{\mathcal L_n}$.
+
+\result{COROLLAIRE}{3.6} Sous les conditions de (3.5),
+$\symup{R^1f_*(\mathcal O_X)}$ est un Module localement libre sur $\symup{S}$ au voisinage de
+$\symup{s}$, et sa formation commute au changement de base.
+
+Ce Module n'est autre en effet que le Module tangent à
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ le long de la section unité.
+
+\noindent\uline{Remarque} 3.7. - Utilisant le même argument que pour (3.5), on peut
+montrer que si $\symup{S'}$ est un sous-schéma de $\symup{S}$ défini par un Idéal cohérent
+nilpotent, et si on suppose seulement que
+$\symup{\operatorname{Pic}_{X'/S'}^\circ}$ existe et est à fibres simples, alors
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\circ}$ existe nécessairement et est un schéma
+abélien sur $\symup{S}$. Cela permet de construire des schémas de Picard dans certains
+cas malgré l'absence d'hypothèse projective ; par exemple le schéma abélien
+dual d'un schéma abélien sur un anneau artinien existe toujours. D'autre part,
+utilisant (3.6) dans le cas où $\symup{X}$ est un schéma abélien sur $\symup{S}$, et utilisant
+la rtructure connue de $\symup{H^*(X_s,\mathcal O_{X_s})}$ comme algèbre extérieure
+sur $\symup{H^1(X_s,\mathcal O_{X_s})}$ (ROSENLICHT-SERRE), on trouve que pour \uline{tout}
+$\symup{i}$, $\symup{R^if_*(\mathcal O_X)}$ est localement libre, et de façon précise isomorphe
+à la puissance extérieure $\symup{i}$-ième de $\symup{R^1f_*(\mathcal O_X)}$.
+
+\noindent\uline{Remarque} 3.8. - Dans le cas d'un morphisme projectif simple
+$\symup{f:X\to S}$, $\symup{S}$ réduit et à caractéristiques résiduelles nulles,
+le résultat (3.6) était connu par voie transcendante, comme conséquence de la
+théorie de HODGE. En fait, tous les $\symup{R^pf_*(\mathord{\underset{\sim}{\Omega}}^q_{X/S})}$ sont alors
+localement libres. On a des contre-exemples par contre
+
+\src{241}
+dans le cas d'inégales caractéristiques pour ``$\symup{R^1f_*(\mathcal O_X)}$
+localement libre'', à l'aide des variétés de SERRE ([8], p.~50). Il semble
+qu'on n'ait aucun contre-exemple en égale caractéristique.
+
+\result{COROLLAIRE}{3.8} Sous les conditions de (3.5)
+$\symup{\underline{\operatorname{Pic}}_{X/S}|U}$ est simple sur $\symup{U}$ en tous les points de
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\sigma|U}$.
+
+On applique (2.10), (i). En particulier, tenant compte de (2.10), (iii) :
+
+\result{COROLLAIRE}{3.9} Supposons $\symup{S}$ à caractéristiques résiduelles nulles.
+Alors $\symup{\underline{\operatorname{Pic}}_{X/S}^\tau}$ est simple sur $\symup{S}$.
+
+\noindent\uline{Remarque} 3.10. - On en déduit par exemple, si $\symup{\underline{\operatorname{Pic}}_{X/S}}$ est aussi \uline{propre} sur $\symup{S}$, que le groupe de torsion
+de Néron-Severi des fibres géométriques de $\symup{f}$ reste constant sur toute
+composante connexe de $\symup{S}$ (ce qui est d'ailleurs évident par voie transcendante
+lorsque $\symup{f}$ est simple projectif). Signalons que l'utilisation directe de (2.5) permet de montrer, plus généralement, que, si $\symup{\underline{\operatorname{Pic}}_{X/S}}$ est propre sur $\symup{S}$ (par exemple $\symup{f:X\to S}$ simple et projectif) et si $\symup{q}$ est un nombre premier
+distinct des caractéristiques résiduelles de $\symup{S}$, alors la composante
+$\symup{q}$-primaire des groupes de torsion de Néron-Severi des fibres géométriques de
+$\symup{X/S}$ reste constante sur toute composante connexe de $\symup{S}$. Il n'en est
+cependant plus de même en caractéristique $\symup{p>0}$ pour la composante $\symup{p}$-primaire
+de la torsion. Il reste cependant possible que le rang sur $\symup{k(s)}$ de $\symup{\underline{\operatorname{Pic}}_{X_s/k(s)}/\underline{\operatorname{Pic}}_{X_s/k(s)}^{\circ\circ}=T_{X_s/k(s)}}$ reste localement constant ; lorsque $\symup{S}$ est réduit, on peut montrer qu'il
+revient au même que $\symup{\underline{\operatorname{Pic}}_{X/S}^{\circ\circ}}$ existe, et que
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ est \uline{plat} sur $\symup{S}$, et il suffit de tester la
+question pour $\symup{S}$ spectre d'un anneau de valuation discrète. C'est ce que j'ai
+vérifié dans les quelques exemples que j'ai regardés ; mais comme l'énoncé
+correspondant avec $\symup{S}$ artinien est faux (cf. remarque (2.9) et (3.4)), il ne
+faut sans doute pas se faire des illusions excessives.
+
+\fsection{4}{\uwave{Le théorème de finitude pour le schéma de Picard}.}
+
+Soit $\symup{f:X\to S}$ un morphisme projectif et plat tel que
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ existe, alors la considération des ``polynômes de
+Hilbert'' $\symup{Q\in\text{\uwave{Q}}[t]}$ permet de décomposer
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$ en somme d'ouverts
+$\symup{\underline{\operatorname{Pic}}_{X/S}^Q}$. Lorsqu'on ne fait pas des hypothèses
+supplémentaires, assurant par exemple que $\symup{\underline{\operatorname{Pic}}_{X/S}}$ est séparé
+sur $\symup{S}$, il ne sera pas vrai en général que ces ouverts soient de type fini sur
+$\symup{S}$ ; on obtient un contre-exemple lorsque $\symup{X}$ est ``une conique dégénérant en
+deux droites''. Il est
+
+\src{242}
+possible qu'il en soit cependant ainsi si $\symup{f}$ est \uline{séparable} et à \uline{fibres
+géométriques irréductibles}. La question est liée à celle de savoir si
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\tau}$ est de type fini sur $\symup{S}$, ce qui est peut-être
+vrai sans aucune hypothèse sur les fibres de $\symup{X/S}$. Lorsque
+$\symup{f:X\to S}$ est simple, on note que
+$\symup{\underline{\operatorname{Pic}}_{X/S}^\tau}$ est contenu dans un des
+$\symup{\underline{\operatorname{Pic}}_{X/S}^Q}$ (grâce au fait que, sur une variété projective
+non singulière, l'équivalence ``de torsion'' est plus fine que (en fait
+``identique à'', d'après MATSUSAKA) l'équivalence numérique pour les
+diviseurs), donc est de type fini sur $\symup{S}$ si les
+$\symup{\underline{\operatorname{Pic}}_{X/S}^Q}$ le sont. Noter que les questions de finitude qu'on
+vient de soulever gardent un sens évident sans supposer même l'existence de
+$\symup{\underline{\operatorname{Pic}}_{X/S}}$, car elles s'expriment en disant que certaines
+familles de Modules inversibles sont ``limitées'' au sens de [3], IV :
+Considérons, pour tout corps algébriquement clos $\symup{k}$, les sous-schémas intègres
+de $\symup{\text{\uwave{P}}_k^r}$, de dimension $\symup{n}$ et de degré $\symup{d}$, et les Modules
+inversibles sur de tels préschémas, ayant un polynôme de Hilbert $\symup{Q}$ (où
+$\symup{r,n,d,Q}$ sont donnés), montrer que la famille de ces Modules (considérés
+comme des Modules cohérents sur les $\symup{\text{\uwave{P}}_k^r}$) est \uline{limitée}, i. e. peut se
+paramétrer par un schéma de type fini sur $\symup{\text{\uwave{Z}}}$.
+
+Utilisant la méthode de MATSUSAKA [6], une démonstration assez technique
+(faisant appel aux ``critères d'équivalence'' sous une forme convenable) permet
+de répondre par l'affirmative lorsque on se borne aux sous-variétés non
+singulières de $\symup{\text{\uwave{P}}_k^r}$. De façon plus précise, on obtient le résultat
+suivant :
+
+\result{THÉORÈME}{4.1} Soient : $\symup{X\to S}$ un morphisme simple projectif à fibres géométriques connexes, avec
+$\symup{S}$ noethérien, $\symup{\mathcal O_X(1)}$ un Module très ample sur $\symup{X}$ relatif à $\symup{S}$,
+$\symup{E}$ une partie de $\symup{\underline{\operatorname{Pic}}_{X/S}}$, correspondant à une famille
+$\symup{(\mathcal L_i)}$ de Modules inversibles sur les fibres géométriques
+$\symup{\overline X_{s_i}}$ de $\symup{X/S}$, $\symup{D_i}$ un diviseur (pas nécessairement positif)
+sur $\symup{\overline X_{s_i}}$ définissant $\symup{\mathcal L_i}$, $\symup{a_n^{(i)}t^n+\cdots+a_0^{(i)}}$ le polynôme de Hilbert de $\symup{\mathcal L_i}$, $\symup{\xi=\xi_i}$ un diviseur définissant
+$\symup{\mathcal O_X(1)}$, i. e. une section hyperplane. Les conditions sont
+équivalentes :
+
+\noindent a. $\symup{Q}$ est quasi-compact, i. e. contenu dans un ouvert de type fini
+sur $\symup{S}$, i. e. la famille des $\symup{(\mathcal L_i)}$ est limitée.
+
+\noindent b. $\symup{E}$ est contenu dans la réunion d'un nombre fini des ensembles
+$\symup{\underline{\operatorname{Pic}}_{X/S}^Q}$, $\symup{Q\in\text{\uwave{Q}}[t]}$, i. e. l'ensemble des
+polynômes de Hilbert des $\symup{\mathcal L_i}$ est fini.
+
+\noindent b'. (Si les fibres de $\symup{X/S}$ ont toutes même dimension $\symup{n}$). Les deux
+coefficients $\symup{a_{n-1}^{(i)}}$ et $\symup{a_{n-2}^{(i)}}$ des polynômes de Hilbert des
+$\symup{\mathcal L_i}$ restent dans un ensemble fini.
+
+\src{243}
+
+\noindent b''. (Si les fibres de $\symup{X/S}$ ont toutes même dimension $\symup{n}$). Les entiers
+$\symup{\xi^{n-1}D_i}$ et $\symup{\xi^{n-2}D_i^2}$ (degrés projectifs de $\symup{D_i}$ et de $\symup{D_i^2}$) restent majorés.
+
+\result{COROLLAIRE}{4.2} Soit $\symup{f:X\to S}$ un morphisme simple
+projectif à fibres géométriques connexes, alors les schémas
+$\symup{\underline{\operatorname{Pic}}_{X/S}^Q}$ et $\symup{\underline{\operatorname{Pic}}_{X/S}^\tau}$
+($\symup{Q\in\text{\uwave{Q}}[t]}$) sont projectifs sur $\symup{S}$.
+
+Comme ils sont de type fini sur $\symup{S}$ d'après (4.1), on peut appliquer (2.4).
+
+\section*{\normalfont BIBLIOGRAPHIE}
+\addcontentsline{toc}{section}{Bibliographie}
+
+\begin{description}
+\item[{\normalfont [1]}] CHEVALLEY (Claude). - Sur la théorie de Picard,
+Amer. J. of Math., t. 82, 1960, p. 435-490.
+
+\item[{\normalfont [2]}] GROTHENDIECK (A.) et DIEUDONNÉ (J.). - Eléments de géométrie
+algébrique, Chap. 1 et suivants.,- Paris, Presses universitaires de France,
+1960-1961 Institut des hautes Etudes scientifiques, 4, 8, 11, \ldots).
+
+\item[{\normalfont [3]}] GROTHENDIECK (Alexander). - Technique de descente et théorèmes
+d'existence en géométrie algébrique, I-V, Séminaire Bourbaki, t. 12,
+1959/60, n\textsuperscript{o} 190, 29 p. et n\textsuperscript{o} 195, 22 p. ;
+t. 13, 1960/61, n\textsuperscript{o} 212, 20 p. et
+n\textsuperscript{o} 221, 28 p. ; t. 14, 1961/62,
+n\textsuperscript{o} 232, 19 p.
+
+\item[{\normalfont [4]}] GROTHENDIECK (Alexander). - Séminaire de géométrie algébrique,
+1960/61. - Paris, Institut des hautes Études scientifiques, 1961.
+
+\item[{\normalfont [5]}] GROTHENDIECK (Alexander). - Séminaire de géométrie algébrique,
+1961/62, rédigé par un groupe d'auditeurs. - Paris, Institut des hautes Études
+scientifiques (à paraître).
+
+\item[{\normalfont [6]}] MATSUSAKA (T.). - The criteria for algebraic equivalence and the
+torsion group, Amer. J. Math., t. 79, 1957, p. 53-66.
+
+\item[{\normalfont [7]}] MUMFORD (D.) and TATE (J.). - Séminaire de géométrie algébrique,
+Harvard University, Spring Term 1962 (à paraître).
+
+\item[{\normalfont [8]}] SERRE (Jean-Pierre). - Sur la topologie des variétés algébriques
+en caractéristique $\symup{p}$, Symposium internacional de topología algebraica
+[1956. Mexico] ; p. 24-53. - Mexico, Universidad nacional autonoma, 1958.
+\end{description}
+
+\begin{center}\rule{2.5cm}{0.4pt}\end{center}

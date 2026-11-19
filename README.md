@@ -13,42 +13,33 @@ L'édition du 30 août 2026 contenait 17 corrections aux exposés 212 et 221, si
 corrections et de leur vérification se trouve dans [releases/2026-08-30-r1](releases/2026-08-30-r1).
 
 Le 18 novembre 2026, GPT-6 Astra (mode Pro de ChatGPT) a commencé un contrôle de toute l'édition sur les numérisations
-de NUMDAM. Il a relu sur l'image, page par page, **les exposés 149, 182, 190 et 195 en entier et l'exposé 212 jusqu'à
-la p. 116** : 122 des quelque 205 pages imprimées. Pour ces pages, il a établi une couche nouvelle, le français tel
-qu'imprimé, et contrôlé le français corrigé publié ici : chaque leçon contre l'imprimé, chaque correction justifiée ou
-remplacée par la leçon imprimée, les coquilles de l'original corrigées. Le français corrigé compte
-**4 939 modifications** (lecture de l'imprimé 4 618, coquille de l'original 115, structure 191, typographie 15), et
-9 959 avec la couche tel qu'imprimé. Le contrôle s'est arrêté à ce point, son environnement d'exécution ayant cessé de
-fonctionner ; la seconde lecture de ces modifications et les notes ne sont pas encore faites. Le reste de l'édition
-(exposé 212 après la p. 116, exposés 221, 232 et 236, errata, Commentaires) est tel que dans l'édition du 30 août
-2026, à la présentation près (préambule commun). Une suite du contrôle est prévue.
+de NUMDAM, poursuivi le 19 novembre. Il a relu sur l'image, page par page, **tout le texte français : les huit exposés,
+leurs errata et les Commentaires de 1962** (211 pages). Il a établi une couche nouvelle, le français tel qu'imprimé, et
+contrôlé le français corrigé publié ici : chaque leçon contre l'imprimé, chaque correction justifiée ou remplacée par la
+leçon imprimée, les coquilles de l'original corrigées. Le français corrigé compte **10 434 modifications** (lecture de
+l'imprimé 9 713, coquille de l'original 267, structure 340, typographie 114), et 20 741 avec la couche tel qu'imprimé.
+La seconde lecture de ces modifications et les notes ne sont pas encore faites ; une suite du contrôle est prévue. La
+relecture des traductions sur ce français a commencé (anglais, exposés 149 et 182).
 
-Tous les relevés de ce contrôle sont dans [raw/check-2026-11-18](raw/check-2026-11-18) : le point de sauvegarde
-complet (`checkpoint-05/`, avec `CORRECTIONS.tsv`, `CHECK_RECORD.md`, `CHECK_EVENTS.tsv` et la couche tel qu'imprimé
-`sources/fr_printed/`), le dernier message du contrôle et le prompt tel qu'envoyé.
+Les relevés de ce contrôle sont dans [raw/check-2026-11-18](raw/check-2026-11-18) : le dernier point de sauvegarde
+complet (`checkpoint-12/`, avec `CORRECTIONS.tsv`, `CHECK_RECORD.md`, `CHECK_EVENTS.tsv`, `progress.log` et la couche
+tel qu'imprimé `sources/fr_printed/`), les prompts tels qu'envoyés et les relevés de compilation. Le point de sauvegarde
+05 de la première étape reste dans la
+[publication du 19 novembre 2026](https://github.com/KokunoYumeto/fga-fr/releases/tag/fga-fr-2026-11-19).
 
-Le français de ce point de sauvegarde ne compilait pas. Claude (Claude Opus 5.5, effort high) a réparé la compilation
-par script, en ne touchant qu'à la composition, en 15 endroits, chacun consigné dans
-[REPAIR_LOG.tsv](raw/check-2026-11-18/build-repair-2026-11-19/REPAIR_LOG.tsv) :
-
-- neuf commandes accolées à la lettre qui les suit (`\longrightarrowO_y` devient `\longrightarrow O_y`, dans
-  l'exposé 182) ;
-- une ligne vide dans l'équation (4.3) de l'exposé 149, une accolade en trop dans l'exposé 182, un double exposant
-  dans l'exposé 190, une limite mal placée dans l'exposé 195 ;
-- deux débordements dans la marge : une formule centrée de l'exposé 149, composée sur trois lignes alignées, et des
-  lignes d'énoncés soulignés, que le préambule laisse maintenant s'espacer davantage.
-
-Aucune leçon n'a été changée. L'édition compile avec LuaLaTeX en trois passes, sans erreur et sans ligne ni formule qui
-déborde dans la marge (151 pages). Claude a ensuite regardé des pages du livre et comparé quatre corrections du
-contrôle aux numérisations : exposé 149, p. 171 (l'imprimé porte « anticommutent à u », corrigé en « commutent à d »
-avec une note) ; exposé 182, p. 205 (l'imprimé porte Aut(X_n), corrigé en Aut(X_{n-1})) ; exposé 195, p. 376 (la
-parenthèse ouvrante qui manque à l'imprimé) ; exposé 212, p. 107 (la lettre S′ laissée en blanc à l'imprimé). Dans
-les quatre cas, l'imprimé est bien tel que le relevé le dit.
+Claude (Claude Opus 5.5, effort high) a vérifié la compilation : le français compile avec LuaLaTeX en trois passes, sans
+erreur et sans ligne ni formule qui déborde dans la marge (148 pages), après deux réglages de mise en page consignés dans
+[REPAIR_LOG.tsv](raw/check-2026-11-18/build-repair-2026-11-19b/REPAIR_LOG.tsv) (une formule centrée de l'exposé 149
+composée sur trois lignes alignées ; des énoncés soulignés que le préambule laisse s'espacer davantage). Aucune leçon n'a
+été changée. Claude a comparé aux numérisations sept corrections du contrôle : exposé 149, p. 171 (« anticommutent à
+u ») ; exposé 182, p. 205 (Aut(X_n)) ; exposé 195, p. 376 (parenthèse manquante) ; exposé 212, p. 107 (S′ laissé en
+blanc) ; exposé 221, p. 272 (Z/K pour Z/X) ; exposé 232, p. 143 (Pic sans prime dans (1.3)) ; exposé 236, p. 223
+(l'ordre G^τ, G^σ, G^ρ). Dans les sept cas, l'imprimé est bien tel que le relevé le dit.
 
 ## État
 
-La transcription est complète. Le contrôle sur les numérisations couvre les pages indiquées ci-dessus ; des erreurs
-peuvent subsister, en particulier dans les pages non encore contrôlées. Merci de les signaler par une issue GitHub.
+La transcription est complète. Le français a été relu en entier sur les numérisations ; la seconde lecture est à venir, et des erreurs
+peuvent subsister. Merci de les signaler par une issue GitHub.
 
 ## Autres éditions de FGA
 
@@ -66,7 +57,7 @@ Toutes les éditions d'EGA, de FGA et de SGA de ce projet sont recensées dans
 
 ## Contenu
 
-- [Lecteur PDF, édition du 19 novembre 2026](https://github.com/KokunoYumeto/fga-fr/releases/download/fga-fr-2026-11-19/fga-fr-2026-11-19.pdf) :
+- [Lecteur PDF, édition du 19 novembre 2026 (b)](https://github.com/KokunoYumeto/fga-fr/releases/download/fga-fr-2026-11-19b/fga-fr-2026-11-19b.pdf) :
   les huit exposés, chacun suivi de ses errata, et les Commentaires de 1962.
 - [sources/current](sources/current/README.md) : les sources LaTeX, un fichier par exposé (`149.tex` à `236.tex`),
   par liste d'errata (`e149.tex` à `e236.tex`) et pour les Commentaires (`com.tex`). Compiler `fr/main.tex` avec

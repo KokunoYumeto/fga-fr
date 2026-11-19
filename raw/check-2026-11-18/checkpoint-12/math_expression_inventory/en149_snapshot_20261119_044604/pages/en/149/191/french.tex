@@ -1,0 +1,67 @@
+\src{191}
+est égal à l'un des arguments $\symup{B_j}$ ;
+\begin{equation}\tag{8.4}
+\resizebox{\textwidth}{!}{$
+\begin{aligned}
+&
+\symup{T_{r}^{s*}(A_1,\ldots,A_{i-1},C,A_{i+1},\ldots,A_r;
+ B_1,\ldots,B_{j-1},C,B_{j+1},\ldots,B_s)\longrightarrow}
+\\
+&
+\symup{\qquad\relbar\quad
+T_{r-1}^{s-1*}(A_1,\ldots,\widehat{A}_i,\ldots,A_r;
+ B_1,\ldots,\widehat{B}_j\ldots,B_s)}
+\end{aligned}
+$}
+\end{equation}
+De plus, si un argument $\symup{A_i}$ est un faisceau localement libre, alors on peut
+l'enlever à condition de remplacer l'un des $\symup{A_j}$ ($\symup{j\neq i}$) par
+$\symup{A_j\otimes A_i}$, ou l'un des $\symup{B_k}$ par $\symup{B_k\otimes A_i'}$ (où
+$\symup{A_i'=\Homsh_{\Osh_X}(A_i,\Osh_X)}$), et on a une règle de calcul analogue dans
+le cas où l'un des arguments $\symup{B_j}$ est localement libre. En particulier, on
+peut toujours enlever un argument qui est identique à $\symup{\Osh_X}$. Si tous les
+arguments sont localement libres, sauf au plus un des arguments $\symup{B_i}$, la règle
+qu'on vient d'énoncer donne un isomorphisme fonctoriel
+\begin{equation}\tag{8.5}
+  \symup{T_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+  =H^{*}\bigl(X,A_1'\otimes\cdots\otimes A_r'
+    \otimes B_1\otimes\cdots\otimes B_s\bigr)}
+\end{equation}
+(car on est ramené au cas où $\symup{r=0}$, $\symup{s=1}$, où cela est immédiat : on peut
+aussi utiliser directement la suite spectrale de terme initial (8.2)). Des
+opérations correspondant aux précédentes se définissent pour les
+$\symup{\underline{T}_{r}^{s}}$. Les relations entre les diverses opérations ainsi
+introduites sont les mêmes que pour les opérations analogues en calcul
+tensoriel.
+
+Soit $\symup{n}$ la dimension de $\symup{X}$. En appliquant successivement une composition
+tensorielle (8.3) et des contractions (8.4) sur les arguments répétés, on
+obtient un accouplement
+\begin{equation}\tag{8.6}
+\resizebox{\textwidth}{!}{$\symup{
+  (T_{r}^{s})^{p}(A_1,\ldots;B_1,\ldots)
+  \times
+  (T_{s}^{r})^{n-p}(B_1,\ldots;A_1,\ldots,A_r\otimes\underline{\Omega}_X^{n})
+  \longrightarrow H^{n}(X,\underline{\Omega}_X^{n})
+}$}
+\end{equation}
+
+\result{THÉORÈME}{6} \uline{Si} $\symup{X}$ \uline{est une variété projective non singulière, alors
+les accouplements} (8.6) \uline{sont des dualités}.
+
+Cela résulte de façon purement formelle du corollaire au théorème 3. Il résulte
+en effet facilement de ce corollaire que si $\symup{K}$ est un complexe de faisceaux
+algébriques cohérents \uline{localement libres}, alors l'hypercohomologie de $\symup{X}$ par
+rapport à $\symup{K}$ est en dualité avec l'hypercohomologie de $\symup{X}$ par rapport à
+$\symup{K'\otimes\underline{\Omega}_X^{n}}$ par les accouplements naturels
+\begin{equation}\tag{8.7}
+  \symup{\underline{\underline{R}}^{p}\Gamma(K)
+  \times\underline{\underline{R}}^{n-p}\Gamma(K'\otimes\underline{\Omega}_X^{n})
+  \longrightarrow\underline{\underline{R}}^{n}\Gamma(\underline{\Omega}_X^{n})
+  =H^{n}(X,\underline{\Omega}_X^{n})}
+\end{equation}
+On le voit en utilisant la suite spectrale de terme initial
+$\symup{H^{p}(H^{q}(X,K))}$ et la suite spectrale analogue pour
+$\symup{K'\otimes\underline{\Omega}_X^{n}}$. Du résultat précédent, le théorème 6 se déduit en
+utilisant la définition (8.1).
+

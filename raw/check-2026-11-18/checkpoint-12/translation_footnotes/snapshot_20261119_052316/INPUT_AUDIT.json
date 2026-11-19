@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-11-19T05:26:10.728840+00:00",
+  "completed_utc": "2026-11-19T05:26:11.576898+00:00",
+  "capture_started_utc": "2026-11-19T05:23:16.008741+00:00",
+  "capture_completed_utc": "2026-11-19T05:23:16.154329+00:00",
+  "capture_sha256": "583f815ffbe1a779f7b112104025d176c680432b75cf75a4115a60fc56baf876",
+  "original_manifest_sha256": "8b95e5ab9629a5b3447ebedd3fdacaa2d6e91b7ae45be08dd6582a2fee97b56f",
+  "manifest_comment_lines": 1,
+  "captured_files": 322,
+  "captured_hash_matches": 322,
+  "original_selected_manifest_matches": 161,
+  "original_relative_files": 161,
+  "current_relative_files": 161,
+  "equal_relative_file_sets": true,
+  "layers": [
+    "en",
+    "es",
+    "es_149_printed",
+    "pt-BR",
+    "pt-BR_printed",
+    "vi",
+    "vi_diplomatic",
+    "ko",
+    "zh-Hans"
+  ],
+  "byte_identical_file_pairs": 160,
+  "command_counts": {
+    "original": {
+      "footnote": 554,
+      "footnotemark": 8
+    },
+    "current": {
+      "footnote": 544,
+      "footnotemark": 8
+    }
+  },
+  "extracted_call_metadata_records": 1114,
+  "lexical_issues": 0,
+  "source_or_ledger_writes": false,
+  "body_payloads_emitted": false,
+  "body_meanings_assessed": false,
+  "failure_count": 0,
+  "failures": []
+}

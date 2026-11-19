@@ -1,0 +1,132 @@
+{
+  "french": [
+    {
+      "id": "fr:149:S00001",
+      "layer": "fr",
+      "unit": "149",
+      "file": "sources/fr/fr/149.tex",
+      "raw_sha256": "06d033ece6645de592db973644cf7357255f24536ff7b03c3b2ace10736f7636",
+      "token_sha256": "7f869ca6c95ad6ab2b611ed233f73293856ac3bc4f2b680fe6ceb1bf48bd3753",
+      "raw_text": "[3]",
+      "classification": "literal_reference_shaped_candidate_only",
+      "byte_start": 523,
+      "byte_end_exclusive": 526,
+      "line_start": 11,
+      "line_end": 11,
+      "page": "169",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "169"
+      ]
+    },
+    {
+      "id": "fr:149:S00002",
+      "layer": "fr",
+      "unit": "149",
+      "file": "sources/fr/fr/149.tex",
+      "raw_sha256": "038966de9f6b9a901b20b4c6ca8b2a46009feebe031babc842d43690c0bc222b",
+      "token_sha256": "012e8be553c7215571f8ac1066b7b53f1e75949a2b535f2d292a8a4a5582e603",
+      "raw_text": "[2]",
+      "classification": "literal_reference_shaped_candidate_only",
+      "byte_start": 617,
+      "byte_end_exclusive": 620,
+      "line_start": 12,
+      "line_end": 12,
+      "page": "169",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "169"
+      ]
+    },
+    {
+      "id": "fr:149:S00003",
+      "layer": "fr",
+      "unit": "149",
+      "file": "sources/fr/fr/149.tex",
+      "raw_sha256": "038966de9f6b9a901b20b4c6ca8b2a46009feebe031babc842d43690c0bc222b",
+      "token_sha256": "012e8be553c7215571f8ac1066b7b53f1e75949a2b535f2d292a8a4a5582e603",
+      "raw_text": "[2]",
+      "classification": "literal_reference_shaped_candidate_only",
+      "byte_start": 718,
+      "byte_end_exclusive": 721,
+      "line_start": 14,
+      "line_end": 14,
+      "page": "169",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "169"
+      ]
+    }
+  ],
+  "translation": [
+    {
+      "id": "en:149:S00001",
+      "layer": "en",
+      "unit": "149",
+      "file": "sources/en/en/149.tex",
+      "raw_sha256": "06d033ece6645de592db973644cf7357255f24536ff7b03c3b2ace10736f7636",
+      "token_sha256": "7f869ca6c95ad6ab2b611ed233f73293856ac3bc4f2b680fe6ceb1bf48bd3753",
+      "raw_text": "[3]",
+      "classification": "literal_reference_shaped_candidate_only",
+      "byte_start": 468,
+      "byte_end_exclusive": 471,
+      "line_start": 11,
+      "line_end": 11,
+      "page": "169",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "169"
+      ]
+    },
+    {
+      "id": "en:149:S00002",
+      "layer": "en",
+      "unit": "149",
+      "file": "sources/en/en/149.tex",
+      "raw_sha256": "038966de9f6b9a901b20b4c6ca8b2a46009feebe031babc842d43690c0bc222b",
+      "token_sha256": "012e8be553c7215571f8ac1066b7b53f1e75949a2b535f2d292a8a4a5582e603",
+      "raw_text": "[2]",
+      "classification": "literal_reference_shaped_candidate_only",
+      "byte_start": 570,
+      "byte_end_exclusive": 573,
+      "line_start": 12,
+      "line_end": 12,
+      "page": "169",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "169"
+      ]
+    },
+    {
+      "id": "en:149:S00003",
+      "layer": "en",
+      "unit": "149",
+      "file": "sources/en/en/149.tex",
+      "raw_sha256": "038966de9f6b9a901b20b4c6ca8b2a46009feebe031babc842d43690c0bc222b",
+      "token_sha256": "012e8be553c7215571f8ac1066b7b53f1e75949a2b535f2d292a8a4a5582e603",
+      "raw_text": "[2]",
+      "classification": "literal_reference_shaped_candidate_only",
+      "byte_start": 625,
+      "byte_end_exclusive": 628,
+      "line_start": 14,
+      "line_end": 14,
+      "page": "169",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "169"
+      ]
+    }
+  ]
+}

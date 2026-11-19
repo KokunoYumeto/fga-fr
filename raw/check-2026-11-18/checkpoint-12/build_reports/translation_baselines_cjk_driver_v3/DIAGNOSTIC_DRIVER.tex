@@ -1,0 +1,57 @@
+
+\ExplSyntaxOn
+\tl_new:N \l_fga_diagnostic_options_tl
+\tl_new:N \l_fga_diagnostic_font_tl
+\cs_new_protected:Npn \fga_diagnostic_replace:N #1
+  {
+    \tl_replace_all:Nnn #1 {ItalicFont={Malgun~Gothic}} {ItalicFont={Noto~Sans~CJK~KR}}
+    \tl_replace_all:Nnn #1 {BoldItalicFont={Malgun~Gothic~Bold}} {BoldItalicFont={Noto~Sans~CJK~KR~Bold}}
+    \tl_replace_all:Nnn #1 {Malgun~Gothic~Bold} {Noto~Sans~CJK~KR~Bold}
+    \tl_replace_all:Nnn #1 {Malgun~Gothic} {Noto~Sans~CJK~KR}
+    \tl_replace_all:Nnn #1 {Microsoft~YaHei} {Noto~Sans~CJK~SC}
+    \tl_replace_all:Nnn #1 {SimSun} {Noto~Serif~CJK~SC}
+  }
+\cs_new_protected:Npn \fga_diagnostic_setfont:Nnnn #1#2#3#4
+  {
+    \tl_set:Nn \l_fga_diagnostic_options_tl {#2,#4}
+    \tl_set:Nn \l_fga_diagnostic_font_tl {#3}
+    \fga_diagnostic_replace:N \l_fga_diagnostic_options_tl
+    \fga_diagnostic_replace:N \l_fga_diagnostic_font_tl
+    \use:x { \exp_not:N #1
+      [\exp_not:V \l_fga_diagnostic_options_tl]
+      {\exp_not:V \l_fga_diagnostic_font_tl} }
+  }
+\AddToHook{package/fontspec/after}{
+  \NewCommandCopy \fga_original_fontspec \fontspec
+  \NewCommandCopy \fga_original_setmainfont \setmainfont
+  \NewCommandCopy \fga_original_setsansfont \setsansfont
+  \RenewDocumentCommand \setmainfont {O{}mO{}}
+    {\fga_diagnostic_setfont:Nnnn \fga_original_setmainfont {#1}{#2}{#3}}
+  \RenewDocumentCommand \setsansfont {O{}mO{}}
+    {\fga_diagnostic_setfont:Nnnn \fga_original_setsansfont {#1}{#2}{#3}}
+  \RenewDocumentCommand \fontspec {O{}mO{}}
+    {\fga_diagnostic_setfont:Nnnn \fga_original_fontspec {#1}{#2}{#3}}
+}
+\AddToHook{package/xeCJK/after}{
+  \NewCommandCopy \fga_original_setCJKmainfont \setCJKmainfont
+  \NewCommandCopy \fga_original_setCJKsansfont \setCJKsansfont
+  \NewCommandCopy \fga_original_setCJKmonofont \setCJKmonofont
+  \RenewDocumentCommand \setCJKmainfont {O{}mO{}}
+    {\fga_diagnostic_setfont:Nnnn \fga_original_setCJKmainfont {#1}{#2}{#3}}
+  \RenewDocumentCommand \setCJKsansfont {O{}mO{}}
+    {\fga_diagnostic_setfont:Nnnn \fga_original_setCJKsansfont {#1}{#2}{#3}}
+  \RenewDocumentCommand \setCJKmonofont {O{}mO{}}
+    {\fga_diagnostic_setfont:Nnnn \fga_original_setCJKmonofont {#1}{#2}{#3}}
+}
+\ExplSyntaxOff
+
+\errorcontextlines=0
+\newcount\FgaPhysicalPage
+\FgaPhysicalPage=0
+\AddToHook{shipout/before}{%
+  \global\advance\FgaPhysicalPage by 1
+  \typeout{FGA-SHIPOUT|\the\FgaPhysicalPage|\thepage}%
+}
+\AddToHook{file/before}{\typeout{FGA-FILE-BEGIN|\CurrentFilePath|\CurrentFile}}
+\AddToHook{file/after}{\typeout{FGA-FILE-END|}}
+\input{main.tex}

@@ -1,0 +1,224 @@
+--- a/sources/fr/fr/149.tex
++++ b/sources/fr/fr/149.tex
+@@ -474,6 +474,7 @@
+ écrire
+ 
+ \src{178}
++{\small
+ \[
+ \symup{\Extsh_{\Osh_X}^{p}(F,L)
+ =L\otimes(\underline{\Omega}_X^{n})'\otimes
+@@ -483,6 +484,7 @@
+ =\Homsh_{\Osh_X}\!\left(
+   F\otimes L'\otimes\underline{\Omega}_X^{n},\underline{\omega}_Y^{q}\right)}
+ \]
++}
+ où $\symup{q=n-p}$, d'où la formule (4.1 bis).
+ 
+ Faisons en particulier $\symup{F=\Osh_Y}$, $\symup{L=\underline{\Omega}_X^{p}}$, on trouve, compte tenu
+--- a/sources/fr/fr/182.tex
++++ b/sources/fr/fr/182.tex
+@@ -253,8 +253,11 @@
+ que maintenant $\symup{Y=\operatorname{Spec}(A)}$, $\symup{A}$ étant un anneau topologique
+ noethérien $\symup{J}$-adique séparé et complet].
+ 
++\begingroup\emergencystretch=3em
+ \result{COROLLAIRE}{1} \uline{Les sous-schémas fermés de} $\symup{X}$ \uline{correspondent
+ biunivoquement aux sous-schémas formels fermés de} $\symup{\overline X}$.
++
++\endgroup
+ 
+ En effet, ils correspondent aux sous-faisceaux cohérents de $\symup{O_X}$ resp. de
+ $\symup{\overline{O}_X}$. Regardant les graphes de morphismes comme des sous-schémas
+@@ -266,6 +269,7 @@
+ $\symup{Y}$\uline{-morphismes de} $\symup{X}$ \uline{dans} $\symup{Z}$, \uline{et les} $\symup{\overline Y}$\uline{-morphismes de}
+ $\symup{\overline X}$ \uline{dans} $\symup{\overline Z}$.
+ 
++\begingroup\emergencystretch=3em
+ En d'autres termes, \uline{les schémas algébriques propres sur} $\symup{A}$ \uline{apparaissent comme
+ une sous-catégorie} (avec comme morphismes les morphismes induits) de la
+ catégorie des schémas formels propres sur $\symup{\overline Y}$. On fera attention
+@@ -276,6 +280,8 @@
+ De tels schémas formels s'introduisent de façon naturelle en \uline{\fquote{théorie des
+ modules}}. Notons cependant un cas particulier intéressant où un schéma formel
+ est algébrisable :
++
++\endgroup
+ 
+ \result{THÉORÈME}{4} \uline{Soit} $\symup{A}$ \uline{un anneau noethérien local complet de corps
+ résiduel} $\symup{k}$, \uline{et soit} $\symup{\mathfrak X}$ \uline{un schéma formel propre sur} $\symup{A}$ (muni de sa
+@@ -436,12 +442,15 @@
+ 
+ En particulier :
+ 
++\begingroup\small
+ \src{202}
+ \result{COROLLAIRE}{2} \uline{Soit} $\symup{E_0}$ \uline{un faisceau cohérent localement libre sur}
+ $\symup{X_y}$ \uline{tel que}
+ $\symup{H^1\bigl(X_y;\mathop{\text{\uwave{Hom}}}\nolimits_{O_X}(E_0,E_0)\bigr)=0}$,
+ \uline{alors deux faisceaux localement libres dont les restrictions à} $\symup{X_y}$ \uline{sont
+ isomorphes à} $\symup{E_0}$, \uline{sont isomorphes dans un voisinage de} $\symup{X_y}$.
++
++\endgroup
+ 
+ Ainsi :
+ 
+--- a/sources/fr/fr/212.tex
++++ b/sources/fr/fr/212.tex
+@@ -286,8 +286,11 @@
+ \[
+   \symup{p:G\times X\to X\times X}
+ \]
++\begingroup\emergencystretch=3em
+ défini par le couple $\symup{(p_1,p_2)}$, la condition que $\symup{G}$ opère librement signifie
+ que $\symup{p}$ est un \uline{monomorphisme}.
++
++\endgroup
+ 
+ Bien entendu, même lorsque $\symup{G}$ n'opère pas librement sur $\symup{X}$, on désire avoir
+ des critères d'existence d'un quotient de $\symup{X}$ par $\symup{G}$, i. e. du conoyau du
+--- a/sources/fr_printed/fr/149.tex
++++ b/sources/fr_printed/fr/149.tex
+@@ -471,6 +471,7 @@
+ écrire
+ 
+ \src{178}
++{\small
+ \[
+ \symup{\Extsh_{\Osh_X}^{p}(F,L)
+ =L\otimes(\underline{\Omega}_X^{n})'\otimes
+@@ -480,6 +481,7 @@
+ =\Homsh_{\Osh_X}\!\left(
+   F\otimes L'\otimes\underline{\Omega}_X^{n},\underline{\omega}_Y^{q}\right)}
+ \]
++}
+ où $\symup{q=n-p}$, d'où la formule (4.1 bis).
+ 
+ Faisons en particulier $\symup{F=\Osh_Y}$, $\symup{L=\underline{\Omega}_X^{p}}$, on trouve, compte tenu
+--- a/sources/fr_printed/fr/182.tex
++++ b/sources/fr_printed/fr/182.tex
+@@ -253,8 +253,11 @@
+ que maintenant $\symup{Y=\operatorname{Spec}(A)}$, $\symup{A}$ étant un anneau topologique
+ noethérien $\symup{J}$-adique séparé et complet].
+ 
++\begingroup\emergencystretch=3em
+ \result{COROLLAIRE}{1} \uline{Les sous-schémas fermés de} $\symup{X}$ \uline{correspondent
+ biunivoquement aux sous-schémas formels fermés de} $\symup{\overline X}$.
++
++\endgroup
+ 
+ En effet, ils correspondent aux sous-faisceaux cohérents de $\symup{O_X}$ resp. de
+ $\symup{O_X}$. Regardant les graphes de morphismes comme des sous-schémas
+@@ -266,6 +269,7 @@
+ $\symup{Y}$\uline{-morphismes de} $\symup{X}$ \uline{dans} $\symup{Z}$, \uline{et les} $\symup{\overline Y}$\uline{-morphismes de}
+ $\symup{\overline X}$ \uline{dans} $\symup{\overline Z}$.
+ 
++\begingroup\emergencystretch=3em
+ En d'autres termes, \uline{les schémas algébriques propres sur} $\symup{A}$ \uline{apparaissent comme
+ une sous-catégorie} (avec comme morphismes les morphismes induits) de la
+ catégorie des schémas formels propres sur $\symup{\overline Y}$. On fera attention
+@@ -276,6 +280,8 @@
+ De tels schémas formels s'introduisent de façon naturelle en \uline{\fquote{théorie des
+ modules}}. Notons cependant un cas particulier intéressant où un schéma formel
+ est algébrisable :
++
++\endgroup
+ 
+ \result{THÉORÈME}{4} \uline{Soit} $\symup{A}$ \uline{un anneau noethérien local complet de corps
+ résiduel} $\symup{k}$, \uline{et soit} $\symup{\mathfrak X}$ \uline{un schéma formel propre sur} $\symup{A}$ (muni de sa
+@@ -436,12 +442,15 @@
+ 
+ En particulier :
+ 
++\begingroup\small
+ \src{202}
+ \result{COROLLAIRE}{2} \uline{Soit} $\symup{E_0}$ \uline{un faisceau cohérent localement libre sur}
+ $\symup{X_y}$ \uline{tel que}
+ $\symup{H^1\bigl(X_y;\mathop{\text{\uwave{Hom}}}\nolimits_{O_X}(E_0,E_0)\bigr)=0}$,
+ \uline{alors deux faisceaux localement libres dont des restrictions à} $\symup{X_y}$ \uline{sont
+ isomorphes à} $\symup{E_0}$, \uline{sont isomorphes dans un voisinage de} $\symup{X_y}$.
++
++\endgroup
+ 
+ Ainsi :
+ 
+@@ -895,6 +904,7 @@
+ l'homomorphisme fonctoriel
+ $\symup{\pi_1(X',a')\longrightarrow\pi_1(X,a)}$ est injectif.
+ 
++\begingroup\emergencystretch=3em
+ \result{LEMME}{3} \uline{Soit} $\symup{Z}$ \uline{un schéma complet au-dessus d'un anneau local
+ artinien} $\symup{A}$, \uline{tel que} $\symup{H^0(X,O_X)=A}$, \uline{soit} $\symup{X'}$ \uline{un revêtement non ramifié de}
+ $\symup{X}$ \uline{et soit} $\symup{A'=H^0(X',O_{X'})}$, \uline{qui est donc un anneau fini sur} $\symup{A}$
+@@ -922,6 +932,8 @@
+ \end{enumerate}
+ Lorsque la condition (ii) est vérifiée, nous dirons que le revêtement
+ non ramifié $\symup{X'}$ de $\symup{X}$ est \uline{géométriquement trivial}.
++
++\endgroup
+ 
+ \result{LEMME}{4} \uline{Soit} $\symup{f:X\longrightarrow Y}$ \uline{un morphisme propre tel que}
+ $\symup{f_*(O_{X'})=O_Y}$. \uline{Soient} $\symup{a}$ \uline{un point géométrique de} $\symup{X}$, $\symup{b}$ \uline{sa
+--- a/sources/fr_printed/fr/212.tex
++++ b/sources/fr_printed/fr/212.tex
+@@ -286,8 +286,11 @@
+ \[
+   \symup{p:G\times X\to X\times X}
+ \]
++\begingroup\emergencystretch=3em
+ défini par le couple $\symup{(p_1,p_2)}$, la condition que $\symup{G}$ opère librement signifie
+ que $\symup{p}$ est un \uline{monomorphisme}.
++
++\endgroup
+ 
+ Bien entendu, même lorsque $\symup{G}$ n'opère pas librement sur $\symup{X}$, on désire avoir
+ des critères d'existence d'un quotient de $\symup{X}$ par $\symup{G}$, i. e. du conoyau du
+--- a/sources/ko/149.tex
++++ b/sources/ko/149.tex
+@@ -69,6 +69,7 @@
+ 단사 대상을 $\Gamma$-비순환 대상으로 보냄을 확인할 수 있다. 따라서
+ 잘 알려진 방식으로 다음을 얻는다:
+ 
++\begingroup\emergencystretch=3em
+ \result{명제}{1} 모든 $\Osh$-가군 $A$에 대하여 $\Ccat^{\Osh}$ 위의
+ 코호몰로지형 스펙트럼 함자가 존재하며, 이는 등급 함자
+ $\bigl(\operatorname{Ext}_{\Osh}^{*}(X;A,B)\bigr)$로 수렴하고 그 초항은
+@@ -77,6 +78,8 @@
+ \end{equation}
+ 이로부터 \fquote{가장자리 준동형}들과 우리가 적지 않을 5항
+ 완전열을 얻는다.
++
++\endgroup
+ 
+ \result{따름정리}{1} $A$가 국소적으로 $\Osh^{n}$과 동형이면, 다음 표준
+ 동형들이 성립한다:
+--- a/sources/ko/182.tex
++++ b/sources/ko/182.tex
+@@ -505,7 +505,7 @@
+ \]
+ 그러면 $X_0$ 위에 $F_0$와 동형인 층을 유도하는 $\mathfrak X$ 위의 국소
+ 자유층 $F$가 존재한다. (더구나
+-$H^1(X_0,\Homsh_{\Osh_{X_0}}(F_0,F_0))=0$이면 이 $F$는 동형까지
++{\small $H^1(X_0,\Homsh_{\Osh_{X_0}}(F_0,F_0))=0$}이면 이 $F$는 동형까지
+ 유일하다.)
+ 
+ $X_n$ 위의 국소 자유층 $F_n$들을 각각 앞의 것을 유도하도록 차례로
+--- a/sources/ko/190.tex
++++ b/sources/ko/190.tex
+@@ -1109,6 +1109,7 @@
+   T_{\xi\eta}=T_\xi T_\eta.
+   \tag{3.3}
+ \end{equation}
++\begingroup\emergencystretch=3em
+ 다시 말해, \emph{$F'$ 위의 하강 자료를 주는 것은
+ $\mathcal O_S$-대수의 층
+ $\mathcal U=\operatorname{Hom}_{\mathcal O_S}(\mathcal A',\mathcal A')$
+@@ -1121,6 +1122,8 @@
+ \]
+ 이 주어졌다고 하자(이는 $S$ 위의 $\mathcal A'$-가군의 층들 사이의
+ 짝지음으로 해석할 수 있다).
++
++\endgroup
+ 
+ \src{320}
+ 또한 $F'_i$ 위에 다음 준동형들로 정의되는 붙이기 자료가 주어졌다고

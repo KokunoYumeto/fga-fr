@@ -1,0 +1,3 @@
+layer	passes	engine_exit_codes	three_pass_compilation_completed	aux_stable	engine_errors	missing_glyphs	unresolved_reference_diagnostics	pdf_pages	boxes_over_2pt	over_2pt_locations_and_amounts_unchanged	final_diagnostic_comparison_available	source_tree_sha256
+fr	3	0,0,0	True	True	0	0	0	148	5	True	True	fb90cc7e0e7f4ef5f0b5915828d610b95bedbc0aa60c2aaa6601ce829fc55d96
+fr_printed	3	0,0,0	True	True	0	0	0	148	6	True	True	8237b55da9bfba2d03cb225c2233096378baf95c737ac5228c5292db9dc773b0

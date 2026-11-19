@@ -1,0 +1,94 @@
+{
+  "french": [
+    {
+      "id": "fr:149:R00042",
+      "layer": "fr",
+      "unit": "149",
+      "file": "sources/fr/fr/149.tex",
+      "command": "tag",
+      "starred": false,
+      "raw_sha256": "fd60b66f0b538df3a44f50612986e741b2733b302d6eb99c056c8df879226172",
+      "token_sha256": "631aecf88a5deed2296bdf339b2be7748780ed66f3b9e3997cffc51ce108dbb4",
+      "raw_text": "\\tag{5.6}",
+      "byte_start": 50210,
+      "byte_end_exclusive": 50219,
+      "line_start": 846,
+      "line_end": 846,
+      "page": "184",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "184"
+      ]
+    },
+    {
+      "id": "fr:149:R00043",
+      "layer": "fr",
+      "unit": "149",
+      "file": "sources/fr/fr/149.tex",
+      "command": "tag",
+      "starred": false,
+      "raw_sha256": "1fcfc6fb037002a3f35b614029e612649ab9f5f5542d2848bb003d637aebaf2c",
+      "token_sha256": "f32c907f62f4fef20de033d6e9029f51b0a30c00ad35920e8e86dc2a4f08f811",
+      "raw_text": "\\tag{5.7}",
+      "byte_start": 50473,
+      "byte_end_exclusive": 50482,
+      "line_start": 851,
+      "line_end": 851,
+      "page": "184",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "184"
+      ]
+    }
+  ],
+  "translation": [
+    {
+      "id": "en:149:R00042",
+      "layer": "en",
+      "unit": "149",
+      "file": "sources/en/en/149.tex",
+      "command": "tag",
+      "starred": false,
+      "raw_sha256": "fd60b66f0b538df3a44f50612986e741b2733b302d6eb99c056c8df879226172",
+      "token_sha256": "631aecf88a5deed2296bdf339b2be7748780ed66f3b9e3997cffc51ce108dbb4",
+      "raw_text": "\\tag{5.6}",
+      "byte_start": 40395,
+      "byte_end_exclusive": 40404,
+      "line_start": 915,
+      "line_end": 915,
+      "page": "184",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "184"
+      ]
+    },
+    {
+      "id": "en:149:R00043",
+      "layer": "en",
+      "unit": "149",
+      "file": "sources/en/en/149.tex",
+      "command": "tag",
+      "starred": false,
+      "raw_sha256": "1fcfc6fb037002a3f35b614029e612649ab9f5f5542d2848bb003d637aebaf2c",
+      "token_sha256": "f32c907f62f4fef20de033d6e9029f51b0a30c00ad35920e8e86dc2a4f08f811",
+      "raw_text": "\\tag{5.7}",
+      "byte_start": 40600,
+      "byte_end_exclusive": 40609,
+      "line_start": 920,
+      "line_end": 920,
+      "page": "184",
+      "page_occurrence": 1,
+      "unmarked_prefix": false,
+      "cross_marker": false,
+      "covered_pages": [
+        "184"
+      ]
+    }
+  ]
+}

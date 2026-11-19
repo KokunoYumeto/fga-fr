@@ -1,0 +1,373 @@
+{
+  "translation": "en",
+  "french_layer": "fr",
+  "unit": "149",
+  "page": "183",
+  "page_key": "149-183",
+  "status": "aligned_marker_boundaries",
+  "french_file": "sources/fr/fr/149.tex",
+  "translation_file": "sources/en/en/149.tex",
+  "french_sha256": "a237670c2a981f1c617518213be9903b8fb2076c96a49da9224e4733d54d1db4",
+  "translation_sha256": "42fdb8ee8a7db0b65e39facd6e3ebc9e6a74e655b048d9dd4a7fa1b261ad5b9c",
+  "french_segment": {
+    "status": "literal_marker_segment",
+    "page": "183",
+    "next_page": "184",
+    "prefix_included": false,
+    "marker_byte_start": 44911,
+    "byte_start": 44911,
+    "byte_end_exclusive": 48050,
+    "line_start": 754,
+    "line_end": 802,
+    "bytes": 3139,
+    "sha256": "88974378ed69a4bcf60d1ff6eb44ece70f31c19009bff560f73f5507a3dbe7cd",
+    "file": "sources/fr/fr/149.tex"
+  },
+  "translation_segment": {
+    "status": "literal_marker_segment",
+    "page": "183",
+    "next_page": "184",
+    "prefix_included": false,
+    "marker_byte_start": 36184,
+    "byte_start": 36184,
+    "byte_end_exclusive": 38664,
+    "line_start": 817,
+    "line_end": 873,
+    "bytes": 2480,
+    "sha256": "751517ebec6695ae9de0ac9041a06d982dad730e39e55eb021c5c4f9ee7b4eb2",
+    "file": "sources/en/en/149.tex"
+  },
+  "french_math_all": 39,
+  "translation_math_all": 39,
+  "french_math": 39,
+  "translation_math": 39,
+  "french_references": 0,
+  "translation_references": 0,
+  "french_reference_shapes": 10,
+  "translation_reference_shapes": 10,
+  "candidate_alignments": {
+    "math": [
+      {
+        "id": "en:149:183:math:A0001",
+        "operation": "replace",
+        "status": "unpaired_ordered_block",
+        "left_ids": [
+          "fr:149:M00546",
+          "fr:149:M00547",
+          "fr:149:M00548",
+          "fr:149:M00549",
+          "fr:149:M00550",
+          "fr:149:M00551",
+          "fr:149:M00552",
+          "fr:149:M00553",
+          "fr:149:M00554",
+          "fr:149:M00555",
+          "fr:149:M00556",
+          "fr:149:M00557",
+          "fr:149:M00558",
+          "fr:149:M00559",
+          "fr:149:M00560",
+          "fr:149:M00561",
+          "fr:149:M00562",
+          "fr:149:M00563",
+          "fr:149:M00564",
+          "fr:149:M00565",
+          "fr:149:M00566",
+          "fr:149:M00567",
+          "fr:149:M00568",
+          "fr:149:M00569",
+          "fr:149:M00570",
+          "fr:149:M00571",
+          "fr:149:M00572",
+          "fr:149:M00573",
+          "fr:149:M00574",
+          "fr:149:M00575",
+          "fr:149:M00576",
+          "fr:149:M00577",
+          "fr:149:M00578",
+          "fr:149:M00579",
+          "fr:149:M00580",
+          "fr:149:M00581",
+          "fr:149:M00582",
+          "fr:149:M00583",
+          "fr:149:M00584"
+        ],
+        "right_ids": [
+          "en:149:M00545",
+          "en:149:M00546",
+          "en:149:M00547",
+          "en:149:M00548",
+          "en:149:M00549",
+          "en:149:M00550",
+          "en:149:M00551",
+          "en:149:M00552",
+          "en:149:M00553",
+          "en:149:M00554",
+          "en:149:M00555",
+          "en:149:M00556",
+          "en:149:M00557",
+          "en:149:M00558",
+          "en:149:M00559",
+          "en:149:M00560",
+          "en:149:M00561",
+          "en:149:M00562",
+          "en:149:M00563",
+          "en:149:M00564",
+          "en:149:M00565",
+          "en:149:M00566",
+          "en:149:M00567",
+          "en:149:M00568",
+          "en:149:M00569",
+          "en:149:M00570",
+          "en:149:M00571",
+          "en:149:M00572",
+          "en:149:M00573",
+          "en:149:M00574",
+          "en:149:M00575",
+          "en:149:M00576",
+          "en:149:M00577",
+          "en:149:M00578",
+          "en:149:M00579",
+          "en:149:M00580",
+          "en:149:M00581",
+          "en:149:M00582",
+          "en:149:M00583"
+        ],
+        "left_count": 39,
+        "right_count": 39,
+        "left_ordinals": [
+          1,
+          39
+        ],
+        "right_ordinals": [
+          1,
+          39
+        ],
+        "human_review_required": true
+      }
+    ],
+    "references": [],
+    "reference_shapes": [
+      {
+        "id": "en:149:183:reference_shapes:A0001",
+        "operation": "equal",
+        "status": "raw_identical",
+        "left_ids": [
+          "fr:149:S00035"
+        ],
+        "right_ids": [
+          "en:149:S00037"
+        ],
+        "left_count": 1,
+        "right_count": 1,
+        "left_ordinals": [
+          1,
+          1
+        ],
+        "right_ordinals": [
+          1,
+          1
+        ],
+        "human_review_required": true
+      },
+      {
+        "id": "en:149:183:reference_shapes:A0002",
+        "operation": "equal",
+        "status": "raw_identical",
+        "left_ids": [
+          "fr:149:S00036"
+        ],
+        "right_ids": [
+          "en:149:S00038"
+        ],
+        "left_count": 1,
+        "right_count": 1,
+        "left_ordinals": [
+          2,
+          2
+        ],
+        "right_ordinals": [
+          2,
+          2
+        ],
+        "human_review_required": true
+      },
+      {
+        "id": "en:149:183:reference_shapes:A0003",
+        "operation": "equal",
+        "status": "raw_identical",
+        "left_ids": [
+          "fr:149:S00037"
+        ],
+        "right_ids": [
+          "en:149:S00039"
+        ],
+        "left_count": 1,
+        "right_count": 1,
+        "left_ordinals": [
+          3,
+          3
+        ],
+        "right_ordinals": [
+          3,
+          3
+        ],
+        "human_review_required": true
+      },
+      {
+        "id": "en:149:183:reference_shapes:A0004",
+        "operation": "equal",
+        "status": "raw_identical",
+        "left_ids": [
+          "fr:149:S00038"
+        ],
+        "right_ids": [
+          "en:149:S00040"
+        ],
+        "left_count": 1,
+        "right_count": 1,
+        "left_ordinals": [
+          4,
+          4
+        ],
+        "right_ordinals": [
+          4,
+          4
+        ],
+        "human_review_required": true
+      },
+      {
+        "id": "en:149:183:reference_shapes:A0005",
+        "operation": "equal",
+        "status": "raw_identical",
+        "left_ids": [
+          "fr:149:S00039"
+        ],
+        "right_ids": [
+          "en:149:S00041"
+        ],
+        "left_count": 1,
+        "right_count": 1,
+        "left_ordinals": [
+          5,
+          5
+        ],
+        "right_ordinals": [
+          5,
+          5
+        ],
+        "human_review_required": true
+      },
+      {
+        "id": "en:149:183:reference_shapes:A0006",
+        "operation": "equal",
+        "status": "raw_identical",
+        "left_ids": [
+          "fr:149:S00040"
+        ],
+        "right_ids": [
+          "en:149:S00042"
+        ],
+        "left_count": 1,
+        "right_count": 1,
+        "left_ordinals": [
+          6,
+          6
+        ],
+        "right_ordinals": [
+          6,
+          6
+        ],
+        "human_review_required": true
+      },
+      {
+        "id": "en:149:183:reference_shapes:A0007",
+        "operation": "equal",
+        "status": "raw_identical",
+        "left_ids": [
+          "fr:149:S00041"
+        ],
+        "right_ids": [
+          "en:149:S00043"
+        ],
+        "left_count": 1,
+        "right_count": 1,
+        "left_ordinals": [
+          7,
+          7
+        ],
+        "right_ordinals": [
+          7,
+          7
+        ],
+        "human_review_required": true
+      },
+      {
+        "id": "en:149:183:reference_shapes:A0008",
+        "operation": "equal",
+        "status": "raw_identical",
+        "left_ids": [
+          "fr:149:S00042"
+        ],
+        "right_ids": [
+          "en:149:S00044"
+        ],
+        "left_count": 1,
+        "right_count": 1,
+        "left_ordinals": [
+          8,
+          8
+        ],
+        "right_ordinals": [
+          8,
+          8
+        ],
+        "human_review_required": true
+      },
+      {
+        "id": "en:149:183:reference_shapes:A0009",
+        "operation": "equal",
+        "status": "raw_identical",
+        "left_ids": [
+          "fr:149:S00043"
+        ],
+        "right_ids": [
+          "en:149:S00045"
+        ],
+        "left_count": 1,
+        "right_count": 1,
+        "left_ordinals": [
+          9,
+          9
+        ],
+        "right_ordinals": [
+          9,
+          9
+        ],
+        "human_review_required": true
+      },
+      {
+        "id": "en:149:183:reference_shapes:A0010",
+        "operation": "equal",
+        "status": "raw_identical",
+        "left_ids": [
+          "fr:149:S00044"
+        ],
+        "right_ids": [
+          "en:149:S00046"
+        ],
+        "left_count": 1,
+        "right_count": 1,
+        "left_ordinals": [
+          10,
+          10
+        ],
+        "right_ordinals": [
+          10,
+          10
+        ],
+        "human_review_required": true
+      }
+    ]
+  }
+}

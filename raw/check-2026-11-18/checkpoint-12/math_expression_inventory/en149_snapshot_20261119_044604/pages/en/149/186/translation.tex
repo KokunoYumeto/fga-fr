@@ -1,0 +1,52 @@
+\src{186}
+Now consider the pairings defined by composition of $\operatorname{Ext}$:
+\begin{equation}\tag{6.4}
+  H^{p}(X,F)\times
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\omega_X^{n})
+  \longrightarrow H^{n}(X,\omega_X^{n}),
+\end{equation}
+and compose them with the homomorphism $\gamma$ of (6.3). This gives functorial
+homomorphisms, compatible with the boundary operators,
+\begin{equation}\tag{6.5}
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\omega_X^{n})
+  \longrightarrow H^{p}(X,F)'
+\end{equation}
+(generalizing (5.2)). One checks that for $p=n$ this gives the isomorphism
+(6.1). With this understood, we have the following result.
+
+\result{THEOREM}{3 bis} The following four conditions on $X$ are equivalent for
+a given integer $k\geq0$:
+\begin{enumerate}
+  \item[\textit{i.}] The functorial homomorphism (6.5) is an isomorphism for
+    $n-k\leq p\leq n$.
+  \item[\textit{ii.}] One has $H^{p}(X,\Osh_X(-m))=0$ for $m$ large and
+    $n-k\leq p<n$.
+  \item[\textit{iii.}] The functor $H^{p}(X,F)$ on the category of coherent
+    algebraic sheaves on $X$ is coeffaceable for $n-k\leq p<n$.
+  \item[\textit{iv.}] One has
+    $E^{i}(\Osh_X)=\Extsh_{\Osh_P}^{r-n+i}(\Osh_X,\Omega_P^{r})=0$
+    for $0<i\leq k$.
+\end{enumerate}
+
+\noindent\textbf{PROOF.} --- \textit{i.}$\Rightarrow$\textit{ii.} follows
+from Lemma 4, \textit{ii.}$\Rightarrow$\textit{iii.} from Lemma 3, and
+\textit{iii.}$\Rightarrow$\textit{i.} by a well-known standard argument, since
+the two sides of (6.5) are then coeffaceable functors for $n-k\leq p<n$ (the
+first by Lemma 4). Finally, let us prove
+\textit{ii.}$\Leftrightarrow$\textit{iv.} This follows from the corollary to the
+next proposition.
+
+\result{PROPOSITION}{6} Let $F$ be a coherent algebraic sheaf on $X$, and let
+$i$ be an integer. Then, for $m$ sufficiently large, there is an isomorphism
+\begin{equation}\tag{6.6}
+  H^{i}(X,F(-m))'
+  \simeq H^{0}\bigl(X,E^{n-i}(F)(m)\bigr),
+\end{equation}
+where we set (compare no. 3, Proposition 5)
+\begin{equation}\tag{6.7}
+  E^{j}(F)=\Extsh_{\Osh_P}^{r-n+j}(F,\Omega_P^{r}).
+\end{equation}
+Indeed, by the duality theorem on $P$, the first side of (6.6) is isomorphic to
+$\operatorname{Ext}_{\Osh_P}^{r-i}(P;F(-m),\Omega_P^{r})$, so (6.6) follows
+from Lemma 5.
+

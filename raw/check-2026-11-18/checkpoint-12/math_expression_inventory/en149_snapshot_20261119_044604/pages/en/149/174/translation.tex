@@ -1,0 +1,62 @@
+\src{174}
+\begin{enumerate}
+\item[\textup{i.}] $\varphi_{x_1,\ldots,x_p}$ depends in an alternating
+$A$-multilinear fashion on the system of $x_i\in J$.
+\item[\textup{ii.}] $\varphi_{x_1,\ldots,x_p}$ is zero whenever one of the
+$x_i$ lies in $J^{2}$.
+\end{enumerate}
+In fact, ii follows from i, since $a\varphi_{\underline{x}}=0$ for $a\in J$, as
+is seen by observing that all the modules in (3.2) are annihilated by $J$.
+
+To define $\varphi_{\underline{x}}$, consider the complex
+$K_{\underline{x}}$ whose underlying $A$-module is $\bigwedge A^{p}$ and whose
+differential is contraction $i_{\underline{x}}$ by $\underline{x}$, regarded
+as the linear form on $A^{p}$ with components $x_1,\ldots,x_p$. The differential
+has degree $-1$, the degrees are nonnegative, and the homology of this complex
+in dimension $0$ is $A/(x_1A+\cdots+x_pA)$. Since the $x_i$ belong to $J$, this
+gives an augmentation $K_{\underline{x},0}\longrightarrow A/J$. Thus
+$K_{\underline{x}}$ appears as an augmented free complex with augmentation
+module $A/J$. In the familiar way, one obtains homomorphisms
+\[
+\operatorname{Ext}_{A}^{*}\bigl(H_0(K_{\underline{x}}),M\bigr)
+\longrightarrow
+H^{*}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr)
+\]
+and
+\[
+\operatorname{Tor}_{*}^{A}\bigl(H_0(K_{\underline{x}}),M\bigr)
+\longleftarrow
+H_{*}\bigl(K_{\underline{x}}\otimes_A M\bigr).
+\]
+Composing these with the homomorphisms on $\operatorname{Ext}$ and
+$\operatorname{Tor}$ induced by the augmentation homomorphism
+$H_0(K_{\underline{x}})\longrightarrow A/J$ gives homomorphisms
+\begin{equation}\tag{3.3}
+\left\{
+\begin{aligned}
+\psi_{\underline{x}}:
+\operatorname{Ext}_{A}^{*}(A/J,M)
+&\longrightarrow H^{*}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr),\\
+\psi_{\underline{x}}:
+\operatorname{Tor}_{*}^{A}(A/J,M)
+&\longleftarrow H_{*}\bigl(K_{\underline{x}}\otimes_A M\bigr).
+\end{aligned}
+\right.
+\end{equation}
+One sees immediately that in the top dimension $p$, the homology of the
+right-hand sides is $M/(x_1M+\cdots+x_pM)$ (respectively, the set of elements of
+$M$ annihilated by every $x_i$). Since the $x_i$ lie in $J$, one obtains
+homomorphisms
+\begin{equation}\tag{3.4}
+\left\{
+\begin{aligned}
+H^{p}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr)
+&\longrightarrow M\otimes A/J,\\
+H_{p}\bigl(K_{\underline{x}}\otimes_A M\bigr)
+&\longleftarrow\operatorname{Hom}_{A}(A/J,M).
+\end{aligned}
+\right.
+\end{equation}
+Composing the homomorphisms (3.3) and (3.4) gives the homomorphisms (3.2) that we
+wished to define. Verifying i is tedious but presents no difficulty.
+

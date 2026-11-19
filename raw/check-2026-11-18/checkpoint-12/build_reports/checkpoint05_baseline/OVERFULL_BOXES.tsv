@@ -1,0 +1,12 @@
+layer	box	pt	source	line_start	line_end	shipout_candidate	log_line
+fr	hbox	26.84898	sources/fr/fr/149.tex	485	485	11	570
+fr	hbox	6.36914	sources/fr/fr/182.tex	256	258	27	1087
+fr	hbox	11.93977	sources/fr/fr/182.tex	269	279	27	1090
+fr	hbox	36.72565	sources/fr/fr/182.tex	440	445	29	1122
+fr	hbox	5.36102	sources/fr/fr/212.tex	288	291	84	1440
+fr_printed	hbox	26.84898	sources/fr_printed/fr/149.tex	482	482	11	570
+fr_printed	hbox	6.36914	sources/fr_printed/fr/182.tex	256	258	27	1088
+fr_printed	hbox	11.93977	sources/fr_printed/fr/182.tex	269	279	27	1091
+fr_printed	hbox	36.72565	sources/fr_printed/fr/182.tex	440	445	29	1123
+fr_printed	hbox	4.89633	sources/fr_printed/fr/182.tex	898	910	35	1200
+fr_printed	hbox	5.36102	sources/fr_printed/fr/212.tex	288	291	84	1441

@@ -1,0 +1,221 @@
+hunk_id	relative_file	page_keys	fr_lines	fr_printed_lines	fr_byte_start	fr_byte_end_exclusive	fr_printed_byte_start	fr_printed_byte_end_exclusive	old_sha256	new_sha256	old_text	new_text	locator_candidate_count	post_snapshot_status
+FD000005	fr/149.tex	149-175	342-343	342-343	19952	20487	19786	19969	964fc3b67a08a76f5336df85f4470b71d52a30ee3a2906e44d5be796eaeda1bb	e21777f9b29a40cb177736083acf45d13fa435a8a02a978a0877f4daaaaf7157	"En effet, $\symup{\Omega^{n-p}(A/J)}$ est un $\symup{(A/J)}$-module projectif de rang $\symup{1}$, de même
+$\symup{\Omega^{n}(A)}$ est un $\symup{A}$-module projectif de rang $\symup{1}$,\footnote{Le texte imprimé dit « libre » pour les deux modules et « rang $\symup{n}$ » pour $\symup{\Omega^{n}(A)}$. Les modules de formes de degré maximal sont projectifs de rang $\symup{1}$ ; leur liberté globale ne découle pas des hypothèses. L'identification ci-dessous résulte de la suite conormale en prenant les déterminants.}
+"	"En effet, $\symup{\Omega^{n-p}(A/J)}$ est un $\symup{(A/J)}$-module libre de rang $\symup{1}$, de même
+$\symup{\Omega^{n}(A)}$ est un $\symup{A}$-module libre de rang $\symup{n}$,
+"	97	known_stale_after_root_reported_footnote_removals
+FD000008	fr/149.tex	149-176	417-417	417-417	25215	25323	24696	24804	e60261a15ef5a2c74758b4fd72459a8b103e9ae04caecdbeb59f34c796000c3c	522ad570da760e5c00cf67a92e4f61faf05f5afde7bcc43a4f1302d6ae7bab23	"$\symup{\operatorname{Ext}}$, au cas où $\symup{J}$ est engendré par un \fquote{système de paramètres}
+"	"$\symup{\operatorname{Ext}}$, au,cas où $\symup{J}$ est engendré par un \fquote{système de paramètres}
+"	93	known_stale_after_root_reported_footnote_removals
+FD000012	fr/149.tex	149-177	469-469	466-466	28644	28774	27802	27929	13642f5a4244de783649724396bf624af19444b8886baf625da35ed84a8ef09d	a09a5142cd26342075d027b35f2c602921df220f228e1e7be41d328f9ce3bd23	"\uline{où} $\symup{\underline{\omega}_Y^{n-p}}$ \uline{est le faisceau sur} $\symup{Y}$ \uline{défini dans le corollaire à la
+"	"\uline{où} $\symup{\underline{\omega}_Y^{n-p}}$ \uline{est le faisceau sur} $\symup{Y}$ \uline{défini dans le corollaire à
+"	91	known_stale_after_root_reported_footnote_removals
+FD000014	fr/149.tex	149-178	480-480	477-477	29163	29214	28318	28365	857ec18014f1b81d24115712e8aed897258e27a8d2834aa4d61b3143463f96f7	e87e23312e504b3fd2085c2acca2a618497a1c1e98ce114a701e794682fd29f3	"  \Extsh_{\Osh_X}^{p}(F,\underline{\Omega}_X^{n})
+"	"  \Extsh_{\Osh_X}(F,\underline{\Omega}_X^{n})
+"	87	known_stale_after_root_reported_footnote_removals
+FD000015	fr/149.tex	149-178	501-501	498-498	30406	30503	29557	29653	6f1ed2d0d66e234be63fde6d5410483420924d1a2c8f73520ed1285cd76b1bb7	2bc7d4b4771815c98f9d0e01e4a3b14890f2ce37397986ae7267a786064b2847	"fondamentale} du faisceau $\symup{\Extsh_{\Osh_X}^{p}(\Osh_Y,\underline{\Omega}_X^{p})}$. Cette
+"	"fondamentale} du faisceau $\symup{\Extsh_{\Osh_X}^{p}(\Osh_Y,\underline{\Omega}_X^{p})}$ Cette
+"	87	known_stale_after_root_reported_footnote_removals
+FD000016	fr/149.tex	149-178	520-520	517-517	31533	31610	30683	30757	6e47b7f55474e779ea042fccb7c3de0d096f28fafd69dd45c8f5459810ccdb77	4b12407885895bed75642b3b4a5fe20128c74ebc4c72380cd6176e7138f0295d	"H^{0}\!\left(X,\Extsh_{\Osh_X}^{p}(\Osh_Y,\underline{\Omega}_X^{p})\right)}
+"	"H^{0}\!\left(X,\Extsh_{\Osh_X}^{p}(O_Y,\underline{\Omega}_X^{p})\right)}
+"	87	known_stale_after_root_reported_footnote_removals
+FD000017	fr/149.tex	149-179	542-542	539-539	32785	32871	31932	32019	cbf972e7a75bda5a0d1d244cecf640fbdf7b556ccee000107333fcb70ff6b1a9	a55768da2f3c641d307e085ec1be890ce1f07487906508a5b0cc2f74bd100410	"  \symup{H^{p}(X,\underline{\Omega}_X^{p})\times H^{p'}(X,\underline{\Omega}_X^{p'})
+"	"  \symup{H^{p}(X,\underline{\Omega}_X^{p})\times H^{p'}(X,\underline{\Omega}_X^{p'}.)
+"	100	known_stale_after_root_reported_footnote_removals
+FD000020	fr/149.tex	149-179	583-583	580-580	35997	36097	35140	35240	8b7811ecc7a9eb4dc147960f1143f9dcde4bb7a2a8798aeb74603c4620fb778c	3e251735db4233bcbeb9f8504d84d656e1f13b753d447cc892b50e0950f8949e	"\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\underline{\Omega}_X^{p+p'})\right)}&\symup{\xrightarrow{\sim}
+"	"\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\underline{\Omega}_X^{p+p'})\right.}&\symup{\xrightarrow{\sim}
+"	100	known_stale_after_root_reported_footnote_removals
+FD000023	fr/149.tex	149-180	619-619	616-616	37716	37815	36859	36955	005333a60706d10f17fee9361b04d9628f789eec8eedc62840984a5d0dadf397	885bedfe19e922942c8281dda9560c8816cbaf86056cbf0eacb44bf1920697ff	"prenant pour $\symup{L_{*}}$ et $\symup{L'_{*}}$ les résolutions envisagées dans la proposition
+"	"prenant pour $\symup{L_{*}}$ et $\symup{L'_{*}}$ les résolutions envisagées dans proposition
+"	78	known_stale_after_root_reported_footnote_removals
+FD000038	fr/149.tex	149-187	971-973	964-965	57052	57321	55670	55802	b7f4aeb8f7bb3495180defa4653e15040a27388c2ea9b80f545ce66f0ec47bfd	75d5079a97e8ff08dba073e6e0307834dbd85494aa64e3832cf9f95db420c59f	"si $\symup{X}$ est normale et toutes ses composantes sont de dimension $\symup{>1}$ (cf.
+[3]).\footnote{Le texte imprimé porte ici \fquote{$\symup{S}$ est normale} ; le paragraphe
+ne fait intervenir que la variété $\symup{X}$.} Pour qu'il en soit ainsi pour tout
+"	"si $\symup{S}$ est normale et toutes ses composantes sont de dimension $\symup{>1}$ (cf.
+[3]). Pour qu'il en soit ainsi pour tout
+"	100	known_stale_after_root_reported_footnote_removals
+FD000057	fr/182.tex	182-202	450-450	450-450	29637	29746	29628	29702	01b24080f1f085e8b7a7e384e3af85c4726cf04e524a50fe776b4b822df6e553	d955d45a6c0f0def7bff761809a710aacc27faaa72904a9d1fdbde2234192b8d	"restrictions à} $\symup{X_y}$ \uline{sont isomorphes, sont isomorphes dans un voisinage de} $\symup{X_y}$.
+"	"restrictions à} $\symup{X_y}$ \uline{sont isomorphes, sont isomorphes}.
+"	84	root_reports_other_files_unchanged_since_snapshot
+FD000058	fr/182.tex	182-202	454-454	454-454	29767	30013	29723	29932	3504bc59a4cf4edb57ce6ed87122f75e4dce90504977c752301ecb705d565ccc	1d68891f5a771eafefe235acb01b701b76ec0bdc059876b708043301ff108950	"\result{PROPOSITION}{2} \uline{Soient} $\symup{Y}$ \uline{un schéma connexe}, $\symup{E}$ \uline{un faisceau cohérent localement libre de rang au moins} $\symup{2}$ \uline{sur} $\symup{Y}$, \uline{considérons le fibré en espaces projectifs}
+"	"\result{PROPOSITION}{2} \uline{Soient} $\symup{Y}$ \uline{un schéma connexe}, $\symup{E}$ \uline{un faisceau cohérent localement libre sur} $\symup{Y}$, \uline{considérons le fibré en espaces projectifs}
+"	84	root_reports_other_files_unchanged_since_snapshot
+FD000062	fr/182.tex	182-203	526-527	526-527	34541	34733	34461	34649	bfc78587125cc3a09c6ceb2f7f3fcf42c61929a8348f971f135c12fcd21dfbcd	89c24c8f27ddfcdd7d755a0aae8109d8712ef041c07a764b7e227c4de787c5b0	"\uline{sur} $\symup{X}$ \uline{induisant sur} $\symup{X_0}$ \uline{un faisceau isomorphe à} $\symup{F_0}$. \uline{Cet} $\symup{F}$ \uline{est
+d'ailleurs unique à un isomorphisme près si}
+"	"\uline{sur} $\symup{X}$ \uline{induisant sur} $\symup{X_0}$ \uline{un faisceau isomorphe à} $\symup{F_0}$. \uline{Cet} $\symup{F}$
+\uline{d'ailleurs unique à un isomorphisme près si}
+"	83	root_reports_other_files_unchanged_since_snapshot
+FD000063	fr/182.tex	182-204	568-568	568-568	37595	37680	37511	37596	ab4c2f90159b2c01d6eb35e7b542078532a4a2adf1572e2db1cadd88c134b217	27e35bbb4164ff25ed8cf76c22ca58203639359f79b3788c650ec79f248097cc	"défini sur $\symup{A}$. Cependant, soit $\symup{n}$ un entier $\symup{>0}$, posons
+"	"défini sur $\symup{X}$. Cependant, soit $\symup{n}$ un entier $\symup{>0}$, posons
+"	95	root_reports_other_files_unchanged_since_snapshot
+FD000064	fr/182.tex	182-205	587-587	587-587	38959	39093	38875	39009	40a3c3ee2462a6f4293e72d692214ac0584a2ea6feaed368657cc2e692ff60a7	5d48f216541656455603dc7fac419738c3162f27f3ea1b0d7ef9618ac43ff8f7	"$\symup{A}$ \uline{de corps résiduel} $\symup{k}$ \uline{il existe un} $\symup{A}$\uline{-schéma plat} $\symup{X}$ \uline{tel que}
+"	"$\symup{A}$ \uline{de corps résiduel} $\symup{k}$ \uline{il existe un} $\symup{A}$\uline{-schéma plat} $\symup{Y}$ \uline{tel que}
+"	94	root_reports_other_files_unchanged_since_snapshot
+FD000068	fr/182.tex	182-205	619-619	619-619	41483	41563	41376	41456	be40560134689e95daf6d3556193b3f26b0a224d1dafbe8a492b4bb6abd1fc77	e8b65d2fcfe73f7079f71835c1f47e0574f44dce5b4f52ddfb495f5bb5da3988	"(Noter que en général, il n'y a pas d'élément origine privilégié dans ce
+"	"(Noter que en général, il n'y a pas d'élément origine privilégié dans de
+"	94	root_reports_other_files_unchanged_since_snapshot
+FD000071	fr/182.tex	182-209	779-779	779-779	52835	52930	52719	52815	e76b1f855dbfc94f1ee3b4d690a56ff521636c4596ed3ebe93c130bd633bbd42	e16a87dd7a43cb5edc215a8048a998e7fa7aec617d9a7d2ef432e1ecdb8c5d31	"des modules pour $\symup{X_0}$, supposé propre sur $\symup{k}$. De façon générale, il est
+"	"des modules pour $\symup{X_0}$, supposé propre sur $\symup{k}$,. De façon générale, il est
+"	48	root_reports_other_files_unchanged_since_snapshot
+FD000075	fr/182.tex	182-211	898-898	898-898	61323	61421	61200	61298	cec93c9a01ff7fd63451bbcbdf538dafa4e676e1046a53a3279bd7a82889ff50	66ee2986637fe1be6e2a38807b34c940a6f78f25aea55ddc4a955aad1659957f	"\result{LEMME}{3} \uline{Soit} $\symup{X}$ \uline{un schéma complet au-dessus d'un anneau local
+"	"\result{LEMME}{3} \uline{Soit} $\symup{Z}$ \uline{un schéma complet au-dessus d'un anneau local
+"	83	root_reports_other_files_unchanged_since_snapshot
+FD000082	fr/182.tex	182-215	1091-1091	1091-1091	74048	74159	73925	74037	7e8975748ad758ae15c577346ce6e220ed3c39b41cacecfa0100dddfb711e471	52c92a754d4b7195defea680968b40f40094a7ca4af022c18b12a542d2d50dee	"(\uline{déduit des morphismes fonctoriels de} $\symup{\pi_1(X\times Y,c)}$ \uline{dans} $\symup{\pi_1(X,a)}$
+"	"(\uline{déduits des morphismes fonctoriels de} $\symup{\pi_1(X\times Y,c)}$ \uline{dans} $\symup{\pi_1(X,a)}$
+"	84	root_reports_other_files_unchanged_since_snapshot
+FD000087	fr/190.tex	190-300	45-45	45-45	2754	2863	2754	2847	78f7e25e88af5040e5b88798eb0ec53d881d4f0352759d606127da0f2cd33bbb	daf07555b5f947faa6f6be0b2649cbe46a7ac038d3c3c925c94c6b95fc260823	"local noethérien, de complété $\symup{\overline A}$, on aura à considérer l'anneau non nécessairement
+"	"local noethérien, de complété $\symup{\overline A}$, on aura à considérer l'anneau non
+"	87	root_reports_other_files_unchanged_since_snapshot
+FD000100	fr/190.tex	190-310	596-596	596-596	36111	36212	36044	36141	153575cc9af04bb90a5cb02a1290877e580b3c2b3c40d95fbf25c134f7504877	0b4b342c85ec7347c0f528ebc007ebd6ed83a68c079e40924e03718043451b7d	"considérer $\symup{T^I}$, pour $\symup{I}$ variable, on obtient ainsi un foncteur contravariant de
+"	"considérer $\symup{T^I}$, pour $\symup{I}$ variable, on obtient ainsi un foncteur covariant de
+"	97	root_reports_other_files_unchanged_since_snapshot
+FD000101	fr/190.tex	190-311	654-654	654-654	40147	40238	40076	40165	05a36e06ecdd59e1a58615e9853d0122ceac21b0f220f5bc8405ce6aea1d946d	5ff2a5f009dd879caf3e350e9a15105cf794a0e240f0be54b38787c44a238a41	"commutatifs), $\symup{H^1(T,F)}$ est le quotient du sous-ensemble $\symup{Z^1(T/S,F)}$ de
+"	"commutatifs), $\symup{H^1(T,F)}$ est le quotient du sous-groupe $\symup{Z^1(T/S,F)}$ de
+"	104	root_reports_other_files_unchanged_since_snapshot
+FD000103	fr/190.tex	190-311	682-682	682-682	41507	41534	41434	41448	8122459ba77e9b3665a62e0d4a1c5e70a94cc34ab1ba07a4e85c05e1874404cb	786ef752d65e8710a2cbaca3a3b7776a47dfd30a84d694aae631f3535f57b9c9	"au-dessus de $\symup{S}$,
+"	"au-dessus de
+"	104	root_reports_other_files_unchanged_since_snapshot
+FD000121	fr/190.tex	190-322	1212-1213	1212-1213	76886	77125	76609	76834	65171cb68e10dc022ff91f4b4193dc9b930c2fc827c93e7710c73d6b18bbe541	16cfa7b4f05d5f0e44f9c8ad7112fa3ad5fed08be3ede77eb6e37dbfaa43b315	"section de $\symup{X}$ au-dessus de $\symup{S}$ ; nous appellerons de façon imagée, \uline{section de}
+$\symup{F}$ \uline{au-dessus de} $\symup{s}$, une section génératrice du faisceau inversible $\symup{s^*(F)}$ sur $\symup{S}$. Il
+"	"section de $\symup{X}$ au-dessus de $\symup{s}$ ; nous appellerons de façon imagée, \uline{section de}
+$\symup{F}$ \uline{au-dessus de} $\symup{s}$, une section du faisceau inversible $\symup{s^*(F)}$ sur $\symup{S}$. Il
+"	87	root_reports_other_files_unchanged_since_snapshot
+FD000125	fr/190.tex	190-323	1290-1290	1290-1290	83158	83249	82862	82955	385657b01c94fc2762c73374805cf6abf20cfce5e7e0a32a758fb95d3155e9f9	8d874752927a74820939334cc88d40e1d913ab29ae5614abe8ac2f92342e5ea2	"Atiyah-Cartier est aussi suffisante pour que $\symup{F'}$ soit rationnel sur $\symup{S}$.
+"	"Atiyah-Cartier est aussi suffisante pour que $\symup{F'}$ soit rationnelle sur $\symup{S}$.
+"	115	root_reports_other_files_unchanged_since_snapshot
+FD000127	fr/190.tex	190-325	1383-1383	1383-1383	90971	91044	90665	90738	a298734077259c4018470d0c6656e7dd0155b6bec1bbde41ad854f9873bc08f8	43961acf3168bb2c1165eb256e2dc8d596b26040c905d29635b16d6bd732525f	"[6], qui appelle localement isotrivial ce que nous appelons strictement
+"	"[1], qui appelle localement isotrivial ce que nous appelons strictement
+"	103	root_reports_other_files_unchanged_since_snapshot
+FD000141	fr/195.tex	195-376	364-364	363-363	22447	22621	22384	22558	fc41d4691e6bd5eb8172864b8a764ec4cb39f766453b03154bbb8f00644a3f83	5df930f0d660673c26502b826c163b49f6661ebd55988720d04d52f3ddbcfd53	"$\symup{A}$-module s'identifie à $\symup{\operatorname{Hom}_{\Lambda}(\mathfrak m_\xi/\mathfrak m_\xi^2,A)}$, où $\symup{\mathfrak m_\xi}$ est le noyau de l'homomorphisme
+"	"$\symup{K}$-module s'identifie à $\symup{\operatorname{Hom}_{\Lambda}(\mathfrak m_\xi/\mathfrak m_\xi^2,A)}$, où $\symup{\mathfrak m_\xi}$ est le noyau de l'homomorphisme
+"	103	root_reports_other_files_unchanged_since_snapshot
+FD000143	fr/195.tex	195-376	399-399	398-398	25207	25271	25143	25208	64d00520bd1dc0db4b56ca4f19975904e13a1ddeb56398cd835b3f1afc70d7b4	6e099c44ecc0c3d4a4bd150f91729dbaf9c042f290305e12d292ae71cbbb77a4	"$\symup{A\longrightarrow A'}$ dans $\symup{\text{\uwave{C}}}$,
+"	"$\symup{A\longrightarrow A'}$. dans $\symup{\text{\uwave{C}}}$,
+"	103	root_reports_other_files_unchanged_since_snapshot
+FD000145	fr/195.tex	195-379	534-534	533-533	34288	34402	34225	34326	8e0c713ed951927649822a705526fed2915724da1defd93a702c34e0672045b7	7add7ddd14bf0500f83bda6c471f7aa98d6642511ae7e909ff4f13218eb3aef4	"$\symup{S}$-homomorphisme de $\symup{Y}$ dans $\symup{X}$ (i. e. un élément de $\symup{F(Y)}$) est défini par
+"	"$\symup{S}$-homomorphisme de $\symup{Y}$ dans (i. e. un élément de $\symup{F(Y)}$ est défini par
+"	98	root_reports_other_files_unchanged_since_snapshot
+FD000149	fr/195.tex	195-380	578-578	577-577	37817	37960	37729	37874	a49691bdc444e95fae505fe3c877031dc7b115f551ba5bdd83280cda509a80d0	2b732df317b82aab2e5f6ec36e5933776b4167b3586d864a0f377e7f3041bab4	"on a $\symup{H^1(V,\text{\uwave{O}}_V)\ne 0}$ ; dans ce cas, $\symup{P}$ est un groupe \fquote{purement infinitésimal} non réduit au groupe
+"	"on a . $\symup{H^1(V,\text{\uwave{O}}_V)\ne 0}$ ; dans ce cas, $\symup{P}$ est un groupe \fquote{purement infinitésimal} non réduit au groupe
+"	76	root_reports_other_files_unchanged_since_snapshot
+FD000156	fr/195.tex	195-384	765-765	764-764	50213	50321	50120	50227	5f6660f3d8d1b3444760f914380cbc68a0f7c0f4aaf1b2362842cd18a431471b	be46073aad0c45f25d66731bdb2631ccd636f31abe7e6545154c4c3b6202c7e7	"$\symup{f_*(\text{\uwave{O}}_X)=\text{\uwave{O}}_S}$). Alors le foncteur de Picard de $\symup{X/S}$ sur la
+"	"$\symup{f_*(\text{\uwave{O}}_X)=\text{\uwave{O}}_S}$. Alors le foncteur de Picard de $\symup{X/S}$ sur la
+"	73	root_reports_other_files_unchanged_since_snapshot
+FD000162	fr/212.tex	212-103	184-184	184-184	11323	11511	11323	11507	01910f90db71669555e00f4b4077f4198db7e2c95c3be508fa305edb260aa79c	a0fcdc55c7b171221f33e15eb9c4e5db35270bd2529ba92da5d66d4a56068ab7	"Comme nous avons dit dans [1], \uline{il y a dans} $\symup{\text{\uwave{C}}}$ \uline{des épimorphismes non effectifs} (ou non stricts, cela revient au même puisque les produits fibrés
+"	"Comme nous avons dit dans [1], \uline{il y a dans} $\symup{\text{\uwave{C}}}$ \uline{des épimorphismes non effectifs} (ou stricts, cela revient au même puisque les produits fibrés
+"	55	known_stale_after_root_reported_footnote_removals
+FD000168	fr/212.tex	212-110	516-516	513-513	32121	32211	31856	31949	387e2c2f2402c27e6dd7ac68349c835ef39f6c1038ef233b28590f0c16ad5ad4	5a085d36504dd27ad5fce1030ccdc284a032a97e36b49b088430f60be0ad4308	"dimension $\symup{3}$ (faisant intervenir la puissance fibrée triple de $\symup{R}$ sur
+"	"dimension $\symup{3}$ (faisant intervenir la puissance fibrée quadruple de $\symup{R}$ sur
+"	83	known_stale_after_root_reported_footnote_removals
+FD000170	fr/212.tex	212-116	840-841	835-835	52705	52856	52239	52257	1f1ee4cb27acb64b6bd833cfbc98c441ffb7854310092603a1d53dabc8c501e7	e6576f4a0c79cdd31c25a991812da648c8a76ec4fb14a33b24d06b1d39fe5e43	"sur $\symup{X}$.\footnote{Le texte imprimé porte « sur $\symup{S}$ ». L'action considérée et
+la condition de quotient portent sur $\symup{X}$.}
+"	"sur $\symup{S}$.
+"	83	known_stale_after_root_reported_footnote_removals
+FD000173	fr/221.tex	221-250	48-48	48-48	3162	3257	3152	3247	ca0e10536fbe6255020db51b43a8b44154bb79449f1c819afea91effd9e7e100	82e0d4b40e7551d6d372b5c5ad5361fc092c30196685940f3a383db008a8c614	"$\symup{\mathcal F'}$ sont \uline{équivalents} s'il existe des $\symup{k}$-homomorphismes de
+"	"$\symup{\mathcal F'}$ sont \uline{équivalents} s'il existe des $\symup{K}$-homomorphismes de
+"	107	root_reports_other_files_unchanged_since_snapshot
+FD000177	fr/221.tex	221-250	79-79	79-79	5776	5860	5761	5844	84545c949bebe79751d3ffd74056f022b84e824a646060d5e2fd77da3b75d878	fbeaae6ca32527eba869370a569bf032d6fa22c8861d2fd88dcc675e54201819	"ensembles $\symup{E_1,\cdots,E_n}$ de classes de faisceaux cohérents, un ensemble
+"	"ensemble $\symup{E_1,\cdots,E_n}$ de classes de faisceaux cohérents, un ensemble
+"	107	root_reports_other_files_unchanged_since_snapshot
+FD000183	fr/221.tex	221-252	184-185	184-185	13512	13583	13490	13561	8fd83272c63fd2b8a12b9d72ec728693700bd63de5a55424f1b5538f1062e856	286159872e6cc5760a421424cc11b1e5303835003185948ac1e480fe689551ae	"\symup{0\to\mathcal G'_{T_1}\to\mathcal G''
+\to\mathcal G_{T_1}\to0}
+"	"\symup{0\to\mathcal G_{T_1}\to\mathcal G''
+\to\mathcal G'_{T_1}\to0}
+"	71	root_reports_other_files_unchanged_since_snapshot
+FD000189	fr/221.tex	221-256	373-373	373-373	25039	25096	25012	25072	7b5f650000a2f0e2b5ea6a0e76dc9d9b700fcb9789c782398cfde43c65e59830	fec150dd0c0698b420bb070a25a827d838f80e2468c42f52b8e7acc27e9e2dd7	"libre de rang $\symup{a=a_{\mathcal F}}$ dans un ouvert
+"	"libre de rang à $\symup{a=a_{\mathcal F}}$ dans un ouvert
+"	127	root_reports_other_files_unchanged_since_snapshot
+FD000197	fr/221.tex	221-260	545-545	544-544	36505	36610	36386	36454	25382a9521f61069d7b100e0b35b289351836828f21ce344a89942d92565ebad	7bff58b5886ac73d846da0e4452917ff605d76c583ce18fd37ad5e65e2fc1d27	"plats sur $\symup{S'}$, de polynôme de Hilbert $\symup{P}$, et satisfaisant les conditions suivantes :
+"	"plats sur $\symup{S'}$, et satisfaisant les conditions suivantes :
+"	168	root_reports_other_files_unchanged_since_snapshot
+FD000198	fr/221.tex	221-260	549-549	548-548	36842	36977	36686	36812	fb8687718d26a5d2953885cbd8938218d857f2011422876c810ca2a96c067f34	755f6cb2d10eeebf050e2b1aaf415f71934c05eca0f9551bf5c2bab68f9696e5	"\text{c.}\quad &\symup{f^\prime_*(\mathcal K(\nu+k))=\mathcal S^\prime_k f^\prime_*(\mathcal K(\nu))} &&\text{pour $\symup{k\geq0}$}.
+"	"\text{c.}\quad &\symup{f^\prime_*(\mathcal K(\nu+k))=\mathcal S^\prime_k f^\prime_*(H(\nu))} &&\text{pour $\symup{k\geq0}$}.
+"	168	root_reports_other_files_unchanged_since_snapshot
+FD000200	fr/221.tex	221-260	561-561	560-560	37868	37967	37703	37798	86d75ec8da74b90a541ef88e303a6852bd04ea944b532f29d9a55e4e5b0426e8	361b1661f4d0f7a7c0e28892fa15abbe2c4f88569f675eeb3c6d14e408c62e2c	"précède, les faisceaux $\symup{\mathcal K}$ sont également plats sur $\symup{S'}$. Il résulte
+"	"précède, les faisceaux $\symup{\mathcal K}$ sont également plats $\symup{S'}$. Il résulte
+"	168	root_reports_other_files_unchanged_since_snapshot
+FD000215	fr/221.tex	221-266	825-825	824-824	55734	55845	55535	55631	0169dd5e8463e04a7d8c2545956df0b605ac8ae4abed7832b7d7a6f5ae59b3c4	11ddf27f7cb8176c868bab3bdc0142098aca624c7f5d0f37d0ee341f2953f55a	"$\symup{\mathcal F}$ et de son rang, ou encore de la classe de $\symup{\mathcal F}$ dans l'anneau des classes
+"	"$\symup{\mathcal F}$, ou encore de la classe de $\symup{\mathcal F}$ dans l'anneau des classes
+"	127	root_reports_other_files_unchanged_since_snapshot
+FD000219	fr/221.tex	221-267	902-902	901-901	60724	60807	60497	60581	1eca9fd0dda8f3908da704c6605205c0964739f100c3d0c58f1cddcd8f496f4a	aa3f488af497c4bac111df1d205c7dfb55a056ca0245769ea60185772bb15106	"cohomologique sur les Modules $\symup{G_{s'}}$ induits sur les $\symup{X'_{s'}}$,
+"	"cohomologiques sur les Modules $\symup{G_{s'}}$ induits sur les $\symup{X'_{s'}}$,
+"	222	root_reports_other_files_unchanged_since_snapshot
+FD000223	fr/221.tex	221-269	981-981	980-980	66745	66798	66527	66580	a5bd378f3345ec0b224da769c54db50172e9bacdb6b500fb84686a40658640b3	d1cefb524a8e9b5e455d346b2b125698057faa723bc6b9584bbaa82162698457	"sur $\symup{X}$. Ceci posé, le faisceau en groupes
+"	"sur $\symup{U}$. Ceci posé, le faisceau en groupes
+"	134	root_reports_other_files_unchanged_since_snapshot
+FD000224	fr/221.tex	221-269	995-995	994-994	67447	67545	67229	67327	7077fb274e229086afca2c5c67680ea894dbb8b6b5c3f624a2454742b28b5426	87db674c775806932216cc20a703015c221b58a920203aaa17d2d2148c97ea28	"sur $\symup{S}$, (i. e. que les fibres du faisceau $\symup{\mathcal E}$ soient non vides). Alors
+"	"qur $\symup{S}$, (i. e. que les fibres du faisceau $\symup{\mathcal E}$ soient non vides). Alors
+"	134	root_reports_other_files_unchanged_since_snapshot
+FD000229	fr/221.tex	221-271	1062-1062	1061-1061	71261	71374	71033	71144	e86c36b15790f57d24d7ec3fbda9d498b060b4bf9d6bf62ecbbca871590bad9e	2bcfe04ec58bf274efc0a7d1fe35ef68a969985c5496fc19c1d14a48589f5dab	"comme un Module sur $\symup{Y_0}$, et de calculer $\symup{H^0}$ et $\symup{H^1}$ sur $\symup{Y_0}$. D'ailleurs,
+"	"comme un Module sur $\symup{Y_0}$, et de calculer $\symup{H^0}$ et $\symup{H^1}$ sur $\symup{Y}$. D'ailleurs,
+"	156	root_reports_other_files_unchanged_since_snapshot
+FD000231	fr/221.tex	221-271	1080-1080	1079-1079	72494	72559	72260	72325	bdc5b1bc1f535401b81bdf4e3bafa1f6ede933b0a14dd45f90f3b11ccdd88f76	d7011f149e94e1ce2e70e3fda8e1ac711949a0df0dc95867200a1cb887f120bb	"$\symup{Q}$ est simple sur $\symup{S}$ en le point $\symup{x}$.
+"	"$\symup{X}$ est simple sur $\symup{S}$ en le point $\symup{x}$.
+"	156	root_reports_other_files_unchanged_since_snapshot
+FD000236	fr/221.tex	221-272	1127-1127	1126-1126	76594	76685	76368	76459	8d953a9add752134bdedd77eb7243832186311cd36a0cbe2a15b5a25504539a3	ee01cf3a5f688c338b3913306eb3416edffd6c5f4ac1f1e26169b377391408fa	"$\symup{K}$ (ce qui est le cas lorsque $\symup{X}$ est la surface de Igusa), la condition
+"	"$\symup{k}$ (ce qui est le cas lorsque $\symup{X}$ est la surface de Igusa), la condition
+"	146	root_reports_other_files_unchanged_since_snapshot
+FD000237	fr/221.tex	221-272	1135-1135	1134-1134	77100	77185	76874	76959	bc4cb8a0766d0d22a5e3e999ab4d1a6f3a5db5c133ed098d501d905b0cde0d18	fadc7d9a412edf17048b20509ec88cdbe0eea08dbc761ab0e528045318a8c186	"localement noethérien, et soit $\symup{Z}$ un préschéma sur $\symup{X}$, tel que
+"	"localement noethérien, et soit $\symup{Z}$ un préschéma sur $\symup{S}$, tel que
+"	146	root_reports_other_files_unchanged_since_snapshot
+FD000244	fr/232.tex	232-143	47-47	47-47	2817	2856	2817	2855	9aff50e44802202e177f675ad86481c976292dad58994a15683f0168ad024e4f	8505498e758a2f4b98e4aaeacbc12f027da3acbed26f1044cab59c603e5003d1	"\operatorname{Pic}'(X\times_S S'/S').
+"	"\operatorname{Pic}(X\times_S S'/S').
+"	99	root_reports_other_files_unchanged_since_snapshot
+FD000246	fr/232.tex	232-145	111-112	111-112	6934	7076	6936	7052	f1bb16b8e413eb8a00f38e0d2988d6f7c49713affe846fcdcaf464a348703dcd	7887a2dbb3187924c9bf3e149aef04c91e48aba0cb4265f2796dfd67a36c9478	"diagramme (indexé par l'opposée de la catégorie des $\symup{T'}$ sur $\symup{T}$ et des
+morphismes au-dessus de $\symup{T}$), et on pose
+"	"système inductif (quand l'ensemble des $\symup{T'}$ est muni du préordre défini par la
+domination), et on pose
+"	159	root_reports_other_files_unchanged_since_snapshot
+FD000250	fr/232.tex	232-147	263-263	263-263	15140	15246	15058	15164	2ad55cf8dd4c18b019436cba8a243569b8e64051a5200b1f3c836a22e63f2f9d	155078a40819c32c58cea166e7c22d4b2a4eeaa358fe714401179fbebe49f75b	"isomorphisme près, de Modules inversibles $\symup{g}$-rigidifiés sur $\symup{X}$. (C'est ce fait qui a
+"	"isomorphisme près, de Modules inversibles $\symup{g}$-rigidifiés sur $\symup{S}$. (C'est ce fait qui a
+"	140	root_reports_other_files_unchanged_since_snapshot
+FD000251	fr/232.tex	232-148	289-289	289-289	16623	16798	16541	16643	3680c8725e8f71ee5ca71aff30800a288cce58dd670c7850845b0771282b50fd	3bbf5f8adfd0bbc2a0d7c385e2943d6262ee0343d21d150a238a81f6ec580383	"numéro précédent, et de même pour le foncteur de Picard de $\symup{X}$ sur $\symup{S}$ si les conditions de 2.2 sont vérifiées après tout changement de base, puisque,
+"	"numéro précédent, et de même pour le foncteur de Picard de $\symup{X}$ sur $\symup{S}$, puisque,
+"	139	root_reports_other_files_unchanged_since_snapshot
+FD000253	fr/232.tex	232-151	424-424	424-424	26210	26342	26055	26170	ab39d1e639738a81457c732d36f19821814efe8cce2219a339cb3a50b880b7c0	81725d340408d3026e26a91dadd1117b7954145be4089190a0e22e8e056445d2	"par un élément régulier de $\symup{\mathcal O_{X,x}}$) et $\symup{X}$ et $\symup{D}$ sont plats sur $\symup{S}$ en $\symup{x}$.
+"	"par un élément régulier de $\symup{\mathcal O_{X,x}}$) et $\symup{D}$ est plat sur $\symup{S}$ en $\symup{x}$.
+"	162	root_reports_other_files_unchanged_since_snapshot
+FD000255	fr/232.tex	232-153	532-532	532-532	33379	33466	33207	33293	7b7f42211e6d567b3dbb2bee40405dd1ca3028784cc4d235985b2170a0447ea4	916084df97cd33ec8d7ea6ddc64b01dcb230804f254d703efd6fd6f7e443fe0e	"de $\symup{\operatorname{Pic}(X\times_SS'/S')}$). Alors il existe un Module cohérent
+"	"de $\symup{\operatorname{Pic}(X\times_SS'/S')}$. Alors il existe un Module cohérent
+"	181	root_reports_other_files_unchanged_since_snapshot
+FD000259	fr/232.tex	232-158	773-773	773-773	49830	49970	49621	49761	a40773b4decadcad196c0d7feeaa054430021b1d455d581afbf8e102f670b01d	fb46ec9608c2fbe8fd627f5ecd3a21209b1ce5aae5c49e415dafdbeba8ac92f8	"est plat sur $\symup{S}$). Supposons de plus que, pour tout $\symup{s\in S}$, les Hom $\symup{k(s)\to H^0(X_{i_s},\mathcal O_{X_{i_s}})}$,
+"	"est plat sur $\symup{X}$). Supposons de plus que, pour tout $\symup{s\in S}$, les Hom $\symup{k(s)\to H^0(X_{i_s},\mathcal O_{X_{i_s}})}$,
+"	153	root_reports_other_files_unchanged_since_snapshot
+FD000270	fr/236.tex	236-227	323-323	323-323	21619	21728	21587	21669	2588a03754e6e123163bcefbba3a65bc34301bcff2777b0d4818a1fa86f10ed5	956e90ca042b02ac6988721f82cf1bb1a75f5f1e25dcde29812d2a732fdffcdd	"\result{COROLLAIRE}{1.5} Soit $\symup{n>1}$ un entier inversible sur $\symup{S}$ tel que l'homomorphisme de
+"	"\result{COROLLAIRE}{1.5} Soit $\symup{n>1}$ un entier tel que l'homomorphisme de
+"	149	root_reports_other_files_unchanged_since_snapshot
+FD000271	fr/236.tex	236-228	334-334	334-334	22469	22508	22410	22449	10e7d9b31eeb9316c05adb2ba3a8fb9292ad233abf8f932aefcbe846064084b1	568fa45a3bd39d251a5999908a873b78fae44c6eb9df44cabde994fc7e4cdd39	"résiduelle première à $\symup{n}$,
+"	"résiduelle première à $\symup{p}$,
+"	165	root_reports_other_files_unchanged_since_snapshot
+FD000273	fr/236.tex	236-228	353-353	353-353	23933	24062	23872	23969	26abce15fc6dd54ac21fac2982e84ad5c947b97926d5d85d96f6fd30cdd14d29	c796effab2cdd4d764750951ab401c3aa03064c4520375d24e89a7e25740eb42	"localement de type fini), que toute composante irréductible de $\symup{X}$ domine une composante irréductible de $\symup{S}$,
+"	"localement de type fini), que toute composante irréductible de $\symup{X}$ domine $\symup{S}$,
+"	165	root_reports_other_files_unchanged_since_snapshot
+FD000276	fr/236.tex	236-230	422-422	422-422	29204	29407	29059	29208	93e459af7d95fa508c774240b89d97fdb21eef93f045bbeafbcd533745b98f0a	786cfae872d25cbcefe69e135c0e61751620bdb7ed59e2852016af33f69ab53e	"tant que $\symup{S}$-schéma, $\symup{G=\operatorname{Spec}V[x]/(x^p-tx)}$ est réunion, après une extension finie ramifiée de $\symup{V}$, de $\symup{p}$ ``droites'' concourantes, figurant un groupe
+"	"tant que $\symup{S}$-schéma, $\symup{G=\operatorname{Spec}V[x]/(x^p-tx)}$ est réunion de $\symup{p}$ ``droites'' concourantes, figurant un groupe
+"	182	root_reports_other_files_unchanged_since_snapshot
+FD000277	fr/236.tex	236-230	426-426	426-426	29758	30073	29559	29784	859c7661c2e4b55729a52e8d6836101f6b5a40f04615b394bd979848687efae2	7fe770e381edc6535349346d962a538b00b9bbc44f82ee7e3597c1e41caf5c75	"$\symup{H=\mu_p}$ noyau de la puissance $\symup{p}$-ième dans $\symup{\text{\uwave{G}}_m}$, donc $\symup{H=\operatorname{Spec}V[x]/(x^p-1)}$, après une extension de $\symup{V}$ contenant les racines $\symup{p}$-ièmes de l'unité, c'est encore la réunion de $\symup{p}$ droites concourantes, figurant un groupe
+"	"$\symup{H=\mu_p}$ noyau de la puissance $\symup{p}$-ième dans $\symup{\text{\uwave{G}}_m}$, donc $\symup{H=\operatorname{Spec}V[x]/(x^p-1)}$, c'est encore la réunion de $\symup{p}$ droites concourantes, figurant un groupe
+"	182	root_reports_other_files_unchanged_since_snapshot
+FD000281	fr/236.tex	236-231	496-496	496-496	35196	35340	34910	35054	3a4ee473dd77fea5b04f2c993375e7a0254f1a49de1033a03950bf8f6c8e4fc5	f7f63d6cf0eec8b861b08d9548d281f806d25d6c0fbccba1898ab85b8ccfc5c5	"$\symup{X}$ est un diviseur de Cartier. En effet tout diviseur sur $\symup{V}$ peut se prolonger en un diviseur sur $\symup{X}$ en prenant son
+"	"$\symup{S}$ est un diviseur de Cartier. En effet tout diviseur sur $\symup{V}$ peut se prolonger en un diviseur sur $\symup{X}$ en prenant son
+"	169	root_reports_other_files_unchanged_since_snapshot
+FD000285	fr/236.tex	236-233	573-573	573-573	40817	40922	40495	40604	c6c59fb746ebfb1e47f99cf55d54d76c2546df68c7604287a16d30e6c52b4998	6f9f255ca37b0d93b3281de7ef606212055fdc41661f8535e83cff2ffd610ff9	"$\symup{\mathcal L'_{\nu-1}}$ en un Module inversible quelconque $\symup{\mathcal L'}$ sur $\symup{X}$.
+"	"$\symup{\mathcal L'_{\nu-1}}$ en un Module inversible quelconque sur $\symup{\mathcal L'}$ sur $\symup{X}$.
+"	163	root_reports_other_files_unchanged_since_snapshot
+FD000286	fr/236.tex	236-233	576-576	576-576	41170	41266	40852	40944	fa6b0e7e528854a0fc4316b6ecd4e799e978cec370e3a6d183bc4d610ac76657	6c4ef7e9fd1fbc44e885de89bc737026cae1d4d76af9d3a83b75cc08eadb9ad3	"obstruction par $\symup{n}$ est nul, donc elle-même est nulle puisque $\symup{n}$ est premier
+"	"obstruction par $\symup{n}$ est nul, donc elle-même est nulle puisque $\symup{n}$ premier
+"	163	root_reports_other_files_unchanged_since_snapshot
+FD000289	fr/236.tex	236-235	640-641	640-641	45211	45443	44888	45078	15ad1c7d9487744d0d802bab04225fc149034f983c8d639e4e783d4e881f6652	b32023bb10deb004d7cba98e525221b3bab55394cbfa4d477925bade5d47c28a	"Picard) sont \uline{séparés} sur l'ouvert de $\symup{S}$ où $\symup{n}$ est inversible, (compte tenu
+qu'ils sont étales sur cet ouvert grâce à (2.5)). On aurait tendance à conjecturer que (*) est une égalité en tous cas,
+"	"Picard) sont \uline{séparés} sur $\symup{S}$, (compte tenu
+qu'ils sont étales sur $\symup{S}$ grâce à (2.5)). On aurait tendance à conjecturer que (*) est une égalité en tous cas,
+"	133	root_reports_other_files_unchanged_since_snapshot
+FD000291	fr/236.tex	236-236	722-722	722-722	50866	50979	50494	50589	a830b08bc4bf3e03e81f8dab34f40c2a3b5ca332df08f60b696dc95da325d248	befaac3d0eb022aa71802a2021a9b3dc1391205f6ce32ec125cedc6ea2f6df2f	"\result{COROLLAIRE}{3.2} Soit $\symup{X}$ un schéma géométriquement normal et propre sur $\symup{k}$ tel que
+"	"\result{COROLLAIRE}{3.2} Soit $\symup{X}$ un schéma normal et propre sur $\symup{k}$ tel que
+"	130	root_reports_other_files_unchanged_since_snapshot
+FD000298	fr/236.tex	236-242	972-972	972-972	68561	68667	68142	68219	a99f8ac773138a0d707d5dc72ae9297d138e605c9afbcbd4f35a3094d1b82450	979168e765d6ac51cc20d46f12852616ea6a9256aae60d9d218a72ddba09e44c	"$\symup{\underline{\operatorname{Pic}}_{X/S}^\tau}$ est contenu, localement sur $\symup{S}$, dans un des
+"	"$\symup{\underline{\operatorname{Pic}}_{X/S}^\tau}$ est contenu dans un des
+"	169	root_reports_other_files_unchanged_since_snapshot
+FD000299	fr/236.tex	236-242	1003-1003	1003-1003	71041	71128	70593	70680	c8a70db270d5907ce2bfaafaf5572295a455239efa086a98be50d3163069d326	790577923cd8e315760b46032c0cb03134d76355723b24764b5f108b0d9714fc	"\noindent a. $\symup{E}$ est quasi-compact, i. e. contenu dans un ouvert de type fini
+"	"\noindent a. $\symup{Q}$ est quasi-compact, i. e. contenu dans un ouvert de type fini
+"	169	root_reports_other_files_unchanged_since_snapshot

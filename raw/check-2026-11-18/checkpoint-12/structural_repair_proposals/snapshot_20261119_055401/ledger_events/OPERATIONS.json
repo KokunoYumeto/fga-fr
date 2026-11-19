@@ -1,0 +1,2969 @@
+{
+  "schema": "fga_exact_structural_proposals_v1",
+  "status": "UNAPPLIED_PROPOSALS",
+  "provenance_file": "PROVENANCE.json",
+  "offset_convention": "Zero-based UTF-8 byte offsets, end exclusive; full-record hashes include the original terminator.",
+  "selection_policy": {
+    "selected_operation_ids": [],
+    "mutually_exclusive_groups": {
+      "C000214_CONFIDENCE": {
+        "maximum_selected": 1,
+        "default": null
+      }
+    },
+    "no_confidence_value_inferred": true,
+    "H03_requires_root_judgment": true
+  },
+  "application_guards": [
+    "All offsets refer to the captured file SHA256; revalidate before any later use.",
+    "Match full-record hash, occurrence ordinal, and exact old bytes; never replace every matching substring.",
+    "After choosing at most one confidence alternative, selected operation ranges are disjoint.",
+    "For a later application, splice selected operations in descending byte order per file.",
+    "No change has been applied by this preparation task."
+  ],
+  "operations": [
+    {
+      "operation_id": "CONFIDENCE_C000214_HIGH",
+      "operation": "replace_serialized_field",
+      "target": {
+        "relative_file": "CORRECTIONS.tsv",
+        "current_row_id": "C000214",
+        "data_row": 214,
+        "byte_start": 74207,
+        "byte_end_exclusive": 74278,
+        "record_byte_start": 73745,
+        "record_byte_end_exclusive": 74280,
+        "record_relative_byte_start": 462,
+        "record_relative_byte_end_exclusive": 533,
+        "physical_line_start": 410,
+        "physical_line_end": 410,
+        "target_full_record_sha256": "96344e15f74c8c782786ccd1829b09d4f898191ba334151a00930b50811af343",
+        "target_fields_sha256": "388a6dd6f07cbc6f20255b8081a6f612e996c16e6a39044714fd8ddb267712f9",
+        "input_file_sha256": "16b248554cf8bedfedcf396e05f417336b934831b9625df93db8d924269bc847",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            214
+          ]
+        }
+      },
+      "review_classification": "conditional_owner_confidence_selection",
+      "condition": "Only if root explicitly selects this confidence value; no value is inferred from payload.",
+      "candidate_confidence": "high",
+      "mutually_exclusive_group": "C000214_CONFIDENCE",
+      "default_choice": null,
+      "changed_columns": [
+        "confidence"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "file",
+          "old_serialized_sha256": "3ca7cc867a725e6812fd9bb7a83a50395c14969e51fefdb537ea195936012090",
+          "new_serialized_sha256": "3ca7cc867a725e6812fd9bb7a83a50395c14969e51fefdb537ea195936012090",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "layer",
+          "old_serialized_sha256": "81ac5a2d24758e462177e2adee3c6cbed1eac79b193d504d911f01710c920bcd",
+          "new_serialized_sha256": "81ac5a2d24758e462177e2adee3c6cbed1eac79b193d504d911f01710c920bcd",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "printed_page",
+          "old_serialized_sha256": "5290d76ac108133465a65cfc1c6c5b166b337e5b3d2969caee7558841adb4ced",
+          "new_serialized_sha256": "5290d76ac108133465a65cfc1c6c5b166b337e5b3d2969caee7558841adb4ced",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "line",
+          "old_serialized_sha256": "514cdc2e6602469db2e549e6f80d1bb0c7e63c31d667ba452be487491691ee1d",
+          "new_serialized_sha256": "514cdc2e6602469db2e549e6f80d1bb0c7e63c31d667ba452be487491691ee1d",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "statement",
+          "old_serialized_sha256": "19111081fcfe609dea470016bc095729af883f922e61f3636041fc04d0b29df4",
+          "new_serialized_sha256": "19111081fcfe609dea470016bc095729af883f922e61f3636041fc04d0b29df4",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "old",
+          "old_serialized_sha256": "ad76ee44c2e07ef191dec22a21de8b643373e86d4cc57d1c68979eb2b66e41d3",
+          "new_serialized_sha256": "ad76ee44c2e07ef191dec22a21de8b643373e86d4cc57d1c68979eb2b66e41d3",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "new",
+          "old_serialized_sha256": "1f097042cd1d55c007ab921ea1c9b14d32ce8f796bfc11bb7fcdea3d141e6695",
+          "new_serialized_sha256": "1f097042cd1d55c007ab921ea1c9b14d32ce8f796bfc11bb7fcdea3d141e6695",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "evidence",
+          "old_serialized_sha256": "0be400786c01adb586630935ac96159f934152513c3e1e2f1987e3cda0756fac",
+          "new_serialized_sha256": "0be400786c01adb586630935ac96159f934152513c3e1e2f1987e3cda0756fac",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "kind",
+          "old_serialized_sha256": "d70afca615203838da3d858e60dda12f900e83e4a6fb03a63cfadb8576ca8985",
+          "new_serialized_sha256": "d70afca615203838da3d858e60dda12f900e83e4a6fb03a63cfadb8576ca8985",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "confidence",
+          "old_serialized_sha256": "f7fd85a2ae05112f23b04723f46b699751d307ef688f38fe3151f00775991641",
+          "new_serialized_sha256": "6ef7c9b15ecdd69083724b84cfdc2100351963488b51b4ea2fcbddf493fbec94",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "record_bytes_outside_selected_field_unchanged": true,
+      "provenance": {
+        "prior_report": "MALFORMED_ROW.json",
+        "prior_row_id": "C000214",
+        "prior_hash_match": true,
+        "checkpoint_provenance_id": "CHECKPOINT05_C000214"
+      },
+      "old_bytes_utf8": "withdrawn after immediate tighter crop; not a final second-pass verdict",
+      "new_bytes_utf8": "high",
+      "old_bytes_sha256": "f7fd85a2ae05112f23b04723f46b699751d307ef688f38fe3151f00775991641",
+      "new_bytes_sha256": "6ef7c9b15ecdd69083724b84cfdc2100351963488b51b4ea2fcbddf493fbec94",
+      "old_byte_count": 71,
+      "new_byte_count": 4,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "f7653bfcaa3b783c7e7afd96797edf2d6e6ce9477dbcb34fa0590d7042d4b888",
+      "replacement_fields_sha256": "4a6d8054bc68fc4783adfa635f20edee1c64b7c049437b53aaeac7799a2fc179"
+    },
+    {
+      "operation_id": "CONFIDENCE_C000214_MEDIUM",
+      "operation": "replace_serialized_field",
+      "target": {
+        "relative_file": "CORRECTIONS.tsv",
+        "current_row_id": "C000214",
+        "data_row": 214,
+        "byte_start": 74207,
+        "byte_end_exclusive": 74278,
+        "record_byte_start": 73745,
+        "record_byte_end_exclusive": 74280,
+        "record_relative_byte_start": 462,
+        "record_relative_byte_end_exclusive": 533,
+        "physical_line_start": 410,
+        "physical_line_end": 410,
+        "target_full_record_sha256": "96344e15f74c8c782786ccd1829b09d4f898191ba334151a00930b50811af343",
+        "target_fields_sha256": "388a6dd6f07cbc6f20255b8081a6f612e996c16e6a39044714fd8ddb267712f9",
+        "input_file_sha256": "16b248554cf8bedfedcf396e05f417336b934831b9625df93db8d924269bc847",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            214
+          ]
+        }
+      },
+      "review_classification": "conditional_owner_confidence_selection",
+      "condition": "Only if root explicitly selects this confidence value; no value is inferred from payload.",
+      "candidate_confidence": "medium",
+      "mutually_exclusive_group": "C000214_CONFIDENCE",
+      "default_choice": null,
+      "changed_columns": [
+        "confidence"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "file",
+          "old_serialized_sha256": "3ca7cc867a725e6812fd9bb7a83a50395c14969e51fefdb537ea195936012090",
+          "new_serialized_sha256": "3ca7cc867a725e6812fd9bb7a83a50395c14969e51fefdb537ea195936012090",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "layer",
+          "old_serialized_sha256": "81ac5a2d24758e462177e2adee3c6cbed1eac79b193d504d911f01710c920bcd",
+          "new_serialized_sha256": "81ac5a2d24758e462177e2adee3c6cbed1eac79b193d504d911f01710c920bcd",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "printed_page",
+          "old_serialized_sha256": "5290d76ac108133465a65cfc1c6c5b166b337e5b3d2969caee7558841adb4ced",
+          "new_serialized_sha256": "5290d76ac108133465a65cfc1c6c5b166b337e5b3d2969caee7558841adb4ced",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "line",
+          "old_serialized_sha256": "514cdc2e6602469db2e549e6f80d1bb0c7e63c31d667ba452be487491691ee1d",
+          "new_serialized_sha256": "514cdc2e6602469db2e549e6f80d1bb0c7e63c31d667ba452be487491691ee1d",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "statement",
+          "old_serialized_sha256": "19111081fcfe609dea470016bc095729af883f922e61f3636041fc04d0b29df4",
+          "new_serialized_sha256": "19111081fcfe609dea470016bc095729af883f922e61f3636041fc04d0b29df4",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "old",
+          "old_serialized_sha256": "ad76ee44c2e07ef191dec22a21de8b643373e86d4cc57d1c68979eb2b66e41d3",
+          "new_serialized_sha256": "ad76ee44c2e07ef191dec22a21de8b643373e86d4cc57d1c68979eb2b66e41d3",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "new",
+          "old_serialized_sha256": "1f097042cd1d55c007ab921ea1c9b14d32ce8f796bfc11bb7fcdea3d141e6695",
+          "new_serialized_sha256": "1f097042cd1d55c007ab921ea1c9b14d32ce8f796bfc11bb7fcdea3d141e6695",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "evidence",
+          "old_serialized_sha256": "0be400786c01adb586630935ac96159f934152513c3e1e2f1987e3cda0756fac",
+          "new_serialized_sha256": "0be400786c01adb586630935ac96159f934152513c3e1e2f1987e3cda0756fac",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "kind",
+          "old_serialized_sha256": "d70afca615203838da3d858e60dda12f900e83e4a6fb03a63cfadb8576ca8985",
+          "new_serialized_sha256": "d70afca615203838da3d858e60dda12f900e83e4a6fb03a63cfadb8576ca8985",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "confidence",
+          "old_serialized_sha256": "f7fd85a2ae05112f23b04723f46b699751d307ef688f38fe3151f00775991641",
+          "new_serialized_sha256": "c082456a7766e23a18db084cd34b6ff510baef506548b897cc80e9b7d3e121c8",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "record_bytes_outside_selected_field_unchanged": true,
+      "provenance": {
+        "prior_report": "MALFORMED_ROW.json",
+        "prior_row_id": "C000214",
+        "prior_hash_match": true,
+        "checkpoint_provenance_id": "CHECKPOINT05_C000214"
+      },
+      "old_bytes_utf8": "withdrawn after immediate tighter crop; not a final second-pass verdict",
+      "new_bytes_utf8": "medium",
+      "old_bytes_sha256": "f7fd85a2ae05112f23b04723f46b699751d307ef688f38fe3151f00775991641",
+      "new_bytes_sha256": "c082456a7766e23a18db084cd34b6ff510baef506548b897cc80e9b7d3e121c8",
+      "old_byte_count": 71,
+      "new_byte_count": 6,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "3046418dbaf386689a774522e434ae8f9b76fc0147aa6f9af8f971c5c744ed7c",
+      "replacement_fields_sha256": "04a530498e712df0350171754a427987b3f1bd45146b664229185a61b78b702e"
+    },
+    {
+      "operation_id": "CONFIDENCE_C000214_LOW",
+      "operation": "replace_serialized_field",
+      "target": {
+        "relative_file": "CORRECTIONS.tsv",
+        "current_row_id": "C000214",
+        "data_row": 214,
+        "byte_start": 74207,
+        "byte_end_exclusive": 74278,
+        "record_byte_start": 73745,
+        "record_byte_end_exclusive": 74280,
+        "record_relative_byte_start": 462,
+        "record_relative_byte_end_exclusive": 533,
+        "physical_line_start": 410,
+        "physical_line_end": 410,
+        "target_full_record_sha256": "96344e15f74c8c782786ccd1829b09d4f898191ba334151a00930b50811af343",
+        "target_fields_sha256": "388a6dd6f07cbc6f20255b8081a6f612e996c16e6a39044714fd8ddb267712f9",
+        "input_file_sha256": "16b248554cf8bedfedcf396e05f417336b934831b9625df93db8d924269bc847",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            214
+          ]
+        }
+      },
+      "review_classification": "conditional_owner_confidence_selection",
+      "condition": "Only if root explicitly selects this confidence value; no value is inferred from payload.",
+      "candidate_confidence": "low",
+      "mutually_exclusive_group": "C000214_CONFIDENCE",
+      "default_choice": null,
+      "changed_columns": [
+        "confidence"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "file",
+          "old_serialized_sha256": "3ca7cc867a725e6812fd9bb7a83a50395c14969e51fefdb537ea195936012090",
+          "new_serialized_sha256": "3ca7cc867a725e6812fd9bb7a83a50395c14969e51fefdb537ea195936012090",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "layer",
+          "old_serialized_sha256": "81ac5a2d24758e462177e2adee3c6cbed1eac79b193d504d911f01710c920bcd",
+          "new_serialized_sha256": "81ac5a2d24758e462177e2adee3c6cbed1eac79b193d504d911f01710c920bcd",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "printed_page",
+          "old_serialized_sha256": "5290d76ac108133465a65cfc1c6c5b166b337e5b3d2969caee7558841adb4ced",
+          "new_serialized_sha256": "5290d76ac108133465a65cfc1c6c5b166b337e5b3d2969caee7558841adb4ced",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "line",
+          "old_serialized_sha256": "514cdc2e6602469db2e549e6f80d1bb0c7e63c31d667ba452be487491691ee1d",
+          "new_serialized_sha256": "514cdc2e6602469db2e549e6f80d1bb0c7e63c31d667ba452be487491691ee1d",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "statement",
+          "old_serialized_sha256": "19111081fcfe609dea470016bc095729af883f922e61f3636041fc04d0b29df4",
+          "new_serialized_sha256": "19111081fcfe609dea470016bc095729af883f922e61f3636041fc04d0b29df4",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "old",
+          "old_serialized_sha256": "ad76ee44c2e07ef191dec22a21de8b643373e86d4cc57d1c68979eb2b66e41d3",
+          "new_serialized_sha256": "ad76ee44c2e07ef191dec22a21de8b643373e86d4cc57d1c68979eb2b66e41d3",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "new",
+          "old_serialized_sha256": "1f097042cd1d55c007ab921ea1c9b14d32ce8f796bfc11bb7fcdea3d141e6695",
+          "new_serialized_sha256": "1f097042cd1d55c007ab921ea1c9b14d32ce8f796bfc11bb7fcdea3d141e6695",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "evidence",
+          "old_serialized_sha256": "0be400786c01adb586630935ac96159f934152513c3e1e2f1987e3cda0756fac",
+          "new_serialized_sha256": "0be400786c01adb586630935ac96159f934152513c3e1e2f1987e3cda0756fac",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "kind",
+          "old_serialized_sha256": "d70afca615203838da3d858e60dda12f900e83e4a6fb03a63cfadb8576ca8985",
+          "new_serialized_sha256": "d70afca615203838da3d858e60dda12f900e83e4a6fb03a63cfadb8576ca8985",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "confidence",
+          "old_serialized_sha256": "f7fd85a2ae05112f23b04723f46b699751d307ef688f38fe3151f00775991641",
+          "new_serialized_sha256": "6c1ff09db3a73dc4a854f695d20d174a848d55f2d743bab2ee1f8fc75be454f3",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "record_bytes_outside_selected_field_unchanged": true,
+      "provenance": {
+        "prior_report": "MALFORMED_ROW.json",
+        "prior_row_id": "C000214",
+        "prior_hash_match": true,
+        "checkpoint_provenance_id": "CHECKPOINT05_C000214"
+      },
+      "old_bytes_utf8": "withdrawn after immediate tighter crop; not a final second-pass verdict",
+      "new_bytes_utf8": "low",
+      "old_bytes_sha256": "f7fd85a2ae05112f23b04723f46b699751d307ef688f38fe3151f00775991641",
+      "new_bytes_sha256": "6c1ff09db3a73dc4a854f695d20d174a848d55f2d743bab2ee1f8fc75be454f3",
+      "old_byte_count": 71,
+      "new_byte_count": 3,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "af120643e0363802b128bfe1d9a6b33300e276a9ee462c2d697bc4436993660a",
+      "replacement_fields_sha256": "0550aa1549414ebf1365a096fbc6ea4dc9f73240a3107873dc6dffd2bea13715"
+    },
+    {
+      "operation_id": "DELETE_C003873",
+      "operation": "delete_full_record",
+      "target": {
+        "relative_file": "CORRECTIONS.tsv",
+        "current_row_id": "C003873",
+        "data_row": 3873,
+        "byte_start": 1272948,
+        "byte_end_exclusive": 1273229,
+        "record_byte_start": 1272948,
+        "record_byte_end_exclusive": 1273229,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 281,
+        "physical_line_start": 7921,
+        "physical_line_end": 7922,
+        "target_full_record_sha256": "b724e30830e688062a8342dd4a9e2e0dafe1e34d4f59bdaa6b05be2ae91b9208",
+        "target_fields_sha256": "902f6cb9475977724c70988e104e365e89047d161bdc3f7e78484ba2ce0715a2",
+        "input_file_sha256": "16b248554cf8bedfedcf396e05f417336b934831b9625df93db8d924269bc847",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 2,
+          "expected_total_occurrences": 2,
+          "matching_current_data_rows": [
+            3871,
+            3873
+          ]
+        }
+      },
+      "review_classification": "mechanical_exact_duplicate_deletion_candidate",
+      "retain": {
+        "current_row_id": "C003871",
+        "byte_start": 1272361,
+        "byte_end_exclusive": 1272642,
+        "full_record_sha256": "b724e30830e688062a8342dd4a9e2e0dafe1e34d4f59bdaa6b05be2ae91b9208",
+        "occurrence_ordinal_1_based": 1
+      },
+      "other_records_unchanged_by_operation": true,
+      "provenance": {
+        "prior_report": "DUPLICATE_ACTION_CANDIDATES.tsv",
+        "prior_group_id": "D001",
+        "prior_hash_match": true,
+        "checkpoint_provenance_ids": [
+          "CHECKPOINT05_C003871",
+          "CHECKPOINT05_C003873"
+        ]
+      },
+      "old_bytes_utf8": "sources/fr/fr/182.tex\tFrench corrected\t182-215\tpage boundary\t8-rem1\t\"\\src{216}\n\"\t\t400-dpi full scan and all three enlarged bands; extra tight crop of the final structure-sheaf parenthesis. Page 215 ends with the pi_0 sequence, before comme en Topologie algébrique.\tstructure\tlow\r\n",
+      "new_bytes_utf8": "",
+      "old_bytes_sha256": "b724e30830e688062a8342dd4a9e2e0dafe1e34d4f59bdaa6b05be2ae91b9208",
+      "new_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "old_byte_count": 281,
+      "new_byte_count": 0,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false
+    },
+    {
+      "operation_id": "DELETE_C003874",
+      "operation": "delete_full_record",
+      "target": {
+        "relative_file": "CORRECTIONS.tsv",
+        "current_row_id": "C003874",
+        "data_row": 3874,
+        "byte_start": 1273229,
+        "byte_end_exclusive": 1273535,
+        "record_byte_start": 1273229,
+        "record_byte_end_exclusive": 1273535,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 306,
+        "physical_line_start": 7923,
+        "physical_line_end": 7924,
+        "target_full_record_sha256": "578fdd7b17929dda3628501a72cb769cd6308b66c65359bdda44ada474f42a72",
+        "target_fields_sha256": "2a42d7bfde4ae6627631fbfb57abbf03fc82c4f07d13335f46872b2e107b90ea",
+        "input_file_sha256": "16b248554cf8bedfedcf396e05f417336b934831b9625df93db8d924269bc847",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 2,
+          "expected_total_occurrences": 2,
+          "matching_current_data_rows": [
+            3872,
+            3874
+          ]
+        }
+      },
+      "review_classification": "mechanical_exact_duplicate_deletion_candidate",
+      "retain": {
+        "current_row_id": "C003872",
+        "byte_start": 1272642,
+        "byte_end_exclusive": 1272948,
+        "full_record_sha256": "578fdd7b17929dda3628501a72cb769cd6308b66c65359bdda44ada474f42a72",
+        "occurrence_ordinal_1_based": 1
+      },
+      "other_records_unchanged_by_operation": true,
+      "provenance": {
+        "prior_report": "DUPLICATE_ACTION_CANDIDATES.tsv",
+        "prior_group_id": "D002",
+        "prior_hash_match": true,
+        "checkpoint_provenance_ids": [
+          "CHECKPOINT05_C003872",
+          "CHECKPOINT05_C003874"
+        ]
+      },
+      "old_bytes_utf8": "sources/fr/fr/182.tex\tFrench corrected\t182-215\tlast line\t8-rem1\tcomme en Topologie algébrique.\t\"\\src{216}\ncomme en Topologie algébrique.\"\t400-dpi full scan and all three enlarged bands; extra tight crop of the final structure-sheaf parenthesis. Move the marker to the actual continuation.\tstructure\tlow\r\n",
+      "new_bytes_utf8": "",
+      "old_bytes_sha256": "578fdd7b17929dda3628501a72cb769cd6308b66c65359bdda44ada474f42a72",
+      "new_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "old_byte_count": 306,
+      "new_byte_count": 0,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false
+    },
+    {
+      "operation_id": "EVENT_E000306_H01",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000306",
+        "data_row": 306,
+        "byte_start": 172605,
+        "byte_end_exclusive": 173651,
+        "record_byte_start": 172605,
+        "record_byte_end_exclusive": 173651,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 1046,
+        "physical_line_start": 307,
+        "physical_line_end": 307,
+        "target_full_record_sha256": "a755e28c72e1834f48b75e0e41ce8859c96b7a5c0043a4abcc7d7e5c70c445cf",
+        "target_fields_sha256": "d153c4e02d8ab67c0b3d46735ed5c9c0719cbee0c5eb76712966b7437f1caabc",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            306
+          ]
+        }
+      },
+      "lexical_rule_id": "H01",
+      "review_classification": "mechanical_spelling_candidate",
+      "conditional": false,
+      "condition": "Review the mechanical spelling candidate before selecting it.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "11101bdaf3f14474ced085c6fd5e2c59e66bad7cbcb00e414ee65ad0fa5531fe",
+          "new_serialized_sha256": "11101bdaf3f14474ced085c6fd5e2c59e66bad7cbcb00e414ee65ad0fa5531fe",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "ec600ddb0144d0bf5adab02749afc40eea4bd64ceb5e406457256a62b3205d5e",
+          "new_serialized_sha256": "ec600ddb0144d0bf5adab02749afc40eea4bd64ceb5e406457256a62b3205d5e",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "6c623748eb5eea318bfdbfd7bad35b4cc56ba46ad1a3f696bfdfd0760a8d89f4",
+          "new_serialized_sha256": "3da806e4df34119f3c765d7588b8359ec3fe137760fe88b920efd49b5fe6d8a7",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "5ba0ff25c399876d762b21bdcb672bae15e77a545544e388716f203a9ad4c9ea",
+          "new_serialized_sha256": "5ba0ff25c399876d762b21bdcb672bae15e77a545544e388716f203a9ad4c9ea",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "c7321d65965a5f16321b6ce4a93083a21f4dea390d3d353fdf91d4ba7808ac8c",
+          "new_serialized_sha256": "e0adf434bcd241756d8d9f91fa52b62277b3c146789bbdcc24d0e884987402f3",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "6c623748eb5eea318bfdbfd7bad35b4cc56ba46ad1a3f696bfdfd0760a8d89f4",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000306",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": [
+          "E000306"
+        ]
+      },
+      "old_bytes_utf8": "195-A4-arbitrary-base\t2026-11-18 19:00:26 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with refined statement 195-A4-noetherian-base\tThe assertion that the artinian corollary applies to all finite group schemes over an arbitrary base is too broad. Let R=F_2 plus a square-zero vector space with independent elements e_1,e_2,..., and S=Spec R. In the constant finite group G=(Z/2)_S, let H_n consist of the identity component S and the other component Spec(R/(e_1,...,e_n)). It is the kernel of the morphism G to alpha_2^n sending the nonidentity section to (e_1,...,e_n), hence a strict subobject in the category of finite S-group schemes. The H_n form a strictly descending chain. With a noetherian base, strict subgroups of finite group schemes are closed and the finite coordinate algebras are noetherian, so this obstruction disappears. The broad historical assertion is preserved in both layers, with the qualification reserved for the notes.\t195, p. 374, Dans tous ces exemples after the arbitrary-base finite group-scheme example\r\n",
+      "new_bytes_utf8": "195-A4-arbitrary-base\t2026-11-18 19:00:26 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement's id\tThe assertion that the artinian corollary applies to all finite group schemes over an arbitrary base is too broad. Let R=F_2 plus a square-zero vector space with independent elements e_1,e_2,..., and S=Spec R. In the constant finite group G=(Z/2)_S, let H_n consist of the identity component S and the other component Spec(R/(e_1,...,e_n)). It is the kernel of the morphism G to alpha_2^n sending the nonidentity section to (e_1,...,e_n), hence a strict subobject in the category of finite S-group schemes. The H_n form a strictly descending chain. With a noetherian base, strict subgroups of finite group schemes are closed and the finite coordinate algebras are noetherian, so this obstruction disappears. The broad historical assertion is preserved in both layers, with the qualification reserved for the notes.\t195, p. 374, Dans tous ces exemples after the arbitrary-base finite group-scheme example | Original how (verbatim): refuted, with refined statement 195-A4-noetherian-base\r\n",
+      "old_bytes_sha256": "a755e28c72e1834f48b75e0e41ce8859c96b7a5c0043a4abcc7d7e5c70c445cf",
+      "new_bytes_sha256": "b7a7a1fcca6be87b3ca9d02c17d537cfe94b0474d77e5a9cecb6c62eda914570",
+      "old_byte_count": 1046,
+      "new_byte_count": 1114,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "b7a7a1fcca6be87b3ca9d02c17d537cfe94b0474d77e5a9cecb6c62eda914570",
+      "replacement_fields_sha256": "6642b0236af02423eda87c206b044f312c8c3657916c66c01dd68a180adc67a2"
+    },
+    {
+      "operation_id": "EVENT_E000309_H01",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000309",
+        "data_row": 309,
+        "byte_start": 175215,
+        "byte_end_exclusive": 176016,
+        "record_byte_start": 175215,
+        "record_byte_end_exclusive": 176016,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 801,
+        "physical_line_start": 310,
+        "physical_line_end": 310,
+        "target_full_record_sha256": "a0002e4b95cae28ee37acef2e024435cb4d1f17695f508d23e141dc094405cfe",
+        "target_fields_sha256": "d25293d51c92c59588e44c09d81323351fcb794c28acb8b4a958d61793f5a5c0",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            309
+          ]
+        }
+      },
+      "lexical_rule_id": "H01",
+      "review_classification": "mechanical_spelling_candidate",
+      "conditional": false,
+      "condition": "Review the mechanical spelling candidate before selecting it.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "38d585694c5986d8b0a6eaafa7e17f0742f3a33c31652a0be3b162557f050f59",
+          "new_serialized_sha256": "38d585694c5986d8b0a6eaafa7e17f0742f3a33c31652a0be3b162557f050f59",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "ae46aeca29852b7f67e44a9d29322548712d5d85e70c7b3d2a13b5aae7326a1b",
+          "new_serialized_sha256": "ae46aeca29852b7f67e44a9d29322548712d5d85e70c7b3d2a13b5aae7326a1b",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "fb40e968d13566e81adcab8bbd464546c5be1f6aaf554e9f741152a83a37d8a0",
+          "new_serialized_sha256": "3da806e4df34119f3c765d7588b8359ec3fe137760fe88b920efd49b5fe6d8a7",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "f89f655e0454952d3a5bcb50c37eb4244943a1a19e38987a3f6a11113213e9f5",
+          "new_serialized_sha256": "f89f655e0454952d3a5bcb50c37eb4244943a1a19e38987a3f6a11113213e9f5",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "5a1d6259f75103900da5b36d665377fcc3f2054ca3c151ca7f53ef92995bbd65",
+          "new_serialized_sha256": "e4253792f35f7b43c4cc38a7d776147b243dd44449bdd2ceb1c8a65be6294ec5",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "fb40e968d13566e81adcab8bbd464546c5be1f6aaf554e9f741152a83a37d8a0",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000309",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": [
+          "E000309"
+        ]
+      },
+      "old_bytes_utf8": "195-A5-base-product\t2026-11-18 19:02:46 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with refined statement 195-A5-finite-support-product\tTaken as a full categorical product over all maximal ideals, the statement about C is too broad: every finite-length Lambda-module has support at finitely many maximal ideals. For Lambda=Z, the tuple consisting of F_p for every prime p lies in the full product of the local categories but comes from no finite-length Z-algebra. The precise statement is the finite-support product (allowing zero components). The canonical finite decomposition of an artinian algebra gives that restricted equivalence. This clarification is reserved for the notes; the historical wording essentiellement le produit is retained.\t195, p. 375, On notera d ailleurs paragraph\r\n",
+      "new_bytes_utf8": "195-A5-base-product\t2026-11-18 19:02:46 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement's id\tTaken as a full categorical product over all maximal ideals, the statement about C is too broad: every finite-length Lambda-module has support at finitely many maximal ideals. For Lambda=Z, the tuple consisting of F_p for every prime p lies in the full product of the local categories but comes from no finite-length Z-algebra. The precise statement is the finite-support product (allowing zero components). The canonical finite decomposition of an artinian algebra gives that restricted equivalence. This clarification is reserved for the notes; the historical wording essentiellement le produit is retained.\t195, p. 375, On notera d ailleurs paragraph | Original how (verbatim): refuted, with refined statement 195-A5-finite-support-product\r\n",
+      "old_bytes_sha256": "a0002e4b95cae28ee37acef2e024435cb4d1f17695f508d23e141dc094405cfe",
+      "new_bytes_sha256": "9b917ccb8ba2db27e50482502e2f0ba14204d8d09e7c52ea120cfcd5a6985f23",
+      "old_byte_count": 801,
+      "new_byte_count": 869,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "9b917ccb8ba2db27e50482502e2f0ba14204d8d09e7c52ea120cfcd5a6985f23",
+      "replacement_fields_sha256": "6b6058864b0f6a0254f344b4b041d40d55524514447b143f2fa21e5544aec271"
+    },
+    {
+      "operation_id": "EVENT_E000311_H01",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000311",
+        "data_row": 311,
+        "byte_start": 177121,
+        "byte_end_exclusive": 178163,
+        "record_byte_start": 177121,
+        "record_byte_end_exclusive": 178163,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 1042,
+        "physical_line_start": 312,
+        "physical_line_end": 312,
+        "target_full_record_sha256": "b90026eee25547be45e8700526d8ef084b86f0a83696267e38a457e8fdf40288",
+        "target_fields_sha256": "7e3ce2f43d32335c0660159a4395fd29084e122134503192be53a7b96b9c3145",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            311
+          ]
+        }
+      },
+      "lexical_rule_id": "H01",
+      "review_classification": "mechanical_spelling_candidate",
+      "conditional": false,
+      "condition": "Review the mechanical spelling candidate before selecting it.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "05538ebdaacc2af3afd95bee2db0c38177350e29165a15416af0d692a80410ea",
+          "new_serialized_sha256": "05538ebdaacc2af3afd95bee2db0c38177350e29165a15416af0d692a80410ea",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "ae46aeca29852b7f67e44a9d29322548712d5d85e70c7b3d2a13b5aae7326a1b",
+          "new_serialized_sha256": "ae46aeca29852b7f67e44a9d29322548712d5d85e70c7b3d2a13b5aae7326a1b",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "f49ccd1f213d67bfe666f83420de171b2a8c0c376b15482911589cb9ddae89ae",
+          "new_serialized_sha256": "3da806e4df34119f3c765d7588b8359ec3fe137760fe88b920efd49b5fe6d8a7",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "9617a223f26ea1c70def1f5167de5430ab82d7d0fe53e8f61ad5d6da39503e98",
+          "new_serialized_sha256": "9617a223f26ea1c70def1f5167de5430ab82d7d0fe53e8f61ad5d6da39503e98",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "502147febdc806cf91f3dca0f2c6af757701114bae08e8c9bb2625fdcc007832",
+          "new_serialized_sha256": "675bea6f720df323decff4f5e4f4b54ddc95dc760d4f9a779e1f003e2a5fa7d0",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "f49ccd1f213d67bfe666f83420de171b2a8c0c376b15482911589cb9ddae89ae",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000311",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": [
+          "E000311"
+        ]
+      },
+      "old_bytes_utf8": "195-A5-power-series-quotient\t2026-11-18 19:02:46 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with refined statement 195-A5-power-series-same-residue\tThe noetherian-to-power-series-quotient assertion lacks a residue-field condition. Take Lambda=R and O_xi=C with the discrete topology; this is a finite artinian Lambda-algebra and is noetherian. Every proper quotient of R[[t_1,...,t_n]] has residue field R, so it cannot be C as an R-algebra. With equal residue fields, finite generators of the maximal ideal modulo its square and the base maximal ideal give the usual continuous surjection from a power-series ring, using completeness; with a residue extension, an appropriate coefficient/base extension is needed. The earlier parenthetical statement beginning Si les Lambda/m sont algebriquement clos is a conditional point-counting observation, not a global hypothesis. The broad original assertion remains in both layers and is qualified in the notes.\t195, p. 375, noetherian local component and power-series quotient assertion\r\n",
+      "new_bytes_utf8": "195-A5-power-series-quotient\t2026-11-18 19:02:46 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement's id\tThe noetherian-to-power-series-quotient assertion lacks a residue-field condition. Take Lambda=R and O_xi=C with the discrete topology; this is a finite artinian Lambda-algebra and is noetherian. Every proper quotient of R[[t_1,...,t_n]] has residue field R, so it cannot be C as an R-algebra. With equal residue fields, finite generators of the maximal ideal modulo its square and the base maximal ideal give the usual continuous surjection from a power-series ring, using completeness; with a residue extension, an appropriate coefficient/base extension is needed. The earlier parenthetical statement beginning Si les Lambda/m sont algebriquement clos is a conditional point-counting observation, not a global hypothesis. The broad original assertion remains in both layers and is qualified in the notes.\t195, p. 375, noetherian local component and power-series quotient assertion | Original how (verbatim): refuted, with refined statement 195-A5-power-series-same-residue\r\n",
+      "old_bytes_sha256": "b90026eee25547be45e8700526d8ef084b86f0a83696267e38a457e8fdf40288",
+      "new_bytes_sha256": "2bc0fcfd033db34665562e2b31c03d2bbbfcc53eafc872aa767d8e0488a280e2",
+      "old_byte_count": 1042,
+      "new_byte_count": 1110,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "2bc0fcfd033db34665562e2b31c03d2bbbfcc53eafc872aa767d8e0488a280e2",
+      "replacement_fields_sha256": "850d5c1690b628b1842f554f530786fcd531f36915d97627091bc24ebd1c66b2"
+    },
+    {
+      "operation_id": "EVENT_E000314_H01",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000314",
+        "data_row": 314,
+        "byte_start": 179326,
+        "byte_end_exclusive": 179999,
+        "record_byte_start": 179326,
+        "record_byte_end_exclusive": 179999,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 673,
+        "physical_line_start": 315,
+        "physical_line_end": 315,
+        "target_full_record_sha256": "e19ee7cbea663dd8fcb637ea237bb534176fa76c22223a3fd2ba7a717b89b22d",
+        "target_fields_sha256": "df57b41074b09b4ff88805f1a33a891b70816f0720b6641613bf86572a6fe36c",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            314
+          ]
+        }
+      },
+      "lexical_rule_id": "H01",
+      "review_classification": "mechanical_spelling_candidate",
+      "conditional": false,
+      "condition": "Review the mechanical spelling candidate before selecting it.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "cc38eaaf87de715ac6e4c4040ba279406da0b1f634762031e9d5fdff4112d025",
+          "new_serialized_sha256": "cc38eaaf87de715ac6e4c4040ba279406da0b1f634762031e9d5fdff4112d025",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "03e8631c61d8a6f03bbdc33d3ea88d5bbb0778d834dba12ee0b250e88de80d8e",
+          "new_serialized_sha256": "03e8631c61d8a6f03bbdc33d3ea88d5bbb0778d834dba12ee0b250e88de80d8e",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "638ba2593219293fa397edbf79c7a511d37e5d96fc86110769bbdaa61104212d",
+          "new_serialized_sha256": "3da806e4df34119f3c765d7588b8359ec3fe137760fe88b920efd49b5fe6d8a7",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "4f096b99e67507e54886821ed7fbcd28fe66a187632dfcdc90cc2248439d58b3",
+          "new_serialized_sha256": "4f096b99e67507e54886821ed7fbcd28fe66a187632dfcdc90cc2248439d58b3",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "089a90ec57f2904bb20e2d913bb15576e94d64119314638819c48885ee0a351b",
+          "new_serialized_sha256": "7a46401ca82ea4e8d791cc9b20d69512d2aac72dfc03be9f544ca0346815b143",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "638ba2593219293fa397edbf79c7a511d37e5d96fc86110769bbdaa61104212d",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000314",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": [
+          "E000314"
+        ]
+      },
+      "old_bytes_utf8": "195-A5-general-tangent-Hom\t2026-11-18 19:06:06 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with refined statement 195-A5-continuous-derivations\tThe displayed-in-line identification with Hom_Lambda(m_xi/m_xi^2,A) is false for general A. Take Lambda=k, O=A=k[e]/e^2 and xi=id. Its kernel m_xi is zero, but d(e)=e defines a nonzero k-derivation O to A, and e maps to e+t e in A[t]/t^2 as a nontrivial lift. The correct general module is the module of continuous Lambda-derivations, equivalently the appropriate continuous differential Hom. The broad printed identification is retained in both layers and qualified in the notes.\t195, p. 376, first Hom identification\r\n",
+      "new_bytes_utf8": "195-A5-general-tangent-Hom\t2026-11-18 19:06:06 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement's id\tThe displayed-in-line identification with Hom_Lambda(m_xi/m_xi^2,A) is false for general A. Take Lambda=k, O=A=k[e]/e^2 and xi=id. Its kernel m_xi is zero, but d(e)=e defines a nonzero k-derivation O to A, and e maps to e+t e in A[t]/t^2 as a nontrivial lift. The correct general module is the module of continuous Lambda-derivations, equivalently the appropriate continuous differential Hom. The broad printed identification is retained in both layers and qualified in the notes.\t195, p. 376, first Hom identification | Original how (verbatim): refuted, with refined statement 195-A5-continuous-derivations\r\n",
+      "old_bytes_sha256": "e19ee7cbea663dd8fcb637ea237bb534176fa76c22223a3fd2ba7a717b89b22d",
+      "new_bytes_sha256": "a3ac209cd9d288379fe760fb662e8800eba3e1b497c0b56aca70c92af4dd7f0a",
+      "old_byte_count": 673,
+      "new_byte_count": 741,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "a3ac209cd9d288379fe760fb662e8800eba3e1b497c0b56aca70c92af4dd7f0a",
+      "replacement_fields_sha256": "36e4df7c53f8d89a311b48b347b8d8cc50f7b705757efba4fb022f514f5403c1"
+    },
+    {
+      "operation_id": "EVENT_E000315_H01",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000315",
+        "data_row": 315,
+        "byte_start": 179999,
+        "byte_end_exclusive": 181060,
+        "record_byte_start": 179999,
+        "record_byte_end_exclusive": 181060,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 1061,
+        "physical_line_start": 316,
+        "physical_line_end": 316,
+        "target_full_record_sha256": "ea962188e1fba371d703e3a9e538c2704083b3f2b6f882a16fa9764baf755aa6",
+        "target_fields_sha256": "83377778ae6b584faf838a2d552375eb1bda327c48d217964d540dbed33c83a8",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            315
+          ]
+        }
+      },
+      "lexical_rule_id": "H01",
+      "review_classification": "mechanical_spelling_candidate",
+      "conditional": false,
+      "condition": "Review the mechanical spelling candidate before selecting it.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "021d6608ac9b5b663b2ce79871d4d35df4dc22268a2d9079224c48fc766b2318",
+          "new_serialized_sha256": "021d6608ac9b5b663b2ce79871d4d35df4dc22268a2d9079224c48fc766b2318",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "03e8631c61d8a6f03bbdc33d3ea88d5bbb0778d834dba12ee0b250e88de80d8e",
+          "new_serialized_sha256": "03e8631c61d8a6f03bbdc33d3ea88d5bbb0778d834dba12ee0b250e88de80d8e",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "6b546be9c61f856c80f1ef7856e78db38ad82abbbd858a7d9bf05a37d2020f70",
+          "new_serialized_sha256": "3da806e4df34119f3c765d7588b8359ec3fe137760fe88b920efd49b5fe6d8a7",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "de2828be0b240cf978bd218f2e425b6f0c4f05e63ee4734d48d049927b85895f",
+          "new_serialized_sha256": "de2828be0b240cf978bd218f2e425b6f0c4f05e63ee4734d48d049927b85895f",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "5704783847aa8214db1797ab402cfeee8d022f9ce83485c439786b71cd51c656",
+          "new_serialized_sha256": "0e4a9549fe1f5ded56532324b10e54751819e3e90ea907d2006e869cc05bd1de",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "6b546be9c61f856c80f1ef7856e78db38ad82abbbd858a7d9bf05a37d2020f70",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000315",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": [
+          "E000315"
+        ]
+      },
+      "old_bytes_utf8": "195-5.1-formula\t2026-11-18 19:06:06 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with refined statement 195-5.1-relative-tangent\tThe scan already contains n_xi O_xi in the denominator; only its opening parenthesis is missing. After that delimiter repair, the proposed identification still needs a separability condition on the residue field over the base residue field. For Lambda=F_p(s), O=K=Lambda(u) with u^p=s and xi=id, m_xi=0 but d(u)=1 is a nonzero Lambda-derivation. The tangent module is therefore nonzero while the displayed conormal dual is zero. With separable residue extension the transitivity sequence for differentials gives the relative cotangent-space formula. The following absolute dimension comparison also fails even with identical residue fields: for O=Lambda=k[[s]], F is the singleton functor, so the tangent dimension is zero while dim(m/m^2)=1. The absolute comparison has been restored in both text layers; its later erratum will be checked separately.\t195, p. 376, Proposition 5, 1 formula and following dimension sentence\r\n",
+      "new_bytes_utf8": "195-5.1-formula\t2026-11-18 19:06:06 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement's id\tThe scan already contains n_xi O_xi in the denominator; only its opening parenthesis is missing. After that delimiter repair, the proposed identification still needs a separability condition on the residue field over the base residue field. For Lambda=F_p(s), O=K=Lambda(u) with u^p=s and xi=id, m_xi=0 but d(u)=1 is a nonzero Lambda-derivation. The tangent module is therefore nonzero while the displayed conormal dual is zero. With separable residue extension the transitivity sequence for differentials gives the relative cotangent-space formula. The following absolute dimension comparison also fails even with identical residue fields: for O=Lambda=k[[s]], F is the singleton functor, so the tangent dimension is zero while dim(m/m^2)=1. The absolute comparison has been restored in both text layers; its later erratum will be checked separately.\t195, p. 376, Proposition 5, 1 formula and following dimension sentence | Original how (verbatim): refuted, with refined statement 195-5.1-relative-tangent\r\n",
+      "old_bytes_sha256": "ea962188e1fba371d703e3a9e538c2704083b3f2b6f882a16fa9764baf755aa6",
+      "new_bytes_sha256": "f670f91f13f0361fb0d629d53163a1a00f62f839689afbfbd2ea646a7ba2154a",
+      "old_byte_count": 1061,
+      "new_byte_count": 1129,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "f670f91f13f0361fb0d629d53163a1a00f62f839689afbfbd2ea646a7ba2154a",
+      "replacement_fields_sha256": "4bfd887e790a14aabb59008889f291828c4aa28875d236b88cee89e3b04f5481"
+    },
+    {
+      "operation_id": "EVENT_E000317_H01",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000317",
+        "data_row": 317,
+        "byte_start": 181875,
+        "byte_end_exclusive": 182731,
+        "record_byte_start": 181875,
+        "record_byte_end_exclusive": 182731,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 856,
+        "physical_line_start": 318,
+        "physical_line_end": 318,
+        "target_full_record_sha256": "58f5955b38d82b9f59b163e6b5a2cacc448f522f589d52e22e347f867923c06b",
+        "target_fields_sha256": "4d79bc37b237101919c9408fb0d6207eca96654ae48a315d9a0eecc4cd2b5bbf",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            317
+          ]
+        }
+      },
+      "lexical_rule_id": "H01",
+      "review_classification": "mechanical_spelling_candidate",
+      "conditional": false,
+      "condition": "Review the mechanical spelling candidate before selecting it.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "e6468d39777ce6f5505b6117db28b26bae97bac790cf9ad3c0c37238d8768d05",
+          "new_serialized_sha256": "e6468d39777ce6f5505b6117db28b26bae97bac790cf9ad3c0c37238d8768d05",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "03e8631c61d8a6f03bbdc33d3ea88d5bbb0778d834dba12ee0b250e88de80d8e",
+          "new_serialized_sha256": "03e8631c61d8a6f03bbdc33d3ea88d5bbb0778d834dba12ee0b250e88de80d8e",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "025252454ee5ce3a123c4ad7124e8edd43279a13dce905820d7e3efd45424761",
+          "new_serialized_sha256": "3da806e4df34119f3c765d7588b8359ec3fe137760fe88b920efd49b5fe6d8a7",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "4b0ee7e326571c299d77ba0579e521a0e6afdffd7d652db0de7eecf74f629b6d",
+          "new_serialized_sha256": "4b0ee7e326571c299d77ba0579e521a0e6afdffd7d652db0de7eecf74f629b6d",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "b4724329435d03928d8984a5f65b919a25c20b47a0aa884717716816d43c8907",
+          "new_serialized_sha256": "c51d641d0f490d3b8ab6349ec7d902c0aeecbaaac411dc094e995e5ecd3aa52a",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "025252454ee5ce3a123c4ad7124e8edd43279a13dce905820d7e3efd45424761",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000317",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": [
+          "E000317"
+        ]
+      },
+      "old_bytes_utf8": "195-5.2\t2026-11-18 19:06:06 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with refined statement 195-5.2-nilpotent-lifting\tThe assertion for all epimorphisms, taken literally, fails even for a finite etale algebra. Set Lambda=R and O=C, which is simple by the printed definition with no polynomial variables. The surjection A=R times C to A-prime=C belongs to C. F(A)=Hom_R(C,R) times Hom_R(C,C) is empty, whereas F(A-prime) contains id; thus F(A) to F(A-prime) is not surjective. The infinitesimal/formal-smoothness condition uses surjections with nilpotent kernel. The source sentence reducing arbitrary surjections to local small extensions silently loses discarded connected components. The historical assertion is retained and the correction of the theorem is reserved for the notes.\t195, p. 376, Proposition 5, 2 and the subsequent reduction\r\n",
+      "new_bytes_utf8": "195-5.2\t2026-11-18 19:06:06 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement's id\tThe assertion for all epimorphisms, taken literally, fails even for a finite etale algebra. Set Lambda=R and O=C, which is simple by the printed definition with no polynomial variables. The surjection A=R times C to A-prime=C belongs to C. F(A)=Hom_R(C,R) times Hom_R(C,C) is empty, whereas F(A-prime) contains id; thus F(A) to F(A-prime) is not surjective. The infinitesimal/formal-smoothness condition uses surjections with nilpotent kernel. The source sentence reducing arbitrary surjections to local small extensions silently loses discarded connected components. The historical assertion is retained and the correction of the theorem is reserved for the notes.\t195, p. 376, Proposition 5, 2 and the subsequent reduction | Original how (verbatim): refuted, with refined statement 195-5.2-nilpotent-lifting\r\n",
+      "old_bytes_sha256": "58f5955b38d82b9f59b163e6b5a2cacc448f522f589d52e22e347f867923c06b",
+      "new_bytes_sha256": "f7a2262d0dc5e72b7da3a0657096d31046660d45029f30568871eea907c71642",
+      "old_byte_count": 856,
+      "new_byte_count": 924,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "f7a2262d0dc5e72b7da3a0657096d31046660d45029f30568871eea907c71642",
+      "replacement_fields_sha256": "3319e942a73449e5a321c3928b44fa0103c94f40292d92e22badd773e08d931a"
+    },
+    {
+      "operation_id": "EVENT_E000503_H02",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000503",
+        "data_row": 503,
+        "byte_start": 313417,
+        "byte_end_exclusive": 313940,
+        "record_byte_start": 313417,
+        "record_byte_end_exclusive": 313940,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 523,
+        "physical_line_start": 504,
+        "physical_line_end": 504,
+        "target_full_record_sha256": "90c91221d653d9cb720e1f881ab53c72ca35d01370457a4495ed7dd3451063f1",
+        "target_fields_sha256": "24faf989b4c6193d5e23525d5d7a56435ec69fdd2dfdeedc722ac60fbea82988",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            503
+          ]
+        }
+      },
+      "lexical_rule_id": "H02",
+      "review_classification": "mechanical_spelling_candidate",
+      "conditional": false,
+      "condition": "Review the mechanical spelling candidate before selecting it.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "2617b23aa71e6540cb45e9b9cd1f5607349d9d11f4a1e4d42cd13597d97c2a09",
+          "new_serialized_sha256": "2617b23aa71e6540cb45e9b9cd1f5607349d9d11f4a1e4d42cd13597d97c2a09",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "c45e1b5a9491e96bdf6d165fa11a6e3b911c95efc87d4a37833beb8db6f81ad2",
+          "new_serialized_sha256": "c45e1b5a9491e96bdf6d165fa11a6e3b911c95efc87d4a37833beb8db6f81ad2",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "cf5287f4d9293bceaa2e5cae7901aff2b8ac043e495a3b51ea8d7792751c7120",
+          "new_serialized_sha256": "3da806e4df34119f3c765d7588b8359ec3fe137760fe88b920efd49b5fe6d8a7",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "bcdf9f7ccff45c3ff2e117e56af6e10d7157d10006898a4cde29340016238b40",
+          "new_serialized_sha256": "bcdf9f7ccff45c3ff2e117e56af6e10d7157d10006898a4cde29340016238b40",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "f24a9f1368d4f743ed96f39dcfe875e34ff3fa6ba67c98679221377647ec79aa",
+          "new_serialized_sha256": "b4a8078fd42367fb1467c3154660597ec97175bbb6a164f8328cb2aa12b7a8b6",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "cf5287f4d9293bceaa2e5cae7901aff2b8ac043e495a3b51ea8d7792751c7120",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000503",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "221-3-A_nu-polynomial-omission\t2026-11-19 01:34:22 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement id 221-3-A_nu-fixed-P\tAs written A_nu contains all flat coherent quotients satisfying (a)-(c), without a Hilbert-polynomial restriction. For X=Spec(k), F=O, P=1 and nu=0, the zero quotient satisfies (a)-(c) but has Hilbert polynomial 0, contradicting A_nu subset Quot^1. Corrected French adds the restriction to Hilbert polynomial P.\t221, p. 260, definition of A_nu and subfunctor assertion\r\n",
+      "new_bytes_utf8": "221-3-A_nu-polynomial-omission\t2026-11-19 01:34:22 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement's id\tAs written A_nu contains all flat coherent quotients satisfying (a)-(c), without a Hilbert-polynomial restriction. For X=Spec(k), F=O, P=1 and nu=0, the zero quotient satisfies (a)-(c) but has Hilbert polynomial 0, contradicting A_nu subset Quot^1. Corrected French adds the restriction to Hilbert polynomial P.\t221, p. 260, definition of A_nu and subfunctor assertion | Original how (verbatim): refuted, with the refined statement id 221-3-A_nu-fixed-P\r\n",
+      "old_bytes_sha256": "90c91221d653d9cb720e1f881ab53c72ca35d01370457a4495ed7dd3451063f1",
+      "new_bytes_sha256": "00a45beab19d7cd74490920c3ee815e843b53b12159ade3c1051a2ebbd2e6cdc",
+      "old_byte_count": 523,
+      "new_byte_count": 591,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "00a45beab19d7cd74490920c3ee815e843b53b12159ade3c1051a2ebbd2e6cdc",
+      "replacement_fields_sha256": "b6eb5d43a28f84e2d0556e6ba5d5f9673fe0856e5870d0d6315bf6e68b4b1acf"
+    },
+    {
+      "operation_id": "EVENT_E000514_H02",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000514",
+        "data_row": 514,
+        "byte_start": 318941,
+        "byte_end_exclusive": 319464,
+        "record_byte_start": 318941,
+        "record_byte_end_exclusive": 319464,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 523,
+        "physical_line_start": 515,
+        "physical_line_end": 515,
+        "target_full_record_sha256": "0b7bf90861388e13320a215cf7cfacc56dd5b66b890c3a52b4db9cf11a5132cd",
+        "target_fields_sha256": "c794029579716a011d51687f317f4d7008151bf241456e77cd30518593455be0",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            514
+          ]
+        }
+      },
+      "lexical_rule_id": "H02",
+      "review_classification": "mechanical_spelling_candidate",
+      "conditional": false,
+      "condition": "Review the mechanical spelling candidate before selecting it.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "dbb5c29504ff622df461850532d353581d1c8075bac128a3ed007dc0922f7ad0",
+          "new_serialized_sha256": "dbb5c29504ff622df461850532d353581d1c8075bac128a3ed007dc0922f7ad0",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "b4e5d1cbc128ac67e68d3a0dca9a25160dcfc45a4074a2063dd999e10492cdd4",
+          "new_serialized_sha256": "b4e5d1cbc128ac67e68d3a0dca9a25160dcfc45a4074a2063dd999e10492cdd4",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "eab3b90f1b14d1bb6a65aae8ce8d0ea900bf02ea414bb03913d12b787b6d965a",
+          "new_serialized_sha256": "3da806e4df34119f3c765d7588b8359ec3fe137760fe88b920efd49b5fe6d8a7",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "839686c6927991d24fbf16ac83863c0d9375208f9cd1e9fd0beb64dc1f56d059",
+          "new_serialized_sha256": "839686c6927991d24fbf16ac83863c0d9375208f9cd1e9fd0beb64dc1f56d059",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "c3ff4379fbe2bbb7102a6821b126a2965779a0a35de782be38b0715718053193",
+          "new_serialized_sha256": "dfc734e00ac63e50e81500b40d9b478b8ec1c498529ddc4549317f3f70b8aaa3",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "eab3b90f1b14d1bb6a65aae8ce8d0ea900bf02ea414bb03913d12b787b6d965a",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000514",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "221-3.5-printed-polynomial-case\t2026-11-19 01:39:05 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement id 221-3.5-eventual-order\tThe inference P!=Q implies eventual emptiness of U_N is false. Take S=Spec(k), graded algebra k[T], M=k[T], nu=0, Q=1 and P=2: every rank is 1<=2, so U_N=S for all N although P!=Q. The source had merged a later erratum into the body. The scanned argument is restored in both layers under the instruction to keep errata separate.\t221, p. 263, first polynomial case\r\n",
+      "new_bytes_utf8": "221-3.5-printed-polynomial-case\t2026-11-19 01:39:05 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement's id\tThe inference P!=Q implies eventual emptiness of U_N is false. Take S=Spec(k), graded algebra k[T], M=k[T], nu=0, Q=1 and P=2: every rank is 1<=2, so U_N=S for all N although P!=Q. The source had merged a later erratum into the body. The scanned argument is restored in both layers under the instruction to keep errata separate.\t221, p. 263, first polynomial case | Original how (verbatim): refuted, with the refined statement id 221-3.5-eventual-order\r\n",
+      "old_bytes_sha256": "0b7bf90861388e13320a215cf7cfacc56dd5b66b890c3a52b4db9cf11a5132cd",
+      "new_bytes_sha256": "0391d5def3ae7c509684d4edae83ee42940bdc9c2639f7520392115fda4fe49f",
+      "old_byte_count": 523,
+      "new_byte_count": 591,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "0391d5def3ae7c509684d4edae83ee42940bdc9c2639f7520392115fda4fe49f",
+      "replacement_fields_sha256": "42f428608ca36abe881da62296d9c59ca30e72314acf41a2072eee5329f6bf66"
+    },
+    {
+      "operation_id": "EVENT_E000524_H03",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000524",
+        "data_row": 524,
+        "byte_start": 324428,
+        "byte_end_exclusive": 325054,
+        "record_byte_start": 324428,
+        "record_byte_end_exclusive": 325054,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 626,
+        "physical_line_start": 525,
+        "physical_line_end": 525,
+        "target_full_record_sha256": "a5c9e48e33c42cf0e4f9870449d617d922b302bf8acaaa879bba037eb00b11f9",
+        "target_fields_sha256": "605a5ef5b545eb84d016d36f97750d37632dca65b3da9523f15625af40762c6c",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            524
+          ]
+        }
+      },
+      "lexical_rule_id": "H03",
+      "review_classification": "conditional_root_judgment_required",
+      "conditional": true,
+      "condition": "Root judgment must authorize this category mapping.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "c489a3789d22b933450b040c5823dd677a1ea51ad32a9fad8bbce1757c11e76e",
+          "new_serialized_sha256": "c489a3789d22b933450b040c5823dd677a1ea51ad32a9fad8bbce1757c11e76e",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "c2f9e0f247ceaa25e9c61791ed1807079b58599f665dee5f92784413e3bce705",
+          "new_serialized_sha256": "c2f9e0f247ceaa25e9c61791ed1807079b58599f665dee5f92784413e3bce705",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "5512c0f9b3b027080d6a304af1a03899fe7fc34b41b2524acd14559c47280c3b",
+          "new_serialized_sha256": "5af9c222fa7cfc4a43975815cbede01a108a8c37163320803e7ef94070efb5aa",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "2761e06b6c2392e01dae45721e2ce0c3c4af400da4169bb4d8bb93034fb100b9",
+          "new_serialized_sha256": "2761e06b6c2392e01dae45721e2ce0c3c4af400da4169bb4d8bb93034fb100b9",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "b4218aa903ed8b8dc2ed225ecced02ebf3359511863aa397f5d6ca7da0bdf77d",
+          "new_serialized_sha256": "ab85252763db63c39189ef32c254096a33106438e2dc30ef297bd06924a3c291",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "5512c0f9b3b027080d6a304af1a03899fe7fc34b41b2524acd14559c47280c3b",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000524",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "221-3.8\t2026-11-19 01:44:59 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted consequence check\tThe constructed Grassmannian immersion for sufficiently large n identifies the universal direct image with the tautological locally free quotient of rank P(n). Its top exterior power pulls back the Plucker very ample invertible sheaf; the properness conclusion upgrades the immersion to a closed immersion. This checks the claimed consequence conditional on the previously recorded construction and its cited cohomology and boundedness inputs, without claiming to re-prove those inputs.\t221, p. 265, Proposition 3.8 and proof\r\n",
+      "new_bytes_utf8": "221-3.8\t2026-11-19 01:44:59 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted proof check\tThe constructed Grassmannian immersion for sufficiently large n identifies the universal direct image with the tautological locally free quotient of rank P(n). Its top exterior power pulls back the Plucker very ample invertible sheaf; the properness conclusion upgrades the immersion to a closed immersion. This checks the claimed consequence conditional on the previously recorded construction and its cited cohomology and boundedness inputs, without claiming to re-prove those inputs.\t221, p. 265, Proposition 3.8 and proof | Original how (verbatim): targeted consequence check\r\n",
+      "old_bytes_sha256": "a5c9e48e33c42cf0e4f9870449d617d922b302bf8acaaa879bba037eb00b11f9",
+      "new_bytes_sha256": "ace7826e73d88c24a3370b249d35d6c060abfd244a1a2400e220a227441c6fea",
+      "old_byte_count": 626,
+      "new_byte_count": 674,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "ace7826e73d88c24a3370b249d35d6c060abfd244a1a2400e220a227441c6fea",
+      "replacement_fields_sha256": "fb35455b41e230fc13a4d2a424ee4ceb9f4260817bd6a7c420540e65e1ce31c1"
+    },
+    {
+      "operation_id": "EVENT_E000525_H03",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000525",
+        "data_row": 525,
+        "byte_start": 325054,
+        "byte_end_exclusive": 325611,
+        "record_byte_start": 325054,
+        "record_byte_end_exclusive": 325611,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 557,
+        "physical_line_start": 526,
+        "physical_line_end": 526,
+        "target_full_record_sha256": "4a29022ae4b1a5ec3a48d270c48129ebb258327726f4166f965b5520c41d1ec8",
+        "target_fields_sha256": "2935c0b2869e569dd8564b00da1b8d77e38ce2c0b64c5e07fa9cc2ca0dc9ce8f",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            525
+          ]
+        }
+      },
+      "lexical_rule_id": "H03",
+      "review_classification": "conditional_root_judgment_required",
+      "conditional": true,
+      "condition": "Root judgment must authorize this category mapping.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "096846fa09445c36470ad0a7062e1ffe7872089f4db97224401e021feb614bf5",
+          "new_serialized_sha256": "096846fa09445c36470ad0a7062e1ffe7872089f4db97224401e021feb614bf5",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "c2f9e0f247ceaa25e9c61791ed1807079b58599f665dee5f92784413e3bce705",
+          "new_serialized_sha256": "c2f9e0f247ceaa25e9c61791ed1807079b58599f665dee5f92784413e3bce705",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "1ecfba750fe79598f03a49d7c4c38587dd3d123c0d7acc5c642d004f1725fefd",
+          "new_serialized_sha256": "5af9c222fa7cfc4a43975815cbede01a108a8c37163320803e7ef94070efb5aa",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "c3248c6f4753ca70bfd65b3983069ebc017adacbe793d49db92f19d54bb69f46",
+          "new_serialized_sha256": "c3248c6f4753ca70bfd65b3983069ebc017adacbe793d49db92f19d54bb69f46",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "8b72dd3c25d20e03851d3819262050411b15d3b9726ddffa390d4c0f748609f9",
+          "new_serialized_sha256": "6e61d0f2a45f6e9cf7f1b6c46b8d7761e67258197e612858fbacbbd56150e1b4",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "1ecfba750fe79598f03a49d7c4c38587dd3d123c0d7acc5c642d004f1725fefd",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000525",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "221-Hilbert-definition\t2026-11-19 01:44:59 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted definition check\tA quotient of O_X-prime as an O_X-prime-module has an ideal kernel and therefore determines exactly one closed subscheme, with the quotient its structure sheaf. The Quot flatness condition is over the test base S-prime, so the printed flatness over S is a dropped-prime misprint. The fixed-polynomial decomposition is read using the locally constant Hilbert polynomial in flat projective families.\t221, p. 265, Hilbert definition and displays\r\n",
+      "new_bytes_utf8": "221-Hilbert-definition\t2026-11-19 01:44:59 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted proof check\tA quotient of O_X-prime as an O_X-prime-module has an ideal kernel and therefore determines exactly one closed subscheme, with the quotient its structure sheaf. The Quot flatness condition is over the test base S-prime, so the printed flatness over S is a dropped-prime misprint. The fixed-polynomial decomposition is read using the locally constant Hilbert polynomial in flat projective families.\t221, p. 265, Hilbert definition and displays | Original how (verbatim): targeted definition check\r\n",
+      "old_bytes_sha256": "4a29022ae4b1a5ec3a48d270c48129ebb258327726f4166f965b5520c41d1ec8",
+      "new_bytes_sha256": "3f626a3835320d0cfe61c17c49e053c8069ff81bcd8e05470fca974d4e72c6f4",
+      "old_byte_count": 557,
+      "new_byte_count": 605,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "3f626a3835320d0cfe61c17c49e053c8069ff81bcd8e05470fca974d4e72c6f4",
+      "replacement_fields_sha256": "d9b3c097e57ec1f357c763638fcd461e2530006998ad6fe4c6436f4e19bc8d25"
+    },
+    {
+      "operation_id": "EVENT_E000527_H02",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000527",
+        "data_row": 527,
+        "byte_start": 325898,
+        "byte_end_exclusive": 326433,
+        "record_byte_start": 325898,
+        "record_byte_end_exclusive": 326433,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 535,
+        "physical_line_start": 528,
+        "physical_line_end": 528,
+        "target_full_record_sha256": "ce4d5adb1bdf2cf9907d1e129de6630fc7621bec0b7a546cb5a259fcb481c77f",
+        "target_fields_sha256": "f4a66808d0ab00f9331653b79424d030088ee93c34ccb1bab15790c107662668",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            527
+          ]
+        }
+      },
+      "lexical_rule_id": "H02",
+      "review_classification": "mechanical_spelling_candidate",
+      "conditional": false,
+      "condition": "Review the mechanical spelling candidate before selecting it.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "f1cf5dfc1302c1e5f1b612ad20c89cd29bc17eecdd08a0572df8c9ad6ac3143d",
+          "new_serialized_sha256": "f1cf5dfc1302c1e5f1b612ad20c89cd29bc17eecdd08a0572df8c9ad6ac3143d",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "d02b0ce1204a5fd80939eb6f14ab1d9eb86ca18afca987babcb8fe0133c171af",
+          "new_serialized_sha256": "d02b0ce1204a5fd80939eb6f14ab1d9eb86ca18afca987babcb8fe0133c171af",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "60d7c315898750a3064f1ac98998ae8024d8967e0ab2a884544e6c6d73cae032",
+          "new_serialized_sha256": "3da806e4df34119f3c765d7588b8359ec3fe137760fe88b920efd49b5fe6d8a7",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "b2c4073f64a802a5128ba3a727e40c32ee2d1a730cb654821743953b21c0bcff",
+          "new_serialized_sha256": "b2c4073f64a802a5128ba3a727e40c32ee2d1a730cb654821743953b21c0bcff",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "e91bd2c9fcc95fb25354c0ba00f70c94f03a8206e86e6f20211c5025be41bbae",
+          "new_serialized_sha256": "a93d5fe0815d4c9a265d3afcad66e784ecc24b0248f9373bc58b7169cf31e230",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "60d7c315898750a3064f1ac98998ae8024d8967e0ab2a884544e6c6d73cae032",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000527",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "221-Chern-data\t2026-11-19 01:46:43 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement id 221-Chern-data-rank\tUnder ordinary Chern-class notation, the trivial bundles O and O direct-sum O have the same total Chern class 1 but Hilbert polynomials binomial(n+r,r) and twice that polynomial. Thus Chern classes alone do not determine the Hilbert polynomial when rank varies. The corrected layer explicitly includes rank; the printed wording is retained in the diplomatic layer.\t221, p. 266, opening paragraph\r\n",
+      "new_bytes_utf8": "221-Chern-data\t2026-11-19 01:46:43 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement's id\tUnder ordinary Chern-class notation, the trivial bundles O and O direct-sum O have the same total Chern class 1 but Hilbert polynomials binomial(n+r,r) and twice that polynomial. Thus Chern classes alone do not determine the Hilbert polynomial when rank varies. The corrected layer explicitly includes rank; the printed wording is retained in the diplomatic layer.\t221, p. 266, opening paragraph | Original how (verbatim): refuted, with the refined statement id 221-Chern-data-rank\r\n",
+      "old_bytes_sha256": "ce4d5adb1bdf2cf9907d1e129de6630fc7621bec0b7a546cb5a259fcb481c77f",
+      "new_bytes_sha256": "4016213d14b2de4283928e05b7881d2232454cea66acca27aecc376a8dc65dec",
+      "old_byte_count": 535,
+      "new_byte_count": 603,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "4016213d14b2de4283928e05b7881d2232454cea66acca27aecc376a8dc65dec",
+      "replacement_fields_sha256": "95c79061cd73c050cd735f2b4c6572f5e03ea4dbd58f9d39152340db24ab075e"
+    },
+    {
+      "operation_id": "EVENT_E000528_H03",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000528",
+        "data_row": 528,
+        "byte_start": 326433,
+        "byte_end_exclusive": 327160,
+        "record_byte_start": 326433,
+        "record_byte_end_exclusive": 327160,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 727,
+        "physical_line_start": 529,
+        "physical_line_end": 529,
+        "target_full_record_sha256": "53594407078074fcdc42d155a2df86f2f8d8275abd612a78fca77940433c9eb6",
+        "target_fields_sha256": "e444cd58568622ea1037dc9ba4660c36198967b5239a990f9595f5309d7b5b71",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            528
+          ]
+        }
+      },
+      "lexical_rule_id": "H03",
+      "review_classification": "conditional_root_judgment_required",
+      "conditional": true,
+      "condition": "Root judgment must authorize this category mapping.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "0f6140789b79db261cb88678176298a0dd6eb188be89c1b2e3554e363a560e26",
+          "new_serialized_sha256": "0f6140789b79db261cb88678176298a0dd6eb188be89c1b2e3554e363a560e26",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "d02b0ce1204a5fd80939eb6f14ab1d9eb86ca18afca987babcb8fe0133c171af",
+          "new_serialized_sha256": "d02b0ce1204a5fd80939eb6f14ab1d9eb86ca18afca987babcb8fe0133c171af",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "6100a6f00255e1ff6138f6c10fb20d1b2c788664419f7f6a6fffdf0bfba5d680",
+          "new_serialized_sha256": "5af9c222fa7cfc4a43975815cbede01a108a8c37163320803e7ef94070efb5aa",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "2b0dc52aa8a61c8b69b10733f8561faa79924d29aebd9c8ab54c204b19ea7992",
+          "new_serialized_sha256": "2b0dc52aa8a61c8b69b10733f8561faa79924d29aebd9c8ab54c204b19ea7992",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "e91bd2c9fcc95fb25354c0ba00f70c94f03a8206e86e6f20211c5025be41bbae",
+          "new_serialized_sha256": "7e68cf6d478cc1e7c067886dd5544ea1ba451014dd2acd58ed2f08f223faad0d",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "6100a6f00255e1ff6138f6c10fb20d1b2c788664419f7f6a6fffdf0bfba5d680",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000528",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "221-Chern-data-rank\t2026-11-19 01:46:43 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted refinement check\tFor projective r-space, K_0 is free with basis O, O(-1), ..., O(-r), whose Hilbert polynomials form a basis of the integer-valued degree-at-most-r polynomials. Thus the Hilbert polynomial determines the K_0 class. Rank plus Chern classes determines the rational Chern character; the projective-space Chow ring and Riemann-Roch give the polynomial, and torsion-freeness of K_0 makes this sufficient. This uses these standard K-theory and Riemann-Roch facts as explicit background inputs. The possible historical convention of including rank in Chern data remains for contextual review.\t221, p. 266, opening paragraph\r\n",
+      "new_bytes_utf8": "221-Chern-data-rank\t2026-11-19 01:46:43 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted proof check\tFor projective r-space, K_0 is free with basis O, O(-1), ..., O(-r), whose Hilbert polynomials form a basis of the integer-valued degree-at-most-r polynomials. Thus the Hilbert polynomial determines the K_0 class. Rank plus Chern classes determines the rational Chern character; the projective-space Chow ring and Riemann-Roch give the polynomial, and torsion-freeness of K_0 makes this sufficient. This uses these standard K-theory and Riemann-Roch facts as explicit background inputs. The possible historical convention of including rank in Chern data remains for contextual review.\t221, p. 266, opening paragraph | Original how (verbatim): targeted refinement check\r\n",
+      "old_bytes_sha256": "53594407078074fcdc42d155a2df86f2f8d8275abd612a78fca77940433c9eb6",
+      "new_bytes_sha256": "ad4b72455c35e723e54964fde0356ca5bf0e0297465d5c782c0f54df7adda2d6",
+      "old_byte_count": 727,
+      "new_byte_count": 775,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "ad4b72455c35e723e54964fde0356ca5bf0e0297465d5c782c0f54df7adda2d6",
+      "replacement_fields_sha256": "1a650f2c5c02f68b66ffabcb9fb4e8f3270c3ace72e82fc6f943813bdac94a9b"
+    },
+    {
+      "operation_id": "EVENT_E000531_H03",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000531",
+        "data_row": 531,
+        "byte_start": 328403,
+        "byte_end_exclusive": 329024,
+        "record_byte_start": 328403,
+        "record_byte_end_exclusive": 329024,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 621,
+        "physical_line_start": 532,
+        "physical_line_end": 532,
+        "target_full_record_sha256": "7305d61afaeaa08b4303940d5885498a2bf45a7fd1d97be3af57a823f0a1f58b",
+        "target_fields_sha256": "488b33cf54c2886583afe79d35ffb2792f4b667aa3ee60ee6b46db38dfd50edf",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            531
+          ]
+        }
+      },
+      "lexical_rule_id": "H03",
+      "review_classification": "conditional_root_judgment_required",
+      "conditional": true,
+      "condition": "Root judgment must authorize this category mapping.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "9a544dfc5517e8626e8555f4e5e48c2374a99c9580bfe4ebbc17fac6ead4e942",
+          "new_serialized_sha256": "9a544dfc5517e8626e8555f4e5e48c2374a99c9580bfe4ebbc17fac6ead4e942",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "12a0d2db25b315f1dca966e499b03a74e6ed2edf95c8825e05c1e8a264fea90b",
+          "new_serialized_sha256": "12a0d2db25b315f1dca966e499b03a74e6ed2edf95c8825e05c1e8a264fea90b",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "5512c0f9b3b027080d6a304af1a03899fe7fc34b41b2524acd14559c47280c3b",
+          "new_serialized_sha256": "5af9c222fa7cfc4a43975815cbede01a108a8c37163320803e7ef94070efb5aa",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "8bbb83013a10a7a237f690ac28ba931dee70647d741483edae06024421d69eb3",
+          "new_serialized_sha256": "8bbb83013a10a7a237f690ac28ba931dee70647d741483edae06024421d69eb3",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "8ad22c06880dcc92b5b61c331f887844e7a2e8d5826aa5504f1d400b5356d8a9",
+          "new_serialized_sha256": "cccb0ff4a9b761222bddd6996d001db12757d85af4e5f70dab6ab2b27edcfe20",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "5512c0f9b3b027080d6a304af1a03899fe7fc34b41b2524acd14559c47280c3b",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000531",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "221-4a-quasi-projective\t2026-11-19 01:48:37 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted consequence check\tEmbed X as an open subscheme in a projective closure and extend the coherent ambient sheaf across that closure. A quotient supported properly over the base extends by zero coherently and is exactly a quotient with support disjoint from the boundary. The open condition checked on p. 266 therefore gives the quasi-projective variant, with proper support retained as an essential hypothesis. Coherent extension and the projective theorem are used as recorded background inputs.\t221, p. 267, first paragraph\r\n",
+      "new_bytes_utf8": "221-4a-quasi-projective\t2026-11-19 01:48:37 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted proof check\tEmbed X as an open subscheme in a projective closure and extend the coherent ambient sheaf across that closure. A quotient supported properly over the base extends by zero coherently and is exactly a quotient with support disjoint from the boundary. The open condition checked on p. 266 therefore gives the quasi-projective variant, with proper support retained as an essential hypothesis. Coherent extension and the projective theorem are used as recorded background inputs.\t221, p. 267, first paragraph | Original how (verbatim): targeted consequence check\r\n",
+      "old_bytes_sha256": "7305d61afaeaa08b4303940d5885498a2bf45a7fd1d97be3af57a823f0a1f58b",
+      "new_bytes_sha256": "cc630e3ad9a8ad5d074fcb3e7cdd2bd487f2753e80ccc14a65934c14c52c4b2e",
+      "old_byte_count": 621,
+      "new_byte_count": 669,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "cc630e3ad9a8ad5d074fcb3e7cdd2bd487f2753e80ccc14a65934c14c52c4b2e",
+      "replacement_fields_sha256": "c6b576b0a48e10749a0fc19afe857544c5c7bcf6ef5beb84a6412437e013c414"
+    },
+    {
+      "operation_id": "EVENT_E000534_H03",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000534",
+        "data_row": 534,
+        "byte_start": 330004,
+        "byte_end_exclusive": 330580,
+        "record_byte_start": 330004,
+        "record_byte_end_exclusive": 330580,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 576,
+        "physical_line_start": 535,
+        "physical_line_end": 535,
+        "target_full_record_sha256": "b96e2c72249653809de484daf6e20015b12e9cf4a581cb55e0aa7825f03da943",
+        "target_fields_sha256": "597bb65e69fa81e5f099c7ae30325135eaf699ce1ebe3b20a7e5b534f55318d3",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            534
+          ]
+        }
+      },
+      "lexical_rule_id": "H03",
+      "review_classification": "conditional_root_judgment_required",
+      "conditional": true,
+      "condition": "Root judgment must authorize this category mapping.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "fad0d38909bca9bfc1f0dd2959c34f506c0d61dfbec5ec23cf5d2d23ad24f205",
+          "new_serialized_sha256": "fad0d38909bca9bfc1f0dd2959c34f506c0d61dfbec5ec23cf5d2d23ad24f205",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "12a0d2db25b315f1dca966e499b03a74e6ed2edf95c8825e05c1e8a264fea90b",
+          "new_serialized_sha256": "12a0d2db25b315f1dca966e499b03a74e6ed2edf95c8825e05c1e8a264fea90b",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "5512c0f9b3b027080d6a304af1a03899fe7fc34b41b2524acd14559c47280c3b",
+          "new_serialized_sha256": "5af9c222fa7cfc4a43975815cbede01a108a8c37163320803e7ef94070efb5aa",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "4d3d930f2f7b27b6c9bb5c3d806399d889ce2dd1dcc21508f8c64713a3c3c4d0",
+          "new_serialized_sha256": "4d3d930f2f7b27b6c9bb5c3d806399d889ce2dd1dcc21508f8c64713a3c3c4d0",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "2f6f5a1e24d1bcf40faf63698f039f5da933b2c155b3652c773d3525b0b25ac9",
+          "new_serialized_sha256": "8d1d2a4f2ac445f5bc04719b916642be0b40b19be0d1a5faad073b70b8e892b1",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "5512c0f9b3b027080d6a304af1a03899fe7fc34b41b2524acd14559c47280c3b",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000534",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "221-4b-conjunction\t2026-11-19 01:48:37 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted consequence check\tFor a finite conjunction, the intersection of its representing opens is open and has the required functor of points. The unqualified word conjunction is read in this finite sense; arbitrary infinite intersections would not be open in general. The finite-etale rank-r example combines the zero-dimensional proper flat locus, smoothness and the locally constant rank. No arbitrary infinite-conjunction theorem is asserted.\t221, p. 267, paragraph after item 2 degrees\r\n",
+      "new_bytes_utf8": "221-4b-conjunction\t2026-11-19 01:48:37 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted proof check\tFor a finite conjunction, the intersection of its representing opens is open and has the required functor of points. The unqualified word conjunction is read in this finite sense; arbitrary infinite intersections would not be open in general. The finite-etale rank-r example combines the zero-dimensional proper flat locus, smoothness and the locally constant rank. No arbitrary infinite-conjunction theorem is asserted.\t221, p. 267, paragraph after item 2 degrees | Original how (verbatim): targeted consequence check\r\n",
+      "old_bytes_sha256": "b96e2c72249653809de484daf6e20015b12e9cf4a581cb55e0aa7825f03da943",
+      "new_bytes_sha256": "601126dc9d13d44e1cce81596f9606d1641ab4499cfdd29f2835f9bdc31fdda8",
+      "old_byte_count": 576,
+      "new_byte_count": 624,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "601126dc9d13d44e1cce81596f9606d1641ab4499cfdd29f2835f9bdc31fdda8",
+      "replacement_fields_sha256": "6ad7f9469416ce844133b355e97c971eb8b413f89ff939e82c7f35f8d284dedd"
+    },
+    {
+      "operation_id": "EVENT_E000535_H03",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000535",
+        "data_row": 535,
+        "byte_start": 330580,
+        "byte_end_exclusive": 331177,
+        "record_byte_start": 330580,
+        "record_byte_end_exclusive": 331177,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 597,
+        "physical_line_start": 536,
+        "physical_line_end": 536,
+        "target_full_record_sha256": "6ac41875ab13343bad3dc9df53d3d29b992e1fcf095b4aa70a12bf4fa4637171",
+        "target_fields_sha256": "7736200ba10d4a9059618c128afd661595a9ee286f5e53235109e6a594677b75",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            535
+          ]
+        }
+      },
+      "lexical_rule_id": "H03",
+      "review_classification": "conditional_root_judgment_required",
+      "conditional": true,
+      "condition": "Root judgment must authorize this category mapping.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "44a3ae836bdf0e27730ff317bf748bdda449f905051d37972f0396534bb22560",
+          "new_serialized_sha256": "44a3ae836bdf0e27730ff317bf748bdda449f905051d37972f0396534bb22560",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "12a0d2db25b315f1dca966e499b03a74e6ed2edf95c8825e05c1e8a264fea90b",
+          "new_serialized_sha256": "12a0d2db25b315f1dca966e499b03a74e6ed2edf95c8825e05c1e8a264fea90b",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "97c80b910f6367c168c29c7605cd68a32c12a9705dd519300802c77e3c278d6b",
+          "new_serialized_sha256": "5af9c222fa7cfc4a43975815cbede01a108a8c37163320803e7ef94070efb5aa",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "bfea95932c6bd23e6316081d3c9327921a1be80d0d07d41fc0f91561e2d6d772",
+          "new_serialized_sha256": "bfea95932c6bd23e6316081d3c9327921a1be80d0d07d41fc0f91561e2d6d772",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "8ad0711099521c106c348c1be82d96d0514889ae1984cd2167a8152dceccf0ef",
+          "new_serialized_sha256": "65f185b9ec2901dff08b4c520f91444ff41614fe1f8f7265be8dfdfa0434d87a",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "97c80b910f6367c168c29c7605cd68a32c12a9705dd519300802c77e3c278d6b",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000535",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "221-4c-graph\t2026-11-19 01:48:37 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted correspondence check\tA section of Z-prime -> X-prime gives a graph in Z-prime isomorphic to X-prime; conversely the inverse of an isomorphic projection from such a subscheme gives exactly one section. Separatedness of Z over X is preserved by base change and makes the section a closed immersion. Hom_S(X,Y) is the section functor for X times_S Y -> X. This checks the correspondence and identifies the printed Hom(X,X) and ambient Z slips. Representability continues on the next page.\t221, p. 267, section 4c\r\n",
+      "new_bytes_utf8": "221-4c-graph\t2026-11-19 01:48:37 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted proof check\tA section of Z-prime -> X-prime gives a graph in Z-prime isomorphic to X-prime; conversely the inverse of an isomorphic projection from such a subscheme gives exactly one section. Separatedness of Z over X is preserved by base change and makes the section a closed immersion. Hom_S(X,Y) is the section functor for X times_S Y -> X. This checks the correspondence and identifies the printed Hom(X,X) and ambient Z slips. Representability continues on the next page.\t221, p. 267, section 4c | Original how (verbatim): targeted correspondence check\r\n",
+      "old_bytes_sha256": "6ac41875ab13343bad3dc9df53d3d29b992e1fcf095b4aa70a12bf4fa4637171",
+      "new_bytes_sha256": "4733ece8f6eccdb24028167a836792079eb692703e1eb64a9360cb4564a9e266",
+      "old_byte_count": 597,
+      "new_byte_count": 645,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "4733ece8f6eccdb24028167a836792079eb692703e1eb64a9360cb4564a9e266",
+      "replacement_fields_sha256": "e8eca0eadf891b09c7d2362419931a0fd752623f4f04825c8f4183558bc9c881"
+    },
+    {
+      "operation_id": "EVENT_E000537_H03",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000537",
+        "data_row": 537,
+        "byte_start": 331847,
+        "byte_end_exclusive": 332490,
+        "record_byte_start": 331847,
+        "record_byte_end_exclusive": 332490,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 643,
+        "physical_line_start": 538,
+        "physical_line_end": 538,
+        "target_full_record_sha256": "4aafd9fbc993afd7c20ef2b3dfb3777bb702aac088b97d088353ed3be1217019",
+        "target_fields_sha256": "3a2d0b4300e63a114cb05a1a952d9a95eb66e66c0b0d30d97f9f56dc9f70bc98",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            537
+          ]
+        }
+      },
+      "lexical_rule_id": "H03",
+      "review_classification": "conditional_root_judgment_required",
+      "conditional": true,
+      "condition": "Root judgment must authorize this category mapping.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "4220b7b3e490a6b4934edba76e5d46f511274875d200d89be72c0da0e7df9c8e",
+          "new_serialized_sha256": "4220b7b3e490a6b4934edba76e5d46f511274875d200d89be72c0da0e7df9c8e",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "7e546465ec033afe9fe74b210a1ef71a1aa325f4bc30bd483c5688db2fdcaf32",
+          "new_serialized_sha256": "7e546465ec033afe9fe74b210a1ef71a1aa325f4bc30bd483c5688db2fdcaf32",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "5512c0f9b3b027080d6a304af1a03899fe7fc34b41b2524acd14559c47280c3b",
+          "new_serialized_sha256": "5af9c222fa7cfc4a43975815cbede01a108a8c37163320803e7ef94070efb5aa",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "a07fdef76e53c52884c902aff0f680c09b669357e7d824f51e5b3cd8689fce51",
+          "new_serialized_sha256": "a07fdef76e53c52884c902aff0f680c09b669357e7d824f51e5b3cd8689fce51",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "9573a4b3c12e48293028cd8b3a89906e7e76f4ffd521c8154be1680c62d3b07b",
+          "new_serialized_sha256": "f0ef9810b547432e41282da93ab53dce290ed86830b7b5cb0a2d644b74304c69",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "5512c0f9b3b027080d6a304af1a03899fe7fc34b41b2524acd14559c47280c3b",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000537",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "221-4c-Hilbert-polynomial\t2026-11-19 01:50:35 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted consequence check\tOn the graph of g, the exterior product L tensor M restricts to L tensor g-star M. Thus the Hilbert polynomial of the graph is exactly the Euler characteristic in the displayed formula, interpreted fiberwise over each point of S. For a general base the displayed chi must be the relative, fiberwise Euler characteristic; no absolute Euler characteristic over an arbitrary base is being inferred. The open-and-closed fixed-polynomial decomposition then restricts from Hilbert to Hom.\t221, p. 268, second paragraph and display\r\n",
+      "new_bytes_utf8": "221-4c-Hilbert-polynomial\t2026-11-19 01:50:35 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted proof check\tOn the graph of g, the exterior product L tensor M restricts to L tensor g-star M. Thus the Hilbert polynomial of the graph is exactly the Euler characteristic in the displayed formula, interpreted fiberwise over each point of S. For a general base the displayed chi must be the relative, fiberwise Euler characteristic; no absolute Euler characteristic over an arbitrary base is being inferred. The open-and-closed fixed-polynomial decomposition then restricts from Hilbert to Hom.\t221, p. 268, second paragraph and display | Original how (verbatim): targeted consequence check\r\n",
+      "old_bytes_sha256": "4aafd9fbc993afd7c20ef2b3dfb3777bb702aac088b97d088353ed3be1217019",
+      "new_bytes_sha256": "3da332a8f271f40056fab31ea400f316b307d36a7b596ee2645b5bf180b9a034",
+      "old_byte_count": 643,
+      "new_byte_count": 691,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "3da332a8f271f40056fab31ea400f316b307d36a7b596ee2645b5bf180b9a034",
+      "replacement_fields_sha256": "5ee19034cba76798b7643a671b115f8aaf3676e2f026a1bf3b067ed68018ee3c"
+    },
+    {
+      "operation_id": "EVENT_E000539_H03",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000539",
+        "data_row": 539,
+        "byte_start": 332889,
+        "byte_end_exclusive": 333501,
+        "record_byte_start": 332889,
+        "record_byte_end_exclusive": 333501,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 612,
+        "physical_line_start": 540,
+        "physical_line_end": 540,
+        "target_full_record_sha256": "1b4911816e9c7aa38aadc43fa2484875da315f4a86d517bdc289afe8695815c3",
+        "target_fields_sha256": "0c0f0eea966b7301ace8bf1e6bb49cdd793e5c328beb3f75a976cf479fc54654",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            539
+          ]
+        }
+      },
+      "lexical_rule_id": "H03",
+      "review_classification": "conditional_root_judgment_required",
+      "conditional": true,
+      "condition": "Root judgment must authorize this category mapping.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "2ee874745cf1904f619bc82494965db60fce0326aa43e2d6f1475b393ddd61bc",
+          "new_serialized_sha256": "2ee874745cf1904f619bc82494965db60fce0326aa43e2d6f1475b393ddd61bc",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "7e546465ec033afe9fe74b210a1ef71a1aa325f4bc30bd483c5688db2fdcaf32",
+          "new_serialized_sha256": "7e546465ec033afe9fe74b210a1ef71a1aa325f4bc30bd483c5688db2fdcaf32",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "9c36f4b0f921ed52498a6c470444731c11ac20d0754be23eeacd18f2efcdcfea",
+          "new_serialized_sha256": "5af9c222fa7cfc4a43975815cbede01a108a8c37163320803e7ef94070efb5aa",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "4bc7a1fc97dc13ab3a66fceddf786692d881b97292e7f9973c68dd290f566b80",
+          "new_serialized_sha256": "4bc7a1fc97dc13ab3a66fceddf786692d881b97292e7f9973c68dd290f566b80",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "53331b0e7b3b4f2d8fcc1a522a4c821bb8b05d16bc0c3f843de0a82027ccc094",
+          "new_serialized_sha256": "d10f797118638bd00b86ae206d60fa60b1b6b0856208680046f32a0e80b06eb4",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "9c36f4b0f921ed52498a6c470444731c11ac20d0754be23eeacd18f2efcdcfea",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000539",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "221-4c-nilpotent-base-change\t2026-11-19 01:50:35 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted algebraic check\tThe indicated obstruction over imperfect fields is real: for k=F_p(t), A=k[u]/(u^p-t) is a field and has zero nilradical, but over K=k(t^(1/p)) it becomes K[v]/(v^p), with nonzero nilradical (v). That nilradical cannot descend to an ideal of the field A. This directly checks the stated failure of nilpotent reduction to descend under arbitrary field extension; it is an illustrative algebra calculation, not a claim that this specific A is an automorphism group.\t221, p. 268, final paragraph\r\n",
+      "new_bytes_utf8": "221-4c-nilpotent-base-change\t2026-11-19 01:50:35 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted proof check\tThe indicated obstruction over imperfect fields is real: for k=F_p(t), A=k[u]/(u^p-t) is a field and has zero nilradical, but over K=k(t^(1/p)) it becomes K[v]/(v^p), with nonzero nilradical (v). That nilradical cannot descend to an ideal of the field A. This directly checks the stated failure of nilpotent reduction to descend under arbitrary field extension; it is an illustrative algebra calculation, not a claim that this specific A is an automorphism group.\t221, p. 268, final paragraph | Original how (verbatim): targeted algebraic check\r\n",
+      "old_bytes_sha256": "1b4911816e9c7aa38aadc43fa2484875da315f4a86d517bdc289afe8695815c3",
+      "new_bytes_sha256": "3baf4810e2c8f0b15ab060aee9bc524ad6828bfc5e10c2ffded1d5dbed73c3cd",
+      "old_byte_count": 612,
+      "new_byte_count": 660,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "3baf4810e2c8f0b15ab060aee9bc524ad6828bfc5e10c2ffded1d5dbed73c3cd",
+      "replacement_fields_sha256": "7ec82b6ec42de431f57051058018c7959031f0bf359fb3c62d01ea7e69464ffe"
+    },
+    {
+      "operation_id": "EVENT_E000541_H03",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000541",
+        "data_row": 541,
+        "byte_start": 334340,
+        "byte_end_exclusive": 334988,
+        "record_byte_start": 334340,
+        "record_byte_end_exclusive": 334988,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 648,
+        "physical_line_start": 542,
+        "physical_line_end": 542,
+        "target_full_record_sha256": "4ffd64bb884e60c43ef10553d602d71a59d70c1fbff75bebe54c705848cb60ee",
+        "target_fields_sha256": "5d71da5c156993d0ad104c8b44a19dc3a973515555a7d1100ce2669e7d37d463",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            541
+          ]
+        }
+      },
+      "lexical_rule_id": "H03",
+      "review_classification": "conditional_root_judgment_required",
+      "conditional": true,
+      "condition": "Root judgment must authorize this category mapping.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "c38f98b0081395f9edbdc648535db9e95465e6a8f11b1c5582fbaddd9aeffafe",
+          "new_serialized_sha256": "c38f98b0081395f9edbdc648535db9e95465e6a8f11b1c5582fbaddd9aeffafe",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "4781be111efe2292a5478021853130d61684d5a2cd75940a1c69c185e698a2cc",
+          "new_serialized_sha256": "4781be111efe2292a5478021853130d61684d5a2cd75940a1c69c185e698a2cc",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "378d2204625d497899f4a1d1caa2bf6553aebd6b1ae7569a36997a7102244e67",
+          "new_serialized_sha256": "5af9c222fa7cfc4a43975815cbede01a108a8c37163320803e7ef94070efb5aa",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "870736804565e80f429b82de45c554aa2f6c7ff83d003bd6a4ba1b06472f12f6",
+          "new_serialized_sha256": "870736804565e80f429b82de45c554aa2f6c7ff83d003bd6a4ba1b06472f12f6",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "c48d11c6c9599e87f67e5c630f3b3202f7fa2adf539be5e43368dc47db555caa",
+          "new_serialized_sha256": "2dc3bcd7e930d5bf9f04ef8c772e5ae0a503da1f1bc12d8fc6c5e937e5117894",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "378d2204625d497899f4a1d1caa2bf6553aebd6b1ae7569a36997a7102244e67",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000541",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "221-5.2\t2026-11-19 01:52:37 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted torsor check\tLocal nonemptiness makes E an A-torsor. Differences of local lift sections form an additive Cech 1-cocycle; changes of choices add a coboundary. Its H^1 class vanishes exactly when the local sections can be adjusted to glue, and any resulting global sections form an A(X)-torsor. Fibres here means stalks of the set-valued sheaf, not geometric fibers of a scheme. The printed global Hom over O_X equals Hom over O_X0 because the source and target actions both factor through O_X0; no correction of that scalar ring is needed.\t221, p. 269, Corollary 5.2\r\n",
+      "new_bytes_utf8": "221-5.2\t2026-11-19 01:52:37 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\ttargeted proof check\tLocal nonemptiness makes E an A-torsor. Differences of local lift sections form an additive Cech 1-cocycle; changes of choices add a coboundary. Its H^1 class vanishes exactly when the local sections can be adjusted to glue, and any resulting global sections form an A(X)-torsor. Fibres here means stalks of the set-valued sheaf, not geometric fibers of a scheme. The printed global Hom over O_X equals Hom over O_X0 because the source and target actions both factor through O_X0; no correction of that scalar ring is needed.\t221, p. 269, Corollary 5.2 | Original how (verbatim): targeted torsor check\r\n",
+      "old_bytes_sha256": "4ffd64bb884e60c43ef10553d602d71a59d70c1fbff75bebe54c705848cb60ee",
+      "new_bytes_sha256": "50ee5a6c0d85fcb88fc154022093f5141b53825487c3da8c085e1a2a03f89f4a",
+      "old_byte_count": 648,
+      "new_byte_count": 696,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "50ee5a6c0d85fcb88fc154022093f5141b53825487c3da8c085e1a2a03f89f4a",
+      "replacement_fields_sha256": "9fdc281f1591a4d8f68cd75b99532f283cad813f97a2aa128a69559c86a08081"
+    },
+    {
+      "operation_id": "EVENT_E000544_H02",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000544",
+        "data_row": 544,
+        "byte_start": 335910,
+        "byte_end_exclusive": 336485,
+        "record_byte_start": 335910,
+        "record_byte_end_exclusive": 336485,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 575,
+        "physical_line_start": 545,
+        "physical_line_end": 545,
+        "target_full_record_sha256": "f51bde4403e99c07665a5bb5c3f4179ab66626a78871b7c52f90db8e902811ad",
+        "target_fields_sha256": "d3c29ee102fc56961a6c13c90398e3b113501972a1934c71e4a29bcc17092032",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            544
+          ]
+        }
+      },
+      "lexical_rule_id": "H02",
+      "review_classification": "mechanical_spelling_candidate",
+      "conditional": false,
+      "condition": "Review the mechanical spelling candidate before selecting it.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "8dd34b68699b054b55d26b4960c80c6ae1a12c66a7b5f48be8bc4bd3274c6ed6",
+          "new_serialized_sha256": "8dd34b68699b054b55d26b4960c80c6ae1a12c66a7b5f48be8bc4bd3274c6ed6",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "ae809598249813d635b587c2899bc2309d1584487e622e609e1e77dc3d7a8c09",
+          "new_serialized_sha256": "ae809598249813d635b587c2899bc2309d1584487e622e609e1e77dc3d7a8c09",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "26063207e2b794112e90091cb3482e24fb915e7604bb9954f39cee7c9f530a3e",
+          "new_serialized_sha256": "3da806e4df34119f3c765d7588b8359ec3fe137760fe88b920efd49b5fe6d8a7",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "4cf3e43251e8c29dff17baad56c0798c9369af4e80408f936b20d0573b3cc46b",
+          "new_serialized_sha256": "4cf3e43251e8c29dff17baad56c0798c9369af4e80408f936b20d0573b3cc46b",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "60a9060ca4c0fb8f8a9bbe2a194f5ecfb216d0acc1e239e4d01bd8fd695b1bce",
+          "new_serialized_sha256": "d9f418191a954f0c40c98800c3f2d3379103d30dd3b0b66c80debe8d6dc069c9",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "26063207e2b794112e90091cb3482e24fb915e7604bb9954f39cee7c9f530a3e",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000544",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "221-5.3-relative-tensor\t2026-11-19 01:57:12 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement id 221-5.3-relative-tensor-corrected\tTake S=X=Spec k and F=k^2. The rank-one quotient component is Q=P^1_k. Put S prime=Spec k[t] and let g be a constant section, so its quotient G, kernel K and test module M are all free of rank one over k[t]. Hom(g*Omega_Q/S,M) is k[t]. With the printed tensor over k, the proposed right side is k[t] tensor_k k[t], of infinite rank over k[t], so the claimed isomorphism fails.\t221, p. 270, relative formula for A\r\n",
+      "new_bytes_utf8": "221-5.3-relative-tensor\t2026-11-19 01:57:12 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement's id\tTake S=X=Spec k and F=k^2. The rank-one quotient component is Q=P^1_k. Put S prime=Spec k[t] and let g be a constant section, so its quotient G, kernel K and test module M are all free of rank one over k[t]. Hom(g*Omega_Q/S,M) is k[t]. With the printed tensor over k, the proposed right side is k[t] tensor_k k[t], of infinite rank over k[t], so the claimed isomorphism fails.\t221, p. 270, relative formula for A | Original how (verbatim): refuted, with the refined statement id 221-5.3-relative-tensor-corrected\r\n",
+      "old_bytes_sha256": "f51bde4403e99c07665a5bb5c3f4179ab66626a78871b7c52f90db8e902811ad",
+      "new_bytes_sha256": "7372ed07268d0bd84921ac38855bc2edfc873690eb9e022587837d80c415569c",
+      "old_byte_count": 575,
+      "new_byte_count": 643,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "7372ed07268d0bd84921ac38855bc2edfc873690eb9e022587837d80c415569c",
+      "replacement_fields_sha256": "c0481fb571e569d0718b0f046a032bc4c1afd17fb4973bda2d34716901ea8100"
+    },
+    {
+      "operation_id": "EVENT_E000579_H02",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000579",
+        "data_row": 579,
+        "byte_start": 357110,
+        "byte_end_exclusive": 357826,
+        "record_byte_start": 357110,
+        "record_byte_end_exclusive": 357826,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 716,
+        "physical_line_start": 580,
+        "physical_line_end": 580,
+        "target_full_record_sha256": "6ec8b2b8aa5c12d736dbeed9c6b45b5d3396949f96f47e7a0398b6ba5550681b",
+        "target_fields_sha256": "7472c359bbf8503491eab083aad3795de4053a36ea5ce7f6b0972f65fd651130",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            579
+          ]
+        }
+      },
+      "lexical_rule_id": "H02",
+      "review_classification": "mechanical_spelling_candidate",
+      "conditional": false,
+      "condition": "Review the mechanical spelling candidate before selecting it.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "1a56c1c90e4577a55ae6d3fbad14700a08bbbe09b1b2a64c8c63065e764c00ae",
+          "new_serialized_sha256": "1a56c1c90e4577a55ae6d3fbad14700a08bbbe09b1b2a64c8c63065e764c00ae",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "a1cce1632b3f8bed9143a53c49a27a27cb6f3a5b7988ba0626c47a480b360453",
+          "new_serialized_sha256": "a1cce1632b3f8bed9143a53c49a27a27cb6f3a5b7988ba0626c47a480b360453",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "12d6dda242c46ff1110799488b50a1338d10eafa3246f437254a5e8200dd5a42",
+          "new_serialized_sha256": "3da806e4df34119f3c765d7588b8359ec3fe137760fe88b920efd49b5fe6d8a7",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "22a781a112783442d40a5d563e32d209495c55547de123bedf10a25261663fe7",
+          "new_serialized_sha256": "22a781a112783442d40a5d563e32d209495c55547de123bedf10a25261663fe7",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "ef3224f3fb232516f8481e5f3739483be544e3175a81e26f9d986b7b7683e420",
+          "new_serialized_sha256": "9f1f1b9588932468a49c05cfacf6e45ef2cbffd3ce1623bc13ebd016e2e61b7d",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "12d6dda242c46ff1110799488b50a1338d10eafa3246f437254a5e8200dd5a42",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000579",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "232-1.6-preorder\t2026-11-19 02:21:10 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement id 232-1.6-cover-category\tThe raw H-bar-zero subsets do not in general have transition maps determined only by the domination preorder. Let P(T)=Pic(T), base Spec k, and cover U=P^1_k. The class O(1) belongs to H-bar-zero because its two pullbacks become trivial on an affine covering of U times U. The identity of U and the finite flat degree-two map [x:y] maps to [x^2:y^2] give the same relation U dominates U but pull O(1) back to O(1) and O(2), which are unequal. Corrected French indexes the diagram by the opposite category of covers and all morphisms over T.\t232, p. 145, text before (1.6)\r\n",
+      "new_bytes_utf8": "232-1.6-preorder\t2026-11-19 02:21:10 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement's id\tThe raw H-bar-zero subsets do not in general have transition maps determined only by the domination preorder. Let P(T)=Pic(T), base Spec k, and cover U=P^1_k. The class O(1) belongs to H-bar-zero because its two pullbacks become trivial on an affine covering of U times U. The identity of U and the finite flat degree-two map [x:y] maps to [x^2:y^2] give the same relation U dominates U but pull O(1) back to O(1) and O(2), which are unequal. Corrected French indexes the diagram by the opposite category of covers and all morphisms over T.\t232, p. 145, text before (1.6) | Original how (verbatim): refuted, with the refined statement id 232-1.6-cover-category\r\n",
+      "old_bytes_sha256": "6ec8b2b8aa5c12d736dbeed9c6b45b5d3396949f96f47e7a0398b6ba5550681b",
+      "new_bytes_sha256": "6b2b26b95c4bc648716064d8157f45074d026f7f0c589c0aafbcbaea5d440654",
+      "old_byte_count": 716,
+      "new_byte_count": 784,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "6b2b26b95c4bc648716064d8157f45074d026f7f0c589c0aafbcbaea5d440654",
+      "replacement_fields_sha256": "a135581cf5b6b32812b276e24733feaf0e878ae0cf083ac2bb320bac1e15bdd2"
+    },
+    {
+      "operation_id": "EVENT_E000588_H02",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000588",
+        "data_row": 588,
+        "byte_start": 362895,
+        "byte_end_exclusive": 363777,
+        "record_byte_start": 362895,
+        "record_byte_end_exclusive": 363777,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 882,
+        "physical_line_start": 589,
+        "physical_line_end": 589,
+        "target_full_record_sha256": "6477dcc9a25975f028d1ddee01029c6f032453ba9812806874b199ff1f062c40",
+        "target_fields_sha256": "43ff3f3cbd049e7319a9e6f7d09bffb6bd0cbde4f6b099c5951c2ce747e5d366",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            588
+          ]
+        }
+      },
+      "lexical_rule_id": "H02",
+      "review_classification": "mechanical_spelling_candidate",
+      "conditional": false,
+      "condition": "Review the mechanical spelling candidate before selecting it.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "8097ee78843440cce4bda1e93edea959217e93f2aa82fd052b6b76d248361ea2",
+          "new_serialized_sha256": "8097ee78843440cce4bda1e93edea959217e93f2aa82fd052b6b76d248361ea2",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "11afb1797609da009aab8c3d74b4cafe9764c682f9cf27468e1b55cce6631ddf",
+          "new_serialized_sha256": "11afb1797609da009aab8c3d74b4cafe9764c682f9cf27468e1b55cce6631ddf",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "b7afec00595494950998abd612c388bdacebe5fbe5989d1e7a8ed50b843c0028",
+          "new_serialized_sha256": "3da806e4df34119f3c765d7588b8359ec3fe137760fe88b920efd49b5fe6d8a7",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "32053a37d889ab3cffe14a8992290459ce5e1972cb32455620f20ac88d32ae46",
+          "new_serialized_sha256": "32053a37d889ab3cffe14a8992290459ce5e1972cb32455620f20ac88d32ae46",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "d64ce55cfa7c601e85ab9162cbc06ea650e6aa3f8ce7ebb7d1c717e63a3ae5cf",
+          "new_serialized_sha256": "a10a1f0101051e403696d82d3f58c953ed54075fece76cc32fc6c6c2f50ffd93",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "b7afec00595494950998abd612c388bdacebe5fbe5989d1e7a8ed50b843c0028",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000588",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "232-2.3-printed\t2026-11-19 02:31:21 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement id 232-2.3-universal\tThe claim is stated for Picard functors on all S-schemes, but the hypotheses of 2.2 only concern the original base. Let S=Spec R[t] and delete from P1_S the closed degree-two point t=0, x^2+y^2=0. The removed set has codimension two in a regular surface, so normal extension of regular functions gives f_*O_X=O_S on every base open. The morphism is quasi-compact separated and has a section. On the closed fibre U=P1_R minus that point, the divisor-class sequence gives Pic(U)=Z/2, whereas U_C=P1_C minus two points has Pic=0. Since the base is a field, Pic-prime(U/R)=Pic(U); its nonzero class vanishes after the fpqc extension C/R and hence in the associated sheaf. Thus even injectivity fails at this test scheme.\t232, p. 147, corollary 2.3\r\n",
+      "new_bytes_utf8": "232-2.3-printed\t2026-11-19 02:31:21 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement's id\tThe claim is stated for Picard functors on all S-schemes, but the hypotheses of 2.2 only concern the original base. Let S=Spec R[t] and delete from P1_S the closed degree-two point t=0, x^2+y^2=0. The removed set has codimension two in a regular surface, so normal extension of regular functions gives f_*O_X=O_S on every base open. The morphism is quasi-compact separated and has a section. On the closed fibre U=P1_R minus that point, the divisor-class sequence gives Pic(U)=Z/2, whereas U_C=P1_C minus two points has Pic=0. Since the base is a field, Pic-prime(U/R)=Pic(U); its nonzero class vanishes after the fpqc extension C/R and hence in the associated sheaf. Thus even injectivity fails at this test scheme.\t232, p. 147, corollary 2.3 | Original how (verbatim): refuted, with the refined statement id 232-2.3-universal\r\n",
+      "old_bytes_sha256": "6477dcc9a25975f028d1ddee01029c6f032453ba9812806874b199ff1f062c40",
+      "new_bytes_sha256": "05d63ef62fc54982342a0c91d04ed23e2a0a6098d06fb9f90ed50e20c4fcdca5",
+      "old_byte_count": 882,
+      "new_byte_count": 950,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "05d63ef62fc54982342a0c91d04ed23e2a0a6098d06fb9f90ed50e20c4fcdca5",
+      "replacement_fields_sha256": "4d2d548e3ed2173f12bf3950b945d255776f5b1c2c2e949508104ff0dd80aa3d"
+    },
+    {
+      "operation_id": "EVENT_E000593_H02",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000593",
+        "data_row": 593,
+        "byte_start": 366383,
+        "byte_end_exclusive": 367022,
+        "record_byte_start": 366383,
+        "record_byte_end_exclusive": 367022,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 639,
+        "physical_line_start": 594,
+        "physical_line_end": 594,
+        "target_full_record_sha256": "0e4955ca4dfb7ee5fb8aaa6c87bb1f9fa650b6d3e64352d5fc3a94aad359dda7",
+        "target_fields_sha256": "976f275ab72e147231001024224ba16c4fb9cb03773c97a0374ce1d04950d4f3",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            593
+          ]
+        }
+      },
+      "lexical_rule_id": "H02",
+      "review_classification": "mechanical_spelling_candidate",
+      "conditional": false,
+      "condition": "Review the mechanical spelling candidate before selecting it.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "875e2a6736d6456b769607240353a3cc622907e7f253359d3c864c3867c28602",
+          "new_serialized_sha256": "875e2a6736d6456b769607240353a3cc622907e7f253359d3c864c3867c28602",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "7b5f6c9466d8d74e203e0728948bde21be2b572c511dd8b9b43e16d006d08d71",
+          "new_serialized_sha256": "7b5f6c9466d8d74e203e0728948bde21be2b572c511dd8b9b43e16d006d08d71",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "dad14b67ba192de2107648bc422550377b196c5d461ff78b388684dfb68aa5b9",
+          "new_serialized_sha256": "3da806e4df34119f3c765d7588b8359ec3fe137760fe88b920efd49b5fe6d8a7",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "af6e980d77d52caa100737387af5a17b1ab273fae44ee454b648646bb893ef3c",
+          "new_serialized_sha256": "af6e980d77d52caa100737387af5a17b1ab273fae44ee454b648646bb893ef3c",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "d043e8e625828a6856924a64af1e2e88da97ff5708364954b29e9f0fdea29fd2",
+          "new_serialized_sha256": "bf79d88ed284d88998e178fc36fabee490320610bfc9320d218afbfa200e96b3",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "dad14b67ba192de2107648bc422550377b196c5d461ff78b388684dfb68aa5b9",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000593",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "232-2.6-functor-printed\t2026-11-19 02:33:41 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement id 232-2.6-universal\tThe inference to every test scheme T silently requires the hypotheses of 2.2 for X_T to T. The counterexample in event 232-2.3-printed has a global section and f_*O_X=O_S, but at its closed real fibre the nonzero class Pic(U)=Z/2 is killed by complex extension. Taking the original section cover S-prime=S would make the claimed functor description identify that quotient with its associated fpqc Picard group, which is impossible.\t232, p. 148, sentence beginning et de même pour le foncteur\r\n",
+      "new_bytes_utf8": "232-2.6-functor-printed\t2026-11-19 02:33:41 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement's id\tThe inference to every test scheme T silently requires the hypotheses of 2.2 for X_T to T. The counterexample in event 232-2.3-printed has a global section and f_*O_X=O_S, but at its closed real fibre the nonzero class Pic(U)=Z/2 is killed by complex extension. Taking the original section cover S-prime=S would make the claimed functor description identify that quotient with its associated fpqc Picard group, which is impossible.\t232, p. 148, sentence beginning et de même pour le foncteur | Original how (verbatim): refuted, with the refined statement id 232-2.6-universal\r\n",
+      "old_bytes_sha256": "0e4955ca4dfb7ee5fb8aaa6c87bb1f9fa650b6d3e64352d5fc3a94aad359dda7",
+      "new_bytes_sha256": "fc0f9c5b164285a673a8f7f9670c695aa1544658c0761c3350043ab2b352dfa2",
+      "old_byte_count": 639,
+      "new_byte_count": 707,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "fc0f9c5b164285a673a8f7f9670c695aa1544658c0761c3350043ab2b352dfa2",
+      "replacement_fields_sha256": "f428458e28f1efd6900d3841ee8a19267afa7aba0116a34d822f9850fe78745a"
+    },
+    {
+      "operation_id": "EVENT_E000746_H01",
+      "operation": "replace_full_record",
+      "target": {
+        "relative_file": "CHECK_EVENTS.tsv",
+        "current_row_id": "E000746",
+        "data_row": 746,
+        "byte_start": 468939,
+        "byte_end_exclusive": 469716,
+        "record_byte_start": 468939,
+        "record_byte_end_exclusive": 469716,
+        "record_relative_byte_start": 0,
+        "record_relative_byte_end_exclusive": 777,
+        "physical_line_start": 747,
+        "physical_line_end": 747,
+        "target_full_record_sha256": "a65449580be1a167c8fcb5d7561adae2926827b3af4606072e579e3b9dc1bdf3",
+        "target_fields_sha256": "fa99c1515d58bbf601df1b496ee30d1a04875e01ab177b77ce9a8f5fe9e35d36",
+        "input_file_sha256": "544e164bb13963928f8badc7f37f6f7b49d2c858168c6f425d5e5d133a3bec2e",
+        "occurrence_selection": {
+          "basis": "exact parsed full-record bytes, including record terminator",
+          "ordinal_1_based": 1,
+          "expected_total_occurrences": 1,
+          "matching_current_data_rows": [
+            746
+          ]
+        }
+      },
+      "lexical_rule_id": "H01",
+      "review_classification": "mechanical_spelling_candidate",
+      "conditional": false,
+      "condition": "Review the mechanical spelling candidate before selecting it.",
+      "changed_columns": [
+        "how",
+        "where"
+      ],
+      "changed_column_proof": [
+        {
+          "column": "id",
+          "old_serialized_sha256": "24d4bd8e75387780c457a53878f1f46ab33cf91c47b464532937f7d6fc0c1a11",
+          "new_serialized_sha256": "24d4bd8e75387780c457a53878f1f46ab33cf91c47b464532937f7d6fc0c1a11",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "date_utc",
+          "old_serialized_sha256": "357afe8476d2569ca4892488715c8bfa14d417d07b6a6e3a09448319f6668b2d",
+          "new_serialized_sha256": "357afe8476d2569ca4892488715c8bfa14d417d07b6a6e3a09448319f6668b2d",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "who",
+          "old_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "new_serialized_sha256": "87fe849468fb2de092eec0e90897174268e63534bc7ae209c0205d044a109c42",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "how",
+          "old_serialized_sha256": "6dfbe7276813f379514a372a460585e9c6dafeb6d3eba9051918183f0f5814ac",
+          "new_serialized_sha256": "3da806e4df34119f3c765d7588b8359ec3fe137760fe88b920efd49b5fe6d8a7",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        },
+        {
+          "column": "result",
+          "old_serialized_sha256": "b1f0a6ec4ce4b097017b15bdf910e18cdbaf83bbe8f9d703463c9896f481e64e",
+          "new_serialized_sha256": "b1f0a6ec4ce4b097017b15bdf910e18cdbaf83bbe8f9d703463c9896f481e64e",
+          "serialized_bytes_unchanged": true,
+          "decoded_bytes_unchanged": true
+        },
+        {
+          "column": "where",
+          "old_serialized_sha256": "45d21421f9a45e43ac80cd3ab683b234ba3a5ac0936ae2b286f4999f23a90764",
+          "new_serialized_sha256": "6caa82603e239c63326f12e037bdd954850ff75414551b83aa6a100c47fe8012",
+          "serialized_bytes_unchanged": false,
+          "decoded_bytes_unchanged": false
+        }
+      ],
+      "all_other_fields_preserved_byte_for_byte": true,
+      "original_where_value_is_exact_new_where_prefix": true,
+      "original_how_preservation": {
+        "destination": "where",
+        "append_prefix": " | Original how (verbatim): ",
+        "original_how_sha256": "6dfbe7276813f379514a372a460585e9c6dafeb6d3eba9051918183f0f5814ac",
+        "old_how_verbatim_retained": true
+      },
+      "substantive_check_or_proof_asserted_by_proposal": false,
+      "provenance": {
+        "prior_report": "HOW_MAPPING_CANDIDATES.tsv",
+        "prior_row_id": "E000746",
+        "prior_hash_match": true,
+        "original_checkpoint_exact_row_ids": []
+      },
+      "old_bytes_utf8": "e195-relative-cotangent-inseparable\t2026-11-19 04:29:13 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with refined statement e195-relative-cotangent-separable\tThe quotient prescription does not by itself give the general relative tangent space for inseparable residue extensions. Rechecked the earlier counterexample Lambda=F_p(s), O=K=Lambda(u), u^p=s: m=n=0 but the Lambda-derivation d(u)=1 gives a nonzero tangent vector. Thus the conormal-quotient formula needs the separable-residue setting, or replacement by the relative differentials formulation. The author separately flags inseparability for simplicity; the historical erratum wording is preserved, and this limitation is recorded for the notes.\tErratum 195, p. 300, Page 8, quotient and separability clauses\r\n",
+      "new_bytes_utf8": "e195-relative-cotangent-inseparable\t2026-11-19 04:29:13 UTC\tGPT-6 Astra, ChatGPT Pro mode, this run\trefuted, with the refined statement's id\tThe quotient prescription does not by itself give the general relative tangent space for inseparable residue extensions. Rechecked the earlier counterexample Lambda=F_p(s), O=K=Lambda(u), u^p=s: m=n=0 but the Lambda-derivation d(u)=1 gives a nonzero tangent vector. Thus the conormal-quotient formula needs the separable-residue setting, or replacement by the relative differentials formulation. The author separately flags inseparability for simplicity; the historical erratum wording is preserved, and this limitation is recorded for the notes.\tErratum 195, p. 300, Page 8, quotient and separability clauses | Original how (verbatim): refuted, with refined statement e195-relative-cotangent-separable\r\n",
+      "old_bytes_sha256": "a65449580be1a167c8fcb5d7561adae2926827b3af4606072e579e3b9dc1bdf3",
+      "new_bytes_sha256": "fe969088a46d7c88a9e32a53318c9f629d7a726943ea1476a452739c5bf12624",
+      "old_byte_count": 777,
+      "new_byte_count": 845,
+      "utf8_round_trip": true,
+      "applied": false,
+      "selected": false,
+      "replacement_full_record_sha256": "fe969088a46d7c88a9e32a53318c9f629d7a726943ea1476a452739c5bf12624",
+      "replacement_fields_sha256": "6a803b15cba5cd306ea27a942d30f9bcd940274ba0b4a5aae9edf02fae416dad"
+    }
+  ]
+}

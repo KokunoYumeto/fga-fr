@@ -1,0 +1,1463 @@
+\unit{Exposé 190 -- Technique de descente I}
+\sid{190}
+\src{299}
+\seminar{12e année, 1959/60, n\textsuperscript{o} 190\\\hfill Décembre 1959}
+\paperhead{TECHNIQUE DE DESCENTE ET THÉORÈMES D'EXISTENCE EN GÉOMÉTRIE ALGÉBRIQUE\\
+I. GÉNÉRALITÉS. DESCENTE PAR MORPHISMES FIDÈLEMENT PLATS}%
+  {par Alexander GROTHENDIECK}
+
+D'un point de vue technique, le présent exposé, et ceux qui lui feront suite,
+peuvent être considérés comme des variations sur le célèbre \fquote{théorème 90} de
+Hilbert. L'introduction de la méthode de descente en géométrie algébrique semble
+due à A. WEIL, sous le nom de \fquote{descente du corps de base}. WEIL se restreint
+d'ailleurs au cas d'extensions finies séparables de corps. Le cas d'extensions
+radicielles de hauteur 1 a été ensuite traité par P. CARTIER. Faute du langage
+des schémas, et plus particulièrement faute d'éléments nilpotents dans les
+anneaux qu'on se permettait de considérer, l'identité essentielle entre ces
+deux cas n'avait pu être formulée par CARTIER.
+
+A l'heure actuelle, il semble que la technique générale de descente qui sera
+exposée (jointe le cas échéant aux théorèmes fondamentaux de la \fquote{géométrie
+formelle}, cf. [3]) est à la base de la plupart des théorèmes d'existence en
+géométrie algébrique. Il convient de noter d'ailleurs que la dite
+technique peut certainement se transposer en \fquote{géométrie analytique}, et on
+peut espérer que dans un proche avenir, les spécialistes sauront démontrer les
+analogues \fquote{analytiques} des théorèmes d'existence en géométrie formelle qui
+seront donnés dans l'exposé II. En tout cas, les récents travaux de
+KODAIRA-SPENCER, dont les méthodes semblent inaptes à la définition et l'étude
+de \fquote{variétés de modules} au voisinage de leurs points singuliers, montrent
+assez clairement la nécessité de méthodes plus proches de la théorie des
+schémas (que devront compléter bien entendu les techniques transcendantes).
+
+Dans le présent exposé I, nous traiterons le cas de descente le plus élémentaire
+(indiqué dans le titre). Les applications des théorèmes 1, 2, 3 ci-dessous, sont
+cependant déjà fort nombreuses. Nous nous sommes bornés à en donner quelques-unes
+à titre d'exemple, sans essayer de leur donner ici le maximum de généralité
+possible.
+
+Nous utiliserons librement le langage des schémas, pour lequel nous renvoyons à
+l'exposé déjà cité, ainsi qu'à [2]. Notons cependant expressément que les
+pré-schémas envisagés dans le présent exposé ne sont pas nécessairement
+noethériens, et les
+
+\src{300}
+morphismes ne sont pas nécessairement de type fini. Ainsi, si $\symup{A}$ est un anneau
+local noethérien, de complété $\symup{\overline A}$, on aura à considérer l'anneau non
+noethérien $\symup{\overline{\overline A}\otimes_A\overline A}$, et les morphismes de schémas affines
+correspondants aux inclusions entre les anneaux envisagés.
+
+\section*{\normalfont A. \uline{Préliminaires sur les catégories}.}
+
+\subsection*{\normalfont 1. \uline{Catégories fibrées}, \uline{données de descente}, \uline{morphismes de} $\symup{\mathcal F}$-\uline{descente}.}
+\addcontentsline{toc}{subsection}{1. Catégories fibrées et données de descente}
+
+\result{a. DÉFINITION}{1.1} Une \uline{catégorie fibrée} $\symup{\mathcal F}$ de base
+$\symup{\text{\uwave{C}}}$ est formée d'une catégorie $\symup{\text{\uwave{C}}}$, pour tout
+$\symup{X\in\text{\uwave{C}}}$ d'une catégorie $\symup{\mathcal F_X}$, pour tout
+$\symup{\text{\uwave{C}}}$-morphisme $\symup{f:X\longrightarrow Y}$ d'un foncteur
+$\symup{f^*:\mathcal F_Y\longrightarrow\mathcal F_X}$, noté aussi
+\[
+  \symup{f^*(\xi)=\xi\times_Y X}
+\]
+pour $\symup{\xi\in\mathcal F_Y}$ ($\symup{X}$ étant considéré comme un \fquote{objet de $\symup{\text{\uwave{C}}}$ au-dessus de $\symup{Y}$}, i. e. comme muni du morphisme $\symup{f}$), et enfin pour deux morphismes composables
+$\symup{X\xrightarrow{f}Y\xrightarrow{g}Z}$, d'un isomorphisme de foncteurs
+\[
+  \symup{c_{f,g}:(gf)^*\longrightarrow f^*g^*}
+\]
+ces données étant assujetties aux conditions suivantes :
+
+\begin{enumerate}
+\item[\textnormal{(i)}] $\symup{\operatorname{id}^*=\operatorname{id}}$
+\item[\textnormal{(ii)}] $\symup{c_{f,g}}$ est l'isomorphisme identique si $\symup{f}$ ou $\symup{g}$ est un
+isomorphisme identique
+\item[\textnormal{(iii)}] Etant donnés trois morphismes composables
+$\symup{X\xrightarrow{f}Y\xrightarrow{g}Z\xrightarrow{h}T}$, on a commutativité dans
+le diagramme suivant d'isomorphismes formé au moyen des isomorphismes de la
+forme $\symup{c_{u,v}}$ :
+\[
+\begin{array}{ccc}
+  \symup{(h(gf))^*=((hg)f)^*} & \longrightarrow & \symup{f^*(hg)^*} \\
+  \big\downarrow && \big\downarrow \\
+  \symup{(gf)^*h^*} & \longrightarrow & \symup{(f^*g^*)h^*=f^*(g^*h^*)}
+\end{array}
+\]
+\end{enumerate}
+
+\result{EXEMPLE}{1} Soit $\symup{\text{\uwave{C}}}$ une catégorie où les produits fibrés
+existent, on définit alors une catégorie fibrée $\symup{\mathcal F}$ de base
+$\symup{\text{\uwave{C}}}$ en posant $\symup{\mathcal F_X=}$ catégorie des objets de $\symup{\text{\uwave{C}}}$
+au-dessus de $\symup{X}$, le foncteur
+$\symup{f^*:\mathcal F_Y\longrightarrow\mathcal F_X}$ correspondant à un morphisme
+$\symup{f:X\longrightarrow Y}$ étant défini par le \uline{produit fibré}
+$\symup{Z\rightsquigarrow Z\times_YX}$.
+
+\result{EXEMPLE}{2} Soit $\symup{\text{\uwave{C}}}$ la catégorie des pré-schémas, et pour
+$\symup{X\in\text{\uwave{C}}}$, soit $\symup{\mathcal F_X}$ la catégorie des faisceaux
+quasi-cohérents de modules sur $\symup{X}$. Si $\symup{f:X\longrightarrow Y}$ est un morphisme
+de pré-schémas, $\symup{f^*:\mathcal F_Y\longrightarrow\mathcal F_X}$ est le foncteur
+\uline{image inverse}
+
+\src{301}
+\uline{de faisceaux de modules}. On obtient ainsi une catégorie fibrée de base
+$\symup{\text{\uwave{C}}}$.
+
+\result{b. DÉFINITION}{1.2} Un diagramme
+\[
+  \symup{E\xrightarrow{u}E'
+  \overset{v_1}{\underset{v_2}{\rightrightarrows}}E''}
+\]
+d'applications d'ensembles est dit \uline{exact} si $\symup{u}$ est une bijection de
+$\symup{E}$ sur la partie de $\symup{E'}$ formée des $\symup{x'\in E'}$ tels que
+$\symup{v_1(x')=v_2(x')}$.
+
+\result{DÉFINITION}{1.3} Soit $\symup{\mathcal F}$ une catégorie fibrée de base
+$\symup{\text{\uwave{C}}}$, considérons un diagramme
+\[
+  \symup{\tag{+}
+  S\xleftarrow{\alpha}S'
+  \overset{\beta_1}{\underset{\beta_2}{\leftleftarrows}}S''}
+\]
+de morphismes dans $\symup{\text{\uwave{C}}}$ tels que
+$\symup{\alpha\beta_1=\alpha\beta_2}$ ; ce diagramme est dit
+$\symup{\mathcal F}$-\uline{exact} si pour tout couple $\symup{\xi,\eta}$ d'éléments de
+$\symup{\mathcal F_S}$, le diagramme suivant d'applications d'ensembles
+\[
+  \symup{\tag{+}
+  \operatorname{Hom}(\xi,\eta)
+  \xrightarrow{\alpha^*}
+  \operatorname{Hom}(\alpha^*(\xi),\alpha^*(\eta))
+  \overset{\beta_1^*}{\underset{\beta_2^*}{\rightrightarrows}}
+  \operatorname{Hom}(\gamma^*(\xi),\gamma^*(\eta))}
+\]
+(ou $\symup{\gamma=\alpha\beta_1=\alpha\beta_2}$) est exact.
+
+Dans ce dernier
+diagramme, nous avons identifié $\symup{\beta_i^*\alpha^*}$ à
+$\symup{(\alpha\beta_1)^*=\gamma^*}$ grâce à $\symup{c_{\beta_i,\alpha}}$, pour simplifier.
+
+\result{DÉFINITION}{1.4} Soit $\symup{\mathcal F}$ une catégorie fibrée de base
+$\symup{\text{\uwave{C}}}$, considérons deux morphismes $\symup{\beta_1,\beta_2:S''\longrightarrow S'}$ dans $\symup{\text{\uwave{C}}}$. Soit
+$\symup{\xi'\in\mathcal F_{S'}}$. On appelle \uline{donnée de recollement} sur $\symup{\xi'}$
+(relativement au couple $\symup{(\beta_1,\beta_2)}$), un isomorphisme de
+$\symup{\beta_1^*(\xi')}$ sur $\symup{\beta_2^*(\xi')}$. Si $\symup{\xi',\eta'\in\mathcal F_{S'}}$
+sont munis chacun d'une donnée de recollement, un morphisme
+$\symup{u:\xi'\longrightarrow\eta'}$ dans $\symup{\mathcal F_{S'}}$ est dit
+\uline{compatible avec les données de recollement} si on a commutativité dans
+le diagramme suivant :
+\[
+\begin{array}{ccc}
+  \symup{\beta_1^*(\xi')} & \longrightarrow & \symup{\beta_2^*(\xi')} \\
+  \big\downarrow && \big\downarrow \\
+  \symup{\beta_1^*(\eta')} & \longrightarrow & \symup{\beta_2^*(\eta')}
+\end{array}
+\]
+De cette façon, les objets de $\symup{\mathcal F_{S'}}$ munis d'une donnée de
+recollement (relativement à $\symup{\beta_1,\beta_2}$) forment alors une \uline{catégorie}. Si
+$\symup{\alpha:S'\longrightarrow S}$ est un morphisme tel que
+$\symup{\alpha\beta_1=\alpha\beta_2}$, alors pour tout $\symup{\xi\in\mathcal F_{S'}}$, l'objet
+$\symup{\xi'=\alpha^*(\xi)}$
+
+\src{302}
+de $\symup{\mathcal F_{S'}}$ est muni d'une donnée de recollement canonique, puisque
+\[
+  \symup{\beta_i^*\alpha^*(\xi)\simeq(\alpha\beta_i)^*(\xi)=\gamma^*(\xi),}
+\]
+en posant encore $\symup{\gamma=\alpha\beta_1=\alpha\beta_2}$ ; de plus, si
+$\symup{u:\xi\longrightarrow\eta}$ est un morphisme dans $\symup{\mathcal F_S}$, alors
+\[
+  \symup{\alpha^*(u):\alpha^*(\xi)\longrightarrow\alpha^*(\eta)}
+\]
+est un morphisme dans $\symup{\mathcal F_{S'}}$ compatible avec les données de
+recollement canoniques. On obtient ainsi un \uline{foncteur canonique} de la catégorie
+$\symup{\mathcal F_S}$ dans la catégorie des objets de $\symup{\mathcal F_{S'}}$ munis d'une
+donnée de recollement relativement au couple $\symup{(\beta_1,\beta_2)}$. Ceci dit, on
+peut aussi exprimer la définition 3 en disant que le diagramme (+) de ladite est dit $\symup{\mathcal F}$-exact si le foncteur précédent est \fquote{pleinement fidèle}, i. e. définit une équivalence de la catégorie $\symup{\mathcal F_S}$ avec une
+sous-catégorie de la catégorie des objets de $\symup{\mathcal F_{S'}}$ munis d'une
+donnée de recollement relativement à $\symup{(\beta_1,\beta_2)}$.
+
+\result{DÉFINITION}{1.5} On dit qu'une donnée de recollement sur
+$\symup{\xi'\in\mathcal F_{S'}}$ est \uline{effective} (relativement à $\symup{\alpha}$) si
+$\symup{\xi'}$ muni de cette donnée est isomorphe à un $\symup{\alpha^*(\xi)}$, avec
+$\symup{\xi\in\mathcal F_S}$.
+
+Dans le cas où le diagramme (+) est $\symup{\mathcal F}$-exact, l'objet $\symup{\xi}$ de la
+définition précédente est donc déterminé à un isomorphisme unique près, et \uline{la catégorie} $\symup{\mathcal F_S}$ \uline{est équivalente à la catégorie des objets de}
+$\symup{\mathcal F_{S'}}$ \uline{munis d'une donnée de recollement effective}.
+
+\medskip\noindent
+c. Le cas le plus important est celui où
+\[
+  \symup{S''=S'\times_S S'}
+\]
+les $\symup{\beta_i}$ étant les deux projections $\symup{p_1}$ et $\symup{p_2}$ de
+$\symup{S'\times_S S'}$ sur ces deux facteurs (on suppose maintenant que dans
+$\symup{\text{\uwave{C}}}$, les produits fibrés existent). On a alors deux conditions
+nécessaires immédiates pour qu'une donnée de recollement
+$\symup{\varphi:p_1^*(\xi')\longrightarrow p_2^*(\xi')}$ sur un
+$\symup{\xi'\in\mathcal F_{S'}}$ soit effective.
+
+On a
+\[
+  \symup{\tag{i}
+  \Delta^*(\varphi)=\operatorname{id}_{\xi'}}
+\]
+où $\symup{\Delta:S'\longrightarrow S'\times_S S'}$ désigne le morphisme diagonal, et
+où on a identifié $\symup{\Delta^*p_i^*(\xi')}$ à
+$\symup{(p_i\Delta)^*(\xi')=\xi'}$.
+
+On a
+\[
+  \symup{\tag{ii}
+  p_{31}^*(\varphi)=p_{32}^*(\varphi)\,p_{21}^*(\varphi)}
+\]
+
+\src{303}
+où $\symup{p_{ij}}$ désigne la projection canonique de
+$\symup{S'\times_S S'\times_S S'}$ sur le produit partiel de son $\symup{i}$-ième et
+$\symup{j}$-ième facteur.
+
+\result{DÉFINITION}{1.6} On appelle \uline{donnée de descente} sur
+$\symup{\xi'\in\mathcal F_{S'}}$, relativement au morphisme
+$\symup{\alpha:S'\longrightarrow S}$, une donnée de recollement sur $\symup{\xi'}$
+relativement au couple $\symup{(p_1,p_2)}$ des projections canoniques
+$\symup{S'\times_S S'\longrightarrow S'}$, satisfaisant aux conditions (i) et (ii)
+ci-dessus.
+
+\result{DÉFINITION}{1.7} Un morphisme $\symup{\alpha:S'\longrightarrow S}$ est appelé
+un \uline{morphisme de} $\symup{\mathcal F}$-\uline{descente} si le diagramme de morphismes
+\[
+  \symup{S\xleftarrow{\alpha}S'
+  \overset{p_1}{\underset{p_2}{\leftleftarrows}}S'\times_S S'}
+\]
+est $\symup{\mathcal F}$-exact (définition 1.3.) ; on dit que $\symup{\alpha}$ est un
+\uline{morphisme de} $\symup{\mathcal F}$-\uline{descente strict} si de plus toute donnée de
+descente (définition 1.6.) sur un objet de $\symup{\mathcal F_{S'}}$ est effective.
+
+Cette dernière condition peut aussi de façon plus imagée s'énoncer ainsi :
+\fquote{\uline{Il revient au même}} \uline{de se donner un objet de} $\symup{\mathcal F_S}$, \uline{ou un objet de}
+$\symup{\mathcal F_{S'}}$ \uline{muni d'une donnée de descente}.
+
+Notons que si un morphisme de $\symup{\mathcal F}$-descente $\symup{\alpha:S'\longrightarrow S}$ admet une \fquote{\uline{section}}
+$\symup{s:S\longrightarrow S'}$ (i. e. un morphisme $\symup{s}$ tel que
+$\symup{\alpha s=\operatorname{id}_S}$) alors c'est un morphisme de
+$\symup{\mathcal F}$-descente strict : si $\symup{\xi'\in\mathcal F_{S'}}$ est muni d'une donnée de
+descente relativement à $\symup{\alpha}$, \fquote{il provient} en effet de
+$\symup{\xi=s^*(\xi')}$.
+
+\medskip\noindent
+d. On peut présenter de façon plus intuitive les notions précédentes, en
+introduisant, pour un objet-paramètre $\symup{T}$ de $\symup{\text{\uwave{C}}}$ au-dessus de $\symup{S}$,
+l'ensemble
+\[
+  \symup{\operatorname{Hom}_S(T,S')=S'(T),}
+\]
+dont les éléments seront désignés par $\symup{t,t'}$, etc. Un objet
+$\symup{\xi'\in\mathcal F_{S'}}$ étant donné, à tout $\symup{t\in S'(T)}$ correspond alors un
+objet $\symup{t^*(\xi')}$ de $\symup{\mathcal F_T}$, qui sera aussi noté $\symup{\xi'_t}$. Une donnée de
+recollement sur $\symup{\xi'}$ (relativement à $\symup{p_1,p_2}$) est alors définie par la
+donnée, pour tout $\symup{T}$ sur $\symup{S}$, et tout couple de points
+$\symup{t,t'\in S'(T)}$, d'un isomorphisme
+\[
+  \symup{\varphi_{t',t}:\xi'_t\longrightarrow\xi'_{t'}}
+\]
+(satisfaisant des conditions évidentes de fonctorialité, pour $\symup{T}$ variable).
+Les conditions (i) et (ii) de 1.(c) s'écrivent alors
+\[
+  \tag{i bis}
+  \varphi_{t,t}=\operatorname{id}_{\xi'_t}
+  \qquad\text{pour tout $\symup{T}$ et tout $\symup{t\in S'(T)}$}
+\]
+
+\src{304}
+\[
+  \tag{ii bis}
+  \varphi_{t,t''}=\varphi_{t,t'}\varphi_{t',t''},
+  \qquad\text{pour tout $\symup{T}$ et $\symup{t,t',t''\in S'(T)}$}
+\]
+On voit d'ailleurs que (ii bis), en faisant $\symup{t=t'=t''}$, implique
+$\symup{\varphi_{t,t}^2=\varphi_{t,t}}$ d'où, puisque $\symup{\varphi_{t,t}}$ est un
+isomorphisme par hypothèse, la relation (i bis), qui est donc en fait une
+conséquence de (i bis) (donc (i) est une conséquence de (ii)). Mais si on ne
+suppose plus a priori les $\symup{\varphi_{t,t'}}$ des isomorphismes (i. e. que
+$\symup{\varphi:p_1^*(\xi')\longrightarrow p_2^*(\xi')}$ est un isomorphisme), alors
+(ii bis) n'implique plus nécessairement (i bis) ; la conjonction de (ii bis) et
+(i bis) implique cependant que les $\symup{\varphi_{t,t'}}$ sont des isomorphismes (car
+on aura
+$\symup{\varphi_{t,t'}\varphi_{t',t}=\varphi_{t,t}=\operatorname{id}_{\xi'_t}}$).
+
+\subsection*{\normalfont 2. \uline{Diagrammes exacts et épimorphismes stricts}, \uline{morphismes de descente}. \uline{Exemples}.}
+\addcontentsline{toc}{subsection}{2. Diagrammes exacts et épimorphismes stricts}
+
+\result{a. DÉFINITION}{2.1} Soit $\symup{\text{\uwave{C}}}$ une catégorie. Un diagramme
+\[
+  \symup{T\xrightarrow{\alpha}T'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}T''}
+\]
+de morphismes dans $\symup{\text{\uwave{C}}}$ est dit \uline{exact}, si pour tout
+$\symup{Z\in\text{\uwave{C}}}$, le diagramme correspondant d'applications ensemblistes
+\[
+  \symup{\operatorname{Hom}(Z,T)\longrightarrow
+  \operatorname{Hom}(Z,T')
+  \rightrightarrows\operatorname{Hom}(Z,T'')}
+\]
+est exact (définition 1.2.). On dit alors que $\symup{(T,\alpha)}$ (ou par abus de
+langage, que $\symup{T}$) est un \uline{noyau} du couple de morphismes
+$\symup{(\beta_1,\beta_2)}$.
+
+Ce noyau est évidemment déterminé à isomorphisme unique près. Si $\symup{\text{\uwave{C}}}$
+est la catégorie des ensembles, la définition précédente est compatible avec
+la définition 1.2. On définit de façon duale l'exactitude d'un diagramme
+\[
+  \symup{S\xleftarrow{\alpha}S'
+  \overset{\beta_1}{\underset{\beta_2}{\leftleftarrows}}S''}
+\]
+de morphismes dans $\symup{\text{\uwave{C}}}$ ; on dit alors que $\symup{(S,\alpha)}$ est un
+\uline{conoyau} du couple de morphismes $\symup{(\beta_1,\beta_2)}$.
+
+\result{DÉFINITION}{2.2} Un morphisme $\symup{\alpha:S'\longrightarrow S}$ est appelé
+un \uline{épimorphisme strict}, si c'est un épimorphisme, et si pour tout
+morphisme $\symup{u:S'\longrightarrow Z}$, la condition nécessaire suivante est aussi
+suffisante pour que $\symup{u}$ se factorise en $\symup{S'\longrightarrow S\longrightarrow Z}$ :
+pour tout $\symup{S''\in\text{\uwave{C}}}$ et tout couple de morphismes
+$\symup{\beta_1,\beta_2:S''\longrightarrow S'}$ tel que
+$\symup{\alpha\beta_1=\alpha\beta_2}$, on a aussi $\symup{u\beta_1=u\beta_2}$.
+
+Si le produit fibré $\symup{S'\times_S S'}$ existe, il revient au même de dire que le
+diagramme
+\[
+  \symup{S\xleftarrow{\alpha}S'
+  \overset{p_1}{\underset{p_2}{\leftleftarrows}}S'\times_S S'}
+\]
+
+\src{305}
+est exact, i. e. que $\symup{S}$ est un conoyau du couple $\symup{(p_1,p_2)}$. En tous cas, un
+morphisme conoyau est un épimorphisme strict. Notons aussi qu'un épimorphisme
+strict qui est un monomorphisme est un isomorphisme. Nous laissons au lecteur
+de développer la notion duale de \uline{monomorphisme strict}.
+
+Pour préciser les relations entre la notion de morphisme de
+$\symup{\mathcal F}$-descente, et la notion d'épimorphisme strict, nous introduisons
+encore les définitions suivantes :
+
+\result{DÉFINITION}{2.3} Un morphisme $\symup{\alpha:S'\longrightarrow S}$ est appelé
+un \uline{épimorphisme universel} (resp. un \uline{épimorphisme strict universel})
+si pour tout $\symup{T}$ sur $\symup{S}$, le produit fibré $\symup{T'=S'\times_ST}$ existe, et la
+projection $\symup{T'\longrightarrow T}$ est un épimorphisme (resp. un épimorphisme
+strict).
+
+Dans les très bonnes catégories (telles la catégorie des ensembles, la
+catégorie des faisceaux d'ensembles sur un espace topologique, les catégories
+abéliennes, etc.) les 4 notions d'épijectivité ainsi introduites
+coïncident ; elles sont au contraire toutes distinctes dans une catégorie telle
+que la catégorie des pré-schémas, où la catégorie des pré-schémas au-dessus d'un
+pré-schéma non vide donné $\symup{S}$, même si on se borne à des $\symup{S}$-schémas finis sur
+$\symup{S}$.
+
+\result{DÉFINITION}{2.4} Un morphisme $\symup{\alpha:S'\longrightarrow S}$ est appelé
+\uline{morphisme de descente} (resp. un \uline{morphisme de descente strict}) si
+c'est un morphisme de $\symup{\mathcal F}$-descente (resp. un morphisme de
+$\symup{\mathcal F}$-descente strict) (cf. définition 1.7.), où $\symup{\mathcal F}$ désigne la
+catégorie fibrée de base $\symup{\text{\uwave{C}}}$ des objets de $\symup{\text{\uwave{C}}}$ sur des objets
+de $\symup{\text{\uwave{C}}}$ (n\textsuperscript{o} 1, exemple 1).
+
+\result{PROPOSITION}{2.1} Si dans $\symup{\text{\uwave{C}}}$ les produits finis et les
+produits fibrés (finis) existent, alors il y a identité dans $\symup{\text{\uwave{C}}}$ entre
+morphismes de descente, et épimorphismes stricts universels.
+
+\result{b. EXEMPLES}{} Soit $\symup{\text{\uwave{C}}}$ la catégorie des pré-schémas. Soit
+$\symup{S\in\text{\uwave{C}}}$, soient $\symup{S'}$ et $\symup{S''}$ deux pré-schémas \uline{finis} sur $\symup{S}$, i. e.
+correspondant à des faisceaux d'algèbres $\symup{\text{\uwave{A}}'}$, $\symup{\text{\uwave{A}}''}$ sur $\symup{S}$
+qui en tant que faisceaux de modules sont quasi-cohérents et de type fini
+(i. e. cohérents si $\symup{S}$ est localement noethérien). Soit
+$\symup{\alpha:S'\longrightarrow S}$ le morphisme structural de $\symup{S'}$, et soient
+$\symup{\beta_1,\beta_2}$ deux $\symup{S}$-morphismes de $\symup{S''}$ dans $\symup{S'}$, définis par des
+homomorphismes d'algèbres $\symup{\text{\uwave{A}}'\longrightarrow\text{\uwave{A}}''}$ désignés
+encore par $\symup{\beta_1,\beta_2}$. Utilisant le fait qu'un morphisme fini est fermé
+(premier théorème de Cohen-Seidenberg) on prouve facilement que le diagramme
+\[
+  \symup{\tag{+}
+  S\xleftarrow{\alpha}S'
+  \overset{\beta_1}{\underset{\beta_2}{\leftleftarrows}}S''}
+\]
+dans $\symup{\text{\uwave{C}}}$ est exact si et seulement si le diagramme de faisceaux
+
+\src{306}
+\[
+  \symup{\text{\uwave{O}}_S=\text{\uwave{A}}\xrightarrow{\alpha}\text{\uwave{A}}'
+  \overset{\beta_1}{\underset{\beta_2}{\rightrightarrows}}\text{\uwave{A}}''}
+\]
+sur $\symup{S}$ est exact. En particulier, si $\symup{\alpha:S'\longrightarrow S}$ est un
+morphisme fini correspondant à un faisceau $\symup{\text{\uwave{A}}'}$ d'algèbres sur $\symup{S}$,
+alors $\symup{\alpha}$ est un épimorphisme strict si et seulement si le diagramme de
+faisceaux
+\[
+  \symup{\text{\uwave{O}}_S=\text{\uwave{A}}\longrightarrow\text{\uwave{A}}'
+  \overset{p_1}{\underset{p_2}{\rightrightarrows}}
+  \text{\uwave{A}}'\otimes_{\text{\uwave{A}}}\text{\uwave{A}}'}
+\]
+est exact (c'est un épimorphisme si et seulement si
+$\symup{\text{\uwave{A}}\longrightarrow\text{\uwave{A}}'}$ est injectif). Si $\symup{S}$ est affine
+d'anneau $\symup{A}$, donc $\symup{S'}$ affine d'anneau $\symup{A'}$ fini sur $\symup{A}$, alors
+$\symup{S'\longrightarrow S}$ est un épimorphisme strict si et seulement si
+$\symup{A\longrightarrow A'}$ est un isomorphisme de $\symup{A}$ sur le sous-anneau de $\symup{A'}$
+formé des $\symup{x'\in A'}$ tels que
+\[
+  \symup{1_{A'}\otimes_Ax'-x'\otimes_A1_{A'}=0}
+\]
+(c'est un épimorphisme si et seulement si $\symup{A\longrightarrow A'}$ est injectif).
+Comme nous l'avons déjà signalé, même si $\symup{S}$ est le schéma d'un anneau local
+artinien, un morphisme fini $\symup{S'\longrightarrow S}$ qui est un épimorphisme n'est
+pas nécessairement un épimorphisme strict. Cependant, on peut prouver que \uline{si}
+$\symup{S}$ \uline{est un pré-schéma noethérien, tout morphisme fini} $\symup{S'\longrightarrow S}$ \uline{qui
+est un épimorphisme, est le composé d'une suite finie d'épimorphismes stricts}
+(également finis). Cela montre d'ailleurs que le composé de deux épimorphismes
+stricts n'est pas nécessairement un épimorphisme strict.
+
+\result[.]{c}{} Si $\symup{(+)}$ est un diagramme exact de morphismes finis, alors pour
+tout morphisme \uline{plat} $\symup{T\longrightarrow S}$ de pré-schémas, le diagramme transformé
+de $\symup{(+)}$ par le changement de base $\symup{T\longrightarrow S}$ est encore exact. Il en
+résulte que si $\symup{X,Y}$ sont deux $\symup{S}$-pré-schémas, $\symup{X}$ étant \uline{plat} sur $\symup{S}$, alors le
+diagramme d'applications ensemblistes suivant (où $\symup{X',Y'}$ sont les images
+réciproques de $\symup{X,Y}$ sur $\symup{S'}$, et $\symup{X'',Y''}$ leurs images réciproques sur $\symup{S''}$)
+\[
+  \symup{\operatorname{Hom}_S(X,Y)\longrightarrow
+  \operatorname{Hom}_{S'}(X',Y')
+  \rightrightarrows
+  \operatorname{Hom}_{S''}(X'',Y'')}
+\]
+est exact. En particulier, si $\symup{\mathcal F}$ désigne la catégorie fibrée de base
+la catégorie $\symup{\text{\uwave{C}}}$ des pré-schémas, telle que pour $\symup{X\in\text{\uwave{C}}}$,
+$\symup{\mathcal F_X}$ soit la catégorie des $\symup{X}$-pré-schémas \uline{plats}, alors le diagramme
+$\symup{(+)}$ est $\symup{\mathcal F}$-exact. (Ce résultat devient faux si on ne fait pas
+d'hypothèse de platitude, en particulier un épimorphisme strict fini n'est pas
+nécessairement un morphisme de descente). On voit de même que $\symup{(+)}$ est
+$\symup{\mathcal F}$-exact si $\symup{\mathcal F}$ désigne la catégorie fibrée pour laquelle
+$\symup{\mathcal F_X}$ est la catégorie des faisceaux quasi-cohérents et \uline{plats} sur le
+pré-schéma $\symup{X}$ (ici encore l'hypothèse
+
+\src{307}
+de platitude est essentielle). Dans l'un et l'autre cas, la question de
+l'\uline{effectivité} d'une donnée de recollement (et plus particulièrement, d'une
+donnée de descente, lorsque $\symup{S''=S'\times_SS'}$) sur un objet plat au-dessus de
+$\symup{S'}$, est délicate, (et sa réponse dans divers cas particuliers est un des objets
+principaux des présents exposés). Le conférencier ignore si, pour tout
+épimorphisme strict fini $\symup{S'\longrightarrow S}$, toute donnée de descente sur un
+faisceau quasi-cohérent plat sur $\symup{S'}$ est effective (même en supposant que $\symup{S}$
+est le spectre d'un anneau local artinien, et en se bornant aux faisceaux
+localement libres de rang 1). Plus généralement, soit $\symup{A}$ un anneau, $\symup{A'}$ une
+$\symup{A}$-algèbre (tout est commutatif) telle que le diagramme d'applications
+\[
+  \symup{A\longrightarrow A'\rightrightarrows A'\otimes_AA'}
+\]
+soit exact, ce qui équivaut aussi au fait que le morphisme
+$\symup{S'\longrightarrow S}$ correspondant pour les spectres de $\symup{A,A'}$ soit un
+morphisme de $\symup{\mathcal F}$-descente, où $\symup{\mathcal F}$ est la catégorie fibrée des
+faisceaux quasi-cohérents plats. Soit $\symup{M'}$ un $\symup{A'}$-module plat muni d'une donnée
+de descente à $\symup{A}$, i. e. d'un isomorphisme
+\[
+  \symup{\varphi:M'\otimes_AA'\xrightarrow{\sim}A'\otimes_AM'}
+\]
+de $\symup{A'\otimes_AA'}$-modules, satisfaisant les conditions (i) et (ii) de 1.(c) (que
+nous laissons au lecteur le soin d'expliciter en termes de modules). Cette
+donnée est-elle effective (relativement à la catégorie fibrée des faisceaux
+quasi-cohérents plats) ? Soit $\symup{M}$ le sous-ensemble de $\symup{M'}$ formé des $\symup{x'\in M'}$
+tels que
+\[
+  \symup{\varphi(x'\otimes_A1_{A'})=1_{A'}\otimes_Ax',}
+\]
+c'est un sous-$\symup{A}$-module de $\symup{M'}$. L'injection canonique
+$\symup{M\longrightarrow M'}$ définit un homomorphisme de $\symup{A'}$-modules
+$\symup{M\otimes_AA'\longrightarrow M'}$. \uline{L'effectivité de} $\symup{\varphi}$ \uline{signifie alors
+ceci} : $\symup{M}$ \uline{est un} $\symup{A}$\uline{-module plat, et l'homomorphisme précédent est un
+isomorphisme}.
+
+\result{REMARQUE}{} Dans les considérations précédentes, nous n'avions fait
+aucune hypothèse de platitude sur les morphismes du diagramme $\symup{(+)}$, ce qui nous
+obligeait, pour avoir une technique de descente, de faire des hypothèses de
+platitude sur les objets au-dessus de $\symup{S,S'}$ qu'on considère. Dans le paragraphe
+2, nous ferons une hypothèse de platitude sur $\symup{\alpha:S'\longrightarrow S}$, ce
+qui nous permettra d'avoir une technique de descente pour des objets au-dessus
+de $\symup{S,S'}$ qui ne sont plus soumis à aucune condition de platitude. Dans tous
+les cas, il y a une hypothèse de platitude qui intervient. C'est là une des
+principales raisons de l'importance de la notion de platitude en géométrie
+algébrique (dont le rôle ne pouvait apparaître tant qu'on se bornait à des
+\uline{corps} de base, sur lesquels n'importe quoi, en effet, est plat !).
+
+\src{308}
+\addcontentsline{toc}{subsection}{3. Application aux étalements}
+\result{3. \uline{Application aux étalements}}{} Soient $\symup{A}$ un anneau local, $\symup{B}$ une algèbre locale sur $\symup{A}$ dont l'idéal maximal
+induit celui de $\symup{A}$. Nous dirons que $\symup{B}$ est \uline{étalé} sur $\symup{A}$ (au lieu de
+\fquote{non ramifié}, utilisé par ailleurs) s'il satisfait les conditions suivantes :
+\begin{enumerate}
+\item[(i)] $\symup{B}$ est plat sur $\symup{A}$
+\item[(ii)] $\symup{B/\mathfrak mB}$ est une extension finie séparable de
+$\symup{A/\mathfrak m=k}$ (ou $\symup{\mathfrak m}$ désigne l'idéal maximal de $\symup{A}$).
+\end{enumerate}
+Lorsque $\symup{A}$ et $\symup{B}$ sont noethériens et $\symup{k}$ algébriquement clos, cela signifie
+que l'homomorphisme $\symup{\overline A\longrightarrow\overline B}$ sur les complétés qui
+prolonge $\symup{A\longrightarrow B}$ est un isomorphisme. Un morphisme de type fini
+$\symup{f:T\longrightarrow S}$ est dit \uline{étale en} $\symup{x\in T}$, ou encore $\symup{T}$ est dit
+\uline{étalé sur} $\symup{S}$ \uline{en} $\symup{x}$, si $\symup{\text{\uwave{O}}_x}$ est étalé sur
+$\symup{\text{\uwave{O}}_{f(x)}}$, et $\symup{f}$ est dit \uline{étale} ou encore $\symup{f}$ est appelé un
+\uline{étalement}, ou $\symup{T}$ est dit \uline{étalé sur} $\symup{S}$, si $\symup{f}$ est étale en tout
+$\symup{x\in T}$. Remarquons d'ailleurs que si $\symup{S}$ est localement noethérien,
+l'ensemble des points de $\symup{T}$ où $\symup{f}$ est étale est ouvert, et l'utilisation du
+\fquote{main theorem} de Zariski permet de préciser la structure de $\symup{T/S}$ au
+voisinage d'un tel point (par une équation de type bien connu).
+
+Lorsque $\symup{S}$ est un schéma de type fini sur le corps des complexes, il lui
+correspond un espace analytique $\symup{\overline S}$ au sens de SERRE [5], à cela près
+que $\symup{\overline S}$ peut avoir des éléments nilpotents dans son faisceau
+structural, ce qui ne change rien d'essentiel dans [5]. On voit alors facilement
+que $\symup{f}$ est un étalement si et seulement si
+$\symup{\overline f:\overline T\longrightarrow\overline S}$ l'est, i. e. si tout point
+de $\symup{\overline T}$ admet un voisinage sur lequel $\symup{\overline f}$ induit un
+isomorphisme sur un ouvert de $\symup{\overline S}$. En particulier, à tout
+\uline{revêtement étale} $\symup{T}$ de $\symup{S}$ (i. e. un morphisme fini étale
+$\symup{f:T\longrightarrow S}$) correspond un revêtement étale $\symup{\overline T}$ de
+$\symup{\overline S}$, qui est connexe si et seulement si $\symup{T}$ l'est [5]. On voit
+d'ailleurs facilement que si $\symup{T,T'}$ sont deux schémas étalés sur $\symup{S}$, alors
+l'application naturelle
+\[
+  \symup{\operatorname{Hom}_S(T,T')\longrightarrow
+  \operatorname{Hom}_{\overline S}(\overline T,\overline T')}
+\]
+est bijective, i. e. le foncteur $\symup{T\longrightarrow\overline T}$ de la catégorie des
+schémas étalés sur $\symup{S}$ dans la catégorie des espaces analytiques étalés sur
+$\symup{\overline S}$ est \fquote{pleinement fidèle}, donc définit une équivalence de la
+première catégorie avec une sous-catégorie de la seconde. Un théorème de
+GRAUERT-REMMERT [2] implique que si $\symup{S}$ est normal, on obtient ainsi une
+équivalence de la catégorie des \uline{revêtements étales} de $\symup{S}$ et de la
+catégorie des revêtements étales (\uline{finis}) de $\symup{S}$, i. e. que tout
+revêtement étale de $\symup{\overline S}$ est $\symup{\overline S}$-isomorphe à un
+$\symup{\overline T}$, où $\symup{T}$ est un revêtement étale de $\symup{S}$. Montrons que le
+\uline{théorème de Grauert-Remmert reste valable sans hypothèse de normalité sur}
+$\symup{S}$. Soit en effet d'abord $\symup{S'\longrightarrow S}$ un épimorphisme strict fini,
+supposons le
+
+\src{309}
+théorème démontré pour $\symup{S'}$, montrons qu'il sera vrai pour $\symup{S}$. En effet, soit
+$\symup{\mathfrak T}$ un revêtement étale de $\symup{\overline S}$, considérons son image
+réciproque $\symup{\mathfrak T'}$ sur $\symup{S'}$, qui correspond à un faisceau
+analytique cohérent $\symup{\mathcal A}$ d'algèbres sur $\symup{S'}$, image
+réciproque du faisceau d'algèbres $\symup{\mathcal A}$ sur $\symup{\overline S}$ définissant
+$\symup{\mathfrak T}$. Par hypothèse, sur $\symup{S'}$, $\symup{\mathfrak T'}$ provient d'un
+revêtement étale $\symup{T'}$ de $\symup{S'}$, i. e. $\symup{\mathcal A'}$ provient d'un faisceau
+cohérent d'algèbres $\symup{\text{\uwave{A}}'}$ sur $\symup{S'}$. D'autre part $\symup{\mathcal A'}$ est muni d'une
+donnée de descente canonique relativement à
+$\symup{\overline S'\longrightarrow\overline S}$, i. e. d'un isomorphisme entre ses
+deux images réciproques sur $\symup{\overline S'\times_{\overline S}\overline S'=\overline{(S'\times_SS')}}$, (satisfaisant des conditions (i), (ii)) et cet isomorphisme provient, d'après
+ce qui a été dit, d'un isomorphisme sur les faisceaux algébriques
+correspondants, i. e. d'une donnée de descente sur $\symup{\text{\uwave{A}}'}$ relativement à
+$\symup{S'\longrightarrow S}$. On vérifie facilement que cette dernière est effective
+(car celle sur $\symup{\mathcal A'}$ l'est, et l'effectivité d'une donnée de descente,
+telle qu'elle a été explicitée au numéro précédent, se reconnaît localement sur
+les \uline{complétés} des modules qui entrent en jeu). D'où un faisceau cohérent
+d'algèbres $\symup{\text{\uwave{A}}}$ sur $\symup{S}$, définissant un revêtement $\symup{T}$ de $\symup{S}$, qui est le
+revêtement cherché. Le résultat précédent reste alors manifestement valable si
+$\symup{S'\longrightarrow S}$ est seulement un composé d'un nombre fini
+d'épimorphismes stricts finis, i. e. est un épimorphisme fini quelconque (d'après
+le résultat de factorisation signalé au paragraphe 2). Il s'ensuit que le
+théorème de Grauert-Remmert reste valable si $\symup{S}$ est un schéma \uline{réduit},
+i. e. tel que $\symup{\text{\uwave{O}}_S}$ n'ait pas d'éléments nilpotents, comme on voit en
+introduisant son normalisé $\symup{S'}$. On passe facilement de là au cas général.
+
+Une démonstration toute analogue, utilisant encore le résultat de factorisation
+pour les épimorphismes stricts finis et la nature \fquote{formelle} de l'effectivité
+de données de descente, permet de prouver le résultat suivant : soit $\symup{S}$ un
+pré-schéma localement noethérien et soit $\symup{S'\longrightarrow S}$ un morphisme
+\uline{fini}, \uline{surjectif}, \uline{radiciel} (ou, ce qui revient au même, un morphisme de
+type fini tel que pour tout $\symup{T}$ sur $\symup{S}$, le morphisme
+$\symup{T'=S'\times_ST\longrightarrow T}$ soit un homéomorphisme, ce qu'on exprime
+encore en disant que $\symup{S'\longrightarrow S}$ est un
+\uline{homéomorphisme universel}). Pour tout $\symup{T}$ étalé sur $\symup{S}$, considérons son
+image inverse $\symup{T'=T\times_SS'}$, qui est étalé sur $\symup{S'}$. \uline{Alors le foncteur} $\symup{T\rightsquigarrow T'}$ \uline{est une équivalence de catégories de la catégorie des pré-schémas} $\symup{T}$ \uline{étalés sur} $\symup{S}$ \uline{avec la catégorie des pré-schémas} $\symup{T'}$ \uline{étalés sur} $\symup{S'}$. (On utilise la bijectivité de
+\[
+  \symup{\operatorname{Hom}_S(T_1,T_2)\longrightarrow
+  \operatorname{Hom}_{S'}(T'_1,T'_2)}
+\]
+pour deux pré-schémas $\symup{T_1,T_2}$ étalés sur $\symup{S}$, fait dont la vérification
+directe est facile, et le fait que le théorème énoncé est vrai si
+$\symup{S'=(S,\text{\uwave{O}}_S/\mathcal J)}$
+
+\src{310}
+où $\symup{\mathcal J}$ est un faisceau cohérent nilpotent d'idéaux de $\symup{\text{\uwave{O}}_S}$
+([4], lemme 6)). Noter d'ailleurs que nous ne supposons pas ici les $\symup{T}$
+envisagés finis sur $\symup{S}$. Ce résultat implique en particulier, que le morphisme
+$\symup{S'\longrightarrow S}$ induit un isomorphisme du groupe fondamental $\symup{[\,]}$ de
+$\symup{S'}$ sur celui de $\symup{S}$ (\fquote{\uline{invariance topologique du groupe fondamental d'un pré-schéma}}).
+
+\subsection*{\normalfont 4. \uline{Relations avec la} 1-\uline{cohomologie}.}
+\addcontentsline{toc}{subsection}{4. Relations avec la 1-cohomologie}
+
+\medskip\noindent
+a. Soit $\symup{\text{\uwave{C}}}$ une catégorie ou le produit de deux objets existe toujours,
+soit $\symup{T\in\text{\uwave{C}}}$. Pour tout ensemble fini $\symup{I\ne\varnothing}$, on peut
+considérer $\symup{T^I}$, pour $\symup{I}$ variable, on obtient ainsi un foncteur covariant de
+la catégorie des ensembles finis non vides dans $\symup{\text{\uwave{C}}}$, i. e. ce qu'on
+peut appeler un \uline{objet simplicial} de $\symup{\text{\uwave{C}}}$, noté $\symup{K_T}$. Ce dernier
+dépend de façon covariante de $\symup{T}$ ; d'ailleurs \uline{si} $\symup{u,v}$ \uline{sont deux morphismes}
+$\symup{T\longrightarrow T'}$, \uline{alors les morphismes correspondants}
+$\symup{K_T\longrightarrow K_{T'}}$ \uline{sont homotopes}. Disons que $\symup{T}$ \uline{domine} $\symup{T'}$
+si $\symup{\operatorname{Hom}(T,T')\ne\varnothing}$, c'est là une relation de préordre
+filtrante croissante dans $\symup{\text{\uwave{C}}}$. Il résulte de ce qui précède que si $\symup{T}$
+domine $\symup{T'}$, il existe une classe (à une homotopie près) canonique
+d'homomorphismes d'objets simpliciaux $\symup{K_T\longrightarrow K_{T'}}$, en
+particulier si $\symup{K_T}$ et $\symup{K_{T'}}$ sont tels que chacun domine l'autre, alors
+$\symup{K_T}$ et $\symup{K_{T'}}$ sont homotopiquement équivalents. Soit maintenant $\symup{F}$ un
+foncteur (contravariant pour fixer les idées) de $\symup{\text{\uwave{C}}}$ dans une catégorie
+\uline{abélienne} $\symup{\text{\uwave{C}}'}$, alors
+\[
+  \symup{C^*(T,F)=F(K_T)}
+\]
+est un objet cosimplicial de $\symup{\text{\uwave{C}}'}$, donc définit de façon bien connue
+un complexe (de cochaînes) dans $\symup{\text{\uwave{C}}'}$, dont on peut prendre la
+cohomologie
+\[
+  \symup{H^*(T,F)=H^*(C^*(T,F))=H^*(F(K_T))}
+\]
+(on pourra mettre un $\symup{\text{\uwave{C}}}$ en indice du $\symup{H^*}$ s'il y a possibilité de
+confusion). C'est là un foncteur cohomologique en $\symup{F}$, dont la variance pour $\symup{T}$
+variable résulte de ce qui a été dit sur les $\symup{K_T}$ ; de façon précise, pour $\symup{F}$
+fixé et $\symup{T}$ variable dans $\symup{\text{\uwave{C}}}$ (préordonné par la relation de
+domination) les $\symup{H^*(T,F)}$ forment un système inductif d'objets gradués de
+$\symup{\text{\uwave{C}}'}$ ; en particulier, si $\symup{T}$ et $\symup{T'}$ sont tels que chacun domine
+l'autre, alors $\symup{H^*(T,F)}$ et $\symup{H^*(T',F)}$ sont canoniquement isomorphes.
+
+Supposons que dans $\symup{\text{\uwave{C}}}$ les produits fibrés existent, alors on peut,
+pour $\symup{S\in\text{\uwave{C}}}$ fixé, appliquer ce qui précède à la catégorie
+$\symup{\text{\uwave{C}}_S}$ des objets de $\symup{\text{\uwave{C}}}$ au-dessus de $\symup{S}$, on écrira
+$\symup{C^*(T/S,F)}$ et $\symup{H^*(T/S,F)}$ au lieu de $\symup{C^*(T,F)}$ et $\symup{H^*(T,F)}$ si on veut
+préciser que l'on se place dans la catégorie $\symup{\text{\uwave{C}}_S}$ ; ainsi,
+
+\src{311}
+$\symup{C^*(T/S,F)}$ est un complexe de cochaînes dans $\symup{\text{\uwave{C}}'}$ qui, en dimension
+$\symup{n}$ est égal à $\symup{F(T\times_ST\times_S\cdots\times_ST)}$ (où la parenthèse comporte $\symup{n+1}$ facteurs).
+
+Notons que comme d'habitude, on peut définir $\symup{H^0(T/S,F)}$ sans supposer la
+catégorie $\symup{\text{\uwave{C}}'}$ abélienne : c'est le noyau (définition 2.1), s'il
+existe, du couple de morphismes $\symup{F(p_i)}$ ($\symup{i=1,2}$)
+\[
+  \symup{F(T)\rightrightarrows F(T\times_ST)}
+\]
+correspondants aux deux projections
+$\symup{p_1,p_2:T\times_ST\rightrightarrows T}$. En particulier, on aura un morphisme
+naturel (dit d'\uline{augmentation})
+\[
+  \symup{F(S)\longrightarrow H^0(T/S,F)}
+\]
+qui sera un isomorphisme dans les cas favorables (en particulier si
+$\symup{T\longrightarrow S}$ est un épimorphisme strict et si $\symup{F}$ est \fquote{exact à gauche}). De même, lorsque $\symup{F}$ prend ses valeurs dans la catégorie des groupes
+dans une catégorie $\symup{\text{\uwave{C}}''}$, on peut aussi définir $\symup{H^1(T/S,F)}$ ; dans le
+cas où $\symup{\text{\uwave{C}}''}$ est la catégorie des ensembles (i. e. $\symup{F}$ prend ses
+valeurs dans la catégorie des groupes ordinaires, non nécessairement
+commutatifs), $\symup{H^1(T,F)}$ est le quotient du sous-groupe $\symup{Z^1(T/S,F)}$ de
+$\symup{C^1(T/S,F)=F(T\times_ST)}$ formé des $\symup{g}$ tels que
+\[
+  \symup{F(p_{31})(g)=F(p_{32})(g)\,F(p_{21})(g)}
+\]
+par le groupe d'opérateurs $\symup{F(T)}$, opérant sur $\symup{C^1(T/S,F)}$ et en particulier,
+sur le sous-ensemble $\symup{Z^1(T/S,F)}$ par
+\[
+  \symup{\rho(g')\cdot g=F(p_2)(g')\,g\,F(p_1)(g')^{-1}}
+\]
+
+\medskip\noindent
+b. Soit par exemple $\symup{\mathcal F}$ une catégorie fibrée de base $\symup{\text{\uwave{C}}}$.
+Soient $\symup{\xi,\eta\in\mathcal F_S}$, et pour tout $\symup{S'}$ sur $\symup{S}$, soit
+\[
+  \symup{F_{\xi,\eta}(S')=
+  \operatorname{Hom}(\xi\times_SS',\eta\times_SS')}
+\]
+Ainsi, $\symup{F_{\xi,\eta}}$ est un foncteur contravariant de $\symup{\text{\uwave{C}}_S}$ dans la
+catégorie des ensembles. Ceci posé, \uline{dire que le morphisme d'augmentation}
+\[
+  \symup{F_{\xi,\eta}(S)\longrightarrow H^0(S'/S,F_{\xi,\eta})}
+\]
+\uline{est un isomorphisme pour tout couple d'éléments} $\symup{\xi,\eta\in\mathcal F_S}$, \uline{signifie que} $\symup{\alpha:S'\longrightarrow S}$ \uline{est un morphisme de} $\symup{\mathcal F}$\uline{-descente}
+(définition 1.7).
+
+\medskip\noindent
+c. Posons de même, pour $\symup{\xi\in\mathcal F_S}$ et tout objet $\symup{S'}$ de $\symup{\text{\uwave{C}}}$
+au-dessus de
+\[
+  \symup{G_\xi(S')=\operatorname{Aut}(\xi\times_SS'),}
+\]
+on a ainsi défini un foncteur contravariant $\symup{G_\xi}$ de $\symup{\text{\uwave{C}}_S}$ dans la
+catégorie des
+
+\src{312}
+groupes. Ceci posé, on constate que $\symup{Z^1(S'/S,G)}$ \uline{s'identifie
+canoniquement à l'ensemble des données de descente sur}
+$\symup{\xi'=\xi\times_SS'}$ \uline{relativement à} $\symup{S'\longrightarrow S}$ (définition 1.6),
+\uline{et} $\symup{H^1(S'/S,G)}$ \uline{s'identifie à l'ensemble des classes (à un
+isomorphisme près) d'objets de} $\symup{\mathcal F_{S'}}$ \uline{munis d'une donnée de descente
+relativement à} $\symup{\alpha:S'\longrightarrow S}$, \uline{qui, en tant qu'objets de}
+$\symup{\mathcal F_{S'}}$ \uline{sont isomorphes à} $\symup{\xi'=\xi\times_SS'}$ \uline{Si donc} $\symup{\alpha:S'\longrightarrow S}$ \uline{est un morphisme de} $\symup{\mathcal F}$\uline{-descente} (cf. (b)), \uline{alors} $\symup{H^1(S'/S,G)}$ \uline{contient comme sous-ensemble
+l'ensemble des classes (à un isomorphisme près) d'objets} $\symup{\eta}$ \uline{de}
+$\symup{\mathcal F_S}$ \uline{tels que} $\symup{\eta\times_SS'}$ \uline{soit isomorphe dans}
+$\symup{\mathcal F_{S'}}$ à $\symup{\xi\times_SS'}$ ; \uline{et cette inclusion est une identité si
+et seulement si toute donnée de descente sur} $\symup{\xi'=\xi\times_SS'}$
+\uline{relativement à} $\symup{\alpha:S'\longrightarrow S}$ \uline{est effective}. (Ce sera le cas en
+particulier si $\symup{\alpha:S'\longrightarrow S}$ est un morphisme de
+$\symup{S}$-descente strict).
+
+\result{REMARQUE}{} Les complexes de cochaînes du type $\symup{C^*(T/S,F)}$ contiennent
+comme cas particuliers la plupart des complexes standard connus (cohomologie
+de Čech, cohomologie des groupes, etc.), et jouent un rôle important en
+géométrie algébrique, (notamment dans la \fquote{cohomologie de Weil} des préschémas).
+
+\result{d. EXEMPLE}{1} Soit $\symup{S'}$ un objet au-dessus de $\symup{S\in\text{\uwave{C}}}$, et
+soit $\symup{\Gamma}$ un groupe d'automorphismes de $\symup{S'}$ tel que $\symup{S'}$ soit
+\fquote{formellement principal sur $\symup{S}$, de groupe $\symup{\Gamma}$}, i. e. tel que le
+morphisme naturel
+\[
+  \symup{\Gamma\times S'\longrightarrow S'\times_SS',}
+\]
+où $\symup{\Gamma\times S'}$ désigne la somme directe de $\symup{\Gamma}$ copies de $\symup{S'}$, soit
+un isomorphisme. (On suppose que dans $\symup{\text{\uwave{C}}}$ les sommes directes qui
+interviennent ici existent). Soit $\symup{F}$ un foncteur contravariant de $\symup{\text{\uwave{C}}}$
+dans la catégorie des groupes abéliens. Alors $\symup{C^*(S'/S,F)}$ \uline{est canoniquement
+isomorphe au groupe simplicial de cochaînes standard homogènes}
+$\symup{C^*(\Gamma,F(S'))}$, \uline{donc} $\symup{H^*(S'/S,F)}$ \uline{est canoniquement isomorphe à}
+$\symup{H^*(\Gamma,F(S'))}$.
+
+\result{e. EXEMPLE}{2} Soit $\symup{\text{\uwave{C}}}$ la catégorie des pré-schémas. On désigne
+par $\symup{G_a}$ (\fquote{groupe additif}) le foncteur contravariant de $\symup{G}$ dans
+la catégorie des groupes abéliens, défini par
+\[
+  \symup{G_a(X)=H^0(X,\text{\uwave{O}}_X).}
+\]
+On définit de même le foncteur $\symup{G_m}$ (\fquote{groupe multiplicatif}) par
+\[
+  \symup{G_m(X)=H^0(X,\text{\uwave{O}}_X)^*}
+\]
+($\symup{=}$ groupe des éléments inversibles de l'anneau $\symup{H^0(X,\text{\uwave{O}}_X)}$), et plus
+généralement le foncteur $\symup{\operatorname{Gl}(n)}$ (\fquote{groupe linéaire d'ordre $\symup{n}$}) par
+
+\src{313}
+\[
+  \symup{\operatorname{Gl}(n)(X)=
+  \operatorname{Gl}\bigl(n,H^0(X,\text{\uwave{O}}_X)\bigr)}
+\]
+qui est un foncteur de $\symup{\text{\uwave{C}}}$ dans la catégorie des groupes (non
+nécessairement commutatifs si $\symup{n>1}$ ; pour $\symup{n=1}$ on retrouve $\symup{G_m}$). On peut
+d'ailleurs interpréter $\symup{\operatorname{Gl}(n)}$ comme un foncteur-automorphisme
+(cf. (c)) en considérant la catégorie fibrée $\symup{\mathcal F}$ de base $\symup{\text{\uwave{C}}}$
+telle que pour $\symup{X\in\text{\uwave{C}}}$, $\symup{\mathcal F_X}$ soit la catégorie des
+faisceaux localement libres sur $\symup{X}$ : on a en effet $\symup{\operatorname{Gl}(n)(X)=\operatorname{Aut}_{\mathcal F_X}(\text{\uwave{O}}_X^n)}$.
+D'après (b) il s'ensuit que si $\symup{\alpha:S'\longrightarrow S}$ est un morphisme
+de $\symup{\mathcal F}$-descente (cf. paragraphe 2.(c)) $\symup{H^1(S'/S,\operatorname{Gl}(n))}$
+contient l'ensemble des classes (à un isomorphisme près) de faisceaux localement
+libres sur $\symup{S}$ dont l'image inverse sur $\symup{S'}$ est isomorphe à
+$\symup{\text{\uwave{O}}_{S'}^n}$, et cette inclusion est une égalité si et seulement si
+toute donnée de descente sur $\symup{\text{\uwave{O}}_{S'}^n}$ (relativement à
+$\symup{\alpha:S'\longrightarrow S}$) est effective. Lorsque $\symup{S}$ est le spectre d'un
+anneau local, cela signifie donc
+$\symup{H^1(S'/S,\operatorname{Gl}(n))=(e)}$, puisque tout faisceau localement libre
+sur $\symup{S}$ est alors trivial.
+
+Notons l'équivalence des conditions suivantes sur un morphisme
+$\symup{\alpha:S'\longrightarrow S}$ :
+\begin{enumerate}
+\item[\textnormal{(i).}] L'homomorphisme d'augmentation $\symup{H^0(S,\text{\uwave{O}}_S)=G_a(S)\longrightarrow H^0(S'/S,G_a)}$ est un isomorphisme
+\item[\textnormal{(ii).}] $\symup{S'\longrightarrow S}$ est un morphisme de $\symup{\mathcal F}$-descente
+($\symup{\mathcal F}$ étant la catégorie fibrée de base $\symup{\text{\uwave{C}}}$ envisagée
+ci-dessus).
+\end{enumerate}
+Si $\symup{S'\longrightarrow S}$ est fini, ces conditions équivalent aussi à
+\begin{enumerate}
+\item[\textnormal{(iii).}] $\symup{S'\longrightarrow S}$ est un épimorphisme strict
+(cf. paragraphe 2.(c)).
+\end{enumerate}
+
+Supposons maintenant que $\symup{S=\operatorname{Spec}(A)}$,
+$\symup{S'=\operatorname{Spec}(A')}$ ; alors on a
+\[
+  \symup{C^n(S'/S,G_a)=C^n(A'/A,G_a)=\bigotimes\limits_A^{n+1}A'}
+\]
+l'opérateur cobord
+$\symup{C^n(A'/A,G_a)\longrightarrow C^{n+1}(A'/A,G_a)}$ étant somme alternée des
+opérateurs faces
+\[
+  \symup{\partial_i(x_0\otimes x_1\otimes\cdots\otimes x_n)
+  =x_0\otimes\cdots\otimes x_{i-1}\otimes1_{A'}\otimes
+   x_i\otimes\cdots\otimes x_n}
+\]
+De même, $\symup{C^n(S'/S,G_m)=C^n(A'/A,G_m)}$ s'identifie à $\symup{(\bigotimes\limits_A^{n+1}A')^*}$, les opérations simpliciales dans $\symup{C^*(A'/A,G_m)}$ étant induites par celles de
+$\symup{C^*(S'/S,G_a)}$. On explicite de même les opérations simpliciales dans
+$\symup{C^*(A'/A,\operatorname{Gl}(n))}$. \uline{Dans tous les cas à la connaissance du conférencier, on a} $\symup{H^i(A'/A,G_a)=0}$ \uline{pour} $\symup{i>0}$, \uline{et si} $\symup{A}$ \uline{est local, on a} $\symup{H^1(A'/A,G_m)=0}$ \uline{et plus généralement} $\symup{H^1(A'/A,\operatorname{Gl}(n))=(e)}$
+(lorsque $\symup{S'\longrightarrow S}$ est un morphisme de $\symup{\mathcal F}$-descente, i. e.
+le diagramme
+$\symup{A\longrightarrow A'\rightrightarrows A'\otimes_AA'}$ est exact, comparer avec
+le paragraphe 2.(c)). On notera que \uline{le} \fquote{\uline{théorème} 90} \uline{de Hilbert n'est autre que la relation}
+\src{314}
+$\symup{H^1(S'/S,G_m)=0}$
+\uline{lorsque} $\symup{A}$ \uline{est un corps et} $\symup{A'}$ \uline{une extension galoisienne finie de ce dernier} (cf. exemple 1), \uline{et peut encore s'exprimer en disant que dans le cas envisagé}, $\symup{S'\longrightarrow S}$ \uline{est un morphisme de descente strict pour la catégorie fibrée des faisceaux localement libres de rang} 1. C'est sous cette
+dernière forme qu'il convient de généraliser le théorème de Hilbert, en variant
+les hypothèses aussi bien sur le morphisme $\symup{S'\longrightarrow S}$ que sur les
+faisceaux quasi-cohérents envisagés.
+
+Notons enfin l'équivalence des propriétés suivantes, lorsque $\symup{A}$ est un anneau
+local \uline{artinien} d'idéal maximal $\symup{m}$, $\symup{A'}$ une $\symup{A}$-algèbre (en
+désignant, pour tout entier $\symup{k>0}$, par $\symup{A_k}$ (resp. $\symup{A'_k}$) les anneaux
+$\symup{A/\mathfrak m^{k+1}}$ (resp. $\symup{A'/\mathfrak m^{k+1}A'}$)) :
+\begin{enumerate}
+\item[\textnormal{(i).}] $\symup{H^1(A'_k/A_k,G_a)=0}$ pour tout $\symup{k}$.
+\item[\textnormal{(ii).}] $\symup{H^1(A'_k/A_k,G_m)=0}$ pour tout $\symup{k}$.
+\item[\textnormal{(iii).}] $\symup{H^1(A'_k/A_k,\operatorname{Gl}(n))=(e)}$ pour tout $\symup{k}$ et tout
+$\symup{n}$.
+\end{enumerate}
+Si $\symup{S'\longrightarrow S}$ est un épimorphisme strict, alors les conditions
+précédentes impliquent même que c'est un morphisme de descente \uline{strict} pour les
+modules libres (de type fini ou non) sur $\symup{A'}$.
+
+\result{REMARQUE}{} La définition des groupes $\symup{H^i(S'/S,G_m)}$, dans le cas où
+$\symup{S,S'}$ sont des schémas de corps $\symup{A,A'}$, est due à AMITSUR. Le groupe
+$\symup{H^2(S'/S,G_m)}$ est particulièrement intéressant comme variante \fquote{globale}
+du groupe de Brauer, variante pour laquelle on pourra se référer à [1],
+chapitre VII.
+
+\section*{\normalfont B. \uline{Descente par morphismes fidèlement plats}.}
+\addcontentsline{toc}{section}{B. Descente par morphismes fidèlement plats}
+
+\subsection*{\normalfont 1. \uline{Enoncé des théorèmes de descente}.}
+\addcontentsline{toc}{subsection}{1. Énoncé des théorèmes de descente}
+
+\result{DÉFINITION}{1.1} Un morphisme
+$\symup{\alpha:S'\longrightarrow S}$ de pré-schémas est dit \uline{plat} si pour tout
+$\symup{x'\in S'}$, $\symup{\text{\uwave{O}}_{x'}}$ est un module plat sur l'anneau
+$\symup{\text{\uwave{O}}_{\alpha(x')}}$ (i. e.
+$\symup{\text{\uwave{O}}_{x'}\otimes_{O_{\alpha(x')}}M}$ est un foncteur exact en
+le $\symup{O_{\alpha(x')}}$-module $\symup{M}$). Un morphisme est dit
+\uline{fidèlement plat} s'il est plat et surjectif.
+
+Par exemple, si $\symup{S=\operatorname{Spec}(A)}$,
+$\symup{S'=\operatorname{Spec}(A')}$, alors $\symup{S'}$ est plat sur $\symup{S}$ si et seulement si
+$\symup{A'}$ est un $\symup{A}$-module plat, et $\symup{S'}$ est fidèlement plat sur $\symup{S}$ si et
+seulement si $\symup{A'}$ est un $\symup{A}$-module fidèlement plat (i. e. le foncteur
+$\symup{A'\otimes_A M}$ en le $\symup{A}$-module $\symup{M}$ est \uline{exact} et \uline{fidèle}) ; cela signifie
+aussi, dans la terminologie de SERRE [5], que le couple $\symup{(A,A')}$ est plat. Si
+$\symup{S'}$ est fidèlement plat sur $\symup{S}$, alors le foncteur image inverse de faisceaux
+quasi-cohérents sur $\symup{S}$ est exact et fidèle, en d'autres termes, pour qu'une
+suite d'homomorphismes de faisceaux
+
+\src{315}
+quasi-cohérents sur $\symup{S}$ soit exacte, il faut et il suffit que son image
+réciproque sur $\symup{S'}$ le soit (en particulier, pour qu'un homomorphisme de
+faisceaux quasi-cohérents sur $\symup{S}$ soit un monomorphisme, resp. un
+épimorphisme, resp. un isomorphisme, il faut et il suffit que son image inverse
+sur $\symup{S'}$ le soit). Cette propriété reste vraie si on se restreint au-dessus
+d'un ouvert quelconque de $\symup{S}$, et sous cette forme caractérise les morphismes
+fidèlement plats.
+
+\result{DÉFINITION}{1.2} Un morphisme $\symup{\alpha:S'\longrightarrow S}$ est dit
+\uline{quasi-compact} si l'image inverse de toute partie ouverte quasi-compacte
+$\symup{U}$ de $\symup{S}$ est quasi-compacte (i. e. réunion \uline{finie} d'ouverts affines).
+
+Il suffit évidemment de vérifier cette propriété pour les ouverts \uline{affines} de
+$\symup{S}$. Par exemple, un morphisme affine (i. e. tel que l'image inverse d'un ouvert
+affine soit affine) est quasi-compact.
+
+La classe des morphismes plats, resp. fidèlement plats, resp. quasi-compacts,
+est stable par composition et par \fquote{extension de la base}, et contient bien
+entendu les isomorphismes.
+
+\result{THÉORÈME}{1} Soit $\symup{\alpha:S'\longrightarrow S}$ un morphisme de
+pré-schémas, \uline{fidèlement plat} et \uline{quasi-compact}. Alors $\symup{\alpha}$ est un
+\uline{morphisme de descente strict} (A, définition 1.7) pour la catégorie
+fibrée $\symup{\mathcal F}$ des faisceaux quasi-cohérents (A, paragraphe 1, exemple 2).
+
+Cet énoncé signifie deux choses :
+\begin{enumerate}
+\item[\textnormal{(i)} ] Si $\symup{F}$ et $\symup{G}$ sont deux faisceaux quasi-cohérents sur $\symup{S}$, $\symup{F'}$ et
+$\symup{G'}$ leurs images inverses sur $\symup{S'}$, alors l'homomorphisme naturel
+\[
+  \symup{\operatorname{Hom}(F,G)\longrightarrow\operatorname{Hom}(F',G')}
+\]
+est une bijection du premier membre sur le sous-groupe du second formé des
+homomorphismes $\symup{F'\longrightarrow G'}$ qui sont compatibles avec les données de
+descente canoniques sur ces faisceaux, i. e. dont les images inverses par les
+deux projections de $\symup{S''=S'\times_SS'}$ sur $\symup{S'}$ donnent un même homomorphisme
+$\symup{F''\longrightarrow G''}$.
+\item[\textnormal{(ii)} ] Tout faisceau quasi-cohérent $\symup{F'}$ sur $\symup{S'}$, muni d'une donnée de
+descente relativement au morphisme $\symup{\alpha:S'\longrightarrow S}$
+(A, définition 1.6), est isomorphe (muni de cette donnée) à l'image inverse
+d'un faisceau quasi-cohérent $\symup{F}$ sur $\symup{S}$.
+\end{enumerate}
+Faisant $\symup{F=\text{\uwave{O}}_S}$ dans (i), on trouve :
+
+\result[, -]{COROLLAIRE}{1} Soit $\symup{G}$ un faisceau quasi-cohérent sur $\symup{S}$, soient
+$\symup{G'}$ et $\symup{G''}$ ses images inverses sur $\symup{S'}$ et sur
+$\symup{S''=S'\times_SS'}$, soient $\symup{p_1,p_2}$ les deux projections de $\symup{S''}$ sur $\symup{S'}$,
+alors le diagramme suivant d'applications d'ensembles
+
+\src{316}
+\[
+  \symup{\Gamma(G)\xrightarrow{\alpha^*}\Gamma(G')
+  \underset{p_2^*}{\overset{p_1^*}{\rightrightarrows}}\Gamma(G'')}
+\]
+est \uline{exact} (A, définition 1.(a)).
+
+D'autre part, la conjonction de (i), (ii) et de la définition 1.1 donne le
+
+\result{COROLLAIRE}{2} Soit $\symup{G}$ comme dans le corollaire 1. Alors il y a
+correspondance biunivoque entre les sous-faisceaux quasi-cohérents de $\symup{G}$, et
+les sous-faisceaux quasi-cohérents de $\symup{G'}$ dont les images inverses sur $\symup{S''}$,
+par les deux projections $\symup{p_1,p_2}$, donnent le même sous-faisceau de $\symup{G''}$.
+
+Bien entendu, on a un énoncé équivalent en termes de faisceaux quotients. Comme
+on l'a vu (A, paragraphe 4, (e)), le théorème 1 doit être considéré comme une
+généralisation du \fquote{théorème 90} de Hilbert, et implique comme cas particuliers
+diverses formulations en termes de 1-cohomologie. Pour la démonstration, on est
+ramené facilement au cas où $\symup{S=\operatorname{Spec}(A)}$,
+$\symup{S'=\operatorname{Spec}(A')}$, et pour (i) on se ramène facilement à prouver le
+corollaire 1, i. e. l'exactitude du diagramme
+\[
+  \symup{M=A\otimes_A M\longrightarrow A'\otimes_A M
+  \rightrightarrows A'\otimes_AA'\otimes_A M}
+\]
+pour tout $\symup{A}$-module $\symup{M}$, ce qui résulte du lemme plus général :
+
+\result{LEMME}{1.1} Soit $\symup{A'}$ une $\symup{A}$-algèbre fidèlement plate. Alors pour
+tout $\symup{A}$-module $\symup{M}$, le complexe $\symup{M}$-augmenté
+$\symup{C^*(A'/A,G_a)\otimes_A M}$ (cf. A, paragraphe 4, (e)) est une
+\uline{résolution} de $\symup{M}$.
+
+Il suffit de prouver que le complexe augmenté déduit du précédent par
+extension de la base de $\symup{A}$ à $\symup{A'}$ satisfait les mêmes conclusions. Cela amène
+à vérifier l'énoncé quand on remplace $\symup{A}$ par $\symup{A'}$ et $\symup{A'}$ par
+$\symup{A'\otimes_AA'}$, donc nous ramène à un cas où il existe un homomorphisme de
+$\symup{A}$-algèbres $\symup{A'\longrightarrow A}$ (ou, en termes géométriques, au cas où $\symup{S'}$
+sur $\symup{S}$ admet une section). Dans ce cas, cela résulte des généralités du A,
+paragraphe 4, (a). Signalons en passant le corollaire suivant, qui généralise
+un énoncé bien connu en cohomologie de Galois (comparer A, paragraphe 4, (e)) :
+
+\result{COROLLAIRE}{} Si $\symup{A'}$ est fidèlement plat sur $\symup{A}$, on a
+$\symup{H^0(A'/A,G_a)=A}$ et
+$\symup{H^i(A'/A,G_a)=0}$ pour $\symup{i\geqslant1}$.
+
+Pour prouver la partie (ii) du théorème 1, on procède comme pour (i) en se
+ramenant au cas où $\symup{S'}$ sur $\symup{S}$ admet une section, où cela résulte de (i)
+(cf. A, paragraphe 1, (c)).
+
+On peut évidemment varier ad libitum le théorème 1 et ses corollaires en
+introduisant des structures supplémentaires diverses sur les faisceaux (ou
+systèmes de faisceaux) quasi-cohérents envisagés. Par exemple, la donnée sur
+$\symup{S}$ d'un faisceau
+\src{317}
+quasi-cohérent d'algèbres commutatives \fquote{équivaut} à la donnée sur $\symup{S'}$ d'un
+tel faisceau, muni d'une donnée de descente relativement à
+$\symup{\alpha:S'\longrightarrow S}$. Compte tenu de la correspondance fonctorielle
+entre de tels faisceaux quasi-cohérents sur $\symup{S}$, et des pré-schémas affines
+au-dessus de $\symup{S}$, on obtient la deuxième assertion du théorème suivant :
+
+\result{THÉORÈME}{2} Soit $\symup{\alpha:S'\longrightarrow S}$ comme dans le
+théorème 1. Alors $\symup{\alpha}$ est un \uline{morphisme de descente} (non strict en
+général) (A définition 2.4), et c'est un \uline{morphisme de descente strict}
+pour la catégorie fibrée des schémas; affines au-dessus de pré-schémas,
+(A, définition 1.7).
+
+La première assertion du théorème signifie ceci : soient $\symup{X,Y}$ deux
+pré-schémas au-dessus de $\symup{S}$, $\symup{X',Y'}$ leurs images inverses sur $\symup{S'}$ et
+$\symup{X'',Y''}$ leurs images inverses sur $\symup{S''=S'\times_SS'}$, alors le diagramme
+suivant d'applications naturelles
+\[
+  \symup{\operatorname{Hom}_S(X,Y)\xrightarrow{\alpha^*}
+  \operatorname{Hom}_{S'}(X',Y')
+  \underset{p_2^*}{\overset{p_1^*}{\rightrightarrows}}
+  \operatorname{Hom}_{S''}(X'',Y'')}
+\]
+est \uline{exact}, i. e. $\symup{\alpha^*}$ est une bijection de
+$\symup{\operatorname{Hom}_S(X,Y)}$ sur la partie de
+$\symup{\operatorname{Hom}_{S'}(X',Y')}$ formé des homomorphismes qui sont compatibles
+avec les données de descente canoniques sur $\symup{X',Y'}$ (i. e. dont les images
+inverses par les deux projections de $\symup{S''}$ sur $\symup{S'}$ sont égales). Cela résulte
+facilement du théorème 1, corollaire 1, lorsqu'on se borne à $\symup{Y}$ affine sur
+$\symup{S}$ ; dans le cas général, il faut conjuguer le théorème 1 avec le résultat
+suivant :
+
+\result{LEMME}{1.2} Soit $\symup{\alpha:S'\longrightarrow S}$ un morphisme fidèlement
+plat et quasi-compact. Alors $\symup{S}$ s'identifie à un \uline{espace topologique quotient} de $\symup{S'}$, i. e. toute partie $\symup{U}$ de $\symup{S}$ telle que
+$\symup{\alpha^{-1}(U)}$ soit ouverte, est ouverte.
+
+Pour compléter le théorème 2, il faut donner des critères d'effectivité pour
+une donnée de descente sur un $\symup{S'}$-pré-schéma $\symup{X'}$ (dans le cas où $\symup{X'}$ n'est
+pas supposé affine sur $\symup{S'}$). Remarquons d'abord qu'\uline{une telle donnée de descente n'est pas nécessairement effective}, même si $\symup{S}$ est le spectre d'un
+corps $\symup{k}$, $\symup{S'}$ le spectre d'une extension quadratique $\symup{k'}$ de ce dernier, et
+$\symup{S'}$ un schéma algébrique propre de dimension 2 sur $\symup{S'}$ (comme on peut voir,
+d'après SERRE, en utilisant la surface non projective de NAGATA). \uline{Pour qu'une donnée de descente sur} $\symup{X'/S'}$ \uline{relativement à} $\symup{\alpha:S'\longrightarrow S}$ (\uline{fidèlement plat et quasi-compact) soit effective, il faut et il suffit que} $\symup{X'}$ \uline{soit réunion d'ouverts} $\symup{X'_i}$, \uline{affines sur} $\symup{S'}$, \uline{qui soient \fquote{stables} par la donnée de descente sur} $\symup{\underline{X'}}$. Il en est
+certainement ainsi (quel que soit $\symup{X'/S'}$ et la donnée de descente sur $\symup{X'}$)
+si le morphisme $\symup{\alpha:S'\longrightarrow S}$ est \uline{radiciel} (i. e.
+injectif, et à extensions résiduelles qui
+
+\src{318}
+sont radicielles). On peut montrer aussi qu'il en est encore ainsi si
+$\symup{\alpha:S'\longrightarrow S}$ est \uline{fini}, et toute partie finie de $\symup{X'}$,
+contenue dans une fibre de $\symup{X'}$ sur $\symup{S}$, est contenue dans un ouvert de $\symup{X'}$
+affine sur $\symup{S}$ (c'est le \uline{critère de} Weil). Il en est en particulier
+ainsi, si $\symup{X'/S'}$ est quasi-projectif, et dans ce cas, on peut montrer que le
+pré-schéma \fquote{descendu} $\symup{X/S}$ est aussi quasi-projectif (et projectif si $\symup{X'/S'}$
+l'est). En résumé :
+
+\result{THÉORÈME}{3} Soit $\symup{\alpha:S'\longrightarrow S}$ un morphisme de
+pré-schémas, fidèlement plat et quasi-compact. Si $\symup{\alpha}$ est \uline{radiciel},
+c'est un \uline{morphisme de descente strict}. Si $\symup{\alpha}$ est fini, c'est un
+morphisme de descente strict relativement à la catégorie fibrée des pré-schémas
+quasi-projectifs (ou projectifs) sur des pré-schémas.
+
+\result{REMARQUES}{} J'ignore si, dans la deuxième assertion ci-dessus,
+l'hypothèse que $\symup{\alpha}$ soit un morphisme \uline{fini} est bien nécessaire ; on
+vérifie en tous cas de façon \fquote{formelle} qu'on peut la remplacer par
+l'hypothèse suivante, plus faible en apparence : \uline{pour tout point de} $\symup{S}$ \uline{existe un voisinage ouvert} $\symup{U}$, \uline{un} $\symup{U'}$ \uline{fini et fidèlement plat sur} $\symup{U}$, \uline{et un} $\symup{S}$\uline{-morphisme de} $\symup{U'}$ \uline{dans} $\symup{S'}$. Un cas type qui ne rentre pas dans le
+précédent est celui où $\symup{S=\operatorname{Spec}(A)}$,
+$\symup{S'=\operatorname{Spec}(\bar A)}$, où $\symup{A}$ est un anneau local noethérien et
+$\symup{\bar A}$ son complété ; ou encore celui où $\symup{S'}$ est quasi-fini sur $\symup{S}$
+(i. e. localement isomorphe à un ouvert d'un $\symup{S}$-schéma fini) et non fini. Dans
+ces deux cas, le conférencier ignore aussi la réponse à la question suivante :
+soit $\symup{X}$ un $\symup{S}$-schéma tel que $\symup{X'=X\times_SS'}$ soit projectif sur $\symup{S'}$, est-il
+vrai que $\symup{X}$ est projectif sur $\symup{S}$ ?
+
+\addcontentsline{toc}{subsection}{2. Descente de propriétés de morphismes}
+\result{2. \uline{Application à la descente de certaines propriétés de morphismes}}{} Soit $\symup{P}$ une classe de morphismes de pré-schémas. Soit
+$\symup{\alpha:S'\longrightarrow S}$ un morphisme de pré-schémas, et soit
+$\symup{f:X\longrightarrow Y}$ un morphisme de $\symup{S}$-pré-schémas,
+$\symup{f':X'\longrightarrow Y'}$ l'image réciproque de $\symup{f}$ par $\symup{\alpha}$. On peut se
+demander alors si la relation \fquote{$\symup{f'\in P}$} implique \fquote{$\symup{f\in P}$}. Il apparaît
+que la réponse est affirmative dans beaucoup de cas importants lorsque l'on
+suppose que $\symup{\alpha}$ est \uline{fidèlement plat} et \uline{quasi-compact} (cette
+dernière hypothèse étant parfois surabondante). Cela se voit directement sans
+difficulté si $\symup{P}$ est la classe des morphismes surjectifs, resp. radiciels (ces
+cas résultant de la surjectivité de $\symup{\alpha}$), resp. plats, resp. fidèlement
+plats, resp. simples (ces cas résultant de la fidèle platitude de $\symup{\alpha}$),
+resp. de type fini. Utilisant les théorèmes 1, 2 et le lemme 1.2, on voit aussi
+qu'il en est de même si $\symup{P}$ est une des classes suivantes : isomorphismes,
+immersions ouvertes, immersions fermées, immersions (si $\symup{f}$ est de type fini et
+$\symup{Y}$ localement noethérien), morphismes affines, morphismes finis, morphismes
+quasi-finis, morphismes ouverts, morphismes fermés, homéomorphismes, morphismes
+séparés,
+
+\src{319}
+morphismes propres. Le seul cas important non élucidé est celui des morphismes
+projectifs et quasi-projectifs, déjà signalé dans la remarque du paragraphe 1.
+
+\addcontentsline{toc}{subsection}{3. Descente par morphismes finis fidèlement plats}
+\result{3. \uline{Descente par morphismes finis fidèlement plats}}{} Soit $\symup{\alpha:S'\longrightarrow S}$ un morphisme \uline{fini}, correspondant à un
+faisceau d'algèbres $\symup{\text{\uwave{A}}'}$ sur $\symup{S}$ qui est \uline{localement libre} de type fini
+en tant que faisceau de modules, et partout $\symup{\ne0}$ ; alors $\symup{\alpha}$ est un
+morphisme fidèlement plat et quasi-compact, auquel on peut donc appliquer les
+résultats précédents. La donnée d'un faisceau quasi-cohérent $\symup{F'}$ sur $\symup{S'}$
+équivaut à la donnée du faisceau quasi-cohérent $\symup{\alpha_*(F')}$ sur $\symup{S}$, muni de
+sa structure de $\symup{\text{\uwave{A}}'}$-module (notant que
+$\symup{\text{\uwave{A}}'=\alpha_*(\text{\uwave{O}}_{S'})}$). Pour simplifier, ce faisceau sur $\symup{S}$
+sera également noté $\symup{F'}$. Les deux images inverses $\symup{p_i^*(F')}$ de $\symup{F'}$ sur
+$\symup{S'\times_SS'}$ correspondent de même aux faisceaux quasi-cohérents de
+$\symup{(\text{\uwave{A}}'\otimes_{\text{\uwave{O}}_S}\text{\uwave{A}}')}$-modules
+$\symup{F'\otimes_{\text{\uwave{O}}_S}\text{\uwave{A}}'}$ et $\symup{\text{\uwave{A}}'\otimes_{\text{\uwave{O}}_S}F'}$.
+La donnée d'un $\symup{(S'\times_SS')}$-homomorphisme du premier dans le second équivaut
+à la donnée d'un homomorphisme de
+$\symup{(\text{\uwave{A}}'\otimes\text{\uwave{A}}')}$-module, et compte tenu que
+$\symup{\text{\uwave{A}}'}$ est localement libre, cela équivaut à la donnée d'un
+homomorphisme de $\symup{(\text{\uwave{A}}'\otimes\text{\uwave{A}}')}$-modules :
+\[
+  \symup{\text{\uwave{U}}=
+  \mathop{\text{\uwave{Hom}}}\nolimits_{\text{\uwave{O}}_S}(\text{\uwave{A}}',\text{\uwave{A}}')
+  =\text{\uwave{A}}'\otimes\check{\text{\uwave{A}}}'
+  \longrightarrow
+  \mathop{\text{\uwave{Hom}}}\nolimits_{\text{\uwave{O}}_S}(F',F')}
+\]
+i. e. à la donnée, pour toute section $\symup{\xi}$ de $\symup{\text{\uwave{U}}}$ sur un ouvert $\symup{V}$,
+d'un homomorphisme de $\symup{\text{\uwave{O}}_S}$-modules
+$\symup{T_\xi:F'|_V\longrightarrow F'|_V}$, satisfaisant les conditions
+\begin{equation}
+  \symup{T_{f\xi}(x)=fT_\xi(x)
+  \qquad T_{\xi f}x=T_\xi(fx)
+  \tag{3.1}}
+\end{equation}
+où $\symup{f,x}$ sont respectivement des sections de $\symup{\text{\uwave{A}}',F'}$ sur un ouvert de
+$\symup{S}$ contenu dans $\symup{V}$. Les conditions (i) et (ii) d'une donnée de descente
+(A, paragraphe 1, (c)) s'écrivent alors respectivement :
+\begin{equation}
+  \symup{T_{1_U}x=x,
+  \qquad\text{i. e.}\qquad
+  T_{1_U}=\operatorname{id}_{F'}
+  \tag{3.2}}
+\end{equation}
+\begin{equation}
+  \symup{T_{\xi\eta}=T_\xi T_\eta
+  \tag{3.3}}
+\end{equation}
+En d'autres termes, \uline{une donnée de descente sur} $\symup{F'}$ \uline{équivaut à une représentation du faisceau de} $\symup{\text{\uwave{O}}_S}$\uline{-algèbres} $\symup{\text{\uwave{U}}=\mathop{\text{\uwave{Hom}}}\nolimits_{\text{\uwave{O}}_S}(\text{\uwave{A}}',\text{\uwave{A}}')}$ \uline{dans le faisceau de} $\symup{\text{\uwave{O}}_S}$\uline{-algèbres} $\symup{\mathop{\text{\uwave{Hom}}}\nolimits_{\text{\uwave{O}}_S}(F',F')}$, \uline{satisfaisant les deux conditions de linéarité} (3.1). Si on a un accouplement de faisceaux quasi-cohérents sur
+$\symup{S'}$ :
+\[
+  \symup{F'_1\times F'_2\longrightarrow F'_3}
+\]
+(qu'on peut interpréter comme un accouplement de faisceaux de
+$\symup{\text{\uwave{A}}'}$-modules sur $\symup{S}$),
+
+\src{320}
+et des données de recollement sur les $\symup{F'_i}$, définies par des homomorphismes
+$\symup{T_i}$ $\symup{(i=1,2,3)}$ $\symup{\text{\uwave{U}}\longrightarrow\mathop{\text{\uwave{Hom}}}\nolimits_{\text{\uwave{O}}_S}(F'_i,F'_i)}$,
+alors ces données sont \uline{compatibles avec l'accouplement donné}, dans le sens
+évident du terme, si et seulement si la condition suivante est vérifiée :
+
+Pour toute section $\symup{\xi}$ de $\symup{\text{\uwave{U}}}$ sur un ouvert, désignant par
+$\symup{\Delta\xi=\sum\xi'_i\otimes_{A'}\xi''_i}$
+la section de $\symup{\text{\uwave{U}}\otimes_{\text{\uwave{A}}'}\text{\uwave{U}}}$ ($\symup{\text{\uwave{U}}}$ étant
+considéré comme $\symup{\text{\uwave{A}}'}$-module pour sa structure à gauche) défini par la
+formule
+\[
+  \symup{\xi\mathbin{\cdot}(fg)=\sum_i\xi'_i(f)\xi''_i(g)}
+\]
+(où $\symup{f}$ et $\symup{g}$ sont deux sections de $\symup{\text{\uwave{A}}'}$ sur un ouvert plus petit),
+on a la formule
+\begin{equation}
+  \symup{T^{(3)}_\xi(x\mathbin{\cdot}y)
+  =\sum_iT^{(1)}_{\xi'_i}x\mathbin{\cdot}T^{(2)}_{\xi''_i}y
+  \tag{3.4}}
+\end{equation}
+pour tout couple de sections $\symup{x,y}$ de $\symup{\text{\uwave{A}}'}$ sur un ouvert
+plus petit. (On pourra exprimer cette
+propriété en disant que les homomorphismes $\symup{T^{(i)}}$ sont \uline{compatibles avec l'application diagonale} de $\symup{\text{\uwave{U}}}$, relativement à l'accouplement donné).
+En particulier, les formules (3.1) à (3.4) nous permettent d'interpréter en
+termes de représentations d'algèbres à applications diagonales, les données de
+descente sur un faisceau quasi-cohérent d'\uline{algèbres} sur $\symup{S'}$, donc aussi (se
+restreignant aux algèbres commutatives) les données de descente sur un
+$\symup{S'}$-schéma affine.
+
+De là, on passe à une interprétation analogue des données de descente sur un
+$\symup{S'}$-pré-schéma $\symup{X'}$ quelconque : la donnée d'un tel $\symup{X'}$ équivaut à la donnée
+d'un pré-schéma $\symup{X'}$ \uline{sur} $\symup{S}$, muni d'un homomorphisme de $\symup{\text{\uwave{O}}_S}$-algèbres
+\[
+  \symup{\text{\uwave{A}}'\longrightarrow\text{\uwave{O}}_{X'}}
+\]
+et une donnée de descente sur $\symup{X'}$ équivaut à la donnée d'un homomorphisme de
+faisceaux (compatible avec le morphisme $\symup{h:X'\longrightarrow S'}$) :
+\[
+  \symup{\text{\uwave{U}}\longrightarrow
+  \mathop{\text{\uwave{Hom}}}\nolimits_{h^{-1}(\text{\uwave{O}}_S)}
+  (\text{\uwave{O}}_{X'},\text{\uwave{O}}_{X'})}
+\]
+satisfaisant les conditions analogues aux conditions (3.1) à (3.4) ci-dessus.
+
+\result{EXEMPLE}{1 (\fquote{WEIL})} Supposons $\symup{S'/S}$ un \uline{revêtement étale galoisien} de groupe de Galois $\symup{\Gamma}$ (cf. A, paragraphes 3, et 4,(d)). Alors une
+donnée de descente sur un faisceau quasi-cohérent $\symup{F'}$ sur $\symup{S'}$ (resp. sur un
+$\symup{S'}$-pré-schéma $\symup{X'}$) équivaut à la donnée d'une représentation de $\symup{\Gamma}$ par
+automorphismes de $\symup{(S',F')}$ (resp. de $\symup{(S',X')}$) compatible avec les opérations
+de $\symup{\Gamma}$ sur $\symup{S'}$. Ce résultat
+
+\src{321}
+est \fquote{formel}, i. e. se démontre en termes de catégories, mais du point de vue
+de ce numéro résulte aussi de la structure explicite de $\symup{\text{\uwave{U}}}$, (muni de
+sa structure d'anneau, l'homomorphisme d'anneaux
+$\symup{\text{\uwave{A}}'\longrightarrow\text{\uwave{U}}}$ et l'application diagonale),
+complètement connue grâce au résultat suivant : $\symup{\text{\uwave{U}}}$ \uline{admet, en tant que}
+$\symup{A'}$-\uline{module à gauche, une base formée des sections de} $\symup{\text{\uwave{U}}}$ \uline{qui correspondent aux éléments de} $\symup{\Gamma}$.
+
+\result{EXEMPLE}{2 (\fquote{CARTIER})} Soit $\symup{p}$ un nombre premier, supposons
+$\symup{p\text{\uwave{O}}_S=0}$ (i. e. $\symup{\text{\uwave{O}}_S}$ est de \uline{caractéristique} $\symup{p}$),
+$\symup{\text{\uwave{A}}'^p\subset\text{\uwave{O}}_S=\text{\uwave{A}}}$ (i. e. $\symup{S'/S}$ est \uline{radiciel de hauteur} 1) et que le faisceau d'algèbres $\symup{\text{\uwave{A}}'}$ sur $\symup{\text{\uwave{A}}}$ \uline{admet localement une} $\symup{p}$-\uline{base}, i. e. une famille $\symup{(x_i)}$ de sections telle que
+$\symup{\text{\uwave{A}}'}$ soit engendré comme algèbre par les $\symup{x_i}$, soumis aux seules
+conditions $\symup{x_i^p=0}$. Nous supposons l'ensemble des $\symup{i}$ fini, de cardinal $\symup{n}$.
+Soit $\symup{\mathfrak G}$ le faisceau des $\symup{A}$-dérivations de $\symup{A'}$ ;
+c'est un faisceau de $\symup{A'}$-modules localement libre de rang $\symup{n}$, de plus
+c'est un faisceau de $\symup{p}$-algèbres de Lie sur $\symup{\text{\uwave{A}}}$ (mais non sur
+$\symup{\text{\uwave{A}}'}$) satisfaisant la condition
+\begin{equation}
+  \symup{[X,fY]=X(f)Y+f[X,Y]
+  \tag{3.5}}
+\end{equation}
+
+\result{LEMME}{} $\symup{\text{\uwave{U}}=
+\mathop{\text{\uwave{Hom}}}\nolimits_{\text{\uwave{O}}_S}(\text{\uwave{A}}',\text{\uwave{A}}')}$ est engendré, en
+tant que $\symup{\text{\uwave{O}}_S}$-algèbre muni d'un homomorphisme d'algèbres
+$\symup{\text{\uwave{A}}'\longrightarrow\text{\uwave{U}}}$, par le sous-$\symup{A'}$-module à
+gauche $\symup{\mathfrak G}$, avec les relations supplémentaires :
+\begin{equation}
+  \left\{
+  \begin{aligned}\symup{Xf-fX}&\symup{=X(f)}\\\symup{XY-YX}&\symup{=[X,Y]}\\\symup{X^p}&\symup{=X^{(p)}}\end{aligned}
+  \right.
+  \tag{3.6}
+\end{equation}
+
+Il résulte du lemme précédent qu'une donnée de descente sur le faisceau
+quasi-cohérent $\symup{F'}$ sur $\symup{S'}$ équivaut à la donnée, pour tout $\symup{X\in\mathfrak G}$,
+d'un $\symup{\text{\uwave{O}}_S}$-endomorphisme $\symup{\overline X}$ de $\symup{F'}$, satisfaisant les
+conditions
+\begin{align}
+  \symup{\overline{fX}}&\symup{=f\overline X} \tag{3.7}\\
+  \symup{\overline X(fx)}&\symup{=X(f)x+f\overline X(x)} \tag{3.8}\\
+  \symup{\overline{[X,Y]}}&\symup{=[\overline X,\overline Y]} \tag{3.9}\\
+  \symup{\overline{X^{(p)}}}&\symup{=\overline X^p} \tag{3.10}
+\end{align}
+(C'est ce qu'on pourrait appeler une \uline{connexion linéaire sur} $\symup{F'}$, \uline{sans courbure} et \uline{compatible avec la puissance} $\symup{p}$-ième). On explicite de même la
+notion de donnée de descente sur un $\symup{S'}$-pré-schéma $\symup{X'}$ ; la relation (3.4) est
+remplacée ici par la condition que les $\symup{\overline X}$ sont des \uline{dérivations} de
+$\symup{\text{\uwave{O}}_{X'}}$. Comme le morphisme $\symup{S'\longrightarrow S}$ est radiciel, le
+théorème 3 garantit que toute telle donnée de descente est
+
+\src{322}
+effective, donc définit un $\symup{S}$-pré-schéma $\symup{X}$.
+
+On notera qu'on n'a pas eu à faire d'hypothèse de platitude, de non singularité
+ou de finitude quelconque sur $\symup{F'}$ resp. $\symup{X'}$.
+
+\addcontentsline{toc}{subsection}{4. Application à des critères de rationalité}
+\result{4. \uline{Application à des critères de rationalité}}{} Soit $\symup{X}$ un $\symup{S}$-pré-schéma tel que l'image directe de $\symup{\text{\uwave{O}}_X}$ sur $\symup{S}$
+soit $\symup{\text{\uwave{O}}_S}$ ; cette propriété restera vraie alors par toute extension
+plate $\symup{S'\longrightarrow S}$ de la base $\symup{S}$. Si $\symup{F}$ est un \uline{faisceau inversible}
+(i. e. localement libre de rang 1) sur $\symup{X}$, les automorphismes de $\symup{F}$,
+s'identifiant aux sections inversibles de $\symup{\text{\uwave{O}}_X}$, correspondent
+biunivoquement aux sections inversibles de $\symup{\text{\uwave{O}}_S}$. Soit alors $\symup{s}$ une
+section de $\symup{X}$ au-dessus de $\symup{s}$ ; nous appellerons de façon imagée, \uline{section de}
+$\symup{F}$ \uline{au-dessus de} $\symup{s}$, une section du faisceau inversible $\symup{s^*(F)}$ sur $\symup{S}$. Il
+résulte de ce qui précède que si $\symup{F_i}$ ($\symup{i=1,2}$) sont deux faisceaux inversibles
+sur $\symup{X}$, munis chacun d'une section au-dessus de $\symup{s}$, et \uline{si} $\symup{F_1}$ \uline{et} $\symup{F_2}$ \uline{sont
+isomorphes, il existe un isomorphisme et un seul de} $\symup{F_1}$ \uline{sur} $\symup{F_2}$ \uline{compatible
+avec les sections en question} (i. e. transformant la première en la seconde).
+D'ailleurs, et indépendamment de la section $\symup{s}$, convenons de regarder comme
+\uline{équivalents} deux faisceaux inversibles $\symup{F_1}$ et $\symup{F_2}$ sur $\symup{X}$ tel que tout
+point de $\symup{S}$ ait un voisinage ouvert $\symup{U}$ tel que les restrictions de $\symup{F_1}$ et
+$\symup{F_2}$ à $\symup{X|U}$ soient isomorphes. Alors \uline{tout faisceau inversible} $\symup{F}$ \uline{sur} $\symup{X}$ \uline{est
+équivalent à un faisceau inversible} $\symup{F_1}$ \uline{muni d'une section marquée au-dessus
+de} $\symup{s}$ (on prend $\symup{F_1=F\,s^*(F)^{-1}}$), \uline{et} $\symup{F_1}$ \uline{est déterminé à un
+isomorphisme près}. En d'autres termes, la classification des faisceaux
+inversibles sur $\symup{X}$ à une \uline{équivalence} près est la même que la classification à
+un isomorphisme près des faisceaux inversibles munis d'une section marquée.
+
+Comme ces propriétés restent vraies par extension plate
+$\symup{\alpha:S'\longrightarrow S}$ de la base, (en remplaçant la section $\symup{s}$ par son
+image inverse $\symup{s'}$ par $\symup{\alpha}$), on en conclut, compte tenu du théorème 1 :
+
+\uline{Le pré-schéma} $\symup{X/S}$ \uline{étant comme ci-dessus et admettant une section} $\symup{s}$,
+\uline{soit} $\symup{\alpha:S'\longrightarrow S}$ \uline{un morphisme fidèlement plat et
+quasi-compact ; soit} $\symup{F'}$ \uline{un faisceau inversible sur} $\symup{X'=X\times_SS'}$. \uline{Pour que}
+$\symup{F'}$ \uline{soit équivalent à l'image inverse sur} $\symup{X'}$ \uline{d'un faisceau inversible} $\symup{F}$
+\uline{sur} $\symup{X}$, \uline{il faut et il suffit que ses images inverses} $\symup{p_1^*(F')}$ \uline{et} $\symup{p_2^*(F')}$
+\uline{sur} $\symup{X'\times_XX'=X\times_S(S'\times_SS')}$ \uline{soient équivalentes. S'il en est
+ainsi}, $\symup{F}$ \uline{est déterminé à une équivalence près}. (On dira alors que $\symup{F'}$ est
+\uline{rationnel} sur $\symup{S}$).
+
+S'inspirant de ce principe dans le cas où
+$\symup{\alpha:S'\longrightarrow S}$ est comme dans l'exemple 1 ou l'exemple 2 du
+numéro précédent, on trouve les \uline{critères de rationalité de} Weil \uline{ou de} Cartier.
+(On notera que ses auteurs se bornent au cas où $\symup{S}$ et $\symup{S'}$
+
+\src{323}
+sont des spectres de corps ; a fortiori, $\symup{S}$ est alors le spectre d'un anneau
+local, et la relation d'équivalence introduite ci-dessus n'est autre que la
+relation d'isomorphie). Dans le premier cas, $\symup{F'}$ est rationnel sur $\symup{S}$ si et
+seulement si ses transformés par $\symup{\Gamma}$ sont équivalents à $\symup{F'}$. Pour
+exprimer le critère de rationalité dans le deuxième cas, on considère, de façon
+générale, le morphisme diagonal
+$\symup{X'\longrightarrow X''=X'\times_XX'}$
+de $\symup{X'/X}$, le faisceau d'idéaux $\symup{\text{\uwave{I}}}$ correspondant sur
+$\symup{X'\times_XX'}$ et le faisceau $\symup{\text{\uwave{I}}/\text{\uwave{I}}^2}$, qui s'identifie à son
+image réciproque $\symup{\Omega^1_{X'/X}}$ sur $\symup{X}$ (\uline{faisceau des} 1-\uline{différentielles de} $\symup{X'}$ \uline{par rapport à} $\symup{X}$). Comme les restrictions des
+$\symup{F''_i=p_i(F')}$ ($\symup{i=1,2}$) à la diagonale sont isomorphes (car isomorphes à
+$\symup{F'}$), i. e. $\symup{F''_1{F''_2}^{-1}=F''}$ a une restriction à la diagonale qui est
+triviale, il s'ensuit que la restriction de $\symup{F''}$ à
+$\symup{(X'',\text{\uwave{O}}_{X''}/\text{\uwave{I}}^2)}$ est donnée, à un isomorphisme près, par
+un élément bien déterminé $\symup{\xi}$ de
+\[
+  \symup{H^1(X'',\text{\uwave{I}}/\text{\uwave{I}}^2)
+  =H^1(X',\Omega^1_{X'/X}),}
+\]
+D'ailleurs, en l'occurrence, on a
+$\symup{\Omega^1_{X'/X}=\Omega^1_{S'/S}\otimes_{\text{\uwave{O}}_S}\text{\uwave{O}}_X}$,
+et par suite, \uline{si} $\symup{\Omega^1_{S'/S}}$ \uline{est localement libre sur} $\symup{S}$ (comme dans le
+cas de Cartier), $\symup{\xi}$ \uline{définit une section de}
+$\symup{R^1f'(\text{\uwave{O}}_{X'})\otimes\Omega^1_{S'/S}}$
+\uline{sur} $\symup{S'}$ (appelée \uline{classe} de Atiyah-Cartier \uline{du faisceau inversible} $\symup{F'}$ \uline{sur}
+$\symup{X'/S}$) \uline{dont l'annulation est nécessaire et suffisante pour que les images réciproques de} $\symup{F'}$ \uline{par les deux projections de}
+\[
+  \symup{(X'',\text{\uwave{O}}_{X''}/\text{\uwave{I}}^2)
+  =X\times_S(S'',\text{\uwave{O}}_{S''}/\text{\uwave{J}}^2)}
+\]
+\uline{sur} $\symup{X'}$ \uline{soient équivalentes} (où $\symup{\text{\uwave{J}}}$ est le faisceau d'idéaux sur
+$\symup{S''=S'\times_SS'}$ défini par le morphisme diagonal
+$\symup{S'\longrightarrow S'\times_SS'}$). Cette annulation est donc trivialement
+\uline{nécessaire} pour que les images réciproques de $\symup{F'}$ sur
+$\symup{X''=X\times_SS''}$ lui-même soient équivalentes, donc aussi pour que $\symup{F'}$ soit
+équivalent à l'image inverse d'un faisceau inversible $\symup{F}$ sur $\symup{X}$. D'ailleurs,
+la classe de Atiyah-Cartier peut aussi s'interpréter comme l'obstruction à
+l'existence, localement au-dessus de $\symup{S'}$, d'une \uline{connexion} de $\symup{F'}$ relativement
+aux dérivations de $\symup{X'/X}$, une telle connexion étant de plus déterminée quand
+on connaît les dérivations de $\symup{F'}$ correspondant aux prolongements naturels à
+$\symup{X'}$ des dérivations de $\symup{S'/S}$. De ceci, et des développements du numéro
+précédent, on conclut facilement que dans le cas de l'exemple 2 dudit,
+et lorsque $\symup{X/S}$ admet une section, l'annulation de la classe de
+Atiyah-Cartier est aussi suffisante pour que $\symup{F'}$ soit rationnelle sur $\symup{S}$.
+
+\addcontentsline{toc}{subsection}{5. Restriction du schéma de base dans un schéma abélien}
+\result{5. \uline{Application à la restriction du schéma de base dans un schéma abélien}}{} Soit $\symup{S}$ un pré-schéma. On appelle \uline{schéma abélien} sur $\symup{S}$ un schéma $\symup{X}$ simple
+et propre
+
+\src{324}
+sur $\symup{S}$ dont les fibres en les points $\symup{x\in S}$ sont des schémas de variétés
+abéliennes sur les $\symup{\varkappa(x)}$. Supposons $\symup{S}$ noethérien et \uline{régulier} (i. e. ses
+anneaux locaux réguliers), alors on peut montrer en utilisant le \uline{théorème de connexion} de MURRE [4] (du moins dans le cas \fquote{d'égales caractéristiques}, où
+le théorème cité est actuellement démontré) \uline{que toute section rationnelle de}
+$\symup{X}$ \uline{sur} $\symup{S}$ \uline{est partout définie} (i. e. est une section) (ce qui généralise un
+théorème classique de WEIL). Il en résulte, plus généralement que si $\symup{X'}$ est
+un schéma simple sur $\symup{S}$, alors toute $\symup{S}$-application rationnelle de $\symup{X'}$ dans
+$\symup{X}$ est partout définie. Il en résulte ceci, qui généralise un résultat de
+IGUSA-LANG : $\symup{S}$ \uline{étant noethérien et régulier et} $\symup{K}$ \uline{désignant
+son anneau des fonctions rationnelles} (composé direct de corps), \uline{soit} $\symup{X}$ \uline{un
+schéma abélien au-dessus de} $\symup{K}$ ; \uline{si} $\symup{X}$ \uline{est isomorphe à un} $\symup{K}$\uline{-schéma de la
+forme} $\symup{X_0\times_S\operatorname{Spec}(K)}$, \uline{où} $\symup{X_0}$ \uline{est un schéma abélien sur}
+$\symup{S}$, \uline{alors} $\symup{X_0}$ \uline{est déterminé à un isomorphisme unique près}.
+
+Utilisant le résultat d'unicité précédent, on voit que la question de
+restriction de la base dans $\symup{X}$ est locale sur $\symup{S}$ (et par suite, qu'il suffit
+de savoir faire la restriction aux $\symup{\operatorname{Spec}(\text{\uwave{O}}_x)}$, avec
+$\symup{x\in S}$). On voit de la même façon que si
+$\symup{S'\longrightarrow S}$ est un morphisme \uline{simple} de type fini, si $\symup{K'}$ est
+l'anneau des fonctions rationnelles de $\symup{S'}$, et si $\symup{X\otimes_KK'}$ est de la
+forme $\symup{X'_0\times_{S'}\operatorname{Spec}(K')}$, \uline{alors} $\symup{X'_0}$ \uline{est muni d'une
+donnée de descente canonique relativement à} $\symup{\alpha}$. Compte tenu du théorème
+3, on en conclut :
+
+\result{PROPOSITION}{5.1} Soit $\symup{S}$ un pré-schéma noethérien et régulier,
+irréductible, de corps de fonctions rationnelles $\symup{K}$, soit $\symup{K'}$ une extension
+finie de $\symup{K}$, \uline{non ramifiée sur} $\symup{S}$, $\symup{S'}$ le normalisé de $\symup{S}$ dans $\symup{K'}$ (qui est
+donc un revêtement étale de $\symup{S}$), $\symup{X}$ un schéma abélien sur $\symup{K}$ tel que
+$\symup{X\otimes_KK'}$ soit de la forme
+$\symup{X'_0\times_{S'}\operatorname{Spec}(K')}$, où $\symup{X'_0}$ est un schéma abélien
+projectif sur $\symup{S'}$. Alors $\symup{X}$ est de la forme
+$\symup{X_0\times_S\operatorname{Spec}(K)}$, où $\symup{X_0}$ est un schéma abélien projectif
+sur $\symup{S}$.
+
+\result{REMARQUES}{} Le conférencier ignore si on peut remplacer l'hypothèse
+que $\symup{S'\longrightarrow S}$ est un revêtement étale surjectif (permettant
+d'utiliser le théorème 3) par l'hypothèse que c'est un morphisme de type fini
+\uline{simple} et \uline{surjectif} (même si on suppose que c'est un étalement), ou si la
+proposition reste valable sans supposer $\symup{X'_0}$ projectif sur $\symup{S'}$ (condition qui
+est peut-être remplie automatiquement).
+
+\addcontentsline{toc}{subsection}{6. Critères de locale trivialité et isotrivialité}
+\result{6. \uline{Application à des critères de locale trivialité et isotrivialité}}{} Soient $\symup{S}$ un pré-schéma, $\symup{G}$ un \fquote{\uline{pré-schéma en groupes}} au-dessus de $\symup{S}$,
+$\symup{P}$ un pré-schéma sur $\symup{S}$ sur lequel \fquote{$\symup{G}$ \uline{opère}} (à droite). On dit que $\symup{P}$
+est \uline{formellement principal homogène} sous $\symup{G}$ si le morphisme bien connu
+\[
+  \symup{G\times_SP\longrightarrow P\times_SP}
+\]
+
+\src{325}
+déduit des opérations de $\symup{G}$ sur $\symup{P}$, est un \uline{isomorphisme}. Nous supposerons
+dorénavant $\symup{G}$ \uline{plat} sur $\symup{S}$ (donc fidèlement plat sur $\symup{S}$), et nous réserverons
+le nom de \uline{fibré principal homogène} sous $\symup{G}$ à un fibré formellement principal
+homogène $\symup{P}$ qui est \uline{fidèlement plat} et \uline{quasi-compact} sur $\symup{S}$. Il est immédiat
+qu'il revient au même de dire que l'on peut trouver une \uline{extension fidèlement plate} et \uline{quasi-compacte} $\symup{S'\longrightarrow S}$ de la base $\symup{S}$, telle que le
+fibré formellement principal homogène
+$\symup{P'=P\times_SS'}$
+sous $\symup{G'=G\times_SS'}$ soit \uline{trivial}, i. e. isomorphe à $\symup{G'}$ (i. e. admette une
+section) ; on pourra prendre en particulier $\symup{S'=P}$. Noter d'ailleurs que si
+$\symup{S}$ est localement noethérien, alors l'hypothèse de fidèle platitude sur $\symup{P}$
+équivaut à l'hypothèse que
+$\symup{\overline P_s=P\times_S\operatorname{Spec}(\overline{\text{\uwave{O}}}_s)}$
+est fidèlement plat sur $\symup{\overline{\text{\uwave{O}}}_s}$ pour tout $\symup{s\in S}$ (où
+$\symup{\overline{\text{\uwave{O}}}_s}$ désigne le complété de l'anneau local
+$\symup{\text{\uwave{O}}_s}$), comme il résulte du fait que $\symup{\overline{\text{\uwave{O}}}_s}$ est
+fidèlement plat sur $\symup{\text{\uwave{O}}_s}$. D'ailleurs, si $\symup{P}$ est de type fini sur
+$\symup{S}$ localement noethérien, l'ensemble des points $\symup{s}$ satisfaisant à la
+condition ci-dessus est constructible, donc si $\symup{S}$ est un \fquote{pré-schéma de Jacobson} (par exemple un schéma de type fini sur un corps, ou un anneau de Jacobson plus généralement), il suffit de vérifier la condition en question
+pour les points \uline{fermés} de $\symup{S}$. Cela nous ramène au cas où la base est le
+spectre d'un anneau local complet $\symup{A}$. Lorsque $\symup{S=\operatorname{Spec}(A)}$
+($\symup{A}$ anneau local noethérien complet) et que $\symup{P}$ est de type fini sur $\symup{S}$, la
+fidèle platitude de $\symup{P/S}$ équivaut aussi à l'existence d'un $\symup{S'}$ \uline{fini et plat}
+sur $\symup{S}$ tel que $\symup{P'}$ soit trivial, et si de plus $\symup{G}$ est \uline{simple} sur $\symup{S}$, on
+peut supposer $\symup{S'}$ \uline{étalé} sur $\symup{S}$. Par suite, si de plus le corps résiduel de
+$\symup{A}$ est algébriquement clos (\fquote{\uline{cas géométrique}}), $\symup{P}$ est fidèlement plat sur
+$\symup{A}$ si et seulement si il est trivial. Donc, si $\symup{S}$ est un pré-schéma
+algébrique sur un corps algébriquement clos, et $\symup{G}$ simple de type fini sur
+$\symup{S}$, on voit que la condition de fidèle platitude sur $\symup{S}$ équivaut à la
+condition de trivialité analytique (SLF) de SERRE ([6] p. 1-12).
+
+On peut introduire d'autres types plus forts de conditions sur $\symup{P}$, ayant la
+nature d'une \fquote{trivialité locale}. Nous dirons en particulier, que $\symup{P}$ est
+\uline{isotrivial} (resp. \uline{strictement isotrivial}) si pour tout $\symup{s\in S}$, il existe un
+voisinage ouvert $\symup{U}$ de $\symup{s}$, et un morphisme \uline{fini et fidèlement plat} (resp. un
+\uline{revêtement étale surjectif}) $\symup{U'\longrightarrow U}$ tel que
+$\symup{P'=P\times_SU'}$ soit trivial. (Nous nous écartons de la terminologie de SERRE
+[1], qui appelle localement isotrivial ce que nous appelons strictement
+isotrivial). La stricte isotrivialité est surtout utile si $\symup{G}$ est simple sur
+$\symup{S}$, mais est une notion inadéquate par contre dans les autres cas.
+
+Si $\symup{G}$ est \uline{affine} sur $\symup{S}$, tout fibré principal homogène $\symup{P}$ sous $\symup{G}$ est
+affine d'après le paragraphe 2, d'où la possibilité, grâce au théorème 2, de
+\fquote{descendre}
+
+\src{326}
+de tels fibrés par des morphismes fidèlement plats et quasi-compacts. Prenons,
+en particulier, $\symup{G=\operatorname{Gl}(n)_S}$, défini par la condition que le
+foncteur de $\symup{S}$-pré-schémas
+$\symup{S'\longrightarrow\operatorname{Hom}_S(S',G)}$
+(à valeurs dans la catégorie des groupes) s'identifie au foncteur
+$\symup{\operatorname{Gl}(n)(S')=\operatorname{Gl}(n,H^0(S',\text{\uwave{O}}_{S'}))}$
+du A, paragraphe 4, (e). Utilisant le fait (i) que tout fibré principal homogène
+sous $\symup{G}$ (resp. tout faisceau localement libre de rang $\symup{n}$ sur $\symup{S}$) devient
+isomorphe à l'objet \fquote{trivial} $\symup{G}$ (resp. $\symup{\text{\uwave{O}}_S^n}$) par une extension
+fidèlement plate et quasi-compacte convenable de $\symup{S}$, (ii) que l'on peut
+descendre les objets du type envisagé (fibrés principaux homogènes sous $\symup{G}$,
+resp. faisceaux localement libres de rang $\symup{n}$) par de tels morphismes, et enfin
+(iii) que le groupe des automorphismes du fibré trivial sur un $\symup{S'/S}$ est
+fonctoriellement isomorphe au groupe des automorphismes du faisceau localement
+libre de rang $\symup{n}$ trivial sur $\symup{S'}$, on conclut \fquote{formellement} qu'il \fquote{revient au même} de se donner sur $\symup{S}$ (ou sur un $\symup{S'/S}$) un fibré principal homogène
+de groupe $\symup{G}$, ou de s'y donner un faisceau localement libre de rang $\symup{n}$. (De
+façon plus précise, on a une \uline{équivalence de catégories fibrées}). On en conclut
+en particulier :
+
+\result{PROPOSITION}{6.1} \uline{Tout fibré principal homogène de groupe} $\symup{\operatorname{Gl}(n)_S}$ \uline{est localement trivial}.
+
+Par des arguments connus, on en conclut le même résultat pour des groupes
+structuraux tels que $\symup{\operatorname{Sl}(n)_S}$, $\symup{\operatorname{Sp}(n)_S}$ et des
+produits de tels groupes. On en conclut aussi que, si $\symup{F}$ est un sous-groupe
+fermé de $\symup{G=\operatorname{Gl}(n)_S}$, plat sur $\symup{S}$, tel que le quotient $\symup{G/F}$
+existe, et que $\symup{G}$ soit un fibré principal homogène isotrivial (resp.
+strictement isotrivial) sur $\symup{G/F}$, de groupe $\symup{F\times_S(G/F)}$, alors \uline{tout} fibré
+principal homogène de groupe $\symup{F}$ est isotrivial (resp. strictement isotrivial).
+Cela s'applique à tous les \fquote{groupes linéaires} sur $\symup{S}$ qui ont été utilisés
+jusqu'à présent, et en particulier au cas où $\symup{G=S\times_k\Gamma}$, $\symup{S}$ étant un
+pré-schéma sur le corps $\symup{k}$, et $\symup{\Gamma}$ un groupe linéaire au sens classique,
+et en particulier simple, sur $\symup{k}$. Cela résout donc, pour de tels groupes, une
+question de SERRE (loc. cit.).
+
+Signalons aussi que, pour la plupart des groupes (linéaires ou non) simples sur
+$\symup{S}$ connus, et en tout cas ceux de la forme $\symup{S\times_k\Gamma}$ comme ci-dessus,
+on peut montrer que tout fibré principal homogène isotrivial est strictement
+isotrivial, ce qui résout en particulier, une autre question de SERRE (loc.
+cit. 1-14), compte tenu qu'un fibré principal homogène obtenu par une
+descente à la CARTIER (cf. paragraphe 3, exemple 2) est manifestement
+isotrivial.
+
+\result{REMARQUE}{} Une des difficultés essentielles dans ces questions (mise
+à part la question de l'existence des schémas quotients $\symup{G/F}$) est le manque de
+critères d'effectivité pour une donnée de descente par un morphisme fidèlement
+plat \uline{non fini}.
+
+\src{327}
+\begin{center}
+  BIBLIOGRAPHIE.
+\end{center}
+
+\begin{description}
+  \item[{\normalfont[1]}] DIEUDONNÉ (J.) et GROTHENDIECK (Alexander). - Eléments
+    de géométrie algébrique, à paraître dans les Publications mathématiques de
+    l'Institut des Hautes Etudes Scientifiques.
+  \item[{\normalfont[2]}] GRAUERT (H.) und REMMERT (R.). - Komplexe Räume, Math.
+    Annalen, t. 136, 1958, p. 245-318.
+  \item[{\normalfont[3]}] GROTHENDIECK (Alexander). - Géométrie formelle et
+    géométrie algébrique. Séminaire Bourbaki, t. 11, 1958/59, n\textsuperscript{o} 182.
+  \item[{\normalfont[4]}] MURRE (J. P.). - On a connectedness theorem for a
+    birational transformation at a simple point, Amer. J. Math., t. 80, 1958,
+    p. 3-15.
+  \item[{\normalfont[5]}] SERRE (Jean-Pierre). - Géométrie algébrique et géométrie
+    analytique, Ann. Inst. Fourier Grenoble, t. 6, 1955-56, p. 1-42.
+  \item[{\normalfont[6]}] SERRE (Jean-Pierre). - Espaces fibrés algébriques,
+    Séminaire Chevalley, t. 2, 1958 : Anneaux de Chow et applications, n\textsuperscript{o} 1.
+\end{description}
+
+\begin{center}
+  \rule{.14\linewidth}{.3pt}
+\end{center}

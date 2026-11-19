@@ -1,0 +1,9 @@
+check	fixture_sha256	requested_page	requested_occurrence	status	start	end	exact
+duplicate_default	fdcf1af51e0b3ada0b3ae445173a60312d00e5684be1ea0ffe349b4c36426a18	7		ambiguous duplicate marker			True
+duplicate_occurrence_1	fdcf1af51e0b3ada0b3ae445173a60312d00e5684be1ea0ffe349b4c36426a18	7	1	exact marker segment	0	8	True
+duplicate_occurrence_2	fdcf1af51e0b3ada0b3ae445173a60312d00e5684be1ea0ffe349b4c36426a18	7	2	exact marker segment	8	16	True
+duplicate_occurrence_absent	fdcf1af51e0b3ada0b3ae445173a60312d00e5684be1ea0ffe349b4c36426a18	7	3	requested occurrence absent			True
+roman_case	f5fbb1962f3b59a66a121c994e4006f1e0de4001740ad84c1e52ee082973061c	IV		exact marker segment	0	9	True
+commented_control	6bc9c68871c187ccd13adc3f41e81ab08f6a8a1f338af460c7e59c977de2216c	7		requested marker absent			True
+escaped_percent	34e8557628696a5f9036eb483915f79b973f0597fbc8397d12e2ee40f90d317f	7		exact marker segment	2	10	True
+escaped_control	300d4ec07dd2d2a5c94e4c6a3213c366457e56a661c0f576eda7ec9afb5af874	7		requested marker absent			True

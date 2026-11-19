@@ -1,0 +1,52 @@
+\src{181}
+\result{COROLLARY}{1} Let $X$ and $X'$ be two nonsingular locally closed
+varieties in a projective space, with $X'$ complete. Let $U$ be a nonsingular
+cycle on $X\times X'$, and let $a$ and $b$ be two points of $X'$ such that $U$
+meets the cycles $X\times(a)$ and $X\times(b)$ transversely. Let $Z$ and $Z'$ be
+the nonsingular cycles on $X$ such that
+\[
+  Z\times(a)=(X\times(a)).U,
+  \qquad
+  Z'\times(b)=(X\times(b)).U.
+\]
+Then
+\[
+  P_X(Z)=P_X(Z').
+\]
+
+Indeed, let $f_a:X\longrightarrow X\times X'$ be defined by
+$f_a(x)=(x,a)$. Formula (4.8) gives $P(Z)=f_a^{*}(P(U))$, and similarly
+$P(Z')=f_b^{*}(P(U))$. Using the Künneth formula
+\[
+  H^{*}(X\times X',\Omega_{X\times X'}^{*})
+  =H^{*}(X,\Omega_X^{*})\otimes H^{*}(X',\Omega_{X'}^{*})
+\]
+and the fact that $H^{0}(X',\Osh_{X'})$ consists only of scalars, one readily
+obtains $f_a^{*}=f_b^{*}$, proving the assertion.
+
+For every $x\in X$, the point $(x)$ is a nonsingular subvariety of $X$ of
+codimension $n$, and therefore defines an element $\varepsilon_x$ of
+$H^{n}(X,\Omega_X^{n})$. If $X$ is a nonsingular projective variety, Corollary 1
+shows that $\varepsilon_x$ does not depend on the chosen point $x$; it is denoted
+$\varepsilon_X$ and called the \emph{fundamental class} of
+$H^{n}(X,\Omega_X^{n})$.
+
+\result{REMARK}{} To obtain a satisfactory theory, one would have to define
+$P_X(Z)$ for arbitrary cycles $Z$ and prove Theorem 1 for a proper intersection
+of cycles. (At the time this exposé was written, this had not yet been done in
+full generality.) Assuming this has been done, Corollary 1 becomes: if $Z$ and
+$Z'$ are two algebraically equivalent cycles, then $P_X(Z)=P_X(Z')$ (a statement
+that does not seem to follow from the preceding results, even when $Z$ and $Z'$
+are nonsingular).
+
+\fsection{5}{The duality theorem}
+
+In this section, $X$ denotes a nonsingular projective variety of dimension $n$.
+
+\result{THEOREM}{2} The fundamental class $\varepsilon_X$ of
+$H^{n}(X,\Omega_X^{n})$ is a basis of this vector space.
+
+(The proof will be given below.) By the preceding theorem, we may therefore
+identify $H^{n}(X,\Omega_X^{n})$ with the field $k$. Now consider the pairings
+introduced in Section 2, which in particular give a pairing
+

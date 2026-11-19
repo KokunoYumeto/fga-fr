@@ -1,0 +1,10 @@
+layer	pass_number	latest_pass	box	pt	source	line_start	line_end	pdf_pages	mapping	shipout_candidate	log_line
+fr	1	True	hbox	26.84898	sources/fr/fr/149.tex	485	485		not yet mapped	11	570
+fr	1	True	hbox	6.36914	sources/fr/fr/182.tex	256	258		not yet mapped	27	978
+fr	1	True	hbox	11.93977	sources/fr/fr/182.tex	269	279		not yet mapped	27	981
+fr	1	True	hbox	36.72565	sources/fr/fr/182.tex	440	445		not yet mapped	29	998
+fr_printed	1	True	hbox	26.84898	sources/fr_printed/fr/149.tex	482	482		not yet mapped	11	570
+fr_printed	1	True	hbox	6.36914	sources/fr_printed/fr/182.tex	256	258		not yet mapped	27	979
+fr_printed	1	True	hbox	11.93977	sources/fr_printed/fr/182.tex	269	279		not yet mapped	27	982
+fr_printed	1	True	hbox	36.72565	sources/fr_printed/fr/182.tex	440	445		not yet mapped	29	999
+fr_printed	1	True	hbox	4.89633	sources/fr_printed/fr/182.tex	898	910		not yet mapped	35	1045

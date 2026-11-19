@@ -1,0 +1,42 @@
+from audit_utils import *
+from collections import Counter
+import csv
+for tree,layer in [('fr_printed','French as printed'),('fr','French corrected')]:
+    rel=f'sources/{tree}/fr/221.tex'
+    def r(a,b,line,why,kind='reading',count=1):
+        replace(rel,a,b,layer,'221-272',line,'5.5 / 5.6 / 5.7',
+                'Scan leaf 25 at 400 dpi and all enlarged bands: '+why,kind=kind,count=count)
+    s,_,_=page_text(rel,272)
+    for a,b,body in list(footnotes(s)):
+        r(s[a:b],'','three editorial notes','No footnote occurs on this page. The Mumford addition belongs to the separately printed 1962 erratum; the other two corrections are documented outside the text.','structure')
+    r('corps des complexes','\\uline{corps des complexes}','field in the Zappa example','These words are straight-underlined.')
+    a="Cela signifie donc que $D$ n'est pas intègre même en le point\ngénérique de la composante irréductible envisagée."
+    r(a,underline_prose(a),'generic nonintegrality conclusion','The entire prose of this sentence is underlined, excluding the mathematical letter D.')
+    r('\\subsection*{5.6}\n\nOn a donné','5.6. - On a donné','5.6 paragraph number','The number and short dash begin the paragraph inline, not as a separate heading.','structure')
+    r('Kodaira a donné','KODAIRA à donné','first attribution in 5.6','The surname is capitalized and the following a bears a grave accent.')
+    r('Kodaira. On notera','KODAIRA. On notera','consequence of the two criteria','The surname is capitalized here; its intervening occurrence in condition de Kodaira remains mixed case.')
+    r('Cartier a démontré','CARTIER a démontré','group-scheme smoothness theorem','The surname is capitalized.')
+    r(r'\mathbf C',r'\text{\uwave{C}}','complex base field','The print uses an ordinary C with a wavy underline, not bold C.')
+    r(r'\operatorname{Pic}',r'\underline{\operatorname{Pic}}','five Picard scheme signs','All five Pic signs have straight underlines.',count=5)
+    r('morphisme canonique\n\\[\nD\\longrightarrow\\underline{\\operatorname{Pic}}_{X/S}\n\\]\ndu','morphisme canonique $D\\to\\underline{\\operatorname{Pic}}_{X/S}$ du','divisor-to-Picard morphism','The short-arrow formula runs inline with the surrounding sentence.','structure')
+    r('sur un corps $k$ de caractéristique 0','sur \\uline{un corps} $k$ \\uline{de caractéristique} 0','Cartier theorem hypothesis','The words un corps and de caractéristique are underlined; k and 0 are not.')
+    r("n'est pas simple sur\n$K$","n'est pas simple sur\n$k$",'positive-characteristic base field','The print has lower-case k here, after having introduced upper-case K.')
+    r('un préschéma sur $X$, tel que','un préschéma sur $S$, tel que','5.7 base of Z','The scan says S, not X.')
+    r(r'\Pi_{X/S}',r'\prod\limits_{X/S}','three restriction-of-scalars signs','The product sign carries X/S underneath, including in running text.',count=3)
+    r("la question de l'existence de $\\prod\\limits_{X/S}(Z/X)$","la question de l'existence de $\\prod\\limits_{X/S}(Z/K)$",'last-line argument','The last printed quotient is Z/K, with a clearly typed K.')
+    if tree=='fr':
+        r('KODAIRA à donné','KODAIRA a donné','first attribution in 5.6','The verb phrase a donné uses the unaccented auxiliary a.','misprint of the original')
+        r("n'est pas simple sur\n$k$","n'est pas simple sur\n$K$",'positive-characteristic base field','The field of this sentence is the newly introduced K of positive characteristic, not the preceding characteristic-zero field k.','misprint of the original')
+        r('un préschéma sur $S$, tel que','un préschéma sur $X$, tel que','5.7 base of Z','The section functor Z/X and the hypothesis that Z is smooth over X require the specified structure morphism Z -> X.','misprint of the original')
+        r("la question de l'existence de $\\prod\\limits_{X/S}(Z/K)$","la question de l'existence de $\\prod\\limits_{X/S}(Z/X)$",'last-line argument','The functor discussed is the restriction of scalars of Z over X; there is no field K in 5.7.','misprint of the original')
+    upright_page(rel,layer,'221-272')
+event('221-5.5-Zappa','carried as background without fault found','Read the assertion about the nonsurjective characteristic map at the generic point of the parameter component for a smooth projective complex surface. The inference to generic nonreducedness follows from the tangent comparison checked on p. 271, but the cited Zappa construction itself has not been independently checked here. The later Mumford erratum is kept separate from the exposé.','221, p. 272, opening paragraph')
+event('221-5.6-Abel-map','targeted proof check','A relative effective Cartier divisor is an invertible sheaf with its regular section, modulo scalar isomorphism. Given a lift of the invertible sheaf across a small extension, the obstruction to lifting its section lies in H^1(X_0,L) tensor the extension kernel. Its vanishing supplies a section lift; flatness and the Cartier condition preserve regularity. This proves the infinitesimal lifting criterion for the divisor-to-Picard map, after the usual local trivialization of the Picard class. Smoothness of Picard then gives smoothness of D by composition. Uses the standing proper flat setup and the infinitesimal criterion.','221, p. 272, 5.6')
+event('221-5.6-Cartier','carried as background without fault found','Read the theorem that a group scheme locally of finite type over a characteristic-zero field is smooth. No independent proof of Cartier theorem is claimed; it is the input connecting the preceding Abel-map criterion with the stated Kodaira consequence.','221, p. 272, middle of 5.6')
+event('221-5.6-positive-characteristic','targeted proof check','A smooth map D -> Picard cannot have D smooth over the field at a point whose Picard image is nonsmooth, since geometric regularity descends through the corresponding faithfully flat local map. Over an algebraically closed field, a nonsmooth finite-type group scheme is nonreduced at every point: its reduced subgroup is smooth and translation makes the nilpotent-support condition invariant. Faithful flatness of the smooth local map preserves nonzero nilpotents, so D is nonreduced at x. The particular Igusa surface cited here is background, not independently reconstructed.','221, p. 272, end of 5.6')
+event('221-5.7','targeted proof check','For an affine square-zero test thickening T_0 -> T, X_T is affine because X -> S is finite. Smoothness of Z -> X gives local lifts of a section over X_T0. Their differences form a torsor under the quasi-coherent pullback tangent module tensored with the nilpotent ideal; its H^1 on affine X_T0 vanishes, so the local lifts glue. Finite local freeness ensures the section functor commutes with the relevant base changes and has local finite-presentation behavior when represented. The infinitesimal criterion then gives smoothness over S. Correct Z/S and the final Z/K to Z/X.','221, p. 272, Proposition 5.7')
+with (ROOT/'CORRECTIONS.tsv').open(newline='') as f:
+    c=Counter((x['layer'],x['kind']) for x in csv.DictReader(f,delimiter='\t') if x['printed_page']=='221-272')
+record_page('221',272,'Compared printed French entry lines 1100-1153 and corrected French entry lines 1101-1154 with scan leaf 25 at 400 dpi and all three enlarged bands; also inspected a tight crop of the overprinted nilpotents line. Read the end of 5.5, all of 5.6 and all of 5.7 through the sentence continuing on the next page.\n\nRemoved three unprinted footnotes, including the merged Mumford erratum. Restored the inline 5.6 label and divisor-to-Picard arrow, straight Picard underlines, the product signs with limits underneath, wavy-underlined C, prose emphasis, capitalized surnames and printed à donné. Printed French restores lower-case k, Z over S and the final Z/K. Corrected French uses the unaccented auxiliary a, the current field K and the required Z/X structure. The tiny ink spot after nilpotents is narrower and lighter than the typed punctuation and was not promoted to a sentence stop; this remains available for final image review. Checked the Abel-map lifting and descent consequences and the affine gluing argument for 5.7. Cartier theorem and the historical examples are explicitly background.\n\nOperation counts: '+'; '.join(f'{a}, {b}: {n}' for (a,b),n in sorted(c.items()))+'. Final row verdicts remain pending.')
+from update_record_counts import update
+update()

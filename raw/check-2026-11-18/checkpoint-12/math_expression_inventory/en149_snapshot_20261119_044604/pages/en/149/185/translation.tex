@@ -1,0 +1,51 @@
+\src{185}
+One checks that the isomorphism (5.6) is precisely (5.2 bis) for $p=n$ after
+setting $L=k$ by means of (5.7). Consequently, (5.2 bis) is an isomorphism for
+$p=n$. To prove that it is an isomorphism for every $p$, it again suffices to
+prove that, for $p<n$, the two sides of (5.2 bis) are coeffaceable functors of
+$F$, and a fortiori (in view of Lemma 3) that both sides vanish when
+$F=\Osh_X(-m)$ with $m$ large. For the first side this follows from Lemma 4; for
+the second, using the duality theorem on $P$, we write
+\[
+  H^{p}(X,\Osh_X(-m))'
+  =\operatorname{Ext}_{\Osh_P}^{r-p}
+    (P;\Osh_X(-m),\Omega_P^{r}).
+\]
+The second side vanishes for $p<n$ and $m$ large, as follows from Lemma 5 (with
+$X=P$ there) and from the fact that, as a coherent algebraic sheaf on $P$,
+$\Osh_X$ has cohomological dimension $\leq r-n$ (since $X$ is nonsingular),
+whence
+\[
+  \Extsh_{\Osh_P}^{r-p}(\Osh_X,\Omega_P^{r})=0
+  \qquad\text{for }p<n.
+\]
+
+\fsection{6}{The duality theorem for singular varieties}
+
+Let $X$ be a closed subset of dimension $n$ of projective space $P$ of
+dimension $r$. Formula (5.6) must here be written
+\begin{equation}\tag{6.1}
+  H^{n}(X,F)'
+  \simeq\operatorname{Hom}_{\Osh_X}(X;F,\omega_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\omega_X^{n}),
+\end{equation}
+where we have set
+\begin{equation}\tag{6.2}
+  \omega_X^{n}=E^{0}(\Osh_X)
+  =\Extsh_{\Osh_P}^{r-n}(\Osh_X,\Omega_P^{r}).
+\end{equation}
+As stated in Proposition 5, the sheaf so introduced does not in fact depend on
+the chosen embedding of $X$ into a nonsingular variety $P$. Taking
+$F=\omega_X^{n}$ in (6.1), we obtain
+\begin{equation}\tag{6.2 bis}
+  H^{n}(X,\omega_X^{n})'
+  \simeq\operatorname{Hom}_{\Osh_X}(X;\omega_X^{n},\omega_X^{n}),
+\end{equation}
+\footnote{The printed text also numbers this formula ``(6.2)''; the suffix
+``bis'' distinguishes the two occurrences.} and hence a distinguished element
+of $H^{n}(X,\omega_X^{n})'$ corresponding to the identity homomorphism of
+$\omega_X^{n}$:
+\begin{equation}\tag{6.3}
+  \gamma:H^{n}(X,\omega_X^{n})\longrightarrow k.
+\end{equation}
+

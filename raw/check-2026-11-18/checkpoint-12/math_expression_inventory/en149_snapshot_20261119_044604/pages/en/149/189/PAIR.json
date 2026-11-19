@@ -1,0 +1,155 @@
+{
+  "translation": "en",
+  "french_layer": "fr",
+  "unit": "149",
+  "page": "189",
+  "page_key": "149-189",
+  "status": "aligned_marker_boundaries",
+  "french_file": "sources/fr/fr/149.tex",
+  "translation_file": "sources/en/en/149.tex",
+  "french_sha256": "a237670c2a981f1c617518213be9903b8fb2076c96a49da9224e4733d54d1db4",
+  "translation_sha256": "42fdb8ee8a7db0b65e39facd6e3ebc9e6a74e655b048d9dd4a7fa1b261ad5b9c",
+  "french_segment": {
+    "status": "literal_marker_segment",
+    "page": "189",
+    "next_page": "190",
+    "prefix_included": false,
+    "marker_byte_start": 62814,
+    "byte_start": 62814,
+    "byte_end_exclusive": 66238,
+    "line_start": 1064,
+    "line_end": 1131,
+    "bytes": 3424,
+    "sha256": "f1edbb524a74f924fccce67804daa3ba0c156de1446fbaf7144b0402b274bd91",
+    "file": "sources/fr/fr/149.tex"
+  },
+  "translation_segment": {
+    "status": "literal_marker_segment",
+    "page": "189",
+    "next_page": "190",
+    "prefix_included": false,
+    "marker_byte_start": 50229,
+    "byte_start": 50229,
+    "byte_end_exclusive": 52795,
+    "line_start": 1137,
+    "line_end": 1191,
+    "bytes": 2566,
+    "sha256": "1709c8e687f9bf978867926393f36aa40707e65f98cad66a21461ed427d85bef",
+    "file": "sources/en/en/149.tex"
+  },
+  "french_math_all": 33,
+  "translation_math_all": 29,
+  "french_math": 31,
+  "translation_math": 27,
+  "french_references": 1,
+  "translation_references": 1,
+  "french_reference_shapes": 0,
+  "translation_reference_shapes": 0,
+  "candidate_alignments": {
+    "math": [
+      {
+        "id": "en:149:189:math:A0001",
+        "operation": "replace",
+        "status": "unpaired_ordered_block",
+        "left_ids": [
+          "fr:149:M00743",
+          "fr:149:M00746",
+          "fr:149:M00747",
+          "fr:149:M00748",
+          "fr:149:M00749",
+          "fr:149:M00750",
+          "fr:149:M00751",
+          "fr:149:M00752",
+          "fr:149:M00753",
+          "fr:149:M00754",
+          "fr:149:M00755",
+          "fr:149:M00756",
+          "fr:149:M00757",
+          "fr:149:M00758",
+          "fr:149:M00759",
+          "fr:149:M00760",
+          "fr:149:M00761",
+          "fr:149:M00762",
+          "fr:149:M00763",
+          "fr:149:M00764",
+          "fr:149:M00765",
+          "fr:149:M00766",
+          "fr:149:M00767",
+          "fr:149:M00768",
+          "fr:149:M00769",
+          "fr:149:M00770",
+          "fr:149:M00771",
+          "fr:149:M00772",
+          "fr:149:M00773",
+          "fr:149:M00774",
+          "fr:149:M00775"
+        ],
+        "right_ids": [
+          "en:149:M00743",
+          "en:149:M00746",
+          "en:149:M00747",
+          "en:149:M00748",
+          "en:149:M00749",
+          "en:149:M00750",
+          "en:149:M00751",
+          "en:149:M00752",
+          "en:149:M00753",
+          "en:149:M00754",
+          "en:149:M00755",
+          "en:149:M00756",
+          "en:149:M00757",
+          "en:149:M00758",
+          "en:149:M00759",
+          "en:149:M00760",
+          "en:149:M00761",
+          "en:149:M00762",
+          "en:149:M00763",
+          "en:149:M00764",
+          "en:149:M00765",
+          "en:149:M00766",
+          "en:149:M00767",
+          "en:149:M00768",
+          "en:149:M00769",
+          "en:149:M00770",
+          "en:149:M00771"
+        ],
+        "left_count": 31,
+        "right_count": 27,
+        "left_ordinals": [
+          1,
+          31
+        ],
+        "right_ordinals": [
+          1,
+          27
+        ],
+        "human_review_required": true
+      }
+    ],
+    "references": [
+      {
+        "id": "en:149:189:references:A0001",
+        "operation": "equal",
+        "status": "raw_identical",
+        "left_ids": [
+          "fr:149:R00058"
+        ],
+        "right_ids": [
+          "en:149:R00058"
+        ],
+        "left_count": 1,
+        "right_count": 1,
+        "left_ordinals": [
+          1,
+          1
+        ],
+        "right_ordinals": [
+          1,
+          1
+        ],
+        "human_review_required": true
+      }
+    ],
+    "reference_shapes": []
+  }
+}

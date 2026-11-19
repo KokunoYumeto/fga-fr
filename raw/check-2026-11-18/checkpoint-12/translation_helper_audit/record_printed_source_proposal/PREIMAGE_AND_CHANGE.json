@@ -1,0 +1,23 @@
+{
+  "file": "scripts/translation_edits.py",
+  "preimage_bytes": 6685,
+  "preimage_sha256": "fdfb328ef3646f8790a3e2a7eb7b5888acd5acb71dc8fce78fb7928b621a59b5",
+  "proposed_bytes": 6732,
+  "proposed_sha256": "8567f4b6fc109cd57f336df589356f06e1cdd3e7333add83bebad852d0a658b1",
+  "exact_old_utf8": "def record_translation_page(layer,unit,page,rel,body,entry_lines=None):\n    target,lo,hi=page_text(rel,page);frpath=f'sources/fr/fr/{unit}.tex';fr,fl,fh=page_text(frpath,page)\n",
+  "exact_new_utf8": "def record_translation_page(layer,unit,page,rel,body,entry_lines=None,printed=False):\n    target,lo,hi=page_text(rel,page);frpath=f'sources/{\"fr_printed\" if printed else \"fr\"}/fr/{unit}.tex';fr,fl,fh=page_text(frpath,page)\n",
+  "exact_occurrences": 1,
+  "applied": false,
+  "previous_positional_parameters": [
+    "layer",
+    "unit",
+    "page",
+    "rel",
+    "body",
+    "entry_lines"
+  ],
+  "proposed_last_parameter": {
+    "name": "printed",
+    "default": false
+  }
+}

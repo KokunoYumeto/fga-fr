@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-11-19T06:10:03.571003+00:00",
+  "cases": [
+    {
+      "case": "five_positional",
+      "same_parameter_bindings": true,
+      "exact_record_and_progress_bytes": true,
+      "record_sha256": "0979d21453ce0333897c9d678df4a8140b7557724ab532e5acc8a11dc2ce656e",
+      "progress_sha256": "673bb6ea45ae37433991e896efc513db949818accbdf4b918dc3d237426ed03e"
+    },
+    {
+      "case": "sixth_positional_none",
+      "same_parameter_bindings": true,
+      "exact_record_and_progress_bytes": true,
+      "record_sha256": "0979d21453ce0333897c9d678df4a8140b7557724ab532e5acc8a11dc2ce656e",
+      "progress_sha256": "673bb6ea45ae37433991e896efc513db949818accbdf4b918dc3d237426ed03e"
+    },
+    {
+      "case": "sixth_positional_entry_lines",
+      "same_parameter_bindings": true,
+      "exact_record_and_progress_bytes": true,
+      "record_sha256": "96026dd795a7bfb73e3c60d8754eb93d23ca36b23fc1002495d0a70c256c9d73",
+      "progress_sha256": "673bb6ea45ae37433991e896efc513db949818accbdf4b918dc3d237426ed03e"
+    },
+    {
+      "case": "keyword_entry_lines",
+      "same_parameter_bindings": true,
+      "exact_record_and_progress_bytes": true,
+      "record_sha256": "96026dd795a7bfb73e3c60d8754eb93d23ca36b23fc1002495d0a70c256c9d73",
+      "progress_sha256": "673bb6ea45ae37433991e896efc513db949818accbdf4b918dc3d237426ed03e"
+    },
+    {
+      "case": "explicit_printed_false",
+      "exact_record_and_progress_bytes": true
+    },
+    {
+      "case": "printed_true",
+      "exact_printed_source_lines": true,
+      "keyword_and_seventh_positional_equal": true,
+      "only_french_locator_changes": true,
+      "progress_bytes_unchanged": true,
+      "expected": {
+        "fr": {
+          "source": "sources/fr/fr/149.tex",
+          "source_sha256": "f00873843cbad6224b1422a8e08b36c52b7478d759b53d1c17f840f4bb0e77c8",
+          "page": 177,
+          "line_start": 421,
+          "line_end": 472,
+          "segment_raw_sha256": "a164a9a2f1767e9d067e8fc9da4fc6a86ebbbbccc2637db5fc40111d55b4f3ea"
+        },
+        "fr_printed": {
+          "source": "sources/fr_printed/fr/149.tex",
+          "source_sha256": "0e77ee4be2c7aae01881417459e070e8a27648c20901f58bf348c51a168db31d",
+          "page": 177,
+          "line_start": 421,
+          "line_end": 472,
+          "segment_raw_sha256": "65796e67063f1e20ca21ac7af811b51c8affe6883a6cffac3c6eb49f1acf0fc3"
+        }
+      }
+    },
+    {
+      "case": "distinct_line_sentinel",
+      "page_text_calls": [
+        "sources/en/en/149.tex",
+        "sources/fr_printed/fr/149.tex"
+      ],
+      "fr_line_sentinel": [
+        20,
+        30
+      ],
+      "printed_line_sentinel": [
+        40,
+        50
+      ],
+      "recorded_line_range": [
+        40,
+        50
+      ],
+      "expected_call_order": true
+    }
+  ],
+  "production_helper_unchanged": true,
+  "other_function_ASTs_unchanged": true,
+  "target_AST_changes_only_last_parameter_and_French_path": true,
+  "source_or_production_metadata_writes": 0,
+  "substantive_or_visual_review": false,
+  "runtime_outputs_location": "tmp/record_printed_source_proposal_20261119",
+  "test_driver_sha256": "900ca73d3032e6b21d4148110def26d8b2d4d13845230576895e86a320bd6273",
+  "observed_caller_inventory": "CALLER_SIGNATURE_CHECK.json"
+}

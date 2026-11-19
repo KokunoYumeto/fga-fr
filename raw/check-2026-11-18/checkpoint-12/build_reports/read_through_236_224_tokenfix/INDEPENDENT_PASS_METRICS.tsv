@@ -1,0 +1,13 @@
+stage	layer	pass_number	exit_code	errors	missing_glyphs	warnings	undefined_reference_warnings	undefined_reference_summary_warnings	undefined_citation_warnings	undefined_citation_summary_warnings	aux_stable	aux_sha256	physical_page_label_keys	overfull_boxes	boxes_over_2pt	boxes_over_10pt	max_overfull_pt
+read_through_232_148	fr	1	0	0	0	84	0	0	0	0	False	d30dd8067e58e4d5449a232f2d2bc4204483bdbc2fb0f6234fd8fdd129ef96ee	148	7	5	3	36.72565
+read_through_232_148	fr	2	0	0	0	84	0	0	0	0	False	aba892d2cf9ae10b9c517e8822ab4479c8a2533600f565da70f390c5ecbb5055	150	7	5	3	36.72565
+read_through_232_148	fr	3	0	0	0	84	0	0	0	0	True	aba892d2cf9ae10b9c517e8822ab4479c8a2533600f565da70f390c5ecbb5055	150	7	5	3	36.72565
+read_through_232_148	fr_printed	1	0	0	0	84	0	0	0	0	False	1f2222cdba7707e05f7ae1b6c994636e80cfc5205963eb8cb9065c6f3ce160a4	148	8	6	3	36.72565
+read_through_232_148	fr_printed	2	0	0	0	84	0	0	0	0	False	4bfc9e1bd259fc2200c43eeade6cb3f1e5b43f660d58207ff4095e8791f5c6df	150	8	6	3	36.72565
+read_through_232_148	fr_printed	3	0	0	0	84	0	0	0	0	True	4bfc9e1bd259fc2200c43eeade6cb3f1e5b43f660d58207ff4095e8791f5c6df	150	8	6	3	36.72565
+read_through_236_224_tokenfix	fr	1	0	0	0	89	0	0	0	0	False	84b60cf6de1a39c45d9b299cd52fe36555ce245f7189251af37020e4f911bd59	147	7	5	3	36.72565
+read_through_236_224_tokenfix	fr	2	0	0	0	89	0	0	0	0	False	dc2ac8236610cff2895e3eb6874e675853c8ba43d1a240a791bcd2ea6fed976b	149	7	5	3	36.72565
+read_through_236_224_tokenfix	fr	3	0	0	0	89	0	0	0	0	True	dc2ac8236610cff2895e3eb6874e675853c8ba43d1a240a791bcd2ea6fed976b	149	7	5	3	36.72565
+read_through_236_224_tokenfix	fr_printed	1	0	0	0	89	0	0	0	0	False	834073d8518a83d247431ea6ef20073ed30979096f0d2904d3f3dce27d535dd1	147	8	6	3	36.72565
+read_through_236_224_tokenfix	fr_printed	2	0	0	0	89	0	0	0	0	False	350e8bb493e2bcd5f8c54b005f7511b21924532cc3b10a71d91c301254b57eb9	149	8	6	3	36.72565
+read_through_236_224_tokenfix	fr_printed	3	0	0	0	89	0	0	0	0	True	350e8bb493e2bcd5f8c54b005f7511b21924532cc3b10a71d91c301254b57eb9	149	8	6	3	36.72565

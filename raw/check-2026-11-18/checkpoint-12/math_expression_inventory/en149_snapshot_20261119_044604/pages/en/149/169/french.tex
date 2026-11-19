@@ -1,0 +1,58 @@
+\unit{Exposé 149 — Théorèmes de dualité pour les faisceaux algébriques cohérents}
+\sid{149}
+\src{169}
+\seminar{(Mai 1957)}
+\paperhead{THÉORÈMES DE DUALITÉ POUR LES FAISCEAUX ALGÉBRIQUES COHÉRENTS}%
+  {par Alexandre GROTHENDIECK}
+
+Les résultats qui suivent, inspirés par le \fquote{théorème de dualité algébrique}
+de Serre, ont été trouvés en hiver 1955 et hiver 1956. Ils s'établissent très
+simplement à l'aide de résultats assez élémentaires sur la cohomologie des espaces
+projectifs [3], et l'utilisation intensive de l'algèbre homologique de
+Cartan-Eilenberg, sous la forme [2].
+
+\fsection{\normalfont1}{\normalfont\underline{Les} Ext \underline{de faisceaux de modules} ({[2]}, chap. 3 et 4).}
+
+Soit $\symup{X}$ un espace topologique muni d'un faisceau $\symup{\Osh}$ d'anneaux avec unité
+(non nécessairement commutatifs). On considère la catégorie abélienne
+$\symup{\Ccat^{\Osh}}$ des faisceaux de $\symup{\Osh}$-modules, appelés aussi $\symup{\Osh}$-Modules.
+On sait que tout objet de cette catégorie admet une résolution injective, ce qui
+permet d'y définir les foncteurs $\symup{\operatorname{Ext}}$ ayant les propriétés
+formelles bien connues. De façon précise, pour éviter des confusions, nous
+désignons par $\symup{\operatorname{Hom}_{\Osh}(X;A,B)}$ ou simplement
+$\symup{\operatorname{Hom}(X;A,B)}$ le \underline{groupe} abélien des $\symup{\Osh}$-homomorphismes de $\symup{A}$
+dans $\symup{B}$, tandis que $\symup{\Homsh_{\Osh}(A,B)}$ désignera le \underline{faisceau} des germes
+d'homomorphismes de $\symup{A}$ dans $\symup{B}$ ($\symup{A,B\in\Ccat^{\Osh}}$). On définit pour
+$\symup{A\in\Ccat^{\Osh}}$ fixé des foncteurs $\symup{h_A}$ et $\symup{\hsh_A}$ à valeurs respectivement
+dans la catégorie $\symup{\Ccat}$ des groupes abéliens et la catégorie
+$\symup{\Ccat^{\mathrm Z}}$ des faisceaux abéliens sur $\symup{X}$, par les formules :
+\begin{equation}\tag{1.1}
+  \symup{h_A(B)=\operatorname{Hom}_{\Osh}(X;A,B)}
+  \qquad
+  \symup{\hsh_A(B)=\Homsh_{\Osh}(A,B)}
+\end{equation}
+
+Les foncteurs $\symup{h_A}$ et $\symup{\hsh_A}$ sont des foncteurs covariants exacts à gauche,
+dont on considère les foncteurs dérivés droits, notés respectivement
+$\symup{\operatorname{Ext}_{\Osh}^{p}(X;A,B)}$ et $\symup{\Extsh_{\Osh}^{p}(A,B)}$. On a donc
+par définition
+\begin{equation}\tag{1.2}
+\left\{
+\begin{aligned}
+\symup{\operatorname{Ext}_{\Osh}^{p}(X;A,B)}
+  &= \symup{(R^{p}h_A)(B)
+   = H^{p}\bigl(\operatorname{Hom}_{\Osh}(X;A,C(B))\bigr)}\\
+\symup{\Extsh_{\Osh}^{p}(A,B)}
+  &= \symup{(R^{p}\hsh_A)(B)
+   = H^{p}\bigl(\Homsh_{\Osh}(A,C(B))\bigr)}
+\end{aligned}
+\right.
+\end{equation}
+
+où le symbole $\symup{R^{p}}$ désigne le passage aux foncteurs dérivés droits, et où
+$\symup{C(B)}$ désigne une résolution injective arbitraire de $\symup{B}$ dans $\symup{\Ccat^{\Osh}}$.
+Désignons par
+$\symup{\Gamma:\Ccat^{\mathrm Z}\longrightarrow\Ccat}$ le foncteur \fquote{sections}. Rappelons que ses foncteurs dérivés droits sont
+notés par $\symup{B\longrightarrow H^{p}(X,B)}$ :
+
+

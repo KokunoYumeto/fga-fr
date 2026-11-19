@@ -1,0 +1,1834 @@
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian) 
+(<local>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+FGA-FILE-BEGIN||main.tex
+(./main.tex
+FGA-FILE-BEGIN||book.cls
+(<local>
+Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
+FGA-FILE-BEGIN||leqno.clo
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||bk11.clo
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN|../tex|base.tex
+(..<local>
+FGA-FILE-BEGIN||geometry.sty
+(<local>
+FGA-FILE-BEGIN||keyval.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||ifvtex.sty
+(<local>
+FGA-FILE-BEGIN||iftex.sty
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||fontspec.sty
+(<local>
+FGA-FILE-BEGIN||xparse.sty
+(<local>
+FGA-FILE-BEGIN||expl3.sty
+(<local>
+FGA-FILE-BEGIN||l3backend-luatex.def
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+
+FGA-FILE-BEGIN||fontspec-luatex.sty
+(<local>
+FGA-FILE-BEGIN||fontenc.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||fontspec.cfg
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||polyglossia.sty
+(<local>
+FGA-FILE-BEGIN||etoolbox.sty
+(<local>)
+FGA-FILE-END|
+(<local>))
+FGA-FILE-END|
+(<local>)
+FGA-FILE-BEGIN||microtype.sty
+(<local>
+FGA-FILE-BEGIN||microtype-luatex.def
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||microtype.cfg
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||ulem.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||graphicx.sty
+(<local>
+FGA-FILE-BEGIN||graphics.sty
+(<local>
+FGA-FILE-BEGIN||trig.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||graphics.cfg
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||luatex.def
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||mathtools.sty
+(<local>
+FGA-FILE-BEGIN||calc.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||mhsetup.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||amsmath.sty
+(<local>
+For additional information on amsmath, use the `?' option.
+FGA-FILE-BEGIN||amstext.sty
+(<local>
+FGA-FILE-BEGIN||amsgen.sty
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||amsbsy.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||amsopn.sty
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||amsthm.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||unicode-math.sty
+(<local>
+FGA-FILE-BEGIN||unicode-math-luatex.sty
+(<local>
+FGA-FILE-BEGIN||l3keys2e.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||fix-cm.sty
+(<local>
+FGA-FILE-BEGIN||ts1enc.def
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||lualatex-math.sty
+(<local>)
+FGA-FILE-END|
+(<local>))
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||bookmark.sty
+(<local>
+FGA-FILE-BEGIN||hyperref.sty
+(<local>
+FGA-FILE-BEGIN||kvsetkeys.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||kvdefinekeys.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||pdfescape.sty
+(<local>
+FGA-FILE-BEGIN||ltxcmds.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||pdftexcmds.sty
+(<local>
+FGA-FILE-BEGIN||infwarerr.sty
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||hycolor.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||nameref.sty
+(<local>
+FGA-FILE-BEGIN||refcount.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||gettitlestring.sty
+(<local>
+FGA-FILE-BEGIN||kvoptions.sty
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||stringenc.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||pd1enc.def
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||intcalc.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||puenc.def
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||url.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||bitset.sty
+(<local>
+FGA-FILE-BEGIN||bigintcalc.sty
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||atbegshi.sty
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||hluatex.def
+(<local>
+FGA-FILE-BEGIN||atveryend.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||rerunfilecheck.sty
+(<local>
+FGA-FILE-BEGIN||uniquecounter.sty
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||bkm-pdftex.def
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+No file main.aux.
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+FGA-FILE-BEGIN||mt-Palatino.cfg
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||supp-pdf.mkii
+(<local>
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||epstopdf-base.sty
+(<local>
+
+Package epstopdf Warning: Shell escape feature is not enabled.
+
+FGA-FILE-BEGIN||epstopdf-sys.cfg
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+
+Package unicode-math Warning: Using \overbracket and \underbracket from
+(unicode-math)                `mathtools' package.
+(unicode-math)                 
+(unicode-math)                 Use \Uoverbracket and \Uunderbracket for
+(unicode-math)                original `unicode-math' definition.
+
+
+Package unicode-math Warning: I'm going to overwrite the following commands
+(unicode-math)                from the `mathtools' package: 
+(unicode-math)                 
+(unicode-math)                     \dblcolon, \coloneqq, \Coloneqq, \eqqcolon.
+(unicode-math)                
+(unicode-math)                 
+(unicode-math)                 Note that since I won't overwrite the other
+(unicode-math)                colon-like commands, using them will lead to
+(unicode-math)                inconsistencies.
+
+
+FGA-SHIPOUT|1|i
+[1]
+FGA-FILE-BEGIN|..|NOTICE.tex
+(../NOTICE.tex
+FGA-SHIPOUT|2|ii
+[2])
+FGA-FILE-END|
+No file main.toc.
+
+FGA-SHIPOUT|3|iii
+[3]
+FGA-SHIPOUT|4|iv
+[4]
+FGA-FILE-BEGIN||149.tex
+(./149.tex
+Chapitre 1.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 14.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@underline' on input line 14.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 14.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 14.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 14.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 14.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 14.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@underline' on input line 14.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 14.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 14.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 14.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 14.
+
+
+FGA-SHIPOUT|5|1
+[1
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 133.
+
+
+FGA-SHIPOUT|6|2
+[2]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+FGA-SHIPOUT|7|3
+[3]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 240.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+FGA-SHIPOUT|8|4
+[4]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+FGA-SHIPOUT|9|5
+[5]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+FGA-SHIPOUT|10|6
+[6]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 441.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+Overfull \hbox (26.84898pt too wide) detected at line 485
+[][]\TU/LatinModernMath(1)<local> (F, L) = L ⊗ ([][])[] ⊗ [][](F, [][]) = L ⊗ ([][])[] ⊗ [][](F, [][]) = [][]  []
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+FGA-SHIPOUT|11|7
+[7]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+./149.tex:516: Missing $ inserted.
+<inserted text> 
+$
+...
+l.516 
+    
+./149.tex:516: Display math should end with $$.
+<to be read again> 
+\tex_par:D 
+l.516 
+    
+
+./149.tex:517: LaTeX Error: \symupallowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+...
+l.517 \symup
+          {H^{p}(X,\underline{\Omega}_X^{p})
+./149.tex:521: Missing $ inserted.
+<inserted text> 
+$
+...
+l.521 ...p}(\Osh_Y,\underline{\Omega}_X^{p})\right)}
+                                                  
+./149.tex:521: Missing $ inserted.
+<inserted text> 
+$
+...
+l.521 ...p}(\Osh_Y,\underline{\Omega}_X^{p})\right)}
+                                                  
+
+./149.tex:522: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+...
+l.522 \end{equation}
+                  
+./149.tex:522: You can't use `\leqno' in horizontal mode.
+\veqno ->\@kernel@leqno 
+                        \aftergroup \ignorespaces 
+...
+l.522 \end{equation}
+                  
+./149.tex:522: Missing $ inserted.
+<inserted text> 
+$
+...
+l.522 \end{equation}
+                  
+./149.tex:522: Display math should end with $$.
+<to be read again> 
+\endgroup 
+...
+l.522 \end{equation}
+                  
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+FGA-SHIPOUT|12|8
+[8]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+FGA-SHIPOUT|13|9
+[9]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 676.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+FGA-SHIPOUT|14|10
+[10]
+FGA-SHIPOUT|15|11
+[11]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 879.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+FGA-SHIPOUT|16|12
+[12]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+Underfull \hbox (badness 1400) in paragraph at lines 931--933
+[]|   []   |   [] $\TU/LatinModernMath(1)<local> H[](X, F)$ |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] $X$ |   []
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 985.
+
+
+FGA-SHIPOUT|17|13
+[13]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+FGA-SHIPOUT|18|14
+[14]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 1116.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+FGA-SHIPOUT|19|15
+[15]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+FGA-SHIPOUT|20|16
+[16]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.1.0.1'
+
+FGA-SHIPOUT|21|17
+[17]
+
+LaTeX Warning: Marginpar on page 18 moved.
+
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||e149.tex
+(./e149.tex
+FGA-SHIPOUT|22|18
+[18]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 3.
+
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||182.tex
+(./182.tex
+FGA-SHIPOUT|23|19
+[19]
+Chapitre 2.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'src:193'
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 8.
+
+./182.tex:48: Undefined control sequence.
+<argument> O_x\longrightarrowO 
+                    _y
+...
+l.48 ...omomorphismes $\symup{O_x\longrightarrowO_y}
+                                                  $ ($\symup{x=f'(y)}$) sont
+./182.tex:48: Double subscript.
+<argument> O_x\longrightarrowO _
+                     y
+...
+l.48 ...omomorphismes $\symup{O_x\longrightarrowO_y}
+                                                  $ ($\symup{x=f'(y)}$) sont
+
+FGA-SHIPOUT|24|20
+[20]
+./182.tex:98: Undefined control sequence.
+<argument> O_X^{m}\longrightarrowO 
+                        _X^{n}
+...
+l.98 ...hisme $\symup{O_X^{m}\longrightarrowO_X^{n}}
+                                                  $.
+./182.tex:98: Double subscript.
+<argument> O_X^{m}\longrightarrowO _
+                         X^{n}
+...
+l.98 ...hisme $\symup{O_X^{m}\longrightarrowO_X^{n}}
+                                                  $.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 100.
+
+
+FGA-SHIPOUT|25|21
+[21]
+./182.tex:132: Undefined control sequence.
+<argument> O_m\longrightarrowO 
+                    _n
+...
+l.132 l'homomorphisme $\symup{O_m\longrightarrowO_n}
+                                                  $ soit surjectif et ait po...
+./182.tex:132: Double subscript.
+<argument> O_m\longrightarrowO _
+                     n
+...
+l.132 l'homomorphisme $\symup{O_m\longrightarrowO_n}
+                                                  $ soit surjectif et ait po...
+./182.tex:136: Undefined control sequence.
+<argument> O_m\longrightarrowO 
+                    _0
+...
+l.136 le noyau de $\symup{O_m\longrightarrowO_0}
+                                              $. On montre alors que
+./182.tex:136: Double subscript.
+<argument> O_m\longrightarrowO _
+                     0
+...
+l.136 le noyau de $\symup{O_m\longrightarrowO_0}
+                                              $. On montre alors que
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 151.
+
+
+FGA-SHIPOUT|26|22
+[22]
+Overfull \hbox (6.36914pt too wide) in paragraph at lines 256--258
+\TU/TeXGyrePagella(0)<local> CO-ROL-LAIRE 1. - |   []   |   []   |   []   |   [] $\TU/LatinModernMath(1)<local> X$ |   []   |   []   |   []   |   []
+
+Overfull \hbox (11.93977pt too wide) in paragraph at lines 269--279
+[]\TU/TeXGyrePagella(0)<local> En d’autres termes, |   []   |   []   |   []   |   []   |   [] $\TU/LatinModernMath(1)<local> A$ |   []   |   []   |   []   |   []
+./182.tex:285: Extra }, or forgotten \endgroup.
+l.285     modules} plats \uline{sur}}
+                                    $\symup{A}$, \uline{ou ce qui revient au...
+
+FGA-SHIPOUT|27|23
+[23]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 317.
+
+./182.tex:356: Undefined control sequence.
+<argument> O_{y'}\longrightarrowO 
+                       _x
+...
+l.356 ...orphisme} $\symup{O_{y'}\longrightarrowO_x}
+                                                  $, comme on voit grâce à
+./182.tex:356: Double subscript.
+<argument> O_{y'}\longrightarrowO _
+                        x
+...
+l.356 ...orphisme} $\symup{O_{y'}\longrightarrowO_x}
+                                                  $, comme on voit grâce à
+
+FGA-SHIPOUT|28|24
+[24]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 387.
+
+
+Overfull \hbox (36.72565pt too wide) in paragraph at lines 440--445
+\TU/TeXGyrePagella(0)<local> CO-ROL-LAIRE 2. - |   [] $\TU/LatinModernMath(1)<local> E[]$ |   []   |   []   |   []   |   []   |   []   |   [] $X[]$ |   []   |   [] $H[][]X[]; [][](E[], E[])[] =
+
+FGA-SHIPOUT|29|25
+[25]
+./182.tex:458: Undefined control sequence.
+<argument> f^*(L')\otimesO 
+                _X(n)
+...
+l.458 $\symup{f^*(L')\otimesO_X(n)}
+                                 $,
+./182.tex:477: Undefined control sequence.
+<argument> L'^{\otimes n}\simeqO 
+                      _Y
+...
+l.477 ...doit avoir $\symup{L'^{\otimes n}\simeqO_Y}
+                                                  $. Le corollaire peut
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 498.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 498.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\symup' on input line 498.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 498.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 498.
+
+
+FGA-SHIPOUT|30|26
+[26]
+./182.tex:543: Undefined control sequence.
+<argument> O_X\longrightarrowO 
+                    _{X_0}
+...
+l.543     $\symup{O_X\longrightarrowO_{X_0}}
+                                          $ (compatible avec les structures de
+./182.tex:543: Double subscript.
+<argument> O_X\longrightarrowO _
+                     {X_0}
+...
+l.543     $\symup{O_X\longrightarrowO_{X_0}}
+                                          $ (compatible avec les structures de
+
+FGA-SHIPOUT|31|27
+[27]
+FGA-SHIPOUT|32|28
+[28]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 719.
+
+./182.tex:754: Undefined control sequence.
+<argument> \mathcal O\longrightarrowO 
+                           _n
+...
+l.754 ...nique $\symup{\mathcal O\longrightarrowO_n}
+                                                  $ est un
+
+FGA-SHIPOUT|33|29
+[29]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 815.
+
+
+FGA-SHIPOUT|34|30
+[30]
+Underfull \hbox (badness 1147) in paragraph at lines 898--910
+\TU/TeXGyrePagella(0)<local> LEMME 3. - |   [] $\TU/LatinModernMath(1)<local> X$ |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] $A$\TU/TeXGyrePagella(0)<local> , |   []   |   []
+
+FGA-SHIPOUT|35|31
+[31]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.2.0.1'
+
+FGA-SHIPOUT|36|32
+[32]
+FGA-SHIPOUT|37|33
+[33]
+FGA-SHIPOUT|38|34
+[34]
+FGA-SHIPOUT|39|35
+[35]
+FGA-SHIPOUT|40|36
+[36])
+FGA-FILE-END|
+FGA-FILE-BEGIN||e182.tex
+(./e182.tex
+FGA-SHIPOUT|41|37
+[37]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 3.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'src:298'
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||190.tex
+(./190.tex
+FGA-SHIPOUT|42|38
+[38]
+Chapitre 3.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'src:299'
+
+FGA-SHIPOUT|43|39
+[39]
+FGA-SHIPOUT|44|40
+[40]
+FGA-SHIPOUT|45|41
+[41]
+FGA-SHIPOUT|46|42
+[42]
+FGA-SHIPOUT|47|43
+[43]
+FGA-SHIPOUT|48|44
+[44]
+FGA-SHIPOUT|49|45
+[45]
+Underfull \vbox (badness 2653) has occurred while \output is active
+FGA-SHIPOUT|50|46
+[46]
+FGA-SHIPOUT|51|47
+[47]
+FGA-SHIPOUT|52|48
+[48]
+FGA-SHIPOUT|53|49
+[49]
+FGA-SHIPOUT|54|50
+[50]
+FGA-SHIPOUT|55|51
+[51]
+FGA-SHIPOUT|56|52
+[52]
+FGA-SHIPOUT|57|53
+[53
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3.0.1'
+]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.3.0.1'
+
+FGA-SHIPOUT|58|54
+[54]
+./190.tex:1258: Double superscript.
+<argument> F''_1F''_2^
+           {-1}=F''
+...
+l.1258 ...{F'}$), i. e. $\symup{F''_1F''_2^{-1}=F''}
+                                                  $ a une restriction à la ...
+
+FGA-SHIPOUT|59|55
+[55]
+FGA-SHIPOUT|60|56
+[56]
+FGA-SHIPOUT|61|57
+[57])
+FGA-FILE-END|
+FGA-FILE-BEGIN||e190.tex
+(./e190.tex
+FGA-SHIPOUT|62|58
+[58]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 3.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'src:300'
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||195.tex
+(./195.tex
+FGA-SHIPOUT|63|59
+[59]
+Chapitre 4.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 9.
+
+
+FGA-SHIPOUT|64|60
+[60]
+FGA-SHIPOUT|65|61
+[61]
+FGA-SHIPOUT|66|62
+[62]
+./195.tex:219: Limit controls must follow a math operator.
+<argument> ...}) =\underset {\alpha }{\varprojlim }\nolimits 
+                                                  _{\text {\uwave {C}}'} \ov...
+...
+l.219   \overline F(\text{\uwave{X}}^{(\alpha)})}
+                                               
+
+FGA-SHIPOUT|67|63
+[63]
+FGA-SHIPOUT|68|64
+[64]
+FGA-SHIPOUT|69|65
+[65]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 425.
+
+
+FGA-SHIPOUT|70|66
+[66]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 496.
+
+
+FGA-SHIPOUT|71|67
+[67]
+FGA-SHIPOUT|72|68
+[68]
+FGA-SHIPOUT|73|69
+[69]
+FGA-SHIPOUT|74|70
+[70]
+FGA-SHIPOUT|75|71
+[71]
+FGA-SHIPOUT|76|72
+[72]
+FGA-SHIPOUT|77|73
+[73])
+FGA-FILE-END|
+FGA-FILE-BEGIN||e195.tex
+(./e195.tex
+FGA-SHIPOUT|78|74
+[74]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 3.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'src:300'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'src:301'
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||212.tex
+(./212.tex
+FGA-SHIPOUT|79|75
+[75]
+Chapitre 5.
+
+FGA-SHIPOUT|80|76
+[76]
+FGA-SHIPOUT|81|77
+[77]
+FGA-SHIPOUT|82|78
+[78]
+FGA-SHIPOUT|83|79
+[79]
+Overfull \hbox (5.36102pt too wide) in paragraph at lines 288--291
+\TU/TeXGyrePagella(0)<local> dé-fi-ni par le couple $\TU/LatinModernMath(1)<local> (p[], p[])$\TU/TeXGyrePagella(0)<local> , la condi-tion que $\TU/LatinModernMath(1)<local> G$ \TU/TeXGyrePagella(0)<local> opère li-bre-ment si-gni-fie que $\TU/LatinModernMath(1)<local> p$ \TU/TeXGyrePagella(0)<local> est un |   []. 
+
+FGA-SHIPOUT|84|80
+[80]
+FGA-SHIPOUT|85|81
+[81]
+FGA-SHIPOUT|86|82
+[82]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 543.
+
+
+FGA-SHIPOUT|87|83
+[83]
+FGA-SHIPOUT|88|84
+[84]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 651.
+
+
+FGA-SHIPOUT|89|85
+[85]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 727.
+
+
+FGA-SHIPOUT|90|86
+[86]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uline' on input line 802.
+
+
+FGA-SHIPOUT|91|87
+[87])
+FGA-FILE-END|
+FGA-FILE-BEGIN||e212.tex
+(./e212.tex
+FGA-SHIPOUT|92|88
+[88]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 3.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'src:301'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'src:302'
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||221.tex
+(./221.tex
+FGA-SHIPOUT|93|89
+[89]
+Chapitre 6.
+
+FGA-SHIPOUT|94|90
+[90]
+FGA-SHIPOUT|95|91
+[91]
+FGA-SHIPOUT|96|92
+[92]
+FGA-SHIPOUT|97|93
+[93]
+FGA-SHIPOUT|98|94
+[94]
+FGA-SHIPOUT|99|95
+[95]
+FGA-SHIPOUT|100|96
+[96]
+FGA-SHIPOUT|101|97
+[97]
+FGA-SHIPOUT|102|98
+[98]
+FGA-SHIPOUT|103|99
+[99]
+FGA-SHIPOUT|104|100
+[100]
+FGA-SHIPOUT|105|101
+[101]
+FGA-SHIPOUT|106|102
+[102]
+FGA-SHIPOUT|107|103
+[103]
+FGA-SHIPOUT|108|104
+[104]
+FGA-SHIPOUT|109|105
+[105]
+FGA-SHIPOUT|110|106
+[106]
+FGA-SHIPOUT|111|107
+[107])
+FGA-FILE-END|
+FGA-FILE-BEGIN||e221.tex
+(./e221.tex
+FGA-SHIPOUT|112|108
+[108]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 3.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'src:302'
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||232.tex
+(./232.tex
+FGA-SHIPOUT|113|109
+[109]
+Chapitre 7.
+
+FGA-SHIPOUT|114|110
+[110
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+FGA-SHIPOUT|115|111
+[111
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+FGA-SHIPOUT|116|112
+[112]
+FGA-SHIPOUT|117|113
+[113]
+FGA-SHIPOUT|118|114
+[114]
+FGA-SHIPOUT|119|115
+[115]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+FGA-SHIPOUT|120|116
+[116]
+FGA-SHIPOUT|121|117
+[117]
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'equation.7.0.1'
+
+FGA-SHIPOUT|122|118
+[118]
+Underfull \vbox (badness 5970) has occurred while \output is active
+FGA-SHIPOUT|123|119
+[119]
+FGA-SHIPOUT|124|120
+[120]
+FGA-SHIPOUT|125|121
+[121]
+FGA-SHIPOUT|126|122
+[122])
+FGA-FILE-END|
+FGA-FILE-BEGIN||e232.tex
+(./e232.tex
+FGA-SHIPOUT|127|123
+[123]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 3.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'src:303'
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||236.tex
+(./236.tex
+FGA-SHIPOUT|128|124
+[124]
+Chapitre 8.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 9.
+
+
+FGA-SHIPOUT|129|125
+[125]
+FGA-SHIPOUT|130|126
+[126]
+FGA-SHIPOUT|131|127
+[127]
+FGA-SHIPOUT|132|128
+[128]
+FGA-SHIPOUT|133|129
+[129]
+FGA-SHIPOUT|134|130
+[130]
+
+LaTeX Font Warning: Font shape `TU/LatinModernMath(1)<local>' undefined
+(Font)              using `TU/LatinModernMath(1)<local>' instead on input line 462.
+
+
+LaTeX Font Warning: Font shape `TU/LatinModernMath(2)<local>' undefined
+(Font)              using `TU/LatinModernMath(2)<local>' instead on input line 462.
+
+
+LaTeX Font Warning: Font shape `TU/LatinModernMath(3)<local>' undefined
+(Font)              using `TU/LatinModernMath(3)<local>' instead on input line 462.
+
+
+FGA-SHIPOUT|135|131
+[131]
+FGA-SHIPOUT|136|132
+[132]
+FGA-SHIPOUT|137|133
+[133]
+FGA-SHIPOUT|138|134
+[134]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 793.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 793.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 793.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 793.
+
+
+FGA-SHIPOUT|139|135
+[135]
+FGA-SHIPOUT|140|136
+[136]
+FGA-SHIPOUT|141|137
+[137]
+FGA-SHIPOUT|142|138
+[138]
+FGA-SHIPOUT|143|139
+[139])
+FGA-FILE-END|
+FGA-FILE-BEGIN||e236.tex
+(./e236.tex
+FGA-SHIPOUT|144|140
+[140]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 4.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'src:303'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'src:304'
+
+FGA-SHIPOUT|145|141
+[141]
+warning  (pdf backend): ignoring duplicate destination with the name 'src:305'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'src:306'
+
+FGA-SHIPOUT|146|142
+[142]
+warning  (pdf backend): ignoring duplicate destination with the name 'src:307'
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||com.tex
+(./com.tex
+FGA-SHIPOUT|147|143
+[143]
+Chapitre 9.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'src:298'
+
+FGA-SHIPOUT|148|144
+[144])
+FGA-FILE-END|
+
+FGA-SHIPOUT|149|145
+[145] (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+))
+(see the transcript file for additional information)
+ 18287 words of node memory still in use:
+   32 hlist, 28 vlist, 2 rule, 13 local_par, 1078 glue, 15 kern, 14 penalty, 5 margin_kern, 44 glyph, 3090 attribute, 61 glue_spec, 1547 attribute_list, 1 write, 2 pdf_action nodes
+   avail lists: 1:1,2:628,3:604,4:93,5:1911,6:46,7:11934,8:75,9:2021,10:27,11:869
+<<local>>
+kpathsea: Running mktexpk --mfmode / --bdpi 600 --mag 1+0/600 --dpi 600 lasy6
+mkdir: cannot create directory ‘<local>’: No such file or directory
+kpathsea: Appending font creation commands to missfont.log.
+
+! error:  (file lasy6) (type 3): font lasy6 at 600 not found
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -1,0 +1,38 @@
+[
+  {
+    "file": "sources/fr/fr/149.tex",
+    "old_sha256": "a237670c2a981f1c617518213be9903b8fb2076c96a49da9224e4733d54d1db4",
+    "current_sha256": "f00873843cbad6224b1422a8e08b36c52b7478d759b53d1c17f840f4bb0e77c8",
+    "replayed_sha256": "f00873843cbad6224b1422a8e08b36c52b7478d759b53d1c17f840f4bb0e77c8",
+    "old_bytes": 77288,
+    "current_bytes": 75584,
+    "replayed_bytes": 75584,
+    "row_ids": [
+      "C020730",
+      "C020731",
+      "C020732",
+      "C020733",
+      "C020734",
+      "C020735",
+      "C020736",
+      "C020737",
+      "C020738"
+    ],
+    "reproduces_current_bytes_exactly": true
+  },
+  {
+    "file": "sources/fr/fr/212.tex",
+    "old_sha256": "75d058b403369ccd32a61af823d77cb1b0fb829af0a208f8b3b277781380ec43",
+    "current_sha256": "fb6400edd43e608e81f9384d0c8a5c0461a1f789bdb4075eb88c216ca7ec2ac7",
+    "replayed_sha256": "fb6400edd43e608e81f9384d0c8a5c0461a1f789bdb4075eb88c216ca7ec2ac7",
+    "old_bytes": 57610,
+    "current_bytes": 56992,
+    "replayed_bytes": 56992,
+    "row_ids": [
+      "C020739",
+      "C020740",
+      "C020741"
+    ],
+    "reproduces_current_bytes_exactly": true
+  }
+]

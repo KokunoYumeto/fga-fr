@@ -1,0 +1,17 @@
+layer	source_id	box_type	source_line_start	source_line_end	change	baseline_metadata	candidate_metadata
+fr	fr/149.tex	hbox	482	482	added_location	[]	"[{""overflow_pt"":26.84898,""pdf_pages"":""[13]"",""shipout_candidate"":13}]"
+fr	fr/149.tex	hbox	485	485	removed_location	"[{""overflow_pt"":26.84898,""pdf_pages"":""[13]"",""shipout_candidate"":13}]"	[]
+fr	fr/182.tex	hbox	256	258	unchanged	"[{""overflow_pt"":6.36914,""pdf_pages"":""[29]"",""shipout_candidate"":29}]"	"[{""overflow_pt"":6.36914,""pdf_pages"":""[29]"",""shipout_candidate"":29}]"
+fr	fr/182.tex	hbox	269	279	unchanged	"[{""overflow_pt"":11.93977,""pdf_pages"":""[29]"",""shipout_candidate"":29}]"	"[{""overflow_pt"":11.93977,""pdf_pages"":""[29]"",""shipout_candidate"":29}]"
+fr	fr/182.tex	hbox	440	445	unchanged	"[{""overflow_pt"":36.72565,""pdf_pages"":""[31]"",""shipout_candidate"":31}]"	"[{""overflow_pt"":36.72565,""pdf_pages"":""[31]"",""shipout_candidate"":31}]"
+fr	fr/212.tex	hbox	288	291	unchanged	"[{""overflow_pt"":5.36102,""pdf_pages"":""[86]"",""shipout_candidate"":86}]"	"[{""overflow_pt"":5.36102,""pdf_pages"":""[86]"",""shipout_candidate"":86}]"
+fr	fr/221.tex	hbox	568	590	unchanged	"[{""overflow_pt"":0.94453,""pdf_pages"":""[103]"",""shipout_candidate"":103}]"	"[{""overflow_pt"":0.94453,""pdf_pages"":""[103]"",""shipout_candidate"":103}]"
+fr	fr/232.tex	hbox	74	80	unchanged	"[{""overflow_pt"":0.10248,""pdf_pages"":""[116]"",""shipout_candidate"":116}]"	"[{""overflow_pt"":0.10248,""pdf_pages"":""[116]"",""shipout_candidate"":116}]"
+fr_printed	fr/149.tex	hbox	482	482	unchanged	"[{""overflow_pt"":26.84898,""pdf_pages"":""[13]"",""shipout_candidate"":13}]"	"[{""overflow_pt"":26.84898,""pdf_pages"":""[13]"",""shipout_candidate"":13}]"
+fr_printed	fr/182.tex	hbox	256	258	unchanged	"[{""overflow_pt"":6.36914,""pdf_pages"":""[29]"",""shipout_candidate"":29}]"	"[{""overflow_pt"":6.36914,""pdf_pages"":""[29]"",""shipout_candidate"":29}]"
+fr_printed	fr/182.tex	hbox	269	279	unchanged	"[{""overflow_pt"":11.93977,""pdf_pages"":""[29]"",""shipout_candidate"":29}]"	"[{""overflow_pt"":11.93977,""pdf_pages"":""[29]"",""shipout_candidate"":29}]"
+fr_printed	fr/182.tex	hbox	440	445	unchanged	"[{""overflow_pt"":36.72565,""pdf_pages"":""[31]"",""shipout_candidate"":31}]"	"[{""overflow_pt"":36.72565,""pdf_pages"":""[31]"",""shipout_candidate"":31}]"
+fr_printed	fr/182.tex	hbox	898	910	unchanged	"[{""overflow_pt"":4.89633,""pdf_pages"":""[37]"",""shipout_candidate"":37}]"	"[{""overflow_pt"":4.89633,""pdf_pages"":""[37]"",""shipout_candidate"":37}]"
+fr_printed	fr/212.tex	hbox	288	291	unchanged	"[{""overflow_pt"":5.36102,""pdf_pages"":""[86]"",""shipout_candidate"":86}]"	"[{""overflow_pt"":5.36102,""pdf_pages"":""[86]"",""shipout_candidate"":86}]"
+fr_printed	fr/221.tex	hbox	567	589	unchanged	"[{""overflow_pt"":0.94453,""pdf_pages"":""[103]"",""shipout_candidate"":103}]"	"[{""overflow_pt"":0.94453,""pdf_pages"":""[103]"",""shipout_candidate"":103}]"
+fr_printed	fr/232.tex	hbox	74	80	unchanged	"[{""overflow_pt"":0.10248,""pdf_pages"":""[116]"",""shipout_candidate"":116}]"	"[{""overflow_pt"":0.10248,""pdf_pages"":""[116]"",""shipout_candidate"":116}]"

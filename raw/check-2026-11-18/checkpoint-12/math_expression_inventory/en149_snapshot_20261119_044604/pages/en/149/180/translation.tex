@@ -1,0 +1,47 @@
+\src{180}
+The pairings in the two right-hand columns are induced by the pairing of
+complexes of sheaves
+\[
+\Homsh_{\Osh_X}(L_{*},\Omega_X^{p})
+\times\Homsh_{\Osh_X}(L'_{*},\Omega_X^{p'})
+\longrightarrow
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\Omega_X^{p+p'}),
+\]
+defined using the exterior product
+$\Omega_X^{p}\times\Omega_X^{p'}\longrightarrow\Omega_X^{p+p'}$.
+The pairing in the first column is the cup product (relative to the exterior
+product). I claim that the last row of (4.5) identifies with the diagram of
+isomorphisms analogous to (4.3), with $Y$ replaced by $Y\cap Y'$ and $p$ by
+$p+p'$. For this it suffices to show that $L\otimes L'$ is an (evidently locally
+free) resolution of $\Osh_{Y\cap Y'}$. Indeed,
+\[
+  H_0(L\otimes L')=\Osh_Y\otimes\Osh_{Y'}=\Osh_{Y\cap Y'}
+\]
+and
+\[
+  H_i(L\otimes L')=\operatorname{Tor}_{i}^{\Osh_X}(\Osh_Y,\Osh_{Y'})=0
+  \qquad(i>0),
+\]
+because $Y$ and $Y'$ meet transversely. Theorem 1 now follows from the formula
+\begin{equation}\tag{4.6}
+  s_Y.s_{Y'}=s_{Y.Y'}
+\end{equation}
+(where the product on the left is that of the last column of (4.5)). Formula
+(4.6), being purely local, is verified without difficulty by taking for $L_{*}$
+and $L'_{*}$ the resolutions considered in Proposition 4. One proves similarly
+(and more easily) that $Z\longmapsto P_X(Z)$ is compatible with Cartesian
+products:
+\begin{equation}\tag{4.7}
+  P_{X\times X'}(Z\times Z')=P_X(Z)\otimes P_{X'}(Z')
+\end{equation}
+(this formula is valid when $Z$, respectively $Z'$, is a nonsingular cycle on
+the nonsingular variety $X$, respectively $X'$, with $Z\times Z'$ regarded as a
+nonsingular cycle on $X\times X'$). From (4.4) and (4.7), it follows that
+$P_X(Z)$ is also compatible with inverse image under a morphism of nonsingular
+varieties $f:X\longrightarrow X'$:
+\begin{equation}\tag{4.8}
+  P_X\bigl(f^{-1}(Z')\bigr)=f^{*}\bigl(P_{X'}(Z')\bigr),
+\end{equation}
+provided $Z'$ is a nonsingular cycle on $X'$ to which $f$ is “transverse,” that
+is, the graph of $f$ is transverse to the cycle $X\times Z'$ in $X\times X'$.
+

@@ -1,0 +1,647 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-11-19T05:53:31.471833+00:00",
+  "completed_utc": "2026-11-19T05:53:31.553197+00:00",
+  "checks": [
+    {
+      "check": "prose_group_LF_page_1_exact_UTF8_offsets",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "prose_group_LF_page_2_exact_UTF8_offsets",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "prose_group_CRLF_page_1_exact_UTF8_offsets",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "prose_group_CRLF_page_2_exact_UTF8_offsets",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "list_LF_page_1_exact_UTF8_offsets",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "list_LF_page_2_exact_UTF8_offsets",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "list_CRLF_page_1_exact_UTF8_offsets",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "list_CRLF_page_2_exact_UTF8_offsets",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "nested_group_and_list_LF_page_1_exact_UTF8_offsets",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "nested_group_and_list_LF_page_2_exact_UTF8_offsets",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "nested_group_and_list_CRLF_page_1_exact_UTF8_offsets",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "nested_group_and_list_CRLF_page_2_exact_UTF8_offsets",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "balanced_LF_page_1_baseline_payloads_and_locators",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "balanced_LF_page_2_baseline_payloads_and_locators",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "balanced_CRLF_page_1_baseline_payloads_and_locators",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "balanced_CRLF_page_2_baseline_payloads_and_locators",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "nested_math_keeps_one_outer_span_and_exact_baseline_payload",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "half_open_page_edges_exclude_adjacent_complete_formula",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_math_balanced_page_1_corrected_byte_identical_baseline",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_math_balanced_page_1_corrected_byte_identical_baseline",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_unbalanced_prose_page_1_corrected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_unbalanced_prose_page_1_corrected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_math_balanced_page_2_corrected_byte_identical_baseline",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_math_balanced_page_2_corrected_byte_identical_baseline",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_unbalanced_prose_page_2_corrected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_unbalanced_prose_page_2_corrected",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_math_balanced_page_1_printed_byte_identical_baseline",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_math_balanced_page_1_printed_byte_identical_baseline",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_unbalanced_prose_page_1_printed",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_unbalanced_prose_page_1_printed",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_math_balanced_page_2_printed_byte_identical_baseline",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_math_balanced_page_2_printed_byte_identical_baseline",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_unbalanced_prose_page_2_printed",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_unbalanced_prose_page_2_printed",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "inline_crossing_file_is_otherwise_lexically_balanced",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "inline_crossing_page_1_rejected_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "inline_crossing_page_2_rejected_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "display_crossing_file_is_otherwise_lexically_balanced",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "display_crossing_page_1_rejected_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "display_crossing_page_2_rejected_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "environment_crossing_file_is_otherwise_lexically_balanced",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "environment_crossing_page_1_rejected_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "environment_crossing_page_2_rejected_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "helper_rejects_complete_file_unclosed_prose_brace_outside_selected_page",
+      "pass": true,
+      "details": [
+        "unclosed_brace"
+      ]
+    },
+    {
+      "check": "helper_rejects_complete_file_unclosed_math_outside_selected_page",
+      "pass": true,
+      "details": [
+        "unclosed_math_at_end_of_file"
+      ]
+    },
+    {
+      "check": "helper_rejects_complete_file_unmatched_math_closer_outside_selected_page",
+      "pass": true,
+      "details": [
+        "unmatched_math_closer"
+      ]
+    },
+    {
+      "check": "helper_rejects_complete_file_crossed_nonmath_environments_outside_selected_page",
+      "pass": true,
+      "details": [
+        "unclosed_environment_at_end_of_file",
+        "unmatched_or_crossed_environment_end"
+      ]
+    },
+    {
+      "check": "show_math_rejects_source_crossing_formula_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_math_rejects_source_crossing_formula_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_math_rejects_target_crossing_formula_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_math_rejects_target_crossing_formula_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_math_rejects_printed_source_crossing_formula_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_math_rejects_printed_source_crossing_formula_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_math_rejects_source_malformed_complete_file_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_math_rejects_source_malformed_complete_file_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_math_rejects_target_malformed_complete_file_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_math_rejects_target_malformed_complete_file_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_math_rejects_printed_source_malformed_complete_file_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_math_rejects_printed_source_malformed_complete_file_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_math_rejects_source_crossed_nonmath_environments_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_math_rejects_source_crossed_nonmath_environments_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_math_rejects_target_crossed_nonmath_environments_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_math_rejects_target_crossed_nonmath_environments_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "show_math_rejects_printed_source_crossed_nonmath_environments_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "align_math_rejects_printed_source_crossed_nonmath_environments_without_writes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "previous_three_public_signatures_unchanged",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "math_ranges_implementation_AST_unchanged",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "saved_production_direct_call_signatures_compatible",
+      "pass": true,
+      "details": {
+        "callsites": 38
+      }
+    },
+    {
+      "check": "live_helper_inputs_unchanged_during_audit",
+      "pass": true,
+      "details": null
+    }
+  ],
+  "failed_checks": [],
+  "input_hashes": {
+    "translation_edits.py": "fdfb328ef3646f8790a3e2a7eb7b5888acd5acb71dc8fce78fb7928b621a59b5",
+    "translation_math_lexer.py": "7ae88b1d85906698cd728f36aa47545c550622b43193c63cd8e0aa7df828c7e4",
+    "audit_utils.py": "48a8aaecd4d5909ec785362e22460d0d11504284851e953f8064d8e2c0f2f244"
+  },
+  "baseline": "tmp/translation_page_fragment_audit_20261119/scripts/translation_edits.py",
+  "baseline_sha256": "d6d061bd8ac1638f0a8c60dc0830f83253bca30756e80223a610f6c69132ddb2",
+  "isolated_fixtures": "tmp/page_math_ranges_audit_20261119",
+  "signatures": {
+    "math_ranges": "(text, page_fragment=False)",
+    "show_math": "(rel, unit, page, printed=False)",
+    "align_math": "(rel, layer, unit, page, pairs, expected, printed=False, localized=None)",
+    "page_math_ranges": "(rel, page)"
+  },
+  "callsites": [
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_169.py",
+      "line": 6,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "931ebb3a249b41899afa5d1f07aa2a2c4219dfbc083e05862a8526e880b69b91"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_170.py",
+      "line": 5,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "460c12c21666ed009d3b8356b9c70bc50ffe064a060f1377e18555a4310e563a"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_171.py",
+      "line": 16,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "5521337c16ac69b80e668c81c8c9f68f87dd04870409232fc5068475144a43ef"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_172.py",
+      "line": 10,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "94fbdfafd522a23aed0d9c30ef225da2a2678e0e972d0c9529b93bb696a00b5d"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_173.py",
+      "line": 8,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "85d8289940df69870947b5c508e91c2bbbc0157a4e78287393b04f923d1b19c4"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_174.py",
+      "line": 8,
+      "function": "math_ranges",
+      "compatible": true,
+      "file_sha256": "d6038fe774ccea4b7b5ca7de3ad6087e6eb69659e8910a3ec3d6f60f503f9939"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_174.py",
+      "line": 9,
+      "function": "math_ranges",
+      "compatible": true,
+      "file_sha256": "d6038fe774ccea4b7b5ca7de3ad6087e6eb69659e8910a3ec3d6f60f503f9939"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_174.py",
+      "line": 13,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "d6038fe774ccea4b7b5ca7de3ad6087e6eb69659e8910a3ec3d6f60f503f9939"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_175.py",
+      "line": 15,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "8248bf4557a8b3292b4607f664b242aa900be792adc1c544b44352a5fa541d6a"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_176.py",
+      "line": 10,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "efd7c47ae875c0c002c302d2500530973e95cc88fd3f00ca14007bf067e22874"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_177.py",
+      "line": 12,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "ceedec53f3b9e954bc8c52a9804ada861fb0f3a1929d7518ead318ea27376cbb"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_178.py",
+      "line": 8,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "76bae3e7e3416552838f8b5fe81b430a6d692ac1c89e52c497aa9151a82afb89"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_179.py",
+      "line": 8,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "9948d05dd93460dd58b4446e719c81a3e37c84a855aabadd957f662cb91e8cd4"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_180.py",
+      "line": 13,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "f6c51e45b3411ce86f41747dd1f33c1f23a15e4a4be3345fb31a85113301d018"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_181.py",
+      "line": 11,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "e18c76b9b459cabc754cac365f48aa3116c7cd90fa809c22cc265e7d671d6f64"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_182.py",
+      "line": 8,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "c56d47498c5a3ef2419a51691349bc561e73af46f718e3ef65220a71662c2b0b"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_183.py",
+      "line": 12,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "cf90d05de91e5acea27ab57cc5b618b9287e258a3313dde7ec5c08c522688e12"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_184.py",
+      "line": 10,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "a213b1cf331d1e7bd93f1dcc29402e32b6b6fb77ea0f3b5ea2b8c7bb60c8408f"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_185.py",
+      "line": 10,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "62441cc2f20677607283aa87f632b64823a1fd1863142600d784d295bb234e04"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_186.py",
+      "line": 8,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "dc99f1fac5a01bda5e6e99078c9f10704ebe96615661b85ed2706098e3f726b2"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_187.py",
+      "line": 10,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "76175df9509d6b1363b9dab188a7152af62a0b9811215d8440f2517a6d3796e3"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_188.py",
+      "line": 10,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "109fb58d4573825c1d11663966275bc91fb935ebb657ae828b9c6ffeb45c5f21"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_189.py",
+      "line": 16,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "174ae39cccb6447dd326ef9fb4cbadc149b2f65c346b91cbcf1700edbe1cca9f"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_190.py",
+      "line": 9,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "4357936f39d240e86d6fe1d7a7e3959f0d01fd16672b1cf2c04da74c991a0693"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_191.py",
+      "line": 12,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "f54345bb482f30c4d72d3009e0281cb48a0abba7fbc3a500c710c3c94a7da0bf"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_149_192.py",
+      "line": 11,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "578d4ee6a789f2800795e707fca75bdc7fd9c9e343c63c1eac30d0e2882fb019"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_193.py",
+      "line": 8,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "eb98d891cd0f91a6df20b097678c1c683e5d19970749901a623af15a77c6bb38"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_194.py",
+      "line": 8,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "154f66bdf288912752fa2beb54f4872c61dacb8760721b733defe6e0bad419b7"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_195.py",
+      "line": 10,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "4af80400194f3556cf66c66e06b037957b16c94db8ee3b74b8f47ba1ef13810f"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_196.py",
+      "line": 8,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "54edab75a79c6f62433f6e3728d04f16f6e438171abecd156907a8ed3871cfe8"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_197.py",
+      "line": 8,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "2f848d4a1813f905a29b9c84ab6bae8e0936fde116c92adc45a74bd905d6f492"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_198.py",
+      "line": 14,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "bbd64cf0c278e3111819e6c5526ccc9d7043aa274938d95ee266a0c1b8ef47ac"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_199.py",
+      "line": 11,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "0f569b71cbc11ef40d736a30822acc5e00ca0e27032c760d5127523bf7f623e9"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_200.py",
+      "line": 13,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "44be42a4ea4d035b99cbc1c9007388b23c5e7c2c41f895d0e3d526f220ddbf3d"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_201.py",
+      "line": 13,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "12a1b5343d43a21870069c00d81e15cc22841065909caf0101963e519d01cca9"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_202.py",
+      "line": 15,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "c98d06a6523da7c38a60f93e6ac45bc50ed9182ab0aab78c6051c832b3b60002"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_203.py",
+      "line": 11,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "2291e9a49f83bb02287ffc98229dd1c7b17741b4bc9ee6f52d16c254907d4280"
+    },
+    {
+      "file": "FGA_CHECK/scripts/apply_en_182_204.py",
+      "line": 12,
+      "function": "align_math",
+      "compatible": true,
+      "file_sha256": "9999790cd2bbc5f3dd732b21520afb348f0afa6593843bbe84afa5db2546724f"
+    }
+  ],
+  "scope": "Only synthetic files and helper code. Four page-relative byte offsets, exact payloads, normalized source lines, strict rejection and API compatibility; no source text, ledger, translation, mathematics or scan review."
+}

@@ -1,0 +1,304 @@
+{
+  "snapshot_started_utc": "2026-11-19T03:34:25.873911+00:00",
+  "snapshot_completed_utc": "2026-11-19T03:34:26.031673+00:00",
+  "attempt": 1,
+  "consistency_check": "Two consecutive complete reads produced identical file sets and bytes; no subsequent live reads are required.",
+  "frozen_root": "tmp/french_layer_difference_01",
+  "files": [
+    {
+      "path": "CORRECTIONS.tsv",
+      "bytes": 5489757,
+      "sha256": "e9cfe9f83f4b558a50486e0a2221710d7a3d7e85c178306dc9a944b7a401c140"
+    },
+    {
+      "path": "sources/fr/NOTICE.tex",
+      "bytes": 1920,
+      "sha256": "98b39e40cc26a48ebbdd13dc1ac05aa2ce217d16f9c03d00ddb35b6d95cccf35"
+    },
+    {
+      "path": "sources/fr/README.md",
+      "bytes": 528,
+      "sha256": "6cadcc07ac462ee10edcfee21e6b8a5860ba023b448bf5e43a7603e1f4cd56ee"
+    },
+    {
+      "path": "sources/fr/RIGHTS_NOTICE.md",
+      "bytes": 1287,
+      "sha256": "6c9767e7b9c1a00f1788233da78593181ec13240cf2353e78708dc2c1b345026"
+    },
+    {
+      "path": "sources/fr/SOURCES.md",
+      "bytes": 625,
+      "sha256": "7b7f47759d8d15565fc48428f7e0bce2e411a6e1b17cad79eeb123206ccc68ab"
+    },
+    {
+      "path": "sources/fr/_repository/ATTRIBUTION.md",
+      "bytes": 771,
+      "sha256": "562ba3338727828108b277b5cc974234e2cddfac881988f19f7c81cc2112a486"
+    },
+    {
+      "path": "sources/fr/_repository/CITATION.cff",
+      "bytes": 947,
+      "sha256": "f6a522d8ab3e59e202439f2c024358432c6e5837fb53cba1813727dddaa97ab6"
+    },
+    {
+      "path": "sources/fr/_repository/PURPOSE.md",
+      "bytes": 369,
+      "sha256": "54fc0cf96487d8867b0550184cbcac2f496772c9e099be2360b90be4c38c543e"
+    },
+    {
+      "path": "sources/fr/_repository/README.md",
+      "bytes": 3568,
+      "sha256": "6077afd5d462605b47e5c942205b504f76d14a6433290d3dea92adeaae5593e1"
+    },
+    {
+      "path": "sources/fr/_repository/RIGHTS.md",
+      "bytes": 337,
+      "sha256": "4fb8e638b68139bef64429f075759cb3f9c501e5903638954b52e86a38896fe1"
+    },
+    {
+      "path": "sources/fr/_repository/RIGHTS_NOTICE.md",
+      "bytes": 1288,
+      "sha256": "48256f601552b2258b48a9a75e1c26e996f418e5d2d4b6a47c6a74d5ed349166"
+    },
+    {
+      "path": "sources/fr/fr/149.tex",
+      "bytes": 77288,
+      "sha256": "a237670c2a981f1c617518213be9903b8fb2076c96a49da9224e4733d54d1db4"
+    },
+    {
+      "path": "sources/fr/fr/182.tex",
+      "bytes": 91349,
+      "sha256": "40e3e15e8ebd90ce13a416bd1881bee3f360fc9b81be4817498697a6721015d4"
+    },
+    {
+      "path": "sources/fr/fr/190.tex",
+      "bytes": 96155,
+      "sha256": "8e1c51c09390f68477d3e6a9a7ed00e9259c19e183bc8ab055cd4c5c8ec172e9"
+    },
+    {
+      "path": "sources/fr/fr/195.tex",
+      "bytes": 69573,
+      "sha256": "efcf3505a1ff0ab05bb8cde3c25ae6744f9b4c5c83bdb7bd745c2743d13e3aa7"
+    },
+    {
+      "path": "sources/fr/fr/212.tex",
+      "bytes": 57610,
+      "sha256": "75d058b403369ccd32a61af823d77cb1b0fb829af0a208f8b3b277781380ec43"
+    },
+    {
+      "path": "sources/fr/fr/221.tex",
+      "bytes": 89867,
+      "sha256": "2485e1297c5aff1346ce7dcb031d5637778a974b47532a13de19a034d9754ee7"
+    },
+    {
+      "path": "sources/fr/fr/232.tex",
+      "bytes": 60313,
+      "sha256": "8bb55fd61971548ee201c18e147b0b683f3f0aa5991ed6ced70d378c2162021b"
+    },
+    {
+      "path": "sources/fr/fr/236.tex",
+      "bytes": 69450,
+      "sha256": "fd3b5fef53b94c81fe7f312fbf7a5a723ffc696c08fa0ee1e9260b2c1e86c83c"
+    },
+    {
+      "path": "sources/fr/fr/com.tex",
+      "bytes": 3096,
+      "sha256": "01ae97a941b88a5010a3eab00cf35f36c1850873e27a3b621125bcc1b53bee41"
+    },
+    {
+      "path": "sources/fr/fr/e149.tex",
+      "bytes": 1200,
+      "sha256": "5918a16690464ce56d243b4b37f61c0866ab050ada98f7a8e8c4e8eb6c6e5bc5"
+    },
+    {
+      "path": "sources/fr/fr/e182.tex",
+      "bytes": 3503,
+      "sha256": "34681c33c273aac113adbeac0f677bf1250b366c7889a8be61163bbf55675382"
+    },
+    {
+      "path": "sources/fr/fr/e190.tex",
+      "bytes": 1971,
+      "sha256": "047b194f7dd8402bb8775552e0119a9cec59d585fa82e943e130b7eb50f471a2"
+    },
+    {
+      "path": "sources/fr/fr/e195.tex",
+      "bytes": 3032,
+      "sha256": "acd53e9717ea97a27c748034da5b8ffcc65d96e6ba639010e9336273341b1615"
+    },
+    {
+      "path": "sources/fr/fr/e212.tex",
+      "bytes": 1707,
+      "sha256": "dd1ed5dea490a79f0b5fc3337a66482ea907d588c0c4ae064e62f095348d7d6f"
+    },
+    {
+      "path": "sources/fr/fr/e221.tex",
+      "bytes": 2282,
+      "sha256": "c79a111baef4c8efea3f22a54b318e31bee262dc8d091b3cf73009d0d7909692"
+    },
+    {
+      "path": "sources/fr/fr/e232.tex",
+      "bytes": 1524,
+      "sha256": "9b63c43c0dcaf255fdbdf7bcc5d374bbf97b32fdb4a789903467619879909774"
+    },
+    {
+      "path": "sources/fr/fr/e236.tex",
+      "bytes": 10819,
+      "sha256": "0651df27a6713b6af2a2df7b64e78e925635e3f370e50f0af4c9c256553d8679"
+    },
+    {
+      "path": "sources/fr/fr/main.tex",
+      "bytes": 1088,
+      "sha256": "b9512ac29bbdbe7740b3a10886857b4c0fec138a7ce733062bd6d9978539f6e5"
+    },
+    {
+      "path": "sources/fr/tex/base.tex",
+      "bytes": 2404,
+      "sha256": "87f3452f70f68d388a88e7317925c3cd30c8cc0d3d1f1dfff19dfa47edd6e5e6"
+    },
+    {
+      "path": "sources/fr_printed/NOTICE.tex",
+      "bytes": 1920,
+      "sha256": "98b39e40cc26a48ebbdd13dc1ac05aa2ce217d16f9c03d00ddb35b6d95cccf35"
+    },
+    {
+      "path": "sources/fr_printed/README.md",
+      "bytes": 528,
+      "sha256": "6cadcc07ac462ee10edcfee21e6b8a5860ba023b448bf5e43a7603e1f4cd56ee"
+    },
+    {
+      "path": "sources/fr_printed/RIGHTS_NOTICE.md",
+      "bytes": 1287,
+      "sha256": "6c9767e7b9c1a00f1788233da78593181ec13240cf2353e78708dc2c1b345026"
+    },
+    {
+      "path": "sources/fr_printed/SOURCES.md",
+      "bytes": 625,
+      "sha256": "7b7f47759d8d15565fc48428f7e0bce2e411a6e1b17cad79eeb123206ccc68ab"
+    },
+    {
+      "path": "sources/fr_printed/_repository/ATTRIBUTION.md",
+      "bytes": 771,
+      "sha256": "562ba3338727828108b277b5cc974234e2cddfac881988f19f7c81cc2112a486"
+    },
+    {
+      "path": "sources/fr_printed/_repository/CITATION.cff",
+      "bytes": 947,
+      "sha256": "f6a522d8ab3e59e202439f2c024358432c6e5837fb53cba1813727dddaa97ab6"
+    },
+    {
+      "path": "sources/fr_printed/_repository/PURPOSE.md",
+      "bytes": 369,
+      "sha256": "54fc0cf96487d8867b0550184cbcac2f496772c9e099be2360b90be4c38c543e"
+    },
+    {
+      "path": "sources/fr_printed/_repository/README.md",
+      "bytes": 3568,
+      "sha256": "6077afd5d462605b47e5c942205b504f76d14a6433290d3dea92adeaae5593e1"
+    },
+    {
+      "path": "sources/fr_printed/_repository/RIGHTS.md",
+      "bytes": 337,
+      "sha256": "4fb8e638b68139bef64429f075759cb3f9c501e5903638954b52e86a38896fe1"
+    },
+    {
+      "path": "sources/fr_printed/_repository/RIGHTS_NOTICE.md",
+      "bytes": 1288,
+      "sha256": "48256f601552b2258b48a9a75e1c26e996f418e5d2d4b6a47c6a74d5ed349166"
+    },
+    {
+      "path": "sources/fr_printed/fr/149.tex",
+      "bytes": 75500,
+      "sha256": "0e77ee4be2c7aae01881417459e070e8a27648c20901f58bf348c51a168db31d"
+    },
+    {
+      "path": "sources/fr_printed/fr/182.tex",
+      "bytes": 91184,
+      "sha256": "b022f0dfcd605e1d601b2d21d69a475032c7f9a8e3a4960901ae9772cee84fdf"
+    },
+    {
+      "path": "sources/fr_printed/fr/190.tex",
+      "bytes": 95849,
+      "sha256": "688cf416a9d4bd71b9204d8035167c0351bd03832433e9a159e44a83d5d61c67"
+    },
+    {
+      "path": "sources/fr_printed/fr/195.tex",
+      "bytes": 69479,
+      "sha256": "f59b657ce08d5fb392e8cc11619879161facbcc6c7c9ff5972be9c50095453e0"
+    },
+    {
+      "path": "sources/fr_printed/fr/212.tex",
+      "bytes": 57012,
+      "sha256": "ff198480d638302a26963ea0e2987bc25a4e89ab3949b05e24acfa17fb433988"
+    },
+    {
+      "path": "sources/fr_printed/fr/221.tex",
+      "bytes": 89644,
+      "sha256": "d12d2592b5ef68c700bf5ed5a9c517cb9a748e345b0eb9cc6a66faed5e75de4f"
+    },
+    {
+      "path": "sources/fr_printed/fr/232.tex",
+      "bytes": 60104,
+      "sha256": "fee9336abf3f58f0932a8521a2624c7aa432b92055b7bba9e43cd94dee01a480"
+    },
+    {
+      "path": "sources/fr_printed/fr/236.tex",
+      "bytes": 69305,
+      "sha256": "dcbe0803d3e3f8a41fb19295e968fb54cc21d152cf01e480db27168c97f9b93e"
+    },
+    {
+      "path": "sources/fr_printed/fr/com.tex",
+      "bytes": 3096,
+      "sha256": "01ae97a941b88a5010a3eab00cf35f36c1850873e27a3b621125bcc1b53bee41"
+    },
+    {
+      "path": "sources/fr_printed/fr/e149.tex",
+      "bytes": 1200,
+      "sha256": "5918a16690464ce56d243b4b37f61c0866ab050ada98f7a8e8c4e8eb6c6e5bc5"
+    },
+    {
+      "path": "sources/fr_printed/fr/e182.tex",
+      "bytes": 3503,
+      "sha256": "34681c33c273aac113adbeac0f677bf1250b366c7889a8be61163bbf55675382"
+    },
+    {
+      "path": "sources/fr_printed/fr/e190.tex",
+      "bytes": 1971,
+      "sha256": "047b194f7dd8402bb8775552e0119a9cec59d585fa82e943e130b7eb50f471a2"
+    },
+    {
+      "path": "sources/fr_printed/fr/e195.tex",
+      "bytes": 3032,
+      "sha256": "acd53e9717ea97a27c748034da5b8ffcc65d96e6ba639010e9336273341b1615"
+    },
+    {
+      "path": "sources/fr_printed/fr/e212.tex",
+      "bytes": 1707,
+      "sha256": "dd1ed5dea490a79f0b5fc3337a66482ea907d588c0c4ae064e62f095348d7d6f"
+    },
+    {
+      "path": "sources/fr_printed/fr/e221.tex",
+      "bytes": 2282,
+      "sha256": "c79a111baef4c8efea3f22a54b318e31bee262dc8d091b3cf73009d0d7909692"
+    },
+    {
+      "path": "sources/fr_printed/fr/e232.tex",
+      "bytes": 1524,
+      "sha256": "9b63c43c0dcaf255fdbdf7bcc5d374bbf97b32fdb4a789903467619879909774"
+    },
+    {
+      "path": "sources/fr_printed/fr/e236.tex",
+      "bytes": 10819,
+      "sha256": "0651df27a6713b6af2a2df7b64e78e925635e3f370e50f0af4c9c256553d8679"
+    },
+    {
+      "path": "sources/fr_printed/fr/main.tex",
+      "bytes": 1088,
+      "sha256": "b9512ac29bbdbe7740b3a10886857b4c0fec138a7ce733062bd6d9978539f6e5"
+    },
+    {
+      "path": "sources/fr_printed/tex/base.tex",
+      "bytes": 2404,
+      "sha256": "87f3452f70f68d388a88e7317925c3cd30c8cc0d3d1f1dfff19dfa47edd6e5e6"
+    }
+  ]
+}

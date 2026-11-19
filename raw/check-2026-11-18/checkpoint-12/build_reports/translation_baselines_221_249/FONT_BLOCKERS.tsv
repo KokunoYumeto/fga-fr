@@ -1,0 +1,3 @@
+layer	file	line	kind	message	remaining_required_fonts
+ko	sources/ko/base-ko.tex	9	missing required font	fontspec: The font Malgun Gothic cannot be found.	Malgun Gothic Bold
+zh-Hans	sources/zh-Hans/source/tex/zh.tex	8	missing required font	fontspec: The font SimSun cannot be found.	Microsoft YaHei

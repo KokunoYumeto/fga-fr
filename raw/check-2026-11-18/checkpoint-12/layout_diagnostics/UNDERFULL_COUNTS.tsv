@@ -1,0 +1,4 @@
+layer	baseline_stage	evidence_stage	baseline_underfull_h	baseline_underfull_v	baseline_underfull_h_badness_10000	baseline_max_underfull_h_badness	candidate_underfull_h	candidate_underfull_v	candidate_underfull_h_badness_10000	candidate_max_underfull_h_badness
+fr	read_through_221_263	layout_mechanical_04	2	2	0	1400	5	2	0	4608
+fr_printed	read_through_221_263	layout_mechanical_04	1	2	0	1400	5	2	0	4608
+ko	cjk_open_fonts	layout_mechanical_07	2	0	1	10000	2	0	1	10000

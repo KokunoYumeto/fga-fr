@@ -1,0 +1,10 @@
+layer	source	removed_token	signature_occurrence	baseline_input_line	current_input_line	pairing_method
+fr	sources/fr/fr/149.tex	\uline	3	441	440	Same layer/source/removed-token signature, retained compiler order; metadata only
+fr	sources/fr/fr/149.tex	\uline	4	675	672	Same layer/source/removed-token signature, retained compiler order; metadata only
+fr	sources/fr/fr/149.tex	\uline	5	878	872	Same layer/source/removed-token signature, retained compiler order; metadata only
+fr	sources/fr/fr/149.tex	\uline	6	984	976	Same layer/source/removed-token signature, retained compiler order; metadata only
+fr	sources/fr/fr/149.tex	\uline	7	1115	1105	Same layer/source/removed-token signature, retained compiler order; metadata only
+fr	sources/fr/fr/212.tex	\uline	1	543	540	Same layer/source/removed-token signature, retained compiler order; metadata only
+fr	sources/fr/fr/212.tex	\uline	2	651	648	Same layer/source/removed-token signature, retained compiler order; metadata only
+fr	sources/fr/fr/212.tex	\uline	3	727	724	Same layer/source/removed-token signature, retained compiler order; metadata only
+fr	sources/fr/fr/212.tex	\uline	4	802	797	Same layer/source/removed-token signature, retained compiler order; metadata only

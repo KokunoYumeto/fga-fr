@@ -1,0 +1,11 @@
+heading_id	layer	unit	file	source_line	preceding_literal_page	category	statement_type	identifier	heading_exact	identifier_event_candidates	same_page_identifier_candidates	different_page_identifier_candidates	page_only_event_candidates	event_ids	page_record_sections	record_identifier_lines	candidate_status	non_verdict
+H00125	fr	182	sources/fr/fr/182.tex	1004	213	remark_member_candidate	remark	ii	\item[(ii)]	0	0	0	4		1	0	no identifier candidate	Lexical navigation only; no proof or reading conclusion.
+H00126	fr	182	sources/fr/fr/182.tex	1006	213	remark_member_candidate	remark	iii	\item[(iii)]	0	0	0	4		1	0	no identifier candidate	Lexical navigation only; no proof or reading conclusion.
+H00179	fr	190	sources/fr/fr/190.tex	356	305	named_numbered_statement	definition	2.4	\result{DÉFINITION}{2.4}	0	0	0	6		1	0	no identifier candidate	Lexical navigation only; no proof or reading conclusion.
+H00584	fr	e236	sources/fr/fr/e236.tex	22	303	erratum_locator	erratum_locator	21	"\noindent\uline{Page 21, § 4 : Le théorème de finitude pour le schéma de
+Picard}."	0	0	0	4		1	0	no identifier candidate	Lexical navigation only; no proof or reading conclusion.
+H00723	fr_printed	182	sources/fr_printed/fr/182.tex	1004	213	remark_member_candidate	remark	ii	\item[(ii)]	0	0	0	4		1	0	no identifier candidate	Lexical navigation only; no proof or reading conclusion.
+H00724	fr_printed	182	sources/fr_printed/fr/182.tex	1006	213	remark_member_candidate	remark	iii	\item[(iii)]	0	0	0	4		1	0	no identifier candidate	Lexical navigation only; no proof or reading conclusion.
+H00777	fr_printed	190	sources/fr_printed/fr/190.tex	356	305	named_numbered_statement	definition	2.4	\result{DÉFINITION}{2.4}	0	0	0	6		1	0	no identifier candidate	Lexical navigation only; no proof or reading conclusion.
+H01182	fr_printed	e236	sources/fr_printed/fr/e236.tex	22	303	erratum_locator	erratum_locator	21	"\noindent\uline{Page 21, § 4 : Le théorème de finitude pour le schéma de
+Picard}."	0	0	0	4		1	0	no identifier candidate	Lexical navigation only; no proof or reading conclusion.

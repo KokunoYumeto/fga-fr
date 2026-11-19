@@ -1,0 +1,11 @@
+layer	category	source	message	previous_count	current_count	delta
+fr	error	sources/fr/fr/232.tex	==> Fatal error occurred, no output PDF file produced!SyncTeX written on main.synctex.gz.	0	1	1
+fr	error	sources/fr/fr/232.tex	Undefined control sequence.	0	1	1
+fr	warning	sources/fr/fr/236.tex	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	7	0	-7
+fr	warning	sources/fr/fr/e232.tex	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	3	0	-3
+fr	warning	sources/fr/fr/e236.tex	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	3	0	-3
+fr_printed	error	sources/fr_printed/fr/232.tex	==> Fatal error occurred, no output PDF file produced!SyncTeX written on main.synctex.gz.	0	1	1
+fr_printed	error	sources/fr_printed/fr/232.tex	Undefined control sequence.	0	1	1
+fr_printed	warning	sources/fr_printed/fr/236.tex	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	7	0	-7
+fr_printed	warning	sources/fr_printed/fr/e232.tex	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	3	0	-3
+fr_printed	warning	sources/fr_printed/fr/e236.tex	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	3	0	-3

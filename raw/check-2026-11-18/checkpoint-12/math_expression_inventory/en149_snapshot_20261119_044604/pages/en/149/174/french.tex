@@ -1,0 +1,52 @@
+\src{174}
+\begin{enumerate}
+\item[\textup{i.}] $\symup{\varphi_{x_1,\ldots,x_p}}$ dépend de façon
+$\symup{A}$-multilinéaire alternée du système des $\symup{x_i\in J}$
+\item[\textup{ii.}] $\symup{\varphi_{x_1,\ldots,x_p}}$ est nul quand un des $\symup{x_i}$ est
+dans $\symup{J^{2}}$.
+\end{enumerate}
+En fait, ii. résulte de i., puisque $\symup{a\varphi_{\underline{x}}=0}$ pour $\symup{a\in J}$,
+comme on voit en remarquant que tous les modules dans (3.2) sont annulés par
+$\symup{J}$.
+
+Pour définir $\symup{\varphi_{\underline{x}}}$, considérons le complexe
+$\symup{K_{\underline{x}}}$ dont le $\symup{A}$-module sous-jacent est $\symup{\bigwedge A^{p}}$, et
+dont l'opérateur différentiel est le produit intérieur $\symup{i_{\underline{x}}}$ par
+$\symup{\underline{x}}$ considéré comme forme linéaire sur $\symup{A^{p}}$ de composantes
+$\symup{x_1,\ldots,x_p}$. L'opérateur différentiel est de degré $\symup{-1}$, les degrés sont
+positifs, et la cohomologie de ce complexe en dimension $\symup{0}$ est
+$\symup{A/(x_1A+\cdots+x_pA)}$. Comme les $\symup{x_i}$ sont dans $\symup{J}$, on en déduit une
+augmentation $\symup{K_{\underline{x},0}\longrightarrow A/J}$. Ainsi
+$\symup{K_{\underline{x}}}$ apparaît comme un complexe \uline{libre} augmenté, à module
+d'augmentation $\symup{A/J}$. On en déduit, de façon connue, des homomorphismes
+\[
+\symup{\operatorname{Ext}_{A}^{*}\bigl(H_0(K_{\underline{x}}),M\bigr)
+\longrightarrow
+H^{*}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr)\quad\text{et}\quad
+\operatorname{Tor}_{*}^{A}\bigl(H_0(K_{\underline{x}}),M\bigr)
+\longleftarrow
+H_{*}\bigl(K_{\underline{x}}\otimes M\bigr)}
+\]
+d'où, en composant avec les homomorphismes sur les $\symup{\operatorname{Ext}}$ et les
+$\symup{\operatorname{Tor}}$ déduits de l'homomorphisme d'augmentation
+$\symup{H_0(K_{\underline{x}})\longrightarrow A/J}$, des homomorphismes
+\begin{equation}\tag{3.3}
+\left\{
+\begin{aligned}\symup{\psi_{\underline{x}}:
+\operatorname{Ext}_{A}^{*}(A/J,M)}&\symup{\longrightarrow H^{*}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr)}\\\symup{\psi_{\underline{x}}:
+\operatorname{Tor}_{*}^{A}(A/J,M)}&\symup{\longleftarrow H_{*}\bigl(K_{\underline{x}}\otimes M\bigr)}\end{aligned}
+\right.
+\end{equation}
+Or on constate aussitôt qu'en dimension maxima $\symup{p}$, la cohomologie des seconds
+membres est $\symup{M/(x_1M+\cdots+x_pM)}$ (resp. est l'ensemble des éléments de $\symup{M}$
+annulés par chacun des $\symup{x_i}$). Comme les $\symup{x_i}$ sont dans $\symup{J}$, on en déduit des
+homomorphismes
+\begin{equation}\tag{3.4}
+\left\{
+\begin{aligned}\symup{H^{p}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr)}&\symup{\longrightarrow M\otimes A/J}\\\symup{H_{p}\bigl(K_{\underline{x}}\otimes M\bigr)}&\symup{\longleftarrow\operatorname{Hom}_{A}(A/J,M)}\end{aligned}
+\right.
+\end{equation}
+Composant les homomorphismes (3.3) et (3.4), on obtient les homomorphismes (3.2)
+que nous voulions définir. La vérification de i. est fastidieuse, mais ne
+présente pas de difficultés.
+

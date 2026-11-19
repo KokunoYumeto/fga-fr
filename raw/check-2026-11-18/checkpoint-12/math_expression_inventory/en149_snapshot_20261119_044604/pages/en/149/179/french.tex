@@ -1,0 +1,55 @@
+\src{179}
+\result{THÉORÈME}{1} \uline{Si} $\symup{Z^{n-p}}$ \uline{et} $\symup{Z'^{n-p'}}$ \uline{sont des cycles non singuliers
+qui se coupent transversalement, alors on a}
+\begin{equation}\tag{4.4}
+  \symup{P_X(Z.Z')=P_X(Z).P_X(Z')}
+\end{equation}
+\uline{où le produit du deuxième membre est le cup-produit}
+\[
+  \symup{H^{p}(X,\underline{\Omega}_X^{p})\times H^{p'}(X,\underline{\Omega}_X^{p'})
+  \longrightarrow H^{p+p'}(X,\underline{\Omega}_X^{p+p'}).}
+\]
+(On suppose que $\symup{X}$ est isomorphe à une partie localement fermée d'un espace
+projectif)
+
+Cette dernière hypothèse nous sert uniquement pour pouvoir conclure que tout
+faisceau algébrique cohérent sur $\symup{X}$ est quotient d'un faisceau algébrique
+cohérent localement libre (SERRE), donc admet une résolution gauche par des
+faisceaux localement libres. Pour prouver le théorème 1, on peut supposer que
+$\symup{Z}$ et $\symup{Z'}$ sont des sous-variétés irréductibles non singulières $\symup{Y}$ et $\symup{Y'}$ se
+coupant transversalement. Soit $\symup{L_{*}}$ une résolution gauche de $\symup{\Osh_Y}$ par des
+faisceaux localement libres, alors en vertu de la proposition 3, le diagramme
+d'homomorphismes (4.3) s'identifie au diagramme
+\[
+\symup{R^{p}\Gamma(\underline{\Omega}_X^{p})
+\xleftarrow{\alpha}
+(\underline{\underline{R}}^{p}\Gamma)\!\left(\Homsh_{\Osh_X}(L_{*},\underline{\Omega}_X^{p})\right)
+\xrightarrow{\overset{\beta}{\sim}}
+\Gamma\!\left(H^{p}\bigl(\Homsh_{\Osh_X}(L_{*},\underline{\Omega}_X^{p})\bigr)\right)}
+\]
+où $\symup{\Gamma}$ est le foncteur \fquote{groupe des sections} sur la catégorie des
+faisceaux abéliens sur $\symup{X}$, et $\symup{\underline{\underline{R}}^{p}\Gamma}$ désigne
+l'hypercohomologie de dimension $\symup{p}$ dudit foncteur, et $\symup{R^{p}\Gamma}$ son
+$\symup{p}$-ième foncteur dérivé. On supposera pour simplifier que $\symup{L_0=\Osh_X}$ et que
+l'augmentation $\symup{L_0\longrightarrow\Osh_Y}$ est l'homomorphisme naturel (ce qui
+est loisible), alors $\symup{\alpha}$ est déduit de l'homomorphisme de complexes
+$\symup{\Osh_X\longrightarrow L}$ ($\symup{\Osh_X}$ étant considéré comme un complexe réduit
+au degré $\symup{0}$), compte tenu que $\symup{\underline{\underline{R}}^{p}\Gamma(K)=R^{p}\Gamma(K_0)}$ si $\symup{K}$
+est un complexe de faisceaux réduit au degré $\symup{0}$. L'homomorphisme $\symup{\beta}$ est un
+\fquote{edge-homomorphism} bien connu. Considérons un diagramme analogue, relatif à
+une résolution localement libre $\symup{L'_{*}}$ de $\symup{\Osh_{Y'}}$, et considérons le
+diagramme commutatif d'accouplements :
+\begin{equation}\tag{4.5}
+\resizebox{\textwidth}{!}{$
+\left\{\begin{array}{ccc}\symup{R^{p}\Gamma(\underline{\Omega}_X^{p})}&\symup{\longleftarrow
+\underline{\underline{R}}^{p}\!\Gamma\left(\Homsh_{\Osh_X}(L_{*},\underline{\Omega}_X^{p})\right)}&\symup{\xrightarrow{\sim}
+\Gamma\bigl(H^{p}\!\left(\Homsh_{\Osh_X}(L_{*},\underline{\Omega}_X^{p})\right)\bigr)}\\[3pt]\symup{\times}&\symup{\times}&\symup{\times}\\[3pt]\symup{R^{p'}\Gamma(\underline{\Omega}_X^{p'})}&\symup{\longleftarrow
+\underline{\underline{R}}^{p'}\Gamma\!\left(\Homsh_{\Osh_X}(L'_{*},\underline{\Omega}_X^{p'})\right)}&\symup{\xrightarrow{\sim}
+\Gamma\bigl(H^{p'}\!\left(\Homsh_{\Osh_X}(L'_{*},\underline{\Omega}_X^{p'})\right)\bigr)}\\[3pt]\symup{\downarrow}&\symup{\downarrow}&\symup{\downarrow}\\[3pt]\symup{R^{p+p'}\Gamma(\underline{\Omega}_X^{p+p'})}&\symup{\longleftarrow
+\underline{\underline{R}}^{p+p'}\Gamma\!\left(
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\underline{\Omega}_X^{p+p'})\right)}&\symup{\xrightarrow{\sim}
+\Gamma\bigl(H^{p+p'}\!\left(
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\underline{\Omega}_X^{p+p'})\right)\bigr)}\end{array}\right.
+$}
+\end{equation}
+

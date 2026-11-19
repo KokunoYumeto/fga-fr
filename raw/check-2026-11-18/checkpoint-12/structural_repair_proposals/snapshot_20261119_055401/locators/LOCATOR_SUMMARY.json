@@ -1,0 +1,15 @@
+{
+  "page_keys": 54,
+  "source_locators": 108,
+  "mechanical_insertions": 53,
+  "conditional_target_alternatives": 2,
+  "source_hash_changed_locators": 6,
+  "numeric_line_range_changed_locators": 1,
+  "unchanged_source_locators": 102,
+  "ambiguous_page_keys": [
+    "232-149"
+  ],
+  "whole_structural_gate_rerun": false,
+  "source_or_production_metadata_writes": false,
+  "script_sha256": "324c7c6b7604a4247c3a1f0beb0ecb43350eed9183d481e2c1d2dceaaf6e45f9"
+}

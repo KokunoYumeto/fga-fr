@@ -1,0 +1,26 @@
+{
+  "baseline_stage": "read_through_errata_307",
+  "current_stage": "read_after_note_cleanup",
+  "all_pass_overflow_records": 45,
+  "amount_type_source_and_physical_page_signatures_identical": true,
+  "source_line_shift_records": 3,
+  "final_pass_changed_locations": [
+    {
+      "layer": "fr",
+      "pass_number": "3",
+      "source": "sources/fr/fr/149.tex",
+      "box": "hbox",
+      "pt": "26.84898",
+      "pdf_pages": "13",
+      "occurrence": 1,
+      "baseline_line_start": "485",
+      "baseline_line_end": "485",
+      "current_line_start": "482",
+      "current_line_end": "482",
+      "source_lines_equal": false,
+      "amount_and_physical_pages_equal": true,
+      "pairing_method": "Exact layer/pass/source/box/amount/PDF-page signature; repeated signatures retain compiler record order"
+    }
+  ],
+  "mapping_limitation": "PDF page locations are compiler/SyncTeX metadata; no visual confirmation was performed."
+}

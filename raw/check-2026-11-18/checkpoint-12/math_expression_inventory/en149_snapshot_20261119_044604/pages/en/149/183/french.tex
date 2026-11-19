@@ -1,0 +1,49 @@
+\src{183}
+Comme (5.3 bis) est un isomorphisme,\footnote{Le texte imprimé donne une
+seconde formule « (5.3) » à la page 182 et y renvoie ici ; l'identifiant
+« (5.3 bis) » distingue cette formule de la première (5.3).} il en est de même
+de (5.4), donc aussi de (5.5). Comme $\symup{s_{(x)}}$ est une base de
+$\symup{\operatorname{Ext}_{\Osh_X}^{n}(X;\underline{k}_x,\underline{\Omega}_X^{n})}$ en vertu de (4.2), il
+s'ensuit bien que son image $\symup{\varepsilon_X}$ est une base de
+$\symup{H^{n}(X,\underline{\Omega}_X^{n})}$.
+
+Reste à prouver l'énoncé (D), qui résultera de façon purement formelle des faits
+élémentaires résumés dans les lemmes suivants. On y suppose que $\symup{X}$ est une
+partie fermée (singulière ou non) de l'espace projectif $\symup{P}$ de dimension $\symup{r}$.
+On utilise la notation $\symup{\Osh_P(m)}$ pour le faisceau sur $\symup{P}$ noté $\symup{\Osh(m)}$ dans
+[3], et la notation $\symup{\Osh_X(m)}$ pour le faisceau analogue sur $\symup{X}$.
+
+\result{LEMME}{2} \uline{L'énoncé} (D) \uline{est vrai si} $\symup{X=P}$ \uline{et} $\symup{F=\Osh_P(m)}$
+
+Ce lemme se vérifie par un calcul direct. Le calcul explicite des
+$\symup{H^{i}(P,\Osh_P(m))}$ se trouve dans [3], mais il peut se faire plus
+élémentairement. La computation du cup-produit $\symup{H^{i}(P,\Osh_P(m))\times H^{j}(P,\Osh_P(m'))\longrightarrow H^{i+j}(P,\Osh_P(m+m'))}$ nécessaire pour expliciter l'accouplement (5.1) n'offre pas de
+difficultés.\footnote{Le texte imprimé porte $\symup{\Osh_P(r+r')}$ ; les deux facteurs
+$\symup{\Osh_P(m)}$ et $\symup{\Osh_P(m')}$ imposent $\symup{\Osh_P(m+m')}$.}
+
+\result{LEMME}{3} \uline{Tout faisceau algébrique cohérent} $\symup{F}$ \uline{sur} $\symup{X}$ \uline{est isomorphe à
+un faisceau quotient d'un faisceau} $\symup{\Osh_X(-m)^{k}}$, \uline{où on peut supposer} $\symup{m}$
+\uline{aussi grand que l'on veut}.
+
+Résulte du fait que $\symup{F\otimes\Osh_X(m)}$ est \fquote{engendré par ses sections} pour
+$\symup{m}$ grand, cf. [3].
+
+\result{LEMME}{4} \uline{Soit} $\symup{i>0}$. \uline{Alors}
+$\symup{H^{r-i}(P,\Osh_P(-m))=0}$ \uline{pour} $\symup{m}$ \uline{grand ; et pour tout faisceau algébrique
+cohérent} $\symup{B}$ \uline{sur} $\symup{X}$, \uline{on a} $\symup{\operatorname{Ext}_{\Osh_X}^{i}(X;\Osh_X(-m),B)=0}$ \uline{pour} $\symup{m}$ \uline{grand}.
+
+Le premier énoncé résulte des calculs explicites mentionnés plus haut, pour le
+deuxième on note qu'on a un isomorphisme
+\[
+  \symup{\operatorname{Ext}_{\Osh_X}^{i}(X;\Osh_X(-m),B)
+  =H^{i}(X,B\otimes\Osh(m))}
+\]
+(proposition 1, corollaire 1), d'où la conclusion en vertu d'un résultat bien
+connu de [3]. Conjuguant les deux lemmes précédents, on trouve le
+
+\result{COROLLAIRE}{} \uline{Soit} $\symup{i>0}$. \uline{Alors le foncteur}
+$\symup{F\longrightarrow H^{r-i}(P,F)}$ \uline{sur la catégorie des faisceaux algébriques cohérents
+sur} $\symup{P}$ \uline{est coeffaçable, et il en est de même du foncteur}
+$\symup{\operatorname{Ext}_{\Osh_X}^{i}(X;F,B)}$ \uline{sur la catégorie des faisceaux
+algébriques cohérents sur} $\symup{X}$.
+

@@ -1,0 +1,32 @@
+All commands use the frozen all-layer capture. Each --out must be a new directory.
+The extractor writes exact .tex slices, SEGMENTS.tsv, and an HTML aid. This audit did not inspect HTML.
+
+# All layers, complete unit 149; every layer declares this unit.
+python -B FGA_CHECK/scripts/source_segments.py --work tmp/frozen_build_inputs/read_through_236_243 extract --layers all --unit 149 --strict --out tmp/review_236243_all_149
+
+# All layers, complete unit 195; partial Spanish is explicitly outside scope; default exit 0.
+python -B FGA_CHECK/scripts/source_segments.py --work tmp/frozen_build_inputs/read_through_236_243 extract --layers all --unit 195 --out tmp/review_236243_all_195
+
+# All layers, exact first page marker for unit 149; marker itself is included.
+python -B FGA_CHECK/scripts/source_segments.py --work tmp/frozen_build_inputs/read_through_236_243 extract --layers all --unit 149 --page 169 --strict --out tmp/review_236243_all_149_page_169
+
+# Optional unmarked prefix when selecting the first marker.
+python -B FGA_CHECK/scripts/source_segments.py --work tmp/frozen_build_inputs/read_through_236_243 extract --layers all --unit 149 --page 169 --include-unit-prefix --strict --out tmp/review_236243_all_149_prefix
+
+# Known Korean marker gap: missing marker produces no ko.tex, recorded status, default exit 0.
+python -B FGA_CHECK/scripts/source_segments.py --work tmp/frozen_build_inputs/read_through_236_243 extract --layers fr,ko --unit 195 --page 377 --out tmp/review_236243_195_377_missing
+
+# Neighbor context is explicit and is not labeled an exact requested-page segment.
+python -B FGA_CHECK/scripts/source_segments.py --work tmp/frozen_build_inputs/read_through_236_243 extract --layers fr,ko --unit 195 --page 377 --neighbor-span --out tmp/review_236243_195_377_context
+
+# Strict writes the same selected outputs, then exits 2 for missing/contextual/ambiguous/out-of-scope selections.
+python -B FGA_CHECK/scripts/source_segments.py --work tmp/frozen_build_inputs/read_through_236_243 extract --layers fr,ko --unit 195 --page 385 --strict --out tmp/review_236243_195_385_strict
+python -B FGA_CHECK/scripts/source_segments.py --work tmp/frozen_build_inputs/read_through_236_243 extract --layers fr,ko --unit 195 --page 385 --neighbor-span --strict --out tmp/review_236243_195_385_context_strict
+
+# Strict whole-unit extraction for all ten full layers, avoiding intentional partial-Spanish scope status.
+python -B FGA_CHECK/scripts/source_segments.py --work tmp/frozen_build_inputs/read_through_236_243 extract --layers fr,fr_printed,en,es,pt-BR,pt-BR_printed,vi,vi_diplomatic,ko,zh-Hans --unit 195 --strict --out tmp/review_236243_full_layers_195
+
+Page selection starts at the selected literal \src invocation and ends before the next invocation, or at file end.
+Numeric marker arguments are canonicalized; Roman marker arguments are uppercased. Current markers are decimal.
+Duplicate markers require --occurrence N (one-based); no duplicates exist in the current snapshot.
+Out-of-scope units and absent markers remain structural statuses; no content absence or correctness is inferred.

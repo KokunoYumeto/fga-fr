@@ -1,0 +1,55 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex)
+entering extended mode
+(<local>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+FGA-FILE-BEGIN||main.tex
+(./main.tex
+FGA-FILE-BEGIN||book.cls
+(<local>
+Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
+FGA-FILE-BEGIN||bk11.clo
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||base-ko.tex
+(./base-ko.tex
+FGA-FILE-BEGIN||geometry.sty
+(<local>
+FGA-FILE-BEGIN||keyval.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||ifvtex.sty
+(<local>
+FGA-FILE-BEGIN||iftex.sty
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||fontspec.sty
+(<local>
+FGA-FILE-BEGIN||xparse.sty
+(<local>
+FGA-FILE-BEGIN||expl3.sty
+(<local>
+FGA-FILE-BEGIN||l3backend-xetex.def
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+FGA-FILE-BEGIN||fontspec-xetex.sty
+(<local>
+FGA-FILE-BEGIN||fontenc.sty
+(<local>)
+FGA-FILE-END|
+FGA-FILE-BEGIN||fontspec.cfg
+(<local>)
+FGA-FILE-END|
+)
+FGA-FILE-END|
+)

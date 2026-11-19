@@ -1,0 +1,1341 @@
+\unit{Exposé 149 — Théorèmes de dualité pour les faisceaux algébriques cohérents}
+\sid{149}
+\src{169}
+\seminar{(Mai 1957)}
+\paperhead{THÉORÈMES DE DUALITÉ POUR LES FAISCEAUX ALGÉBRIQUES COHÉRENTS}%
+  {par Alexandre GROTHENDIECK}
+
+Les résultats qui suivent, inspirés par le \fquote{théorème de dualité algébrique}
+de Serre, ont été trouvés en hiver 1955 et hiver 1956. Ils s'établissent très
+simplement à l'aide de résultats assez élémentaires sur la cohomologie des espaces
+projectifs [3], et l'utilisation intensive de l'algèbre homologique de
+Cartan-Eilenberg, sous la forme [2].
+
+\fsection{\normalfont1}{\normalfont\underline{Les} Ext \underline{de faisceaux de modules} ({[2]}, chap. 3 et 4).}
+
+Soit $\symup{X}$ un espace topologique muni d'un faisceau $\symup{\Osh}$ d'anneaux avec unité
+(non nécessairement commutatifs). On considère la catégorie abélienne
+$\symup{\Ccat^{\Osh}}$ des faisceaux de $\symup{\Osh}$-modules, appelés aussi $\symup{\Osh}$-Modules.
+On sait que tout objet de cette catégorie admet une résolution injective, ce qui
+permet d'y définir les foncteurs $\symup{\operatorname{Ext}}$ ayant les propriétés
+formelles bien connues. De façon précise, pour éviter des confusions, nous
+désignons par $\symup{\operatorname{Hom}_{\Osh}(X;A,B)}$ ou simplement
+$\symup{\operatorname{Hom}(X;A,B)}$ le \underline{groupe} abélien des $\symup{\Osh}$-homomorphismes de $\symup{A}$
+dans $\symup{B}$, tandis que $\symup{\Homsh_{\Osh}(A,B)}$ désignera le \underline{faisceau} des germes
+d'homomorphismes de $\symup{A}$ dans $\symup{B}$ ($\symup{A,B\in\Ccat^{\Osh}}$). On définit pour
+$\symup{A\in\Ccat^{\Osh}}$ fixé des foncteurs $\symup{h_A}$ et $\symup{\hsh_A}$ à valeurs respectivement
+dans la catégorie $\symup{\Ccat}$ des groupes abéliens et la catégorie
+$\symup{\Ccat^{\mathrm Z}}$ des faisceaux abéliens sur $\symup{X}$, par les formules :
+\begin{equation}\tag{1.1}
+  \symup{h_A(B)=\operatorname{Hom}_{\Osh}(X;A,B)}
+  \qquad
+  \symup{\hsh_A(B)=\Homsh_{\Osh}(A,B)}
+\end{equation}
+
+Les foncteurs $\symup{h_A}$ et $\symup{\hsh_A}$ sont des foncteurs covariants exacts à gauche,
+dont on considère les foncteurs dérivés droits, notés respectivement
+$\symup{\operatorname{Ext}_{\Osh}^{p}(X;A,B)}$ et $\symup{\Extsh_{\Osh}^{p}(A,B)}$. On a donc
+par définition
+\begin{equation}\tag{1.2}
+\left\{
+\begin{aligned}
+\symup{\operatorname{Ext}_{\Osh}^{p}(X;A,B)}
+  &= \symup{(R^{p}h_A)(B)
+   = H^{p}\bigl(\operatorname{Hom}_{\Osh}(X;A,C(B))\bigr)}\\
+\symup{\Extsh_{\Osh}^{p}(A,B)}
+  &= \symup{(R^{p}\hsh_A)(B)
+   = H^{p}\bigl(\Homsh_{\Osh}(A,C(B))\bigr)}
+\end{aligned}
+\right.
+\end{equation}
+
+où le symbole $\symup{R^{p}}$ désigne le passage aux foncteurs dérivés droits, et où
+$\symup{C(B)}$ désigne une résolution injective arbitraire de $\symup{B}$ dans $\symup{\Ccat^{\Osh}}$.
+Désignons par
+$\symup{\Gamma:\Ccat^{\mathrm Z}\longrightarrow\Ccat}$ le foncteur \fquote{sections}. Rappelons que ses foncteurs dérivés droits sont
+notés par $\symup{B\longrightarrow H^{p}(X,B)}$ :
+
+
+\src{170}
+\begin{equation}\tag{1.3}
+  \symup{H^{p}(X,B)=(R^{p}\Gamma)(B)=H^{p}\bigl(\Gamma(C(B))\bigr)}
+\end{equation}
+On a évidemment $\symup{h_A=\Gamma\hsh_A}$ ; d'autre part on vérifie que $\symup{\hsh_A}$
+transforme objets injectifs en objets acycliques pour $\symup{\Gamma}$. On en conclut de
+façon bien connue :
+
+\result{PROPOSITION}{1} \uline{Il existe pour tout} $\symup{\Osh}$-\uline{Module} $\symup{A}$ \uline{un foncteur
+spectral cohomologique sur} $\symup{\Ccat^{\Osh}}$, \uline{aboutissant au foncteur gradué}
+$\symup{\bigl(\operatorname{Ext}_{\Osh}^{*}(X;A,B)\bigr)}$, \uline{et dont le terme initial est}
+\begin{equation}\tag{1.4}
+  \symup{E_{2}^{p,q}(A,B)=H^{p}\bigl(X,\Extsh_{\Osh}^{q}(A,B)\bigr)}
+\end{equation}
+On en déduit des \fquote{\uline{edge-homomorphisms}} et une suite exacte à cinq termes
+que nous n'écrirons pas.
+
+\result{COROLLAIRE}{1} \uline{Si} $\symup{A}$ \uline{est localement isomorphe à} $\symup{\Osh^{n}}$, \uline{alors on a
+des isomorphismes canoniques}
+\begin{equation}\tag{1.5}
+  \symup{\operatorname{Ext}_{\Osh}^{p}(X;A,B)
+  \overset{\sim}{\longleftarrow}
+  H^{p}\bigl(X,\Homsh_{\Osh}(A,B)\bigr)}
+\end{equation}
+(donnés par des edge-homomorphisms de la suite spectrale). \uline{En particulier on a
+un isomorphisme canonique}
+\begin{equation}\tag{1.6}
+  \symup{\operatorname{Ext}_{\Osh}^{p}(X;\Osh,B)=H^{p}(X,B)}
+\end{equation}
+
+Pour utiliser ces résultats, il faut savoir expliciter les
+$\symup{\Extsh_{\Osh}^{p}(A,B)}$. Ce sont des foncteurs qui se calculent localement,
+i.e. si $\symup{U}$ est un ouvert de $\symup{X}$, on a
+\[
+  \symup{\Extsh_{\Osh}^{p}(A,B)|U
+  =\Extsh_{\Osh|U}^{p}(A|U,B|U)}
+\]
+comme il résulte du fait que la restriction à $\symup{U}$ d'un $\symup{\Osh}$-Module injectif
+est un $\symup{(\Osh|U)}$-Module injectif. De plus, on a des homomorphismes fonctoriels,
+pour $\symup{x\in X}$ fixé
+\begin{equation}\tag{1.7}
+  \symup{\Homsh_{\Osh}(A,B)_x
+  \longrightarrow
+  \operatorname{Hom}_{\Osh_x}(A_x,B_x)}
+\end{equation}
+qui se prolongent de façon unique en un homomorphisme de foncteurs cohomologiques
+en $\symup{B}$ :
+\begin{equation}\tag{1.8}
+  \symup{\Extsh_{\Osh}^{p}(A,B)_x
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_x}^{p}(A_x,B_x)}
+\end{equation}
+
+\result{PROPOSITION}{2} \uline{Si} $\symup{A}$ \uline{est, dans un voisinage de} $\symup{x}$, \uline{isomorphe au
+conoyau d'un homomorphisme} $\symup{\Osh^{m}\longrightarrow\Osh^{n}}$, \uline{alors} (1.7) \uline{est un isomorphisme pour tout} $\symup{p}$. \uline{Il en est ainsi en
+particulier si} $\symup{A}$ \uline{est un} $\symup{\Osh}$-\uline{Module cohérent} [3].
+
+\src{171}
+\result{PROPOSITION}{3} \uline{Soit} $\symup{L_{*}=(L_i)}$ \uline{une résolution gauche du}
+$\symup{\Osh}$-\uline{Module} $\symup{A}$ \uline{par des} $\symup{\Osh}$-\uline{Modules dont chacun est isomorphe localement à
+un} $\symup{\Osh^{n}}$. \uline{Alors} $\symup{\Extsh_{\Osh}(A,B)}$ \uline{s'identifie à}
+$\symup{H^{*}\bigl(\Homsh_{\Osh}(L_{*},B)\bigr)}$, \uline{et}
+$\symup{\operatorname{Ext}_{\Osh}(X;A,B)}$ \uline{s'identifie à l'hypercohomologie de} $\symup{X}$
+\uline{par rapport au complexe} $\symup{\Homsh_{\Osh}(L_{*},B)}$.
+
+La démonstration est standard, on considère le bicomplexe
+$\symup{\Homsh_{\Osh}(L_{*},C(B))}$ où $\symup{C(B)}$ est une résolution injective de $\symup{B}$, et les
+homomorphismes naturels de $\symup{\Homsh_{\Osh}(L_{*},B)}$ et de
+$\symup{\Homsh_{\Osh}(A,C(B))}$ dans ce dernier.
+
+Pour finir, indiquons que les deux foncteurs $\symup{\operatorname{Ext}}$ introduits
+dans (1.2) sont non seulement des foncteurs cohomologiques en $\symup{B}$, mais des
+\uline{bifoncteurs cohomologiques}, covariants en $\symup{B}$ et contrevariants en $\symup{A}$.
+
+\fsection{\normalfont2}{\normalfont\uline{Loi de composition dans les} Ext.}
+
+Les résultats de ce numéro sont dus indépendamment à CARTIER et à YONEDA ; voir
+un exposé de CARTIER [1] pour des détails. Soit $\symup{\underline{C}}$ une catégorie abélienne.
+Soient $\symup{K}$ et $\symup{L}$ deux objets gradués dans $\symup{\underline{C}}$. On désigne par
+$\symup{\operatorname{Hom}(K,L)}$ le groupe abélien gradué dont la composante de degré
+$\symup{n}$ est formé des homomorphismes homogènes de degré $\symup{n}$ de $\symup{K}$ dans $\symup{L}$ (i.e.
+des systèmes $\symup{(u_i)}$ d'homomorphismes $\symup{K^{i}\longrightarrow L^{i+n}}$).
+Si $\symup{K}$ et $\symup{L}$ sont des complexes (à opérateurs différentiels de degré $\symup{+1}$ pour
+fixer les idées), on introduit dans $\symup{\operatorname{Hom}(K,L)}$ l'opérateur
+différentiel donné par
+\begin{equation}\tag{2.1}
+  \symup{\delta(u)=du+(-1)^{n+1}ud,\qquad\text{où }n=\deg(u)}
+\end{equation}
+qui en fait un complexe à opérateur différentiel de degré $\symup{+1}$. Les cycles de
+degré $\symup{n}$ sont les opérateurs de degré $\symup{n}$ qui anticommutent à $\symup{u}$ (en tant
+qu'opérateurs homogènes). On peut alors considérer
+$\symup{H^{*}\bigl(\operatorname{Hom}(K,L)\bigr)}$, c'est un invariant des types
+d'homotopie de $\symup{K}$ et de $\symup{L}$, qu'on pourra noter $\symup{H^{*}(K,L)}$.
+Si on a un troisième complexe $\symup{M}$, alors la composition des homomorphismes
+définit un accouplement
+$\symup{\operatorname{Hom}(K,L)\times\operatorname{Hom}(L,M)
+\longrightarrow\operatorname{Hom}(K,M)}$ compatible avec les opérateurs différentiels, d'où par passage à la cohomologie
+des accouplements
+\begin{equation}\tag{2.2}
+  \symup{H^{*}(K,L)\times H^{*}(L,M)\longrightarrow H^{*}(K,M)}
+\end{equation}
+notés $\symup{(u,v)\longrightarrow vu}$. Ces accouplements satisfont une propriété évidente
+d'associativité. En particulier, $\symup{H^{*}(K,K)}$ est un anneau gradué associatif
+avec unité, et $\symup{H^{*}(K,L)}$ (resp. $\symup{H^{*}(L,K)}$) est un module gradué à droite
+(resp. à gauche) sur cet anneau, etc.. En dimension $\symup{0}$, (2.2) se réduit à la
+composition des homomorphismes permis de complexes. Enfin, une suite exacte de
+complexes
+\src{172}
+$\symup{0\longrightarrow K'\longrightarrow K\longrightarrow K''\longrightarrow 0}$, telle que $\symup{K'^{i}}$ s'identifie à un facteur direct de $\symup{K^{i}}$ pour tout $\symup{i}$,
+donne naissance à une suite exacte pour les complexes de groupes
+$\symup{\operatorname{Hom}(K'',L)}$, etc., d'où un opérateur cobord
+$\symup{H^{i}(K',L)\longrightarrow H^{i+1}(K'',L)}$.
+On définit de même les opérateurs cobord relatifs à une suite exacte en $\symup{L}$. Les
+accouplements (2.2) sont compatibles, au sens usuel, avec ces opérateurs cobord.
+
+Supposons maintenant que $\symup{C}$ soit une catégorie telle que tout élément $\symup{A}$
+de $\symup{C}$ admette une résolution injective $\symup{C(A)}$. On constate alors, utilisant
+une des nombreuses variantes du théorème du bicomplexe, que
+\[
+  \symup{H^{*}\bigl(C(A),C(B)\bigr)
+  =H^{*}\bigl(\operatorname{Hom}(C(A),C(B))\bigr)}
+\]
+est canoniquement isomorphe à
+\[
+  \symup{H^{*}\bigl(\operatorname{Hom}(A,C(B))\bigr)
+  =\operatorname{Ext}^{*}(A,B).}
+\]
+Les opérateurs cobord envisagés plus haut donnent les homomorphismes cobord des
+$\symup{\operatorname{Ext}}$. De plus, les accouplements (2.2) donnent ici des
+accouplements associatifs, compatibles avec les homomorphismes cobord :
+\begin{equation}\tag{2.3}
+  \symup{\operatorname{Ext}^{*}(A,B)\times\operatorname{Ext}^{*}(B,C)
+  \longrightarrow\operatorname{Ext}^{*}(A,C)}
+\end{equation}
+En particulier, $\symup{\operatorname{Ext}^{*}(A,A)}$ est un anneau gradué associatif
+avec unité, etc. (On montre de façon analogue que les foncteurs
+$\symup{\operatorname{Ext}}$ opèrent dans les foncteurs dérivés d'un foncteur
+quelconque ; nous ne nous servirons pas ici de ce fait.)
+
+Dans le cas où la catégorie envisagée est la catégorie $\symup{\Ccat^{\Osh}}$ des
+$\symup{\Osh}$-Modules sur $\symup{X1}$, on obtient donc des accouplements
+\begin{equation}\tag{2.4}
+  \symup{\operatorname{Ext}_{\Osh}^{p}(X;A,B)
+  \times\operatorname{Ext}_{\Osh}^{q}(X;B,C)
+  \longrightarrow\operatorname{Ext}_{\Osh}^{p+q}(X;A,C)}
+\end{equation}
+qui peuvent s'expliciter comme il a été dit. D'ailleurs, les mêmes
+développements, mais où on remplace la catégorie des groupes abéliens par la
+catégorie des faisceaux abéliens sur $\symup{X}$, et les foncteurs $\symup{\operatorname{Hom}}$
+par les foncteurs $\symup{\Homsh}$, définissent aussi des accouplements, ayant les mêmes
+propriétés formelles, et de \fquote{nature locale} cette fois-ci :
+\begin{equation}\tag{2.5}
+  \symup{\Extsh_{\Osh}^{p}(A,B)\times\Extsh_{\Osh}^{q}(B,C)
+  \longrightarrow\Extsh_{\Osh}^{p+q}(A,C)}
+\end{equation}
+Ces derniers se précisent si on remarque que les homomorphismes (1.8) sont
+compatibles avec les accouplements entre les $\symup{\operatorname{Ext}}$.
+
+\src{173}
+Rappelons enfin qu'on a aussi une structure multiplicative entre foncteurs
+$\symup{H^{p}(X,A)}$ (cup-produit). On constate alors que les suites spectrales de la
+proposition 1 sont compatibles avec les structures multiplicatives, de façon
+plus précise, on a un accouplement de la suite spectrale $\symup{E(A,B)}$ et de la suite
+spectrale $\symup{E(B,C)}$ vers la suite spectrale $\symup{E(A,C)}$, qui, pour l'aboutissement
+se réduit à l'accouplement entre les $\symup{\operatorname{Ext}}$ globaux, et pour le
+terme initial à l'accouplement déduit, dans le deuxième membre de (1.4), du
+cup-produit et des accouplements des $\symup{\operatorname{Ext}}$ locaux. Il en résulte
+en particulier que les \fquote{edge-homomorphisms}
+\begin{equation}\tag{2.6}
+  \symup{\operatorname{Ext}_{\Osh}^{n}(X;A,B)
+  \longrightarrow H^{0}\bigl(X;\Extsh_{\Osh}^{n}(A,B)\bigr)}
+\end{equation}
+\begin{equation}\tag{2.7}
+  \symup{H^{n}\bigl(X,\Homsh_{\Osh}(A,B)\bigr)
+  \longrightarrow\operatorname{Ext}_{\Osh}^{n}(X;A,B)}
+\end{equation}
+sont compatibles avec les structures multiplicatives. Si on se borne donc aux
+faisceaux localement isomorphes à un $\symup{\Osh^{m}}$, cela explicite complètement la
+composition entre $\symup{\operatorname{Ext}}$ globaux à l'aide du cup-produit, compte
+tenu de l'isomorphisme (1.5).
+
+\fsection{\normalfont3}{\normalfont\uline{Résultats de cohomologie locale}.}
+
+Soit $\symup{A}$ un anneau commutatif avec unité muni d'un idéal $\symup{J}$. Nous allons
+définir, pour un $\symup{A}$-module $\symup{M}$ variable, des homomorphismes fonctoriels
+\begin{equation}\tag{3.1}
+\left\{
+\begin{aligned}\symup{\operatorname{Ext}_{A}^{p}(A/J,M)}&\symup{\longrightarrow
+  \operatorname{Hom}_{A}\!\left(\bigwedge^{p}J/J^{2},M\otimes A/J\right)}\\\symup{\operatorname{Tor}_{p}^{A}(A/J,M)}&\symup{\longleftarrow
+  \left(\bigwedge^{p}J/J^{2}\right)
+  \otimes\operatorname{Hom}_{A}(A/J,M)}\end{aligned}
+\right.
+\end{equation}
+où les produits tensoriels et extérieurs sont pris sur l'anneau $\symup{A}$ ; noter
+d'ailleurs que $\symup{J/J^{2}}$ est en fait un $\symup{A/J}$-module, et que ses puissances
+extérieures en tant que $\symup{A}$-module ou en tant que $\symup{A/J}$-module sont les mêmes.
+La définition des homomorphismes (3.1) revient à la définition, pour tout
+système $\symup{\underline{x}=(x_1,\ldots,x_p)}$ de points de $\symup{J}$ d'homomorphismes
+$\symup{\varphi_{\underline{x}}}$ :
+\begin{equation}\tag{3.2}
+\left\{
+\begin{aligned}\symup{\varphi_{\underline{x}}:
+  \operatorname{Ext}_{A}^{p}(A/J,M)}&\symup{\longrightarrow M\otimes A/J}\\\symup{\varphi_{\underline{x}}:
+  \operatorname{Hom}_{A}(A/J,M)}&\symup{\longrightarrow
+  \operatorname{Tor}_{p}^{A}(A/J,M)}\end{aligned}
+\right.
+\end{equation}
+de telle façon que les conditions suivantes soient satisfaites :
+
+\src{174}
+\begin{enumerate}
+\item[\textup{i.}] $\symup{\varphi_{x_1,\ldots,x_p}}$ dépend de façon
+$\symup{A}$-multilinéaire alternée du système des $\symup{x_i\in J}$
+\item[\textup{ii.}] $\symup{\varphi_{x_1,\ldots,x_p}}$ est nul quand un des $\symup{x_i}$ est
+dans $\symup{J^{2}}$.
+\end{enumerate}
+En fait, ii. résulte de i., puisque $\symup{a\varphi_{\underline{x}}=0}$ pour $\symup{a\in J}$,
+comme on voit en remarquant que tous les modules dans (3.2) sont annulés par
+$\symup{J}$.
+
+Pour définir $\symup{\varphi_{\underline{x}}}$, considérons le complexe
+$\symup{K_{\underline{x}}}$ dont le $\symup{A}$-module sous-jacent est $\symup{\bigwedge A^{p}}$, et
+dont l'opérateur différentiel est le produit intérieur $\symup{i_{\underline{x}}}$ par
+$\symup{\underline{x}}$ considéré comme forme linéaire sur $\symup{A^{p}}$ de composantes
+$\symup{x_1,\ldots,x_p}$. L'opérateur différentiel est de degré $\symup{-1}$, les degrés sont
+positifs, et la cohomologie de ce complexe en dimension $\symup{0}$ est
+$\symup{A/(x_1A+\cdots+x_pA)}$. Comme les $\symup{x_i}$ sont dans $\symup{J}$, on en déduit une
+augmentation $\symup{K_{\underline{x},0}\longrightarrow A/J}$. Ainsi
+$\symup{K_{\underline{x}}}$ apparaît comme un complexe \uline{libre} augmenté, à module
+d'augmentation $\symup{A/J}$. On en déduit, de façon connue, des homomorphismes
+\[
+\symup{\operatorname{Ext}_{A}^{*}\bigl(H_0(K_{\underline{x}}),M\bigr)
+\longrightarrow
+H^{*}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr)\quad\text{et}\quad
+\operatorname{Tor}_{*}^{A}\bigl(H_0(K_{\underline{x}}),M\bigr)
+\longleftarrow
+H_{*}\bigl(K_{\underline{x}}\otimes M\bigr)}
+\]
+d'où, en composant avec les homomorphismes sur les $\symup{\operatorname{Ext}}$ et les
+$\symup{\operatorname{Tor}}$ déduits de l'homomorphisme d'augmentation
+$\symup{H_0(K_{\underline{x}})\longrightarrow A/J}$, des homomorphismes
+\begin{equation}\tag{3.3}
+\left\{
+\begin{aligned}\symup{\psi_{\underline{x}}:
+\operatorname{Ext}_{A}^{*}(A/J,M)}&\symup{\longrightarrow H^{*}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr)}\\\symup{\psi_{\underline{x}}:
+\operatorname{Tor}_{*}^{A}(A/J,M)}&\symup{\longleftarrow H_{*}\bigl(K_{\underline{x}}\otimes M\bigr)}\end{aligned}
+\right.
+\end{equation}
+Or on constate aussitôt qu'en dimension maxima $\symup{p}$, la cohomologie des seconds
+membres est $\symup{M/(x_1M+\cdots+x_pM)}$ (resp. est l'ensemble des éléments de $\symup{M}$
+annulés par chacun des $\symup{x_i}$). Comme les $\symup{x_i}$ sont dans $\symup{J}$, on en déduit des
+homomorphismes
+\begin{equation}\tag{3.4}
+\left\{
+\begin{aligned}\symup{H^{p}\bigl(\operatorname{Hom}_{A}(K_{\underline{x}},M)\bigr)}&\symup{\longrightarrow M\otimes A/J}\\\symup{H_{p}\bigl(K_{\underline{x}}\otimes M\bigr)}&\symup{\longleftarrow\operatorname{Hom}_{A}(A/J,M)}\end{aligned}
+\right.
+\end{equation}
+Composant les homomorphismes (3.3) et (3.4), on obtient les homomorphismes (3.2)
+que nous voulions définir. La vérification de i. est fastidieuse, mais ne
+présente pas de difficultés.
+
+\src{175}
+\result{PROPOSITION}{4} \uline{Soit} $\symup{A}$ \uline{un anneau commutatif avec unité, soit}
+$\symup{(x_1,\ldots,x_p)}$ \uline{une suite d'éléments de} $\symup{A}$ \uline{telle que pour} $\symup{1\leq i\leq p}$,
+\uline{l'image de} $\symup{x_i}$ \uline{dans le quotient de} $\symup{A}$ \uline{par l'idéal engendré par}
+$\symup{(x_1,\ldots,x_{i-1})}$ \uline{ne soit pas diviseur de} $\symup{0}$. \uline{Soit} $\symup{J}$ \uline{l'idéal engendré
+par les} $\symup{x_i}$. \uline{Alors} $\symup{J/J^{2}}$ \uline{est un} $\symup{(A/J)}$\uline{-module libre ayant pour base les
+images canoniques des} $\symup{x_i}$, \uline{le complexe} $\symup{K_{\underline{x}}}$ \uline{est une résolution
+libre de} $\symup{A/J}$, \uline{et pour tout} $\symup{A}$\uline{-module} $\symup{M}$, \uline{les homomorphismes} (3.1) \uline{en
+dimension} $\symup{p}$ \uline{sont bijectifs. Il en est de même des homomorphismes analogues
+définis pour des degrés} $\symup{i}$ \uline{quelconques pourvu que} $\symup{J.M=0}$.
+
+(Le point essentiel, dont tous les autres résultent, est l'acyclicité de
+$\symup{K_{\underline{x}}}$, qui est un fait bien connu sous les conditions indiquées).
+
+\result{COROLLAIRE}{1} $\symup{A}$ \uline{et} $\symup{J}$ \uline{étant comme ci-dessus, supposons de plus que}
+$\symup{A}$ \uline{soit une algèbre affine régulière de} $\symup{\dim n}$ \uline{sur un corps parfait} $\symup{\underline{k}}$, \uline{et
+que} $\symup{A/J}$ \uline{soit une algèbre affine régulière. Désignons par} $\symup{\Omega^{1}(A)}$,
+$\symup{\Omega^{1}(A/J)}$ \uline{les modules de différentielles de Kähler. Alors on a un
+isomorphisme canonique compatible avec la localisation},
+\begin{equation}\tag{3.5}
+  \symup{\operatorname{Ext}_{A}^{p}\bigl(\Omega^{n-p}(A/J),\Omega^{n}(A)\bigr)=A/J}
+\end{equation}
+En effet, $\symup{\Omega^{n-p}(A/J)}$ est un $\symup{(A/J)}$-module libre de rang $\symup{1}$, de même
+$\symup{\Omega^{n}(A)}$ est un $\symup{A}$-module libre de rang $\symup{n}$,
+donc le premier membre est égal à
+\[
+  \symup{\operatorname{Ext}_{A}^{p}(A/J,A)
+  \otimes\Omega^{n-p}(A/J)'\otimes\Omega^{n}(A)}
+\]
+(où le symbole \fquote{$\symup{\prime}$} désigne le $\symup{(A/J}$-module dual). Le produit tensoriel des
+deux derniers facteurs s'identifie à $\symup{\bigwedge^{p}(J/J^{2})}$, donc le tout
+s'identifie à
+$\symup{\operatorname{Ext}_{A}^{p}\!\left(A/J,\bigwedge^{p}(J/J^{2})\right)}$,
+donc, en vertu de la proposition, à
+\[
+  \symup{\operatorname{Hom}_{A}\!\left(\bigwedge^{p}J/J^{2},
+  \bigwedge^{p}J/J^{2}\right),}
+\]
+i.e. à $\symup{A/J}$. En particulier, il y a dans
+$\symup{\operatorname{Ext}_{A}^{p}\bigl(\Omega^{n-p}(A/J)\bigr),\Omega^{n}(A)}$ un
+élément privilégié, correspondant à l'élément unité de $\symup{A/J}$, appelé
+\uline{classe fondamentale} de l'idéal $\symup{J}$ dans $\symup{A}$. (Elle peut en fait se
+définir sous des conditions sensiblement plus larges). On peut mettre le
+corollaire 1 sous une forme plus géométrique et plus globale :
+
+\result{COROLLAIRE}{2} \uline{Soient} $\symup{X}$ \uline{une variété non singulière sur un corps
+algébriquement clos} $\symup{\underline{k}}$, $\symup{Y}$ \uline{une sous-variété fermée non singulière de} $\symup{X}$,
+$\symup{\Osh_X}$ \uline{le faisceau des anneaux locaux de} $\symup{X}$, $\symup{\Osh_Y}$ \uline{le faisceau des anneaux
+locaux de} $\symup{Y}$ \uline{considéré comme un faisceau quotient de} $\symup{\Osh_X}$. \uline{Soient} $\symup{n}$ \uline{la
+dimension de} $\symup{X}$, $\symup{n-p}$ \uline{celle de} $\symup{Y}$.
+
+\src{176}
+\uline{Soit} $\symup{\underline{\Omega}_X}$ (resp. $\symup{\underline{\Omega}_Y}$) \uline{le faisceau des germes de formes
+différentielles régulières sur} $\symup{X}$ (resp. $\symup{Y}$). \uline{Alors on a des isomorphismes
+canoniques} :
+\begin{equation}\tag{3.6}
+  \symup{\Extsh_{\Osh_X}^{p}\bigl(\underline{\Omega}_Y^{n-p},\underline{\Omega}_X^{n}\bigr)=\Osh_Y}
+\end{equation}
+\uline{ou encore}
+\begin{equation}\tag{3.6 bis}
+  \symup{\Extsh_{\Osh_X}^{p}\bigl(\Osh_Y,\underline{\Omega}_X^{n}\bigr)=\underline{\Omega}_Y^{n-p}}
+\end{equation}
+La formule (3.6 bis) peut servir de \uline{définition} de $\symup{\underline{\Omega}_Y^{n-p}}$ pour $\symup{Y}$
+variété singulière. De façon précise :
+
+\result{PROPOSITION}{5} \uline{Soit} $\symup{Y}$ \uline{un sous-ensemble algébrique de dimension}
+$\symup{q=n-p}$ \uline{dans une variété algébrique non singulière} $\symup{X}$ \uline{de dimension} $\symup{n}$. \uline{Soient}
+$\symup{F}$ \uline{un faisceau algébrique cohérent sur} $\symup{X}$ \uline{de support contenu dans} $\symup{Y}$, \uline{et} $\symup{L}$
+\uline{un faisceau algébrique localement libre sur} $\symup{X}$. \uline{Alors les faisceaux}
+$\symup{\Extsh_{\Osh_X}^{i}(F,L)}$ \uline{sont nuls pour} $\symup{i<p}$ ; \uline{tandis que pour} $\symup{i=p}$, \uline{on a un
+isomorphisme canonique}
+\begin{equation}\tag{3.7}
+  \symup{\Extsh_{\Osh_X}^{p}(F,L)
+  =\Homsh_{\Osh_X}\!\left(F,
+  \Extsh^{p}(\Osh_X/J,L)\right)}
+\end{equation}
+\uline{où} $\symup{J}$ \uline{désigne un faisceau d'idéaux arbitraire sur} $\symup{X}$ \uline{annulant} $\symup{F}$ \uline{et dont
+l'ensemble des zéros soit} $\symup{Y}$. \uline{En particulier, si} $\symup{F}$ \uline{est un faisceau algébrique
+cohérent sur} $\symup{Y}$, \uline{on a}
+\begin{equation}\tag{3.7 bis}
+  \symup{\Extsh_{\Osh_X}^{p}(F,L)
+  =\Homsh_{\Osh_Y}\!\left(F,\Extsh^{p}(\Osh_Y,L)\right).}
+\end{equation}
+\uline{Enfin}, $\symup{F}$ \uline{étant toujours un faisceau algébrique cohérent sur} $\symup{Y}$, \uline{les faisceaux}
+$\symup{E^{i}(F)=\Extsh_{\Osh_X}^{p+i}(F,\underline{\Omega}_X^{n})}$ \uline{ne dépendent pas de la façon d'immerger l'espace algébrique} $\symup{Y}$ \uline{dans une variété
+non singulière} $\symup{X}$.
+
+La question étant locale, on peut supposer $\symup{X}$ affine et $\symup{L=\Osh_X}$. Cela ramène
+à une question d'algèbre commutative, et même d'algèbre locale : Si $\symup{A}$ est une
+localité régulière, $\symup{M}$ un $\symup{A}$-module dont le support est de dimension
+$\symup{\leq q=n-p}$ prouver que $\symup{\operatorname{Ext}_{A}^{i}(M,A)=0}$ pour $\symup{i<p}$, et
+$\symup{\operatorname{Ext}_{A}^{p}(M,A)
+=\operatorname{Hom}_{A}\!\left(M,\operatorname{Ext}^{p}(A/J,A)\right)}$,
+où $\symup{J}$ est un idéal quelconque de \fquote{dimension} $\symup{\leq q}$ annulant $\symup{M}$. Pour le
+premier point, on procède par récurrence sur $\symup{q}$ : un dévissage immédiat ramène
+au cas où $\symup{M}$ est de la forme $\symup{A/J}$, puis, en remplaçant $\symup{J}$ par un idéal plus
+petit et utilisant l'hypothèse de récurrence, et la suite exacte des
+$\symup{\operatorname{Ext}}$, au,cas où $\symup{J}$ est engendré par un \fquote{système de paramètres}
+comme dans la proposition 4 et où le résultat est immédiat. Le résultat
+précédent implique que si $\symup{J}$ est un idéal
+
+\src{177}
+fixé de \fquote{dimension} $\symup{\leq q}$, alors le foncteur contravariant
+$\symup{E(M)=\operatorname{Ext}_{A}^{p}(M,A)}$ sur la catégorie des $\symup{A/J}$-modules est
+exact à gauche ; de plus il transforme sommes directes en produits directs,
+d'où résulte facilement que
+$\symup{E(M)=\operatorname{Hom}_{A}\bigl(M,E(A)\bigr)}$.
+ Enfin, la
+dernière assertion de la proposition 5 est plus subtile, et résulte d'une
+caractérisation intrinsèque des $\symup{E^{i}(F)}$ à l'aide d'un théorème de dualité
+locale qui ne peut être donné ici.
+
+\result{COROLLAIRE}{} \uline{Désignons par} $\symup{\underline{\omega}_Y^{q}}$ \uline{le faisceau}
+$\symup{\Extsh_{\Osh_X}^{p}(\Osh_Y,\underline{\Omega}_X^{n})}$. \uline{Alors on a un isomorphisme
+fonctoriel pour les faisceaux algébriques cohérents} $\symup{F}$ \uline{sur} $\symup{Y}$ :
+\begin{equation}\tag{3.8}
+  \symup{\Extsh_{\Osh_X}^{p}(F,\underline{\Omega}_X^{n})
+  =\Homsh_{\Osh_X}(F,\underline{\omega}_Y^{q})}
+\end{equation}
+
+\fsection{\normalfont4}{\normalfont\uline{Classe de cohomologie associée à une sous-variété}.}
+
+Dans toute la suite, $\symup{X}$ désigne un ensemble algébrique de dimension $\symup{n}$, défini
+sur un corps $\symup{\underline{k}}$, que nous supposerons algébriquement clos pour simplifier. Sauf
+au n\textsuperscript{o} 6, $\symup{X}$ est supposée non singulière. On désigne par
+$\symup{\Osh_X}$ le faisceau des anneaux locaux sur $\symup{X}$, par
+$\symup{\underline{\Omega}_X^{*}=\bigcup\limits_p\underline{\Omega}_X^{p}}$ le faisceau des germes de formes différentielles sur $\symup{X}$. Si $\symup{Y}$ est une partie fermée de $\symup{X}$, on identifie
+les faisceaux algébriques cohérents sur $\symup{Y}$ à des faisceaux cohérents sur $\symup{X}$
+nuls hors de $\symup{Y}$ ; il en est en particulier ainsi de $\symup{\Osh_Y}$ et $\symup{\underline{\Omega}_Y}$.
+
+\result{LEMME}{1} \uline{Soient} $\symup{F}$ \uline{un faisceau algébrique cohérent sur} $\symup{X}$ \uline{dont le
+support est de dimension} $\symup{\leq n-p}$, $\symup{L}$ \uline{un faisceau algébrique cohérent
+localement libre sur} $\symup{X}$. \uline{Alors} $\symup{\operatorname{Ext}_{\Osh_X}^{i}(X;F,L)}$ \uline{est nul
+pour} $\symup{i<p}$, \uline{et on a un isomorphisme canonique}
+\begin{equation}\tag{4.1}
+  \symup{\operatorname{Ext}_{\Osh}^{p}(X;F,L)
+  =H^{0}\bigl(X,\Extsh_{\Osh}^{p}(F,L)\bigr)}
+\end{equation}
+\uline{Si} $\symup{F}$ \uline{est un faisceau algébrique cohérent sur une partie fermée} $\symup{\text{\rlap{M}Y}}$ \uline{de} $\symup{X}$ \uline{de
+dimension} $\symup{\leq n-p}$, \uline{on a un isomorphisme canonique}
+\begin{equation}\tag{4.1 bis}
+  \symup{\Extsh_{\Osh_X}^{p}(F,L)
+  =\Homsh_{\Osh_X}\!\left(
+    F\otimes L'\otimes\underline{\Omega}_X^{n},\underline{\omega}_Y^{n-p}
+  \right)}
+\end{equation}
+\uline{où} $\symup{\underline{\omega}_Y^{n-p}}$ \uline{est le faisceau sur} $\symup{Y}$ \uline{défini dans le corollaire à
+proposition 5, (qui s'identifie à} $\symup{\underline{\Omega}_Y^{n-p}}$ \uline{si} $\symup{Y}$ \uline{est non singulière}).
+
+La formule (4.1) est une conséquence immédiate de la suite spectrale de la
+proposition 1, et de la proposition 5 ; en vertu de la formule (3.8) pn peut
+écrire
+
+\src{178}
+\[
+\symup{\Extsh_{\Osh_X}^{p}(F,L)
+=L\otimes(\underline{\Omega}_X^{n})'\otimes
+  \Extsh_{\Osh_X}(F,\underline{\Omega}_X^{n})
+=L\otimes(\underline{\Omega}_X^{n})'\otimes
+  \Homsh_{\Osh_X}(F,\underline{\omega}_Y^{q})
+=\Homsh_{\Osh_X}\!\left(
+  F\otimes L'\otimes\underline{\Omega}_X^{n},\underline{\omega}_Y^{q}\right)}
+\]
+où $\symup{q=n-p}$, d'où la formule (4.1 bis).
+
+Faisons en particulier $\symup{F=\Osh_Y}$, $\symup{L=\underline{\Omega}_X^{p}}$, on trouve, compte tenu
+que $\symup{\underline{\Omega}_X^{n}\otimes(\underline{\Omega}_X^{p})'=\underline{\Omega}_X^{n-p}}$, un isomorphisme
+canonique
+\begin{equation}\tag{4.2}
+  \symup{\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\underline{\Omega}_X^{p})
+  =\operatorname{Hom}_{\Osh_X}
+  (X;\underline{\Omega}_X^{n-p},\underline{\omega}_Y^{n-p})}
+\end{equation}
+Supposons maintenant $\symup{Y}$ \uline{non singulière} pour simplifier, donc
+$\symup{\underline{\omega}_Y^{n-p}=\underline{\Omega}_Y^{n-p}}$. On a un homomorphisme naturel de
+$\symup{\underline{\Omega}_X^{n-p}}$ dans $\symup{\underline{\Omega}_Y^{n-p}}$, d'où une section canonique $\symup{s_Y}$ du
+faisceau $\symup{\Extsh_{\Osh_X}^{p}(\Osh_Y,\underline{\Omega}_X^{p})}$, que nous appellerons, si
+toutes les composantes de $\symup{Y}$ sont de dimension $\symup{n-p}$, \uline{section
+fondamentale} du faisceau $\symup{\Extsh_{\Osh_X}^{p}(\Osh_Y,\underline{\Omega}_X^{p})}$ Cette
+section définit en vertu de (4.1) un élément de
+$\symup{\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\underline{\Omega}_X^{p})}$. Or l'homomorphisme
+naturel $\symup{\Osh_X\longrightarrow\Osh_Y}$ définit un homomorphisme
+\[
+  \symup{\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\underline{\Omega}_X^{p})
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_X,\underline{\Omega}_X^{p})
+  =H^{p}(X,\underline{\Omega}_X^{p}).}
+\]
+On obtient ainsi un élément de $\symup{H^{p}(X,\underline{\Omega}_X^{p})}$, noté $\symup{P_X(Y)}$ et appelé
+\uline{classe de cohomologie de} $\symup{Y}$ \uline{dans} $\symup{X}$. Elle est donc déduite de la section
+$\symup{s_Y}$ de $\symup{\Extsh_{\Osh_X}^{p}(\Osh_Y,\underline{\Omega}_X^{p})}$ par le diagramme
+d'homomorphismes suivants :
+\begin{equation}\tag{4.3}
+\symup{H^{p}(X,\underline{\Omega}_X^{p})
+=\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_X,\underline{\Omega}_X^{p})
+\longleftarrow\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_Y,\underline{\Omega}_X^{p})
+\xrightarrow{\ \sim\ }
+H^{0}\!\left(X,\Extsh_{\Osh_X}^{p}(O_Y,\underline{\Omega}_X^{p})\right)}
+\end{equation}
+
+Appelons \uline{cycle non singulier} de dimension $\symup{n-p}$ un élément du groupe
+abélien libre engendré par les sous-variétés irréductibles non singulières de
+dimension $\symup{n-p}$ dans $\symup{X}$. Alors la fonction $\symup{Y\longrightarrow P(Y)}$ se prolonge en
+un homomorphisme du groupe des cycles non singuliers de dimension $\symup{n-p}$ sur $\symup{X}$,
+dans le groupe $\symup{H^{p}(X,\underline{\Omega}_X^{p})}$.
+
+Soient $\symup{Z^{n-p}}$ et $\symup{Z'^{n-p'}}$ des cycles non singuliers de dimension $\symup{n-p}$ et
+$\symup{n-p'}$, on dit qu'ils se \uline{coupent transversalement}, si toute composante
+de $\symup{Z}$ coupe transversalement toute composante de $\symup{Z'}$. Alors le cycle $\symup{Z.Z'}$ est
+défini, c'est un cycle non singulier de dimension $\symup{n-p-p'}$. Ceci dit, on a le
+
+\src{179}
+\result{THÉORÈME}{1} \uline{Si} $\symup{Z^{n-p}}$ \uline{et} $\symup{Z'^{n-p'}}$ \uline{sont des cycles non singuliers
+qui se coupent transversalement, alors on a}
+\begin{equation}\tag{4.4}
+  \symup{P_X(Z.Z')=P_X(Z).P_X(Z')}
+\end{equation}
+\uline{où le produit du deuxième membre est le cup-produit}
+\[
+  \symup{H^{p}(X,\underline{\Omega}_X^{p})\times H^{p'}(X,\underline{\Omega}_X^{p'}.)
+  \longrightarrow H^{p+p'}(X,\underline{\Omega}_X^{p+p'}).}
+\]
+(On suppose que $\symup{X}$ est isomorphe à une partie localement fermée d'un espace
+projectif)
+
+Cette dernière hypothèse nous sert uniquement pour pouvoir conclure que tout
+faisceau algébrique cohérent sur $\symup{X}$ est quotient d'un faisceau algébrique
+cohérent localement libre (SERRE), donc admet une résolution gauche par des
+faisceaux localement libres. Pour prouver le théorème 1, on peut supposer que
+$\symup{Z}$ et $\symup{Z'}$ sont des sous-variétés irréductibles non singulières $\symup{Y}$ et $\symup{Y'}$ se
+coupant transversalement. Soit $\symup{L_{*}}$ une résolution gauche de $\symup{\Osh_Y}$ par des
+faisceaux localement libres, alors en vertu de proposition 3, le diagramme
+d'homomorphismes (4.3) s'identifie au diagramme
+\[
+\symup{R^{p}\Gamma(\underline{\Omega}_X^{p})
+\xleftarrow{\alpha}
+(\underline{\underline{R}}^{p}\Gamma)\!\left(\Homsh_{\Osh_X}(L_{*},\underline{\Omega}_X^{p})\right)
+\xrightarrow{\overset{\beta}{\sim}}
+\Gamma\!\left(H^{p}\bigl(\Homsh_{\Osh_X}(L_{*},\underline{\Omega}_X^{p})\bigr)\right)}
+\]
+où $\symup{\Gamma}$ est le foncteur \fquote{groupe des sections} sur la catégorie des
+faisceaux abéliens sur $\symup{X}$, et $\symup{\underline{\underline{R}}^{p}\Gamma}$ désigne
+l'hypercohomologie de dimension $\symup{p}$ dudit foncteur, et $\symup{R^{p}\Gamma}$ son
+$\symup{p}$-ième foncteur dérivé. On supposera pour simplifier que $\symup{L_0=\Osh_X}$ et que
+l'augmentation $\symup{L_0\longrightarrow O_Y}$ est l'homomorphisme naturel (ce qui
+est loisible), alors $\symup{\alpha}$ est déduit de l'homomorphisme de complexes
+$\symup{\Osh_X\longrightarrow L}$ ($\symup{\Osh_X}$ étant considéré comme un complexe réduit
+au degré $\symup{0}$), compte tenu que $\symup{\underline{\underline{R}}^{p}\Gamma(K)=R^{p}\Gamma(K_0)}$ si $\symup{K}$
+est un complexe de faisceaux réduit au degré $\symup{0}$. L'homomorphisme $\symup{\beta}$ est un
+\fquote{edge-homomorphism} bien connu. Considérons un diagramme analogue, relatif à
+une résolution localement libre $\symup{L'_{*}}$ de $\symup{\Osh_{Y'}}$, et considérons le
+diagramme commutatif d'accouplements :
+\begin{equation}\tag{4.5}
+\resizebox{\textwidth}{!}{$
+\left\{\begin{array}{ccc}\symup{R^{p}\Gamma(\underline{\Omega}_X^{p})}&\symup{\longleftarrow
+\underline{\underline{R}}^{p}\!\Gamma\left(\Homsh_{\Osh_X}(L_{*},\underline{\Omega}_X^{p})\right)}&\symup{\xrightarrow{\sim}
+\Gamma\bigl(H^{p}\!\left(\Homsh_{\Osh_X}(L_{*},\underline{\Omega}_X^{p})\right)\bigr)}\\[3pt]\symup{\times}&\symup{\times}&\symup{\times}\\[3pt]\symup{R^{p'}\Gamma(\underline{\Omega}_X^{p'})}&\symup{\longleftarrow
+\underline{\underline{R}}^{p'}\Gamma\!\left(\Homsh_{\Osh_X}(L'_{*},\underline{\Omega}_X^{p'})\right)}&\symup{\xrightarrow{\sim}
+\Gamma\bigl(H^{p'}\!\left(\Homsh_{\Osh_X}(L'_{*},\underline{\Omega}_X^{p'})\right)\bigr)}\\[3pt]\symup{\downarrow}&\symup{\downarrow}&\symup{\downarrow}\\[3pt]\symup{R^{p+p'}\Gamma(\underline{\Omega}_X^{p+p'})}&\symup{\longleftarrow
+\underline{\underline{R}}^{p+p'}\Gamma\!\left(
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\underline{\Omega}_X^{p+p'})\right.}&\symup{\xrightarrow{\sim}
+\Gamma\bigl(H^{p+p'}\!\left(
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\underline{\Omega}_X^{p+p'})\right)\bigr)}\end{array}\right.
+$}
+\end{equation}
+
+\src{180}
+Les accouplements des deux colonnes de droite sont déduits de l'accouplement de
+complexes de faisceaux
+\[
+\symup{\Homsh_{\Osh_X}(L_{*},\underline{\Omega}_X^{p})
+\times\Homsh_{\Osh_X}(L'_{*},\underline{\Omega}_X^{p'})
+\longrightarrow
+\Homsh_{\Osh_X}(L_{*}\otimes L'_{*},\underline{\Omega}_X^{p+p'})}
+\]
+que l'on définit à l'aide du produit extérieur
+$\symup{\underline{\Omega}_X^{p}\times\underline{\Omega}_X^{p'}\longrightarrow\underline{\Omega}_X^{p+p'}}$.
+L'accouplement de la première colonne est le cup-produit (relatif au produit
+extérieur). Je dis que la dernière ligne de (4.5) s'identifie au diagramme
+d'isomorphismes analogue à (4.3), où $\symup{Y}$ est remplacé par $\symup{Y\cap Y'}$ et $\symup{p}$ par
+$\symup{p+p'}$. Pour ceci, il suffit de montrer que $\symup{L\otimes L'}$ est une résolution
+(évidemment localement libre) de $\symup{\Osh_{Y\cap Y'}}$. Or on a en effet
+\[
+  \symup{H_0(L\otimes L')=\Osh_Y\otimes\Osh_{Y'}=\Osh_{Y\cap Y'}}
+\]
+et
+\[
+  \symup{H_i(L\otimes L').=\operatorname{Tor}_{i}^{\Osh_X}(\Osh_Y,\Osh_{Y'})=0}
+\]
+pour $\symup{i>0}$, du fait que $\symup{Y}$ et $\symup{Y'}$ se coupent transversalement. Le théorème 1 résulte
+maintenant de la formule :
+\begin{equation}\tag{4.6}
+  \symup{s_Y.s_{Y'}=s_{Y.Y'}}
+\end{equation}
+(où le produit du premier membre est celui de la dernière colonne de (4.5)).
+Cette formule (4.6), de nature purement locale, se vérifie sans difficultés en
+prenant pour $\symup{L_{*}}$ et $\symup{L'_{*}}$ les résolutions envisagées dans proposition
+4. On démontre de même (par une démonstration plus facile) que
+$\symup{Z\longrightarrow P_X(Z)}$ est compatible avec le produit cartésien :
+\begin{equation}\tag{4.7}
+  \symup{P_{X\times X'}(Z\times Z')=P_X(Z)\otimes P_{X'}(Z')}
+\end{equation}
+(formule valable si $\symup{Z}$ resp. $\symup{Z'}$, est un cycle non singulier sur la variété
+non singulière $\symup{X}$, resp. $\symup{X'}$, $\symup{Z\times Z'}$ étant considéré comme un cycle non
+singulier sur $\symup{X\times X'}$). De (4.4) et (4.7) on déduit que $\symup{P_X(Z)}$ est aussi
+compatible avec l'opération \fquote{image inverse} par un morphisme de variétés non
+singulières $\symup{f:X\longrightarrow X'}$ :
+\begin{equation}\tag{4.8}
+  \symup{P_X\bigl(f^{-1}(Z')\bigr)=f^{*}\bigl(P_{X'}(Z)\bigr)}
+\end{equation}
+formule valable si $\symup{Z}$ est un cycle non singulier sur $\symup{X'}$ tel que $\symup{f}$ soit
+\fquote{transversale} à $\symup{Z}$, i.e. tel que le graphe de $\symup{f}$ soit transversal au cycle
+$\symup{X\times Z'}$ dans $\symup{X\times X'}$.
+
+\src{181}
+\result{COROLLAIRE}{1} \uline{Soient} $\symup{X}$, $\symup{X'}$ \uline{deux variétés non singulières
+localement fermées dans un espace projectif, supposons} $\symup{X'}$ \uline{complète. Soient} $\symup{U}$
+\uline{un cycle non singulier sur} $\symup{X\times X'}$, $\symup{a}$ \uline{et} $\symup{b}$ \uline{deux points de} $\symup{X'}$ \uline{tels que}
+$\symup{U}$ \uline{coupe transversalement les cycles} $\symup{X\times(a)}$ \uline{et} $\symup{X\times(b)}$, \uline{soient} $\symup{Z}$
+\uline{et} $\symup{Z'}$ \uline{les cycles non singuliers sur} $\symup{X}$ \uline{tels que}
+$\symup{Z\times(a)=(X\times(a)).U}$, $\symup{Z\times(b)=(X\times(b)).u}$.
+\uline{Alors on a}
+\[
+  \symup{P_X(Z)=P_X(Z').}
+\]
+
+En effet, soit $\symup{f_a:X\longrightarrow X\times X'}$ défini par
+$\symup{f_a(x)=(x,a)}$, on a alors en vertu de (4.8) la formule
+$\symup{P(Z)=f_a^{*}(P(U))}$, de même $\symup{P(Z')=f_b^{*}(P(U))}$. Or, utilisant la formule de
+Künneth
+\[
+  \symup{H^{*}(X\times X',\underline{\Omega}_{X\times X'}^{*})
+  =H^{*}(X,\underline{\Omega}_X^{*})\otimes H^{*}(X',\underline{\Omega}_{X'}^{*})}
+\]
+et le fait que $\symup{H^{0}(X',\Osh_{X'})}$ est réduit aux scalaires, on obtient
+facilement $\symup{f_a^{*}=f_b^{*}}$, d'où la conclusion.
+
+Pour tout $\symup{x\in X}$, $\symup{(x)}$ est une sous-variété non singulière de $\symup{X}$ de
+codimension $\symup{n}$, et définit donc un élément $\symup{\varepsilon_x}$ de
+$\symup{H^{n}(X,\underline{\Omega}_X^{n})}$. Si $\symup{X}$ est une variété projective non singulière, il
+résulte du corollaire 1 que $\symup{\varepsilon_x}$ ne dépend pas du point $\symup{x}$ choisi, on
+le note $\symup{\varepsilon_X}$ et on l'appelle \uline{classe fondamentale} de
+$\symup{H^{n}(X,\underline{\Omega}_X^{n})}$.
+
+\result{REMARQUE}{} Pour avoir une théorie satisfaisante, il faudrait définir
+$\symup{P_X(Z)}$ pour des cycles $\symup{Z}$ quelconques, et prouver le théorème 1 pour une
+intersection propre de cycles. (Au moment d'écrire cet exposé, cela n'est pas
+encore fait en toute généralité). Admettant que cela est fait, le corollaire 1
+devient : si $\symup{Z}$ et $\symup{Z'}$ sont deux cycles algébriquement équivalents, alors
+$\symup{P_X(Z)=P_X(Z')}$ (énoncé qui ne semble par résulter de ce qui précède, même si
+$\symup{Z}$ et $\symup{Z'}$ sont non singuliers).
+
+\fsection{\normalfont5}{\normalfont\uline{La théorème de dualité}.}
+
+Dans ce numéro, $\symup{X}$ désigne une variété projective non singulière de dimension
+$\symup{n}$.
+
+\result{THÉORÈME}{2} \uline{La classe fondamentale} $\symup{\varepsilon_X}$ \uline{de}
+$\symup{H^{n}(X,\underline{\Omega}_X^{n})}$ \uline{est une base de cet espace vectoriel}.
+
+(La démonstration sera donnée plus bas). Moyennant le théorème précédent on peut
+donc identifier $\symup{H^{n}(X,\underline{\Omega}_X^{n})}$. au corps $\symup{\underline{k}}$. Considérons maintenant. les
+accouplements envisagés au n\textsuperscript{o} 2, qui donnent en particulier un
+accouplement
+
+\src{182}
+\[
+\symup{\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_X,F)
+\times\operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\underline{\Omega}_X^{n})
+\longrightarrow
+\operatorname{Ext}_{\Osh_X}^{n}(X;\Osh_X,\underline{\Omega}_X^{n}),\quad\text{i.e.}}
+\]
+\begin{equation}\tag{5.1}
+  \symup{H^{p}(X,F)
+  \times\operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\underline{\Omega}_X^{n})
+  \longrightarrow H^{n}(X,\underline{\Omega}_X^{n})}
+\end{equation}
+Compte tenu du théorème 2, cet accouplement définit un homomorphisme
+\begin{equation}\tag{5.2}
+  \symup{\operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\underline{\Omega}_X^{n})
+  \longrightarrow\bigl(H^{p}(X,F)\bigr)'}
+\end{equation}
+Cet homomorphisme est fonctoriel en $\symup{F}$, et permute aux homomorphismes cobords
+relatifs aux suites exactes $\symup{0\longrightarrow F'\longrightarrow F
+\longrightarrow F''\longrightarrow0}$.
+
+\result{THÉORÈME}{3} \uline{L'homomorphisme} (5.2) \uline{est un isomorphisme}.
+
+On retrouve en particulier le résultat de Serre :
+
+\result{COROLLAIRE}{} \uline{Soient} $\symup{E}$ \uline{un fibré vectoriel algébrique sur} $\symup{X}$,
+$\symup{\Osh_X(E)}$ \uline{le faisceau des germes de sections régulières de} $\symup{E}$, \uline{on a alors des
+isomorphismes canoniques} :
+\begin{equation}\tag{5.3}
+  \symup{\bigl(H^{p}(X,\Osh_X(E))\bigr)'
+  =H^{n-p}\bigl(X,\Omega_X^{n}\otimes\Osh_X(E')\bigr)}
+\end{equation}
+Il suffit d'appliquer le théorème 3 et le corollaire 1 à la proposition 1.
+
+Les théorèmes 2 et 3 vont résulter de l'énoncé suivant :
+
+\noindent(D) \uline{L'homomorphisme suivant}
+\begin{equation}\tag{5.2 bis}
+  \symup{\operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\underline{\Omega}_X^{n})
+  \longrightarrow\bigl(H^{p}(X,F)\bigr)'\otimes L
+  \qquad (L=H^{n}(X,\underline{\Omega}_X^{n})),}
+\end{equation}
+\uline{déduit de l'accouplement (5.1) est un isomorphisme}.
+
+Montrons en effet que (D) implique le théorème 2. Soit
+$\symup{\underline{k}_x=\Osh_{(x)}}$ le faisceau des anneaux locaux de la variété réduite au point
+$\symup{x\in X}$, considérons l'homomorphisme canonique
+$\symup{\Osh_X\longrightarrow \underline{k}_x}$ et l'homomorphisme associé
+\begin{equation}\tag{5.3}
+  \symup{H^{0}(X,\Osh_X)\longrightarrow H^{0}(X,\underline{k}_x)}
+\end{equation}
+son transposé s'identifie à l'homomorphisme
+\begin{equation}\tag{5.4}
+  \symup{\operatorname{Ext}_{\Osh_X}^{n}(X;\underline{k}_x,\underline{\Omega}_X^{n})\otimes L'
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_X}^{n}(X;\Osh_X,\underline{\Omega}_X^{n})\otimes L'}
+\end{equation}
+déduit de l'homomorphisme sur les $\symup{\operatorname{Ext}^{n}}$ associé à
+$\symup{\Osh_X\longrightarrow \underline{k}_x}$ :
+\begin{equation}\tag{5.5}
+  \symup{\operatorname{Ext}_{\Osh_X}^{n}(X;\underline{k}_x,\Omega_X^{n})
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_X}^{n}(X;\Osh_X,\underline{\Omega}_X^{n})
+  =H^{n}(X,\underline{\Omega}_X^{n})}
+\end{equation}
+
+\src{183}
+Comme (5.3) est un isomorphisme, il en est de même
+de (5.4), donc aussi de (5.5). Comme $\symup{s_{(x)}}$ est une base de
+$\symup{\operatorname{Ext}_{\Osh_X}^{n}(X;\underline{k}_x,\underline{\Omega}_X^{n})}$ en vertu de (4.2), il
+s'ensuit bien que son image $\symup{\varepsilon_X}$ est une base de
+$\symup{H^{n}(X,\underline{\Omega}_X^{n})}$.
+
+Reste à prouver l'énoncé (D), qui résultera de façon purement formelle des faits
+élémentaires résumés dans les lemmes suivants. On y suppose que $\symup{X}$ est une
+partie fermée (singulière ou non) de l'espace projectif $\symup{P}$ de dimension $\symup{r}$.
+On utilise la notation $\symup{\Osh_P(m)}$ pour le faisceau sur $\symup{P}$ noté $\symup{\Osh(m)}$ dans
+[3], et la notation $\symup{\Osh_X(m)}$ pour le faisceau analogue sur $\symup{X}$.
+
+\result{LEMME}{2} \uline{L'énoncé} (D) \uline{est vrai si} $\symup{X=P}$ \uline{et} $\symup{F=\Osh_P(m)}$
+
+Ce lemme se vérifie par un calcul direct. Le calcul explicite des
+$\symup{H^{i}(P,\Osh_P(m))}$ se trouve dans [3], mais il peut se faire plus
+élémentairement. La computation du cup-produit $\symup{H^{i}(P,\Osh_P(m))\times H^{j}(P,\Osh_P(m'))\longrightarrow H^{i+j}(P,\Osh_P(r+r'))}$ nécessaire pour expliciter l'accouplement (5.1) n'offre pas de
+difficultés.
+
+\result{LEMME}{3} \uline{Tout faisceau algébrique cohérent} $\symup{F}$ \uline{sur} $\symup{X}$ \uline{est isomorphe à
+un faisceau quotient d'un faisceau} $\symup{\Osh_X(-m)^{k}}$, \uline{où on peut supposer} $\symup{m}$
+\uline{aussi grand que l'on veut}.
+
+Résulte du fait que $\symup{F\otimes\Osh_X(m)}$ est \fquote{engendré par ses sections} pour
+$\symup{m}$ grand, cf. [3].
+
+\result{LEMME}{4} \uline{Soit} $\symup{i>0}$. \uline{Alors}
+$\symup{H^{r-i}(P,\Osh_P(-m))=0}$ \uline{pour} $\symup{m}$ \uline{grand ; et pour tout faisceau algébrique
+cohérent} $\symup{B}$ \uline{sur} $\symup{X}$, \uline{on a} $\symup{\operatorname{Ext}_{\Osh_X}^{i}(X;\Osh_X(-m),B)=0}$ \uline{pour} $\symup{m}$ \uline{grand}.
+
+Le premier énoncé résulte des calculs explicites mentionnés plus haut, pour le
+deuxième on note qu'on a un isomorphisme
+\[
+  \symup{\operatorname{Ext}_{\Osh_X}^{i}(X;\Osh_X(-m),B)
+  =H^{i}(X,B\otimes\Osh(m))}
+\]
+(proposition 1, corollaire 1), d'où la conclusion en vertu d'un résultat bien
+connu de [3]. Conjuguant les deux lemmes précédents, on trouve le
+
+\result{COROLLAIRE}{} \uline{Soit} $\symup{i>0}$. \uline{Alors le foncteur}
+$\symup{F\longrightarrow H^{r-i}(P,F)}$ \uline{sur la catégorie des faisceaux algébriques cohérents
+sur} $\symup{P}$ \uline{est coeffaçable, et il en est de même du foncteur}
+$\symup{\operatorname{Ext}_{\Osh_X}^{i}(X;F,B)}$ \uline{sur la catégorie des faisceaux
+algébriques cohérents sur} $\symup{X}$.
+
+\src{184}
+\result{LEMME}{5} \uline{Soient} $\symup{A}$ \uline{et} $\symup{B}$ \uline{deux faisceaux algébriques cohérents sur}
+$\symup{X}$, \uline{posons} $\symup{A(m)=A\otimes\Osh_X(m)}$. \uline{Alors pour} $\symup{m}$ \uline{assez grand,
+l'homomorphisme canonique}
+\[
+  \symup{\operatorname{Ext}_{\Osh_X}^{i}(X;A(-m),B)
+  \longrightarrow H^{0}\bigl(X,\Extsh_{\Osh_X}^{i}(A(-m),B)\bigr)
+  =H^{0}\bigl(X,\Extsh_{\Osh_X}^{i}(A,B)(m)\bigr)}
+\]
+\uline{est un isomorphisme}.
+
+Cela résulte aussitôt de la suite spectrale de la proposition 1 appliquée à
+$\symup{A(-m)}$ et $\symup{B}$, puisque l'on aura
+\[
+  \symup{E_{2}^{p,q}(A(-m),B)
+  =H^{p}\bigl(X,\Extsh_{\Osh_X}^{q}(A(-m),B)\bigr)
+  =H^{p}\bigl(X,\Extsh_{\Osh_X}^{q}(A,B)(m)\bigr),}
+\]
+qui est nul pour $\symup{p>0}$ et $\symup{m}$ grand.
+
+Démontrons alors (D) dans le cas où $\symup{X=P}$. Nous prouvons d'abord que (5.2 bis)
+est un isomorphisme pour $\symup{p=n}$ ; comme les deux membres sont alors des
+foncteurs exacts à gauche (puisque $\symup{H^{r+1}(P,F)=0}$), il résulte du lemme 3
+qu'il suffit de prouver l'assertion pour $\symup{F=\Osh_P(-m)}$, or elle est alors
+contenue dans le lemme 2. Comme les homomorphismes (5.2 bis) sont fonctoriels et
+compatibles avec les opérateurs cobords, et que pour $\symup{p<n}$ les deux membres de
+(5.2 bis) sont des foncteurs coeffaçables en $\symup{F}$ (corollaire du lemme 4), il
+s'ensuit alors par un raisonnement standard que (5.2 bis) est un isomorphisme
+pour tout $\symup{p}$. Cela prouve le théorème de dualité pour l'espace projectif.
+
+Supposons maintenant $\symup{X}$ quelconque, mais non singulier. D'après le théorème de
+dualité pour $\symup{P}$, on a un isomorphisme,
+\[
+  \symup{H^{n}(X,F)'=H^{n}(P,F)'
+  =\operatorname{Ext}_{\Osh_P}^{r-n}(P;F,\underline{\Omega}_P^{r})}
+\]
+En vertu du lemme 1 (n\textsuperscript{o} 4) le dernier membre s'identifie à
+\[
+  \symup{\operatorname{Hom}_{\Osh_P}(P;F,\underline{\omega}_X^{n})
+  =\operatorname{Hom}_{\Osh_X}(X;F,\underline{\Omega}_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\underline{\Omega}_X^{n})}
+\]
+d'où un isomorphisme
+\begin{equation}\tag{5.6}
+  \symup{H^{n}(X,F)'=\operatorname{Hom}_{\Osh_X}(X;F,\underline{\Omega}_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\underline{\Omega}_X^{n})}
+\end{equation}
+Faisant $\symup{F=\underline{\Omega}_X^{n}}$, on trouve un isomorphisme
+\begin{equation}\tag{5.7}
+  \symup{\gamma:H^{n}(X,\underline{\Omega}_X^{n})\xrightarrow{\sim}\underline{k}}
+\end{equation}
+
+\src{185}
+On vérifie que l'isomorphisme (5.6) n'est autre que (5.2 bis) pour $\symup{p=n}$, quand
+on y fait $\symup{L=\underline{k}}$ grâce à (5.7). Par suite, (5.2 bis) est un isomorphisme pour
+$\symup{p=n}$. Pour prouver que c'est un isomorphisme pour tout $\symup{p}$, il suffit encore
+de prouver que pour $\symup{p<n}$, les deux membres de (5.2 bis) sont des foncteurs
+coeffaçables en $\symup{F}$, et a fortiori (compte tenu du lemme 3) que les deux membres
+sont nuls quand on fait $\symup{F=\Osh_X(-m)}$ avec $\symup{m}$ grand. Or pour le premier
+membre cela est vrai en vertu du lemme 4, et pour le deuxième membre on écrit,
+utilisant le théorème de dualité sur $\symup{P}$ :
+\[
+  \symup{H^{p}(X,\Osh_X(-m))'
+  =\operatorname{Ext}_{\Osh_P}^{r-p}
+    (P;\Osh_X(-m),\underline{\Omega}_P^{r}).}
+\]
+Le deuxième membre est nul pour $\symup{p<n}$ et $\symup{m}$ grand, comme il résulte du lemme 5
+(où on fait $\symup{X=P}$) et du fait que $\symup{\Osh_X}$ est en tant que faisceau algébrique
+cohérent sur $\symup{P}$, de dimension cohomologique $\symup{\leq r-n}$, (car $\symup{X}$ est non
+singulière) d'où
+\[
+  \symup{\Extsh_{\Osh_P}^{r-p}(\Osh_X,\underline{\Omega}_P^{r})=0
+  \qquad\text{pour }p<n.}
+\]
+
+\fsection{\normalfont6}{\normalfont\uline{Le théorème de dualité pour les variétés singulières}.}
+
+Soit $\symup{X}$ une partie fermée de dimension $\symup{n}$ de l'espace projectif $\symup{P}$ de
+dimension $\symup{r}$. La formule (5.6) doit s'écrire ici
+\begin{equation}\tag{6.1}
+  \symup{H^{n}(X,F)'
+  \simeq\operatorname{Hom}_{\Osh_X}(X;F,\underline{\omega}_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\underline{\omega}_X^{n})}
+\end{equation}
+où on a posé
+\begin{equation}\tag{6.2}
+  \symup{\underline{\omega}_X^{n}=E^{0}(\Osh_X)
+  =\Extsh_{\Osh_P}^{r-n}(\Osh_X,\underline{\Omega}_P^{r})}
+\end{equation}
+Comme il a été dit dans la proposition 5, le faisceau ainsi introduit ne dépend
+pas en fait de l'immersion choisie de $\symup{X}$ dans une variété non singulière $\symup{P}$.
+Faisant, dans (6.1), $\symup{F=\underline{\omega}_X^{n}}$, on trouve
+\begin{equation}\tag{6.2}
+  \symup{H^{n}(X,\underline{\omega}_X^{n})'
+  \simeq\operatorname{Hom}_{\Osh_X}(X;\underline{\omega}_X^{n},\underline{\omega}_X^{n})}
+\end{equation}
+ d'où l'existence d'un élément
+privilégié dans $\symup{H^{n}(X,\omega_X^{n})'}$, correspondant à l'homomorphisme
+identique de $\symup{\underline{\omega}_X^{n}}$ dans lui-même :
+\begin{equation}\tag{6.3}
+  \symup{\gamma:H^{n}(X,\underline{\omega}_X^{n})\longrightarrow\underline{k}}
+\end{equation}
+
+\src{186}
+Considérons alors les accouplements définis par la composition des $\symup{\operatorname{Ext}}$ :
+\begin{equation}\tag{6.4}
+  \symup{H^{p}(X,F)\times
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\underline{\omega}_X^{n})
+  \longrightarrow H^{n}(X,\underline{\omega}_X^{n})}
+\end{equation}
+et composons-les avec l'homomorphisme $\symup{\gamma}$ de (6.3), on obtient des
+homomorphismes fonctoriels, compatibles avec les opérateurs bord :
+\begin{equation}\tag{6.5}
+  \symup{\operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\underline{\omega}_X^{n})
+  \longrightarrow H^{p}(X,F)'}
+\end{equation}
+(généralisant (5.2)). On vérifie que pour $\symup{p=n}$, on obtient ainsi
+l'isomorphisme (6.1). Ceci posé, on a le
+
+\result{THÉORÈME}{3 bis} \uline{Les quatre conditions suivantes sur} $\symup{X}$ \uline{sont
+équivalentes pour un entier} $\symup{k\geq0}$ \uline{donné} :
+\begin{enumerate}
+  \item[\textnormal{i.}] \uline{L'homomorphisme fonctoriel} (6.5) \uline{est un isomorphisme pour}
+    $\symup{n-k\leq p\leq n}$.
+  \item[\textnormal{ii.}] \uline{On a} $\symup{H^{p}(X,\Osh_X(-m))=0}$ \uline{pour} $\symup{m}$ \uline{grand et pour}
+    $\symup{n-k\leq p<n}$.
+  \item[\textnormal{iii.}] \uline{Le foncteur} $\symup{H^{p}(X,F)}$ \uline{sur la catégorie des faisceaux
+    algébriques cohérents sur} $\symup{X}$ \uline{est coeffaçable pour} $\symup{n-k\leq p<n}$.
+  \item[\textnormal{iv.}] \uline{On a}
+    $\symup{E^{i}(\Osh_X)=\Extsh_{\Osh_P}^{r-n+i}(\Osh_X,\underline{\omega}_P^{r})=0}$
+    \uline{pour} $\symup{0<i\leq k}$.
+\end{enumerate}
+
+\noindent DÉMONSTRATION. -- \textnormal{i.}$\symup{\Rightarrow}$\textnormal{ii.} en
+vertu du lemme 4, \textnormal{ii.}$\symup{\Rightarrow}$\textnormal{iii.} en vertu du lemme 3,
+\textnormal{iii.}$\symup{\Rightarrow}$\textnormal{i.} par un raisonnement standard bien connu,
+compte tenu que les deux membres de (6.5) sont alors des foncteurs coeffaçables
+pour $\symup{n-k\leq p<n}$ (le premier l'étant en vertu du lemme 4). Enfin prouvons
+\textnormal{ii.}$\symup{\Leftrightarrow}$\textnormal{iv.} Cela résulte du corollaire à la
+proposition qui suit :
+
+\result{PROPOSITION}{6} \uline{Soit} $\symup{F}$ \uline{un faisceau algébrique cohérent sur} $\symup{X}$, \uline{et
+soit} $\symup{i}$ \uline{un entier. Alors pour} $\symup{m}$ \uline{assez grand, on a un isomorphisme} :
+\begin{equation}\tag{6.6}
+  \symup{H^{i}(X,F(-m))'
+  \simeq H^{0}\bigl(X,E^{n-i}(F)(m)\bigr),}
+\end{equation}
+\uline{où on pose} (comparer n\textsuperscript{o} 3, proposition 5) :
+\begin{equation}\tag{6.7}
+  \symup{E^{j}(F)=\Extsh_{\Osh_P}^{r-n+j}(F,\underline{\Omega}_P^{r})}
+\end{equation}
+En effet, en vertu du théorème de dualité sur $\symup{P}$, le premier membre de (6.6)
+est isomorphe à
+$\symup{\operatorname{Ext}_{\Osh_P}^{r-i}(P;F(-m),\Omega_P^{r})}$, donc (6.6) résulte
+du lemme 5.
+
+\src{187}
+\result{COROLLAIRE}{} \uline{Pour qu'on ait} $\symup{H^{i}(X,F(-m))=0}$ \uline{pour} $\symup{m}$ \uline{grand, il
+faut et il suffit que} $\symup{E^{n-i}(F)=0}$.
+
+Rappelons que les $\symup{E^{j}(F)}$ ne dépendent pas en fait de l'immersion projective
+envisagée. La condition du corollaire est de nature purement locale, par suite,
+si elle est vérifiée pour $\symup{F}$, elle l'est pour tout faisceau localement
+isomorphe à un faisceau $\symup{F^{n}}$. En particulier, si cette condition est vérifiée
+pour $\symup{\Osh_X}$, elle l'est pour tout faisceau algébrique cohérent localement
+libre. C'est par exemple le cas pour tout $\symup{i<n}$ si $\symup{X}$ est non singulière, pour
+$\symup{i=0}$ si aucune composante de $\symup{X}$ n'est réduite à un seul point, pour $\symup{i=0,1}$
+si $\symup{S}$ est normale et toutes ses composantes sont de dimension $\symup{>1}$ (cf.
+[3]). Pour qu'il en soit ainsi pour tout
+$\symup{i<k}$, il faut et il suffit par définition que les anneaux locaux
+$\symup{\Osh_x}$ ($\symup{x\in X}$) soient de \fquote{codimension homologique} $\symup{\geq k}$ (cf [4]
+pour cette notion). Si $\symup{k=n}$, cela signifie en vertu du théorème 3 bis que le
+théorème de dualité est vrai pour $\symup{X}$, i.e. que (6.5) est un isomorphisme pour
+tout $\symup{p}$ et tout $\symup{F}$. On peut donner de nombreuses conditions équivalentes sur
+les anneaux locaux $\symup{\Osh_x}$ pour qu'il en soit ainsi (NAGATA), par exemple celle
+de vérifier le théorème d'équidimensionnalité de Cohen-Macaulay. Il en est ainsi
+par exemple si localement $\symup{X}$ est une \fquote{intersection complète} dans une
+variété ambiante non singulière.
+
+\fsection{\normalfont7}{\normalfont\uline{La dualité de Poincaré}.}
+
+Soit $\symup{X}$ une variété projective non singulière de dimension $\symup{n}$. Alors
+$\symup{H^{**}(X)=H^{*}(X,\underline{\Omega}_X^{*})}$ est une algèbre anticommutative bigraduée de dimension finie, que nous graduons
+par le degré total, $\symup{H^{p,q}(X)=H^{p}(X,\underline{\Omega}_X^{q})}$ étant donc de degré
+$\symup{p+q}$. Les degrés de $\symup{H^{*}(X)}$ sont compris entre $\symup{0}$ et $\symup{2n}$. En vertu du
+théorème 2 et du corollaire au théorème 3, $\symup{H^{*}(X)}$ est une \fquote{algèbre de
+Poincaré} de dimension $\symup{2n}$, i.e. $\symup{H^{2n}(X)}$ est muni d'un isomorphisme avec
+le corps de base $\symup{\underline{k}}$, et le produit
+$\symup{H^{m}(X)\times H^{2n-m}(X)\longrightarrow H^{2n}(X)=\underline{k}}$ est une dualité entre $\symup{H^{n}(X)}$ et $\symup{H^{2n-m}(X)}$. De plus, si $\symup{Y}$ est une
+autre variété projective non singulière, la formule de Künneth pour les
+faisceaux algébriques cohérents donne
+\begin{equation}\tag{7.1}
+  \symup{H^{*}(X\times Y)=H^{*}(X)\otimes H^{*}(Y)}
+\end{equation}
+isomorphisme compatible avec les structures d'algèbres de Poincaré. De plus,
+$\symup{H^{*}(X)}$ est, en tant qu'algèbre commutative, un foncteur contravariant en
+$\symup{X}$, un morphisme $\symup{f:Y\longrightarrow X}$ définissant de façon évidente un
+homomorphisme d'algèbres graduées
+
+\src{188}
+\begin{equation}\tag{7.2}
+  \symup{f^{*}:H^{*}(X)\longrightarrow H^{*}(Y)}
+\end{equation}
+Comme il s'agit d'algèbres de Poincaré, on obtient par transposition un
+homomorphisme d'espaces vectoriels :
+\begin{equation}\tag{7.3}
+  \symup{f_{*}:H^{*}(Y)\longrightarrow H^{*}(X)}
+\end{equation}
+On a vu au n\textsuperscript{o} 4 que l'effet de $\symup{f^{*}}$ sur les classes de
+cohomologie correspondant à des cycles non singuliers s'interprète
+géométriquement en prenant les classes de cohomologie qui correspondent à leurs
+images inverses. Il importe dans le cas actuel de montrer que (7.3) correspond
+de même à l'opération \fquote{image directe} de cycles. Cela résulte, sous des
+conditions de non singularité convenable du moins, du cas particulier suivant :
+
+\result{THÉORÈME}{4} \uline{Si} $\symup{f}$ \uline{est l'application identique d'une sous-variété non
+singulière} $\symup{Y^{m}}$ \uline{de} $\symup{X^{n}}$ \uline{dans} $\symup{X^{n}}$, \uline{alors, désignant par} $\symup{1_Y}$
+\uline{l'élément unité de} $\symup{H(Y)}$ \uline{on a}
+\begin{equation}\tag{7.4}
+  \symup{f_{*}(1_Y)=P_X(Y)}
+\end{equation}
+\uline{où le deuxième membre est la classe de cohomologie dans} $\symup{X}$ \uline{associée à} $\symup{Y}$.
+
+Cette formule est équivalente à
+\begin{equation}\tag{7.4 bis}
+  \symup{\bigl\langle\xi^{m,m},P_X(Y)\bigr\rangle\varepsilon_Y
+  =f_{*}(\xi^{m,m})
+  \qquad
+  \bigl(\xi^{m,m}\in H^{m}(X,\underline{\Omega}_X^{m})\bigr)}
+\end{equation}
+ où
+$\symup{\varepsilon_Y}$ est l'élément fondamental dans $\symup{H^{m}(Y,\Omega_Y^{m})}$, et
+constitue, dans le cas des variétés projectives non singulières, une nouvelle
+définition de la classe de cohomologie associée à $\symup{Y}$. Pour démontrer le
+théorème 4, on interprète grâce au théorème 3 la transposée de l'homomorphisme
+\[
+  \symup{H^{m}(X,\underline{\Omega}_X^{m})
+  \longrightarrow H^{m}(Y,\underline{\Omega}_Y^{m})
+  =H^{m}(X,\underline{\Omega}_Y^{m})}
+\]
+comme l'homomorphisme
+\begin{equation}\tag{7.5}
+\symup{H^{n-m}(X,\underline{\Omega}_X^{n-m})
+  \xrightarrow{\sim}
+  \operatorname{Ext}_{\Osh_X}^{n-m}(X;\underline{\Omega}_X^{m},\underline{\Omega}_X^{n})
+  \longleftarrow
+  \operatorname{Ext}_{\Osh_X}^{n-m}(X;\underline{\Omega}_Y^{m},\underline{\Omega}_X^{n})
+  \xrightarrow{\sim}
+  \operatorname{Hom}_{\Osh_X}(X;\underline{\Omega}_Y^{m},\underline{\Omega}_Y^{m})}
+\end{equation}
+On vérifie que l'élément $\symup{1_Y}$ du dual de $\symup{H^{m}(Y,\underline{\Omega}_Y^{m})}$ s'identifie
+à l'élément du membre de droite correspondant à l'endomorphisme identique de
+$\symup{\underline{\Omega}_Y^{m}}$, et d'autre part que l'image de cet élément dans
+$\symup{H^{n-m}(X,\underline{\Omega}_X^{n-m})}$ est bien $\symup{P_X(Y)}$. Ces compatibilités, qui auraient
+pu être données dès le n\textsuperscript{o} 4, peuvent s'énoncer, et sont
+valables en fait, pour des variétés non singulières quelconques, la deuxième
+
+\src{189}
+la deuxième par exemple résultant de la commutativité du diagramme suivant d'endomorphismes
+canoniques :
+\begin{equation}\tag{7.6}
+\resizebox{\textwidth}{!}{$
+\left\{
+\begin{array}{ccccc}
+\symup{\operatorname{Ext}_{\Osh_X}^{n-m}(X;\underline{\Omega}_X^{m},\underline{\Omega}_X^{n})}
+&
+\symup{\longleftarrow}
+&
+\symup{\operatorname{Ext}_{\Osh_X}^{n-m}(X;\underline{\Omega}_Y^{m},\underline{\Omega}_X^{n})}
+&
+\symup{\xrightarrow{\sim}}
+&
+\symup{\operatorname{Hom}_{\Osh_X}(X;\underline{\Omega}_Y^{m},\underline{\Omega}_Y^{m})}
+\\[3pt]
+\symup{\Big\downarrow}
+&&&&
+\symup{\Big\downarrow}
+\\[3pt]
+\symup{\operatorname{Ext}_{\Osh_X}^{n-m}(X;\Osh_X,\underline{\Omega}_X^{n-m})}
+&
+\symup{\longleftarrow}
+&
+\symup{\operatorname{Ext}_{\Osh_X}^{n-m}(X;\Osh_Y,\underline{\Omega}_X^{n-m})}
+&
+\symup{\xrightarrow{\sim}}
+&
+\symup{\operatorname{Hom}_{\Osh_X}(X;\underline{\Omega}_X^{m},\underline{\Omega}_Y^{m})}
+\end{array}
+\right.
+$}
+\end{equation}
+
+On obtient ainsi un équivalent exact du formalisme de la dualité de Poincaré
+sur les variétés orientées compactes. En particulier, le théorème 4 permet de
+déterminer la classe de cohomologie associée à la diagonale de $\symup{X\times X}$. Par
+un raisonnement bien connu, on en déduit par exemple une \uline{formule de Lefschetz} :
+
+\result{THÉORÈME}{5} \uline{Soit} $\symup{f}$ \uline{un endomorphisme d'une variété projective non
+singulière} $\symup{X}$, \uline{telle que les points fixes de} $\symup{f}$ \uline{soient de multiplicité} $\symup{1}$.
+\uline{Alors le nombre de ces points fixes est congru}, $\symup{\operatorname{mod}}$ \uline{la caractéristique de}
+$\symup{\underline{k}}$ \uline{à la somme alternée des traces des endomorphismes des} $\symup{H^{i}(X)}$ \uline{définis
+par} $\symup{f}$.
+
+La restriction sur $\symup{f}$ qu'on a dû faire tient aux difficultés mentionnées dans
+la remarque du n\textsuperscript{o} 4. On notera, toutefois, que la formule de
+Lefschetz reste vraie si $\symup{f}$ est \fquote{homotope} à un endomorphisme dont tous les
+points fixes sont de multiplicité $\symup{1}$.
+
+\fsection{\normalfont8}{\normalfont\uline{Généralisation du théorème de dualité}.}
+
+Soit $\symup{X}$ une variété algébrique non singulière telle que tout faisceau
+algébrique cohérent $\symup{F}$ sur $\symup{X}$ soit isomorphe à un quotient d'un faisceau
+algébrique cohérent localement libre (ce qui est le cas si $\symup{X}$ est localement
+fermé dans un espace projectif). Alors tout faisceau algébrique cohérent $\symup{F}$ sur
+$\symup{X}$ admet une résolution finie $\symup{L}$ par des faisceaux localement libres, et pour
+deux telles résolutions on peut toujours trouver une troisième, et un
+homomorphisme de celle-ci dans les deux premières compatibles avec les
+augmentations. De même, si $\symup{L}$ est une résolution finie localement libre de
+$\symup{F}$, et si on se donne un homomorphisme $\symup{F'\longrightarrow F}$, alors il existe
+une résolution finie localement libre $\symup{L'}$ de $\symup{F'}$ et un homomorphisme
+$\symup{L'\longrightarrow L}$ compatible avec $\symup{F'\longrightarrow F}$, qu'on peut
+supposer surjectif si $\symup{F'\longrightarrow F}$ l'est. Cela permet de définir, étant
+donnés deux entiers $\symup{r,s\geq0}$, deux multifoncteurs, cohomologiques, en des
+arguments $\symup{A_1,\ldots,A_r}$ ; $\symup{B_1,\ldots,B_s}$
+
+\src{190}
+variant dans la catégorie des faisceaux algébriques cohérents sur $\symup{X}$, et dont
+les valeurs sont dans la catégorie des faisceaux algébriques cohérents sur $\symup{X}$,
+resp. dans la catégorie des modules sur $\symup{H^{0}(X,\Osh_X)}$, par les formules :
+\begin{equation}\tag{8.1}
+\resizebox{\textwidth}{!}{$
+\left\{
+\begin{aligned}
+\symup{\underline{T}_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)}
+&
+\symup{={}H^{*}\!\left(
+    \Homsh_{\Osh_X}\!\left(
+      \underline{L}(A_1)\otimes\cdots\otimes \underline{L}(A_r),
+      \underline{L}(B_1)\otimes\cdots\otimes \underline{L}(B_s)
+    \right)\right)}
+\\[3pt]
+\symup{T_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)}
+&
+\symup{={}\underline{\underline{R}}^{*}\Gamma\!\left(
+    \Homsh_{\Osh_X}\!\left(
+      \underline{L}(A_1)\otimes\cdots\otimes \underline{L}(A_r),
+      \underline{L}(B_1)\otimes\cdots\otimes \underline{L}(B_s)
+    \right)\right)}
+\end{aligned}
+\right.
+$}
+\end{equation}
+Dans cette formule, $\symup{\underline{L}(F)}$ désigne une résolution finie localement libre du
+faisceau algébrique cohérent $\symup{F}$, et $\symup{\underline{\underline{R}}^{*}\Gamma(K)}$ désigne
+l'hypercohomologie de l'espace $\symup{X}$ par rapport au complexe de faisceaux $\symup{K}$. Si
+$\symup{r}$ ou $\symup{s}$ est nul, on remplace le produit tensoriel des $\symup{\underline{L}(A_i)}$, resp. des
+$\symup{\underline{L}(B_j)}$, par $\symup{\Osh_X}$. En particulier $\symup{\underline{T}_{0}^{0}}$ et $\symup{T_{0}^{0}}$
+sont des foncteurs gradués à 0 arguments, $\symup{\underline{T}_{0}^{0}}$ se réduit au
+degré 0, où il est le faisceau $\symup{\Osh_X}$, tandis que $\symup{T_{0}^{0}}$ est identique à
+$\symup{H^{*}(X,\Osh_X)}$. Le fait que les deuxièmes membres de (8.1) ne dépendent pas
+des résolutions choisies est de toutes façons évident pour la première ligne
+(la question étant alors locale), et pour la deuxième résulte des remarques
+générales qui précédaient, compte tenu de la suite spectrale
+d'hypercohomologie du complexe de faisceaux
+$\symup{K=\Homsh_{\Osh_X}\bigl(\underline{L}(A_1)\otimes\cdots,
+      \underline{L}(B_1)\otimes\cdots\bigr)}$, aboutissant à l'hypercohomologie de $\symup{X}$ par rapport à $\symup{K}$, et dont le terme
+initial est $\symup{H^{p}(X,H^{q}(K))}$, i.e.
+\begin{equation}\tag{8.2}
+  \symup{E_{2}^{p,q}
+  =H^{p}\!\left(X,
+    (\underline{T}_{r}^{s})^{(q)}
+      (A_1,\ldots,A_r;B_1,\ldots,B_s)\right)}
+\end{equation}
+On voit alors que cette suite spectrale elle-même ne dépend pas des résolutions
+choisies, son aboutissement est le premier membre de (8.1). On définit
+facilement les opérateurs cobords relatifs aux divers arguments $\symup{A_i}$, $\symup{B_j}$,
+en notant que toute suite exacte
+$\symup{0\longrightarrow F'\longrightarrow F\longrightarrow F''\longrightarrow0}$
+peut se résoudre par une suite exacte de complexes finis localement libres.
+
+On définit dans le système des foncteurs $\symup{\underline{T}_{r}^{s*}}$, resp.
+$\symup{T_{r}^{s*}}$, des opérations analogues à celles du calcul tensoriel, et dont la
+définition est immédiate à partir des formules de définition (8.1). Ainsi, on a
+une \uline{composition} (généralisant celle 'envisagée dans le n\textsuperscript{o} 2) :
+\begin{equation}\tag{8.3}
+\resizebox{\textwidth}{!}{$\symup{
+T_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+\times T_{r'}^{s'*}(A'_1,\ldots,A'_{r'};B'_1,\ldots,B'_{s'})
+\longrightarrow T_{r+r'}^{s+s'*}
+(A_1,\ldots,A'_{r'};B_1,\ldots,B'_{s})
+}$}
+\end{equation}
+satisfaisant aux propriétés évidentes d'associativité, de compatibilité avec
+les homomorphismes fonctoriels et les homomorphismes cobords, les suites
+spectrales. De même, on a des opérations de symétrie qu'on laisse au lecteur le
+soin d'expliciter. On a de plus une opération de \uline{contraction} chaque fois que
+l'un des arguments $\symup{A_i}$
+
+\src{191}
+est égal à l'un des arguments $\symup{B_j}$ ;
+\begin{equation}\tag{8.4}
+\resizebox{\textwidth}{!}{$
+\begin{aligned}
+&
+\symup{T_{r}^{s*}(A_1,\ldots,A_{i-1},C,A_{i+1},\ldots,A_r;
+ B_1,\ldots,B_{j-1},C,B_{j+1},\ldots,B_s)\longrightarrow}
+\\
+&
+\symup{\qquad\relbar\quad
+T_{r-1}^{s-1*}(A_1,\ldots,\widehat{A}_i,\ldots,A_r;
+ B_1,\ldots,\widehat{B}_j\ldots,B_s)}
+\end{aligned}
+$}
+\end{equation}
+De plus, si un argument $\symup{A_i}$ est un faisceau localement libre, alors on peut
+l'enlever à condition de remplacer l'un des $\symup{A_j}$ ($\symup{j\neq i}$) par
+$\symup{A_j\otimes A_i}$, ou l'un des $\symup{B_k}$ par $\symup{B_k\otimes A_i'}$ (où
+$\symup{A_i'=\Homsh_{\Osh_X}(A_i,\Osh_X)}$), et on a une règle de calcul analogue dans
+le cas où l'un des arguments $\symup{B_j}$ est localement libre. En particulier, on
+peut toujours enlever un argument qui est identique à $\symup{\Osh_X}$. Si tous les
+arguments sont localement libres, sauf au plus un des arguments $\symup{B_i}$, la règle
+qu'on vient d'énoncer donne un isomorphisme fonctoriel
+\begin{equation}\tag{8.5}
+  \symup{T_{r}^{s*}(.A_1,\ldots,A_r;B_1,\ldots,B_s)
+  =H^{*}\bigl(X,A_1'\otimes\cdots\otimes A_r'
+    \otimes B_1\otimes\cdots\otimes B_s\bigr)}
+\end{equation}
+(car on est ramené au cas où $\symup{r=0}$, $\symup{s=1}$, où cela est immédiat : on peut
+aussi utiliser directement la suite spectrale de terme initial (8.2)). Des
+opérations correspondant aux précédentes se définissent pour les
+$\symup{\underline{T}_{r}^{s}}$. Les relations entre les diverses opérations ainsi
+introduites sont les mêmes que pour les opérations analogues en calcul
+tensoriel.
+
+Soit $\symup{n}$ la dimension de $\symup{X}$. En appliquant successivement une composition
+tensorielle (8.3) et des contractions (8.4) sur les arguments répétés, on
+obtient un accouplement
+\begin{equation}\tag{8.6}
+\resizebox{\textwidth}{!}{$\symup{
+  (T_{r}^{s})^{p}(A_1,\ldots;B_1,\ldots)
+  \times
+  (T_{s}^{r})^{n-p}(B_1,\ldots;A_1,\ldots,A_r\otimes\underline{\Omega}_X^{n})
+  \longrightarrow H^{n}(X,\underline{\Omega}_X^{n})
+}$}
+\end{equation}
+
+\result{THÉORÈME}{6} \uline{Si} $\symup{X}$ \uline{est une variété projective non singulière, alors
+les accouplements} (8.6) \uline{sont des dualités}.
+
+Cela résulte de façon purement formelle du corollaire au théorème 3. Il résulte
+en effet facilement de ce corollaire que si $\symup{K}$ est un complexe de faisceaux
+algébriques cohérents \uline{localement libres}, alors l'hypercohomologie de $\symup{X}$ par
+rapport à $\symup{K}$ est en dualité avec l'hypercohomologie de $\symup{X}$ par rapport à
+$\symup{K'\otimes\underline{\Omega}_X^{n}}$ par les accouplements naturels
+\begin{equation}\tag{8.7}
+  \symup{\underline{\underline{R}}^{p}\Gamma(K)
+  \times\underline{\underline{R}}^{n-p}\Gamma(K'\otimes\underline{\Omega}_X^{n})
+  \longrightarrow\underline{\underline{R}}^{n}\Gamma(\underline{\Omega}_X^{n})
+  =H^{n}(X,\underline{\Omega}_X^{n})}
+\end{equation}
+On le voit en utilisant la suite spectrale de terme initial
+$\symup{H^{p}(H^{q}(X,K))}$ et la suite spectrale analogue pour
+$\symup{K'\otimes\Omega_X^{n}}$. Du résultat précédent, le théorème 6 se déduit en
+utilisant la définition (8.1).
+
+\src{192}
+\subsection*{\normalfont REMARQUES.}
+
+\noindent 1\textsuperscript{o} Pour les définitions précédant le théorème 6,
+il n'était pas nécessaire que $\symup{X}$ soit non singulière, car il n'était pas
+indispensable de travailler seulement avec des résolutions \uline{finies}. Mais si $\symup{X}$
+est singulière on ne pourra plus affirmer, a priori, que les
+$\symup{(\underline{T}_{r}^{s})^{p}(A_1,\ldots;B_1,\ldots)}$ soient des faisceaux
+\uline{cohérents}, car dans le complexe de faisceaux
+\[
+  \symup{\Homsh_{\Osh_X}\bigl(\underline{L}(A_1)\otimes\cdots,\underline{L}(B_1)\otimes\cdots\bigr)}
+\]
+il y aura une infinité de composantes de degré total donné.
+
+\medskip
+\noindent 2\textsuperscript{o} On vérifie facilement que dans les formules
+(8.1), on peut remplacer \uline{un} des $\symup{\underline{L}(B_i)}$ par $\symup{B_i}$. Compte tenu de la
+proposition 3, cela montre donc qu'on a
+\begin{equation}\tag{8.8}
+\left\{
+\begin{aligned}\symup{\underline{T}_{1}^{1*}(A;B)}&\symup{=\Extsh_{\Osh_X}^{*}(A,B)}\\\symup{T_{1}^{1*}(A;B)}&\symup{=\operatorname{Ext}_{\Osh_X}^{*}(X;A,B)}\end{aligned}
+\right.
+\end{equation}
+En particulier faisant dans (8.6) $\symup{r=s=1}$ et $\symup{A_1=\Osh_X}$, on retrouve le
+théorème 3. La formule (8.8) implique aussi
+$\symup{T_{0}^{1*}(B)=H^{*}(X,B)}$, $\symup{T_{1}^{0*}(A)=\operatorname{Ext}_{\Osh_X}^{*}(X;A,\Osh_X)}$
+
+\medskip
+\noindent 3\textsuperscript{o} On voit sur la formule (6.1) qu'en général les
+foncteurs $\symup{\underline{T}_{r}^{s*}}$ et $\symup{T_{r}^{s*}}$ ont des composantes de
+degrés positifs \uline{et} négatifs. Utilisant la remarque 2, on voit que si la
+dimension de $\symup{X}$ est $\symup{n}$, alors les composantes non nulles de
+$\symup{\underline{T}_{r}^{s*}}$ sont comprises entre $\symup{-(s-1)n}$ et $\symup{rn}$, si $\symup{s>0}$,
+entre $\symup{0}$ et $\symup{rn}$, si $\symup{s=0}$, et les composantes non nulles de $\symup{T_{r}^{s*}}$
+sont comprises entre $\symup{-(s-1)n}$ et $\symup{(r+1)n}$, si $\symup{s>0}$, entre $\symup{0}$ et $\symup{(r+1)n}$,
+si $\symup{s=0}$, (et sauf erreur même, si $\symup{r>0}$, entre $\symup{-(s-1)n}$ et $\symup{rn}$, resp. entre
+$\symup{0}$ et $\symup{rn}$).
+
+\section*{\centering\normalfont BIBLIOGRAPHIE}
+
+\noindent[1] CARTIER (Pierre). - Les groupes
+$\symup{\operatorname{Ext}^{s}(A,B)}$, Séminaire A. Grothendieck : Algèbre homologique,
+t. 1, 1957, n\textsuperscript{o} 3.
+
+\noindent[2] GROTHENDIECK (Alexandre). - Sur quelques points d'algèbre
+homologique, Tohoku math. J., t. 9, 1957, p. 119-183.
+
+\noindent[3] SERRE (Jean-Pierre). - Faisceaux algébriques cohérents,
+Annals of Math., t. 61, 1955, p. 197-278.
+
+\noindent[4] SERRE (Jean-Pierre). - Sur la dimension homologique des anneaux
+et des modules noethériens, Proc. Intern. Symp. on alg. number Theory
+[1955. Tokyo et Nikko] - Tokyo, Science Council of Japan, 1956 ;
+p. 175-189.
+
+\clearpage
+\src{193}
+\section*{\centering\normalfont ADDITIF}
+
+Les difficultés signalées dans la remarque de la page 13 sont actuellement
+complètement résolues, grâce à une extension des théorèmes de dualité à des
+variétés quelconques (à singularités arbitraires). Pour cette théorie, qui peut
+se formuler dans le cadre général de la \fquote{théorie des schémas}, nous renvoyons
+aux \fquote{Eléments de Géométrie algébrique} de J. DIEUDONNÉ et A. GROTHENDIECK,
+actuellement en préparation. On trouvera quelques indications dans :
+
+\begin{quote}
+GROTHENDIECK (A.). - Cohomology theory of algebraic varieties,
+Congrès int. des Mathématiciens, 1958, Edinburgh (A paraître).
+\end{quote}
+
+\begin{flushright}
+[Avril 1959]
+\end{flushright}
+
+\begin{center}\rule{36mm}{0.5pt}\end{center}
+
+\par\smallskip
+\begingroup\footnotesize
+\endgroup

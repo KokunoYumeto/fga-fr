@@ -1,0 +1,45 @@
+{
+  "status": "UNAPPLIED_PROPOSALS",
+  "snapshot_completed_utc": "2026-11-19T05:54:01.099052+00:00",
+  "capture_input_files": 11,
+  "capture_data_rows": {
+    "CORRECTIONS.tsv": 22552,
+    "CHECK_EVENTS.tsv": 860
+  },
+  "existing_report_scope": {
+    "correction_rows": 20729,
+    "event_rows": 786
+  },
+  "candidate_operations": 83,
+  "mechanical_candidates": 69,
+  "confidence_alternatives": 3,
+  "duplicate_deletion_candidates": 2,
+  "event_spelling_candidates_H01_H02": 14,
+  "conditional_event_candidates_H03": 9,
+  "locator_page_keys": 54,
+  "locator_source_paths": 108,
+  "unambiguous_locator_candidates": 53,
+  "conditional_locator_target_alternatives": 2,
+  "ambiguous_locator_page_key": "232-149",
+  "owner_decisions": {
+    "confidence_category": 1,
+    "H03_event_mapping_decisions": 9,
+    "232-149_target_selection": 1
+  },
+  "operations_if_all_candidates_approved_with_one_per_choice_group": 80,
+  "selected_operation_ids": [],
+  "applied_operation_count": 0,
+  "source_mutations": 0,
+  "production_metadata_mutations": 0,
+  "whole_structural_gate_rerun": false,
+  "targeted_checks": "Exact frozen byte ranges, UTF-8 payload hashes, full-record identities, source/segment bindings only.",
+  "source_locator_refresh": {
+    "unchanged": 102,
+    "source_hash_changed": 6,
+    "numeric_line_range_changed": 1,
+    "moved_page": "149-177",
+    "moved_layer": "fr",
+    "prior_range": "421-475",
+    "current_range": "421-472"
+  }
+}

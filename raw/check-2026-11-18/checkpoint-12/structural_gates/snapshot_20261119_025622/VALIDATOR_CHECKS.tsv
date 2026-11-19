@@ -1,0 +1,5 @@
+check	result	items	scope
+independent frozen metrics and identifiers	PASS	16358	Schemas, row IDs, counts and coverage markers only
+synthetic malformed-row, confidence, timestamp and missing-file cases	PASS	4	Non-document placeholder fixture
+synthetic terminology acceptance and exact duplicate detection	PASS	2	No source/correction meaning assessed
+input ledger hashes unchanged	PASS	4	Validator checks captured ledger bytes again before reporting

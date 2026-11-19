@@ -1,0 +1,3 @@
+layer	passes	engine_exit_codes	three_pass_compilation_completed	aux_stable	engine_errors	missing_glyphs	unresolved_reference_diagnostics	boxes_over_2pt	observed_over_2pt_locations_and_amounts_unchanged	final_diagnostic_comparison_available
+fr	1	1	False	False	2	0	0	5	True	False
+fr_printed	1	1	False	False	2	0	0	6	True	False

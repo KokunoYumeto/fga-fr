@@ -1,0 +1,10 @@
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+NOLTAB+NotoSerifCJKjp-Regular-Identity-H CID Type 0C       Identity-H       yes yes yes      4  0
+YRLOZV+TeXGyrePagella-Regular-Identity-H CID Type 0C       Identity-H       yes yes yes      6  0
+FMKADT+TeXGyreCursor-Regular-Identity-H CID Type 0C       Identity-H       yes yes yes     15  0
+ZMBDZT+TeXGyrePagella-Bold-Identity-H CID Type 0C       Identity-H       yes yes yes     23  0
+CIDAAP+LatinModernMath-Regular-Identity-H CID Type 0C       Identity-H       yes yes yes     40  0
+XSIEYH+TeXGyreHeros-Regular-Identity-H CID Type 0C       Identity-H       yes yes yes    132  0
+QWYRRU+NotoSansCJKjp-Regular-Identity-H CID Type 0C       Identity-H       yes yes yes    134  0
+DIWDHX+TeXGyrePagella-Italic-Identity-H CID Type 0C       Identity-H       yes yes yes    139  0

@@ -1,0 +1,12 @@
+{
+  "archive": "checkpoints/FGA_CHECK_checkpoint_08.zip",
+  "archive_sha256": "ac3e3ec98edfa9d31c4049220a18ec726e04f61f2aa7d576b0ba190d8743d493",
+  "snapshot_origin": "checkpoint 08 archive; no live source reads",
+  "extraction_started_utc": "2026-11-19T03:15:00.593115+00:00",
+  "extraction_finished_utc": "2026-11-19T03:15:00.800101+00:00",
+  "included_source_files": 58,
+  "layers": [
+    "fr",
+    "fr_printed"
+  ]
+}

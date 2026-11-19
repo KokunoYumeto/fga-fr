@@ -1,0 +1,6 @@
+check	items	result	scope
+independent marker offsets and hashes	2133	PASS	Exact agreement with independent marker spans; no segment text inspected
+independent macro definitions	106	PASS	Definition spellings, paths, lines and arities agree
+comment escapes and duplicate selection	6	PASS	Synthetic non-document fixtures only
+real-source extraction modes	16	PASS	Exact byte-slice/hash checks only; no source segments or HTML displayed
+all frozen input files unchanged	274	PASS	Before/after byte hashes agree

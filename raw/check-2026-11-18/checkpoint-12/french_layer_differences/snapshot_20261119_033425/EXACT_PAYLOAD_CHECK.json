@@ -1,0 +1,7 @@
+{
+  "hunks": 275,
+  "exact_source_slice_hash_and_json_tsv_roundtrips": 550,
+  "all_pass": true,
+  "email_and_unix_local_path_scan": "pass",
+  "windows_like_tokens": "Two independently classified TeX control-word lookalikes retained exactly and recorded in PRIVACY_TEX_LOOKALIKES.tsv."
+}

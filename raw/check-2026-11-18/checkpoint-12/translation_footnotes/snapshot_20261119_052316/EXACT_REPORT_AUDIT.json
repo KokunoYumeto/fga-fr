@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-11-19T05:31:39.958965+00:00",
+  "completed_utc": "2026-11-19T05:31:41.764814+00:00",
+  "report": "report_exact",
+  "capture_sha256": "583f815ffbe1a779f7b112104025d176c680432b75cf75a4115a60fc56baf876",
+  "report_file_sha256": {
+    "CAPTURE.json": "583f815ffbe1a779f7b112104025d176c680432b75cf75a4115a60fc56baf876",
+    "COMMAND_COUNTS.tsv": "7122e05290d9f4ea575f7b1c004050425761671dd596b82f1f67a97d4bd6371d",
+    "CONTENTS.json": "868a1ee95a94b78819ae016a01bb09e25cff619663ef5f1d019d5e71836b096e",
+    "EXTRACTION_ISSUES.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "FILES.tsv": "af086319257496f9e8681e90f06b91f9ddf88d53e1edb9c7b7ec268411c3ac70",
+    "FOOTNOTES.tsv": "e888fb422987106a8df5ac75f41e9ddec7d4313d9898f6fe441478065e3c00aa",
+    "MARKER_ONLY_CALLS.tsv": "15104830a8bbd2cbee55972a9218e246d7d56258f2c12d2b71c119939dcc6e41",
+    "ORIGINAL_WITHOUT_EXACT_CURRENT_MATCH.tsv": "7f0bfe93126d83abc3114c8bbac073368aef55f9494070fbe4b20047b4ea199a",
+    "PRIVACY_TEX_LOOKALIKES.json": "70b363e22a4039c180f8b11a44c4c1bb92c85e40d1df77f66a728ae0e2401738",
+    "README.md": "58ae0a2d17fae453cbdda19b5350e4e592085f41f288e30148e6d5a218c2fd43",
+    "SANITIZATION.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "SUMMARY.json": "f3f8887b2dc902f95143c4a4b889d4d9277fc4138991c0cdcaeda35d5853d4ef"
+  },
+  "frozen_files": 322,
+  "original_manifest_matches": 161,
+  "footnote_invocations": 1098,
+  "marker_only_invocations": 16,
+  "exact_range_locator_checks": 1114,
+  "deduplicated_exact_payloads": 539,
+  "withheld_or_changed_payloads": 0,
+  "current_footnotes": 544,
+  "original_footnotes": 554,
+  "current_with_same_file_exact_original": 544,
+  "original_without_exact_current_layer_counterpart": 10,
+  "counterpart_link_totals": {
+    "exact_body_counterparts_same_file": 1088,
+    "exact_body_counterparts_other_file_same_layer": 0,
+    "exact_body_counterparts_same_file_and_page": 1088,
+    "exact_invocation_counterparts_same_file": 1088
+  },
+  "complete_counterpart_lists_checked": 1098,
+  "privacy_lookalike_checks": [
+    {
+      "body_sha256": "b4daa570aa36244be6f33ce5487b0b5ac069293c5d834457738baa30382d7fd6",
+      "match_sha256": "41fc020699c008c7ebe312f396e89d34789b770c8bbe48f6f8ec2ee2600dbc12",
+      "exact_match_bytes_and_control_shape": true
+    }
+  ],
+  "source_meaning_review": false,
+  "body_payloads_emitted": false,
+  "live_reads_or_protected_writes": false,
+  "failure_count": 0,
+  "failures": []
+}

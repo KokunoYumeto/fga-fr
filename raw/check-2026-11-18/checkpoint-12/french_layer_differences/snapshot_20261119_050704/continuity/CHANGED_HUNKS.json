@@ -1,0 +1,2300 @@
+[
+  {
+    "mapping": {
+      "current_hunk_id": "FD000002",
+      "old_hunk_ids": [
+        "FD000002"
+      ],
+      "relative_file": "fr/149.tex",
+      "pages": [
+        "149-171"
+      ],
+      "method": "current_printed_span_contained_in_old_span",
+      "candidate_count": 1,
+      "printed_source_bytes_identical": true,
+      "old_fr_lines": [
+        "148–149"
+      ],
+      "current_fr_lines": "148",
+      "old_printed_lines": [
+        "148–149"
+      ],
+      "current_printed_lines": "148",
+      "old_old_sha256": [
+        "f37822c935ffb667b3cb45e16524e1dc7c2f746c9b2845a6cc6dc16ce291923f"
+      ],
+      "old_new_sha256": [
+        "9437c491c3feae5914bc203d086440c4f03b6e64ed5c9ffbce0b43654821196e"
+      ],
+      "current_old_sha256": "07ad0caa40f104d77963dd41878422844d43fcecc9a4ae9a4e2dad229175501d",
+      "current_new_sha256": "ffac45af6f8cff7cb1ffdacc53de00545dca3e12713ec8f0a210ce7f6e581e8f",
+      "current_matching_status": "unmatched",
+      "current_candidate_row_ids": [],
+      "footnote_removal_row_ids": [
+        "C020730"
+      ]
+    },
+    "old_hunks": [
+      {
+        "hunk_id": "FD000002",
+        "relative_file": "fr/149.tex",
+        "classification": "content_tex",
+        "operation": "replace",
+        "fr_file": "sources/fr/fr/149.tex",
+        "fr_printed_file": "sources/fr_printed/fr/149.tex",
+        "fr_range": {
+          "byte_start": 7966,
+          "byte_end_exclusive": 8293,
+          "line_start": 148,
+          "line_end": 149,
+          "preceding_page": "171",
+          "preceding_marker_byte": 5766,
+          "following_page": "172",
+          "following_marker_byte": 9354,
+          "nearest_page": "172",
+          "nearest_marker_byte": 9354,
+          "anchor_page": "171",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "171"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "fr_printed_range": {
+          "byte_start": 7965,
+          "byte_end_exclusive": 8125,
+          "line_start": 148,
+          "line_end": 149,
+          "preceding_page": "171",
+          "preceding_marker_byte": 5766,
+          "following_page": "172",
+          "following_marker_byte": 9187,
+          "nearest_page": "172",
+          "nearest_marker_byte": 9187,
+          "anchor_page": "171",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "171"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "candidate_page_keys": [
+          "149-171"
+        ],
+        "cross_page": false,
+        "different_anchor_pages": false,
+        "old_text": "degré $\\symup{n}$ sont les opérateurs de degré $\\symup{n}$ qui commutent à $\\symup{d}$ (en tant\r\nqu'opérateurs homogènes).\\footnote{Le texte imprimé porte « anticommutent à $\\symup{u}$ ». Par (2.1), un cycle vérifie $\\symup{du=(-1)^nud}$ : il commute donc à $\\symup{d}$ au sens gradué.} On peut alors considérer\r\n",
+        "new_text": "degré $\\symup{n}$ sont les opérateurs de degré $\\symup{n}$ qui anticommutent à $\\symup{u}$ (en tant\r\nqu'opérateurs homogènes). On peut alors considérer\r\n",
+        "old_encoding": "utf-8",
+        "new_encoding": "utf-8",
+        "old_sha256": "f37822c935ffb667b3cb45e16524e1dc7c2f746c9b2845a6cc6dc16ce291923f",
+        "new_sha256": "9437c491c3feae5914bc203d086440c4f03b6e64ed5c9ffbce0b43654821196e",
+        "old_bytes": 327,
+        "new_bytes": 160,
+        "exact_text_in_report": true,
+        "text_candidate_count": 1,
+        "paired_candidate_count": 0,
+        "single_side_candidate_count": 1,
+        "candidate_row_ids": [
+          "C000286"
+        ],
+        "matching_status": "one_candidate",
+        "mechanically_ambiguous": false,
+        "only_single_side_candidates": true,
+        "locator_candidate_count": 98,
+        "candidate_page_mismatches": 0
+      }
+    ],
+    "current_hunk": {
+      "hunk_id": "FD000002",
+      "relative_file": "fr/149.tex",
+      "classification": "content_tex",
+      "operation": "replace",
+      "fr_file": "sources/fr/fr/149.tex",
+      "fr_printed_file": "sources/fr_printed/fr/149.tex",
+      "fr_range": {
+        "byte_start": 7966,
+        "byte_end_exclusive": 8067,
+        "line_start": 148,
+        "line_end": 148,
+        "preceding_page": "171",
+        "preceding_marker_byte": 5766,
+        "following_page": "172",
+        "following_marker_byte": 9183,
+        "nearest_page": "172",
+        "nearest_marker_byte": 9183,
+        "anchor_page": "171",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "171"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "fr_printed_range": {
+        "byte_start": 7965,
+        "byte_end_exclusive": 8070,
+        "line_start": 148,
+        "line_end": 148,
+        "preceding_page": "171",
+        "preceding_marker_byte": 5766,
+        "following_page": "172",
+        "following_marker_byte": 9187,
+        "nearest_page": "172",
+        "nearest_marker_byte": 9187,
+        "anchor_page": "171",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "171"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "candidate_page_keys": [
+        "149-171"
+      ],
+      "cross_page": false,
+      "different_anchor_pages": false,
+      "old_text": "degré $\\symup{n}$ sont les opérateurs de degré $\\symup{n}$ qui commutent à $\\symup{d}$ (en tant\r\n",
+      "new_text": "degré $\\symup{n}$ sont les opérateurs de degré $\\symup{n}$ qui anticommutent à $\\symup{u}$ (en tant\r\n",
+      "old_encoding": "utf-8",
+      "new_encoding": "utf-8",
+      "old_sha256": "07ad0caa40f104d77963dd41878422844d43fcecc9a4ae9a4e2dad229175501d",
+      "new_sha256": "ffac45af6f8cff7cb1ffdacc53de00545dca3e12713ec8f0a210ce7f6e581e8f",
+      "old_bytes": 101,
+      "new_bytes": 105,
+      "exact_text_in_report": true,
+      "text_candidate_count": 0,
+      "paired_candidate_count": 0,
+      "single_side_candidate_count": 0,
+      "candidate_row_ids": [],
+      "matching_status": "unmatched",
+      "mechanically_ambiguous": false,
+      "only_single_side_candidates": false,
+      "locator_candidate_count": 99,
+      "candidate_page_mismatches": 0
+    }
+  },
+  {
+    "mapping": {
+      "current_hunk_id": "FD000005",
+      "old_hunk_ids": [
+        "FD000005"
+      ],
+      "relative_file": "fr/149.tex",
+      "pages": [
+        "149-175"
+      ],
+      "method": "identical_printed_span_and_payload_changed_corrected_payload",
+      "candidate_count": 1,
+      "printed_source_bytes_identical": true,
+      "old_fr_lines": [
+        "342–343"
+      ],
+      "current_fr_lines": "342–343",
+      "old_printed_lines": [
+        "342–343"
+      ],
+      "current_printed_lines": "342–343",
+      "old_old_sha256": [
+        "964fc3b67a08a76f5336df85f4470b71d52a30ee3a2906e44d5be796eaeda1bb"
+      ],
+      "old_new_sha256": [
+        "e21777f9b29a40cb177736083acf45d13fa435a8a02a978a0877f4daaaaf7157"
+      ],
+      "current_old_sha256": "d03438a9d7c610149f52510dc1ee04eeb462e7906ae6a19bd4a05fb604e2a118",
+      "current_new_sha256": "e21777f9b29a40cb177736083acf45d13fa435a8a02a978a0877f4daaaaf7157",
+      "current_matching_status": "unmatched",
+      "current_candidate_row_ids": [],
+      "footnote_removal_row_ids": [
+        "C020731"
+      ]
+    },
+    "old_hunks": [
+      {
+        "hunk_id": "FD000005",
+        "relative_file": "fr/149.tex",
+        "classification": "content_tex",
+        "operation": "replace",
+        "fr_file": "sources/fr/fr/149.tex",
+        "fr_printed_file": "sources/fr_printed/fr/149.tex",
+        "fr_range": {
+          "byte_start": 19952,
+          "byte_end_exclusive": 20487,
+          "line_start": 342,
+          "line_end": 343,
+          "preceding_page": "175",
+          "preceding_marker_byte": 18121,
+          "following_page": "176",
+          "following_marker_byte": 22070,
+          "nearest_page": "175",
+          "nearest_marker_byte": 18121,
+          "anchor_page": "175",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "175"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "fr_printed_range": {
+          "byte_start": 19786,
+          "byte_end_exclusive": 19969,
+          "line_start": 342,
+          "line_end": 343,
+          "preceding_page": "175",
+          "preceding_marker_byte": 17955,
+          "following_page": "176",
+          "following_marker_byte": 21551,
+          "nearest_page": "176",
+          "nearest_marker_byte": 21551,
+          "anchor_page": "175",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "175"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "candidate_page_keys": [
+          "149-175"
+        ],
+        "cross_page": false,
+        "different_anchor_pages": false,
+        "old_text": "En effet, $\\symup{\\Omega^{n-p}(A/J)}$ est un $\\symup{(A/J)}$-module projectif de rang $\\symup{1}$, de même\r\n$\\symup{\\Omega^{n}(A)}$ est un $\\symup{A}$-module projectif de rang $\\symup{1}$,\\footnote{Le texte imprimé dit « libre » pour les deux modules et « rang $\\symup{n}$ » pour $\\symup{\\Omega^{n}(A)}$. Les modules de formes de degré maximal sont projectifs de rang $\\symup{1}$ ; leur liberté globale ne découle pas des hypothèses. L'identification ci-dessous résulte de la suite conormale en prenant les déterminants.}\r\n",
+        "new_text": "En effet, $\\symup{\\Omega^{n-p}(A/J)}$ est un $\\symup{(A/J)}$-module libre de rang $\\symup{1}$, de même\r\n$\\symup{\\Omega^{n}(A)}$ est un $\\symup{A}$-module libre de rang $\\symup{n}$,\r\n",
+        "old_encoding": "utf-8",
+        "new_encoding": "utf-8",
+        "old_sha256": "964fc3b67a08a76f5336df85f4470b71d52a30ee3a2906e44d5be796eaeda1bb",
+        "new_sha256": "e21777f9b29a40cb177736083acf45d13fa435a8a02a978a0877f4daaaaf7157",
+        "old_bytes": 535,
+        "new_bytes": 183,
+        "exact_text_in_report": true,
+        "text_candidate_count": 0,
+        "paired_candidate_count": 0,
+        "single_side_candidate_count": 0,
+        "candidate_row_ids": [],
+        "matching_status": "unmatched",
+        "mechanically_ambiguous": false,
+        "only_single_side_candidates": false,
+        "locator_candidate_count": 97,
+        "candidate_page_mismatches": 0
+      }
+    ],
+    "current_hunk": {
+      "hunk_id": "FD000005",
+      "relative_file": "fr/149.tex",
+      "classification": "content_tex",
+      "operation": "replace",
+      "fr_file": "sources/fr/fr/149.tex",
+      "fr_printed_file": "sources/fr_printed/fr/149.tex",
+      "fr_range": {
+        "byte_start": 19781,
+        "byte_end_exclusive": 19972,
+        "line_start": 342,
+        "line_end": 343,
+        "preceding_page": "175",
+        "preceding_marker_byte": 17950,
+        "following_page": "176",
+        "following_marker_byte": 21555,
+        "nearest_page": "176",
+        "nearest_marker_byte": 21555,
+        "anchor_page": "175",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "175"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "fr_printed_range": {
+        "byte_start": 19786,
+        "byte_end_exclusive": 19969,
+        "line_start": 342,
+        "line_end": 343,
+        "preceding_page": "175",
+        "preceding_marker_byte": 17955,
+        "following_page": "176",
+        "following_marker_byte": 21551,
+        "nearest_page": "176",
+        "nearest_marker_byte": 21551,
+        "anchor_page": "175",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "175"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "candidate_page_keys": [
+        "149-175"
+      ],
+      "cross_page": false,
+      "different_anchor_pages": false,
+      "old_text": "En effet, $\\symup{\\Omega^{n-p}(A/J)}$ est un $\\symup{(A/J)}$-module projectif de rang $\\symup{1}$, de même\r\n$\\symup{\\Omega^{n}(A)}$ est un $\\symup{A}$-module projectif de rang $\\symup{1}$,\r\n",
+      "new_text": "En effet, $\\symup{\\Omega^{n-p}(A/J)}$ est un $\\symup{(A/J)}$-module libre de rang $\\symup{1}$, de même\r\n$\\symup{\\Omega^{n}(A)}$ est un $\\symup{A}$-module libre de rang $\\symup{n}$,\r\n",
+      "old_encoding": "utf-8",
+      "new_encoding": "utf-8",
+      "old_sha256": "d03438a9d7c610149f52510dc1ee04eeb462e7906ae6a19bd4a05fb604e2a118",
+      "new_sha256": "e21777f9b29a40cb177736083acf45d13fa435a8a02a978a0877f4daaaaf7157",
+      "old_bytes": 191,
+      "new_bytes": 183,
+      "exact_text_in_report": true,
+      "text_candidate_count": 0,
+      "paired_candidate_count": 0,
+      "single_side_candidate_count": 0,
+      "candidate_row_ids": [],
+      "matching_status": "unmatched",
+      "mechanically_ambiguous": false,
+      "only_single_side_candidates": false,
+      "locator_candidate_count": 98,
+      "candidate_page_mismatches": 0
+    }
+  },
+  {
+    "mapping": {
+      "current_hunk_id": "FD000009",
+      "old_hunk_ids": [
+        "FD000009"
+      ],
+      "relative_file": "fr/149.tex",
+      "pages": [
+        "149-177"
+      ],
+      "method": "current_printed_span_contained_in_old_span",
+      "candidate_count": 1,
+      "printed_source_bytes_identical": true,
+      "old_fr_lines": [
+        "426–428"
+      ],
+      "current_fr_lines": "426",
+      "old_printed_lines": [
+        "426–427"
+      ],
+      "current_printed_lines": "426",
+      "old_old_sha256": [
+        "f15f5c18c2ea76016ceb404d5aaf7e4df515ffe5a5f318fbd6dc21696bb8ece9"
+      ],
+      "old_new_sha256": [
+        "0bb6bbeb1351a11888da211a70e86613da0d636e96d4a637ca28bf872ec5c3ba"
+      ],
+      "current_old_sha256": "8bf33314dd55c33f5ec19b67d73c4e92a3a767442d85c94b3ce2979abc10c3b3",
+      "current_new_sha256": "e6a026a441afc8eb9552790ab1dc1847faf268a1e36b2c4cf20286b128dbddb4",
+      "current_matching_status": "multiple_candidates",
+      "current_candidate_row_ids": [
+        "C000744",
+        "C000691",
+        "C000703"
+      ],
+      "footnote_removal_row_ids": [
+        "C020732"
+      ]
+    },
+    "old_hunks": [
+      {
+        "hunk_id": "FD000009",
+        "relative_file": "fr/149.tex",
+        "classification": "content_tex",
+        "operation": "replace",
+        "fr_file": "sources/fr/fr/149.tex",
+        "fr_printed_file": "sources/fr_printed/fr/149.tex",
+        "fr_range": {
+          "byte_start": 25752,
+          "byte_end_exclusive": 26006,
+          "line_start": 426,
+          "line_end": 428,
+          "preceding_page": "177",
+          "preceding_marker_byte": 25457,
+          "following_page": "178",
+          "following_marker_byte": 29070,
+          "nearest_page": "177",
+          "nearest_marker_byte": 25457,
+          "anchor_page": "177",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "177"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "fr_printed_range": {
+          "byte_start": 25233,
+          "byte_end_exclusive": 25303,
+          "line_start": 426,
+          "line_end": 427,
+          "preceding_page": "177",
+          "preceding_marker_byte": 24938,
+          "following_page": "178",
+          "following_marker_byte": 28225,
+          "nearest_page": "177",
+          "nearest_marker_byte": 24938,
+          "anchor_page": "177",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "177"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "candidate_page_keys": [
+          "149-177"
+        ],
+        "cross_page": false,
+        "different_anchor_pages": false,
+        "old_text": "$\\symup{E(M)=\\operatorname{Hom}_{A}\\bigl(M,E(A/J)\\bigr)}$.\r\n\\footnote{Le texte imprimé porte $\\symup{E(A)}$ ; dans la catégorie considérée, l'objet\r\nreprésentant est $\\symup{A/J}$, et l'égalité requise pour (3.7) est $\\symup{E(A/J)}$.} Enfin, la\r\n",
+        "new_text": "$\\symup{E(M)=\\operatorname{Hom}_{A}\\bigl(M,E(A)\\bigr)}$.\r\n Enfin, la\r\n",
+        "old_encoding": "utf-8",
+        "new_encoding": "utf-8",
+        "old_sha256": "f15f5c18c2ea76016ceb404d5aaf7e4df515ffe5a5f318fbd6dc21696bb8ece9",
+        "new_sha256": "0bb6bbeb1351a11888da211a70e86613da0d636e96d4a637ca28bf872ec5c3ba",
+        "old_bytes": 254,
+        "new_bytes": 70,
+        "exact_text_in_report": true,
+        "text_candidate_count": 7,
+        "paired_candidate_count": 1,
+        "single_side_candidate_count": 6,
+        "candidate_row_ids": [
+          "C000743",
+          "C000744",
+          "C000745",
+          "C000746",
+          "C000691",
+          "C000702",
+          "C000703"
+        ],
+        "matching_status": "multiple_candidates",
+        "mechanically_ambiguous": true,
+        "only_single_side_candidates": false,
+        "locator_candidate_count": 91,
+        "candidate_page_mismatches": 0
+      }
+    ],
+    "current_hunk": {
+      "hunk_id": "FD000009",
+      "relative_file": "fr/149.tex",
+      "classification": "content_tex",
+      "operation": "replace",
+      "fr_file": "sources/fr/fr/149.tex",
+      "fr_printed_file": "sources/fr_printed/fr/149.tex",
+      "fr_range": {
+        "byte_start": 25237,
+        "byte_end_exclusive": 25297,
+        "line_start": 426,
+        "line_end": 426,
+        "preceding_page": "177",
+        "preceding_marker_byte": 24942,
+        "following_page": "178",
+        "following_marker_byte": 28221,
+        "nearest_page": "177",
+        "nearest_marker_byte": 24942,
+        "anchor_page": "177",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "177"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "fr_printed_range": {
+        "byte_start": 25233,
+        "byte_end_exclusive": 25291,
+        "line_start": 426,
+        "line_end": 426,
+        "preceding_page": "177",
+        "preceding_marker_byte": 24938,
+        "following_page": "178",
+        "following_marker_byte": 28225,
+        "nearest_page": "177",
+        "nearest_marker_byte": 24938,
+        "anchor_page": "177",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "177"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "candidate_page_keys": [
+        "149-177"
+      ],
+      "cross_page": false,
+      "different_anchor_pages": false,
+      "old_text": "$\\symup{E(M)=\\operatorname{Hom}_{A}\\bigl(M,E(A/J)\\bigr)}$.\r\n",
+      "new_text": "$\\symup{E(M)=\\operatorname{Hom}_{A}\\bigl(M,E(A)\\bigr)}$.\r\n",
+      "old_encoding": "utf-8",
+      "new_encoding": "utf-8",
+      "old_sha256": "8bf33314dd55c33f5ec19b67d73c4e92a3a767442d85c94b3ce2979abc10c3b3",
+      "new_sha256": "e6a026a441afc8eb9552790ab1dc1847faf268a1e36b2c4cf20286b128dbddb4",
+      "old_bytes": 60,
+      "new_bytes": 58,
+      "exact_text_in_report": true,
+      "text_candidate_count": 3,
+      "paired_candidate_count": 1,
+      "single_side_candidate_count": 2,
+      "candidate_row_ids": [
+        "C000744",
+        "C000691",
+        "C000703"
+      ],
+      "matching_status": "multiple_candidates",
+      "mechanically_ambiguous": true,
+      "only_single_side_candidates": false,
+      "locator_candidate_count": 93,
+      "candidate_page_mismatches": 0
+    }
+  },
+  {
+    "mapping": {
+      "current_hunk_id": "FD000010",
+      "old_hunk_ids": [
+        "FD000010"
+      ],
+      "relative_file": "fr/149.tex",
+      "pages": [
+        "149-177"
+      ],
+      "method": "identical_printed_span_and_payload_changed_corrected_payload",
+      "candidate_count": 1,
+      "printed_source_bytes_identical": true,
+      "old_fr_lines": [
+        "447–449"
+      ],
+      "current_fr_lines": "446",
+      "old_printed_lines": [
+        "446"
+      ],
+      "current_printed_lines": "446",
+      "old_old_sha256": [
+        "820bdb738fe1b3ee43bf2acc8d38583c8fc9b7f4ebdab03a0bbb7a27dcee520f"
+      ],
+      "old_new_sha256": [
+        "768c27b9efcbbf556b705a4b54e651f38dfcfc29692b965a47d32824adf42956"
+      ],
+      "current_old_sha256": "b30a0efef07394af027f6128b4d4ee6687e12b981c718350c5fcc3e0babc27b3",
+      "current_new_sha256": "768c27b9efcbbf556b705a4b54e651f38dfcfc29692b965a47d32824adf42956",
+      "current_matching_status": "multiple_candidates",
+      "current_candidate_row_ids": [
+        "C000756",
+        "C000694",
+        "C000713"
+      ],
+      "footnote_removal_row_ids": [
+        "C020733"
+      ]
+    },
+    "old_hunks": [
+      {
+        "hunk_id": "FD000010",
+        "relative_file": "fr/149.tex",
+        "classification": "content_tex",
+        "operation": "replace",
+        "fr_file": "sources/fr/fr/149.tex",
+        "fr_printed_file": "sources/fr_printed/fr/149.tex",
+        "fr_range": {
+          "byte_start": 27124,
+          "byte_end_exclusive": 27489,
+          "line_start": 447,
+          "line_end": 449,
+          "preceding_page": "177",
+          "preceding_marker_byte": 25457,
+          "following_page": "178",
+          "following_marker_byte": 29070,
+          "nearest_page": "177",
+          "nearest_marker_byte": 25457,
+          "anchor_page": "177",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "177"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "fr_printed_range": {
+          "byte_start": 26421,
+          "byte_end_exclusive": 26632,
+          "line_start": 446,
+          "line_end": 446,
+          "preceding_page": "177",
+          "preceding_marker_byte": 24938,
+          "following_page": "178",
+          "following_marker_byte": 28225,
+          "nearest_page": "177",
+          "nearest_marker_byte": 24938,
+          "anchor_page": "177",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "177"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "candidate_page_keys": [
+          "149-177"
+        ],
+        "cross_page": false,
+        "different_anchor_pages": false,
+        "old_text": "$\\symup{\\underline{\\Omega}_X^{*}=\\bigoplus\\limits_p\\underline{\\Omega}_X^{p}}$ le faisceau des germes de formes différentielles sur $\\symup{X}$.\\footnote{Le texte\r\nimprimé emploie un signe de réunion ; la structure graduée est la somme directe\r\ndes faisceaux $\\symup{\\underline{\\Omega}_X^p}$.} Si $\\symup{Y}$ est une partie fermée de $\\symup{X}$, on identifie\r\n",
+        "new_text": "$\\symup{\\underline{\\Omega}_X^{*}=\\bigcup\\limits_p\\underline{\\Omega}_X^{p}}$ le faisceau des germes de formes différentielles sur $\\symup{X}$. Si $\\symup{Y}$ est une partie fermée de $\\symup{X}$, on identifie\r\n",
+        "old_encoding": "utf-8",
+        "new_encoding": "utf-8",
+        "old_sha256": "820bdb738fe1b3ee43bf2acc8d38583c8fc9b7f4ebdab03a0bbb7a27dcee520f",
+        "new_sha256": "768c27b9efcbbf556b705a4b54e651f38dfcfc29692b965a47d32824adf42956",
+        "old_bytes": 365,
+        "new_bytes": 211,
+        "exact_text_in_report": true,
+        "text_candidate_count": 4,
+        "paired_candidate_count": 1,
+        "single_side_candidate_count": 3,
+        "candidate_row_ids": [
+          "C000756",
+          "C000757",
+          "C000694",
+          "C000713"
+        ],
+        "matching_status": "multiple_candidates",
+        "mechanically_ambiguous": true,
+        "only_single_side_candidates": false,
+        "locator_candidate_count": 91,
+        "candidate_page_mismatches": 0
+      }
+    ],
+    "current_hunk": {
+      "hunk_id": "FD000010",
+      "relative_file": "fr/149.tex",
+      "classification": "content_tex",
+      "operation": "replace",
+      "fr_file": "sources/fr/fr/149.tex",
+      "fr_printed_file": "sources/fr_printed/fr/149.tex",
+      "fr_range": {
+        "byte_start": 26427,
+        "byte_end_exclusive": 26640,
+        "line_start": 446,
+        "line_end": 446,
+        "preceding_page": "177",
+        "preceding_marker_byte": 24942,
+        "following_page": "178",
+        "following_marker_byte": 28221,
+        "nearest_page": "177",
+        "nearest_marker_byte": 24942,
+        "anchor_page": "177",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "177"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "fr_printed_range": {
+        "byte_start": 26421,
+        "byte_end_exclusive": 26632,
+        "line_start": 446,
+        "line_end": 446,
+        "preceding_page": "177",
+        "preceding_marker_byte": 24938,
+        "following_page": "178",
+        "following_marker_byte": 28225,
+        "nearest_page": "177",
+        "nearest_marker_byte": 24938,
+        "anchor_page": "177",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "177"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "candidate_page_keys": [
+        "149-177"
+      ],
+      "cross_page": false,
+      "different_anchor_pages": false,
+      "old_text": "$\\symup{\\underline{\\Omega}_X^{*}=\\bigoplus\\limits_p\\underline{\\Omega}_X^{p}}$ le faisceau des germes de formes différentielles sur $\\symup{X}$. Si $\\symup{Y}$ est une partie fermée de $\\symup{X}$, on identifie\r\n",
+      "new_text": "$\\symup{\\underline{\\Omega}_X^{*}=\\bigcup\\limits_p\\underline{\\Omega}_X^{p}}$ le faisceau des germes de formes différentielles sur $\\symup{X}$. Si $\\symup{Y}$ est une partie fermée de $\\symup{X}$, on identifie\r\n",
+      "old_encoding": "utf-8",
+      "new_encoding": "utf-8",
+      "old_sha256": "b30a0efef07394af027f6128b4d4ee6687e12b981c718350c5fcc3e0babc27b3",
+      "new_sha256": "768c27b9efcbbf556b705a4b54e651f38dfcfc29692b965a47d32824adf42956",
+      "old_bytes": 213,
+      "new_bytes": 211,
+      "exact_text_in_report": true,
+      "text_candidate_count": 3,
+      "paired_candidate_count": 1,
+      "single_side_candidate_count": 2,
+      "candidate_row_ids": [
+        "C000756",
+        "C000694",
+        "C000713"
+      ],
+      "matching_status": "multiple_candidates",
+      "mechanically_ambiguous": true,
+      "only_single_side_candidates": false,
+      "locator_candidate_count": 93,
+      "candidate_page_mismatches": 0
+    }
+  },
+  {
+    "mapping": {
+      "current_hunk_id": "FD000033",
+      "old_hunk_ids": [
+        "FD000033"
+      ],
+      "relative_file": "fr/149.tex",
+      "pages": [
+        "149-183"
+      ],
+      "method": "identical_printed_span_and_payload_changed_corrected_payload",
+      "candidate_count": 1,
+      "printed_source_bytes_identical": true,
+      "old_fr_lines": [
+        "755–757"
+      ],
+      "current_fr_lines": "752",
+      "old_printed_lines": [
+        "752"
+      ],
+      "current_printed_lines": "752",
+      "old_old_sha256": [
+        "69c0fc303c76ff3332bcf5de95788a9ec2fbb7a2420b9fc87b33d77b953a8673"
+      ],
+      "old_new_sha256": [
+        "2c20aaee4824b8bdd197cfa86211d78e58f4d5fc164cc4786ba2443a24ada55b"
+      ],
+      "current_old_sha256": "35198aa7d0b18cf7be6fac25853d95d4f9b11255f15d308d39284366e755a972",
+      "current_new_sha256": "2c20aaee4824b8bdd197cfa86211d78e58f4d5fc164cc4786ba2443a24ada55b",
+      "current_matching_status": "one_candidate",
+      "current_candidate_row_ids": [
+        "C001189"
+      ],
+      "footnote_removal_row_ids": [
+        "C020734"
+      ]
+    },
+    "old_hunks": [
+      {
+        "hunk_id": "FD000033",
+        "relative_file": "fr/149.tex",
+        "classification": "content_tex",
+        "operation": "replace",
+        "fr_file": "sources/fr/fr/149.tex",
+        "fr_printed_file": "sources/fr_printed/fr/149.tex",
+        "fr_range": {
+          "byte_start": 44922,
+          "byte_end_exclusive": 45158,
+          "line_start": 755,
+          "line_end": 757,
+          "preceding_page": "183",
+          "preceding_marker_byte": 44911,
+          "following_page": "184",
+          "following_marker_byte": 48050,
+          "nearest_page": "183",
+          "nearest_marker_byte": 44911,
+          "anchor_page": "183",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "183"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "fr_printed_range": {
+          "byte_start": 44032,
+          "byte_end_exclusive": 44085,
+          "line_start": 752,
+          "line_end": 752,
+          "preceding_page": "183",
+          "preceding_marker_byte": 44021,
+          "following_page": "184",
+          "following_marker_byte": 46822,
+          "nearest_page": "183",
+          "nearest_marker_byte": 44021,
+          "anchor_page": "183",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "183"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "candidate_page_keys": [
+          "149-183"
+        ],
+        "cross_page": false,
+        "different_anchor_pages": false,
+        "old_text": "Comme (5.3 bis) est un isomorphisme,\\footnote{Le texte imprimé donne une\r\nseconde formule « (5.3) » à la page 182 et y renvoie ici ; l'identifiant\r\n« (5.3 bis) » distingue cette formule de la première (5.3).} il en est de même\r\n",
+        "new_text": "Comme (5.3) est un isomorphisme, il en est de même\r\n",
+        "old_encoding": "utf-8",
+        "new_encoding": "utf-8",
+        "old_sha256": "69c0fc303c76ff3332bcf5de95788a9ec2fbb7a2420b9fc87b33d77b953a8673",
+        "new_sha256": "2c20aaee4824b8bdd197cfa86211d78e58f4d5fc164cc4786ba2443a24ada55b",
+        "old_bytes": 236,
+        "new_bytes": 53,
+        "exact_text_in_report": true,
+        "text_candidate_count": 1,
+        "paired_candidate_count": 1,
+        "single_side_candidate_count": 0,
+        "candidate_row_ids": [
+          "C001189"
+        ],
+        "matching_status": "one_candidate",
+        "mechanically_ambiguous": false,
+        "only_single_side_candidates": false,
+        "locator_candidate_count": 81,
+        "candidate_page_mismatches": 0
+      }
+    ],
+    "current_hunk": {
+      "hunk_id": "FD000033",
+      "relative_file": "fr/149.tex",
+      "classification": "content_tex",
+      "operation": "replace",
+      "fr_file": "sources/fr/fr/149.tex",
+      "fr_printed_file": "sources/fr_printed/fr/149.tex",
+      "fr_range": {
+        "byte_start": 44073,
+        "byte_end_exclusive": 44130,
+        "line_start": 752,
+        "line_end": 752,
+        "preceding_page": "183",
+        "preceding_marker_byte": 44062,
+        "following_page": "184",
+        "following_marker_byte": 46867,
+        "nearest_page": "183",
+        "nearest_marker_byte": 44062,
+        "anchor_page": "183",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "183"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "fr_printed_range": {
+        "byte_start": 44032,
+        "byte_end_exclusive": 44085,
+        "line_start": 752,
+        "line_end": 752,
+        "preceding_page": "183",
+        "preceding_marker_byte": 44021,
+        "following_page": "184",
+        "following_marker_byte": 46822,
+        "nearest_page": "183",
+        "nearest_marker_byte": 44021,
+        "anchor_page": "183",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "183"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "candidate_page_keys": [
+        "149-183"
+      ],
+      "cross_page": false,
+      "different_anchor_pages": false,
+      "old_text": "Comme (5.3 bis) est un isomorphisme, il en est de même\r\n",
+      "new_text": "Comme (5.3) est un isomorphisme, il en est de même\r\n",
+      "old_encoding": "utf-8",
+      "new_encoding": "utf-8",
+      "old_sha256": "35198aa7d0b18cf7be6fac25853d95d4f9b11255f15d308d39284366e755a972",
+      "new_sha256": "2c20aaee4824b8bdd197cfa86211d78e58f4d5fc164cc4786ba2443a24ada55b",
+      "old_bytes": 57,
+      "new_bytes": 53,
+      "exact_text_in_report": true,
+      "text_candidate_count": 1,
+      "paired_candidate_count": 1,
+      "single_side_candidate_count": 0,
+      "candidate_row_ids": [
+        "C001189"
+      ],
+      "matching_status": "one_candidate",
+      "mechanically_ambiguous": false,
+      "only_single_side_candidates": false,
+      "locator_candidate_count": 83,
+      "candidate_page_mismatches": 0
+    }
+  },
+  {
+    "mapping": {
+      "current_hunk_id": "FD000034",
+      "old_hunk_ids": [
+        "FD000034"
+      ],
+      "relative_file": "fr/149.tex",
+      "pages": [
+        "149-183"
+      ],
+      "method": "current_printed_span_contained_in_old_span",
+      "candidate_count": 1,
+      "printed_source_bytes_identical": true,
+      "old_fr_lines": [
+        "773–775"
+      ],
+      "current_fr_lines": "768",
+      "old_printed_lines": [
+        "768–769"
+      ],
+      "current_printed_lines": "768",
+      "old_old_sha256": [
+        "d916c2a778485dba33534249c709c856ec9debc6239bf150adfa484205a37f10"
+      ],
+      "old_new_sha256": [
+        "41e27742c69dc89553cf5d5cc29ae0922dd767c2ee8c540bcd16416007c6eb44"
+      ],
+      "current_old_sha256": "75f8ad917ec3bf7f995403f351f30b954630c36ac095d60e28718013adda90e5",
+      "current_new_sha256": "3eebc7490d7ff237afcc840c0bea5d113fe6b1f44ce4d94a02fef0ffbbae3ea7",
+      "current_matching_status": "multiple_candidates",
+      "current_candidate_row_ids": [
+        "C001253",
+        "C001190",
+        "C001216"
+      ],
+      "footnote_removal_row_ids": [
+        "C020735"
+      ]
+    },
+    "old_hunks": [
+      {
+        "hunk_id": "FD000034",
+        "relative_file": "fr/149.tex",
+        "classification": "content_tex",
+        "operation": "replace",
+        "fr_file": "sources/fr/fr/149.tex",
+        "fr_printed_file": "sources/fr_printed/fr/149.tex",
+        "fr_range": {
+          "byte_start": 46177,
+          "byte_end_exclusive": 46555,
+          "line_start": 773,
+          "line_end": 775,
+          "preceding_page": "183",
+          "preceding_marker_byte": 44911,
+          "following_page": "184",
+          "following_marker_byte": 48050,
+          "nearest_page": "183",
+          "nearest_marker_byte": 44911,
+          "anchor_page": "183",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "183"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "fr_printed_range": {
+          "byte_start": 45104,
+          "byte_end_exclusive": 45327,
+          "line_start": 768,
+          "line_end": 769,
+          "preceding_page": "183",
+          "preceding_marker_byte": 44021,
+          "following_page": "184",
+          "following_marker_byte": 46822,
+          "nearest_page": "183",
+          "nearest_marker_byte": 44021,
+          "anchor_page": "183",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "183"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "candidate_page_keys": [
+          "149-183"
+        ],
+        "cross_page": false,
+        "different_anchor_pages": false,
+        "old_text": "élémentairement. La computation du cup-produit $\\symup{H^{i}(P,\\Osh_P(m))\\times H^{j}(P,\\Osh_P(m'))\\longrightarrow H^{i+j}(P,\\Osh_P(m+m'))}$ nécessaire pour expliciter l'accouplement (5.1) n'offre pas de\r\ndifficultés.\\footnote{Le texte imprimé porte $\\symup{\\Osh_P(r+r')}$ ; les deux facteurs\r\n$\\symup{\\Osh_P(m)}$ et $\\symup{\\Osh_P(m')}$ imposent $\\symup{\\Osh_P(m+m')}$.}\r\n",
+        "new_text": "élémentairement. La computation du cup-produit $\\symup{H^{i}(P,\\Osh_P(m))\\times H^{j}(P,\\Osh_P(m'))\\longrightarrow H^{i+j}(P,\\Osh_P(r+r'))}$ nécessaire pour expliciter l'accouplement (5.1) n'offre pas de\r\ndifficultés.\r\n",
+        "old_encoding": "utf-8",
+        "new_encoding": "utf-8",
+        "old_sha256": "d916c2a778485dba33534249c709c856ec9debc6239bf150adfa484205a37f10",
+        "new_sha256": "41e27742c69dc89553cf5d5cc29ae0922dd767c2ee8c540bcd16416007c6eb44",
+        "old_bytes": 378,
+        "new_bytes": 223,
+        "exact_text_in_report": true,
+        "text_candidate_count": 8,
+        "paired_candidate_count": 1,
+        "single_side_candidate_count": 7,
+        "candidate_row_ids": [
+          "C001247",
+          "C001253",
+          "C001254",
+          "C001255",
+          "C001256",
+          "C001190",
+          "C001210",
+          "C001216"
+        ],
+        "matching_status": "multiple_candidates",
+        "mechanically_ambiguous": true,
+        "only_single_side_candidates": false,
+        "locator_candidate_count": 81,
+        "candidate_page_mismatches": 0
+      }
+    ],
+    "current_hunk": {
+      "hunk_id": "FD000034",
+      "relative_file": "fr/149.tex",
+      "classification": "content_tex",
+      "operation": "replace",
+      "fr_file": "sources/fr/fr/149.tex",
+      "fr_printed_file": "sources/fr_printed/fr/149.tex",
+      "fr_range": {
+        "byte_start": 45149,
+        "byte_end_exclusive": 45357,
+        "line_start": 768,
+        "line_end": 768,
+        "preceding_page": "183",
+        "preceding_marker_byte": 44062,
+        "following_page": "184",
+        "following_marker_byte": 46867,
+        "nearest_page": "183",
+        "nearest_marker_byte": 44062,
+        "anchor_page": "183",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "183"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "fr_printed_range": {
+        "byte_start": 45104,
+        "byte_end_exclusive": 45312,
+        "line_start": 768,
+        "line_end": 768,
+        "preceding_page": "183",
+        "preceding_marker_byte": 44021,
+        "following_page": "184",
+        "following_marker_byte": 46822,
+        "nearest_page": "183",
+        "nearest_marker_byte": 44021,
+        "anchor_page": "183",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "183"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "candidate_page_keys": [
+        "149-183"
+      ],
+      "cross_page": false,
+      "different_anchor_pages": false,
+      "old_text": "élémentairement. La computation du cup-produit $\\symup{H^{i}(P,\\Osh_P(m))\\times H^{j}(P,\\Osh_P(m'))\\longrightarrow H^{i+j}(P,\\Osh_P(m+m'))}$ nécessaire pour expliciter l'accouplement (5.1) n'offre pas de\r\n",
+      "new_text": "élémentairement. La computation du cup-produit $\\symup{H^{i}(P,\\Osh_P(m))\\times H^{j}(P,\\Osh_P(m'))\\longrightarrow H^{i+j}(P,\\Osh_P(r+r'))}$ nécessaire pour expliciter l'accouplement (5.1) n'offre pas de\r\n",
+      "old_encoding": "utf-8",
+      "new_encoding": "utf-8",
+      "old_sha256": "75f8ad917ec3bf7f995403f351f30b954630c36ac095d60e28718013adda90e5",
+      "new_sha256": "3eebc7490d7ff237afcc840c0bea5d113fe6b1f44ce4d94a02fef0ffbbae3ea7",
+      "old_bytes": 208,
+      "new_bytes": 208,
+      "exact_text_in_report": true,
+      "text_candidate_count": 3,
+      "paired_candidate_count": 1,
+      "single_side_candidate_count": 2,
+      "candidate_row_ids": [
+        "C001253",
+        "C001190",
+        "C001216"
+      ],
+      "matching_status": "multiple_candidates",
+      "mechanically_ambiguous": true,
+      "only_single_side_candidates": false,
+      "locator_candidate_count": 83,
+      "candidate_page_mismatches": 0
+    }
+  },
+  {
+    "mapping": {
+      "current_hunk_id": "FD000036",
+      "old_hunk_ids": [
+        "FD000036"
+      ],
+      "relative_file": "fr/149.tex",
+      "pages": [
+        "149-185"
+      ],
+      "method": "current_printed_span_contained_in_old_span",
+      "candidate_count": 1,
+      "printed_source_bytes_identical": true,
+      "old_fr_lines": [
+        "899–901"
+      ],
+      "current_fr_lines": "894",
+      "old_printed_lines": [
+        "893–894"
+      ],
+      "current_printed_lines": "894",
+      "old_old_sha256": [
+        "cc69cad8106c5954d81c5a5465c5a3fe9b9dd968b239c390128496e755550a6d"
+      ],
+      "old_new_sha256": [
+        "844653f9fe48bbe7eaab7e3ac4b26d4f0a779367f8ee2297e8d653cfeb0c4de2"
+      ],
+      "current_old_sha256": "d6604a3c20d5e7279018c99b5a6dd44c5ef6dd9e5e4ca0afe909e9f19ec52c9c",
+      "current_new_sha256": "4554d2eda6d637a350885b584369e89be5e56f3f4f8dbcc414c275f952ad2b64",
+      "current_matching_status": "multiple_candidates",
+      "current_candidate_row_ids": [
+        "C000740",
+        "C000825",
+        "C001313",
+        "C001417",
+        "C000699",
+        "C000784",
+        "C001279",
+        "C001374"
+      ],
+      "footnote_removal_row_ids": [
+        "C020736"
+      ]
+    },
+    "old_hunks": [
+      {
+        "hunk_id": "FD000036",
+        "relative_file": "fr/149.tex",
+        "classification": "content_tex",
+        "operation": "replace",
+        "fr_file": "sources/fr/fr/149.tex",
+        "fr_printed_file": "sources/fr_printed/fr/149.tex",
+        "fr_range": {
+          "byte_start": 52899,
+          "byte_end_exclusive": 53158,
+          "line_start": 899,
+          "line_end": 901,
+          "preceding_page": "185",
+          "preceding_marker_byte": 50585,
+          "following_page": "186",
+          "following_marker_byte": 53349,
+          "nearest_page": "186",
+          "nearest_marker_byte": 53349,
+          "anchor_page": "185",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "185"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "fr_printed_range": {
+          "byte_start": 51667,
+          "byte_end_exclusive": 51788,
+          "line_start": 893,
+          "line_end": 894,
+          "preceding_page": "185",
+          "preceding_marker_byte": 49357,
+          "following_page": "186",
+          "following_marker_byte": 51979,
+          "nearest_page": "186",
+          "nearest_marker_byte": 51979,
+          "anchor_page": "185",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "185"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "candidate_page_keys": [
+          "149-185"
+        ],
+        "cross_page": false,
+        "different_anchor_pages": false,
+        "old_text": "\\footnote{Le texte imprimé numérote aussi cette formule « (6.2) » ; le suffixe\r\n« bis » distingue les deux occurrences.} d'où l'existence d'un élément\r\nprivilégié dans $\\symup{H^{n}(X,\\underline{\\omega}_X^{n})'}$, correspondant à l'homomorphisme\r\n",
+        "new_text": " d'où l'existence d'un élément\r\nprivilégié dans $\\symup{H^{n}(X,\\omega_X^{n})'}$, correspondant à l'homomorphisme\r\n",
+        "old_encoding": "utf-8",
+        "new_encoding": "utf-8",
+        "old_sha256": "cc69cad8106c5954d81c5a5465c5a3fe9b9dd968b239c390128496e755550a6d",
+        "new_sha256": "844653f9fe48bbe7eaab7e3ac4b26d4f0a779367f8ee2297e8d653cfeb0c4de2",
+        "old_bytes": 259,
+        "new_bytes": 121,
+        "exact_text_in_report": true,
+        "text_candidate_count": 8,
+        "paired_candidate_count": 6,
+        "single_side_candidate_count": 2,
+        "candidate_row_ids": [
+          "C000740",
+          "C000825",
+          "C001313",
+          "C001417",
+          "C000699",
+          "C000784",
+          "C001279",
+          "C001374"
+        ],
+        "matching_status": "multiple_candidates",
+        "mechanically_ambiguous": true,
+        "only_single_side_candidates": false,
+        "locator_candidate_count": 87,
+        "candidate_page_mismatches": 6
+      }
+    ],
+    "current_hunk": {
+      "hunk_id": "FD000036",
+      "relative_file": "fr/149.tex",
+      "classification": "content_tex",
+      "operation": "replace",
+      "fr_file": "sources/fr/fr/149.tex",
+      "fr_printed_file": "sources/fr_printed/fr/149.tex",
+      "fr_range": {
+        "byte_start": 51751,
+        "byte_end_exclusive": 51849,
+        "line_start": 894,
+        "line_end": 894,
+        "preceding_page": "185",
+        "preceding_marker_byte": 49402,
+        "following_page": "186",
+        "following_marker_byte": 52040,
+        "nearest_page": "186",
+        "nearest_marker_byte": 52040,
+        "anchor_page": "185",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "185"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "fr_printed_range": {
+        "byte_start": 51702,
+        "byte_end_exclusive": 51788,
+        "line_start": 894,
+        "line_end": 894,
+        "preceding_page": "185",
+        "preceding_marker_byte": 49357,
+        "following_page": "186",
+        "following_marker_byte": 51979,
+        "nearest_page": "186",
+        "nearest_marker_byte": 51979,
+        "anchor_page": "185",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "185"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "candidate_page_keys": [
+        "149-185"
+      ],
+      "cross_page": false,
+      "different_anchor_pages": false,
+      "old_text": "privilégié dans $\\symup{H^{n}(X,\\underline{\\omega}_X^{n})'}$, correspondant à l'homomorphisme\r\n",
+      "new_text": "privilégié dans $\\symup{H^{n}(X,\\omega_X^{n})'}$, correspondant à l'homomorphisme\r\n",
+      "old_encoding": "utf-8",
+      "new_encoding": "utf-8",
+      "old_sha256": "d6604a3c20d5e7279018c99b5a6dd44c5ef6dd9e5e4ca0afe909e9f19ec52c9c",
+      "new_sha256": "4554d2eda6d637a350885b584369e89be5e56f3f4f8dbcc414c275f952ad2b64",
+      "old_bytes": 98,
+      "new_bytes": 86,
+      "exact_text_in_report": true,
+      "text_candidate_count": 8,
+      "paired_candidate_count": 6,
+      "single_side_candidate_count": 2,
+      "candidate_row_ids": [
+        "C000740",
+        "C000825",
+        "C001313",
+        "C001417",
+        "C000699",
+        "C000784",
+        "C001279",
+        "C001374"
+      ],
+      "matching_status": "multiple_candidates",
+      "mechanically_ambiguous": true,
+      "only_single_side_candidates": false,
+      "locator_candidate_count": 88,
+      "candidate_page_mismatches": 6
+    }
+  },
+  {
+    "mapping": {
+      "current_hunk_id": "FD000038",
+      "old_hunk_ids": [
+        "FD000038"
+      ],
+      "relative_file": "fr/149.tex",
+      "pages": [
+        "149-187"
+      ],
+      "method": "current_printed_span_contained_in_old_span",
+      "candidate_count": 1,
+      "printed_source_bytes_identical": true,
+      "old_fr_lines": [
+        "971–973"
+      ],
+      "current_fr_lines": "964",
+      "old_printed_lines": [
+        "964–965"
+      ],
+      "current_printed_lines": "964",
+      "old_old_sha256": [
+        "b7f4aeb8f7bb3495180defa4653e15040a27388c2ea9b80f545ce66f0ec47bfd"
+      ],
+      "old_new_sha256": [
+        "75d5079a97e8ff08dba073e6e0307834dbd85494aa64e3832cf9f95db420c59f"
+      ],
+      "current_old_sha256": "a7bdc8119a1b2d5a171ec9b2d3d879af31cfb0dc9a9b4b6f8b71007091a73d65",
+      "current_new_sha256": "46bc0f7647bfd781a19272dee7453948c0421cdc2a35b2c42194137654d32ce2",
+      "current_matching_status": "unmatched",
+      "current_candidate_row_ids": [],
+      "footnote_removal_row_ids": [
+        "C020737"
+      ]
+    },
+    "old_hunks": [
+      {
+        "hunk_id": "FD000038",
+        "relative_file": "fr/149.tex",
+        "classification": "content_tex",
+        "operation": "replace",
+        "fr_file": "sources/fr/fr/149.tex",
+        "fr_printed_file": "sources/fr_printed/fr/149.tex",
+        "fr_range": {
+          "byte_start": 57052,
+          "byte_end_exclusive": 57321,
+          "line_start": 971,
+          "line_end": 973,
+          "preceding_page": "187",
+          "preceding_marker_byte": 56238,
+          "following_page": "188",
+          "following_marker_byte": 59532,
+          "nearest_page": "187",
+          "nearest_marker_byte": 56238,
+          "anchor_page": "187",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "187"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "fr_printed_range": {
+          "byte_start": 55670,
+          "byte_end_exclusive": 55802,
+          "line_start": 964,
+          "line_end": 965,
+          "preceding_page": "187",
+          "preceding_marker_byte": 54856,
+          "following_page": "188",
+          "following_marker_byte": 58013,
+          "nearest_page": "187",
+          "nearest_marker_byte": 54856,
+          "anchor_page": "187",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "187"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "candidate_page_keys": [
+          "149-187"
+        ],
+        "cross_page": false,
+        "different_anchor_pages": false,
+        "old_text": "si $\\symup{X}$ est normale et toutes ses composantes sont de dimension $\\symup{>1}$ (cf.\r\n[3]).\\footnote{Le texte imprimé porte ici \\fquote{$\\symup{S}$ est normale} ; le paragraphe\r\nne fait intervenir que la variété $\\symup{X}$.} Pour qu'il en soit ainsi pour tout\r\n",
+        "new_text": "si $\\symup{S}$ est normale et toutes ses composantes sont de dimension $\\symup{>1}$ (cf.\r\n[3]). Pour qu'il en soit ainsi pour tout\r\n",
+        "old_encoding": "utf-8",
+        "new_encoding": "utf-8",
+        "old_sha256": "b7f4aeb8f7bb3495180defa4653e15040a27388c2ea9b80f545ce66f0ec47bfd",
+        "new_sha256": "75d5079a97e8ff08dba073e6e0307834dbd85494aa64e3832cf9f95db420c59f",
+        "old_bytes": 269,
+        "new_bytes": 132,
+        "exact_text_in_report": true,
+        "text_candidate_count": 0,
+        "paired_candidate_count": 0,
+        "single_side_candidate_count": 0,
+        "candidate_row_ids": [],
+        "matching_status": "unmatched",
+        "mechanically_ambiguous": false,
+        "only_single_side_candidates": false,
+        "locator_candidate_count": 100,
+        "candidate_page_mismatches": 0
+      }
+    ],
+    "current_hunk": {
+      "hunk_id": "FD000038",
+      "relative_file": "fr/149.tex",
+      "classification": "content_tex",
+      "operation": "replace",
+      "fr_file": "sources/fr/fr/149.tex",
+      "fr_printed_file": "sources/fr_printed/fr/149.tex",
+      "fr_range": {
+        "byte_start": 55743,
+        "byte_end_exclusive": 55833,
+        "line_start": 964,
+        "line_end": 964,
+        "preceding_page": "187",
+        "preceding_marker_byte": 54929,
+        "following_page": "188",
+        "following_marker_byte": 58086,
+        "nearest_page": "187",
+        "nearest_marker_byte": 54929,
+        "anchor_page": "187",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "187"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "fr_printed_range": {
+        "byte_start": 55670,
+        "byte_end_exclusive": 55760,
+        "line_start": 964,
+        "line_end": 964,
+        "preceding_page": "187",
+        "preceding_marker_byte": 54856,
+        "following_page": "188",
+        "following_marker_byte": 58013,
+        "nearest_page": "187",
+        "nearest_marker_byte": 54856,
+        "anchor_page": "187",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "187"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "candidate_page_keys": [
+        "149-187"
+      ],
+      "cross_page": false,
+      "different_anchor_pages": false,
+      "old_text": "si $\\symup{X}$ est normale et toutes ses composantes sont de dimension $\\symup{>1}$ (cf.\r\n",
+      "new_text": "si $\\symup{S}$ est normale et toutes ses composantes sont de dimension $\\symup{>1}$ (cf.\r\n",
+      "old_encoding": "utf-8",
+      "new_encoding": "utf-8",
+      "old_sha256": "a7bdc8119a1b2d5a171ec9b2d3d879af31cfb0dc9a9b4b6f8b71007091a73d65",
+      "new_sha256": "46bc0f7647bfd781a19272dee7453948c0421cdc2a35b2c42194137654d32ce2",
+      "old_bytes": 90,
+      "new_bytes": 90,
+      "exact_text_in_report": true,
+      "text_candidate_count": 0,
+      "paired_candidate_count": 0,
+      "single_side_candidate_count": 0,
+      "candidate_row_ids": [],
+      "matching_status": "unmatched",
+      "mechanically_ambiguous": false,
+      "only_single_side_candidates": false,
+      "locator_candidate_count": 101,
+      "candidate_page_mismatches": 0
+    }
+  },
+  {
+    "mapping": {
+      "current_hunk_id": "FD000042",
+      "old_hunk_ids": [
+        "FD000042"
+      ],
+      "relative_file": "fr/149.tex",
+      "pages": [
+        "149-188"
+      ],
+      "method": "current_printed_span_contained_in_old_span",
+      "candidate_count": 1,
+      "printed_source_bytes_identical": true,
+      "old_fr_lines": [
+        "1035–1038"
+      ],
+      "current_fr_lines": "1028",
+      "old_printed_lines": [
+        "1027–1028"
+      ],
+      "current_printed_lines": "1028",
+      "old_old_sha256": [
+        "543f87be98e40e87b35768c3f4853bfe8341991c8aabe4a005c9c8a1a6df4957"
+      ],
+      "old_new_sha256": [
+        "ac6710ca9cbe38ab2920d7dc49ee39076673f23bb3172a05e593ad8db88d663d"
+      ],
+      "current_old_sha256": "6c41bcd56d83341a98f65a870bc07b9dfc973c7d2be56cdc3059d915bc0a005e",
+      "current_new_sha256": "47648d39f4d00bc6bb0c28891df22cfa55b8c970c2c36db7b1e5a8125d97532f",
+      "current_matching_status": "multiple_candidates",
+      "current_candidate_row_ids": [
+        "C000649",
+        "C000739",
+        "C000824",
+        "C000925",
+        "C001003",
+        "C001084",
+        "C001239",
+        "C001312",
+        "C001655",
+        "C001666",
+        "C001713",
+        "C001847",
+        "C000602",
+        "C000698",
+        "C000783",
+        "C000877",
+        "C000966",
+        "C001045",
+        "C001202",
+        "C001278",
+        "C001623",
+        "C001634",
+        "C001635",
+        "C001686",
+        "C001812"
+      ],
+      "footnote_removal_row_ids": [
+        "C020738"
+      ]
+    },
+    "old_hunks": [
+      {
+        "hunk_id": "FD000042",
+        "relative_file": "fr/149.tex",
+        "classification": "content_tex",
+        "operation": "replace",
+        "fr_file": "sources/fr/fr/149.tex",
+        "fr_printed_file": "sources/fr_printed/fr/149.tex",
+        "fr_range": {
+          "byte_start": 61054,
+          "byte_end_exclusive": 61424,
+          "line_start": 1035,
+          "line_end": 1038,
+          "preceding_page": "188",
+          "preceding_marker_byte": 59532,
+          "following_page": "189",
+          "following_marker_byte": 62814,
+          "nearest_page": "188",
+          "nearest_marker_byte": 59532,
+          "anchor_page": "188",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "188"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "fr_printed_range": {
+          "byte_start": 59534,
+          "byte_end_exclusive": 59634,
+          "line_start": 1027,
+          "line_end": 1028,
+          "preceding_page": "188",
+          "preceding_marker_byte": 58013,
+          "following_page": "189",
+          "following_marker_byte": 61024,
+          "nearest_page": "189",
+          "nearest_marker_byte": 61024,
+          "anchor_page": "188",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "188"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "candidate_page_keys": [
+          "149-188"
+        ],
+        "cross_page": false,
+        "different_anchor_pages": false,
+        "old_text": "\\footnote{Le texte imprimé porte $\\symup{f_{*}(\\xi^{m,m})}$. Puisque\r\n$\\symup{\\xi^{m,m}\\in H^{m}(X,\\underline{\\Omega}_X^{m})}$ et que les deux membres appartiennent à\r\n$\\symup{H^{m}(Y,\\underline{\\Omega}_Y^{m})}$, l'application requise est $\\symup{f^{*}}$.} où\r\n$\\symup{\\varepsilon_Y}$ est l'élément fondamental dans $\\symup{H^{m}(Y,\\underline{\\Omega}_Y^{m})}$, et\r\n",
+        "new_text": " où\r\n$\\symup{\\varepsilon_Y}$ est l'élément fondamental dans $\\symup{H^{m}(Y,\\Omega_Y^{m})}$, et\r\n",
+        "old_encoding": "utf-8",
+        "new_encoding": "utf-8",
+        "old_sha256": "543f87be98e40e87b35768c3f4853bfe8341991c8aabe4a005c9c8a1a6df4957",
+        "new_sha256": "ac6710ca9cbe38ab2920d7dc49ee39076673f23bb3172a05e593ad8db88d663d",
+        "old_bytes": 370,
+        "new_bytes": 100,
+        "exact_text_in_report": true,
+        "text_candidate_count": 29,
+        "paired_candidate_count": 22,
+        "single_side_candidate_count": 7,
+        "candidate_row_ids": [
+          "C000649",
+          "C000739",
+          "C000824",
+          "C000925",
+          "C001003",
+          "C001084",
+          "C001239",
+          "C001312",
+          "C001655",
+          "C001656",
+          "C001664",
+          "C001665",
+          "C001666",
+          "C001713",
+          "C001847",
+          "C000602",
+          "C000698",
+          "C000783",
+          "C000877",
+          "C000966",
+          "C001045",
+          "C001202",
+          "C001278",
+          "C001623",
+          "C001625",
+          "C001634",
+          "C001635",
+          "C001686",
+          "C001812"
+        ],
+        "matching_status": "multiple_candidates",
+        "mechanically_ambiguous": true,
+        "only_single_side_candidates": false,
+        "locator_candidate_count": 67,
+        "candidate_page_mismatches": 20
+      }
+    ],
+    "current_hunk": {
+      "hunk_id": "FD000042",
+      "relative_file": "fr/149.tex",
+      "classification": "content_tex",
+      "operation": "replace",
+      "fr_file": "sources/fr/fr/149.tex",
+      "fr_printed_file": "sources/fr_printed/fr/149.tex",
+      "fr_range": {
+        "byte_start": 59614,
+        "byte_end_exclusive": 59720,
+        "line_start": 1028,
+        "line_end": 1028,
+        "preceding_page": "188",
+        "preceding_marker_byte": 58086,
+        "following_page": "189",
+        "following_marker_byte": 61110,
+        "nearest_page": "189",
+        "nearest_marker_byte": 61110,
+        "anchor_page": "188",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "188"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "fr_printed_range": {
+        "byte_start": 59540,
+        "byte_end_exclusive": 59634,
+        "line_start": 1028,
+        "line_end": 1028,
+        "preceding_page": "188",
+        "preceding_marker_byte": 58013,
+        "following_page": "189",
+        "following_marker_byte": 61024,
+        "nearest_page": "189",
+        "nearest_marker_byte": 61024,
+        "anchor_page": "188",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "188"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "candidate_page_keys": [
+        "149-188"
+      ],
+      "cross_page": false,
+      "different_anchor_pages": false,
+      "old_text": "$\\symup{\\varepsilon_Y}$ est l'élément fondamental dans $\\symup{H^{m}(Y,\\underline{\\Omega}_Y^{m})}$, et\r\n",
+      "new_text": "$\\symup{\\varepsilon_Y}$ est l'élément fondamental dans $\\symup{H^{m}(Y,\\Omega_Y^{m})}$, et\r\n",
+      "old_encoding": "utf-8",
+      "new_encoding": "utf-8",
+      "old_sha256": "6c41bcd56d83341a98f65a870bc07b9dfc973c7d2be56cdc3059d915bc0a005e",
+      "new_sha256": "47648d39f4d00bc6bb0c28891df22cfa55b8c970c2c36db7b1e5a8125d97532f",
+      "old_bytes": 106,
+      "new_bytes": 94,
+      "exact_text_in_report": true,
+      "text_candidate_count": 25,
+      "paired_candidate_count": 22,
+      "single_side_candidate_count": 3,
+      "candidate_row_ids": [
+        "C000649",
+        "C000739",
+        "C000824",
+        "C000925",
+        "C001003",
+        "C001084",
+        "C001239",
+        "C001312",
+        "C001655",
+        "C001666",
+        "C001713",
+        "C001847",
+        "C000602",
+        "C000698",
+        "C000783",
+        "C000877",
+        "C000966",
+        "C001045",
+        "C001202",
+        "C001278",
+        "C001623",
+        "C001634",
+        "C001635",
+        "C001686",
+        "C001812"
+      ],
+      "matching_status": "multiple_candidates",
+      "mechanically_ambiguous": true,
+      "only_single_side_candidates": false,
+      "locator_candidate_count": 68,
+      "candidate_page_mismatches": 20
+    }
+  },
+  {
+    "mapping": {
+      "current_hunk_id": "FD000166",
+      "old_hunk_ids": [
+        "FD000166"
+      ],
+      "relative_file": "fr/212.tex",
+      "pages": [
+        "212-109"
+      ],
+      "method": "identical_printed_span_and_payload_changed_corrected_payload",
+      "candidate_count": 1,
+      "printed_source_bytes_identical": true,
+      "old_fr_lines": [
+        "480–483"
+      ],
+      "current_fr_lines": "480",
+      "old_printed_lines": [
+        "480"
+      ],
+      "current_printed_lines": "480",
+      "old_old_sha256": [
+        "8dc32ca7da8a20b31434680f1f93ae440c0641ba21f79aaa017bcf5b2195db9e"
+      ],
+      "old_new_sha256": [
+        "80441082b088d9ccb1f6a92ce8a440270b08a15df847d3b2041bbd282dccd193"
+      ],
+      "current_old_sha256": "132340c70ab7a4bcf0616fd052c44463094510a02cc419f3f734aa6500f739ef",
+      "current_new_sha256": "80441082b088d9ccb1f6a92ce8a440270b08a15df847d3b2041bbd282dccd193",
+      "current_matching_status": "multiple_candidates",
+      "current_candidate_row_ids": [
+        "C009458",
+        "C009419"
+      ],
+      "footnote_removal_row_ids": [
+        "C020739"
+      ]
+    },
+    "old_hunks": [
+      {
+        "hunk_id": "FD000166",
+        "relative_file": "fr/212.tex",
+        "classification": "content_tex",
+        "operation": "replace",
+        "fr_file": "sources/fr/fr/212.tex",
+        "fr_printed_file": "sources/fr_printed/fr/212.tex",
+        "fr_range": {
+          "byte_start": 29907,
+          "byte_end_exclusive": 30255,
+          "line_start": 480,
+          "line_end": 483,
+          "preceding_page": "109",
+          "preceding_marker_byte": 28671,
+          "following_page": "110",
+          "following_marker_byte": 31963,
+          "nearest_page": "109",
+          "nearest_marker_byte": 28671,
+          "anchor_page": "109",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "109"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "fr_printed_range": {
+          "byte_start": 29923,
+          "byte_end_exclusive": 29994,
+          "line_start": 480,
+          "line_end": 480,
+          "preceding_page": "109",
+          "preceding_marker_byte": 28687,
+          "following_page": "110",
+          "following_marker_byte": 31698,
+          "nearest_page": "109",
+          "nearest_marker_byte": 28687,
+          "anchor_page": "109",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "109"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "candidate_page_keys": [
+          "212-109"
+        ],
+        "cross_page": false,
+        "different_anchor_pages": false,
+        "old_text": "$\\symup{n}$-ième de $\\symup{(R,p_1)}$ sur $\\symup{X}$\\footnote{Le texte imprimé\r\nporte « puissance fibrée $\\symup{(n+1)}$-ième » et, dans la formule suivante,\r\n$\\symup{K_0=R}$. Le nerf a pour composante des objets $\\symup{K_0=X}$ et pour composante des\r\nflèches $\\symup{K_1=R}$ ; les deux corrections d'indice sont donc liées.}, ou mieux,\r\n",
+        "new_text": "$\\symup{(n+1)}$-ième de $\\symup{(R,p_1)}$ sur $\\symup{X}$, ou mieux,\r\n",
+        "old_encoding": "utf-8",
+        "new_encoding": "utf-8",
+        "old_sha256": "8dc32ca7da8a20b31434680f1f93ae440c0641ba21f79aaa017bcf5b2195db9e",
+        "new_sha256": "80441082b088d9ccb1f6a92ce8a440270b08a15df847d3b2041bbd282dccd193",
+        "old_bytes": 348,
+        "new_bytes": 71,
+        "exact_text_in_report": true,
+        "text_candidate_count": 3,
+        "paired_candidate_count": 0,
+        "single_side_candidate_count": 3,
+        "candidate_row_ids": [
+          "C009459",
+          "C009460",
+          "C009461"
+        ],
+        "matching_status": "multiple_candidates",
+        "mechanically_ambiguous": true,
+        "only_single_side_candidates": true,
+        "locator_candidate_count": 77,
+        "candidate_page_mismatches": 0
+      }
+    ],
+    "current_hunk": {
+      "hunk_id": "FD000166",
+      "relative_file": "fr/212.tex",
+      "classification": "content_tex",
+      "operation": "replace",
+      "fr_file": "sources/fr/fr/212.tex",
+      "fr_printed_file": "sources/fr_printed/fr/212.tex",
+      "fr_range": {
+        "byte_start": 29907,
+        "byte_end_exclusive": 29974,
+        "line_start": 480,
+        "line_end": 480,
+        "preceding_page": "109",
+        "preceding_marker_byte": 28671,
+        "following_page": "110",
+        "following_marker_byte": 31682,
+        "nearest_page": "109",
+        "nearest_marker_byte": 28671,
+        "anchor_page": "109",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "109"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "fr_printed_range": {
+        "byte_start": 29923,
+        "byte_end_exclusive": 29994,
+        "line_start": 480,
+        "line_end": 480,
+        "preceding_page": "109",
+        "preceding_marker_byte": 28687,
+        "following_page": "110",
+        "following_marker_byte": 31698,
+        "nearest_page": "109",
+        "nearest_marker_byte": 28687,
+        "anchor_page": "109",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "109"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "candidate_page_keys": [
+        "212-109"
+      ],
+      "cross_page": false,
+      "different_anchor_pages": false,
+      "old_text": "$\\symup{n}$-ième de $\\symup{(R,p_1)}$ sur $\\symup{X}$, ou mieux,\r\n",
+      "new_text": "$\\symup{(n+1)}$-ième de $\\symup{(R,p_1)}$ sur $\\symup{X}$, ou mieux,\r\n",
+      "old_encoding": "utf-8",
+      "new_encoding": "utf-8",
+      "old_sha256": "132340c70ab7a4bcf0616fd052c44463094510a02cc419f3f734aa6500f739ef",
+      "new_sha256": "80441082b088d9ccb1f6a92ce8a440270b08a15df847d3b2041bbd282dccd193",
+      "old_bytes": 67,
+      "new_bytes": 71,
+      "exact_text_in_report": true,
+      "text_candidate_count": 2,
+      "paired_candidate_count": 0,
+      "single_side_candidate_count": 2,
+      "candidate_row_ids": [
+        "C009458",
+        "C009419"
+      ],
+      "matching_status": "multiple_candidates",
+      "mechanically_ambiguous": true,
+      "only_single_side_candidates": true,
+      "locator_candidate_count": 78,
+      "candidate_page_mismatches": 0
+    }
+  },
+  {
+    "mapping": {
+      "current_hunk_id": "FD000169",
+      "old_hunk_ids": [
+        "FD000169"
+      ],
+      "relative_file": "fr/212.tex",
+      "pages": [
+        "212-114"
+      ],
+      "method": "identical_printed_span_and_payload_changed_corrected_payload",
+      "candidate_count": 1,
+      "printed_source_bytes_identical": true,
+      "old_fr_lines": [
+        "738–740"
+      ],
+      "current_fr_lines": "735",
+      "old_printed_lines": [
+        "735"
+      ],
+      "current_printed_lines": "735",
+      "old_old_sha256": [
+        "b2b4bec05189e0eadbbd1ecef1aa1fb2db5693940fbd9fe363f0e583c41888a9"
+      ],
+      "old_new_sha256": [
+        "f49807f8224c4808ce045853810e116fcf4cdbd5e9b9922658716d54c4c0410c"
+      ],
+      "current_old_sha256": "ad3d6ad9795b16e249136fc76c06b4feb046df8d4b7667abb4207696969b0a59",
+      "current_new_sha256": "f49807f8224c4808ce045853810e116fcf4cdbd5e9b9922658716d54c4c0410c",
+      "current_matching_status": "multiple_candidates",
+      "current_candidate_row_ids": [
+        "C009790",
+        "C009818",
+        "C009819",
+        "C009780"
+      ],
+      "footnote_removal_row_ids": [
+        "C020740"
+      ]
+    },
+    "old_hunks": [
+      {
+        "hunk_id": "FD000169",
+        "relative_file": "fr/212.tex",
+        "classification": "content_tex",
+        "operation": "replace",
+        "fr_file": "sources/fr/fr/212.tex",
+        "fr_printed_file": "sources/fr_printed/fr/212.tex",
+        "fr_range": {
+          "byte_start": 45327,
+          "byte_end_exclusive": 45726,
+          "line_start": 738,
+          "line_end": 740,
+          "preceding_page": "114",
+          "preceding_marker_byte": 43505,
+          "following_page": "115",
+          "following_marker_byte": 46664,
+          "nearest_page": "115",
+          "nearest_marker_byte": 46664,
+          "anchor_page": "114",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "114"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "fr_printed_range": {
+          "byte_start": 45065,
+          "byte_end_exclusive": 45260,
+          "line_start": 735,
+          "line_end": 735,
+          "preceding_page": "114",
+          "preceding_marker_byte": 43243,
+          "following_page": "115",
+          "following_marker_byte": 46198,
+          "nearest_page": "115",
+          "nearest_marker_byte": 46198,
+          "anchor_page": "114",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "114"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "candidate_page_keys": [
+          "212-114"
+        ],
+        "cross_page": false,
+        "different_anchor_pages": false,
+        "old_text": "$\\symup{B'}$ sur $\\symup{K}$ isogène à un quotient de $\\symup{A\\otimes_V K}$ \\fquote{se réduit bien pour $\\symup{V}$} i. e. est isomorphe à un $\\symup{B\\otimes_V K}$,\\footnote{Le texte imprimé a\r\n$\\symup{B\\otimes_V A}$. Comme $\\symup{B}$ est un $\\symup{V}$-schéma et que l'assertion porte sur sa\r\nfibre générique, le facteur de base est nécessairement $\\symup{K}$.} où $\\symup{B}$ est un\r\n",
+        "new_text": "$\\symup{B'}$ sur $\\symup{K}$ isogène à un quotient de $\\symup{A\\otimes_V K}$ \\fquote{se réduit bien pour $\\symup{V}$} i. e. est isomorphe à un $\\symup{B\\otimes_V A}$, où $\\symup{B}$ est un\r\n",
+        "old_encoding": "utf-8",
+        "new_encoding": "utf-8",
+        "old_sha256": "b2b4bec05189e0eadbbd1ecef1aa1fb2db5693940fbd9fe363f0e583c41888a9",
+        "new_sha256": "f49807f8224c4808ce045853810e116fcf4cdbd5e9b9922658716d54c4c0410c",
+        "old_bytes": 399,
+        "new_bytes": 195,
+        "exact_text_in_report": true,
+        "text_candidate_count": 2,
+        "paired_candidate_count": 1,
+        "single_side_candidate_count": 1,
+        "candidate_row_ids": [
+          "C009790",
+          "C009818"
+        ],
+        "matching_status": "multiple_candidates",
+        "mechanically_ambiguous": true,
+        "only_single_side_candidates": false,
+        "locator_candidate_count": 78,
+        "candidate_page_mismatches": 0
+      }
+    ],
+    "current_hunk": {
+      "hunk_id": "FD000169",
+      "relative_file": "fr/212.tex",
+      "classification": "content_tex",
+      "operation": "replace",
+      "fr_file": "sources/fr/fr/212.tex",
+      "fr_printed_file": "sources/fr_printed/fr/212.tex",
+      "fr_range": {
+        "byte_start": 45046,
+        "byte_end_exclusive": 45241,
+        "line_start": 735,
+        "line_end": 735,
+        "preceding_page": "114",
+        "preceding_marker_byte": 43224,
+        "following_page": "115",
+        "following_marker_byte": 46179,
+        "nearest_page": "115",
+        "nearest_marker_byte": 46179,
+        "anchor_page": "114",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "114"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "fr_printed_range": {
+        "byte_start": 45065,
+        "byte_end_exclusive": 45260,
+        "line_start": 735,
+        "line_end": 735,
+        "preceding_page": "114",
+        "preceding_marker_byte": 43243,
+        "following_page": "115",
+        "following_marker_byte": 46198,
+        "nearest_page": "115",
+        "nearest_marker_byte": 46198,
+        "anchor_page": "114",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "114"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "candidate_page_keys": [
+        "212-114"
+      ],
+      "cross_page": false,
+      "different_anchor_pages": false,
+      "old_text": "$\\symup{B'}$ sur $\\symup{K}$ isogène à un quotient de $\\symup{A\\otimes_V K}$ \\fquote{se réduit bien pour $\\symup{V}$} i. e. est isomorphe à un $\\symup{B\\otimes_V K}$, où $\\symup{B}$ est un\r\n",
+      "new_text": "$\\symup{B'}$ sur $\\symup{K}$ isogène à un quotient de $\\symup{A\\otimes_V K}$ \\fquote{se réduit bien pour $\\symup{V}$} i. e. est isomorphe à un $\\symup{B\\otimes_V A}$, où $\\symup{B}$ est un\r\n",
+      "old_encoding": "utf-8",
+      "new_encoding": "utf-8",
+      "old_sha256": "ad3d6ad9795b16e249136fc76c06b4feb046df8d4b7667abb4207696969b0a59",
+      "new_sha256": "f49807f8224c4808ce045853810e116fcf4cdbd5e9b9922658716d54c4c0410c",
+      "old_bytes": 195,
+      "new_bytes": 195,
+      "exact_text_in_report": true,
+      "text_candidate_count": 4,
+      "paired_candidate_count": 1,
+      "single_side_candidate_count": 3,
+      "candidate_row_ids": [
+        "C009790",
+        "C009818",
+        "C009819",
+        "C009780"
+      ],
+      "matching_status": "multiple_candidates",
+      "mechanically_ambiguous": true,
+      "only_single_side_candidates": false,
+      "locator_candidate_count": 79,
+      "candidate_page_mismatches": 0
+    }
+  },
+  {
+    "mapping": {
+      "current_hunk_id": "FD000170",
+      "old_hunk_ids": [
+        "FD000170"
+      ],
+      "relative_file": "fr/212.tex",
+      "pages": [
+        "212-116"
+      ],
+      "method": "identical_printed_span_and_payload_changed_corrected_payload",
+      "candidate_count": 1,
+      "printed_source_bytes_identical": true,
+      "old_fr_lines": [
+        "840–841"
+      ],
+      "current_fr_lines": "835",
+      "old_printed_lines": [
+        "835"
+      ],
+      "current_printed_lines": "835",
+      "old_old_sha256": [
+        "1f1ee4cb27acb64b6bd833cfbc98c441ffb7854310092603a1d53dabc8c501e7"
+      ],
+      "old_new_sha256": [
+        "e6576f4a0c79cdd31c25a991812da648c8a76ec4fb14a33b24d06b1d39fe5e43"
+      ],
+      "current_old_sha256": "d84f66eadb497538c369f41462c380eaa6591b596bfe2b7d6126f7d5ce52da6c",
+      "current_new_sha256": "e6576f4a0c79cdd31c25a991812da648c8a76ec4fb14a33b24d06b1d39fe5e43",
+      "current_matching_status": "unmatched",
+      "current_candidate_row_ids": [],
+      "footnote_removal_row_ids": [
+        "C020741"
+      ]
+    },
+    "old_hunks": [
+      {
+        "hunk_id": "FD000170",
+        "relative_file": "fr/212.tex",
+        "classification": "content_tex",
+        "operation": "replace",
+        "fr_file": "sources/fr/fr/212.tex",
+        "fr_printed_file": "sources/fr_printed/fr/212.tex",
+        "fr_range": {
+          "byte_start": 52705,
+          "byte_end_exclusive": 52856,
+          "line_start": 840,
+          "line_end": 841,
+          "preceding_page": "116",
+          "preceding_marker_byte": 49407,
+          "following_page": "117",
+          "following_marker_byte": 52856,
+          "nearest_page": "117",
+          "nearest_marker_byte": 52856,
+          "anchor_page": "116",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "116"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "fr_printed_range": {
+          "byte_start": 52239,
+          "byte_end_exclusive": 52257,
+          "line_start": 835,
+          "line_end": 835,
+          "preceding_page": "116",
+          "preceding_marker_byte": 48941,
+          "following_page": "117",
+          "following_marker_byte": 52257,
+          "nearest_page": "117",
+          "nearest_marker_byte": 52257,
+          "anchor_page": "116",
+          "anchor_rule": "preceding_marker",
+          "covered_pages": [
+            "116"
+          ],
+          "unmarked_prefix_included": false,
+          "cross_page": false
+        },
+        "candidate_page_keys": [
+          "212-116"
+        ],
+        "cross_page": false,
+        "different_anchor_pages": false,
+        "old_text": "sur $\\symup{X}$.\\footnote{Le texte imprimé porte « sur $\\symup{S}$ ». L'action considérée et\r\nla condition de quotient portent sur $\\symup{X}$.}\r\n",
+        "new_text": "sur $\\symup{S}$.\r\n",
+        "old_encoding": "utf-8",
+        "new_encoding": "utf-8",
+        "old_sha256": "1f1ee4cb27acb64b6bd833cfbc98c441ffb7854310092603a1d53dabc8c501e7",
+        "new_sha256": "e6576f4a0c79cdd31c25a991812da648c8a76ec4fb14a33b24d06b1d39fe5e43",
+        "old_bytes": 151,
+        "new_bytes": 18,
+        "exact_text_in_report": true,
+        "text_candidate_count": 0,
+        "paired_candidate_count": 0,
+        "single_side_candidate_count": 0,
+        "candidate_row_ids": [],
+        "matching_status": "unmatched",
+        "mechanically_ambiguous": false,
+        "only_single_side_candidates": false,
+        "locator_candidate_count": 83,
+        "candidate_page_mismatches": 0
+      }
+    ],
+    "current_hunk": {
+      "hunk_id": "FD000170",
+      "relative_file": "fr/212.tex",
+      "classification": "content_tex",
+      "operation": "replace",
+      "fr_file": "sources/fr/fr/212.tex",
+      "fr_printed_file": "sources/fr_printed/fr/212.tex",
+      "fr_range": {
+        "byte_start": 52220,
+        "byte_end_exclusive": 52238,
+        "line_start": 835,
+        "line_end": 835,
+        "preceding_page": "116",
+        "preceding_marker_byte": 48922,
+        "following_page": "117",
+        "following_marker_byte": 52238,
+        "nearest_page": "117",
+        "nearest_marker_byte": 52238,
+        "anchor_page": "116",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "116"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "fr_printed_range": {
+        "byte_start": 52239,
+        "byte_end_exclusive": 52257,
+        "line_start": 835,
+        "line_end": 835,
+        "preceding_page": "116",
+        "preceding_marker_byte": 48941,
+        "following_page": "117",
+        "following_marker_byte": 52257,
+        "nearest_page": "117",
+        "nearest_marker_byte": 52257,
+        "anchor_page": "116",
+        "anchor_rule": "preceding_marker",
+        "covered_pages": [
+          "116"
+        ],
+        "unmarked_prefix_included": false,
+        "cross_page": false
+      },
+      "candidate_page_keys": [
+        "212-116"
+      ],
+      "cross_page": false,
+      "different_anchor_pages": false,
+      "old_text": "sur $\\symup{X}$.\r\n",
+      "new_text": "sur $\\symup{S}$.\r\n",
+      "old_encoding": "utf-8",
+      "new_encoding": "utf-8",
+      "old_sha256": "d84f66eadb497538c369f41462c380eaa6591b596bfe2b7d6126f7d5ce52da6c",
+      "new_sha256": "e6576f4a0c79cdd31c25a991812da648c8a76ec4fb14a33b24d06b1d39fe5e43",
+      "old_bytes": 18,
+      "new_bytes": 18,
+      "exact_text_in_report": true,
+      "text_candidate_count": 0,
+      "paired_candidate_count": 0,
+      "single_side_candidate_count": 0,
+      "candidate_row_ids": [],
+      "matching_status": "unmatched",
+      "mechanically_ambiguous": false,
+      "only_single_side_candidates": false,
+      "locator_candidate_count": 84,
+      "candidate_page_mismatches": 0
+    }
+  }
+]

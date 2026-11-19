@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-11-19T05:14:03.308092+00:00",
+  "completed_utc": "2026-11-19T05:14:06.140150+00:00",
+  "paths": {
+    "old_report": "FGA_CHECK/french_layer_differences/snapshot_20261119_044604",
+    "current_report": "FGA_CHECK/french_layer_differences/snapshot_20261119_050704",
+    "old_frozen": "tmp/french_layer_difference_after_errata_307",
+    "current_frozen": "tmp/french_layer_difference_refresh_20261119_050704",
+    "supplement_report": "FGA_CHECK/french_unmatched_format_candidates/snapshot_20261119",
+    "supplement_frozen": "tmp/french_unmatched_format_frozen",
+    "out": "FGA_CHECK/french_layer_differences/snapshot_20261119_050704/continuity"
+  },
+  "old_snapshot_started_utc": "2026-11-19T04:46:04.787397+00:00",
+  "current_snapshot_started_utc": "2026-11-19T05:08:12.450298+00:00",
+  "current_snapshot_completed_utc": "2026-11-19T05:08:12.468587+00:00",
+  "old_ledger_sha256": "d3a12e44ee34221f973587541f4b7730f422724eb64e8da44196dac76029b943",
+  "current_ledger_sha256": "25fd221d32f32383d6ff285c1f36bea3b3a64483e4a41866f7bf7854bbbea6d5",
+  "old_ledger_rows": 20729,
+  "current_ledger_rows": 21269,
+  "old_row_hash_prefix_unchanged": true,
+  "supplement_row_hash_prefix_unchanged": true,
+  "French_ledger_rows_unchanged_since_supplement_capture": true,
+  "source_changes": [
+    "sources/fr/fr/149.tex",
+    "sources/fr/fr/212.tex"
+  ],
+  "old_hunks": 303,
+  "current_hunks": 303,
+  "mapping_method_counts": {
+    "exact_payload_pair_and_identical_printed_span": 291,
+    "current_printed_span_contained_in_old_span": 6,
+    "identical_printed_span_and_payload_changed_corrected_payload": 6
+  },
+  "all_current_hunks_unique_mapping": true,
+  "all_old_hunks_unique_mapping": true,
+  "mapped_ids_happen_to_remain_same": true,
+  "recorded_footnote_removals": 12,
+  "replay_exact_for_all_changed_files": true,
+  "ordinary_unmatched_hunks": 69,
+  "format_paired_hunks": 57,
+  "format_no_pair_hunks": 12,
+  "format_candidate_links": 339,
+  "format_candidate_distinct_ledger_rows": 105,
+  "format_payload_rows": 159,
+  "format_history_links": 722,
+  "format_history_without_identical_printed_operation": 59,
+  "previous_no_pair_cases": 12,
+  "previous_format_links_retested": 335,
+  "previous_format_links_still_distinguishing": 332,
+  "previous_format_links_no_longer_distinguishing": [
+    "FM000007",
+    "FM000010",
+    "FM000013"
+  ],
+  "input_hashes": {
+    "old_HUNKS.json": "2f8919ee0d73762b7c1af141471098a14ef442e47418d7d08fc0f7c838d9a73f",
+    "current_HUNKS.json": "443e416dab4b019b85dc12ace22e0c99c90105d35243ac2456ffc2291a955422",
+    "old_manifest": "4351d3a3524435f523582c7c0991e4b8df76b1c8d85ca094c3e48e8d1a83087f",
+    "current_manifest": "a42e84a95929950cd3452a4c98745251a27c0b9fa3fc67aaab65f15bb9a18705",
+    "previous_format_details": "aee69db5e281b9d35917341075a1029b47965395756073dea40f9c32edb8ff8d",
+    "mapping_script": "cf62d9393e62e5c9b6bce373f474d18eda10bece93240997caadf1b0dc32d2b9",
+    "projection_helper": "d9a0c7aeac59de0aa3a55ab79099a0eed824940ab95603e9dd56803651fa4b13"
+  },
+  "scope": "Mechanical coordinates, exact bytes, declared projections and ledger candidates only; no mathematical, translation, correction-validity, reading-completeness or net-coverage adjudication."
+}

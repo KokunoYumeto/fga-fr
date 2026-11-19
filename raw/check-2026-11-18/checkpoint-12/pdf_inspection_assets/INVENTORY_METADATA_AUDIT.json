@@ -1,0 +1,747 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-19T02:13:35.890173+00:00",
+  "scope": "Metadata comparisons and image lstat only. No PDF/image reads, decoding, rendering, or viewing; no source-content reads.",
+  "asset_directory": "tmp/pdf_inspection_assets/candidate_baselines_01",
+  "summary": {
+    "selected_layers": 11,
+    "plan_pages": 148,
+    "strict_baseline_over10pt_regions": 6,
+    "candidate_layout_regions": 14,
+    "candidate_layout_layer_page_pairs": 14,
+    "adjacent_source_context_layer_page_pairs": 3,
+    "deterministic_even_odd_pairs": 55,
+    "first_last_anchors": 22,
+    "final_inventory_available": true,
+    "final_inventory_rows": 148,
+    "image_stats_verified": 148
+  },
+  "pair_rule_verified": "left = 2*floor(fraction*page_count/2), clamped to even pages 2 through largest even <= page_count-1; pair is left,left+1. Computed with integer rational arithmetic.",
+  "final_comparison": "Every plan field compared exactly except visual_review, whose expected transition is not performed -> rendered; not inspected.",
+  "hash_scope": "Source/PDF hashes checked for metadata consistency; image hashes checked for valid recorded format. Binary assets were not opened or rehashed.",
+  "layers": [
+    {
+      "layer": "fr",
+      "build_stage": "layout_mechanical_04",
+      "source_tree_sha256": "ebdc95588f28bcc19293cf21061e831ff25f5ed76f2d173793957f2ec251d4a5",
+      "pdf_pages_total": 150,
+      "expected_even_odd_pairs": {
+        "10": [
+          14,
+          15
+        ],
+        "25": [
+          36,
+          37
+        ],
+        "50": [
+          74,
+          75
+        ],
+        "75": [
+          112,
+          113
+        ],
+        "90": [
+          134,
+          135
+        ]
+      },
+      "anchors": [
+        1,
+        150
+      ],
+      "planned_pages": [
+        1,
+        13,
+        14,
+        15,
+        29,
+        31,
+        32,
+        36,
+        37,
+        74,
+        75,
+        86,
+        112,
+        113,
+        134,
+        135,
+        150
+      ],
+      "planned_count": 17,
+      "stat_verified_images": 17
+    },
+    {
+      "layer": "fr_printed",
+      "build_stage": "layout_mechanical_04",
+      "source_tree_sha256": "2a0de167055dff685f4e9e150e9c6b113c6ef8b080ab360c5484bb6b590d7590",
+      "pdf_pages_total": 150,
+      "expected_even_odd_pairs": {
+        "10": [
+          14,
+          15
+        ],
+        "25": [
+          36,
+          37
+        ],
+        "50": [
+          74,
+          75
+        ],
+        "75": [
+          112,
+          113
+        ],
+        "90": [
+          134,
+          135
+        ]
+      },
+      "anchors": [
+        1,
+        150
+      ],
+      "planned_pages": [
+        1,
+        13,
+        14,
+        15,
+        29,
+        31,
+        32,
+        36,
+        37,
+        38,
+        74,
+        75,
+        86,
+        112,
+        113,
+        134,
+        135,
+        150
+      ],
+      "planned_count": 18,
+      "stat_verified_images": 18
+    },
+    {
+      "layer": "en",
+      "build_stage": "translation_baselines_221_249",
+      "source_tree_sha256": "93e2632d45d1f9ac36250cec5d4976b8a37155762004aea831e362ae750e5072",
+      "pdf_pages_total": 151,
+      "expected_even_odd_pairs": {
+        "10": [
+          14,
+          15
+        ],
+        "25": [
+          36,
+          37
+        ],
+        "50": [
+          74,
+          75
+        ],
+        "75": [
+          112,
+          113
+        ],
+        "90": [
+          134,
+          135
+        ]
+      },
+      "anchors": [
+        1,
+        151
+      ],
+      "planned_pages": [
+        1,
+        14,
+        15,
+        36,
+        37,
+        74,
+        75,
+        112,
+        113,
+        134,
+        135,
+        151
+      ],
+      "planned_count": 12,
+      "stat_verified_images": 12
+    },
+    {
+      "layer": "es",
+      "build_stage": "translation_baselines_221_249",
+      "source_tree_sha256": "7a5eec50cc9b12fcad4031f9a4ca83fd73fc3d172f73147d8ec6e965c23525b3",
+      "pdf_pages_total": 157,
+      "expected_even_odd_pairs": {
+        "10": [
+          14,
+          15
+        ],
+        "25": [
+          38,
+          39
+        ],
+        "50": [
+          78,
+          79
+        ],
+        "75": [
+          116,
+          117
+        ],
+        "90": [
+          140,
+          141
+        ]
+      },
+      "anchors": [
+        1,
+        157
+      ],
+      "planned_pages": [
+        1,
+        14,
+        15,
+        38,
+        39,
+        78,
+        79,
+        116,
+        117,
+        140,
+        141,
+        157
+      ],
+      "planned_count": 12,
+      "stat_verified_images": 12
+    },
+    {
+      "layer": "es_149_printed",
+      "build_stage": "translation_baselines_221_249",
+      "source_tree_sha256": "980e872ce81f76d1c70500f8b39982ae22443904a14f70aceb58376b548147c4",
+      "pdf_pages_total": 25,
+      "expected_even_odd_pairs": {
+        "10": [
+          2,
+          3
+        ],
+        "25": [
+          6,
+          7
+        ],
+        "50": [
+          12,
+          13
+        ],
+        "75": [
+          18,
+          19
+        ],
+        "90": [
+          22,
+          23
+        ]
+      },
+      "anchors": [
+        1,
+        25
+      ],
+      "planned_pages": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        12,
+        13,
+        18,
+        19,
+        22,
+        23,
+        25
+      ],
+      "planned_count": 12,
+      "stat_verified_images": 12
+    },
+    {
+      "layer": "pt-BR",
+      "build_stage": "translation_baselines_221_249",
+      "source_tree_sha256": "79aa2a0b98953ac57e4d352ffdf4a514318d56879246c541bf1ac85fc045a819",
+      "pdf_pages_total": 155,
+      "expected_even_odd_pairs": {
+        "10": [
+          14,
+          15
+        ],
+        "25": [
+          38,
+          39
+        ],
+        "50": [
+          76,
+          77
+        ],
+        "75": [
+          116,
+          117
+        ],
+        "90": [
+          138,
+          139
+        ]
+      },
+      "anchors": [
+        1,
+        155
+      ],
+      "planned_pages": [
+        1,
+        14,
+        15,
+        38,
+        39,
+        76,
+        77,
+        116,
+        117,
+        138,
+        139,
+        155
+      ],
+      "planned_count": 12,
+      "stat_verified_images": 12
+    },
+    {
+      "layer": "pt-BR_printed",
+      "build_stage": "translation_baselines_221_249",
+      "source_tree_sha256": "d8e24ee1ef7376284d88490e39dc41a5f10833a1b2a7565a7046f8dfa027f0ab",
+      "pdf_pages_total": 153,
+      "expected_even_odd_pairs": {
+        "10": [
+          14,
+          15
+        ],
+        "25": [
+          38,
+          39
+        ],
+        "50": [
+          76,
+          77
+        ],
+        "75": [
+          114,
+          115
+        ],
+        "90": [
+          136,
+          137
+        ]
+      },
+      "anchors": [
+        1,
+        153
+      ],
+      "planned_pages": [
+        1,
+        14,
+        15,
+        38,
+        39,
+        76,
+        77,
+        114,
+        115,
+        136,
+        137,
+        153
+      ],
+      "planned_count": 12,
+      "stat_verified_images": 12
+    },
+    {
+      "layer": "vi",
+      "build_stage": "translation_baselines_221_249",
+      "source_tree_sha256": "8237165007d6ca75b6bcdef1c47694cdf8a7e0712c490edf830d05cc2e186f31",
+      "pdf_pages_total": 142,
+      "expected_even_odd_pairs": {
+        "10": [
+          14,
+          15
+        ],
+        "25": [
+          34,
+          35
+        ],
+        "50": [
+          70,
+          71
+        ],
+        "75": [
+          106,
+          107
+        ],
+        "90": [
+          126,
+          127
+        ]
+      },
+      "anchors": [
+        1,
+        142
+      ],
+      "planned_pages": [
+        1,
+        14,
+        15,
+        34,
+        35,
+        70,
+        71,
+        106,
+        107,
+        126,
+        127,
+        142
+      ],
+      "planned_count": 12,
+      "stat_verified_images": 12
+    },
+    {
+      "layer": "vi_diplomatic",
+      "build_stage": "translation_baselines_221_249",
+      "source_tree_sha256": "2f09c63bd5f45a8f219806c78e803de4823c614ca125a06ec5c458bd7d3baf6d",
+      "pdf_pages_total": 140,
+      "expected_even_odd_pairs": {
+        "10": [
+          14,
+          15
+        ],
+        "25": [
+          34,
+          35
+        ],
+        "50": [
+          70,
+          71
+        ],
+        "75": [
+          104,
+          105
+        ],
+        "90": [
+          126,
+          127
+        ]
+      },
+      "anchors": [
+        1,
+        140
+      ],
+      "planned_pages": [
+        1,
+        14,
+        15,
+        34,
+        35,
+        70,
+        71,
+        104,
+        105,
+        126,
+        127,
+        140
+      ],
+      "planned_count": 12,
+      "stat_verified_images": 12
+    },
+    {
+      "layer": "ko",
+      "build_stage": "layout_mechanical_07",
+      "source_tree_sha256": "0f1d74de0d09302810385b53694b8db992d1fea38a70dff98ed66e10cc6cc1e3",
+      "pdf_pages_total": 130,
+      "expected_even_odd_pairs": {
+        "10": [
+          12,
+          13
+        ],
+        "25": [
+          32,
+          33
+        ],
+        "50": [
+          64,
+          65
+        ],
+        "75": [
+          96,
+          97
+        ],
+        "90": [
+          116,
+          117
+        ]
+      },
+      "anchors": [
+        1,
+        130
+      ],
+      "planned_pages": [
+        1,
+        7,
+        8,
+        12,
+        13,
+        29,
+        30,
+        32,
+        33,
+        52,
+        64,
+        65,
+        96,
+        97,
+        116,
+        117,
+        130
+      ],
+      "planned_count": 17,
+      "stat_verified_images": 17
+    },
+    {
+      "layer": "zh-Hans",
+      "build_stage": "cjk_open_fonts",
+      "source_tree_sha256": "b1b6eb15d64da741dcad77275ea81570cf5035eea0eefc543ff399581a4e4be7",
+      "pdf_pages_total": 151,
+      "expected_even_odd_pairs": {
+        "10": [
+          14,
+          15
+        ],
+        "25": [
+          36,
+          37
+        ],
+        "50": [
+          74,
+          75
+        ],
+        "75": [
+          112,
+          113
+        ],
+        "90": [
+          134,
+          135
+        ]
+      },
+      "anchors": [
+        1,
+        151
+      ],
+      "planned_pages": [
+        1,
+        14,
+        15,
+        36,
+        37,
+        74,
+        75,
+        112,
+        113,
+        134,
+        135,
+        151
+      ],
+      "planned_count": 12,
+      "stat_verified_images": 12
+    }
+  ],
+  "candidate_regions": [
+    {
+      "case": "LAYOUT-01",
+      "layer": "fr",
+      "candidate_region_lines": "477-487",
+      "candidate_pages": [
+        13
+      ],
+      "context_line": 488,
+      "context_pages": []
+    },
+    {
+      "case": "LAYOUT-02",
+      "layer": "fr_printed",
+      "candidate_region_lines": "474-484",
+      "candidate_pages": [
+        13
+      ],
+      "context_line": 485,
+      "context_pages": []
+    },
+    {
+      "case": "LAYOUT-03",
+      "layer": "fr",
+      "candidate_region_lines": "256-261",
+      "candidate_pages": [
+        29
+      ],
+      "context_line": 262,
+      "context_pages": []
+    },
+    {
+      "case": "LAYOUT-04",
+      "layer": "fr",
+      "candidate_region_lines": "272-285",
+      "candidate_pages": [
+        29
+      ],
+      "context_line": 286,
+      "context_pages": []
+    },
+    {
+      "case": "LAYOUT-05",
+      "layer": "fr",
+      "candidate_region_lines": "445-454",
+      "candidate_pages": [
+        31
+      ],
+      "context_line": 455,
+      "context_pages": [
+        32
+      ]
+    },
+    {
+      "case": "LAYOUT-06",
+      "layer": "fr",
+      "candidate_region_lines": "289-294",
+      "candidate_pages": [
+        86
+      ],
+      "context_line": 295,
+      "context_pages": []
+    },
+    {
+      "case": "LAYOUT-07",
+      "layer": "fr_printed",
+      "candidate_region_lines": "256-261",
+      "candidate_pages": [
+        29
+      ],
+      "context_line": 262,
+      "context_pages": []
+    },
+    {
+      "case": "LAYOUT-08",
+      "layer": "fr_printed",
+      "candidate_region_lines": "272-285",
+      "candidate_pages": [
+        29
+      ],
+      "context_line": 286,
+      "context_pages": []
+    },
+    {
+      "case": "LAYOUT-09",
+      "layer": "fr_printed",
+      "candidate_region_lines": "445-454",
+      "candidate_pages": [
+        31
+      ],
+      "context_line": 455,
+      "context_pages": [
+        32
+      ]
+    },
+    {
+      "case": "LAYOUT-10",
+      "layer": "fr_printed",
+      "candidate_region_lines": "907-937",
+      "candidate_pages": [
+        37,
+        38
+      ],
+      "context_line": 938,
+      "context_pages": []
+    },
+    {
+      "case": "LAYOUT-11",
+      "layer": "fr_printed",
+      "candidate_region_lines": "289-294",
+      "candidate_pages": [
+        86
+      ],
+      "context_line": 295,
+      "context_pages": []
+    },
+    {
+      "case": "LAYOUT-12",
+      "layer": "ko",
+      "candidate_region_lines": "72-83",
+      "candidate_pages": [
+        7,
+        8
+      ],
+      "context_line": 84,
+      "context_pages": []
+    },
+    {
+      "case": "LAYOUT-13",
+      "layer": "ko",
+      "candidate_region_lines": "506-510",
+      "candidate_pages": [
+        29
+      ],
+      "context_line": 511,
+      "context_pages": [
+        30
+      ]
+    },
+    {
+      "case": "LAYOUT-14",
+      "layer": "ko",
+      "candidate_region_lines": "1112-1127",
+      "candidate_pages": [
+        52
+      ],
+      "context_line": 1128,
+      "context_pages": []
+    }
+  ],
+  "reason_counts": {
+    "first_physical_page": 11,
+    "baseline_over10pt_remapped_region": 6,
+    "baseline_over10pt_physical_page": 6,
+    "proposed_layout_region": 14,
+    "distributed_pair_10pct": 22,
+    "adjacent_source_context": 3,
+    "distributed_pair_25pct": 22,
+    "distributed_pair_50pct": 22,
+    "distributed_pair_75pct": 22,
+    "distributed_pair_90pct": 22,
+    "last_physical_page": 11
+  },
+  "input_metadata_sha256": {
+    "FGA_CHECK/layout_diagnostics/ALL_LAYERS_SUMMARY.tsv": "c61a9f5fc08c2edb685a5c3f6fbb95aca7b68f20456cfedb17d06d779f131369",
+    "FGA_CHECK/layout_diagnostics/BASELINE_MAP.tsv": "f44adaa4579e7eeba4fba6b63381df04de1179eefa7083f482d8eab171a6f7a0",
+    "tmp/pdf_inspection_assets/candidate_baselines_01/PLAN.tsv": "cf7607c944f85304d0405d879bb3862fd1f3247f0212d3c67acd3e2406372c87",
+    "tmp/pdf_inspection_assets/candidate_baselines_01/PDF_PROVENANCE.tsv": "7abeb8119ac5afb82a85458f6a96d63eaa7b4a26273372cc7779732016425f25",
+    "tmp/pdf_inspection_assets/candidate_baselines_01/LAYOUT_REGION_PAGE_MAP.tsv": "0fd43a8a74c68190ff976884d124d8ffc92c7596632182bee1b5df4a1d032e8d",
+    "tmp/pdf_inspection_assets/candidate_baselines_01/BASELINE_OVERFLOW_PAGE_MAP.tsv": "104a24ec02c81df3637e7807d02e0f68fd11d64d46ef64f219001d847b3a07fd",
+    "tmp/pdf_inspection_assets/candidate_baselines_01/SELECTION.json": "b406c4ed7d0bf38c02f8a1c2aa50fa5a56d6f5bd0b58010f57c747521a32d5f3",
+    "tmp/layout_scope_audit/layout_mechanical_07_report.json": "02429b951b95826da69c3b00dfb9487d05a2a208bd4a64d6fd1a9791f176c0bb",
+    "tmp/frozen_runs/read_through_221_263/build_reports/read_through_221_263/OVERFULL_BOXES.tsv": "641c8c582e1a9e581d0182a8d28e8c1b855a55a128db7743789c988a13c6f586",
+    "tmp/frozen_runs/translation_baselines_221_249/build_reports/translation_baselines_221_249/OVERFULL_BOXES.tsv": "5e4180b259941bb2b76a51b4020ee7c3ec64e29aa0951fceaa5360608523822e",
+    "tmp/frozen_runs/cjk_open_fonts/build_reports/cjk_open_fonts/OVERFULL_BOXES.tsv": "6c4a159a35172c92f62283e6a09baa7ceda72b290bf79e794b80f74650be0bef",
+    "tmp/pdf_inspection_assets/candidate_baselines_01/RENDERED_PAGES.tsv": "7e057fc233632a51f0b154a5adcde9db60378aa892c3e179473a27c84bfc54e1"
+  },
+  "failures": [],
+  "writes": "Only tmp/pdf_asset_audit; all paths in audit outputs are workspace-relative."
+}

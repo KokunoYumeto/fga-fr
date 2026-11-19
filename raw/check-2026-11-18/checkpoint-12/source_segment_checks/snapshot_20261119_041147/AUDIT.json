@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-11-19T04:20:57.298855+00:00",
+  "completed_utc": "2026-11-19T04:24:37.793675+00:00",
+  "stage": "read_through_236_243",
+  "input_root": "tmp/frozen_build_inputs/read_through_236_243",
+  "prior_input_root": "tmp/source_marker_structure_01",
+  "helper_path": "FGA_CHECK/scripts/source_segments.py",
+  "helper_sha256": "d2cc95f1b28d52d2885c34c74838855face2485fe63f78f0553c5b9d9a9e2ca3",
+  "helper_unchanged_from_published_evidence": true,
+  "capture_metadata_sha256": "f20968d814d0658059efbe2f1312efa8e4e6063769ec534b162767a5c007c070",
+  "capture_started_utc": "2026-11-19T04:11:47.386762+00:00",
+  "capture_completed_utc": "2026-11-19T04:11:47.915238+00:00",
+  "captured_files": 274,
+  "captured_bytes": 6038152,
+  "exact_capture_path_size_hash_matches": 274,
+  "prior_files": 274,
+  "byte_identical_prior_files": 270,
+  "changed_source_paths": [
+    "sources/fr/fr/232.tex",
+    "sources/fr/fr/236.tex",
+    "sources/fr_printed/fr/232.tex",
+    "sources/fr_printed/fr/236.tex"
+  ],
+  "current_all_files_tree_sha256": "57be26e1a6dc834e83e3c2553eebe15f797483bca88e3d5f5b8fa10507a9f8e0",
+  "prior_all_files_tree_sha256": "c37455e54e38332dc073638c8262096c67d44de2e972da6890172dfadf0784ef",
+  "layers": 11,
+  "declared_unit_layer_pairs": 171,
+  "literal_markers": 2133,
+  "page_request_checks": 2135,
+  "duplicate_marker_groups": 0,
+  "nonliteral_src_tokens_in_units": 0,
+  "known_missing_markers": [
+    {
+      "layer": "ko",
+      "unit": "195",
+      "requested_page": "377",
+      "previously_known": true,
+      "status": "neighbor context; requested marker absent",
+      "start": 17974,
+      "end": 23960,
+      "matched_page": "376",
+      "next_page": "378"
+    },
+    {
+      "layer": "ko",
+      "unit": "195",
+      "requested_page": "385",
+      "previously_known": true,
+      "status": "neighbor context; requested marker absent",
+      "start": 42214,
+      "end": 46256,
+      "matched_page": "384",
+      "next_page": "386"
+    }
+  ],
+  "structural_table_reuse": {
+    "MACRO_DEFINITIONS.tsv": {
+      "prior_rows": 106,
+      "current_rows": 106,
+      "exact_metadata_equal": true
+    },
+    "INPUT_GRAPH.tsv": {
+      "prior_rows": 190,
+      "current_rows": 190,
+      "exact_metadata_equal": true
+    },
+    "UNIT_IDENTIFIERS.tsv": {
+      "prior_rows": 131,
+      "current_rows": 131,
+      "exact_metadata_equal": true
+    },
+    "CROSS_LAYER_MATRIX.tsv": {
+      "prior_rows": 211,
+      "current_rows": 211,
+      "exact_metadata_equal": true
+    },
+    "STRUCTURAL_ISSUES.tsv": {
+      "prior_rows": 2,
+      "current_rows": 2,
+      "exact_metadata_equal": true
+    }
+  },
+  "cli_cases": 44,
+  "cli_selections": 402,
+  "cli_exact_byte_outputs": 365,
+  "cli_metadata_records_exact": 402,
+  "token_only_fixtures": 8,
+  "frozen_sources_unchanged_after_checks": true,
+  "extraction_output_root": "tmp/source_segments_current_236_243_extractions",
+  "limitations": [
+    "Lexical literal markers and literal include paths only; no TeX expansion or verbatim simulation.",
+    "No source meaning, ledger, scans, images, PDFs, or HTML were reviewed.",
+    "Missing markers and scope statuses do not assert absence or correctness of content."
+  ],
+  "failure_count": 0,
+  "failures": []
+}

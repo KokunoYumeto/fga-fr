@@ -1,0 +1,9 @@
+--- a/scripts/translation_edits.py
++++ b/scripts/translation_edits.py
+@@ -100,4 +100,4 @@
+ 
+-def record_translation_page(layer,unit,page,rel,body,entry_lines=None):
+-    target,lo,hi=page_text(rel,page);frpath=f'sources/fr/fr/{unit}.tex';fr,fl,fh=page_text(frpath,page)
++def record_translation_page(layer,unit,page,rel,body,entry_lines=None,printed=False):
++    target,lo,hi=page_text(rel,page);frpath=f'sources/{"fr_printed" if printed else "fr"}/fr/{unit}.tex';fr,fl,fh=page_text(frpath,page)
+     stamp=utc()

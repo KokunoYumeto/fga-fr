@@ -1,0 +1,1173 @@
+decision_id	literal_id	language	literal	listed_candidate	case_variant	matcher	decision_confidence
+T001	T001-en-001	en	prof	prof	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-en-002	en	Prof	prof	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-en-003	en	PROF	prof	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-en-004	en	rg	rg	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-en-005	en	Rg	rg	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-en-006	en	RG	rg	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-en-007	en	long	long	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-en-008	en	Long	long	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-en-009	en	LONG	long	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-en-010	en	deg.tr	deg.tr	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-en-011	en	Deg.tr	deg.tr	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-en-012	en	DEG.TR	deg.tr	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-en-013	en	Ker	Ker	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-en-014	en	KER	Ker	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-es-001	es	prof	prof	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-es-002	es	Prof	prof	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-es-003	es	PROF	prof	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-es-004	es	rg	rg	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-es-005	es	Rg	rg	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-es-006	es	RG	rg	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-es-007	es	long	long	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-es-008	es	Long	long	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-es-009	es	LONG	long	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-es-010	es	deg.tr	deg.tr	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-es-011	es	Deg.tr	deg.tr	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-es-012	es	DEG.TR	deg.tr	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-es-013	es	Ker	Ker	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-es-014	es	KER	Ker	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-pt-BR-001	pt-BR	prof	prof	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-pt-BR-002	pt-BR	Prof	prof	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-pt-BR-003	pt-BR	PROF	prof	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-pt-BR-004	pt-BR	rg	rg	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-pt-BR-005	pt-BR	Rg	rg	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-pt-BR-006	pt-BR	RG	rg	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-pt-BR-007	pt-BR	long	long	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-pt-BR-008	pt-BR	Long	long	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-pt-BR-009	pt-BR	LONG	long	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-pt-BR-010	pt-BR	deg.tr	deg.tr	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-pt-BR-011	pt-BR	Deg.tr	deg.tr	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-pt-BR-012	pt-BR	DEG.TR	deg.tr	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-pt-BR-013	pt-BR	Ker	Ker	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-pt-BR-014	pt-BR	KER	Ker	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-vi-001	vi	prof	prof	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-vi-002	vi	Prof	prof	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-vi-003	vi	PROF	prof	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-vi-004	vi	rg	rg	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-vi-005	vi	Rg	rg	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-vi-006	vi	RG	rg	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-vi-007	vi	long	long	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-vi-008	vi	Long	long	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-vi-009	vi	LONG	long	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-vi-010	vi	deg.tr	deg.tr	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-vi-011	vi	Deg.tr	deg.tr	initial capital	case-sensitive literal substring; overlaps retained	high
+T001	T001-vi-012	vi	DEG.TR	deg.tr	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-vi-013	vi	Ker	Ker	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-vi-014	vi	KER	Ker	uppercase	case-sensitive literal substring; overlaps retained	high
+T001	T001-ko-001	ko	prof	prof	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-ko-002	ko	rg	rg	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-ko-003	ko	long	long	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-ko-004	ko	deg.tr	deg.tr	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-ko-005	ko	Ker	Ker	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-zh-Hans-001	zh-Hans	prof	prof	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-zh-Hans-002	zh-Hans	rg	rg	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-zh-Hans-003	zh-Hans	long	long	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-zh-Hans-004	zh-Hans	deg.tr	deg.tr	exact	case-sensitive literal substring; overlaps retained	high
+T001	T001-zh-Hans-005	zh-Hans	Ker	Ker	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-001	en	inductive limit	inductive limit	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-002	en	Inductive limit	inductive limit	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-003	en	INDUCTIVE LIMIT	inductive limit	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-004	en	direct limit	direct limit	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-005	en	Direct limit	direct limit	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-006	en	DIRECT LIMIT	direct limit	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-007	en	colimit	colimit	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-008	en	Colimit	colimit	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-009	en	COLIMIT	colimit	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-010	en	projective limit	projective limit	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-011	en	Projective limit	projective limit	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-012	en	PROJECTIVE LIMIT	projective limit	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-013	en	inverse limit	inverse limit	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-014	en	Inverse limit	inverse limit	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-015	en	INVERSE LIMIT	inverse limit	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-016	en	inductive system	inductive system	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-017	en	Inductive system	inductive system	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-018	en	INDUCTIVE SYSTEM	inductive system	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-019	en	direct system	direct system	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-020	en	Direct system	direct system	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-021	en	DIRECT SYSTEM	direct system	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-022	en	projective system	projective system	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-023	en	Projective system	projective system	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-024	en	PROJECTIVE SYSTEM	projective system	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-025	en	inverse system	inverse system	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-026	en	Inverse system	inverse system	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-en-027	en	INVERSE SYSTEM	inverse system	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-001	es	límite inductivo	límite inductivo	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-002	es	Límite inductivo	límite inductivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-003	es	LÍMITE INDUCTIVO	límite inductivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-004	es	límite directo	límite directo	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-005	es	Límite directo	límite directo	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-006	es	LÍMITE DIRECTO	límite directo	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-007	es	colímite	colímite	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-008	es	Colímite	colímite	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-009	es	COLÍMITE	colímite	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-010	es	límite proyectivo	límite proyectivo	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-011	es	Límite proyectivo	límite proyectivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-012	es	LÍMITE PROYECTIVO	límite proyectivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-013	es	límite inverso	límite inverso	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-014	es	Límite inverso	límite inverso	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-015	es	LÍMITE INVERSO	límite inverso	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-016	es	límites inductivos	límites inductivos	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-017	es	Límites inductivos	límites inductivos	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-018	es	LÍMITES INDUCTIVOS	límites inductivos	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-019	es	límites directos	límites directos	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-020	es	Límites directos	límites directos	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-021	es	LÍMITES DIRECTOS	límites directos	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-022	es	límites proyectivos	límites proyectivos	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-023	es	Límites proyectivos	límites proyectivos	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-024	es	LÍMITES PROYECTIVOS	límites proyectivos	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-025	es	límites inversos	límites inversos	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-026	es	Límites inversos	límites inversos	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-027	es	LÍMITES INVERSOS	límites inversos	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-028	es	sistema inductivo	sistema inductivo	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-029	es	Sistema inductivo	sistema inductivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-030	es	SISTEMA INDUCTIVO	sistema inductivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-031	es	sistema directo	sistema directo	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-032	es	Sistema directo	sistema directo	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-033	es	SISTEMA DIRECTO	sistema directo	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-034	es	sistema proyectivo	sistema proyectivo	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-035	es	Sistema proyectivo	sistema proyectivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-036	es	SISTEMA PROYECTIVO	sistema proyectivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-037	es	sistema inverso	sistema inverso	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-038	es	Sistema inverso	sistema inverso	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-es-039	es	SISTEMA INVERSO	sistema inverso	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-001	pt-BR	limite indutivo	limite indutivo	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-002	pt-BR	Limite indutivo	limite indutivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-003	pt-BR	LIMITE INDUTIVO	limite indutivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-004	pt-BR	limite direto	limite direto	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-005	pt-BR	Limite direto	limite direto	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-006	pt-BR	LIMITE DIRETO	limite direto	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-007	pt-BR	colimite	colimite	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-008	pt-BR	Colimite	colimite	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-009	pt-BR	COLIMITE	colimite	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-010	pt-BR	limite projetivo	limite projetivo	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-011	pt-BR	Limite projetivo	limite projetivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-012	pt-BR	LIMITE PROJETIVO	limite projetivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-013	pt-BR	limite inverso	limite inverso	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-014	pt-BR	Limite inverso	limite inverso	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-015	pt-BR	LIMITE INVERSO	limite inverso	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-016	pt-BR	limites indutivos	limites indutivos	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-017	pt-BR	Limites indutivos	limites indutivos	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-018	pt-BR	LIMITES INDUTIVOS	limites indutivos	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-019	pt-BR	limites diretos	limites diretos	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-020	pt-BR	Limites diretos	limites diretos	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-021	pt-BR	LIMITES DIRETOS	limites diretos	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-022	pt-BR	limites projetivos	limites projetivos	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-023	pt-BR	Limites projetivos	limites projetivos	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-024	pt-BR	LIMITES PROJETIVOS	limites projetivos	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-025	pt-BR	limites inversos	limites inversos	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-026	pt-BR	Limites inversos	limites inversos	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-027	pt-BR	LIMITES INVERSOS	limites inversos	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-028	pt-BR	sistema indutivo	sistema indutivo	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-029	pt-BR	Sistema indutivo	sistema indutivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-030	pt-BR	SISTEMA INDUTIVO	sistema indutivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-031	pt-BR	sistema direto	sistema direto	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-032	pt-BR	Sistema direto	sistema direto	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-033	pt-BR	SISTEMA DIRETO	sistema direto	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-034	pt-BR	sistema projetivo	sistema projetivo	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-035	pt-BR	Sistema projetivo	sistema projetivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-036	pt-BR	SISTEMA PROJETIVO	sistema projetivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-037	pt-BR	sistema inverso	sistema inverso	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-038	pt-BR	Sistema inverso	sistema inverso	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-pt-BR-039	pt-BR	SISTEMA INVERSO	sistema inverso	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-001	vi	giới hạn quy nạp	giới hạn quy nạp	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-002	vi	Giới hạn quy nạp	giới hạn quy nạp	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-003	vi	GIỚI HẠN QUY NẠP	giới hạn quy nạp	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-004	vi	giới hạn xạ ảnh	giới hạn xạ ảnh	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-005	vi	Giới hạn xạ ảnh	giới hạn xạ ảnh	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-006	vi	GIỚI HẠN XẠ ẢNH	giới hạn xạ ảnh	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-007	vi	giới hạn trực tiếp	giới hạn trực tiếp	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-008	vi	Giới hạn trực tiếp	giới hạn trực tiếp	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-009	vi	GIỚI HẠN TRỰC TIẾP	giới hạn trực tiếp	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-010	vi	giới hạn ngược	giới hạn ngược	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-011	vi	Giới hạn ngược	giới hạn ngược	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-012	vi	GIỚI HẠN NGƯỢC	giới hạn ngược	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-013	vi	đối giới hạn	đối giới hạn	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-014	vi	Đối giới hạn	đối giới hạn	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-015	vi	ĐỐI GIỚI HẠN	đối giới hạn	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-016	vi	hệ quy nạp	hệ quy nạp	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-017	vi	Hệ quy nạp	hệ quy nạp	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-018	vi	HỆ QUY NẠP	hệ quy nạp	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-019	vi	hệ xạ ảnh	hệ xạ ảnh	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-020	vi	Hệ xạ ảnh	hệ xạ ảnh	initial capital	case-sensitive literal substring; overlaps retained	high
+T002	T002-vi-021	vi	HỆ XẠ ẢNH	hệ xạ ảnh	uppercase	case-sensitive literal substring; overlaps retained	high
+T002	T002-ko-001	ko	귀납극한	귀납극한	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-ko-002	ko	사영극한	사영극한	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-ko-003	ko	여극한	여극한	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-ko-004	ko	쌍대극한	쌍대극한	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-ko-005	ko	역극한	역극한	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-ko-006	ko	직접극한	직접극한	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-ko-007	ko	귀납계	귀납계	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-ko-008	ko	사영계	사영계	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-zh-Hans-001	zh-Hans	归纳极限	归纳极限	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-zh-Hans-002	zh-Hans	逆极限	逆极限	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-zh-Hans-003	zh-Hans	余极限	余极限	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-zh-Hans-004	zh-Hans	射影极限	射影极限	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-zh-Hans-005	zh-Hans	正向极限	正向极限	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-zh-Hans-006	zh-Hans	归纳系	归纳系	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-zh-Hans-007	zh-Hans	逆系	逆系	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-zh-Hans-008	zh-Hans	正向系	正向系	exact	case-sensitive literal substring; overlaps retained	high
+T002	T002-zh-Hans-009	zh-Hans	射影系	射影系	exact	case-sensitive literal substring; overlaps retained	high
+T003	T003-en-001	en	stalk	stalk	exact	case-sensitive literal substring; overlaps retained	medium
+T003	T003-en-002	en	Stalk	stalk	initial capital	case-sensitive literal substring; overlaps retained	medium
+T003	T003-en-003	en	STALK	stalk	uppercase	case-sensitive literal substring; overlaps retained	medium
+T003	T003-en-004	en	fiber	fiber	exact	case-sensitive literal substring; overlaps retained	medium
+T003	T003-en-005	en	Fiber	fiber	initial capital	case-sensitive literal substring; overlaps retained	medium
+T003	T003-en-006	en	FIBER	fiber	uppercase	case-sensitive literal substring; overlaps retained	medium
+T003	T003-en-007	en	fibre	fibre	exact	case-sensitive literal substring; overlaps retained	medium
+T003	T003-en-008	en	Fibre	fibre	initial capital	case-sensitive literal substring; overlaps retained	medium
+T003	T003-en-009	en	FIBRE	fibre	uppercase	case-sensitive literal substring; overlaps retained	medium
+T003	T003-es-001	es	tallo	tallo	exact	case-sensitive literal substring; overlaps retained	medium
+T003	T003-es-002	es	Tallo	tallo	initial capital	case-sensitive literal substring; overlaps retained	medium
+T003	T003-es-003	es	TALLO	tallo	uppercase	case-sensitive literal substring; overlaps retained	medium
+T003	T003-es-004	es	fibra	fibra	exact	case-sensitive literal substring; overlaps retained	medium
+T003	T003-es-005	es	Fibra	fibra	initial capital	case-sensitive literal substring; overlaps retained	medium
+T003	T003-es-006	es	FIBRA	fibra	uppercase	case-sensitive literal substring; overlaps retained	medium
+T003	T003-pt-BR-001	pt-BR	talo	talo	exact	case-sensitive literal substring; overlaps retained	medium
+T003	T003-pt-BR-002	pt-BR	Talo	talo	initial capital	case-sensitive literal substring; overlaps retained	medium
+T003	T003-pt-BR-003	pt-BR	TALO	talo	uppercase	case-sensitive literal substring; overlaps retained	medium
+T003	T003-pt-BR-004	pt-BR	fibra	fibra	exact	case-sensitive literal substring; overlaps retained	medium
+T003	T003-pt-BR-005	pt-BR	Fibra	fibra	initial capital	case-sensitive literal substring; overlaps retained	medium
+T003	T003-pt-BR-006	pt-BR	FIBRA	fibra	uppercase	case-sensitive literal substring; overlaps retained	medium
+T003	T003-vi-001	vi	thớ	thớ	exact	case-sensitive literal substring; overlaps retained	medium
+T003	T003-vi-002	vi	Thớ	thớ	initial capital	case-sensitive literal substring; overlaps retained	medium
+T003	T003-vi-003	vi	THỚ	thớ	uppercase	case-sensitive literal substring; overlaps retained	medium
+T003	T003-vi-004	vi	mầm	mầm	exact	case-sensitive literal substring; overlaps retained	medium
+T003	T003-vi-005	vi	Mầm	mầm	initial capital	case-sensitive literal substring; overlaps retained	medium
+T003	T003-vi-006	vi	MẦM	mầm	uppercase	case-sensitive literal substring; overlaps retained	medium
+T003	T003-ko-001	ko	줄기	줄기	exact	case-sensitive literal substring; overlaps retained	medium
+T003	T003-ko-002	ko	섬유	섬유	exact	case-sensitive literal substring; overlaps retained	medium
+T003	T003-ko-003	ko	올	올	exact	case-sensitive literal substring; overlaps retained	medium
+T003	T003-ko-004	ko	파이버	파이버	exact	case-sensitive literal substring; overlaps retained	medium
+T003	T003-zh-Hans-001	zh-Hans	茎	茎	exact	case-sensitive literal substring; overlaps retained	medium
+T003	T003-zh-Hans-002	zh-Hans	纤维	纤维	exact	case-sensitive literal substring; overlaps retained	medium
+T004	T004-en-001	en	prescheme	prescheme	exact	case-sensitive literal substring; overlaps retained	high
+T004	T004-en-002	en	Prescheme	prescheme	initial capital	case-sensitive literal substring; overlaps retained	high
+T004	T004-en-003	en	PRESCHEME	prescheme	uppercase	case-sensitive literal substring; overlaps retained	high
+T004	T004-en-004	en	pre-scheme	pre-scheme	exact	case-sensitive literal substring; overlaps retained	high
+T004	T004-en-005	en	Pre-scheme	pre-scheme	initial capital	case-sensitive literal substring; overlaps retained	high
+T004	T004-en-006	en	PRE-SCHEME	pre-scheme	uppercase	case-sensitive literal substring; overlaps retained	high
+T004	T004-es-001	es	preesquema	preesquema	exact	case-sensitive literal substring; overlaps retained	high
+T004	T004-es-002	es	Preesquema	preesquema	initial capital	case-sensitive literal substring; overlaps retained	high
+T004	T004-es-003	es	PREESQUEMA	preesquema	uppercase	case-sensitive literal substring; overlaps retained	high
+T004	T004-es-004	es	pre-esquema	pre-esquema	exact	case-sensitive literal substring; overlaps retained	high
+T004	T004-es-005	es	Pre-esquema	pre-esquema	initial capital	case-sensitive literal substring; overlaps retained	high
+T004	T004-es-006	es	PRE-ESQUEMA	pre-esquema	uppercase	case-sensitive literal substring; overlaps retained	high
+T004	T004-pt-BR-001	pt-BR	pré-esquema	pré-esquema	exact	case-sensitive literal substring; overlaps retained	high
+T004	T004-pt-BR-002	pt-BR	Pré-esquema	pré-esquema	initial capital	case-sensitive literal substring; overlaps retained	high
+T004	T004-pt-BR-003	pt-BR	PRÉ-ESQUEMA	pré-esquema	uppercase	case-sensitive literal substring; overlaps retained	high
+T004	T004-pt-BR-004	pt-BR	preesquema	preesquema	exact	case-sensitive literal substring; overlaps retained	high
+T004	T004-pt-BR-005	pt-BR	Preesquema	preesquema	initial capital	case-sensitive literal substring; overlaps retained	high
+T004	T004-pt-BR-006	pt-BR	PREESQUEMA	preesquema	uppercase	case-sensitive literal substring; overlaps retained	high
+T004	T004-pt-BR-007	pt-BR	pré esquema	pré esquema	exact	case-sensitive literal substring; overlaps retained	high
+T004	T004-pt-BR-008	pt-BR	Pré esquema	pré esquema	initial capital	case-sensitive literal substring; overlaps retained	high
+T004	T004-pt-BR-009	pt-BR	PRÉ ESQUEMA	pré esquema	uppercase	case-sensitive literal substring; overlaps retained	high
+T004	T004-vi-001	vi	tiền lược đồ	tiền lược đồ	exact	case-sensitive literal substring; overlaps retained	high
+T004	T004-vi-002	vi	Tiền lược đồ	tiền lược đồ	initial capital	case-sensitive literal substring; overlaps retained	high
+T004	T004-vi-003	vi	TIỀN LƯỢC ĐỒ	tiền lược đồ	uppercase	case-sensitive literal substring; overlaps retained	high
+T004	T004-ko-001	ko	준스킴	준스킴	exact	case-sensitive literal substring; overlaps retained	high
+T004	T004-zh-Hans-001	zh-Hans	预概形	预概形	exact	case-sensitive literal substring; overlaps retained	high
+T005	T005-en-001	en	one has	one has	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-002	en	One has	one has	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-003	en	ONE HAS	one has	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-004	en	we have	we have	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-005	en	We have	we have	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-006	en	WE HAVE	we have	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-007	en	we shall	we shall	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-008	en	We shall	we shall	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-009	en	WE SHALL	we shall	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-010	en	we will	we will	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-011	en	We will	we will	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-012	en	WE WILL	we will	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-013	en	Let 	Let 	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-014	en	LET 	Let 	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-015	en	let 	let 	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-016	en	resp.	resp.	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-017	en	Resp.	resp.	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-018	en	RESP.	resp.	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-019	en	cf.	cf.	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-020	en	Cf.	cf.	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-021	en	CF.	cf.	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-022	en	it is necessary and sufficient	it is necessary and sufficient	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-023	en	It is necessary and sufficient	it is necessary and sufficient	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-en-024	en	IT IS NECESSARY AND SUFFICIENT	it is necessary and sufficient	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-001	es	se tiene	se tiene	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-002	es	Se tiene	se tiene	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-003	es	SE TIENE	se tiene	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-004	es	se dice	se dice	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-005	es	Se dice	se dice	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-006	es	SE DICE	se dice	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-007	es	tenemos	tenemos	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-008	es	Tenemos	tenemos	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-009	es	TENEMOS	tenemos	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-010	es	Sea 	Sea 	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-011	es	SEA 	Sea 	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-012	es	sea 	sea 	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-013	es	vosotros	vosotros	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-014	es	Vosotros	vosotros	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-015	es	VOSOTROS	vosotros	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-016	es	resp.	resp.	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-017	es	Resp.	resp.	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-018	es	RESP.	resp.	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-019	es	cf.	cf.	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-020	es	Cf.	cf.	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-021	es	CF.	cf.	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-022	es	es necesario y suficiente	es necesario y suficiente	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-023	es	Es necesario y suficiente	es necesario y suficiente	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-es-024	es	ES NECESARIO Y SUFICIENTE	es necesario y suficiente	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-001	pt-BR	tem-se	tem-se	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-002	pt-BR	Tem-se	tem-se	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-003	pt-BR	TEM-SE	tem-se	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-004	pt-BR	diz-se	diz-se	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-005	pt-BR	Diz-se	diz-se	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-006	pt-BR	DIZ-SE	diz-se	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-007	pt-BR	temos	temos	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-008	pt-BR	Temos	temos	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-009	pt-BR	TEMOS	temos	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-010	pt-BR	nós	nós	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-011	pt-BR	Nós	nós	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-012	pt-BR	NÓS	nós	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-013	pt-BR	Seja 	Seja 	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-014	pt-BR	SEJA 	Seja 	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-015	pt-BR	seja 	seja 	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-016	pt-BR	resp.	resp.	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-017	pt-BR	Resp.	resp.	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-018	pt-BR	RESP.	resp.	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-019	pt-BR	cf.	cf.	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-020	pt-BR	Cf.	cf.	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-021	pt-BR	CF.	cf.	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-022	pt-BR	é necessário e suficiente	é necessário e suficiente	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-023	pt-BR	É necessário e suficiente	é necessário e suficiente	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-pt-BR-024	pt-BR	É NECESSÁRIO E SUFICIENTE	é necessário e suficiente	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-001	vi	 ta 	 ta 	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-002	vi	Ta 	Ta 	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-003	vi	TA 	Ta 	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-004	vi	chúng ta	chúng ta	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-005	vi	Chúng ta	chúng ta	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-006	vi	CHÚNG TA	chúng ta	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-007	vi	chúng tôi	chúng tôi	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-008	vi	Chúng tôi	chúng tôi	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-009	vi	CHÚNG TÔI	chúng tôi	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-010	vi	Giả sử	Giả sử	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-011	vi	GIẢ SỬ	Giả sử	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-012	vi	cần và đủ	cần và đủ	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-013	vi	Cần và đủ	cần và đủ	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-014	vi	CẦN VÀ ĐỦ	cần và đủ	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-015	vi	resp.	resp.	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-016	vi	Resp.	resp.	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-017	vi	RESP.	resp.	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-018	vi	cf.	cf.	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-019	vi	Cf.	cf.	initial capital	case-sensitive literal substring; overlaps retained	medium
+T005	T005-vi-020	vi	CF.	cf.	uppercase	case-sensitive literal substring; overlaps retained	medium
+T005	T005-ko-001	ko	이다.	이다.	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-ko-002	ko	한다.	한다.	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-ko-003	ko	입니다	입니다	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-ko-004	ko	합니다	합니다	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-ko-005	ko	resp.	resp.	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-ko-006	ko	cf.	cf.	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-zh-Hans-001	zh-Hans	我们	我们	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-zh-Hans-002	zh-Hans	resp.	resp.	exact	case-sensitive literal substring; overlaps retained	medium
+T005	T005-zh-Hans-003	zh-Hans	cf.	cf.	exact	case-sensitive literal substring; overlaps retained	medium
+T006	T006-en-001	en	fibre	fibre	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-002	en	Fibre	fibre	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-003	en	FIBRE	fibre	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-004	en	fiber	fiber	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-005	en	Fiber	fiber	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-006	en	FIBER	fiber	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-007	en	neighbourhood	neighbourhood	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-008	en	Neighbourhood	neighbourhood	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-009	en	NEIGHBOURHOOD	neighbourhood	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-010	en	neighborhood	neighborhood	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-011	en	Neighborhood	neighborhood	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-012	en	NEIGHBORHOOD	neighborhood	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-013	en	centre	centre	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-014	en	Centre	centre	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-015	en	CENTRE	centre	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-016	en	center	center	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-017	en	Center	center	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-018	en	CENTER	center	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-019	en	behaviour	behaviour	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-020	en	Behaviour	behaviour	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-021	en	BEHAVIOUR	behaviour	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-022	en	behavior	behavior	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-023	en	Behavior	behavior	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-024	en	BEHAVIOR	behavior	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-025	en	isation	isation	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-026	en	Isation	isation	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-027	en	ISATION	isation	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-028	en	ization	ization	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-029	en	Ization	ization	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-030	en	IZATION	ization	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-031	en	localise	localise	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-032	en	Localise	localise	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-033	en	LOCALISE	localise	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-034	en	localize	localize	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-035	en	Localize	localize	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-036	en	LOCALIZE	localize	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-037	en	normalise	normalise	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-038	en	Normalise	normalise	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-039	en	NORMALISE	normalise	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-040	en	normalize	normalize	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-041	en	Normalize	normalize	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-042	en	NORMALIZE	normalize	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-043	en	characterise	characterise	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-044	en	Characterise	characterise	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-045	en	CHARACTERISE	characterise	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-046	en	characterize	characterize	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-047	en	Characterize	characterize	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-048	en	CHARACTERIZE	characterize	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-049	en	generalise	generalise	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-050	en	Generalise	generalise	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-051	en	GENERALISE	generalise	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-052	en	generalize	generalize	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-053	en	Generalize	generalize	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-054	en	GENERALIZE	generalize	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-055	en	realise	realise	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-056	en	Realise	realise	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-057	en	REALISE	realise	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-058	en	realize	realize	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-059	en	Realize	realize	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-060	en	REALIZE	realize	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-061	en	factorise	factorise	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-062	en	Factorise	factorise	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-063	en	FACTORISE	factorise	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-064	en	factorize	factorize	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-065	en	Factorize	factorize	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-066	en	FACTORIZE	factorize	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-067	en	organise	organise	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-068	en	Organise	organise	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-069	en	ORGANISE	organise	uppercase	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-070	en	organize	organize	exact	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-071	en	Organize	organize	initial capital	case-sensitive literal substring; overlaps retained	high
+T006	T006-en-072	en	ORGANIZE	organize	uppercase	case-sensitive literal substring; overlaps retained	high
+T007	T007-en-001	en	inductive limit	inductive limit	exact	case-sensitive literal substring; overlaps retained	medium
+T007	T007-en-002	en	Inductive limit	inductive limit	initial capital	case-sensitive literal substring; overlaps retained	medium
+T007	T007-en-003	en	INDUCTIVE LIMIT	inductive limit	uppercase	case-sensitive literal substring; overlaps retained	medium
+T007	T007-en-004	en	direct limit	direct limit	exact	case-sensitive literal substring; overlaps retained	medium
+T007	T007-en-005	en	Direct limit	direct limit	initial capital	case-sensitive literal substring; overlaps retained	medium
+T007	T007-en-006	en	DIRECT LIMIT	direct limit	uppercase	case-sensitive literal substring; overlaps retained	medium
+T007	T007-en-007	en	colimit	colimit	exact	case-sensitive literal substring; overlaps retained	medium
+T007	T007-en-008	en	Colimit	colimit	initial capital	case-sensitive literal substring; overlaps retained	medium
+T007	T007-en-009	en	COLIMIT	colimit	uppercase	case-sensitive literal substring; overlaps retained	medium
+T007	T007-en-010	en	inductive system	inductive system	exact	case-sensitive literal substring; overlaps retained	medium
+T007	T007-en-011	en	Inductive system	inductive system	initial capital	case-sensitive literal substring; overlaps retained	medium
+T007	T007-en-012	en	INDUCTIVE SYSTEM	inductive system	uppercase	case-sensitive literal substring; overlaps retained	medium
+T007	T007-en-013	en	direct system	direct system	exact	case-sensitive literal substring; overlaps retained	medium
+T007	T007-en-014	en	Direct system	direct system	initial capital	case-sensitive literal substring; overlaps retained	medium
+T007	T007-en-015	en	DIRECT SYSTEM	direct system	uppercase	case-sensitive literal substring; overlaps retained	medium
+T008	T008-en-001	en	projective limit	projective limit	exact	case-sensitive literal substring; overlaps retained	medium
+T008	T008-en-002	en	Projective limit	projective limit	initial capital	case-sensitive literal substring; overlaps retained	medium
+T008	T008-en-003	en	PROJECTIVE LIMIT	projective limit	uppercase	case-sensitive literal substring; overlaps retained	medium
+T008	T008-en-004	en	inverse limit	inverse limit	exact	case-sensitive literal substring; overlaps retained	medium
+T008	T008-en-005	en	Inverse limit	inverse limit	initial capital	case-sensitive literal substring; overlaps retained	medium
+T008	T008-en-006	en	INVERSE LIMIT	inverse limit	uppercase	case-sensitive literal substring; overlaps retained	medium
+T008	T008-en-007	en	projective system	projective system	exact	case-sensitive literal substring; overlaps retained	medium
+T008	T008-en-008	en	Projective system	projective system	initial capital	case-sensitive literal substring; overlaps retained	medium
+T008	T008-en-009	en	PROJECTIVE SYSTEM	projective system	uppercase	case-sensitive literal substring; overlaps retained	medium
+T008	T008-en-010	en	inverse system	inverse system	exact	case-sensitive literal substring; overlaps retained	medium
+T008	T008-en-011	en	Inverse system	inverse system	initial capital	case-sensitive literal substring; overlaps retained	medium
+T008	T008-en-012	en	INVERSE SYSTEM	inverse system	uppercase	case-sensitive literal substring; overlaps retained	medium
+T009	T009-en-001	en	final object	final object	exact	case-sensitive literal substring; overlaps retained	high
+T009	T009-en-002	en	Final object	final object	initial capital	case-sensitive literal substring; overlaps retained	high
+T009	T009-en-003	en	FINAL OBJECT	final object	uppercase	case-sensitive literal substring; overlaps retained	high
+T009	T009-en-004	en	terminal object	terminal object	exact	case-sensitive literal substring; overlaps retained	high
+T009	T009-en-005	en	Terminal object	terminal object	initial capital	case-sensitive literal substring; overlaps retained	high
+T009	T009-en-006	en	TERMINAL OBJECT	terminal object	uppercase	case-sensitive literal substring; overlaps retained	high
+T010	T010-en-001	en	Noetherian	Noetherian	exact	case-sensitive literal substring; overlaps retained	medium
+T010	T010-en-002	en	NOETHERIAN	Noetherian	uppercase	case-sensitive literal substring; overlaps retained	medium
+T010	T010-en-003	en	noetherian	noetherian	exact	case-sensitive literal substring; overlaps retained	medium
+T010	T010-en-004	en	Artinian	Artinian	exact	case-sensitive literal substring; overlaps retained	medium
+T010	T010-en-005	en	ARTINIAN	Artinian	uppercase	case-sensitive literal substring; overlaps retained	medium
+T010	T010-en-006	en	artinian	artinian	exact	case-sensitive literal substring; overlaps retained	medium
+T010	T010-en-007	en	Abelian	Abelian	exact	case-sensitive literal substring; overlaps retained	medium
+T010	T010-en-008	en	ABELIAN	Abelian	uppercase	case-sensitive literal substring; overlaps retained	medium
+T010	T010-en-009	en	abelian	abelian	exact	case-sensitive literal substring; overlaps retained	medium
+T010	T010-en-010	en	Cartesian	Cartesian	exact	case-sensitive literal substring; overlaps retained	medium
+T010	T010-en-011	en	CARTESIAN	Cartesian	uppercase	case-sensitive literal substring; overlaps retained	medium
+T010	T010-en-012	en	cartesian	cartesian	exact	case-sensitive literal substring; overlaps retained	medium
+T010	T010-en-013	en	Henselian	Henselian	exact	case-sensitive literal substring; overlaps retained	medium
+T010	T010-en-014	en	HENSELIAN	Henselian	uppercase	case-sensitive literal substring; overlaps retained	medium
+T010	T010-en-015	en	henselian	henselian	exact	case-sensitive literal substring; overlaps retained	medium
+T011	T011-en-001	en	stalk	stalk	exact	case-sensitive literal substring; overlaps retained	medium
+T011	T011-en-002	en	Stalk	stalk	initial capital	case-sensitive literal substring; overlaps retained	medium
+T011	T011-en-003	en	STALK	stalk	uppercase	case-sensitive literal substring; overlaps retained	medium
+T011	T011-en-004	en	fiber	fiber	exact	case-sensitive literal substring; overlaps retained	medium
+T011	T011-en-005	en	Fiber	fiber	initial capital	case-sensitive literal substring; overlaps retained	medium
+T011	T011-en-006	en	FIBER	fiber	uppercase	case-sensitive literal substring; overlaps retained	medium
+T011	T011-en-007	en	fibre	fibre	exact	case-sensitive literal substring; overlaps retained	medium
+T011	T011-en-008	en	Fibre	fibre	initial capital	case-sensitive literal substring; overlaps retained	medium
+T011	T011-en-009	en	FIBRE	fibre	uppercase	case-sensitive literal substring; overlaps retained	medium
+T012	T012-en-001	en	Scholium	Scholium	exact	case-sensitive literal substring; overlaps retained	medium
+T012	T012-en-002	en	SCHOLIUM	Scholium	uppercase	case-sensitive literal substring; overlaps retained	medium
+T012	T012-en-003	en	scholium	scholium	exact	case-sensitive literal substring; overlaps retained	medium
+T012	T012-en-004	en	scholie	scholie	exact	case-sensitive literal substring; overlaps retained	medium
+T012	T012-en-005	en	Scholie	scholie	initial capital	case-sensitive literal substring; overlaps retained	medium
+T012	T012-en-006	en	SCHOLIE	scholie	uppercase	case-sensitive literal substring; overlaps retained	medium
+T012	T012-en-007	en	theorem-scholium	theorem-scholium	exact	case-sensitive literal substring; overlaps retained	medium
+T012	T012-en-008	en	Theorem-scholium	theorem-scholium	initial capital	case-sensitive literal substring; overlaps retained	medium
+T012	T012-en-009	en	THEOREM-SCHOLIUM	theorem-scholium	uppercase	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-001	en	filtered	filtered	exact	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-002	en	Filtered	filtered	initial capital	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-003	en	FILTERED	filtered	uppercase	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-004	en	filtering	filtering	exact	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-005	en	Filtering	filtering	initial capital	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-006	en	FILTERING	filtering	uppercase	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-007	en	cofiltered	cofiltered	exact	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-008	en	Cofiltered	cofiltered	initial capital	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-009	en	COFILTERED	cofiltered	uppercase	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-010	en	cofiltering	cofiltering	exact	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-011	en	Cofiltering	cofiltering	initial capital	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-012	en	COFILTERING	cofiltering	uppercase	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-013	en	left filtered	left filtered	exact	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-014	en	Left filtered	left filtered	initial capital	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-015	en	LEFT FILTERED	left filtered	uppercase	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-016	en	pseudo-filtered	pseudo-filtered	exact	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-017	en	Pseudo-filtered	pseudo-filtered	initial capital	case-sensitive literal substring; overlaps retained	medium
+T013	T013-en-018	en	PSEUDO-FILTERED	pseudo-filtered	uppercase	case-sensitive literal substring; overlaps retained	medium
+T014	T014-en-001	en	inverse image	inverse image	exact	case-sensitive literal substring; overlaps retained	high
+T014	T014-en-002	en	Inverse image	inverse image	initial capital	case-sensitive literal substring; overlaps retained	high
+T014	T014-en-003	en	INVERSE IMAGE	inverse image	uppercase	case-sensitive literal substring; overlaps retained	high
+T014	T014-en-004	en	pullback	pullback	exact	case-sensitive literal substring; overlaps retained	high
+T014	T014-en-005	en	Pullback	pullback	initial capital	case-sensitive literal substring; overlaps retained	high
+T014	T014-en-006	en	PULLBACK	pullback	uppercase	case-sensitive literal substring; overlaps retained	high
+T014	T014-en-007	en	pull-back	pull-back	exact	case-sensitive literal substring; overlaps retained	high
+T014	T014-en-008	en	Pull-back	pull-back	initial capital	case-sensitive literal substring; overlaps retained	high
+T014	T014-en-009	en	PULL-BACK	pull-back	uppercase	case-sensitive literal substring; overlaps retained	high
+T014	T014-en-010	en	reciprocal image	reciprocal image	exact	case-sensitive literal substring; overlaps retained	high
+T014	T014-en-011	en	Reciprocal image	reciprocal image	initial capital	case-sensitive literal substring; overlaps retained	high
+T014	T014-en-012	en	RECIPROCAL IMAGE	reciprocal image	uppercase	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-001	en	basic localizer	basic localizer	exact	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-002	en	Basic localizer	basic localizer	initial capital	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-003	en	BASIC LOCALIZER	basic localizer	uppercase	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-004	en	aspheric	aspheric	exact	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-005	en	Aspheric	aspheric	initial capital	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-006	en	ASPHERIC	aspheric	uppercase	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-007	en	modelizer	modelizer	exact	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-008	en	Modelizer	modelizer	initial capital	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-009	en	MODELIZER	modelizer	uppercase	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-010	en	homotopism	homotopism	exact	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-011	en	Homotopism	homotopism	initial capital	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-012	en	HOMOTOPISM	homotopism	uppercase	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-013	en	contrafunctor	contrafunctor	exact	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-014	en	Contrafunctor	contrafunctor	initial capital	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-015	en	CONTRAFUNCTOR	contrafunctor	uppercase	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-016	en	squarable	squarable	exact	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-017	en	Squarable	squarable	initial capital	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-018	en	SQUARABLE	squarable	uppercase	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-019	en	group with loops	group with loops	exact	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-020	en	Group with loops	group with loops	initial capital	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-021	en	GROUP WITH LOOPS	group with loops	uppercase	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-022	en	outer group	outer group	exact	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-023	en	Outer group	outer group	initial capital	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-024	en	OUTER GROUP	outer group	uppercase	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-025	en	actual action	actual action	exact	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-026	en	Actual action	actual action	initial capital	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-027	en	ACTUAL ACTION	actual action	uppercase	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-028	en	probably	probably	exact	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-029	en	Probably	probably	initial capital	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-030	en	PROBABLY	probably	uppercase	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-031	en	sans doute	sans doute	exact	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-032	en	Sans doute	sans doute	initial capital	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-033	en	SANS DOUTE	sans doute	uppercase	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-034	en	category of models	category of models	exact	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-035	en	Category of models	category of models	initial capital	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-036	en	CATEGORY OF MODELS	category of models	uppercase	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-037	en	Quillen couple	Quillen couple	exact	case-sensitive literal substring; overlaps retained	high
+T015	T015-en-038	en	QUILLEN COUPLE	Quillen couple	uppercase	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-001	en	prescheme	prescheme	exact	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-002	en	Prescheme	prescheme	initial capital	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-003	en	PRESCHEME	prescheme	uppercase	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-004	en	pre-scheme	pre-scheme	exact	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-005	en	Pre-scheme	pre-scheme	initial capital	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-006	en	PRE-SCHEME	pre-scheme	uppercase	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-007	en	radicial	radicial	exact	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-008	en	Radicial	radicial	initial capital	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-009	en	RADICIAL	radicial	uppercase	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-010	en	immersion	immersion	exact	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-011	en	Immersion	immersion	initial capital	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-012	en	IMMERSION	immersion	uppercase	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-013	en	embedding	embedding	exact	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-014	en	Embedding	embedding	initial capital	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-015	en	EMBEDDING	embedding	uppercase	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-016	en	étale	étale	exact	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-017	en	Étale	étale	initial capital	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-018	en	ÉTALE	étale	uppercase	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-019	en	etale	etale	exact	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-020	en	Etale	etale	initial capital	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-021	en	ETALE	etale	uppercase	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-022	en	resp.	resp.	exact	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-023	en	Resp.	resp.	initial capital	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-024	en	RESP.	resp.	uppercase	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-025	en	quasi-compact	quasi-compact	exact	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-026	en	Quasi-compact	quasi-compact	initial capital	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-027	en	QUASI-COMPACT	quasi-compact	uppercase	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-028	en	quasicompact	quasicompact	exact	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-029	en	Quasicompact	quasicompact	initial capital	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-030	en	QUASICOMPACT	quasicompact	uppercase	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-031	en	if and only if	if and only if	exact	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-032	en	If and only if	if and only if	initial capital	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-033	en	IF AND ONLY IF	if and only if	uppercase	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-034	en	iff	iff	exact	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-035	en	Iff	iff	initial capital	case-sensitive literal substring; overlaps retained	high
+T016	T016-en-036	en	IFF	iff	uppercase	case-sensitive literal substring; overlaps retained	high
+T017	T017-es-001	es	funtor	funtor	exact	case-sensitive literal substring; overlaps retained	high
+T017	T017-es-002	es	Funtor	funtor	initial capital	case-sensitive literal substring; overlaps retained	high
+T017	T017-es-003	es	FUNTOR	funtor	uppercase	case-sensitive literal substring; overlaps retained	high
+T017	T017-es-004	es	functor	functor	exact	case-sensitive literal substring; overlaps retained	high
+T017	T017-es-005	es	Functor	functor	initial capital	case-sensitive literal substring; overlaps retained	high
+T017	T017-es-006	es	FUNCTOR	functor	uppercase	case-sensitive literal substring; overlaps retained	high
+T018	T018-es-001	es	entorno	entorno	exact	case-sensitive literal substring; overlaps retained	medium
+T018	T018-es-002	es	Entorno	entorno	initial capital	case-sensitive literal substring; overlaps retained	medium
+T018	T018-es-003	es	ENTORNO	entorno	uppercase	case-sensitive literal substring; overlaps retained	medium
+T018	T018-es-004	es	vecindad	vecindad	exact	case-sensitive literal substring; overlaps retained	medium
+T018	T018-es-005	es	Vecindad	vecindad	initial capital	case-sensitive literal substring; overlaps retained	medium
+T018	T018-es-006	es	VECINDAD	vecindad	uppercase	case-sensitive literal substring; overlaps retained	medium
+T019	T019-es-001	es	cuasicompact	cuasicompact	exact	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-002	es	Cuasicompact	cuasicompact	initial capital	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-003	es	CUASICOMPACT	cuasicompact	uppercase	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-004	es	cuasi-compact	cuasi-compact	exact	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-005	es	Cuasi-compact	cuasi-compact	initial capital	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-006	es	CUASI-COMPACT	cuasi-compact	uppercase	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-007	es	cuasicoherente	cuasicoherente	exact	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-008	es	Cuasicoherente	cuasicoherente	initial capital	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-009	es	CUASICOHERENTE	cuasicoherente	uppercase	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-010	es	cuasi-coherente	cuasi-coherente	exact	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-011	es	Cuasi-coherente	cuasi-coherente	initial capital	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-012	es	CUASI-COHERENTE	cuasi-coherente	uppercase	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-013	es	cuasifinit	cuasifinit	exact	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-014	es	Cuasifinit	cuasifinit	initial capital	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-015	es	CUASIFINIT	cuasifinit	uppercase	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-016	es	cuasi-finit	cuasi-finit	exact	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-017	es	Cuasi-finit	cuasi-finit	initial capital	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-018	es	CUASI-FINIT	cuasi-finit	uppercase	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-019	es	cuasi 	cuasi 	exact	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-020	es	Cuasi 	cuasi 	initial capital	case-sensitive literal substring; overlaps retained	high
+T019	T019-es-021	es	CUASI 	cuasi 	uppercase	case-sensitive literal substring; overlaps retained	high
+T020	T020-es-001	es	imagen inversa	imagen inversa	exact	case-sensitive literal substring; overlaps retained	high
+T020	T020-es-002	es	Imagen inversa	imagen inversa	initial capital	case-sensitive literal substring; overlaps retained	high
+T020	T020-es-003	es	IMAGEN INVERSA	imagen inversa	uppercase	case-sensitive literal substring; overlaps retained	high
+T020	T020-es-004	es	imagen recíproca	imagen recíproca	exact	case-sensitive literal substring; overlaps retained	high
+T020	T020-es-005	es	Imagen recíproca	imagen recíproca	initial capital	case-sensitive literal substring; overlaps retained	high
+T020	T020-es-006	es	IMAGEN RECÍPROCA	imagen recíproca	uppercase	case-sensitive literal substring; overlaps retained	high
+T020	T020-es-007	es	imágenes inversas	imágenes inversas	exact	case-sensitive literal substring; overlaps retained	high
+T020	T020-es-008	es	Imágenes inversas	imágenes inversas	initial capital	case-sensitive literal substring; overlaps retained	high
+T020	T020-es-009	es	IMÁGENES INVERSAS	imágenes inversas	uppercase	case-sensitive literal substring; overlaps retained	high
+T020	T020-es-010	es	imágenes recíprocas	imágenes recíprocas	exact	case-sensitive literal substring; overlaps retained	high
+T020	T020-es-011	es	Imágenes recíprocas	imágenes recíprocas	initial capital	case-sensitive literal substring; overlaps retained	high
+T020	T020-es-012	es	IMÁGENES RECÍPROCAS	imágenes recíprocas	uppercase	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-001	es	límite inductivo	límite inductivo	exact	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-002	es	Límite inductivo	límite inductivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-003	es	LÍMITE INDUCTIVO	límite inductivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-004	es	límite directo	límite directo	exact	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-005	es	Límite directo	límite directo	initial capital	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-006	es	LÍMITE DIRECTO	límite directo	uppercase	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-007	es	colímite	colímite	exact	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-008	es	Colímite	colímite	initial capital	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-009	es	COLÍMITE	colímite	uppercase	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-010	es	límite proyectivo	límite proyectivo	exact	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-011	es	Límite proyectivo	límite proyectivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-012	es	LÍMITE PROYECTIVO	límite proyectivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-013	es	límite inverso	límite inverso	exact	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-014	es	Límite inverso	límite inverso	initial capital	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-015	es	LÍMITE INVERSO	límite inverso	uppercase	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-016	es	límites inductivos	límites inductivos	exact	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-017	es	Límites inductivos	límites inductivos	initial capital	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-018	es	LÍMITES INDUCTIVOS	límites inductivos	uppercase	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-019	es	límites directos	límites directos	exact	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-020	es	Límites directos	límites directos	initial capital	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-021	es	LÍMITES DIRECTOS	límites directos	uppercase	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-022	es	límites proyectivos	límites proyectivos	exact	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-023	es	Límites proyectivos	límites proyectivos	initial capital	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-024	es	LÍMITES PROYECTIVOS	límites proyectivos	uppercase	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-025	es	límites inversos	límites inversos	exact	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-026	es	Límites inversos	límites inversos	initial capital	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-027	es	LÍMITES INVERSOS	límites inversos	uppercase	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-028	es	sistema inductivo	sistema inductivo	exact	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-029	es	Sistema inductivo	sistema inductivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-030	es	SISTEMA INDUCTIVO	sistema inductivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-031	es	sistema directo	sistema directo	exact	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-032	es	Sistema directo	sistema directo	initial capital	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-033	es	SISTEMA DIRECTO	sistema directo	uppercase	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-034	es	sistema proyectivo	sistema proyectivo	exact	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-035	es	Sistema proyectivo	sistema proyectivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-036	es	SISTEMA PROYECTIVO	sistema proyectivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-037	es	sistema inverso	sistema inverso	exact	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-038	es	Sistema inverso	sistema inverso	initial capital	case-sensitive literal substring; overlaps retained	high
+T021	T021-es-039	es	SISTEMA INVERSO	sistema inverso	uppercase	case-sensitive literal substring; overlaps retained	high
+T022	T022-es-001	es	tallo	tallo	exact	case-sensitive literal substring; overlaps retained	medium
+T022	T022-es-002	es	Tallo	tallo	initial capital	case-sensitive literal substring; overlaps retained	medium
+T022	T022-es-003	es	TALLO	tallo	uppercase	case-sensitive literal substring; overlaps retained	medium
+T022	T022-es-004	es	fibra	fibra	exact	case-sensitive literal substring; overlaps retained	medium
+T022	T022-es-005	es	Fibra	fibra	initial capital	case-sensitive literal substring; overlaps retained	medium
+T022	T022-es-006	es	FIBRA	fibra	uppercase	case-sensitive literal substring; overlaps retained	medium
+T023	T023-es-001	es	cuerpo	cuerpo	exact	case-sensitive literal substring; overlaps retained	high
+T023	T023-es-002	es	Cuerpo	cuerpo	initial capital	case-sensitive literal substring; overlaps retained	high
+T023	T023-es-003	es	CUERPO	cuerpo	uppercase	case-sensitive literal substring; overlaps retained	high
+T023	T023-es-004	es	campo	campo	exact	case-sensitive literal substring; overlaps retained	high
+T023	T023-es-005	es	Campo	campo	initial capital	case-sensitive literal substring; overlaps retained	high
+T023	T023-es-006	es	CAMPO	campo	uppercase	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-001	es	se tiene	se tiene	exact	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-002	es	Se tiene	se tiene	initial capital	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-003	es	SE TIENE	se tiene	uppercase	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-004	es	se dice	se dice	exact	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-005	es	Se dice	se dice	initial capital	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-006	es	SE DICE	se dice	uppercase	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-007	es	tenemos	tenemos	exact	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-008	es	Tenemos	tenemos	initial capital	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-009	es	TENEMOS	tenemos	uppercase	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-010	es	vosotros	vosotros	exact	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-011	es	Vosotros	vosotros	initial capital	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-012	es	VOSOTROS	vosotros	uppercase	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-013	es	si y solo si	si y solo si	exact	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-014	es	Si y solo si	si y solo si	initial capital	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-015	es	SI Y SOLO SI	si y solo si	uppercase	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-016	es	si y sólo si	si y sólo si	exact	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-017	es	Si y sólo si	si y sólo si	initial capital	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-018	es	SI Y SÓLO SI	si y sólo si	uppercase	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-019	es	Sea 	Sea 	exact	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-020	es	SEA 	Sea 	uppercase	case-sensitive literal substring; overlaps retained	high
+T024	T024-es-021	es	sea 	sea 	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-001	es	esquema	esquema	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-002	es	Esquema	esquema	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-003	es	ESQUEMA	esquema	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-004	es	preesquema	preesquema	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-005	es	Preesquema	preesquema	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-006	es	PREESQUEMA	preesquema	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-007	es	pre-esquema	pre-esquema	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-008	es	Pre-esquema	pre-esquema	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-009	es	PRE-ESQUEMA	pre-esquema	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-010	es	haz	haz	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-011	es	Haz	haz	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-012	es	HAZ	haz	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-013	es	prehaz	prehaz	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-014	es	Prehaz	prehaz	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-015	es	PREHAZ	prehaz	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-016	es	gavilla	gavilla	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-017	es	Gavilla	gavilla	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-018	es	GAVILLA	gavilla	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-019	es	liso	liso	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-020	es	Liso	liso	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-021	es	LISO	liso	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-022	es	lisa	lisa	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-023	es	Lisa	lisa	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-024	es	LISA	lisa	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-025	es	suave	suave	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-026	es	Suave	suave	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-027	es	SUAVE	suave	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-028	es	recubrimiento	recubrimiento	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-029	es	Recubrimiento	recubrimiento	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-030	es	RECUBRIMIENTO	recubrimiento	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-031	es	sucesión exacta	sucesión exacta	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-032	es	Sucesión exacta	sucesión exacta	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-033	es	SUCESIÓN EXACTA	sucesión exacta	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-034	es	sucesiones exactas	sucesiones exactas	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-035	es	Sucesiones exactas	sucesiones exactas	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-036	es	SUCESIONES EXACTAS	sucesiones exactas	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-037	es	inmersión	inmersión	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-038	es	Inmersión	inmersión	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-039	es	INMERSIÓN	inmersión	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-040	es	plano	plano	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-041	es	Plano	plano	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-042	es	PLANO	plano	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-043	es	plana	plana	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-044	es	Plana	plana	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-045	es	PLANA	plana	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-046	es	planitud	planitud	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-047	es	Planitud	planitud	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-048	es	PLANITUD	planitud	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-049	es	espacio anillado	espacio anillado	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-050	es	Espacio anillado	espacio anillado	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-051	es	ESPACIO ANILLADO	espacio anillado	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-052	es	étale	étale	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-053	es	Étale	étale	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-054	es	ÉTALE	étale	uppercase	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-055	es	etale	etale	exact	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-056	es	Etale	etale	initial capital	case-sensitive literal substring; overlaps retained	high
+T025	T025-es-057	es	ETALE	etale	uppercase	case-sensitive literal substring; overlaps retained	high
+T026	T026-pt-BR-001	pt-BR	liso	liso	exact	case-sensitive literal substring; overlaps retained	medium
+T026	T026-pt-BR-002	pt-BR	Liso	liso	initial capital	case-sensitive literal substring; overlaps retained	medium
+T026	T026-pt-BR-003	pt-BR	LISO	liso	uppercase	case-sensitive literal substring; overlaps retained	medium
+T026	T026-pt-BR-004	pt-BR	lisa	lisa	exact	case-sensitive literal substring; overlaps retained	medium
+T026	T026-pt-BR-005	pt-BR	Lisa	lisa	initial capital	case-sensitive literal substring; overlaps retained	medium
+T026	T026-pt-BR-006	pt-BR	LISA	lisa	uppercase	case-sensitive literal substring; overlaps retained	medium
+T026	T026-pt-BR-007	pt-BR	suave	suave	exact	case-sensitive literal substring; overlaps retained	medium
+T026	T026-pt-BR-008	pt-BR	Suave	suave	initial capital	case-sensitive literal substring; overlaps retained	medium
+T026	T026-pt-BR-009	pt-BR	SUAVE	suave	uppercase	case-sensitive literal substring; overlaps retained	medium
+T026	T026-pt-BR-010	pt-BR	formalmente liso	formalmente liso	exact	case-sensitive literal substring; overlaps retained	medium
+T026	T026-pt-BR-011	pt-BR	Formalmente liso	formalmente liso	initial capital	case-sensitive literal substring; overlaps retained	medium
+T026	T026-pt-BR-012	pt-BR	FORMALMENTE LISO	formalmente liso	uppercase	case-sensitive literal substring; overlaps retained	medium
+T026	T026-pt-BR-013	pt-BR	formalmente lisa	formalmente lisa	exact	case-sensitive literal substring; overlaps retained	medium
+T026	T026-pt-BR-014	pt-BR	Formalmente lisa	formalmente lisa	initial capital	case-sensitive literal substring; overlaps retained	medium
+T026	T026-pt-BR-015	pt-BR	FORMALMENTE LISA	formalmente lisa	uppercase	case-sensitive literal substring; overlaps retained	medium
+T027	T027-pt-BR-001	pt-BR	planicidade	planicidade	exact	case-sensitive literal substring; overlaps retained	high
+T027	T027-pt-BR-002	pt-BR	Planicidade	planicidade	initial capital	case-sensitive literal substring; overlaps retained	high
+T027	T027-pt-BR-003	pt-BR	PLANICIDADE	planicidade	uppercase	case-sensitive literal substring; overlaps retained	high
+T027	T027-pt-BR-004	pt-BR	planitude	planitude	exact	case-sensitive literal substring; overlaps retained	high
+T027	T027-pt-BR-005	pt-BR	Planitude	planitude	initial capital	case-sensitive literal substring; overlaps retained	high
+T027	T027-pt-BR-006	pt-BR	PLANITUDE	planitude	uppercase	case-sensitive literal substring; overlaps retained	high
+T027	T027-pt-BR-007	pt-BR	planura	planura	exact	case-sensitive literal substring; overlaps retained	high
+T027	T027-pt-BR-008	pt-BR	Planura	planura	initial capital	case-sensitive literal substring; overlaps retained	high
+T027	T027-pt-BR-009	pt-BR	PLANURA	planura	uppercase	case-sensitive literal substring; overlaps retained	high
+T028	T028-pt-BR-001	pt-BR	cobertura	cobertura	exact	case-sensitive literal substring; overlaps retained	high
+T028	T028-pt-BR-002	pt-BR	Cobertura	cobertura	initial capital	case-sensitive literal substring; overlaps retained	high
+T028	T028-pt-BR-003	pt-BR	COBERTURA	cobertura	uppercase	case-sensitive literal substring; overlaps retained	high
+T028	T028-pt-BR-004	pt-BR	recobrimento	recobrimento	exact	case-sensitive literal substring; overlaps retained	high
+T028	T028-pt-BR-005	pt-BR	Recobrimento	recobrimento	initial capital	case-sensitive literal substring; overlaps retained	high
+T028	T028-pt-BR-006	pt-BR	RECOBRIMENTO	recobrimento	uppercase	case-sensitive literal substring; overlaps retained	high
+T029	T029-pt-BR-001	pt-BR	sequência exata	sequência exata	exact	case-sensitive literal substring; overlaps retained	high
+T029	T029-pt-BR-002	pt-BR	Sequência exata	sequência exata	initial capital	case-sensitive literal substring; overlaps retained	high
+T029	T029-pt-BR-003	pt-BR	SEQUÊNCIA EXATA	sequência exata	uppercase	case-sensitive literal substring; overlaps retained	high
+T029	T029-pt-BR-004	pt-BR	sequências exatas	sequências exatas	exact	case-sensitive literal substring; overlaps retained	high
+T029	T029-pt-BR-005	pt-BR	Sequências exatas	sequências exatas	initial capital	case-sensitive literal substring; overlaps retained	high
+T029	T029-pt-BR-006	pt-BR	SEQUÊNCIAS EXATAS	sequências exatas	uppercase	case-sensitive literal substring; overlaps retained	high
+T029	T029-pt-BR-007	pt-BR	sucessão exata	sucessão exata	exact	case-sensitive literal substring; overlaps retained	high
+T029	T029-pt-BR-008	pt-BR	Sucessão exata	sucessão exata	initial capital	case-sensitive literal substring; overlaps retained	high
+T029	T029-pt-BR-009	pt-BR	SUCESSÃO EXATA	sucessão exata	uppercase	case-sensitive literal substring; overlaps retained	high
+T029	T029-pt-BR-010	pt-BR	sucessões exatas	sucessões exatas	exact	case-sensitive literal substring; overlaps retained	high
+T029	T029-pt-BR-011	pt-BR	Sucessões exatas	sucessões exatas	initial capital	case-sensitive literal substring; overlaps retained	high
+T029	T029-pt-BR-012	pt-BR	SUCESSÕES EXATAS	sucessões exatas	uppercase	case-sensitive literal substring; overlaps retained	high
+T030	T030-pt-BR-001	pt-BR	pré-esquema	pré-esquema	exact	case-sensitive literal substring; overlaps retained	high
+T030	T030-pt-BR-002	pt-BR	Pré-esquema	pré-esquema	initial capital	case-sensitive literal substring; overlaps retained	high
+T030	T030-pt-BR-003	pt-BR	PRÉ-ESQUEMA	pré-esquema	uppercase	case-sensitive literal substring; overlaps retained	high
+T030	T030-pt-BR-004	pt-BR	preesquema	preesquema	exact	case-sensitive literal substring; overlaps retained	high
+T030	T030-pt-BR-005	pt-BR	Preesquema	preesquema	initial capital	case-sensitive literal substring; overlaps retained	high
+T030	T030-pt-BR-006	pt-BR	PREESQUEMA	preesquema	uppercase	case-sensitive literal substring; overlaps retained	high
+T030	T030-pt-BR-007	pt-BR	pré esquema	pré esquema	exact	case-sensitive literal substring; overlaps retained	high
+T030	T030-pt-BR-008	pt-BR	Pré esquema	pré esquema	initial capital	case-sensitive literal substring; overlaps retained	high
+T030	T030-pt-BR-009	pt-BR	PRÉ ESQUEMA	pré esquema	uppercase	case-sensitive literal substring; overlaps retained	high
+T031	T031-pt-BR-001	pt-BR	imagem inversa	imagem inversa	exact	case-sensitive literal substring; overlaps retained	high
+T031	T031-pt-BR-002	pt-BR	Imagem inversa	imagem inversa	initial capital	case-sensitive literal substring; overlaps retained	high
+T031	T031-pt-BR-003	pt-BR	IMAGEM INVERSA	imagem inversa	uppercase	case-sensitive literal substring; overlaps retained	high
+T031	T031-pt-BR-004	pt-BR	imagem recíproca	imagem recíproca	exact	case-sensitive literal substring; overlaps retained	high
+T031	T031-pt-BR-005	pt-BR	Imagem recíproca	imagem recíproca	initial capital	case-sensitive literal substring; overlaps retained	high
+T031	T031-pt-BR-006	pt-BR	IMAGEM RECÍPROCA	imagem recíproca	uppercase	case-sensitive literal substring; overlaps retained	high
+T031	T031-pt-BR-007	pt-BR	imagens inversas	imagens inversas	exact	case-sensitive literal substring; overlaps retained	high
+T031	T031-pt-BR-008	pt-BR	Imagens inversas	imagens inversas	initial capital	case-sensitive literal substring; overlaps retained	high
+T031	T031-pt-BR-009	pt-BR	IMAGENS INVERSAS	imagens inversas	uppercase	case-sensitive literal substring; overlaps retained	high
+T031	T031-pt-BR-010	pt-BR	imagens recíprocas	imagens recíprocas	exact	case-sensitive literal substring; overlaps retained	high
+T031	T031-pt-BR-011	pt-BR	Imagens recíprocas	imagens recíprocas	initial capital	case-sensitive literal substring; overlaps retained	high
+T031	T031-pt-BR-012	pt-BR	IMAGENS RECÍPROCAS	imagens recíprocas	uppercase	case-sensitive literal substring; overlaps retained	high
+T032	T032-pt-BR-001	pt-BR	quase-	quase-	exact	case-sensitive literal substring; overlaps retained	medium
+T032	T032-pt-BR-002	pt-BR	Quase-	quase-	initial capital	case-sensitive literal substring; overlaps retained	medium
+T032	T032-pt-BR-003	pt-BR	QUASE-	quase-	uppercase	case-sensitive literal substring; overlaps retained	medium
+T032	T032-pt-BR-004	pt-BR	quasi-	quasi-	exact	case-sensitive literal substring; overlaps retained	medium
+T032	T032-pt-BR-005	pt-BR	Quasi-	quasi-	initial capital	case-sensitive literal substring; overlaps retained	medium
+T032	T032-pt-BR-006	pt-BR	QUASI-	quasi-	uppercase	case-sensitive literal substring; overlaps retained	medium
+T032	T032-pt-BR-007	pt-BR	quase 	quase 	exact	case-sensitive literal substring; overlaps retained	medium
+T032	T032-pt-BR-008	pt-BR	Quase 	quase 	initial capital	case-sensitive literal substring; overlaps retained	medium
+T032	T032-pt-BR-009	pt-BR	QUASE 	quase 	uppercase	case-sensitive literal substring; overlaps retained	medium
+T032	T032-pt-BR-010	pt-BR	quasi 	quasi 	exact	case-sensitive literal substring; overlaps retained	medium
+T032	T032-pt-BR-011	pt-BR	Quasi 	quasi 	initial capital	case-sensitive literal substring; overlaps retained	medium
+T032	T032-pt-BR-012	pt-BR	QUASI 	quasi 	uppercase	case-sensitive literal substring; overlaps retained	medium
+T033	T033-pt-BR-001	pt-BR	-se	-se	exact	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-002	pt-BR	nós	nós	exact	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-003	pt-BR	Nós	nós	initial capital	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-004	pt-BR	NÓS	nós	uppercase	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-005	pt-BR	temos	temos	exact	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-006	pt-BR	Temos	temos	initial capital	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-007	pt-BR	TEMOS	temos	uppercase	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-008	pt-BR	exacto	exacto	exact	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-009	pt-BR	Exacto	exacto	initial capital	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-010	pt-BR	EXACTO	exacto	uppercase	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-011	pt-BR	exacta	exacta	exact	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-012	pt-BR	Exacta	exacta	initial capital	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-013	pt-BR	EXACTA	exacta	uppercase	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-014	pt-BR	secção	secção	exact	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-015	pt-BR	Secção	secção	initial capital	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-016	pt-BR	SECÇÃO	secção	uppercase	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-017	pt-BR	secções	secções	exact	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-018	pt-BR	Secções	secções	initial capital	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-019	pt-BR	SECÇÕES	secções	uppercase	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-020	pt-BR	facto	facto	exact	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-021	pt-BR	Facto	facto	initial capital	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-022	pt-BR	FACTO	facto	uppercase	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-023	pt-BR	projectivo	projectivo	exact	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-024	pt-BR	Projectivo	projectivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-025	pt-BR	PROJECTIVO	projectivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-026	pt-BR	projectiva	projectiva	exact	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-027	pt-BR	Projectiva	projectiva	initial capital	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-028	pt-BR	PROJECTIVA	projectiva	uppercase	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-029	pt-BR	ação	ação	exact	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-030	pt-BR	Ação	ação	initial capital	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-031	pt-BR	AÇÃO	ação	uppercase	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-032	pt-BR	projetivo	projetivo	exact	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-033	pt-BR	Projetivo	projetivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-034	pt-BR	PROJETIVO	projetivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-035	pt-BR	projetiva	projetiva	exact	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-036	pt-BR	Projetiva	projetiva	initial capital	case-sensitive literal substring; overlaps retained	high
+T033	T033-pt-BR-037	pt-BR	PROJETIVA	projetiva	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-001	pt-BR	esquema	esquema	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-002	pt-BR	Esquema	esquema	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-003	pt-BR	ESQUEMA	esquema	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-004	pt-BR	feixe	feixe	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-005	pt-BR	Feixe	feixe	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-006	pt-BR	FEIXE	feixe	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-007	pt-BR	pré-feixe	pré-feixe	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-008	pt-BR	Pré-feixe	pré-feixe	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-009	pt-BR	PRÉ-FEIXE	pré-feixe	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-010	pt-BR	pre-feixe	pre-feixe	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-011	pt-BR	Pre-feixe	pre-feixe	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-012	pt-BR	PRE-FEIXE	pre-feixe	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-013	pt-BR	talo	talo	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-014	pt-BR	Talo	talo	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-015	pt-BR	TALO	talo	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-016	pt-BR	fibra	fibra	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-017	pt-BR	Fibra	fibra	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-018	pt-BR	FIBRA	fibra	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-019	pt-BR	limite indutivo	limite indutivo	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-020	pt-BR	Limite indutivo	limite indutivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-021	pt-BR	LIMITE INDUTIVO	limite indutivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-022	pt-BR	limite projetivo	limite projetivo	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-023	pt-BR	Limite projetivo	limite projetivo	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-024	pt-BR	LIMITE PROJETIVO	limite projetivo	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-025	pt-BR	limite direto	limite direto	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-026	pt-BR	Limite direto	limite direto	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-027	pt-BR	LIMITE DIRETO	limite direto	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-028	pt-BR	limite inverso	limite inverso	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-029	pt-BR	Limite inverso	limite inverso	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-030	pt-BR	LIMITE INVERSO	limite inverso	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-031	pt-BR	funtor	funtor	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-032	pt-BR	Funtor	funtor	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-033	pt-BR	FUNTOR	funtor	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-034	pt-BR	functor	functor	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-035	pt-BR	Functor	functor	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-036	pt-BR	FUNCTOR	functor	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-037	pt-BR	espaço anelado	espaço anelado	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-038	pt-BR	Espaço anelado	espaço anelado	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-039	pt-BR	ESPAÇO ANELADO	espaço anelado	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-040	pt-BR	imersão	imersão	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-041	pt-BR	Imersão	imersão	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-042	pt-BR	IMERSÃO	imersão	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-043	pt-BR	corpo	corpo	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-044	pt-BR	Corpo	corpo	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-045	pt-BR	CORPO	corpo	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-046	pt-BR	vizinhança	vizinhança	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-047	pt-BR	Vizinhança	vizinhança	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-048	pt-BR	VIZINHANÇA	vizinhança	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-049	pt-BR	étale	étale	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-050	pt-BR	Étale	étale	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-051	pt-BR	ÉTALE	étale	uppercase	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-052	pt-BR	etale	etale	exact	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-053	pt-BR	Etale	etale	initial capital	case-sensitive literal substring; overlaps retained	high
+T034	T034-pt-BR-054	pt-BR	ETALE	etale	uppercase	case-sensitive literal substring; overlaps retained	high
+T035	T035-vi-001	vi	iđêan	iđêan	exact	case-sensitive literal substring; overlaps retained	high
+T035	T035-vi-002	vi	Iđêan	iđêan	initial capital	case-sensitive literal substring; overlaps retained	high
+T035	T035-vi-003	vi	IĐÊAN	iđêan	uppercase	case-sensitive literal substring; overlaps retained	high
+T035	T035-vi-004	vi	ideal	ideal	exact	case-sensitive literal substring; overlaps retained	high
+T035	T035-vi-005	vi	Ideal	ideal	initial capital	case-sensitive literal substring; overlaps retained	high
+T035	T035-vi-006	vi	IDEAL	ideal	uppercase	case-sensitive literal substring; overlaps retained	high
+T035	T035-vi-007	vi	i-đê-an	i-đê-an	exact	case-sensitive literal substring; overlaps retained	high
+T035	T035-vi-008	vi	I-đê-an	i-đê-an	initial capital	case-sensitive literal substring; overlaps retained	high
+T035	T035-vi-009	vi	I-ĐÊ-AN	i-đê-an	uppercase	case-sensitive literal substring; overlaps retained	high
+T035	T035-vi-010	vi	iđêal	iđêal	exact	case-sensitive literal substring; overlaps retained	high
+T035	T035-vi-011	vi	Iđêal	iđêal	initial capital	case-sensitive literal substring; overlaps retained	high
+T035	T035-vi-012	vi	IĐÊAL	iđêal	uppercase	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-001	vi	giới hạn quy nạp	giới hạn quy nạp	exact	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-002	vi	Giới hạn quy nạp	giới hạn quy nạp	initial capital	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-003	vi	GIỚI HẠN QUY NẠP	giới hạn quy nạp	uppercase	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-004	vi	giới hạn xạ ảnh	giới hạn xạ ảnh	exact	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-005	vi	Giới hạn xạ ảnh	giới hạn xạ ảnh	initial capital	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-006	vi	GIỚI HẠN XẠ ẢNH	giới hạn xạ ảnh	uppercase	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-007	vi	giới hạn trực tiếp	giới hạn trực tiếp	exact	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-008	vi	Giới hạn trực tiếp	giới hạn trực tiếp	initial capital	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-009	vi	GIỚI HẠN TRỰC TIẾP	giới hạn trực tiếp	uppercase	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-010	vi	giới hạn ngược	giới hạn ngược	exact	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-011	vi	Giới hạn ngược	giới hạn ngược	initial capital	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-012	vi	GIỚI HẠN NGƯỢC	giới hạn ngược	uppercase	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-013	vi	đối giới hạn	đối giới hạn	exact	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-014	vi	Đối giới hạn	đối giới hạn	initial capital	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-015	vi	ĐỐI GIỚI HẠN	đối giới hạn	uppercase	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-016	vi	hệ quy nạp	hệ quy nạp	exact	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-017	vi	Hệ quy nạp	hệ quy nạp	initial capital	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-018	vi	HỆ QUY NẠP	hệ quy nạp	uppercase	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-019	vi	hệ xạ ảnh	hệ xạ ảnh	exact	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-020	vi	Hệ xạ ảnh	hệ xạ ảnh	initial capital	case-sensitive literal substring; overlaps retained	high
+T036	T036-vi-021	vi	HỆ XẠ ẢNH	hệ xạ ảnh	uppercase	case-sensitive literal substring; overlaps retained	high
+T037	T037-vi-001	vi	 ta 	 ta 	exact	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-002	vi	Ta 	Ta 	exact	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-003	vi	TA 	Ta 	uppercase	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-004	vi	chúng ta	chúng ta	exact	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-005	vi	Chúng ta	chúng ta	initial capital	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-006	vi	CHÚNG TA	chúng ta	uppercase	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-007	vi	chúng tôi	chúng tôi	exact	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-008	vi	Chúng tôi	chúng tôi	initial capital	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-009	vi	CHÚNG TÔI	chúng tôi	uppercase	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-010	vi	Giả sử	Giả sử	exact	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-011	vi	GIẢ SỬ	Giả sử	uppercase	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-012	vi	cần và đủ	cần và đủ	exact	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-013	vi	Cần và đủ	cần và đủ	initial capital	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-014	vi	CẦN VÀ ĐỦ	cần và đủ	uppercase	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-015	vi	resp.	resp.	exact	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-016	vi	Resp.	resp.	initial capital	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-017	vi	RESP.	resp.	uppercase	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-018	vi	cf.	cf.	exact	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-019	vi	Cf.	cf.	initial capital	case-sensitive literal substring; overlaps retained	medium
+T037	T037-vi-020	vi	CF.	cf.	uppercase	case-sensitive literal substring; overlaps retained	medium
+T038	T038-vi-001	vi	iđêan	iđêan	exact	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-002	vi	Iđêan	iđêan	initial capital	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-003	vi	IĐÊAN	iđêan	uppercase	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-004	vi	môđun	môđun	exact	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-005	vi	Môđun	môđun	initial capital	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-006	vi	MÔĐUN	môđun	uppercase	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-007	vi	ideal	ideal	exact	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-008	vi	Ideal	ideal	initial capital	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-009	vi	IDEAL	ideal	uppercase	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-010	vi	module	module	exact	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-011	vi	Module	module	initial capital	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-012	vi	MODULE	module	uppercase	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-013	vi	mô-đun	mô-đun	exact	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-014	vi	Mô-đun	mô-đun	initial capital	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-015	vi	MÔ-ĐUN	mô-đun	uppercase	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-016	vi	mô đun	mô đun	exact	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-017	vi	Mô đun	mô đun	initial capital	case-sensitive literal substring; overlaps retained	high
+T038	T038-vi-018	vi	MÔ ĐUN	mô đun	uppercase	case-sensitive literal substring; overlaps retained	high
+T039	T039-vi-001	vi	lược đồ	lược đồ	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-002	vi	Lược đồ	lược đồ	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-003	vi	LƯỢC ĐỒ	lược đồ	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-004	vi	tiền lược đồ	tiền lược đồ	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-005	vi	Tiền lược đồ	tiền lược đồ	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-006	vi	TIỀN LƯỢC ĐỒ	tiền lược đồ	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-007	vi	bó	bó	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-008	vi	Bó	bó	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-009	vi	BÓ	bó	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-010	vi	tiền bó	tiền bó	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-011	vi	Tiền bó	tiền bó	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-012	vi	TIỀN BÓ	tiền bó	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-013	vi	hàm tử	hàm tử	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-014	vi	Hàm tử	hàm tử	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-015	vi	HÀM TỬ	hàm tử	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-016	vi	cấu xạ	cấu xạ	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-017	vi	Cấu xạ	cấu xạ	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-018	vi	CẤU XẠ	cấu xạ	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-019	vi	đồng cấu	đồng cấu	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-020	vi	Đồng cấu	đồng cấu	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-021	vi	ĐỒNG CẤU	đồng cấu	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-022	vi	môđun	môđun	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-023	vi	Môđun	môđun	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-024	vi	MÔĐUN	môđun	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-025	vi	phẳng	phẳng	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-026	vi	Phẳng	phẳng	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-027	vi	PHẲNG	phẳng	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-028	vi	trơn	trơn	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-029	vi	Trơn	trơn	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-030	vi	TRƠN	trơn	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-031	vi	thớ	thớ	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-032	vi	Thớ	thớ	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-033	vi	THỚ	thớ	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-034	vi	lân cận	lân cận	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-035	vi	Lân cận	lân cận	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-036	vi	LÂN CẬN	lân cận	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-037	vi	không gian vành	không gian vành	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-038	vi	Không gian vành	không gian vành	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-039	vi	KHÔNG GIAN VÀNH	không gian vành	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-040	vi	trường	trường	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-041	vi	Trường	trường	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-042	vi	TRƯỜNG	trường	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-043	vi	dãy khớp	dãy khớp	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-044	vi	Dãy khớp	dãy khớp	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-045	vi	DÃY KHỚP	dãy khớp	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-046	vi	sơ đồ	sơ đồ	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-047	vi	Sơ đồ	sơ đồ	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-048	vi	SƠ ĐỒ	sơ đồ	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-049	vi	étale	étale	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-050	vi	Étale	étale	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-051	vi	ÉTALE	étale	uppercase	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-052	vi	etale	etale	exact	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-053	vi	Etale	etale	initial capital	case-sensitive literal substring; overlaps retained	medium
+T039	T039-vi-054	vi	ETALE	etale	uppercase	case-sensitive literal substring; overlaps retained	medium
+T048	T048-zh-Hans-001	zh-Hans	赋环空间	赋环空间	exact	case-sensitive literal substring; overlaps retained	medium
+T048	T048-zh-Hans-002	zh-Hans	环层空间	环层空间	exact	case-sensitive literal substring; overlaps retained	medium
+T048	T048-zh-Hans-003	zh-Hans	带环空间	带环空间	exact	case-sensitive literal substring; overlaps retained	medium
+T048	T048-zh-Hans-004	zh-Hans	环积空间	环积空间	exact	case-sensitive literal substring; overlaps retained	medium
+T048	T048-zh-Hans-005	zh-Hans	局部环层空间	局部环层空间	exact	case-sensitive literal substring; overlaps retained	medium
+T049	T049-zh-Hans-001	zh-Hans	光滑	光滑	exact	case-sensitive literal substring; overlaps retained	high
+T049	T049-zh-Hans-002	zh-Hans	平滑	平滑	exact	case-sensitive literal substring; overlaps retained	high
+T049	T049-zh-Hans-003	zh-Hans	形式光滑	形式光滑	exact	case-sensitive literal substring; overlaps retained	high
+T049	T049-zh-Hans-004	zh-Hans	光滑态射	光滑态射	exact	case-sensitive literal substring; overlaps retained	high
+T050	T050-zh-Hans-001	zh-Hans	固有	固有	exact	case-sensitive literal substring; overlaps retained	medium
+T050	T050-zh-Hans-002	zh-Hans	紧合	紧合	exact	case-sensitive literal substring; overlaps retained	medium
+T050	T050-zh-Hans-003	zh-Hans	逆紧	逆紧	exact	case-sensitive literal substring; overlaps retained	medium
+T050	T050-zh-Hans-004	zh-Hans	固有态射	固有态射	exact	case-sensitive literal substring; overlaps retained	medium
+T050	T050-zh-Hans-005	zh-Hans	紧合态射	紧合态射	exact	case-sensitive literal substring; overlaps retained	medium
+T051	T051-zh-Hans-001	zh-Hans	归纳极限	归纳极限	exact	case-sensitive literal substring; overlaps retained	low
+T051	T051-zh-Hans-002	zh-Hans	逆极限	逆极限	exact	case-sensitive literal substring; overlaps retained	low
+T051	T051-zh-Hans-003	zh-Hans	余极限	余极限	exact	case-sensitive literal substring; overlaps retained	low
+T051	T051-zh-Hans-004	zh-Hans	射影极限	射影极限	exact	case-sensitive literal substring; overlaps retained	low
+T051	T051-zh-Hans-005	zh-Hans	正向极限	正向极限	exact	case-sensitive literal substring; overlaps retained	low
+T052	T052-zh-Hans-001	zh-Hans	叠	叠	exact	case-sensitive literal substring; overlaps retained	high
+T052	T052-zh-Hans-002	zh-Hans	栈	栈	exact	case-sensitive literal substring; overlaps retained	high
+T053	T053-zh-Hans-001	zh-Hans	我们	我们	exact	case-sensitive literal substring; overlaps retained	medium
+T053	T053-zh-Hans-002	zh-Hans	，	，	exact	case-sensitive literal substring; overlaps retained	medium
+T053	T053-zh-Hans-003	zh-Hans	。	。	exact	case-sensitive literal substring; overlaps retained	medium
+T053	T053-zh-Hans-004	zh-Hans	；	；	exact	case-sensitive literal substring; overlaps retained	medium
+T053	T053-zh-Hans-005	zh-Hans	：	：	exact	case-sensitive literal substring; overlaps retained	medium
+T053	T053-zh-Hans-006	zh-Hans	（	（	exact	case-sensitive literal substring; overlaps retained	medium
+T053	T053-zh-Hans-007	zh-Hans	）	）	exact	case-sensitive literal substring; overlaps retained	medium
+T053	T053-zh-Hans-008	zh-Hans	、	、	exact	case-sensitive literal substring; overlaps retained	medium
+T053	T053-zh-Hans-009	zh-Hans	,	,	exact	case-sensitive literal substring; overlaps retained	medium
+T053	T053-zh-Hans-010	zh-Hans	.	.	exact	case-sensitive literal substring; overlaps retained	medium
+T053	T053-zh-Hans-011	zh-Hans	;	;	exact	case-sensitive literal substring; overlaps retained	medium
+T053	T053-zh-Hans-012	zh-Hans	:	:	exact	case-sensitive literal substring; overlaps retained	medium
+T053	T053-zh-Hans-013	zh-Hans	(	(	exact	case-sensitive literal substring; overlaps retained	medium
+T053	T053-zh-Hans-014	zh-Hans	)	)	exact	case-sensitive literal substring; overlaps retained	medium
+T054	T054-zh-Hans-001	zh-Hans	概形	概形	exact	case-sensitive literal substring; overlaps retained	high
+T054	T054-zh-Hans-002	zh-Hans	概型	概型	exact	case-sensitive literal substring; overlaps retained	high
+T054	T054-zh-Hans-003	zh-Hans	预概形	预概形	exact	case-sensitive literal substring; overlaps retained	high
+T054	T054-zh-Hans-004	zh-Hans	态射	态射	exact	case-sensitive literal substring; overlaps retained	high
+T054	T054-zh-Hans-005	zh-Hans	预层	预层	exact	case-sensitive literal substring; overlaps retained	high
+T054	T054-zh-Hans-006	zh-Hans	凝聚	凝聚	exact	case-sensitive literal substring; overlaps retained	high
+T054	T054-zh-Hans-007	zh-Hans	拟凝聚	拟凝聚	exact	case-sensitive literal substring; overlaps retained	high
+T054	T054-zh-Hans-008	zh-Hans	拟紧	拟紧	exact	case-sensitive literal substring; overlaps retained	high
+T054	T054-zh-Hans-009	zh-Hans	平坦	平坦	exact	case-sensitive literal substring; overlaps retained	high
+T054	T054-zh-Hans-010	zh-Hans	平展	平展	exact	case-sensitive literal substring; overlaps retained	high
+T054	T054-zh-Hans-011	zh-Hans	函子	函子	exact	case-sensitive literal substring; overlaps retained	high
+T054	T054-zh-Hans-012	zh-Hans	纤维	纤维	exact	case-sensitive literal substring; overlaps retained	high
+T054	T054-zh-Hans-013	zh-Hans	茎	茎	exact	case-sensitive literal substring; overlaps retained	high
+T054	T054-zh-Hans-014	zh-Hans	终对象	终对象	exact	case-sensitive literal substring; overlaps retained	high
+T054	T054-zh-Hans-015	zh-Hans	邻域	邻域	exact	case-sensitive literal substring; overlaps retained	high
+T054	T054-zh-Hans-016	zh-Hans	当且仅当	当且仅当	exact	case-sensitive literal substring; overlaps retained	high
+T055	T055-ko-001	ko	섬유	섬유	exact	case-sensitive literal substring; overlaps retained	low
+T055	T055-ko-002	ko	섬유곱	섬유곱	exact	case-sensitive literal substring; overlaps retained	low
+T055	T055-ko-003	ko	의 올	의 올	exact	case-sensitive literal substring; overlaps retained	low
+T055	T055-ko-004	ko	올곱	올곱	exact	case-sensitive literal substring; overlaps retained	low
+T055	T055-ko-005	ko	파이버	파이버	exact	case-sensitive literal substring; overlaps retained	low
+T055	T055-ko-006	ko	올	올	exact	case-sensitive literal substring; overlaps retained	low
+T056	T056-ko-001	ko	모듈라이	모듈라이	exact	case-sensitive literal substring; overlaps retained	high
+T056	T056-ko-002	ko	가군	가군	exact	case-sensitive literal substring; overlaps retained	high
+T056	T056-ko-003	ko	모듈	모듈	exact	case-sensitive literal substring; overlaps retained	high
+T057	T057-ko-001	ko	귀납극한	귀납극한	exact	case-sensitive literal substring; overlaps retained	medium
+T057	T057-ko-002	ko	사영극한	사영극한	exact	case-sensitive literal substring; overlaps retained	medium
+T057	T057-ko-003	ko	여극한	여극한	exact	case-sensitive literal substring; overlaps retained	medium
+T057	T057-ko-004	ko	쌍대극한	쌍대극한	exact	case-sensitive literal substring; overlaps retained	medium
+T057	T057-ko-005	ko	역극한	역극한	exact	case-sensitive literal substring; overlaps retained	medium
+T057	T057-ko-006	ko	직접극한	직접극한	exact	case-sensitive literal substring; overlaps retained	medium
+T057	T057-ko-007	ko	귀납계	귀납계	exact	case-sensitive literal substring; overlaps retained	medium
+T057	T057-ko-008	ko	사영계	사영계	exact	case-sensitive literal substring; overlaps retained	medium
+T058	T058-ko-001	ko	아이디얼	아이디얼	exact	case-sensitive literal substring; overlaps retained	medium
+T058	T058-ko-002	ko	이데알	이데알	exact	case-sensitive literal substring; overlaps retained	medium
+T058	T058-ko-003	ko	준콤팩트	준콤팩트	exact	case-sensitive literal substring; overlaps retained	medium
+T058	T058-ko-004	ko	준컴팩트	준컴팩트	exact	case-sensitive literal substring; overlaps retained	medium
+T058	T058-ko-005	ko	끝 대상	끝 대상	exact	case-sensitive literal substring; overlaps retained	medium
+T058	T058-ko-006	ko	종대상	종대상	exact	case-sensitive literal substring; overlaps retained	medium
+T058	T058-ko-007	ko	덮개	덮개	exact	case-sensitive literal substring; overlaps retained	medium
+T058	T058-ko-008	ko	피복	피복	exact	case-sensitive literal substring; overlaps retained	medium
+T058	T058-ko-009	ko	피복 공간	피복 공간	exact	case-sensitive literal substring; overlaps retained	medium
+T058	T058-ko-010	ko	피복공간	피복공간	exact	case-sensitive literal substring; overlaps retained	medium
+T059	T059-ko-001	ko	준스킴	준스킴	exact	case-sensitive literal substring; overlaps retained	medium
+T059	T059-ko-002	ko	준층	준층	exact	case-sensitive literal substring; overlaps retained	medium
+T059	T059-ko-003	ko	준연접	준연접	exact	case-sensitive literal substring; overlaps retained	medium
+T059	T059-ko-004	ko	준콤팩트	준콤팩트	exact	case-sensitive literal substring; overlaps retained	medium
+T060	T060-ko-001	ko	이다.	이다.	exact	case-sensitive literal substring; overlaps retained	high
+T060	T060-ko-002	ko	한다.	한다.	exact	case-sensitive literal substring; overlaps retained	high
+T060	T060-ko-003	ko	입니다	입니다	exact	case-sensitive literal substring; overlaps retained	high
+T060	T060-ko-004	ko	합니다	합니다	exact	case-sensitive literal substring; overlaps retained	high
+T061	T061-ko-001	ko	스킴	스킴	exact	case-sensitive literal substring; overlaps retained	high
+T061	T061-ko-002	ko	사상	사상	exact	case-sensitive literal substring; overlaps retained	high
+T061	T061-ko-003	ko	함자	함자	exact	case-sensitive literal substring; overlaps retained	high
+T061	T061-ko-004	ko	평탄	평탄	exact	case-sensitive literal substring; overlaps retained	high
+T061	T061-ko-005	ko	고유	고유	exact	case-sensitive literal substring; overlaps retained	high
+T061	T061-ko-006	ko	근방	근방	exact	case-sensitive literal substring; overlaps retained	high
+T061	T061-ko-007	ko	환 달린 공간	환 달린 공간	exact	case-sensitive literal substring; overlaps retained	high
+T061	T061-ko-008	ko	줄기	줄기	exact	case-sensitive literal substring; overlaps retained	high
+T061	T061-ko-009	ko	매끄러운	매끄러운	exact	case-sensitive literal substring; overlaps retained	high
+T061	T061-ko-010	ko	에탈	에탈	exact	case-sensitive literal substring; overlaps retained	high

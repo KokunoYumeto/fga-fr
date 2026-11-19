@@ -1,0 +1,50 @@
+\src{171}
+\result{PROPOSITION}{3} \uline{Soit} $\symup{L_{*}=(L_i)}$ \uline{une résolution gauche du}
+$\symup{\Osh}$-\uline{Module} $\symup{A}$ \uline{par des} $\symup{\Osh}$-\uline{Modules dont chacun est isomorphe localement à
+un} $\symup{\Osh^{n}}$. \uline{Alors} $\symup{\Extsh_{\Osh}(A,B)}$ \uline{s'identifie à}
+$\symup{H^{*}\bigl(\Homsh_{\Osh}(L_{*},B)\bigr)}$, \uline{et}
+$\symup{\operatorname{Ext}_{\Osh}(X;A,B)}$ \uline{s'identifie à l'hypercohomologie de} $\symup{X}$
+\uline{par rapport au complexe} $\symup{\Homsh_{\Osh}(L_{*},B)}$.
+
+La démonstration est standard, on considère le bicomplexe
+$\symup{\Homsh_{\Osh}(L_{*},C(B))}$ où $\symup{C(B)}$ est une résolution injective de $\symup{B}$, et les
+homomorphismes naturels de $\symup{\Homsh_{\Osh}(L_{*},B)}$ et de
+$\symup{\Homsh_{\Osh}(A,C(B))}$ dans ce dernier.
+
+Pour finir, indiquons que les deux foncteurs $\symup{\operatorname{Ext}}$ introduits
+dans (1.2) sont non seulement des foncteurs cohomologiques en $\symup{B}$, mais des
+\uline{bifoncteurs cohomologiques}, covariants en $\symup{B}$ et contrevariants en $\symup{A}$.
+
+\fsection{\normalfont2}{\normalfont\uline{Loi de composition dans les} Ext.}
+
+Les résultats de ce numéro sont dus indépendamment à CARTIER et à YONEDA ; voir
+un exposé de CARTIER [1] pour des détails. Soit $\symup{\underline{C}}$ une catégorie abélienne.
+Soient $\symup{K}$ et $\symup{L}$ deux objets gradués dans $\symup{\underline{C}}$. On désigne par
+$\symup{\operatorname{Hom}(K,L)}$ le groupe abélien gradué dont la composante de degré
+$\symup{n}$ est formée des homomorphismes homogènes de degré $\symup{n}$ de $\symup{K}$ dans $\symup{L}$ (i.e.
+des systèmes $\symup{(u_i)}$ d'homomorphismes $\symup{K^{i}\longrightarrow L^{i+n}}$).
+Si $\symup{K}$ et $\symup{L}$ sont des complexes (à opérateurs différentiels de degré $\symup{+1}$ pour
+fixer les idées), on introduit dans $\symup{\operatorname{Hom}(K,L)}$ l'opérateur
+différentiel donné par
+\begin{equation}\tag{2.1}
+  \symup{\delta(u)=du+(-1)^{n+1}ud,\qquad\text{où }n=\deg(u)}
+\end{equation}
+qui en fait un complexe à opérateur différentiel de degré $\symup{+1}$. Les cycles de
+degré $\symup{n}$ sont les opérateurs de degré $\symup{n}$ qui commutent à $\symup{d}$ (en tant
+qu'opérateurs homogènes).\footnote{Le texte imprimé porte « anticommutent à $\symup{u}$ ». Par (2.1), un cycle vérifie $\symup{du=(-1)^nud}$ : il commute donc à $\symup{d}$ au sens gradué.} On peut alors considérer
+$\symup{H^{*}\bigl(\operatorname{Hom}(K,L)\bigr)}$, c'est un invariant des types
+d'homotopie de $\symup{K}$ et de $\symup{L}$, qu'on pourra noter $\symup{H^{*}(K,L)}$.
+Si on a un troisième complexe $\symup{M}$, alors la composition des homomorphismes
+définit un accouplement
+$\symup{\operatorname{Hom}(K,L)\times\operatorname{Hom}(L,M)
+\longrightarrow\operatorname{Hom}(K,M)}$ compatible avec les opérateurs différentiels, d'où par passage à la cohomologie
+des accouplements
+\begin{equation}\tag{2.2}
+  \symup{H^{*}(K,L)\times H^{*}(L,M)\longrightarrow H^{*}(K,M)}
+\end{equation}
+notés $\symup{(u,v)\longrightarrow vu}$. Ces accouplements satisfont une propriété évidente
+d'associativité. En particulier, $\symup{H^{*}(K,K)}$ est un anneau gradué associatif
+avec unité, et $\symup{H^{*}(K,L)}$ (resp. $\symup{H^{*}(L,K)}$) est un module gradué à droite
+(resp. à gauche) sur cet anneau, etc. En dimension $\symup{0}$, (2.2) se réduit à la
+composition des homomorphismes permis de complexes. Enfin, une suite exacte de
+complexes

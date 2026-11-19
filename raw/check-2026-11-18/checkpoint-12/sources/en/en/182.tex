@@ -1,0 +1,1345 @@
+\unit{Exposé 182 — Formal Geometry and Algebraic Geometry}
+\sid{182}
+\src{193}
+\seminaren{(May 1959)}
+\paperhead{FORMAL GEOMETRY AND ALGEBRAIC GEOMETRY}%
+  {by Alexander GROTHENDIECK}
+
+\fsection{\normalfont1}{\normalfont\uline{Schemes}.}
+
+An affine algebraic space defined over a field $\symup{k}$ is known to be essentially
+determined by its affine algebra $\symup{A}$ (the ring of regular functions defined over
+$\symup{k}$), with morphisms of algebraic spaces $\symup{X\longrightarrow Y}$ corresponding
+bijectively to homomorphisms of $\symup{k}$-algebras
+$\symup{A(Y)\longrightarrow A(X)}$. The affine algebra corresponding to an algebraic
+space is a finitely generated $\symup{k}$-algebra and, from the “classical” point of
+view, has no nilpotent elements; conversely, every algebra of this type is
+obtained as the affine algebra of an algebraic space defined over $\symup{k}$. There is
+then a familiar dictionary for interpreting situations concerning affine
+algebraic spaces in terms of commutative algebra. It has long been observed
+that this yields more general statements, since it is usually no longer
+necessary to suppose that the rings in question are of the type just
+considered, the Noetherian hypothesis most often being sufficient. In
+particular, whether or not a base field is specified, there is no reason to
+exclude the case in which these rings contain nilpotent elements. Until now,
+geometers have refused to take these indications into account and have
+persisted in restricting themselves to affine algebras without nilpotent
+elements, i.e. to algebraic spaces whose structure sheaves contain no
+nilpotent elements (and, most often, even to “absolutely irreducible”
+algebraic spaces). The speaker believes that this state of mind has been a
+serious obstacle to the development of genuinely natural methods in algebraic
+geometry.
+
+Let $\symup{A}$ be a commutative ring. It is well known that the set
+$\symup{X=\operatorname{Spec}(A)}$ of prime ideals of $\symup{A}$ carries a natural topology,
+the “\uline{Zariski topology}” or spectral topology. Moreover, there is a sheaf of
+commutative rings $\symup{O_X}$ on $\symup{X}$ whose stalk at $\symup{\mathfrak p\in X}$ is the
+localized ring $\symup{A_{\mathfrak p}}$ and whose ring of sections identifies with
+$\symup{A}$. Thus $\symup{X}$ becomes a \uline{ringed space}, called the \uline{prime spectrum}
+of $\symup{A}$. A ring homomorphism $\symup{f:A\longrightarrow B}$ defines a morphism of
+ringed spaces
+$\symup{f':\operatorname{Spec}(B)\longrightarrow\operatorname{Spec}(A)}$ whose
+underlying map of sets is simply
+$\symup{\mathfrak p\longrightarrow f^{-1}(\mathfrak p)}$. The homomorphisms
+
+\src{194}
+of ringed spaces from $\symup{\operatorname{Spec}(B)}$ to
+$\symup{\operatorname{Spec}(A)}$ obtained in this way are exactly those for which the
+homomorphisms $\symup{O_x\longrightarrow O_y}$ ($\symup{x=f'(y)}$) are local (i.e. the
+inverse image of the maximal ideal is the maximal ideal).
+
+An \uline{affine scheme} is a ringed space isomorphic to some
+$\symup{\operatorname{Spec}(A)}$, and a \uline{prescheme} is a locally affine ringed
+space, i.e. one in which every point has an open neighborhood that is an affine
+scheme for the induced structure. \uline{Morphisms} of preschemes are defined in the
+evident way; locally they correspond to ring homomorphisms.
+
+When a prescheme $\symup{S}$ is fixed and morphisms of preschemes
+$\symup{X\longrightarrow S}$ are considered, $\symup{S}$ plays the role of a base field or
+base ring (or better, of a base space in a fibration). One then says that $\symup{X}$
+is an $\symup{S}$-prescheme; if $\symup{S=\operatorname{Spec}(A)}$, this also means that
+$\symup{O_X}$ is a sheaf of $\symup{A}$\uline{-algebras}. Thus every prescheme may be regarded
+uniquely as a $\symup{Z}$-prescheme. The $\symup{S}$-preschemes naturally form a
+category; moreover, one proves that the product of any two objects $\symup{X,Y}$ in
+this category always exists, and it is denoted $\symup{X\times_S Y}$. This notion of
+product makes it possible to define base change in an $\symup{S}$-prescheme
+corresponding to a morphism $\symup{S'\longrightarrow S}$: indeed, $\symup{X\times_S S'}$ may
+be regarded as an $\symup{S'}$-prescheme.
+
+One says that $\symup{X}$ is \uline{separated} over $\symup{S}$ if the diagonal of
+$\symup{X\times_S X}$ is closed. A \uline{scheme} is a prescheme separated over
+$\symup{Z}$; it is then separated over anything. For simplicity, from now on
+we shall speak only of schemes, which we shall moreover assume
+\uline{Noetherian}, i.e. finite unions of affine open subsets that are spectra
+of Noetherian rings. $\symup{X}$ is \uline{said to be of finite type} over $\symup{S}$ if,
+for every affine open subset $\symup{U}$ of $\symup{S}$, its inverse image in $\symup{X}$ is a finite
+union of affine open subsets whose rings are finite-type algebras over the ring
+of $\symup{U}$. It is such $\symup{S}$-schemes that lend themselves to a properly geometric
+study. In particular, for every $\symup{s\in S}$, the fiber $\symup{f^{-1}(s)}$ of $\symup{X}$ over
+$\symup{s}$ is an algebraic scheme over the residue field $\symup{\varkappa(s)}$ of the local ring
+$\symup{O_s}$ of $\symup{s}$ in $\symup{S}$. Thus $\symup{X}$ may, to a certain extent, be regarded as a
+family of “algebraic spaces” $\symup{f^{-1}(s)}$, with the parameter $\symup{s}$ ranging over
+$\symup{S}$ (i.e., from the local point of view, over the set of prime ideals of a
+given ring). The $\symup{\varkappa(s)}$ may of course have different characteristics. If
+$\symup{S=\operatorname{Spec}(k)}$, where $\symup{k}$ is a field, one essentially recovers the
+usual notion of an “algebraic space”, with the sole difference that the
+structure sheaf may now have nilpotent elements.
+
+\src{195}
+Drawing on familiar notions, one defines a \uline{projective morphism}, and more
+generally a \uline{proper morphism}. Such a morphism is of finite type; moreover,
+it maps closed subsets to closed subsets and retains this property under
+arbitrary base change.
+
+If $\symup{X}$ is a scheme (Noetherian, as always), the sheaf $\symup{O_X}$ is a
+\uline{coherent sheaf of rings} in the sense of [2]. Thus the coherent sheaves
+of modules on $\symup{X}$ are also precisely those sheaves locally isomorphic to the
+cokernel of a homomorphism $\symup{O_X^{m}\longrightarrow O_X^{n}}$.
+
+\fsection{\normalfont2}{\normalfont\uline{Formal schemes}.}
+
+Let $\symup{X}$ be a scheme and $\symup{X'}$ a closed subset of $\symup{X}$. There is then a coherent
+subsheaf $\symup{J}$ of $\symup{O_X}$ such that
+$\symup{X'=\operatorname{supp}O_X/J}$ (and there is even a largest such
+subsheaf). Equipped with $\symup{O_X/J}$, $\symup{X'}$ becomes a scheme, denoted $\symup{X_0}$; such
+a scheme is called a “\uline{closed subscheme of} $\symup{X}$”. For every $\symup{n}$, one may also
+consider $\symup{X'}$ equipped with $\symup{O_X/J^{n+1}}$, denoted $\symup{X_n}$; this is a closed
+subprescheme of $\symup{X}$ whose underlying set is still $\symup{X'}$ but which has a
+different structure sheaf, namely $\symup{O_{X_n}=O_X/J^{n+1}}$. The
+$\symup{O_{X_n}}$ plainly form an projective system of sheaves of rings on $\symup{X}$, whose
+projective limit $\symup{\overline{O}_X}$ is called the \uline{formal completion of}
+$\symup{O_X}$ \uline{along} $\symup{X'}$. Equipped with this sheaf of rings, $\symup{X'}$ is \uline{called the
+formal completion of} $\symup{X}$ \uline{along} $\symup{X'}$; it is therefore a ringed space but
+not, in general, a scheme. For every coherent sheaf $\symup{F}$ on $\symup{X}$, one may
+similarly consider the formal completion
+$\symup{\overline F=\varprojlim\limits_n F_n}$ of $\symup{F}$ along $\symup{X'}$ (where
+$\symup{F_n=F\otimes_{O_X}O_X/J^{n+1}}$); it is a sheaf of modules on
+$\symup{\overline X}$. Its sections are called the “formal sections of $\symup{F}$ along
+$\symup{X'}$” and identify with the elements of
+$\symup{\varprojlim\limits_n\Gamma(X',F_n)}$. For $\symup{F=O_X}$, one obtains the “holomorphic
+functions” of $\symup{X}$ along $\symup{X'}$ in ZARISKI's sense (whose terminology we shall
+not follow because it conflicts with classical terminology).
+
+A \uline{formal scheme} (understood to mean Noetherian) is a topological space
+$\symup{\mathfrak X}$ equipped with a sheaf of topological rings
+$\symup{O_{\mathfrak X}}$ satisfying the following condition: there is an
+isomorphism of sheaves of topological rings
+$\symup{O_{\mathfrak X}=\varprojlim\limits_nO_n}$, where the $\symup{O_n}$ form an projective
+system of sheaves of rings on $\symup{\mathfrak X}$, each making $\symup{\mathfrak X}$ into a
+scheme $\symup{\mathfrak X_n}$, and such that for $\symup{m\geqslant n}$ the homomorphism
+$\symup{O_m\longrightarrow O_n}$ is surjective and has kernel $\symup{J_m^{n+1}}$, where
+$\symup{J_m}$ is
+
+\src{196}
+the kernel of $\symup{O_m\longrightarrow O_0}$. One then proves that
+$\symup{O_{\mathfrak X}}$ is a \uline{coherent} sheaf of \uline{Noetherian local} rings.
+
+By the definitions, a formal completion $\symup{\overline X}$ as above is a formal
+scheme, and conversely every formal scheme is \uline{locally} of this type. In
+fact, specifying an \uline{affine} formal scheme (i.e. one for which
+$\symup{\mathfrak X_0}$ is affine, which implies that all the $\symup{\mathfrak X_n}$ are
+affine) is equivalent to specifying a Noetherian topological ring that is
+separated and complete for the $\symup{J}$-adic topology.
+
+The usual definitions for ordinary schemes---morphism, morphism of finite type,
+proper morphism, and so forth---extend without difficulty to formal schemes.
+
+\fsection{\normalfont3}{\normalfont\uline{The three fundamental theorems}.}
+
+Let $\symup{f:X\longrightarrow Y}$ be a proper morphism of schemes (Noetherian, as
+always), let $\symup{Y'}$ be a closed subset of $\symup{Y}$, and let $\symup{X'}$ be its inverse image
+in $\symup{X}$; consider the corresponding formal completions $\symup{\overline Y}$ and
+$\symup{\overline X}$. Then $\symup{f}$ induces a morphism
+$\symup{\overline f:\overline X\longrightarrow\overline Y}$ of formal schemes, which
+is itself proper. If $\symup{F}$ is a coherent sheaf on $\symup{X}$, then $\symup{\overline F}$ is a
+coherent sheaf on $\symup{\overline X}$. In Theorem 1, the original $\symup{X,Y,F}$ are
+forgotten and only the proper morphism $\symup{\overline f}$ of formal schemes and the
+coherent sheaf $\symup{\overline F}$ on $\symup{\overline X}$ are retained. (The speaker has,
+however, written out a complete proof only in the case that begins with
+$\symup{X,Y,f,F}$.)
+
+\result[.]{THEOREM}{1 (finiteness theorem)}
+\begin{enumerate}
+  \item[\textnormal{i.}] \uline{The} $\symup{R^{q}\overline f_{*}(\overline F)}$ \uline{are coherent
+    sheaves on} $\symup{\overline Y}$.
+  \item[\textnormal{ii.}] \uline{The natural homomorphisms}
+    \[
+      \symup{R^{q}\overline f_{*}(\overline F)
+      \longrightarrow \varprojlim\limits_n R^{q}f_{n*}(F_n)}
+    \]
+    \uline{are isomorphisms.}
+\end{enumerate}
+
+In this statement, a coherent subsheaf $\symup{J}$ of $\symup{O_Y}$ defining $\symup{Y'}$ is
+supposed chosen; its inverse image gives a coherent subsheaf of $\symup{O_X}$
+defining $\symup{X'}$, and hence the definition of $\symup{F_n,X_n,Y_n}$ and
+$\symup{f_n:X_n\longrightarrow Y_n}$ as in Section 2. The minor changes needed to make
+these notations explicit are evident if one starts with an arbitrary proper
+morphism of two formal schemes.
+
+Theorem 1 concerned only “formal cohomology”. The following theorem
+
+\src{197}
+relates it to “algebraic cohomology” and is akin to a well-known theorem of
+SERRE [4] comparing algebraic and analytic cohomology.
+
+\result{THEOREM}{2 (First comparison theorem)} \uline{The} $\symup{R^{q}f_{*}(F)}$ \uline{are
+coherent sheaves on} $\symup{Y}$ (which is a special case of Theorem 1), \uline{and the natural
+homomorphisms}
+\[
+  \symup{\overline{R^{q}f_{*}(F)}
+  \longrightarrow \varprojlim\limits_n R^{q}f_{n*}(F_n)}
+\]
+\uline{are isomorphisms}.
+
+\result{COROLLARY}{1} \uline{There are canonical isomorphisms}:
+$\symup{\overline{R^{q}f_{*}(F)}=R^{q}\overline f_{*}(\overline F)}$.
+
+For $\symup{q=0}$, this corollary is a generalization of Zariski's “fundamental theorem
+of holomorphic functions”, from which we shall deduce a generalization of
+Zariski's “connectedness theorem”. Note, moreover, that although Theorem 1
+(ii) is trivial for $\symup{q=0}$, the same is by no means true of Theorem 2
+or of its equivalent formulation (Corollary 1). In fact, the proof proceeds by
+descending induction on $\symup{q}$ (being trivial for large $\symup{q}$, since both sides then
+vanish), and the case $\symup{q=0}$ thus appears as the last step of the induction and
+therefore, so to speak, as the “most difficult” case.
+
+\result{COROLLARY}{2} \uline{Suppose} $\symup{Y=\operatorname{Spec}(A)}$, \uline{with} $\symup{Y'}$ \uline{defined by
+the ideal} $\symup{J}$ \uline{of} $\symup{A}$. \uline{Then, for every coherent sheaf} $\symup{F}$ \uline{on} $\symup{X}$, \uline{the}
+$\symup{H^{q}(X,F)}$ \uline{are} $\symup{A}$\uline{-modules of finite type whose} $\symup{J}$\uline{-adic completions are the}
+$\symup{H^{q}(\overline X,\overline F)}$.
+
+Finally, applying this corollary to
+$\symup{H=\mathop{\text{\uwave{Hom}}}\nolimits_{O_X}(F,G)}$ gives:
+
+\result{COROLLARY}{3} \uline{Suppose} $\symup{Y=\operatorname{Spec}(A)}$, \uline{with} $\symup{Y'}$ \uline{defined by
+the ideal} $\symup{J}$ \uline{of} $\symup{A}$. \uline{If} $\symup{F,G}$ \uline{are two coherent sheaves on} $\symup{X}$, \uline{then}
+$\symup{\operatorname{Hom}(F,G)}$ \uline{is a module of finite type over} $\symup{A}$ \uline{whose} $\symup{J}$\uline{-adic
+completion identifies with}
+$\symup{\operatorname{Hom}(\overline F,\overline G)}$.
+
+The natural map
+$\symup{\operatorname{Hom}(F,G)\longrightarrow
+\operatorname{Hom}(\overline F,\overline G)}$ is of course the one that assigns
+to a homomorphism $\symup{u:F\longrightarrow G}$ its extension “by continuity”
+$\symup{\overline u:\overline F\longrightarrow\overline G}$ (so that
+$\symup{\overline F}$ becomes a functor of $\symup{F}$).
+
+Now suppose that $\symup{A}$ is separated and complete for its $\symup{J}$-adic topology. The
+preceding Corollaries 2 and 3 then give:
+\[
+  \symup{H^{q}(X,F)=H^{q}(\overline X,\overline F),
+  \qquad
+  \operatorname{Hom}(F,G)
+  =\operatorname{Hom}(\overline F,\overline G).}
+\]
+
+\src{198}
+This last identity shows that the category of coherent sheaves on $\symup{X}$
+identifies with a \uline{subcategory} (whose morphisms are the induced
+morphisms) of the category of coherent sheaves on $\symup{\overline X}$. In fact, one
+has the stronger statement:
+
+\result{THEOREM}{3} \uline{A sheaf of modules on} $\symup{\overline X}$ \uline{is coherent if and only
+if it is isomorphic to a sheaf of the form} $\symup{\overline F}$, \uline{where} $\symup{F}$ \uline{is a
+coherent sheaf on} $\symup{X}$ (determined up to canonical isomorphism by Theorem 2,
+Corollary 3). [Recall that now $\symup{Y=\operatorname{Spec}(A)}$, where $\symup{A}$ is a
+Noetherian topological ring that is separated and complete for the $\symup{J}$-adic
+topology].
+
+\result{COROLLARY}{1} \uline{The closed subschemes of} $\symup{X}$ \uline{correspond bijectively to
+the closed formal subschemes of} $\symup{\overline X}$.
+
+Indeed, they correspond to the coherent subsheaves of $\symup{O_X}$, resp.
+of $\symup{\overline{O}_X}$. Viewing the graphs of morphisms as closed subschemes,
+one deduces from Corollary 1:
+
+\result{COROLLARY}{2} \uline{Let} $\symup{X,Z}$ \uline{be two schemes proper over} $\symup{A}$ (a Noetherian
+$\symup{J}$-adic ring that is separated and complete). \uline{Then the map}
+$\symup{g\longrightarrow\overline g}$ \uline{defines a bijection between the} $\symup{Y}$\uline{-morphisms from}
+$\symup{X}$ \uline{to} $\symup{Z}$ \uline{and the} $\symup{\overline Y}$\uline{-morphisms from} $\symup{\overline X}$ \uline{to}
+$\symup{\overline Z}$.
+
+In other words, \uline{algebraic schemes proper over} $\symup{A}$ \uline{appear as a
+subcategory} (whose morphisms are the induced morphisms) of the category
+of formal schemes proper over $\symup{\overline Y}$. It should be noted, however, \uline{that
+there are formal schemes proper over} $\symup{\overline Y}$ \uline{that are not
+“algebraizable”}, i.e. are not isomorphic to any $\symup{\overline X}$ with $\symup{X}$ proper
+over $\symup{A}$ (just as there are compact complex analytic varieties that do not
+come from algebraic varieties defined over the complex numbers). Such formal
+schemes arise naturally in the \uline{“theory of moduli”}. Let us nevertheless note
+an interesting special case in which a formal scheme is algebraizable:
+
+\result{THEOREM}{4} \uline{Let} $\symup{A}$ \uline{be a complete Noetherian local ring with residue
+field} $\symup{k}$, \uline{and let} $\symup{\mathfrak X}$ \uline{be a formal scheme proper over} $\symup{A}$ (equipped
+with its $\symup{\mathfrak r(A)}$-adic topology). Suppose:
+\begin{enumerate}
+  \item[\textnormal{i.}] \uline{that the local rings of} $\symup{O_{\mathfrak X}}$ \uline{are} flat
+    $\symup{A}$\uline{-modules, or equivalently, if} $\symup{O_{\mathfrak X}}$ \uline{and} $\symup{A}$ \uline{are equipped
+    with the filtrations defined by the powers of the maximal ideal of} $\symup{A}$,
+    \uline{that the associated graded objects satisfy}
+    $\symup{\operatorname{gr}(O_{\mathfrak X})\simeq
+      \operatorname{gr}^{0}(O_{\mathfrak X})\otimes_k\operatorname{gr}(A)}$.
+  \item[\textnormal{ii.}] \uline{regarding}
+    $\symup{\mathfrak X_0=\mathfrak X\otimes_A k}$ \uline{as an algebraic scheme over} $\symup{k}$, \uline{one
+    has}
+\src{199}
+    $\symup{H^2(\mathfrak X_0,O_{\mathfrak X_0})=0}$.
+  \item[\textnormal{iii.}] $\symup{\mathfrak X_0}$ \uline{is projective}.
+\end{enumerate}
+\uline{Under these conditions}, $\symup{\mathfrak X}$ \uline{is algebraizable; more precisely, it is
+isomorphic to} $\symup{\overline X}$, \uline{where} $\symup{X}$ \uline{is a} projective $\symup{A}$\uline{-scheme}.
+
+Conditions (ii) and (iii) hold in particular when
+$\symup{\mathfrak X_0}$ is a \uline{nonsingular curve} over $\symup{k}$, and Theorem 4 can therefore
+be applied, in particular, in the “theory of moduli” for curves of given
+genus\ldots{} Let us indicate how Theorem 4 is proved. One shows (cf.
+Proposition 3 below) that (i) and (ii) imply that every
+coherent sheaf on $\symup{\mathfrak X_0}$ which is locally isomorphic to the structure
+sheaf is obtained by reduction from a sheaf of the same kind on
+$\symup{\mathfrak X}$. Starting with an “ample” sheaf on $\symup{\mathfrak X_0}$ (one exists
+by (iii)), one then lifts it to an invertible sheaf on $\symup{\mathfrak X}$;
+using Theorem 1, one proves that a multiple of this sheaf defines an immersion
+of $\symup{\mathfrak X}$ into the formal completion of a scheme $\symup{P_A^r}$ (the
+“standard projective space” of dimension $\symup{r}$ over $\symup{A}$).
+
+For the proofs of Theorems 1 through 3, see [1].
+
+
+\fsection{\normalfont4}{\normalfont\uline{Application to the connectedness theorem and Zariski's “Main
+theorem”}.}
+
+Let $\symup{f:X\longrightarrow Y}$ be a proper morphism of schemes. By the finiteness
+theorem, $\symup{f_*(O_X)=\text{\uwave{A}}}$ is a coherent sheaf on $\symup{Y}$; it is moreover
+a sheaf of commutative algebras, and therefore corresponds to a $\symup{Y}$-scheme
+$\symup{g:Y'\longrightarrow Y}$ finite over $\symup{Y}$ (defined by the conditions that it be
+affine over $\symup{Y}$, i.e. that the inverse image of an affine open subset be
+affine, and that $\symup{g_*(O_{Y'})=\text{\uwave{A}}}$). It is immediate that $\symup{f}$ then
+factors canonically as $\symup{f=gf'}$, where $\symup{f':X\longrightarrow Y'}$ is a morphism
+from $\symup{X}$ to $\symup{Y'}$ satisfying $\symup{f'_*(O_X)=O_{Y'}}$. This factorization of
+$\symup{f}$ is called \uline{the Stein factorization} of $\symup{f}$. Applying the first
+comparison theorem, Corollary 1, to $\symup{f'}$ and to the part of $\symup{Y'}$ reduced to a
+point $\symup{y'}$, one finds that $\symup{f'^{-1}(y')=X'}$ is connected (otherwise the formal
+sections of $\symup{X}$ along $\symup{X'}$ would not form a local ring, whereas the completion
+of $\symup{f'_*(O_X)_{y'}=O_{y'}}$ is local!). We have proved:
+
+\result{THEOREM}{5 (Zariski's “connectedness theorem”)} \uline{Let}
+$\symup{f:X\longrightarrow Y}$ \uline{be a proper morphism. Then} $\symup{f}$ \uline{factors uniquely} (up to
+isomorphism) \uline{as} $\symup{f=gf'}$, \uline{where} $\symup{g:Y'\longrightarrow Y}$ \uline{is finite and}
+$\symup{f':X\longrightarrow Y'}$ \uline{satisfies} $\symup{f'_*(O_X)=O_{Y'}}$ (whence
+$\symup{g_*(O_{Y'})=f_*(O_X)}$). \uline{The fibers of} $\symup{f'}$ \uline{are connected}; \src{200}
+that is, \uline{the
+set of connected components of a fiber} $\symup{f^{-1}(y)}$ \uline{of} $\symup{f}$ \uline{is in bijection
+with the set of points of} $\symup{Y'}$ \uline{above} $\symup{y}$, \uline{i.e. with the set of maximal ideals
+of} $\symup{f_*(O_X)_y}$.
+
+The usual variants of the connectedness theorem follow immediately. We note
+here only the following.
+
+
+\result{COROLLARY}{1} \uline{A point} $\symup{x}$ \uline{of} $\symup{X}$ \uline{is isolated in its fiber}
+$\symup{f^{-1}(y)}$ \uline{if and only if the fiber} $\symup{f'^{-1}(y')}$ (where $\symup{y'=f'(x)}$) \uline{is
+reduced to} $\symup{x}$, \uline{or equivalently if} $\symup{f'}$ \uline{induces an isomorphism from a
+neighborhood of} $\symup{x}$ \uline{onto a neighborhood of} $\symup{y'}$. \uline{The set of these points is
+an open subset} $\symup{U}$, \uline{and} $\symup{f'}$ \uline{induces an isomorphism from} $\symup{U}$ \uline{onto an open
+subset of} $\symup{Y'}$.
+
+To show that $\symup{f'}$ is a local isomorphism at $\symup{x}$, observe that $\symup{f'}$ induces an
+\uline{isomorphism} $\symup{O_{y'}\longrightarrow O_x}$, as follows from
+$\symup{f'_*(O_X)=O_{Y'}}$ and from the fact that (since $\symup{f'}$ is a closed map
+whose fiber over $\symup{y'}$ is reduced to $\symup{x}$) the sets $\symup{f'^{-1}(V)}$ run through a
+fundamental system of neighborhoods of $\symup{x}$ as $\symup{V}$ runs through a fundamental
+system of neighborhoods of $\symup{y'}$. The following result, due to CHEVALLEY in the
+“geometric” case, follows at once.
+
+\result{COROLLARY}{2} \uline{A morphism} $\symup{f}$ \uline{is finite if and only if it is proper and
+its fibers are finite}.
+
+Indeed, in that case $\symup{f'}$ is an isomorphism by the preceding result.
+
+Let $\symup{f:X\longrightarrow Y}$ be a morphism not necessarily proper, but suppose
+that $\symup{X}$ is contained as an open subset in a proper $\symup{Y}$-scheme
+$\symup{\overline f:\overline X\longrightarrow Y}$ (as will be the case, in
+particular, if $\symup{f}$ is quasi-projective). Applying Corollary 1, one sees that
+$\symup{\overline f'}$ induces an isomorphism from the set $\symup{U}$ of points of $\symup{X}$
+isolated in their fiber onto an open subset of $\symup{Y'}$ (and that $\symup{U}$ is indeed
+open). This gives the following global form of Zariski's “Main Theorem”.
+
+\result{THEOREM}{6 (Zariski's “Main Theorem”)} \uline{Let}
+$\symup{f:X\longrightarrow Y}$ \uline{be a morphism of finite type. Then the set} $\symup{U}$ \uline{of
+points of} $\symup{X}$ \uline{that are isolated in their fiber is open; and if} $\symup{f}$ \uline{is
+quasi-projective}, $\symup{U}$ \uline{is}
+$\symup{Y}$\uline{-isomorphic to an open part of a scheme} $\symup{Y'}$ \uline{finite over} $\symup{Y}$.
+
+Since a morphism of finite type is locally affine and hence,
+\uline{a fortiori}, locally quasi-projective, the usual local forms of the
+Main Theorem follow at once from Theorem 6.
+
+\fsection{\normalfont5}{\normalfont\uline{Application to the cohomological study of proper and flat morphisms}.}
+
+Let $\symup{f:X\longrightarrow Y}$ be a proper morphism, and let $\symup{F}$ be a coherent
+sheaf on $\symup{X}$, \src{201}
+$\symup{F}$ being assumed flat over $\symup{Y}$, i.e. the $\symup{F_x}$ are flat modules over the
+rings $\symup{O_y}$ ($\symup{y=f(x)}$). Equivalently, for every $\symup{y\in Y}$, if we filter $\symup{F}$
+along the fiber $\symup{f^{-1}(y)}$ by the $\symup{\mathfrak m_y^nF}$ (where
+$\symup{\mathfrak m_y}$ is the maximal ideal of $\symup{O_y}$), the associated graded
+object is isomorphic to
+$\symup{(F/\mathfrak m_yF)\otimes_{\varkappa(y)}\operatorname{gr}(O_y)}$; in other
+words,
+\[
+  \symup{\mathfrak m_y^nF/\mathfrak m_y^{n+1}F
+  =F_y\otimes_{\varkappa(y)}
+  (\mathfrak m_y^n/\mathfrak m_y^{n+1})}
+\]
+for every integer $\symup{n}$. Here $\symup{X_y}$ denotes the fiber $\symup{f^{-1}(y)}$ regarded as a
+proper scheme over the residue field $\symup{\varkappa(y)}$ of $\symup{y}$, and $\symup{F_y}$ is the
+sheaf $\symup{F/\mathfrak m_yF}$ induced by $\symup{F}$ on $\symup{X_y}$. Taking this isomorphism and
+Theorem 2 into account, one obtains bounds, and sometimes computations, for
+the $\symup{R^qf_*(F)}$ near $\symup{y}$ from the cohomology of $\symup{X_y}$ with coefficients in
+$\symup{F_y}$. Here Theorem 2 takes the form
+\[
+  \symup{\overline{R^qf_*(F)}_y
+  =\varprojlim\limits_n H^q(X_y,F/\mathfrak m_y^nF)}
+\]
+We shall mention only the following consequence:
+
+
+\result{PROPOSITION}{1} \uline{Let} $\symup{f:X\longrightarrow Y}$ \uline{be a proper morphism and
+let} $\symup{F}$ \uline{be a coherent sheaf on} $\symup{X}$, \uline{flat over} $\symup{Y}$. \uline{Let} $\symup{y\in Y}$ \uline{and let} $\symup{q}$
+\uline{be an integer, and suppose that} $\symup{H^q(X_y,F_y)=0}$. \uline{Then} $\symup{R^qf_*(F)}$ \uline{vanishes in
+a neighborhood of} $\symup{y}$, \uline{and for every} $\symup{n}$ \uline{the natural homomorphism}
+$\symup{R^{q-1}f_*(F)_y\longrightarrow H^{q-1}(X_y,F/\mathfrak m_y^nF)}$
+\uline{is surjective}.
+
+In particular, if $\symup{f}$ is a flat morphism (i.e. $\symup{O_X}$ is flat over $\symup{Y}$),
+then every locally free coherent sheaf $\symup{F}$ on $\symup{X}$ is flat over $\symup{Y}$. Let $\symup{F,G}$
+be two such sheaves. Applying Proposition 1 to
+$\symup{\mathop{\text{\uwave{Hom}}}\nolimits_{O_X}(F,G)}$ with $\symup{q=1}$, one obtains:
+
+\result{THEOREM}{7} \uline{Let} $\symup{f}$ \uline{be a proper flat morphism, let} $\symup{F,G}$ \uline{be two
+locally free coherent sheaves on} $\symup{X}$, \uline{let} $\symup{y\in Y}$, \uline{and suppose that}
+$\symup{H^1\bigl(X_y,\Homsh_{O_X}(F_y,G_y)\bigr)=0}$,
+\uline{then every homomorphism} $\symup{u_0:F_y\longrightarrow G_y}$ \uline{is induced by a
+homomorphism}
+$\symup{u:F|V\longrightarrow G|V}$, where $\symup{V=f^{-1}(U)}$ \uline{is the inverse image of a
+neighborhood} $\symup{U}$ \uline{of} $\symup{y}$.
+
+\result{COROLLARY}{} \uline{If} $\symup{u_0}$ \uline{is an isomorphism} (resp. a monomorphism,
+an epimorphism), \uline{then so is} $\symup{u}$ \uline{for sufficiently small} $\symup{U}$.
+
+In particular:
+
+\src{202}
+\result{COROLLARY}{2} \uline{Let} $\symup{E_0}$ \uline{be a locally free coherent sheaf on} $\symup{X_y}$ \uline{such
+that}
+$\symup{H^1\bigl(X_y;\mathop{\text{\uwave{Hom}}}\nolimits_{O_X}(E_0,E_0)\bigr)=0}$,
+\uline{then two locally free sheaves whose restrictions to} $\symup{X_y}$ \uline{are isomorphic to}
+$\symup{E_0}$ \uline{are isomorphic in a neighborhood of} $\symup{X_y}$.
+
+Thus:
+
+\result{COROLLARY}{3} \uline{Suppose that} $\symup{H^1(X_y,O_{X_y})=0}$. \uline{Then two
+invertible sheaves on} $\symup{X}$ (i.e. sheaves locally isomorphic to $\symup{O_X}$) \uline{whose
+restrictions to} $\symup{X_y}$ \uline{are isomorphic are themselves isomorphic in a neighborhood of} $\symup{X_y}$.
+
+It follows that:
+
+\result{PROPOSITION}{2} \uline{Let} $\symup{Y}$ \uline{be a connected scheme and let} $\symup{E}$ \uline{be a locally free coherent sheaf of rank at least} $\symup{2}$ \uline{on} $\symup{Y}$. \uline{Consider the associated projective-space bundle}
+$\symup{X=P(E)}$, \uline{equipped with its familiar invertible sheaf} $\symup{O_X(1)}$.
+\uline{Then every invertible sheaf} $\symup{L}$ \uline{on} $\symup{X}$ \uline{is isomorphic to a sheaf of the form}
+$\symup{f^*(L')\otimes O_X(n)}$,
+where $\symup{L'}$ \uline{is an invertible sheaf on} $\symup{Y}$ \uline{and} $\symup{n}$ \uline{is an integer. The integer}
+$\symup{n}$ \uline{is uniquely determined, and} $\symup{L'}$ \uline{is determined up to isomorphism}.
+
+The preceding Corollary 3 proves that $\symup{L}$ is isomorphic to some $\symup{O_X(n)}$ in
+a neighborhood of every fiber. The rest is more or less formal.
+
+Proposition 2 makes it possible to determine the $\symup{Y}$-morphisms from
+$\symup{X=P(E)}$ to another projective bundle. In particular, one finds:
+
+\result{COROLLARY}{} \uline{Let} $\symup{u}$ \uline{be an automorphism of} $\symup{X=P(E)}$. \uline{Then
+there exist an invertible sheaf} $\symup{L'}$ \uline{on} $\symup{Y}$ \uline{and an isomorphism}
+$\symup{v}$ \uline{from} $\symup{E}$ \uline{to} $\symup{E\otimes L'}$ \uline{such that} $\symup{u}$ \uline{is the corresponding
+isomorphism}
+$\symup{P(E)\xrightarrow{\sim}P(E\otimes L')=P(E)}$;
+\uline{the pair} $\symup{(v,L')}$ \uline{is determined up to isomorphism}.
+
+Let $\symup{\Gamma}$ be the set of classes of invertible bundles $\symup{L'}$ on $\symup{Y}$ such that
+$\symup{E\otimes L'}$ is isomorphic to $\symup{E}$. Its elements are torsion: indeed, if $\symup{n}$
+is the rank of $\symup{E}$, taking $\symup{n}$th exterior powers shows that one must have
+$\symup{L'^{\otimes n}\simeq O_Y}$. The corollary may therefore be expressed by
+saying that there is an exact sequence of groups.
+\[
+  \symup{e\longrightarrow
+  \operatorname{Aut}(E)/\Gamma(Y,O_Y^*)
+  \longrightarrow \operatorname{Aut}_Y(X)
+  \longrightarrow \Gamma\longrightarrow e}
+\]
+(which may also be deduced from the cohomology exact sequence arising from the
+following exact sequence of \uline{sheaves} of groups
+\src{203}
+\[
+  \symup{e\longrightarrow O_Y^*
+  \longrightarrow \mathop{\text{\uwave{Aut}}}\nolimits(E)
+  \longrightarrow \mathop{\text{\uwave{Aut}}}\nolimits_Y(X)
+  \longrightarrow e}
+\]
+where $\symup{O_Y^*}$ is the sheaf of “units” of $\symup{O_Y}$, identified with the
+center of $\symup{\mathop{\text{\uwave{Aut}}}\nolimits(E)}$).
+
+
+\fsection{\normalfont6}{\normalfont\uline{Application to existence and uniqueness theorems for sheaves and
+schemes over a complete} $\symup{J}$\uline{-adic ring}.}
+
+Theorem 7 gave a uniqueness result for locally free coherent sheaves, using
+Theorems 1 and 2. Using Theorem 3, we now deduce \uline{existence} theorems for
+sheaves, morphisms of schemes, or schemes. In what follows, $\symup{A}$ denotes a
+Noetherian local ring that is separated and \uline{complete}. The general method
+always consists in carrying out \uline{formal} constructions, which amounts
+essentially to doing \uline{algebraic geometry over an Artinian ring}, and then using
+the three fundamental theorems to draw conclusions of an “algebraic” nature.
+
+\result{PROPOSITION}{3} \uline{Let} $\symup{\mathfrak X}$ \uline{be a formal scheme proper and flat
+over} $\symup{A}$, \uline{and let} $\symup{F_0}$ \uline{be a locally free sheaf on} $\symup{X_0}$ \uline{such that}
+$\symup{H^2\bigl(X_0,\mathop{\text{\uwave{Hom}}}\nolimits_{O_{X_0}}(F_0,F_0)\bigr)=0}$.
+\uline{Then there exists a locally free sheaf} $\symup{F}$ \uline{on} $\symup{\mathfrak X}$ \uline{whose restriction
+to} $\symup{X_0}$ \uline{is isomorphic to} $\symup{F_0}$. (Moreover, this $\symup{F}$ is unique up to
+isomorphism if
+$\symup{H^1(X_0,\mathop{\text{\uwave{Hom}}}\nolimits_{O_{X_0}}(F_0,F_0))=0}$).
+
+One constructs, successively, locally free sheaves $\symup{F_n}$ on the $\symup{X_n}$, each
+inducing the preceding one. The construction of $\symup{F_n}$ encounters an
+obstruction in
+$\symup{H^2\bigl(X_0,\mathop{\text{\uwave{Hom}}}\nolimits_{O_{X_0}}(F_0,F_0)\bigr) \otimes_{A/J}(J^n/J^{n+1})}$,
+which therefore vanishes by hypothesis. Applying Theorem 3 now gives:
+
+\result{COROLLARY}{1} \uline{Let} $\symup{X}$ \uline{be a scheme proper and flat over} $\symup{A}$, \uline{and let}
+$\symup{F_0}$ \uline{be as above. Then there exists a locally free sheaf} $\symup{F}$ \uline{on} $\symup{X}$ \uline{whose
+restriction to} $\symup{X_0}$ \uline{is isomorphic to} $\symup{F_0}$. \uline{Moreover}, $\symup{F}$ \uline{is unique up to
+isomorphism if} $\symup{H^1(X_0,\mathop{\text{\uwave{Hom}}}\nolimits_{O_{X_0}}(F_0,F_0))=0}$.
+
+Let $\symup{X_0}$ be a scheme of finite type over the field $\symup{k}$. Suppose that $\symup{X_0}$ is
+\uline{nonsingular} (by which we mean \uline{absolutely} nonsingular) over $\symup{k}$, but not
+necessarily proper over $\symup{k}$. Let $\symup{A}$ be a local Artinian ring with residue
+field $\symup{k}$. We are interested in finding schemes $\symup{X}$ flat over $\symup{A}$ such that
+$\symup{X\otimes_A k=X_0}$ (this is the starting point of the “\uline{theory of moduli}” or
+of “variations of \src{204}
+structure” of $\symup{X_0}$). Giving such an $\symup{X}$ is equivalent to
+giving, on the topological space $\symup{X_0}$, a sheaf $\symup{O_X}$ endowed with the
+following structures:
+\begin{enumerate}
+  \item[\textnormal{i.}] It is a sheaf of $\symup{A}$-algebras.
+  \item[\textnormal{ii.}] It is endowed with an augmentation homomorphism
+    $\symup{O_X\longrightarrow O_{X_0}}$ (compatible with the $\symup{A}$-algebra
+    structures), subject to the following conditions: the augmentation
+    induces an isomorphism
+    $\symup{O_X\otimes_A k\xrightarrow{\sim}O_{X_0}}$; and $\symup{O_X}$ is flat
+    over $\symup{A}$, i.e. the graded object associated to $\symup{O_X}$, filtered by the
+    powers of the maximal ideal $\symup{\mathfrak m}$ of $\symup{A}$, is isomorphic to
+    $\symup{\operatorname{gr}^0(O_X)\otimes_k\operatorname{gr}(A)}$; equivalently,
+    there are isomorphisms
+    $\symup{\mathfrak m^nO_X/\mathfrak m^{n+1}O_X =O_{X_0}\otimes_k(\mathfrak m^n/\mathfrak m^{n+1})}$.
+The fundamental fact is the following:
+\end{enumerate}
+
+
+\result{THEOREM}{8} \uline{Let} $\symup{X_0}$ \uline{be a scheme of finite type and nonsingular over
+the field} $\symup{k}$, \uline{and suppose that} $\symup{X_0}$ \uline{is affine. Let} $\symup{A}$ \uline{be a local Artinian
+ring with residue field} $\symup{k}$. \uline{Then there exists an} $\symup{A}$\uline{-scheme} $\symup{X}$, \uline{flat over}
+$\symup{A}$, \uline{such that} $\symup{X\otimes_A k=X_0}$, \uline{and any two such schemes are necessarily
+isomorphic}.
+
+Let us note that the isomorphism in question is not canonical, since in general $\symup{X}$ will have
+nontrivial $\symup{A}$-automorphisms inducing the identity on $\symup{X_0}$. Moreover, in
+general there is no “canonical” choice of an $\symup{X}$ satisfying the stated
+conditions, except when $\symup{A}$ is a $\symup{k}$-algebra (the \uline{equal-characteristic} case),
+where one may take $\symup{X=X_0\otimes_k A}$, i.e.
+$\symup{O_X=O_{X_0}\otimes_k A}$ (whether or not $\symup{X_0}$ is affine). In unequal
+characteristic, when $\symup{X_0}$ is not affine, I do not know in general whether
+$\symup{X_0}$ can be “lifted” to an $\symup{X}$ defined over $\symup{A}$. Nevertheless, let $\symup{n}$ be
+an integer $\symup{>0}$, put $\symup{A_{n-1}=A/\mathfrak m^n}$, and suppose that $\symup{X_0}$ has been
+lifted to a flat $\symup{A_{n-1}}$-scheme $\symup{X_{n-1}}$; one seeks to lift $\symup{X_{n-1}}$ to a
+flat $\symup{A_n}$-scheme $\symup{X_n}$. Theorem 8 already shows that this is possible
+locally. Moreover, one checks easily that if $\symup{U_n}$ lifts an open subset
+$\symup{U_{n-1}}$ of $\symup{X_{n-1}}$, then the sheaf of groups of automorphisms of $\symup{U_n}$
+(inducing the identity on $\symup{U_{n-1}}$) is canonically isomorphic to
+$\symup{\mathfrak G_{X_0/k}\otimes_k\mathfrak m^n/\mathfrak m^{n+1}}$
+restricted to $\symup{U_{n-1}}$, and in particular is commutative
+($\symup{\mathfrak G_{X_0/k}}$ denotes the sheaf of germs of $\symup{k}$-derivations on $\symup{X_0}$).
+It follows easily that there is an \uline{obstruction to constructing} $\symup{X_n}$ \uline{lifting}
+$\symup{X_{n-1}}$, lying in
+$\symup{H^2(X_0,\mathfrak G_{X_0/k})\otimes \mathfrak m^n/\mathfrak m^{n+1}}$.
+Consequently:
+
+\result{COROLLARY}{1} \uline{Let} $\symup{X_0}$ \uline{be a scheme of finite type and nonsingular
+over} $\symup{k}$, \uline{and suppose that} \src{205}
+$\symup{H^2(X_0,\mathfrak G_{X_0/k})=0}$. \uline{Then, for every local
+Artinian ring} $\symup{A}$ \uline{with residue field} $\symup{k}$, \uline{there exists an} $\symup{A}$\uline{-scheme} $\symup{X}$, \uline{flat
+over} $\symup{A}$, \uline{such that} $\symup{X\otimes_A k=X_0}$.
+
+Moreover, if one has found \uline{an} $\symup{X}$ flat over $\symup{A}$ lifting $\symup{X_0}$, then by Theorem
+8 the set of classes (up to isomorphism) of flat $\symup{A}$-schemes lifting $\symup{X_0}$
+identifies with
+$\symup{H^1\bigl(X_0,\mathop{\text{\uwave{Aut}}}\nolimits(X)\bigr)}$,
+where $\symup{\mathop{\text{\uwave{Aut}}}\nolimits(X)}$ denotes, of course, the sheaf of
+germs of automorphisms of the sheaf of $\symup{A}$-algebras $\symup{O_X}$ that are
+\uline{compatible with the augmentation}. The filtration of $\symup{O_X}$ defines a
+filtration of $\symup{\mathop{\text{\uwave{Aut}}}\nolimits(X)}$, the quotient of this sheaf
+by the $\symup{n}$th subgroup of the filtration being
+$\symup{\mathop{\text{\uwave{Aut}}}\nolimits(X_{n-1})}$. The graded object associated with this
+filtration is commutative and identifies with
+$\symup{\mathfrak G_{X_0/k}\otimes_k\bigoplus_{i>0}\operatorname{gr}^i(A)}$. In particular, if
+$\symup{\mathfrak m^{n+1}}$ is the first power of $\symup{\mathfrak m}$ that vanishes, then
+$\symup{F^n(\mathop{\text{\uwave{Aut}}}\nolimits(X))}$ (the last step of the filtration) is
+contained in the center of $\symup{\mathop{\text{\uwave{Aut}}}\nolimits(X)}$ and is
+isomorphic to $\symup{\mathfrak G_{X_0/k}\otimes_k\mathfrak m^n}$; it is also the sheaf of
+germs of automorphisms of $\symup{X}$ that induce the identity on
+$\symup{X_{n-1}=X\otimes_A A/\mathfrak m^n}$. These results immediately give the
+following statements:
+
+
+\result{COROLLARY}{2} \uline{Let} $\symup{X_0}$ \uline{be a scheme of finite type and nonsingular
+over} $\symup{k}$. \uline{Let} $\symup{A}$ \uline{be a local Artinian ring with residue field} $\symup{k}$ \uline{and maximal
+ideal} $\symup{\mathfrak m}$, \uline{suppose that} $\symup{\mathfrak m^{n+1}=0}$, \uline{put}
+$\symup{A_{n-1}=A/\mathfrak m^n}$, \uline{and let} $\symup{X_{n-1}}$ \uline{be a flat} $\symup{A_{n-1}}$\uline{-scheme such
+that} $\symup{X_{n-1}\otimes_A k=X_0}$. \uline{Then the set of classes (up to isomorphism
+inducing the identity on} $\symup{X_{n-1}}$) \uline{of flat} $\symup{A}$\uline{-schemes} $\symup{X_n}$ \uline{such that}
+$\symup{X_n\otimes_A A_{n-1}=X_{n-1}}$ \uline{is either empty or a principal homogeneous
+space under}
+$\symup{H^1(X_0,\mathfrak G_{X_0/k})\otimes_k\mathfrak m^n}$.
+
+(Note that in general there is no privileged origin in this latter space,
+since there is no privileged way to lift $\symup{X_{n-1}}$ to $\symup{X_n}$).
+
+\result{COROLLARY}{3} \uline{Let} $\symup{X_0}$ \uline{be a scheme of finite type and} nonsingular
+\uline{over} $\symup{k}$, \uline{and suppose that} $\symup{H^1(X_0,\mathfrak G_{X_0/k})=0}$. \uline{Then, for every local
+Artinian ring} $\symup{A}$ \uline{with residue field} $\symup{k}$, \uline{there exists at most one} (up to
+isomorphism) \uline{flat} $\symup{A}$\uline{-scheme} $\symup{X}$ \uline{such that} $\symup{X\otimes_A k=X_0}$.
+
+Corollaries 1 and 3 immediately imply the apparently more general statements
+obtained by assuming only that $\symup{A}$ is a \uline{complete Noetherian local ring with
+residue field} $\symup{k}$, provided that $\symup{X}$ is introduced as a formal scheme over
+$\symup{A}$:
+
+\result{THEOREM}{9} \uline{Let} $\symup{k}$ \uline{be a field and let} $\symup{X_0}$ \uline{be a scheme of finite
+type and} nonsingular \uline{over} $\symup{k}$. \uline{For every complete Noetherian local ring} $\symup{A}$
+\uline{with residue field} $\symup{k}$, \uline{let} $\symup{F(A)}$ \uline{be the set of classes} (up to isomorphism
+inducing the identity on $\symup{X_0}$) \src{206}
+\uline{of formal schemes} $\symup{\mathfrak X}$ \uline{over} $\symup{A}$, \uline{of
+finite type and flat over} $\symup{A}$, \uline{such that} $\symup{\mathfrak X\otimes_A k=X_0}$. \uline{With
+this notation}:
+\begin{enumerate}
+  \item[\textnormal{i.}] \uline{If} $\symup{H^1(X_0,\mathfrak G_{X_0/k})=0}$, \uline{then for every} $\symup{A}$,
+    $\symup{F(A)}$ \uline{has at most one element}.
+  \item[\textnormal{ii.}] \uline{If} $\symup{H^2(X_0,\mathfrak G_{X_0/k})=0}$, \uline{then for every} $\symup{A}$,
+    $\symup{F(A)}$ \uline{has at least one element}.
+\end{enumerate}
+
+
+\result{COROLLARY}{1} \uline{Suppose that} $\symup{X_0}$ \uline{is proper over} $\symup{k}$. \uline{Under condition
+(i), for every} $\symup{A}$ \uline{there exists at most one} (up to isomorphism
+inducing the identity on $\symup{X_0}$) \uline{scheme} $\symup{X}$, \uline{proper and flat over} $\symup{A}$, \uline{such that}
+$\symup{X\otimes_A k=X_0}$.
+
+Here one uses Theorem 3, Corollary 2. For example:
+
+\result{COROLLARY}{2} \uline{If} $\symup{X}$ \uline{is a scheme proper and flat over} $\symup{A}$ \uline{such that}
+$\symup{X\otimes_A k}$ \uline{is isomorphic to the standard projective space}
+$\symup{\mathfrak P_k^r}$ \uline{of dimension} $\symup{r}$ \uline{over} $\symup{k}$, \uline{then} $\symup{X}$ \uline{is isomorphic to}
+$\symup{\mathfrak P_A^r}$.
+
+(This result may also be deduced from Proposition 3, Corollary 1).
+
+\result{COROLLARY}{3} \uline{Let} $\symup{X_0}$ \uline{be a nonsingular projective scheme over} $\symup{k}$,
+\uline{and suppose that}
+\[
+  \symup{H^2(X_0,O_{X_0})=H^2(X_0,\mathfrak G_{X_0/k})=0.}
+\]
+\uline{Then for every} $\symup{A}$ \uline{there exists a projective scheme} $\symup{X}$, \uline{flat over} $\symup{A}$, \uline{such
+that} $\symup{X\otimes_A k=X_0}$.
+
+Combine Theorem 9(ii) with Theorem 4. In particular:
+
+\result{COROLLARY}{4} \uline{Let} $\symup{X_0}$ \uline{be the scheme of a complete nonsingular
+algebraic curve over} $\symup{k}$. \uline{Then, for every complete Noetherian local ring} $\symup{A}$
+\uline{with residue field} $\symup{k}$, \uline{there exists a “scheme of a nonsingular curve”} $\symup{X}$ \uline{over} $\symup{A}$ \uline{such
+that} $\symup{X\otimes_A k=X_0}$.
+
+\result[.]{REMARKS}{}
+
+1) Corollaries 3 and 4 are chiefly interesting when $\symup{k}$ has characteristic
+$\symup{p\ne0}$, by taking for $\symup{A}$ a discrete valuation ring of \uline{characteristic} $\symup{0}$
+with residue field $\symup{k}$; for example, the “smallest possible $\symup{A}$”, namely one
+whose maximal ideal is generated by $\symup{p}$. (In fact, because of Cohen's
+theorems, it is enough to know Corollaries 3 and 4 for one such ring $\symup{A}$). Let
+us note in this connection that, according to the specialists, it is not
+known whether there exist schemes over a field $\symup{k}$ that are not the reduction
+modulo $\symup{p}$ of a flat scheme defined over such a ring $\symup{A}$. At least the results
+of this section provide a method for systematically investigating this
+question. One should begin
+\src{207}
+by examining whether the first obstruction in $\symup{H^2(X_0,\mathfrak G_{X_0/k})}$ is
+necessarily zero.
+
+2) It should be noted that Theorem 3, and the corresponding technique, applies
+only when the base ring (local, to fix ideas) is \uline{complete}.
+
+To pass from results known for the completion of a local ring to corresponding
+results for the local ring itself, one would need a fourth “fundamental
+theorem”, whose definitive statement remains to be found.
+
+
+3) The results of this section (especially the preceding Corollaries 1 and 2)
+and of the next should be compared with the results of Kodaira-Spencer on the
+variation of complex structures. Using the conjectural theorem just mentioned,
+one should be able to conclude, under the hypotheses of Corollary 1 but without
+assuming $\symup{A}$ complete, that there exists a ring $\symup{A'}$ containing $\symup{A}$, finite and
+unramified over $\symup{A}$, such that $\symup{X\otimes_A A'}$ and $\symup{X'\otimes_A A'}$ are
+$\symup{A'}$-isomorphic (where $\symup{X,X'}$ are two given proper flat $\symup{A}$-schemes satisfying
+$\symup{X\otimes_A k=X'\otimes_A k=X_0}$). This can at least be proved when
+$\symup{X_0=\mathfrak P_k^r}$, using the corollary to Proposition 2. In any case, when
+$\symup{H^1(X_0,\mathfrak G_{X_0/k})=0}$, one can prove that the fibers of $\symup{X,X'}$ over every
+point $\symup{y}$ of $\symup{Y=\operatorname{Spec}(A)}$ are isomorphic, at least after passing
+to the algebraic closure of the residue field $\symup{\varkappa(y)}$. (There is a local
+result, apparently stronger, in which $\symup{A}$ need no longer be assumed local).
+Concerning “variations of structure” for projective space, let us also mention
+the following question, suggested by a corresponding problem of
+Kodaira-Spencer. Let $\symup{X}$ be a scheme proper and flat over an integral local
+ring $\symup{A}$ with fraction field $\symup{K}$ and residue field $\symup{k}$. Suppose that
+$\symup{X\otimes_A K}$ is isomorphic to $\symup{\mathfrak P_K^r}$. Is it true that
+$\symup{X\otimes_A k=X_0}$ is isomorphic to $\symup{\mathfrak P_k^r}$ (at least over the
+algebraic closure of $\symup{k}$)? In this problem one may assume that $\symup{A}$ is a
+complete discrete valuation ring. There is an analogous problem when $\symup{X_0}$ is
+an abelian variety.
+
+\fsection{\normalfont7}{\normalfont\uline{Application to the \fquote{Theory of moduli}}.}
+
+Since the speaker has only just begun to study this theory himself, we must
+limit ourselves to a few indications. For simplicity we work over a \uline{field}
+$\symup{k}$, i.e. we work in \uline{equal characteristic}, although Theorem 8 also makes it possible
+to treat the general case, apparently without essential change. At present we
+have not gone beyond the “formal” stage; nevertheless, the speaker hopes to be
+able to construct from this moduli schemes \src{208}
+properly so called in certain cases and, in particular,
+for every integer $\symup{g}$, to construct a scheme over the integers playing the
+role of a universal moduli scheme for nonsingular curves of genus $\symup{g}$.
+
+
+Let us return to the situation and notation of Theorem 9, now supposing that $\symup{A}$ is a
+finite-dimensional local algebra over $\symup{k}$, which for simplicity is assumed
+algebraically closed. Then $\symup{F(A)}$ may be regarded as a covariant functor of
+$\symup{A}$ with values in the category of sets: a homomorphism of $\symup{k}$-algebras
+$\symup{A\longrightarrow B}$ defines a map $\symup{F(A)\longrightarrow F(B)}$, since every
+flat $\symup{A}$-scheme $\symup{X}$ such that $\symup{X\otimes_A k=X_0}$ gives rise to a $\symup{B}$-scheme
+$\symup{X\otimes_A B}$ with the same properties. \uline{Suppose} that one can find a complete
+Noetherian local $\symup{k}$-algebra $\symup{\mathcal O}$ and a functorial isomorphism
+\begin{equation}
+  \symup{\tag{*}
+  \operatorname{Hom}(\mathcal O,A)\xrightarrow{\sim}F(A)}
+\end{equation}
+(where the first member denotes homomorphisms of $\symup{k}$-algebras). It is easy to
+see that such an $\symup{\mathcal O}$ is determined up to canonical isomorphism. The
+formal spectrum $\symup{\mathfrak Y}$ of $\symup{\mathcal O}$ (i.e. the one-point topological
+space equipped with the sheaf of topological rings reduced to $\symup{\mathcal O}$)
+is then called the \uline{formal moduli scheme for} $\symup{X_0}$. (Let us note that it need not exist).
+Let $\symup{\mathfrak r}$ be the maximal ideal of $\symup{\mathcal O}$, and for every $\symup{n}$ put
+$\symup{O_n=\mathcal O/\mathfrak r^{n+1}}$ (so $\symup{O_0=k}$). The
+canonical homomorphism $\symup{\mathcal O\longrightarrow O_n}$ is an element
+of $\symup{\operatorname{Hom}(\mathcal O,O_n)}$, and hence defines an element
+of $\symup{F(O_n)}$, i.e. a flat $\symup{O_n}$-scheme $\symup{X_n}$ whose reduction
+modulo $\symup{\mathfrak r}$ is $\symup{X_0}$. These $\symup{X_n}$ are obtained from one another by
+extension of scalars (here, by reduction), and consequently arise from a
+well-determined formal scheme $\symup{\mathfrak X}$ over the formal moduli scheme
+$\symup{\mathfrak Y}$; $\symup{\mathfrak X}$ is flat over $\symup{\mathfrak Y}$ and
+$\symup{\mathfrak X_0=X_0}$. The isomorphism (*) is then given, as is immediately
+seen, by associating to every homomorphism of $\symup{k}$-algebras
+$\symup{\mathcal O\longrightarrow A}$ the class of the $\symup{A}$-scheme
+$\symup{\mathfrak X\otimes_{\mathcal O}A}$ (i.e. to every morphism of $\symup{k}$-schemes
+$\symup{\mathfrak Y'=\operatorname{Spec}(A)\longrightarrow\mathfrak Y}$, one associates the
+$\symup{\mathfrak Y'}$-scheme $\symup{\mathfrak X\otimes_{\mathfrak Y}\mathfrak Y'}$ obtained by base change).
+Moreover, the isomorphism (*) and its preceding description remain valid if
+one assumes only that $\symup{A}$ is a complete Noetherian local $\symup{k}$-algebra (not
+necessarily Artinian). Of course, as usual, $\symup{\mathcal O}$ may very well have
+nilpotent elements \uline{a priori}, and it seems probable that cases should
+exist in which $\symup{\mathcal O}$ is itself Artinian without being equal to $\symup{k}$.
+This shows how inadequate the Kodaira-Spencer point of view (which restricts
+to $\symup{A}$ that are \uline{regular} rings) is \uline{a priori} in the general case.
+
+\src{209}
+It remains to give sufficient conditions for a formal moduli scheme to exist
+for $\symup{X_0}$, assumed proper over $\symup{k}$. In general, it is easy to give simple
+necessary and sufficient conditions on a functor $\symup{A\longrightarrow F(A)}$ (from
+finite-dimensional local $\symup{k}$-algebras to sets) for it to be expressible in the
+form $\symup{\operatorname{Hom}(\mathcal O,A)}$ for a suitable $\symup{\mathcal O}$. We shall
+not detail them here. Let us merely point out that, in the case at hand, these
+conditions impose nontrivial cohomological conditions on $\symup{X_0}$, and it seems
+unlikely that they always hold, although the speaker has not constructed a
+counterexample. On the other hand, it seems plausible that
+$\symup{H^0(X_0,\mathfrak G_{X_0/k})=0}$ is a \uline{sufficient} condition (though by no means a
+necessary one) for the existence of a formal moduli scheme. We confine
+ourselves here to stating a theorem in a particularly simple case (whose
+analogue in the theory of analytic spaces is well known; cf.
+KODAIRA-SPENCER), which follows without difficulty from the results of the
+preceding section:
+
+\result{THEOREM}{10} \uline{Let} $\symup{X_0}$ \uline{be a scheme proper and nonsingular over the
+field} $\symup{k}$, \uline{such that}
+\[
+  \symup{H^0(X_0,\mathfrak G_{X_0/k})=H^2(X_0,\mathfrak G_{X_0/k})=0}
+\]
+\uline{Then a formal moduli scheme exists for} $\symup{X_0}$, \uline{corresponding to a regular local
+ring} $\symup{\mathcal O}$ (i.e. a formal power-series algebra over $\symup{k}$).
+
+As we have already noted, it is not true in general that the formal scheme
+$\symup{\mathfrak X}$ over $\symup{\mathcal O}$ is algebraizable; it is nevertheless known to
+be so when $\symup{X_0}$ is projective and $\symup{H^2(X_0,O_{X_0})=0}$ (Theorem 4), for
+example when $\symup{X_0}$ has dimension 1. This lends some support to the hope of
+constructing a moduli scheme over the integers for curves of a given
+genus\ldots{}
+
+Let us also note that methods such as those presented in this section can also be applied to the
+construction and study of Picard varieties, as well as to many other
+constructions. We shall return to this soon.
+
+\fsection{\normalfont8}{\normalfont\uline{Application to the fundamental group}.}
+
+The techniques presented above make it possible to undertake a systematic
+study of the fundamental group, modeled on topological theory. The first two
+theorems stated in this section generalize results of a recent paper by
+LANG-SERRE.
+
+Let $\symup{X}$ be a scheme. An $\symup{X}$-scheme $\symup{X'}$ is called an \uline{unramified covering}
+\src{210}
+\uline{of} $\symup{X}$ if
+\begin{enumerate}
+  \item[\textnormal{i.}] $\symup{X'}$ is finite over $\symup{X}$, i.e. it is defined by a coherent
+    sheaf of algebras $\symup{\text{\uwave{A}}=\text{\uwave{A}}(X')}$ on $\symup{X}$
+  \item[\textnormal{ii.}] $\symup{\text{\uwave{A}}}$ is a locally free sheaf on $\symup{X}$
+  \item[\textnormal{iii.}] for every $\symup{x\in X}$, the quotient
+    $\symup{\text{\uwave{A}}_x/\mathfrak m_x\text{\uwave{A}}_x =\text{\uwave{A}}_x\otimes_{O_x}\varkappa(x)}$
+    is a separable algebra over $\symup{\varkappa(x)}$.
+\end{enumerate}
+
+
+This notion of unramified covering (due to SERRE and the speaker) has all the
+elementary properties one can reasonably expect, which we shall not list. Let
+us merely say that it gives rise to a \uline{Galois theory} modeled on classical
+Galois theory (and containing it, with proofs that are rather simpler than the
+usual proofs of the latter) and on the Galois theory of topological coverings.
+More precisely, let us call a \uline{geometric point} of a scheme $\symup{X}$ a morphism $\symup{a}$
+from the spectrum $\symup{\xi}$ of an algebraically closed field $\symup{\Omega}$ into $\symup{X}$,
+i.e. the datum of an algebraically closed extension of the residue field
+$\symup{\varkappa(x)}$ of a point $\symup{x=|a|}$ of $\symup{X}$ (called the \uline{locality} of the
+geometric point $\symup{a}$). If $\symup{X'}$ is an unramified covering of $\symup{X}$, associate to it
+the set $\symup{E_a(X')}$ of “geometric points of $\symup{X'}$ above $\symup{a}$”, i.e. the set of
+pairs consisting of a point $\symup{x'\in X'}$ above $\symup{x}$ and a
+$\symup{\varkappa(x)}$-homomorphism into $\symup{\Omega}$. Thus, for fixed
+$\symup{(X,a)}$, one obtains a functor $\symup{F(X,a)}$ from the category $\symup{R(X)}$ of unramified
+coverings $\symup{X'}$ of $\symup{X}$ to the category of finite sets. If $\symup{X}$ is connected, the
+pair formed by $\symup{R(X)}$ and $\symup{F(X,a)}$ has the formal properties needed to be
+isomorphic to the analogous pair defined by a suitable compact totally
+disconnected topological group $\symup{\pi}$ (i.e. a projective limit of finite groups):
+one takes the category $\symup{C(\pi)}$ of finite sets $\symup{E}$ on which $\symup{\pi}$ acts
+continuously, together with the forgetful functor $\symup{F(\pi)(E)=E}$ from this
+category to the category of finite sets. Moreover, $\symup{\pi}$ is determined up to
+canonical isomorphism by the condition that $\symup{(C(\pi),F(\pi))}$ be isomorphic to
+a given pair. Here $\symup{\pi}$ is called the \uline{fundamental group of the
+connected scheme} $\symup{X}$ \uline{at the geometric point} $\symup{a}$, and is denoted $\symup{\pi_1(X,a)}$.
+If $\symup{X}$ is not connected, it is replaced by the connected component of
+$\symup{x=|a|}$. If $\symup{X}$ is connected, however, then the groups $\symup{\pi_1(X,a)}$ for two
+geometric points $\symup{a',a''}$ of $\symup{X}$ are isomorphic (the isomorphism being
+determined only up to inner automorphisms), so that, as usual, one may choose
+$\symup{a}$ to suit the problem, for example at the generic point of
+\src{211}
+$\symup{X}$, assumed irreducible. Of course, $\symup{\pi_1(X,a)}$ is a \uline{covariant functor of the
+pointed scheme} $\symup{(X,a)}$. Every statement concerning the classification of
+unramified coverings can
+then be translated into group-theoretic language according to the familiar
+dictionary (except that here one must take account of the fact that one has \uline{topological groups}).
+
+
+Our aim is to develop the analogue of the homotopy exact sequence for fiber
+spaces, relative to a proper morphism $\symup{f:X\longrightarrow Y}$. Clearly, for lack of
+knowing what the higher homotopy groups are, the results will necessarily
+be incomplete. To apply the fundamental theorems of Section 3, we must first
+make explicit a few elementary lemmas concerning schemes over fields or
+Artinian rings (in accordance with the general procedure!).
+
+\result{LEMMA}{1} \uline{Let} $\symup{(X',a')}$ \uline{be a pointed unramified covering associated to
+a pointed representation of} $\symup{\pi_1(X,a)}$ \uline{on a finite set} $\symup{E}$ (with marked
+point $\symup{e}$). \uline{Then the canonical morphism}
+$\symup{\pi_1(X',a')\longrightarrow\pi_1(X,a)}$ \uline{identifies the former group with the
+stabilizer of} $\symup{e}$ \uline{in} $\symup{\pi_1(X,a)}$ (and is therefore \uline{injective}).
+
+\result{LEMMA}{2} \uline{Let} $\symup{X}$ \uline{be an algebraic scheme over a field} $\symup{k}$, \uline{and let}
+$\symup{k'}$ \uline{be a radicial extension of} $\symup{k}$. \uline{Then every unramified covering of}
+$\symup{X\otimes_k k'}$ \uline{is obtained by inverse image} (i.e. extension of scalars) \uline{from
+an unramified covering of} $\symup{X}$, \uline{determined up to canonical isomorphism}.
+
+It follows in particular from these two lemmas that for \uline{every} algebraic
+extension $\symup{K}$ of $\symup{k}$, and every geometric point $\symup{a'}$ of
+$\symup{X'=X\otimes_k K}$ mapping to the geometric point $\symup{a}$ of $\symup{X}$, the functorial
+homomorphism $\symup{\pi_1(X',a')\longrightarrow\pi_1(X,a)}$ is injective.
+
+\result{LEMMA}{3} \uline{Let} $\symup{X}$ \uline{be a complete scheme over a local Artinian ring} $\symup{A}$
+\uline{such that} $\symup{H^0(X,O_X)=A}$. \uline{Let} $\symup{X'}$ \uline{be an unramified covering of} $\symup{X}$, \uline{and
+put} $\symup{A'=H^0(X',O_{X'})}$, \uline{which is therefore a finite ring over} $\symup{A}$ (and may
+a priori be ramified over $\symup{A}$). \uline{Let} $\symup{X_0,X'_0}$ \uline{be the associated
+reduced subschemes of} $\symup{X,X'}$ (obtained by quotienting by the sheaves of
+nilpotent elements in $\symup{O_X,O_{X'}}$), \uline{and let} $\symup{k}$ \uline{be a subfield of}
+$\symup{A/\mathfrak r(A)}$ \uline{over which} $\symup{A/\mathfrak r(A)}$ is finite (so $\symup{X_0}$ is a
+complete algebraic scheme over $\symup{k}$, and $\symup{X'_0}$ is an unramified covering of
+it). \uline{Finally, let} $\symup{\Omega}$ \uline{be an algebraically closed extension of} $\symup{k}$, \uline{and
+let us consider the unramified covering} $\symup{X'_0\otimes_k\Omega}$ \uline{of}
+$\symup{X_0\otimes_k\Omega}$. \uline{Then the following two conditions are equivalent}:
+\src{212}
+\begin{enumerate}
+  \item[i.] $\symup{X'_0\otimes_k\Omega}$ \uline{is completely split over}
+    $\symup{X_0\otimes_k\Omega}$.
+  \item[ii.] \uline{The natural morphism}
+    $\symup{X'\longrightarrow X\otimes_A A'}$ \uline{is an isomorphism}.
+\end{enumerate}
+\uline{Under these conditions}, $\symup{A'}$ \uline{is an} unramified \uline{extension of} $\symup{A}$. \uline{Finally, if}
+$\symup{X'}$ \uline{is connected, condition} (i) \uline{is equivalent to the following
+apparently weaker condition}:
+\begin{enumerate}
+  \item[i. bis] $\symup{X'_0\otimes_k\Omega}$ \uline{admits a regular section over}
+    $\symup{X_0\otimes_k\Omega}$.
+\end{enumerate}
+When condition (ii) holds, we shall say that the unramified covering
+$\symup{X'}$ of $\symup{X}$ is \uline{geometrically trivial}.
+
+
+\result{LEMMA}{4} \uline{Let} $\symup{f:X\longrightarrow Y}$ \uline{be a proper morphism such that}
+$\symup{f_*(O_X)=O_Y}$. \uline{Let} $\symup{a}$ \uline{be a geometric point of} $\symup{X}$, \uline{and let} $\symup{b}$ \uline{be its
+image in} $\symup{Y}$. \uline{Then} $\symup{\pi_1(X,a)\longrightarrow\pi_1(Y,b)}$ \uline{is} surjective.
+
+Indeed, it is enough to prove the following: if an unramified covering $\symup{Y'}$ of
+$\symup{Y}$ (corresponding to a locally free sheaf of algebras $\symup{\text{\uwave{A}}}$) is such
+that $\symup{X\otimes_Y Y'}$ is disconnected, then $\symup{Y'}$ is disconnected as well.
+Indeed, $\symup{f^*(\text{\uwave{A}})}$ is then a direct sum of two nonzero sheaves of rings,
+and hence so is its direct image; but the latter is precisely
+$\symup{\text{\uwave{A}}\otimes f_*(O_X)=\text{\uwave{A}}}$.
+
+\result{LEMMA}{5} \uline{Let} $\symup{X}$ \uline{be a complete scheme over a field} $\symup{k}$. \uline{Suppose that}
+$\symup{H^0(X,O_X)}$ \uline{is a local ring} $\symup{A}$ \uline{and that} $\symup{A/\mathfrak r(A)}$ \uline{is radicial
+over} $\symup{k}$. \uline{Let} $\symup{\Omega}$ \uline{be an algebraic closure of} $\symup{k}$, \uline{and put}
+$\symup{\overline X=X\otimes_k\Omega}$ (which is connected). \uline{Let us choose a geometric point}
+$\symup{\overline a}$ \uline{of} $\symup{\overline X}$ \uline{mapping to the geometric point} $\symup{a}$ \uline{of} $\symup{X}$.
+\uline{Then there is an exact sequence}
+\[
+  \symup{e\longrightarrow\pi_1(\overline X,\overline a)
+  \longrightarrow\pi_1(X,a)
+  \longrightarrow\pi_1(k,b)\longrightarrow e}
+\]
+(where $\symup{\pi_1(k,b)}$ is the Galois group of $\symup{\Omega}$ over $\symup{k}$).
+
+The injectivity of the first homomorphism was seen in Lemmas 1 and 2;
+exactness in the middle follows from Lemma 3; and the surjectivity of the last
+homomorphism (the only part that uses the fact that $\symup{A/\mathfrak r(A)}$ is
+radicial) follows from Lemma 4.
+
+\result{PROPOSITION}{4} \uline{Let} $\symup{f:X\longrightarrow Y}$ \uline{be a proper flat morphism
+such that for every} $\symup{y\in Y}$ \uline{the algebra}
+$\symup{H^0(f^{-1}(y),O_{f^{-1}(y)})}$ \uline{is separable over the residue field}
+$\symup{\varkappa(y)}$ (\uline{as is the case, for example, if} $\symup{f^{-1}(y)}$ \uline{is a} separable scheme
+\uline{over} $\symup{\varkappa(y)}$, i.e. \uline{reduced and such that the fields corresponding to its
+irreducible components are separable extensions of} $\symup{\varkappa(y)}$). \uline{Then the
+covering}
+\src{213}
+$Y'$ of $Y$ associated with $f_*(\Osh_X)$ is unramified.
+
+The proof is easy from Theorem 2.
+
+
+Together with Lemma 1, this proposition reduces the homotopy-theoretic study
+of proper flat morphisms (with separable fibers), for all practical purposes,
+to the case $f_*(\Osh_X)=\Osh_Y$ (for, using Stein factorization, one replaces
+$Y$ by $Y'$).
+
+\result{REMARK}{} A flat morphism of finite type whose fibers are separable
+(respectively nonsingular) schemes is called \emph{separable} (respectively
+\emph{smooth}). One proves that if $f$ is flat and $f^{-1}(y)$ is separable
+(respectively nonsingular), then there is a neighborhood of $f^{-1}(y)$ on
+which $f$ is separable (respectively smooth). The same result holds for
+“absolutely normal” (“Bertini's theorem”).
+
+Let $f:X\longrightarrow Y$ be a proper morphism such that
+\begin{equation}
+  \tag{i}
+  f_*(\Osh_X)=\Osh_Y,
+\end{equation}
+and let $X'$ be a scheme finite over $X$. Let $Y'$ be the covering of $Y$
+corresponding to the Stein factorization of $X'\longrightarrow Y$ (cf.
+Theorem 5). Let $y\in Y$. The set of connected components of the fiber $F'$ of
+$X'$ over $y$ therefore identifies with the set of points $y'$ of $Y'$ above
+$y$ (Theorem 5). Consider the evident morphism
+\begin{equation}
+  \tag{*}
+  X'\longrightarrow X\times_Y Y'
+\end{equation}
+induced by the natural morphisms $X'\longrightarrow X$ and
+$X'\longrightarrow Y'$.\footnote{The printed text omits the prime on the
+second $X'$; the morphism to $Y'$ is the one in the Stein factorization of
+$X'\to Y$.} This is an isomorphism whenever $X'$ has the form
+$X\times_Y Y''$, where $Y''$ is an unramified covering of $Y$; then $Y'$ is
+simply $Y''$ and (*) is the identity. We seek conditions under which $X'$ has
+the form just described, i.e. under which $Y'$ is unramified and (*) is an
+isomorphism. To this end, let $F$ be the fiber of $X$ over $y$; it is a proper
+scheme over $\kappa(y)$, and $F'$ is a covering of it (unramified if $X'$ is).
+Let $F'_1$ be a connected component of $F'$ corresponding to a point $y'_1$
+of $Y'$ above $y$. Suppose in addition that
+\begin{enumerate}
+  \item[\textit{(ii)}] $X'$ is unramified over $X$ at the points of $F'_1$
+    (hence $F'_1$ is an unramified covering of $F$), and
+  \item[\textit{(iii)}] $F'_1$ is a geometrically trivial covering of $F$
+    (cf. Lemma 3).
+\end{enumerate}
+
+\result{THEOREM}{11} Under these conditions, there exists an open neighborhood
+$U'$ of $y'_1$ in $Y'$ such that (*) is an isomorphism above $U'$. Moreover,
+$Y'$ is unramified at $y'_1$ over $Y$ (although it may be ramified at the other
+points $y'$ of $Y'$ above $y$).
+
+The conditions \textit{(ii)} and \textit{(iii)} are of course also necessary
+for the conclusion of the theorem to hold. The proof is easy, using Lemma 3
+and Theorem 2.
+
+\src{214}
+\result{COROLLARY}{1} Continue to assume \textit{(i)}. An unramified covering
+$X'$ of $X$ is isomorphic to the inverse image of an unramified covering $Y'$
+of $Y$ if and only if $X'$ induces a geometrically trivial covering on every
+fiber $f^{-1}(y)$.
+
+By Theorem 11, the set of points of $Y$ for which this condition holds is open,
+so it is enough to verify it at the closed points $y$\ldots{} The following
+statement is equivalent to Corollary 1: the kernel of the homomorphism
+$\pi_1(X)\longrightarrow\pi_1(Y)$ (surjective by Lemma 4) is the closed normal
+subgroup generated by the images in $\pi_1(X)$ of the groups
+$\pi_1(\overline{f^{-1}(y)})$, where
+\[
+  \overline{f^{-1}(y)}
+  =f^{-1}(y)\otimes_{\kappa(y)}\overline{\kappa(y)},
+\]
+and $\overline{\kappa(y)}$ denotes an algebraic closure of $\kappa(y)$. Since
+one cannot choose the same base point for all the fibers, the homomorphisms
+$\pi_1(\overline{f^{-1}(y)})\longrightarrow\pi_1(X)$ are in any event
+determined (once a base point for $X$, and hence for $Y$, has been chosen) only
+up to composition with an inner automorphism of $\pi_1(X)$.
+
+\result{COROLLARY}{2} Under the general hypotheses of Theorem 11, suppose in
+addition that $Y,X,X'$ are integral, and let $K,L,L'$ be their function fields.
+Then there exists a separable intermediate extension $K'$ of $K$ in $L'$,
+linearly disjoint from $L$, such that $L'=LK'$ (whence
+$L'=L\otimes_K K'$).
+
+(Apply the last part of Lemma 3 to the geometric fiber of $X$.) The most
+interesting application of Theorem 11 occurs when $f$ is separable. Then $X'$
+is also separable over $Y$, so by Proposition 4, $Y'$ is unramified over $Y$;
+hence the second member $X\times_Y Y'$ in (*) is unramified over $X$. It
+follows easily that:
+
+\result{COROLLARY}{3} Suppose, in addition to \textit{(i)}, that $f$ is
+separable. Let $X'$ be a connected unramified covering of $X$. Then $X'$\footnote{The
+printed text has “$X$” here; the subject of the criterion is the covering $X'$
+introduced in the preceding sentence.} is
+the inverse image of an unramified covering $Y'$ of $Y$ if and only if the
+covering $\overline F'$ induced on one geometric fiber
+$\overline F=f^{-1}(y)$ admits a regular section.
+
+Note that it was not necessary to suppose that $\overline F'$ was
+geometrically trivial over $\overline F$ (this follows \textit{a posteriori},
+although \textit{a priori} it is a much stronger condition). Corollary 3 is in
+fact equivalent to the following statement.
+
+\src{215}
+\result{COROLLARY}{4} Let $f:X\longrightarrow Y$ be a proper separable
+morphism such that $f_*(\Osh_X)=\Osh_Y$. Let $\overline F$ be the geometric
+fiber of a point $y\in Y$, and choose a geometric point in $\overline F$; the
+morphisms $\overline F\longrightarrow X\longrightarrow Y$ then give geometric
+points in $X,Y$, which are taken as base points for the fundamental groups of
+$\overline F,X,Y$. Under these conditions there is an exact sequence
+\[
+  \boxed{
+    \pi_1(\overline F)\longrightarrow\pi_1(X)
+    \longrightarrow\pi_1(Y)\longrightarrow e
+  }.
+\]
+
+The following two statements of Serre--Lang, now freed of any normality
+hypothesis, follow easily.
+
+\result{COROLLARY}{5} Let $X,Y$ be connected schemes over a field $k$. Suppose
+that the reduced scheme $X_{\mathrm{red}}$ is separable over $k$ (as is
+automatically the case if $k$ is perfect), and that $X$ or $Y$ is proper over
+$k$.\footnote{Condition added by the 1962 erratum.} Choose a geometric
+point $a$ (respectively $b$) in $X$ (respectively $Y$), hence a geometric point
+$c=(a,b)$ in $X\times_kY$ and a natural morphism
+\[
+  \pi_1(X\times_kY,c)\longrightarrow
+  \pi_1(X,a)\times\pi_1(Y,b)
+\]
+(induced by the functorial morphisms from $\pi_1(X\times Y,c)$ to
+$\pi_1(X,a)$ and $\pi_1(Y,b)$). This morphism is injective, and is even
+bijective if $k$ is algebraically closed.
+
+(Surjectivity in the latter case is more or less trivial.) One deduces, with
+Serre--Lang:
+
+\result{COROLLARY}{6} Let $X$ be a connected proper algebraic scheme over an algebraically closed field $k$, and let $K$ be an algebraically closed
+extension of $k$. Then the fundamental groups of $X$ and $X\otimes_kK$ are
+the same; i.e. every unramified covering of the latter scheme is obtained by
+extension of scalars from an unramified covering of $X$, unique up to
+isomorphism.
+
+\result{REMARKS}{}
+
+1) Using Proposition 4, one sees that the hypothesis
+$f_*(\Osh_X)=\Osh_Y$ in Corollary 4 is not essential. In the general case,
+instead of placing the unit group $e$ after $\pi_1(Y)$, one should continue
+with
+\[
+  \pi_0(\overline F)\longrightarrow\pi_0(X)
+  \longrightarrow\pi_0(Y)\longrightarrow e.
+\]
+as in algebraic topology.
+
+\src{216}
+2) In general, nothing can yet be said about the kernel of
+$\pi_1(\overline F)\longrightarrow\pi_1(X)$, which ought to involve a
+$\pi_2(Y)$. It nevertheless seems that one should be able to prove that
+$\pi_1(\overline F)\longrightarrow\pi_1(X)$ is injective when $Y$ is the
+spectrum of a local ring $A$, using Theorem 12 below (which asserts this when
+$A$ is complete).
+
+Theorem 11 used only Theorems 1 and 2. We now apply Theorem 3, using the
+following elementary lemma.
+
+\result{LEMMA}{6} Let $X$ be a scheme and let $X_0$ be the corresponding
+reduced scheme (i.e. with the nilpotent elements killed). Then every
+unramified covering $X'_0$ of $X_0$ is induced by an unramified covering $X'$
+of $X$, determined up to canonical isomorphism.
+
+This purely local lemma plays a role here analogous to that of Theorem 8 in
+the theory of moduli. Combining it with the existence theorem (Theorem 3)
+gives:
+
+\result{THEOREM}{12} Let $A$ be a complete Noetherian local ring with residue
+field $k$, and let $X$ be a scheme proper over $A$. Then every unramified
+covering $X'_0$ of $X_0=X\otimes_A k$ is induced by an unramified covering
+$X'$ of $X$, unique up to isomorphism.
+
+In other words:
+
+\result{COROLLARY}{1} Choose a geometric point in $X_0$ as base point for the
+fundamental groups of $X_0$ and $X$. Then the canonical homomorphism
+$\pi_1(X_0)\longrightarrow\pi_1(X)$ is an isomorphism.
+
+Now apply Lemma 5 to $X_0$ (assuming for simplicity that
+$H^0(X_0,\Osh_{X_0})=k$), and observe that since $A$ is complete, its
+unramified extensions correspond to the unramified extensions of its residue
+field, i.e. $\pi_1(Y)=\pi_1(k)$ (where $Y=\operatorname{Spec}(A)$). This gives
+the exact sequence
+\[
+  e\longrightarrow\pi_1(\overline X_0)
+  \longrightarrow\pi_1(X)\longrightarrow\pi_1(Y)\longrightarrow e.
+\]
+
+\result{COROLLARY}{2} Let $f:X\longrightarrow Y$ be a proper flat morphism,
+let $y_1$ be a point of $Y$, and let $y_0$ be a specialization of $y_1$.
+Consider the corresponding “geometric” fibers $\overline X_1$ and
+$\overline X_0$, and suppose that $\overline X_0$ is separable and connected
+(which implies that $\overline X_1$ satisfies the same conditions). Then one
+can find a group homomorphism
+$\pi_1(\overline X_1)\longrightarrow\pi_1(\overline X_0)$, defined up to an
+inner automorphism, and this homomorphism is surjective.
+
+\src{217}
+One might hope that this homomorphism is always bijective. Unfortunately this
+is not so in general when $\kappa(y_0)$ has characteristic $>0$. Below we shall
+nevertheless obtain a bound on the kernel of this homomorphism (at least when
+$\overline X_0$ is nonsingular), implying that if $\kappa(y_0)$ has
+characteristic $0$, then the homomorphism above is bijective (a result that
+could also be proved by transcendental methods). In any case, we already
+obtain a bound on the $\pi_1$ of a special fiber in terms of that of a generic
+fiber. For example, using the fact that an algebraic curve in characteristic
+$p$ lifts to a curve in characteristic $0$ (Theorem 9, Corollary 4), one finds
+by transcendental methods:
+
+\result{COROLLARY}{3} Let $X_0$ be the scheme of a complete nonsingular curve
+over an algebraically closed field of arbitrary characteristic, and let $g$ be
+the genus of $X_0$. Then $\pi_1(X_0)$ admits $2g$ topological generators,
+subject to the familiar relation.
+
+By a familiar hyperplane-section technique one deduces:
+
+\result{COROLLARY}{4} Let $X$ be a nonsingular projective scheme over an
+algebraically closed field of arbitrary characteristic. Then $\pi_1(X)$
+admits a finite number of topological generators.
+
+Let us seek the kernel of the homomorphism
+$\pi_1(\overline X_1)\longrightarrow\pi_1(\overline X_0)$. For this purpose we
+may suppose that $Y$ is the spectrum of a complete discrete valuation ring
+$V=\Osh_y$ ($y=y_0$). The question is equivalent to the following: given an
+unramified covering $\overline X'_1$ of $\overline X_1$ (which may, if desired,
+be assumed Galois), determine under what conditions it comes from an
+unramified covering of $X_0$. \textit{A priori}, the given covering is obtained
+by extension of scalars from an unramified covering $X'_1$ of
+$X_1\otimes_K K'$, where $K'$ is a finite subextension of the algebraic closure
+$\overline K$ of the fraction field $K$ of $V$; if $\overline X'_1$ is Galois
+with group $G$, one may choose $X'_1$ Galois with group $G$. One then has: for
+$X'_1\otimes_{K'}\overline K=\overline X'_1$ to come from an unramified
+covering of $X_0$, it is necessary and sufficient that there exist a finite
+extension $K''$ of $K'$ in $\overline K$ such that
+$X''_1=X'_1\otimes_{K'}K''$ has the form $X''\otimes_{V''}K''$, where $V''$ is
+the integral closure of $V$ in $K''$ and $X''$ is an unramified covering of
+$X\otimes_VV''$. Suppose, for example, that $X_0$ is absolutely normal. It
+follows that $X\otimes_VV''$ is normal (being flat over $V''$ with normal
+special fiber), and its function field is the same field $K''(X_1)$ as that of
+\[
+  X_1\otimes_KK''
+  =(X\otimes_VK)\otimes_KK''
+  =X\otimes_VK''
+  =(X\otimes_VV'')\otimes_{V''}K''.
+\]
+Let $L''=K''(X'_1)$ be the function field of
+$X'_1\otimes_{K'}K''$. It is a finite separable extension of $K''(X_1)$, and
+the preceding condition also means that $L''$ is an unramified extension of
+the function field of $X\otimes_VV''$ (i.e. the normalization of
+$X\otimes_VV''$ in $L''$ is unramified over $X\otimes_VV''$). It is enough to
+check that $L''$ is unramified at the points of the special fiber of
+$X\otimes_VV''$ (since it is unramified over the generic fiber
+$X_1\otimes_KK''$). If $X_0$ is nonsingular, the “purity theorem” of
+Nagata--Zariski shows that it is enough to check that $L''$ is unramified over
+the local ring $O''$ at the generic point of the special fiber of
+$X\otimes_VV''$. This is a discrete valuation ring, the normalization in
+$K''(X_1)$ of the local ring $O\subset K(X_1)$ at the generic point of the
+special fiber of $X$. Thus we have obtained:
+
+\src{218}
+\result{COROLLARY}{5} Under the preceding hypotheses and notation, the
+unramified covering $X'_1\otimes_{K'}\overline K$ of
+$\overline X_1=X_1\otimes_K\overline K$ comes from an unramified covering of
+$\overline X_0$ if and only if there exists a finite subextension $K''$ of
+$\overline K/K'$ such that $K''(X'_1)$ is unramified over the discrete
+valuation ring $O''\subset K''(X_1)$.
+
+Now observe that $O''$ is the normalization in $K''(X_1)$ of the discrete
+valuation ring $O'\subset K'(X_1)$ (the normalization of $O$ in $K'(X_1)$),
+and that $O'$ contains the normalization $V'$ of $V$ in $K'$, a uniformizer
+$u$ of $V'$ being also a uniformizer of $O'$. Suppose now that $X'_1$ is
+Galois with Galois group $G$ of order $n$ prime to the characteristic $p$ of
+$\kappa(y_0)$ (which is also the characteristic of the residue field of
+$O'$). Thus $K'(X'_1)$ is tamely ramified over $O'$, and it follows easily
+(“Abhyankar's lemma”) that after adjoining an $n$th root $v$ of a uniformizer
+of $O'$, it becomes unramified over the normalization of $O'$ in
+$K'(X_1)(v)$. But one may take for $v$ an $n$th root of a uniformizer of $V'$,
+which proves that the condition of Corollary 5 is satisfied. (The possibility
+of using Abhyankar's lemma and the purity theorem was sold to me by Serre.) To
+express the result obtained, for every compact totally disconnected group
+$\pi$ let $\widetilde\pi$ denote the quotient of $\pi$ by the closed subgroup
+generated by its Sylow $p$-subgroups, i.e. the inverse limit of the discrete
+quotient groups of $\pi$ whose orders are prime to $p$. With this notation one
+obtains:
+
+\result{THEOREM}{13} Let $f:X\longrightarrow Y$ be a proper flat morphism,
+let $y_1$ be a point of $Y$, and let $y_0$ be a specialization of $y_1$.
+Suppose that $\overline X_0$ is connected and nonsingular. Then the
+homomorphism
+$\widetilde\pi_1(\overline X_1)\longrightarrow
+\widetilde\pi_1(\overline X_0)$ induced by the homomorphism that is surjective
+by Theorem 12, Corollary 2, is an isomorphism.
+
+In other words:
+
+\src{219}
+\result{COROLLARY}{1} The classification of unramified Galois coverings whose
+Galois group has order prime to the characteristic $p$ of $\kappa(y_0)$ is the
+same for $\overline X_0$ and $\overline X_1$.
+
+In particular, if $\kappa(y_0)$ has characteristic zero, one obtains
+algebraically that
+$\pi_1(\overline X_1)\longrightarrow\pi_1(\overline X_0)$ is bijective.
+
+Finally, the techniques used also give the following result, which is more
+general than Theorem 13.
+
+\result{THEOREM}{14} Let $f:X\longrightarrow Y$ be a proper smooth morphism,
+and let $D$ be a closed subscheme of $X$, smooth over $Y$ and of codimension 1
+at all its points. For a fiber $Z=f^{-1}(z)$ of $f$, put $Z'=Z-Z\cap D$ and
+let $\pi_1^t(Z')$ be the quotient of the fundamental group $\pi_1(Z')$ that
+classifies the unramified coverings of $Z'$ which are tamely ramified above
+$\overline{Z\cap D}$. Let $y_0,y_1$ be as in Theorem 13. Then there is a
+surjective homomorphism (defined up to an inner automorphism)
+\[
+  \pi_1^t(\overline X'_1)\longrightarrow\pi_1^t(\overline X'_0),
+\]
+and the corresponding homomorphism
+\[
+  \widetilde\pi_1^t(\overline X'_1)
+  \longrightarrow\widetilde\pi_1^t(\overline X'_0)
+\]
+is an isomorphism.
+
+Corresponding variants of the corollaries to Theorem 13 and of Corollary 4 to
+Theorem 12 follow. Likewise, using Theorem 9, Corollary 3, one finds by
+transcendental methods:
+
+\result{COROLLARY}{} Let $X_0$ be the scheme of a complete nonsingular curve
+over an algebraically closed field of arbitrary characteristic, and let
+$S=(s_i)_{1\le i\le n}$ be a finite subset of $X_0$ with $n$ elements. Then
+$\pi_1^t(X_0-S)$ admits $2g+n$ topological generators
+$x_i,y_i$ ($1\le i\le g$) and $\sigma_j$ ($1\le j\le n$), subject to the
+relation
+\[
+  \left(\prod_i x_i y_i x_i^{-1}y_i^{-1}\right)
+  \sigma_1\cdots\sigma_n=1,
+\]
+where the $\sigma_j$ are generators of the inertia groups corresponding to the
+$s_j$. For every finite group $G$ of order prime to the characteristic,
+generated by elements $x_i,y_i,\sigma_j$ satisfying the preceding relation,
+there exists an unramified Galois covering of $X_0-S$ with group $G$, whose
+inertia groups at the points $s_j$ are generated by the $\sigma_j$.
+
+When $X_0$ has genus 0 and $n=3$, this gives a solution of the “Problem
+of the three points,” at least for Galois coverings of order prime to the
+characteristic. (Here Theorem 9 is unnecessary, and it seems moreover that the
+preceding corollary can be deduced from the special case considered in the
+problem of the three points.)
+
+\src{220}
+\result{REMARKS}{}
+
+1) A more complete study, no doubt involving generalized Galois coverings of
+$X,X_0,X_1$ (with possibly infinitesimal Galois group), should make it possible
+to recover the kernel in Theorem 12, Corollary 2. By contrast, a study of
+coverings admitting ramification that is not tame seems likely to be much more
+difficult.
+
+2) Lemma 6, together with a result of Grauert concerning the formal completion
+of a nonsingular projective scheme along a hyperplane section (or with the
+theorem, not yet proved, mentioned in Remark 2 after Theorem 11), also makes it
+possible to prove in “abstract” algebraic geometry the classical Lefschetz
+theorem on the fundamental group.
+
+\begin{center}
+  \textbf{BIBLIOGRAPHY}
+\end{center}
+
+\begin{description}
+  \item[{[1]}] Dieudonné (J.) and Grothendieck (A.). --- \emph{Éléments de
+    géométrie algébrique}, Publications mathématiques de l'Institut des Hautes
+    Études Scientifiques (forthcoming).
+  \item[{[2]}] Grothendieck (Alexander). --- \emph{The cohomology theory of
+    abstract algebraic varieties}. International Congress of Mathematicians
+    [1958. Edinburgh] (forthcoming).
+  \item[{[3]}] Serre (Jean-Pierre). --- \emph{Faisceaux algébriques
+    cohérents}, Annals of Math., Series 2, vol. 61, 1955, pp. 197--278.
+  \item[{[4]}] Serre (Jean-Pierre). --- \emph{Géométrie algébrique et
+    géométrie analytique}, Ann. Institut Fourier Grenoble, vol. 6, 1955--1956,
+    pp. 1--42.
+\end{description}
+
+\par\smallskip
+\begingroup\footnotesize
+\endgroup

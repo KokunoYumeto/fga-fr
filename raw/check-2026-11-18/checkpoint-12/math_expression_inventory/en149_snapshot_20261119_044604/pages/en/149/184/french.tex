@@ -1,0 +1,52 @@
+\src{184}
+\result{LEMME}{5} \uline{Soient} $\symup{A}$ \uline{et} $\symup{B}$ \uline{deux faisceaux algébriques cohérents sur}
+$\symup{X}$, \uline{posons} $\symup{A(m)=A\otimes\Osh_X(m)}$. \uline{Alors pour} $\symup{m}$ \uline{assez grand,
+l'homomorphisme canonique}
+\[
+  \symup{\operatorname{Ext}_{\Osh_X}^{i}(X;A(-m),B)
+  \longrightarrow H^{0}\bigl(X,\Extsh_{\Osh_X}^{i}(A(-m),B)\bigr)
+  =H^{0}\bigl(X,\Extsh_{\Osh_X}^{i}(A,B)(m)\bigr)}
+\]
+\uline{est un isomorphisme}.
+
+Cela résulte aussitôt de la suite spectrale de la proposition 1 appliquée à
+$\symup{A(-m)}$ et $\symup{B}$, puisque l'on aura
+\[
+  \symup{E_{2}^{p,q}(A(-m),B)
+  =H^{p}\bigl(X,\Extsh_{\Osh_X}^{q}(A(-m),B)\bigr)
+  =H^{p}\bigl(X,\Extsh_{\Osh_X}^{q}(A,B)(m)\bigr),}
+\]
+qui est nul pour $\symup{p>0}$ et $\symup{m}$ grand.
+
+Démontrons alors (D) dans le cas où $\symup{X=P}$. Nous prouvons d'abord que (5.2 bis)
+est un isomorphisme pour $\symup{p=n}$ ; comme les deux membres sont alors des
+foncteurs exacts à gauche (puisque $\symup{H^{r+1}(P,F)=0}$), il résulte du lemme 3
+qu'il suffit de prouver l'assertion pour $\symup{F=\Osh_P(-m)}$, or elle est alors
+contenue dans le lemme 2. Comme les homomorphismes (5.2 bis) sont fonctoriels et
+compatibles avec les opérateurs cobords, et que pour $\symup{p<n}$ les deux membres de
+(5.2 bis) sont des foncteurs coeffaçables en $\symup{F}$ (corollaire du lemme 4), il
+s'ensuit alors par un raisonnement standard que (5.2 bis) est un isomorphisme
+pour tout $\symup{p}$. Cela prouve le théorème de dualité pour l'espace projectif.
+
+Supposons maintenant $\symup{X}$ quelconque, mais non singulier. D'après le théorème de
+dualité pour $\symup{P}$, on a un isomorphisme,
+\[
+  \symup{H^{n}(X,F)'=H^{n}(P,F)'
+  =\operatorname{Ext}_{\Osh_P}^{r-n}(P;F,\underline{\Omega}_P^{r})}
+\]
+En vertu du lemme 1 (n\textsuperscript{o} 4) le dernier membre s'identifie à
+\[
+  \symup{\operatorname{Hom}_{\Osh_P}(P;F,\underline{\omega}_X^{n})
+  =\operatorname{Hom}_{\Osh_X}(X;F,\underline{\Omega}_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\underline{\Omega}_X^{n})}
+\]
+d'où un isomorphisme
+\begin{equation}\tag{5.6}
+  \symup{H^{n}(X,F)'=\operatorname{Hom}_{\Osh_X}(X;F,\underline{\Omega}_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\underline{\Omega}_X^{n})}
+\end{equation}
+Faisant $\symup{F=\underline{\Omega}_X^{n}}$, on trouve un isomorphisme
+\begin{equation}\tag{5.7}
+  \symup{\gamma:H^{n}(X,\underline{\Omega}_X^{n})\xrightarrow{\sim}\underline{k}}
+\end{equation}
+

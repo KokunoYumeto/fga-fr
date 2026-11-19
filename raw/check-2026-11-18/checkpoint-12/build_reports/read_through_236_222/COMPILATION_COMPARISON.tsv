@@ -1,0 +1,23 @@
+layer	metric	previous_value	current_value	delta	unchanged
+fr	passes	3	1	-2	False
+fr	exit_code	0	1	1	False
+fr	pdf_pages	150	0	-150	False
+fr	errors	0	2	2	False
+fr	warnings	84	71	-13	False
+fr	missing_glyphs	0	0	0	True
+fr	max_overfull_pt	36.72565	36.72565	0	True
+fr	boxes_over_2pt	5	5	0	True
+fr	boxes_over_10pt	3	3	0	True
+fr	aux_stable	True	False		False
+fr	unresolved_reference_diagnostics	0	0	0	True
+fr_printed	passes	3	1	-2	False
+fr_printed	exit_code	0	1	1	False
+fr_printed	pdf_pages	150	0	-150	False
+fr_printed	errors	0	2	2	False
+fr_printed	warnings	84	71	-13	False
+fr_printed	missing_glyphs	0	0	0	True
+fr_printed	max_overfull_pt	36.72565	36.72565	0	True
+fr_printed	boxes_over_2pt	6	6	0	True
+fr_printed	boxes_over_10pt	3	3	0	True
+fr_printed	aux_stable	True	False		False
+fr_printed	unresolved_reference_diagnostics	0	0	0	True

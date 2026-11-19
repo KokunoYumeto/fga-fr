@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-11-19T03:49:01.503101+00:00",
+  "snapshot_started_utc": "2026-11-19T03:34:25.873911+00:00",
+  "snapshot_completed_utc": "2026-11-19T03:34:26.031673+00:00",
+  "frozen_root": "tmp/french_layer_difference_01",
+  "snapshot_manifest_sha256": "1beff687e9e30dd5e9b8279714a1c6387e096b43db3c3670f22ff255d74a47ae",
+  "source_tree_sha256": {
+    "fr": "b8a5480e7fe5f2eb867063a3498e611a13abe6f6c04760cf772f67add3f69bc9",
+    "fr_printed": "925efa391d1bb3e9dc2307a8063674ce73ad750fe33634b8b9516f37b439a9ef"
+  },
+  "ledger_sha256": "e9cfe9f83f4b558a50486e0a2221710d7a3d7e85c178306dc9a944b7a401c140",
+  "ledger_rows": 17687,
+  "relative_file_pairs": 29,
+  "identical_file_pairs": 21,
+  "nonidentical_files": 8,
+  "changed_hunks": 275,
+  "hunks_by_status": {
+    "one_candidate": 47,
+    "unmatched": 59,
+    "multiple_candidates": 169
+  },
+  "hunks_with_only_single_side_candidates": 74,
+  "candidate_row_links": 823,
+  "locator_only_links": 6689,
+  "cross_page_hunks": 0,
+  "different_anchor_page_hunks": 0,
+  "privacy_redactions": 0,
+  "privacy_TeX_control_lookalikes": 2,
+  "all_hunk_text_exact": true,
+  "all_differences_reconstruct": true,
+  "inputs_unchanged": true,
+  "diff_algorithm": "Python difflib.SequenceMatcher on bytes.splitlines(keepends=True), autojunk=False; each non-equal opcode is one hunk; fr is left/old, fr_printed is right/new.",
+  "single_side_minimum_characters": 12,
+  "script_sha256": "b34a8954a6c4acbc1a2a3f24d764a928a1dc55ef5fc43fa99c47c5b74d21d4b2",
+  "marker_helper_sha256": "d2cc95f1b28d52d2885c34c74838855face2485fe63f78f0553c5b9d9a9e2ca3"
+}

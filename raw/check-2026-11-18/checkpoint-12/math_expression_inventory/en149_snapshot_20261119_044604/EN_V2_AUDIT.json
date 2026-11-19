@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-11-19T05:04:38.304702+00:00",
+  "completed_utc": "2026-11-19T05:04:38.941382+00:00",
+  "report": "tmp/math_navigator_en149_044604_v2",
+  "source_snapshot": "tmp/math_expression_inventory_02",
+  "origin_capture_started_utc": "2026-11-19T04:46:04.787397+00:00",
+  "origin_capture_completed_utc": "2026-11-19T04:46:04.868173+00:00",
+  "historical_wrapper_sha256": "9d3c8d4d1ee9da963abc839294565d9941a22c6338eb2e77223cbb057a30a0cb",
+  "canonical_wrapper_for_cli_fixtures_sha256": "14839cb2b74f7dc00ae11c6fd47f542330a81235cb27dec63c766022afed2b74",
+  "lexer_sha256": "7ae88b1d85906698cd728f36aa47545c550622b43193c63cd8e0aa7df828c7e4",
+  "source_files": {
+    "sources/en/en/149.tex": {
+      "bytes": 62243,
+      "sha256": "42fdb8ee8a7db0b65e39facd6e3ebc9e6a74e655b048d9dd4a7fa1b261ad5b9c"
+    },
+    "sources/fr/fr/149.tex": {
+      "bytes": 77288,
+      "sha256": "a237670c2a981f1c617518213be9903b8fb2076c96a49da9224e4733d54d1db4"
+    }
+  },
+  "page_pairs": 25,
+  "source_fragments": 50,
+  "exact_record_slices": 2038,
+  "math_records": 1751,
+  "outermost_math_records": 1716,
+  "nested_math_records": 35,
+  "explicit_reference_records": 132,
+  "reference_shaped_candidates": 155,
+  "candidate_blocks": 169,
+  "alignment_status_counts": {
+    "math": {
+      "unpaired_ordered_block": 24
+    },
+    "references": {
+      "raw_identical": 66
+    },
+    "reference_shapes": {
+      "raw_identical": 76,
+      "unpaired_ordered_block": 3
+    }
+  },
+  "all_candidate_blocks_require_human_review": true,
+  "semantic_decisions_performed": false,
+  "token_fixtures": [
+    {
+      "check": "control_boundary",
+      "passed": true
+    },
+    {
+      "check": "font_wrapper",
+      "passed": true
+    },
+    {
+      "check": "whitespace",
+      "passed": true
+    },
+    {
+      "check": "comment",
+      "passed": true
+    },
+    {
+      "check": "explicit_control_space",
+      "passed": true
+    },
+    {
+      "check": "comment_control_boundary",
+      "passed": true
+    }
+  ],
+  "cli_fixtures": [
+    {
+      "check": "decimal_alias",
+      "passed": true,
+      "observed_page": [
+        "169"
+      ]
+    },
+    {
+      "check": "roman_alias",
+      "passed": true,
+      "observed_page": [
+        "IV"
+      ]
+    },
+    {
+      "check": "sources_root",
+      "passed": true,
+      "capture_reached": false,
+      "exit_code": 2
+    },
+    {
+      "check": "sources_child",
+      "passed": true,
+      "capture_reached": false,
+      "exit_code": 2
+    }
+  ],
+  "full_inventory_audit": "paused at root request; no full-source audit performed",
+  "staleness": "Source footnote removals and English edits after the 04:46 capture are excluded.",
+  "source_or_fga_check_writes": false,
+  "failure_count": 0,
+  "failures": []
+}

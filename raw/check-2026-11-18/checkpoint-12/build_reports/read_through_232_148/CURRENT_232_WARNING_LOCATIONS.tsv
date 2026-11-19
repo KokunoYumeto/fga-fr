@@ -1,0 +1,9 @@
+layer	source	input_line	warning	removed_control_sequences	scope
+fr	sources/fr/fr/232.tex	9	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	\uwave	mechanical diagnostic only
+fr	sources/fr/fr/232.tex	179	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	\uwave	mechanical diagnostic only
+fr	sources/fr/fr/232.tex	302	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	\uwave	mechanical diagnostic only
+fr	sources/fr/fr/232.tex	302	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	\uwave	mechanical diagnostic only
+fr_printed	sources/fr_printed/fr/232.tex	9	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	\uwave	mechanical diagnostic only
+fr_printed	sources/fr_printed/fr/232.tex	179	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	\uwave	mechanical diagnostic only
+fr_printed	sources/fr_printed/fr/232.tex	302	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	\uwave	mechanical diagnostic only
+fr_printed	sources/fr_printed/fr/232.tex	302	Package hyperref Warning: Token not allowed in a PDF string (Unicode):	\uwave	mechanical diagnostic only

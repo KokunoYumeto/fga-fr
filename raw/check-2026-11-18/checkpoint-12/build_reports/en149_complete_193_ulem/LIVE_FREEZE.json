@@ -1,0 +1,161 @@
+{
+  "stage": "en149_complete_193_ulem",
+  "live_freeze_started_utc": "2026-11-19T05:39:16.084894+00:00",
+  "live_freeze_completed_utc": "2026-11-19T05:39:16.094106+00:00",
+  "snapshot_started_utc": "2026-11-19T05:39:16.084894+00:00",
+  "snapshot_completed_utc": "2026-11-19T05:39:16.094106+00:00",
+  "attempt": 1,
+  "input_root": "tmp/frozen_build_inputs/en149_complete_193_ulem",
+  "consistency_check": "Two consecutive complete English-tree reads matched. All compiler and subsequent integrity checks use this fixed capture.",
+  "root_reported_scope": "Root applied the prepared ulem correction; EN149 is complete through193 and unchanged from the earlier capture; EN182 pages193-197 are applied.",
+  "en149_identical_to_original_completed_capture": true,
+  "preamble_equals_exact_prepared_one_line_patch": true,
+  "repair_script_sha256": "c732b85d643806cd39055c7b93f986f409557ed1496e4372eca35f26a31eb659",
+  "files": [
+    {
+      "path": "sources/en/NOTICE.tex",
+      "bytes": 2434,
+      "sha256": "8e6ec7698c399e764989b1b4dd63640d9380ee69709daf01980c131123fa5a7d"
+    },
+    {
+      "path": "sources/en/README.md",
+      "bytes": 462,
+      "sha256": "40d22ee273d4b9926c3054343ef2e6d46f78c3591c5fbd0f2cd2a0fefe5d71e1"
+    },
+    {
+      "path": "sources/en/RIGHTS_NOTICE.md",
+      "bytes": 1177,
+      "sha256": "db73478d2e9131aaea6a60adc210ca0d6382f94c1286c7176039f9fc22cd4a4a"
+    },
+    {
+      "path": "sources/en/SOURCES.md",
+      "bytes": 1239,
+      "sha256": "5d711058c57926fef0c1e74d7db0491f15c892ba823889a1c2e4ddf0fc32d5a7"
+    },
+    {
+      "path": "sources/en/_repository/ATTRIBUTION.md",
+      "bytes": 1197,
+      "sha256": "7adff218b8863a0f0f3ff2e6cfd36f7dbfecaf0c08b6eafcc15a78ff359c647e"
+    },
+    {
+      "path": "sources/en/_repository/CITATION.cff",
+      "bytes": 923,
+      "sha256": "06e02930f6fa046f3084a13eea8f33dc96e98bdd1046a4bc98ae89b97ddca9ca"
+    },
+    {
+      "path": "sources/en/_repository/PURPOSE.md",
+      "bytes": 301,
+      "sha256": "c15fec9c2f9b7ec1badce9b3222abd8baeb122d39ada6a45c8a1b00db9283654"
+    },
+    {
+      "path": "sources/en/_repository/README.md",
+      "bytes": 3772,
+      "sha256": "548a814c620ca29bd7a12e8f428cf2f6defe0d3557f2b2632db7ded662ec7376"
+    },
+    {
+      "path": "sources/en/_repository/RIGHTS.md",
+      "bytes": 263,
+      "sha256": "f39499aee1eecfa07c4340b9c590512468781a6184dcaea38b7d5be3606c8b1e"
+    },
+    {
+      "path": "sources/en/_repository/RIGHTS_NOTICE.md",
+      "bytes": 1177,
+      "sha256": "db73478d2e9131aaea6a60adc210ca0d6382f94c1286c7176039f9fc22cd4a4a"
+    },
+    {
+      "path": "sources/en/en/149.tex",
+      "bytes": 72352,
+      "sha256": "0f3ed1355b33dbeebdb46d8f38f1a5a149da42b79b2e98d3dce646eae7df9d8b"
+    },
+    {
+      "path": "sources/en/en/182.tex",
+      "bytes": 74979,
+      "sha256": "ae8c8f47deb3f0e86faacada146c5dfba655e7a25b2f929ca70db7ad1e9dff9d"
+    },
+    {
+      "path": "sources/en/en/190.tex",
+      "bytes": 78549,
+      "sha256": "03a7b7294999b586d9d5dce97cdefc1a8a4c67470b83f8a9e5652249bb1367ce"
+    },
+    {
+      "path": "sources/en/en/195.tex",
+      "bytes": 58040,
+      "sha256": "fd53677d9b9d5e0ad3974296e26417667b56ec83768659e7de3d1720e18cc46b"
+    },
+    {
+      "path": "sources/en/en/212.tex",
+      "bytes": 47601,
+      "sha256": "77b19aaaa862ca46500e1d2068a8d4848958174e3b1527616329dd3af1288a27"
+    },
+    {
+      "path": "sources/en/en/221.tex",
+      "bytes": 75600,
+      "sha256": "bef2e1570654ebab4477d7d9002a2a05e33ced2ee3b89e2049992f58c987542c"
+    },
+    {
+      "path": "sources/en/en/232.tex",
+      "bytes": 49892,
+      "sha256": "40be73d5b11cc01b1752c194531a3ab5371f1459217ad770f55e45f6094344a5"
+    },
+    {
+      "path": "sources/en/en/236.tex",
+      "bytes": 60784,
+      "sha256": "34cb23bcdaa56d7305c872c6256ac27a71a3efa12b72ac14922369fa595efbb4"
+    },
+    {
+      "path": "sources/en/en/com.tex",
+      "bytes": 2751,
+      "sha256": "3244105f82c358a2bf2e0728f37f95a19f4ea750eb9a8c6a873c6ba6fcccf0c9"
+    },
+    {
+      "path": "sources/en/en/e149.tex",
+      "bytes": 1051,
+      "sha256": "8ba26b4f8799231f6d37ff39ff516ad999fce2fff038c611431a1cdbf57533f4"
+    },
+    {
+      "path": "sources/en/en/e182.tex",
+      "bytes": 3125,
+      "sha256": "d5efece5aa74c234ae985fa219a9cf8950231d4af7f11f5d7efc8ad59d75e17b"
+    },
+    {
+      "path": "sources/en/en/e190.tex",
+      "bytes": 1775,
+      "sha256": "d6b5b7b5339bc04f36d64d79c6930a84c7247cfb709e675758ee1ed9ccf98571"
+    },
+    {
+      "path": "sources/en/en/e195.tex",
+      "bytes": 2712,
+      "sha256": "4c5931b8b52c8e3d5029a19587625afe5c919675032c3b52eb04779fca98562b"
+    },
+    {
+      "path": "sources/en/en/e212.tex",
+      "bytes": 1579,
+      "sha256": "b9c1615d75a3f399001dfa94d1cbfda8a12af1c67132f7ce2f17ef96d0880529"
+    },
+    {
+      "path": "sources/en/en/e221.tex",
+      "bytes": 2085,
+      "sha256": "9cc0995d39667473bf3568cef7fa968c3cb6b56253821788a81d8cf296ca86a1"
+    },
+    {
+      "path": "sources/en/en/e232.tex",
+      "bytes": 1321,
+      "sha256": "ed260349ff7c0b20698d565df6d3f9d653f9975e193fd4edc2ca42a03f9f19d1"
+    },
+    {
+      "path": "sources/en/en/e236.tex",
+      "bytes": 9711,
+      "sha256": "bd5f4f608d269a2435bb48c07b32e94da38aad73377d545ac97683b73263e54b"
+    },
+    {
+      "path": "sources/en/en/main.tex",
+      "bytes": 1052,
+      "sha256": "b2d5cd8d177c080f5605347e26f6a5b8dd07aa5d0e4cc537eb12ba1f8df7f3d8"
+    },
+    {
+      "path": "sources/en/tex/base.tex",
+      "bytes": 2394,
+      "sha256": "2b62f82236176f5d9f0c1c643ec8e0bb353ce90240c7467d61524417410e8843"
+    }
+  ]
+}

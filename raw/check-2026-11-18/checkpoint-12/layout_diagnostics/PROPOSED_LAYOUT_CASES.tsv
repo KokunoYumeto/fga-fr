@@ -1,0 +1,15 @@
+case	source	baseline_stage	baseline_diagnostic_lines	baseline_overfull_pt	baseline_pdf_page_candidates	baseline_wrapper_region	actual_inline_insertion_line	kind	setting	candidate_evidence_stage	candidate_layer_boxes_over_2pt	original_body_bytes_preserved	visual_review
+LAYOUT-01	sources/fr/fr/149.tex	read_through_221_263	485-485	26.84898	13	477-485		local display font size	\small	layout_mechanical_04	0	true	pending
+LAYOUT-02	sources/fr_printed/fr/149.tex	read_through_221_263	482-482	26.84898	13	474-482		local display font size	\small	layout_mechanical_04	0	true	pending
+LAYOUT-03	sources/fr/fr/182.tex	read_through_221_263	256-258	6.36914	29	256-257		local emergency stretch	\emergencystretch=3em	layout_mechanical_04	0	true	pending
+LAYOUT-04	sources/fr/fr/182.tex	read_through_221_263	269-279	11.93977	29	269-278		local emergency stretch	\emergencystretch=3em	layout_mechanical_04	0	true	pending
+LAYOUT-05	sources/fr/fr/182.tex	read_through_221_263	440-445	36.72565	31	439-444		local paragraph font size	\small	layout_mechanical_04	0	true	pending
+LAYOUT-06	sources/fr/fr/212.tex	read_through_221_263	288-291	5.36102	86	289-290		local emergency stretch	\emergencystretch=3em	layout_mechanical_04	0	true	pending
+LAYOUT-07	sources/fr_printed/fr/182.tex	read_through_221_263	256-258	6.36914	29	256-257		local emergency stretch	\emergencystretch=3em	layout_mechanical_04	0	true	pending
+LAYOUT-08	sources/fr_printed/fr/182.tex	read_through_221_263	269-279	11.93977	29	269-278		local emergency stretch	\emergencystretch=3em	layout_mechanical_04	0	true	pending
+LAYOUT-09	sources/fr_printed/fr/182.tex	read_through_221_263	440-445	36.72565	31	439-444		local paragraph font size	\small	layout_mechanical_04	0	true	pending
+LAYOUT-10	sources/fr_printed/fr/182.tex	read_through_221_263	898-910	4.89633	37	898-924		local emergency stretch	\emergencystretch=3em	layout_mechanical_04	0	true	pending
+LAYOUT-11	sources/fr_printed/fr/212.tex	read_through_221_263	288-291	5.36102	86	289-290		local emergency stretch	\emergencystretch=3em	layout_mechanical_04	0	true	pending
+LAYOUT-12	sources/ko/149.tex	cjk_open_fonts	72-75	7.77426	7,8	72-79		local emergency stretch	\emergencystretch=3em	layout_mechanical_07	0	true	pending
+LAYOUT-13	sources/ko/182.tex	cjk_open_fonts	505-510	2.92223	29	506-509	508	local inline math font size	\small	layout_mechanical_07	0	true	pending
+LAYOUT-14	sources/ko/190.tex	cjk_open_fonts	1111-1119	4.1471	52	1112-1123		local emergency stretch	\emergencystretch=3em	layout_mechanical_07	0	true	pending

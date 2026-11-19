@@ -1,0 +1,100 @@
+{
+  "gate_directory": "tmp/structural_gate_after_french",
+  "gate_started_utc": "2026-11-19T04:45:18.865965+00:00",
+  "gate_completed_utc": "2026-11-19T04:45:19.293855+00:00",
+  "gate_report_sha256": {
+    "ADVISORIES.tsv": "8881a14f37fa178f001a4cf8079060adbd3d2a1318b45f7f9465ea44c4be8394",
+    "CATEGORY_COUNTS.tsv": "82898cf64ce9d25e6f039d7a9b4725c7609a409efee4cacd4fa1c55b0a7bc3a4",
+    "EXACT_DUPLICATE_ROWS.tsv": "a89d978ffb85691ce544de0030035d61a8c35299a77d2fe2cfcc1eb8ad91bc2c",
+    "FRENCH_COVERAGE.tsv": "3a590ea1f1788631fa75aeb5d0768d6282b59fdd01ddf0cacfff84e82d35de79",
+    "KEY_MULTIPLICITY.tsv": "ceb1adb29d20c40138d27d9a20c6651eb2aa3f8f8103c19cfdc38cc4f12c0ce8",
+    "PROGRESS_MARKERS.tsv": "1680b1ad71b281aaaf6832e6ba7d7ee838f60d84febae8c739ea6115f147a9b8",
+    "RECORD_SECTIONS.tsv": "1404af7ff8e3284c39c6e2258ecba9a89f29a821093fc521be47535d024e2560",
+    "REPEATED_EVENT_IDS.tsv": "f01661d4ed12022ed1b7753c9cf7e45485bb9bf384677ee3075f837f371d1b14",
+    "REQUIRED_SOURCES.tsv": "9a8e03cbbdead99fb2b59f0f3ffda4e6420ee94fbbf37805ae3eb16fb95c4630",
+    "SUMMARY.json": "6f91da6942060892d1679316ff8c0d687eb6478a46ac03a0fee405b2f9b346d6",
+    "SYNTAX_ISSUES.tsv": "740e05adb487169f1495e54552e18e16cfc1f47a2787ead4ff9e938281903f50",
+    "TIMESTAMP_CHECKS.tsv": "3a1bd470ec294ad907d5bfafee77f604349ccb75737f03db2d6b346fc1b7bd43",
+    "TRANSLATION_COVERAGE.tsv": "7332cf4c42bf527ee89721f25d343c743d525e46872ffcff200e77c02b533af7"
+  },
+  "gate_input_hashes": {
+    "CORRECTIONS.tsv": "d3a12e44ee34221f973587541f4b7730f422724eb64e8da44196dac76029b943",
+    "CHECK_EVENTS.tsv": "e51ea9ccf03753a785effe434983c5db5db984212d0935e39f3c4f3348286a2d",
+    "CHECK_RECORD.md": "a8f3bd4611399d4798e5ab37519af51416f5658e6bf56bedd395bdef129ad439",
+    "progress.log": "7a8b029da35a6f37bc36fcdbe1105e05451301a7c92b5930710c60b3dd03febd"
+  },
+  "correction_input": "tmp/frozen_build_inputs/read_through_errata_307/CORRECTIONS.tsv",
+  "correction_rows": 20729,
+  "correction_sha256": "d3a12e44ee34221f973587541f4b7730f422724eb64e8da44196dac76029b943",
+  "event_input": "tmp/french_structural_gate_actions/frozen_event_input/CHECK_EVENTS.tsv",
+  "event_rows": 786,
+  "event_sha256": "e51ea9ccf03753a785effe434983c5db5db984212d0935e39f3c4f3348286a2d",
+  "event_freeze": {
+    "started_utc": "2026-11-19T04:51:22.727164+00:00",
+    "completed_utc": "2026-11-19T04:51:22.729238+00:00",
+    "input": "FGA_CHECK/CHECK_EVENTS.tsv",
+    "frozen_output": "tmp/french_structural_gate_actions/frozen_event_input/CHECK_EVENTS.tsv",
+    "bytes": 493726,
+    "sha256": "e51ea9ccf03753a785effe434983c5db5db984212d0935e39f3c4f3348286a2d",
+    "two_complete_reads_identical": true,
+    "matches_gate_input_hash": true,
+    "scope": "Only CHECK_EVENTS.tsv was frozen; no live source, CHECK_RECORD, progress, or correction-ledger read."
+  },
+  "source_snapshot": "tmp/frozen_build_inputs/read_through_errata_307",
+  "source_capture_started_utc": "2026-11-19T04:46:04.787397+00:00",
+  "source_capture_completed_utc": "2026-11-19T04:46:04.868173+00:00",
+  "source_capture_metadata_sha256": "da53af1b3545fa2f2583b80f2c3f3c10888d240b74fb2e826f4d3aef2775567a",
+  "source_helper_sha256": "d2cc95f1b28d52d2885c34c74838855face2485fe63f78f0553c5b9d9a9e2ca3",
+  "original_checkpoint_attachment": "upload/FGA_CHECK_checkpoint_05(1).zip",
+  "original_checkpoint_archive_sha256": "56163df59d316c5fcdcd744885a7aeef5c916f0f69bf03a5ea55e1b4ac818d39",
+  "original_checkpoint_file_list_sha256": "445409c415d62ebaa8256f17cfef27b9ee88d821435f9011f877311b9de0723e",
+  "original_checkpoint_ledger_metadata": [
+    {
+      "member": "CORRECTIONS.tsv",
+      "bytes": 3076175,
+      "sha256": "b0a5c4da692a73d10bfc62e8b33cc41b99440a5496fbf8c55fb6d5f88b578267",
+      "rows": 9959,
+      "manifest_exact": true,
+      "crc32": "83346729",
+      "zip_dos_datetime": [
+        2026,
+        11,
+        18,
+        22,
+        4,
+        58
+      ],
+      "zip_datetime_timezone": "unspecified by ZIP metadata"
+    },
+    {
+      "member": "CHECK_EVENTS.tsv",
+      "bytes": 295058,
+      "sha256": "c386ade4044541bb2b11cfe1a916a2c678ada2a038697e292910231e047590d4",
+      "rows": 460,
+      "manifest_exact": true,
+      "crc32": "ba5d7f78",
+      "zip_dos_datetime": [
+        2026,
+        11,
+        18,
+        22,
+        4,
+        58
+      ],
+      "zip_datetime_timezone": "unspecified by ZIP metadata"
+    }
+  ],
+  "later_root_reported_additional_correction_rows": 12,
+  "later_root_reported_source_changes": [
+    {
+      "source": "sources/fr/fr/149.tex",
+      "removals": 9
+    },
+    {
+      "source": "sources/fr/fr/212.tex",
+      "removals": 3
+    }
+  ],
+  "live_record_progress_corrections_or_source_reads": false,
+  "later_live_reconciliation_included": false
+}

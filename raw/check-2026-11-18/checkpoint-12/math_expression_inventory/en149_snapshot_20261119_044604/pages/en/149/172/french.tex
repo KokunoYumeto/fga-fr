@@ -1,0 +1,51 @@
+\src{172}
+$\symup{0\longrightarrow K'\longrightarrow K\longrightarrow K''\longrightarrow 0}$, telle que $\symup{K'^{i}}$ s'identifie à un facteur direct de $\symup{K^{i}}$ pour tout $\symup{i}$,
+donne naissance à une suite exacte pour les complexes de groupes
+$\symup{\operatorname{Hom}(K'',L)}$, etc., d'où un opérateur cobord
+$\symup{H^{i}(K',L)\longrightarrow H^{i+1}(K'',L)}$.
+On définit de même les opérateurs cobord relatifs à une suite exacte en $\symup{L}$. Les
+accouplements (2.2) sont compatibles, au sens usuel, avec ces opérateurs cobord.
+
+Supposons maintenant que $\symup{C}$ soit une catégorie telle que tout élément $\symup{A}$
+de $\symup{C}$ admette une résolution injective $\symup{C(A)}$. On constate alors, utilisant
+une des nombreuses variantes du théorème du bicomplexe, que
+\[
+  \symup{H^{*}\bigl(C(A),C(B)\bigr)
+  =H^{*}\bigl(\operatorname{Hom}(C(A),C(B))\bigr)}
+\]
+est canoniquement isomorphe à
+\[
+  \symup{H^{*}\bigl(\operatorname{Hom}(A,C(B))\bigr)
+  =\operatorname{Ext}^{*}(A,B).}
+\]
+Les opérateurs cobord envisagés plus haut donnent les homomorphismes cobord des
+$\symup{\operatorname{Ext}}$. De plus, les accouplements (2.2) donnent ici des
+accouplements associatifs, compatibles avec les homomorphismes cobord :
+\begin{equation}\tag{2.3}
+  \symup{\operatorname{Ext}^{*}(A,B)\times\operatorname{Ext}^{*}(B,C)
+  \longrightarrow\operatorname{Ext}^{*}(A,C)}
+\end{equation}
+En particulier, $\symup{\operatorname{Ext}^{*}(A,A)}$ est un anneau gradué associatif
+avec unité, etc. (On montre de façon analogue que les foncteurs
+$\symup{\operatorname{Ext}}$ opèrent dans les foncteurs dérivés d'un foncteur
+quelconque ; nous ne nous servirons pas ici de ce fait.)
+
+Dans le cas où la catégorie envisagée est la catégorie $\symup{\Ccat^{\Osh}}$ des
+$\symup{\Osh}$-Modules sur $\symup{X}$, on obtient donc des accouplements
+\begin{equation}\tag{2.4}
+  \symup{\operatorname{Ext}_{\Osh}^{p}(X;A,B)
+  \times\operatorname{Ext}_{\Osh}^{q}(X;B,C)
+  \longrightarrow\operatorname{Ext}_{\Osh}^{p+q}(X;A,C)}
+\end{equation}
+qui peuvent s'expliciter comme il a été dit. D'ailleurs, les mêmes
+développements, mais où on remplace la catégorie des groupes abéliens par la
+catégorie des faisceaux abéliens sur $\symup{X}$, et les foncteurs $\symup{\operatorname{Hom}}$
+par les foncteurs $\symup{\Homsh}$, définissent aussi des accouplements, ayant les mêmes
+propriétés formelles, et de \fquote{nature locale} cette fois-ci :
+\begin{equation}\tag{2.5}
+  \symup{\Extsh_{\Osh}^{p}(A,B)\times\Extsh_{\Osh}^{q}(B,C)
+  \longrightarrow\Extsh_{\Osh}^{p+q}(A,C)}
+\end{equation}
+Ces derniers se précisent si on remarque que les homomorphismes (1.8) sont
+compatibles avec les accouplements entre les $\symup{\operatorname{Ext}}$.
+

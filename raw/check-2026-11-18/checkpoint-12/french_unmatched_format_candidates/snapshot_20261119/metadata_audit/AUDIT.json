@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-11-19T05:04:51.237199+00:00",
+  "completed_utc": "2026-11-19T05:04:52.012005+00:00",
+  "checks": [
+    {
+      "check": "68_original_hunks_and_55_outside_149_212",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "current_and_old_ledger_hashes_exact",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "old_row_hashes_are_unchanged_prefix",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "all_original_hunk_payload_hashes_exact",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "all_current_source_manifest_hashes_and_sizes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "all_declared_projections_reconstruct_without_alphabet_changes",
+      "pass": true,
+      "details": {
+        "projections_checked": 1214,
+        "errors": []
+      }
+    },
+    {
+      "check": "all_candidate_pairs_fragments_counts_and_row_hashes_exact",
+      "pass": true,
+      "details": {
+        "candidate_links": 335,
+        "errors": []
+      }
+    },
+    {
+      "check": "candidate_table_ids_exact_unique",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "all_158_included_ledger_payloads_exact",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "all_hunk_status_and_current_payload_survival_counts",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "history_rows_exact_and_ledger_ordered",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "FR_only_subset_and_payload_selection_exact",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "hunk_pair_counts_reconcile",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "twelve_post_snapshot_French_rows_exact",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "captured_inputs_unchanged_during_audit",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "no_detected_email_or_absolute_host_prefix",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "failed_checks": [],
+  "candidate_links": 335,
+  "projections_reconstructed": 1214,
+  "payload_rows_verified": 158,
+  "history_rows_verified": 722,
+  "scope": "Literal projection, substring, hash and locator audit only; no semantic equivalence or correction validity judgment."
+}

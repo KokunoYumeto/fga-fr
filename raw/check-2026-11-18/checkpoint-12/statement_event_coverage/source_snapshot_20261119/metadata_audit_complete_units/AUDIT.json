@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-11-19T04:52:41.991276+00:00",
+  "completed_utc": "2026-11-19T04:52:42.329380+00:00",
+  "checks": [
+    {
+      "check": "60_captured_inputs",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "all_frozen_sizes_and_hashes_match",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "unique_heading_identifiers",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "all_heading_bytes_lines_columns_and_pages_exact",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "all_34_unit_files_in_macro_and_manual_sweeps",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "every_literal_heading_macro_has_inventory_row",
+      "pass": true,
+      "details": {
+        "counts": {
+          "fsection": 82,
+          "result": 506,
+          "subsection": 40,
+          "section": 14
+        },
+        "unmatched": []
+      }
+    },
+    {
+      "check": "all_506_result_macros_and_82_fsection_macros_accounted",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "formatted_manual_numbered_heading_sweep",
+      "pass": true,
+      "details": {
+        "literal_manual_headings": 10,
+        "unmatched": []
+      }
+    },
+    {
+      "check": "unformatted_named_reference_candidates_not_core",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "all_event_records_retained_exactly",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "all_event_link_foreign_keys_and_exact_locators",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "all_record_line_and_page_section_locators_exact",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "candidate_coverage_counts_reconcile",
+      "pass": true,
+      "details": []
+    },
+    {
+      "check": "no_identifier_subset_exact",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "ambiguous_or_different_page_subset_exact",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "snapshot_totals_reconcile",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "zero_unparsed_result_macros",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "frozen_inputs_unchanged_through_audit",
+      "pass": true,
+      "details": null
+    },
+    {
+      "check": "no_detected_email_or_absolute_host_prefix",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "failed_checks": [],
+  "heading_rows": 1196,
+  "named_numbered_headings": 436,
+  "core_candidate_headings": 620,
+  "event_rows": 786,
+  "event_links": 5342,
+  "record_links": 668,
+  "macro_counts": {
+    "fsection": 82,
+    "result": 506,
+    "subsection": 40,
+    "section": 14
+  },
+  "scope": "Lexical input integrity and locator validation only; no mathematical or reading-coverage conclusion."
+}

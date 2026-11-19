@@ -1,0 +1,35 @@
+{
+  "file": "CORRECTIONS.tsv",
+  "row_id": "C000214",
+  "data_row": 214,
+  "physical_start": 410,
+  "physical_end": 410,
+  "field": "confidence",
+  "field_count": 10,
+  "expected_field_count": 10,
+  "row_fields_sha256": "388a6dd6f07cbc6f20255b8081a6f612e996c16e6a39044714fd8ddb267712f9",
+  "raw_record_sha256": "96344e15f74c8c782786ccd1829b09d4f898191ba334151a00930b50811af343",
+  "value_bytes": 71,
+  "value_sha256": "f7fd85a2ae05112f23b04723f46b699751d307ef688f38fe3151f00775991641",
+  "allowed_exact_values": [
+    "high",
+    "medium",
+    "low"
+  ],
+  "case_and_ascii_whitespace_candidates": [],
+  "candidate_repair": "No unique lexical category repair; owner must choose an allowed confidence value.",
+  "prohibited_inference": "No confidence level is inferred from correction or evidence contents.",
+  "original_checkpoint": {
+    "file": "CORRECTIONS.tsv",
+    "current_row_id": "C000214",
+    "current_data_row": 214,
+    "current_physical_start": 410,
+    "current_physical_end": 410,
+    "row_fields_sha256": "388a6dd6f07cbc6f20255b8081a6f612e996c16e6a39044714fd8ddb267712f9",
+    "raw_record_sha256": "96344e15f74c8c782786ccd1829b09d4f898191ba334151a00930b50811af343",
+    "archive_field_match_row_ids": "C000214",
+    "archive_raw_match_row_ids": "C000214",
+    "archive_physical_ranges": "410-410",
+    "same_number_exact_raw_match": true
+  }
+}

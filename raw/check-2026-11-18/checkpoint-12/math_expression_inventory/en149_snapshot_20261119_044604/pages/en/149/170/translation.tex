@@ -1,0 +1,57 @@
+\src{170}
+\begin{equation}\tag{1.3}
+  H^{p}(X,B)=(R^{p}\Gamma)(B)=H^{p}\bigl(\Gamma(C(B))\bigr).
+\end{equation}
+Clearly $h_A=\Gamma\hsh_A$; on the other hand, one verifies that $\hsh_A$
+takes injective objects to $\Gamma$-acyclic objects. The familiar conclusion is
+the following.
+
+\result{PROPOSITION}{1} For every $\Osh$-Module $A$, there exists a
+cohomological spectral functor on $\Ccat^{\Osh}$ converging to the graded functor
+$\bigl(\operatorname{Ext}_{\Osh}^{*}(X;A,B)\bigr)$, whose initial term is
+\begin{equation}\tag{1.4}
+  E_{2}^{p,q}(A,B)=H^{p}\bigl(X,\Extsh_{\Osh}^{q}(A,B)\bigr).
+\end{equation}
+From it one obtains edge homomorphisms and a five-term exact sequence, which we
+shall not write down.
+
+\result{COROLLARY}{1} If $A$ is locally isomorphic to $\Osh^{n}$, then there are
+canonical isomorphisms
+\begin{equation}\tag{1.5}
+  \operatorname{Ext}_{\Osh}^{p}(X;A,B)
+  \overset{\sim}{\longleftarrow}
+  H^{p}\bigl(X,\Homsh_{\Osh}(A,B)\bigr)
+\end{equation}
+(given by edge homomorphisms of the spectral sequence). In particular, there is
+a canonical isomorphism
+\begin{equation}\tag{1.6}
+  \operatorname{Ext}_{\Osh}^{p}(X;\Osh,B)=H^{p}(X,B).
+\end{equation}
+
+To use these results, one must be able to describe the
+$\Extsh_{\Osh}^{p}(A,B)$. These functors are computed locally: if $U$ is an open
+subset of $X$, then
+\[
+  \Extsh_{\Osh}^{p}(A,B)|U
+  =\Extsh_{\Osh|U}^{p}(A|U,B|U),
+\]
+as follows from the fact that the restriction to $U$ of an injective
+$\Osh$-Module is an injective $(\Osh|U)$-Module. Furthermore, for fixed
+$x\in X$, there are functorial homomorphisms
+\begin{equation}\tag{1.7}
+  \Homsh_{\Osh}(A,B)_x
+  \longrightarrow
+  \operatorname{Hom}_{\Osh_x}(A_x,B_x),
+\end{equation}
+which extend uniquely to a homomorphism of cohomological functors in $B$:
+\begin{equation}\tag{1.8}
+  \Extsh_{\Osh}^{p}(A,B)_x
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_x}^{p}(A_x,B_x).
+\end{equation}
+
+\result{PROPOSITION}{2} If, in a neighborhood of $x$, $A$ is isomorphic to the
+cokernel of a homomorphism $\Osh^{m}\longrightarrow\Osh^{n}$, then (1.8) is an isomorphism in degree $p$ when $A$ admits locally a finite free partial resolution through degree $p+1$; it is an isomorphism for every $p$ when $A$ is pseudo-coherent. A single finite presentation alone gives only the degree-zero comparison.\footnote{The printed text reads “(1.7)”; the presence
+of $p$ and the preceding sentence require “(1.8).”} This holds in particular if
+$A$ is a coherent $\Osh$-Module [3].
+

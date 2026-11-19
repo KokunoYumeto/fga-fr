@@ -1,0 +1,212 @@
+unit	printed_page	section_lines	progress_lines	heading_count	completion_count	fr_locator_present	fr_printed_locator_present	status
+149	169	232	2	1	1	True	True	recorded markers present
+149	170	406	3	1	1	True	True	recorded markers present
+149	171	580	4	1	1	False	False	recorded markers present
+149	172	756	5	1	1	False	False	recorded markers present
+149	173	932	6	1	1	True	True	recorded markers present
+149	174	1104	7	1	1	False	False	recorded markers present
+149	175	1276	8	1	1	False	False	recorded markers present
+149	176	1450	9	1	1	False	False	recorded markers present
+149	177	1621	10	1	1	False	False	recorded markers present
+149	178	1793	11	1	1	True	True	recorded markers present
+149	179	1962	12	1	1	True	True	recorded markers present
+149	180	2130	13	1	1	True	True	recorded markers present
+149	181	2297	14	1	1	True	True	recorded markers present
+149	182	2463	15	1	1	True	True	recorded markers present
+149	183	2628	16	1	1	True	True	recorded markers present
+149	184	2792	17	1	1	True	True	recorded markers present
+149	185	2955	19	1	1	True	True	recorded markers present
+149	186	3116	20	1	1	True	True	recorded markers present
+149	187	3276	21	1	1	True	True	recorded markers present
+149	188	3435	22	1	1	True	True	recorded markers present
+149	189	3593	23	1	1	True	True	recorded markers present
+149	190	3750	24	1	1	True	True	recorded markers present
+149	191	3906	25	1	1	True	True	recorded markers present
+149	192	4063	26	1	1	True	True	recorded markers present
+149	193	4217	27	1	1	True	True	recorded markers present
+e149	298			0	0	False	False	pending coverage
+182	193	4370	28	1	1	True	True	recorded markers present
+182	194	4522	29	1	1	True	True	recorded markers present
+182	195	4673	30	1	1	True	True	recorded markers present
+182	196	4823	31	1	1	True	True	recorded markers present
+182	197	4972	32	1	1	True	True	recorded markers present
+182	198	5120	33	1	1	True	True	recorded markers present
+182	199	5267	34	1	1	True	True	recorded markers present
+182	200	5413	35	1	1	True	True	recorded markers present
+182	201	5558	36	1	1	True	True	recorded markers present
+182	202	5702	37	1	1	True	True	recorded markers present
+182	203	5845	38	1	1	True	True	recorded markers present
+182	204	5987	39	1	1	True	True	recorded markers present
+182	205	6128	40	1	1	True	True	recorded markers present
+182	206	6268	41	1	1	True	True	recorded markers present
+182	207	6407	42	1	1	True	True	recorded markers present
+182	208	6545	43	1	1	True	True	recorded markers present
+182	209	6682	44	1	1	True	True	recorded markers present
+182	210	6818	45	1	1	True	True	recorded markers present
+182	211	6953	46	1	1	True	True	recorded markers present
+182	212	7087	47	1	1	True	True	recorded markers present
+182	213	7220	48	1	1	True	True	recorded markers present
+182	214	7352	49	1	1	True	True	recorded markers present
+182	215	7483	50	1	1	True	True	recorded markers present
+182	216	7613	51	1	1	True	True	recorded markers present
+182	217	7742	52	1	1	True	True	recorded markers present
+182	218	7870	53	1	1	True	True	recorded markers present
+182	219	7997	54	1	1	True	True	recorded markers present
+182	220	8123	55	1	1	True	True	recorded markers present
+e182	298			0	0	False	False	pending coverage
+e182	299			0	0	False	False	pending coverage
+190	299	8248	56	1	1	True	True	recorded markers present
+190	300	8372	57	1	1	True	True	recorded markers present
+190	301	8497	58	1	1	True	True	recorded markers present
+190	302	8621	59	1	1	True	True	recorded markers present
+190	303	8744	60	1	1	True	True	recorded markers present
+190	304	8866	61	1	1	True	True	recorded markers present
+190	305	8987	62	1	1	True	True	recorded markers present
+190	306	9107	63	1	1	True	True	recorded markers present
+190	307	9226	64	1	1	True	True	recorded markers present
+190	308	9344	65	1	1	True	True	recorded markers present
+190	309	9461	66	1	1	True	True	recorded markers present
+190	310	9577	67	1	1	True	True	recorded markers present
+190	311	9692	68	1	1	True	True	recorded markers present
+190	312	9806	69	1	1	True	True	recorded markers present
+190	313	9919	70	1	1	True	True	recorded markers present
+190	314	10030	71	1	1	True	True	recorded markers present
+190	315	10140	72	1	1	True	True	recorded markers present
+190	316	10249	73	1	1	True	True	recorded markers present
+190	317	10357	74	1	1	True	True	recorded markers present
+190	318	10464	75	1	1	True	True	recorded markers present
+190	319	10570	76	1	1	True	True	recorded markers present
+190	320	10677	77	1	1	True	True	recorded markers present
+190	321	10781	78	1	1	True	True	recorded markers present
+190	322	10884	79	1	1	True	True	recorded markers present
+190	323	10986	80	1	1	True	True	recorded markers present
+190	324	11087	81	1	1	True	True	recorded markers present
+190	325	11187	82	1	1	True	True	recorded markers present
+190	326	11286	83	1	1	True	True	recorded markers present
+190	327	11384	84	1	1	True	True	recorded markers present
+e190	300			0	0	False	False	pending coverage
+195	369	11479	85	1	1	True	True	recorded markers present
+195	370	11575	86	1	1	True	True	recorded markers present
+195	371	11670	87	1	1	True	True	recorded markers present
+195	372	11764	88	1	1	True	True	recorded markers present
+195	373	11857	89	1	1	True	True	recorded markers present
+195	374	11949	90	1	1	True	True	recorded markers present
+195	375	12040	91	1	1	True	True	recorded markers present
+195	376	12130	92	1	1	True	True	recorded markers present
+195	377	12219	93	1	1	True	True	recorded markers present
+195	378	12307	94	1	1	True	True	recorded markers present
+195	379	12394	95	1	1	True	True	recorded markers present
+195	380	12480	96	1	1	True	True	recorded markers present
+195	381	12565	97	1	1	True	True	recorded markers present
+195	382	12649	98	1	1	True	True	recorded markers present
+195	383	12732	99	1	1	True	True	recorded markers present
+195	384	12814	100	1	1	True	True	recorded markers present
+195	385	12895	101	1	1	True	True	recorded markers present
+195	386	12975	102	1	1	True	True	recorded markers present
+195	387	13054	103	1	1	True	True	recorded markers present
+195	388	13132	104	1	1	True	True	recorded markers present
+195	389	13209	105	1	1	True	True	recorded markers present
+195	390	13285	106	1	1	True	True	recorded markers present
+e195	300			0	0	False	False	pending coverage
+e195	301			0	0	False	False	pending coverage
+212	99	13358	107	1	1	True	True	recorded markers present
+212	100	13432	108	1	1	True	True	recorded markers present
+212	101	13505	109	1	1	True	True	recorded markers present
+212	102	13577	110	1	1	True	True	recorded markers present
+212	103	13648	111	1	1	True	True	recorded markers present
+212	104	13718	112	1	1	True	True	recorded markers present
+212	105	13787	113	1	1	True	True	recorded markers present
+212	106	13855	114	1	1	True	True	recorded markers present
+212	107	13922	115	1	1	True	True	recorded markers present
+212	108	13988	116	1	1	True	True	recorded markers present
+212	109	14053	117	1	1	True	True	recorded markers present
+212	110	14117	118	1	1	True	True	recorded markers present
+212	111	14180	119	1	1	True	True	recorded markers present
+212	112	14242	120	1	1	True	True	recorded markers present
+212	113	14305	121	1	1	True	True	recorded markers present
+212	114	14365	122	1	1	True	True	recorded markers present
+212	115	14424	123	1	1	True	True	recorded markers present
+212	116	14482	124	1	1	True	True	recorded markers present
+212	117	14543	129	1	1	True	True	recorded markers present
+212	118	14599	130	1	1	True	True	recorded markers present
+e212	301			0	0	False	False	pending coverage
+e212	302			0	0	False	False	pending coverage
+221	249	14652	131	1	1	True	True	recorded markers present
+221	250	14706	132	1	1	False	False	recorded markers present
+221	251	14759	133	1	1	True	True	recorded markers present
+221	252	14811	134	1	1	True	True	recorded markers present
+221	253	14864	136	1	1	False	False	recorded markers present
+221	254	14913	137	1	1	False	False	recorded markers present
+221	255	14961	138	1	1	False	False	recorded markers present
+221	256	15008	139	1	1	False	False	recorded markers present
+221	257	15054	140	1	1	False	False	recorded markers present
+221	258	15099	141	1	1	False	False	recorded markers present
+221	259	15143	142	1	1	False	False	recorded markers present
+221	260	15186	143	1	1	False	False	recorded markers present
+221	261	15228	144	1	1	False	False	recorded markers present
+221	262	15269	145	1	1	False	False	recorded markers present
+221	263	15309	146	1	1	False	False	recorded markers present
+221	264	15348	147	1	1	False	False	recorded markers present
+221	265	15386	148	1	1	False	False	recorded markers present
+221	266	15423	149	1	1	False	False	recorded markers present
+221	267	15459	150	1	1	False	False	recorded markers present
+221	268	15494	151	1	1	False	False	recorded markers present
+221	269	15528	152	1	1	False	False	recorded markers present
+221	270	15561	153	1	1	False	False	recorded markers present
+221	271	15593	154	1	1	False	False	recorded markers present
+221	272	15624	155	1	1	False	False	recorded markers present
+221	273	15654	156	1	1	False	False	recorded markers present
+221	274	15683	157	1	1	False	False	recorded markers present
+221	275	15711	158	1	1	False	False	recorded markers present
+221	276	15740	159	1	1	False	False	recorded markers present
+e221	302			0	0	False	False	pending coverage
+232	143	15766	160	1	1	False	False	recorded markers present
+232	144	15791	161	1	1	False	False	recorded markers present
+232	145	15815	162	1	1	False	False	recorded markers present
+232	146	15838	163	1	1	False	False	recorded markers present
+232	147	15860	164	1	1	False	False	recorded markers present
+232	148	15883	165	1	1	False	False	recorded markers present
+232	149	15903	166	1	1	False	False	recorded markers present
+232	150	15922	167	1	1	False	False	recorded markers present
+232	151	15940	168	1	1	False	False	recorded markers present
+232	152	15957	169	1	1	False	False	recorded markers present
+232	153	15973	170	1	1	False	False	recorded markers present
+232	154	15988	171	1	1	False	False	recorded markers present
+232	155	16002	172	1	1	False	False	recorded markers present
+232	156			0	0	False	False	pending coverage
+232	157			0	0	False	False	pending coverage
+232	158			0	0	False	False	pending coverage
+232	159			0	0	False	False	pending coverage
+232	160			0	0	False	False	pending coverage
+232	161			0	0	False	False	pending coverage
+e232	303			0	0	False	False	pending coverage
+236	221			0	0	False	False	pending coverage
+236	222			0	0	False	False	pending coverage
+236	223			0	0	False	False	pending coverage
+236	224			0	0	False	False	pending coverage
+236	225			0	0	False	False	pending coverage
+236	226			0	0	False	False	pending coverage
+236	227			0	0	False	False	pending coverage
+236	228			0	0	False	False	pending coverage
+236	229			0	0	False	False	pending coverage
+236	230			0	0	False	False	pending coverage
+236	231			0	0	False	False	pending coverage
+236	232			0	0	False	False	pending coverage
+236	233			0	0	False	False	pending coverage
+236	234			0	0	False	False	pending coverage
+236	235			0	0	False	False	pending coverage
+236	236			0	0	False	False	pending coverage
+236	237			0	0	False	False	pending coverage
+236	238			0	0	False	False	pending coverage
+236	239			0	0	False	False	pending coverage
+236	240			0	0	False	False	pending coverage
+236	241			0	0	False	False	pending coverage
+236	242			0	0	False	False	pending coverage
+236	243			0	0	False	False	pending coverage
+e236	303			0	0	False	False	pending coverage
+e236	304			0	0	False	False	pending coverage
+e236	305			0	0	False	False	pending coverage
+e236	306			0	0	False	False	pending coverage
+e236	307			0	0	False	False	pending coverage
+com	297			0	0	False	False	pending coverage
+com	298			0	0	False	False	pending coverage

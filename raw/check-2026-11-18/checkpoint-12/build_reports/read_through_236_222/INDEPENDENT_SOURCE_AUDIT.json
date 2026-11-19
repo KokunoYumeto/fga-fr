@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-19T03:16:50.713445+00:00",
+  "scope": "Metadata and byte/hash comparisons only; source payloads were not decoded or reviewed. No live source or ledger reads.",
+  "archive": "checkpoints/FGA_CHECK_checkpoint_08.zip",
+  "archive_bytes": 3448099,
+  "archive_sha256": "ac3e3ec98edfa9d31c4049220a18ec726e04f61f2aa7d576b0ba190d8743d493",
+  "checkpoint_info_sha256": "0a960a26b0a2519dceec7872b1b237cc08a58ef62a9c429e5142824459df1aba",
+  "checkpoint_metadata_timestamp_utc": [
+    "2026-11-19T03:12:42.111973+00:00"
+  ],
+  "expected_timestamp_to_second": "2026-11-19T03:12:42+00:00",
+  "manifest_sha256": "936cadbfa0d56bf37f5bbb7f96b34083dea06404486b9390235717e078b4e2c6",
+  "verification_table": "tmp/checkpoint08_french_build_input/ARCHIVE_SOURCE_VERIFICATION.tsv",
+  "verification_table_sha256": "2e5ea2dd2d9ddad70cd462f83bcfc5ed3d3ea0a30e4a2ed8b509eac967cfc3c3",
+  "extracted_source_root": "tmp/checkpoint08_french_build_input/sources",
+  "frozen_source_root": "tmp/frozen_runs/read_through_236_222/sources",
+  "summary": {
+    "expected_files": 58,
+    "compared_files": 58,
+    "total_source_bytes": 1302790,
+    "all_file_sets_exact": true,
+    "all_directory_sets_exact": true,
+    "all_sizes_hashes_bytes_match": true,
+    "stable_during_audit": true
+  },
+  "canonical_source_inventory_sha256": "1717887db9e407370272a31b142a7be5a143771343321d9c9f83431447daa66f",
+  "canonical_hash_definition": "SHA256 of compact sorted-key JSON of path-sorted records containing path, bytes, and file sha256; independent of build-system source-tree hash convention.",
+  "layers": [
+    {
+      "layer": "fr",
+      "files": 29,
+      "bytes": 653087,
+      "all_source_comparisons_pass": true
+    },
+    {
+      "layer": "fr_printed",
+      "files": 29,
+      "bytes": 649703,
+      "all_source_comparisons_pass": true
+    }
+  ],
+  "failures": [],
+  "writes": "Only tmp/french_build_236_222_audit; no source, ledger, FGA_CHECK, or archive writes."
+}

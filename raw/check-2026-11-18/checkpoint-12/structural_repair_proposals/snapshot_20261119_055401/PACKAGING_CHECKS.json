@@ -1,0 +1,15 @@
+{
+  "completed_utc": "2026-11-19T06:06:58.541913+00:00",
+  "status": "PASS",
+  "frozen_input_hashes_verified": 11,
+  "exact_proposal_payloads_verified": 83,
+  "ledger_event_target_record_hashes_verified": 28,
+  "source_locator_bindings_verified": 110,
+  "all_utf8_payload_hashes_match": true,
+  "all_old_payloads_equal_frozen_slices": true,
+  "privacy_pattern_matching_files": [],
+  "payload_redactions": 0,
+  "whole_gate_run": false,
+  "production_mutations": 0,
+  "semantic_or_visual_review": false
+}

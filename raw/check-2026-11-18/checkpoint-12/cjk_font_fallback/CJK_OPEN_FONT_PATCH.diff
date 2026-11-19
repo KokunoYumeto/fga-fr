@@ -1,0 +1,55 @@
+--- a/sources/ko/base-ko.tex
++++ b/sources/ko/base-ko.tex
+@@ -1,13 +1,13 @@
+ \usepackage[a4paper,inner=31mm,outer=27mm,top=28mm,bottom=31mm,marginparwidth=17mm]{geometry}
+ \usepackage{fontspec}
+ \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+-\setmainfont{Malgun Gothic}[
+-  ItalicFont={Malgun Gothic},
++\setmainfont{Noto Sans CJK KR}[
++  ItalicFont={Noto Sans CJK KR},
+   ItalicFeatures={FakeSlant=0.2},
+-  BoldItalicFont={Malgun Gothic Bold},
++  BoldItalicFont={Noto Sans CJK KR Bold},
+   BoldItalicFeatures={FakeSlant=0.2}
+ ]
+-\setsansfont{Malgun Gothic}
++\setsansfont{Noto Sans CJK KR}
+ \setmonofont{TeX Gyre Cursor}
+ \XeTeXlinebreaklocale "ko"
+ \XeTeXlinebreakskip=0pt plus 1pt
+--- a/sources/zh-Hans/source/tex/zh.tex
++++ b/sources/zh-Hans/source/tex/zh.tex
+@@ -5,9 +5,9 @@
+ \setsansfont{TeX Gyre Heros}
+ \setmonofont{TeX Gyre Cursor}
+ \usepackage{xeCJK}
+-\setCJKmainfont{SimSun}[AutoFakeBold=2.2,AutoFakeSlant=0.2]
+-\setCJKsansfont{Microsoft YaHei}[AutoFakeBold=2.2]
+-\setCJKmonofont{Microsoft YaHei}
++\setCJKmainfont{Noto Serif CJK SC}[AutoFakeBold=2.2,AutoFakeSlant=0.2]
++\setCJKsansfont{Noto Sans CJK SC}[AutoFakeBold=2.2]
++\setCJKmonofont{Noto Sans CJK SC}
+ \xeCJKsetup{PunctStyle=kaiming}
+ \usepackage{microtype}
+ \usepackage{graphicx}
+--- a/sources/zh-Hans/source/zh/149.tex
++++ b/sources/zh-Hans/source/zh/149.tex
+@@ -129,7 +129,7 @@
+ $\operatorname{Hom}(K,L)$ 上引入微分算子
+ \begin{equation}\tag{2.1}
+   \delta(u)=du+(-1)^{n+1}ud,\quad
+-  \mbox{\upshape\fontspec{SimSun}其中 }n=\deg(u),
++  \mbox{\upshape\fontspec{Noto Serif CJK SC}其中 }n=\deg(u),
+ \end{equation}
+ 从而使它成为微分次数为 $+1$ 的复形。$n$ 次闭元就是与 $d$ 反交换的 $n$ 次
+ 算子（视为齐次算子）。\footnote{印刷文本作“与 $u$”；方程 (2.1) 要求此处
+@@ -829,7 +829,7 @@
+ $\leq r-n$（因为 $X$ 非奇异），所以
+ \[
+   \Extsh_{\Osh_P}^{r-p}(\Osh_X,\Omega_P^{r})=0
+-  \qquad\mbox{\upshape\fontspec{SimSun}当 }p<n.
++  \qquad\mbox{\upshape\fontspec{Noto Serif CJK SC}当 }p<n.
+ \]
+ 
+ \fsection{6}{奇异簇的对偶定理}

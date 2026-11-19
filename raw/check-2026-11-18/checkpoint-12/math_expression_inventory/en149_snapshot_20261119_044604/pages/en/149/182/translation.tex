@@ -1,0 +1,67 @@
+\src{182}
+\[
+\operatorname{Ext}_{\Osh_X}^{p}(X;\Osh_X,F)
+\times\operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+\longrightarrow
+\operatorname{Ext}_{\Osh_X}^{n}(X;\Osh_X,\Omega_X^{n}),
+\]
+that is,
+\begin{equation}\tag{5.1}
+  H^{p}(X,F)
+  \times\operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+  \longrightarrow H^{n}(X,\Omega_X^{n}).
+\end{equation}
+In view of Theorem 2, this pairing defines a homomorphism
+\begin{equation}\tag{5.2}
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+  \longrightarrow\bigl(H^{p}(X,F)\bigr)'.
+\end{equation}
+This homomorphism is functorial in $F$ and commutes with the connecting
+homomorphisms associated with exact sequences
+$0\longrightarrow F'\longrightarrow F\longrightarrow F''\longrightarrow0$.
+
+\result{THEOREM}{3} The homomorphism (5.2) is an isomorphism.
+
+In particular, this recovers Serre's result:
+
+\result{COROLLARY}{} Let $E$ be an algebraic vector bundle on $X$, and let
+$\Osh_X(E)$ be the sheaf of germs of regular sections of $E$. Then there are
+canonical isomorphisms
+\begin{equation}\tag{5.3}
+  \bigl(H^{p}(X,\Osh_X(E))\bigr)'
+  =H^{n-p}\bigl(X,\Omega_X^{n}\otimes\Osh_X(E')\bigr).
+\end{equation}
+It suffices to apply Theorem 3 and Corollary 1 to Proposition 1.
+
+Theorems 2 and 3 will follow from the following assertion:
+
+\noindent\textbf{(D) The following homomorphism}
+\begin{equation}\tag{5.2 bis}
+  \operatorname{Ext}_{\Osh_X}^{n-p}(X;F,\Omega_X^{n})
+  \longrightarrow\bigl(H^{p}(X,F)\bigr)'\otimes L,
+  \qquad L=H^{n}(X,\Omega_X^{n}),
+\end{equation}
+induced by the pairing (5.1), is an isomorphism.
+
+Let us first show that (D) implies Theorem 2. Let $k_x=\Osh_{(x)}$ be the sheaf
+of local rings of the variety reduced to the point $x\in X$. Consider the
+canonical homomorphism $\Osh_X\longrightarrow k_x$ and the associated
+homomorphism
+\begin{equation}\tag{5.3 bis}
+  H^{0}(X,\Osh_X)\longrightarrow H^{0}(X,k_x).
+\end{equation}
+Its transpose identifies with the homomorphism
+\begin{equation}\tag{5.4}
+  \operatorname{Ext}_{\Osh_X}^{n}(X;k_x,\Omega_X^{n})\otimes L'
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_X}^{n}(X;\Osh_X,\Omega_X^{n})\otimes L'
+\end{equation}
+induced by the homomorphism on $\operatorname{Ext}^{n}$ associated with
+$\Osh_X\longrightarrow k_x$:
+\begin{equation}\tag{5.5}
+  \operatorname{Ext}_{\Osh_X}^{n}(X;k_x,\Omega_X^{n})
+  \longrightarrow
+  \operatorname{Ext}_{\Osh_X}^{n}(X;\Osh_X,\Omega_X^{n})
+  =H^{n}(X,\Omega_X^{n}).
+\end{equation}
+

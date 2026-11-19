@@ -1,0 +1,2597 @@
+{
+  "started_utc": "2026-11-19T05:23:16.008741+00:00",
+  "completed_utc": "2026-11-19T05:23:16.154329+00:00",
+  "two_consecutive_reads_identical": true,
+  "attempt": 1,
+  "original_input_root": "inputs/original_sources",
+  "current_input_root": "FGA_CHECK/sources",
+  "layers": [
+    "en",
+    "es",
+    "es_149_printed",
+    "pt-BR",
+    "pt-BR_printed",
+    "vi",
+    "vi_diplomatic",
+    "ko",
+    "zh-Hans"
+  ],
+  "files": [
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "NOTICE.tex",
+      "frozen_path": "current/en/NOTICE.tex",
+      "bytes": 2434,
+      "sha256": "8e6ec7698c399e764989b1b4dd63640d9380ee69709daf01980c131123fa5a7d"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/149.tex",
+      "frozen_path": "current/en/en/149.tex",
+      "bytes": 71280,
+      "sha256": "35a46b498cae74404732abe8e28c57bfe9d2ca01a8b68cd76d176bd551af63d5"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/182.tex",
+      "frozen_path": "current/en/en/182.tex",
+      "bytes": 73069,
+      "sha256": "36feb52785502d482aa55e426d81b194a38b15bbbfe253a242b7c9bf985a0fec"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/190.tex",
+      "frozen_path": "current/en/en/190.tex",
+      "bytes": 78549,
+      "sha256": "03a7b7294999b586d9d5dce97cdefc1a8a4c67470b83f8a9e5652249bb1367ce"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/195.tex",
+      "frozen_path": "current/en/en/195.tex",
+      "bytes": 58040,
+      "sha256": "fd53677d9b9d5e0ad3974296e26417667b56ec83768659e7de3d1720e18cc46b"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/212.tex",
+      "frozen_path": "current/en/en/212.tex",
+      "bytes": 47601,
+      "sha256": "77b19aaaa862ca46500e1d2068a8d4848958174e3b1527616329dd3af1288a27"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/221.tex",
+      "frozen_path": "current/en/en/221.tex",
+      "bytes": 75600,
+      "sha256": "bef2e1570654ebab4477d7d9002a2a05e33ced2ee3b89e2049992f58c987542c"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/232.tex",
+      "frozen_path": "current/en/en/232.tex",
+      "bytes": 49892,
+      "sha256": "40be73d5b11cc01b1752c194531a3ab5371f1459217ad770f55e45f6094344a5"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/236.tex",
+      "frozen_path": "current/en/en/236.tex",
+      "bytes": 60784,
+      "sha256": "34cb23bcdaa56d7305c872c6256ac27a71a3efa12b72ac14922369fa595efbb4"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/com.tex",
+      "frozen_path": "current/en/en/com.tex",
+      "bytes": 2751,
+      "sha256": "3244105f82c358a2bf2e0728f37f95a19f4ea750eb9a8c6a873c6ba6fcccf0c9"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/e149.tex",
+      "frozen_path": "current/en/en/e149.tex",
+      "bytes": 1051,
+      "sha256": "8ba26b4f8799231f6d37ff39ff516ad999fce2fff038c611431a1cdbf57533f4"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/e182.tex",
+      "frozen_path": "current/en/en/e182.tex",
+      "bytes": 3125,
+      "sha256": "d5efece5aa74c234ae985fa219a9cf8950231d4af7f11f5d7efc8ad59d75e17b"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/e190.tex",
+      "frozen_path": "current/en/en/e190.tex",
+      "bytes": 1775,
+      "sha256": "d6b5b7b5339bc04f36d64d79c6930a84c7247cfb709e675758ee1ed9ccf98571"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/e195.tex",
+      "frozen_path": "current/en/en/e195.tex",
+      "bytes": 2712,
+      "sha256": "4c5931b8b52c8e3d5029a19587625afe5c919675032c3b52eb04779fca98562b"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/e212.tex",
+      "frozen_path": "current/en/en/e212.tex",
+      "bytes": 1579,
+      "sha256": "b9c1615d75a3f399001dfa94d1cbfda8a12af1c67132f7ce2f17ef96d0880529"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/e221.tex",
+      "frozen_path": "current/en/en/e221.tex",
+      "bytes": 2085,
+      "sha256": "9cc0995d39667473bf3568cef7fa968c3cb6b56253821788a81d8cf296ca86a1"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/e232.tex",
+      "frozen_path": "current/en/en/e232.tex",
+      "bytes": 1321,
+      "sha256": "ed260349ff7c0b20698d565df6d3f9d653f9975e193fd4edc2ca42a03f9f19d1"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/e236.tex",
+      "frozen_path": "current/en/en/e236.tex",
+      "bytes": 9711,
+      "sha256": "bd5f4f608d269a2435bb48c07b32e94da38aad73377d545ac97683b73263e54b"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "en/main.tex",
+      "frozen_path": "current/en/en/main.tex",
+      "bytes": 1052,
+      "sha256": "b2d5cd8d177c080f5605347e26f6a5b8dd07aa5d0e4cc537eb12ba1f8df7f3d8"
+    },
+    {
+      "version": "current",
+      "layer": "en",
+      "relative_file": "tex/base.tex",
+      "frozen_path": "current/en/tex/base.tex",
+      "bytes": 2365,
+      "sha256": "e73a88ba4bff1b3f85d5912e94b7eee8306b6c00d7815a33e47893cbae63f5c4"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/149.tex",
+      "frozen_path": "current/es/es/149.tex",
+      "bytes": 64413,
+      "sha256": "6e3747420d3c0199ab971e6ae254dd0838314e42e8c3bc2021d3e3b34d299b4c"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/182.tex",
+      "frozen_path": "current/es/es/182.tex",
+      "bytes": 76179,
+      "sha256": "36cfddd80e6325788de704e7c4f4d697355cc7cdab105e3e3c9546d13d99e224"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/190.tex",
+      "frozen_path": "current/es/es/190.tex",
+      "bytes": 80961,
+      "sha256": "2bdfd1b54a6f18c4b259c3656daedb85265b26ade3114b644994135d66cd641f"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/195.tex",
+      "frozen_path": "current/es/es/195.tex",
+      "bytes": 61054,
+      "sha256": "ea9fef71bc4eeee6ebb43ac8070a7727288c81bbb6ce733ee9b6de2df112755c"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/212.tex",
+      "frozen_path": "current/es/es/212.tex",
+      "bytes": 49709,
+      "sha256": "820c1bb79ac6bc761c752cc50411b91c2c8185bf6e173dcf1d0b1d18cf63d057"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/221.tex",
+      "frozen_path": "current/es/es/221.tex",
+      "bytes": 77449,
+      "sha256": "94b7dda9d798e7bd18ffb14f8348a6656fc3c96ae48ed068d2ea8baf07066350"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/232.tex",
+      "frozen_path": "current/es/es/232.tex",
+      "bytes": 51913,
+      "sha256": "aff85a233a5b3b3377409f18c803fc96a6988545ee5c609fb2a1a660046d405e"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/236.tex",
+      "frozen_path": "current/es/es/236.tex",
+      "bytes": 63337,
+      "sha256": "c0444b336532dcb7175454c812f5105a1f8ed86d77e08ab104ff9b76f567a067"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/FGA_ES_CURRENT.tex",
+      "frozen_path": "current/es/es/FGA_ES_CURRENT.tex",
+      "bytes": 5742,
+      "sha256": "893701880f05d514e8513a279c40c68cb77c7ef7ed24e74543ac4852fe3f2ff9"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/com.tex",
+      "frozen_path": "current/es/es/com.tex",
+      "bytes": 2915,
+      "sha256": "dbd2115b8f1b73ca0949523fc4d7a77b74a22a343adda10a4a744b0ef65f6a25"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/e149.tex",
+      "frozen_path": "current/es/es/e149.tex",
+      "bytes": 1177,
+      "sha256": "8f436046738a55028f4122bf52250dcb05337cd6d2e972d38f361a19a0ce5ce1"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/e182.tex",
+      "frozen_path": "current/es/es/e182.tex",
+      "bytes": 3466,
+      "sha256": "ef7c4993678c4abd64f3cb294efaed869566f5f45e034e94f1fa0ceb12956c56"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/e190.tex",
+      "frozen_path": "current/es/es/e190.tex",
+      "bytes": 1877,
+      "sha256": "04d88b4a1d04491d242922cc555db724f49966cfe712a5ae07c8c09ace5f3c6f"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/e195.tex",
+      "frozen_path": "current/es/es/e195.tex",
+      "bytes": 3053,
+      "sha256": "805b3fb197f24fce520b8cedcaf22be8f6d7742240fafb59bc9c6b4538c5b4ef"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/e212.tex",
+      "frozen_path": "current/es/es/e212.tex",
+      "bytes": 1642,
+      "sha256": "f6174513fe17ad162016e94329f0c7828a21d1620804f01211eb063f41b3bbbb"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/e221.tex",
+      "frozen_path": "current/es/es/e221.tex",
+      "bytes": 2180,
+      "sha256": "95855a980ff3ca7e194518b3f2d5c2d4837aeef9605af345582cdaf6e68819ad"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/e232.tex",
+      "frozen_path": "current/es/es/e232.tex",
+      "bytes": 1511,
+      "sha256": "e51aab39022e6057e02904d982d412570002d8a8f27180dce2dd8957a5d38aef"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "es/e236.tex",
+      "frozen_path": "current/es/es/e236.tex",
+      "bytes": 10233,
+      "sha256": "f47e9c62003bb3f2a5416df532e95aba0fb376eaaf4c325047999e0309e91190"
+    },
+    {
+      "version": "current",
+      "layer": "es",
+      "relative_file": "tex/base.tex",
+      "frozen_path": "current/es/tex/base.tex",
+      "bytes": 2286,
+      "sha256": "892edfc3af87588a8129fef919943ce2b0a40b41204c956fae406485678565f7"
+    },
+    {
+      "version": "current",
+      "layer": "es_149_printed",
+      "relative_file": "es/149_diplomatic.tex",
+      "frozen_path": "current/es_149_printed/es/149_diplomatic.tex",
+      "bytes": 64343,
+      "sha256": "434ff789b1e41c7244f60f5f6719d355f7c19cb59bea50551e39a7bd1dca41bc"
+    },
+    {
+      "version": "current",
+      "layer": "es_149_printed",
+      "relative_file": "es/FGA_ES_149_PRINTED.tex",
+      "frozen_path": "current/es_149_printed/es/FGA_ES_149_PRINTED.tex",
+      "bytes": 5102,
+      "sha256": "0b77c0385f0cae0758cf473fe27ad0b5bcce6d0d43b595168f076dca9ebb695c"
+    },
+    {
+      "version": "current",
+      "layer": "es_149_printed",
+      "relative_file": "tex/base.tex",
+      "frozen_path": "current/es_149_printed/tex/base.tex",
+      "bytes": 2286,
+      "sha256": "892edfc3af87588a8129fef919943ce2b0a40b41204c956fae406485678565f7"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "149.tex",
+      "frozen_path": "current/ko/149.tex",
+      "bytes": 66025,
+      "sha256": "a35a15337650e77b65dadd9c06bec5a8929712e38caf7fb95dc22bd8c6724866"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "182.tex",
+      "frozen_path": "current/ko/182.tex",
+      "bytes": 78020,
+      "sha256": "45c7f9b389aa924eb62469f684888942ce652d98cea94d1fcc63063253e6f262"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "190.tex",
+      "frozen_path": "current/ko/190.tex",
+      "bytes": 81201,
+      "sha256": "2a250583beb22811b905c35b73a1cdfc0948c7d46d519e524b3ac764160213f5"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "195.tex",
+      "frozen_path": "current/ko/195.tex",
+      "bytes": 61454,
+      "sha256": "b44ed4ff1e737d782aa03bf9f7d1dd5b6c5954bf59a35134ae3ca03107202e1e"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "212.tex",
+      "frozen_path": "current/ko/212.tex",
+      "bytes": 48884,
+      "sha256": "8c21df761cc622a51f343d3f0f3540e3b29527e41b394044f789c8e33e4320a0"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "221.tex",
+      "frozen_path": "current/ko/221.tex",
+      "bytes": 81788,
+      "sha256": "6ed2255ba1a2b93f39e7040c9e880049d73bb64a34c8b7850451ad79766935da"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "232.tex",
+      "frozen_path": "current/ko/232.tex",
+      "bytes": 53664,
+      "sha256": "94b4f58556d6726fe693d6d07e4a9b75120f18b0e1cbc97ae88d8a704dab508b"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "236.tex",
+      "frozen_path": "current/ko/236.tex",
+      "bytes": 67503,
+      "sha256": "4050de63fd3f8765670a064db9fb0a8478b5ad3eb680b34ca45c3dce064bc23a"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "base-ko.tex",
+      "frozen_path": "current/ko/base-ko.tex",
+      "bytes": 2715,
+      "sha256": "129e1893c3941fdeecfd70841ecc252321d4af6e4c8efa09135f3a6c4373c6bc"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "com.tex",
+      "frozen_path": "current/ko/com.tex",
+      "bytes": 2873,
+      "sha256": "07762f0133c7ab14a8c725e800d7c59c81d9d3b517371e6658b2b8d47b594c94"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "e149.tex",
+      "frozen_path": "current/ko/e149.tex",
+      "bytes": 1031,
+      "sha256": "f72e80d17f5ac10d82038fb4c9146023440e6d05dd3f0a892a137443045409e0"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "e182.tex",
+      "frozen_path": "current/ko/e182.tex",
+      "bytes": 3160,
+      "sha256": "41ba4d34d4fed14d2434ac77c66d64684edfb95752b12bfce5a9e1507a2b4269"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "e190.tex",
+      "frozen_path": "current/ko/e190.tex",
+      "bytes": 1800,
+      "sha256": "a9fc5c0844be2356b0c5d1d6a7a439e2d94ebb43eff64c26c6e1166d9543ca55"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "e195.tex",
+      "frozen_path": "current/ko/e195.tex",
+      "bytes": 2850,
+      "sha256": "dc42380909065a188971d9026ea506f1eee577aeb225584a6a8b1c974b54891f"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "e212.tex",
+      "frozen_path": "current/ko/e212.tex",
+      "bytes": 1601,
+      "sha256": "89afd169f8f0cd3dd2caa09afab7c2f741eb7ee3f3296c5bc882fcade18fe94f"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "e221.tex",
+      "frozen_path": "current/ko/e221.tex",
+      "bytes": 2222,
+      "sha256": "2663e020626a1067896542ece1f6b0c1ded33c08142160dae7fafd9287caf8d5"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "e232.tex",
+      "frozen_path": "current/ko/e232.tex",
+      "bytes": 1508,
+      "sha256": "2fc9ba3d944d3ae6aea0b23f1dac33f7fd80f29b838bab0db8c692287b69bb1f"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "e236.tex",
+      "frozen_path": "current/ko/e236.tex",
+      "bytes": 10428,
+      "sha256": "da6857f27c79867b57b4006206558e2a81c696b33ffb763f4673891ece1cab0f"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "front-ko.tex",
+      "frozen_path": "current/ko/front-ko.tex",
+      "bytes": 1077,
+      "sha256": "f4c1fff36bdf8b66b2db526b2b55d160a69e57ba0e519b09da474262906d0cb3"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "main.tex",
+      "frozen_path": "current/ko/main.tex",
+      "bytes": 1390,
+      "sha256": "8ed4aec02510fb39f0b30f910b8ae2d20df2d72cd8491b227a251602a18b4bfb"
+    },
+    {
+      "version": "current",
+      "layer": "ko",
+      "relative_file": "notice.tex",
+      "frozen_path": "current/ko/notice.tex",
+      "bytes": 2312,
+      "sha256": "f328e4348052c01be3f2440a7274e759202d82f4f7c6544c227a17502c5668ae"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/FGA_PTBR_CURRENT.tex",
+      "frozen_path": "current/pt-BR/pt_BR/FGA_PTBR_CURRENT.tex",
+      "bytes": 4668,
+      "sha256": "70b1a8a8fab027338e2d18e5622b50fd23b23274248fa24c8e0725497f5cc352"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/149.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/149.tex",
+      "bytes": 63379,
+      "sha256": "874696e798d239b7ec523c764dd4ea71f2abc711cc9c0334f27ed5591559bce6"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/182.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/182.tex",
+      "bytes": 74863,
+      "sha256": "556a5343913d7cc7672d972eed560dbab37273c35747db0eb4f340f4cc0ad2d7"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/190.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/190.tex",
+      "bytes": 79663,
+      "sha256": "152cd79abe0d4e1bce9418c118daf2f8c4fb95c48c7286fc8f219896e6e638f3"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/195.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/195.tex",
+      "bytes": 60075,
+      "sha256": "39af254bc1501972d96ae4e63b00cae1f74cd91524530afb90959f23380f150c"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/212.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/212.tex",
+      "bytes": 49066,
+      "sha256": "51f3b31bc6c5a18345b422508345c9998b566150d951bca38de02621c6e4367c"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/221.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/221.tex",
+      "bytes": 76753,
+      "sha256": "919657d145259157766d883a7f0ea403ad4472865b4f2c5595a17826c197c876"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/232.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/232.tex",
+      "bytes": 52676,
+      "sha256": "d45c1f951f7b8bb1f1deec9e8a00fe82acbaae88e4ef54d08a5d3160a6e966af"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/236.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/236.tex",
+      "bytes": 64135,
+      "sha256": "1ffdbd27292db9484f6e2266ff1b64f04633d2f56b5474ffd1b85c919ba89633"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/com.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/com.tex",
+      "bytes": 2941,
+      "sha256": "cdd388e5e427924204a07bb84d6215a63b2fdc002331460bcec89e29790bd037"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e149.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/e149.tex",
+      "bytes": 1292,
+      "sha256": "c99dbbea2bc6f522b103725222fdbbb721cff2258f19ecad9474c33411d249f5"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e182.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/e182.tex",
+      "bytes": 3474,
+      "sha256": "e1e5c9a1d412933f8edf7ed846a2e3970fbb470ab908ae974428c55eed42744b"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e190.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/e190.tex",
+      "bytes": 1910,
+      "sha256": "cd8da069f33258b14ddb376370e0f9a50f0b9b9257b108b669f7b5ba6311fa3e"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e195.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/e195.tex",
+      "bytes": 3074,
+      "sha256": "150d2697fce36196277d1bbcc6ec53b0e6e31e7651edee1d9f2db253d27c915a"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e212.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/e212.tex",
+      "bytes": 1686,
+      "sha256": "99658f84fe2b0f5aa83deca9277e63770e7d3dfe2087d6bda597a2631d1ef964"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e221.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/e221.tex",
+      "bytes": 2322,
+      "sha256": "983befbd98c4a67981718cf28879be4ac1191170c54a9e71278fb2492abd4fd7"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e232.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/e232.tex",
+      "bytes": 1558,
+      "sha256": "6c380aa98c7f4194786f208fadd6dacc1d1e24653c8532518293ab079a562e88"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e236.tex",
+      "frozen_path": "current/pt-BR/pt_BR/current/e236.tex",
+      "bytes": 10109,
+      "sha256": "fc1bdb09b0213ff2fad4238c6452105d39a02bc68c44668d193cbbde025fef05"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR",
+      "relative_file": "tex/base.tex",
+      "frozen_path": "current/pt-BR/tex/base.tex",
+      "bytes": 2052,
+      "sha256": "9be52495885cfeadb0ee9612405569d74cd2eebf04a6f9025ee7c75dbfad6369"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/FGA_PTBR_PRINTED.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/FGA_PTBR_PRINTED.tex",
+      "bytes": 4902,
+      "sha256": "f7b1e95023ef84bd20bafa96624dc39726dd1e3db7301cbc54bca47c78e7851c"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/149.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/149.tex",
+      "bytes": 61673,
+      "sha256": "a206ca111662dcb5eeacb77805fc582a45a2980093ed7d92616b82fb798e5e12"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/182.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/182.tex",
+      "bytes": 73849,
+      "sha256": "2d1f89ab39e8ed7f786bc5f9f3a4ba1b92cf679bbf851804622100f813e1f95a"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/190.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/190.tex",
+      "bytes": 78245,
+      "sha256": "b1d12fa5b7e22c26fd7ef99dda179010caf5809a1aee26e3ad0e5cad668e97d6"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/195.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/195.tex",
+      "bytes": 57333,
+      "sha256": "f04de237b7ad9f70a58a9a0d71cde08315a30d70d7c4c87625fae6c4c33976a9"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/212.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/212.tex",
+      "bytes": 47874,
+      "sha256": "f5f9c1b468fe40184eca191a573fd1ec2a07c154a74cdb39fa69b33cf0bd3cbc"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/221.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/221.tex",
+      "bytes": 73773,
+      "sha256": "ef52e78c09df5959d0a740b65b1b02e4670dff867998205b76abc924c07139c5"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/232.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/232.tex",
+      "bytes": 51245,
+      "sha256": "17244b364aa12b8d85980aa06cf3e7826c90f65921f32b415cba13a8ef1a057f"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/236.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/236.tex",
+      "bytes": 62123,
+      "sha256": "02e9fd66714aed0437e3abb115cbfe94c0f637f5e14413721302df0aba230209"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/com.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/com.tex",
+      "bytes": 2941,
+      "sha256": "cdd388e5e427924204a07bb84d6215a63b2fdc002331460bcec89e29790bd037"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e149.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/e149.tex",
+      "bytes": 1292,
+      "sha256": "c99dbbea2bc6f522b103725222fdbbb721cff2258f19ecad9474c33411d249f5"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e182.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/e182.tex",
+      "bytes": 3474,
+      "sha256": "e1e5c9a1d412933f8edf7ed846a2e3970fbb470ab908ae974428c55eed42744b"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e190.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/e190.tex",
+      "bytes": 1910,
+      "sha256": "5a035af791999209db7f5caa57303b5eac9b953efded383208f26cf7894fd072"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e195.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/e195.tex",
+      "bytes": 3074,
+      "sha256": "150d2697fce36196277d1bbcc6ec53b0e6e31e7651edee1d9f2db253d27c915a"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e212.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/e212.tex",
+      "bytes": 1686,
+      "sha256": "99658f84fe2b0f5aa83deca9277e63770e7d3dfe2087d6bda597a2631d1ef964"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e221.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/e221.tex",
+      "bytes": 2322,
+      "sha256": "983befbd98c4a67981718cf28879be4ac1191170c54a9e71278fb2492abd4fd7"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e232.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/e232.tex",
+      "bytes": 1558,
+      "sha256": "6c380aa98c7f4194786f208fadd6dacc1d1e24653c8532518293ab079a562e88"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e236.tex",
+      "frozen_path": "current/pt-BR_printed/pt_BR/diplomatic/e236.tex",
+      "bytes": 9977,
+      "sha256": "d99725fb09706dfe3fab507fdf6eafcd2965ad8a71a66ab19ea875f632fc273a"
+    },
+    {
+      "version": "current",
+      "layer": "pt-BR_printed",
+      "relative_file": "tex/base.tex",
+      "frozen_path": "current/pt-BR_printed/tex/base.tex",
+      "bytes": 2052,
+      "sha256": "9be52495885cfeadb0ee9612405569d74cd2eebf04a6f9025ee7c75dbfad6369"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "FGA_vi_current.tex",
+      "frozen_path": "current/vi/FGA_vi_current.tex",
+      "bytes": 1647,
+      "sha256": "d9b28560ed0de1885e81467fc14309f9c0fcbfa7afff137278e850f48bd3673e"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "NOTICE_vi.tex",
+      "frozen_path": "current/vi/NOTICE_vi.tex",
+      "bytes": 2660,
+      "sha256": "a6898e433350c740aa38b4996ea118b7de545b36e0d8c4aee80a4636afd2e6d0"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "controls/vi_base.tex",
+      "frozen_path": "current/vi/controls/vi_base.tex",
+      "bytes": 1586,
+      "sha256": "812bdefe534dc545a91241f3616f98d20b197db8af5755bec558c826c566889f"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/149.tex",
+      "frozen_path": "current/vi/sources/current/149.tex",
+      "bytes": 71173,
+      "sha256": "86cb1e48c9e6d8c827f10e2f907d2f435ef665a7e33377610a63977b86cd2609"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/182.tex",
+      "frozen_path": "current/vi/sources/current/182.tex",
+      "bytes": 87385,
+      "sha256": "c621e237594259a12164f7db846251645830dfdfd78e3c67ab7855c4ac8d281a"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/190.tex",
+      "frozen_path": "current/vi/sources/current/190.tex",
+      "bytes": 93313,
+      "sha256": "774e553d65f6b6e9456675513147a32370f691f827634410859f2d362c6743e7"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/195.tex",
+      "frozen_path": "current/vi/sources/current/195.tex",
+      "bytes": 69178,
+      "sha256": "ae54fa64721f696f9e371ae05e1856308f8a024da15630cdeda30f302fe59498"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/212.tex",
+      "frozen_path": "current/vi/sources/current/212.tex",
+      "bytes": 57289,
+      "sha256": "c4e6a631bbdbf08fd63fc283451cb5567efd59d695d40790e62809958546ec39"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/221.tex",
+      "frozen_path": "current/vi/sources/current/221.tex",
+      "bytes": 86939,
+      "sha256": "ec07259d18d1e83f356dd6f0df4b4fe0e9f55d44993c20da57f6f7048f7594aa"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/232.tex",
+      "frozen_path": "current/vi/sources/current/232.tex",
+      "bytes": 59661,
+      "sha256": "31d2d668e301113c3fdf600b9aeeac6a46d57d5103d20b47c75765da29fec3d2"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/236.tex",
+      "frozen_path": "current/vi/sources/current/236.tex",
+      "bytes": 72664,
+      "sha256": "7cbb4b8b6056b4827a82c7f577a89abaea4d74463c5f3c22b024571df8accf9e"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/com.tex",
+      "frozen_path": "current/vi/sources/current/com.tex",
+      "bytes": 3442,
+      "sha256": "0c30f46303404e7c075357db1142df6e9de2f80c5057eae6b6bbf885521e7f74"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/e149.tex",
+      "frozen_path": "current/vi/sources/current/e149.tex",
+      "bytes": 1290,
+      "sha256": "2e76e53816ae002e531a3b0e8cae077efd1b22b482c7a659df1df40f55a66302"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/e182.tex",
+      "frozen_path": "current/vi/sources/current/e182.tex",
+      "bytes": 3786,
+      "sha256": "4f7b2192c766cb5c1a13cd54728c44fdb12f312a048806b04aeee33a681e7b48"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/e190.tex",
+      "frozen_path": "current/vi/sources/current/e190.tex",
+      "bytes": 2323,
+      "sha256": "8fea6770815947234e81430752f176c3ae57ab7fc258ed57c319a88fbc77398c"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/e195.tex",
+      "frozen_path": "current/vi/sources/current/e195.tex",
+      "bytes": 3313,
+      "sha256": "a22d8361883e63f670fb1489767483da3aa06adb96e5554460c9dbe8ee52c0af"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/e212.tex",
+      "frozen_path": "current/vi/sources/current/e212.tex",
+      "bytes": 1912,
+      "sha256": "722389bc888512d3a496eec2f64ce595b39ac24b983d5c88e2e313013343bff3"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/e221.tex",
+      "frozen_path": "current/vi/sources/current/e221.tex",
+      "bytes": 2518,
+      "sha256": "7a93d278164d1d3e9be47f4cb9bceccdafbb4402597b2656888b76365350e3c4"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/e232.tex",
+      "frozen_path": "current/vi/sources/current/e232.tex",
+      "bytes": 1562,
+      "sha256": "93a59e2c8d8af95e59e5f5c577a79ce0efbbc6eee24a66779b260ba36f5a4ca9"
+    },
+    {
+      "version": "current",
+      "layer": "vi",
+      "relative_file": "sources/current/e236.tex",
+      "frozen_path": "current/vi/sources/current/e236.tex",
+      "bytes": 11397,
+      "sha256": "19d887e1ec62991f3550a106230486db040f1be02ea7d9fe1fdef79db8c232db"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "FGA_vi_diplomatic.tex",
+      "frozen_path": "current/vi_diplomatic/FGA_vi_diplomatic.tex",
+      "bytes": 1618,
+      "sha256": "b4bc23924677f8efae35b7be62bb353c2f1c38fbd9d318a63844688bbb973a22"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "NOTICE_vi.tex",
+      "frozen_path": "current/vi_diplomatic/NOTICE_vi.tex",
+      "bytes": 2660,
+      "sha256": "a6898e433350c740aa38b4996ea118b7de545b36e0d8c4aee80a4636afd2e6d0"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "controls/vi_base.tex",
+      "frozen_path": "current/vi_diplomatic/controls/vi_base.tex",
+      "bytes": 1586,
+      "sha256": "812bdefe534dc545a91241f3616f98d20b197db8af5755bec558c826c566889f"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/149.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/149.tex",
+      "bytes": 69066,
+      "sha256": "1a360d608de8cbb5f685ec5e8fc689df38b9bff58f4709ea2b7bb5e3dedb93fa"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/182.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/182.tex",
+      "bytes": 85702,
+      "sha256": "b5ae590d4169afa217a04e45ae2b02776a44a935a756b6bafbaad677cb2284d0"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/190.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/190.tex",
+      "bytes": 91607,
+      "sha256": "091cc7bd50be8836921914a986dcc925d8a96303f099bf6021b9f97bcf22ce01"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/195.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/195.tex",
+      "bytes": 65806,
+      "sha256": "9022a43d012ba6610a67ffffe6235993258d5c7c03787031e395d104591d3593"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/212.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/212.tex",
+      "bytes": 55895,
+      "sha256": "737f6ce4e6f2226d0a301bea9e8186562845a3059a448354fc0cda5063a3311b"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/221.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/221.tex",
+      "bytes": 83457,
+      "sha256": "6b1795860e8b5b4be80aa4834f2edaf5ad2aeaec0f8294b34792365dc00fcef2"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/232.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/232.tex",
+      "bytes": 57990,
+      "sha256": "a7f685d5d3001b18729f518fa91eb8efcab1c885fd7cc69d6574ca2c8ab5f6ec"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/236.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/236.tex",
+      "bytes": 70454,
+      "sha256": "71c8bec68938a979039e811b90152ae6737f69f29c9ebd884281dfcd23499ed6"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/com.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/com.tex",
+      "bytes": 3442,
+      "sha256": "0c30f46303404e7c075357db1142df6e9de2f80c5057eae6b6bbf885521e7f74"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e149.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/e149.tex",
+      "bytes": 1290,
+      "sha256": "2e76e53816ae002e531a3b0e8cae077efd1b22b482c7a659df1df40f55a66302"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e182.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/e182.tex",
+      "bytes": 3786,
+      "sha256": "4f7b2192c766cb5c1a13cd54728c44fdb12f312a048806b04aeee33a681e7b48"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e190.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/e190.tex",
+      "bytes": 2194,
+      "sha256": "0b424b678ff216f91d022531cc10add1b358521cb0c4e64cf5ff3b8d171cb7cb"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e195.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/e195.tex",
+      "bytes": 3313,
+      "sha256": "a22d8361883e63f670fb1489767483da3aa06adb96e5554460c9dbe8ee52c0af"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e212.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/e212.tex",
+      "bytes": 1912,
+      "sha256": "722389bc888512d3a496eec2f64ce595b39ac24b983d5c88e2e313013343bff3"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e221.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/e221.tex",
+      "bytes": 2518,
+      "sha256": "7a93d278164d1d3e9be47f4cb9bceccdafbb4402597b2656888b76365350e3c4"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e232.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/e232.tex",
+      "bytes": 1562,
+      "sha256": "246687b34a8bca7198f4f660bbfd27232e25402192c3b6510f85225cd39b6cec"
+    },
+    {
+      "version": "current",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e236.tex",
+      "frozen_path": "current/vi_diplomatic/sources/diplomatic/e236.tex",
+      "bytes": 11232,
+      "sha256": "2b2a4fa35e521187218292532a81130cea8792fb87a670630050f24d05a9b72d"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/NOTICE.tex",
+      "frozen_path": "current/zh-Hans/source/NOTICE.tex",
+      "bytes": 2298,
+      "sha256": "de7ec752acb4e944cce7820fa6b8d28ed3ffc808ffd6bc6b591c996098f0edde"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/tex/zh.tex",
+      "frozen_path": "current/zh-Hans/source/tex/zh.tex",
+      "bytes": 2767,
+      "sha256": "3b57a2b41224750d70a4c5708f8f728dad8c33793a069e15cc747088c92a1d85"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/149.tex",
+      "frozen_path": "current/zh-Hans/source/zh/149.tex",
+      "bytes": 54410,
+      "sha256": "e73286474d40aa33e402713296588da9cab2505fc4d361564c6d00598c782a97"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/182.tex",
+      "frozen_path": "current/zh-Hans/source/zh/182.tex",
+      "bytes": 63961,
+      "sha256": "00f4c67c217cb0735428986bcffa709a3dc9f4a22da190499bc163b6b8b0d0ea"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/190.tex",
+      "frozen_path": "current/zh-Hans/source/zh/190.tex",
+      "bytes": 68918,
+      "sha256": "1da0f6d6c8aad2d198ed9f1cc4006695c75d4281b390c81cc2ec314fa5941114"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/195.tex",
+      "frozen_path": "current/zh-Hans/source/zh/195.tex",
+      "bytes": 50668,
+      "sha256": "6c6d24043f016c31c3d5212dcb84dcb4361db462f8913e0a712b6e390ecc8f87"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/212.tex",
+      "frozen_path": "current/zh-Hans/source/zh/212.tex",
+      "bytes": 41551,
+      "sha256": "2d6906fc25ed276400bc08294ad3403601171a95e2b3a2c699bfe5d4fc1f3075"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/221.tex",
+      "frozen_path": "current/zh-Hans/source/zh/221.tex",
+      "bytes": 67956,
+      "sha256": "f2d06d355dd269f33ffd2cd9416b967e50499ce6c5daba94f1bc6c1f68a63e69"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/232.tex",
+      "frozen_path": "current/zh-Hans/source/zh/232.tex",
+      "bytes": 44965,
+      "sha256": "26384018ba9f98d09ff65df4eaba8967b35e97b2fbe85ec8071824c9786e913e"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/236.tex",
+      "frozen_path": "current/zh-Hans/source/zh/236.tex",
+      "bytes": 55057,
+      "sha256": "ad03deb07671c4d2306c385aa64ca0f90efb72b7f0a1332d908be9c1165f5e75"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/com.tex",
+      "frozen_path": "current/zh-Hans/source/zh/com.tex",
+      "bytes": 2597,
+      "sha256": "e243c3cca246bad8c7a8ca34e432900326a5f07c3dbcb80e0e2ff7bcb00f1c59"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e149.tex",
+      "frozen_path": "current/zh-Hans/source/zh/e149.tex",
+      "bytes": 1035,
+      "sha256": "6aaac4f0e98fed45dce020d2aaaca04ec1d7a14d51be533b692e05b1bf9f2369"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e182.tex",
+      "frozen_path": "current/zh-Hans/source/zh/e182.tex",
+      "bytes": 2716,
+      "sha256": "52c7cc46cbf5454cbaa38cf255611323f9c289e62046d951ffbb65f131d0ec61"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e190.tex",
+      "frozen_path": "current/zh-Hans/source/zh/e190.tex",
+      "bytes": 1665,
+      "sha256": "0e880a2eeca98283fd84a108e4483203e6ee400617a0b5353d2e960c8b4edef1"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e195.tex",
+      "frozen_path": "current/zh-Hans/source/zh/e195.tex",
+      "bytes": 2509,
+      "sha256": "999e348bc95d5996c24379cd7b8a2b8b2539ca223391196728683f90f2c3fc09"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e212.tex",
+      "frozen_path": "current/zh-Hans/source/zh/e212.tex",
+      "bytes": 1436,
+      "sha256": "4428ed5c6df96060b0f4f0d172a4503e8e1cea7dfffb5dd5f17c8eb5409dab0f"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e221.tex",
+      "frozen_path": "current/zh-Hans/source/zh/e221.tex",
+      "bytes": 2018,
+      "sha256": "4d750168ae966e11d01e84c0cafec91e651d6d1f6717acfe757e564ee353beed"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e232.tex",
+      "frozen_path": "current/zh-Hans/source/zh/e232.tex",
+      "bytes": 1270,
+      "sha256": "ac0c1a0c8681d822e97f224fefb821db90aacaf9c062e1274618259fe0e5d7bc"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e236.tex",
+      "frozen_path": "current/zh-Hans/source/zh/e236.tex",
+      "bytes": 8574,
+      "sha256": "a3d757dcc89688a6ac97183fe7ae670fa9ec78756bc17a58b57f001815648027"
+    },
+    {
+      "version": "current",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/main.tex",
+      "frozen_path": "current/zh-Hans/source/zh/main.tex",
+      "bytes": 1201,
+      "sha256": "dc5081796c69340f750c185d373ce7bee8b5012d2d8b3a4ec1f964b977e83b77"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "NOTICE.tex",
+      "frozen_path": "original/en/NOTICE.tex",
+      "bytes": 2434,
+      "sha256": "8e6ec7698c399e764989b1b4dd63640d9380ee69709daf01980c131123fa5a7d"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/149.tex",
+      "frozen_path": "original/en/en/149.tex",
+      "bytes": 62243,
+      "sha256": "42fdb8ee8a7db0b65e39facd6e3ebc9e6a74e655b048d9dd4a7fa1b261ad5b9c"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/182.tex",
+      "frozen_path": "original/en/en/182.tex",
+      "bytes": 73069,
+      "sha256": "36feb52785502d482aa55e426d81b194a38b15bbbfe253a242b7c9bf985a0fec"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/190.tex",
+      "frozen_path": "original/en/en/190.tex",
+      "bytes": 78549,
+      "sha256": "03a7b7294999b586d9d5dce97cdefc1a8a4c67470b83f8a9e5652249bb1367ce"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/195.tex",
+      "frozen_path": "original/en/en/195.tex",
+      "bytes": 58040,
+      "sha256": "fd53677d9b9d5e0ad3974296e26417667b56ec83768659e7de3d1720e18cc46b"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/212.tex",
+      "frozen_path": "original/en/en/212.tex",
+      "bytes": 47601,
+      "sha256": "77b19aaaa862ca46500e1d2068a8d4848958174e3b1527616329dd3af1288a27"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/221.tex",
+      "frozen_path": "original/en/en/221.tex",
+      "bytes": 75600,
+      "sha256": "bef2e1570654ebab4477d7d9002a2a05e33ced2ee3b89e2049992f58c987542c"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/232.tex",
+      "frozen_path": "original/en/en/232.tex",
+      "bytes": 49892,
+      "sha256": "40be73d5b11cc01b1752c194531a3ab5371f1459217ad770f55e45f6094344a5"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/236.tex",
+      "frozen_path": "original/en/en/236.tex",
+      "bytes": 60784,
+      "sha256": "34cb23bcdaa56d7305c872c6256ac27a71a3efa12b72ac14922369fa595efbb4"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/com.tex",
+      "frozen_path": "original/en/en/com.tex",
+      "bytes": 2751,
+      "sha256": "3244105f82c358a2bf2e0728f37f95a19f4ea750eb9a8c6a873c6ba6fcccf0c9"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/e149.tex",
+      "frozen_path": "original/en/en/e149.tex",
+      "bytes": 1051,
+      "sha256": "8ba26b4f8799231f6d37ff39ff516ad999fce2fff038c611431a1cdbf57533f4"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/e182.tex",
+      "frozen_path": "original/en/en/e182.tex",
+      "bytes": 3125,
+      "sha256": "d5efece5aa74c234ae985fa219a9cf8950231d4af7f11f5d7efc8ad59d75e17b"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/e190.tex",
+      "frozen_path": "original/en/en/e190.tex",
+      "bytes": 1775,
+      "sha256": "d6b5b7b5339bc04f36d64d79c6930a84c7247cfb709e675758ee1ed9ccf98571"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/e195.tex",
+      "frozen_path": "original/en/en/e195.tex",
+      "bytes": 2712,
+      "sha256": "4c5931b8b52c8e3d5029a19587625afe5c919675032c3b52eb04779fca98562b"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/e212.tex",
+      "frozen_path": "original/en/en/e212.tex",
+      "bytes": 1579,
+      "sha256": "b9c1615d75a3f399001dfa94d1cbfda8a12af1c67132f7ce2f17ef96d0880529"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/e221.tex",
+      "frozen_path": "original/en/en/e221.tex",
+      "bytes": 2085,
+      "sha256": "9cc0995d39667473bf3568cef7fa968c3cb6b56253821788a81d8cf296ca86a1"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/e232.tex",
+      "frozen_path": "original/en/en/e232.tex",
+      "bytes": 1321,
+      "sha256": "ed260349ff7c0b20698d565df6d3f9d653f9975e193fd4edc2ca42a03f9f19d1"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/e236.tex",
+      "frozen_path": "original/en/en/e236.tex",
+      "bytes": 9711,
+      "sha256": "bd5f4f608d269a2435bb48c07b32e94da38aad73377d545ac97683b73263e54b"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "en/main.tex",
+      "frozen_path": "original/en/en/main.tex",
+      "bytes": 1052,
+      "sha256": "b2d5cd8d177c080f5605347e26f6a5b8dd07aa5d0e4cc537eb12ba1f8df7f3d8"
+    },
+    {
+      "version": "original",
+      "layer": "en",
+      "relative_file": "tex/base.tex",
+      "frozen_path": "original/en/tex/base.tex",
+      "bytes": 2365,
+      "sha256": "e73a88ba4bff1b3f85d5912e94b7eee8306b6c00d7815a33e47893cbae63f5c4"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/149.tex",
+      "frozen_path": "original/es/es/149.tex",
+      "bytes": 64413,
+      "sha256": "6e3747420d3c0199ab971e6ae254dd0838314e42e8c3bc2021d3e3b34d299b4c"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/182.tex",
+      "frozen_path": "original/es/es/182.tex",
+      "bytes": 76179,
+      "sha256": "36cfddd80e6325788de704e7c4f4d697355cc7cdab105e3e3c9546d13d99e224"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/190.tex",
+      "frozen_path": "original/es/es/190.tex",
+      "bytes": 80961,
+      "sha256": "2bdfd1b54a6f18c4b259c3656daedb85265b26ade3114b644994135d66cd641f"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/195.tex",
+      "frozen_path": "original/es/es/195.tex",
+      "bytes": 61054,
+      "sha256": "ea9fef71bc4eeee6ebb43ac8070a7727288c81bbb6ce733ee9b6de2df112755c"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/212.tex",
+      "frozen_path": "original/es/es/212.tex",
+      "bytes": 49709,
+      "sha256": "820c1bb79ac6bc761c752cc50411b91c2c8185bf6e173dcf1d0b1d18cf63d057"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/221.tex",
+      "frozen_path": "original/es/es/221.tex",
+      "bytes": 77449,
+      "sha256": "94b7dda9d798e7bd18ffb14f8348a6656fc3c96ae48ed068d2ea8baf07066350"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/232.tex",
+      "frozen_path": "original/es/es/232.tex",
+      "bytes": 51913,
+      "sha256": "aff85a233a5b3b3377409f18c803fc96a6988545ee5c609fb2a1a660046d405e"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/236.tex",
+      "frozen_path": "original/es/es/236.tex",
+      "bytes": 63337,
+      "sha256": "c0444b336532dcb7175454c812f5105a1f8ed86d77e08ab104ff9b76f567a067"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/FGA_ES_CURRENT.tex",
+      "frozen_path": "original/es/es/FGA_ES_CURRENT.tex",
+      "bytes": 5742,
+      "sha256": "893701880f05d514e8513a279c40c68cb77c7ef7ed24e74543ac4852fe3f2ff9"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/com.tex",
+      "frozen_path": "original/es/es/com.tex",
+      "bytes": 2915,
+      "sha256": "dbd2115b8f1b73ca0949523fc4d7a77b74a22a343adda10a4a744b0ef65f6a25"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/e149.tex",
+      "frozen_path": "original/es/es/e149.tex",
+      "bytes": 1177,
+      "sha256": "8f436046738a55028f4122bf52250dcb05337cd6d2e972d38f361a19a0ce5ce1"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/e182.tex",
+      "frozen_path": "original/es/es/e182.tex",
+      "bytes": 3466,
+      "sha256": "ef7c4993678c4abd64f3cb294efaed869566f5f45e034e94f1fa0ceb12956c56"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/e190.tex",
+      "frozen_path": "original/es/es/e190.tex",
+      "bytes": 1877,
+      "sha256": "04d88b4a1d04491d242922cc555db724f49966cfe712a5ae07c8c09ace5f3c6f"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/e195.tex",
+      "frozen_path": "original/es/es/e195.tex",
+      "bytes": 3053,
+      "sha256": "805b3fb197f24fce520b8cedcaf22be8f6d7742240fafb59bc9c6b4538c5b4ef"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/e212.tex",
+      "frozen_path": "original/es/es/e212.tex",
+      "bytes": 1642,
+      "sha256": "f6174513fe17ad162016e94329f0c7828a21d1620804f01211eb063f41b3bbbb"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/e221.tex",
+      "frozen_path": "original/es/es/e221.tex",
+      "bytes": 2180,
+      "sha256": "95855a980ff3ca7e194518b3f2d5c2d4837aeef9605af345582cdaf6e68819ad"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/e232.tex",
+      "frozen_path": "original/es/es/e232.tex",
+      "bytes": 1511,
+      "sha256": "e51aab39022e6057e02904d982d412570002d8a8f27180dce2dd8957a5d38aef"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "es/e236.tex",
+      "frozen_path": "original/es/es/e236.tex",
+      "bytes": 10233,
+      "sha256": "f47e9c62003bb3f2a5416df532e95aba0fb376eaaf4c325047999e0309e91190"
+    },
+    {
+      "version": "original",
+      "layer": "es",
+      "relative_file": "tex/base.tex",
+      "frozen_path": "original/es/tex/base.tex",
+      "bytes": 2286,
+      "sha256": "892edfc3af87588a8129fef919943ce2b0a40b41204c956fae406485678565f7"
+    },
+    {
+      "version": "original",
+      "layer": "es_149_printed",
+      "relative_file": "es/149_diplomatic.tex",
+      "frozen_path": "original/es_149_printed/es/149_diplomatic.tex",
+      "bytes": 64343,
+      "sha256": "434ff789b1e41c7244f60f5f6719d355f7c19cb59bea50551e39a7bd1dca41bc"
+    },
+    {
+      "version": "original",
+      "layer": "es_149_printed",
+      "relative_file": "es/FGA_ES_149_PRINTED.tex",
+      "frozen_path": "original/es_149_printed/es/FGA_ES_149_PRINTED.tex",
+      "bytes": 5102,
+      "sha256": "0b77c0385f0cae0758cf473fe27ad0b5bcce6d0d43b595168f076dca9ebb695c"
+    },
+    {
+      "version": "original",
+      "layer": "es_149_printed",
+      "relative_file": "tex/base.tex",
+      "frozen_path": "original/es_149_printed/tex/base.tex",
+      "bytes": 2286,
+      "sha256": "892edfc3af87588a8129fef919943ce2b0a40b41204c956fae406485678565f7"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "149.tex",
+      "frozen_path": "original/ko/149.tex",
+      "bytes": 66025,
+      "sha256": "a35a15337650e77b65dadd9c06bec5a8929712e38caf7fb95dc22bd8c6724866"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "182.tex",
+      "frozen_path": "original/ko/182.tex",
+      "bytes": 78020,
+      "sha256": "45c7f9b389aa924eb62469f684888942ce652d98cea94d1fcc63063253e6f262"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "190.tex",
+      "frozen_path": "original/ko/190.tex",
+      "bytes": 81201,
+      "sha256": "2a250583beb22811b905c35b73a1cdfc0948c7d46d519e524b3ac764160213f5"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "195.tex",
+      "frozen_path": "original/ko/195.tex",
+      "bytes": 61454,
+      "sha256": "b44ed4ff1e737d782aa03bf9f7d1dd5b6c5954bf59a35134ae3ca03107202e1e"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "212.tex",
+      "frozen_path": "original/ko/212.tex",
+      "bytes": 48884,
+      "sha256": "8c21df761cc622a51f343d3f0f3540e3b29527e41b394044f789c8e33e4320a0"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "221.tex",
+      "frozen_path": "original/ko/221.tex",
+      "bytes": 81788,
+      "sha256": "6ed2255ba1a2b93f39e7040c9e880049d73bb64a34c8b7850451ad79766935da"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "232.tex",
+      "frozen_path": "original/ko/232.tex",
+      "bytes": 53664,
+      "sha256": "94b4f58556d6726fe693d6d07e4a9b75120f18b0e1cbc97ae88d8a704dab508b"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "236.tex",
+      "frozen_path": "original/ko/236.tex",
+      "bytes": 67503,
+      "sha256": "4050de63fd3f8765670a064db9fb0a8478b5ad3eb680b34ca45c3dce064bc23a"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "base-ko.tex",
+      "frozen_path": "original/ko/base-ko.tex",
+      "bytes": 2715,
+      "sha256": "129e1893c3941fdeecfd70841ecc252321d4af6e4c8efa09135f3a6c4373c6bc"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "com.tex",
+      "frozen_path": "original/ko/com.tex",
+      "bytes": 2873,
+      "sha256": "07762f0133c7ab14a8c725e800d7c59c81d9d3b517371e6658b2b8d47b594c94"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "e149.tex",
+      "frozen_path": "original/ko/e149.tex",
+      "bytes": 1031,
+      "sha256": "f72e80d17f5ac10d82038fb4c9146023440e6d05dd3f0a892a137443045409e0"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "e182.tex",
+      "frozen_path": "original/ko/e182.tex",
+      "bytes": 3160,
+      "sha256": "41ba4d34d4fed14d2434ac77c66d64684edfb95752b12bfce5a9e1507a2b4269"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "e190.tex",
+      "frozen_path": "original/ko/e190.tex",
+      "bytes": 1800,
+      "sha256": "a9fc5c0844be2356b0c5d1d6a7a439e2d94ebb43eff64c26c6e1166d9543ca55"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "e195.tex",
+      "frozen_path": "original/ko/e195.tex",
+      "bytes": 2850,
+      "sha256": "dc42380909065a188971d9026ea506f1eee577aeb225584a6a8b1c974b54891f"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "e212.tex",
+      "frozen_path": "original/ko/e212.tex",
+      "bytes": 1601,
+      "sha256": "89afd169f8f0cd3dd2caa09afab7c2f741eb7ee3f3296c5bc882fcade18fe94f"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "e221.tex",
+      "frozen_path": "original/ko/e221.tex",
+      "bytes": 2222,
+      "sha256": "2663e020626a1067896542ece1f6b0c1ded33c08142160dae7fafd9287caf8d5"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "e232.tex",
+      "frozen_path": "original/ko/e232.tex",
+      "bytes": 1508,
+      "sha256": "2fc9ba3d944d3ae6aea0b23f1dac33f7fd80f29b838bab0db8c692287b69bb1f"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "e236.tex",
+      "frozen_path": "original/ko/e236.tex",
+      "bytes": 10428,
+      "sha256": "da6857f27c79867b57b4006206558e2a81c696b33ffb763f4673891ece1cab0f"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "front-ko.tex",
+      "frozen_path": "original/ko/front-ko.tex",
+      "bytes": 1077,
+      "sha256": "f4c1fff36bdf8b66b2db526b2b55d160a69e57ba0e519b09da474262906d0cb3"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "main.tex",
+      "frozen_path": "original/ko/main.tex",
+      "bytes": 1390,
+      "sha256": "8ed4aec02510fb39f0b30f910b8ae2d20df2d72cd8491b227a251602a18b4bfb"
+    },
+    {
+      "version": "original",
+      "layer": "ko",
+      "relative_file": "notice.tex",
+      "frozen_path": "original/ko/notice.tex",
+      "bytes": 2312,
+      "sha256": "f328e4348052c01be3f2440a7274e759202d82f4f7c6544c227a17502c5668ae"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/FGA_PTBR_CURRENT.tex",
+      "frozen_path": "original/pt-BR/pt_BR/FGA_PTBR_CURRENT.tex",
+      "bytes": 4668,
+      "sha256": "70b1a8a8fab027338e2d18e5622b50fd23b23274248fa24c8e0725497f5cc352"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/149.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/149.tex",
+      "bytes": 63379,
+      "sha256": "874696e798d239b7ec523c764dd4ea71f2abc711cc9c0334f27ed5591559bce6"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/182.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/182.tex",
+      "bytes": 74863,
+      "sha256": "556a5343913d7cc7672d972eed560dbab37273c35747db0eb4f340f4cc0ad2d7"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/190.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/190.tex",
+      "bytes": 79663,
+      "sha256": "152cd79abe0d4e1bce9418c118daf2f8c4fb95c48c7286fc8f219896e6e638f3"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/195.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/195.tex",
+      "bytes": 60075,
+      "sha256": "39af254bc1501972d96ae4e63b00cae1f74cd91524530afb90959f23380f150c"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/212.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/212.tex",
+      "bytes": 49066,
+      "sha256": "51f3b31bc6c5a18345b422508345c9998b566150d951bca38de02621c6e4367c"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/221.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/221.tex",
+      "bytes": 76753,
+      "sha256": "919657d145259157766d883a7f0ea403ad4472865b4f2c5595a17826c197c876"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/232.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/232.tex",
+      "bytes": 52676,
+      "sha256": "d45c1f951f7b8bb1f1deec9e8a00fe82acbaae88e4ef54d08a5d3160a6e966af"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/236.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/236.tex",
+      "bytes": 64135,
+      "sha256": "1ffdbd27292db9484f6e2266ff1b64f04633d2f56b5474ffd1b85c919ba89633"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/com.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/com.tex",
+      "bytes": 2941,
+      "sha256": "cdd388e5e427924204a07bb84d6215a63b2fdc002331460bcec89e29790bd037"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e149.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/e149.tex",
+      "bytes": 1292,
+      "sha256": "c99dbbea2bc6f522b103725222fdbbb721cff2258f19ecad9474c33411d249f5"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e182.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/e182.tex",
+      "bytes": 3474,
+      "sha256": "e1e5c9a1d412933f8edf7ed846a2e3970fbb470ab908ae974428c55eed42744b"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e190.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/e190.tex",
+      "bytes": 1910,
+      "sha256": "cd8da069f33258b14ddb376370e0f9a50f0b9b9257b108b669f7b5ba6311fa3e"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e195.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/e195.tex",
+      "bytes": 3074,
+      "sha256": "150d2697fce36196277d1bbcc6ec53b0e6e31e7651edee1d9f2db253d27c915a"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e212.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/e212.tex",
+      "bytes": 1686,
+      "sha256": "99658f84fe2b0f5aa83deca9277e63770e7d3dfe2087d6bda597a2631d1ef964"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e221.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/e221.tex",
+      "bytes": 2322,
+      "sha256": "983befbd98c4a67981718cf28879be4ac1191170c54a9e71278fb2492abd4fd7"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e232.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/e232.tex",
+      "bytes": 1558,
+      "sha256": "6c380aa98c7f4194786f208fadd6dacc1d1e24653c8532518293ab079a562e88"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "pt_BR/current/e236.tex",
+      "frozen_path": "original/pt-BR/pt_BR/current/e236.tex",
+      "bytes": 10109,
+      "sha256": "fc1bdb09b0213ff2fad4238c6452105d39a02bc68c44668d193cbbde025fef05"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR",
+      "relative_file": "tex/base.tex",
+      "frozen_path": "original/pt-BR/tex/base.tex",
+      "bytes": 2052,
+      "sha256": "9be52495885cfeadb0ee9612405569d74cd2eebf04a6f9025ee7c75dbfad6369"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/FGA_PTBR_PRINTED.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/FGA_PTBR_PRINTED.tex",
+      "bytes": 4902,
+      "sha256": "f7b1e95023ef84bd20bafa96624dc39726dd1e3db7301cbc54bca47c78e7851c"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/149.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/149.tex",
+      "bytes": 61673,
+      "sha256": "a206ca111662dcb5eeacb77805fc582a45a2980093ed7d92616b82fb798e5e12"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/182.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/182.tex",
+      "bytes": 73849,
+      "sha256": "2d1f89ab39e8ed7f786bc5f9f3a4ba1b92cf679bbf851804622100f813e1f95a"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/190.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/190.tex",
+      "bytes": 78245,
+      "sha256": "b1d12fa5b7e22c26fd7ef99dda179010caf5809a1aee26e3ad0e5cad668e97d6"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/195.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/195.tex",
+      "bytes": 57333,
+      "sha256": "f04de237b7ad9f70a58a9a0d71cde08315a30d70d7c4c87625fae6c4c33976a9"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/212.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/212.tex",
+      "bytes": 47874,
+      "sha256": "f5f9c1b468fe40184eca191a573fd1ec2a07c154a74cdb39fa69b33cf0bd3cbc"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/221.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/221.tex",
+      "bytes": 73773,
+      "sha256": "ef52e78c09df5959d0a740b65b1b02e4670dff867998205b76abc924c07139c5"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/232.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/232.tex",
+      "bytes": 51245,
+      "sha256": "17244b364aa12b8d85980aa06cf3e7826c90f65921f32b415cba13a8ef1a057f"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/236.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/236.tex",
+      "bytes": 62123,
+      "sha256": "02e9fd66714aed0437e3abb115cbfe94c0f637f5e14413721302df0aba230209"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/com.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/com.tex",
+      "bytes": 2941,
+      "sha256": "cdd388e5e427924204a07bb84d6215a63b2fdc002331460bcec89e29790bd037"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e149.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/e149.tex",
+      "bytes": 1292,
+      "sha256": "c99dbbea2bc6f522b103725222fdbbb721cff2258f19ecad9474c33411d249f5"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e182.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/e182.tex",
+      "bytes": 3474,
+      "sha256": "e1e5c9a1d412933f8edf7ed846a2e3970fbb470ab908ae974428c55eed42744b"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e190.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/e190.tex",
+      "bytes": 1910,
+      "sha256": "5a035af791999209db7f5caa57303b5eac9b953efded383208f26cf7894fd072"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e195.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/e195.tex",
+      "bytes": 3074,
+      "sha256": "150d2697fce36196277d1bbcc6ec53b0e6e31e7651edee1d9f2db253d27c915a"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e212.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/e212.tex",
+      "bytes": 1686,
+      "sha256": "99658f84fe2b0f5aa83deca9277e63770e7d3dfe2087d6bda597a2631d1ef964"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e221.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/e221.tex",
+      "bytes": 2322,
+      "sha256": "983befbd98c4a67981718cf28879be4ac1191170c54a9e71278fb2492abd4fd7"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e232.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/e232.tex",
+      "bytes": 1558,
+      "sha256": "6c380aa98c7f4194786f208fadd6dacc1d1e24653c8532518293ab079a562e88"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "pt_BR/diplomatic/e236.tex",
+      "frozen_path": "original/pt-BR_printed/pt_BR/diplomatic/e236.tex",
+      "bytes": 9977,
+      "sha256": "d99725fb09706dfe3fab507fdf6eafcd2965ad8a71a66ab19ea875f632fc273a"
+    },
+    {
+      "version": "original",
+      "layer": "pt-BR_printed",
+      "relative_file": "tex/base.tex",
+      "frozen_path": "original/pt-BR_printed/tex/base.tex",
+      "bytes": 2052,
+      "sha256": "9be52495885cfeadb0ee9612405569d74cd2eebf04a6f9025ee7c75dbfad6369"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "FGA_vi_current.tex",
+      "frozen_path": "original/vi/FGA_vi_current.tex",
+      "bytes": 1647,
+      "sha256": "d9b28560ed0de1885e81467fc14309f9c0fcbfa7afff137278e850f48bd3673e"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "NOTICE_vi.tex",
+      "frozen_path": "original/vi/NOTICE_vi.tex",
+      "bytes": 2660,
+      "sha256": "a6898e433350c740aa38b4996ea118b7de545b36e0d8c4aee80a4636afd2e6d0"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "controls/vi_base.tex",
+      "frozen_path": "original/vi/controls/vi_base.tex",
+      "bytes": 1586,
+      "sha256": "812bdefe534dc545a91241f3616f98d20b197db8af5755bec558c826c566889f"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/149.tex",
+      "frozen_path": "original/vi/sources/current/149.tex",
+      "bytes": 71173,
+      "sha256": "86cb1e48c9e6d8c827f10e2f907d2f435ef665a7e33377610a63977b86cd2609"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/182.tex",
+      "frozen_path": "original/vi/sources/current/182.tex",
+      "bytes": 87385,
+      "sha256": "c621e237594259a12164f7db846251645830dfdfd78e3c67ab7855c4ac8d281a"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/190.tex",
+      "frozen_path": "original/vi/sources/current/190.tex",
+      "bytes": 93313,
+      "sha256": "774e553d65f6b6e9456675513147a32370f691f827634410859f2d362c6743e7"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/195.tex",
+      "frozen_path": "original/vi/sources/current/195.tex",
+      "bytes": 69178,
+      "sha256": "ae54fa64721f696f9e371ae05e1856308f8a024da15630cdeda30f302fe59498"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/212.tex",
+      "frozen_path": "original/vi/sources/current/212.tex",
+      "bytes": 57289,
+      "sha256": "c4e6a631bbdbf08fd63fc283451cb5567efd59d695d40790e62809958546ec39"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/221.tex",
+      "frozen_path": "original/vi/sources/current/221.tex",
+      "bytes": 86939,
+      "sha256": "ec07259d18d1e83f356dd6f0df4b4fe0e9f55d44993c20da57f6f7048f7594aa"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/232.tex",
+      "frozen_path": "original/vi/sources/current/232.tex",
+      "bytes": 59661,
+      "sha256": "31d2d668e301113c3fdf600b9aeeac6a46d57d5103d20b47c75765da29fec3d2"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/236.tex",
+      "frozen_path": "original/vi/sources/current/236.tex",
+      "bytes": 72664,
+      "sha256": "7cbb4b8b6056b4827a82c7f577a89abaea4d74463c5f3c22b024571df8accf9e"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/com.tex",
+      "frozen_path": "original/vi/sources/current/com.tex",
+      "bytes": 3442,
+      "sha256": "0c30f46303404e7c075357db1142df6e9de2f80c5057eae6b6bbf885521e7f74"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/e149.tex",
+      "frozen_path": "original/vi/sources/current/e149.tex",
+      "bytes": 1290,
+      "sha256": "2e76e53816ae002e531a3b0e8cae077efd1b22b482c7a659df1df40f55a66302"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/e182.tex",
+      "frozen_path": "original/vi/sources/current/e182.tex",
+      "bytes": 3786,
+      "sha256": "4f7b2192c766cb5c1a13cd54728c44fdb12f312a048806b04aeee33a681e7b48"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/e190.tex",
+      "frozen_path": "original/vi/sources/current/e190.tex",
+      "bytes": 2323,
+      "sha256": "8fea6770815947234e81430752f176c3ae57ab7fc258ed57c319a88fbc77398c"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/e195.tex",
+      "frozen_path": "original/vi/sources/current/e195.tex",
+      "bytes": 3313,
+      "sha256": "a22d8361883e63f670fb1489767483da3aa06adb96e5554460c9dbe8ee52c0af"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/e212.tex",
+      "frozen_path": "original/vi/sources/current/e212.tex",
+      "bytes": 1912,
+      "sha256": "722389bc888512d3a496eec2f64ce595b39ac24b983d5c88e2e313013343bff3"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/e221.tex",
+      "frozen_path": "original/vi/sources/current/e221.tex",
+      "bytes": 2518,
+      "sha256": "7a93d278164d1d3e9be47f4cb9bceccdafbb4402597b2656888b76365350e3c4"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/e232.tex",
+      "frozen_path": "original/vi/sources/current/e232.tex",
+      "bytes": 1562,
+      "sha256": "93a59e2c8d8af95e59e5f5c577a79ce0efbbc6eee24a66779b260ba36f5a4ca9"
+    },
+    {
+      "version": "original",
+      "layer": "vi",
+      "relative_file": "sources/current/e236.tex",
+      "frozen_path": "original/vi/sources/current/e236.tex",
+      "bytes": 11397,
+      "sha256": "19d887e1ec62991f3550a106230486db040f1be02ea7d9fe1fdef79db8c232db"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "FGA_vi_diplomatic.tex",
+      "frozen_path": "original/vi_diplomatic/FGA_vi_diplomatic.tex",
+      "bytes": 1618,
+      "sha256": "b4bc23924677f8efae35b7be62bb353c2f1c38fbd9d318a63844688bbb973a22"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "NOTICE_vi.tex",
+      "frozen_path": "original/vi_diplomatic/NOTICE_vi.tex",
+      "bytes": 2660,
+      "sha256": "a6898e433350c740aa38b4996ea118b7de545b36e0d8c4aee80a4636afd2e6d0"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "controls/vi_base.tex",
+      "frozen_path": "original/vi_diplomatic/controls/vi_base.tex",
+      "bytes": 1586,
+      "sha256": "812bdefe534dc545a91241f3616f98d20b197db8af5755bec558c826c566889f"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/149.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/149.tex",
+      "bytes": 69066,
+      "sha256": "1a360d608de8cbb5f685ec5e8fc689df38b9bff58f4709ea2b7bb5e3dedb93fa"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/182.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/182.tex",
+      "bytes": 85702,
+      "sha256": "b5ae590d4169afa217a04e45ae2b02776a44a935a756b6bafbaad677cb2284d0"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/190.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/190.tex",
+      "bytes": 91607,
+      "sha256": "091cc7bd50be8836921914a986dcc925d8a96303f099bf6021b9f97bcf22ce01"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/195.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/195.tex",
+      "bytes": 65806,
+      "sha256": "9022a43d012ba6610a67ffffe6235993258d5c7c03787031e395d104591d3593"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/212.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/212.tex",
+      "bytes": 55895,
+      "sha256": "737f6ce4e6f2226d0a301bea9e8186562845a3059a448354fc0cda5063a3311b"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/221.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/221.tex",
+      "bytes": 83457,
+      "sha256": "6b1795860e8b5b4be80aa4834f2edaf5ad2aeaec0f8294b34792365dc00fcef2"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/232.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/232.tex",
+      "bytes": 57990,
+      "sha256": "a7f685d5d3001b18729f518fa91eb8efcab1c885fd7cc69d6574ca2c8ab5f6ec"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/236.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/236.tex",
+      "bytes": 70454,
+      "sha256": "71c8bec68938a979039e811b90152ae6737f69f29c9ebd884281dfcd23499ed6"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/com.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/com.tex",
+      "bytes": 3442,
+      "sha256": "0c30f46303404e7c075357db1142df6e9de2f80c5057eae6b6bbf885521e7f74"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e149.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/e149.tex",
+      "bytes": 1290,
+      "sha256": "2e76e53816ae002e531a3b0e8cae077efd1b22b482c7a659df1df40f55a66302"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e182.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/e182.tex",
+      "bytes": 3786,
+      "sha256": "4f7b2192c766cb5c1a13cd54728c44fdb12f312a048806b04aeee33a681e7b48"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e190.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/e190.tex",
+      "bytes": 2194,
+      "sha256": "0b424b678ff216f91d022531cc10add1b358521cb0c4e64cf5ff3b8d171cb7cb"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e195.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/e195.tex",
+      "bytes": 3313,
+      "sha256": "a22d8361883e63f670fb1489767483da3aa06adb96e5554460c9dbe8ee52c0af"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e212.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/e212.tex",
+      "bytes": 1912,
+      "sha256": "722389bc888512d3a496eec2f64ce595b39ac24b983d5c88e2e313013343bff3"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e221.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/e221.tex",
+      "bytes": 2518,
+      "sha256": "7a93d278164d1d3e9be47f4cb9bceccdafbb4402597b2656888b76365350e3c4"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e232.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/e232.tex",
+      "bytes": 1562,
+      "sha256": "246687b34a8bca7198f4f660bbfd27232e25402192c3b6510f85225cd39b6cec"
+    },
+    {
+      "version": "original",
+      "layer": "vi_diplomatic",
+      "relative_file": "sources/diplomatic/e236.tex",
+      "frozen_path": "original/vi_diplomatic/sources/diplomatic/e236.tex",
+      "bytes": 11232,
+      "sha256": "2b2a4fa35e521187218292532a81130cea8792fb87a670630050f24d05a9b72d"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/NOTICE.tex",
+      "frozen_path": "original/zh-Hans/source/NOTICE.tex",
+      "bytes": 2298,
+      "sha256": "de7ec752acb4e944cce7820fa6b8d28ed3ffc808ffd6bc6b591c996098f0edde"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/tex/zh.tex",
+      "frozen_path": "original/zh-Hans/source/tex/zh.tex",
+      "bytes": 2767,
+      "sha256": "3b57a2b41224750d70a4c5708f8f728dad8c33793a069e15cc747088c92a1d85"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/149.tex",
+      "frozen_path": "original/zh-Hans/source/zh/149.tex",
+      "bytes": 54410,
+      "sha256": "e73286474d40aa33e402713296588da9cab2505fc4d361564c6d00598c782a97"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/182.tex",
+      "frozen_path": "original/zh-Hans/source/zh/182.tex",
+      "bytes": 63961,
+      "sha256": "00f4c67c217cb0735428986bcffa709a3dc9f4a22da190499bc163b6b8b0d0ea"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/190.tex",
+      "frozen_path": "original/zh-Hans/source/zh/190.tex",
+      "bytes": 68918,
+      "sha256": "1da0f6d6c8aad2d198ed9f1cc4006695c75d4281b390c81cc2ec314fa5941114"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/195.tex",
+      "frozen_path": "original/zh-Hans/source/zh/195.tex",
+      "bytes": 50668,
+      "sha256": "6c6d24043f016c31c3d5212dcb84dcb4361db462f8913e0a712b6e390ecc8f87"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/212.tex",
+      "frozen_path": "original/zh-Hans/source/zh/212.tex",
+      "bytes": 41551,
+      "sha256": "2d6906fc25ed276400bc08294ad3403601171a95e2b3a2c699bfe5d4fc1f3075"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/221.tex",
+      "frozen_path": "original/zh-Hans/source/zh/221.tex",
+      "bytes": 67956,
+      "sha256": "f2d06d355dd269f33ffd2cd9416b967e50499ce6c5daba94f1bc6c1f68a63e69"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/232.tex",
+      "frozen_path": "original/zh-Hans/source/zh/232.tex",
+      "bytes": 44965,
+      "sha256": "26384018ba9f98d09ff65df4eaba8967b35e97b2fbe85ec8071824c9786e913e"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/236.tex",
+      "frozen_path": "original/zh-Hans/source/zh/236.tex",
+      "bytes": 55057,
+      "sha256": "ad03deb07671c4d2306c385aa64ca0f90efb72b7f0a1332d908be9c1165f5e75"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/com.tex",
+      "frozen_path": "original/zh-Hans/source/zh/com.tex",
+      "bytes": 2597,
+      "sha256": "e243c3cca246bad8c7a8ca34e432900326a5f07c3dbcb80e0e2ff7bcb00f1c59"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e149.tex",
+      "frozen_path": "original/zh-Hans/source/zh/e149.tex",
+      "bytes": 1035,
+      "sha256": "6aaac4f0e98fed45dce020d2aaaca04ec1d7a14d51be533b692e05b1bf9f2369"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e182.tex",
+      "frozen_path": "original/zh-Hans/source/zh/e182.tex",
+      "bytes": 2716,
+      "sha256": "52c7cc46cbf5454cbaa38cf255611323f9c289e62046d951ffbb65f131d0ec61"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e190.tex",
+      "frozen_path": "original/zh-Hans/source/zh/e190.tex",
+      "bytes": 1665,
+      "sha256": "0e880a2eeca98283fd84a108e4483203e6ee400617a0b5353d2e960c8b4edef1"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e195.tex",
+      "frozen_path": "original/zh-Hans/source/zh/e195.tex",
+      "bytes": 2509,
+      "sha256": "999e348bc95d5996c24379cd7b8a2b8b2539ca223391196728683f90f2c3fc09"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e212.tex",
+      "frozen_path": "original/zh-Hans/source/zh/e212.tex",
+      "bytes": 1436,
+      "sha256": "4428ed5c6df96060b0f4f0d172a4503e8e1cea7dfffb5dd5f17c8eb5409dab0f"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e221.tex",
+      "frozen_path": "original/zh-Hans/source/zh/e221.tex",
+      "bytes": 2018,
+      "sha256": "4d750168ae966e11d01e84c0cafec91e651d6d1f6717acfe757e564ee353beed"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e232.tex",
+      "frozen_path": "original/zh-Hans/source/zh/e232.tex",
+      "bytes": 1270,
+      "sha256": "ac0c1a0c8681d822e97f224fefb821db90aacaf9c062e1274618259fe0e5d7bc"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/e236.tex",
+      "frozen_path": "original/zh-Hans/source/zh/e236.tex",
+      "bytes": 8574,
+      "sha256": "a3d757dcc89688a6ac97183fe7ae670fa9ec78756bc17a58b57f001815648027"
+    },
+    {
+      "version": "original",
+      "layer": "zh-Hans",
+      "relative_file": "source/zh/main.tex",
+      "frozen_path": "original/zh-Hans/source/zh/main.tex",
+      "bytes": 1201,
+      "sha256": "dc5081796c69340f750c185d373ce7bee8b5012d2d8b3a4ec1f964b977e83b77"
+    }
+  ]
+}

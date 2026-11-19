@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-11-19T02:42:10.722186+00:00",
+  "completed_utc": "2026-11-19T02:42:16.720239+00:00",
+  "layers": 11,
+  "unit_files": 171,
+  "marker_occurrences": 2133,
+  "issues": 2,
+  "reference_layer": "fr",
+  "source_reads": "one captured byte set per layer; no source writes",
+  "comment_handling": "unescaped percent comments masked without changing byte offsets",
+  "limitations": "literal src/sid calls and literal include paths; no TeX expansion or verbatim-environment simulation; no scans/content review",
+  "offset_convention": "zero-based bytes, exclusive end; one-based source lines",
+  "script_sha256": "d2cc95f1b28d52d2885c34c74838855face2485fe63f78f0553c5b9d9a9e2ca3",
+  "frozen_snapshot": {
+    "copy_started_utc": "2026-11-19T02:27:08.482769+00:00",
+    "copy_finished_utc": "2026-11-19T02:27:09.014655+00:00",
+    "note": "Mechanical marker inventory only; frozen sources copied without changing live edition files."
+  }
+}

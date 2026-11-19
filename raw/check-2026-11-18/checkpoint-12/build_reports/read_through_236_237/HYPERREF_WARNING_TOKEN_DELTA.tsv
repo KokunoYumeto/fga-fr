@@ -1,0 +1,27 @@
+layer	source	input_line	removed_token	previous_count	current_count	delta
+fr	sources/fr/fr/236.tex	470	\uwave	0	1	1
+fr	sources/fr/fr/236.tex	707	\@@underline	0	1	1
+fr	sources/fr/fr/236.tex	707	\hbox	0	1	1
+fr	sources/fr/fr/236.tex	707	\mathsurround	0	1	1
+fr	sources/fr/fr/236.tex	707	\new@ifnextchar	0	1	1
+fr	sources/fr/fr/236.tex	707	\symup	0	1	1
+fr	sources/fr/fr/236.tex	707	\uwave	0	2	2
+fr	sources/fr/fr/236.tex	707	\z@	0	1	1
+fr	sources/fr/fr/236.tex	707	math shift	0	4	4
+fr	sources/fr/fr/236.tex	707	subscript	0	1	1
+fr	sources/fr/fr/236.tex	784	\new@ifnextchar	1	0	-1
+fr	sources/fr/fr/236.tex	784	math shift	2	0	-2
+fr	sources/fr/fr/236.tex	784	subscript	1	0	-1
+fr_printed	sources/fr_printed/fr/236.tex	470	\uwave	0	1	1
+fr_printed	sources/fr_printed/fr/236.tex	707	\@@underline	0	1	1
+fr_printed	sources/fr_printed/fr/236.tex	707	\hbox	0	1	1
+fr_printed	sources/fr_printed/fr/236.tex	707	\mathsurround	0	1	1
+fr_printed	sources/fr_printed/fr/236.tex	707	\new@ifnextchar	0	1	1
+fr_printed	sources/fr_printed/fr/236.tex	707	\symup	0	1	1
+fr_printed	sources/fr_printed/fr/236.tex	707	\uwave	0	2	2
+fr_printed	sources/fr_printed/fr/236.tex	707	\z@	0	1	1
+fr_printed	sources/fr_printed/fr/236.tex	707	math shift	0	4	4
+fr_printed	sources/fr_printed/fr/236.tex	707	subscript	0	1	1
+fr_printed	sources/fr_printed/fr/236.tex	784	\new@ifnextchar	1	0	-1
+fr_printed	sources/fr_printed/fr/236.tex	784	math shift	2	0	-2
+fr_printed	sources/fr_printed/fr/236.tex	784	subscript	1	0	-1

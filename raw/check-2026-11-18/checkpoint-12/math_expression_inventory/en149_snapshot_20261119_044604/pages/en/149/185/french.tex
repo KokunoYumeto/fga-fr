@@ -1,0 +1,52 @@
+\src{185}
+On vérifie que l'isomorphisme (5.6) n'est autre que (5.2 bis) pour $\symup{p=n}$, quand
+on y fait $\symup{L=\underline{k}}$ grâce à (5.7). Par suite, (5.2 bis) est un isomorphisme pour
+$\symup{p=n}$. Pour prouver que c'est un isomorphisme pour tout $\symup{p}$, il suffit encore
+de prouver que pour $\symup{p<n}$, les deux membres de (5.2 bis) sont des foncteurs
+coeffaçables en $\symup{F}$, et a fortiori (compte tenu du lemme 3) que les deux membres
+sont nuls quand on fait $\symup{F=\Osh_X(-m)}$ avec $\symup{m}$ grand. Or pour le premier
+membre cela est vrai en vertu du lemme 4, et pour le deuxième membre on écrit,
+utilisant le théorème de dualité sur $\symup{P}$ :
+\[
+  \symup{H^{p}(X,\Osh_X(-m))'
+  =\operatorname{Ext}_{\Osh_P}^{r-p}
+    (P;\Osh_X(-m),\underline{\Omega}_P^{r}).}
+\]
+Le deuxième membre est nul pour $\symup{p<n}$ et $\symup{m}$ grand, comme il résulte du lemme 5
+(où on fait $\symup{X=P}$) et du fait que $\symup{\Osh_X}$ est en tant que faisceau algébrique
+cohérent sur $\symup{P}$, de dimension cohomologique $\symup{\leq r-n}$, (car $\symup{X}$ est non
+singulière) d'où
+\[
+  \symup{\Extsh_{\Osh_P}^{r-p}(\Osh_X,\underline{\Omega}_P^{r})=0
+  \qquad\text{pour }p<n.}
+\]
+
+\fsection{\normalfont6}{\normalfont\uline{Le théorème de dualité pour les variétés singulières}.}
+
+Soit $\symup{X}$ une partie fermée de dimension $\symup{n}$ de l'espace projectif $\symup{P}$ de
+dimension $\symup{r}$. La formule (5.6) doit s'écrire ici
+\begin{equation}\tag{6.1}
+  \symup{H^{n}(X,F)'
+  \simeq\operatorname{Hom}_{\Osh_X}(X;F,\underline{\omega}_X^{n})
+  =\operatorname{Ext}_{\Osh_X}^{0}(X;F,\underline{\omega}_X^{n})}
+\end{equation}
+où on a posé
+\begin{equation}\tag{6.2}
+  \symup{\underline{\omega}_X^{n}=E^{0}(\Osh_X)
+  =\Extsh_{\Osh_P}^{r-n}(\Osh_X,\underline{\Omega}_P^{r})}
+\end{equation}
+Comme il a été dit dans la proposition 5, le faisceau ainsi introduit ne dépend
+pas en fait de l'immersion choisie de $\symup{X}$ dans une variété non singulière $\symup{P}$.
+Faisant, dans (6.1), $\symup{F=\underline{\omega}_X^{n}}$, on trouve
+\begin{equation}\tag{6.2 bis}
+  \symup{H^{n}(X,\underline{\omega}_X^{n})'
+  \simeq\operatorname{Hom}_{\Osh_X}(X;\underline{\omega}_X^{n},\underline{\omega}_X^{n})}
+\end{equation}
+\footnote{Le texte imprimé numérote aussi cette formule « (6.2) » ; le suffixe
+« bis » distingue les deux occurrences.} d'où l'existence d'un élément
+privilégié dans $\symup{H^{n}(X,\underline{\omega}_X^{n})'}$, correspondant à l'homomorphisme
+identique de $\symup{\underline{\omega}_X^{n}}$ dans lui-même :
+\begin{equation}\tag{6.3}
+  \symup{\gamma:H^{n}(X,\underline{\omega}_X^{n})\longrightarrow\underline{k}}
+\end{equation}
+

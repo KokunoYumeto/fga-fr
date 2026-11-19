@@ -1,0 +1,64 @@
+\src{191}
+is equal to one of the arguments $B_j$:
+\begin{equation}\tag{8.4}
+\resizebox{\textwidth}{!}{$
+\begin{aligned}
+&T_{r}^{s*}(A_1,\ldots,A_{i-1},C,A_{i+1},\ldots,A_r;
+ B_1,\ldots,B_{j-1},C,B_{j+1},\ldots,B_s)\\
+&\qquad\longrightarrow
+T_{r-1}^{s-1*}(A_1,\ldots,\widehat{A_i},\ldots,A_r;
+ B_1,\ldots,\widehat{B_j},\ldots,B_s).
+\end{aligned}
+$}
+\end{equation}
+Furthermore, if an argument $A_i$ is a locally free sheaf, it may be removed
+provided that one of the $A_j$ ($j\neq i$) is replaced by $A_j\otimes A_i$, or
+one of the $B_k$ by $B_k\otimes A_i'$ (where
+$A_i'=\Homsh_{\Osh_X}(A_i,\Osh_X)$); there is an analogous calculation rule
+when one of the arguments $B_i$ is locally free. In particular, an argument
+equal to $\Osh_X$ may always be removed. If all the arguments are locally free
+except for at most one of the $B_i$, the rule just stated gives a functorial
+isomorphism
+\begin{equation}\tag{8.5}
+  T_{r}^{s*}(A_1,\ldots,A_r;B_1,\ldots,B_s)
+  =H^{*}\bigl(X,A_1'\otimes\cdots\otimes A_r'
+    \otimes B_1\otimes\cdots\otimes B_s\bigr)
+\end{equation}
+(since this reduces to the case $r=0$, $s=1$, where it is immediate; one may
+also use directly the spectral sequence with initial term (8.2)). Operations
+corresponding to the preceding ones are defined for the
+$\underline{T}_{r}^{s}$. The relations among the various operations so
+introduced are the same as for the analogous operations in tensor calculus.
+
+Let $n$ be the dimension of $X$. Successively applying a tensor composition
+(8.3) and contractions (8.4) to the repeated arguments gives a pairing
+\begin{equation}\tag{8.6}
+\resizebox{\textwidth}{!}{$
+  (T_{r}^{s})^{p}(A_1,\ldots;B_1,\ldots)
+  \times
+  (T_{s}^{r})^{n-p}(B_1,\ldots;A_1,\ldots,A_r\otimes\Omega_X^{n})
+  \longrightarrow H^{n}(X,\Omega_X^{n}).
+$}
+\end{equation}
+
+\result{THEOREM}{6} If $X$ is a nonsingular projective variety, then the
+pairings (8.6) are dualities.
+
+This follows in a purely formal way from the corollary to Theorem 3. Indeed, it
+follows readily from that corollary that if $K$ is a complex of locally free
+coherent algebraic sheaves, then the hypercohomology of $X$ with respect to
+$K$ is in duality with the hypercohomology of $X$ with respect to
+$K'\otimes\Omega_X^{n}$ through the natural pairings
+\begin{equation}\tag{8.7}
+  \mathbf R^{p}\Gamma(K)
+  \times\mathbf R^{n-p}\Gamma(K'\otimes\Omega_X^{n})
+  \longrightarrow\mathbf R^{n}\Gamma(\Omega_X^{n})
+  =H^{n}(X,\Omega_X^{n}).
+\end{equation}
+This is seen by using the spectral sequence with initial term
+$H^{p}(X,H^{q}(K))$\footnote{The printed text has
+$H^{p}(H^{q}(X,K))$; the initial term is that of the spectral sequence (8.2),
+namely $H^{p}(X,H^{q}(K))$.} and the analogous spectral sequence for
+$K'\otimes\Omega_X^{n}$. Theorem 6 follows from the preceding result by using
+definition (8.1).
+

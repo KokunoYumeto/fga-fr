@@ -1,0 +1,37 @@
+
+\ExplSyntaxOn
+\tl_new:N \l_fga_diagnostic_font_call_tl
+\cs_new_protected:Npn \fga_diagnostic_font_call:n #1
+  {
+    \tl_set:Nx \l_fga_diagnostic_font_call_tl {#1}
+    \tl_replace_all:Nnn \l_fga_diagnostic_font_call_tl {Malgun~Gothic~Bold} {Noto~Sans~CJK~KR~Bold}
+    \tl_replace_all:Nnn \l_fga_diagnostic_font_call_tl {Malgun~Gothic} {Noto~Sans~CJK~KR}
+    \tl_replace_all:Nnn \l_fga_diagnostic_font_call_tl {Microsoft~YaHei} {Noto~Sans~CJK~SC}
+    \tl_replace_all:Nnn \l_fga_diagnostic_font_call_tl {SimSun} {Noto~Serif~CJK~SC}
+  }
+\AddToHook{package/fontspec/after}{
+  \cs_new_eq:NN \fga_original_font_set:Nnn \__fontspec_primitive_font_set:Nnn
+  \cs_new_eq:NN \fga_original_font_gset:Nnn \__fontspec_primitive_font_gset:Nnn
+  \cs_set_protected:Npn \__fontspec_primitive_font_set:Nnn #1#2#3
+    {
+      \fga_diagnostic_font_call:n {#2}
+      \exp_args:NNV \fga_original_font_set:Nnn #1 \l_fga_diagnostic_font_call_tl {#3}
+    }
+  \cs_set_protected:Npn \__fontspec_primitive_font_gset:Nnn #1#2#3
+    {
+      \fga_diagnostic_font_call:n {#2}
+      \exp_args:NNV \fga_original_font_gset:Nnn #1 \l_fga_diagnostic_font_call_tl {#3}
+    }
+}
+\ExplSyntaxOff
+
+\errorcontextlines=0
+\newcount\FgaPhysicalPage
+\FgaPhysicalPage=0
+\AddToHook{shipout/before}{%
+  \global\advance\FgaPhysicalPage by 1
+  \typeout{FGA-SHIPOUT|\the\FgaPhysicalPage|\thepage}%
+}
+\AddToHook{file/before}{\typeout{FGA-FILE-BEGIN|\CurrentFilePath|\CurrentFile}}
+\AddToHook{file/after}{\typeout{FGA-FILE-END|}}
+\input{main.tex}

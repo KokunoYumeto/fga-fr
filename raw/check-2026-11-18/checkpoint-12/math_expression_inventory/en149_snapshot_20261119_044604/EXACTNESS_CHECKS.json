@@ -1,0 +1,9 @@
+{
+  "all_math_slices_match_hashes": true,
+  "all_reference_slices_match_hashes": true,
+  "unique_math_ids": true,
+  "problematic_math_ids": [],
+  "token_boundary_fixture": true,
+  "whitespace_fixture": true,
+  "comment_fixture": true
+}

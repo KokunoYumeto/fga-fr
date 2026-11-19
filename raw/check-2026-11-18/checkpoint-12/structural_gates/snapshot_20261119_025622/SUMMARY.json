@@ -1,0 +1,102 @@
+{
+  "started_utc": "2026-11-19T03:07:10.028721+00:00",
+  "completed_utc": "2026-11-19T03:07:11.567600+00:00",
+  "policy_sha256": "e8756a7282b5bf8d4f7bc3ecd05bed53b4134a2eddc547d2305394c4e19ded4e",
+  "script_sha256": "a55f4d900dbb87205a27cb87711d45d38be549615b9b04ad432d50038208ab68",
+  "correction_rows": 15736,
+  "event_rows": 622,
+  "syntax_issue_count": 1,
+  "exact_duplicate_groups": 2,
+  "exact_duplicate_extra_rows": 2,
+  "advisory_count": 22,
+  "key_multiplicity_groups": 0,
+  "repeated_event_id_groups": 15,
+  "expected_french_pages": 211,
+  "recorded_french_pages": 165,
+  "pending_french_pages": 46,
+  "expected_translation_units": 137,
+  "recorded_translation_units": 0,
+  "pending_translation_units": 137,
+  "required_sources": 274,
+  "missing_required_sources": 0,
+  "timestamp_checks": 963,
+  "invalid_timestamps": 0,
+  "input_sha256": {
+    "CORRECTIONS.tsv": "a702eb5c2f4330462413b5d02ae8cf600ad3e8cae467c2ad3d4ab47a27774028",
+    "CHECK_EVENTS.tsv": "97c4dc93c9c5d4679de73509f83a15eb285ef97c79e446fab5f30f92bd43a6b9",
+    "CHECK_RECORD.md": "811c60d8f68c3dea36d73b60db8084b420efdc3fa4602ad00eb17cebc583b388",
+    "progress.log": "1ab028440ea6a204fc067573af3be6fc3f6a93541264cbb82b0fc2fae24f4e1a"
+  },
+  "source_or_ledger_writes": false,
+  "substantive_validity_assessed": false,
+  "strict_legacy_event_vocabulary": false,
+  "completion_required": false,
+  "frozen_snapshot": {
+    "copy_started_utc": "2026-11-19T02:56:22.170879+00:00",
+    "copy_finished_utc": "2026-11-19T02:56:22.671601+00:00",
+    "inputs": [
+      {
+        "path": "CORRECTIONS.tsv",
+        "bytes": 4906035,
+        "sha256": "a702eb5c2f4330462413b5d02ae8cf600ad3e8cae467c2ad3d4ab47a27774028"
+      },
+      {
+        "path": "CHECK_RECORD.md",
+        "bytes": 288862,
+        "sha256": "811c60d8f68c3dea36d73b60db8084b420efdc3fa4602ad00eb17cebc583b388"
+      },
+      {
+        "path": "progress.log",
+        "bytes": 7429,
+        "sha256": "1ab028440ea6a204fc067573af3be6fc3f6a93541264cbb82b0fc2fae24f4e1a"
+      },
+      {
+        "path": "CHECK_EVENTS.tsv",
+        "bytes": 387336,
+        "sha256": "97c4dc93c9c5d4679de73509f83a15eb285ef97c79e446fab5f30f92bd43a6b9"
+      },
+      {
+        "path": "README.md",
+        "bytes": 266,
+        "sha256": "5f07f28040b8e3b7d478582d55f86d386888e93284c06863c5bc65280791ee2d"
+      },
+      {
+        "path": "NOTES.md",
+        "bytes": 165,
+        "sha256": "68d70107da574aeb04f90068ce247bedd968721d54a203036cd40dae75e7d13b"
+      },
+      {
+        "path": "CHECKPOINT_FILE_LIST.tsv",
+        "bytes": 77892,
+        "sha256": "445409c415d62ebaa8256f17cfef27b9ee88d821435f9011f877311b9de0723e"
+      },
+      {
+        "path": "validation/PAGE_COVERAGE.tsv",
+        "bytes": 25553,
+        "sha256": "c2d4b8b5c51d143f883dba52a21c98672452d985f281f4ced88b5eb8852e0923"
+      },
+      {
+        "path": "validation/SOURCE_INVENTORY.tsv",
+        "bytes": 58494,
+        "sha256": "d917defd1106a8e2e28d6d5ce92e41c4728e82651e9c179ba8686443b85bec69"
+      },
+      {
+        "path": "validation/REQUIRED_PRESENCE.tsv",
+        "bytes": 1107,
+        "sha256": "18719cccc38c024a157aa173df3234dcc8835fcd300b536b7f0f85710d6ba8d8"
+      },
+      {
+        "path": "scripts/validate_fga.py",
+        "bytes": 34198,
+        "sha256": "5835201c98cdef7210691072558358b3d65c5b163dbdcf5d92caf5e6da9cebe4"
+      }
+    ],
+    "note": "Read-only structural validator snapshot; content validity is not assessed."
+  },
+  "recorded_pages_with_literal_locator_gaps": 44,
+  "literal_source_locators_required": false,
+  "checkpoint_exclusion_code_sha256": "bf56c8560f1db3e1c66f5faea5888d856a2ec178d8ed60ce2759d46fc40b99b5",
+  "source_route_code_sha256": "d2cc95f1b28d52d2885c34c74838855face2485fe63f78f0553c5b9d9a9e2ca3",
+  "structural_gate_passed": false,
+  "coverage_gate_passed": false
+}

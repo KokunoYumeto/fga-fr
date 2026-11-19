@@ -1,0 +1,18 @@
+layer	pass_number	latest_pass	category	source	line	message	log_line
+en	1	True	warning	sources/en/en/epstopdf-base.sty		Package epstopdf Warning: Shell escape feature is not enabled.	247
+en	1	True	warning	sources/en/en/main.tex		Package unicode-math Warning: Using \overbracket and \underbracket from	255
+en	1	True	warning	sources/en/en/main.tex		Package unicode-math Warning: I'm going to overwrite the following commands	262
+en	1	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	290
+en	1	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	294
+en	1	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	298
+en	1	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	302
+en	1	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	306
+en	1	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	310
+en	1	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	314
+en	1	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	318
+en	1	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	322
+en	1	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	326
+en	1	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	330
+en	1	True	warning	sources/en/en/149.tex		Package hyperref Warning: Token not allowed in a PDF string (Unicode):	334
+en	1	True	error	sources/en/en/149.tex	67	Undefined control sequence.	342
+en	1	True	error	sources/en/en/149.tex	67	==> Fatal error occurred, no output PDF file produced!SyncTeX written on main.synctex.gz.	348

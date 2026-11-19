@@ -1,0 +1,13 @@
+layer	source	line_start	line_end	box	pt	previous_count	current_count	unchanged
+fr	sources/fr/fr/149.tex	482	482	hbox	26.84898	0	1	False
+fr	sources/fr/fr/149.tex	485	485	hbox	26.84898	1	0	False
+fr	sources/fr/fr/182.tex	256	258	hbox	6.36914	1	1	True
+fr	sources/fr/fr/182.tex	269	279	hbox	11.93977	1	1	True
+fr	sources/fr/fr/182.tex	440	445	hbox	36.72565	1	1	True
+fr	sources/fr/fr/212.tex	288	291	hbox	5.36102	1	1	True
+fr_printed	sources/fr_printed/fr/149.tex	482	482	hbox	26.84898	1	1	True
+fr_printed	sources/fr_printed/fr/182.tex	256	258	hbox	6.36914	1	1	True
+fr_printed	sources/fr_printed/fr/182.tex	269	279	hbox	11.93977	1	1	True
+fr_printed	sources/fr_printed/fr/182.tex	440	445	hbox	36.72565	1	1	True
+fr_printed	sources/fr_printed/fr/182.tex	898	910	hbox	4.89633	1	1	True
+fr_printed	sources/fr_printed/fr/212.tex	288	291	hbox	5.36102	1	1	True

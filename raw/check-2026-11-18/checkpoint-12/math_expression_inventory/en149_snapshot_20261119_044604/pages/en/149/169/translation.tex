@@ -1,0 +1,62 @@
+\unit{Exposé 149 — Duality Theorems for Coherent Algebraic Sheaves}
+\sid{149}
+\src{169}
+\seminaren{(May 1957)}
+\paperhead{DUALITY THEOREMS FOR COHERENT ALGEBRAIC SHEAVES}%
+  {by Alexandre GROTHENDIECK}
+
+The results that follow, inspired by Serre's \fquote{algebraic duality theorem},
+were found in the winter of 1955 and the winter of 1956. They are established
+very simply with the aid of fairly elementary results on the cohomology of
+projective spaces [3], and through intensive use of the homological algebra of
+Cartan--Eilenberg, in the form given in [2].
+
+\fsection{1}{The Ext's of sheaves of modules ({[2]}, Chapters 3 and 4)}
+
+Let $X$ be a topological space equipped with a sheaf $\Osh$ of rings with
+identity (not necessarily commutative). We consider the abelian category
+$\Ccat^{\Osh}$ of sheaves of $\Osh$-modules, also called $\Osh$-Modules. Every
+object of this category is known to admit an injective resolution, which makes
+it possible to define in it the $\operatorname{Ext}$ functors having the familiar
+formal properties. More precisely, to avoid confusion, we denote by
+$\operatorname{Hom}_{\Osh}(X;A,B)$, or simply $\operatorname{Hom}(X;A,B)$, the
+abelian group of $\Osh$-homomorphisms from $A$ to $B$, whereas
+$\Homsh_{\Osh}(A,B)$ will denote the sheaf of germs of homomorphisms from $A$ to
+$B$ ($A,B\in\Ccat^{\Osh}$). For fixed $A\in\Ccat^{\Osh}$, we define functors
+$h_A$ and $\hsh_A$, taking values respectively in the category $\Ccat$ of
+abelian groups and the category $\Ccat^{\Zsh}$ of sheaves of abelian groups on
+$X$, by the formulas
+\begin{equation}\tag{1.1}
+  h_A(B)=\operatorname{Hom}_{\Osh}(X;A,B),
+  \qquad
+  \hsh_A(B)=\Homsh_{\Osh}(A,B).
+\end{equation}
+
+The functors $h_A$ and $\hsh_A$ are covariant left-exact functors. We consider
+their right derived functors, denoted respectively by
+$\operatorname{Ext}_{\Osh}^{p}(X;A,B)$ and $\Extsh_{\Osh}^{p}(A,B)$. Thus, by
+definition,
+\begin{equation}\tag{1.2}
+\left\{
+\begin{aligned}
+\operatorname{Ext}_{\Osh}^{p}(X;A,B)
+  &= (R^{p}h_A)(B)
+   = H^{p}\bigl(\operatorname{Hom}_{\Osh}(X;A,C(B))\bigr),\\
+\Extsh_{\Osh}^{p}(A,B)
+  &= (R^{p}\hsh_A)(B)
+   = H^{p}\bigl(\Homsh_{\Osh}(A,C(B))\bigr),
+\end{aligned}
+\right.
+\end{equation}
+
+where the symbol $R^{p}$ denotes passage to right derived functors, and where
+$C(B)$ denotes an arbitrary injective resolution of $B$ in $\Ccat^{\Osh}$. Let
+\[
+  \Gamma:\Ccat^{\Zsh}\longrightarrow\Ccat
+\]
+denote the \fquote{sections} functor. Recall that its right derived functors are
+denoted by
+\[
+  B\longmapsto H^{p}(X,B).
+\]
+

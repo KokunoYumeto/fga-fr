@@ -1,0 +1,60 @@
+\src{188}
+\begin{equation}\tag{7.2}
+  \symup{f^{*}:H^{*}(X)\longrightarrow H^{*}(Y)}
+\end{equation}
+Comme il s'agit d'algèbres de Poincaré, on obtient par transposition un
+homomorphisme d'espaces vectoriels :
+\begin{equation}\tag{7.3}
+  \symup{f_{*}:H^{*}(Y)\longrightarrow H^{*}(X)}
+\end{equation}
+On a vu au n\textsuperscript{o} 4 que l'effet de $\symup{f^{*}}$ sur les classes de
+cohomologie correspondant à des cycles non singuliers s'interprète
+géométriquement en prenant les classes de cohomologie qui correspondent à leurs
+images inverses. Il importe dans le cas actuel de montrer que (7.3) correspond
+de même à l'opération \fquote{image directe} de cycles. Cela résulte, sous des
+conditions de non singularité convenables du moins, du cas particulier suivant :
+
+\result{THÉORÈME}{4} \uline{Si} $\symup{f}$ \uline{est l'application identique d'une sous-variété non
+singulière} $\symup{Y^{m}}$ \uline{de} $\symup{X^{n}}$ \uline{dans} $\symup{X^{n}}$, \uline{alors, désignant par} $\symup{1_Y}$
+\uline{l'élément unité de} $\symup{H(Y)}$ \uline{on a}
+\begin{equation}\tag{7.4}
+  \symup{f_{*}(1_Y)=P_X(Y)}
+\end{equation}
+\uline{où le deuxième membre est la classe de cohomologie dans} $\symup{X}$ \uline{associée à} $\symup{Y}$.
+
+Cette formule est équivalente à
+\begin{equation}\tag{7.4 bis}
+  \symup{\bigl\langle\xi^{m,m},P_X(Y)\bigr\rangle\varepsilon_Y
+  =f^{*}(\xi^{m,m})
+  \qquad
+  \bigl(\xi^{m,m}\in H^{m}(X,\underline{\Omega}_X^{m})\bigr)}
+\end{equation}
+\footnote{Le texte imprimé porte $\symup{f_{*}(\xi^{m,m})}$. Puisque
+$\symup{\xi^{m,m}\in H^{m}(X,\underline{\Omega}_X^{m})}$ et que les deux membres appartiennent à
+$\symup{H^{m}(Y,\underline{\Omega}_Y^{m})}$, l'application requise est $\symup{f^{*}}$.} où
+$\symup{\varepsilon_Y}$ est l'élément fondamental dans $\symup{H^{m}(Y,\underline{\Omega}_Y^{m})}$, et
+constitue, dans le cas des variétés projectives non singulières, une nouvelle
+définition de la classe de cohomologie associée à $\symup{Y}$. Pour démontrer le
+théorème 4, on interprète grâce au théorème 3 la transposée de l'homomorphisme
+\[
+  \symup{H^{m}(X,\underline{\Omega}_X^{m})
+  \longrightarrow H^{m}(Y,\underline{\Omega}_Y^{m})
+  =H^{m}(X,\underline{\Omega}_Y^{m})}
+\]
+comme l'homomorphisme
+\begin{equation}\tag{7.5}
+\symup{H^{n-m}(X,\underline{\Omega}_X^{n-m})
+  \xrightarrow{\sim}
+  \operatorname{Ext}_{\Osh_X}^{n-m}(X;\underline{\Omega}_X^{m},\underline{\Omega}_X^{n})
+  \longleftarrow
+  \operatorname{Ext}_{\Osh_X}^{n-m}(X;\underline{\Omega}_Y^{m},\underline{\Omega}_X^{n})
+  \xrightarrow{\sim}
+  \operatorname{Hom}_{\Osh_X}(X;\underline{\Omega}_Y^{m},\underline{\Omega}_Y^{m})}
+\end{equation}
+On vérifie que l'élément $\symup{1_Y}$ du dual de $\symup{H^{m}(Y,\underline{\Omega}_Y^{m})}$ s'identifie
+à l'élément du membre de droite correspondant à l'endomorphisme identique de
+$\symup{\underline{\Omega}_Y^{m}}$, et d'autre part que l'image de cet élément dans
+$\symup{H^{n-m}(X,\underline{\Omega}_X^{n-m})}$ est bien $\symup{P_X(Y)}$. Ces compatibilités, qui auraient
+pu être données dès le n\textsuperscript{o} 4, peuvent s'énoncer, et sont
+valables en fait, pour des variétés non singulières quelconques, la deuxième
+

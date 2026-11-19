@@ -1,0 +1,33 @@
+{
+  "rules": [
+    {
+      "rule_id": "H01",
+      "pattern": "refuted, with refined statement (?P<opaque>[A-Za-z0-9][A-Za-z0-9_.:=+-]{0,159})",
+      "candidate": "refuted, with the refined statement's id",
+      "opaque_kind": "identifier"
+    },
+    {
+      "rule_id": "H02",
+      "pattern": "refuted, with the refined statement id (?P<opaque>[A-Za-z0-9][A-Za-z0-9_.:=+-]{0,159})",
+      "candidate": "refuted, with the refined statement's id",
+      "opaque_kind": "identifier"
+    },
+    {
+      "rule_id": "H03",
+      "pattern": "targeted (?P<opaque>[A-Za-z][A-Za-z -]*) check",
+      "candidate": "targeted proof check",
+      "opaque_kind": "check subtype"
+    }
+  ],
+  "legacy_exact_vocabulary": [
+    "targeted proof check",
+    "independent re-proof",
+    "computation or formal certificate",
+    "used and rechecked in this run",
+    "carried as background without fault found",
+    "refuted, with the refined statement's id"
+  ],
+  "interpretation": "Exact lexical shapes produce taxonomy candidates only. No claim is made that a check, proof, or refutation occurred.",
+  "owner_decision_required": true,
+  "original_values_emitted": false
+}

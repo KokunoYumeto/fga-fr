@@ -1,0 +1,62 @@
+\src{188}
+\begin{equation}\tag{7.2}
+  f^{*}:H^{*}(X)\longrightarrow H^{*}(Y).
+\end{equation}
+Since these are Poincaré algebras, transposition gives a homomorphism of vector
+spaces
+\begin{equation}\tag{7.3}
+  f_{*}:H^{*}(Y)\longrightarrow H^{*}(X).
+\end{equation}
+We saw in Section 4 that the effect of $f^{*}$ on the cohomology classes
+corresponding to nonsingular cycles has the geometric interpretation of taking
+the cohomology classes corresponding to their inverse images. In the present
+setting it is important to show that (7.3) similarly corresponds to the
+``direct image'' operation on cycles. Under suitable nonsingularity conditions,
+at least, this follows from the following special case.
+
+\result{THEOREM}{4} If $f$ is the inclusion of a nonsingular subvariety $Y^{m}$
+of $X^{n}$ into $X^{n}$, then, writing $1_Y$ for the unit element of $H(Y)$,
+one has
+\begin{equation}\tag{7.4}
+  f_{*}(1_Y)=P_X(Y),
+\end{equation}
+where the right-hand side is the cohomology class in $X$ associated with $Y$.
+
+This formula is equivalent to
+\begin{equation}\tag{7.4 bis}
+  \bigl\langle\xi^{m,m},P_X(Y)\bigr\rangle\varepsilon_Y
+  =f^{*}(\xi^{m,m})
+  \qquad
+  \bigl(\xi^{m,m}\in H^{m}(X,\Omega_X^{m})\bigr),
+\end{equation}
+\footnote{The printed text has $f_{*}(\xi^{m,m})$. Since
+$\xi^{m,m}\in H^{m}(X,\Omega_X^{m})$ and both sides belong to
+$H^{m}(Y,\Omega_Y^{m})$, the required map is $f^{*}$.} where $\varepsilon_Y$ is
+the fundamental element in $H^{m}(Y,\Omega_Y^{m})$. For nonsingular projective
+varieties this gives a new definition of the cohomology class associated with
+$Y$. To prove Theorem 4, Theorem 3 lets us interpret the transpose of the
+homomorphism
+\[
+  H^{m}(X,\Omega_X^{m})
+  \longrightarrow H^{m}(Y,\Omega_Y^{m})
+  =H^{m}(X,\Omega_Y^{m})
+\]
+as the homomorphism
+\begin{equation}\tag{7.5}
+\begin{split}
+  H^{n-m}(X,\Omega_X^{n-m})
+  &\simeq
+  \operatorname{Ext}_{\Osh_X}^{n-m}(X;\Omega_X^{m},\Omega_X^{n})\\
+  &\longleftarrow
+  \operatorname{Ext}_{\Osh_X}^{n-m}(X;\Omega_Y^{m},\Omega_X^{n})
+  \simeq
+  \operatorname{Hom}_{\Osh_X}(X;\Omega_Y^{m},\Omega_Y^{m}).
+\end{split}
+\end{equation}
+One checks that the element $1_Y$ of the dual of
+$H^{m}(Y,\Omega_Y^{m})$ identifies with the element of the right-hand side
+corresponding to the identity endomorphism of $\Omega_Y^{m}$, and also that the
+image of this element in $H^{n-m}(X,\Omega_X^{n-m})$ is indeed $P_X(Y)$. These
+compatibilities, which could have been stated already in Section 4, can be
+formulated---and in fact hold---for arbitrary nonsingular varieties, the second
+

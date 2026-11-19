@@ -1,0 +1,2 @@
+file	row_id	data_row	physical_start	physical_end	field	code
+CORRECTIONS.tsv	C000214	214	410	410	confidence	outside exact allowed category set

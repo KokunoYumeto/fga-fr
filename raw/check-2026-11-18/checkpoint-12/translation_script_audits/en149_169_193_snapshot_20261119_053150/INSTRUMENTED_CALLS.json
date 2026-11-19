@@ -1,0 +1,5997 @@
+[
+  {
+    "sequence": 1,
+    "script": "apply_en_149_169.py",
+    "function": "start_unit",
+    "sites": [
+      {
+        "script": "apply_en_149_169.py",
+        "line": 5,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 2,
+    "script": "apply_en_149_169.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_169.py",
+        "line": 6,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 3,
+    "script": "apply_en_149_169.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_169.py",
+        "line": 8,
+        "function": "change"
+      },
+      {
+        "script": "apply_en_149_169.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 4,
+    "script": "apply_en_149_169.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_169.py",
+        "line": 8,
+        "function": "change"
+      },
+      {
+        "script": "apply_en_149_169.py",
+        "line": 11,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 5,
+    "script": "apply_en_149_169.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_169.py",
+        "line": 8,
+        "function": "change"
+      },
+      {
+        "script": "apply_en_149_169.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 6,
+    "script": "apply_en_149_169.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_169.py",
+        "line": 8,
+        "function": "change"
+      },
+      {
+        "script": "apply_en_149_169.py",
+        "line": 16,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 7,
+    "script": "apply_en_149_169.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_169.py",
+        "line": 8,
+        "function": "change"
+      },
+      {
+        "script": "apply_en_149_169.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 8,
+    "script": "apply_en_149_169.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_169.py",
+        "line": 8,
+        "function": "change"
+      },
+      {
+        "script": "apply_en_149_169.py",
+        "line": 20,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 9,
+    "script": "apply_en_149_169.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_169.py",
+        "line": 8,
+        "function": "change"
+      },
+      {
+        "script": "apply_en_149_169.py",
+        "line": 22,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 10,
+    "script": "apply_en_149_169.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_169.py",
+        "line": 8,
+        "function": "change"
+      },
+      {
+        "script": "apply_en_149_169.py",
+        "line": 25,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 11,
+    "script": "apply_en_149_169.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_169.py",
+        "line": 27,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 12,
+    "script": "apply_en_149_169.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_169.py",
+        "line": 29,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 13,
+    "script": "apply_en_149_169.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_169.py",
+        "line": 32,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 14,
+    "script": "apply_en_149_170.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_170.py",
+        "line": 5,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 15,
+    "script": "apply_en_149_170.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_170.py",
+        "line": 7,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_170.py",
+        "line": 13,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 16,
+    "script": "apply_en_149_170.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_170.py",
+        "line": 7,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_170.py",
+        "line": 22,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 17,
+    "script": "apply_en_149_170.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_170.py",
+        "line": 7,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_170.py",
+        "line": 22,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 18,
+    "script": "apply_en_149_170.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_170.py",
+        "line": 7,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_170.py",
+        "line": 22,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 19,
+    "script": "apply_en_149_170.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_170.py",
+        "line": 7,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_170.py",
+        "line": 24,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 20,
+    "script": "apply_en_149_170.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_170.py",
+        "line": 7,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_170.py",
+        "line": 26,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 21,
+    "script": "apply_en_149_170.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_170.py",
+        "line": 28,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 22,
+    "script": "apply_en_149_170.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_170.py",
+        "line": 30,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 23,
+    "script": "apply_en_149_170.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_170.py",
+        "line": 33,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 24,
+    "script": "apply_en_149_171.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_171.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_171.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 25,
+    "script": "apply_en_149_171.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_171.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_171.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 26,
+    "script": "apply_en_149_171.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_171.py",
+        "line": 16,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 27,
+    "script": "apply_en_149_171.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_171.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_171.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 28,
+    "script": "apply_en_149_171.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_171.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_171.py",
+        "line": 19,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 29,
+    "script": "apply_en_149_171.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_171.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_171.py",
+        "line": 20,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 30,
+    "script": "apply_en_149_171.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_171.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_171.py",
+        "line": 22,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 31,
+    "script": "apply_en_149_171.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_171.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_171.py",
+        "line": 23,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 32,
+    "script": "apply_en_149_171.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_171.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_171.py",
+        "line": 24,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 33,
+    "script": "apply_en_149_171.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_171.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_171.py",
+        "line": 26,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 34,
+    "script": "apply_en_149_171.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_171.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_171.py",
+        "line": 27,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 35,
+    "script": "apply_en_149_171.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_171.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_171.py",
+        "line": 28,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 36,
+    "script": "apply_en_149_171.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_171.py",
+        "line": 30,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 37,
+    "script": "apply_en_149_171.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_171.py",
+        "line": 32,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 38,
+    "script": "apply_en_149_171.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_171.py",
+        "line": 35,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 39,
+    "script": "apply_en_149_172.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_172.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_172.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 40,
+    "script": "apply_en_149_172.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_172.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 41,
+    "script": "apply_en_149_172.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_172.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_172.py",
+        "line": 11,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 42,
+    "script": "apply_en_149_172.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_172.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_172.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 43,
+    "script": "apply_en_149_172.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_172.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_172.py",
+        "line": 17,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 44,
+    "script": "apply_en_149_172.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_172.py",
+        "line": 19,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 45,
+    "script": "apply_en_149_172.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_172.py",
+        "line": 21,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 46,
+    "script": "apply_en_149_172.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_172.py",
+        "line": 24,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 47,
+    "script": "apply_en_149_173.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_173.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 48,
+    "script": "apply_en_149_173.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_173.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_173.py",
+        "line": 9,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 49,
+    "script": "apply_en_149_173.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_173.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_173.py",
+        "line": 12,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 50,
+    "script": "apply_en_149_173.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_173.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_173.py",
+        "line": 15,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 51,
+    "script": "apply_en_149_173.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_173.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_173.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 52,
+    "script": "apply_en_149_173.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_173.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_173.py",
+        "line": 20,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 53,
+    "script": "apply_en_149_173.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_173.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_173.py",
+        "line": 22,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 54,
+    "script": "apply_en_149_173.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_173.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_173.py",
+        "line": 25,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 55,
+    "script": "apply_en_149_173.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_173.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_173.py",
+        "line": 28,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 56,
+    "script": "apply_en_149_173.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_173.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_173.py",
+        "line": 31,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 57,
+    "script": "apply_en_149_173.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_173.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_173.py",
+        "line": 34,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 58,
+    "script": "apply_en_149_173.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_173.py",
+        "line": 37,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 59,
+    "script": "apply_en_149_173.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_173.py",
+        "line": 39,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 60,
+    "script": "apply_en_149_173.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_173.py",
+        "line": 42,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 61,
+    "script": "apply_en_149_174.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_174.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_174.py",
+        "line": 12,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 62,
+    "script": "apply_en_149_174.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_174.py",
+        "line": 13,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 63,
+    "script": "apply_en_149_174.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_174.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_174.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 64,
+    "script": "apply_en_149_174.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_174.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_174.py",
+        "line": 15,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 65,
+    "script": "apply_en_149_174.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_174.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_174.py",
+        "line": 16,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 66,
+    "script": "apply_en_149_174.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_174.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_174.py",
+        "line": 17,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 67,
+    "script": "apply_en_149_174.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_174.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_174.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 68,
+    "script": "apply_en_149_174.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_174.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_174.py",
+        "line": 21,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 69,
+    "script": "apply_en_149_174.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_174.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_174.py",
+        "line": 22,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 70,
+    "script": "apply_en_149_174.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_174.py",
+        "line": 23,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 71,
+    "script": "apply_en_149_174.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_174.py",
+        "line": 25,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 72,
+    "script": "apply_en_149_174.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_174.py",
+        "line": 28,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 73,
+    "script": "apply_en_149_175.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_175.py",
+        "line": 11,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 74,
+    "script": "apply_en_149_175.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_175.py",
+        "line": 12,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 75,
+    "script": "apply_en_149_175.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_175.py",
+        "line": 13,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 76,
+    "script": "apply_en_149_175.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_175.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 77,
+    "script": "apply_en_149_175.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 15,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 78,
+    "script": "apply_en_149_175.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_175.py",
+        "line": 16,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 79,
+    "script": "apply_en_149_175.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_175.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 80,
+    "script": "apply_en_149_175.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_175.py",
+        "line": 21,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 81,
+    "script": "apply_en_149_175.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_175.py",
+        "line": 22,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 82,
+    "script": "apply_en_149_175.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_175.py",
+        "line": 27,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 83,
+    "script": "apply_en_149_175.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_175.py",
+        "line": 27,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 84,
+    "script": "apply_en_149_175.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_175.py",
+        "line": 27,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 85,
+    "script": "apply_en_149_175.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 28,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 86,
+    "script": "apply_en_149_175.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 30,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 87,
+    "script": "apply_en_149_175.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 33,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 88,
+    "script": "apply_en_149_175.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_175.py",
+        "line": 36,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 89,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 90,
+    "script": "apply_en_149_176.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 91,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 11,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 92,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 12,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 93,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 94,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 15,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 95,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 16,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 96,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 17,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 97,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 98,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 19,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 99,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 20,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 100,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 21,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 101,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 28,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 102,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 29,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 103,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 34,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 104,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 34,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 105,
+    "script": "apply_en_149_176.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_176.py",
+        "line": 34,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 106,
+    "script": "apply_en_149_176.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 35,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 107,
+    "script": "apply_en_149_176.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 37,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 108,
+    "script": "apply_en_149_176.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_176.py",
+        "line": 40,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 109,
+    "script": "apply_en_149_177.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_177.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 110,
+    "script": "apply_en_149_177.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_177.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 111,
+    "script": "apply_en_149_177.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 12,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 112,
+    "script": "apply_en_149_177.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_177.py",
+        "line": 13,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 113,
+    "script": "apply_en_149_177.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_177.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 114,
+    "script": "apply_en_149_177.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_177.py",
+        "line": 17,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 115,
+    "script": "apply_en_149_177.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_177.py",
+        "line": 20,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 116,
+    "script": "apply_en_149_177.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_177.py",
+        "line": 23,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 117,
+    "script": "apply_en_149_177.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_177.py",
+        "line": 31,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 118,
+    "script": "apply_en_149_177.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_177.py",
+        "line": 31,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 119,
+    "script": "apply_en_149_177.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_177.py",
+        "line": 31,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 120,
+    "script": "apply_en_149_177.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_177.py",
+        "line": 31,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 121,
+    "script": "apply_en_149_177.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 32,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 122,
+    "script": "apply_en_149_177.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 34,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 123,
+    "script": "apply_en_149_177.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 37,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 124,
+    "script": "apply_en_149_177.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_177.py",
+        "line": 40,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 125,
+    "script": "apply_en_149_178.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_178.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 126,
+    "script": "apply_en_149_178.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_178.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_178.py",
+        "line": 9,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 127,
+    "script": "apply_en_149_178.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_178.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_178.py",
+        "line": 12,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 128,
+    "script": "apply_en_149_178.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_178.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_178.py",
+        "line": 15,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 129,
+    "script": "apply_en_149_178.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_178.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_178.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 130,
+    "script": "apply_en_149_178.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_178.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_178.py",
+        "line": 21,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 131,
+    "script": "apply_en_149_178.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_178.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_178.py",
+        "line": 24,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 132,
+    "script": "apply_en_149_178.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_178.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_178.py",
+        "line": 27,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 133,
+    "script": "apply_en_149_178.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_178.py",
+        "line": 28,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 134,
+    "script": "apply_en_149_178.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_178.py",
+        "line": 30,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 135,
+    "script": "apply_en_149_178.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_178.py",
+        "line": 33,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 136,
+    "script": "apply_en_149_179.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 137,
+    "script": "apply_en_149_179.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_179.py",
+        "line": 9,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 138,
+    "script": "apply_en_149_179.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_179.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 139,
+    "script": "apply_en_149_179.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_179.py",
+        "line": 11,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 140,
+    "script": "apply_en_149_179.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_179.py",
+        "line": 12,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 141,
+    "script": "apply_en_149_179.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_179.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 142,
+    "script": "apply_en_149_179.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_179.py",
+        "line": 15,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 143,
+    "script": "apply_en_149_179.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_179.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 144,
+    "script": "apply_en_149_179.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_179.py",
+        "line": 21,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 145,
+    "script": "apply_en_149_179.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_179.py",
+        "line": 22,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 146,
+    "script": "apply_en_149_179.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_179.py",
+        "line": 24,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 147,
+    "script": "apply_en_149_179.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_179.py",
+        "line": 27,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 148,
+    "script": "apply_en_149_179.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_179.py",
+        "line": 34,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 149,
+    "script": "apply_en_149_179.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_179.py",
+        "line": 34,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 150,
+    "script": "apply_en_149_179.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 35,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 151,
+    "script": "apply_en_149_179.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 37,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 152,
+    "script": "apply_en_149_179.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_179.py",
+        "line": 40,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 153,
+    "script": "apply_en_149_180.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_180.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_180.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 154,
+    "script": "apply_en_149_180.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_180.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_180.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 155,
+    "script": "apply_en_149_180.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_180.py",
+        "line": 13,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 156,
+    "script": "apply_en_149_180.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_180.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_180.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 157,
+    "script": "apply_en_149_180.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_180.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_180.py",
+        "line": 16,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 158,
+    "script": "apply_en_149_180.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_180.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_180.py",
+        "line": 17,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 159,
+    "script": "apply_en_149_180.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_180.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_180.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 160,
+    "script": "apply_en_149_180.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_180.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_180.py",
+        "line": 19,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 161,
+    "script": "apply_en_149_180.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_180.py",
+        "line": 21,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 162,
+    "script": "apply_en_149_180.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_180.py",
+        "line": 23,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 163,
+    "script": "apply_en_149_180.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_180.py",
+        "line": 26,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 164,
+    "script": "apply_en_149_180.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_180.py",
+        "line": 29,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 165,
+    "script": "apply_en_149_181.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_181.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 166,
+    "script": "apply_en_149_181.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 11,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 167,
+    "script": "apply_en_149_181.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_181.py",
+        "line": 12,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 168,
+    "script": "apply_en_149_181.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_181.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 169,
+    "script": "apply_en_149_181.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_181.py",
+        "line": 16,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 170,
+    "script": "apply_en_149_181.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_181.py",
+        "line": 17,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 171,
+    "script": "apply_en_149_181.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_181.py",
+        "line": 20,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 172,
+    "script": "apply_en_149_181.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_181.py",
+        "line": 22,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 173,
+    "script": "apply_en_149_181.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_181.py",
+        "line": 24,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 174,
+    "script": "apply_en_149_181.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_181.py",
+        "line": 27,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 175,
+    "script": "apply_en_149_181.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_181.py",
+        "line": 29,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 176,
+    "script": "apply_en_149_181.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_181.py",
+        "line": 31,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 177,
+    "script": "apply_en_149_181.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_181.py",
+        "line": 32,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 178,
+    "script": "apply_en_149_181.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_181.py",
+        "line": 35,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 179,
+    "script": "apply_en_149_181.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_181.py",
+        "line": 35,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 180,
+    "script": "apply_en_149_181.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 36,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 181,
+    "script": "apply_en_149_181.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 38,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 182,
+    "script": "apply_en_149_181.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 41,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 183,
+    "script": "apply_en_149_181.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_181.py",
+        "line": 44,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 184,
+    "script": "apply_en_149_182.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 185,
+    "script": "apply_en_149_182.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_182.py",
+        "line": 9,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 186,
+    "script": "apply_en_149_182.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_182.py",
+        "line": 11,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 187,
+    "script": "apply_en_149_182.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_182.py",
+        "line": 13,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 188,
+    "script": "apply_en_149_182.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_182.py",
+        "line": 15,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 189,
+    "script": "apply_en_149_182.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_182.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 190,
+    "script": "apply_en_149_182.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_182.py",
+        "line": 19,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 191,
+    "script": "apply_en_149_182.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_182.py",
+        "line": 21,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 192,
+    "script": "apply_en_149_182.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_182.py",
+        "line": 23,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 193,
+    "script": "apply_en_149_182.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_182.py",
+        "line": 25,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 194,
+    "script": "apply_en_149_182.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_182.py",
+        "line": 27,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 195,
+    "script": "apply_en_149_182.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_182.py",
+        "line": 29,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 196,
+    "script": "apply_en_149_182.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 31,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 197,
+    "script": "apply_en_149_182.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 33,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 198,
+    "script": "apply_en_149_182.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 36,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 199,
+    "script": "apply_en_149_182.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_182.py",
+        "line": 39,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 200,
+    "script": "apply_en_149_183.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_183.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 201,
+    "script": "apply_en_149_183.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_183.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 202,
+    "script": "apply_en_149_183.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 12,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 203,
+    "script": "apply_en_149_183.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_183.py",
+        "line": 13,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 204,
+    "script": "apply_en_149_183.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_183.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 205,
+    "script": "apply_en_149_183.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_183.py",
+        "line": 17,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 206,
+    "script": "apply_en_149_183.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_183.py",
+        "line": 20,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 207,
+    "script": "apply_en_149_183.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_183.py",
+        "line": 23,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 208,
+    "script": "apply_en_149_183.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_183.py",
+        "line": 23,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 209,
+    "script": "apply_en_149_183.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_183.py",
+        "line": 23,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 210,
+    "script": "apply_en_149_183.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 24,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 211,
+    "script": "apply_en_149_183.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 26,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 212,
+    "script": "apply_en_149_183.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 29,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 213,
+    "script": "apply_en_149_183.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 36,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 214,
+    "script": "apply_en_149_183.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 36,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 215,
+    "script": "apply_en_149_183.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 36,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 216,
+    "script": "apply_en_149_183.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_183.py",
+        "line": 37,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 217,
+    "script": "apply_en_149_184.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_184.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 218,
+    "script": "apply_en_149_184.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 219,
+    "script": "apply_en_149_184.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_184.py",
+        "line": 11,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 220,
+    "script": "apply_en_149_184.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_184.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 221,
+    "script": "apply_en_149_184.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_184.py",
+        "line": 15,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 222,
+    "script": "apply_en_149_184.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_184.py",
+        "line": 17,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 223,
+    "script": "apply_en_149_184.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_184.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 224,
+    "script": "apply_en_149_184.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_184.py",
+        "line": 21,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 225,
+    "script": "apply_en_149_184.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_184.py",
+        "line": 23,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 226,
+    "script": "apply_en_149_184.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_184.py",
+        "line": 26,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 227,
+    "script": "apply_en_149_184.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_184.py",
+        "line": 29,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 228,
+    "script": "apply_en_149_184.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_184.py",
+        "line": 32,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 229,
+    "script": "apply_en_149_184.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 35,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 230,
+    "script": "apply_en_149_184.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 37,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 231,
+    "script": "apply_en_149_184.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 40,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 232,
+    "script": "apply_en_149_184.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_184.py",
+        "line": 43,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 233,
+    "script": "apply_en_149_185.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_185.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_185.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 234,
+    "script": "apply_en_149_185.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_185.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 235,
+    "script": "apply_en_149_185.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_185.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_185.py",
+        "line": 11,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 236,
+    "script": "apply_en_149_185.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_185.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_185.py",
+        "line": 13,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 237,
+    "script": "apply_en_149_185.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_185.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_185.py",
+        "line": 15,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 238,
+    "script": "apply_en_149_185.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_185.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_185.py",
+        "line": 16,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 239,
+    "script": "apply_en_149_185.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_185.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_185.py",
+        "line": 17,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 240,
+    "script": "apply_en_149_185.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_185.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_185.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 241,
+    "script": "apply_en_149_185.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_185.py",
+        "line": 20,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 242,
+    "script": "apply_en_149_185.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_185.py",
+        "line": 22,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 243,
+    "script": "apply_en_149_185.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_185.py",
+        "line": 25,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 244,
+    "script": "apply_en_149_185.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_185.py",
+        "line": 28,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 245,
+    "script": "apply_en_149_186.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 246,
+    "script": "apply_en_149_186.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_186.py",
+        "line": 9,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 247,
+    "script": "apply_en_149_186.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_186.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 248,
+    "script": "apply_en_149_186.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_186.py",
+        "line": 11,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 249,
+    "script": "apply_en_149_186.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_186.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 250,
+    "script": "apply_en_149_186.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_186.py",
+        "line": 17,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 251,
+    "script": "apply_en_149_186.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_186.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 252,
+    "script": "apply_en_149_186.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_186.py",
+        "line": 20,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 253,
+    "script": "apply_en_149_186.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_186.py",
+        "line": 21,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 254,
+    "script": "apply_en_149_186.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_186.py",
+        "line": 23,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 255,
+    "script": "apply_en_149_186.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_186.py",
+        "line": 27,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 256,
+    "script": "apply_en_149_186.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_186.py",
+        "line": 27,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 257,
+    "script": "apply_en_149_186.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_186.py",
+        "line": 32,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 258,
+    "script": "apply_en_149_186.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_186.py",
+        "line": 32,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 259,
+    "script": "apply_en_149_186.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_186.py",
+        "line": 32,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 260,
+    "script": "apply_en_149_186.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_186.py",
+        "line": 32,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 261,
+    "script": "apply_en_149_186.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 33,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 262,
+    "script": "apply_en_149_186.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 35,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 263,
+    "script": "apply_en_149_186.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 38,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 264,
+    "script": "apply_en_149_186.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_186.py",
+        "line": 41,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 265,
+    "script": "apply_en_149_187.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_187.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 266,
+    "script": "apply_en_149_187.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 267,
+    "script": "apply_en_149_187.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_187.py",
+        "line": 11,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 268,
+    "script": "apply_en_149_187.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_187.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 269,
+    "script": "apply_en_149_187.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_187.py",
+        "line": 15,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 270,
+    "script": "apply_en_149_187.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_187.py",
+        "line": 16,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 271,
+    "script": "apply_en_149_187.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_187.py",
+        "line": 17,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 272,
+    "script": "apply_en_149_187.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_187.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 273,
+    "script": "apply_en_149_187.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_187.py",
+        "line": 19,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 274,
+    "script": "apply_en_149_187.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_187.py",
+        "line": 20,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 275,
+    "script": "apply_en_149_187.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_187.py",
+        "line": 22,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 276,
+    "script": "apply_en_149_187.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_187.py",
+        "line": 24,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 277,
+    "script": "apply_en_149_187.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_187.py",
+        "line": 28,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 278,
+    "script": "apply_en_149_187.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 29,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 279,
+    "script": "apply_en_149_187.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 31,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 280,
+    "script": "apply_en_149_187.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 34,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 281,
+    "script": "apply_en_149_187.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 37,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 282,
+    "script": "apply_en_149_187.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_187.py",
+        "line": 40,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 283,
+    "script": "apply_en_149_188.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_188.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_188.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 284,
+    "script": "apply_en_149_188.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_188.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 285,
+    "script": "apply_en_149_188.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_188.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_188.py",
+        "line": 11,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 286,
+    "script": "apply_en_149_188.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_188.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_188.py",
+        "line": 13,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 287,
+    "script": "apply_en_149_188.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_188.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_188.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 288,
+    "script": "apply_en_149_188.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_188.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_188.py",
+        "line": 15,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 289,
+    "script": "apply_en_149_188.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_188.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_188.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 290,
+    "script": "apply_en_149_188.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_188.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_188.py",
+        "line": 21,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 291,
+    "script": "apply_en_149_188.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_188.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_188.py",
+        "line": 22,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 292,
+    "script": "apply_en_149_188.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_188.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_188.py",
+        "line": 30,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 293,
+    "script": "apply_en_149_188.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_188.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_188.py",
+        "line": 30,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 294,
+    "script": "apply_en_149_188.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_188.py",
+        "line": 31,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 295,
+    "script": "apply_en_149_188.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_188.py",
+        "line": 33,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 296,
+    "script": "apply_en_149_188.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_188.py",
+        "line": 36,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 297,
+    "script": "apply_en_149_188.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_188.py",
+        "line": 39,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 298,
+    "script": "apply_en_149_189.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_189.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 299,
+    "script": "apply_en_149_189.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_189.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 300,
+    "script": "apply_en_149_189.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_189.py",
+        "line": 13,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 301,
+    "script": "apply_en_149_189.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_189.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 302,
+    "script": "apply_en_149_189.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 16,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 303,
+    "script": "apply_en_149_189.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_189.py",
+        "line": 17,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 304,
+    "script": "apply_en_149_189.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_189.py",
+        "line": 19,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 305,
+    "script": "apply_en_149_189.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_189.py",
+        "line": 21,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 306,
+    "script": "apply_en_149_189.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_189.py",
+        "line": 24,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 307,
+    "script": "apply_en_149_189.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_189.py",
+        "line": 26,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 308,
+    "script": "apply_en_149_189.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_189.py",
+        "line": 28,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 309,
+    "script": "apply_en_149_189.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_189.py",
+        "line": 31,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 310,
+    "script": "apply_en_149_189.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_189.py",
+        "line": 34,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 311,
+    "script": "apply_en_149_189.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 35,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 312,
+    "script": "apply_en_149_189.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 37,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 313,
+    "script": "apply_en_149_189.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 40,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 314,
+    "script": "apply_en_149_189.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 43,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 315,
+    "script": "apply_en_149_189.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_189.py",
+        "line": 46,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 316,
+    "script": "apply_en_149_190.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_190.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 317,
+    "script": "apply_en_149_190.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 9,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 318,
+    "script": "apply_en_149_190.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_190.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 319,
+    "script": "apply_en_149_190.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_190.py",
+        "line": 13,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 320,
+    "script": "apply_en_149_190.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_190.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 321,
+    "script": "apply_en_149_190.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_190.py",
+        "line": 16,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 322,
+    "script": "apply_en_149_190.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_190.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 323,
+    "script": "apply_en_149_190.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_190.py",
+        "line": 20,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 324,
+    "script": "apply_en_149_190.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_190.py",
+        "line": 22,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 325,
+    "script": "apply_en_149_190.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_190.py",
+        "line": 25,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 326,
+    "script": "apply_en_149_190.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_190.py",
+        "line": 28,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 327,
+    "script": "apply_en_149_190.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_190.py",
+        "line": 30,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 328,
+    "script": "apply_en_149_190.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_190.py",
+        "line": 32,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 329,
+    "script": "apply_en_149_190.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 35,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 330,
+    "script": "apply_en_149_190.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 37,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 331,
+    "script": "apply_en_149_190.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 40,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 332,
+    "script": "apply_en_149_190.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_190.py",
+        "line": 43,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 333,
+    "script": "apply_en_149_191.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_191.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 334,
+    "script": "apply_en_149_191.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_191.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 335,
+    "script": "apply_en_149_191.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 12,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 336,
+    "script": "apply_en_149_191.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_191.py",
+        "line": 13,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 337,
+    "script": "apply_en_149_191.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_191.py",
+        "line": 15,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 338,
+    "script": "apply_en_149_191.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_191.py",
+        "line": 17,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 339,
+    "script": "apply_en_149_191.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_191.py",
+        "line": 19,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 340,
+    "script": "apply_en_149_191.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_191.py",
+        "line": 22,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 341,
+    "script": "apply_en_149_191.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_191.py",
+        "line": 24,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 342,
+    "script": "apply_en_149_191.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_191.py",
+        "line": 27,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 343,
+    "script": "apply_en_149_191.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_191.py",
+        "line": 30,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 344,
+    "script": "apply_en_149_191.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_191.py",
+        "line": 32,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 345,
+    "script": "apply_en_149_191.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 33,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 346,
+    "script": "apply_en_149_191.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 35,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 347,
+    "script": "apply_en_149_191.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 38,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 348,
+    "script": "apply_en_149_191.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 41,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 349,
+    "script": "apply_en_149_191.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_191.py",
+        "line": 44,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 350,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 351,
+    "script": "apply_en_149_192.py",
+    "function": "align_math",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 11,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 352,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 12,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 353,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 15,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 354,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 15,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 355,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 15,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 356,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 17,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 357,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 18,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 358,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 19,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 359,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 20,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 360,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 23,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 361,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 25,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 362,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 28,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 363,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 29,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 364,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 32,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 365,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 32,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 366,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 32,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 367,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 33,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 368,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 34,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 369,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 35,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 370,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 38,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 371,
+    "script": "apply_en_149_192.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_192.py",
+        "line": 41,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 372,
+    "script": "apply_en_149_192.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 44,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 373,
+    "script": "apply_en_149_192.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 46,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 374,
+    "script": "apply_en_149_192.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 49,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 375,
+    "script": "apply_en_149_192.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 52,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 376,
+    "script": "apply_en_149_192.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_192.py",
+        "line": 55,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 377,
+    "script": "apply_en_149_193.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_193.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_193.py",
+        "line": 8,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 378,
+    "script": "apply_en_149_193.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_193.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_193.py",
+        "line": 10,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 379,
+    "script": "apply_en_149_193.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_193.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_193.py",
+        "line": 11,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 380,
+    "script": "apply_en_149_193.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_193.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_193.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 381,
+    "script": "apply_en_149_193.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_193.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_193.py",
+        "line": 16,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 382,
+    "script": "apply_en_149_193.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "apply_en_149_193.py",
+        "line": 6,
+        "function": "ch"
+      },
+      {
+        "script": "apply_en_149_193.py",
+        "line": 17,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 383,
+    "script": "apply_en_149_193.py",
+    "function": "record_translation_page",
+    "sites": [
+      {
+        "script": "apply_en_149_193.py",
+        "line": 19,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 384,
+    "script": "apply_en_149_193.py",
+    "function": "event",
+    "sites": [
+      {
+        "script": "apply_en_149_193.py",
+        "line": 21,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 385,
+    "script": "apply_en_149_193.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "apply_en_149_193.py",
+        "line": 24,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 386,
+    "script": "finish_en_149.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "finish_en_149.py",
+        "line": 9,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 387,
+    "script": "finish_en_149.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "finish_en_149.py",
+        "line": 9,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 388,
+    "script": "finish_en_149.py",
+    "function": "replace",
+    "sites": [
+      {
+        "script": "finish_en_149.py",
+        "line": 9,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 389,
+    "script": "finish_en_149.py",
+    "function": "finish_unit",
+    "sites": [
+      {
+        "script": "finish_en_149.py",
+        "line": 13,
+        "function": "<module>"
+      }
+    ]
+  },
+  {
+    "sequence": 390,
+    "script": "finish_en_149.py",
+    "function": "update",
+    "sites": [
+      {
+        "script": "finish_en_149.py",
+        "line": 14,
+        "function": "<module>"
+      }
+    ]
+  }
+]

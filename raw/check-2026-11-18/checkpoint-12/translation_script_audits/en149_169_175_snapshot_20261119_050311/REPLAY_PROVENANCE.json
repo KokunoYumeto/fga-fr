@@ -1,0 +1,15 @@
+{
+  "initial_en_source": "tmp/math_expression_inventory_02/sources/en/en/149.tex",
+  "initial_en_source_sha256": "42fdb8ee8a7db0b65e39facd6e3ebc9e6a74e655b048d9dd4a7fa1b261ad5b9c",
+  "initial_en_source_bytes": 62243,
+  "original_capture_started_utc": "2026-11-19T04:46:04.787397+00:00",
+  "original_capture_completed_utc": "2026-11-19T04:46:04.868173+00:00",
+  "original_snapshot_manifest_sha256": "6617d595717d6ecab04edeb9c00690793c397fed9e7c4c03ccb26e4c77ff97ad",
+  "initial_en_source_matches_manifest": true,
+  "baseline_ledger": "tmp/frozen_build_inputs/read_through_errata_307/CORRECTIONS.tsv",
+  "baseline_ledger_sha256": "d3a12e44ee34221f973587541f4b7730f422724eb64e8da44196dac76029b943",
+  "replay_script": "tmp/en149_mechanical_audit_169_175/replay_audit.py",
+  "replay_script_sha256": "c61551f9a46b2c1d3940b9e963f6ea47fefc6a7fe930a540ecb00dea38e1680e",
+  "simulation_seed": "Original frozen English149; current captured French149; copied original edit scripts/helpers; empty append-only simulated logs with matching schema; simulated timestamps. No actual live execution assumed.",
+  "outside_selected_scope": "The captured English source already includes thirteen line-diff hunks anchored to page176, outside this audit; no content review performed there."
+}

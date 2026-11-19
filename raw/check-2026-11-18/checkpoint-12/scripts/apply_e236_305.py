@@ -1,0 +1,30 @@
+from audit_utils import *
+from collections import Counter
+import csv
+for tree,layer in [('fr_printed','French as printed'),('fr','French corrected')]:
+    rel=f'sources/{tree}/fr/e236.tex'
+    def r(a,b,line,why,kind='reading',count=1):
+        replace(rel,a,b,layer,'e236-305',line,'Finiteness supplement (vi)-(viii)',
+                'Scan leaf 4 at 400 dpi, full page and three enlarged bands: '+why,kind=kind,count=count)
+    r('Néron--Severi','Néron-Severi','four group names','The printed join is a short hyphen.',count=4)
+    r(r'\leq',r'\leqslant','two bounds on i','The equality stroke is oblique.',count=2)
+    r(r'\operatorname{Pic}',r'\underline{\operatorname{Pic}}','assertion (vii)','Pic has a straight underline.')
+    r('les entiers\n\\[\n\\deg_{C_i\'}\\mathcal L\\qquad(\\mathcal L\\in M)\n\\]\nrestent',"les entiers $\\deg\\mathcal L_{C_i'}$ $(\\mathcal L\\in M)$\nrestent",'assertion (vii)','Degree and its parenthetical parameter are inline; the curve subscript is attached to the invertible module, not to deg.','structure')
+    r('Matsusaka','MATSUSAKA','attribution','The surname is all capitals.')
+    r(r'\tau$-équivalent à 0 ;',r'\tau$-équivalent à 0,','condition a','The entry ends with a comma.')
+    r('on a\n\\[\n\\chi(F\\otimes\\mathcal L)=\\chi(F),\n\\]\noù','on a $\\chi(F\\otimes\\mathcal L)=\\chi(F)$, où','condition b','The Euler-characteristic equality is inline.','structure')
+    r("d'Euler--Poincaré ;","d'Euler-Poincaré,",'condition b','A short hyphen and an ending comma are printed.')
+    r(r'dimension 1 dans $X$ ;',r'dimension 1 dans $X$,','condition b prime','The entry ends with a comma.')
+    r('on a\n\\[\n\\deg\\mathcal L_{Y\'}=0.\n\\]','on a $\\deg\\mathcal L_{Y\'}=0$.','condition c','The degree equality is inline.','structure')
+    r(r'\chi(\mathcal O_X(n))',r'\chi(\mathcal O(n))','display in condition e','The right-hand O has no subscript X; the convention is unambiguous and is retained literally.')
+    upright_page(rel,layer,'e236-305')
+event('e236-vi','carried as background without fault found','Completed the statement begun on p. 304: geometric-fibre Neron-Severi groups are finitely generated, with uniformly bounded rank and torsion order. The claimed generality is a proper morphism over the standing noetherian base. The reduction to surfaces, Picard-Igusa bound and uniform torsion control are substantial inputs, not fully proved in this run.','Erratum 236, pp. 304-305, (vi)')
+event('e236-vii','targeted proof check','Checked the linear-algebra deduction conditional on finite generation of NS and detection modulo torsion by curve degrees. On the rank-r rational vector space NS tensor Q, the curve functionals have zero common kernel, so r of them form a basis of the dual. The resulting homomorphism NS/torsion -> Z^r is injective. Bounds on its r coordinates leave finitely many lattice classes; the finite torsion subgroup adds finitely many more. These classes lie in finitely many finite-type Picard components, giving quasi-compactness. The converse uses continuity of the locally constant degree functions. The geometric detection theorem is background. The preceding surface intersection form is understood after tensoring with Q; integral torsion would otherwise lie in its kernel.','Erratum 236, p. 305, (vii) and its explanation')
+event('e236-viii-bc','targeted proof check','Checked b -> b prime by taking F=O_Y. For an integral proper curve Y with normalization nu:Yprime->Y, the quotient nu_*O_Y/O_Y has finite length. Tensoring this exact sequence by an invertible L preserves that length. Subtracting Euler characteristics gives chi(L_Y)-chi(O_Y)=chi(L_Yprime)-chi(O_Yprime)=deg(L_Yprime), using the degree/Euler identity on the normalized curve. Hence b prime and c agree, with degree computed over the ground field. This is a deduction conditional on that standard curve degree formula.','Erratum 236, p. 305, (viii), b, b prime and c')
+event('e236-viii-ad','targeted proof check','Checked d -> c: on every normalized integral curve, ampleness of H tensor L^m for all integers m implies deg(H)+m deg(L)>0 for every m, forcing deg(L)=0. Conversely, invariance of ampleness under numerical equivalence is a required background theorem. The identification of numerical triviality with tau-equivalence uses (vii) and descent of the geometric curve test; it is not independently re-proved here.','Erratum 236, p. 305, (viii), a, c and d')
+event('e236-viii-e','targeted proof check','Checked the advertised projective integral criterion conditionally on (iii): if every tensor power of L has the same Hilbert polynomial as O, the cyclic family of its Picard classes has bounded subleading coefficients, hence is quasi-compact and has torsion component class. The converse follows from b applied to O(n) and tensor powers of a tau-trivial L. The underlying a -> b theorem requires constancy of Euler characteristic in algebraic families together with polynomial dependence on tensor powers; these are background inputs. The displayed O(n) has no X subscript in the scan and is kept that way.','Erratum 236, p. 305, (viii), e')
+with (ROOT/'CORRECTIONS.tsv').open(newline='') as f:
+    c=Counter((x['layer'],x['kind']) for x in csv.DictReader(f,delimiter='\t') if x['printed_page']=='e236-305')
+record_page('e236',305,'Compared sources/fr_printed/fr/e236.tex and sources/fr/fr/e236.tex, entry lines 90-150, with scan leaf 4 at 400 dpi, full page and three enlarged bands. Read the completion of (vi), all of (vii), its explanation and conditions a-e of (viii). Restored the three inline expressions, the curve subscript on L, oblique index bounds, straight-underlined Pic, MATSUSAKA, short name hyphens, comma-separated conditions and the unsubscripted O(n) in the final display. Both French layers agree. Rechecked the finite-rank lattice deduction and selected equivalence implications; recorded the geometric and Euler-characteristic inputs still carried as background.\n\nOperation counts: '+'; '.join(f'{a}, {b}: {n}' for (a,b),n in sorted(c.items()))+'. Final row verdicts remain pending.')
+from update_record_counts import update
+update()

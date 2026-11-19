@@ -1,0 +1,22 @@
+{
+  "asset_tag": "candidate_baselines_01",
+  "dpi": 180,
+  "layers": 11,
+  "selected_unique_pages": 148,
+  "baseline_over10pt_regions": 6,
+  "proposed_layout_regions": 14,
+  "distributed_pair_fractions": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.9
+  ],
+  "pair_rule": "left=2*floor(fraction*page_count/2), clamped to even pages from 2 through largest even <= page_count-1; render left and left+1",
+  "first_and_last_physical_pages": true,
+  "render_every_original_baseline_over10pt_page_number_in_candidate": true,
+  "also_render_candidate_synctex_pages_for_all_proposed_layout_regions": true,
+  "visual_or_content_review": "not performed",
+  "also_render_immediately_following_source_line_context_when_on_a_different_page": true,
+  "inclusive_line_range_rule": "start + newline_count - 1 for newline-terminated inserted regions; otherwise start + newline_count"
+}

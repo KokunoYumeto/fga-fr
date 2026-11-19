@@ -1,0 +1,116 @@
+[
+  {
+    "profile": "P0_whitespace",
+    "removed_balanced_wrappers": [],
+    "whitespace": "ASCII whitespace collapsed to one space and outer ASCII whitespace trimmed",
+    "retained_alphabet_controls": [
+      "boldsymbol",
+      "mathbb",
+      "mathbf",
+      "mathcal",
+      "mathfrak",
+      "mathit",
+      "mathrm",
+      "mathscr",
+      "mathsf",
+      "mathtt",
+      "operatorname",
+      "symbb",
+      "symbf",
+      "symcal",
+      "symfrak",
+      "symit",
+      "symnormal",
+      "symrm"
+    ],
+    "meaning_warning": "These are lexical search projections only. Underlines and upright fonts can distinguish mathematical notation; removals are reported per field, never adjudicated as semantically harmless."
+  },
+  {
+    "profile": "P1_upright",
+    "removed_balanced_wrappers": [
+      "symup"
+    ],
+    "whitespace": "ASCII whitespace collapsed to one space and outer ASCII whitespace trimmed",
+    "retained_alphabet_controls": [
+      "boldsymbol",
+      "mathbb",
+      "mathbf",
+      "mathcal",
+      "mathfrak",
+      "mathit",
+      "mathrm",
+      "mathscr",
+      "mathsf",
+      "mathtt",
+      "operatorname",
+      "symbb",
+      "symbf",
+      "symcal",
+      "symfrak",
+      "symit",
+      "symnormal",
+      "symrm"
+    ],
+    "meaning_warning": "These are lexical search projections only. Underlines and upright fonts can distinguish mathematical notation; removals are reported per field, never adjudicated as semantically harmless."
+  },
+  {
+    "profile": "P2_upright_uline",
+    "removed_balanced_wrappers": [
+      "symup",
+      "uline"
+    ],
+    "whitespace": "ASCII whitespace collapsed to one space and outer ASCII whitespace trimmed",
+    "retained_alphabet_controls": [
+      "boldsymbol",
+      "mathbb",
+      "mathbf",
+      "mathcal",
+      "mathfrak",
+      "mathit",
+      "mathrm",
+      "mathscr",
+      "mathsf",
+      "mathtt",
+      "operatorname",
+      "symbb",
+      "symbf",
+      "symcal",
+      "symfrak",
+      "symit",
+      "symnormal",
+      "symrm"
+    ],
+    "meaning_warning": "These are lexical search projections only. Underlines and upright fonts can distinguish mathematical notation; removals are reported per field, never adjudicated as semantically harmless."
+  },
+  {
+    "profile": "P3_upright_underlines",
+    "removed_balanced_wrappers": [
+      "symup",
+      "uline",
+      "underline",
+      "uwave"
+    ],
+    "whitespace": "ASCII whitespace collapsed to one space and outer ASCII whitespace trimmed",
+    "retained_alphabet_controls": [
+      "boldsymbol",
+      "mathbb",
+      "mathbf",
+      "mathcal",
+      "mathfrak",
+      "mathit",
+      "mathrm",
+      "mathscr",
+      "mathsf",
+      "mathtt",
+      "operatorname",
+      "symbb",
+      "symbf",
+      "symcal",
+      "symfrak",
+      "symit",
+      "symnormal",
+      "symrm"
+    ],
+    "meaning_warning": "These are lexical search projections only. Underlines and upright fonts can distinguish mathematical notation; removals are reported per field, never adjudicated as semantically harmless."
+  }
+]
